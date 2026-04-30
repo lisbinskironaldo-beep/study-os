@@ -1,0 +1,1475 @@
+{
+  "summary": {
+    "missing-accent": 203
+  },
+  "results": [
+    {
+      "file": "questions/banks/3-serie/filosofia/etica/index.js",
+      "issueCount": 103,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": [
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 10,
+          "text": "Etica, moral e valores"
+        },
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 12,
+          "text": "diferenciar etica, moral e valor na reflexao filosofica"
+        },
+        {
+          "type": "missing-accent",
+          "term": "filosofica",
+          "expected": "filosófica",
+          "line": 12,
+          "text": "diferenciar etica, moral e valor na reflexao filosofica"
+        },
+        {
+          "type": "missing-accent",
+          "term": "reflexao",
+          "expected": "reflexão",
+          "line": 12,
+          "text": "diferenciar etica, moral e valor na reflexao filosofica"
+        },
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 13,
+          "text": "etica"
+        },
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 16,
+          "text": "a etica"
+        },
+        {
+          "type": "missing-accent",
+          "term": "acao",
+          "expected": "ação",
+          "line": 17,
+          "text": "a reflexao filosofica sobre os criterios que orientam a acao humana"
+        },
+        {
+          "type": "missing-accent",
+          "term": "criterios",
+          "expected": "critérios",
+          "line": 17,
+          "text": "a reflexao filosofica sobre os criterios que orientam a acao humana"
+        },
+        {
+          "type": "missing-accent",
+          "term": "filosofica",
+          "expected": "filosófica",
+          "line": 17,
+          "text": "a reflexao filosofica sobre os criterios que orientam a acao humana"
+        },
+        {
+          "type": "missing-accent",
+          "term": "reflexao",
+          "expected": "reflexão",
+          "line": 17,
+          "text": "a reflexao filosofica sobre os criterios que orientam a acao humana"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 18,
+          "text": "ela examina fundamentos do agir e nao apenas costumes dados"
+        },
+        {
+          "type": "missing-accent",
+          "term": "habitos",
+          "expected": "hábitos",
+          "line": 22,
+          "text": "o conjunto de normas e habitos que uma sociedade considera adequados"
+        },
+        {
+          "type": "missing-accent",
+          "term": "criterios",
+          "expected": "critérios",
+          "line": 27,
+          "text": "os criterios usados para julgar condutas como boas, justas ou desejaveis"
+        },
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 31,
+          "text": "a diferenca entre etica e moral"
+        },
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 32,
+          "text": "o fato de a etica refletir criticamente sobre aquilo que a moral prescreve"
+        },
+        {
+          "type": "missing-accent",
+          "term": "juizo",
+          "expected": "juízo",
+          "line": 36,
+          "text": "o juizo moral"
+        },
+        {
+          "type": "missing-accent",
+          "term": "acao",
+          "expected": "ação",
+          "line": 37,
+          "text": "a avaliacao de uma acao a partir de valores e criterios compartilhados"
+        },
+        {
+          "type": "missing-accent",
+          "term": "avaliacao",
+          "expected": "avaliação",
+          "line": 37,
+          "text": "a avaliacao de uma acao a partir de valores e criterios compartilhados"
+        },
+        {
+          "type": "missing-accent",
+          "term": "criterios",
+          "expected": "critérios",
+          "line": 37,
+          "text": "a avaliacao de uma acao a partir de valores e criterios compartilhados"
+        },
+        {
+          "type": "missing-accent",
+          "term": "carater",
+          "expected": "caráter",
+          "line": 43,
+          "text": "Virtude e carater"
+        },
+        {
+          "type": "missing-accent",
+          "term": "carater",
+          "expected": "caráter",
+          "line": 45,
+          "text": "compreender modelos classicos de reflexao etica sobre virtude e carater"
+        },
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 45,
+          "text": "compreender modelos classicos de reflexao etica sobre virtude e carater"
+        },
+        {
+          "type": "missing-accent",
+          "term": "reflexao",
+          "expected": "reflexão",
+          "line": 45,
+          "text": "compreender modelos classicos de reflexao etica sobre virtude e carater"
+        },
+        {
+          "type": "missing-accent",
+          "term": "carater",
+          "expected": "caráter",
+          "line": 46,
+          "text": "carater"
+        },
+        {
+          "type": "missing-accent",
+          "term": "formacao",
+          "expected": "formação",
+          "line": 46,
+          "text": "formacao moral"
+        },
+        {
+          "type": "missing-accent",
+          "term": "habitos",
+          "expected": "hábitos",
+          "line": 51,
+          "text": "na tradicao classica, ela se forma por habitos e escolhas"
+        },
+        {
+          "type": "missing-accent",
+          "term": "carater",
+          "expected": "caráter",
+          "line": 54,
+          "text": "o carater moral"
+        },
+        {
+          "type": "missing-accent",
+          "term": "decisoes",
+          "expected": "decisões",
+          "line": 56,
+          "text": "ele resulta de educacao, habitos e decisoes"
+        },
+        {
+          "type": "missing-accent",
+          "term": "educacao",
+          "expected": "educação",
+          "line": 56,
+          "text": "ele resulta de educacao, habitos e decisoes"
+        },
+        {
+          "type": "missing-accent",
+          "term": "habitos",
+          "expected": "hábitos",
+          "line": 56,
+          "text": "ele resulta de educacao, habitos e decisoes"
+        },
+        {
+          "type": "missing-accent",
+          "term": "situacoes",
+          "expected": "situações",
+          "line": 61,
+          "text": "ela ajuda a escolher meios corretos diante de situacoes concretas"
+        },
+        {
+          "type": "missing-accent",
+          "term": "equilibrio",
+          "expected": "equilíbrio",
+          "line": 65,
+          "text": "o equilibrio virtuoso entre extremos de excesso e falta"
+        },
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 66,
+          "text": "esse conceito organiza parte importante da etica antiga"
+        },
+        {
+          "type": "missing-accent",
+          "term": "formacao",
+          "expected": "formação",
+          "line": 69,
+          "text": "a formacao do habito virtuoso"
+        },
+        {
+          "type": "missing-accent",
+          "term": "habito",
+          "expected": "hábito",
+          "line": 69,
+          "text": "a formacao do habito virtuoso"
+        },
+        {
+          "type": "missing-accent",
+          "term": "acoes",
+          "expected": "ações",
+          "line": 70,
+          "text": "a repeticao orientada de boas acoes ate consolidar disposicoes morais"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 71,
+          "text": "a virtude nao surge pronta, mas se aprende"
+        },
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 76,
+          "text": "Dever e etica kantiana"
+        },
+        {
+          "type": "missing-accent",
+          "term": "consequencias",
+          "expected": "consequências",
+          "line": 78,
+          "text": "identificar correntes eticas baseadas em dever, consequencias e responsabilidade"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 84,
+          "text": "a moralidade nao depende apenas de inclinacoes ou vantagens"
+        },
+        {
+          "type": "missing-accent",
+          "term": "criterio",
+          "expected": "critério",
+          "line": 89,
+          "text": "ele busca criterio racional valido para todos"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 93,
+          "text": "a disposicao de agir moralmente por dever e nao por interesse"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 99,
+          "text": "o sujeito moral nao deve ser guiado apenas por comandos externos"
+        },
+        {
+          "type": "missing-accent",
+          "term": "consequencias",
+          "expected": "consequências",
+          "line": 111,
+          "text": "identificar correntes eticas baseadas em dever, consequencias e responsabilidade"
+        },
+        {
+          "type": "missing-accent",
+          "term": "acoes",
+          "expected": "ações",
+          "line": 116,
+          "text": "a corrente que avalia acoes por suas consequencias para o bem-estar geral"
+        },
+        {
+          "type": "missing-accent",
+          "term": "consequencias",
+          "expected": "consequências",
+          "line": 116,
+          "text": "a corrente que avalia acoes por suas consequencias para o bem-estar geral"
+        },
+        {
+          "type": "missing-accent",
+          "term": "acoes",
+          "expected": "ações",
+          "line": 121,
+          "text": "a perspectiva moral que julga acoes principalmente por seus resultados"
+        },
+        {
+          "type": "missing-accent",
+          "term": "criterio",
+          "expected": "critério",
+          "line": 126,
+          "text": "o criterio de maximizar prazer, felicidade ou bem-estar"
+        },
+        {
+          "type": "missing-accent",
+          "term": "consequencias",
+          "expected": "consequências",
+          "line": 127,
+          "text": "no utilitarismo, a moralidade depende do saldo das consequencias"
+        },
+        {
+          "type": "missing-accent",
+          "term": "acao",
+          "expected": "ação",
+          "line": 131,
+          "text": "a tentativa de comparar efeitos positivos e negativos de uma acao"
+        },
+        {
+          "type": "missing-accent",
+          "term": "decisoes",
+          "expected": "decisões",
+          "line": 132,
+          "text": "esse calculo orienta decisoes utilitaristas"
+        },
+        {
+          "type": "missing-accent",
+          "term": "consequencia",
+          "expected": "consequência",
+          "line": 135,
+          "text": "a tensao entre dever e consequencia"
+        },
+        {
+          "type": "missing-accent",
+          "term": "decisao",
+          "expected": "decisão",
+          "line": 144,
+          "text": "analisar dilemas morais envolvendo liberdade, responsabilidade e decisao"
+        },
+        {
+          "type": "missing-accent",
+          "term": "acao",
+          "expected": "ação",
+          "line": 150,
+          "text": "ela esta ligada a liberdade e consciencia da acao"
+        },
+        {
+          "type": "missing-accent",
+          "term": "decisao",
+          "expected": "decisão",
+          "line": 154,
+          "text": "a situacao em que valores importantes entram em conflito na decisao"
+        },
+        {
+          "type": "missing-accent",
+          "term": "situacao",
+          "expected": "situação",
+          "line": 154,
+          "text": "a situacao em que valores importantes entram em conflito na decisao"
+        },
+        {
+          "type": "missing-accent",
+          "term": "acao",
+          "expected": "ação",
+          "line": 159,
+          "text": "a capacidade de escolher entre cursos de acao avaliando criterios eticos"
+        },
+        {
+          "type": "missing-accent",
+          "term": "criterios",
+          "expected": "critérios",
+          "line": 159,
+          "text": "a capacidade de escolher entre cursos de acao avaliando criterios eticos"
+        },
+        {
+          "type": "missing-accent",
+          "term": "acao",
+          "expected": "ação",
+          "line": 163,
+          "text": "a intencao da acao"
+        },
+        {
+          "type": "missing-accent",
+          "term": "situacoes",
+          "expected": "situações",
+          "line": 169,
+          "text": "o processo de pensar antes de agir em situacoes de conflito etico"
+        },
+        {
+          "type": "missing-accent",
+          "term": "consequencias",
+          "expected": "consequências",
+          "line": 170,
+          "text": "ela procura integrar principios, contexto e consequencias"
+        },
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 175,
+          "text": "Etica e cidadania"
+        },
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 177,
+          "text": "relacionar etica a cidadania, direitos humanos e vida publica"
+        },
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 181,
+          "text": "a cidadania etica"
+        },
+        {
+          "type": "missing-accent",
+          "term": "tambem",
+          "expected": "também",
+          "line": 183,
+          "text": "agir eticamente tambem envolve conviver responsavelmente"
+        },
+        {
+          "type": "missing-accent",
+          "term": "relacoes",
+          "expected": "relações",
+          "line": 192,
+          "text": "a busca por relacoes mais equitativas na distribuicao de oportunidades e direitos"
+        },
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 193,
+          "text": "ela aproxima etica e politica"
+        },
+        {
+          "type": "missing-accent",
+          "term": "decisoes",
+          "expected": "decisões",
+          "line": 197,
+          "text": "o envolvimento do individuo nas decisoes e debates da vida coletiva"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 198,
+          "text": "cidadania nao se reduz a receber beneficios, mas implica agir publicamente"
+        },
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 210,
+          "text": "relacionar etica a cidadania, direitos humanos e vida publica"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 231,
+          "text": "nao faz sentido defender uns e negar outros completamente"
+        },
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 243,
+          "text": "analisar aplicacoes da etica em temas contemporaneos como bioetica e tecnologia"
+        },
+        {
+          "type": "missing-accent",
+          "term": "criterios",
+          "expected": "critérios",
+          "line": 248,
+          "text": "o campo que discute criterios eticos em questoes ligadas a vida, saude e biotecnologia"
+        },
+        {
+          "type": "missing-accent",
+          "term": "decisoes",
+          "expected": "decisões",
+          "line": 269,
+          "text": "decisoes biomedicas frequentemente envolvem ponderacao dificil"
+        },
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 274,
+          "text": "Etica profissional e digital"
+        },
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 276,
+          "text": "analisar aplicacoes da etica em temas contemporaneos como bioetica e tecnologia"
+        },
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 277,
+          "text": "etica profissional"
+        },
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 277,
+          "text": "etica digital"
+        },
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 280,
+          "text": "a etica profissional"
+        },
+        {
+          "type": "missing-accent",
+          "term": "funcao",
+          "expected": "função",
+          "line": 281,
+          "text": "o conjunto de principios que orienta conduta responsavel no exercicio de uma funcao"
+        },
+        {
+          "type": "missing-accent",
+          "term": "tecnica",
+          "expected": "técnica",
+          "line": 282,
+          "text": "ela relaciona competencia tecnica e compromisso moral"
+        },
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 290,
+          "text": "a etica digital"
+        },
+        {
+          "type": "missing-accent",
+          "term": "reflexao",
+          "expected": "reflexão",
+          "line": 291,
+          "text": "a reflexao sobre condutas adequadas no uso de tecnologias, dados e redes"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 302,
+          "text": "o mundo digital nao elimina compromisso etico"
+        },
+        {
+          "type": "missing-accent",
+          "term": "decisao",
+          "expected": "decisão",
+          "line": 309,
+          "text": "analisar dilemas morais envolvendo liberdade, responsabilidade e decisao"
+        },
+        {
+          "type": "missing-accent",
+          "term": "equilibrio",
+          "expected": "equilíbrio",
+          "line": 320,
+          "text": "sociedades plurais exigem esse equilibrio"
+        },
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 330,
+          "text": "etica contemporanea tambem envolve estilo de vida e mercado"
+        },
+        {
+          "type": "missing-accent",
+          "term": "tambem",
+          "expected": "também",
+          "line": 330,
+          "text": "etica contemporanea tambem envolve estilo de vida e mercado"
+        },
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 333,
+          "text": "a atualidade da etica"
+        },
+        {
+          "type": "missing-accent",
+          "term": "criterios",
+          "expected": "critérios",
+          "line": 335,
+          "text": "nenhuma sociedade deixa de precisar de criterios para o agir"
+        },
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 345,
+          "text": "Etica"
+        },
+        {
+          "type": "missing-accent",
+          "term": "reflexao",
+          "expected": "reflexão",
+          "line": 351,
+          "text": "Reflexao moral e dilemas do agir"
+        },
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 353,
+          "text": "etica"
+        },
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 361,
+          "text": "diferenciar etica, moral e valor na reflexao filosofica"
+        },
+        {
+          "type": "missing-accent",
+          "term": "filosofica",
+          "expected": "filosófica",
+          "line": 361,
+          "text": "diferenciar etica, moral e valor na reflexao filosofica"
+        },
+        {
+          "type": "missing-accent",
+          "term": "reflexao",
+          "expected": "reflexão",
+          "line": 361,
+          "text": "diferenciar etica, moral e valor na reflexao filosofica"
+        },
+        {
+          "type": "missing-accent",
+          "term": "carater",
+          "expected": "caráter",
+          "line": 362,
+          "text": "compreender modelos classicos de reflexao etica sobre virtude e carater"
+        },
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 362,
+          "text": "compreender modelos classicos de reflexao etica sobre virtude e carater"
+        },
+        {
+          "type": "missing-accent",
+          "term": "reflexao",
+          "expected": "reflexão",
+          "line": 362,
+          "text": "compreender modelos classicos de reflexao etica sobre virtude e carater"
+        },
+        {
+          "type": "missing-accent",
+          "term": "consequencias",
+          "expected": "consequências",
+          "line": 363,
+          "text": "identificar correntes eticas baseadas em dever, consequencias e responsabilidade"
+        },
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 364,
+          "text": "relacionar etica a cidadania, direitos humanos e vida publica"
+        },
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 365,
+          "text": "analisar aplicacoes da etica em temas contemporaneos como bioetica e tecnologia"
+        },
+        {
+          "type": "missing-accent",
+          "term": "etica",
+          "expected": "ética",
+          "line": 375,
+          "text": "Etica"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/filosofia/filosofia-contemporanea/index.js",
+      "issueCount": 53,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": [
+        {
+          "type": "missing-accent",
+          "term": "historia",
+          "expected": "história",
+          "line": 22,
+          "text": "a desconfianca diante de certezas absolutas sobre sujeito, historia e verdade"
+        },
+        {
+          "type": "missing-accent",
+          "term": "filosofica",
+          "expected": "filosófica",
+          "line": 32,
+          "text": "a influencia de capitalismo, tecnica e politica de massas sobre a reflexao filosofica"
+        },
+        {
+          "type": "missing-accent",
+          "term": "reflexao",
+          "expected": "reflexão",
+          "line": 32,
+          "text": "a influencia de capitalismo, tecnica e politica de massas sobre a reflexao filosofica"
+        },
+        {
+          "type": "missing-accent",
+          "term": "tecnica",
+          "expected": "técnica",
+          "line": 32,
+          "text": "a influencia de capitalismo, tecnica e politica de massas sobre a reflexao filosofica"
+        },
+        {
+          "type": "missing-accent",
+          "term": "filosofica",
+          "expected": "filosófica",
+          "line": 36,
+          "text": "a critica filosofica do presente"
+        },
+        {
+          "type": "missing-accent",
+          "term": "analise",
+          "expected": "análise",
+          "line": 50,
+          "text": "a analise das desigualdades e exploracoes produzidas pela sociedade capitalista"
+        },
+        {
+          "type": "missing-accent",
+          "term": "relacao",
+          "expected": "relação",
+          "line": 55,
+          "text": "a separacao do trabalhador em relacao ao produto, ao processo e a si mesmo"
+        },
+        {
+          "type": "missing-accent",
+          "term": "relacoes",
+          "expected": "relações",
+          "line": 65,
+          "text": "o conjunto de ideias que oculta e legitima relacoes de dominacao"
+        },
+        {
+          "type": "missing-accent",
+          "term": "historia",
+          "expected": "história",
+          "line": 70,
+          "text": "a interpretacao da historia a partir das condicoes materiais e das relacoes de producao"
+        },
+        {
+          "type": "missing-accent",
+          "term": "interpretacao",
+          "expected": "interpretação",
+          "line": 70,
+          "text": "a interpretacao da historia a partir das condicoes materiais e das relacoes de producao"
+        },
+        {
+          "type": "missing-accent",
+          "term": "producao",
+          "expected": "produção",
+          "line": 70,
+          "text": "a interpretacao da historia a partir das condicoes materiais e das relacoes de producao"
+        },
+        {
+          "type": "missing-accent",
+          "term": "relacoes",
+          "expected": "relações",
+          "line": 70,
+          "text": "a interpretacao da historia a partir das condicoes materiais e das relacoes de producao"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 84,
+          "text": "ele busca mostrar que valores nao sao eternos nem neutros"
+        },
+        {
+          "type": "missing-accent",
+          "term": "sao",
+          "expected": "são",
+          "line": 84,
+          "text": "ele busca mostrar que valores nao sao eternos nem neutros"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 136,
+          "text": "o cuidado de nao pressupor explicacoes prontas sobre a realidade"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 155,
+          "text": "na filosofia contemporanea, linguagem nao e mero espelho transparente do mundo"
+        },
+        {
+          "type": "missing-accent",
+          "term": "funcao",
+          "expected": "função",
+          "line": 159,
+          "text": "a pratica concreta em que expressoes ganham funcao e sentido"
+        },
+        {
+          "type": "missing-accent",
+          "term": "interpretacao",
+          "expected": "interpretação",
+          "line": 160,
+          "text": "o contexto de uso pode alterar interpretacao"
+        },
+        {
+          "type": "missing-accent",
+          "term": "analise",
+          "expected": "análise",
+          "line": 163,
+          "text": "a analise conceitual"
+        },
+        {
+          "type": "missing-accent",
+          "term": "producao",
+          "expected": "produção",
+          "line": 192,
+          "text": "a producao massificada de cultura como mercadoria e instrumento de conformismo"
+        },
+        {
+          "type": "missing-accent",
+          "term": "tecnica",
+          "expected": "técnica",
+          "line": 198,
+          "text": "a Escola de Frankfurt critica a reducao da razao a utilidade tecnica"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 203,
+          "text": "a critica busca transformar e nao apenas descrever o mundo"
+        },
+        {
+          "type": "missing-accent",
+          "term": "relacoes",
+          "expected": "relações",
+          "line": 216,
+          "text": "ela privilegia relacoes e sistemas mais do que elementos isolados"
+        },
+        {
+          "type": "missing-accent",
+          "term": "relacoes",
+          "expected": "relações",
+          "line": 220,
+          "text": "o conjunto organizado de relacoes que produz sentido em um sistema"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 230,
+          "text": "a tese de que significados nao sao totalmente fixos e imutaveis"
+        },
+        {
+          "type": "missing-accent",
+          "term": "sao",
+          "expected": "são",
+          "line": 230,
+          "text": "a tese de que significados nao sao totalmente fixos e imutaveis"
+        },
+        {
+          "type": "missing-accent",
+          "term": "relacoes",
+          "expected": "relações",
+          "line": 243,
+          "text": "analisar relacoes entre poder, subjetividade e sociedade no pensamento recente"
+        },
+        {
+          "type": "missing-accent",
+          "term": "relacao",
+          "expected": "relação",
+          "line": 247,
+          "text": "o poder como relacao"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 249,
+          "text": "ele nao se reduz apenas ao Estado ou a um soberano"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 254,
+          "text": "ela e historicamente produzida e nao puramente natural"
+        },
+        {
+          "type": "missing-accent",
+          "term": "tecnicas",
+          "expected": "técnicas",
+          "line": 258,
+          "text": "o conjunto de tecnicas que organizam corpos e comportamentos"
+        },
+        {
+          "type": "missing-accent",
+          "term": "relacoes",
+          "expected": "relações",
+          "line": 264,
+          "text": "discursos tambem participam de relacoes de poder"
+        },
+        {
+          "type": "missing-accent",
+          "term": "tambem",
+          "expected": "também",
+          "line": 264,
+          "text": "discursos tambem participam de relacoes de poder"
+        },
+        {
+          "type": "missing-accent",
+          "term": "analise",
+          "expected": "análise",
+          "line": 268,
+          "text": "a analise de mecanismos que definem padroes e excluem diferencas"
+        },
+        {
+          "type": "missing-accent",
+          "term": "tecnica",
+          "expected": "técnica",
+          "line": 274,
+          "text": "Tecnica e sociedade de massas"
+        },
+        {
+          "type": "missing-accent",
+          "term": "relacoes",
+          "expected": "relações",
+          "line": 276,
+          "text": "analisar relacoes entre poder, subjetividade e sociedade no pensamento recente"
+        },
+        {
+          "type": "missing-accent",
+          "term": "tecnica",
+          "expected": "técnica",
+          "line": 277,
+          "text": "tecnica"
+        },
+        {
+          "type": "missing-accent",
+          "term": "tecnica",
+          "expected": "técnica",
+          "line": 280,
+          "text": "a tecnica moderna"
+        },
+        {
+          "type": "missing-accent",
+          "term": "producao",
+          "expected": "produção",
+          "line": 281,
+          "text": "o conjunto de meios e procedimentos que ampliam controle e producao na sociedade"
+        },
+        {
+          "type": "missing-accent",
+          "term": "producao",
+          "expected": "produção",
+          "line": 286,
+          "text": "o contexto em que producao, cultura e politica alcancam escala ampliada de populacoes"
+        },
+        {
+          "type": "missing-accent",
+          "term": "filosofico",
+          "expected": "filosófico",
+          "line": 295,
+          "text": "o impacto filosofico da tecnologia"
+        },
+        {
+          "type": "missing-accent",
+          "term": "relacoes",
+          "expected": "relações",
+          "line": 296,
+          "text": "a necessidade de pensar como tecnicas alteram relacoes humanas e visao de mundo"
+        },
+        {
+          "type": "missing-accent",
+          "term": "tecnicas",
+          "expected": "técnicas",
+          "line": 296,
+          "text": "a necessidade de pensar como tecnicas alteram relacoes humanas e visao de mundo"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 297,
+          "text": "tecnologia nao e apenas instrumento neutro"
+        },
+        {
+          "type": "missing-accent",
+          "term": "tecnica",
+          "expected": "técnica",
+          "line": 301,
+          "text": "a preocupacao com usos da tecnica que reduzem autonomia humana"
+        },
+        {
+          "type": "missing-accent",
+          "term": "historia",
+          "expected": "história",
+          "line": 314,
+          "text": "a ampliacao da critica sobre poder, linguagem, historia e subjetividade"
+        },
+        {
+          "type": "missing-accent",
+          "term": "filosofico",
+          "expected": "filosófico",
+          "line": 319,
+          "text": "a permanencia de desigualdades e mecanismos de dominacao como problema filosofico"
+        },
+        {
+          "type": "missing-accent",
+          "term": "reflexao",
+          "expected": "reflexão",
+          "line": 320,
+          "text": "o presente ainda exige diagnostico e reflexao"
+        },
+        {
+          "type": "missing-accent",
+          "term": "reflexao",
+          "expected": "reflexão",
+          "line": 328,
+          "text": "a reflexao sobre democracia e verdade"
+        },
+        {
+          "type": "missing-accent",
+          "term": "decisao",
+          "expected": "decisão",
+          "line": 329,
+          "text": "o exame de como sociedades lidam com informacao, poder e decisao coletiva"
+        },
+        {
+          "type": "missing-accent",
+          "term": "funcao",
+          "expected": "função",
+          "line": 333,
+          "text": "a funcao critica da filosofia hoje"
+        },
+        {
+          "type": "missing-accent",
+          "term": "habitos",
+          "expected": "hábitos",
+          "line": 334,
+          "text": "interrogar discursos, instituicoes e habitos do presente"
+        },
+        {
+          "type": "missing-accent",
+          "term": "relacoes",
+          "expected": "relações",
+          "line": 364,
+          "text": "analisar relacoes entre poder, subjetividade e sociedade no pensamento recente"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/filosofia/existencialismo/index.js",
+      "issueCount": 47,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": [
+        {
+          "type": "missing-accent",
+          "term": "situacoes",
+          "expected": "situações",
+          "line": 27,
+          "text": "a vida humana vivida em situacoes, escolhas e conflitos reais"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 28,
+          "text": "o existencialismo parte da experiencia e nao de essencias abstratas"
+        },
+        {
+          "type": "missing-accent",
+          "term": "situacao",
+          "expected": "situação",
+          "line": 38,
+          "text": "o existencialismo procura pensar justamente essa situacao"
+        },
+        {
+          "type": "missing-accent",
+          "term": "relacao",
+          "expected": "relação",
+          "line": 50,
+          "text": "o pensador que destacou subjetividade, escolha e relacao singular com a existencia"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 56,
+          "text": "o essencial nao e apenas saber algo, mas existir de acordo com isso"
+        },
+        {
+          "type": "missing-accent",
+          "term": "decisao",
+          "expected": "decisão",
+          "line": 60,
+          "text": "a decisao pessoal que compromete o individuo com um modo de vida"
+        },
+        {
+          "type": "missing-accent",
+          "term": "tambem",
+          "expected": "também",
+          "line": 66,
+          "text": "ser livre tambem significa enfrentar incerteza"
+        },
+        {
+          "type": "missing-accent",
+          "term": "relacoes",
+          "expected": "relações",
+          "line": 83,
+          "text": "a ideia de que a existencia humana esta sempre inserida em um contexto de relacoes"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 84,
+          "text": "o humano nao existe isolado de mundo, tempo e outros"
+        },
+        {
+          "type": "missing-accent",
+          "term": "relacao",
+          "expected": "relação",
+          "line": 103,
+          "text": "o fato de que o humano se compreende em relacao a passado, presente e futuro"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 122,
+          "text": "nao haveria natureza humana pronta determinando o individuo"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 127,
+          "text": "mesmo nao escolher ja e uma forma de escolha"
+        },
+        {
+          "type": "missing-accent",
+          "term": "consequencias",
+          "expected": "consequências",
+          "line": 131,
+          "text": "o dever de assumir as consequencias das proprias escolhas"
+        },
+        {
+          "type": "missing-accent",
+          "term": "decisao",
+          "expected": "decisão",
+          "line": 132,
+          "text": "nao ha como transferir completamente a outros o peso da decisao"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 132,
+          "text": "nao ha como transferir completamente a outros o peso da decisao"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 136,
+          "text": "a ideia sartreana de que o humano nao pode escapar da necessidade de escolher"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 137,
+          "text": "liberdade nao aparece como conforto, mas como tarefa"
+        },
+        {
+          "type": "missing-accent",
+          "term": "decisao",
+          "expected": "decisão",
+          "line": 154,
+          "text": "a decisao assumida com consciencia e sem refugio em desculpas externas"
+        },
+        {
+          "type": "missing-accent",
+          "term": "decisao",
+          "expected": "decisão",
+          "line": 168,
+          "text": "a decisao sob incerteza"
+        },
+        {
+          "type": "missing-accent",
+          "term": "situacao",
+          "expected": "situação",
+          "line": 192,
+          "text": "a assuncao sincera da propria liberdade e situacao"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 193,
+          "text": "ser autentico e nao se esconder atras de mascaras confortaveis"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 197,
+          "text": "uma dimensao real da vida que nao elimina a responsabilidade individual"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 198,
+          "text": "ocupar um papel nao basta para anular escolha"
+        },
+        {
+          "type": "missing-accent",
+          "term": "tambem",
+          "expected": "também",
+          "line": 202,
+          "text": "o recurso de atribuir a outros ou ao destino aquilo que tambem depende de escolha propria"
+        },
+        {
+          "type": "missing-accent",
+          "term": "filosofico",
+          "expected": "filosófico",
+          "line": 229,
+          "text": "a recusa do suicidio filosofico"
+        },
+        {
+          "type": "missing-accent",
+          "term": "genero",
+          "expected": "gênero",
+          "line": 243,
+          "text": "relacionar existencialismo a problemas de genero, alteridade e vida social"
+        },
+        {
+          "type": "missing-accent",
+          "term": "genero",
+          "expected": "gênero",
+          "line": 244,
+          "text": "genero"
+        },
+        {
+          "type": "missing-accent",
+          "term": "genero",
+          "expected": "gênero",
+          "line": 248,
+          "text": "a pensadora que articulou existencialismo, liberdade e critica das opressoes de genero"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 252,
+          "text": "a ideia de que nao se nasce mulher"
+        },
+        {
+          "type": "missing-accent",
+          "term": "sao",
+          "expected": "são",
+          "line": 253,
+          "text": "a tese de que papeis femininos sao historicamente construidos"
+        },
+        {
+          "type": "missing-accent",
+          "term": "relacoes",
+          "expected": "relações",
+          "line": 258,
+          "text": "a condicao de ser definido como outro em relacoes de dominacao"
+        },
+        {
+          "type": "missing-accent",
+          "term": "genero",
+          "expected": "gênero",
+          "line": 267,
+          "text": "a opressao de genero"
+        },
+        {
+          "type": "missing-accent",
+          "term": "genero",
+          "expected": "gênero",
+          "line": 276,
+          "text": "relacionar existencialismo a problemas de genero, alteridade e vida social"
+        },
+        {
+          "type": "missing-accent",
+          "term": "relacoes",
+          "expected": "relações",
+          "line": 277,
+          "text": "relacoes humanas"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 282,
+          "text": "nao existimos sozinhos, mas diante de outros sujeitos"
+        },
+        {
+          "type": "missing-accent",
+          "term": "relacao",
+          "expected": "relação",
+          "line": 295,
+          "text": "a relacao entre liberdade e convivencia"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 302,
+          "text": "a liberdade nao e isolada de mundo comum"
+        },
+        {
+          "type": "missing-accent",
+          "term": "genero",
+          "expected": "gênero",
+          "line": 309,
+          "text": "relacionar existencialismo a problemas de genero, alteridade e vida social"
+        },
+        {
+          "type": "missing-accent",
+          "term": "reflexao",
+          "expected": "reflexão",
+          "line": 314,
+          "text": "a aplicacao da reflexao sobre liberdade e responsabilidade as escolhas diarias"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 315,
+          "text": "essa filosofia nao fica restrita a sistemas abstratos"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 319,
+          "text": "o esforco de orientar a vida por escolhas assumidas e nao por automatismos"
+        },
+        {
+          "type": "missing-accent",
+          "term": "relacao",
+          "expected": "relação",
+          "line": 323,
+          "text": "a relacao com o outro no existencialismo"
+        },
+        {
+          "type": "missing-accent",
+          "term": "tambem",
+          "expected": "também",
+          "line": 324,
+          "text": "o encontro com outras liberdades que tambem condiciona a experiencia humana"
+        },
+        {
+          "type": "missing-accent",
+          "term": "nao",
+          "expected": "não",
+          "line": 325,
+          "text": "nao existimos sozinhos, mas em situacao compartilhada"
+        },
+        {
+          "type": "missing-accent",
+          "term": "situacao",
+          "expected": "situação",
+          "line": 325,
+          "text": "nao existimos sozinhos, mas em situacao compartilhada"
+        },
+        {
+          "type": "missing-accent",
+          "term": "decisoes",
+          "expected": "decisões",
+          "line": 329,
+          "text": "a tentativa de viver sem fugir do peso das proprias decisoes"
+        },
+        {
+          "type": "missing-accent",
+          "term": "genero",
+          "expected": "gênero",
+          "line": 364,
+          "text": "relacionar existencialismo a problemas de genero, alteridade e vida social"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/filosofia/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    }
+  ]
+}

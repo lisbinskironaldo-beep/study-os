@@ -1,0 +1,89 @@
+{
+  "summary": {},
+  "results": [
+    {
+      "file": "questions/banks/1-serie/ingles/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/ingles/leitura-e-interpretacao/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/ingles/verb-to-be-e-simple-present/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/ingles/vocabulario-basico/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/ingles/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/ingles/reading-e-interpretacao/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/ingles/tempos-verbais-past-e-future/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/ingles/vocabulario-intermediario/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/ingles/grammar-and-language-use/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/ingles/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/ingles/interpretacao-foco-enem/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/ingles/textos-longos/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    }
+  ]
+}

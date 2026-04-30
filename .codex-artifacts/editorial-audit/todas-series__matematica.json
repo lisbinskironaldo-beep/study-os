@@ -1,0 +1,225 @@
+{
+  "summary": {},
+  "results": [
+    {
+      "file": "questions/banks/1-serie/matematica/funcoes-afim-e-quadratica/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-10",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/matematica/geometria-plana/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-10",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/matematica/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/matematica/introducao-a-trigonometria/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-10",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/matematica/notacao-cientifica/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-10",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/matematica/numeros-reais/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-10",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/matematica/porcentagem/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-10",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/matematica/razoes-e-proporcoes/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-10",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/matematica/funcoes-exponenciais/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/matematica/geometria-espacial/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/matematica/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/matematica/logaritmos/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/matematica/progressoes-pa-e-pg/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/matematica/trigonometria-completa/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/matematica/analise-combinatoria/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-10",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/matematica/estatistica/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-10",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/matematica/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/matematica/matematica-aplicada-enem/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/matematica/probabilidade/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/matematica/revisao-geral/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    }
+  ]
+}

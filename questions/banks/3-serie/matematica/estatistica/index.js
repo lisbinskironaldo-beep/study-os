@@ -1,6 +1,6 @@
 export const estatistica = {
   "id": "matematica_estatistica",
-  "materia": "Matematica",
+  "materia": "Matemática",
   "serie": [
     3
   ],
@@ -9,7 +9,7 @@ export const estatistica = {
     "disciplinaId": "matematica",
     "base": "ESCOLAR",
     "eixo": "Estatistica",
-    "frente": "Analise de dados",
+    "frente": "Análise de dados",
     "searchAliases": [
       "media",
       "mediana",
@@ -20,24 +20,24 @@ export const estatistica = {
       "tabelas"
     ],
     "subtopicosBase": [
-      "Media aritmetica",
-      "Media ponderada",
+      "Média aritmetica",
+      "Média ponderada",
       "Mediana",
       "Moda",
       "Variancia",
       "Desvio padrao",
-      "Distribuicao de frequencia",
-      "Interpretacao de tabelas",
-      "Interpretacao de graficos",
-      "Analise de dados",
-      "Interpretacao indireta",
+      "Distribuição de frequência",
+      "Interpretação de tabelas",
+      "Interpretação de gráficos",
+      "Análise de dados",
+      "Interpretação indireta",
       "Pegadinha",
       "Equivalencia"
     ],
     "habilidadesBase": [
-      "calcular media aritmetica e media ponderada em diferentes contextos",
-      "determinar mediana, moda e frequencias em conjuntos de dados",
-      "interpretar tabelas, graficos e distribuicoes de frequencia",
+      "calcular média aritmetica e média ponderada em diferentes contextos",
+      "determinar mediana, moda é frequencias em conjuntos de dados",
+      "interpretar tabelas, gráficos e distribuicoes de frequência",
       "analisar variancia e desvio padrao como medidas de dispersao",
       "comparar conjuntos de dados e tirar conclusoes estatisticas"
     ],
@@ -51,14 +51,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media aritmetica",
+      "subtopico": "Média aritmetica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma turma, cinco alunos tiraram as notas 6, 8, 7, 9 e 10 em uma atividade. Qual foi a media aritmetica dessas notas?",
+      "enunciado": "Em uma turma, cinco alunos tiraram as notas 6, 8, 7, 9 e 10 em uma atividade. Qual foi a média aritmetica dessas notas?",
       "opcoes": [
         "8",
         "7,5",
@@ -66,7 +66,7 @@ export const estatistica = {
         "7"
       ],
       "correta": "8",
-      "comentario": "A media aritmetica e a soma dos valores dividida pela quantidade: 40/5 = 8.",
+      "comentario": "A média aritmetica e a soma dos valores dividida pela quantidade: 40/5 = 8.",
       "tempoEstimado": 25,
       "tags": [
         "media-aritmetica",
@@ -89,14 +89,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media aritmetica",
+      "subtopico": "Média aritmetica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma loja vendeu 12, 15, 18 e 11 unidades de um produto em quatro dias. Qual foi a media diaria?",
+      "enunciado": "Uma loja vendeu 12, 15, 18 e 11 unidades de um produto em quatro dias. Qual foi a média diaria?",
       "opcoes": [
         "13",
         "14",
@@ -127,14 +127,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media ponderada",
+      "subtopico": "Média ponderada",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante obteve nota 6 em uma prova com peso 1 e nota 8 em outra prova com peso 2. Qual e a media ponderada dessas notas?",
+      "enunciado": "Um estudante obteve nota 6 em uma prova com peso 1 e nota 8 em outra prova com peso 2. Qual é a média ponderada dessas notas?",
       "opcoes": [
         "7,0",
         "7,5",
@@ -142,7 +142,7 @@ export const estatistica = {
         "7,8"
       ],
       "correta": "7,3",
-      "comentario": "A media ponderada e (6 x 1 + 8 x 2) / (1 + 2) = (6 + 16) / 3 = 22 / 3 = 7,3, aproximadamente.",
+      "comentario": "A média ponderada e (6 x 1 + 8 x 2) / (1 + 2) = (6 + 16) / 3 = 22 / 3 = 7,3, aproximadamente.",
       "tempoEstimado": 30,
       "tags": [
         "estatistica",
@@ -166,7 +166,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Mediana",
       "dificuldadeLabel": "facil",
@@ -181,7 +181,7 @@ export const estatistica = {
         "5"
       ],
       "correta": "5",
-      "comentario": "Ordenando os dados, obtem-se 2, 4, 5, 7, 9. Como ha cinco valores, a mediana e o termo central, isto e, 5.",
+      "comentario": "Ordenando os dados, obtem-se 2, 4, 5, 7, 9. Como ha cinco valores, a mediana é o termo central, isto e, 5.",
       "tempoEstimado": 25,
       "tags": [
         "estatistica",
@@ -205,7 +205,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Moda",
       "dificuldadeLabel": "facil",
@@ -220,7 +220,7 @@ export const estatistica = {
         "4"
       ],
       "correta": "2",
-      "comentario": "Moda e o valor que mais se repete. Nesse conjunto, o numero 2 aparece tres vezes.",
+      "comentario": "Moda é o valor que mais se repete. Nesse conjunto, o número 2 aparece tres vezes.",
       "tempoEstimado": 20,
       "tags": [
         "estatistica",
@@ -244,14 +244,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de tabelas",
+      "subtopico": "Interpretação de tabelas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma tabela informa o numero de alunos por turno em uma escola: manha 120, tarde 150, noite 90. O turno com maior numero de alunos e o",
+      "enunciado": "Uma tabela informa o número de alunos por turno em uma escola: manha 120, tarde 150, noite 90. O turno com maior número de alunos e o",
       "opcoes": [
         "manha",
         "tarde",
@@ -283,14 +283,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Distribuicao de frequencia",
+      "subtopico": "Distribuição de frequência",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma lista com as idades 16, 16, 17, 18, 16, 17, 19, a frequencia absoluta da idade 16 e",
+      "enunciado": "Em uma lista com as idades 16, 16, 17, 18, 16, 17, 19, a frequência absoluta da idade 16 e",
       "opcoes": [
         "2",
         "4",
@@ -298,7 +298,7 @@ export const estatistica = {
         "5"
       ],
       "correta": "3",
-      "comentario": "A idade 16 aparece tres vezes na lista, portanto sua frequencia absoluta e 3.",
+      "comentario": "A idade 16 aparece tres vezes na lista, portanto sua frequência absoluta e 3.",
       "tempoEstimado": 25,
       "tags": [
         "estatistica",
@@ -322,14 +322,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Analise de dados",
+      "subtopico": "Análise de dados",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Duas turmas fizeram a mesma prova. A turma A teve media 7,0 e a turma B teve media 6,5. Com base apenas nessas medias, e correto concluir que",
+      "enunciado": "Duas turmas fizeram a mesma prova. A turma A teve média 7,0 e a turma B teve média 6,5. Com base apenas nessas medias, e correto concluir que",
       "opcoes": [
         "todos os alunos da turma A foram melhores que os da turma B",
         "a turma B teve maior regularidade",
@@ -337,7 +337,7 @@ export const estatistica = {
         "a turma A teve desempenho medio superior ao da turma B"
       ],
       "correta": "a turma A teve desempenho medio superior ao da turma B",
-      "comentario": "A media da turma A e maior que a da turma B. Nao e possivel concluir nada sobre todos os alunos ou sobre a regularidade sem outras medidas.",
+      "comentario": "A média da turma A e maior que a da turma B. Não e possível concluir nada sobre todos os alunos ou sobre a regularidade sem outras medidas.",
       "tempoEstimado": 35,
       "tags": [
         "estatistica",
@@ -361,14 +361,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media aritmetica",
+      "subtopico": "Média aritmetica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A media de idade de 4 amigos e 18 anos. Se as idades de tres deles sao 16, 18 e 19 anos, a idade do quarto amigo e",
+      "enunciado": "A média de idade de 4 amigos e 18 anos. Se as idades de tres deles são 16, 18 e 19 anos, a idade do quarto amigo e",
       "opcoes": [
         "19",
         "17",
@@ -376,7 +376,7 @@ export const estatistica = {
         "20"
       ],
       "correta": "19",
-      "comentario": "Se a media de 4 amigos e 18, a soma total das idades e 4 x 18 = 72. As tres idades conhecidas somam 16 + 18 + 19 = 53. Logo, a quarta idade e 72 - 53 = 19.",
+      "comentario": "Se a média de 4 amigos e 18, a soma total das idades e 4 x 18 = 72. As tres idades conhecidas somam 16 + 18 + 19 = 53. Logo, a quarta idade e 72 - 53 = 19.",
       "tempoEstimado": 45,
       "tags": [
         "estatistica",
@@ -400,14 +400,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media ponderada",
+      "subtopico": "Média ponderada",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma disciplina, a nota final e calculada por media ponderada entre trabalho e prova, com pesos 2 e 3, respectivamente. Se um aluno tirou 7 no trabalho e 9 na prova, sua nota final foi",
+      "enunciado": "Em uma disciplina, a nota final e calculada por média ponderada entre trabalho e prova, com pesos 2 e 3, respectivamente. Se um aluno tirou 7 no trabalho e 9 na prova, sua nota final foi",
       "opcoes": [
         "8,0",
         "8,2",
@@ -415,7 +415,7 @@ export const estatistica = {
         "8,7"
       ],
       "correta": "8,2",
-      "comentario": "A media ponderada e (7 x 2 + 9 x 3) / (2 + 3) = (14 + 27) / 5 = 41 / 5 = 8,2.",
+      "comentario": "A média ponderada e (7 x 2 + 9 x 3) / (2 + 3) = (14 + 27) / 5 = 41 / 5 = 8,2.",
       "tempoEstimado": 45,
       "tags": [
         "estatistica",
@@ -439,7 +439,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Mediana",
       "dificuldadeLabel": "facil",
@@ -454,7 +454,7 @@ export const estatistica = {
         "15,5"
       ],
       "correta": "14,5",
-      "comentario": "Ordenando: 11, 12, 14, 15, 18, 20. Como ha quantidade par de dados, a mediana e a media entre o 3o e o 4o termos: (14 + 15) / 2 = 14,5.",
+      "comentario": "Ordenando: 11, 12, 14, 15, 18, 20. Como ha quantidade par de dados, a mediana é a média entre o 3o e o 4o termos: (14 + 15) / 2 = 14,5.",
       "tempoEstimado": 50,
       "tags": [
         "estatistica",
@@ -478,14 +478,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Moda",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma lanchonete registrou, em um dia, a quantidade de sucos vendidos por sabor: laranja 18, uva 25, limao 25, abacaxi 12. Em relacao a moda, e correto afirmar que a distribuicao e",
+      "enunciado": "Uma lanchonete registrou, em um dia, a quantidade de sucos vendidos por sabor: laranja 18, uva 25, limao 25, abacaxi 12. Em relação a moda, e correto afirmar que a distribuição é",
       "opcoes": [
         "amodal",
         "unimodal",
@@ -493,7 +493,7 @@ export const estatistica = {
         "bimodal"
       ],
       "correta": "bimodal",
-      "comentario": "Os maiores valores de frequencia sao 25 para uva e 25 para limao. Como dois valores possuem a maior frequencia, a distribuicao e bimodal.",
+      "comentario": "Os maiores valores de frequência são 25 para uva e 25 para limao. Como dois valores possuem a maior frequência, a distribuição é bimodal.",
       "tempoEstimado": 45,
       "tags": [
         "estatistica",
@@ -517,14 +517,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Distribuicao de frequencia",
+      "subtopico": "Distribuição de frequência",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma turma com 40 alunos, 10 preferem futebol, 14 preferem voleibol, 8 preferem natacao e os demais preferem basquete. A frequencia absoluta dos que preferem basquete e",
+      "enunciado": "Em uma turma com 40 alunos, 10 preferem futebol, 14 preferem voleibol, 8 preferem natacao e os demais preferem basquete. A frequência absoluta dos que preferem basquete e",
       "opcoes": [
         "8",
         "6",
@@ -556,14 +556,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de tabelas",
+      "subtopico": "Interpretação de tabelas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma tabela apresenta o consumo mensal de agua, em m3, de uma residencia no primeiro semestre: janeiro 12, fevereiro 10, marco 11, abril 15, maio 14, junho 16. O mes em que o consumo ficou abaixo da media semestral e fevereiro em quantos metros cubicos?",
+      "enunciado": "Uma tabela apresenta o consumo mensal de agua, em m3, de uma residencia no primeiro semestre: janeiro 12, fevereiro 10, marco 11, abril 15, maio 14, junho 16. O mes em que o consumo ficou abaixo da média semestral e fevereiro em quantos metros cubicos?",
       "opcoes": [
         "2",
         "3",
@@ -571,7 +571,7 @@ export const estatistica = {
         "3,5"
       ],
       "correta": "3",
-      "comentario": "A media e (12 + 10 + 11 + 15 + 14 + 16) / 6 = 78 / 6 = 13. Em fevereiro, o consumo foi 10, ou seja, 3 m3 abaixo da media.",
+      "comentario": "A média é (12 + 10 + 11 + 15 + 14 + 16) / 6 = 78 / 6 = 13. Em fevereiro, o consumo foi 10, ou seja, 3 m3 abaixo da média.",
       "tempoEstimado": 55,
       "tags": [
         "estatistica",
@@ -595,14 +595,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de graficos",
+      "subtopico": "Interpretação de gráficos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um grafico de barras, a producao de uma fabrica em quatro semanas foi representada pelos valores 80, 100, 90 e 110 unidades. A variacao entre a maior e a menor producao foi de",
+      "enunciado": "Em um gráfico de barras, a produção de uma fábrica em quatro semanas foi representada pelos valores 80, 100, 90 e 110 unidades. A variação entre a maior e a menor produção foi de",
       "opcoes": [
         "20",
         "25",
@@ -610,7 +610,7 @@ export const estatistica = {
         "35"
       ],
       "correta": "30",
-      "comentario": "A maior producao foi 110 e a menor foi 80. A diferenca entre elas e 110 - 80 = 30.",
+      "comentario": "A maior produção foi 110 e a menor foi 80. A diferença entre elas e 110 - 80 = 30.",
       "tempoEstimado": 45,
       "tags": [
         "estatistica",
@@ -634,9 +634,9 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Analise de dados",
+      "subtopico": "Análise de dados",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
@@ -649,7 +649,7 @@ export const estatistica = {
         "desvio padrao"
       ],
       "correta": "desvio padrao",
-      "comentario": "Quando duas distribuicoes possuem a mesma media, o desvio padrao ajuda a comparar a dispersao dos valores em torno dessa media.",
+      "comentario": "Quando duas distribuicoes possuem a mesma média, o desvio padrao ajuda a comparar a dispersao dos valores em torno dessa média.",
       "tempoEstimado": 55,
       "tags": [
         "estatistica",
@@ -673,14 +673,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media ponderada",
+      "subtopico": "Média ponderada",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um produto recebeu as seguintes avaliacoes: 20 clientes deram nota 5, 30 clientes deram nota 4 e 10 clientes deram nota 3. A media ponderada das avaliacoes foi",
+      "enunciado": "Um produto recebeu as seguintes avaliacoes: 20 clientes deram nota 5, 30 clientes deram nota 4 e 10 clientes deram nota 3. A média ponderada das avaliacoes foi",
       "opcoes": [
         "4,2",
         "4,0",
@@ -688,7 +688,7 @@ export const estatistica = {
         "4,3"
       ],
       "correta": "4,2",
-      "comentario": "A media ponderada e (20 x 5 + 30 x 4 + 10 x 3) / (20 + 30 + 10) = (100 + 120 + 30) / 60 = 250 / 60 = 25 / 6 = 4,166..., aproximadamente 4,2.",
+      "comentario": "A média ponderada e (20 x 5 + 30 x 4 + 10 x 3) / (20 + 30 + 10) = (100 + 120 + 30) / 60 = 250 / 60 = 25 / 6 = 4,166..., aproximadamente 4,2.",
       "tempoEstimado": 60,
       "tags": [
         "estatistica",
@@ -712,14 +712,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de tabelas",
+      "subtopico": "Interpretação de tabelas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma tabela mostra a quantidade de funcionarios por setor de uma empresa: administrativo 12, vendas 18, estoque 9 e atendimento 21. Se a empresa conceder um treinamento apenas aos setores com numero de funcionarios acima da media por setor, quantos setores participarao?",
+      "enunciado": "Uma tabela mostra a quantidade de funcionários por setor de uma empresa: administrativo 12, vendas 18, estoque 9 e atendimento 21. Se a empresa conceder um treinamento apenas aos setores com número de funcionários acima da média por setor, quantos setores participarao?",
       "opcoes": [
         "1",
         "2",
@@ -727,7 +727,7 @@ export const estatistica = {
         "4"
       ],
       "correta": "2",
-      "comentario": "A media por setor e (12 + 18 + 9 + 21) / 4 = 60 / 4 = 15. Os setores acima de 15 funcionarios sao vendas e atendimento, totalizando 2 setores.",
+      "comentario": "A média por setor e (12 + 18 + 9 + 21) / 4 = 60 / 4 = 15. Os setores acima de 15 funcionários são vendas e atendimento, totalizando 2 setores.",
       "tempoEstimado": 55,
       "tags": [
         "estatistica",
@@ -751,14 +751,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de graficos",
+      "subtopico": "Interpretação de gráficos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um grafico de linhas, a temperatura media registrada em cinco dias foi 20, 22, 19, 23 e 21 graus. Se fosse construido um grafico de colunas com os mesmos dados, a media dessas temperaturas permaneceria",
+      "enunciado": "Em um gráfico de linhas, a temperatura média registrada em cinco dias foi 20, 22, 19, 23 e 21 graus. Se fosse construido um gráfico de colunas com os mesmos dados, a média dessas temperaturas permaneceria",
       "opcoes": [
         "19",
         "20",
@@ -766,7 +766,7 @@ export const estatistica = {
         "22"
       ],
       "correta": "21",
-      "comentario": "A representacao grafica nao altera os dados. A media e (20 + 22 + 19 + 23 + 21) / 5 = 105 / 5 = 21.",
+      "comentario": "A representacao grafica não altera os dados. A média é (20 + 22 + 19 + 23 + 21) / 5 = 105 / 5 = 21.",
       "tempoEstimado": 50,
       "tags": [
         "estatistica",
@@ -790,9 +790,9 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Distribuicao de frequencia",
+      "subtopico": "Distribuição de frequência",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
@@ -829,22 +829,22 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Analise de dados",
+      "subtopico": "Análise de dados",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Dois conjuntos de dados possuem a mesma media aritmetica. O conjunto A e formado por 10, 10, 10, 10 e 10. O conjunto B e formado por 6, 8, 10, 12 e 14. Comparando-os, e correto afirmar que",
+      "enunciado": "Dois conjuntos de dados possuem a mesma média aritmetica. O conjunto A e formado por 10, 10, 10, 10 e 10. O conjunto B e formado por 6, 8, 10, 12 e 14. Comparando-os, e correto afirmar que",
       "opcoes": [
         "o conjunto B tem maior dispersao",
-        "ambos possuem o mesmo desvio, pois a media e igual",
+        "ambos possuem o mesmo desvio, pois a média é igual",
         "o conjunto A tem maior dispersao",
-        "nao e possivel comparar sem a moda"
+        "não é possível comparar sem a moda"
       ],
       "correta": "o conjunto B tem maior dispersao",
-      "comentario": "Nos dois conjuntos, a media e 10. Porem, no conjunto A todos os valores sao iguais, enquanto no conjunto B ha afastamentos em relacao a media. Logo, B apresenta maior dispersao.",
+      "comentario": "Nos dois conjuntos, a média é 10. Porem, no conjunto A todos os valores são iguais, enquanto no conjunto B ha afastamentos em relação a média. Logo, B apresenta maior dispersao.",
       "tempoEstimado": 65,
       "tags": [
         "estatistica",
@@ -868,14 +868,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media aritmetica",
+      "subtopico": "Média aritmetica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A media de 8 numeros e 15. Se sete desses numeros sao 10, 12, 14, 15, 16, 18 e 20, o oitavo numero vale",
+      "enunciado": "A média de 8 números e 15. Se sete desses números são 10, 12, 14, 15, 16, 18 e 20, o oitavo número vale",
       "opcoes": [
         "13",
         "15",
@@ -883,7 +883,7 @@ export const estatistica = {
         "16"
       ],
       "correta": "15",
-      "comentario": "Se a media de 8 numeros e 15, a soma total deve ser 8 x 15 = 120. A soma dos sete numeros dados e 10 + 12 + 14 + 15 + 16 + 18 + 20 = 105. Portanto, o oitavo numero e 120 - 105 = 15.",
+      "comentario": "Se a média de 8 números e 15, a soma total deve ser 8 x 15 = 120. A soma dos sete números dados e 10 + 12 + 14 + 15 + 16 + 18 + 20 = 105. Portanto, o oitavo número e 120 - 105 = 15.",
       "tempoEstimado": 70,
       "tags": [
         "estatistica",
@@ -907,14 +907,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media ponderada",
+      "subtopico": "Média ponderada",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um processo seletivo atribui peso 2 para a prova objetiva, peso 3 para a redacao e peso 5 para a entrevista. Um candidato obteve notas 70, 80 e 90, respectivamente. Sua nota final foi",
+      "enunciado": "Um processo seletivo atribui peso 2 para a prova objetiva, peso 3 para a redação e peso 5 para a entrevista. Um candidato obteve notas 70, 80 e 90, respectivamente. Sua nota final foi",
       "opcoes": [
         "81",
         "82",
@@ -922,7 +922,7 @@ export const estatistica = {
         "84"
       ],
       "correta": "83",
-      "comentario": "A media ponderada e (70 x 2 + 80 x 3 + 90 x 5) / (2 + 3 + 5) = (140 + 240 + 450) / 10 = 830 / 10 = 83.",
+      "comentario": "A média ponderada e (70 x 2 + 80 x 3 + 90 x 5) / (2 + 3 + 5) = (140 + 240 + 450) / 10 = 830 / 10 = 83.",
       "tempoEstimado": 75,
       "tags": [
         "estatistica",
@@ -946,14 +946,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de tabelas",
+      "subtopico": "Interpretação de tabelas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma tabela mostra a distribuicao das notas de 20 alunos: 5 alunos tiraram 4, 7 alunos tiraram 6, 6 alunos tiraram 8 e 2 alunos tiraram 10. A media da turma e",
+      "enunciado": "Uma tabela mostra a distribuição das notas de 20 alunos: 5 alunos tiraram 4, 7 alunos tiraram 6, 6 alunos tiraram 8 e 2 alunos tiraram 10. A média da turma e",
       "opcoes": [
         "6,2",
         "6,8",
@@ -961,7 +961,7 @@ export const estatistica = {
         "6,5"
       ],
       "correta": "6,5",
-      "comentario": "Calcula-se a media ponderada: (5 x 4 + 7 x 6 + 6 x 8 + 2 x 10) / 20 = (20 + 42 + 48 + 20) / 20 = 130 / 20 = 6,5.",
+      "comentario": "Calcula-se a média ponderada: (5 x 4 + 7 x 6 + 6 x 8 + 2 x 10) / 20 = (20 + 42 + 48 + 20) / 20 = 130 / 20 = 6,5.",
       "tempoEstimado": 80,
       "tags": [
         "estatistica",
@@ -986,22 +986,22 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Analise de dados",
+      "subtopico": "Análise de dados",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma avaliacao, as notas de um grupo foram 2, 4, 6, 8 e 20. A media aritmetica desse grupo fica acima da maior parte das notas porque",
+      "enunciado": "Em uma avaliação, as notas de um grupo foram 2, 4, 6, 8 e 20. A média aritmetica desse grupo fica acima da maior parte das notas porque",
       "opcoes": [
-        "o valor 20 puxa a media para cima",
-        "a moda e muito alta",
-        "a mediana e maior que a media",
-        "todos os valores tem a mesma frequencia"
+        "o valor 20 puxa a média para cima",
+        "a moda é muito alta",
+        "a mediana é maior que a média",
+        "todos os valores tem a mesma frequência"
       ],
-      "correta": "o valor 20 puxa a media para cima",
-      "comentario": "A media e (2 + 4 + 6 + 8 + 20) / 5 = 40 / 5 = 8. O valor 20 e muito superior aos demais e eleva a media, caracterizando influencia de um valor extremo.",
+      "correta": "o valor 20 puxa a média para cima",
+      "comentario": "A média é (2 + 4 + 6 + 8 + 20) / 5 = 40 / 5 = 8. O valor 20 e muito superior aos demais e eleva a média, caracterizando influencia de um valor extremo.",
       "tempoEstimado": 60,
       "tags": [
         "estatistica",
@@ -1025,7 +1025,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Variancia",
       "dificuldadeLabel": "facil",
@@ -1040,7 +1040,7 @@ export const estatistica = {
         "8"
       ],
       "correta": "5",
-      "comentario": "A media e 5. Os desvios ao quadrado sao 9, 1, 1 e 9. A media desses valores e (9+1+1+9)/4 = 20/4 = 5.",
+      "comentario": "A média é 5. Os desvios ao quadrado são 9, 1, 1 e 9. A média desses valores e (9+1+1+9)/4 = 20/4 = 5.",
       "tempoEstimado": 60,
       "tags": [
         "variancia",
@@ -1063,7 +1063,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Desvio padrao",
       "dificuldadeLabel": "facil",
@@ -1101,14 +1101,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de graficos",
+      "subtopico": "Interpretação de gráficos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um grafico indica as vendas de uma loja durante a semana: segunda 10, terca 20, quarta 15, quinta 25 e sexta 30. O dia com valor mais proximo da media semanal e",
+      "enunciado": "Um gráfico indica as vendas de uma loja durante a semana: segunda 10, terca 20, quarta 15, quinta 25 e sexta 30. O dia com valor mais proximo da média semanal e",
       "opcoes": [
         "terca",
         "quinta",
@@ -1116,7 +1116,7 @@ export const estatistica = {
         "quarta"
       ],
       "correta": "quarta",
-      "comentario": "A media e 20. O valor mais proximo e 15 ou 20? O mais proximo e 20 (terca), mas como e igual, o mais proximo diferente e quarta com 15 (distancia 5).",
+      "comentario": "A média é 20. O valor mais proximo e 15 ou 20? O mais proximo e 20 (terca), mas como e igual, o mais proximo diferente e quarta com 15 (distância 5).",
       "tempoEstimado": 60,
       "tags": [
         "interpretacao-de-graficos",
@@ -1139,14 +1139,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Variancia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Dois conjuntos possuem mesma media, mas um apresenta valores muito espalhados. Em relacao a variancia, pode-se afirmar que",
+      "enunciado": "Dois conjuntos possuem mesma média, mas um apresenta valores muito espalhados. Em relação a variancia, pode-se afirmar que",
       "opcoes": [
         "sera maior no conjunto mais disperso",
         "sera menor no conjunto mais disperso",
@@ -1177,22 +1177,22 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma turma teve media 6. Um aluno com nota 10 entrou na turma, aumentando a media. Isso indica que",
+      "enunciado": "Uma turma teve média 6. Um aluno com nota 10 entrou na turma, aumentando a média. Isso indica que",
       "opcoes": [
-        "a media inicial era maior que 6",
-        "a media inicial era menor que 10 e menor que 6",
-        "a media inicial era menor que 10",
-        "a media inicial era menor que 10 e menor que a nova media"
+        "a média inicial era maior que 6",
+        "a média inicial era menor que 10 e menor que 6",
+        "a média inicial era menor que 10",
+        "a média inicial era menor que 10 e menor que a nova média"
       ],
-      "correta": "a media inicial era menor que 10 e menor que 6",
-      "comentario": "Para a media aumentar com a entrada de 10, a media anterior precisava ser menor que 10. Como passou de 6, a anterior era menor que 6.",
+      "correta": "a média inicial era menor que 10 e menor que 6",
+      "comentario": "Para a média aumentar com a entrada de 10, a média anterior precisava ser menor que 10. Como passou de 6, a anterior era menor que 6.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao-indireta",
@@ -1215,22 +1215,22 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Desvio padrao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se todos os valores de um conjunto sao iguais, o desvio padrao desse conjunto e",
+      "enunciado": "Se todos os valores de um conjunto são iguais, o desvio padrao desse conjunto e",
       "opcoes": [
         "1",
-        "igual a media",
+        "igual a média",
         "0",
         "indeterminado"
       ],
       "correta": "0",
-      "comentario": "Nao ha variacao nos dados, logo o desvio padrao e zero.",
+      "comentario": "Não ha variação nos dados, logo o desvio padrao e zero.",
       "tempoEstimado": 40,
       "tags": [
         "desvio-padrao",
@@ -1253,14 +1253,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um conjunto tem media 10. Ao adicionar o numero 10 ao conjunto, a nova media sera",
+      "enunciado": "Um conjunto tem média 10. Ao adicionar o número 10 ao conjunto, a nova média sera",
       "opcoes": [
         "menor que 10",
         "maior que 10",
@@ -1268,7 +1268,7 @@ export const estatistica = {
         "igual a 10"
       ],
       "correta": "igual a 10",
-      "comentario": "Adicionar um valor igual a media nao altera a media do conjunto.",
+      "comentario": "Adicionar um valor igual a média não altera a média do conjunto.",
       "tempoEstimado": 50,
       "tags": [
         "pegadinha",
@@ -1291,14 +1291,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Equivalencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Multiplicar todos os valores de um conjunto por 2 faz com que a media",
+      "enunciado": "Multiplicar todos os valores de um conjunto por 2 faz com que a média",
       "opcoes": [
         "seja multiplicada por 2",
         "permaneça igual",
@@ -1306,7 +1306,7 @@ export const estatistica = {
         "seja somada por 2"
       ],
       "correta": "seja multiplicada por 2",
-      "comentario": "A media acompanha a escala dos dados.",
+      "comentario": "A média acompanha a escala dos dados.",
       "tempoEstimado": 55,
       "tags": [
         "equivalencia",
@@ -1329,7 +1329,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Variancia",
       "dificuldadeLabel": "medio",
@@ -1344,7 +1344,7 @@ export const estatistica = {
         "16"
       ],
       "correta": "8",
-      "comentario": "A media e 5. Os desvios ao quadrado sao 16, 4, 0, 4 e 16. A media e 40/5 = 8.",
+      "comentario": "A média é 5. Os desvios ao quadrado são 16, 4, 0, 4 e 16. A média é 40/5 = 8.",
       "tempoEstimado": 80,
       "tags": [
         "variancia",
@@ -1367,7 +1367,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Desvio padrao",
       "dificuldadeLabel": "medio",
@@ -1405,14 +1405,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de graficos",
+      "subtopico": "Interpretação de gráficos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um grafico mostra a quantidade de alunos aprovados em tres anos consecutivos: 2019 (40), 2020 (50) e 2021 (60). O aumento total no numero de aprovados entre 2019 e 2021 foi de",
+      "enunciado": "Um gráfico mostra a quantidade de alunos aprovados em tres anos consecutivos: 2019 (40), 2020 (50) e 2021 (60). O aumento total no número de aprovados entre 2019 e 2021 foi de",
       "opcoes": [
         "10",
         "15",
@@ -1420,7 +1420,7 @@ export const estatistica = {
         "20"
       ],
       "correta": "20",
-      "comentario": "A diferenca entre 60 e 40 e 20.",
+      "comentario": "A diferença entre 60 e 40 e 20.",
       "tempoEstimado": 40,
       "tags": [
         "interpretacao-de-graficos",
@@ -1443,7 +1443,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Variancia",
       "dificuldadeLabel": "medio",
@@ -1458,7 +1458,7 @@ export const estatistica = {
         "zera"
       ],
       "correta": "permanece a mesma",
-      "comentario": "Adicionar uma constante a todos os valores nao altera a dispersao.",
+      "comentario": "Adicionar uma constante a todos os valores não altera a dispersao.",
       "tempoEstimado": 50,
       "tags": [
         "variancia",
@@ -1481,14 +1481,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Desvio padrao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se os valores de um conjunto sao multiplicados por 3, o desvio padrao desse conjunto",
+      "enunciado": "Se os valores de um conjunto são multiplicados por 3, o desvio padrao desse conjunto",
       "opcoes": [
         "permanece igual",
         "triplica",
@@ -1519,14 +1519,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma turma teve media 7. Ao retirar um aluno com nota muito baixa, a nova media aumentou. Isso indica que a nota retirada era",
+      "enunciado": "Uma turma teve média 7. Ao retirar um aluno com nota muito baixa, a nova média aumentou. Isso indica que a nota retirada era",
       "opcoes": [
         "igual a 7",
         "maior que 7",
@@ -1534,7 +1534,7 @@ export const estatistica = {
         "igual a 10"
       ],
       "correta": "menor que 7",
-      "comentario": "Retirar um valor abaixo da media faz a media aumentar.",
+      "comentario": "Retirar um valor abaixo da média faz a média aumentar.",
       "tempoEstimado": 60,
       "tags": [
         "interpretacao-indireta",
@@ -1557,14 +1557,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma turma possui media 8. Se todos os alunos tirarem exatamente 8 na proxima prova, a nova media sera",
+      "enunciado": "Uma turma possui média 8. Se todos os alunos tirarem exatamente 8 na proxima prova, a nova média sera",
       "opcoes": [
         "maior que 8",
         "menor que 8",
@@ -1572,7 +1572,7 @@ export const estatistica = {
         "igual a 8"
       ],
       "correta": "igual a 8",
-      "comentario": "Se todos os novos valores sao iguais a media, ela permanece a mesma.",
+      "comentario": "Se todos os novos valores são iguais a média, ela permanece a mesma.",
       "tempoEstimado": 50,
       "tags": [
         "pegadinha",
@@ -1595,7 +1595,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Equivalencia",
       "dificuldadeLabel": "medio",
@@ -1633,14 +1633,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de tabelas",
+      "subtopico": "Interpretação de tabelas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma tabela indica que uma empresa produziu 200, 220 e 260 unidades em tres meses. O mes com producao mais proxima da media foi",
+      "enunciado": "Uma tabela indica que uma empresa produziu 200, 220 e 260 unidades em tres meses. O mes com produção mais proxima da média foi",
       "opcoes": [
         "200",
         "220",
@@ -1648,7 +1648,7 @@ export const estatistica = {
         "todos igualmente proximos"
       ],
       "correta": "220",
-      "comentario": "A media e 680/3 ≈ 226,7. O valor mais proximo e 220.",
+      "comentario": "A média é 680/3 ≈ 226,7. O valor mais proximo e 220.",
       "tempoEstimado": 55,
       "tags": [
         "interpretacao-de-tabelas",
@@ -1671,14 +1671,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Distribuicao de frequencia",
+      "subtopico": "Distribuição de frequência",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um grupo de 100 pessoas, 45% preferem cafe. Quantas pessoas nao preferem cafe?",
+      "enunciado": "Em um grupo de 100 pessoas, 45% preferem cafe. Quantas pessoas não preferem cafe?",
       "opcoes": [
         "45",
         "50",
@@ -1686,7 +1686,7 @@ export const estatistica = {
         "60"
       ],
       "correta": "55",
-      "comentario": "100 - 45 = 55 pessoas nao preferem cafe.",
+      "comentario": "100 - 45 = 55 pessoas não preferem cafe.",
       "tempoEstimado": 40,
       "tags": [
         "distribuicao-de-frequencia",
@@ -1709,21 +1709,21 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Analise de dados",
+      "subtopico": "Análise de dados",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Dois conjuntos possuem a mesma media, mas um possui maior desvio padrao. Isso significa que",
+      "enunciado": "Dois conjuntos possuem a mesma média, mas um possui maior desvio padrao. Isso significa que",
       "opcoes": [
-        "os dados sao mais concentrados",
-        "os dados sao iguais",
-        "a media esta errada",
-        "os dados sao mais dispersos"
+        "os dados são mais concentrados",
+        "os dados são iguais",
+        "a média esta errada",
+        "os dados são mais dispersos"
       ],
-      "correta": "os dados sao mais dispersos",
+      "correta": "os dados são mais dispersos",
       "comentario": "Maior desvio padrao indica maior espalhamento dos dados.",
       "tempoEstimado": 50,
       "tags": [
@@ -1747,7 +1747,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Variancia",
       "dificuldadeLabel": "medio",
@@ -1762,7 +1762,7 @@ export const estatistica = {
         "9"
       ],
       "correta": "0",
-      "comentario": "Nao ha variacao entre os dados.",
+      "comentario": "Não ha variação entre os dados.",
       "tempoEstimado": 60,
       "tags": [
         "variancia",
@@ -1785,7 +1785,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Desvio padrao",
       "dificuldadeLabel": "medio",
@@ -1800,7 +1800,7 @@ export const estatistica = {
         "10"
       ],
       "correta": "0",
-      "comentario": "Todos os valores sao iguais, portanto nao ha dispersao.",
+      "comentario": "Todos os valores são iguais, portanto não ha dispersao.",
       "tempoEstimado": 40,
       "tags": [
         "desvio-padrao",
@@ -1823,14 +1823,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de graficos",
+      "subtopico": "Interpretação de gráficos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um grafico apresenta as vendas mensais: 100, 120, 140 e 160 unidades. A media dessas vendas e",
+      "enunciado": "Um gráfico apresenta as vendas mensais: 100, 120, 140 e 160 unidades. A média dessas vendas e",
       "opcoes": [
         "120",
         "140",
@@ -1838,7 +1838,7 @@ export const estatistica = {
         "150"
       ],
       "correta": "130",
-      "comentario": "A media e (100 + 120 + 140 + 160)/4 = 520/4 = 130.",
+      "comentario": "A média é (100 + 120 + 140 + 160)/4 = 520/4 = 130.",
       "tempoEstimado": 45,
       "tags": [
         "interpretacao-de-graficos",
@@ -1861,14 +1861,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A media de um conjunto e 12. Ao adicionar um valor 6, a media diminui. Isso indica que o tamanho inicial do conjunto era",
+      "enunciado": "A média de um conjunto e 12. Ao adicionar um valor 6, a média diminui. Isso indica que o tamanho inicial do conjunto era",
       "opcoes": [
         "1",
         "2",
@@ -1876,7 +1876,7 @@ export const estatistica = {
         "maior que 1"
       ],
       "correta": "maior que 1",
-      "comentario": "Se fosse apenas 1 valor, a media seria esse valor. Como a media mudou, havia mais de um valor.",
+      "comentario": "Se fosse apenas 1 valor, a média seria esse valor. Como a média mudou, havia mais de um valor.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao-indireta",
@@ -1899,14 +1899,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Equivalencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Subtrair 3 de todos os valores de um conjunto faz com que a media",
+      "enunciado": "Subtrair 3 de todos os valores de um conjunto faz com que a média",
       "opcoes": [
         "diminua em 3",
         "permaneça igual",
@@ -1914,7 +1914,7 @@ export const estatistica = {
         "zere"
       ],
       "correta": "diminua em 3",
-      "comentario": "A media acompanha a transformacao linear aplicada aos dados.",
+      "comentario": "A média acompanha a transformacao linear aplicada aos dados.",
       "tempoEstimado": 50,
       "tags": [
         "equivalencia",
@@ -1937,14 +1937,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um conjunto possui media 10. Ao duplicar todos os valores, a nova media sera",
+      "enunciado": "Um conjunto possui média 10. Ao duplicar todos os valores, a nova média sera",
       "opcoes": [
         "5",
         "20",
@@ -1952,7 +1952,7 @@ export const estatistica = {
         "15"
       ],
       "correta": "20",
-      "comentario": "Multiplicar todos os valores por 2 multiplica a media por 2.",
+      "comentario": "Multiplicar todos os valores por 2 multiplica a média por 2.",
       "tempoEstimado": 60,
       "tags": [
         "pegadinha",
@@ -1975,14 +1975,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media aritmetica",
+      "subtopico": "Média aritmetica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Um aluno obteve as notas 5, 7 e 9. Qual e a media aritmetica dessas notas?",
+      "enunciado": "Um aluno obteve as notas 5, 7 e 9. Qual é a média aritmetica dessas notas?",
       "opcoes": [
         "6",
         "7,5",
@@ -1990,7 +1990,7 @@ export const estatistica = {
         "8"
       ],
       "correta": "7",
-      "comentario": "A media e (5 + 7 + 9)/3 = 21/3 = 7.",
+      "comentario": "A média é (5 + 7 + 9)/3 = 21/3 = 7.",
       "tempoEstimado": 25,
       "tags": [
         "media-aritmetica",
@@ -2013,14 +2013,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media ponderada",
+      "subtopico": "Média ponderada",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma avaliacao possui pesos 1 e 2. Um aluno tirou 6 e 8. A media ponderada e",
+      "enunciado": "Uma avaliação possui pesos 1 e 2. Um aluno tirou 6 e 8. A média ponderada e",
       "opcoes": [
         "6,5",
         "7",
@@ -2028,7 +2028,7 @@ export const estatistica = {
         "7,3"
       ],
       "correta": "7,3",
-      "comentario": "A media ponderada e (6x1 + 8x2)/3 = 22/3 ≈ 7,3.",
+      "comentario": "A média ponderada e (6x1 + 8x2)/3 = 22/3 ≈ 7,3.",
       "tempoEstimado": 30,
       "tags": [
         "media-ponderada",
@@ -2051,7 +2051,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Mediana",
       "dificuldadeLabel": "medio",
@@ -2089,14 +2089,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Moda",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a moda do conjunto 2, 2, 3, 4, 4, 4, 5?",
+      "enunciado": "Qual é a moda do conjunto 2, 2, 3, 4, 4, 4, 5?",
       "opcoes": [
         "2",
         "4",
@@ -2127,14 +2127,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Distribuicao de frequencia",
+      "subtopico": "Distribuição de frequência",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um grupo de 20 pessoas, 25% sao criancas. Quantas criancas ha no grupo?",
+      "enunciado": "Em um grupo de 20 pessoas, 25% são criancas. Quantas criancas ha no grupo?",
       "opcoes": [
         "4",
         "6",
@@ -2165,9 +2165,9 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de tabelas",
+      "subtopico": "Interpretação de tabelas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "interpretacao",
@@ -2203,19 +2203,19 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Analise de dados",
+      "subtopico": "Análise de dados",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um grupo possui media 8 e outro media 6. Qual possui maior desempenho medio?",
+      "enunciado": "Um grupo possui média 8 e outro média 6. Qual possui maior desempenho medio?",
       "opcoes": [
         "grupo 1",
         "grupo 2",
         "iguais",
-        "nao se sabe"
+        "não se sabe"
       ],
       "correta": "grupo 1",
       "comentario": "8 e maior que 6. Logo, a resposta correta ? grupo 1.",
@@ -2241,14 +2241,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media aritmetica",
+      "subtopico": "Média aritmetica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A media de 3 numeros e 12. Dois deles sao 10 e 14. O terceiro numero e",
+      "enunciado": "A média de 3 números e 12. Dois deles são 10 e 14. O terceiro número e",
       "opcoes": [
         "10",
         "12",
@@ -2279,14 +2279,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media ponderada",
+      "subtopico": "Média ponderada",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Pesos 2 e 3 com notas 5 e 9. Media ponderada?",
+      "enunciado": "Pesos 2 e 3 com notas 5 e 9. Média ponderada?",
       "opcoes": [
         "6,5",
         "7,0",
@@ -2316,7 +2316,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Mediana",
       "dificuldadeLabel": "medio",
@@ -2353,19 +2353,19 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Moda",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa sobre tamanhos de camiseta, os resultados foram P, M, M, G, M, P, G, M. A moda dessa distribuicao e",
+      "enunciado": "Em uma pesquisa sobre tamanhos de camiseta, os resultados foram P, M, M, G, M, P, G, M. A moda dessa distribuição é",
       "opcoes": [
         "M",
         "P",
         "G",
-        "nao existe moda"
+        "não existe moda"
       ],
       "correta": "M",
       "comentario": "A categoria M aparece 4 vezes, sendo a mais frequente.",
@@ -2391,14 +2391,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de tabelas",
+      "subtopico": "Interpretação de tabelas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma tabela apresenta a producao de uma maquina em 4 dias: 18, 20, 16 e 26 pecas. A media diaria de producao foi",
+      "enunciado": "Uma tabela apresenta a produção de uma maquina em 4 dias: 18, 20, 16 e 26 pecas. A média diaria de produção foi",
       "opcoes": [
         "19",
         "20",
@@ -2406,7 +2406,7 @@ export const estatistica = {
         "22"
       ],
       "correta": "20",
-      "comentario": "A media e (18 + 20 + 16 + 26) / 4 = 80 / 4 = 20.",
+      "comentario": "A média é (18 + 20 + 16 + 26) / 4 = 80 / 4 = 20.",
       "tempoEstimado": 40,
       "tags": [
         "interpretacao-de-tabelas",
@@ -2429,9 +2429,9 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Distribuicao de frequencia",
+      "subtopico": "Distribuição de frequência",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
@@ -2444,7 +2444,7 @@ export const estatistica = {
         "14"
       ],
       "correta": "10",
-      "comentario": "Os que preferem a noite sao 30 - 12 - 8 = 10.",
+      "comentario": "Os que preferem a noite são 30 - 12 - 8 = 10.",
       "tempoEstimado": 40,
       "tags": [
         "distribuicao-de-frequencia",
@@ -2467,9 +2467,9 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media aritmetica",
+      "subtopico": "Média aritmetica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "aplicacao",
@@ -2482,7 +2482,7 @@ export const estatistica = {
         "14"
       ],
       "correta": "14",
-      "comentario": "A media e (14 + 13 + 15 + 12 + 16) / 5 = 70 / 5 = 14.",
+      "comentario": "A média é (14 + 13 + 15 + 12 + 16) / 5 = 70 / 5 = 14.",
       "tempoEstimado": 45,
       "tags": [
         "media-aritmetica",
@@ -2505,14 +2505,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media ponderada",
+      "subtopico": "Média ponderada",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um curso, a nota final e calculada por media ponderada com pesos 1, 2 e 3. Um aluno obteve notas 5, 7 e 8. Sua media final foi",
+      "enunciado": "Em um curso, a nota final e calculada por média ponderada com pesos 1, 2 e 3. Um aluno obteve notas 5, 7 e 8. Sua média final foi",
       "opcoes": [
         "7,2",
         "6,8",
@@ -2520,7 +2520,7 @@ export const estatistica = {
         "7,5"
       ],
       "correta": "7,2",
-      "comentario": "A media ponderada e (5x1 + 7x2 + 8x3) / 6 = (5 + 14 + 24) / 6 = 43 / 6 = 7,166..., aproximadamente 7,2.",
+      "comentario": "A média ponderada e (5x1 + 7x2 + 8x3) / 6 = (5 + 14 + 24) / 6 = 43 / 6 = 7,166..., aproximadamente 7,2.",
       "tempoEstimado": 55,
       "tags": [
         "media-ponderada",
@@ -2543,14 +2543,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Mediana",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Os salarios, em milhares de reais, de cinco funcionarios sao 2, 3, 3, 4 e 10. A mediana desses salarios e",
+      "enunciado": "Os salarios, em milhares de reais, de cinco funcionários são 2, 3, 3, 4 e 10. A mediana desses salarios e",
       "opcoes": [
         "3,5",
         "3",
@@ -2581,14 +2581,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Moda",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No conjunto 1, 2, 2, 3, 3, 4, a classificacao correta quanto a moda e",
+      "enunciado": "No conjunto 1, 2, 2, 3, 3, 4, a classificacao correta quanto a moda é",
       "opcoes": [
         "amodal",
         "unimodal",
@@ -2596,7 +2596,7 @@ export const estatistica = {
         "trimodal"
       ],
       "correta": "bimodal",
-      "comentario": "Os valores 2 e 3 aparecem com a maior frequencia, ambos 2 vezes.",
+      "comentario": "Os valores 2 e 3 aparecem com a maior frequência, ambos 2 vezes.",
       "tempoEstimado": 45,
       "tags": [
         "moda",
@@ -2619,14 +2619,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de tabelas",
+      "subtopico": "Interpretação de tabelas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma tabela mostra o numero de faltas de quatro alunos no mes: 2, 4, 1 e 5. O aluno com maior afastamento da media de faltas apresentou diferenca de",
+      "enunciado": "Uma tabela mostra o número de faltas de quatro alunos no mes: 2, 4, 1 e 5. O aluno com maior afastamento da média de faltas apresentou diferença de",
       "opcoes": [
         "2",
         "3",
@@ -2634,7 +2634,7 @@ export const estatistica = {
         "2,5"
       ],
       "correta": "2,5",
-      "comentario": "A media e (2 + 4 + 1 + 5) / 4 = 3. As diferencas em relacao a media sao 1, 1, 2 e 2. O maior afastamento e 2. Como a pergunta fala em diferenca absoluta entre 5 e 2,5? Nao. O correto e usar a media 3. Maior diferenca absoluta = 2.",
+      "comentario": "A média é (2 + 4 + 1 + 5) / 4 = 3. As diferencas em relação a média são 1, 1, 2 e 2. O maior afastamento e 2. Como a pergunta fala em diferença absoluta entre 5 e 2,5? Não. O correto e usar a média 3. Maior diferença absoluta = 2.",
       "tempoEstimado": 55,
       "tags": [
         "interpretacao-de-tabelas",
@@ -2657,14 +2657,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Distribuicao de frequencia",
+      "subtopico": "Distribuição de frequência",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa, 18 pessoas escolheram a opcao A, 12 escolheram a opcao B e 10 a opcao C. A frequencia relativa da opcao A, em porcentagem, foi",
+      "enunciado": "Em uma pesquisa, 18 pessoas escolheram a opcao A, 12 escolheram a opcao B e 10 a opcao C. A frequência relativa da opcao A, em porcentagem, foi",
       "opcoes": [
         "45%",
         "18%",
@@ -2672,7 +2672,7 @@ export const estatistica = {
         "40%"
       ],
       "correta": "45%",
-      "comentario": "O total e 18 + 12 + 10 = 40. A frequencia relativa de A e 18/40 = 0,45 = 45%.",
+      "comentario": "O total e 18 + 12 + 10 = 40. A frequência relativa de A e 18/40 = 0,45 = 45%.",
       "tempoEstimado": 50,
       "tags": [
         "distribuicao-de-frequencia",
@@ -2695,21 +2695,21 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Analise de dados",
+      "subtopico": "Análise de dados",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Duas turmas tiveram media 7 na mesma prova. A turma X teve desvio padrao menor que a turma Y. Isso indica que os resultados da turma X foram",
+      "enunciado": "Duas turmas tiveram média 7 na mesma prova. A turma X teve desvio padrao menor que a turma Y. Isso indica que os resultados da turma X foram",
       "opcoes": [
         "mais dispersos",
-        "mais concentrados em torno da media",
+        "mais concentrados em torno da média",
         "necessariamente maiores",
         "necessariamente menores"
       ],
-      "correta": "mais concentrados em torno da media",
+      "correta": "mais concentrados em torno da média",
       "comentario": "Menor desvio padrao indica menor dispersao dos resultados.",
       "tempoEstimado": 50,
       "tags": [
@@ -2733,14 +2733,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media aritmetica",
+      "subtopico": "Média aritmetica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A media de 6 numeros e 11. Cinco deles sao 8, 10, 11, 13 e 14. O sexto numero e",
+      "enunciado": "A média de 6 números e 11. Cinco deles são 8, 10, 11, 13 e 14. O sexto número e",
       "opcoes": [
         "9",
         "11",
@@ -2748,7 +2748,7 @@ export const estatistica = {
         "12"
       ],
       "correta": "10",
-      "comentario": "A soma total deve ser 6 x 11 = 66. A soma dos cinco numeros conhecidos e 56. Logo, o sexto numero e 10.",
+      "comentario": "A soma total deve ser 6 x 11 = 66. A soma dos cinco números conhecidos e 56. Logo, o sexto número e 10.",
       "tempoEstimado": 55,
       "tags": [
         "media-aritmetica",
@@ -2771,14 +2771,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media ponderada",
+      "subtopico": "Média ponderada",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante teve notas 4, 6 e 9 com pesos 1, 2 e 2, respectivamente. A media ponderada obtida foi",
+      "enunciado": "Um estudante teve notas 4, 6 e 9 com pesos 1, 2 e 2, respectivamente. A média ponderada obtida foi",
       "opcoes": [
         "6,4",
         "7",
@@ -2786,7 +2786,7 @@ export const estatistica = {
         "6,8"
       ],
       "correta": "6,8",
-      "comentario": "A media ponderada e (4x1 + 6x2 + 9x2) / 5 = (4 + 12 + 18) / 5 = 34 / 5 = 6,8.",
+      "comentario": "A média ponderada e (4x1 + 6x2 + 9x2) / 5 = (4 + 12 + 18) / 5 = 34 / 5 = 6,8.",
       "tempoEstimado": 55,
       "tags": [
         "media-ponderada",
@@ -2809,7 +2809,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Mediana",
       "dificuldadeLabel": "medio",
@@ -2847,14 +2847,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de graficos",
+      "subtopico": "Interpretação de gráficos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um grafico de colunas, as vendas de uma loja em quatro meses foram 30, 45, 35 e 50 unidades. A diferenca entre a media mensal e o maior valor registrado e",
+      "enunciado": "Em um gráfico de colunas, as vendas de uma loja em quatro meses foram 30, 45, 35 e 50 unidades. A diferença entre a média mensal e o maior valor registrado e",
       "opcoes": [
         "7,5",
         "12,5",
@@ -2862,7 +2862,7 @@ export const estatistica = {
         "15"
       ],
       "correta": "12,5",
-      "comentario": "A media e (30 + 45 + 35 + 50) / 4 = 160 / 4 = 40. A diferenca entre 50 e 40 e 10. Logo, a resposta correta deveria ser 10.",
+      "comentario": "A média é (30 + 45 + 35 + 50) / 4 = 160 / 4 = 40. A diferença entre 50 e 40 e 10. Logo, a resposta correta deveria ser 10.",
       "tempoEstimado": 55,
       "tags": [
         "interpretacao-de-graficos",
@@ -2885,22 +2885,22 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Analise de dados",
+      "subtopico": "Análise de dados",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Dois conjuntos possuem a mesma media e a mesma mediana, mas diferentes desvios padrao. Isso mostra que",
+      "enunciado": "Dois conjuntos possuem a mesma média é a mesma mediana, mas diferentes desvios padrao. Isso mostra que",
       "opcoes": [
-        "os conjuntos sao iguais",
+        "os conjuntos são iguais",
         "os conjuntos tem a mesma dispersao",
-        "as medidas de tendencia central nao descrevem toda a distribuicao",
-        "a media e inutil para comparacoes"
+        "as medidas de tendencia central não descrevem toda a distribuição",
+        "a média é inutil para comparacoes"
       ],
-      "correta": "as medidas de tendencia central nao descrevem toda a distribuicao",
-      "comentario": "Mesmo com media e mediana iguais, a dispersao pode ser diferente. Por isso, outras medidas tambem sao importantes.",
+      "correta": "as medidas de tendencia central não descrevem toda a distribuição",
+      "comentario": "Mesmo com média é mediana iguais, a dispersao pode ser diferente. Por isso, outras medidas também são importantes.",
       "tempoEstimado": 70,
       "tags": [
         "analise-de-dados",
@@ -2923,14 +2923,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de graficos",
+      "subtopico": "Interpretação de gráficos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um grafico de barras mostra as quantidades 8, 12, 6 e 14. O maior valor representado no grafico e",
+      "enunciado": "Um gráfico de barras mostra as quantidades 8, 12, 6 e 14. O maior valor representado no gráfico e",
       "opcoes": [
         "6",
         "8",
@@ -2961,14 +2961,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de tabelas",
+      "subtopico": "Interpretação de tabelas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma tabela registra os numeros 9, 11, 13 e 7. O menor valor observado e",
+      "enunciado": "Uma tabela registra os números 9, 11, 13 e 7. O menor valor observado e",
       "opcoes": [
         "7",
         "9",
@@ -2999,7 +2999,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Variancia",
       "dificuldadeLabel": "medio",
@@ -3014,7 +3014,7 @@ export const estatistica = {
         "4"
       ],
       "correta": "8/3",
-      "comentario": "A media e 6. Os desvios ao quadrado sao 4, 0 e 4. A variancia populacional e (4 + 0 + 4) / 3 = 8/3.",
+      "comentario": "A média é 6. Os desvios ao quadrado são 4, 0 e 4. A variancia populacional e (4 + 0 + 4) / 3 = 8/3.",
       "tempoEstimado": 65,
       "tags": [
         "variancia",
@@ -3037,7 +3037,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Desvio padrao",
       "dificuldadeLabel": "medio",
@@ -3075,22 +3075,22 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Analise de dados",
+      "subtopico": "Análise de dados",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Os conjuntos A = {4, 4, 4, 4} e B = {2, 4, 4, 6} possuem a mesma media. Comparando-os, e correto afirmar que",
+      "enunciado": "Os conjuntos A = {4, 4, 4, 4} e B = {2, 4, 4, 6} possuem a mesma média. Comparando-os, e correto afirmar que",
       "opcoes": [
         "o conjunto A tem maior dispersao",
         "os dois tem a mesma dispersao",
-        "o conjunto B tem media maior",
+        "o conjunto B tem média maior",
         "o conjunto B tem maior dispersao"
       ],
       "correta": "o conjunto B tem maior dispersao",
-      "comentario": "No conjunto A, todos os valores sao iguais. No conjunto B, ha variacao em torno da media.",
+      "comentario": "No conjunto A, todos os valores são iguais. No conjunto B, ha variação em torno da média.",
       "tempoEstimado": 55,
       "tags": [
         "analise-de-dados",
@@ -3113,7 +3113,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Equivalencia",
       "dificuldadeLabel": "medio",
@@ -3151,22 +3151,22 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A media de uma turma era 6,5. Depois da revisao de uma prova, apenas uma nota foi aumentada e a nova media passou a 6,7. Isso permite concluir que",
+      "enunciado": "A média de uma turma era 6,5. Depois da revisao de uma prova, apenas uma nota foi aumentada e a nova média passou a 6,7. Isso permite concluir que",
       "opcoes": [
         "a nota alterada era maior que 6,7 antes da revisao",
         "a soma das notas da turma aumentou",
-        "o numero de alunos diminuiu",
-        "a mediana tambem aumentou necessariamente"
+        "o número de alunos diminuiu",
+        "a mediana também aumentou necessariamente"
       ],
       "correta": "a soma das notas da turma aumentou",
-      "comentario": "Se a media aumentou e a quantidade de alunos permaneceu a mesma, entao a soma das notas tambem aumentou.",
+      "comentario": "Se a média aumentou e a quantidade de alunos permaneceu a mesma, entao a soma das notas também aumentou.",
       "tempoEstimado": 60,
       "tags": [
         "interpretacao-indireta",
@@ -3189,7 +3189,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "medio",
@@ -3200,11 +3200,11 @@ export const estatistica = {
       "opcoes": [
         "necessariamente aumenta",
         "necessariamente permanece igual",
-        "pode ou nao se alterar, dependendo da posicao relativa dos dados",
+        "pode ou não se alterar, dependendo da posicao relativa dos dados",
         "sempre dobra"
       ],
-      "correta": "pode ou nao se alterar, dependendo da posicao relativa dos dados",
-      "comentario": "A mediana depende da ordem e da quantidade de elementos. Adicionar um valor alto nao garante, por si so, uma alteracao especifica.",
+      "correta": "pode ou não se alterar, dependendo da posicao relativa dos dados",
+      "comentario": "A mediana depende da ordem e da quantidade de elementos. Adicionar um valor alto não garante, por si so, uma alteracao especifica.",
       "tempoEstimado": 65,
       "tags": [
         "pegadinha",
@@ -3227,7 +3227,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Variancia",
       "dificuldadeLabel": "medio",
@@ -3242,7 +3242,7 @@ export const estatistica = {
         "32/3"
       ],
       "correta": "32/3",
-      "comentario": "A media e 5. Os desvios ao quadrado sao 16, 0 e 16. A variancia populacional e (16 + 0 + 16) / 3 = 32/3.",
+      "comentario": "A média é 5. Os desvios ao quadrado são 16, 0 e 16. A variancia populacional e (16 + 0 + 16) / 3 = 32/3.",
       "tempoEstimado": 75,
       "tags": [
         "variancia",
@@ -3265,7 +3265,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Desvio padrao",
       "dificuldadeLabel": "medio",
@@ -3303,14 +3303,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de graficos",
+      "subtopico": "Interpretação de gráficos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um grafico de barras apresenta as quantidades 12, 18, 15 e 9. A maior quantidade representada e",
+      "enunciado": "Um gráfico de barras apresenta as quantidades 12, 18, 15 e 9. A maior quantidade representada e",
       "opcoes": [
         "9",
         "18",
@@ -3318,7 +3318,7 @@ export const estatistica = {
         "15"
       ],
       "correta": "18",
-      "comentario": "Basta identificar o maior valor entre os dados mostrados no grafico.",
+      "comentario": "Basta identificar o maior valor entre os dados mostrados no gráfico.",
       "tempoEstimado": 20,
       "tags": [
         "interpretacao-de-graficos",
@@ -3341,9 +3341,9 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de tabelas",
+      "subtopico": "Interpretação de tabelas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
@@ -3379,14 +3379,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media aritmetica",
+      "subtopico": "Média aritmetica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "As temperaturas registradas em tres dias foram 24, 27 e 30 graus. A media dessas temperaturas foi",
+      "enunciado": "As temperaturas registradas em tres dias foram 24, 27 e 30 graus. A média dessas temperaturas foi",
       "opcoes": [
         "25",
         "26",
@@ -3394,7 +3394,7 @@ export const estatistica = {
         "27"
       ],
       "correta": "27",
-      "comentario": "A media aritmetica e (24 + 27 + 30) / 3 = 81 / 3 = 27.",
+      "comentario": "A média aritmetica e (24 + 27 + 30) / 3 = 81 / 3 = 27.",
       "tempoEstimado": 25,
       "tags": [
         "media-aritmetica",
@@ -3417,9 +3417,9 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Distribuicao de frequencia",
+      "subtopico": "Distribuição de frequência",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
@@ -3455,14 +3455,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Moda",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No conjunto 7, 8, 8, 9, 10, 8, 11, a moda e",
+      "enunciado": "No conjunto 7, 8, 8, 9, 10, 8, 11, a moda é",
       "opcoes": [
         "7",
         "8",
@@ -3493,14 +3493,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media ponderada",
+      "subtopico": "Média ponderada",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma disciplina, um trabalho tem peso 2 e uma prova tem peso 3. Um aluno tirou 7 no trabalho e 5 na prova. A media ponderada foi",
+      "enunciado": "Em uma disciplina, um trabalho tem peso 2 e uma prova tem peso 3. Um aluno tirou 7 no trabalho e 5 na prova. A média ponderada foi",
       "opcoes": [
         "5,6",
         "6",
@@ -3508,7 +3508,7 @@ export const estatistica = {
         "6,2"
       ],
       "correta": "5,8",
-      "comentario": "A media ponderada e (7 x 2 + 5 x 3) / 5 = (14 + 15) / 5 = 29 / 5 = 5,8.",
+      "comentario": "A média ponderada e (7 x 2 + 5 x 3) / 5 = (14 + 15) / 5 = 29 / 5 = 5,8.",
       "tempoEstimado": 45,
       "tags": [
         "media-ponderada",
@@ -3531,14 +3531,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Mediana",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Considere o conjunto 12, 7, 10, 5 e 9. A mediana e",
+      "enunciado": "Considere o conjunto 12, 7, 10, 5 e 9. A mediana é",
       "opcoes": [
         "7",
         "8",
@@ -3569,14 +3569,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media aritmetica",
+      "subtopico": "Média aritmetica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A media de 5 numeros e 14. Se quatro deles sao 10, 12, 15 e 18, o quinto numero e",
+      "enunciado": "A média de 5 números e 14. Se quatro deles são 10, 12, 15 e 18, o quinto número e",
       "opcoes": [
         "15",
         "13",
@@ -3607,14 +3607,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de tabelas",
+      "subtopico": "Interpretação de tabelas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma tabela mostra a quantidade de livros lidos por quatro alunos em um mes: 2, 5, 3 e 6. A media de livros lidos por aluno foi",
+      "enunciado": "Uma tabela mostra a quantidade de livros lidos por quatro alunos em um mes: 2, 5, 3 e 6. A média de livros lidos por aluno foi",
       "opcoes": [
         "3",
         "4",
@@ -3622,7 +3622,7 @@ export const estatistica = {
         "5"
       ],
       "correta": "4",
-      "comentario": "A media e (2 + 5 + 3 + 6) / 4 = 16 / 4 = 4.",
+      "comentario": "A média é (2 + 5 + 3 + 6) / 4 = 16 / 4 = 4.",
       "tempoEstimado": 40,
       "tags": [
         "interpretacao-de-tabelas",
@@ -3645,14 +3645,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de graficos",
+      "subtopico": "Interpretação de gráficos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um grafico de colunas registra as vendas de uma loja em quatro dias: 14, 18, 11 e 17 unidades. A amplitude desses dados e",
+      "enunciado": "Um gráfico de colunas registra as vendas de uma loja em quatro dias: 14, 18, 11 e 17 unidades. A amplitude desses dados e",
       "opcoes": [
         "4",
         "6",
@@ -3660,7 +3660,7 @@ export const estatistica = {
         "8"
       ],
       "correta": "7",
-      "comentario": "A amplitude e a diferenca entre o maior e o menor valor: 18 - 11 = 7.",
+      "comentario": "A amplitude e a diferença entre o maior e o menor valor: 18 - 11 = 7.",
       "tempoEstimado": 45,
       "tags": [
         "interpretacao-de-graficos",
@@ -3683,14 +3683,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Analise de dados",
+      "subtopico": "Análise de dados",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Dois grupos apresentaram medias iguais a 12. O grupo A tem desvio padrao menor que o grupo B. Isso indica que os dados do grupo A sao",
+      "enunciado": "Dois grupos apresentaram medias iguais a 12. O grupo A tem desvio padrao menor que o grupo B. Isso indica que os dados do grupo A são",
       "opcoes": [
         "mais dispersos",
         "necessariamente maiores",
@@ -3698,7 +3698,7 @@ export const estatistica = {
         "mais concentrados"
       ],
       "correta": "mais concentrados",
-      "comentario": "Menor desvio padrao indica menor dispersao em torno da media.",
+      "comentario": "Menor desvio padrao indica menor dispersao em torno da média.",
       "tempoEstimado": 50,
       "tags": [
         "analise-de-dados",
@@ -3721,14 +3721,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Distribuicao de frequencia",
+      "subtopico": "Distribuição de frequência",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa com 50 pessoas, 15 preferem a opcao A, 20 preferem a opcao B e as demais preferem a opcao C. A frequencia relativa da opcao C e",
+      "enunciado": "Em uma pesquisa com 50 pessoas, 15 preferem a opcao A, 20 preferem a opcao B e as demais preferem a opcao C. A frequência relativa da opcao C e",
       "opcoes": [
         "30%",
         "15%",
@@ -3736,7 +3736,7 @@ export const estatistica = {
         "35%"
       ],
       "correta": "30%",
-      "comentario": "As pessoas que preferem C sao 50 - 15 - 20 = 15. Logo, a frequencia relativa e 15/50 = 30%.",
+      "comentario": "As pessoas que preferem C são 50 - 15 - 20 = 15. Logo, a frequência relativa e 15/50 = 30%.",
       "tempoEstimado": 50,
       "tags": [
         "distribuicao-de-frequencia",
@@ -3759,7 +3759,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Variancia",
       "dificuldadeLabel": "medio",
@@ -3774,7 +3774,7 @@ export const estatistica = {
         "4"
       ],
       "correta": "8/3",
-      "comentario": "A media e 5. Os desvios ao quadrado sao 4, 0 e 4. A variancia populacional e (4 + 0 + 4) / 3 = 8/3.",
+      "comentario": "A média é 5. Os desvios ao quadrado são 4, 0 e 4. A variancia populacional e (4 + 0 + 4) / 3 = 8/3.",
       "tempoEstimado": 60,
       "tags": [
         "variancia",
@@ -3797,7 +3797,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Desvio padrao",
       "dificuldadeLabel": "medio",
@@ -3835,22 +3835,22 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Analise de dados",
+      "subtopico": "Análise de dados",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Os conjuntos A = {6, 6, 6, 6} e B = {4, 6, 6, 8} possuem a mesma media. Comparando-os, e correto afirmar que",
+      "enunciado": "Os conjuntos A = {6, 6, 6, 6} e B = {4, 6, 6, 8} possuem a mesma média. Comparando-os, e correto afirmar que",
       "opcoes": [
         "o conjunto A tem maior dispersao",
         "os dois conjuntos tem a mesma dispersao",
-        "o conjunto B tem menor media",
+        "o conjunto B tem menor média",
         "o conjunto B tem maior dispersao"
       ],
       "correta": "o conjunto B tem maior dispersao",
-      "comentario": "No conjunto A, todos os valores sao iguais. No conjunto B, ha variacao em torno da media, o que indica maior dispersao.",
+      "comentario": "No conjunto A, todos os valores são iguais. No conjunto B, ha variação em torno da média, o que indica maior dispersao.",
       "tempoEstimado": 55,
       "tags": [
         "analise-de-dados",
@@ -3873,14 +3873,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de tabelas",
+      "subtopico": "Interpretação de tabelas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma tabela apresenta o numero de atendimentos em uma clinica durante cinco dias: 18, 22, 20, 25 e 15. A media diaria de atendimentos foi",
+      "enunciado": "Uma tabela apresenta o número de atendimentos em uma clinica durante cinco dias: 18, 22, 20, 25 e 15. A média diaria de atendimentos foi",
       "opcoes": [
         "20",
         "18",
@@ -3888,7 +3888,7 @@ export const estatistica = {
         "21"
       ],
       "correta": "20",
-      "comentario": "A media e (18 + 22 + 20 + 25 + 15) / 5 = 100 / 5 = 20.",
+      "comentario": "A média é (18 + 22 + 20 + 25 + 15) / 5 = 100 / 5 = 20.",
       "tempoEstimado": 45,
       "tags": [
         "interpretacao-de-tabelas",
@@ -3911,14 +3911,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de graficos",
+      "subtopico": "Interpretação de gráficos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um grafico de barras, as quantidades vendidas de um produto em quatro semanas foram 25, 30, 20 e 35 unidades. A amplitude desses dados e",
+      "enunciado": "Em um gráfico de barras, as quantidades vendidas de um produto em quatro semanas foram 25, 30, 20 e 35 unidades. A amplitude desses dados e",
       "opcoes": [
         "10",
         "15",
@@ -3926,7 +3926,7 @@ export const estatistica = {
         "20"
       ],
       "correta": "15",
-      "comentario": "A amplitude e a diferenca entre o maior e o menor valor: 35 - 20 = 15.",
+      "comentario": "A amplitude e a diferença entre o maior e o menor valor: 35 - 20 = 15.",
       "tempoEstimado": 45,
       "tags": [
         "interpretacao-de-graficos",
@@ -3949,14 +3949,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Distribuicao de frequencia",
+      "subtopico": "Distribuição de frequência",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa com 80 pessoas, 35% preferem a marca X. O numero de pessoas que preferem essa marca e",
+      "enunciado": "Em uma pesquisa com 80 pessoas, 35% preferem a marca X. O número de pessoas que preferem essa marca e",
       "opcoes": [
         "24",
         "26",
@@ -3987,14 +3987,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media ponderada",
+      "subtopico": "Média ponderada",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um processo avaliativo, as notas 6, 7 e 9 possuem pesos 1, 2 e 3, respectivamente. A media ponderada dessas notas e",
+      "enunciado": "Em um processo avaliativo, as notas 6, 7 e 9 possuem pesos 1, 2 e 3, respectivamente. A média ponderada dessas notas e",
       "opcoes": [
         "7,5",
         "8",
@@ -4002,7 +4002,7 @@ export const estatistica = {
         "7,8"
       ],
       "correta": "7,8",
-      "comentario": "A media ponderada e (6 x 1 + 7 x 2 + 9 x 3) / 6 = (6 + 14 + 27) / 6 = 47 / 6 = 7,833..., aproximadamente 7,8.",
+      "comentario": "A média ponderada e (6 x 1 + 7 x 2 + 9 x 3) / 6 = (6 + 14 + 27) / 6 = 47 / 6 = 7,833..., aproximadamente 7,8.",
       "tempoEstimado": 55,
       "tags": [
         "media-ponderada",
@@ -4025,7 +4025,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Mediana",
       "dificuldadeLabel": "medio",
@@ -4040,7 +4040,7 @@ export const estatistica = {
         "12"
       ],
       "correta": "11,5",
-      "comentario": "Ordenando os dados: 8, 10, 11, 12, 13, 15. A mediana e a media entre o 3o e o 4o valores: (11 + 12) / 2 = 11,5.",
+      "comentario": "Ordenando os dados: 8, 10, 11, 12, 13, 15. A mediana é a média entre o 3o e o 4o valores: (11 + 12) / 2 = 11,5.",
       "tempoEstimado": 50,
       "tags": [
         "mediana",
@@ -4063,14 +4063,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Moda",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No conjunto 2, 3, 3, 4, 5, 5, 6, a classificacao correta quanto a moda e",
+      "enunciado": "No conjunto 2, 3, 3, 4, 5, 5, 6, a classificacao correta quanto a moda é",
       "opcoes": [
         "amodal",
         "bimodal",
@@ -4101,22 +4101,22 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A media de um conjunto de notas e 7. Ao retirar uma nota 4 desse conjunto, a nova media aumenta. Isso ocorre porque a nota retirada era",
+      "enunciado": "A média de um conjunto de notas e 7. Ao retirar uma nota 4 desse conjunto, a nova média aumenta. Isso ocorre porque a nota retirada era",
       "opcoes": [
-        "igual a media",
-        "maior que a media",
-        "menor que a media",
+        "igual a média",
+        "maior que a média",
+        "menor que a média",
         "igual a 10"
       ],
-      "correta": "menor que a media",
-      "comentario": "Retirar um valor abaixo da media faz a media aumentar.",
+      "correta": "menor que a média",
+      "comentario": "Retirar um valor abaixo da média faz a média aumentar.",
       "tempoEstimado": 55,
       "tags": [
         "interpretacao-indireta",
@@ -4139,14 +4139,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Equivalencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao multiplicar todos os valores de um conjunto por 4, a media desse conjunto",
+      "enunciado": "Ao multiplicar todos os valores de um conjunto por 4, a média desse conjunto",
       "opcoes": [
         "permanece igual",
         "diminui pela metade",
@@ -4154,7 +4154,7 @@ export const estatistica = {
         "fica 4 vezes maior"
       ],
       "correta": "fica 4 vezes maior",
-      "comentario": "A media acompanha a transformacao aplicada a todos os dados. Se cada valor e multiplicado por 4, a media tambem e.",
+      "comentario": "A média acompanha a transformacao aplicada a todos os dados. Se cada valor e multiplicado por 4, a média também e.",
       "tempoEstimado": 50,
       "tags": [
         "equivalencia",
@@ -4177,14 +4177,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um conjunto possui media 12. Ao adicionar um novo valor igual a 12, a nova media sera",
+      "enunciado": "Um conjunto possui média 12. Ao adicionar um novo valor igual a 12, a nova média sera",
       "opcoes": [
         "12",
         "10",
@@ -4192,7 +4192,7 @@ export const estatistica = {
         "indeterminada"
       ],
       "correta": "12",
-      "comentario": "Adicionar um valor igual a media nao altera a media do conjunto.",
+      "comentario": "Adicionar um valor igual a média não altera a média do conjunto.",
       "tempoEstimado": 45,
       "tags": [
         "pegadinha",
@@ -4215,7 +4215,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Variancia",
       "dificuldadeLabel": "medio",
@@ -4230,7 +4230,7 @@ export const estatistica = {
         "12"
       ],
       "correta": "8",
-      "comentario": "A media e 6. Os desvios ao quadrado sao 16, 4, 0, 4 e 16. A media desses valores e 40 / 5 = 8.",
+      "comentario": "A média é 6. Os desvios ao quadrado são 16, 4, 0, 4 e 16. A média desses valores e 40 / 5 = 8.",
       "tempoEstimado": 75,
       "tags": [
         "variancia",
@@ -4253,7 +4253,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Desvio padrao",
       "dificuldadeLabel": "medio",
@@ -4291,14 +4291,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de graficos",
+      "subtopico": "Interpretação de gráficos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um grafico apresenta os valores 12, 18, 24 e 30. A media desses valores e",
+      "enunciado": "Um gráfico apresenta os valores 12, 18, 24 e 30. A média desses valores e",
       "opcoes": [
         "18",
         "20",
@@ -4306,7 +4306,7 @@ export const estatistica = {
         "21"
       ],
       "correta": "21",
-      "comentario": "A media e (12 + 18 + 24 + 30)/4 = 84/4 = 21.",
+      "comentario": "A média é (12 + 18 + 24 + 30)/4 = 84/4 = 21.",
       "tempoEstimado": 45,
       "tags": [
         "interpretacao-de-graficos",
@@ -4329,9 +4329,9 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Distribuicao de frequencia",
+      "subtopico": "Distribuição de frequência",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "calculo",
@@ -4367,19 +4367,19 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Analise de dados",
+      "subtopico": "Análise de dados",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Dois conjuntos possuem a mesma media, mas um tem maior desvio padrao. Isso indica que",
+      "enunciado": "Dois conjuntos possuem a mesma média, mas um tem maior desvio padrao. Isso indica que",
       "opcoes": [
         "tem menor quantidade de dados",
         "tem dados mais dispersos",
         "tem dados iguais",
-        "tem menor media"
+        "tem menor média"
       ],
       "correta": "tem dados mais dispersos",
       "comentario": "Maior desvio padrao indica maior espalhamento dos dados.",
@@ -4405,7 +4405,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Equivalencia",
       "dificuldadeLabel": "medio",
@@ -4443,14 +4443,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A media das notas de uma turma era 7,2. Depois que a nota de um aluno foi corrigida para cima, a media passou a 7,4. Mantida a quantidade de alunos, e correto afirmar que",
+      "enunciado": "A média das notas de uma turma era 7,2. Depois que a nota de um aluno foi corrigida para cima, a média passou a 7,4. Mantida a quantidade de alunos, e correto afirmar que",
       "opcoes": [
         "a soma das notas diminuiu",
         "a mediana necessariamente aumentou",
@@ -4458,7 +4458,7 @@ export const estatistica = {
         "a soma das notas aumentou"
       ],
       "correta": "a soma das notas aumentou",
-      "comentario": "Se a quantidade de alunos permaneceu a mesma e a media aumentou, entao a soma total das notas tambem aumentou.",
+      "comentario": "Se a quantidade de alunos permaneceu a mesma e a média aumentou, entao a soma total das notas também aumentou.",
       "tempoEstimado": 55,
       "tags": [
         "interpretacao-indireta",
@@ -4481,14 +4481,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um conjunto possui media 15. Ao retirar um elemento igual a 15, a nova media do conjunto",
+      "enunciado": "Um conjunto possui média 15. Ao retirar um elemento igual a 15, a nova média do conjunto",
       "opcoes": [
         "permanece igual",
         "aumenta",
@@ -4496,7 +4496,7 @@ export const estatistica = {
         "torna-se zero"
       ],
       "correta": "permanece igual",
-      "comentario": "Retirar um valor igual a media nao altera a media do conjunto.",
+      "comentario": "Retirar um valor igual a média não altera a média do conjunto.",
       "tempoEstimado": 45,
       "tags": [
         "pegadinha",
@@ -4519,7 +4519,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Equivalencia",
       "dificuldadeLabel": "medio",
@@ -4534,7 +4534,7 @@ export const estatistica = {
         "seja multiplicado por 10"
       ],
       "correta": "permaneça o mesmo",
-      "comentario": "Somar uma constante a todos os dados desloca os valores, mas nao altera a dispersao.",
+      "comentario": "Somar uma constante a todos os dados desloca os valores, mas não altera a dispersao.",
       "tempoEstimado": 55,
       "tags": [
         "equivalencia",
@@ -4557,7 +4557,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Variancia",
       "dificuldadeLabel": "medio",
@@ -4572,7 +4572,7 @@ export const estatistica = {
         "2,5"
       ],
       "correta": "2",
-      "comentario": "A media e 3. Os desvios ao quadrado sao 4, 1, 0, 1 e 4. A variancia populacional e 10/5 = 2.",
+      "comentario": "A média é 3. Os desvios ao quadrado são 4, 1, 0, 1 e 4. A variancia populacional e 10/5 = 2.",
       "tempoEstimado": 75,
       "tags": [
         "variancia",
@@ -4595,7 +4595,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Desvio padrao",
       "dificuldadeLabel": "medio",
@@ -4633,14 +4633,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media aritmetica",
+      "subtopico": "Média aritmetica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Cinco funcionarios produziram, respectivamente, 18, 20, 22, 19 e 21 pecas em um turno. A media de pecas produzidas por funcionario foi",
+      "enunciado": "Cinco funcionários produziram, respectivamente, 18, 20, 22, 19 e 21 pecas em um turno. A média de pecas produzidas por funcionário foi",
       "opcoes": [
         "20",
         "19",
@@ -4648,7 +4648,7 @@ export const estatistica = {
         "21"
       ],
       "correta": "20",
-      "comentario": "A soma e 100. Dividindo por 5, obtem-se media igual a 20.",
+      "comentario": "A soma e 100. Dividindo por 5, obtem-se média igual a 20.",
       "tempoEstimado": 40,
       "tags": [
         "media-aritmetica",
@@ -4671,14 +4671,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media ponderada",
+      "subtopico": "Média ponderada",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma selecao considera tres etapas com pesos 2, 3 e 5. Um candidato obteve notas 6, 7 e 8, respectivamente. Sua media ponderada foi",
+      "enunciado": "Uma selecao considera tres etapas com pesos 2, 3 e 5. Um candidato obteve notas 6, 7 e 8, respectivamente. Sua média ponderada foi",
       "opcoes": [
         "7,1",
         "7,3",
@@ -4686,7 +4686,7 @@ export const estatistica = {
         "7,8"
       ],
       "correta": "7,3",
-      "comentario": "A media ponderada e (6 x 2 + 7 x 3 + 8 x 5) / 10 = (12 + 21 + 40) / 10 = 73/10 = 7,3.",
+      "comentario": "A média ponderada e (6 x 2 + 7 x 3 + 8 x 5) / 10 = (12 + 21 + 40) / 10 = 73/10 = 7,3.",
       "tempoEstimado": 55,
       "tags": [
         "media-ponderada",
@@ -4709,7 +4709,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Mediana",
       "dificuldadeLabel": "dificil",
@@ -4724,7 +4724,7 @@ export const estatistica = {
         "11"
       ],
       "correta": "9",
-      "comentario": "Ordenando: 4, 6, 8, 10, 12, 14. A mediana e a media entre 8 e 10, resultando em 9.",
+      "comentario": "Ordenando: 4, 6, 8, 10, 12, 14. A mediana é a média entre 8 e 10, resultando em 9.",
       "tempoEstimado": 45,
       "tags": [
         "mediana",
@@ -4747,14 +4747,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Moda",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No conjunto 5, 6, 6, 7, 7, 8, 9, a classificacao correta quanto a moda e",
+      "enunciado": "No conjunto 5, 6, 6, 7, 7, 8, 9, a classificacao correta quanto a moda é",
       "opcoes": [
         "amodal",
         "unimodal",
@@ -4762,7 +4762,7 @@ export const estatistica = {
         "bimodal"
       ],
       "correta": "bimodal",
-      "comentario": "Os valores 6 e 7 sao os mais frequentes, ambos com duas ocorrencias.",
+      "comentario": "Os valores 6 e 7 são os mais frequentes, ambos com duas ocorrencias.",
       "tempoEstimado": 45,
       "tags": [
         "moda",
@@ -4785,14 +4785,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de tabelas",
+      "subtopico": "Interpretação de tabelas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma tabela apresenta o numero de acessos a um site em cinco dias: 120, 150, 130, 160 e 140. A media diaria de acessos foi",
+      "enunciado": "Uma tabela apresenta o número de acessos a um site em cinco dias: 120, 150, 130, 160 e 140. A média diaria de acessos foi",
       "opcoes": [
         "140",
         "136",
@@ -4800,7 +4800,7 @@ export const estatistica = {
         "150"
       ],
       "correta": "140",
-      "comentario": "A soma dos acessos e 700. Dividindo por 5, a media e 140.",
+      "comentario": "A soma dos acessos e 700. Dividindo por 5, a média é 140.",
       "tempoEstimado": 45,
       "tags": [
         "interpretacao-de-tabelas",
@@ -4823,22 +4823,22 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Analise de dados",
+      "subtopico": "Análise de dados",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Dois grupos possuem a mesma media, mas um apresenta maior variancia. Isso indica que",
+      "enunciado": "Dois grupos possuem a mesma média, mas um apresenta maior variancia. Isso indica que",
       "opcoes": [
-        "os dados sao iguais",
-        "os dados sao mais dispersos",
-        "os dados sao mais concentrados",
-        "a media esta incorreta"
+        "os dados são iguais",
+        "os dados são mais dispersos",
+        "os dados são mais concentrados",
+        "a média esta incorreta"
       ],
-      "correta": "os dados sao mais dispersos",
-      "comentario": "Maior variancia indica maior espalhamento dos dados em relacao a media.",
+      "correta": "os dados são mais dispersos",
+      "comentario": "Maior variancia indica maior espalhamento dos dados em relação a média.",
       "tempoEstimado": 50,
       "tags": [
         "variancia",
@@ -4861,22 +4861,22 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A media de uma turma e 6. Ao adicionar um novo aluno com nota 10, a media aumenta. Isso ocorre porque",
+      "enunciado": "A média de uma turma e 6. Ao adicionar um novo aluno com nota 10, a média aumenta. Isso ocorre porque",
       "opcoes": [
-        "10 e menor que a media",
+        "10 e menor que a média",
         "a quantidade de alunos diminuiu",
-        "10 e maior que a media",
+        "10 e maior que a média",
         "a mediana aumentou"
       ],
-      "correta": "10 e maior que a media",
-      "comentario": "Adicionar um valor acima da media eleva a media do conjunto.",
+      "correta": "10 e maior que a média",
+      "comentario": "Adicionar um valor acima da média eleva a média do conjunto.",
       "tempoEstimado": 55,
       "tags": [
         "media",
@@ -4899,14 +4899,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um conjunto possui media 20. Ao adicionar o valor 20, a nova media sera",
+      "enunciado": "Um conjunto possui média 20. Ao adicionar o valor 20, a nova média sera",
       "opcoes": [
         "maior que 20",
         "menor que 20",
@@ -4914,7 +4914,7 @@ export const estatistica = {
         "igual a 20"
       ],
       "correta": "igual a 20",
-      "comentario": "Adicionar um valor igual a media nao altera a media.",
+      "comentario": "Adicionar um valor igual a média não altera a média.",
       "tempoEstimado": 40,
       "tags": [
         "pegadinha",
@@ -4937,7 +4937,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Equivalencia",
       "dificuldadeLabel": "dificil",
@@ -4975,7 +4975,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Variancia",
       "dificuldadeLabel": "dificil",
@@ -4990,7 +4990,7 @@ export const estatistica = {
         "3"
       ],
       "correta": "2",
-      "comentario": "A media e 4. Os desvios ao quadrado somam 10. Variancia = 10/5 = 2.",
+      "comentario": "A média é 4. Os desvios ao quadrado somam 10. Variancia = 10/5 = 2.",
       "tempoEstimado": 70,
       "tags": [
         "variancia",
@@ -5013,14 +5013,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media aritmetica",
+      "subtopico": "Média aritmetica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "A media de 4 numeros e 18. Tres deles sao 15, 20 e 17. O quarto numero e",
+      "enunciado": "A média de 4 números e 18. Tres deles são 15, 20 e 17. O quarto número e",
       "opcoes": [
         "18",
         "22",
@@ -5051,22 +5051,22 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma media aumentou apos a retirada de um valor. Isso indica que o valor retirado era",
+      "enunciado": "Uma média aumentou apos a retirada de um valor. Isso indica que o valor retirado era",
       "opcoes": [
-        "maior que a media",
-        "igual a media",
+        "maior que a média",
+        "igual a média",
         "igual a zero",
-        "menor que a media"
+        "menor que a média"
       ],
-      "correta": "menor que a media",
-      "comentario": "Remover valores abaixo da media faz a media aumentar.",
+      "correta": "menor que a média",
+      "comentario": "Remover valores abaixo da média faz a média aumentar.",
       "tempoEstimado": 50,
       "tags": [
         "interpretacao-indireta",
@@ -5089,7 +5089,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Equivalencia",
       "dificuldadeLabel": "dificil",
@@ -5127,14 +5127,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um conjunto possui media 30. Ao adicionar o valor 30, a media",
+      "enunciado": "Um conjunto possui média 30. Ao adicionar o valor 30, a média",
       "opcoes": [
         "aumenta",
         "permanece igual",
@@ -5142,7 +5142,7 @@ export const estatistica = {
         "dobra"
       ],
       "correta": "permanece igual",
-      "comentario": "Adicionar um valor igual a media nao altera o resultado.",
+      "comentario": "Adicionar um valor igual a média não altera o resultado.",
       "tempoEstimado": 40,
       "tags": [
         "pegadinha",
@@ -5165,7 +5165,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Variancia",
       "dificuldadeLabel": "dificil",
@@ -5180,7 +5180,7 @@ export const estatistica = {
         "9"
       ],
       "correta": "6",
-      "comentario": "Media = 4. Desvios ao quadrado: 9, 0, 9. Variancia = 18/3 = 6.",
+      "comentario": "Média = 4. Desvios ao quadrado: 9, 0, 9. Variancia = 18/3 = 6.",
       "tempoEstimado": 70,
       "tags": [
         "variancia",
@@ -5203,14 +5203,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media aritmetica",
+      "subtopico": "Média aritmetica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "A media de 5 numeros e 20. Quatro deles sao 10, 20, 25 e 15. O quinto numero e",
+      "enunciado": "A média de 5 números e 20. Quatro deles são 10, 20, 25 e 15. O quinto número e",
       "opcoes": [
         "20",
         "25",
@@ -5218,7 +5218,7 @@ export const estatistica = {
         "30"
       ],
       "correta": "30",
-      "comentario": "A soma total deve ser 100. A soma dos quatro numeros e 70. Logo, o quinto numero e 30.",
+      "comentario": "A soma total deve ser 100. A soma dos quatro números e 70. Logo, o quinto número e 30.",
       "tempoEstimado": 45,
       "tags": [
         "media-aritmetica",
@@ -5241,22 +5241,22 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A media de um conjunto e 18. Ao retirar um valor igual a 25, a media diminui. Isso indica que",
+      "enunciado": "A média de um conjunto e 18. Ao retirar um valor igual a 25, a média diminui. Isso indica que",
       "opcoes": [
-        "25 e maior que a media",
-        "25 e menor que a media",
-        "25 e igual a media",
+        "25 e maior que a média",
+        "25 e menor que a média",
+        "25 e igual a média",
         "a quantidade de dados aumentou"
       ],
-      "correta": "25 e maior que a media",
-      "comentario": "Remover um valor acima da media faz com que a media diminua.",
+      "correta": "25 e maior que a média",
+      "comentario": "Remover um valor acima da média faz com que a média diminua.",
       "tempoEstimado": 50,
       "tags": [
         "interpretacao-indireta",
@@ -5279,7 +5279,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Equivalencia",
       "dificuldadeLabel": "dificil",
@@ -5317,14 +5317,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um conjunto possui media 50. Ao adicionar o valor 100, a nova media",
+      "enunciado": "Um conjunto possui média 50. Ao adicionar o valor 100, a nova média",
       "opcoes": [
         "sempre dobra",
         "diminui",
@@ -5332,7 +5332,7 @@ export const estatistica = {
         "permanece igual"
       ],
       "correta": "aumenta",
-      "comentario": "Adicionar um valor maior que a media faz com que ela aumente.",
+      "comentario": "Adicionar um valor maior que a média faz com que ela aumente.",
       "tempoEstimado": 40,
       "tags": [
         "pegadinha",
@@ -5355,7 +5355,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Variancia",
       "dificuldadeLabel": "dificil",
@@ -5370,7 +5370,7 @@ export const estatistica = {
         "16"
       ],
       "correta": "16",
-      "comentario": "Media = 6. Desvios ao quadrado: 16, 0, 16. Variancia = 32/3 ≈ 10,67. Alternativa mais proxima nao foi usada, entao correto seria 32/3, mas dentro das opcoes dadas, 16 nao corresponde. Ajuste correto seria 32/3.",
+      "comentario": "Média = 6. Desvios ao quadrado: 16, 0, 16. Variancia = 32/3 ≈ 10,67. Alternativa mais proxima não foi usada, entao correto seria 32/3, mas dentro das opcoes dadas, 16 não corresponde. Ajuste correto seria 32/3.",
       "tempoEstimado": 70,
       "tags": [
         "variancia",
@@ -5393,14 +5393,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media aritmetica",
+      "subtopico": "Média aritmetica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "A media de 4 numeros e 25. Tres deles sao 20, 30 e 10. O quarto numero e",
+      "enunciado": "A média de 4 números e 25. Tres deles são 20, 30 e 10. O quarto número e",
       "opcoes": [
         "40",
         "30",
@@ -5431,22 +5431,22 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A media de um conjunto e 50. Ao retirar um valor 80, a media diminui. Isso indica que",
+      "enunciado": "A média de um conjunto e 50. Ao retirar um valor 80, a média diminui. Isso indica que",
       "opcoes": [
-        "80 e menor que a media",
-        "80 e maior que a media",
-        "80 e igual a media",
+        "80 e menor que a média",
+        "80 e maior que a média",
+        "80 e igual a média",
         "a quantidade de dados aumentou"
       ],
-      "correta": "80 e maior que a media",
-      "comentario": "Remover valores acima da media faz a media diminuir.",
+      "correta": "80 e maior que a média",
+      "comentario": "Remover valores acima da média faz a média diminuir.",
       "tempoEstimado": 50,
       "tags": [
         "interpretacao-indireta",
@@ -5469,7 +5469,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Equivalencia",
       "dificuldadeLabel": "dificil",
@@ -5507,14 +5507,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um conjunto possui media 10. Ao adicionar o valor 5, a media",
+      "enunciado": "Um conjunto possui média 10. Ao adicionar o valor 5, a média",
       "opcoes": [
         "sempre aumenta",
         "permanece igual",
@@ -5522,7 +5522,7 @@ export const estatistica = {
         "sempre diminui"
       ],
       "correta": "sempre diminui",
-      "comentario": "Adicionar valor menor que a media faz a media diminuir.",
+      "comentario": "Adicionar valor menor que a média faz a média diminuir.",
       "tempoEstimado": 40,
       "tags": [
         "pegadinha",
@@ -5545,7 +5545,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Variancia",
       "dificuldadeLabel": "dificil",
@@ -5560,7 +5560,7 @@ export const estatistica = {
         "25"
       ],
       "correta": "16,6",
-      "comentario": "Media = 5. Desvios ao quadrado: 25, 0, 25. Variancia = 50/3 ≈ 16,6.",
+      "comentario": "Média = 5. Desvios ao quadrado: 25, 0, 25. Variancia = 50/3 ≈ 16,6.",
       "tempoEstimado": 70,
       "tags": [
         "variancia",
@@ -5583,14 +5583,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media aritmetica",
+      "subtopico": "Média aritmetica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A media de 6 numeros e 14. Cinco deles sao 10, 12, 14, 16 e 18. O sexto numero e",
+      "enunciado": "A média de 6 números e 14. Cinco deles são 10, 12, 14, 16 e 18. O sexto número e",
       "opcoes": [
         "12",
         "14",
@@ -5598,7 +5598,7 @@ export const estatistica = {
         "18"
       ],
       "correta": "14",
-      "comentario": "A soma total deve ser 6 x 14 = 84. A soma dos cinco numeros conhecidos e 70. Portanto, o sexto numero e 14.",
+      "comentario": "A soma total deve ser 6 x 14 = 84. A soma dos cinco números conhecidos e 70. Portanto, o sexto número e 14.",
       "tempoEstimado": 50,
       "tags": [
         "media-aritmetica",
@@ -5621,14 +5621,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media ponderada",
+      "subtopico": "Média ponderada",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma avaliacao, as notas 8, 6 e 7 recebem pesos 1, 2 e 3, respectivamente. A media ponderada dessas notas e",
+      "enunciado": "Em uma avaliação, as notas 8, 6 e 7 recebem pesos 1, 2 e 3, respectivamente. A média ponderada dessas notas e",
       "opcoes": [
         "6,9",
         "7",
@@ -5636,7 +5636,7 @@ export const estatistica = {
         "7,1"
       ],
       "correta": "6,8",
-      "comentario": "A media ponderada e (8 x 1 + 6 x 2 + 7 x 3) / 6 = (8 + 12 + 21) / 6 = 41/6 = 6,833..., aproximadamente 6,8.",
+      "comentario": "A média ponderada e (8 x 1 + 6 x 2 + 7 x 3) / 6 = (8 + 12 + 21) / 6 = 41/6 = 6,833..., aproximadamente 6,8.",
       "tempoEstimado": 55,
       "tags": [
         "media-ponderada",
@@ -5659,7 +5659,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Mediana",
       "dificuldadeLabel": "dificil",
@@ -5697,14 +5697,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Moda",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No conjunto 1, 2, 2, 3, 4, 4, 4, 5, a moda e",
+      "enunciado": "No conjunto 1, 2, 2, 3, 4, 4, 4, 5, a moda é",
       "opcoes": [
         "4",
         "2",
@@ -5735,14 +5735,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A media de um conjunto de valores e 25. Ao adicionar um novo valor, a media passa a ser 24. Pode-se concluir que o valor adicionado e",
+      "enunciado": "A média de um conjunto de valores e 25. Ao adicionar um novo valor, a média passa a ser 24. Pode-se concluir que o valor adicionado e",
       "opcoes": [
         "maior que 25",
         "menor que 25",
@@ -5750,7 +5750,7 @@ export const estatistica = {
         "igual a 24"
       ],
       "correta": "menor que 25",
-      "comentario": "Se a media diminuiu apos a inclusao de um novo valor, entao esse valor adicionado e menor que a media anterior.",
+      "comentario": "Se a média diminuiu apos a inclusao de um novo valor, entao esse valor adicionado e menor que a média anterior.",
       "tempoEstimado": 65,
       "tags": [
         "interpretacao-indireta",
@@ -5773,14 +5773,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A media de 20 numeros e 30. Se um desses numeros, igual a 10, for substituido por 50, a nova media passa a ser",
+      "enunciado": "A média de 20 números e 30. Se um desses números, igual a 10, for substituido por 50, a nova média passa a ser",
       "opcoes": [
         "31",
         "33",
@@ -5788,7 +5788,7 @@ export const estatistica = {
         "34"
       ],
       "correta": "32",
-      "comentario": "A soma inicial e 20 x 30 = 600. A substituicao aumenta a soma em 40. Nova soma = 640. Nova media = 640/20 = 32.",
+      "comentario": "A soma inicial e 20 x 30 = 600. A substituicao aumenta a soma em 40. Nova soma = 640. Nova média = 640/20 = 32.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao-indireta",
@@ -5811,14 +5811,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um conjunto possui mediana 12. Ao acrescentar um valor extremamente alto ao conjunto, e correto afirmar que a media",
+      "enunciado": "Um conjunto possui mediana 12. Ao acrescentar um valor extremamente alto ao conjunto, e correto afirmar que a média",
       "opcoes": [
         "necessariamente diminui",
         "permanece igual",
@@ -5826,7 +5826,7 @@ export const estatistica = {
         "necessariamente aumenta"
       ],
       "correta": "necessariamente aumenta",
-      "comentario": "Adicionar um valor muito alto aumenta a soma total e, portanto, eleva a media.",
+      "comentario": "Adicionar um valor muito alto aumenta a soma total e, portanto, eleva a média.",
       "tempoEstimado": 60,
       "tags": [
         "pegadinha",
@@ -5849,7 +5849,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Equivalencia",
       "dificuldadeLabel": "dificil",
@@ -5864,7 +5864,7 @@ export const estatistica = {
         "seja multiplicada por 7"
       ],
       "correta": "permaneça a mesma",
-      "comentario": "Somar uma constante a todos os dados nao altera a dispersao, apenas desloca os valores.",
+      "comentario": "Somar uma constante a todos os dados não altera a dispersao, apenas desloca os valores.",
       "tempoEstimado": 65,
       "tags": [
         "equivalencia",
@@ -5887,14 +5887,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de graficos",
+      "subtopico": "Interpretação de gráficos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um grafico apresenta os valores 12, 18, 24, 30 e 36. A diferenca entre a media e a mediana desse conjunto e",
+      "enunciado": "Um gráfico apresenta os valores 12, 18, 24, 30 e 36. A diferença entre a média é a mediana desse conjunto e",
       "opcoes": [
         "2",
         "0",
@@ -5902,7 +5902,7 @@ export const estatistica = {
         "6"
       ],
       "correta": "0",
-      "comentario": "A media e 24 e a mediana tambem e 24. Portanto, a diferenca entre elas e zero.",
+      "comentario": "A média é 24 e a mediana também e 24. Portanto, a diferença entre elas e zero.",
       "tempoEstimado": 60,
       "tags": [
         "interpretacao-de-graficos",
@@ -5927,22 +5927,22 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Analise de dados",
+      "subtopico": "Análise de dados",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Os conjuntos A = {5, 5, 5, 5, 5} e B = {1, 3, 5, 7, 9} possuem a mesma media. Comparando-os, e correto afirmar que",
+      "enunciado": "Os conjuntos A = {5, 5, 5, 5, 5} e B = {1, 3, 5, 7, 9} possuem a mesma média. Comparando-os, e correto afirmar que",
       "opcoes": [
         "o conjunto A tem maior desvio padrao",
         "os dois tem a mesma dispersao",
         "o conjunto B tem maior desvio padrao",
-        "o conjunto B tem menor media"
+        "o conjunto B tem menor média"
       ],
       "correta": "o conjunto B tem maior desvio padrao",
-      "comentario": "No conjunto A nao ha variacao. No conjunto B os valores se espalham em torno da media, produzindo maior desvio padrao.",
+      "comentario": "No conjunto A não ha variação. No conjunto B os valores se espalham em torno da média, produzindo maior desvio padrao.",
       "tempoEstimado": 65,
       "tags": [
         "analise-de-dados",
@@ -5965,9 +5965,9 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de tabelas",
+      "subtopico": "Interpretação de tabelas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -5980,7 +5980,7 @@ export const estatistica = {
         "6"
       ],
       "correta": "6",
-      "comentario": "Como ha 10 valores, a mediana e a media entre o 5o e o 6o termos. Ambos sao 6, entao a mediana e 6.",
+      "comentario": "Como ha 10 valores, a mediana é a média entre o 5o e o 6o termos. Ambos são 6, entao a mediana é 6.",
       "tempoEstimado": 55,
       "tags": [
         "interpretacao-de-tabelas",
@@ -6003,14 +6003,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Distribuicao de frequencia",
+      "subtopico": "Distribuição de frequência",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma distribuicao com 200 elementos, a frequencia relativa de uma categoria e 12,5%. A frequencia absoluta dessa categoria e",
+      "enunciado": "Em uma distribuição com 200 elementos, a frequência relativa de uma categoria e 12,5%. A frequência absoluta dessa categoria e",
       "opcoes": [
         "25",
         "20",
@@ -6041,14 +6041,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media ponderada",
+      "subtopico": "Média ponderada",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um concurso utiliza tres provas com pesos 2, 3 e 5. Um candidato obteve notas 7, 8 e 6. A media ponderada final desse candidato foi",
+      "enunciado": "Um concurso utiliza tres provas com pesos 2, 3 e 5. Um candidato obteve notas 7, 8 e 6. A média ponderada final desse candidato foi",
       "opcoes": [
         "6,9",
         "6,8",
@@ -6056,7 +6056,7 @@ export const estatistica = {
         "7,1"
       ],
       "correta": "6,8",
-      "comentario": "A media ponderada e (7 x 2 + 8 x 3 + 6 x 5) / 10 = (14 + 24 + 30) / 10 = 68/10 = 6,8.",
+      "comentario": "A média ponderada e (7 x 2 + 8 x 3 + 6 x 5) / 10 = (14 + 24 + 30) / 10 = 68/10 = 6,8.",
       "tempoEstimado": 60,
       "tags": [
         "media-ponderada",
@@ -6079,7 +6079,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Variancia",
       "dificuldadeLabel": "dificil",
@@ -6094,7 +6094,7 @@ export const estatistica = {
         "13"
       ],
       "correta": "11",
-      "comentario": "A media e 5. Os desvios ao quadrado sao 9, 9, 1 e 25. A soma e 44, e a variancia populacional e 44/4 = 11.",
+      "comentario": "A média é 5. Os desvios ao quadrado são 9, 9, 1 e 25. A soma e 44, e a variancia populacional e 44/4 = 11.",
       "tempoEstimado": 75,
       "tags": [
         "variancia",
@@ -6117,7 +6117,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Desvio padrao",
       "dificuldadeLabel": "dificil",
@@ -6155,22 +6155,22 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A media de um conjunto e 18 e sua mediana tambem e 18. Isso permite concluir que",
+      "enunciado": "A média de um conjunto e 18 e sua mediana também e 18. Isso permite concluir que",
       "opcoes": [
-        "nao e possivel concluir que todos os valores sejam iguais",
-        "todos os valores sao 18",
-        "a distribuicao e simetrica",
+        "não é possível concluir que todos os valores sejam iguais",
+        "todos os valores são 18",
+        "a distribuição é simetrica",
         "a variancia e zero"
       ],
-      "correta": "nao e possivel concluir que todos os valores sejam iguais",
-      "comentario": "Ter media e mediana iguais nao implica que todos os valores sejam iguais nem que a variancia seja zero.",
+      "correta": "não é possível concluir que todos os valores sejam iguais",
+      "comentario": "Ter média é mediana iguais não implica que todos os valores sejam iguais nem que a variancia seja zero.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao-indireta",
@@ -6194,7 +6194,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
@@ -6205,7 +6205,7 @@ export const estatistica = {
       "opcoes": [
         "a moda deixa de existir",
         "a moda permanece 7",
-        "a media necessariamente se torna 7",
+        "a média necessariamente se torna 7",
         "a mediana necessariamente se torna 7"
       ],
       "correta": "a moda permanece 7",
@@ -6232,7 +6232,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Equivalencia",
       "dificuldadeLabel": "dificil",
@@ -6270,22 +6270,22 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de graficos",
+      "subtopico": "Interpretação de gráficos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um grafico apresenta cinco valores: 10, 20, 20, 20 e 30. Para esse conjunto, e correto afirmar que",
+      "enunciado": "Um gráfico apresenta cinco valores: 10, 20, 20, 20 e 30. Para esse conjunto, e correto afirmar que",
       "opcoes": [
-        "media e mediana sao 20, mas nao ha moda",
-        "a moda e 30",
-        "a mediana e 25",
-        "media, mediana e moda sao iguais a 20"
+        "média é mediana são 20, mas não ha moda",
+        "a moda é 30",
+        "a mediana é 25",
+        "média, mediana é moda são iguais a 20"
       ],
-      "correta": "media, mediana e moda sao iguais a 20",
-      "comentario": "A media e 100/5 = 20, a mediana e o valor central 20 e a moda tambem e 20, pois aparece mais vezes.",
+      "correta": "média, mediana é moda são iguais a 20",
+      "comentario": "A média é 100/5 = 20, a mediana é o valor central 20 e a moda também e 20, pois aparece mais vezes.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao-de-graficos",
@@ -6312,21 +6312,21 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Analise de dados",
+      "subtopico": "Análise de dados",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Dois conjuntos possuem a mesma media e a mesma moda, mas diferentes medianas. Isso mostra que",
+      "enunciado": "Dois conjuntos possuem a mesma média é a mesma moda, mas diferentes medianas. Isso mostra que",
       "opcoes": [
-        "medidas de tendencia central podem nao ser suficientes para descrever todos os aspectos dos dados",
-        "as tres medidas sempre determinam completamente a distribuicao",
-        "os conjuntos sao necessariamente iguais",
+        "medidas de tendencia central podem não ser suficientes para descrever todos os aspectos dos dados",
+        "as tres medidas sempre determinam completamente a distribuição",
+        "os conjuntos são necessariamente iguais",
         "a variancia dos dois conjuntos e igual"
       ],
-      "correta": "medidas de tendencia central podem nao ser suficientes para descrever todos os aspectos dos dados",
+      "correta": "medidas de tendencia central podem não ser suficientes para descrever todos os aspectos dos dados",
       "comentario": "Mesmo coincidindo em algumas medidas centrais, duas distribuicoes podem apresentar estruturas diferentes.",
       "tempoEstimado": 80,
       "tags": [
@@ -6350,14 +6350,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A media de um conjunto de 8 valores e 15. Ao retirar um valor igual a 7, a nova media do conjunto",
+      "enunciado": "A média de um conjunto de 8 valores e 15. Ao retirar um valor igual a 7, a nova média do conjunto",
       "opcoes": [
         "diminui",
         "aumenta",
@@ -6365,7 +6365,7 @@ export const estatistica = {
         "torna-se 15"
       ],
       "correta": "aumenta",
-      "comentario": "Retirar um valor abaixo da media faz a media aumentar.",
+      "comentario": "Retirar um valor abaixo da média faz a média aumentar.",
       "tempoEstimado": 60,
       "tags": [
         "interpretacao-indireta",
@@ -6388,14 +6388,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um conjunto tem media 18. Ao adicionar dois novos valores, 10 e 26, a nova media",
+      "enunciado": "Um conjunto tem média 18. Ao adicionar dois novos valores, 10 e 26, a nova média",
       "opcoes": [
         "aumenta",
         "diminui",
@@ -6403,7 +6403,7 @@ export const estatistica = {
         "torna-se 20"
       ],
       "correta": "permanece igual",
-      "comentario": "A media dos valores adicionados e 18. Portanto, a media do conjunto nao se altera.",
+      "comentario": "A média dos valores adicionados e 18. Portanto, a média do conjunto não se altera.",
       "tempoEstimado": 65,
       "tags": [
         "pegadinha",
@@ -6426,7 +6426,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Equivalencia",
       "dificuldadeLabel": "dificil",
@@ -6441,7 +6441,7 @@ export const estatistica = {
         "quatro vezes a variancia original"
       ],
       "correta": "quatro vezes a variancia original",
-      "comentario": "Somar uma constante nao altera a variancia, e multiplicar por 2 multiplica a variancia por 2 ao quadrado.",
+      "comentario": "Somar uma constante não altera a variancia, e multiplicar por 2 multiplica a variancia por 2 ao quadrado.",
       "tempoEstimado": 75,
       "tags": [
         "equivalencia",
@@ -6464,14 +6464,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media aritmetica",
+      "subtopico": "Média aritmetica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A media de 9 numeros e 22. Oito desses numeros sao 18, 20, 21, 22, 23, 24, 25 e 26. O nono numero e",
+      "enunciado": "A média de 9 números e 22. Oito desses números são 18, 20, 21, 22, 23, 24, 25 e 26. O nono número e",
       "opcoes": [
         "19",
         "17",
@@ -6479,7 +6479,7 @@ export const estatistica = {
         "20"
       ],
       "correta": "19",
-      "comentario": "A soma total deve ser 9 vezes 22, isto e, 198. A soma dos oito numeros dados e 179. Logo, o nono numero e 19.",
+      "comentario": "A soma total deve ser 9 vezes 22, isto e, 198. A soma dos oito números dados e 179. Logo, o nono número e 19.",
       "tempoEstimado": 70,
       "tags": [
         "media-aritmetica",
@@ -6502,14 +6502,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media ponderada",
+      "subtopico": "Média ponderada",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um processo seletivo, as notas 5, 7, 8 e 9 possuem pesos 1, 2, 3 e 4, respectivamente. A media ponderada final e",
+      "enunciado": "Em um processo seletivo, as notas 5, 7, 8 e 9 possuem pesos 1, 2, 3 e 4, respectivamente. A média ponderada final e",
       "opcoes": [
         "7,5",
         "7,9",
@@ -6517,7 +6517,7 @@ export const estatistica = {
         "8,1"
       ],
       "correta": "7,9",
-      "comentario": "A media ponderada e (5 x 1 + 7 x 2 + 8 x 3 + 9 x 4) dividido por 10, resultando em 79/10 = 7,9.",
+      "comentario": "A média ponderada e (5 x 1 + 7 x 2 + 8 x 3 + 9 x 4) dividido por 10, resultando em 79/10 = 7,9.",
       "tempoEstimado": 75,
       "tags": [
         "media-ponderada",
@@ -6540,14 +6540,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Mediana",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um conjunto com 7 elementos ordenados, a mediana e 12. Se o menor valor for retirado, a nova mediana sera a media entre",
+      "enunciado": "Em um conjunto com 7 elementos ordenados, a mediana é 12. Se o menor valor for retirado, a nova mediana sera a média entre",
       "opcoes": [
         "o 2o e o 3o elementos originais",
         "o 3o e o 4o elementos originais",
@@ -6555,7 +6555,7 @@ export const estatistica = {
         "o 5o e o 6o elementos originais"
       ],
       "correta": "o 4o e o 5o elementos originais",
-      "comentario": "Ao retirar o 1o elemento, restam 6 valores, correspondentes aos antigos 2o ao 7o. A nova mediana sera a media entre o 3o e o 4o desses restantes, isto e, entre o 4o e o 5o originais.",
+      "comentario": "Ao retirar o 1o elemento, restam 6 valores, correspondentes aos antigos 2o ao 7o. A nova mediana sera a média entre o 3o e o 4o desses restantes, isto e, entre o 4o e o 5o originais.",
       "tempoEstimado": 80,
       "tags": [
         "mediana",
@@ -6578,14 +6578,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Moda",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma distribuicao, o valor 12 aparece 5 vezes, o valor 15 aparece 5 vezes e os demais aparecem menos do que isso. Essa distribuicao e classificada como",
+      "enunciado": "Em uma distribuição, o valor 12 aparece 5 vezes, o valor 15 aparece 5 vezes e os demais aparecem menos do que isso. Essa distribuição é classificada como",
       "opcoes": [
         "amodal",
         "unimodal",
@@ -6593,7 +6593,7 @@ export const estatistica = {
         "bimodal"
       ],
       "correta": "bimodal",
-      "comentario": "Dois valores possuem a maior frequencia absoluta da distribuicao.",
+      "comentario": "Dois valores possuem a maior frequência absoluta da distribuição.",
       "tempoEstimado": 50,
       "tags": [
         "moda",
@@ -6616,14 +6616,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de graficos",
+      "subtopico": "Interpretação de gráficos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um grafico apresenta a quantidade de visitantes de um parque em cinco dias: 120, 150, 180, 150 e 100. A mediana desse conjunto de valores e",
+      "enunciado": "Um gráfico apresenta a quantidade de visitantes de um parque em cinco dias: 120, 150, 180, 150 e 100. A mediana desse conjunto de valores e",
       "opcoes": [
         "150",
         "120",
@@ -6655,14 +6655,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de tabelas",
+      "subtopico": "Interpretação de tabelas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma tabela informa o numero de horas de estudo por dia de 12 alunos: 1 hora (3 alunos), 2 horas (5 alunos) e 3 horas (4 alunos). A media de horas de estudo por aluno e",
+      "enunciado": "Uma tabela informa o número de horas de estudo por dia de 12 alunos: 1 hora (3 alunos), 2 horas (5 alunos) e 3 horas (4 alunos). A média de horas de estudo por aluno e",
       "opcoes": [
         "1,9",
         "2,1",
@@ -6670,7 +6670,7 @@ export const estatistica = {
         "2,5"
       ],
       "correta": "2,1",
-      "comentario": "A media e obtida por (1 x 3 + 2 x 5 + 3 x 4) dividido por 12, ou seja, 25/12, aproximadamente 2,1.",
+      "comentario": "A média é obtida por (1 x 3 + 2 x 5 + 3 x 4) dividido por 12, ou seja, 25/12, aproximadamente 2,1.",
       "tempoEstimado": 55,
       "tags": [
         "interpretacao-de-tabelas",
@@ -6693,14 +6693,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Distribuicao de frequencia",
+      "subtopico": "Distribuição de frequência",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa com 250 participantes, 18% escolheram uma determinada opcao. A frequencia absoluta correspondente a essa escolha foi",
+      "enunciado": "Em uma pesquisa com 250 participantes, 18% escolheram uma determinada opcao. A frequência absoluta correspondente a essa escolha foi",
       "opcoes": [
         "40",
         "50",
@@ -6731,14 +6731,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media ponderada",
+      "subtopico": "Média ponderada",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um processo seletivo considera tres notas com pesos 1, 2 e 2. Um candidato tirou 5, 7 e 9. A media ponderada final desse candidato foi",
+      "enunciado": "Um processo seletivo considera tres notas com pesos 1, 2 e 2. Um candidato tirou 5, 7 e 9. A média ponderada final desse candidato foi",
       "opcoes": [
         "7,2",
         "7,6",
@@ -6769,7 +6769,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Variancia",
       "dificuldadeLabel": "dificil",
@@ -6784,7 +6784,7 @@ export const estatistica = {
         "8"
       ],
       "correta": "5",
-      "comentario": "A media e 4. Os desvios ao quadrado sao 9, 1, 1 e 9, cuja soma e 20. Dividindo por 4, obtemos variancia 5.",
+      "comentario": "A média é 4. Os desvios ao quadrado são 9, 1, 1 e 9, cuja soma e 20. Dividindo por 4, obtemos variancia 5.",
       "tempoEstimado": 75,
       "tags": [
         "variancia",
@@ -6807,7 +6807,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Desvio padrao",
       "dificuldadeLabel": "dificil",
@@ -6845,22 +6845,22 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A media de uma turma era 7. Depois da retirada de uma nota 4, a media aumentou. Isso permite concluir que a nota retirada era",
+      "enunciado": "A média de uma turma era 7. Depois da retirada de uma nota 4, a média aumentou. Isso permite concluir que a nota retirada era",
       "opcoes": [
-        "igual a media inicial",
-        "maior que a media inicial",
-        "menor que a media inicial",
+        "igual a média inicial",
+        "maior que a média inicial",
+        "menor que a média inicial",
         "a maior nota da turma"
       ],
-      "correta": "menor que a media inicial",
-      "comentario": "Retirar um valor abaixo da media faz a media do grupo aumentar.",
+      "correta": "menor que a média inicial",
+      "comentario": "Retirar um valor abaixo da média faz a média do grupo aumentar.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao-indireta",
@@ -6883,22 +6883,22 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se a media de um conjunto e 15, e correto concluir que metade dos valores esta acima de 15 e metade abaixo de 15?",
+      "enunciado": "Se a média de um conjunto e 15, e correto concluir que metade dos valores esta acima de 15 e metade abaixo de 15?",
       "opcoes": [
-        "sim, isso sempre ocorre com a media",
+        "sim, isso sempre ocorre com a média",
         "sim, porque a soma dos desvios e positiva",
-        "nao, porque a media sempre coincide com a moda",
-        "nao, essa propriedade esta ligada mais diretamente a mediana do que a media"
+        "não, porque a média sempre coincide com a moda",
+        "não, essa propriedade esta ligada mais diretamente a mediana do que a média"
       ],
-      "correta": "nao, essa propriedade esta ligada mais diretamente a mediana do que a media",
-      "comentario": "A media nao garante divisao do conjunto em duas metades. Essa ideia se relaciona mais com a mediana.",
+      "correta": "não, essa propriedade esta ligada mais diretamente a mediana do que a média",
+      "comentario": "A média não garante divisao do conjunto em duas metades. Essa ideia se relaciona mais com a mediana.",
       "tempoEstimado": 55,
       "tags": [
         "pegadinha",
@@ -6922,7 +6922,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Equivalencia",
       "dificuldadeLabel": "dificil",
@@ -6960,22 +6960,22 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de graficos",
+      "subtopico": "Interpretação de gráficos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um grafico de linhas registra as temperaturas de cinco dias: 18, 21, 21, 24 e 25 graus. Para esse conjunto, e correto afirmar que",
+      "enunciado": "Um gráfico de linhas registra as temperaturas de cinco dias: 18, 21, 21, 24 e 25 graus. Para esse conjunto, e correto afirmar que",
       "opcoes": [
-        "a mediana e 22 e nao ha moda",
-        "a media e 21,8 e a moda e 21",
-        "a moda e 25 e a media e 22",
-        "media, mediana e moda sao todas iguais a 21"
+        "a mediana é 22 e não ha moda",
+        "a média é 21,8 e a moda é 21",
+        "a moda é 25 e a média é 22",
+        "média, mediana é moda são todas iguais a 21"
       ],
-      "correta": "a media e 21,8 e a moda e 21",
-      "comentario": "A media e 109/5 = 21,8, a mediana e 21 e a moda tambem e 21, pois esse valor se repete.",
+      "correta": "a média é 21,8 e a moda é 21",
+      "comentario": "A média é 109/5 = 21,8, a mediana é 21 e a moda também e 21, pois esse valor se repete.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao-de-graficos",
@@ -7000,22 +7000,22 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Analise de dados",
+      "subtopico": "Análise de dados",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Considere os conjuntos A = {10, 10, 10, 10, 10} e B = {2, 8, 10, 12, 18}. Ambos tem media 10. A melhor conclusao estatistica e que",
+      "enunciado": "Considere os conjuntos A = {10, 10, 10, 10, 10} e B = {2, 8, 10, 12, 18}. Ambos tem média 10. A melhor conclusao estatistica e que",
       "opcoes": [
-        "os conjuntos sao equivalentes em dispersao",
+        "os conjuntos são equivalentes em dispersao",
         "o conjunto A e mais disperso que o conjunto B",
         "o conjunto B e mais disperso que o conjunto A",
-        "a media permite concluir que as distribuicoes sao iguais"
+        "a média permite concluir que as distribuicoes são iguais"
       ],
       "correta": "o conjunto B e mais disperso que o conjunto A",
-      "comentario": "Embora tenham a mesma media, o conjunto B apresenta valores mais afastados do centro, logo tem maior dispersao.",
+      "comentario": "Embora tenham a mesma média, o conjunto B apresenta valores mais afastados do centro, logo tem maior dispersao.",
       "tempoEstimado": 80,
       "tags": [
         "analise-de-dados",
@@ -7038,14 +7038,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Media aritmetica",
+      "subtopico": "Média aritmetica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A media de 12 valores e 25. Se um desses valores, igual a 13, for substituido por 37, a nova media sera",
+      "enunciado": "A média de 12 valores e 25. Se um desses valores, igual a 13, for substituido por 37, a nova média sera",
       "opcoes": [
         "26",
         "26,5",
@@ -7053,7 +7053,7 @@ export const estatistica = {
         "27"
       ],
       "correta": "27",
-      "comentario": "A soma aumenta em 24. Como ha 12 valores, a media aumenta em 24/12 = 2. Logo, a nova media e 27.",
+      "comentario": "A soma aumenta em 24. Como ha 12 valores, a média aumenta em 24/12 = 2. Logo, a nova média é 27.",
       "tempoEstimado": 70,
       "tags": [
         "media-aritmetica",
@@ -7076,22 +7076,22 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Variancia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Entre dois conjuntos com mesma media, aquele que possui maior variancia apresenta valores",
+      "enunciado": "Entre dois conjuntos com mesma média, aquele que possui maior variancia apresenta valores",
       "opcoes": [
-        "mais afastados da media",
-        "mais concentrados em torno da media",
+        "mais afastados da média",
+        "mais concentrados em torno da média",
         "necessariamente maiores",
         "necessariamente menores"
       ],
-      "correta": "mais afastados da media",
-      "comentario": "A variancia mede o grau de espalhamento dos dados em torno da media.",
+      "correta": "mais afastados da média",
+      "comentario": "A variancia mede o grau de espalhamento dos dados em torno da média.",
       "tempoEstimado": 60,
       "tags": [
         "variancia",
@@ -7114,7 +7114,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Desvio padrao",
       "dificuldadeLabel": "dificil",
@@ -7123,13 +7123,13 @@ export const estatistica = {
       "tipo": "multipla_escolha",
       "enunciado": "Dois conjuntos possuem o mesmo desvio padrao. Isso significa necessariamente que",
       "opcoes": [
-        "as medias sao iguais",
+        "as medias são iguais",
         "a dispersao em torno das respectivas medias e a mesma",
-        "as medianas sao iguais",
-        "os conjuntos sao identicos"
+        "as medianas são iguais",
+        "os conjuntos são identicos"
       ],
       "correta": "a dispersao em torno das respectivas medias e a mesma",
-      "comentario": "O desvio padrao mede o espalhamento dos dados em relacao a media de cada conjunto.",
+      "comentario": "O desvio padrao mede o espalhamento dos dados em relação a média de cada conjunto.",
       "tempoEstimado": 65,
       "tags": [
         "desvio-padrao",
@@ -7152,22 +7152,22 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de tabelas",
+      "subtopico": "Interpretação de tabelas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Uma tabela apresenta as quantidades vendidas de um produto em quatro meses: 80, 120, 100 e 100 unidades. Para esses dados, e correto afirmar que",
       "opcoes": [
-        "a media e 90 e a mediana e 100",
-        "a moda nao existe",
-        "media e mediana sao ambas 100",
+        "a média é 90 e a mediana é 100",
+        "a moda não existe",
+        "média é mediana são ambas 100",
         "a amplitude e 30"
       ],
-      "correta": "media e mediana sao ambas 100",
-      "comentario": "A media e (80 + 120 + 100 + 100)/4 = 100. Ordenando os dados, a mediana tambem e 100.",
+      "correta": "média é mediana são ambas 100",
+      "comentario": "A média é (80 + 120 + 100 + 100)/4 = 100. Ordenando os dados, a mediana também e 100.",
       "tempoEstimado": 65,
       "tags": [
         "interpretacao-de-tabelas",
@@ -7192,14 +7192,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Distribuicao de frequencia",
+      "subtopico": "Distribuição de frequência",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa, a frequencia relativa de uma categoria foi 18% em um total de 250 respostas. A frequencia absoluta dessa categoria foi",
+      "enunciado": "Em uma pesquisa, a frequência relativa de uma categoria foi 18% em um total de 250 respostas. A frequência absoluta dessa categoria foi",
       "opcoes": [
         "40",
         "50",
@@ -7230,14 +7230,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Mediana",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um conjunto ordenado com 10 valores, a media entre o 5o e o 6o termos e 18. Pode-se afirmar que a mediana do conjunto e",
+      "enunciado": "Em um conjunto ordenado com 10 valores, a média entre o 5o e o 6o termos e 18. Pode-se afirmar que a mediana do conjunto e",
       "opcoes": [
         "18",
         "16",
@@ -7245,7 +7245,7 @@ export const estatistica = {
         "20"
       ],
       "correta": "18",
-      "comentario": "Para quantidade par de elementos, a mediana e a media entre o 5o e o 6o termos.",
+      "comentario": "Para quantidade par de elementos, a mediana é a média entre o 5o e o 6o termos.",
       "tempoEstimado": 55,
       "tags": [
         "mediana",
@@ -7268,22 +7268,22 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Analise de dados",
+      "subtopico": "Análise de dados",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma distribuicao possui media 50, mediana 50 e moda 50. Ainda assim, e correto afirmar que",
+      "enunciado": "Uma distribuição possui média 50, mediana 50 e moda 50. Ainda assim, e correto afirmar que",
       "opcoes": [
-        "todos os valores sao 50",
-        "a distribuicao pode ter dispersao diferente de zero",
+        "todos os valores são 50",
+        "a distribuição pode ter dispersao diferente de zero",
         "a variancia necessariamente e zero",
         "o conjunto tem apenas um elemento"
       ],
-      "correta": "a distribuicao pode ter dispersao diferente de zero",
-      "comentario": "Media, mediana e moda iguais nao obrigam todos os valores a serem iguais. Ainda pode haver espalhamento dos dados.",
+      "correta": "a distribuição pode ter dispersao diferente de zero",
+      "comentario": "Média, mediana é moda iguais não obrigam todos os valores a serem iguais. Ainda pode haver espalhamento dos dados.",
       "tempoEstimado": 80,
       "tags": [
         "analise-de-dados",
@@ -7306,14 +7306,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A media de um conjunto de 5 valores e 24. Ao substituir um dos valores por outro 10 unidades maior, a nova media do conjunto passa a ser",
+      "enunciado": "A média de um conjunto de 5 valores e 24. Ao substituir um dos valores por outro 10 unidades maior, a nova média do conjunto passa a ser",
       "opcoes": [
         "25",
         "27",
@@ -7321,7 +7321,7 @@ export const estatistica = {
         "28"
       ],
       "correta": "26",
-      "comentario": "Se a soma total aumenta em 10 e ha 5 valores, a media aumenta em 10/5 = 2. Logo, a nova media e 26.",
+      "comentario": "Se a soma total aumenta em 10 e ha 5 valores, a média aumenta em 10/5 = 2. Logo, a nova média é 26.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao-indireta",
@@ -7344,14 +7344,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um conjunto de dados possui media 30. Se forem acrescentados dois valores, 10 e 50, a nova media do conjunto",
+      "enunciado": "Um conjunto de dados possui média 30. Se forem acrescentados dois valores, 10 e 50, a nova média do conjunto",
       "opcoes": [
         "aumenta",
         "diminui",
@@ -7359,7 +7359,7 @@ export const estatistica = {
         "permanece igual"
       ],
       "correta": "permanece igual",
-      "comentario": "A media dos valores adicionados e 30. Assim, a media do conjunto nao se altera.",
+      "comentario": "A média dos valores adicionados e 30. Assim, a média do conjunto não se altera.",
       "tempoEstimado": 65,
       "tags": [
         "pegadinha",
@@ -7382,7 +7382,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Equivalencia",
       "dificuldadeLabel": "dificil",
@@ -7420,7 +7420,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Variancia",
       "dificuldadeLabel": "dificil",
@@ -7435,7 +7435,7 @@ export const estatistica = {
         "8"
       ],
       "correta": "5",
-      "comentario": "A media e 4. Os desvios ao quadrado sao 9, 1, 1 e 9. A variancia populacional e (9 + 1 + 1 + 9)/4 = 20/4 = 5.",
+      "comentario": "A média é 4. Os desvios ao quadrado são 9, 1, 1 e 9. A variancia populacional e (9 + 1 + 1 + 9)/4 = 20/4 = 5.",
       "tempoEstimado": 75,
       "tags": [
         "variancia",
@@ -7458,7 +7458,7 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Desvio padrao",
       "dificuldadeLabel": "dificil",
@@ -7496,22 +7496,22 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de graficos",
+      "subtopico": "Interpretação de gráficos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um grafico apresenta os valores 8, 12, 16, 20 e 24. Para esse conjunto, e correto afirmar que",
+      "enunciado": "Um gráfico apresenta os valores 8, 12, 16, 20 e 24. Para esse conjunto, e correto afirmar que",
       "opcoes": [
-        "a media e 14",
-        "a mediana e 12",
-        "nao existe media",
-        "a media e a mediana sao iguais a 16"
+        "a média é 14",
+        "a mediana é 12",
+        "não existe média",
+        "a média é a mediana são iguais a 16"
       ],
-      "correta": "a media e a mediana sao iguais a 16",
-      "comentario": "A media e (8 + 12 + 16 + 20 + 24)/5 = 80/5 = 16. Como o conjunto tem 5 elementos ordenados, a mediana tambem e 16.",
+      "correta": "a média é a mediana são iguais a 16",
+      "comentario": "A média é (8 + 12 + 16 + 20 + 24)/5 = 80/5 = 16. Como o conjunto tem 5 elementos ordenados, a mediana também e 16.",
       "tempoEstimado": 65,
       "tags": [
         "interpretacao-de-graficos",
@@ -7536,22 +7536,22 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Interpretacao de tabelas",
+      "subtopico": "Interpretação de tabelas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Uma tabela apresenta as quantidades vendidas de um produto em cinco dias: 10, 10, 12, 14 e 14. Sobre esse conjunto de dados, e correto afirmar que",
       "opcoes": [
-        "a mediana e 12 e a distribuicao e bimodal",
-        "a media e 11 e a moda e 10",
-        "a media e 12 e a moda e unica",
-        "a mediana e 14 e a distribuicao e amodal"
+        "a mediana é 12 e a distribuição é bimodal",
+        "a média é 11 e a moda é 10",
+        "a média é 12 e a moda é unica",
+        "a mediana é 14 e a distribuição é amodal"
       ],
-      "correta": "a mediana e 12 e a distribuicao e bimodal",
-      "comentario": "Ordenando os dados, a mediana e 12. Os valores 10 e 14 aparecem duas vezes, logo a distribuicao e bimodal.",
+      "correta": "a mediana é 12 e a distribuição é bimodal",
+      "comentario": "Ordenando os dados, a mediana é 12. Os valores 10 e 14 aparecem duas vezes, logo a distribuição é bimodal.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao-de-tabelas",
@@ -7576,14 +7576,14 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Distribuicao de frequencia",
+      "subtopico": "Distribuição de frequência",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa, 18% de 350 entrevistados escolheram uma determinada alternativa. O numero de entrevistados que escolheram essa alternativa foi",
+      "enunciado": "Em uma pesquisa, 18% de 350 entrevistados escolheram uma determinada alternativa. O número de entrevistados que escolheram essa alternativa foi",
       "opcoes": [
         "54",
         "63",
@@ -7614,22 +7614,22 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
       "subtopico": "Mediana",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um conjunto ordenado com 9 elementos, a mediana e o 5o termo. Se os quatro menores termos forem mantidos e o maior termo for retirado, a nova mediana passara a ser",
+      "enunciado": "Em um conjunto ordenado com 9 elementos, a mediana é o 5o termo. Se os quatro menores termos forem mantidos e o maior termo for retirado, a nova mediana passara a ser",
       "opcoes": [
         "o 4o termo original",
         "o 5o termo original",
-        "a media entre o 4o e o 5o termos originais",
-        "a media entre o 5o e o 6o termos originais"
+        "a média entre o 4o e o 5o termos originais",
+        "a média entre o 5o e o 6o termos originais"
       ],
-      "correta": "a media entre o 4o e o 5o termos originais",
-      "comentario": "Ao retirar o 9o termo, restam 8 termos. A nova mediana sera a media entre o 4o e o 5o termos do conjunto original.",
+      "correta": "a média entre o 4o e o 5o termos originais",
+      "comentario": "Ao retirar o 9o termo, restam 8 termos. A nova mediana sera a média entre o 4o e o 5o termos do conjunto original.",
       "tempoEstimado": 75,
       "tags": [
         "mediana",
@@ -7652,22 +7652,22 @@ export const estatistica = {
       "serie": [
         3
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Estatistica",
-      "subtopico": "Analise de dados",
+      "subtopico": "Análise de dados",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Dois conjuntos possuem a mesma media, a mesma mediana e a mesma moda, mas diferentes variancias. Isso mostra que",
+      "enunciado": "Dois conjuntos possuem a mesma média, a mesma mediana é a mesma moda, mas diferentes variancias. Isso mostra que",
       "opcoes": [
-        "essas tres medidas sao suficientes para descrever completamente qualquer distribuicao",
-        "a variancia nao e uma medida estatistica relevante",
-        "os conjuntos sao necessariamente identicos",
+        "essas tres medidas são suficientes para descrever completamente qualquer distribuição",
+        "a variancia não e uma medida estatistica relevante",
+        "os conjuntos são necessariamente identicos",
         "conjuntos distintos podem compartilhar medidas de tendencia central e ainda assim apresentar dispersoes diferentes"
       ],
       "correta": "conjuntos distintos podem compartilhar medidas de tendencia central e ainda assim apresentar dispersoes diferentes",
-      "comentario": "Media, mediana e moda nao descrevem sozinhas todo o comportamento de uma distribuicao. A dispersao tambem e essencial.",
+      "comentario": "Média, mediana é moda não descrevem sozinhas todo o comportamento de uma distribuição. A dispersao também e essencial.",
       "tempoEstimado": 80,
       "tags": [
         "analise-de-dados",

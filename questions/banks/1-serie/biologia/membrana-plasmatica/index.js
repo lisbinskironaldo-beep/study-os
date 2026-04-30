@@ -1014,7 +1014,7 @@ export const membranaPlasmatica = {
         "produção de clorofila em todas as células"
       ],
       "correta": "trocas de substâncias com o meio",
-      "comentario": "A membrana plasmática atua no controle e na mediação das trocas entre o interior celular e o ambiente externo.",
+      "comentario": "A membrana plasmática atua no controle e na médiação das trocas entre o interior celular e o ambiente externo.",
       "tempoEstimado": 30,
       "tags": [
         "funcao",

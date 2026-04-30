@@ -1,0 +1,82 @@
+{
+  "summary": {},
+  "results": [
+    {
+      "file": "questions/banks/1-serie/filosofia/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/filosofia/introducao-a-filosofia/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/filosofia/pre-socraticos/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/filosofia/socrates-platao-aristoteles/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/filosofia/filosofia-moderna-descartes-locke-rousseau/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/filosofia/iluminismo/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/filosofia/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/filosofia/etica/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/filosofia/existencialismo/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/filosofia/filosofia-contemporanea/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/filosofia/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    }
+  ]
+}

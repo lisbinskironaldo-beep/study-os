@@ -173,12 +173,12 @@ export const optica = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Natureza e propagação da luz?",
+      "enunciado": "Qual alternativa NÃO está compatível com Natureza e propagação da luz?",
       "opcoes": [
         "As regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz.",
         "O estudo da luz como forma de energia que se propaga e permite a visão dos objetos.",
-        "Compreender como a luz se propaga e torna possivel a observacao visual.",
-        "Ajuda a compreender a formacao de sombras e a iluminacao de ambientes."
+        "Compreender como a luz se propaga e torna possível a observação visual.",
+        "Ajuda a compreender a formação de sombras e a iluminacao de ambientes."
       ],
       "correta": "As regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz.",
       "comentario": "A opção incompativel descreve outro subtópico, não Natureza e propagação da luz.",
@@ -212,15 +212,15 @@ export const optica = {
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Natureza e propagação da luz, o foco principal e:",
+      "enunciado": "Ao estudar Natureza e propagação da luz, o foco principal é:",
       "opcoes": [
-        "compreender como a luz se propaga e torna possivel a observacao visual",
+        "compreender como a luz se propaga e torna possível a observação visual",
         "aplicar os principios basicos que organizam o comportamento dos raios luminosos",
-        "relacionar reflexão regular com a formacao de imagens em espelhos planos",
-        "interpretar a formacao de imagens em espelhos côncavos e convexos"
+        "relacionar reflexão regular com a formação de imagens em espelhos planos",
+        "interpretar a formação de imagens em espelhos côncavos e convexos"
       ],
-      "correta": "compreender como a luz se propaga e torna possivel a observacao visual",
-      "comentario": "Natureza e propagação da luz concentra-se em compreender como a luz se propaga e torna possivel a observacao visual.",
+      "correta": "compreender como a luz se propaga e torna possível a observação visual",
+      "comentario": "Natureza e propagação da luz concentra-se em compreender como a luz se propaga e torna possível a observação visual.",
       "tempoEstimado": 35,
       "tags": [
         "optica",
@@ -331,13 +331,13 @@ export const optica = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual situação prática depende mais diretamente de Natureza e propagação da luz?",
       "opcoes": [
-        "a formacao de sombras e a iluminacao de ambientes",
+        "a formação de sombras e a iluminacao de ambientes",
         "a análise de trajetórias luminosas em esquemas geometricos",
         "o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos",
-        "a interpretacao visual de objetos imersos em agua e vidro"
+        "a interpretação visual de objetos imersos em agua e vidro"
       ],
-      "correta": "a formacao de sombras e a iluminacao de ambientes",
-      "comentario": "Natureza e propagação da luz aparece de modo direto na formacao de sombras e a iluminacao de ambientes.",
+      "correta": "a formação de sombras e a iluminacao de ambientes",
+      "comentario": "Natureza e propagação da luz aparece de modo direto na formação de sombras e a iluminacao de ambientes.",
       "tempoEstimado": 40,
       "tags": [
         "optica",
@@ -409,12 +409,12 @@ export const optica = {
       "tipo": "multipla_escolha",
       "enunciado": "Se um grupo fosse pesquisar Natureza e propagação da luz, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Natureza e propagação da luz aparece na formacao de sombras e a iluminacao de ambientes?",
-        "Como Princípios da Óptica geométrica substitui totalmente a formacao de sombras e a iluminacao de ambientes?",
+        "Como Natureza e propagação da luz aparece na formação de sombras e a iluminacao de ambientes?",
+        "Como Princípios da Óptica geométrica substitui totalmente a formação de sombras e a iluminacao de ambientes?",
         "Por que Reflexão em espelhos planos torna desnecessário estudar Natureza e propagação da luz?",
-        "De que modo Espelhos esféricos elimina toda medida fisica envolvida?"
+        "De que modo Espelhos esféricos elimina toda medida física envolvida?"
       ],
-      "correta": "Como Natureza e propagação da luz aparece na formacao de sombras e a iluminacao de ambientes?",
+      "correta": "Como Natureza e propagação da luz aparece na formação de sombras e a iluminacao de ambientes?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Natureza e propagação da luz.",
       "tempoEstimado": 45,
       "tags": [
@@ -485,7 +485,7 @@ export const optica = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"a luz so passa a existir no instante em que entra nos olhos de alguem\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"a luz so passa a existir no instante em que entra nos olhos de alguem\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque o estudo da luz como forma de energia que se propaga e permite a visão dos objetos.",
         "A afirmação está correta, pois resume integralmente Natureza e propagação da luz.",
@@ -524,15 +524,15 @@ export const optica = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Natureza e propagação da luz fosse ignorado(a) ao analisar a formacao de sombras e a iluminacao de ambientes, o resultado mais provável seria:",
+      "enunciado": "Se Natureza e propagação da luz fosse ignorado(a) ao analisar a formação de sombras e a iluminacao de ambientes, o resultado mais provável seria:",
       "opcoes": [
-        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a formacao de sombras e a iluminacao de ambientes.",
+        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a formação de sombras e a iluminacao de ambientes.",
         "a situação seria explicada automaticamente por Princípios da Óptica geométrica, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Natureza e propagação da luz não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Natureza e propagação da luz não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
-      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a formacao de sombras e a iluminacao de ambientes.",
-      "comentario": "Ignorar Natureza e propagação da luz compromete a leitura fisica da situação apresentada.",
+      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a formação de sombras e a iluminacao de ambientes.",
+      "comentario": "Ignorar Natureza e propagação da luz compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -565,12 +565,12 @@ export const optica = {
       "tipo": "multipla_escolha",
       "enunciado": "Em uma aplicação cotidiana ou escolar, Natureza e propagação da luz ajuda principalmente a compreender:",
       "opcoes": [
-        "a formacao de sombras e a iluminacao de ambientes",
+        "a formação de sombras e a iluminacao de ambientes",
         "a análise de trajetórias luminosas em esquemas geometricos",
         "o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos",
         "espelhos de maquiagem, retrovisores externos e refletores"
       ],
-      "correta": "a formacao de sombras e a iluminacao de ambientes",
+      "correta": "a formação de sombras e a iluminacao de ambientes",
       "comentario": "A aplicação escolhida e a que melhor representa Natureza e propagação da luz.",
       "tempoEstimado": 60,
       "tags": [
@@ -758,7 +758,7 @@ export const optica = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Princípios da Óptica geométrica?",
+      "enunciado": "Qual alternativa NÃO está compatível com Princípios da Óptica geométrica?",
       "opcoes": [
         "O fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos.",
         "As regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz.",
@@ -797,11 +797,11 @@ export const optica = {
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Princípios da Óptica geométrica, o foco principal e:",
+      "enunciado": "Ao estudar Princípios da Óptica geométrica, o foco principal é:",
       "opcoes": [
         "aplicar os principios basicos que organizam o comportamento dos raios luminosos",
-        "relacionar reflexão regular com a formacao de imagens em espelhos planos",
-        "interpretar a formacao de imagens em espelhos côncavos e convexos",
+        "relacionar reflexão regular com a formação de imagens em espelhos planos",
+        "interpretar a formação de imagens em espelhos côncavos e convexos",
         "analisar a mudanca de trajetória da luz em interfaces entre meios distintos"
       ],
       "correta": "aplicar os principios basicos que organizam o comportamento dos raios luminosos",
@@ -997,7 +997,7 @@ export const optica = {
         "Como Princípios da Óptica geométrica aparece na análise de trajetórias luminosas em esquemas geometricos?",
         "Como Reflexão em espelhos planos substitui totalmente a análise de trajetórias luminosas em esquemas geometricos?",
         "Por que Espelhos esféricos torna desnecessário estudar Princípios da Óptica geométrica?",
-        "De que modo Refração da luz elimina toda medida fisica envolvida?"
+        "De que modo Refração da luz elimina toda medida física envolvida?"
       ],
       "correta": "Como Princípios da Óptica geométrica aparece na análise de trajetórias luminosas em esquemas geometricos?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Princípios da Óptica geométrica.",
@@ -1070,7 +1070,7 @@ export const optica = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"dois raios de luz que se cruzam deixam de seguir sua trajetória original\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"dois raios de luz que se cruzam deixam de seguir sua trajetória original\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque as regras que descrevem a propagação retilínea, a independência e a reversibilidade dos raios de luz.",
         "A afirmação está correta, pois resume integralmente Princípios da Óptica geométrica.",
@@ -1113,11 +1113,11 @@ export const optica = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a análise de trajetórias luminosas em esquemas geometricos.",
         "a situação seria explicada automaticamente por Reflexão em espelhos planos, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Princípios da Óptica geométrica não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Princípios da Óptica geométrica não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a análise de trajetórias luminosas em esquemas geometricos.",
-      "comentario": "Ignorar Princípios da Óptica geométrica compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar Princípios da Óptica geométrica compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -1153,7 +1153,7 @@ export const optica = {
         "a análise de trajetórias luminosas em esquemas geometricos",
         "o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos",
         "espelhos de maquiagem, retrovisores externos e refletores",
-        "a interpretacao visual de objetos imersos em agua e vidro"
+        "a interpretação visual de objetos imersos em agua e vidro"
       ],
       "correta": "a análise de trajetórias luminosas em esquemas geometricos",
       "comentario": "A aplicação escolhida e a que melhor representa Princípios da Óptica geométrica.",
@@ -1231,7 +1231,7 @@ export const optica = {
         "o fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos",
         "superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem",
         "a mudanca de direção e de velocidade da luz quando ela passa de um meio para outro",
-        "as relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios"
+        "as relações matematicas que ligam os ângulos de incidencia e refração aos índices dos meios"
       ],
       "correta": "o fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos",
       "comentario": "Reflexão em espelhos planos refere-se ao fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos.",
@@ -1265,7 +1265,7 @@ export const optica = {
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: uma pessoa se observa em um espelho plano e percebe uma imagem a mesma distancia atras do espelho Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situação: uma pessoa se observa em um espelho plano e percebe uma imagem a mesma distância atras do espelho Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
         "Reflexão em espelhos planos",
         "Espelhos esféricos",
@@ -1309,7 +1309,7 @@ export const optica = {
         "O fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos.",
         "Superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
         "A mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
-        "As relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios."
+        "As relações matematicas que ligam os ângulos de incidencia e refração aos índices dos meios."
       ],
       "correta": "O fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos.",
       "comentario": "A alternativa correta resume o conceito de Reflexão em espelhos planos.",
@@ -1343,11 +1343,11 @@ export const optica = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Reflexão em espelhos planos?",
+      "enunciado": "Qual alternativa NÃO está compatível com Reflexão em espelhos planos?",
       "opcoes": [
         "Superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
         "O fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos.",
-        "Relacionar reflexão regular com a formacao de imagens em espelhos planos.",
+        "Relacionar reflexão regular com a formação de imagens em espelhos planos.",
         "Ajuda a compreender o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos."
       ],
       "correta": "Superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
@@ -1382,15 +1382,15 @@ export const optica = {
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Reflexão em espelhos planos, o foco principal e:",
+      "enunciado": "Ao estudar Reflexão em espelhos planos, o foco principal é:",
       "opcoes": [
-        "relacionar reflexão regular com a formacao de imagens em espelhos planos",
-        "interpretar a formacao de imagens em espelhos côncavos e convexos",
+        "relacionar reflexão regular com a formação de imagens em espelhos planos",
+        "interpretar a formação de imagens em espelhos côncavos e convexos",
         "analisar a mudanca de trajetória da luz em interfaces entre meios distintos",
         "relacionar ângulos e índices de refração em passagens de luz entre meios"
       ],
-      "correta": "relacionar reflexão regular com a formacao de imagens em espelhos planos",
-      "comentario": "Reflexão em espelhos planos concentra-se em relacionar reflexão regular com a formacao de imagens em espelhos planos.",
+      "correta": "relacionar reflexão regular com a formação de imagens em espelhos planos",
+      "comentario": "Reflexão em espelhos planos concentra-se em relacionar reflexão regular com a formação de imagens em espelhos planos.",
       "tempoEstimado": 35,
       "tags": [
         "optica",
@@ -1426,7 +1426,7 @@ export const optica = {
         "O fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos.",
         "Superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
         "A mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
-        "As relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios."
+        "As relações matematicas que ligam os ângulos de incidencia e refração aos índices dos meios."
       ],
       "correta": "O fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos.",
       "comentario": "A comparação correta mostra a especificidade de Reflexão em espelhos planos.",
@@ -1460,7 +1460,7 @@ export const optica = {
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma análise de sala, considera-se que uma pessoa se observa em um espelho plano e percebe uma imagem a mesma distancia atras do espelho Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma análise de sala, considera-se que uma pessoa se observa em um espelho plano e percebe uma imagem a mesma distância atras do espelho Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
       "opcoes": [
         "Reflexão em espelhos planos",
         "Espelhos esféricos",
@@ -1503,7 +1503,7 @@ export const optica = {
       "opcoes": [
         "o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos",
         "espelhos de maquiagem, retrovisores externos e refletores",
-        "a interpretacao visual de objetos imersos em agua e vidro",
+        "a interpretação visual de objetos imersos em agua e vidro",
         "óculos, lupas, câmeras e projetores"
       ],
       "correta": "o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos",
@@ -1538,7 +1538,7 @@ export const optica = {
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de uma pessoa se observa em um espelho plano e percebe uma imagem a mesma distancia atras do espelho, qual conclusão está mais correta?",
+      "enunciado": "A partir de uma pessoa se observa em um espelho plano e percebe uma imagem a mesma distância atras do espelho, qual conclusão está mais correta?",
       "opcoes": [
         "o caso e explicado por Reflexão em espelhos planos.",
         "o caso e mais bem entendido por Espelhos esféricos.",
@@ -1582,7 +1582,7 @@ export const optica = {
         "Como Reflexão em espelhos planos aparece no uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos?",
         "Como Espelhos esféricos substitui totalmente o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos?",
         "Por que Refração da luz torna desnecessário estudar Reflexão em espelhos planos?",
-        "De que modo leis de Snell elimina toda medida fisica envolvida?"
+        "De que modo leis de Snell elimina toda medida física envolvida?"
       ],
       "correta": "Como Reflexão em espelhos planos aparece no uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Reflexão em espelhos planos.",
@@ -1655,7 +1655,7 @@ export const optica = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"em um espelho plano, a imagem se forma exatamente na superficie do espelho\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"em um espelho plano, a imagem se forma exatamente na superficie do espelho\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque o fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos.",
         "A afirmação está correta, pois resume integralmente Reflexão em espelhos planos.",
@@ -1698,11 +1698,11 @@ export const optica = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos.",
         "a situação seria explicada automaticamente por Espelhos esféricos, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Reflexão em espelhos planos não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Reflexão em espelhos planos não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos.",
-      "comentario": "Ignorar Reflexão em espelhos planos compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar Reflexão em espelhos planos compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -1737,7 +1737,7 @@ export const optica = {
       "opcoes": [
         "o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos",
         "espelhos de maquiagem, retrovisores externos e refletores",
-        "a interpretacao visual de objetos imersos em agua e vidro",
+        "a interpretação visual de objetos imersos em agua e vidro",
         "o cálculo de ângulos de refração em interfaces opticas"
       ],
       "correta": "o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos",
@@ -1777,7 +1777,7 @@ export const optica = {
         "Em síntese, o fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos.",
         "Em síntese, superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
         "Em síntese, a mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
-        "Em síntese, as relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios."
+        "Em síntese, as relações matematicas que ligam os ângulos de incidencia e refração aos índices dos meios."
       ],
       "correta": "Em síntese, o fenômeno em que a luz retorna ao meio de origem e forma imagens virtuais simétricas em espelhos planos.",
       "comentario": "O resumo correto recupera o núcleo conceitual de Reflexão em espelhos planos.",
@@ -1815,7 +1815,7 @@ export const optica = {
       "opcoes": [
         "superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem",
         "a mudanca de direção e de velocidade da luz quando ela passa de um meio para outro",
-        "as relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios",
+        "as relações matematicas que ligam os ângulos de incidencia e refração aos índices dos meios",
         "dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens"
       ],
       "correta": "superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem",
@@ -1893,7 +1893,7 @@ export const optica = {
       "opcoes": [
         "Superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
         "A mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
-        "As relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
+        "As relações matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
         "Dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens."
       ],
       "correta": "Superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
@@ -1928,11 +1928,11 @@ export const optica = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Espelhos esféricos?",
+      "enunciado": "Qual alternativa NÃO está compatível com Espelhos esféricos?",
       "opcoes": [
         "A mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
         "Superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
-        "Interpretar a formacao de imagens em espelhos côncavos e convexos.",
+        "Interpretar a formação de imagens em espelhos côncavos e convexos.",
         "Ajuda a compreender espelhos de maquiagem, retrovisores externos e refletores."
       ],
       "correta": "A mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
@@ -1967,15 +1967,15 @@ export const optica = {
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Espelhos esféricos, o foco principal e:",
+      "enunciado": "Ao estudar Espelhos esféricos, o foco principal é:",
       "opcoes": [
-        "interpretar a formacao de imagens em espelhos côncavos e convexos",
+        "interpretar a formação de imagens em espelhos côncavos e convexos",
         "analisar a mudanca de trajetória da luz em interfaces entre meios distintos",
         "relacionar ângulos e índices de refração em passagens de luz entre meios",
         "analisar como lentes convergentes e divergentes formam imagens e alteram feixes de luz"
       ],
-      "correta": "interpretar a formacao de imagens em espelhos côncavos e convexos",
-      "comentario": "Espelhos esféricos concentra-se em interpretar a formacao de imagens em espelhos côncavos e convexos.",
+      "correta": "interpretar a formação de imagens em espelhos côncavos e convexos",
+      "comentario": "Espelhos esféricos concentra-se em interpretar a formação de imagens em espelhos côncavos e convexos.",
       "tempoEstimado": 35,
       "tags": [
         "optica",
@@ -2010,7 +2010,7 @@ export const optica = {
       "opcoes": [
         "Superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
         "A mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
-        "As relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
+        "As relações matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
         "Dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens."
       ],
       "correta": "Superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
@@ -2087,7 +2087,7 @@ export const optica = {
       "enunciado": "Qual situação prática depende mais diretamente de Espelhos esféricos?",
       "opcoes": [
         "espelhos de maquiagem, retrovisores externos e refletores",
-        "a interpretacao visual de objetos imersos em agua e vidro",
+        "a interpretação visual de objetos imersos em agua e vidro",
         "o cálculo de ângulos de refração em interfaces opticas",
         "o uso de microscópios, telescópios, lunetas e câmeras fotográficas"
       ],
@@ -2167,7 +2167,7 @@ export const optica = {
         "Como Espelhos esféricos aparece em espelhos de maquiagem, retrovisores externos e refletores?",
         "Como Refração da luz substitui totalmente espelhos de maquiagem, retrovisores externos e refletores?",
         "Por que leis de Snell torna desnecessário estudar Espelhos esféricos?",
-        "De que modo Lentes esféricas elimina toda medida fisica envolvida?"
+        "De que modo Lentes esféricas elimina toda medida física envolvida?"
       ],
       "correta": "Como Espelhos esféricos aparece em espelhos de maquiagem, retrovisores externos e refletores?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Espelhos esféricos.",
@@ -2240,7 +2240,7 @@ export const optica = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"espelhos côncavos e convexos formam sempre imagens iguais ao objeto\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"espelhos côncavos e convexos formam sempre imagens iguais ao objeto\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
         "A afirmação está correta, pois resume integralmente Espelhos esféricos.",
@@ -2283,11 +2283,11 @@ export const optica = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre espelhos de maquiagem, retrovisores externos e refletores.",
         "a situação seria explicada automaticamente por Refração da luz, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Espelhos esféricos não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Espelhos esféricos não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre espelhos de maquiagem, retrovisores externos e refletores.",
-      "comentario": "Ignorar Espelhos esféricos compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar Espelhos esféricos compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -2321,7 +2321,7 @@ export const optica = {
       "enunciado": "Em uma aplicação cotidiana ou escolar, Espelhos esféricos ajuda principalmente a compreender:",
       "opcoes": [
         "espelhos de maquiagem, retrovisores externos e refletores",
-        "a interpretacao visual de objetos imersos em agua e vidro",
+        "a interpretação visual de objetos imersos em agua e vidro",
         "o cálculo de ângulos de refração em interfaces opticas",
         "óculos, lupas, câmeras e projetores"
       ],
@@ -2361,7 +2361,7 @@ export const optica = {
       "opcoes": [
         "Em síntese, superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
         "Em síntese, a mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
-        "Em síntese, as relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
+        "Em síntese, as relações matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
         "Em síntese, dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens."
       ],
       "correta": "Em síntese, superficies refletoras curvas que podem convergir ou divergir raios e formar diferentes tipos de imagem.",
@@ -2399,7 +2399,7 @@ export const optica = {
       "enunciado": "Em Física, Refração da luz pode ser definido(a) como:",
       "opcoes": [
         "a mudanca de direção e de velocidade da luz quando ela passa de um meio para outro",
-        "as relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios",
+        "as relações matematicas que ligam os ângulos de incidencia e refração aos índices dos meios",
         "dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens",
         "aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens"
       ],
@@ -2477,7 +2477,7 @@ export const optica = {
       "enunciado": "Qual afirmação descreve corretamente Refração da luz?",
       "opcoes": [
         "A mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
-        "As relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
+        "As relações matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
         "Dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
         "Aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens."
       ],
@@ -2513,14 +2513,14 @@ export const optica = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Refração da luz?",
+      "enunciado": "Qual alternativa NÃO está compatível com Refração da luz?",
       "opcoes": [
-        "As relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
+        "As relações matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
         "A mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
         "Analisar a mudanca de trajetória da luz em interfaces entre meios distintos.",
-        "Ajuda a compreender a interpretacao visual de objetos imersos em agua e vidro."
+        "Ajuda a compreender a interpretação visual de objetos imersos em agua e vidro."
       ],
-      "correta": "As relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
+      "correta": "As relações matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
       "comentario": "A opção incompativel descreve outro subtópico, não Refração da luz.",
       "tempoEstimado": 30,
       "tags": [
@@ -2552,7 +2552,7 @@ export const optica = {
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Refração da luz, o foco principal e:",
+      "enunciado": "Ao estudar Refração da luz, o foco principal é:",
       "opcoes": [
         "analisar a mudanca de trajetória da luz em interfaces entre meios distintos",
         "relacionar ângulos e índices de refração em passagens de luz entre meios",
@@ -2591,10 +2591,10 @@ export const optica = {
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Leis de Snell trata de as relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios, Refração da luz destaca:",
+      "enunciado": "Enquanto Leis de Snell trata de as relações matematicas que ligam os ângulos de incidencia e refração aos índices dos meios, Refração da luz destaca:",
       "opcoes": [
         "A mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
-        "As relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
+        "As relações matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
         "Dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
         "Aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens."
       ],
@@ -2671,13 +2671,13 @@ export const optica = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual situação prática depende mais diretamente de Refração da luz?",
       "opcoes": [
-        "a interpretacao visual de objetos imersos em agua e vidro",
+        "a interpretação visual de objetos imersos em agua e vidro",
         "o cálculo de ângulos de refração em interfaces opticas",
         "óculos, lupas, câmeras e projetores",
-        "a formacao de espectros luminosos e o estudo das cores"
+        "a formação de espectros luminosos e o estudo das cores"
       ],
-      "correta": "a interpretacao visual de objetos imersos em agua e vidro",
-      "comentario": "Refração da luz aparece de modo direto na interpretacao visual de objetos imersos em agua e vidro.",
+      "correta": "a interpretação visual de objetos imersos em agua e vidro",
+      "comentario": "Refração da luz aparece de modo direto na interpretação visual de objetos imersos em agua e vidro.",
       "tempoEstimado": 40,
       "tags": [
         "optica",
@@ -2749,12 +2749,12 @@ export const optica = {
       "tipo": "multipla_escolha",
       "enunciado": "Se um grupo fosse pesquisar Refração da luz, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Refração da luz aparece na interpretacao visual de objetos imersos em agua e vidro?",
-        "Como leis de Snell substitui totalmente a interpretacao visual de objetos imersos em agua e vidro?",
+        "Como Refração da luz aparece na interpretação visual de objetos imersos em agua e vidro?",
+        "Como leis de Snell substitui totalmente a interpretação visual de objetos imersos em agua e vidro?",
         "Por que Lentes esféricas torna desnecessário estudar Refração da luz?",
-        "De que modo Instrumentos ópticos elimina toda medida fisica envolvida?"
+        "De que modo Instrumentos ópticos elimina toda medida física envolvida?"
       ],
-      "correta": "Como Refração da luz aparece na interpretacao visual de objetos imersos em agua e vidro?",
+      "correta": "Como Refração da luz aparece na interpretação visual de objetos imersos em agua e vidro?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Refração da luz.",
       "tempoEstimado": 45,
       "tags": [
@@ -2825,7 +2825,7 @@ export const optica = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"a refração so altera o caminho do raio luminoso, nunca sua velocidade\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"a refração so altera o caminho do raio luminoso, nunca sua velocidade\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque a mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
         "A afirmação está correta, pois resume integralmente Refração da luz.",
@@ -2864,15 +2864,15 @@ export const optica = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Refração da luz fosse ignorado(a) ao analisar a interpretacao visual de objetos imersos em agua e vidro, o resultado mais provável seria:",
+      "enunciado": "Se Refração da luz fosse ignorado(a) ao analisar a interpretação visual de objetos imersos em agua e vidro, o resultado mais provável seria:",
       "opcoes": [
-        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a interpretacao visual de objetos imersos em agua e vidro.",
+        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a interpretação visual de objetos imersos em agua e vidro.",
         "a situação seria explicada automaticamente por leis de Snell, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Refração da luz não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Refração da luz não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
-      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a interpretacao visual de objetos imersos em agua e vidro.",
-      "comentario": "Ignorar Refração da luz compromete a leitura fisica da situação apresentada.",
+      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a interpretação visual de objetos imersos em agua e vidro.",
+      "comentario": "Ignorar Refração da luz compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -2905,12 +2905,12 @@ export const optica = {
       "tipo": "multipla_escolha",
       "enunciado": "Em uma aplicação cotidiana ou escolar, Refração da luz ajuda principalmente a compreender:",
       "opcoes": [
-        "a interpretacao visual de objetos imersos em agua e vidro",
+        "a interpretação visual de objetos imersos em agua e vidro",
         "o cálculo de ângulos de refração em interfaces opticas",
         "óculos, lupas, câmeras e projetores",
         "o uso de microscópios, telescópios, lunetas e câmeras fotográficas"
       ],
-      "correta": "a interpretacao visual de objetos imersos em agua e vidro",
+      "correta": "a interpretação visual de objetos imersos em agua e vidro",
       "comentario": "A aplicação escolhida e a que melhor representa Refração da luz.",
       "tempoEstimado": 60,
       "tags": [
@@ -2945,7 +2945,7 @@ export const optica = {
       "enunciado": "Qual resumo sintetiza melhor a ideia central de Refração da luz?",
       "opcoes": [
         "Em síntese, a mudanca de direção e de velocidade da luz quando ela passa de um meio para outro.",
-        "Em síntese, as relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
+        "Em síntese, as relações matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
         "Em síntese, dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
         "Em síntese, aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens."
       ],
@@ -2983,13 +2983,13 @@ export const optica = {
       "tipo": "multipla_escolha",
       "enunciado": "Em Física, Leis de Snell pode ser definido(a) como:",
       "opcoes": [
-        "as relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios",
+        "as relações matematicas que ligam os ângulos de incidencia e refração aos índices dos meios",
         "dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens",
         "aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens",
         "a separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda"
       ],
-      "correta": "as relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios",
-      "comentario": "Leis de Snell refere-se às relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
+      "correta": "as relações matematicas que ligam os ângulos de incidencia e refração aos índices dos meios",
+      "comentario": "Leis de Snell refere-se às relações matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
       "tempoEstimado": 25,
       "tags": [
         "optica",
@@ -3020,7 +3020,7 @@ export const optica = {
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um raio incide sobre a superficie entre ar e vidro e os ângulos sao medidos para comparação Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situação: um raio incide sobre a superficie entre ar e vidro e os ângulos são medidos para comparação Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
         "Leis de Snell",
         "Lentes esféricas",
@@ -3061,12 +3061,12 @@ export const optica = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual afirmação descreve corretamente leis de Snell?",
       "opcoes": [
-        "As relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
+        "As relações matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
         "Dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
         "Aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
         "A separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda."
       ],
-      "correta": "As relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
+      "correta": "As relações matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
       "comentario": "A alternativa correta resume o conceito de leis de Snell.",
       "tempoEstimado": 30,
       "tags": [
@@ -3098,10 +3098,10 @@ export const optica = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com leis de Snell?",
+      "enunciado": "Qual alternativa NÃO está compatível com leis de Snell?",
       "opcoes": [
         "Dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
-        "As relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
+        "As relações matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
         "Relacionar ângulos e índices de refração em passagens de luz entre meios.",
         "Ajuda a compreender o cálculo de ângulos de refração em interfaces opticas."
       ],
@@ -3137,12 +3137,12 @@ export const optica = {
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar leis de Snell, o foco principal e:",
+      "enunciado": "Ao estudar leis de Snell, o foco principal é:",
       "opcoes": [
         "relacionar ângulos e índices de refração em passagens de luz entre meios",
         "analisar como lentes convergentes e divergentes formam imagens e alteram feixes de luz",
         "compreender o funcionamento basico de instrumentos que manipulam trajetórias luminosas",
-        "explicar a decomposição da luz branca e a acao dos prismas"
+        "explicar a decomposição da luz branca e a ação dos prismas"
       ],
       "correta": "relacionar ângulos e índices de refração em passagens de luz entre meios",
       "comentario": "Leis de Snell concentra-se em relacionar ângulos e índices de refração em passagens de luz entre meios.",
@@ -3178,12 +3178,12 @@ export const optica = {
       "tipo": "multipla_escolha",
       "enunciado": "Enquanto Lentes esféricas trata de dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens, Leis de Snell destaca:",
       "opcoes": [
-        "As relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
+        "As relações matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
         "Dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
         "Aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
         "A separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda."
       ],
-      "correta": "As relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
+      "correta": "As relações matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
       "comentario": "A comparação correta mostra a especificidade de leis de Snell.",
       "tempoEstimado": 35,
       "tags": [
@@ -3215,7 +3215,7 @@ export const optica = {
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma análise de sala, considera-se que um raio incide sobre a superficie entre ar e vidro e os ângulos sao medidos para comparação Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma análise de sala, considera-se que um raio incide sobre a superficie entre ar e vidro e os ângulos são medidos para comparação Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
       "opcoes": [
         "Leis de Snell",
         "Lentes esféricas",
@@ -3293,7 +3293,7 @@ export const optica = {
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de um raio incide sobre a superficie entre ar e vidro e os ângulos sao medidos para comparação, qual conclusão está mais correta?",
+      "enunciado": "A partir de um raio incide sobre a superficie entre ar e vidro e os ângulos são medidos para comparação, qual conclusão está mais correta?",
       "opcoes": [
         "o caso e explicado por leis de Snell.",
         "o caso e mais bem entendido por Lentes esféricas.",
@@ -3337,7 +3337,7 @@ export const optica = {
         "Como leis de Snell aparece no cálculo de ângulos de refração em interfaces opticas?",
         "Como Lentes esféricas substitui totalmente o cálculo de ângulos de refração em interfaces opticas?",
         "Por que Instrumentos ópticos torna desnecessário estudar Leis de Snell?",
-        "De que modo Dispersão e prismas elimina toda medida fisica envolvida?"
+        "De que modo Dispersão e prismas elimina toda medida física envolvida?"
       ],
       "correta": "Como leis de Snell aparece no cálculo de ângulos de refração em interfaces opticas?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de leis de Snell.",
@@ -3410,14 +3410,14 @@ export const optica = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"as leis de Snell so podem ser usadas quando o raio atinge a superfície a noventa graus\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"as leis de Snell so podem ser usadas quando o raio atinge a superfície a noventa graus\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmação está incorreta, porque as relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
+        "A afirmação está incorreta, porque as relações matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
         "A afirmação está correta, pois resume integralmente leis de Snell.",
         "A afirmação está correta, porque toda situação do tema depende apenas dessa ideia.",
         "A afirmação está incorreta apenas porque não apresenta uma unidade de medida."
       ],
-      "correta": "A afirmação está incorreta, porque as relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
+      "correta": "A afirmação está incorreta, porque as relações matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
       "comentario": "A fala do estudante apresenta um equívoco conceitual sobre leis de Snell.",
       "tempoEstimado": 55,
       "tags": [
@@ -3453,11 +3453,11 @@ export const optica = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o cálculo de ângulos de refração em interfaces opticas.",
         "a situação seria explicada automaticamente por Lentes esféricas, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Leis de Snell não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Leis de Snell não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o cálculo de ângulos de refração em interfaces opticas.",
-      "comentario": "Ignorar leis de Snell compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar leis de Snell compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -3493,7 +3493,7 @@ export const optica = {
         "o cálculo de ângulos de refração em interfaces opticas",
         "óculos, lupas, câmeras e projetores",
         "o uso de microscópios, telescópios, lunetas e câmeras fotográficas",
-        "a formacao de espectros luminosos e o estudo das cores"
+        "a formação de espectros luminosos e o estudo das cores"
       ],
       "correta": "o cálculo de ângulos de refração em interfaces opticas",
       "comentario": "A aplicação escolhida e a que melhor representa leis de Snell.",
@@ -3529,12 +3529,12 @@ export const optica = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia central de Leis de Snell?",
       "opcoes": [
-        "Em síntese, as relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
+        "Em síntese, as relações matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
         "Em síntese, dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
         "Em síntese, aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
         "Em síntese, a separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda."
       ],
-      "correta": "Em síntese, as relacoes matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
+      "correta": "Em síntese, as relações matematicas que ligam os ângulos de incidencia e refração aos índices dos meios.",
       "comentario": "O resumo correto recupera o núcleo conceitual de leis de Snell.",
       "tempoEstimado": 65,
       "tags": [
@@ -3683,7 +3683,7 @@ export const optica = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Lentes esféricas?",
+      "enunciado": "Qual alternativa NÃO está compatível com Lentes esféricas?",
       "opcoes": [
         "Aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
         "Dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
@@ -3722,11 +3722,11 @@ export const optica = {
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Lentes esféricas, o foco principal e:",
+      "enunciado": "Ao estudar Lentes esféricas, o foco principal é:",
       "opcoes": [
         "analisar como lentes convergentes e divergentes formam imagens e alteram feixes de luz",
         "compreender o funcionamento basico de instrumentos que manipulam trajetórias luminosas",
-        "explicar a decomposição da luz branca e a acao dos prismas",
+        "explicar a decomposição da luz branca e a ação dos prismas",
         "relacionar miopia, hipermetropia e outros defeitos visuais as formas de correção"
       ],
       "correta": "analisar como lentes convergentes e divergentes formam imagens e alteram feixes de luz",
@@ -3843,8 +3843,8 @@ export const optica = {
       "opcoes": [
         "óculos, lupas, câmeras e projetores",
         "o uso de microscópios, telescópios, lunetas e câmeras fotográficas",
-        "a formacao de espectros luminosos e o estudo das cores",
-        "a formacao de sombras e a iluminacao de ambientes"
+        "a formação de espectros luminosos e o estudo das cores",
+        "a formação de sombras e a iluminacao de ambientes"
       ],
       "correta": "óculos, lupas, câmeras e projetores",
       "comentario": "Lentes esféricas aparece de modo direto em óculos, lupas, câmeras e projetores.",
@@ -3922,7 +3922,7 @@ export const optica = {
         "Como Lentes esféricas aparece em óculos, lupas, câmeras e projetores?",
         "Como Instrumentos ópticos substitui totalmente óculos, lupas, câmeras e projetores?",
         "Por que Dispersão e prismas torna desnecessário estudar Lentes esféricas?",
-        "De que modo Defeitos da visão elimina toda medida fisica envolvida?"
+        "De que modo Defeitos da visão elimina toda medida física envolvida?"
       ],
       "correta": "Como Lentes esféricas aparece em óculos, lupas, câmeras e projetores?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Lentes esféricas.",
@@ -3961,7 +3961,7 @@ export const optica = {
         "toda lente produz apenas imagens virtuais e nunca imagens reais",
         "Instrumentos ópticos funcionam sem depender de qualquer desvio ou controle da luz",
         "o prisma colore a luz branca com tintas invisiveis do proprio material",
-        "todos os Defeitos da visão sao corrigidos pelo mesmo tipo de lente"
+        "todos os Defeitos da visão são corrigidos pelo mesmo tipo de lente"
       ],
       "correta": "toda lente produz apenas imagens virtuais e nunca imagens reais",
       "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Lentes esféricas.",
@@ -3995,7 +3995,7 @@ export const optica = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"nenhuma lente e capaz de formar imagem real em uma tela\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"nenhuma lente e capaz de formar imagem real em uma tela\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque dispositivos transparentes que convergem ou divergem raios luminosos e formam imagens.",
         "A afirmação está correta, pois resume integralmente Lentes esféricas.",
@@ -4038,11 +4038,11 @@ export const optica = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre óculos, lupas, câmeras e projetores.",
         "a situação seria explicada automaticamente por Instrumentos ópticos, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Lentes esféricas não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Lentes esféricas não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre óculos, lupas, câmeras e projetores.",
-      "comentario": "Ignorar Lentes esféricas compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar Lentes esféricas compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -4077,7 +4077,7 @@ export const optica = {
       "opcoes": [
         "óculos, lupas, câmeras e projetores",
         "o uso de microscópios, telescópios, lunetas e câmeras fotográficas",
-        "a formacao de espectros luminosos e o estudo das cores",
+        "a formação de espectros luminosos e o estudo das cores",
         "a correção visual com óculos e lentes de contato"
       ],
       "correta": "óculos, lupas, câmeras e projetores",
@@ -4268,7 +4268,7 @@ export const optica = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Instrumentos ópticos?",
+      "enunciado": "Qual alternativa NÃO está compatível com Instrumentos ópticos?",
       "opcoes": [
         "A separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda.",
         "Aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
@@ -4307,12 +4307,12 @@ export const optica = {
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Instrumentos ópticos, o foco principal e:",
+      "enunciado": "Ao estudar Instrumentos ópticos, o foco principal é:",
       "opcoes": [
         "compreender o funcionamento basico de instrumentos que manipulam trajetórias luminosas",
-        "explicar a decomposição da luz branca e a acao dos prismas",
+        "explicar a decomposição da luz branca e a ação dos prismas",
         "relacionar miopia, hipermetropia e outros defeitos visuais as formas de correção",
-        "compreender como a luz se propaga e torna possivel a observacao visual"
+        "compreender como a luz se propaga e torna possível a observação visual"
       ],
       "correta": "compreender o funcionamento basico de instrumentos que manipulam trajetórias luminosas",
       "comentario": "Instrumentos ópticos concentra-se em compreender o funcionamento basico de instrumentos que manipulam trajetórias luminosas.",
@@ -4427,7 +4427,7 @@ export const optica = {
       "enunciado": "Qual situação prática depende mais diretamente de Instrumentos ópticos?",
       "opcoes": [
         "o uso de microscópios, telescópios, lunetas e câmeras fotográficas",
-        "a formacao de espectros luminosos e o estudo das cores",
+        "a formação de espectros luminosos e o estudo das cores",
         "a correção visual com óculos e lentes de contato",
         "a análise de trajetórias luminosas em esquemas geometricos"
       ],
@@ -4507,7 +4507,7 @@ export const optica = {
         "Como Instrumentos ópticos aparece no uso de microscópios, telescópios, lunetas e câmeras fotográficas?",
         "Como Dispersão e prismas substitui totalmente o uso de microscópios, telescópios, lunetas e câmeras fotográficas?",
         "Por que Defeitos da visão torna desnecessário estudar Instrumentos ópticos?",
-        "De que modo Natureza e propagação da luz elimina toda medida fisica envolvida?"
+        "De que modo Natureza e propagação da luz elimina toda medida física envolvida?"
       ],
       "correta": "Como Instrumentos ópticos aparece no uso de microscópios, telescópios, lunetas e câmeras fotográficas?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Instrumentos ópticos.",
@@ -4545,7 +4545,7 @@ export const optica = {
       "opcoes": [
         "Instrumentos ópticos funcionam sem depender de qualquer desvio ou controle da luz",
         "o prisma colore a luz branca com tintas invisiveis do proprio material",
-        "todos os Defeitos da visão sao corrigidos pelo mesmo tipo de lente",
+        "todos os Defeitos da visão são corrigidos pelo mesmo tipo de lente",
         "a luz so existe quando toca diretamente os olhos do observador"
       ],
       "correta": "Instrumentos ópticos funcionam sem depender de qualquer desvio ou controle da luz",
@@ -4580,7 +4580,7 @@ export const optica = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"microscópios e telescópios não precisam desviar a luz para formar imagens uteis\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"microscópios e telescópios não precisam desviar a luz para formar imagens uteis\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque aparelhos que utilizam lentes, espelhos ou ambos para ampliar, corrigir ou registrar imagens.",
         "A afirmação está correta, pois resume integralmente Instrumentos ópticos.",
@@ -4623,11 +4623,11 @@ export const optica = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o uso de microscópios, telescópios, lunetas e câmeras fotográficas.",
         "a situação seria explicada automaticamente por Dispersão e prismas, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Instrumentos ópticos não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Instrumentos ópticos não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o uso de microscópios, telescópios, lunetas e câmeras fotográficas.",
-      "comentario": "Ignorar Instrumentos ópticos compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar Instrumentos ópticos compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -4661,9 +4661,9 @@ export const optica = {
       "enunciado": "Em uma aplicação cotidiana ou escolar, Instrumentos ópticos ajuda principalmente a compreender:",
       "opcoes": [
         "o uso de microscópios, telescópios, lunetas e câmeras fotográficas",
-        "a formacao de espectros luminosos e o estudo das cores",
+        "a formação de espectros luminosos e o estudo das cores",
         "a correção visual com óculos e lentes de contato",
-        "a formacao de sombras e a iluminacao de ambientes"
+        "a formação de sombras e a iluminacao de ambientes"
       ],
       "correta": "o uso de microscópios, telescópios, lunetas e câmeras fotográficas",
       "comentario": "A aplicação escolhida e a que melhor representa Instrumentos ópticos.",
@@ -4853,12 +4853,12 @@ export const optica = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Dispersão e prismas?",
+      "enunciado": "Qual alternativa NÃO está compatível com Dispersão e prismas?",
       "opcoes": [
         "As condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica.",
         "A separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda.",
-        "Explicar a decomposição da luz branca e a acao dos prismas.",
-        "Ajuda a compreender a formacao de espectros luminosos e o estudo das cores."
+        "Explicar a decomposição da luz branca e a ação dos prismas.",
+        "Ajuda a compreender a formação de espectros luminosos e o estudo das cores."
       ],
       "correta": "As condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica.",
       "comentario": "A opção incompativel descreve outro subtópico, não Dispersão e prismas.",
@@ -4892,15 +4892,15 @@ export const optica = {
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Dispersão e prismas, o foco principal e:",
+      "enunciado": "Ao estudar Dispersão e prismas, o foco principal é:",
       "opcoes": [
-        "explicar a decomposição da luz branca e a acao dos prismas",
+        "explicar a decomposição da luz branca e a ação dos prismas",
         "relacionar miopia, hipermetropia e outros defeitos visuais as formas de correção",
-        "compreender como a luz se propaga e torna possivel a observacao visual",
+        "compreender como a luz se propaga e torna possível a observação visual",
         "aplicar os principios basicos que organizam o comportamento dos raios luminosos"
       ],
-      "correta": "explicar a decomposição da luz branca e a acao dos prismas",
-      "comentario": "Dispersão e prismas concentra-se em explicar a decomposição da luz branca e a acao dos prismas.",
+      "correta": "explicar a decomposição da luz branca e a ação dos prismas",
+      "comentario": "Dispersão e prismas concentra-se em explicar a decomposição da luz branca e a ação dos prismas.",
       "tempoEstimado": 35,
       "tags": [
         "optica",
@@ -5011,13 +5011,13 @@ export const optica = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual situação prática depende mais diretamente de Dispersão e prismas?",
       "opcoes": [
-        "a formacao de espectros luminosos e o estudo das cores",
+        "a formação de espectros luminosos e o estudo das cores",
         "a correção visual com óculos e lentes de contato",
-        "a formacao de sombras e a iluminacao de ambientes",
+        "a formação de sombras e a iluminacao de ambientes",
         "o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos"
       ],
-      "correta": "a formacao de espectros luminosos e o estudo das cores",
-      "comentario": "Dispersão e prismas aparece de modo direto na formacao de espectros luminosos e o estudo das cores.",
+      "correta": "a formação de espectros luminosos e o estudo das cores",
+      "comentario": "Dispersão e prismas aparece de modo direto na formação de espectros luminosos e o estudo das cores.",
       "tempoEstimado": 40,
       "tags": [
         "optica",
@@ -5089,12 +5089,12 @@ export const optica = {
       "tipo": "multipla_escolha",
       "enunciado": "Se um grupo fosse pesquisar Dispersão e prismas, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Dispersão e prismas aparece na formacao de espectros luminosos e o estudo das cores?",
-        "Como Defeitos da visão substitui totalmente a formacao de espectros luminosos e o estudo das cores?",
+        "Como Dispersão e prismas aparece na formação de espectros luminosos e o estudo das cores?",
+        "Como Defeitos da visão substitui totalmente a formação de espectros luminosos e o estudo das cores?",
         "Por que Natureza e propagação da luz torna desnecessário estudar Dispersão e prismas?",
-        "De que modo Princípios da Óptica geométrica elimina toda medida fisica envolvida?"
+        "De que modo Princípios da Óptica geométrica elimina toda medida física envolvida?"
       ],
-      "correta": "Como Dispersão e prismas aparece na formacao de espectros luminosos e o estudo das cores?",
+      "correta": "Como Dispersão e prismas aparece na formação de espectros luminosos e o estudo das cores?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Dispersão e prismas.",
       "tempoEstimado": 45,
       "tags": [
@@ -5129,7 +5129,7 @@ export const optica = {
       "enunciado": "Um erro comum em Dispersão e prismas e pensar que:",
       "opcoes": [
         "o prisma colore a luz branca com tintas invisiveis do proprio material",
-        "todos os Defeitos da visão sao corrigidos pelo mesmo tipo de lente",
+        "todos os Defeitos da visão são corrigidos pelo mesmo tipo de lente",
         "a luz so existe quando toca diretamente os olhos do observador",
         "raios de luz se anulam quando se cruzam no mesmo espaço"
       ],
@@ -5165,7 +5165,7 @@ export const optica = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"as cores vistas em um prisma surgem porque o vidro adiciona pigmentos invisiveis a luz\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"as cores vistas em um prisma surgem porque o vidro adiciona pigmentos invisiveis a luz\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque a separacao da luz em diferentes cores causada pela variação da refração com o comprimento de onda.",
         "A afirmação está correta, pois resume integralmente Dispersão e prismas.",
@@ -5204,15 +5204,15 @@ export const optica = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Dispersão e prismas fosse ignorado(a) ao analisar a formacao de espectros luminosos e o estudo das cores, o resultado mais provável seria:",
+      "enunciado": "Se Dispersão e prismas fosse ignorado(a) ao analisar a formação de espectros luminosos e o estudo das cores, o resultado mais provável seria:",
       "opcoes": [
-        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a formacao de espectros luminosos e o estudo das cores.",
+        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a formação de espectros luminosos e o estudo das cores.",
         "a situação seria explicada automaticamente por Defeitos da visão, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Dispersão e prismas não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Dispersão e prismas não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
-      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a formacao de espectros luminosos e o estudo das cores.",
-      "comentario": "Ignorar Dispersão e prismas compromete a leitura fisica da situação apresentada.",
+      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a formação de espectros luminosos e o estudo das cores.",
+      "comentario": "Ignorar Dispersão e prismas compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -5245,12 +5245,12 @@ export const optica = {
       "tipo": "multipla_escolha",
       "enunciado": "Em uma aplicação cotidiana ou escolar, Dispersão e prismas ajuda principalmente a compreender:",
       "opcoes": [
-        "a formacao de espectros luminosos e o estudo das cores",
+        "a formação de espectros luminosos e o estudo das cores",
         "a correção visual com óculos e lentes de contato",
-        "a formacao de sombras e a iluminacao de ambientes",
+        "a formação de sombras e a iluminacao de ambientes",
         "a análise de trajetórias luminosas em esquemas geometricos"
       ],
-      "correta": "a formacao de espectros luminosos e o estudo das cores",
+      "correta": "a formação de espectros luminosos e o estudo das cores",
       "comentario": "A aplicação escolhida e a que melhor representa Dispersão e prismas.",
       "tempoEstimado": 60,
       "tags": [
@@ -5438,7 +5438,7 @@ export const optica = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Defeitos da visão?",
+      "enunciado": "Qual alternativa NÃO está compatível com Defeitos da visão?",
       "opcoes": [
         "O estudo da luz como forma de energia que se propaga e permite a visão dos objetos.",
         "As condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica.",
@@ -5477,12 +5477,12 @@ export const optica = {
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Defeitos da visão, o foco principal e:",
+      "enunciado": "Ao estudar Defeitos da visão, o foco principal é:",
       "opcoes": [
         "relacionar miopia, hipermetropia e outros defeitos visuais as formas de correção",
-        "compreender como a luz se propaga e torna possivel a observacao visual",
+        "compreender como a luz se propaga e torna possível a observação visual",
         "aplicar os principios basicos que organizam o comportamento dos raios luminosos",
-        "relacionar reflexão regular com a formacao de imagens em espelhos planos"
+        "relacionar reflexão regular com a formação de imagens em espelhos planos"
       ],
       "correta": "relacionar miopia, hipermetropia e outros defeitos visuais as formas de correção",
       "comentario": "Defeitos da visão concentra-se em relacionar miopia, hipermetropia e outros defeitos visuais as formas de correção.",
@@ -5597,7 +5597,7 @@ export const optica = {
       "enunciado": "Qual situação prática depende mais diretamente de Defeitos da visão?",
       "opcoes": [
         "a correção visual com óculos e lentes de contato",
-        "a formacao de sombras e a iluminacao de ambientes",
+        "a formação de sombras e a iluminacao de ambientes",
         "a análise de trajetórias luminosas em esquemas geometricos",
         "espelhos de maquiagem, retrovisores externos e refletores"
       ],
@@ -5677,7 +5677,7 @@ export const optica = {
         "Como Defeitos da visão aparece na correção visual com óculos e lentes de contato?",
         "Como Natureza e propagação da luz substitui totalmente a correção visual com óculos e lentes de contato?",
         "Por que Princípios da Óptica geométrica torna desnecessário estudar Defeitos da visão?",
-        "De que modo Reflexão em espelhos planos elimina toda medida fisica envolvida?"
+        "De que modo Reflexão em espelhos planos elimina toda medida física envolvida?"
       ],
       "correta": "Como Defeitos da visão aparece na correção visual com óculos e lentes de contato?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Defeitos da visão.",
@@ -5713,12 +5713,12 @@ export const optica = {
       "tipo": "multipla_escolha",
       "enunciado": "Um erro comum em Defeitos da visão e pensar que:",
       "opcoes": [
-        "todos os Defeitos da visão sao corrigidos pelo mesmo tipo de lente",
+        "todos os Defeitos da visão são corrigidos pelo mesmo tipo de lente",
         "a luz so existe quando toca diretamente os olhos do observador",
         "raios de luz se anulam quando se cruzam no mesmo espaço",
         "a imagem no espelho plano fica localizada sobre a superficie refletora"
       ],
-      "correta": "todos os Defeitos da visão sao corrigidos pelo mesmo tipo de lente",
+      "correta": "todos os Defeitos da visão são corrigidos pelo mesmo tipo de lente",
       "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Defeitos da visão.",
       "tempoEstimado": 50,
       "tags": [
@@ -5750,7 +5750,7 @@ export const optica = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"qualquer problema visual pode ser resolvido com qualquer lente corretiva\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"qualquer problema visual pode ser resolvido com qualquer lente corretiva\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque as condições em que a imagem não se forma adequadamente na retina, exigindo correção Óptica.",
         "A afirmação está correta, pois resume integralmente Defeitos da visão.",
@@ -5793,11 +5793,11 @@ export const optica = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a correção visual com óculos e lentes de contato.",
         "a situação seria explicada automaticamente por Natureza e propagação da luz, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Defeitos da visão não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Defeitos da visão não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a correção visual com óculos e lentes de contato.",
-      "comentario": "Ignorar Defeitos da visão compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar Defeitos da visão compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "optica",
@@ -5831,7 +5831,7 @@ export const optica = {
       "enunciado": "Em uma aplicação cotidiana ou escolar, Defeitos da visão ajuda principalmente a compreender:",
       "opcoes": [
         "a correção visual com óculos e lentes de contato",
-        "a formacao de sombras e a iluminacao de ambientes",
+        "a formação de sombras e a iluminacao de ambientes",
         "a análise de trajetórias luminosas em esquemas geometricos",
         "o uso cotidiano de espelhos planos em banheiros, elevadores e retrovisores internos"
       ],

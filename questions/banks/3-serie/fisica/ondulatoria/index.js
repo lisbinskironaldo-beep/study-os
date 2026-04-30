@@ -173,7 +173,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Conceito de onda?",
+      "enunciado": "Qual alternativa NÃO está compatível com Conceito de onda?",
       "opcoes": [
         "Os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período.",
         "Uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente.",
@@ -212,7 +212,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Conceito de onda, o foco principal e:",
+      "enunciado": "Ao estudar Conceito de onda, o foco principal é:",
       "opcoes": [
         "identificar a propagação de perturbacoes e o transporte de energia",
         "relacionar amplitude, frequência, período e comprimento de onda",
@@ -332,9 +332,9 @@ export const ondulatoria = {
       "enunciado": "Qual situação prática depende mais diretamente de Conceito de onda?",
       "opcoes": [
         "a propagação de pulsos em cordas e superficies líquidas",
-        "a leitura de graficos e tabelas sobre ondas em laboratorio",
+        "a leitura de gráficos e tabelas sobre ondas em laboratório",
         "o cálculo da velocidade do som ou da luz em diferentes meios",
-        "a formacao de ecos e a reflexão de pulsos em cordas"
+        "a formação de ecos e a reflexão de pulsos em cordas"
       ],
       "correta": "a propagação de pulsos em cordas e superficies líquidas",
       "comentario": "Conceito de onda aparece de modo direto na propagação de pulsos em cordas e superficies líquidas.",
@@ -412,7 +412,7 @@ export const ondulatoria = {
         "Como Conceito de onda aparece na propagação de pulsos em cordas e superficies líquidas?",
         "Como Grandezas da onda substitui totalmente a propagação de pulsos em cordas e superficies líquidas?",
         "Por que Velocidade de propagação torna desnecessário estudar Conceito de onda?",
-        "De que modo Classificação das ondas elimina toda medida fisica envolvida?"
+        "De que modo Classificação das ondas elimina toda medida física envolvida?"
       ],
       "correta": "Como Conceito de onda aparece na propagação de pulsos em cordas e superficies líquidas?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Conceito de onda.",
@@ -485,7 +485,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"uma onda leva consigo a matéria do meio do ponto de partida ate o ponto de chegada\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"uma onda leva consigo a matéria do meio do ponto de partida ate o ponto de chegada\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente.",
         "A afirmação está correta, pois resume integralmente Conceito de onda.",
@@ -528,11 +528,11 @@ export const ondulatoria = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a propagação de pulsos em cordas e superficies líquidas.",
         "a situação seria explicada automaticamente por Grandezas da onda, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Conceito de onda não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Conceito de onda não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a propagação de pulsos em cordas e superficies líquidas.",
-      "comentario": "Ignorar Conceito de onda compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar Conceito de onda compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -566,7 +566,7 @@ export const ondulatoria = {
       "enunciado": "Em uma aplicação cotidiana ou escolar, Conceito de onda ajuda principalmente a compreender:",
       "opcoes": [
         "a propagação de pulsos em cordas e superficies líquidas",
-        "a leitura de graficos e tabelas sobre ondas em laboratorio",
+        "a leitura de gráficos e tabelas sobre ondas em laboratório",
         "o cálculo da velocidade do som ou da luz em diferentes meios",
         "a comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais"
       ],
@@ -680,7 +680,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: um grafico de onda exibe a altura da crista, a distancia entre cristas e o número de oscilacoes por segundo Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situação: um gráfico de onda exibe a altura da crista, a distância entre cristas e o número de oscilações por segundo Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
         "Grandezas da onda",
         "Velocidade de propagação",
@@ -758,12 +758,12 @@ export const ondulatoria = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Grandezas da onda?",
+      "enunciado": "Qual alternativa NÃO está compatível com Grandezas da onda?",
       "opcoes": [
         "A grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência.",
         "Os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período.",
         "Relacionar amplitude, frequência, período e comprimento de onda.",
-        "Ajuda a compreender a leitura de graficos e tabelas sobre ondas em laboratorio."
+        "Ajuda a compreender a leitura de gráficos e tabelas sobre ondas em laboratório."
       ],
       "correta": "A grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência.",
       "comentario": "A opção incompativel descreve outro subtópico, não Grandezas da onda.",
@@ -797,7 +797,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Grandezas da onda, o foco principal e:",
+      "enunciado": "Ao estudar Grandezas da onda, o foco principal é:",
       "opcoes": [
         "relacionar amplitude, frequência, período e comprimento de onda",
         "calcular a rapidez de propagação de ondas em diferentes meios",
@@ -875,7 +875,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma análise de sala, considera-se que um grafico de onda exibe a altura da crista, a distancia entre cristas e o número de oscilacoes por segundo Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma análise de sala, considera-se que um gráfico de onda exibe a altura da crista, a distância entre cristas e o número de oscilações por segundo Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
       "opcoes": [
         "Grandezas da onda",
         "Velocidade de propagação",
@@ -916,13 +916,13 @@ export const ondulatoria = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual situação prática depende mais diretamente de Grandezas da onda?",
       "opcoes": [
-        "a leitura de graficos e tabelas sobre ondas em laboratorio",
+        "a leitura de gráficos e tabelas sobre ondas em laboratório",
         "o cálculo da velocidade do som ou da luz em diferentes meios",
         "a comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais",
         "as mudancas de direção de ondas ao passarem entre meios distintos"
       ],
-      "correta": "a leitura de graficos e tabelas sobre ondas em laboratorio",
-      "comentario": "Grandezas da onda aparece de modo direto na leitura de graficos e tabelas sobre ondas em laboratorio.",
+      "correta": "a leitura de gráficos e tabelas sobre ondas em laboratório",
+      "comentario": "Grandezas da onda aparece de modo direto na leitura de gráficos e tabelas sobre ondas em laboratório.",
       "tempoEstimado": 40,
       "tags": [
         "ondulatoria",
@@ -953,7 +953,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de um grafico de onda exibe a altura da crista, a distancia entre cristas e o número de oscilacoes por segundo, qual conclusão está mais correta?",
+      "enunciado": "A partir de um gráfico de onda exibe a altura da crista, a distância entre cristas e o número de oscilações por segundo, qual conclusão está mais correta?",
       "opcoes": [
         "o caso e explicado por Grandezas da onda.",
         "o caso e mais bem entendido por Velocidade de propagação.",
@@ -994,12 +994,12 @@ export const ondulatoria = {
       "tipo": "multipla_escolha",
       "enunciado": "Se um grupo fosse pesquisar Grandezas da onda, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Grandezas da onda aparece na leitura de graficos e tabelas sobre ondas em laboratorio?",
-        "Como Velocidade de propagação substitui totalmente a leitura de graficos e tabelas sobre ondas em laboratorio?",
+        "Como Grandezas da onda aparece na leitura de gráficos e tabelas sobre ondas em laboratório?",
+        "Como Velocidade de propagação substitui totalmente a leitura de gráficos e tabelas sobre ondas em laboratório?",
         "Por que Classificação das ondas torna desnecessário estudar Grandezas da onda?",
-        "De que modo Reflexão de ondas elimina toda medida fisica envolvida?"
+        "De que modo Reflexão de ondas elimina toda medida física envolvida?"
       ],
-      "correta": "Como Grandezas da onda aparece na leitura de graficos e tabelas sobre ondas em laboratorio?",
+      "correta": "Como Grandezas da onda aparece na leitura de gráficos e tabelas sobre ondas em laboratório?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Grandezas da onda.",
       "tempoEstimado": 45,
       "tags": [
@@ -1070,7 +1070,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"comprimento de onda, frequência e amplitude sao apenas nomes diferentes para a mesma medida\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"comprimento de onda, frequência e amplitude são apenas nomes diferentes para a mesma medida\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque os elementos que caracterizam uma onda, como amplitude, comprimento de onda, frequência e período.",
         "A afirmação está correta, pois resume integralmente Grandezas da onda.",
@@ -1109,15 +1109,15 @@ export const ondulatoria = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Grandezas da onda fosse ignorado(a) ao analisar a leitura de graficos e tabelas sobre ondas em laboratorio, o resultado mais provável seria:",
+      "enunciado": "Se Grandezas da onda fosse ignorado(a) ao analisar a leitura de gráficos e tabelas sobre ondas em laboratório, o resultado mais provável seria:",
       "opcoes": [
-        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a leitura de graficos e tabelas sobre ondas em laboratorio.",
+        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a leitura de gráficos e tabelas sobre ondas em laboratório.",
         "a situação seria explicada automaticamente por Velocidade de propagação, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Grandezas da onda não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Grandezas da onda não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
-      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a leitura de graficos e tabelas sobre ondas em laboratorio.",
-      "comentario": "Ignorar Grandezas da onda compromete a leitura fisica da situação apresentada.",
+      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a leitura de gráficos e tabelas sobre ondas em laboratório.",
+      "comentario": "Ignorar Grandezas da onda compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -1150,12 +1150,12 @@ export const ondulatoria = {
       "tipo": "multipla_escolha",
       "enunciado": "Em uma aplicação cotidiana ou escolar, Grandezas da onda ajuda principalmente a compreender:",
       "opcoes": [
-        "a leitura de graficos e tabelas sobre ondas em laboratorio",
+        "a leitura de gráficos e tabelas sobre ondas em laboratório",
         "o cálculo da velocidade do som ou da luz em diferentes meios",
         "a comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais",
-        "a formacao de ecos e a reflexão de pulsos em cordas"
+        "a formação de ecos e a reflexão de pulsos em cordas"
       ],
-      "correta": "a leitura de graficos e tabelas sobre ondas em laboratorio",
+      "correta": "a leitura de gráficos e tabelas sobre ondas em laboratório",
       "comentario": "A aplicação escolhida e a que melhor representa Grandezas da onda.",
       "tempoEstimado": 60,
       "tags": [
@@ -1265,7 +1265,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situação: uma onda percorre uma distancia conhecida enquanto mantêm frequência e comprimento de onda definidos Esse caso exemplifica melhor qual subtópico?",
+      "enunciado": "Observe a situação: uma onda percorre uma distância conhecida enquanto mantêm frequência e comprimento de onda definidos Esse caso exemplifica melhor qual subtópico?",
       "opcoes": [
         "Velocidade de propagação",
         "Classificação das ondas",
@@ -1343,7 +1343,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Velocidade de propagação?",
+      "enunciado": "Qual alternativa NÃO está compatível com Velocidade de propagação?",
       "opcoes": [
         "A distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material.",
         "A grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência.",
@@ -1382,7 +1382,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Velocidade de propagação, o foco principal e:",
+      "enunciado": "Ao estudar Velocidade de propagação, o foco principal é:",
       "opcoes": [
         "calcular a rapidez de propagação de ondas em diferentes meios",
         "classificar ondas como mecânicas ou eletromagnéticas, transversais ou longitudinais",
@@ -1460,7 +1460,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma análise de sala, considera-se que uma onda percorre uma distancia conhecida enquanto mantêm frequência e comprimento de onda definidos Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
+      "enunciado": "Em uma análise de sala, considera-se que uma onda percorre uma distância conhecida enquanto mantêm frequência e comprimento de onda definidos Para interpretar essa situação, é mais adequado mobilizar o conceito de:",
       "opcoes": [
         "Velocidade de propagação",
         "Classificação das ondas",
@@ -1503,7 +1503,7 @@ export const ondulatoria = {
       "opcoes": [
         "o cálculo da velocidade do som ou da luz em diferentes meios",
         "a comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais",
-        "a formacao de ecos e a reflexão de pulsos em cordas",
+        "a formação de ecos e a reflexão de pulsos em cordas",
         "a audição em ambientes com obstóculos e pequenas aberturas"
       ],
       "correta": "o cálculo da velocidade do som ou da luz em diferentes meios",
@@ -1538,7 +1538,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir de uma onda percorre uma distancia conhecida enquanto mantêm frequência e comprimento de onda definidos, qual conclusão está mais correta?",
+      "enunciado": "A partir de uma onda percorre uma distância conhecida enquanto mantêm frequência e comprimento de onda definidos, qual conclusão está mais correta?",
       "opcoes": [
         "o caso e explicado por Velocidade de propagação.",
         "o caso e mais bem entendido por Classificação das ondas.",
@@ -1582,7 +1582,7 @@ export const ondulatoria = {
         "Como Velocidade de propagação aparece no cálculo da velocidade do som ou da luz em diferentes meios?",
         "Como Classificação das ondas substitui totalmente o cálculo da velocidade do som ou da luz em diferentes meios?",
         "Por que Reflexão de ondas torna desnecessário estudar Velocidade de propagação?",
-        "De que modo Refração de ondas elimina toda medida fisica envolvida?"
+        "De que modo Refração de ondas elimina toda medida física envolvida?"
       ],
       "correta": "Como Velocidade de propagação aparece no cálculo da velocidade do som ou da luz em diferentes meios?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Velocidade de propagação.",
@@ -1655,7 +1655,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"aumentar a amplitude de uma onda sempre aumenta sua Velocidade de propagação\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"aumentar a amplitude de uma onda sempre aumenta sua Velocidade de propagação\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque a grandeza que indica a rapidez com que a onda se desloca em um meio, relacionando comprimento de onda e frequência.",
         "A afirmação está correta, pois resume integralmente Velocidade de propagação.",
@@ -1698,11 +1698,11 @@ export const ondulatoria = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o cálculo da velocidade do som ou da luz em diferentes meios.",
         "a situação seria explicada automaticamente por Classificação das ondas, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Velocidade de propagação não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Velocidade de propagação não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o cálculo da velocidade do som ou da luz em diferentes meios.",
-      "comentario": "Ignorar Velocidade de propagação compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar Velocidade de propagação compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -1737,7 +1737,7 @@ export const ondulatoria = {
       "opcoes": [
         "o cálculo da velocidade do som ou da luz em diferentes meios",
         "a comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais",
-        "a formacao de ecos e a reflexão de pulsos em cordas",
+        "a formação de ecos e a reflexão de pulsos em cordas",
         "as mudancas de direção de ondas ao passarem entre meios distintos"
       ],
       "correta": "o cálculo da velocidade do som ou da luz em diferentes meios",
@@ -1928,7 +1928,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Classificação das ondas?",
+      "enunciado": "Qual alternativa NÃO está compatível com Classificação das ondas?",
       "opcoes": [
         "O retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo.",
         "A distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material.",
@@ -1967,7 +1967,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Classificação das ondas, o foco principal e:",
+      "enunciado": "Ao estudar Classificação das ondas, o foco principal é:",
       "opcoes": [
         "classificar ondas como mecânicas ou eletromagnéticas, transversais ou longitudinais",
         "interpretar o retorno da onda e o comportamento do pulso refletido",
@@ -2087,7 +2087,7 @@ export const ondulatoria = {
       "enunciado": "Qual situação prática depende mais diretamente de Classificação das ondas?",
       "opcoes": [
         "a comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais",
-        "a formacao de ecos e a reflexão de pulsos em cordas",
+        "a formação de ecos e a reflexão de pulsos em cordas",
         "as mudancas de direção de ondas ao passarem entre meios distintos",
         "o cancelamento de ruído e os padrões de franjas em experimentos ondulatórios"
       ],
@@ -2167,7 +2167,7 @@ export const ondulatoria = {
         "Como Classificação das ondas aparece na comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais?",
         "Como Reflexão de ondas substitui totalmente a comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais?",
         "Por que Refração de ondas torna desnecessário estudar Classificação das ondas?",
-        "De que modo Difração elimina toda medida fisica envolvida?"
+        "De que modo Difração elimina toda medida física envolvida?"
       ],
       "correta": "Como Classificação das ondas aparece na comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Classificação das ondas.",
@@ -2240,7 +2240,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"todas as ondas precisam de um meio material, inclusive a luz no vacuo\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"todas as ondas precisam de um meio material, inclusive a luz no vacuo\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque a distinção das ondas quanto à natureza, a direção de vibração e a necessidade ou não de meio material.",
         "A afirmação está correta, pois resume integralmente Classificação das ondas.",
@@ -2283,11 +2283,11 @@ export const ondulatoria = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais.",
         "a situação seria explicada automaticamente por Reflexão de ondas, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Classificação das ondas não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Classificação das ondas não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais.",
-      "comentario": "Ignorar Classificação das ondas compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar Classificação das ondas compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -2321,7 +2321,7 @@ export const ondulatoria = {
       "enunciado": "Em uma aplicação cotidiana ou escolar, Classificação das ondas ajuda principalmente a compreender:",
       "opcoes": [
         "a comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais",
-        "a formacao de ecos e a reflexão de pulsos em cordas",
+        "a formação de ecos e a reflexão de pulsos em cordas",
         "as mudancas de direção de ondas ao passarem entre meios distintos",
         "a audição em ambientes com obstóculos e pequenas aberturas"
       ],
@@ -2513,12 +2513,12 @@ export const ondulatoria = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Reflexão de ondas?",
+      "enunciado": "Qual alternativa NÃO está compatível com Reflexão de ondas?",
       "opcoes": [
         "A mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro.",
         "O retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo.",
         "Interpretar o retorno da onda e o comportamento do pulso refletido.",
-        "Ajuda a compreender a formacao de ecos e a reflexão de pulsos em cordas."
+        "Ajuda a compreender a formação de ecos e a reflexão de pulsos em cordas."
       ],
       "correta": "A mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro.",
       "comentario": "A opção incompativel descreve outro subtópico, não Reflexão de ondas.",
@@ -2552,7 +2552,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Reflexão de ondas, o foco principal e:",
+      "enunciado": "Ao estudar Reflexão de ondas, o foco principal é:",
       "opcoes": [
         "interpretar o retorno da onda e o comportamento do pulso refletido",
         "analisar como a passagem entre meios altera a propagação da onda",
@@ -2671,13 +2671,13 @@ export const ondulatoria = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual situação prática depende mais diretamente de Reflexão de ondas?",
       "opcoes": [
-        "a formacao de ecos e a reflexão de pulsos em cordas",
+        "a formação de ecos e a reflexão de pulsos em cordas",
         "as mudancas de direção de ondas ao passarem entre meios distintos",
         "a audição em ambientes com obstóculos e pequenas aberturas",
         "a afinação de instrumentos musicais e as vibrações em pontes e estruturas"
       ],
-      "correta": "a formacao de ecos e a reflexão de pulsos em cordas",
-      "comentario": "Reflexão de ondas aparece de modo direto na formacao de ecos e a reflexão de pulsos em cordas.",
+      "correta": "a formação de ecos e a reflexão de pulsos em cordas",
+      "comentario": "Reflexão de ondas aparece de modo direto na formação de ecos e a reflexão de pulsos em cordas.",
       "tempoEstimado": 40,
       "tags": [
         "ondulatoria",
@@ -2749,12 +2749,12 @@ export const ondulatoria = {
       "tipo": "multipla_escolha",
       "enunciado": "Se um grupo fosse pesquisar Reflexão de ondas, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Reflexão de ondas aparece na formacao de ecos e a reflexão de pulsos em cordas?",
-        "Como Refração de ondas substitui totalmente a formacao de ecos e a reflexão de pulsos em cordas?",
+        "Como Reflexão de ondas aparece na formação de ecos e a reflexão de pulsos em cordas?",
+        "Como Refração de ondas substitui totalmente a formação de ecos e a reflexão de pulsos em cordas?",
         "Por que Difração torna desnecessário estudar Reflexão de ondas?",
-        "De que modo Interferência elimina toda medida fisica envolvida?"
+        "De que modo Interferência elimina toda medida física envolvida?"
       ],
-      "correta": "Como Reflexão de ondas aparece na formacao de ecos e a reflexão de pulsos em cordas?",
+      "correta": "Como Reflexão de ondas aparece na formação de ecos e a reflexão de pulsos em cordas?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Reflexão de ondas.",
       "tempoEstimado": 45,
       "tags": [
@@ -2825,7 +2825,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"uma onda refletida so existe quando ela passa para outro meio\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"uma onda refletida so existe quando ela passa para outro meio\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque o retorno da onda ao meio de origem apos atingir uma superficie ou obstaculo.",
         "A afirmação está correta, pois resume integralmente Reflexão de ondas.",
@@ -2864,15 +2864,15 @@ export const ondulatoria = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Reflexão de ondas fosse ignorado(a) ao analisar a formacao de ecos e a reflexão de pulsos em cordas, o resultado mais provável seria:",
+      "enunciado": "Se Reflexão de ondas fosse ignorado(a) ao analisar a formação de ecos e a reflexão de pulsos em cordas, o resultado mais provável seria:",
       "opcoes": [
-        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a formacao de ecos e a reflexão de pulsos em cordas.",
+        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a formação de ecos e a reflexão de pulsos em cordas.",
         "a situação seria explicada automaticamente por Refração de ondas, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Reflexão de ondas não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Reflexão de ondas não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
-      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a formacao de ecos e a reflexão de pulsos em cordas.",
-      "comentario": "Ignorar Reflexão de ondas compromete a leitura fisica da situação apresentada.",
+      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a formação de ecos e a reflexão de pulsos em cordas.",
+      "comentario": "Ignorar Reflexão de ondas compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -2905,12 +2905,12 @@ export const ondulatoria = {
       "tipo": "multipla_escolha",
       "enunciado": "Em uma aplicação cotidiana ou escolar, Reflexão de ondas ajuda principalmente a compreender:",
       "opcoes": [
-        "a formacao de ecos e a reflexão de pulsos em cordas",
+        "a formação de ecos e a reflexão de pulsos em cordas",
         "as mudancas de direção de ondas ao passarem entre meios distintos",
         "a audição em ambientes com obstóculos e pequenas aberturas",
         "o cancelamento de ruído e os padrões de franjas em experimentos ondulatórios"
       ],
-      "correta": "a formacao de ecos e a reflexão de pulsos em cordas",
+      "correta": "a formação de ecos e a reflexão de pulsos em cordas",
       "comentario": "A aplicação escolhida e a que melhor representa Reflexão de ondas.",
       "tempoEstimado": 60,
       "tags": [
@@ -3098,7 +3098,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Refração de ondas?",
+      "enunciado": "Qual alternativa NÃO está compatível com Refração de ondas?",
       "opcoes": [
         "A capacidade de a onda contornar obstóculos ou espalhar-se ao atravessar fendas.",
         "A mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro.",
@@ -3137,7 +3137,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Refração de ondas, o foco principal e:",
+      "enunciado": "Ao estudar Refração de ondas, o foco principal é:",
       "opcoes": [
         "analisar como a passagem entre meios altera a propagação da onda",
         "explicar o espalhamento das ondas diante de obstóculos e aberturas",
@@ -3259,7 +3259,7 @@ export const ondulatoria = {
         "as mudancas de direção de ondas ao passarem entre meios distintos",
         "a audição em ambientes com obstóculos e pequenas aberturas",
         "o cancelamento de ruído e os padrões de franjas em experimentos ondulatórios",
-        "radares, exames médicos e interpretacao de sirenes e sinais astronômicos"
+        "radares, exames médicos e interpretação de sirenes e sinais astronômicos"
       ],
       "correta": "as mudancas de direção de ondas ao passarem entre meios distintos",
       "comentario": "Refração de ondas aparece de modo direto nas mudancas de direção de ondas ao passarem entre meios distintos.",
@@ -3337,7 +3337,7 @@ export const ondulatoria = {
         "Como Refração de ondas aparece nas mudancas de direção de ondas ao passarem entre meios distintos?",
         "Como Difração substitui totalmente as mudancas de direção de ondas ao passarem entre meios distintos?",
         "Por que Interferência torna desnecessário estudar Refração de ondas?",
-        "De que modo Ressonância elimina toda medida fisica envolvida?"
+        "De que modo Ressonância elimina toda medida física envolvida?"
       ],
       "correta": "Como Refração de ondas aparece nas mudancas de direção de ondas ao passarem entre meios distintos?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Refração de ondas.",
@@ -3410,7 +3410,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"na refração, a onda muda de direção, mas sua velocidade permanece sempre igual\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"na refração, a onda muda de direção, mas sua velocidade permanece sempre igual\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque a mudanca de velocidade e, em muitos casos, de direção de uma onda ao passar de um meio para outro.",
         "A afirmação está correta, pois resume integralmente Refração de ondas.",
@@ -3453,11 +3453,11 @@ export const ondulatoria = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre as mudancas de direção de ondas ao passarem entre meios distintos.",
         "a situação seria explicada automaticamente por Difração, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Refração de ondas não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Refração de ondas não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre as mudancas de direção de ondas ao passarem entre meios distintos.",
-      "comentario": "Ignorar Refração de ondas compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar Refração de ondas compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -3683,7 +3683,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Difração?",
+      "enunciado": "Qual alternativa NÃO está compatível com Difração?",
       "opcoes": [
         "A superposicao de ondas que produz reforco ou cancelamento na onda resultante.",
         "A capacidade de a onda contornar obstóculos ou espalhar-se ao atravessar fendas.",
@@ -3722,7 +3722,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Difração, o foco principal e:",
+      "enunciado": "Ao estudar Difração, o foco principal é:",
       "opcoes": [
         "explicar o espalhamento das ondas diante de obstóculos e aberturas",
         "interpretar a combinacao de ondas e seus efeitos construtivos ou destrutivos",
@@ -3922,7 +3922,7 @@ export const ondulatoria = {
         "Como Difração aparece na audição em ambientes com obstóculos e pequenas aberturas?",
         "Como Interferência substitui totalmente a audição em ambientes com obstóculos e pequenas aberturas?",
         "Por que Ressonância torna desnecessário estudar Difracao?",
-        "De que modo efeito Doppler elimina toda medida fisica envolvida?"
+        "De que modo efeito Doppler elimina toda medida física envolvida?"
       ],
       "correta": "Como Difração aparece na audição em ambientes com obstóculos e pequenas aberturas?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Difração.",
@@ -3995,7 +3995,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"Difração e um fenômeno exclusivo das ondas luminosas\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"Difração e um fenômeno exclusivo das ondas luminosas\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque a capacidade de a onda contornar obstóculos ou espalhar-se ao atravessar fendas.",
         "A afirmação está correta, pois resume integralmente Difração.",
@@ -4038,11 +4038,11 @@ export const ondulatoria = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a audição em ambientes com obstóculos e pequenas aberturas.",
         "a situação seria explicada automaticamente por Interferência, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Difracao não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Difracao não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a audição em ambientes com obstóculos e pequenas aberturas.",
-      "comentario": "Ignorar Difração compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar Difração compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -4078,7 +4078,7 @@ export const ondulatoria = {
         "a audição em ambientes com obstóculos e pequenas aberturas",
         "o cancelamento de ruído e os padrões de franjas em experimentos ondulatórios",
         "a afinação de instrumentos musicais e as vibrações em pontes e estruturas",
-        "radares, exames médicos e interpretacao de sirenes e sinais astronômicos"
+        "radares, exames médicos e interpretação de sirenes e sinais astronômicos"
       ],
       "correta": "a audição em ambientes com obstóculos e pequenas aberturas",
       "comentario": "A aplicação escolhida e a que melhor representa Difração.",
@@ -4268,7 +4268,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Interferência?",
+      "enunciado": "Qual alternativa NÃO está compatível com Interferência?",
       "opcoes": [
         "O aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural.",
         "A superposicao de ondas que produz reforco ou cancelamento na onda resultante.",
@@ -4307,7 +4307,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Interferência, o foco principal e:",
+      "enunciado": "Ao estudar Interferência, o foco principal é:",
       "opcoes": [
         "interpretar a combinacao de ondas e seus efeitos construtivos ou destrutivos",
         "relacionar frequência natural e aumento de amplitude em sistemas oscilantes",
@@ -4428,8 +4428,8 @@ export const ondulatoria = {
       "opcoes": [
         "o cancelamento de ruído e os padrões de franjas em experimentos ondulatórios",
         "a afinação de instrumentos musicais e as vibrações em pontes e estruturas",
-        "radares, exames médicos e interpretacao de sirenes e sinais astronômicos",
-        "a leitura de graficos e tabelas sobre ondas em laboratorio"
+        "radares, exames médicos e interpretação de sirenes e sinais astronômicos",
+        "a leitura de gráficos e tabelas sobre ondas em laboratório"
       ],
       "correta": "o cancelamento de ruído e os padrões de franjas em experimentos ondulatórios",
       "comentario": "Interferência aparece de modo direto no cancelamento de ruído e os padrões de franjas em experimentos ondulatórios.",
@@ -4507,7 +4507,7 @@ export const ondulatoria = {
         "Como Interferência aparece no cancelamento de ruído e os padrões de franjas em experimentos ondulatórios?",
         "Como Ressonância substitui totalmente o cancelamento de ruído e os padrões de franjas em experimentos ondulatórios?",
         "Por que efeito Doppler torna desnecessário estudar Interferência?",
-        "De que modo Conceito de onda elimina toda medida fisica envolvida?"
+        "De que modo Conceito de onda elimina toda medida física envolvida?"
       ],
       "correta": "Como Interferência aparece no cancelamento de ruído e os padrões de franjas em experimentos ondulatórios?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Interferência.",
@@ -4580,7 +4580,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"o encontro entre duas ondas faz com que ambas deixem de existir apos a colisao\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"o encontro entre duas ondas faz com que ambas deixem de existir apos a colisao\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque a superposicao de ondas que produz reforco ou cancelamento na onda resultante.",
         "A afirmação está correta, pois resume integralmente Interferência.",
@@ -4623,11 +4623,11 @@ export const ondulatoria = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o cancelamento de ruído e os padrões de franjas em experimentos ondulatórios.",
         "a situação seria explicada automaticamente por Ressonância, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Interferência não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Interferência não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o cancelamento de ruído e os padrões de franjas em experimentos ondulatórios.",
-      "comentario": "Ignorar Interferência compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar Interferência compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -4662,7 +4662,7 @@ export const ondulatoria = {
       "opcoes": [
         "o cancelamento de ruído e os padrões de franjas em experimentos ondulatórios",
         "a afinação de instrumentos musicais e as vibrações em pontes e estruturas",
-        "radares, exames médicos e interpretacao de sirenes e sinais astronômicos",
+        "radares, exames médicos e interpretação de sirenes e sinais astronômicos",
         "a propagação de pulsos em cordas e superficies líquidas"
       ],
       "correta": "o cancelamento de ruído e os padrões de franjas em experimentos ondulatórios",
@@ -4853,7 +4853,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Ressonância?",
+      "enunciado": "Qual alternativa NÃO está compatível com Ressonância?",
       "opcoes": [
         "A variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador.",
         "O aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural.",
@@ -4892,7 +4892,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Ressonância, o foco principal e:",
+      "enunciado": "Ao estudar Ressonância, o foco principal é:",
       "opcoes": [
         "relacionar frequência natural e aumento de amplitude em sistemas oscilantes",
         "analisar mudancas aparentes de frequência em situações com movimento relativo",
@@ -5012,7 +5012,7 @@ export const ondulatoria = {
       "enunciado": "Qual situação prática depende mais diretamente de Ressonância?",
       "opcoes": [
         "a afinação de instrumentos musicais e as vibrações em pontes e estruturas",
-        "radares, exames médicos e interpretacao de sirenes e sinais astronômicos",
+        "radares, exames médicos e interpretação de sirenes e sinais astronômicos",
         "a propagação de pulsos em cordas e superficies líquidas",
         "o cálculo da velocidade do som ou da luz em diferentes meios"
       ],
@@ -5092,7 +5092,7 @@ export const ondulatoria = {
         "Como Ressonância aparece na afinação de instrumentos musicais e as vibrações em pontes e estruturas?",
         "Como efeito Doppler substitui totalmente a afinação de instrumentos musicais e as vibrações em pontes e estruturas?",
         "Por que Conceito de onda torna desnecessário estudar Ressonância?",
-        "De que modo Grandezas da onda elimina toda medida fisica envolvida?"
+        "De que modo Grandezas da onda elimina toda medida física envolvida?"
       ],
       "correta": "Como Ressonância aparece na afinação de instrumentos musicais e as vibrações em pontes e estruturas?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Ressonância.",
@@ -5165,7 +5165,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"Ressonância acontece quando qualquer som forte atinge um objeto, independentemente da frequência\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"Ressonância acontece quando qualquer som forte atinge um objeto, independentemente da frequência\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque o aumento da amplitude de um sistema quando a frequência de excitacao coincide com sua frequência natural.",
         "A afirmação está correta, pois resume integralmente Ressonância.",
@@ -5208,11 +5208,11 @@ export const ondulatoria = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a afinação de instrumentos musicais e as vibrações em pontes e estruturas.",
         "a situação seria explicada automaticamente por efeito Doppler, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Ressonância não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Ressonância não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a afinação de instrumentos musicais e as vibrações em pontes e estruturas.",
-      "comentario": "Ignorar Ressonância compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar Ressonância compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -5246,9 +5246,9 @@ export const ondulatoria = {
       "enunciado": "Em uma aplicação cotidiana ou escolar, Ressonância ajuda principalmente a compreender:",
       "opcoes": [
         "a afinação de instrumentos musicais e as vibrações em pontes e estruturas",
-        "radares, exames médicos e interpretacao de sirenes e sinais astronômicos",
+        "radares, exames médicos e interpretação de sirenes e sinais astronômicos",
         "a propagação de pulsos em cordas e superficies líquidas",
-        "a leitura de graficos e tabelas sobre ondas em laboratorio"
+        "a leitura de gráficos e tabelas sobre ondas em laboratório"
       ],
       "correta": "a afinação de instrumentos musicais e as vibrações em pontes e estruturas",
       "comentario": "A aplicação escolhida e a que melhor representa Ressonância.",
@@ -5438,12 +5438,12 @@ export const ondulatoria = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com efeito Doppler?",
+      "enunciado": "Qual alternativa NÃO está compatível com efeito Doppler?",
       "opcoes": [
         "Uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente.",
         "A variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador.",
         "Analisar mudancas aparentes de frequência em situações com movimento relativo.",
-        "Ajuda a compreender radares, exames médicos e interpretacao de sirenes e sinais astronômicos."
+        "Ajuda a compreender radares, exames médicos e interpretação de sirenes e sinais astronômicos."
       ],
       "correta": "Uma perturbação que se propaga transportando energia sem transportar matéria de forma permanente.",
       "comentario": "A opção incompativel descreve outro subtópico, não efeito Doppler.",
@@ -5477,7 +5477,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar efeito Doppler, o foco principal e:",
+      "enunciado": "Ao estudar efeito Doppler, o foco principal é:",
       "opcoes": [
         "analisar mudancas aparentes de frequência em situações com movimento relativo",
         "identificar a propagação de perturbacoes e o transporte de energia",
@@ -5596,13 +5596,13 @@ export const ondulatoria = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual situação prática depende mais diretamente de Efeito Doppler?",
       "opcoes": [
-        "radares, exames médicos e interpretacao de sirenes e sinais astronômicos",
+        "radares, exames médicos e interpretação de sirenes e sinais astronômicos",
         "a propagação de pulsos em cordas e superficies líquidas",
-        "a leitura de graficos e tabelas sobre ondas em laboratorio",
+        "a leitura de gráficos e tabelas sobre ondas em laboratório",
         "a comparação entre ondas mecânicas, eletromagnéticas, transversais e longitudinais"
       ],
-      "correta": "radares, exames médicos e interpretacao de sirenes e sinais astronômicos",
-      "comentario": "Efeito Doppler aparece de modo direto em radares, exames médicos e interpretacao de sirenes e sinais astronômicos.",
+      "correta": "radares, exames médicos e interpretação de sirenes e sinais astronômicos",
+      "comentario": "Efeito Doppler aparece de modo direto em radares, exames médicos e interpretação de sirenes e sinais astronômicos.",
       "tempoEstimado": 40,
       "tags": [
         "ondulatoria",
@@ -5674,12 +5674,12 @@ export const ondulatoria = {
       "tipo": "multipla_escolha",
       "enunciado": "Se um grupo fosse pesquisar efeito Doppler, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como efeito Doppler aparece em radares, exames médicos e interpretacao de sirenes e sinais astronômicos?",
-        "Como Conceito de onda substitui totalmente radares, exames médicos e interpretacao de sirenes e sinais astronômicos?",
+        "Como efeito Doppler aparece em radares, exames médicos e interpretação de sirenes e sinais astronômicos?",
+        "Como Conceito de onda substitui totalmente radares, exames médicos e interpretação de sirenes e sinais astronômicos?",
         "Por que Grandezas da onda torna desnecessário estudar Efeito Doppler?",
-        "De que modo Velocidade de propagação elimina toda medida fisica envolvida?"
+        "De que modo Velocidade de propagação elimina toda medida física envolvida?"
       ],
-      "correta": "Como efeito Doppler aparece em radares, exames médicos e interpretacao de sirenes e sinais astronômicos?",
+      "correta": "Como efeito Doppler aparece em radares, exames médicos e interpretação de sirenes e sinais astronômicos?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de efeito Doppler.",
       "tempoEstimado": 45,
       "tags": [
@@ -5750,7 +5750,7 @@ export const ondulatoria = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"no efeito Doppler, a fonte passa a emitir outra frequência real quando se movimenta\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"no efeito Doppler, a fonte passa a emitir outra frequência real quando se movimenta\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque a variação aparente da frequência percebida devido ao movimento relativo entre fonte e observador.",
         "A afirmação está correta, pois resume integralmente efeito Doppler.",
@@ -5789,15 +5789,15 @@ export const ondulatoria = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se efeito Doppler fosse ignorado(a) ao analisar radares, exames médicos e interpretacao de sirenes e sinais astronômicos, o resultado mais provável seria:",
+      "enunciado": "Se efeito Doppler fosse ignorado(a) ao analisar radares, exames médicos e interpretação de sirenes e sinais astronômicos, o resultado mais provável seria:",
       "opcoes": [
-        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre radares, exames médicos e interpretacao de sirenes e sinais astronômicos.",
+        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre radares, exames médicos e interpretação de sirenes e sinais astronômicos.",
         "a situação seria explicada automaticamente por Conceito de onda, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Efeito Doppler não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Efeito Doppler não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
-      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre radares, exames médicos e interpretacao de sirenes e sinais astronômicos.",
-      "comentario": "Ignorar efeito Doppler compromete a leitura fisica da situação apresentada.",
+      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre radares, exames médicos e interpretação de sirenes e sinais astronômicos.",
+      "comentario": "Ignorar efeito Doppler compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "ondulatoria",
@@ -5830,12 +5830,12 @@ export const ondulatoria = {
       "tipo": "multipla_escolha",
       "enunciado": "Em uma aplicação cotidiana ou escolar, Efeito Doppler ajuda principalmente a compreender:",
       "opcoes": [
-        "radares, exames médicos e interpretacao de sirenes e sinais astronômicos",
+        "radares, exames médicos e interpretação de sirenes e sinais astronômicos",
         "a propagação de pulsos em cordas e superficies líquidas",
-        "a leitura de graficos e tabelas sobre ondas em laboratorio",
+        "a leitura de gráficos e tabelas sobre ondas em laboratório",
         "o cálculo da velocidade do som ou da luz em diferentes meios"
       ],
-      "correta": "radares, exames médicos e interpretacao de sirenes e sinais astronômicos",
+      "correta": "radares, exames médicos e interpretação de sirenes e sinais astronômicos",
       "comentario": "A aplicação escolhida e a que melhor representa efeito Doppler.",
       "tempoEstimado": 60,
       "tags": [

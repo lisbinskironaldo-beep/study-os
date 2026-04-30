@@ -96,85 +96,85 @@ const montarBloco = (subtopico, inicio, comentario, habilidade, bruto) => {
 };
 
 const bloco1 = montarBloco(
-  "Territorio e regionalizacao do Brasil",
+  "Território e regionalizacao do Brasil",
   1,
   "O Brasil atual deve ser lido a partir de sua extensao territorial, diversidade regional e articulacao desigual dos espacos.",
   "identificar-territorio-e-regionalizacao-do-brasil",
   `
-regioes brasileiras|A divisao oficial do territorio nacional em Norte, Nordeste, Centro-Oeste, Sudeste e Sul forma as:
-regionalizacao|O ato de dividir o territorio em partes segundo criterios especificos e a:
-diversidade regional|As grandes diferencas naturais, economicas e sociais entre areas do pais revelam a:
-territorio nacional|O espaco sob soberania do Estado brasileiro corresponde ao:
-faixa de fronteira|A zona terrestre proxima aos limites internacionais do pais e a:
-zona costeira|A porcao do territorio articulada ao litoral e aos usos maritimos forma a:
-dominio amazonico|A extensa area de florestas tropicais no Norte integra o:
+regiões brasileiras|A divisao oficial do território nacional em Norte, Nordeste, Centro-Oeste, Sudeste e Sul forma as:
+regionalizacao|O ato de dividir o território em partes segundo critérios especificos é a:
+diversidade regional|As grandes diferencas naturais, econômicas e sociais entre áreas do país revelam a:
+território nacional|O espaço sob soberania do Estado brasileiro corresponde ao:
+faixa de fronteira|A zona terrestre proxima aos limites internacionais do país é a:
+zona costeira|A porcao do território articulada ao litoral e aos usos maritimos forma a:
+dominio amazonico|A extensa área de florestas tropicais no Norte integra o:
 semiarido nordestino|A porcao de clima mais seco do Nordeste corresponde ao:
-centro-sul dinamico|A area de maior concentracao economica e tecnico-cientifica do pais pode ser chamada de:
-complexidade regional|As diferencas de populacao, economia e infraestrutura entre as regioes mostram a:
-integracao territorial desigual|As redes de transporte e comunicacao conectam o Brasil, mas de forma:
-densidade tecnica regional|Algumas regioes concentram mais infraestrutura, servicos e tecnologia, revelando maior:
-ocupacao historica seletiva|A forma desigual de povoamento e organizacao do territorio brasileiro resulta de:
-espaco agrario e urbano articulado|No Brasil contemporaneo campo e cidade se relacionam em um:
-rede regional de cidades|A articulacao de centros urbanos em diferentes escalas no interior das regioes forma uma:
+centro-sul dinamico|A área de maior concentracao econômica e tecnico-cientifica do país pode ser chamada de:
+complexidade regional|As diferencas de população, economia e infraestrutura entre as regiões mostram a:
+integração territorial desigual|As redes de transporte e comunicação conectam o Brasil, mas de forma:
+densidade técnica regional|Algumas regiões concentram mais infraestrutura, serviços e tecnologia, revelando maior:
+ocupacao histórica seletiva|A forma desigual de povoamento e organizacao do território brasileiro resulta de:
+espaço agrario e urbano articulado|No Brasil contemporaneo campo e cidade se relacionam em um:
+rede regional de cidades|A articulacao de centros urbanos em diferentes escalas no interior das regiões forma uma:
 reorganizacao territorial recente|Novos eixos de expansao produtiva mostram uma:
-contrastes intrarregionais|Dentro da mesma regiao podem coexistir areas modernas e areas precarias, formando:
-fronteira economica interna|Areas de expansao recente da agropecuaria, da mineracao e da infraestrutura constituem:
-leitura multiescalar do Brasil|Interpretar o Brasil atual exige relacionar municipio, estado, regiao e:
-territorio brasileiro desigual e integrado|A sintese sobre o espaco nacional deve reconhecer que o Brasil e ao mesmo tempo:
+contrastes intrarregionais|Dentro da mesma região podem coexistir áreas modernas e áreas precarias, formando:
+fronteira econômica interna|Áreas de expansao recente da agropecuaria, da mineracao e da infraestrutura constituem:
+leitura multiescalar do Brasil|Interpretar o Brasil atual exige relacionar municipio, estado, região e:
+território brasileiro desigual e integrado|A sintese sobre o espaço nacional deve reconhecer que o Brasil e ao mesmo tempo:
 `
 );
 
 const bloco2 = montarBloco(
-  "Populacao e dinamicas demograficas",
+  "População e dinamicas demograficas",
   21,
-  "O Brasil atual apresenta transicao demografica avancada, urbanizacao elevada e desigualdades populacionais persistentes.",
+  "O Brasil atual apresenta transicao demográfica avancada, urbanizacao elevada e desigualdades populacionais persistentes.",
   "analisar-populacao-e-dinamicas-demograficas-do-brasil",
   `
-transicao demografica|A passagem de altas taxas de natalidade e mortalidade para niveis mais baixos caracteriza a:
-envelhecimento populacional|O aumento relativo da participacao de idosos na populacao brasileira indica:
-queda da fecundidade|A reducao do numero medio de filhos por mulher mostra a:
-urbanizacao elevada|A grande maioria da populacao brasileira vivendo em cidades expressa:
-estrutura etaria em mudanca|A diminuicao relativa da base da piramide e o aumento da faixa adulta revelam:
-densidade demografica desigual|A populacao brasileira nao se distribui uniformemente, o que evidencia:
-migracao interna|Os deslocamentos populacionais entre regioes e estados do pais formam a:
-mobilidade pendular|O deslocamento diario entre moradia e trabalho ou estudo nas areas urbanas e a:
-metropolizacao populacional|A concentracao humana em grandes aglomeracoes e regioes metropolitanas compoe a:
-interiorizacao do povoamento|O crescimento de cidades medias e novas frentes economicas revela:
+transicao demográfica|A passagem de altas taxas de natalidade e mortalidade para niveis mais baixos caracteriza a:
+envelhecimento populacional|O aumento relativo da participacao de idosos na população brasileira indica:
+queda da fecundidade|A reducao do número medio de filhos por mulher mostra a:
+urbanizacao elevada|A grande maioria da população brasileira vivendo em cidades expressa:
+estrutura etária em mudança|A diminuicao relativa da base da pirâmide é o aumento da faixa adulta revelam:
+densidade demográfica desigual|A população brasileira não se distribui uniformemente, o que evidencia:
+migracao interna|Os deslocamentos populacionais entre regiões e estados do país formam a:
+mobilidade pendular|O deslocamento diario entre moradia e trabalho ou estudo nas áreas urbanas é a:
+metropolizacao populacional|A concentracao humana em grandes aglomeracoes e regiões metropolitanas compoe a:
+interiorizacao do povoamento|O crescimento de cidades medias e novas frentes econômicas revela:
 reducao do crescimento vegetativo|Com menos nascimentos e maior envelhecimento ocorre:
-distribuicao desigual da populacao|O litoral e certas metropoles concentram mais habitantes, mostrando:
-desigualdades sociodemograficas|Renda, escolaridade, acesso a saude e composicao etaria revelam:
-populacao economicamente ativa|O grupo em idade e condicao de trabalho compoe a:
-transicao urbana consolidada|A predominancia historica do modo de vida urbano no pais indica:
-mudanca no perfil das familias|A reducao do tamanho medio dos lares brasileiros mostra:
-pressao sobre politicas sociais|O envelhecimento e as desigualdades regionais ampliam desafios em:
+distribuição desigual da população|O litoral e certas metropoles concentram mais habitantes, mostrando:
+desigualdades sociodemograficas|Renda, escolaridade, acesso a saúde e composição etária revelam:
+população economicamente ativa|O grupo em idade e condicao de trabalho compoe a:
+transicao urbana consolidada|A predominancia histórica do modo de vida urbano no país indica:
+mudança no perfil das familias|A reducao do tamanho medio dos lares brasileiros mostra:
+pressão sobre políticas sociais|O envelhecimento e as desigualdades regionais ampliam desafios em:
 seletividade migratoria|Certos fluxos internos concentram jovens e trabalhadores, revelando:
 dinamica populacional complexa|No Brasil atual natalidade, migracoes, urbanizacao e envelhecimento formam uma:
-leitura geografica da populacao brasileira|A sintese demografica do pais exige articular distribuicao espacial, estrutura etaria e:
+leitura geográfica da população brasileira|A sintese demográfica do país exige articular distribuição espacial, estrutura etária e:
 `
 );
 
 const bloco3 = montarBloco(
   "Urbanizacao e rede urbana brasileira",
   41,
-  "A urbanizacao brasileira formou metropoles, cidades medias e fortes contrastes de infraestrutura e servicos.",
+  "A urbanizacao brasileira formou metropoles, cidades medias e fortes contrastes de infraestrutura e serviços.",
   "analisar-urbanizacao-e-rede-urbana-brasileira",
   `
-rede urbana brasileira|O conjunto articulado de cidades e fluxos no pais forma a:
-metropole nacional|Grande cidade brasileira com ampla influencia economica e funcional sobre o territorio e uma:
-cidade media dinamica|Centro urbano intermediario que ganhou relevancia com servicos e economia regional e uma:
-hierarquia urbana nacional|A organizacao das cidades brasileiras em diferentes niveis de centralidade e a:
-conurbacao|A uniao fisica entre manchas urbanas de municipios vizinhos corresponde a:
-regiao metropolitana|O conjunto de municipios fortemente articulados por uma grande cidade forma a:
-periferizacao urbana|A expansao das moradias de baixa renda para areas distantes e a:
-segregacao socioespacial|A separacao de grupos sociais em areas desiguais da cidade e a:
-macrocefalia urbana|A concentracao excessiva de populacao e funcoes em poucas metropoles pode gerar:
+rede urbana brasileira|O conjunto articulado de cidades e fluxos no país forma a:
+metropole nacional|Grande cidade brasileira com ampla influencia econômica e funcional sobre o território é uma:
+cidade média dinamica|Centro urbano intermediario que ganhou relevancia com serviços e economia regional é uma:
+hierarquia urbana nacional|A organizacao das cidades brasileiras em diferentes niveis de centralidade é a:
+conurbacao|A uniao física entre manchas urbanas de municipios vizinhos corresponde a:
+região metropolitana|O conjunto de municipios fortemente articulados por uma grande cidade forma a:
+periferizacao urbana|A expansao das moradias de baixa renda para áreas distantes é a:
+segregacao socioespacial|A separacao de grupos sociais em áreas desiguais da cidade é a:
+macrocefalia urbana|A concentracao excessiva de população e funções em poucas metropoles pode gerar:
 rede policentrica emergente|O fortalecimento de varias cidades medias e capitais regionais sugere uma:
 urbanizacao desigual|O acesso a moradia, saneamento e transporte nas cidades brasileiras ocorre de forma:
-mobilidade pendular metropolitana|Nas grandes metropoles brasileiras sao comuns:
-centralidade de servicos|Certas cidades se destacam por universidades, hospitais e comercio regional, reforcando sua:
+mobilidade pendular metropolitana|Nas grandes metropoles brasileiras são comuns:
+centralidade de serviços|Certas cidades se destacam por universidades, hospitais e comércio regional, reforcando sua:
 infraestrutura urbana incompleta|Muitas periferias brasileiras revelam carencias de saneamento, transporte e:
 expansao horizontal das cidades|O espraiamento do tecido urbano para zonas perifericas caracteriza a:
-cidade-regiao|A articulacao funcional de uma metropole com municipios vizinhos e com cidades proximas forma uma:
+cidade-região|A articulacao funcional de uma metropole com municipios vizinhos e com cidades proximas forma uma:
 economia urbana terciarizada|Grande parte do dinamismo recente das cidades brasileiras esta ligada ao:
 problemas metropolitanos|Violencia, congestionamento, segregacao e poluicao compoem os:
 urbanizacao brasileira contraditoria|A sintese sobre o urbano no Brasil atual combina modernizacao, desigualdade e:
@@ -184,197 +184,197 @@ urbanizacao brasileira contraditoria|A sintese sobre o urbano no Brasil atual co
 const bloco4 = montarBloco(
   "Economia e reestruturacao produtiva",
   61,
-  "O Brasil atual combina agroexportacao, industria desigual, servicos e financeirizacao em um territorio heterogeneo.",
+  "O Brasil atual combina agroexportacao, industria desigual, serviços e financeirizacao em um território heterogeneo.",
   "analisar-economia-e-reestruturacao-produtiva-no-brasil",
   `
-reestruturacao produtiva|As mudancas na localizacao de empresas, no trabalho e nos setores economicos formam a:
-desindustrializacao relativa|A perda de peso da industria na estrutura produtiva e um processo de:
-terciarizacao da economia|O aumento da participacao de comercio e servicos no emprego e na renda expressa:
+reestruturacao produtiva|As mudancas na localizacao de empresas, no trabalho e nos setores econômicos formam a:
+desindustrializacao relativa|A perda de peso da industria na estrutura produtiva é um processo de:
+terciarizacao da economia|O aumento da participacao de comércio e serviços no emprego e na renda expressa:
 agroexportacao moderna|A forte presenca do agronegocio voltado ao mercado externo caracteriza a:
-economia de servicos|No Brasil atual uma parte expressiva do PIB e do emprego esta no setor de:
-complexidade produtiva desigual|Algumas regioes concentram industrias e tecnologia, enquanto outras permanecem mais dependentes de:
-concentracao financeira|Sedes bancarias, bolsas e grandes servicos empresariais reforcam a:
-interiorizacao industrial seletiva|A ida de plantas industriais para novas regioes e uma forma de:
+economia de serviços|No Brasil atual uma parte expressiva do PIB e do emprego esta no setor de:
+complexidade produtiva desigual|Algumas regiões concentram industrias e tecnologia, enquanto outras permanecem mais dependentes de:
+concentracao financeira|Sedes bancarias, bolsas e grandes serviços empresariais reforcam a:
+interiorizacao industrial seletiva|A ida de plantas industriais para novas regiões é uma forma de:
 dependencia de commodities|Quando exportacoes ficam muito concentradas em produtos primarios ocorre:
-cadeias produtivas territoriais|A articulacao entre fornecedores, logistica e mercado forma:
+cadeias produtivas territoriais|A articulacao entre fornecedores, logística e mercado forma:
 competitividade regional|Infraestrutura, qualificacao e mercado ajudam a explicar a:
-economia informacional|O peso crescente de dados, telecomunicacoes e servicos complexos na producao integra a:
-especializacao produtiva regional|Determinadas areas do pais se destacam por ramos especificos, formando:
-mercado interno desigual|As diferencas de renda e de consumo entre as regioes afetam o:
+economia informacional|O peso crescente de dados, telecomunicacoes e serviços complexos na produção integra a:
+especializacao produtiva regional|Determinadas áreas do país se destacam por ramos especificos, formando:
+mercado interno desigual|As diferencas de renda e de consumo entre as regiões afetam o:
 trabalho flexibilizado|A ampliacao de terceirizacao, plataformas e contratos instaveis favorece:
-conexao entre campo e industria|Agroindustria, insumos e logistica mostram a:
-insercao subordinada em cadeias globais|Exportar muito valor primario e importar tecnologia pode reforcar:
+conexao entre campo e industria|Agroindustria, insumos e logística mostram a:
+inserção subordinada em cadeias globais|Exportar muito valor primario e importar tecnologia pode reforcar:
 economia brasileira heterogenea|A coexistencia de atividades modernas e atrasadas revela uma:
-desenvolvimento regional desequilibrado|A sintese economica do Brasil atual destaca crescimento seletivo e:
+desenvolvimento regional desequilibrado|A sintese econômica do Brasil atual destaca crescimento seletivo e:
 `
 );
 
 const bloco5 = montarBloco(
   "Agropecuaria e questao agraria",
   81,
-  "O campo brasileiro combina agronegocio moderno, conflitos por terra, desigualdade fundiaria e pressao ambiental.",
+  "O campo brasileiro combina agronegocio moderno, conflitos por terra, desigualdade fundiaria e pressão ambiental.",
   "avaliar-agropecuaria-e-questao-agraria-no-brasil",
   `
-agronegocio|O sistema que articula producao agropecuaria, industria, credito e exportacao e o:
+agronegocio|O sistema que articula produção agropecuaria, industria, credito e exportação é o:
 concentracao fundiaria|A posse de grande parte das terras nas maos de poucos proprietarios revela:
-fronteira agricola|A expansao de lavouras e pecuaria sobre novas areas do territorio compoe a:
-monocultura exportadora|A producao em larga escala de poucos produtos voltados ao mercado externo e a:
-agroindustria|A integracao entre o campo e a transformacao industrial dos produtos rurais forma a:
+fronteira agricola|A expansao de lavouras e pecuaria sobre novas áreas do território compoe a:
+monocultura exportadora|A produção em larga escala de poucos produtos voltados ao mercado externo é a:
+agroindustria|A integração entre o campo é a transformação industrial dos produtos rurais forma a:
 conflito pela terra|A disputa entre grandes proprietarios, comunidades e trabalhadores pelo uso fundiario gera:
 reforma agraria|A politica de redistribuicao de terras e apoio a pequenos produtores corresponde a:
-agricultura familiar|A producao baseada em pequenas propriedades e trabalho da familia integra a:
+agricultura familiar|A produção baseada em pequenas propriedades e trabalho da familia integra a:
 mecanizacao do campo|O uso intensivo de tratores, colheitadeiras e maquinas expressa a:
 uso intensivo de insumos|Sementes melhoradas, fertilizantes e agroquimicos compoem o:
 expulsao de trabalhadores rurais|A modernizacao do campo sem absorcao de mao de obra pode gerar:
-desmatamento por expansao agropecuaria|A abertura de novas areas para pastos e lavouras provoca:
+desmatamento por expansao agropecuaria|A abertura de novas áreas para pastos e lavouras provoca:
 cadeia global de alimentos|A articulacao do campo brasileiro com tradings, portos e mercados externos forma a:
-pressao sobre povos e comunidades tradicionais|A ampliacao da fronteira produtiva pode intensificar:
-seguranca alimentar desigual|Mesmo com grande producao agricola, persistem desafios ligados ao:
-especializacao regional do campo|Soja, cana, gado e frutas se distribuem de modo diferente pelo pais, revelando:
+pressão sobre povos e comunidades tradicionais|A ampliacao da fronteira produtiva pode intensificar:
+seguranca alimentar desigual|Mesmo com grande produção agricola, persistem desafios ligados ao:
+especializacao regional do campo|Soja, cana, gado e frutas se distribuem de modo diferente pelo país, revelando:
 campo tecnificado e campo precario|A realidade rural brasileira combina modernizacao e:
 questao agraria persistente|Concentracao fundiaria, conflitos e desigualdade mantem viva a:
-leitura geografica do campo brasileiro|A sintese da agropecuaria atual exige articular tecnologia, terra, exportacao e:
+leitura geográfica do campo brasileiro|A sintese da agropecuaria atual exige articular tecnologia, terra, exportação e:
 `
 );
 
 const bloco6 = montarBloco(
-  "Infraestrutura e integracao territorial",
+  "Infraestrutura e integração territorial",
   101,
-  "Rodovias, portos, energia, telecomunicacoes e logistica estruturam a integracao desigual do territorio brasileiro.",
+  "Rodovias, portos, energia, telecomunicacoes e logística estruturam a integração desigual do território brasileiro.",
   "analisar-infraestrutura-e-integracao-territorial-no-brasil",
   `
-integracao territorial|A conexao entre regioes brasileiras por transporte, energia e comunicacao forma a:
-malha rodoviaria|No Brasil a principal base de circulacao terrestre de cargas e a:
-corredor logistico|O conjunto de vias, terminais e servicos voltado ao escoamento de producao constitui um:
-porto exportador|Instalacao fundamental para a saida de commodities e manufaturas ao exterior e um:
-ferrovia de cargas|Modal usado para longas distancias e grande volume de mercadorias e a:
-rede de energia|A articulacao entre geracao, transmissao e distribuicao eletrica forma a:
+integração territorial|A conexao entre regiões brasileiras por transporte, energia e comunicação forma a:
+malha rodoviaria|No Brasil a principal base de circulação terrestre de cargas é a:
+corredor logistico|O conjunto de vias, terminais e serviços voltado ao escoamento de produção constitui um:
+porto exportador|Instalacao fundamental para a saida de commodities e manufaturas ao exterior é um:
+ferrovia de cargas|Modal usado para longas distâncias e grande volume de mercadorias é a:
+rede de energia|A articulacao entre geracao, transmissao e distribuição eletrica forma a:
 telecomunicacoes|Internet, telefonia e transmissao de dados compoem o setor de:
-integracao seletiva do territorio|As obras de infraestrutura beneficiam algumas areas mais do que outras, revelando:
-gargalo logistico|Quando a rede de transportes nao acompanha a producao surge um:
-capacidade de escoamento|A eficiencia de levar bens das areas produtivas aos mercados expressa a:
-densidade infraestrutural desigual|Algumas regioes possuem mais rodovias, energia e servicos, mostrando:
+integração seletiva do território|As obras de infraestrutura beneficiam algumas áreas mais do que outras, revelando:
+gargalo logistico|Quando a rede de transportes não acompanha a produção surge um:
+capacidade de escoamento|A eficiencia de levar bens das áreas produtivas aos mercados expressa a:
+densidade infraestrutural desigual|Algumas regiões possuem mais rodovias, energia e serviços, mostrando:
 eixos de desenvolvimento|Grandes obras e circuitos produtivos podem formar:
-interiorizacao conectada|A expansao economica para cidades medias e novas fronteiras depende de:
+interiorizacao conectada|A expansao econômica para cidades medias e novas fronteiras depende de:
 dependencia rodoviaria|A forte centralidade das estradas no transporte brasileiro expressa:
-articulacao porto-hinterland|A ligacao entre o porto e sua area de abastecimento no interior e a:
-infraestrutura como fator locacional|Empresas escolhem certas areas do territorio por causa da:
-fluidez territorial|A facilidade de circulacao de mercadorias, informacoes e pessoas depende da:
-desigualdade de acesso a redes tecnicas|Nem todos os lugares do Brasil possuem a mesma insercao em energia, dados e transporte, o que mostra:
-territorio como suporte material da economia|A sintese sobre infraestrutura destaca o Brasil como um espaco organizado por obras, fluxos e:
+articulacao porto-hinterland|A ligacao entre o porto e sua área de abastecimento no interior é a:
+infraestrutura como fator locacional|Empresas escolhem certas áreas do território por causa da:
+fluidez territorial|A facilidade de circulação de mercadorias, informacoes e pessoas depende da:
+desigualdade de acesso a redes técnicas|Nem todos os lugares do Brasil possuem a mesma inserção em energia, dados e transporte, o que mostra:
+território como suporte material da economia|A sintese sobre infraestrutura destaca o Brasil como um espaço organizado por obras, fluxos e:
 `
 );
 
 const bloco7 = montarBloco(
   "Desigualdades regionais e sociais",
   121,
-  "As diferencas de renda, servicos e oportunidades entre regioes e grupos sociais marcam fortemente o Brasil contemporaneo.",
+  "As diferencas de renda, serviços e oportunidades entre regiões e grupos sociais marcam fortemente o Brasil contemporaneo.",
   "avaliar-desigualdades-regionais-e-sociais-no-brasil",
   `
-desigualdade regional|As diferencas de renda, infraestrutura e dinamismo entre partes do pais caracterizam:
+desigualdade regional|As diferencas de renda, infraestrutura e dinamismo entre partes do país caracterizam:
 concentracao de renda|Quando grande parcela da riqueza se acumula nas maos de poucos ocorre:
-desigualdade socioespacial|A distribuicao desigual de servicos e oportunidades no territorio revela:
-contraste centro-periferia|A oposicao entre areas valorizadas e areas precarias nas cidades forma o:
-acesso desigual a servicos|Saude, educacao, transporte e saneamento nao chegam da mesma forma a todos, produzindo:
-segregacao social urbana|A separacao territorial de grupos por renda e condicoes de vida e uma:
-desigualdade no campo e na cidade|No Brasil atual as diferencas socioespaciais aparecem tanto em areas rurais quanto:
-vulnerabilidade social|Grupos com baixa renda, servicos insuficientes e alta exposicao a riscos apresentam:
+desigualdade socioespacial|A distribuição desigual de serviços e oportunidades no território revela:
+contraste centro-periferia|A oposicao entre áreas valorizadas e áreas precarias nas cidades forma o:
+acesso desigual a serviços|Saúde, educação, transporte e saneamento não chegam da mesma forma a todos, produzindo:
+segregacao social urbana|A separacao territorial de grupos por renda e condições de vida é uma:
+desigualdade no campo e na cidade|No Brasil atual as diferencas socioespaciais aparecem tanto em áreas rurais quanto:
+vulnerabilidade social|Grupos com baixa renda, serviços insuficientes e alta exposicao a riscos apresentam:
 inclusao seletiva|Alguns territ orios entram nos circuitos modernos sem receber plenamente seus beneficios, revelando:
 mobilidade social limitada|Quando oportunidades de ascensao permanecem restritas para muitos grupos ocorre:
-servicos publicos desiguais|A diferenca de qualidade entre escolas, hospitais e infraestrutura expressa:
-regionalizacao do desenvolvimento desigual|O fato de certas areas terem mais dinamismo economico e outras mais carencias mostra:
+serviços publicos desiguais|A diferenca de qualidade entre escolas, hospitais e infraestrutura expressa:
+regionalizacao do desenvolvimento desigual|O fato de certas áreas terem mais dinamismo economico e outras mais carencias mostra:
 periferias metropolitanas|Nas grandes cidades brasileiras, muitas desigualdades se concentram nas:
 desigualdade racial e territorial|No Brasil, cor, renda e localizacao muitas vezes se cruzam produzindo:
 trabalho informal e renda baixa|Setores pouco protegidos e mal remunerados reforcam:
-exclusao urbana|Quando moradores nao acessam plenamente servicos, mobilidade e centralidade ocorre:
-persistencia historica de desigualdades|Colonizacao, escravidao e concentracao fundiaria ajudam a explicar a:
-articulacao entre escala regional e social|Uma leitura geografica das desigualdades brasileiras exige relacionar territorio, renda e:
-Brasil socialmente heterogeneo|A sintese sobre desigualdades no pais destaca a convivencia de modernizacao com:
+exclusao urbana|Quando moradores não acessam plenamente serviços, mobilidade e centralidade ocorre:
+persistencia histórica de desigualdades|Colonizacao, escravidao e concentracao fundiaria ajudam a explicar a:
+articulacao entre escala regional e social|Uma leitura geográfica das desigualdades brasileiras exige relacionar território, renda e:
+Brasil socialmente heterogeneo|A sintese sobre desigualdades no país destaca a convivencia de modernizacao com:
 `
 );
 
 const bloco8 = montarBloco(
-  "Politicas territoriais e fronteiras",
+  "Políticas territoriais e fronteiras",
   141,
-  "Acoes do Estado, fronteiras internacionais e ocupacao de novas areas influenciam a organizacao do territorio brasileiro.",
+  "Ações do Estado, fronteiras internacionais e ocupacao de novas áreas influenciam a organizacao do território brasileiro.",
   "analisar-politicas-territoriais-e-fronteiras-do-brasil",
   `
-politica territorial|As acoes estatais voltadas a organizar o espaco nacional compoem a:
-fronteira internacional|A linha de contato do Brasil com outros paises corresponde a:
-faixa de fronteira|A area terrestre proxima ao limite internacional e a:
-integracao sul-americana|A articulacao do Brasil com vizinhos por infraestrutura e comercio faz parte da:
-ocupacao de fronteiras internas|A expansao para novas areas produtivas dentro do pais forma a:
-presenca estatal no territorio|Bases, obras, fiscalizacao e servicos publicos revelam a:
-planejamento regional|A definicao de prioridades para desenvolver certas areas integra o:
-seguranca territorial|A protecao do territorio, de suas fronteiras e infraestruturas estrategicas compoe a:
-cooperacao transfronteirica|A relacao cotidiana entre cidades e regioes em lados diferentes da fronteira mostra:
-fronteira como zona de fluxos|Mais que linha fixa, a fronteira tambem pode ser entendida como:
-vigilancia de fronteiras|O controle de circulacao de mercadorias, pessoas e atividades ilicitas exige:
-projetos de integracao fisica|Rodovias, pontes e linhas de energia voltadas a articular o continente formam:
-ocupacao planejada da Amazonia|Programas e obras voltados ao Norte do pais integram a:
-questao fundiaria em areas de fronteira|A abertura de novas frentes produtivas pode intensificar:
-fronteiras vivas|A forte circulacao de pessoas e mercadorias em areas limitrofes caracteriza:
-Estado como agente territorial|No Brasil, o poder publico influencia o espaco por leis, obras e:
-uso estrategico do territorio|Portos, fronteiras, energia e corredores de exportacao mostram o:
-politicas regionais desiguais|Nem todos os espacos recebem o mesmo volume de investimento estatal, o que revela:
-territorio nacional em disputa|A sintese sobre fronteiras e politicas territoriais reconhece que o Brasil atual e moldado por Estado, mercado e:
+politica territorial|As ações estatais voltadas a organizar o espaço nacional compoem a:
+fronteira internacional|A linha de contato do Brasil com outros países corresponde a:
+faixa de fronteira|A área terrestre proxima ao limite internacional é a:
+integração sul-americana|A articulacao do Brasil com vizinhos por infraestrutura e comércio faz parte da:
+ocupacao de fronteiras internas|A expansao para novas áreas produtivas dentro do país forma a:
+presenca estatal no território|Bases, obras, fiscalizacao e serviços publicos revelam a:
+planejamento regional|A definicao de prioridades para desenvolver certas áreas integra o:
+seguranca territorial|A protecao do território, de suas fronteiras e infraestruturas estrategicas compoe a:
+cooperacao transfronteirica|A relação cotidiana entre cidades e regiões em lados diferentes da fronteira mostra:
+fronteira como zona de fluxos|Mais que linha fixa, a fronteira também pode ser entendida como:
+vigilancia de fronteiras|O controle de circulação de mercadorias, pessoas e atividades ilicitas exige:
+projetos de integração física|Rodovias, pontes e linhas de energia voltadas a articular o continente formam:
+ocupacao planejada da Amazonia|Programas e obras voltados ao Norte do país integram a:
+questao fundiaria em áreas de fronteira|A abertura de novas frentes produtivas pode intensificar:
+fronteiras vivas|A forte circulação de pessoas e mercadorias em áreas limitrofes caracteriza:
+Estado como agente territorial|No Brasil, o poder publico influencia o espaço por leis, obras e:
+uso estrategico do território|Portos, fronteiras, energia e corredores de exportação mostram o:
+políticas regionais desiguais|Nem todos os espacos recebem o mesmo volume de investimento estatal, o que revela:
+território nacional em disputa|A sintese sobre fronteiras e políticas territoriais reconhece que o Brasil atual e moldado por Estado, mercado e:
 `
 );
 
 const bloco9 = montarBloco(
-  "Brasil no mundo e insercao internacional",
+  "Brasil no mundo e inserção internacional",
   161,
   "O Brasil participa da economia mundial por exportacoes, diplomacia, agronegocio, energia e articulacoes regionais.",
   "analisar-o-brasil-no-mundo-e-sua-insercao-internacional",
   `
-insercao internacional do Brasil|A forma como o pais participa do comercio, da diplomacia e das cadeias globais define sua:
-exportacao de commodities|O peso de soja, minerio e petroleo nas vendas externas brasileiras mostra a:
+inserção internacional do Brasil|A forma como o país participa do comércio, da diplomacia e das cadeias globais define sua:
+exportação de commodities|O peso de soja, minerio e petroleo nas vendas externas brasileiras mostra a:
 dependencia de mercados externos|Quando a economia nacional fica sensivel a variacoes de demanda mundial ocorre:
 potencia regional|Na America do Sul o Brasil frequentemente e visto como uma:
-balanca comercial brasileira|A diferenca entre exportacoes e importacoes do pais compoe a:
+balança comercial brasileira|A diferenca entre exportacoes e importacoes do país compoe a:
 agroexportacao competitiva|A forte presenca de produtos rurais nas vendas externas revela a:
 semiperiferia|A posicao do Brasil entre dependencia e relevancia regional pode ser associada a:
-relacoes sul-sul|A ampliacao de parcerias entre paises em desenvolvimento integra as:
-participacao em blocos regionais|A atuacao do Brasil em esquemas de integracao sul-americana mostra:
+relações sul-sul|A ampliacao de parcerias entre países em desenvolvimento integra as:
+participacao em blocos regionais|A atuacao do Brasil em esquemas de integração sul-americana mostra:
 diversificacao de parceiros comerciais|A busca por reduzir dependencia de poucos mercados envolve:
 papel diplomatico regional|Mediacoes, negociacoes e lideranca em temas continentais expressam o:
 industrializacao incompleta|A dificuldade de consolidar setores tecnologicos sofisticados limita a:
 valor agregado insuficiente|Exportar muitos produtos primarios e poucos bens complexos revela:
-geoeconomia brasileira|A relacao entre territorio, energia, agroexportacao e mercado mundial compoe a:
-vulnerabilidade externa|Crises cambiais, oscilacao de commodities e dependencia tecnologica podem ampliar:
+geoeconomia brasileira|A relação entre território, energia, agroexportacao e mercado mundial compoe a:
+vulnerabilidade externa|Crises cambiais, oscilação de commodities e dependencia tecnologica podem ampliar:
 projecao internacional seletiva|O Brasil possui relevancia em alguns temas globais, mas com limites em:
-papel ambiental global do Brasil|Amazonia, clima e biodiversidade ampliam a importancia do pais em:
-estrategia nacional de desenvolvimento|Para melhorar sua insercao externa o Brasil precisa articular industria, ciencia, energia e:
-Brasil entre autonomia e dependencia|A sintese sobre a posicao internacional do pais mostra uma combinacao de:
+papel ambiental global do Brasil|Amazonia, clima e biodiversidade ampliam a importancia do país em:
+estrategia nacional de desenvolvimento|Para melhorar sua inserção externa o Brasil precisa articular industria, ciência, energia e:
+Brasil entre autonomia e dependencia|A sintese sobre a posicao internacional do país mostra uma combinacao de:
 `
 );
 
 const bloco10 = montarBloco(
-  "Leitura geografica do Brasil contemporaneo",
+  "Leitura geográfica do Brasil contemporaneo",
   181,
-  "Interpretar o Brasil atual exige unir territorio, populacao, economia, urbanizacao, desigualdades e poder.",
+  "Interpretar o Brasil atual exige unir território, população, economia, urbanizacao, desigualdades e poder.",
   "sintetizar-a-leitura-geografica-do-brasil-contemporaneo",
   `
-leitura multiescalar do Brasil|Para compreender o pais atual e preciso articular local, regional, nacional e:
-territorio usado|O espaco brasileiro apropriado por Estado, empresas e sociedade e o:
-formacao socioespacial brasileira|A relacao historica entre sociedade e territorio no pais compoe a:
-modernizacao desigual|Infraestruturas, tecnologia e servicos nao avancam com a mesma intensidade em todo o pais, produzindo:
+leitura multiescalar do Brasil|Para compreender o país atual e preciso articular local, regional, nacional e:
+território usado|O espaço brasileiro apropriado por Estado, empresas e sociedade é o:
+formação socioespacial brasileira|A relação histórica entre sociedade e território no país compoe a:
+modernizacao desigual|Infraestruturas, tecnologia e serviços não avancam com a mesma intensidade em todo o país, produzindo:
 rede nacional de fluxos|Transportes, informacoes, capitais e pessoas articulam o Brasil em uma:
-desenvolvimento territorial contraditorio|O pais combina dinamismo economico e permanencia de desigualdades, revelando:
-articulacao campo-cidade|Agronegocio, agroindustria, servicos e consumo mostram a:
-urbanizacao com periferizacao|A maioria urbana do Brasil nao eliminou, mas reorganizou a:
+desenvolvimento territorial contraditorio|O país combina dinamismo economico e permanencia de desigualdades, revelando:
+articulacao campo-cidade|Agronegocio, agroindustria, serviços e consumo mostram a:
+urbanizacao com periferizacao|A maioria urbana do Brasil não eliminou, mas reorganizou a:
 economia heterogenea|A convivencia de setores modernos e setores precarios indica uma:
-regionalizacao viva|As regioes brasileiras nao sao apenas recortes estaticos, mas espacos de:
-territorio integrado e fragmentado|Ao mesmo tempo que redes conectam o pais, desigualdades produzem um Brasil:
+regionalizacao viva|As regiões brasileiras não são apenas recortes estaticos, mas espacos de:
+território integrado e fragmentado|Ao mesmo tempo que redes conectam o país, desigualdades produzem um Brasil:
 questao socioambiental brasileira|Agropecuaria, energia, cidades e biomas formam a:
-Estado e mercado como agentes espaciais|A organizacao do territorio brasileiro depende fortemente de:
-centralidades e periferias nacionais|Algumas regioes e cidades concentram comando, enquanto outras assumem posicao secundaria, criando:
-escala regional das politicas publicas|Muitos problemas brasileiros exigem respostas diferenciadas conforme a:
-Brasil urbano-industrial-agroexportador|Uma sintese da economia contemporanea do pais pode ser dada por sua condicao:
-geografia dos contrastes|As diferencas de renda, infraestrutura, biomas e populacao formam a:
-desafio de coesao territorial|Integrar o territorio com menor desigualdade regional e social exige enfrentar o:
-analise geografica integrada do Brasil|A interpretacao mais madura do pais atual depende de unir territorio, sociedade, economia e:
-Brasil contemporaneo complexo e desigual|A sintese final sobre o tema deve reconhecer o pais como:
+Estado e mercado como agentes espaciais|A organizacao do território brasileiro depende fortemente de:
+centralidades e periferias nacionais|Algumas regiões e cidades concentram comando, enquanto outras assumem posicao secundaria, criando:
+escala regional das políticas publicas|Muitos problemas brasileiros exigem respostas diferenciadas conforme a:
+Brasil urbano-industrial-agroexportador|Uma sintese da economia contemporanea do país pode ser dada por sua condicao:
+geografia dos contrastes|As diferencas de renda, infraestrutura, biomas e população formam a:
+desafio de coesao territorial|Integrar o território com menor desigualdade regional e social exige enfrentar o:
+análise geográfica integrada do Brasil|A interpretação mais madura do país atual depende de unir território, sociedade, economia e:
+Brasil contemporaneo complexo e desigual|A sintese final sobre o tema deve reconhecer o país como:
   `
 );
 
@@ -389,7 +389,7 @@ const complementos = [
     enunciado: "A leitura da rede urbana brasileira fica mais precisa quando se articulam metropoles, cidades medias, fluxos regionais e desigualdade de infraestrutura, formando uma:",
     opcoes: ["urbanizacao nacional hierarquizada", "paisagem rural homogenea", "estrutura climatica unica", "rede sem centralidade"],
     correta: "urbanizacao nacional hierarquizada",
-    comentario: "A urbanizacao brasileira combina integracao em rede e fortes contrastes territoriais.",
+    comentario: "A urbanizacao brasileira combina integração em rede e fortes contrastes territoriais.",
     habilidade: "sintetizar-a-rede-urbana-brasileira"
   }),
   criarQuestao({
@@ -399,10 +399,10 @@ const complementos = [
     dificuldadeNivel: 10,
     cognicao: "sintese",
     tempoEstimado: 60,
-    enunciado: "Uma sintese geografica da economia brasileira atual deve unir agroexportacao, servicos, industria desigual, financas e:",
-    opcoes: ["reorganizacao territorial da producao", "apenas clima tropical", "homogeneidade social", "ausencia de redes logisticas"],
-    correta: "reorganizacao territorial da producao",
-    comentario: "Os circuitos produtivos contemporaneos remodelam regioes, cidades e fluxos.",
+    enunciado: "Uma sintese geográfica da economia brasileira atual deve unir agroexportacao, serviços, industria desigual, financas e:",
+    opcoes: ["reorganizacao territorial da produção", "apenas clima tropical", "homogeneidade social", "ausencia de redes logisticas"],
+    correta: "reorganizacao territorial da produção",
+    comentario: "Os circuitos produtivos contemporaneos remodelam regiões, cidades e fluxos.",
     habilidade: "sintetizar-a-reestruturacao-produtiva-no-brasil"
   }),
   criarQuestao({
@@ -415,20 +415,20 @@ const complementos = [
     enunciado: "No campo brasileiro contemporaneo, agronegocio, conflitos fundiarios, tecnologia e desmatamento precisam ser lidos como partes de uma mesma:",
     opcoes: ["questao agraria territorializada", "paisagem urbana integrada", "rede industrial fechada", "estrutura climatica estavel"],
     correta: "questao agraria territorializada",
-    comentario: "A questao agraria envolve terra, poder, producao e ambiente ao mesmo tempo.",
+    comentario: "A questao agraria envolve terra, poder, produção e ambiente ao mesmo tempo.",
     habilidade: "sintetizar-a-questao-agraria-no-brasil-atual"
   }),
   criarQuestao({
     id: "ba_120",
-    subtopico: "Infraestrutura e integracao territorial",
+    subtopico: "Infraestrutura e integração territorial",
     dificuldadeLabel: "dificil",
     dificuldadeNivel: 10,
     cognicao: "sintese",
     tempoEstimado: 60,
-    enunciado: "A infraestrutura brasileira integra o territorio, mas tambem evidencia seletividade espacial, gargalos e concentracao de investimentos. Isso define uma:",
-    opcoes: ["integracao territorial desigual", "ocupacao totalmente equilibrada", "rede sem hierarquias", "economia sem logistica"],
-    correta: "integracao territorial desigual",
-    comentario: "As redes tecnicas conectam o pais, mas nao eliminam assimetrias regionais.",
+    enunciado: "A infraestrutura brasileira integra o território, mas também evidencia seletividade espacial, gargalos e concentracao de investimentos. Isso define uma:",
+    opcoes: ["integração territorial desigual", "ocupacao totalmente equilibrada", "rede sem hierarquias", "economia sem logística"],
+    correta: "integração territorial desigual",
+    comentario: "As redes técnicas conectam o país, mas não eliminam assimetrias regionais.",
     habilidade: "sintetizar-a-integracao-territorial-brasileira"
   }),
   criarQuestao({
@@ -438,36 +438,36 @@ const complementos = [
     dificuldadeNivel: 10,
     cognicao: "sintese",
     tempoEstimado: 60,
-    enunciado: "Uma interpretacao madura das desigualdades brasileiras deve relacionar renda, racismo, localizacao, acesso a servicos e:",
-    opcoes: ["historia territorial do desenvolvimento", "somente relevo regional", "tipos de solo", "estrutura dos rios"],
-    correta: "historia territorial do desenvolvimento",
-    comentario: "As desigualdades do presente resultam de processos historicos longos e espacialmente seletivos.",
+    enunciado: "Uma interpretação madura das desigualdades brasileiras deve relacionar renda, racismo, localizacao, acesso a serviços e:",
+    opcoes: ["história territorial do desenvolvimento", "somente relevo regional", "tipos de solo", "estrutura dos rios"],
+    correta: "história territorial do desenvolvimento",
+    comentario: "As desigualdades do presente resultam de processos históricos longos e espacialmente seletivos.",
     habilidade: "sintetizar-desigualdades-regionais-e-sociais-no-brasil"
   }),
   criarQuestao({
     id: "ba_160",
-    subtopico: "Politicas territoriais e fronteiras",
+    subtopico: "Políticas territoriais e fronteiras",
     dificuldadeLabel: "dificil",
     dificuldadeNivel: 10,
     cognicao: "sintese",
     tempoEstimado: 60,
-    enunciado: "Fronteiras, obras estrategicas e presenca estatal mostram que o territorio brasileiro e continuamente reorganizado por politicas, fluxos e:",
-    opcoes: ["interesses geoeconomicos", "apenas fatores climaticos", "formas de relevo fixas", "zonas sem populacao"],
+    enunciado: "Fronteiras, obras estrategicas e presenca estatal mostram que o território brasileiro e continuamente reorganizado por políticas, fluxos e:",
+    opcoes: ["interesses geoeconomicos", "apenas fatores climaticos", "formas de relevo fixas", "zonas sem população"],
     correta: "interesses geoeconomicos",
-    comentario: "As politicas territoriais combinam soberania, integracao e disputa por recursos e circulacao.",
+    comentario: "As políticas territoriais combinam soberania, integração e disputa por recursos e circulação.",
     habilidade: "sintetizar-politicas-territoriais-e-fronteiras-do-brasil"
   }),
   criarQuestao({
     id: "ba_180",
-    subtopico: "Brasil no mundo e insercao internacional",
+    subtopico: "Brasil no mundo e inserção internacional",
     dificuldadeLabel: "dificil",
     dificuldadeNivel: 10,
     cognicao: "sintese",
     tempoEstimado: 60,
-    enunciado: "A insercao internacional do Brasil ganha sentido geografico quando se conectam agroexportacao, diplomacia, recursos naturais, mercado externo e:",
+    enunciado: "A inserção internacional do Brasil ganha sentido geográfico quando se conectam agroexportacao, diplomacia, recursos naturais, mercado externo e:",
     opcoes: ["projeto nacional de desenvolvimento", "somente extensao territorial", "clima tropical dominante", "padrao fixo de migracao"],
     correta: "projeto nacional de desenvolvimento",
-    comentario: "A posicao do pais no mundo depende tanto do mercado quanto das escolhas estrategicas internas.",
+    comentario: "A posicao do país no mundo depende tanto do mercado quanto das escolhas estrategicas internas.",
     habilidade: "sintetizar-a-insercao-internacional-do-brasil"
   })
 ];
@@ -482,25 +482,25 @@ export const brasilAtual = {
     base: "ESCOLAR",
     eixo: "Geografia",
     frente: "Geografia do Brasil contemporaneo",
-    searchAliases: ["brasil atual", "territorio brasileiro", "desigualdades regionais", "rede urbana brasileira", "questao agraria", "brasil no mundo"],
+    searchAliases: ["brasil atual", "território brasileiro", "desigualdades regionais", "rede urbana brasileira", "questao agraria", "brasil no mundo"],
     subtopicosBase: [
-      "Territorio e regionalizacao do Brasil",
-      "Populacao e dinamicas demograficas",
+      "Território e regionalizacao do Brasil",
+      "População e dinamicas demograficas",
       "Urbanizacao e rede urbana brasileira",
       "Economia e reestruturacao produtiva",
       "Agropecuaria e questao agraria",
-      "Infraestrutura e integracao territorial",
+      "Infraestrutura e integração territorial",
       "Desigualdades regionais e sociais",
-      "Politicas territoriais e fronteiras",
-      "Brasil no mundo e insercao internacional",
-      "Leitura geografica do Brasil contemporaneo"
+      "Políticas territoriais e fronteiras",
+      "Brasil no mundo e inserção internacional",
+      "Leitura geográfica do Brasil contemporaneo"
     ],
     habilidadesBase: [
-      "identificar dimensoes territoriais e regionais do Brasil atual",
-      "analisar dinamicas populacionais, urbanas e produtivas no pais",
-      "relacionar agropecuaria, infraestrutura e insercao internacional ao territorio brasileiro",
-      "avaliar desigualdades regionais, sociais e politicas territoriais",
-      "sintetizar uma leitura geografica integrada do Brasil contemporaneo"
+      "identificar dimensões territoriais e regionais do Brasil atual",
+      "analisar dinamicas populacionais, urbanas e produtivas no país",
+      "relacionar agropecuaria, infraestrutura e inserção internacional ao território brasileiro",
+      "avaliar desigualdades regionais, sociais e políticas territoriais",
+      "sintetizar uma leitura geográfica integrada do Brasil contemporaneo"
     ]
   },
   questoes: [...bloco1, ...bloco2, ...bloco3, ...bloco4, ...bloco5, ...bloco6, ...bloco7, ...bloco8, ...bloco9, ...bloco10, ...complementos].sort((a, b) => a.id.localeCompare(b.id))

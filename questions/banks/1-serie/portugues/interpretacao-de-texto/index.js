@@ -1,19 +1,19 @@
 export const interpretacaoDeTexto = {
   "id": "portugues_interpretacao_de_texto",
-  "materia": "Portugues",
+  "materia": "Português",
   "serie": [
     1
   ],
-  "topico": "Interpretacao de Texto",
+  "topico": "Interpretação de Texto",
   "metadados": {
     "disciplinaId": "portugues",
     "base": "ESCOLAR",
     "seloEditorial": "VERIFICADA",
     "eixo": "Leitura e linguagem",
-    "frente": "Compreensao e construcao de sentido",
+    "frente": "Compreensão e construção de sentido",
     "searchAliases": [
-      "compreensao textual",
-      "leitura e interpretacao",
+      "compreensão textual",
+      "leitura e interpretação",
       "sentido do texto",
       "inferencia textual"
     ],
@@ -21,29 +21,29 @@ export const interpretacaoDeTexto = {
       "Tema principal",
       "Ideia principal",
       "Finalidade do texto",
-      "Genero textual",
-      "Suporte e situacao comunicativa",
-      "Informacao explicita",
+      "Gênero textual",
+      "Suporte e situação comunicativa",
+      "Informação explícita",
       "Inferencia",
       "Sentido de palavra e expressao",
-      "Coesao e referencia",
+      "Coesão e referência",
       "Fato e opiniao",
-      "Titulo",
-      "Relacao entre partes",
+      "Título",
+      "Relação entre partes",
       "Tom e ponto de vista",
       "Leitura inadequada",
       "Sontese interpretativa",
-      "Interpretacao indireta",
+      "Interpretação indireta",
       "Erro comum",
-      "Equivalencia de formas",
+      "Equivalência de formas",
       "Efeito de sentido",
-      "Resumo compativel"
+      "Resumo compatível"
     ],
     "habilidadesBase": [
       "identificar o tema principal de textos curtos",
-      "reconhecer a ideia central e a finalidade de diferentes generos",
-      "inferir informacoes implícitas a partir de pistas textuais",
-      "interpretar sentidos de palavras e relacoes de referencia no texto",
+      "reconhecer a ideia central é a finalidade de diferentes gêneros",
+      "inferir informações implícitas a partir de pistas textuais",
+      "interpretar sentidos de palavras e relações de referência no texto",
       "avaliar leituras equivalentes, resumos e interpretacoes indiretas"
     ],
     "auditado": true,
@@ -56,19 +56,19 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Tema principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o texto: \"Bilhete no mural: Devolva o livro ate sexta-feira. Outras turmas tambem esperam por ele.\". O tema principal do texto e:",
+      "enunciado": "Leia o texto: \"Bilhete no mural: Devolva o livro até sexta-feira. Outras turmas também esperam por ele.\". O tema principal do texto é:",
       "opcoes": [
         "circulacao compartilhada dos livros",
         "solidariedade em um dia de chuva",
         "consumo consciente e reducao do lixo",
-        "feira de ciencias escolar"
+        "feira de ciências escolar"
       ],
       "correta": "circulacao compartilhada dos livros",
       "comentario": "O eixo central do texto e circulacao compartilhada dos livros.",
@@ -94,17 +94,17 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Tema principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o texto: \"Quando a chuva comecou, a rua correu para dentro de casa. So a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\". O tema principal do texto e:",
+      "enunciado": "Leia o texto: \"Quando a chuva comecou, a rua correu para dentro de casa. Só a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\". O tema principal do texto é:",
       "opcoes": [
         "consumo consciente e reducao do lixo",
-        "feira de ciencias escolar",
+        "feira de ciências escolar",
         "contemplacao da tarde",
         "solidariedade em um dia de chuva"
       ],
@@ -132,19 +132,19 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Tema principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o texto: \"Troque o descartavel pelo duradouro. Leve sua garrafa reutilizavel e reduza o lixo todos os dias.\". O tema principal do texto e:",
+      "enunciado": "Leia o texto: \"Troque o descartavel pelo duradouro. Leve sua garrafa reutilizavel e reduza o lixo todos os dias.\". O tema principal do texto é:",
       "opcoes": [
         "contemplacao da tarde",
         "transporte publico insuficiente no bairro",
         "consumo consciente e reducao do lixo",
-        "feira de ciencias escolar"
+        "feira de ciências escolar"
       ],
       "correta": "consumo consciente e reducao do lixo",
       "comentario": "O eixo central do texto e consumo consciente e reducao do lixo.",
@@ -170,22 +170,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Tema principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o texto: \"A escola abriu a Feira de Ciencias com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\". O tema principal do texto e:",
+      "enunciado": "Leia o texto: \"A escola abriu a Feira de Ciências com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\". O tema principal do texto é:",
       "opcoes": [
-        "definicao de energia solar",
-        "feira de ciencias escolar",
+        "definição de energia solar",
+        "feira de ciências escolar",
         "contemplacao da tarde",
         "transporte publico insuficiente no bairro"
       ],
-      "correta": "feira de ciencias escolar",
-      "comentario": "O eixo central do texto e feira de ciencias escolar.",
+      "correta": "feira de ciências escolar",
+      "comentario": "O eixo central do texto e feira de ciências escolar.",
       "tempoEstimado": 20,
       "tags": [
         "tema",
@@ -208,19 +208,19 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Tema principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o texto: \"A tarde pousou na janela / mansa como um livro aberto / e a casa inteira ficou ouvindo / o silencio do vento.\". O tema principal do texto e:",
+      "enunciado": "Leia o texto: \"A tarde pousou na janela / mansa como um livro aberto / e a casa inteira ficou ouvindo / o silencio do vento.\". O tema principal do texto é:",
       "opcoes": [
         "contemplacao da tarde",
         "transporte publico insuficiente no bairro",
-        "definicao de energia solar",
-        "organizacao de um mutirao na praca"
+        "definição de energia solar",
+        "organização de um mutirao na praca"
       ],
       "correta": "contemplacao da tarde",
       "comentario": "O eixo central do texto e contemplacao da tarde.",
@@ -246,18 +246,18 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Tema principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o texto: \"Escrevo para pedir mais horarios de onibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\". O tema principal do texto e:",
+      "enunciado": "Leia o texto: \"Escrevo para pedir mais horarios de ônibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\". O tema principal do texto é:",
       "opcoes": [
-        "definicao de energia solar",
-        "organizacao de um mutirao na praca",
-        "avaliacao de um filme sobre amizade e conflitos",
+        "definição de energia solar",
+        "organização de um mutirao na praca",
+        "avaliação de um filme sobre amizade e conflitos",
         "transporte publico insuficiente no bairro"
       ],
       "correta": "transporte publico insuficiente no bairro",
@@ -284,22 +284,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Tema principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o texto: \"Energia solar e a energia obtida a partir da luz do Sol. Ela pode ser usada para gerar eletricidade e aquecer ambientes.\". O tema principal do texto e:",
+      "enunciado": "Leia o texto: \"Energia solar e a energia obtida a partir da luz do Sol. Ela pode ser usada para gerar eletricidade e aquecer ambientes.\". O tema principal do texto é:",
       "opcoes": [
-        "avaliacao de um filme sobre amizade e conflitos",
+        "avaliação de um filme sobre amizade e conflitos",
         "ansiedade e confianca antes da prova",
-        "definicao de energia solar",
-        "organizacao de um mutirao na praca"
+        "definição de energia solar",
+        "organização de um mutirao na praca"
       ],
-      "correta": "definicao de energia solar",
-      "comentario": "O eixo central do texto e definicao de energia solar.",
+      "correta": "definição de energia solar",
+      "comentario": "O eixo central do texto e definição de energia solar.",
       "tempoEstimado": 20,
       "tags": [
         "tema",
@@ -322,22 +322,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Tema principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o texto: \"Pessoal, neste sobado faremos um mutirao para limpar a praca do bairro. Quem puder levar luvas e sacos de lixo ajudara ainda mais.\". O tema principal do texto e:",
+      "enunciado": "Leia o texto: \"Pessoal, neste sobado faremos um mutirao para limpar a praca do bairro. Quem puder levar luvas e sacos de lixo ajudara ainda mais.\". O tema principal do texto é:",
       "opcoes": [
         "circulacao compartilhada dos livros",
-        "organizacao de um mutirao na praca",
-        "avaliacao de um filme sobre amizade e conflitos",
+        "organização de um mutirao na praca",
+        "avaliação de um filme sobre amizade e conflitos",
         "ansiedade e confianca antes da prova"
       ],
-      "correta": "organizacao de um mutirao na praca",
-      "comentario": "O eixo central do texto e organizacao de um mutirao na praca.",
+      "correta": "organização de um mutirao na praca",
+      "comentario": "O eixo central do texto e organização de um mutirao na praca.",
       "tempoEstimado": 20,
       "tags": [
         "tema",
@@ -360,22 +360,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Tema principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o texto: \"O filme Caminhos do Bairro emociona sem exageros. Ao acompanhar a amizade entre dois adolescentes, a narrativa mostra conflitos reais e escolhas dificeis.\". O tema principal do texto e:",
+      "enunciado": "Leia o texto: \"O filme Caminhos do Bairro emociona sem exageros. Ao acompanhar a amizade entre dois adolescentes, a narrativa mostra conflitos reais e escolhas dificeis.\". O tema principal do texto é:",
       "opcoes": [
-        "avaliacao de um filme sobre amizade e conflitos",
+        "avaliação de um filme sobre amizade e conflitos",
         "ansiedade e confianca antes da prova",
         "circulacao compartilhada dos livros",
         "solidariedade em um dia de chuva"
       ],
-      "correta": "avaliacao de um filme sobre amizade e conflitos",
-      "comentario": "O eixo central do texto e avaliacao de um filme sobre amizade e conflitos.",
+      "correta": "avaliação de um filme sobre amizade e conflitos",
+      "comentario": "O eixo central do texto e avaliação de um filme sobre amizade e conflitos.",
       "tempoEstimado": 20,
       "tags": [
         "tema",
@@ -398,14 +398,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Tema principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o texto: \"Hoje entrei na sala com o coracao acelerado, mas respirei fundo antes da prova. Quando li a primeira questao, percebi que o estudo da semana tinha valido a pena.\". O tema principal do texto e:",
+      "enunciado": "Leia o texto: \"Hoje entrei na sala com o coracao acelerado, mas respirei fundo antes da prova. Quando li a primeira questao, percebi que o estudo da semana tinha valido a pena.\". O tema principal do texto é:",
       "opcoes": [
         "circulacao compartilhada dos livros",
         "solidariedade em um dia de chuva",
@@ -436,14 +436,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"Bilhete no mural: Devolva o livro ate sexta-feira. Outras turmas tambem esperam por ele.\", a ideia principal e:",
+      "enunciado": "No texto \"Bilhete no mural: Devolva o livro até sexta-feira. Outras turmas também esperam por ele.\", a ideia principal e:",
       "opcoes": [
         "em meio ao corre-corre da chuva, um gesto de cuidado se destaca",
         "usar garrafa reutilizavel ajuda a diminuir resoduos",
@@ -474,14 +474,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"Quando a chuva comecou, a rua correu para dentro de casa. So a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\", a ideia principal e:",
+      "enunciado": "No texto \"Quando a chuva comecou, a rua correu para dentro de casa. Só a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\", a ideia principal e:",
       "opcoes": [
         "a feira valoriza projetos estudantis sobre energia limpa",
         "o eu lirico descreve um instante calmo e sensovel",
@@ -512,8 +512,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -521,7 +521,7 @@ export const interpretacaoDeTexto = {
       "tipo": "multipla_escolha",
       "enunciado": "No texto \"Troque o descartavel pelo duradouro. Leve sua garrafa reutilizavel e reduza o lixo todos os dias.\", a ideia principal e:",
       "opcoes": [
-        "faltam horarios adequados de onibus, o que prejudica moradores",
+        "faltam horarios adequados de ônibus, o que prejudica moradores",
         "usar garrafa reutilizavel ajuda a diminuir resoduos",
         "a feira valoriza projetos estudantis sobre energia limpa",
         "o eu lirico descreve um instante calmo e sensovel"
@@ -550,18 +550,18 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"A escola abriu a Feira de Ciencias com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\", a ideia principal e:",
+      "enunciado": "No texto \"A escola abriu a Feira de Ciências com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\", a ideia principal e:",
       "opcoes": [
         "a feira valoriza projetos estudantis sobre energia limpa",
         "o eu lirico descreve um instante calmo e sensovel",
-        "faltam horarios adequados de onibus, o que prejudica moradores",
+        "faltam horarios adequados de ônibus, o que prejudica moradores",
         "energia solar e uma fonte obtida da luz do Sol com usos praticos"
       ],
       "correta": "a feira valoriza projetos estudantis sobre energia limpa",
@@ -588,8 +588,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -597,13 +597,13 @@ export const interpretacaoDeTexto = {
       "tipo": "multipla_escolha",
       "enunciado": "No texto \"A tarde pousou na janela / mansa como um livro aberto / e a casa inteira ficou ouvindo / o silencio do vento.\", a ideia principal e:",
       "opcoes": [
-        "faltam horarios adequados de onibus, o que prejudica moradores",
+        "faltam horarios adequados de ônibus, o que prejudica moradores",
         "energia solar e uma fonte obtida da luz do Sol com usos praticos",
-        "o grupo esta sendo convocado para uma acao coletiva de limpeza",
+        "o grupo está sendo convocado para uma ação coletiva de limpeza",
         "o eu lirico descreve um instante calmo e sensovel"
       ],
       "correta": "o eu lirico descreve um instante calmo e sensovel",
-      "comentario": "A ideia central resume o texto como o eu lirico descreve um instante calmo e sensovel.",
+      "comentario": "A ideia central resume o texto como o eu lirico descreve um instante calmo é sensovel.",
       "tempoEstimado": 20,
       "tags": [
         "ideia-principal",
@@ -626,22 +626,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"Escrevo para pedir mais horarios de onibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\", a ideia principal e:",
+      "enunciado": "No texto \"Escrevo para pedir mais horarios de ônibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\", a ideia principal e:",
       "opcoes": [
-        "o grupo esta sendo convocado para uma acao coletiva de limpeza",
+        "o grupo está sendo convocado para uma ação coletiva de limpeza",
         "a resenha destaca qualidades do filme ao comentar enredo e efeito emocional",
-        "faltam horarios adequados de onibus, o que prejudica moradores",
+        "faltam horarios adequados de ônibus, o que prejudica moradores",
         "energia solar e uma fonte obtida da luz do Sol com usos praticos"
       ],
-      "correta": "faltam horarios adequados de onibus, o que prejudica moradores",
-      "comentario": "A ideia central resume o texto como faltam horarios adequados de onibus, o que prejudica moradores.",
+      "correta": "faltam horarios adequados de ônibus, o que prejudica moradores",
+      "comentario": "A ideia central resume o texto como faltam horarios adequados de ônibus, o que prejudica moradores.",
       "tempoEstimado": 20,
       "tags": [
         "ideia-principal",
@@ -664,8 +664,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -675,11 +675,11 @@ export const interpretacaoDeTexto = {
       "opcoes": [
         "o narrador passa do nervosismo inicial para a confianca",
         "energia solar e uma fonte obtida da luz do Sol com usos praticos",
-        "o grupo esta sendo convocado para uma acao coletiva de limpeza",
+        "o grupo está sendo convocado para uma ação coletiva de limpeza",
         "a resenha destaca qualidades do filme ao comentar enredo e efeito emocional"
       ],
       "correta": "energia solar e uma fonte obtida da luz do Sol com usos praticos",
-      "comentario": "A ideia central resume o texto como energia solar e uma fonte obtida da luz do Sol com usos praticos.",
+      "comentario": "A ideia central resume o texto como energia solar é uma fonte obtida da luz do Sol com usos praticos.",
       "tempoEstimado": 20,
       "tags": [
         "ideia-principal",
@@ -702,8 +702,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -711,13 +711,13 @@ export const interpretacaoDeTexto = {
       "tipo": "multipla_escolha",
       "enunciado": "No texto \"Pessoal, neste sobado faremos um mutirao para limpar a praca do bairro. Quem puder levar luvas e sacos de lixo ajudara ainda mais.\", a ideia principal e:",
       "opcoes": [
-        "o grupo esta sendo convocado para uma acao coletiva de limpeza",
+        "o grupo está sendo convocado para uma ação coletiva de limpeza",
         "a resenha destaca qualidades do filme ao comentar enredo e efeito emocional",
         "o narrador passa do nervosismo inicial para a confianca",
         "o livro deve ser devolvido no prazo para atender outros leitores"
       ],
-      "correta": "o grupo esta sendo convocado para uma acao coletiva de limpeza",
-      "comentario": "A ideia central resume o texto como o grupo esta sendo convocado para uma acao coletiva de limpeza.",
+      "correta": "o grupo está sendo convocado para uma ação coletiva de limpeza",
+      "comentario": "A ideia central resume o texto como o grupo está sendo convocado para uma ação coletiva de limpeza.",
       "tempoEstimado": 20,
       "tags": [
         "ideia-principal",
@@ -740,8 +740,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -755,7 +755,7 @@ export const interpretacaoDeTexto = {
         "a resenha destaca qualidades do filme ao comentar enredo e efeito emocional"
       ],
       "correta": "a resenha destaca qualidades do filme ao comentar enredo e efeito emocional",
-      "comentario": "A ideia central resume o texto como a resenha destaca qualidades do filme ao comentar enredo e efeito emocional.",
+      "comentario": "A ideia central resume o texto como a resenha destaca qualidades do filme ao comentar enredo é efeito emocional.",
       "tempoEstimado": 20,
       "tags": [
         "ideia-principal",
@@ -778,8 +778,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -816,16 +816,16 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Finalidade do texto",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o texto: \"Bilhete no mural: Devolva o livro ate sexta-feira. Outras turmas tambem esperam por ele.\". Esse texto foi escrito principalmente para:",
+      "enunciado": "Leia o texto: \"Bilhete no mural: Devolva o livro até sexta-feira. Outras turmas também esperam por ele.\". Esse texto foi escrito principalmente para:",
       "opcoes": [
-        "convencer o leitor a adotar uma pratica sustentavel",
+        "convencer o leitor a adotar uma prática sustentável",
         "informar um acontecimento escolar",
         "orientar os alunos a devolverem o livro no prazo",
         "relatar uma cena cotidiana valorizando um gesto solidario"
@@ -854,18 +854,18 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Finalidade do texto",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o texto: \"Quando a chuva comecou, a rua correu para dentro de casa. So a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\". Esse texto foi escrito principalmente para:",
+      "enunciado": "Leia o texto: \"Quando a chuva comecou, a rua correu para dentro de casa. Só a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\". Esse texto foi escrito principalmente para:",
       "opcoes": [
         "sugerir sensacoes e imagens poeticas",
         "relatar uma cena cotidiana valorizando um gesto solidario",
-        "convencer o leitor a adotar uma pratica sustentavel",
+        "convencer o leitor a adotar uma prática sustentável",
         "informar um acontecimento escolar"
       ],
       "correta": "relatar uma cena cotidiana valorizando um gesto solidario",
@@ -892,8 +892,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Finalidade do texto",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -901,13 +901,13 @@ export const interpretacaoDeTexto = {
       "tipo": "multipla_escolha",
       "enunciado": "Leia o texto: \"Troque o descartavel pelo duradouro. Leve sua garrafa reutilizavel e reduza o lixo todos os dias.\". Esse texto foi escrito principalmente para:",
       "opcoes": [
-        "convencer o leitor a adotar uma pratica sustentavel",
+        "convencer o leitor a adotar uma prática sustentável",
         "informar um acontecimento escolar",
         "sugerir sensacoes e imagens poeticas",
         "reivindicar melhoria no transporte"
       ],
-      "correta": "convencer o leitor a adotar uma pratica sustentavel",
-      "comentario": "A finalidade predominante e convencer o leitor a adotar uma pratica sustentavel.",
+      "correta": "convencer o leitor a adotar uma prática sustentável",
+      "comentario": "A finalidade predominante e convencer o leitor a adotar uma prática sustentável.",
       "tempoEstimado": 20,
       "tags": [
         "finalidade",
@@ -930,14 +930,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Finalidade do texto",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o texto: \"A escola abriu a Feira de Ciencias com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\". Esse texto foi escrito principalmente para:",
+      "enunciado": "Leia o texto: \"A escola abriu a Feira de Ciências com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\". Esse texto foi escrito principalmente para:",
       "opcoes": [
         "sugerir sensacoes e imagens poeticas",
         "reivindicar melhoria no transporte",
@@ -968,8 +968,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Finalidade do texto",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -1006,14 +1006,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Finalidade do texto",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o texto: \"Escrevo para pedir mais horarios de onibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\". Esse texto foi escrito principalmente para:",
+      "enunciado": "Leia o texto: \"Escrevo para pedir mais horarios de ônibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\". Esse texto foi escrito principalmente para:",
       "opcoes": [
         "avaliar e recomendar uma obra",
         "reivindicar melhoria no transporte",
@@ -1044,8 +1044,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Finalidade do texto",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -1082,8 +1082,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Finalidade do texto",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -1120,8 +1120,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Finalidade do texto",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -1158,8 +1158,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Finalidade do texto",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -1167,7 +1167,7 @@ export const interpretacaoDeTexto = {
       "tipo": "multipla_escolha",
       "enunciado": "Leia o texto: \"Hoje entrei na sala com o coracao acelerado, mas respirei fundo antes da prova. Quando li a primeira questao, percebi que o estudo da semana tinha valido a pena.\". Esse texto foi escrito principalmente para:",
       "opcoes": [
-        "convencer o leitor a adotar uma pratica sustentavel",
+        "convencer o leitor a adotar uma prática sustentável",
         "registrar uma experiencia pessoal",
         "orientar os alunos a devolverem o livro no prazo",
         "relatar uma cena cotidiana valorizando um gesto solidario"
@@ -1196,14 +1196,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Genero textual",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Gênero textual",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Considerando a linguagem e a organizacao do trecho \"Bilhete no mural: Devolva o livro ate sexta-feira. Outras turmas tambem esperam por ele.\", o genero textual mais compativel e:",
+      "enunciado": "Considerando a linguagem e a organização do trecho \"Bilhete no mural: Devolva o livro até sexta-feira. Outras turmas também esperam por ele.\", o gênero textual mais compatível e:",
       "opcoes": [
         "noticia",
         "bilhete",
@@ -1211,7 +1211,7 @@ export const interpretacaoDeTexto = {
         "propaganda"
       ],
       "correta": "bilhete",
-      "comentario": "O texto se aproxima do genero bilhete pelo modo como organiza a informacao.",
+      "comentario": "O texto se aproxima do gênero bilhete pelo modo como organiza a informação.",
       "tempoEstimado": 25,
       "tags": [
         "genero",
@@ -1234,14 +1234,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Genero textual",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Gênero textual",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Considerando a linguagem e a organizacao do trecho \"Quando a chuva comecou, a rua correu para dentro de casa. So a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\", o genero textual mais compativel e:",
+      "enunciado": "Considerando a linguagem e a organização do trecho \"Quando a chuva comecou, a rua correu para dentro de casa. Só a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\", o gênero textual mais compatível e:",
       "opcoes": [
         "cronica",
         "propaganda",
@@ -1249,7 +1249,7 @@ export const interpretacaoDeTexto = {
         "poema"
       ],
       "correta": "cronica",
-      "comentario": "O texto se aproxima do genero cronica pelo modo como organiza a informacao.",
+      "comentario": "O texto se aproxima do gênero cronica pelo modo como organiza a informação.",
       "tempoEstimado": 25,
       "tags": [
         "genero",
@@ -1272,14 +1272,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Genero textual",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Gênero textual",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Considerando a linguagem e a organizacao do trecho \"Troque o descartavel pelo duradouro. Leve sua garrafa reutilizavel e reduza o lixo todos os dias.\", o genero textual mais compativel e:",
+      "enunciado": "Considerando a linguagem e a organização do trecho \"Troque o descartavel pelo duradouro. Leve sua garrafa reutilizavel e reduza o lixo todos os dias.\", o gênero textual mais compatível e:",
       "opcoes": [
         "noticia",
         "poema",
@@ -1287,7 +1287,7 @@ export const interpretacaoDeTexto = {
         "propaganda"
       ],
       "correta": "propaganda",
-      "comentario": "O texto se aproxima do genero propaganda pelo modo como organiza a informacao.",
+      "comentario": "O texto se aproxima do gênero propaganda pelo modo como organiza a informação.",
       "tempoEstimado": 25,
       "tags": [
         "genero",
@@ -1310,14 +1310,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Genero textual",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Gênero textual",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Considerando a linguagem e a organizacao do trecho \"A escola abriu a Feira de Ciencias com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\", o genero textual mais compativel e:",
+      "enunciado": "Considerando a linguagem e a organização do trecho \"A escola abriu a Feira de Ciências com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\", o gênero textual mais compatível e:",
       "opcoes": [
         "carta do leitor",
         "verbete",
@@ -1325,7 +1325,7 @@ export const interpretacaoDeTexto = {
         "poema"
       ],
       "correta": "noticia",
-      "comentario": "O texto se aproxima do genero noticia pelo modo como organiza a informacao.",
+      "comentario": "O texto se aproxima do gênero noticia pelo modo como organiza a informação.",
       "tempoEstimado": 25,
       "tags": [
         "genero",
@@ -1348,14 +1348,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Genero textual",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Gênero textual",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Considerando a linguagem e a organizacao do trecho \"A tarde pousou na janela / mansa como um livro aberto / e a casa inteira ficou ouvindo / o silencio do vento.\", o genero textual mais compativel e:",
+      "enunciado": "Considerando a linguagem e a organização do trecho \"A tarde pousou na janela / mansa como um livro aberto / e a casa inteira ficou ouvindo / o silencio do vento.\", o gênero textual mais compatível e:",
       "opcoes": [
         "e-mail",
         "poema",
@@ -1363,7 +1363,7 @@ export const interpretacaoDeTexto = {
         "verbete"
       ],
       "correta": "poema",
-      "comentario": "O texto se aproxima do genero poema pelo modo como organiza a informacao.",
+      "comentario": "O texto se aproxima do gênero poema pelo modo como organiza a informação.",
       "tempoEstimado": 25,
       "tags": [
         "genero",
@@ -1386,14 +1386,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Genero textual",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Gênero textual",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Considerando a linguagem e a organizacao do trecho \"Escrevo para pedir mais horarios de onibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\", o genero textual mais compativel e:",
+      "enunciado": "Considerando a linguagem e a organização do trecho \"Escrevo para pedir mais horarios de ônibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\", o gênero textual mais compatível e:",
       "opcoes": [
         "carta do leitor",
         "verbete",
@@ -1401,7 +1401,7 @@ export const interpretacaoDeTexto = {
         "resenha"
       ],
       "correta": "carta do leitor",
-      "comentario": "O texto se aproxima do genero carta do leitor pelo modo como organiza a informacao.",
+      "comentario": "O texto se aproxima do gênero carta do leitor pelo modo como organiza a informação.",
       "tempoEstimado": 25,
       "tags": [
         "genero",
@@ -1424,14 +1424,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Genero textual",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Gênero textual",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Considerando a linguagem e a organizacao do trecho \"Energia solar e a energia obtida a partir da luz do Sol. Ela pode ser usada para gerar eletricidade e aquecer ambientes.\", o genero textual mais compativel e:",
+      "enunciado": "Considerando a linguagem e a organização do trecho \"Energia solar e a energia obtida a partir da luz do Sol. Ela pode ser usada para gerar eletricidade e aquecer ambientes.\", o gênero textual mais compatível e:",
       "opcoes": [
         "e-mail",
         "resenha",
@@ -1439,7 +1439,7 @@ export const interpretacaoDeTexto = {
         "verbete"
       ],
       "correta": "verbete",
-      "comentario": "O texto se aproxima do genero verbete pelo modo como organiza a informacao.",
+      "comentario": "O texto se aproxima do gênero verbete pelo modo como organiza a informação.",
       "tempoEstimado": 25,
       "tags": [
         "genero",
@@ -1462,14 +1462,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Genero textual",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Gênero textual",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Considerando a linguagem e a organizacao do trecho \"Pessoal, neste sobado faremos um mutirao para limpar a praca do bairro. Quem puder levar luvas e sacos de lixo ajudara ainda mais.\", o genero textual mais compativel e:",
+      "enunciado": "Considerando a linguagem e a organização do trecho \"Pessoal, neste sobado faremos um mutirao para limpar a praca do bairro. Quem puder levar luvas e sacos de lixo ajudara ainda mais.\", o gênero textual mais compatível e:",
       "opcoes": [
         "diario",
         "bilhete",
@@ -1477,7 +1477,7 @@ export const interpretacaoDeTexto = {
         "resenha"
       ],
       "correta": "e-mail",
-      "comentario": "O texto se aproxima do genero e-mail pelo modo como organiza a informacao.",
+      "comentario": "O texto se aproxima do gênero e-mail pelo modo como organiza a informação.",
       "tempoEstimado": 25,
       "tags": [
         "genero",
@@ -1500,14 +1500,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Genero textual",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Gênero textual",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Considerando a linguagem e a organizacao do trecho \"O filme Caminhos do Bairro emociona sem exageros. Ao acompanhar a amizade entre dois adolescentes, a narrativa mostra conflitos reais e escolhas dificeis.\", o genero textual mais compativel e:",
+      "enunciado": "Considerando a linguagem e a organização do trecho \"O filme Caminhos do Bairro emociona sem exageros. Ao acompanhar a amizade entre dois adolescentes, a narrativa mostra conflitos reais e escolhas dificeis.\", o gênero textual mais compatível e:",
       "opcoes": [
         "cronica",
         "resenha",
@@ -1515,7 +1515,7 @@ export const interpretacaoDeTexto = {
         "bilhete"
       ],
       "correta": "resenha",
-      "comentario": "O texto se aproxima do genero resenha pelo modo como organiza a informacao.",
+      "comentario": "O texto se aproxima do gênero resenha pelo modo como organiza a informação.",
       "tempoEstimado": 25,
       "tags": [
         "genero",
@@ -1538,14 +1538,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Genero textual",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Gênero textual",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Considerando a linguagem e a organizacao do trecho \"Hoje entrei na sala com o coracao acelerado, mas respirei fundo antes da prova. Quando li a primeira questao, percebi que o estudo da semana tinha valido a pena.\", o genero textual mais compativel e:",
+      "enunciado": "Considerando a linguagem e a organização do trecho \"Hoje entrei na sala com o coracao acelerado, mas respirei fundo antes da prova. Quando li a primeira questao, percebi que o estudo da semana tinha valido a pena.\", o gênero textual mais compatível e:",
       "opcoes": [
         "diario",
         "bilhete",
@@ -1553,7 +1553,7 @@ export const interpretacaoDeTexto = {
         "propaganda"
       ],
       "correta": "diario",
-      "comentario": "O texto se aproxima do genero diario pelo modo como organiza a informacao.",
+      "comentario": "O texto se aproxima do gênero diario pelo modo como organiza a informação.",
       "tempoEstimado": 25,
       "tags": [
         "genero",
@@ -1576,14 +1576,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Suporte e situacao comunicativa",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Suporte e situação comunicativa",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Pelo tipo de texto e pela sua finalidade, o trecho \"Bilhete no mural: Devolva o livro ate sexta-feira. Outras turmas tambem esperam por ele.\" provavelmente circula em:",
+      "enunciado": "Pelo tipo de texto e pela sua finalidade, o trecho \"Bilhete no mural: Devolva o livro até sexta-feira. Outras turmas também esperam por ele.\" provavelmente circula em:",
       "opcoes": [
         "mural da biblioteca escolar",
         "pagina de jornal ou blog",
@@ -1614,14 +1614,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Suporte e situacao comunicativa",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Suporte e situação comunicativa",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Pelo tipo de texto e pela sua finalidade, o trecho \"Quando a chuva comecou, a rua correu para dentro de casa. So a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\" provavelmente circula em:",
+      "enunciado": "Pelo tipo de texto e pela sua finalidade, o trecho \"Quando a chuva comecou, a rua correu para dentro de casa. Só a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\" provavelmente circula em:",
       "opcoes": [
         "campanha ambiental",
         "site da escola",
@@ -1652,9 +1652,9 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Suporte e situacao comunicativa",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Suporte e situação comunicativa",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
@@ -1690,14 +1690,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Suporte e situacao comunicativa",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Suporte e situação comunicativa",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Pelo tipo de texto e pela sua finalidade, o trecho \"A escola abriu a Feira de Ciencias com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\" provavelmente circula em:",
+      "enunciado": "Pelo tipo de texto e pela sua finalidade, o trecho \"A escola abriu a Feira de Ciências com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\" provavelmente circula em:",
       "opcoes": [
         "enciclopedia escolar",
         "site da escola",
@@ -1728,9 +1728,9 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Suporte e situacao comunicativa",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Suporte e situação comunicativa",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
@@ -1766,14 +1766,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Suporte e situacao comunicativa",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Suporte e situação comunicativa",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Pelo tipo de texto e pela sua finalidade, o trecho \"Escrevo para pedir mais horarios de onibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\" provavelmente circula em:",
+      "enunciado": "Pelo tipo de texto e pela sua finalidade, o trecho \"Escrevo para pedir mais horarios de ônibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\" provavelmente circula em:",
       "opcoes": [
         "enciclopedia escolar",
         "mensagem eletrunica",
@@ -1804,9 +1804,9 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Suporte e situacao comunicativa",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Suporte e situação comunicativa",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
@@ -1842,9 +1842,9 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Suporte e situacao comunicativa",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Suporte e situação comunicativa",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
@@ -1880,9 +1880,9 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Suporte e situacao comunicativa",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Suporte e situação comunicativa",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
@@ -1918,9 +1918,9 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Suporte e situacao comunicativa",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Suporte e situação comunicativa",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
@@ -1956,22 +1956,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Informacao explicita",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Informação explícita",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"Bilhete no mural: Devolva o livro ate sexta-feira. Outras turmas tambem esperam por ele.\", qual informacao aparece de forma explicita?",
+      "enunciado": "No texto \"Bilhete no mural: Devolva o livro até sexta-feira. Outras turmas também esperam por ele.\", qual informação aparece de forma explícita?",
       "opcoes": [
-        "Ha outras turmas interessadas no mesmo livro.",
+        "Há outras turmas interessadas no mesmo livro.",
         "O aviso mostra preocupacao com o uso coletivo do acervo.",
         "A vizinha distribuia cafe a quem chegava molhado.",
-        "O livro deve ser devolvido ate sexta-feira."
+        "O livro deve ser devolvido até sexta-feira."
       ],
-      "correta": "O livro deve ser devolvido ate sexta-feira.",
-      "comentario": "A alternativa correta recupera uma informacao escrita literalmente no texto.",
+      "correta": "O livro deve ser devolvido até sexta-feira.",
+      "comentario": "A alternativa correta recupera uma informação escrita literalmente no texto.",
       "tempoEstimado": 25,
       "tags": [
         "informacao-explicita",
@@ -1994,14 +1994,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Informacao explicita",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Informação explícita",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"Quando a chuva comecou, a rua correu para dentro de casa. So a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\", qual informacao aparece de forma explicita?",
+      "enunciado": "No texto \"Quando a chuva comecou, a rua correu para dentro de casa. Só a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\", qual informação aparece de forma explícita?",
       "opcoes": [
         "A cena sugere que pequenos gestos podem transformar um momento dificil.",
         "O texto recomenda levar uma garrafa reutilizavel.",
@@ -2009,7 +2009,7 @@ export const interpretacaoDeTexto = {
         "a atitude da vizinha amenizou o desconforto das pessoas"
       ],
       "correta": "A vizinha distribuia cafe a quem chegava molhado.",
-      "comentario": "A alternativa correta recupera uma informacao escrita literalmente no texto.",
+      "comentario": "A alternativa correta recupera uma informação escrita literalmente no texto.",
       "tempoEstimado": 25,
       "tags": [
         "informacao-explicita",
@@ -2032,14 +2032,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Informacao explicita",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Informação explícita",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"Troque o descartavel pelo duradouro. Leve sua garrafa reutilizavel e reduza o lixo todos os dias.\", qual informacao aparece de forma explicita?",
+      "enunciado": "No texto \"Troque o descartavel pelo duradouro. Leve sua garrafa reutilizavel e reduza o lixo todos os dias.\", qual informação aparece de forma explícita?",
       "opcoes": [
         "Os projetos apresentados tratavam de energia limpa.",
         "O texto recomenda levar uma garrafa reutilizavel.",
@@ -2047,7 +2047,7 @@ export const interpretacaoDeTexto = {
         "A mensagem associa atitude individual a impacto coletivo."
       ],
       "correta": "O texto recomenda levar uma garrafa reutilizavel.",
-      "comentario": "A alternativa correta recupera uma informacao escrita literalmente no texto.",
+      "comentario": "A alternativa correta recupera uma informação escrita literalmente no texto.",
       "tempoEstimado": 25,
       "tags": [
         "informacao-explicita",
@@ -2070,22 +2070,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Informacao explicita",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Informação explícita",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"A escola abriu a Feira de Ciencias com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\", qual informacao aparece de forma explicita?",
+      "enunciado": "No texto \"A escola abriu a Feira de Ciências com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\", qual informação aparece de forma explícita?",
       "opcoes": [
         "Os projetos apresentados tratavam de energia limpa.",
-        "a comunidade foi convidada a conhecer a producao dos alunos",
+        "a comunidade foi convidada a conhecer a produção dos alunos",
         "A noticia reforca a participacao ativa dos estudantes.",
         "A tarde e comparada a um livro aberto."
       ],
       "correta": "Os projetos apresentados tratavam de energia limpa.",
-      "comentario": "A alternativa correta recupera uma informacao escrita literalmente no texto.",
+      "comentario": "A alternativa correta recupera uma informação escrita literalmente no texto.",
       "tempoEstimado": 25,
       "tags": [
         "informacao-explicita",
@@ -2108,22 +2108,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Informacao explicita",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Informação explícita",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"A tarde pousou na janela / mansa como um livro aberto / e a casa inteira ficou ouvindo / o silencio do vento.\", qual informacao aparece de forma explicita?",
+      "enunciado": "No texto \"A tarde pousou na janela / mansa como um livro aberto / e a casa inteira ficou ouvindo / o silencio do vento.\", qual informação aparece de forma explícita?",
       "opcoes": [
-        "o texto valoriza um clima de calma e observacao",
+        "o texto valoriza um clima de calma e observação",
         "O poema convida o leitor a perceber a delicadeza do instante.",
         "Os atrasos afetam estudantes e trabalhadores.",
         "A tarde e comparada a um livro aberto."
       ],
       "correta": "A tarde e comparada a um livro aberto.",
-      "comentario": "A alternativa correta recupera uma informacao escrita literalmente no texto.",
+      "comentario": "A alternativa correta recupera uma informação escrita literalmente no texto.",
       "tempoEstimado": 25,
       "tags": [
         "informacao-explicita",
@@ -2146,14 +2146,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Informacao explicita",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Informação explícita",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"Escrevo para pedir mais horarios de onibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\", qual informacao aparece de forma explicita?",
+      "enunciado": "No texto \"Escrevo para pedir mais horarios de ônibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\", qual informação aparece de forma explícita?",
       "opcoes": [
         "A carta mostra insatisfacao com um servico publico.",
         "A energia solar pode gerar eletricidade.",
@@ -2161,7 +2161,7 @@ export const interpretacaoDeTexto = {
         "o autor quer sensibilizar autoridades e leitores para um problema coletivo"
       ],
       "correta": "Os atrasos afetam estudantes e trabalhadores.",
-      "comentario": "A alternativa correta recupera uma informacao escrita literalmente no texto.",
+      "comentario": "A alternativa correta recupera uma informação escrita literalmente no texto.",
       "tempoEstimado": 25,
       "tags": [
         "informacao-explicita",
@@ -2184,22 +2184,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Informacao explicita",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Informação explícita",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"Energia solar e a energia obtida a partir da luz do Sol. Ela pode ser usada para gerar eletricidade e aquecer ambientes.\", qual informacao aparece de forma explicita?",
+      "enunciado": "No texto \"Energia solar e a energia obtida a partir da luz do Sol. Ela pode ser usada para gerar eletricidade e aquecer ambientes.\", qual informação aparece de forma explícita?",
       "opcoes": [
-        "O mutirao sera realizado no sobado.",
+        "O mutirao será realizado no sobado.",
         "A energia solar pode gerar eletricidade.",
-        "o texto tem carater expositivo e busca informar de modo objetivo",
-        "O verbete prioriza informacao objetiva, e nao emocao."
+        "o texto tem caráter expositivo e busca informar de modo objetivo",
+        "O verbete prioriza informação objetiva, e não emocao."
       ],
       "correta": "A energia solar pode gerar eletricidade.",
-      "comentario": "A alternativa correta recupera uma informacao escrita literalmente no texto.",
+      "comentario": "A alternativa correta recupera uma informação escrita literalmente no texto.",
       "tempoEstimado": 25,
       "tags": [
         "informacao-explicita",
@@ -2222,22 +2222,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Informacao explicita",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Informação explícita",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"Pessoal, neste sobado faremos um mutirao para limpar a praca do bairro. Quem puder levar luvas e sacos de lixo ajudara ainda mais.\", qual informacao aparece de forma explicita?",
+      "enunciado": "No texto \"Pessoal, neste sobado faremos um mutirao para limpar a praca do bairro. Quem puder levar luvas e sacos de lixo ajudara ainda mais.\", qual informação aparece de forma explícita?",
       "opcoes": [
-        "O mutirao sera realizado no sobado.",
+        "O mutirao será realizado no sobado.",
         "a participacao de cada pessoa pode facilitar o trabalho coletivo",
-        "A mensagem valoriza colaboracao pratica.",
+        "A mensagem valoriza colaboracao prática.",
         "A narrativa acompanha a amizade entre dois adolescentes."
       ],
-      "correta": "O mutirao sera realizado no sobado.",
-      "comentario": "A alternativa correta recupera uma informacao escrita literalmente no texto.",
+      "correta": "O mutirao será realizado no sobado.",
+      "comentario": "A alternativa correta recupera uma informação escrita literalmente no texto.",
       "tempoEstimado": 25,
       "tags": [
         "informacao-explicita",
@@ -2260,14 +2260,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Informacao explicita",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Informação explícita",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"O filme Caminhos do Bairro emociona sem exageros. Ao acompanhar a amizade entre dois adolescentes, a narrativa mostra conflitos reais e escolhas dificeis.\", qual informacao aparece de forma explicita?",
+      "enunciado": "No texto \"O filme Caminhos do Bairro emociona sem exageros. Ao acompanhar a amizade entre dois adolescentes, a narrativa mostra conflitos reais e escolhas dificeis.\", qual informação aparece de forma explícita?",
       "opcoes": [
         "o autor da resenha considera o filme convincente",
         "A resenha expressa julgamento positivo sobre a obra.",
@@ -2275,7 +2275,7 @@ export const interpretacaoDeTexto = {
         "A narrativa acompanha a amizade entre dois adolescentes."
       ],
       "correta": "A narrativa acompanha a amizade entre dois adolescentes.",
-      "comentario": "A alternativa correta recupera uma informacao escrita literalmente no texto.",
+      "comentario": "A alternativa correta recupera uma informação escrita literalmente no texto.",
       "tempoEstimado": 25,
       "tags": [
         "informacao-explicita",
@@ -2298,22 +2298,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Informacao explicita",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Informação explícita",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"Hoje entrei na sala com o coracao acelerado, mas respirei fundo antes da prova. Quando li a primeira questao, percebi que o estudo da semana tinha valido a pena.\", qual informacao aparece de forma explicita?",
+      "enunciado": "No texto \"Hoje entrei na sala com o coracao acelerado, mas respirei fundo antes da prova. Quando li a primeira questao, percebi que o estudo da semana tinha valido a pena.\", qual informação aparece de forma explícita?",
       "opcoes": [
-        "O trecho mostra uma mudanca emocional ao longo da situacao.",
-        "O livro deve ser devolvido ate sexta-feira.",
+        "O trecho mostra uma mudança emocional ao longo da situação.",
+        "O livro deve ser devolvido até sexta-feira.",
         "O narrador respirou fundo antes da prova.",
         "o estudo previo ajudou a reduzir a inseguranca"
       ],
       "correta": "O narrador respirou fundo antes da prova.",
-      "comentario": "A alternativa correta recupera uma informacao escrita literalmente no texto.",
+      "comentario": "A alternativa correta recupera uma informação escrita literalmente no texto.",
       "tempoEstimado": 25,
       "tags": [
         "informacao-explicita",
@@ -2336,22 +2336,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Inferencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do texto \"Bilhete no mural: Devolva o livro ate sexta-feira. Outras turmas tambem esperam por ele.\", pode-se inferir que:",
+      "enunciado": "A partir do texto \"Bilhete no mural: Devolva o livro até sexta-feira. Outras turmas também esperam por ele.\", pode-se inferir que:",
       "opcoes": [
         "a atitude da vizinha amenizou o desconforto das pessoas",
         "o uso de itens reutilizaveis pode diminuir o descarte diario",
-        "Ha outras turmas interessadas no mesmo livro.",
+        "Há outras turmas interessadas no mesmo livro.",
         "o bilhete proibe novas retiradas de livros"
       ],
-      "correta": "Ha outras turmas interessadas no mesmo livro.",
-      "comentario": "A inferencia correta respeita pistas do texto sem inventar informacoes fora dele.",
+      "correta": "Há outras turmas interessadas no mesmo livro.",
+      "comentario": "A inferencia correta respeita pistas do texto sem inventar informações fora dele.",
       "tempoEstimado": 25,
       "tags": [
         "inferencia",
@@ -2374,22 +2374,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Inferencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do texto \"Quando a chuva comecou, a rua correu para dentro de casa. So a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\", pode-se inferir que:",
+      "enunciado": "A partir do texto \"Quando a chuva comecou, a rua correu para dentro de casa. Só a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\", pode-se inferir que:",
       "opcoes": [
-        "a comunidade foi convidada a conhecer a producao dos alunos",
+        "a comunidade foi convidada a conhecer a produção dos alunos",
         "a atitude da vizinha amenizou o desconforto das pessoas",
         "a chuva impediu completamente a convivencia entre os moradores",
         "o uso de itens reutilizaveis pode diminuir o descarte diario"
       ],
       "correta": "a atitude da vizinha amenizou o desconforto das pessoas",
-      "comentario": "A inferencia correta respeita pistas do texto sem inventar informacoes fora dele.",
+      "comentario": "A inferencia correta respeita pistas do texto sem inventar informações fora dele.",
       "tempoEstimado": 25,
       "tags": [
         "inferencia",
@@ -2412,8 +2412,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Inferencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -2423,11 +2423,11 @@ export const interpretacaoDeTexto = {
       "opcoes": [
         "o uso de itens reutilizaveis pode diminuir o descarte diario",
         "a campanha informa que qualquer tipo de garrafa deve ser descartada todos os dias",
-        "a comunidade foi convidada a conhecer a producao dos alunos",
-        "o texto valoriza um clima de calma e observacao"
+        "a comunidade foi convidada a conhecer a produção dos alunos",
+        "o texto valoriza um clima de calma e observação"
       ],
       "correta": "o uso de itens reutilizaveis pode diminuir o descarte diario",
-      "comentario": "A inferencia correta respeita pistas do texto sem inventar informacoes fora dele.",
+      "comentario": "A inferencia correta respeita pistas do texto sem inventar informações fora dele.",
       "tempoEstimado": 25,
       "tags": [
         "inferencia",
@@ -2450,22 +2450,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Inferencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do texto \"A escola abriu a Feira de Ciencias com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\", pode-se inferir que:",
+      "enunciado": "A partir do texto \"A escola abriu a Feira de Ciências com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\", pode-se inferir que:",
       "opcoes": [
-        "apenas professores participaram da apresentacao dos experimentos",
-        "o texto valoriza um clima de calma e observacao",
+        "apenas professores participaram da apresentação dos experimentos",
+        "o texto valoriza um clima de calma e observação",
         "o autor quer sensibilizar autoridades e leitores para um problema coletivo",
-        "a comunidade foi convidada a conhecer a producao dos alunos"
+        "a comunidade foi convidada a conhecer a produção dos alunos"
       ],
-      "correta": "a comunidade foi convidada a conhecer a producao dos alunos",
-      "comentario": "A inferencia correta respeita pistas do texto sem inventar informacoes fora dele.",
+      "correta": "a comunidade foi convidada a conhecer a produção dos alunos",
+      "comentario": "A inferencia correta respeita pistas do texto sem inventar informações fora dele.",
       "tempoEstimado": 25,
       "tags": [
         "inferencia",
@@ -2488,8 +2488,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Inferencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -2498,12 +2498,12 @@ export const interpretacaoDeTexto = {
       "enunciado": "A partir do texto \"A tarde pousou na janela / mansa como um livro aberto / e a casa inteira ficou ouvindo / o silencio do vento.\", pode-se inferir que:",
       "opcoes": [
         "o autor quer sensibilizar autoridades e leitores para um problema coletivo",
-        "o texto tem carater expositivo e busca informar de modo objetivo",
-        "o texto valoriza um clima de calma e observacao",
-        "o poema narra uma discussao barulhenta dentro da casa"
+        "o texto tem caráter expositivo e busca informar de modo objetivo",
+        "o texto valoriza um clima de calma e observação",
+        "o poema narra uma discussão barulhenta dentro da casa"
       ],
-      "correta": "o texto valoriza um clima de calma e observacao",
-      "comentario": "A inferencia correta respeita pistas do texto sem inventar informacoes fora dele.",
+      "correta": "o texto valoriza um clima de calma e observação",
+      "comentario": "A inferencia correta respeita pistas do texto sem inventar informações fora dele.",
       "tempoEstimado": 25,
       "tags": [
         "inferencia",
@@ -2526,22 +2526,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Inferencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do texto \"Escrevo para pedir mais horarios de onibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\", pode-se inferir que:",
+      "enunciado": "A partir do texto \"Escrevo para pedir mais horarios de ônibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\", pode-se inferir que:",
       "opcoes": [
         "a participacao de cada pessoa pode facilitar o trabalho coletivo",
         "o autor quer sensibilizar autoridades e leitores para um problema coletivo",
-        "o autor elogia a regularidade dos horarios de onibus",
-        "o texto tem carater expositivo e busca informar de modo objetivo"
+        "o autor elogia a regularidade dos horarios de ônibus",
+        "o texto tem caráter expositivo e busca informar de modo objetivo"
       ],
       "correta": "o autor quer sensibilizar autoridades e leitores para um problema coletivo",
-      "comentario": "A inferencia correta respeita pistas do texto sem inventar informacoes fora dele.",
+      "comentario": "A inferencia correta respeita pistas do texto sem inventar informações fora dele.",
       "tempoEstimado": 25,
       "tags": [
         "inferencia",
@@ -2564,8 +2564,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Inferencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -2573,13 +2573,13 @@ export const interpretacaoDeTexto = {
       "tipo": "multipla_escolha",
       "enunciado": "A partir do texto \"Energia solar e a energia obtida a partir da luz do Sol. Ela pode ser usada para gerar eletricidade e aquecer ambientes.\", pode-se inferir que:",
       "opcoes": [
-        "o texto tem carater expositivo e busca informar de modo objetivo",
-        "o verbete critica o uso da energia solar",
+        "o texto tem caráter expositivo e busca informar de modo objetivo",
+        "o verbete crítica o uso da energia solar",
         "a participacao de cada pessoa pode facilitar o trabalho coletivo",
         "o autor da resenha considera o filme convincente"
       ],
-      "correta": "o texto tem carater expositivo e busca informar de modo objetivo",
-      "comentario": "A inferencia correta respeita pistas do texto sem inventar informacoes fora dele.",
+      "correta": "o texto tem caráter expositivo e busca informar de modo objetivo",
+      "comentario": "A inferencia correta respeita pistas do texto sem inventar informações fora dele.",
       "tempoEstimado": 25,
       "tags": [
         "inferencia",
@@ -2602,8 +2602,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Inferencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -2617,7 +2617,7 @@ export const interpretacaoDeTexto = {
         "a participacao de cada pessoa pode facilitar o trabalho coletivo"
       ],
       "correta": "a participacao de cada pessoa pode facilitar o trabalho coletivo",
-      "comentario": "A inferencia correta respeita pistas do texto sem inventar informacoes fora dele.",
+      "comentario": "A inferencia correta respeita pistas do texto sem inventar informações fora dele.",
       "tempoEstimado": 25,
       "tags": [
         "inferencia",
@@ -2640,8 +2640,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Inferencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -2650,12 +2650,12 @@ export const interpretacaoDeTexto = {
       "enunciado": "A partir do texto \"O filme Caminhos do Bairro emociona sem exageros. Ao acompanhar a amizade entre dois adolescentes, a narrativa mostra conflitos reais e escolhas dificeis.\", pode-se inferir que:",
       "opcoes": [
         "o estudo previo ajudou a reduzir a inseguranca",
-        "Ha outras turmas interessadas no mesmo livro.",
+        "Há outras turmas interessadas no mesmo livro.",
         "o autor da resenha considera o filme convincente",
         "a resenha afirma que o filme e superficial e pouco emocionante"
       ],
       "correta": "o autor da resenha considera o filme convincente",
-      "comentario": "A inferencia correta respeita pistas do texto sem inventar informacoes fora dele.",
+      "comentario": "A inferencia correta respeita pistas do texto sem inventar informações fora dele.",
       "tempoEstimado": 25,
       "tags": [
         "inferencia",
@@ -2678,8 +2678,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Inferencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -2689,11 +2689,11 @@ export const interpretacaoDeTexto = {
       "opcoes": [
         "a atitude da vizinha amenizou o desconforto das pessoas",
         "o estudo previo ajudou a reduzir a inseguranca",
-        "o narrador conclui que estudar nao fez diferenca",
-        "Ha outras turmas interessadas no mesmo livro."
+        "o narrador conclui que estudar não fez diferenca",
+        "Há outras turmas interessadas no mesmo livro."
       ],
       "correta": "o estudo previo ajudou a reduzir a inseguranca",
-      "comentario": "A inferencia correta respeita pistas do texto sem inventar informacoes fora dele.",
+      "comentario": "A inferencia correta respeita pistas do texto sem inventar informações fora dele.",
       "tempoEstimado": 25,
       "tags": [
         "inferencia",
@@ -2716,14 +2716,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Sentido de palavra e expressao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No contexto do texto \"Bilhete no mural: Devolva o livro ate sexta-feira. Outras turmas tambem esperam por ele.\", a expressao \"esperam por ele\" sugere:",
+      "enunciado": "No contexto do texto \"Bilhete no mural: Devolva o livro até sexta-feira. Outras turmas também esperam por ele.\", a expressao \"esperam por ele\" sugere:",
       "opcoes": [
         "modelos em escala usados para representar algo",
         "dependem da devolucao para usar o livro",
@@ -2754,14 +2754,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Sentido de palavra e expressao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No contexto do texto \"Quando a chuva comecou, a rua correu para dentro de casa. So a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\", a expressao \"encharcado\" sugere:",
+      "enunciado": "No contexto do texto \"Quando a chuva comecou, a rua correu para dentro de casa. Só a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\", a expressao \"encharcado\" sugere:",
       "opcoes": [
         "muito molhado",
         "feito para ser jogado fora apos o uso",
@@ -2792,8 +2792,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Sentido de palavra e expressao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -2830,14 +2830,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Sentido de palavra e expressao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No contexto do texto \"A escola abriu a Feira de Ciencias com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\", a expressao \"maquetes\" sugere:",
+      "enunciado": "No contexto do texto \"A escola abriu a Feira de Ciências com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\", a expressao \"maquetes\" sugere:",
       "opcoes": [
         "causado dificuldade ou dano",
         "conseguida",
@@ -2868,8 +2868,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Sentido de palavra e expressao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -2877,7 +2877,7 @@ export const interpretacaoDeTexto = {
       "tipo": "multipla_escolha",
       "enunciado": "No contexto do texto \"A tarde pousou na janela / mansa como um livro aberto / e a casa inteira ficou ouvindo / o silencio do vento.\", a expressao \"mansa\" sugere:",
       "opcoes": [
-        "acao coletiva em que varias pessoas ajudam",
+        "ação coletiva em que varias pessoas ajudam",
         "suave e tranquila",
         "causado dificuldade ou dano",
         "conseguida"
@@ -2906,18 +2906,18 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Sentido de palavra e expressao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No contexto do texto \"Escrevo para pedir mais horarios de onibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\", a expressao \"prejudicado\" sugere:",
+      "enunciado": "No contexto do texto \"Escrevo para pedir mais horarios de ônibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\", a expressao \"prejudicado\" sugere:",
       "opcoes": [
         "causado dificuldade ou dano",
         "conseguida",
-        "acao coletiva em que varias pessoas ajudam",
+        "ação coletiva em que varias pessoas ajudam",
         "excessos"
       ],
       "correta": "causado dificuldade ou dano",
@@ -2944,8 +2944,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Sentido de palavra e expressao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -2953,7 +2953,7 @@ export const interpretacaoDeTexto = {
       "tipo": "multipla_escolha",
       "enunciado": "No contexto do texto \"Energia solar e a energia obtida a partir da luz do Sol. Ela pode ser usada para gerar eletricidade e aquecer ambientes.\", a expressao \"obtida\" sugere:",
       "opcoes": [
-        "acao coletiva em que varias pessoas ajudam",
+        "ação coletiva em que varias pessoas ajudam",
         "excessos",
         "trouxe resultado positivo",
         "conseguida"
@@ -2982,8 +2982,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Sentido de palavra e expressao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -2993,11 +2993,11 @@ export const interpretacaoDeTexto = {
       "opcoes": [
         "trouxe resultado positivo",
         "dependem da devolucao para usar o livro",
-        "acao coletiva em que varias pessoas ajudam",
+        "ação coletiva em que varias pessoas ajudam",
         "excessos"
       ],
-      "correta": "acao coletiva em que varias pessoas ajudam",
-      "comentario": "Nesse contexto, a expressao aponta para acao coletiva em que varias pessoas ajudam.",
+      "correta": "ação coletiva em que varias pessoas ajudam",
+      "comentario": "Nesse contexto, a expressao aponta para ação coletiva em que varias pessoas ajudam.",
       "tempoEstimado": 25,
       "tags": [
         "vocabulario",
@@ -3020,8 +3020,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Sentido de palavra e expressao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -3058,8 +3058,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Sentido de palavra e expressao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -3096,14 +3096,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Coesao e referencia",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Coesão e referência",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"Bilhete no mural: Devolva o livro ate sexta-feira. Outras turmas tambem esperam por ele.\", o termo \"ele\" refere-se a:",
+      "enunciado": "No texto \"Bilhete no mural: Devolva o livro até sexta-feira. Outras turmas também esperam por ele.\", o termo \"ele\" refere-se a:",
       "opcoes": [
         "o livro",
         "as pessoas que chegavam",
@@ -3134,18 +3134,18 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Coesao e referencia",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Coesão e referência",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"Quando a chuva comecou, a rua correu para dentro de casa. So a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\", o termo \"quem\" refere-se a:",
+      "enunciado": "No texto \"Quando a chuva comecou, a rua correu para dentro de casa. Só a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\", o termo \"quem\" refere-se a:",
       "opcoes": [
         "a garrafa reutilizavel",
         "os trabalhos sobre energia limpa",
-        "o ambiente domestico descrito pelo eu lirico",
+        "o ambiente doméstico descrito pelo eu lirico",
         "as pessoas que chegavam"
       ],
       "correta": "as pessoas que chegavam",
@@ -3172,17 +3172,17 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Coesao e referencia",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Coesão e referência",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "No texto \"Troque o descartavel pelo duradouro. Leve sua garrafa reutilizavel e reduza o lixo todos os dias.\", o termo \"duradouro\" refere-se a:",
       "opcoes": [
-        "o ambiente domestico descrito pelo eu lirico",
-        "os atrasos dos onibus",
+        "o ambiente doméstico descrito pelo eu lirico",
+        "os atrasos dos ônibus",
         "a garrafa reutilizavel",
         "os trabalhos sobre energia limpa"
       ],
@@ -3210,19 +3210,19 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Coesao e referencia",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Coesão e referência",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"A escola abriu a Feira de Ciencias com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\", o termo \"projetos\" refere-se a:",
+      "enunciado": "No texto \"A escola abriu a Feira de Ciências com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\", o termo \"projetos\" refere-se a:",
       "opcoes": [
         "a energia solar",
         "os trabalhos sobre energia limpa",
-        "o ambiente domestico descrito pelo eu lirico",
-        "os atrasos dos onibus"
+        "o ambiente doméstico descrito pelo eu lirico",
+        "os atrasos dos ônibus"
       ],
       "correta": "os trabalhos sobre energia limpa",
       "comentario": "O termo retoma os trabalhos sobre energia limpa.",
@@ -3248,22 +3248,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Coesao e referencia",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Coesão e referência",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "No texto \"A tarde pousou na janela / mansa como um livro aberto / e a casa inteira ficou ouvindo / o silencio do vento.\", o termo \"casa inteira\" refere-se a:",
       "opcoes": [
-        "o ambiente domestico descrito pelo eu lirico",
-        "os atrasos dos onibus",
+        "o ambiente doméstico descrito pelo eu lirico",
+        "os atrasos dos ônibus",
         "a energia solar",
         "as pessoas que puderem participar"
       ],
-      "correta": "o ambiente domestico descrito pelo eu lirico",
-      "comentario": "O termo retoma o ambiente domestico descrito pelo eu lirico.",
+      "correta": "o ambiente doméstico descrito pelo eu lirico",
+      "comentario": "O termo retoma o ambiente doméstico descrito pelo eu lirico.",
       "tempoEstimado": 25,
       "tags": [
         "referencia",
@@ -3286,22 +3286,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Coesao e referencia",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Coesão e referência",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"Escrevo para pedir mais horarios de onibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\", o termo \"os atrasos\" refere-se a:",
+      "enunciado": "No texto \"Escrevo para pedir mais horarios de ônibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\", o termo \"os atrasos\" refere-se a:",
       "opcoes": [
         "a energia solar",
         "as pessoas que puderem participar",
         "o filme comentado",
-        "os atrasos dos onibus"
+        "os atrasos dos ônibus"
       ],
-      "correta": "os atrasos dos onibus",
-      "comentario": "O termo retoma os atrasos dos onibus.",
+      "correta": "os atrasos dos ônibus",
+      "comentario": "O termo retoma os atrasos dos ônibus.",
       "tempoEstimado": 25,
       "tags": [
         "referencia",
@@ -3324,9 +3324,9 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Coesao e referencia",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Coesão e referência",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
@@ -3362,9 +3362,9 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Coesao e referencia",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Coesão e referência",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
@@ -3400,9 +3400,9 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Coesao e referencia",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Coesão e referência",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
@@ -3438,9 +3438,9 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Coesao e referencia",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Coesão e referência",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
@@ -3476,16 +3476,16 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Fato e opiniao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma opiniao coerente com o texto \"Bilhete no mural: Devolva o livro ate sexta-feira. Outras turmas tambem esperam por ele.\"?",
+      "enunciado": "Qual alternativa apresenta uma opiniao coerente com o texto \"Bilhete no mural: Devolva o livro até sexta-feira. Outras turmas também esperam por ele.\"?",
       "opcoes": [
-        "O livro deve ser devolvido ate sexta-feira.",
+        "O livro deve ser devolvido até sexta-feira.",
         "A vizinha distribuia cafe a quem chegava molhado.",
         "O texto recomenda levar uma garrafa reutilizavel.",
         "O aviso mostra preocupacao com o uso coletivo do acervo."
@@ -3514,14 +3514,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Fato e opiniao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma opiniao coerente com o texto \"Quando a chuva comecou, a rua correu para dentro de casa. So a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\"?",
+      "enunciado": "Qual alternativa apresenta uma opiniao coerente com o texto \"Quando a chuva comecou, a rua correu para dentro de casa. Só a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\"?",
       "opcoes": [
         "O texto recomenda levar uma garrafa reutilizavel.",
         "Os projetos apresentados tratavam de energia limpa.",
@@ -3552,8 +3552,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Fato e opiniao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -3590,14 +3590,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Fato e opiniao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma opiniao coerente com o texto \"A escola abriu a Feira de Ciencias com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\"?",
+      "enunciado": "Qual alternativa apresenta uma opiniao coerente com o texto \"A escola abriu a Feira de Ciências com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\"?",
       "opcoes": [
         "A noticia reforca a participacao ativa dos estudantes.",
         "Os projetos apresentados tratavam de energia limpa.",
@@ -3628,8 +3628,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Fato e opiniao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -3666,17 +3666,17 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Fato e opiniao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma opiniao coerente com o texto \"Escrevo para pedir mais horarios de onibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\"?",
+      "enunciado": "Qual alternativa apresenta uma opiniao coerente com o texto \"Escrevo para pedir mais horarios de ônibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\"?",
       "opcoes": [
         "A energia solar pode gerar eletricidade.",
-        "O mutirao sera realizado no sobado.",
+        "O mutirao será realizado no sobado.",
         "A carta mostra insatisfacao com um servico publico.",
         "Os atrasos afetam estudantes e trabalhadores."
       ],
@@ -3704,8 +3704,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Fato e opiniao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -3714,11 +3714,11 @@ export const interpretacaoDeTexto = {
       "enunciado": "Qual alternativa apresenta uma opiniao coerente com o texto \"Energia solar e a energia obtida a partir da luz do Sol. Ela pode ser usada para gerar eletricidade e aquecer ambientes.\"?",
       "opcoes": [
         "A narrativa acompanha a amizade entre dois adolescentes.",
-        "O verbete prioriza informacao objetiva, e nao emocao.",
+        "O verbete prioriza informação objetiva, e não emocao.",
         "A energia solar pode gerar eletricidade.",
-        "O mutirao sera realizado no sobado."
+        "O mutirao será realizado no sobado."
       ],
-      "correta": "O verbete prioriza informacao objetiva, e nao emocao.",
+      "correta": "O verbete prioriza informação objetiva, e não emocao.",
       "comentario": "A alternativa correta interpreta o texto, enquanto as demais apenas informam fatos.",
       "tempoEstimado": 25,
       "tags": [
@@ -3742,8 +3742,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Fato e opiniao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -3751,12 +3751,12 @@ export const interpretacaoDeTexto = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa apresenta uma opiniao coerente com o texto \"Pessoal, neste sobado faremos um mutirao para limpar a praca do bairro. Quem puder levar luvas e sacos de lixo ajudara ainda mais.\"?",
       "opcoes": [
-        "A mensagem valoriza colaboracao pratica.",
-        "O mutirao sera realizado no sobado.",
+        "A mensagem valoriza colaboracao prática.",
+        "O mutirao será realizado no sobado.",
         "A narrativa acompanha a amizade entre dois adolescentes.",
         "O narrador respirou fundo antes da prova."
       ],
-      "correta": "A mensagem valoriza colaboracao pratica.",
+      "correta": "A mensagem valoriza colaboracao prática.",
       "comentario": "A alternativa correta interpreta o texto, enquanto as demais apenas informam fatos.",
       "tempoEstimado": 25,
       "tags": [
@@ -3780,8 +3780,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Fato e opiniao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -3791,7 +3791,7 @@ export const interpretacaoDeTexto = {
       "opcoes": [
         "A narrativa acompanha a amizade entre dois adolescentes.",
         "O narrador respirou fundo antes da prova.",
-        "O livro deve ser devolvido ate sexta-feira.",
+        "O livro deve ser devolvido até sexta-feira.",
         "A resenha expressa julgamento positivo sobre a obra."
       ],
       "correta": "A resenha expressa julgamento positivo sobre a obra.",
@@ -3818,8 +3818,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Fato e opiniao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -3827,12 +3827,12 @@ export const interpretacaoDeTexto = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa apresenta uma opiniao coerente com o texto \"Hoje entrei na sala com o coracao acelerado, mas respirei fundo antes da prova. Quando li a primeira questao, percebi que o estudo da semana tinha valido a pena.\"?",
       "opcoes": [
-        "O livro deve ser devolvido ate sexta-feira.",
+        "O livro deve ser devolvido até sexta-feira.",
         "A vizinha distribuia cafe a quem chegava molhado.",
-        "O trecho mostra uma mudanca emocional ao longo da situacao.",
+        "O trecho mostra uma mudança emocional ao longo da situação.",
         "O narrador respirou fundo antes da prova."
       ],
-      "correta": "O trecho mostra uma mudanca emocional ao longo da situacao.",
+      "correta": "O trecho mostra uma mudança emocional ao longo da situação.",
       "comentario": "A alternativa correta interpreta o texto, enquanto as demais apenas informam fatos.",
       "tempoEstimado": 25,
       "tags": [
@@ -3856,22 +3856,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Titulo",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Título",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual titulo resume melhor o texto \"Bilhete no mural: Devolva o livro ate sexta-feira. Outras turmas tambem esperam por ele.\"?",
+      "enunciado": "Qual título resume melhor o texto \"Bilhete no mural: Devolva o livro até sexta-feira. Outras turmas também esperam por ele.\"?",
       "opcoes": [
         "Menos lixo, mais reutilizacao",
-        "Feira de Ciencias destaca energia limpa",
+        "Feira de Ciências destaca energia limpa",
         "Prazo para devolver o livro",
         "Cafe na chuva"
       ],
       "correta": "Prazo para devolver o livro",
-      "comentario": "O melhor titulo e o que sintetiza o foco do texto sem distorcao-lo.",
+      "comentario": "O melhor título e o que sintetiza o foco do texto sem distorcao-lo.",
       "tempoEstimado": 30,
       "tags": [
         "titulo",
@@ -3894,22 +3894,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Titulo",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Título",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual titulo resume melhor o texto \"Quando a chuva comecou, a rua correu para dentro de casa. So a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\"?",
+      "enunciado": "Qual título resume melhor o texto \"Quando a chuva comecou, a rua correu para dentro de casa. Só a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\"?",
       "opcoes": [
         "Tarde na Janela",
         "Cafe na chuva",
         "Menos lixo, mais reutilizacao",
-        "Feira de Ciencias destaca energia limpa"
+        "Feira de Ciências destaca energia limpa"
       ],
       "correta": "Cafe na chuva",
-      "comentario": "O melhor titulo e o que sintetiza o foco do texto sem distorcao-lo.",
+      "comentario": "O melhor título e o que sintetiza o foco do texto sem distorcao-lo.",
       "tempoEstimado": 30,
       "tags": [
         "titulo",
@@ -3932,22 +3932,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Titulo",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Título",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual titulo resume melhor o texto \"Troque o descartavel pelo duradouro. Leve sua garrafa reutilizavel e reduza o lixo todos os dias.\"?",
+      "enunciado": "Qual título resume melhor o texto \"Troque o descartavel pelo duradouro. Leve sua garrafa reutilizavel e reduza o lixo todos os dias.\"?",
       "opcoes": [
         "Menos lixo, mais reutilizacao",
-        "Feira de Ciencias destaca energia limpa",
+        "Feira de Ciências destaca energia limpa",
         "Tarde na Janela",
-        "Mais onibus para o bairro"
+        "Mais ônibus para o bairro"
       ],
       "correta": "Menos lixo, mais reutilizacao",
-      "comentario": "O melhor titulo e o que sintetiza o foco do texto sem distorcao-lo.",
+      "comentario": "O melhor título e o que sintetiza o foco do texto sem distorcao-lo.",
       "tempoEstimado": 30,
       "tags": [
         "titulo",
@@ -3970,22 +3970,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Titulo",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Título",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual titulo resume melhor o texto \"A escola abriu a Feira de Ciencias com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\"?",
+      "enunciado": "Qual título resume melhor o texto \"A escola abriu a Feira de Ciências com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\"?",
       "opcoes": [
         "Tarde na Janela",
-        "Mais onibus para o bairro",
+        "Mais ônibus para o bairro",
         "Energia solar",
-        "Feira de Ciencias destaca energia limpa"
+        "Feira de Ciências destaca energia limpa"
       ],
-      "correta": "Feira de Ciencias destaca energia limpa",
-      "comentario": "O melhor titulo e o que sintetiza o foco do texto sem distorcao-lo.",
+      "correta": "Feira de Ciências destaca energia limpa",
+      "comentario": "O melhor título e o que sintetiza o foco do texto sem distorcao-lo.",
       "tempoEstimado": 30,
       "tags": [
         "titulo",
@@ -4008,22 +4008,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Titulo",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Título",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual titulo resume melhor o texto \"A tarde pousou na janela / mansa como um livro aberto / e a casa inteira ficou ouvindo / o silencio do vento.\"?",
+      "enunciado": "Qual título resume melhor o texto \"A tarde pousou na janela / mansa como um livro aberto / e a casa inteira ficou ouvindo / o silencio do vento.\"?",
       "opcoes": [
         "Energia solar",
         "Mutirao na praca neste sobado",
         "Tarde na Janela",
-        "Mais onibus para o bairro"
+        "Mais ônibus para o bairro"
       ],
       "correta": "Tarde na Janela",
-      "comentario": "O melhor titulo e o que sintetiza o foco do texto sem distorcao-lo.",
+      "comentario": "O melhor título e o que sintetiza o foco do texto sem distorcao-lo.",
       "tempoEstimado": 30,
       "tags": [
         "titulo",
@@ -4046,22 +4046,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Titulo",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Título",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual titulo resume melhor o texto \"Escrevo para pedir mais horarios de onibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\"?",
+      "enunciado": "Qual título resume melhor o texto \"Escrevo para pedir mais horarios de ônibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\"?",
       "opcoes": [
         "Uma amizade bem contada no cinema",
-        "Mais onibus para o bairro",
+        "Mais ônibus para o bairro",
         "Energia solar",
         "Mutirao na praca neste sobado"
       ],
-      "correta": "Mais onibus para o bairro",
-      "comentario": "O melhor titulo e o que sintetiza o foco do texto sem distorcao-lo.",
+      "correta": "Mais ônibus para o bairro",
+      "comentario": "O melhor título e o que sintetiza o foco do texto sem distorcao-lo.",
       "tempoEstimado": 30,
       "tags": [
         "titulo",
@@ -4084,14 +4084,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Titulo",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Título",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual titulo resume melhor o texto \"Energia solar e a energia obtida a partir da luz do Sol. Ela pode ser usada para gerar eletricidade e aquecer ambientes.\"?",
+      "enunciado": "Qual título resume melhor o texto \"Energia solar e a energia obtida a partir da luz do Sol. Ela pode ser usada para gerar eletricidade e aquecer ambientes.\"?",
       "opcoes": [
         "Energia solar",
         "Mutirao na praca neste sobado",
@@ -4099,7 +4099,7 @@ export const interpretacaoDeTexto = {
         "Antes da primeira questao"
       ],
       "correta": "Energia solar",
-      "comentario": "O melhor titulo e o que sintetiza o foco do texto sem distorcao-lo.",
+      "comentario": "O melhor título e o que sintetiza o foco do texto sem distorcao-lo.",
       "tempoEstimado": 30,
       "tags": [
         "titulo",
@@ -4122,14 +4122,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Titulo",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Título",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual titulo resume melhor o texto \"Pessoal, neste sobado faremos um mutirao para limpar a praca do bairro. Quem puder levar luvas e sacos de lixo ajudara ainda mais.\"?",
+      "enunciado": "Qual título resume melhor o texto \"Pessoal, neste sobado faremos um mutirao para limpar a praca do bairro. Quem puder levar luvas e sacos de lixo ajudara ainda mais.\"?",
       "opcoes": [
         "Uma amizade bem contada no cinema",
         "Antes da primeira questao",
@@ -4137,7 +4137,7 @@ export const interpretacaoDeTexto = {
         "Mutirao na praca neste sobado"
       ],
       "correta": "Mutirao na praca neste sobado",
-      "comentario": "O melhor titulo e o que sintetiza o foco do texto sem distorcao-lo.",
+      "comentario": "O melhor título e o que sintetiza o foco do texto sem distorcao-lo.",
       "tempoEstimado": 30,
       "tags": [
         "titulo",
@@ -4160,14 +4160,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Titulo",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Título",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual titulo resume melhor o texto \"O filme Caminhos do Bairro emociona sem exageros. Ao acompanhar a amizade entre dois adolescentes, a narrativa mostra conflitos reais e escolhas dificeis.\"?",
+      "enunciado": "Qual título resume melhor o texto \"O filme Caminhos do Bairro emociona sem exageros. Ao acompanhar a amizade entre dois adolescentes, a narrativa mostra conflitos reais e escolhas dificeis.\"?",
       "opcoes": [
         "Prazo para devolver o livro",
         "Cafe na chuva",
@@ -4175,7 +4175,7 @@ export const interpretacaoDeTexto = {
         "Antes da primeira questao"
       ],
       "correta": "Uma amizade bem contada no cinema",
-      "comentario": "O melhor titulo e o que sintetiza o foco do texto sem distorcao-lo.",
+      "comentario": "O melhor título e o que sintetiza o foco do texto sem distorcao-lo.",
       "tempoEstimado": 30,
       "tags": [
         "titulo",
@@ -4198,14 +4198,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Titulo",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Título",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual titulo resume melhor o texto \"Hoje entrei na sala com o coracao acelerado, mas respirei fundo antes da prova. Quando li a primeira questao, percebi que o estudo da semana tinha valido a pena.\"?",
+      "enunciado": "Qual título resume melhor o texto \"Hoje entrei na sala com o coracao acelerado, mas respirei fundo antes da prova. Quando li a primeira questao, percebi que o estudo da semana tinha valido a pena.\"?",
       "opcoes": [
         "Menos lixo, mais reutilizacao",
         "Antes da primeira questao",
@@ -4213,7 +4213,7 @@ export const interpretacaoDeTexto = {
         "Cafe na chuva"
       ],
       "correta": "Antes da primeira questao",
-      "comentario": "O melhor titulo e o que sintetiza o foco do texto sem distorcao-lo.",
+      "comentario": "O melhor título e o que sintetiza o foco do texto sem distorcao-lo.",
       "tempoEstimado": 30,
       "tags": [
         "titulo",
@@ -4236,22 +4236,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Relacao entre partes",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Relação entre partes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A organizacao do texto \"Bilhete no mural: Devolva o livro ate sexta-feira. Outras turmas tambem esperam por ele.\" pode ser resumida como:",
+      "enunciado": "A organização do texto \"Bilhete no mural: Devolva o livro até sexta-feira. Outras turmas também esperam por ele.\" pode ser resumida como:",
       "opcoes": [
-        "apresentacao do fato seguida de detalhamento",
+        "apresentação do fato seguida de detalhamento",
         "pedido seguido de justificativa",
-        "situacao cotidiana seguida de destaque para uma atitude humana",
-        "contraste entre habitos seguido de apelo"
+        "situação cotidiana seguida de destaque para uma atitude humana",
+        "contraste entre hábitos seguido de apelo"
       ],
       "correta": "pedido seguido de justificativa",
-      "comentario": "A alternativa correta descreve a relacao entre as partes do texto.",
+      "comentario": "A alternativa correta descreve a relação entre as partes do texto.",
       "tempoEstimado": 30,
       "tags": [
         "organizacao",
@@ -4274,22 +4274,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Relacao entre partes",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Relação entre partes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A organizacao do texto \"Quando a chuva comecou, a rua correu para dentro de casa. So a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\" pode ser resumida como:",
+      "enunciado": "A organização do texto \"Quando a chuva comecou, a rua correu para dentro de casa. Só a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\" pode ser resumida como:",
       "opcoes": [
-        "situacao cotidiana seguida de destaque para uma atitude humana",
-        "contraste entre habitos seguido de apelo",
-        "apresentacao do fato seguida de detalhamento",
+        "situação cotidiana seguida de destaque para uma atitude humana",
+        "contraste entre hábitos seguido de apelo",
+        "apresentação do fato seguida de detalhamento",
         "sequencia de imagens sensoriais"
       ],
-      "correta": "situacao cotidiana seguida de destaque para uma atitude humana",
-      "comentario": "A alternativa correta descreve a relacao entre as partes do texto.",
+      "correta": "situação cotidiana seguida de destaque para uma atitude humana",
+      "comentario": "A alternativa correta descreve a relação entre as partes do texto.",
       "tempoEstimado": 30,
       "tags": [
         "organizacao",
@@ -4312,22 +4312,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Relacao entre partes",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Relação entre partes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A organizacao do texto \"Troque o descartavel pelo duradouro. Leve sua garrafa reutilizavel e reduza o lixo todos os dias.\" pode ser resumida como:",
+      "enunciado": "A organização do texto \"Troque o descartavel pelo duradouro. Leve sua garrafa reutilizavel e reduza o lixo todos os dias.\" pode ser resumida como:",
       "opcoes": [
-        "apresentacao do fato seguida de detalhamento",
+        "apresentação do fato seguida de detalhamento",
         "sequencia de imagens sensoriais",
         "pedido sustentado por argumento",
-        "contraste entre habitos seguido de apelo"
+        "contraste entre hábitos seguido de apelo"
       ],
-      "correta": "contraste entre habitos seguido de apelo",
-      "comentario": "A alternativa correta descreve a relacao entre as partes do texto.",
+      "correta": "contraste entre hábitos seguido de apelo",
+      "comentario": "A alternativa correta descreve a relação entre as partes do texto.",
       "tempoEstimado": 30,
       "tags": [
         "organizacao",
@@ -4350,22 +4350,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Relacao entre partes",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Relação entre partes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A organizacao do texto \"A escola abriu a Feira de Ciencias com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\" pode ser resumida como:",
+      "enunciado": "A organização do texto \"A escola abriu a Feira de Ciências com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\" pode ser resumida como:",
       "opcoes": [
         "pedido sustentado por argumento",
-        "definicao seguida de usos",
-        "apresentacao do fato seguida de detalhamento",
+        "definição seguida de usos",
+        "apresentação do fato seguida de detalhamento",
         "sequencia de imagens sensoriais"
       ],
-      "correta": "apresentacao do fato seguida de detalhamento",
-      "comentario": "A alternativa correta descreve a relacao entre as partes do texto.",
+      "correta": "apresentação do fato seguida de detalhamento",
+      "comentario": "A alternativa correta descreve a relação entre as partes do texto.",
       "tempoEstimado": 30,
       "tags": [
         "organizacao",
@@ -4388,22 +4388,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Relacao entre partes",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Relação entre partes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A organizacao do texto \"A tarde pousou na janela / mansa como um livro aberto / e a casa inteira ficou ouvindo / o silencio do vento.\" pode ser resumida como:",
+      "enunciado": "A organização do texto \"A tarde pousou na janela / mansa como um livro aberto / e a casa inteira ficou ouvindo / o silencio do vento.\" pode ser resumida como:",
       "opcoes": [
         "convite seguido de orientacao",
         "sequencia de imagens sensoriais",
         "pedido sustentado por argumento",
-        "definicao seguida de usos"
+        "definição seguida de usos"
       ],
       "correta": "sequencia de imagens sensoriais",
-      "comentario": "A alternativa correta descreve a relacao entre as partes do texto.",
+      "comentario": "A alternativa correta descreve a relação entre as partes do texto.",
       "tempoEstimado": 30,
       "tags": [
         "organizacao",
@@ -4426,22 +4426,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Relacao entre partes",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Relação entre partes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A organizacao do texto \"Escrevo para pedir mais horarios de onibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\" pode ser resumida como:",
+      "enunciado": "A organização do texto \"Escrevo para pedir mais horarios de ônibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\" pode ser resumida como:",
       "opcoes": [
         "pedido sustentado por argumento",
-        "definicao seguida de usos",
+        "definição seguida de usos",
         "convite seguido de orientacao",
-        "avaliacao da obra com destaque para qualidades"
+        "avaliação da obra com destaque para qualidades"
       ],
       "correta": "pedido sustentado por argumento",
-      "comentario": "A alternativa correta descreve a relacao entre as partes do texto.",
+      "comentario": "A alternativa correta descreve a relação entre as partes do texto.",
       "tempoEstimado": 30,
       "tags": [
         "organizacao",
@@ -4464,22 +4464,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Relacao entre partes",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Relação entre partes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A organizacao do texto \"Energia solar e a energia obtida a partir da luz do Sol. Ela pode ser usada para gerar eletricidade e aquecer ambientes.\" pode ser resumida como:",
+      "enunciado": "A organização do texto \"Energia solar e a energia obtida a partir da luz do Sol. Ela pode ser usada para gerar eletricidade e aquecer ambientes.\" pode ser resumida como:",
       "opcoes": [
         "convite seguido de orientacao",
-        "avaliacao da obra com destaque para qualidades",
+        "avaliação da obra com destaque para qualidades",
         "registro de sentimento seguido de superacao",
-        "definicao seguida de usos"
+        "definição seguida de usos"
       ],
-      "correta": "definicao seguida de usos",
-      "comentario": "A alternativa correta descreve a relacao entre as partes do texto.",
+      "correta": "definição seguida de usos",
+      "comentario": "A alternativa correta descreve a relação entre as partes do texto.",
       "tempoEstimado": 30,
       "tags": [
         "organizacao",
@@ -4502,22 +4502,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Relacao entre partes",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Relação entre partes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A organizacao do texto \"Pessoal, neste sobado faremos um mutirao para limpar a praca do bairro. Quem puder levar luvas e sacos de lixo ajudara ainda mais.\" pode ser resumida como:",
+      "enunciado": "A organização do texto \"Pessoal, neste sobado faremos um mutirao para limpar a praca do bairro. Quem puder levar luvas e sacos de lixo ajudara ainda mais.\" pode ser resumida como:",
       "opcoes": [
         "registro de sentimento seguido de superacao",
         "pedido seguido de justificativa",
         "convite seguido de orientacao",
-        "avaliacao da obra com destaque para qualidades"
+        "avaliação da obra com destaque para qualidades"
       ],
       "correta": "convite seguido de orientacao",
-      "comentario": "A alternativa correta descreve a relacao entre as partes do texto.",
+      "comentario": "A alternativa correta descreve a relação entre as partes do texto.",
       "tempoEstimado": 30,
       "tags": [
         "organizacao",
@@ -4540,22 +4540,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Relacao entre partes",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Relação entre partes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A organizacao do texto \"O filme Caminhos do Bairro emociona sem exageros. Ao acompanhar a amizade entre dois adolescentes, a narrativa mostra conflitos reais e escolhas dificeis.\" pode ser resumida como:",
+      "enunciado": "A organização do texto \"O filme Caminhos do Bairro emociona sem exageros. Ao acompanhar a amizade entre dois adolescentes, a narrativa mostra conflitos reais e escolhas dificeis.\" pode ser resumida como:",
       "opcoes": [
-        "situacao cotidiana seguida de destaque para uma atitude humana",
-        "avaliacao da obra com destaque para qualidades",
+        "situação cotidiana seguida de destaque para uma atitude humana",
+        "avaliação da obra com destaque para qualidades",
         "registro de sentimento seguido de superacao",
         "pedido seguido de justificativa"
       ],
-      "correta": "avaliacao da obra com destaque para qualidades",
-      "comentario": "A alternativa correta descreve a relacao entre as partes do texto.",
+      "correta": "avaliação da obra com destaque para qualidades",
+      "comentario": "A alternativa correta descreve a relação entre as partes do texto.",
       "tempoEstimado": 30,
       "tags": [
         "organizacao",
@@ -4578,22 +4578,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Relacao entre partes",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Relação entre partes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A organizacao do texto \"Hoje entrei na sala com o coracao acelerado, mas respirei fundo antes da prova. Quando li a primeira questao, percebi que o estudo da semana tinha valido a pena.\" pode ser resumida como:",
+      "enunciado": "A organização do texto \"Hoje entrei na sala com o coracao acelerado, mas respirei fundo antes da prova. Quando li a primeira questao, percebi que o estudo da semana tinha valido a pena.\" pode ser resumida como:",
       "opcoes": [
         "registro de sentimento seguido de superacao",
         "pedido seguido de justificativa",
-        "situacao cotidiana seguida de destaque para uma atitude humana",
-        "contraste entre habitos seguido de apelo"
+        "situação cotidiana seguida de destaque para uma atitude humana",
+        "contraste entre hábitos seguido de apelo"
       ],
       "correta": "registro de sentimento seguido de superacao",
-      "comentario": "A alternativa correta descreve a relacao entre as partes do texto.",
+      "comentario": "A alternativa correta descreve a relação entre as partes do texto.",
       "tempoEstimado": 30,
       "tags": [
         "organizacao",
@@ -4616,14 +4616,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Tom e ponto de vista",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"Bilhete no mural: Devolva o livro ate sexta-feira. Outras turmas tambem esperam por ele.\", o tom predominante pode ser definido como:",
+      "enunciado": "No texto \"Bilhete no mural: Devolva o livro até sexta-feira. Outras turmas também esperam por ele.\", o tom predominante pode ser definido como:",
       "opcoes": [
         "orientador",
         "afetivo",
@@ -4654,14 +4654,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Tom e ponto de vista",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"Quando a chuva comecou, a rua correu para dentro de casa. So a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\", o tom predominante pode ser definido como:",
+      "enunciado": "No texto \"Quando a chuva comecou, a rua correu para dentro de casa. Só a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\", o tom predominante pode ser definido como:",
       "opcoes": [
         "persuasivo",
         "informativo",
@@ -4692,8 +4692,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Tom e ponto de vista",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -4730,14 +4730,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Tom e ponto de vista",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"A escola abriu a Feira de Ciencias com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\", o tom predominante pode ser definido como:",
+      "enunciado": "No texto \"A escola abriu a Feira de Ciências com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\", o tom predominante pode ser definido como:",
       "opcoes": [
         "didatico",
         "informativo",
@@ -4768,8 +4768,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Tom e ponto de vista",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -4806,14 +4806,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Tom e ponto de vista",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"Escrevo para pedir mais horarios de onibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\", o tom predominante pode ser definido como:",
+      "enunciado": "No texto \"Escrevo para pedir mais horarios de ônibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\", o tom predominante pode ser definido como:",
       "opcoes": [
         "didatico",
         "convocatorio",
@@ -4844,8 +4844,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Tom e ponto de vista",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -4882,8 +4882,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Tom e ponto de vista",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -4920,8 +4920,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Tom e ponto de vista",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -4958,8 +4958,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Tom e ponto de vista",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -4996,22 +4996,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Leitura inadequada",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual leitura NAO se sustenta pelo texto \"Bilhete no mural: Devolva o livro ate sexta-feira. Outras turmas tambem esperam por ele.\"?",
+      "enunciado": "Qual leitura NÃO se sustenta pelo texto \"Bilhete no mural: Devolva o livro até sexta-feira. Outras turmas também esperam por ele.\"?",
       "opcoes": [
         "circulacao compartilhada dos livros aparece como eixo central do texto.",
         "O texto busca orientar os alunos a devolverem o livro no prazo.",
-        "Bilhete e o genero mais compativel com o trecho.",
+        "Bilhete e o gênero mais compatível com o trecho.",
         "o bilhete proibe novas retiradas de livros"
       ],
       "correta": "o bilhete proibe novas retiradas de livros",
-      "comentario": "A alternativa correta exagera ou distorce a leitura; o texto nao autoriza essa conclusao.",
+      "comentario": "A alternativa correta exagera ou distorce a leitura; o texto não autoriza essa conclusão.",
       "tempoEstimado": 35,
       "tags": [
         "pegadinha",
@@ -5034,22 +5034,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Leitura inadequada",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual leitura NAO se sustenta pelo texto \"Quando a chuva comecou, a rua correu para dentro de casa. So a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\"?",
+      "enunciado": "Qual leitura NÃO se sustenta pelo texto \"Quando a chuva comecou, a rua correu para dentro de casa. Só a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\"?",
       "opcoes": [
         "O texto busca relatar uma cena cotidiana valorizando um gesto solidario.",
-        "Cronica e o genero mais compativel com o trecho.",
+        "Cronica e o gênero mais compatível com o trecho.",
         "a chuva impediu completamente a convivencia entre os moradores",
         "solidariedade em um dia de chuva aparece como eixo central do texto."
       ],
       "correta": "a chuva impediu completamente a convivencia entre os moradores",
-      "comentario": "A alternativa correta exagera ou distorce a leitura; o texto nao autoriza essa conclusao.",
+      "comentario": "A alternativa correta exagera ou distorce a leitura; o texto não autoriza essa conclusão.",
       "tempoEstimado": 35,
       "tags": [
         "pegadinha",
@@ -5072,22 +5072,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Leitura inadequada",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual leitura NAO se sustenta pelo texto \"Troque o descartavel pelo duradouro. Leve sua garrafa reutilizavel e reduza o lixo todos os dias.\"?",
+      "enunciado": "Qual leitura NÃO se sustenta pelo texto \"Troque o descartavel pelo duradouro. Leve sua garrafa reutilizavel e reduza o lixo todos os dias.\"?",
       "opcoes": [
-        "Propaganda e o genero mais compativel com o trecho.",
+        "Propaganda e o gênero mais compatível com o trecho.",
         "a campanha informa que qualquer tipo de garrafa deve ser descartada todos os dias",
         "consumo consciente e reducao do lixo aparece como eixo central do texto.",
-        "O texto busca convencer o leitor a adotar uma pratica sustentavel."
+        "O texto busca convencer o leitor a adotar uma prática sustentável."
       ],
       "correta": "a campanha informa que qualquer tipo de garrafa deve ser descartada todos os dias",
-      "comentario": "A alternativa correta exagera ou distorce a leitura; o texto nao autoriza essa conclusao.",
+      "comentario": "A alternativa correta exagera ou distorce a leitura; o texto não autoriza essa conclusão.",
       "tempoEstimado": 35,
       "tags": [
         "pegadinha",
@@ -5110,22 +5110,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Leitura inadequada",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual leitura NAO se sustenta pelo texto \"A escola abriu a Feira de Ciencias com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\"?",
+      "enunciado": "Qual leitura NÃO se sustenta pelo texto \"A escola abriu a Feira de Ciências com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\"?",
       "opcoes": [
-        "apenas professores participaram da apresentacao dos experimentos",
-        "feira de ciencias escolar aparece como eixo central do texto.",
+        "apenas professores participaram da apresentação dos experimentos",
+        "feira de ciências escolar aparece como eixo central do texto.",
         "O texto busca informar um acontecimento escolar.",
-        "Noticia e o genero mais compativel com o trecho."
+        "Noticia e o gênero mais compatível com o trecho."
       ],
-      "correta": "apenas professores participaram da apresentacao dos experimentos",
-      "comentario": "A alternativa correta exagera ou distorce a leitura; o texto nao autoriza essa conclusao.",
+      "correta": "apenas professores participaram da apresentação dos experimentos",
+      "comentario": "A alternativa correta exagera ou distorce a leitura; o texto não autoriza essa conclusão.",
       "tempoEstimado": 35,
       "tags": [
         "pegadinha",
@@ -5148,22 +5148,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Leitura inadequada",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual leitura NAO se sustenta pelo texto \"A tarde pousou na janela / mansa como um livro aberto / e a casa inteira ficou ouvindo / o silencio do vento.\"?",
+      "enunciado": "Qual leitura NÃO se sustenta pelo texto \"A tarde pousou na janela / mansa como um livro aberto / e a casa inteira ficou ouvindo / o silencio do vento.\"?",
       "opcoes": [
         "contemplacao da tarde aparece como eixo central do texto.",
         "O texto busca sugerir sensacoes e imagens poeticas.",
-        "Poema e o genero mais compativel com o trecho.",
-        "o poema narra uma discussao barulhenta dentro da casa"
+        "Poema e o gênero mais compatível com o trecho.",
+        "o poema narra uma discussão barulhenta dentro da casa"
       ],
-      "correta": "o poema narra uma discussao barulhenta dentro da casa",
-      "comentario": "A alternativa correta exagera ou distorce a leitura; o texto nao autoriza essa conclusao.",
+      "correta": "o poema narra uma discussão barulhenta dentro da casa",
+      "comentario": "A alternativa correta exagera ou distorce a leitura; o texto não autoriza essa conclusão.",
       "tempoEstimado": 35,
       "tags": [
         "pegadinha",
@@ -5186,22 +5186,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Leitura inadequada",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual leitura NAO se sustenta pelo texto \"Escrevo para pedir mais horarios de onibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\"?",
+      "enunciado": "Qual leitura NÃO se sustenta pelo texto \"Escrevo para pedir mais horarios de ônibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\"?",
       "opcoes": [
         "O texto busca reivindicar melhoria no transporte.",
-        "Carta do leitor e o genero mais compativel com o trecho.",
-        "o autor elogia a regularidade dos horarios de onibus",
+        "Carta do leitor e o gênero mais compatível com o trecho.",
+        "o autor elogia a regularidade dos horarios de ônibus",
         "transporte publico insuficiente no bairro aparece como eixo central do texto."
       ],
-      "correta": "o autor elogia a regularidade dos horarios de onibus",
-      "comentario": "A alternativa correta exagera ou distorce a leitura; o texto nao autoriza essa conclusao.",
+      "correta": "o autor elogia a regularidade dos horarios de ônibus",
+      "comentario": "A alternativa correta exagera ou distorce a leitura; o texto não autoriza essa conclusão.",
       "tempoEstimado": 35,
       "tags": [
         "pegadinha",
@@ -5224,22 +5224,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Leitura inadequada",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual leitura NAO se sustenta pelo texto \"Energia solar e a energia obtida a partir da luz do Sol. Ela pode ser usada para gerar eletricidade e aquecer ambientes.\"?",
+      "enunciado": "Qual leitura NÃO se sustenta pelo texto \"Energia solar e a energia obtida a partir da luz do Sol. Ela pode ser usada para gerar eletricidade e aquecer ambientes.\"?",
       "opcoes": [
-        "Verbete e o genero mais compativel com o trecho.",
-        "o verbete critica o uso da energia solar",
-        "definicao de energia solar aparece como eixo central do texto.",
+        "Verbete e o gênero mais compatível com o trecho.",
+        "o verbete crítica o uso da energia solar",
+        "definição de energia solar aparece como eixo central do texto.",
         "O texto busca explicar um conceito."
       ],
-      "correta": "o verbete critica o uso da energia solar",
-      "comentario": "A alternativa correta exagera ou distorce a leitura; o texto nao autoriza essa conclusao.",
+      "correta": "o verbete crítica o uso da energia solar",
+      "comentario": "A alternativa correta exagera ou distorce a leitura; o texto não autoriza essa conclusão.",
       "tempoEstimado": 35,
       "tags": [
         "pegadinha",
@@ -5262,22 +5262,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Leitura inadequada",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual leitura NAO se sustenta pelo texto \"Pessoal, neste sobado faremos um mutirao para limpar a praca do bairro. Quem puder levar luvas e sacos de lixo ajudara ainda mais.\"?",
+      "enunciado": "Qual leitura NÃO se sustenta pelo texto \"Pessoal, neste sobado faremos um mutirao para limpar a praca do bairro. Quem puder levar luvas e sacos de lixo ajudara ainda mais.\"?",
       "opcoes": [
         "a mensagem informa o cancelamento da limpeza da praca",
-        "organizacao de um mutirao na praca aparece como eixo central do texto.",
+        "organização de um mutirao na praca aparece como eixo central do texto.",
         "O texto busca convocar e orientar participantes.",
-        "E-mail e o genero mais compativel com o trecho."
+        "E-mail e o gênero mais compatível com o trecho."
       ],
       "correta": "a mensagem informa o cancelamento da limpeza da praca",
-      "comentario": "A alternativa correta exagera ou distorce a leitura; o texto nao autoriza essa conclusao.",
+      "comentario": "A alternativa correta exagera ou distorce a leitura; o texto não autoriza essa conclusão.",
       "tempoEstimado": 35,
       "tags": [
         "pegadinha",
@@ -5300,22 +5300,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Leitura inadequada",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual leitura NAO se sustenta pelo texto \"O filme Caminhos do Bairro emociona sem exageros. Ao acompanhar a amizade entre dois adolescentes, a narrativa mostra conflitos reais e escolhas dificeis.\"?",
+      "enunciado": "Qual leitura NÃO se sustenta pelo texto \"O filme Caminhos do Bairro emociona sem exageros. Ao acompanhar a amizade entre dois adolescentes, a narrativa mostra conflitos reais e escolhas dificeis.\"?",
       "opcoes": [
-        "avaliacao de um filme sobre amizade e conflitos aparece como eixo central do texto.",
+        "avaliação de um filme sobre amizade e conflitos aparece como eixo central do texto.",
         "O texto busca avaliar e recomendar uma obra.",
-        "Resenha e o genero mais compativel com o trecho.",
+        "Resenha e o gênero mais compatível com o trecho.",
         "a resenha afirma que o filme e superficial e pouco emocionante"
       ],
       "correta": "a resenha afirma que o filme e superficial e pouco emocionante",
-      "comentario": "A alternativa correta exagera ou distorce a leitura; o texto nao autoriza essa conclusao.",
+      "comentario": "A alternativa correta exagera ou distorce a leitura; o texto não autoriza essa conclusão.",
       "tempoEstimado": 35,
       "tags": [
         "pegadinha",
@@ -5338,22 +5338,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Leitura inadequada",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual leitura NAO se sustenta pelo texto \"Hoje entrei na sala com o coracao acelerado, mas respirei fundo antes da prova. Quando li a primeira questao, percebi que o estudo da semana tinha valido a pena.\"?",
+      "enunciado": "Qual leitura NÃO se sustenta pelo texto \"Hoje entrei na sala com o coracao acelerado, mas respirei fundo antes da prova. Quando li a primeira questao, percebi que o estudo da semana tinha valido a pena.\"?",
       "opcoes": [
         "O texto busca registrar uma experiencia pessoal.",
-        "Diario e o genero mais compativel com o trecho.",
-        "o narrador conclui que estudar nao fez diferenca",
+        "Diario e o gênero mais compatível com o trecho.",
+        "o narrador conclui que estudar não fez diferenca",
         "ansiedade e confianca antes da prova aparece como eixo central do texto."
       ],
-      "correta": "o narrador conclui que estudar nao fez diferenca",
-      "comentario": "A alternativa correta exagera ou distorce a leitura; o texto nao autoriza essa conclusao.",
+      "correta": "o narrador conclui que estudar não fez diferenca",
+      "comentario": "A alternativa correta exagera ou distorce a leitura; o texto não autoriza essa conclusão.",
       "tempoEstimado": 35,
       "tags": [
         "pegadinha",
@@ -5376,21 +5376,21 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Sontese interpretativa",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa sintetiza melhor o sentido global do texto \"Bilhete no mural: Devolva o livro ate sexta-feira. Outras turmas tambem esperam por ele.\"?",
+      "enunciado": "Qual alternativa sintetiza melhor o sentido global do texto \"Bilhete no mural: Devolva o livro até sexta-feira. Outras turmas também esperam por ele.\"?",
       "opcoes": [
-        "a campanha usa linguagem direta para incentivar mudanca de habito",
-        "o texto noticia um evento escolar e destaca seu foco tematico",
-        "o texto combina orientacao pratica e nocao de responsabilidade coletiva",
+        "a campanha usa linguagem direta para incentivar mudança de hábito",
+        "o texto noticia um evento escolar e destaca seu foco temático",
+        "o texto combina orientacao prática e nocao de responsabilidade coletiva",
         "a cronica mostra que a solidariedade aparece em cenas comuns"
       ],
-      "correta": "o texto combina orientacao pratica e nocao de responsabilidade coletiva",
+      "correta": "o texto combina orientacao prática e nocao de responsabilidade coletiva",
       "comentario": "A melhor sontese e a que integra mais de uma pista importante do texto.",
       "tempoEstimado": 35,
       "tags": [
@@ -5414,19 +5414,19 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Sontese interpretativa",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa sintetiza melhor o sentido global do texto \"Quando a chuva comecou, a rua correu para dentro de casa. So a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\"?",
+      "enunciado": "Qual alternativa sintetiza melhor o sentido global do texto \"Quando a chuva comecou, a rua correu para dentro de casa. Só a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\"?",
       "opcoes": [
         "o poema transforma uma cena simples em experiencia sensovel",
         "a cronica mostra que a solidariedade aparece em cenas comuns",
-        "a campanha usa linguagem direta para incentivar mudanca de habito",
-        "o texto noticia um evento escolar e destaca seu foco tematico"
+        "a campanha usa linguagem direta para incentivar mudança de hábito",
+        "o texto noticia um evento escolar e destaca seu foco temático"
       ],
       "correta": "a cronica mostra que a solidariedade aparece em cenas comuns",
       "comentario": "A melhor sontese e a que integra mais de uma pista importante do texto.",
@@ -5452,8 +5452,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Sontese interpretativa",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -5461,12 +5461,12 @@ export const interpretacaoDeTexto = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa sintetiza melhor o sentido global do texto \"Troque o descartavel pelo duradouro. Leve sua garrafa reutilizavel e reduza o lixo todos os dias.\"?",
       "opcoes": [
-        "a campanha usa linguagem direta para incentivar mudanca de habito",
-        "o texto noticia um evento escolar e destaca seu foco tematico",
+        "a campanha usa linguagem direta para incentivar mudança de hábito",
+        "o texto noticia um evento escolar e destaca seu foco temático",
         "o poema transforma uma cena simples em experiencia sensovel",
         "o autor usa a carta para denunciar um problema e pedir providencias"
       ],
-      "correta": "a campanha usa linguagem direta para incentivar mudanca de habito",
+      "correta": "a campanha usa linguagem direta para incentivar mudança de hábito",
       "comentario": "A melhor sontese e a que integra mais de uma pista importante do texto.",
       "tempoEstimado": 35,
       "tags": [
@@ -5490,21 +5490,21 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Sontese interpretativa",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa sintetiza melhor o sentido global do texto \"A escola abriu a Feira de Ciencias com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\"?",
+      "enunciado": "Qual alternativa sintetiza melhor o sentido global do texto \"A escola abriu a Feira de Ciências com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\"?",
       "opcoes": [
         "o poema transforma uma cena simples em experiencia sensovel",
         "o autor usa a carta para denunciar um problema e pedir providencias",
         "o texto define o termo e apresenta aplicacoes",
-        "o texto noticia um evento escolar e destaca seu foco tematico"
+        "o texto noticia um evento escolar e destaca seu foco temático"
       ],
-      "correta": "o texto noticia um evento escolar e destaca seu foco tematico",
+      "correta": "o texto noticia um evento escolar e destaca seu foco temático",
       "comentario": "A melhor sontese e a que integra mais de uma pista importante do texto.",
       "tempoEstimado": 35,
       "tags": [
@@ -5528,8 +5528,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Sontese interpretativa",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -5538,7 +5538,7 @@ export const interpretacaoDeTexto = {
       "enunciado": "Qual alternativa sintetiza melhor o sentido global do texto \"A tarde pousou na janela / mansa como um livro aberto / e a casa inteira ficou ouvindo / o silencio do vento.\"?",
       "opcoes": [
         "o texto define o termo e apresenta aplicacoes",
-        "o e-mail mobiliza o grupo e organiza uma acao comunitaria",
+        "o e-mail mobiliza o grupo e organiza uma ação comunitaria",
         "o poema transforma uma cena simples em experiencia sensovel",
         "o autor usa a carta para denunciar um problema e pedir providencias"
       ],
@@ -5566,19 +5566,19 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Sontese interpretativa",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa sintetiza melhor o sentido global do texto \"Escrevo para pedir mais horarios de onibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\"?",
+      "enunciado": "Qual alternativa sintetiza melhor o sentido global do texto \"Escrevo para pedir mais horarios de ônibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\"?",
       "opcoes": [
-        "o texto mistura informacao sobre o enredo e julgamento critico",
+        "o texto mistura informação sobre o enredo e julgamento critico",
         "o autor usa a carta para denunciar um problema e pedir providencias",
         "o texto define o termo e apresenta aplicacoes",
-        "o e-mail mobiliza o grupo e organiza uma acao comunitaria"
+        "o e-mail mobiliza o grupo e organiza uma ação comunitaria"
       ],
       "correta": "o autor usa a carta para denunciar um problema e pedir providencias",
       "comentario": "A melhor sontese e a que integra mais de uma pista importante do texto.",
@@ -5604,8 +5604,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Sontese interpretativa",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -5614,8 +5614,8 @@ export const interpretacaoDeTexto = {
       "enunciado": "Qual alternativa sintetiza melhor o sentido global do texto \"Energia solar e a energia obtida a partir da luz do Sol. Ela pode ser usada para gerar eletricidade e aquecer ambientes.\"?",
       "opcoes": [
         "o texto define o termo e apresenta aplicacoes",
-        "o e-mail mobiliza o grupo e organiza uma acao comunitaria",
-        "o texto mistura informacao sobre o enredo e julgamento critico",
+        "o e-mail mobiliza o grupo e organiza uma ação comunitaria",
+        "o texto mistura informação sobre o enredo e julgamento critico",
         "o diario relata uma experiencia escolar destacando emocao e aprendizado"
       ],
       "correta": "o texto define o termo e apresenta aplicacoes",
@@ -5642,8 +5642,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Sontese interpretativa",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -5651,12 +5651,12 @@ export const interpretacaoDeTexto = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa sintetiza melhor o sentido global do texto \"Pessoal, neste sobado faremos um mutirao para limpar a praca do bairro. Quem puder levar luvas e sacos de lixo ajudara ainda mais.\"?",
       "opcoes": [
-        "o texto mistura informacao sobre o enredo e julgamento critico",
+        "o texto mistura informação sobre o enredo e julgamento critico",
         "o diario relata uma experiencia escolar destacando emocao e aprendizado",
-        "o texto combina orientacao pratica e nocao de responsabilidade coletiva",
-        "o e-mail mobiliza o grupo e organiza uma acao comunitaria"
+        "o texto combina orientacao prática e nocao de responsabilidade coletiva",
+        "o e-mail mobiliza o grupo e organiza uma ação comunitaria"
       ],
-      "correta": "o e-mail mobiliza o grupo e organiza uma acao comunitaria",
+      "correta": "o e-mail mobiliza o grupo e organiza uma ação comunitaria",
       "comentario": "A melhor sontese e a que integra mais de uma pista importante do texto.",
       "tempoEstimado": 35,
       "tags": [
@@ -5680,8 +5680,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Sontese interpretativa",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -5689,12 +5689,12 @@ export const interpretacaoDeTexto = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa sintetiza melhor o sentido global do texto \"O filme Caminhos do Bairro emociona sem exageros. Ao acompanhar a amizade entre dois adolescentes, a narrativa mostra conflitos reais e escolhas dificeis.\"?",
       "opcoes": [
-        "o texto combina orientacao pratica e nocao de responsabilidade coletiva",
+        "o texto combina orientacao prática e nocao de responsabilidade coletiva",
         "a cronica mostra que a solidariedade aparece em cenas comuns",
-        "o texto mistura informacao sobre o enredo e julgamento critico",
+        "o texto mistura informação sobre o enredo e julgamento critico",
         "o diario relata uma experiencia escolar destacando emocao e aprendizado"
       ],
-      "correta": "o texto mistura informacao sobre o enredo e julgamento critico",
+      "correta": "o texto mistura informação sobre o enredo e julgamento critico",
       "comentario": "A melhor sontese e a que integra mais de uma pista importante do texto.",
       "tempoEstimado": 35,
       "tags": [
@@ -5718,8 +5718,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Sontese interpretativa",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -5727,9 +5727,9 @@ export const interpretacaoDeTexto = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa sintetiza melhor o sentido global do texto \"Hoje entrei na sala com o coracao acelerado, mas respirei fundo antes da prova. Quando li a primeira questao, percebi que o estudo da semana tinha valido a pena.\"?",
       "opcoes": [
-        "a campanha usa linguagem direta para incentivar mudanca de habito",
+        "a campanha usa linguagem direta para incentivar mudança de hábito",
         "o diario relata uma experiencia escolar destacando emocao e aprendizado",
-        "o texto combina orientacao pratica e nocao de responsabilidade coletiva",
+        "o texto combina orientacao prática e nocao de responsabilidade coletiva",
         "a cronica mostra que a solidariedade aparece em cenas comuns"
       ],
       "correta": "o diario relata uma experiencia escolar destacando emocao e aprendizado",
@@ -5756,22 +5756,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Mesmo sem dizer isso literalmente, o texto \"Bilhete no mural: Devolva o livro ate sexta-feira. Outras turmas tambem esperam por ele.\" permite concluir que:",
+      "enunciado": "Mesmo sem dizer isso literalmente, o texto \"Bilhete no mural: Devolva o livro até sexta-feira. Outras turmas também esperam por ele.\" permite concluir que:",
       "opcoes": [
-        "escolhas repetidas no cotidiano tambem tem efeito ambiental",
+        "escolhas repetidas no cotidiano também tem efeito ambiental",
         "compartilhar materiais exige cumprir combinados",
         "o bilhete proibe novas retiradas de livros",
         "o texto valoriza a humanidade presente na rotina"
       ],
       "correta": "compartilhar materiais exige cumprir combinados",
-      "comentario": "A interpretacao indireta nasce de pistas espalhadas pelo texto, nao de copia literal.",
+      "comentario": "A interpretação indireta nasce de pistas espalhadas pelo texto, não de copia literal.",
       "tempoEstimado": 40,
       "tags": [
         "indireta",
@@ -5794,22 +5794,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Mesmo sem dizer isso literalmente, o texto \"Quando a chuva comecou, a rua correu para dentro de casa. So a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\" permite concluir que:",
+      "enunciado": "Mesmo sem dizer isso literalmente, o texto \"Quando a chuva comecou, a rua correu para dentro de casa. Só a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\" permite concluir que:",
       "opcoes": [
         "o texto valoriza a humanidade presente na rotina",
         "a chuva impediu completamente a convivencia entre os moradores",
-        "escolhas repetidas no cotidiano tambem tem efeito ambiental",
+        "escolhas repetidas no cotidiano também tem efeito ambiental",
         "a escola procura aproximar estudo e comunidade"
       ],
       "correta": "o texto valoriza a humanidade presente na rotina",
-      "comentario": "A interpretacao indireta nasce de pistas espalhadas pelo texto, nao de copia literal.",
+      "comentario": "A interpretação indireta nasce de pistas espalhadas pelo texto, não de copia literal.",
       "tempoEstimado": 40,
       "tags": [
         "indireta",
@@ -5832,9 +5832,9 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
@@ -5843,11 +5843,11 @@ export const interpretacaoDeTexto = {
       "opcoes": [
         "a campanha informa que qualquer tipo de garrafa deve ser descartada todos os dias",
         "a escola procura aproximar estudo e comunidade",
-        "o silencio tambem pode comunicar sensacoes",
-        "escolhas repetidas no cotidiano tambem tem efeito ambiental"
+        "o silencio também pode comunicar sensacoes",
+        "escolhas repetidas no cotidiano também tem efeito ambiental"
       ],
-      "correta": "escolhas repetidas no cotidiano tambem tem efeito ambiental",
-      "comentario": "A interpretacao indireta nasce de pistas espalhadas pelo texto, nao de copia literal.",
+      "correta": "escolhas repetidas no cotidiano também tem efeito ambiental",
+      "comentario": "A interpretação indireta nasce de pistas espalhadas pelo texto, não de copia literal.",
       "tempoEstimado": 40,
       "tags": [
         "indireta",
@@ -5870,22 +5870,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Mesmo sem dizer isso literalmente, o texto \"A escola abriu a Feira de Ciencias com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\" permite concluir que:",
+      "enunciado": "Mesmo sem dizer isso literalmente, o texto \"A escola abriu a Feira de Ciências com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\" permite concluir que:",
       "opcoes": [
-        "o silencio tambem pode comunicar sensacoes",
+        "o silencio também pode comunicar sensacoes",
         "o texto sugere que a mobilidade interfere na rotina de estudo e trabalho",
         "a escola procura aproximar estudo e comunidade",
-        "apenas professores participaram da apresentacao dos experimentos"
+        "apenas professores participaram da apresentação dos experimentos"
       ],
       "correta": "a escola procura aproximar estudo e comunidade",
-      "comentario": "A interpretacao indireta nasce de pistas espalhadas pelo texto, nao de copia literal.",
+      "comentario": "A interpretação indireta nasce de pistas espalhadas pelo texto, não de copia literal.",
       "tempoEstimado": 40,
       "tags": [
         "indireta",
@@ -5908,22 +5908,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
       "enunciado": "Mesmo sem dizer isso literalmente, o texto \"A tarde pousou na janela / mansa como um livro aberto / e a casa inteira ficou ouvindo / o silencio do vento.\" permite concluir que:",
       "opcoes": [
-        "o leitor encontra uma explicacao basica e direta sobre o tema",
-        "o silencio tambem pode comunicar sensacoes",
-        "o poema narra uma discussao barulhenta dentro da casa",
+        "o leitor encontra uma explicacao básica e direta sobre o tema",
+        "o silencio também pode comunicar sensacoes",
+        "o poema narra uma discussão barulhenta dentro da casa",
         "o texto sugere que a mobilidade interfere na rotina de estudo e trabalho"
       ],
-      "correta": "o silencio tambem pode comunicar sensacoes",
-      "comentario": "A interpretacao indireta nasce de pistas espalhadas pelo texto, nao de copia literal.",
+      "correta": "o silencio também pode comunicar sensacoes",
+      "comentario": "A interpretação indireta nasce de pistas espalhadas pelo texto, não de copia literal.",
       "tempoEstimado": 40,
       "tags": [
         "indireta",
@@ -5946,22 +5946,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Mesmo sem dizer isso literalmente, o texto \"Escrevo para pedir mais horarios de onibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\" permite concluir que:",
+      "enunciado": "Mesmo sem dizer isso literalmente, o texto \"Escrevo para pedir mais horarios de ônibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\" permite concluir que:",
       "opcoes": [
         "o texto sugere que a mobilidade interfere na rotina de estudo e trabalho",
-        "o autor elogia a regularidade dos horarios de onibus",
-        "o leitor encontra uma explicacao basica e direta sobre o tema",
+        "o autor elogia a regularidade dos horarios de ônibus",
+        "o leitor encontra uma explicacao básica e direta sobre o tema",
         "cuidar do espaco publico depende de participacao compartilhada"
       ],
       "correta": "o texto sugere que a mobilidade interfere na rotina de estudo e trabalho",
-      "comentario": "A interpretacao indireta nasce de pistas espalhadas pelo texto, nao de copia literal.",
+      "comentario": "A interpretação indireta nasce de pistas espalhadas pelo texto, não de copia literal.",
       "tempoEstimado": 40,
       "tags": [
         "indireta",
@@ -5984,22 +5984,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
       "enunciado": "Mesmo sem dizer isso literalmente, o texto \"Energia solar e a energia obtida a partir da luz do Sol. Ela pode ser usada para gerar eletricidade e aquecer ambientes.\" permite concluir que:",
       "opcoes": [
-        "o verbete critica o uso da energia solar",
+        "o verbete crítica o uso da energia solar",
         "cuidar do espaco publico depende de participacao compartilhada",
         "o resenhista sugere que o filme emociona por ser verossimil",
-        "o leitor encontra uma explicacao basica e direta sobre o tema"
+        "o leitor encontra uma explicacao básica e direta sobre o tema"
       ],
-      "correta": "o leitor encontra uma explicacao basica e direta sobre o tema",
-      "comentario": "A interpretacao indireta nasce de pistas espalhadas pelo texto, nao de copia literal.",
+      "correta": "o leitor encontra uma explicacao básica e direta sobre o tema",
+      "comentario": "A interpretação indireta nasce de pistas espalhadas pelo texto, não de copia literal.",
       "tempoEstimado": 40,
       "tags": [
         "indireta",
@@ -6022,9 +6022,9 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
@@ -6037,7 +6037,7 @@ export const interpretacaoDeTexto = {
         "a mensagem informa o cancelamento da limpeza da praca"
       ],
       "correta": "cuidar do espaco publico depende de participacao compartilhada",
-      "comentario": "A interpretacao indireta nasce de pistas espalhadas pelo texto, nao de copia literal.",
+      "comentario": "A interpretação indireta nasce de pistas espalhadas pelo texto, não de copia literal.",
       "tempoEstimado": 40,
       "tags": [
         "indireta",
@@ -6060,9 +6060,9 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
@@ -6075,7 +6075,7 @@ export const interpretacaoDeTexto = {
         "preparacao pode transformar ansiedade em seguranca"
       ],
       "correta": "o resenhista sugere que o filme emociona por ser verossimil",
-      "comentario": "A interpretacao indireta nasce de pistas espalhadas pelo texto, nao de copia literal.",
+      "comentario": "A interpretação indireta nasce de pistas espalhadas pelo texto, não de copia literal.",
       "tempoEstimado": 40,
       "tags": [
         "indireta",
@@ -6098,9 +6098,9 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
@@ -6108,12 +6108,12 @@ export const interpretacaoDeTexto = {
       "enunciado": "Mesmo sem dizer isso literalmente, o texto \"Hoje entrei na sala com o coracao acelerado, mas respirei fundo antes da prova. Quando li a primeira questao, percebi que o estudo da semana tinha valido a pena.\" permite concluir que:",
       "opcoes": [
         "preparacao pode transformar ansiedade em seguranca",
-        "o narrador conclui que estudar nao fez diferenca",
+        "o narrador conclui que estudar não fez diferenca",
         "compartilhar materiais exige cumprir combinados",
         "o texto valoriza a humanidade presente na rotina"
       ],
       "correta": "preparacao pode transformar ansiedade em seguranca",
-      "comentario": "A interpretacao indireta nasce de pistas espalhadas pelo texto, nao de copia literal.",
+      "comentario": "A interpretação indireta nasce de pistas espalhadas pelo texto, não de copia literal.",
       "tempoEstimado": 40,
       "tags": [
         "indireta",
@@ -6136,21 +6136,21 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Erro comum",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Para evitar uma leitura apressada do texto \"Bilhete no mural: Devolva o livro ate sexta-feira. Outras turmas tambem esperam por ele.\", o leitor deve entender que:",
+      "enunciado": "Para evitar uma leitura apressada do texto \"Bilhete no mural: Devolva o livro até sexta-feira. Outras turmas também esperam por ele.\", o leitor deve entender que:",
       "opcoes": [
-        "o texto combina orientacao pratica e nocao de responsabilidade coletiva",
+        "o texto combina orientacao prática e nocao de responsabilidade coletiva",
         "o bilhete proibe novas retiradas de livros",
-        "O livro deve ser devolvido ate sexta-feira.",
+        "O livro deve ser devolvido até sexta-feira.",
         "a chuva impediu completamente a convivencia entre os moradores"
       ],
-      "correta": "o texto combina orientacao pratica e nocao de responsabilidade coletiva",
+      "correta": "o texto combina orientacao prática e nocao de responsabilidade coletiva",
       "comentario": "A alternativa correta evita a pegadinha e preserva o nucleo de sentido do texto.",
       "tempoEstimado": 40,
       "tags": [
@@ -6174,14 +6174,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Erro comum",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Para evitar uma leitura apressada do texto \"Quando a chuva comecou, a rua correu para dentro de casa. So a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\", o leitor deve entender que:",
+      "enunciado": "Para evitar uma leitura apressada do texto \"Quando a chuva comecou, a rua correu para dentro de casa. Só a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\", o leitor deve entender que:",
       "opcoes": [
         "a chuva impediu completamente a convivencia entre os moradores",
         "A vizinha distribuia cafe a quem chegava molhado.",
@@ -6212,8 +6212,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Erro comum",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -6222,11 +6222,11 @@ export const interpretacaoDeTexto = {
       "enunciado": "Para evitar uma leitura apressada do texto \"Troque o descartavel pelo duradouro. Leve sua garrafa reutilizavel e reduza o lixo todos os dias.\", o leitor deve entender que:",
       "opcoes": [
         "O texto recomenda levar uma garrafa reutilizavel.",
-        "apenas professores participaram da apresentacao dos experimentos",
-        "a campanha usa linguagem direta para incentivar mudanca de habito",
+        "apenas professores participaram da apresentação dos experimentos",
+        "a campanha usa linguagem direta para incentivar mudança de hábito",
         "a campanha informa que qualquer tipo de garrafa deve ser descartada todos os dias"
       ],
-      "correta": "a campanha usa linguagem direta para incentivar mudanca de habito",
+      "correta": "a campanha usa linguagem direta para incentivar mudança de hábito",
       "comentario": "A alternativa correta evita a pegadinha e preserva o nucleo de sentido do texto.",
       "tempoEstimado": 40,
       "tags": [
@@ -6250,21 +6250,21 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Erro comum",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Para evitar uma leitura apressada do texto \"A escola abriu a Feira de Ciencias com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\", o leitor deve entender que:",
+      "enunciado": "Para evitar uma leitura apressada do texto \"A escola abriu a Feira de Ciências com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\", o leitor deve entender que:",
       "opcoes": [
-        "o poema narra uma discussao barulhenta dentro da casa",
-        "o texto noticia um evento escolar e destaca seu foco tematico",
-        "apenas professores participaram da apresentacao dos experimentos",
+        "o poema narra uma discussão barulhenta dentro da casa",
+        "o texto noticia um evento escolar e destaca seu foco temático",
+        "apenas professores participaram da apresentação dos experimentos",
         "Os projetos apresentados tratavam de energia limpa."
       ],
-      "correta": "o texto noticia um evento escolar e destaca seu foco tematico",
+      "correta": "o texto noticia um evento escolar e destaca seu foco temático",
       "comentario": "A alternativa correta evita a pegadinha e preserva o nucleo de sentido do texto.",
       "tempoEstimado": 40,
       "tags": [
@@ -6288,8 +6288,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Erro comum",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -6298,9 +6298,9 @@ export const interpretacaoDeTexto = {
       "enunciado": "Para evitar uma leitura apressada do texto \"A tarde pousou na janela / mansa como um livro aberto / e a casa inteira ficou ouvindo / o silencio do vento.\", o leitor deve entender que:",
       "opcoes": [
         "o poema transforma uma cena simples em experiencia sensovel",
-        "o poema narra uma discussao barulhenta dentro da casa",
+        "o poema narra uma discussão barulhenta dentro da casa",
         "A tarde e comparada a um livro aberto.",
-        "o autor elogia a regularidade dos horarios de onibus"
+        "o autor elogia a regularidade dos horarios de ônibus"
       ],
       "correta": "o poema transforma uma cena simples em experiencia sensovel",
       "comentario": "A alternativa correta evita a pegadinha e preserva o nucleo de sentido do texto.",
@@ -6326,18 +6326,18 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Erro comum",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Para evitar uma leitura apressada do texto \"Escrevo para pedir mais horarios de onibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\", o leitor deve entender que:",
+      "enunciado": "Para evitar uma leitura apressada do texto \"Escrevo para pedir mais horarios de ônibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\", o leitor deve entender que:",
       "opcoes": [
-        "o autor elogia a regularidade dos horarios de onibus",
+        "o autor elogia a regularidade dos horarios de ônibus",
         "Os atrasos afetam estudantes e trabalhadores.",
-        "o verbete critica o uso da energia solar",
+        "o verbete crítica o uso da energia solar",
         "o autor usa a carta para denunciar um problema e pedir providencias"
       ],
       "correta": "o autor usa a carta para denunciar um problema e pedir providencias",
@@ -6364,8 +6364,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Erro comum",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -6376,7 +6376,7 @@ export const interpretacaoDeTexto = {
         "A energia solar pode gerar eletricidade.",
         "a mensagem informa o cancelamento da limpeza da praca",
         "o texto define o termo e apresenta aplicacoes",
-        "o verbete critica o uso da energia solar"
+        "o verbete crítica o uso da energia solar"
       ],
       "correta": "o texto define o termo e apresenta aplicacoes",
       "comentario": "A alternativa correta evita a pegadinha e preserva o nucleo de sentido do texto.",
@@ -6402,8 +6402,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Erro comum",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -6412,11 +6412,11 @@ export const interpretacaoDeTexto = {
       "enunciado": "Para evitar uma leitura apressada do texto \"Pessoal, neste sobado faremos um mutirao para limpar a praca do bairro. Quem puder levar luvas e sacos de lixo ajudara ainda mais.\", o leitor deve entender que:",
       "opcoes": [
         "a resenha afirma que o filme e superficial e pouco emocionante",
-        "o e-mail mobiliza o grupo e organiza uma acao comunitaria",
+        "o e-mail mobiliza o grupo e organiza uma ação comunitaria",
         "a mensagem informa o cancelamento da limpeza da praca",
-        "O mutirao sera realizado no sobado."
+        "O mutirao será realizado no sobado."
       ],
-      "correta": "o e-mail mobiliza o grupo e organiza uma acao comunitaria",
+      "correta": "o e-mail mobiliza o grupo e organiza uma ação comunitaria",
       "comentario": "A alternativa correta evita a pegadinha e preserva o nucleo de sentido do texto.",
       "tempoEstimado": 40,
       "tags": [
@@ -6440,8 +6440,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Erro comum",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -6449,12 +6449,12 @@ export const interpretacaoDeTexto = {
       "tipo": "multipla_escolha",
       "enunciado": "Para evitar uma leitura apressada do texto \"O filme Caminhos do Bairro emociona sem exageros. Ao acompanhar a amizade entre dois adolescentes, a narrativa mostra conflitos reais e escolhas dificeis.\", o leitor deve entender que:",
       "opcoes": [
-        "o texto mistura informacao sobre o enredo e julgamento critico",
+        "o texto mistura informação sobre o enredo e julgamento critico",
         "a resenha afirma que o filme e superficial e pouco emocionante",
         "A narrativa acompanha a amizade entre dois adolescentes.",
-        "o narrador conclui que estudar nao fez diferenca"
+        "o narrador conclui que estudar não fez diferenca"
       ],
-      "correta": "o texto mistura informacao sobre o enredo e julgamento critico",
+      "correta": "o texto mistura informação sobre o enredo e julgamento critico",
       "comentario": "A alternativa correta evita a pegadinha e preserva o nucleo de sentido do texto.",
       "tempoEstimado": 40,
       "tags": [
@@ -6478,8 +6478,8 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Erro comum",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -6487,7 +6487,7 @@ export const interpretacaoDeTexto = {
       "tipo": "multipla_escolha",
       "enunciado": "Para evitar uma leitura apressada do texto \"Hoje entrei na sala com o coracao acelerado, mas respirei fundo antes da prova. Quando li a primeira questao, percebi que o estudo da semana tinha valido a pena.\", o leitor deve entender que:",
       "opcoes": [
-        "o narrador conclui que estudar nao fez diferenca",
+        "o narrador conclui que estudar não fez diferenca",
         "O narrador respirou fundo antes da prova.",
         "o bilhete proibe novas retiradas de livros",
         "o diario relata uma experiencia escolar destacando emocao e aprendizado"
@@ -6516,22 +6516,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual reescrita preserva o sentido central do texto \"Bilhete no mural: Devolva o livro ate sexta-feira. Outras turmas tambem esperam por ele.\"?",
+      "enunciado": "Qual reescrita preserva o sentido central do texto \"Bilhete no mural: Devolva o livro até sexta-feira. Outras turmas também esperam por ele.\"?",
       "opcoes": [
         "Mesmo com a chuva, um gesto simples fez a rua parecer mais acolhedora.",
-        "Ao substituir itens descartaveis por uma garrafa reutilizavel, o leitor reduz a producao de lixo.",
-        "A materia informa que estudantes do 1 ano mostraram projetos de energia limpa na Feira de Ciencias.",
-        "Como outras turmas tambem vao usar o exemplar, a devolucao precisa ocorrer ate sexta-feira."
+        "Ao substituir itens descartaveis por uma garrafa reutilizavel, o leitor reduz a produção de lixo.",
+        "A materia informa que estudantes do 1 ano mostraram projetos de energia limpa na Feira de Ciências.",
+        "Como outras turmas também vao usar o exemplar, a devolucao precisa ocorrer até sexta-feira."
       ],
-      "correta": "Como outras turmas tambem vao usar o exemplar, a devolucao precisa ocorrer ate sexta-feira.",
-      "comentario": "A equivalencia correta mantem a ideia central sem alterar o sentido.",
+      "correta": "Como outras turmas também vao usar o exemplar, a devolucao precisa ocorrer até sexta-feira.",
+      "comentario": "A equivalência correta mantem a ideia central sem alterar o sentido.",
       "tempoEstimado": 40,
       "tags": [
         "equivalencia",
@@ -6554,22 +6554,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual reescrita preserva o sentido central do texto \"Quando a chuva comecou, a rua correu para dentro de casa. So a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\"?",
+      "enunciado": "Qual reescrita preserva o sentido central do texto \"Quando a chuva comecou, a rua correu para dentro de casa. Só a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\"?",
       "opcoes": [
-        "A materia informa que estudantes do 1 ano mostraram projetos de energia limpa na Feira de Ciencias.",
+        "A materia informa que estudantes do 1 ano mostraram projetos de energia limpa na Feira de Ciências.",
         "Por meio de imagens suaves, o poema apresenta uma tarde silenciosa e tranquila.",
         "Mesmo com a chuva, um gesto simples fez a rua parecer mais acolhedora.",
-        "Ao substituir itens descartaveis por uma garrafa reutilizavel, o leitor reduz a producao de lixo."
+        "Ao substituir itens descartaveis por uma garrafa reutilizavel, o leitor reduz a produção de lixo."
       ],
       "correta": "Mesmo com a chuva, um gesto simples fez a rua parecer mais acolhedora.",
-      "comentario": "A equivalencia correta mantem a ideia central sem alterar o sentido.",
+      "comentario": "A equivalência correta mantem a ideia central sem alterar o sentido.",
       "tempoEstimado": 40,
       "tags": [
         "equivalencia",
@@ -6592,22 +6592,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Qual reescrita preserva o sentido central do texto \"Troque o descartavel pelo duradouro. Leve sua garrafa reutilizavel e reduza o lixo todos os dias.\"?",
       "opcoes": [
-        "O autor pede ampliacao de horarios porque os atrasos do onibus tem atrapalhado a rotina do bairro.",
-        "Ao substituir itens descartaveis por uma garrafa reutilizavel, o leitor reduz a producao de lixo.",
-        "A materia informa que estudantes do 1 ano mostraram projetos de energia limpa na Feira de Ciencias.",
+        "O autor pede ampliacao de horarios porque os atrasos do ônibus tem atrapalhado a rotina do bairro.",
+        "Ao substituir itens descartaveis por uma garrafa reutilizavel, o leitor reduz a produção de lixo.",
+        "A materia informa que estudantes do 1 ano mostraram projetos de energia limpa na Feira de Ciências.",
         "Por meio de imagens suaves, o poema apresenta uma tarde silenciosa e tranquila."
       ],
-      "correta": "Ao substituir itens descartaveis por uma garrafa reutilizavel, o leitor reduz a producao de lixo.",
-      "comentario": "A equivalencia correta mantem a ideia central sem alterar o sentido.",
+      "correta": "Ao substituir itens descartaveis por uma garrafa reutilizavel, o leitor reduz a produção de lixo.",
+      "comentario": "A equivalência correta mantem a ideia central sem alterar o sentido.",
       "tempoEstimado": 40,
       "tags": [
         "equivalencia",
@@ -6630,22 +6630,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual reescrita preserva o sentido central do texto \"A escola abriu a Feira de Ciencias com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\"?",
+      "enunciado": "Qual reescrita preserva o sentido central do texto \"A escola abriu a Feira de Ciências com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\"?",
       "opcoes": [
-        "A materia informa que estudantes do 1 ano mostraram projetos de energia limpa na Feira de Ciencias.",
+        "A materia informa que estudantes do 1 ano mostraram projetos de energia limpa na Feira de Ciências.",
         "Por meio de imagens suaves, o poema apresenta uma tarde silenciosa e tranquila.",
-        "O autor pede ampliacao de horarios porque os atrasos do onibus tem atrapalhado a rotina do bairro.",
+        "O autor pede ampliacao de horarios porque os atrasos do ônibus tem atrapalhado a rotina do bairro.",
         "Trata-se de um texto que define o que e energia solar e indica duas utilidades dessa fonte."
       ],
-      "correta": "A materia informa que estudantes do 1 ano mostraram projetos de energia limpa na Feira de Ciencias.",
-      "comentario": "A equivalencia correta mantem a ideia central sem alterar o sentido.",
+      "correta": "A materia informa que estudantes do 1 ano mostraram projetos de energia limpa na Feira de Ciências.",
+      "comentario": "A equivalência correta mantem a ideia central sem alterar o sentido.",
       "tempoEstimado": 40,
       "tags": [
         "equivalencia",
@@ -6668,22 +6668,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Qual reescrita preserva o sentido central do texto \"A tarde pousou na janela / mansa como um livro aberto / e a casa inteira ficou ouvindo / o silencio do vento.\"?",
       "opcoes": [
-        "O autor pede ampliacao de horarios porque os atrasos do onibus tem atrapalhado a rotina do bairro.",
+        "O autor pede ampliacao de horarios porque os atrasos do ônibus tem atrapalhado a rotina do bairro.",
         "Trata-se de um texto que define o que e energia solar e indica duas utilidades dessa fonte.",
         "O e-mail chama as pessoas para limpar a praca e pede que levem materiais de apoio.",
         "Por meio de imagens suaves, o poema apresenta uma tarde silenciosa e tranquila."
       ],
       "correta": "Por meio de imagens suaves, o poema apresenta uma tarde silenciosa e tranquila.",
-      "comentario": "A equivalencia correta mantem a ideia central sem alterar o sentido.",
+      "comentario": "A equivalência correta mantem a ideia central sem alterar o sentido.",
       "tempoEstimado": 40,
       "tags": [
         "equivalencia",
@@ -6706,22 +6706,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual reescrita preserva o sentido central do texto \"Escrevo para pedir mais horarios de onibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\"?",
+      "enunciado": "Qual reescrita preserva o sentido central do texto \"Escrevo para pedir mais horarios de ônibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\"?",
       "opcoes": [
         "O e-mail chama as pessoas para limpar a praca e pede que levem materiais de apoio.",
         "A resenha apresenta o filme de modo favoravel, destacando a amizade dos personagens e os conflitos que enfrentam.",
-        "O autor pede ampliacao de horarios porque os atrasos do onibus tem atrapalhado a rotina do bairro.",
+        "O autor pede ampliacao de horarios porque os atrasos do ônibus tem atrapalhado a rotina do bairro.",
         "Trata-se de um texto que define o que e energia solar e indica duas utilidades dessa fonte."
       ],
-      "correta": "O autor pede ampliacao de horarios porque os atrasos do onibus tem atrapalhado a rotina do bairro.",
-      "comentario": "A equivalencia correta mantem a ideia central sem alterar o sentido.",
+      "correta": "O autor pede ampliacao de horarios porque os atrasos do ônibus tem atrapalhado a rotina do bairro.",
+      "comentario": "A equivalência correta mantem a ideia central sem alterar o sentido.",
       "tempoEstimado": 40,
       "tags": [
         "equivalencia",
@@ -6744,9 +6744,9 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -6759,7 +6759,7 @@ export const interpretacaoDeTexto = {
         "A resenha apresenta o filme de modo favoravel, destacando a amizade dos personagens e os conflitos que enfrentam."
       ],
       "correta": "Trata-se de um texto que define o que e energia solar e indica duas utilidades dessa fonte.",
-      "comentario": "A equivalencia correta mantem a ideia central sem alterar o sentido.",
+      "comentario": "A equivalência correta mantem a ideia central sem alterar o sentido.",
       "tempoEstimado": 40,
       "tags": [
         "equivalencia",
@@ -6782,9 +6782,9 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -6794,10 +6794,10 @@ export const interpretacaoDeTexto = {
         "O e-mail chama as pessoas para limpar a praca e pede que levem materiais de apoio.",
         "A resenha apresenta o filme de modo favoravel, destacando a amizade dos personagens e os conflitos que enfrentam.",
         "O registro mostra que, apesar do nervosismo inicial, a preparacao ajudou o estudante a ganhar confianca.",
-        "Como outras turmas tambem vao usar o exemplar, a devolucao precisa ocorrer ate sexta-feira."
+        "Como outras turmas também vao usar o exemplar, a devolucao precisa ocorrer até sexta-feira."
       ],
       "correta": "O e-mail chama as pessoas para limpar a praca e pede que levem materiais de apoio.",
-      "comentario": "A equivalencia correta mantem a ideia central sem alterar o sentido.",
+      "comentario": "A equivalência correta mantem a ideia central sem alterar o sentido.",
       "tempoEstimado": 40,
       "tags": [
         "equivalencia",
@@ -6820,9 +6820,9 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -6830,12 +6830,12 @@ export const interpretacaoDeTexto = {
       "enunciado": "Qual reescrita preserva o sentido central do texto \"O filme Caminhos do Bairro emociona sem exageros. Ao acompanhar a amizade entre dois adolescentes, a narrativa mostra conflitos reais e escolhas dificeis.\"?",
       "opcoes": [
         "O registro mostra que, apesar do nervosismo inicial, a preparacao ajudou o estudante a ganhar confianca.",
-        "Como outras turmas tambem vao usar o exemplar, a devolucao precisa ocorrer ate sexta-feira.",
+        "Como outras turmas também vao usar o exemplar, a devolucao precisa ocorrer até sexta-feira.",
         "Mesmo com a chuva, um gesto simples fez a rua parecer mais acolhedora.",
         "A resenha apresenta o filme de modo favoravel, destacando a amizade dos personagens e os conflitos que enfrentam."
       ],
       "correta": "A resenha apresenta o filme de modo favoravel, destacando a amizade dos personagens e os conflitos que enfrentam.",
-      "comentario": "A equivalencia correta mantem a ideia central sem alterar o sentido.",
+      "comentario": "A equivalência correta mantem a ideia central sem alterar o sentido.",
       "tempoEstimado": 40,
       "tags": [
         "equivalencia",
@@ -6858,9 +6858,9 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -6868,12 +6868,12 @@ export const interpretacaoDeTexto = {
       "enunciado": "Qual reescrita preserva o sentido central do texto \"Hoje entrei na sala com o coracao acelerado, mas respirei fundo antes da prova. Quando li a primeira questao, percebi que o estudo da semana tinha valido a pena.\"?",
       "opcoes": [
         "Mesmo com a chuva, um gesto simples fez a rua parecer mais acolhedora.",
-        "Ao substituir itens descartaveis por uma garrafa reutilizavel, o leitor reduz a producao de lixo.",
+        "Ao substituir itens descartaveis por uma garrafa reutilizavel, o leitor reduz a produção de lixo.",
         "O registro mostra que, apesar do nervosismo inicial, a preparacao ajudou o estudante a ganhar confianca.",
-        "Como outras turmas tambem vao usar o exemplar, a devolucao precisa ocorrer ate sexta-feira."
+        "Como outras turmas também vao usar o exemplar, a devolucao precisa ocorrer até sexta-feira."
       ],
       "correta": "O registro mostra que, apesar do nervosismo inicial, a preparacao ajudou o estudante a ganhar confianca.",
-      "comentario": "A equivalencia correta mantem a ideia central sem alterar o sentido.",
+      "comentario": "A equivalência correta mantem a ideia central sem alterar o sentido.",
       "tempoEstimado": 40,
       "tags": [
         "equivalencia",
@@ -6896,16 +6896,16 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"Bilhete no mural: Devolva o livro ate sexta-feira. Outras turmas tambem esperam por ele.\", a escolha de palavras e a organizacao do trecho produzem principalmente o efeito de:",
+      "enunciado": "No texto \"Bilhete no mural: Devolva o livro até sexta-feira. Outras turmas também esperam por ele.\", a escolha de palavras e a organização do trecho produzem principalmente o efeito de:",
       "opcoes": [
-        "estimular mudanca imediata de comportamento",
+        "estimular mudança imediata de comportamento",
         "dar visibilidade ao evento escolar",
         "responsabilizar o leitor pelo uso coletivo",
         "produzir acolhimento e proximidade"
@@ -6934,18 +6934,18 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"Quando a chuva comecou, a rua correu para dentro de casa. So a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\", a escolha de palavras e a organizacao do trecho produzem principalmente o efeito de:",
+      "enunciado": "No texto \"Quando a chuva comecou, a rua correu para dentro de casa. Só a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\", a escolha de palavras e a organização do trecho produzem principalmente o efeito de:",
       "opcoes": [
         "criar atmosfera de delicadeza",
         "produzir acolhimento e proximidade",
-        "estimular mudanca imediata de comportamento",
+        "estimular mudança imediata de comportamento",
         "dar visibilidade ao evento escolar"
       ],
       "correta": "produzir acolhimento e proximidade",
@@ -6972,21 +6972,21 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"Troque o descartavel pelo duradouro. Leve sua garrafa reutilizavel e reduza o lixo todos os dias.\", a escolha de palavras e a organizacao do trecho produzem principalmente o efeito de:",
+      "enunciado": "No texto \"Troque o descartavel pelo duradouro. Leve sua garrafa reutilizavel e reduza o lixo todos os dias.\", a escolha de palavras e a organização do trecho produzem principalmente o efeito de:",
       "opcoes": [
-        "estimular mudanca imediata de comportamento",
+        "estimular mudança imediata de comportamento",
         "dar visibilidade ao evento escolar",
         "criar atmosfera de delicadeza",
-        "pressionar por mudanca"
+        "pressionar por mudança"
       ],
-      "correta": "estimular mudanca imediata de comportamento",
+      "correta": "estimular mudança imediata de comportamento",
       "comentario": "O efeito de sentido decorre da maneira como o texto orienta a leitura e destaca seu foco.",
       "tempoEstimado": 40,
       "tags": [
@@ -7010,18 +7010,18 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"A escola abriu a Feira de Ciencias com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\", a escolha de palavras e a organizacao do trecho produzem principalmente o efeito de:",
+      "enunciado": "No texto \"A escola abriu a Feira de Ciências com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\", a escolha de palavras e a organização do trecho produzem principalmente o efeito de:",
       "opcoes": [
         "criar atmosfera de delicadeza",
-        "pressionar por mudanca",
-        "esclarecer o leitor por meio de definicao objetiva",
+        "pressionar por mudança",
+        "esclarecer o leitor por meio de definição objetiva",
         "dar visibilidade ao evento escolar"
       ],
       "correta": "dar visibilidade ao evento escolar",
@@ -7048,19 +7048,19 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"A tarde pousou na janela / mansa como um livro aberto / e a casa inteira ficou ouvindo / o silencio do vento.\", a escolha de palavras e a organizacao do trecho produzem principalmente o efeito de:",
+      "enunciado": "No texto \"A tarde pousou na janela / mansa como um livro aberto / e a casa inteira ficou ouvindo / o silencio do vento.\", a escolha de palavras e a organização do trecho produzem principalmente o efeito de:",
       "opcoes": [
-        "esclarecer o leitor por meio de definicao objetiva",
+        "esclarecer o leitor por meio de definição objetiva",
         "mobilizar o grupo para agir",
         "criar atmosfera de delicadeza",
-        "pressionar por mudanca"
+        "pressionar por mudança"
       ],
       "correta": "criar atmosfera de delicadeza",
       "comentario": "O efeito de sentido decorre da maneira como o texto orienta a leitura e destaca seu foco.",
@@ -7086,21 +7086,21 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"Escrevo para pedir mais horarios de onibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\", a escolha de palavras e a organizacao do trecho produzem principalmente o efeito de:",
+      "enunciado": "No texto \"Escrevo para pedir mais horarios de ônibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\", a escolha de palavras e a organização do trecho produzem principalmente o efeito de:",
       "opcoes": [
         "despertar interesse pela obra",
-        "pressionar por mudanca",
-        "esclarecer o leitor por meio de definicao objetiva",
+        "pressionar por mudança",
+        "esclarecer o leitor por meio de definição objetiva",
         "mobilizar o grupo para agir"
       ],
-      "correta": "pressionar por mudanca",
+      "correta": "pressionar por mudança",
       "comentario": "O efeito de sentido decorre da maneira como o texto orienta a leitura e destaca seu foco.",
       "tempoEstimado": 40,
       "tags": [
@@ -7124,21 +7124,21 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"Energia solar e a energia obtida a partir da luz do Sol. Ela pode ser usada para gerar eletricidade e aquecer ambientes.\", a escolha de palavras e a organizacao do trecho produzem principalmente o efeito de:",
+      "enunciado": "No texto \"Energia solar e a energia obtida a partir da luz do Sol. Ela pode ser usada para gerar eletricidade e aquecer ambientes.\", a escolha de palavras e a organização do trecho produzem principalmente o efeito de:",
       "opcoes": [
-        "esclarecer o leitor por meio de definicao objetiva",
+        "esclarecer o leitor por meio de definição objetiva",
         "mobilizar o grupo para agir",
         "despertar interesse pela obra",
         "aproximar o leitor da experiencia pessoal"
       ],
-      "correta": "esclarecer o leitor por meio de definicao objetiva",
+      "correta": "esclarecer o leitor por meio de definição objetiva",
       "comentario": "O efeito de sentido decorre da maneira como o texto orienta a leitura e destaca seu foco.",
       "tempoEstimado": 40,
       "tags": [
@@ -7162,14 +7162,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"Pessoal, neste sobado faremos um mutirao para limpar a praca do bairro. Quem puder levar luvas e sacos de lixo ajudara ainda mais.\", a escolha de palavras e a organizacao do trecho produzem principalmente o efeito de:",
+      "enunciado": "No texto \"Pessoal, neste sobado faremos um mutirao para limpar a praca do bairro. Quem puder levar luvas e sacos de lixo ajudara ainda mais.\", a escolha de palavras e a organização do trecho produzem principalmente o efeito de:",
       "opcoes": [
         "despertar interesse pela obra",
         "aproximar o leitor da experiencia pessoal",
@@ -7200,14 +7200,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"O filme Caminhos do Bairro emociona sem exageros. Ao acompanhar a amizade entre dois adolescentes, a narrativa mostra conflitos reais e escolhas dificeis.\", a escolha de palavras e a organizacao do trecho produzem principalmente o efeito de:",
+      "enunciado": "No texto \"O filme Caminhos do Bairro emociona sem exageros. Ao acompanhar a amizade entre dois adolescentes, a narrativa mostra conflitos reais e escolhas dificeis.\", a escolha de palavras e a organização do trecho produzem principalmente o efeito de:",
       "opcoes": [
         "responsabilizar o leitor pelo uso coletivo",
         "produzir acolhimento e proximidade",
@@ -7238,16 +7238,16 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No texto \"Hoje entrei na sala com o coracao acelerado, mas respirei fundo antes da prova. Quando li a primeira questao, percebi que o estudo da semana tinha valido a pena.\", a escolha de palavras e a organizacao do trecho produzem principalmente o efeito de:",
+      "enunciado": "No texto \"Hoje entrei na sala com o coracao acelerado, mas respirei fundo antes da prova. Quando li a primeira questao, percebi que o estudo da semana tinha valido a pena.\", a escolha de palavras e a organização do trecho produzem principalmente o efeito de:",
       "opcoes": [
-        "estimular mudanca imediata de comportamento",
+        "estimular mudança imediata de comportamento",
         "aproximar o leitor da experiencia pessoal",
         "responsabilizar o leitor pelo uso coletivo",
         "produzir acolhimento e proximidade"
@@ -7276,22 +7276,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Resumo compativel",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Resumo compatível",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa resume de modo mais compativel o texto \"Bilhete no mural: Devolva o livro ate sexta-feira. Outras turmas tambem esperam por ele.\"?",
+      "enunciado": "Qual alternativa resume de modo mais compatível o texto \"Bilhete no mural: Devolva o livro até sexta-feira. Outras turmas também esperam por ele.\"?",
       "opcoes": [
-        "Noticia sobre a abertura da Feira de Ciencias com projetos de energia limpa apresentados por alunos.",
-        "Bilhete que pede a devolucao de um livro no prazo porque outras turmas tambem precisam dele.",
+        "Noticia sobre a abertura da Feira de Ciências com projetos de energia limpa apresentados por alunos.",
+        "Bilhete que pede a devolucao de um livro no prazo porque outras turmas também precisam dele.",
         "Cronica em que, durante a chuva, o gesto solidario de uma vizinha ganha destaque.",
         "Propaganda que incentiva o uso de garrafa reutilizavel para diminuir o lixo produzido."
       ],
-      "correta": "Bilhete que pede a devolucao de um livro no prazo porque outras turmas tambem precisam dele.",
-      "comentario": "O resumo correto preserva o foco, a intencao e a situacao principal do texto.",
+      "correta": "Bilhete que pede a devolucao de um livro no prazo porque outras turmas também precisam dele.",
+      "comentario": "O resumo correto preserva o foco, a intencao e a situação principal do texto.",
       "tempoEstimado": 40,
       "tags": [
         "resumo",
@@ -7314,22 +7314,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Resumo compativel",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Resumo compatível",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa resume de modo mais compativel o texto \"Quando a chuva comecou, a rua correu para dentro de casa. So a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\"?",
+      "enunciado": "Qual alternativa resume de modo mais compatível o texto \"Quando a chuva comecou, a rua correu para dentro de casa. Só a vizinha da esquina ficou no portao, distribuindo cafe para quem chegava encharcado.\"?",
       "opcoes": [
         "Cronica em que, durante a chuva, o gesto solidario de uma vizinha ganha destaque.",
         "Propaganda que incentiva o uso de garrafa reutilizavel para diminuir o lixo produzido.",
-        "Noticia sobre a abertura da Feira de Ciencias com projetos de energia limpa apresentados por alunos.",
+        "Noticia sobre a abertura da Feira de Ciências com projetos de energia limpa apresentados por alunos.",
         "Poema que descreve uma tarde calma por meio de imagens sensoveis e silenciosas."
       ],
       "correta": "Cronica em que, durante a chuva, o gesto solidario de uma vizinha ganha destaque.",
-      "comentario": "O resumo correto preserva o foco, a intencao e a situacao principal do texto.",
+      "comentario": "O resumo correto preserva o foco, a intencao e a situação principal do texto.",
       "tempoEstimado": 40,
       "tags": [
         "resumo",
@@ -7352,22 +7352,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Resumo compativel",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Resumo compatível",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa resume de modo mais compativel o texto \"Troque o descartavel pelo duradouro. Leve sua garrafa reutilizavel e reduza o lixo todos os dias.\"?",
+      "enunciado": "Qual alternativa resume de modo mais compatível o texto \"Troque o descartavel pelo duradouro. Leve sua garrafa reutilizavel e reduza o lixo todos os dias.\"?",
       "opcoes": [
-        "Noticia sobre a abertura da Feira de Ciencias com projetos de energia limpa apresentados por alunos.",
+        "Noticia sobre a abertura da Feira de Ciências com projetos de energia limpa apresentados por alunos.",
         "Poema que descreve uma tarde calma por meio de imagens sensoveis e silenciosas.",
-        "Carta do leitor que reclama da falta de horarios de onibus e pede melhoria no servico.",
+        "Carta do leitor que reclama da falta de horarios de ônibus e pede melhoria no servico.",
         "Propaganda que incentiva o uso de garrafa reutilizavel para diminuir o lixo produzido."
       ],
       "correta": "Propaganda que incentiva o uso de garrafa reutilizavel para diminuir o lixo produzido.",
-      "comentario": "O resumo correto preserva o foco, a intencao e a situacao principal do texto.",
+      "comentario": "O resumo correto preserva o foco, a intencao e a situação principal do texto.",
       "tempoEstimado": 40,
       "tags": [
         "resumo",
@@ -7390,22 +7390,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Resumo compativel",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Resumo compatível",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa resume de modo mais compativel o texto \"A escola abriu a Feira de Ciencias com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\"?",
+      "enunciado": "Qual alternativa resume de modo mais compatível o texto \"A escola abriu a Feira de Ciências com projetos sobre energia limpa. Alunos do 1 ano apresentaram maquetes e experimentos para a comunidade.\"?",
       "opcoes": [
-        "Carta do leitor que reclama da falta de horarios de onibus e pede melhoria no servico.",
+        "Carta do leitor que reclama da falta de horarios de ônibus e pede melhoria no servico.",
         "Verbete que define energia solar e indica usos como gerar eletricidade e aquecer ambientes.",
-        "Noticia sobre a abertura da Feira de Ciencias com projetos de energia limpa apresentados por alunos.",
+        "Noticia sobre a abertura da Feira de Ciências com projetos de energia limpa apresentados por alunos.",
         "Poema que descreve uma tarde calma por meio de imagens sensoveis e silenciosas."
       ],
-      "correta": "Noticia sobre a abertura da Feira de Ciencias com projetos de energia limpa apresentados por alunos.",
-      "comentario": "O resumo correto preserva o foco, a intencao e a situacao principal do texto.",
+      "correta": "Noticia sobre a abertura da Feira de Ciências com projetos de energia limpa apresentados por alunos.",
+      "comentario": "O resumo correto preserva o foco, a intencao e a situação principal do texto.",
       "tempoEstimado": 40,
       "tags": [
         "resumo",
@@ -7428,22 +7428,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Resumo compativel",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Resumo compatível",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa resume de modo mais compativel o texto \"A tarde pousou na janela / mansa como um livro aberto / e a casa inteira ficou ouvindo / o silencio do vento.\"?",
+      "enunciado": "Qual alternativa resume de modo mais compatível o texto \"A tarde pousou na janela / mansa como um livro aberto / e a casa inteira ficou ouvindo / o silencio do vento.\"?",
       "opcoes": [
         "E-mail que convoca um mutirao de limpeza e orienta os participantes sobre o que levar.",
         "Poema que descreve uma tarde calma por meio de imagens sensoveis e silenciosas.",
-        "Carta do leitor que reclama da falta de horarios de onibus e pede melhoria no servico.",
+        "Carta do leitor que reclama da falta de horarios de ônibus e pede melhoria no servico.",
         "Verbete que define energia solar e indica usos como gerar eletricidade e aquecer ambientes."
       ],
       "correta": "Poema que descreve uma tarde calma por meio de imagens sensoveis e silenciosas.",
-      "comentario": "O resumo correto preserva o foco, a intencao e a situacao principal do texto.",
+      "comentario": "O resumo correto preserva o foco, a intencao e a situação principal do texto.",
       "tempoEstimado": 40,
       "tags": [
         "resumo",
@@ -7466,22 +7466,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Resumo compativel",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Resumo compatível",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa resume de modo mais compativel o texto \"Escrevo para pedir mais horarios de onibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\"?",
+      "enunciado": "Qual alternativa resume de modo mais compatível o texto \"Escrevo para pedir mais horarios de ônibus no bairro. Nos ultimos meses, os atrasos tem prejudicado estudantes e trabalhadores.\"?",
       "opcoes": [
-        "Carta do leitor que reclama da falta de horarios de onibus e pede melhoria no servico.",
+        "Carta do leitor que reclama da falta de horarios de ônibus e pede melhoria no servico.",
         "Verbete que define energia solar e indica usos como gerar eletricidade e aquecer ambientes.",
         "E-mail que convoca um mutirao de limpeza e orienta os participantes sobre o que levar.",
         "Resenha que avalia positivamente um filme sobre amizade, conflitos e escolhas adolescentes."
       ],
-      "correta": "Carta do leitor que reclama da falta de horarios de onibus e pede melhoria no servico.",
-      "comentario": "O resumo correto preserva o foco, a intencao e a situacao principal do texto.",
+      "correta": "Carta do leitor que reclama da falta de horarios de ônibus e pede melhoria no servico.",
+      "comentario": "O resumo correto preserva o foco, a intencao e a situação principal do texto.",
       "tempoEstimado": 40,
       "tags": [
         "resumo",
@@ -7504,14 +7504,14 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Resumo compativel",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Resumo compatível",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa resume de modo mais compativel o texto \"Energia solar e a energia obtida a partir da luz do Sol. Ela pode ser usada para gerar eletricidade e aquecer ambientes.\"?",
+      "enunciado": "Qual alternativa resume de modo mais compatível o texto \"Energia solar e a energia obtida a partir da luz do Sol. Ela pode ser usada para gerar eletricidade e aquecer ambientes.\"?",
       "opcoes": [
         "E-mail que convoca um mutirao de limpeza e orienta os participantes sobre o que levar.",
         "Resenha que avalia positivamente um filme sobre amizade, conflitos e escolhas adolescentes.",
@@ -7519,7 +7519,7 @@ export const interpretacaoDeTexto = {
         "Verbete que define energia solar e indica usos como gerar eletricidade e aquecer ambientes."
       ],
       "correta": "Verbete que define energia solar e indica usos como gerar eletricidade e aquecer ambientes.",
-      "comentario": "O resumo correto preserva o foco, a intencao e a situacao principal do texto.",
+      "comentario": "O resumo correto preserva o foco, a intencao e a situação principal do texto.",
       "tempoEstimado": 40,
       "tags": [
         "resumo",
@@ -7542,22 +7542,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Resumo compativel",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Resumo compatível",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa resume de modo mais compativel o texto \"Pessoal, neste sobado faremos um mutirao para limpar a praca do bairro. Quem puder levar luvas e sacos de lixo ajudara ainda mais.\"?",
+      "enunciado": "Qual alternativa resume de modo mais compatível o texto \"Pessoal, neste sobado faremos um mutirao para limpar a praca do bairro. Quem puder levar luvas e sacos de lixo ajudara ainda mais.\"?",
       "opcoes": [
         "Trecho de diario em que o estudante relata nervosismo antes da prova e alivio ao perceber que estava preparado.",
-        "Bilhete que pede a devolucao de um livro no prazo porque outras turmas tambem precisam dele.",
+        "Bilhete que pede a devolucao de um livro no prazo porque outras turmas também precisam dele.",
         "E-mail que convoca um mutirao de limpeza e orienta os participantes sobre o que levar.",
         "Resenha que avalia positivamente um filme sobre amizade, conflitos e escolhas adolescentes."
       ],
       "correta": "E-mail que convoca um mutirao de limpeza e orienta os participantes sobre o que levar.",
-      "comentario": "O resumo correto preserva o foco, a intencao e a situacao principal do texto.",
+      "comentario": "O resumo correto preserva o foco, a intencao e a situação principal do texto.",
       "tempoEstimado": 40,
       "tags": [
         "resumo",
@@ -7580,22 +7580,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Resumo compativel",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Resumo compatível",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa resume de modo mais compativel o texto \"O filme Caminhos do Bairro emociona sem exageros. Ao acompanhar a amizade entre dois adolescentes, a narrativa mostra conflitos reais e escolhas dificeis.\"?",
+      "enunciado": "Qual alternativa resume de modo mais compatível o texto \"O filme Caminhos do Bairro emociona sem exageros. Ao acompanhar a amizade entre dois adolescentes, a narrativa mostra conflitos reais e escolhas dificeis.\"?",
       "opcoes": [
         "Cronica em que, durante a chuva, o gesto solidario de uma vizinha ganha destaque.",
         "Resenha que avalia positivamente um filme sobre amizade, conflitos e escolhas adolescentes.",
         "Trecho de diario em que o estudante relata nervosismo antes da prova e alivio ao perceber que estava preparado.",
-        "Bilhete que pede a devolucao de um livro no prazo porque outras turmas tambem precisam dele."
+        "Bilhete que pede a devolucao de um livro no prazo porque outras turmas também precisam dele."
       ],
       "correta": "Resenha que avalia positivamente um filme sobre amizade, conflitos e escolhas adolescentes.",
-      "comentario": "O resumo correto preserva o foco, a intencao e a situacao principal do texto.",
+      "comentario": "O resumo correto preserva o foco, a intencao e a situação principal do texto.",
       "tempoEstimado": 40,
       "tags": [
         "resumo",
@@ -7618,22 +7618,22 @@ export const interpretacaoDeTexto = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao de Texto",
-      "subtopico": "Resumo compativel",
+      "materia": "Português",
+      "topico": "Interpretação de Texto",
+      "subtopico": "Resumo compatível",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa resume de modo mais compativel o texto \"Hoje entrei na sala com o coracao acelerado, mas respirei fundo antes da prova. Quando li a primeira questao, percebi que o estudo da semana tinha valido a pena.\"?",
+      "enunciado": "Qual alternativa resume de modo mais compatível o texto \"Hoje entrei na sala com o coracao acelerado, mas respirei fundo antes da prova. Quando li a primeira questao, percebi que o estudo da semana tinha valido a pena.\"?",
       "opcoes": [
         "Trecho de diario em que o estudante relata nervosismo antes da prova e alivio ao perceber que estava preparado.",
-        "Bilhete que pede a devolucao de um livro no prazo porque outras turmas tambem precisam dele.",
+        "Bilhete que pede a devolucao de um livro no prazo porque outras turmas também precisam dele.",
         "Cronica em que, durante a chuva, o gesto solidario de uma vizinha ganha destaque.",
         "Propaganda que incentiva o uso de garrafa reutilizavel para diminuir o lixo produzido."
       ],
       "correta": "Trecho de diario em que o estudante relata nervosismo antes da prova e alivio ao perceber que estava preparado.",
-      "comentario": "O resumo correto preserva o foco, a intencao e a situacao principal do texto.",
+      "comentario": "O resumo correto preserva o foco, a intencao e a situação principal do texto.",
       "tempoEstimado": 40,
       "tags": [
         "resumo",

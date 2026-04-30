@@ -9,12 +9,12 @@ export const movimentosSociais = {
     "disciplinaId": "sociologia",
     "base": "ESCOLAR",
     "seloEditorial": "VERIFICADA",
-    "eixo": "Acao coletiva e mobilizacao social",
-    "frente": "Participacao, reivindicacao e transformacao coletiva",
+    "eixo": "Ação coletiva e mobilizacao social",
+    "frente": "Participação, reivindicacao e transformação coletiva",
     "searchAliases": [
       "movimentos sociais",
-      "acao coletiva",
-      "participacao popular",
+      "ação coletiva",
+      "participação popular",
       "movimento estudantil",
       "movimento negro",
       "movimentos feministas",
@@ -23,8 +23,8 @@ export const movimentosSociais = {
     ],
     "subtopicosBase": [
       "Conceito de movimento social",
-      "Acao coletiva",
-      "Participacao popular",
+      "Ação coletiva",
+      "Participação popular",
       "Movimentos trabalhistas",
       "Movimentos feministas",
       "Movimento negro",
@@ -35,11 +35,11 @@ export const movimentosSociais = {
     ],
     "habilidadesBase": [
       "identificar o conceito de movimento social",
-      "diferenciar acao coletiva, participacao popular e movimentos organizados",
+      "diferenciar ação coletiva, participação popular e movimentos organizados",
       "reconhecer tipos de movimentos e suas pautas especificas",
       "interpretar mobilizacoes por direitos, reconhecimento e territorio",
-      "analisar o papel das redes digitais na organizacao coletiva",
-      "relacionar movimentos sociais e transformacao da vida publica"
+      "analisar o papel das redes digitais na organização coletiva",
+      "relacionar movimentos sociais e transformação da vida pública"
     ],
     "auditado": true,
     "auditadoEm": "2026-04-13",
@@ -60,13 +60,13 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Em Sociologia, conceito de movimento social pode ser definido(a) como:",
       "opcoes": [
-        "a acao coletiva organizada de grupos que buscam defender direitos, reivindicar mudancas ou resistir a desigualdades e opressoes",
-        "as mobilizacoes organizadas por estudantes em torno de direitos educacionais, participacao e melhoria das condicoes de estudo",
-        "as acoes coletivas voltadas a defesa do meio ambiente, do uso sustentavel dos recursos e do enfrentamento de impactos socioambientais",
-        "as mobilizacoes coletivas ligadas a disputas por terra, moradia, mobilidade, servicos urbanos e condicoes de vida em territorios rurais e urbanos"
+        "a ação coletiva organizada de grupos que buscam defender direitos, reivindicar mudancas ou resistir a desigualdades e opressoes",
+        "as mobilizacoes organizadas por estudantes em torno de direitos educacionais, participação e melhoria das condicoes de estudo",
+        "as ações coletivas voltadas a defesa do meio ambiente, do uso sustentável dos recursos e do enfrentamento de impactos socioambientais",
+        "as mobilizacoes coletivas ligadas a disputas por terra, moradia, mobilidade, serviços urbanos e condicoes de vida em territorios rurais e urbanos"
       ],
-      "correta": "a acao coletiva organizada de grupos que buscam defender direitos, reivindicar mudancas ou resistir a desigualdades e opressoes",
-      "comentario": "Conceito de movimento social refere-se a acao coletiva organizada de grupos que buscam defender direitos, reivindicar mudancas ou resistir a desigualdades e opressoes.",
+      "correta": "a ação coletiva organizada de grupos que buscam defender direitos, reivindicar mudancas ou resistir a desigualdades e opressoes",
+      "comentario": "Conceito de movimento social refere-se a ação coletiva organizada de grupos que buscam defender direitos, reivindicar mudancas ou resistir a desigualdades e opressoes.",
       "tempoEstimado": 20,
       "tags": [
         "movimentos-sociais",
@@ -97,7 +97,7 @@ export const movimentosSociais = {
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: um grupo se organiza de forma continua para reivindicar reconhecimento, direitos e mudancas sociais Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: um grupo se organiza de forma continua para reivindicar reconhecimento, direitos e mudancas sociais Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
         "Conceito de movimento social",
         "Movimento estudantil",
@@ -105,7 +105,7 @@ export const movimentosSociais = {
         "Movimentos do campo e da cidade"
       ],
       "correta": "Conceito de movimento social",
-      "comentario": "A situacao apresentada e um exemplo de conceito de movimento social.",
+      "comentario": "A situação apresentada é um exemplo de conceito de movimento social.",
       "tempoEstimado": 25,
       "tags": [
         "movimentos-sociais",
@@ -138,12 +138,12 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual afirmacao descreve corretamente conceito de movimento social?",
       "opcoes": [
-        "A acao coletiva organizada de grupos que buscam defender direitos, reivindicar mudancas ou resistir a desigualdades e opressoes.",
+        "A ação coletiva organizada de grupos que buscam defender direitos, reivindicar mudancas ou resistir a desigualdades e opressoes.",
         "Um evento casual sem continuidade, identidade coletiva ou objetivo comum.",
-        "Acao coletiva significa a atuacao conjunta de pessoas ou grupos em torno de interesses, problemas ou objetivos compartilhados.",
-        "Movimentos sociais tratam apenas de reacoes privadas e nao de organizacao publica."
+        "Ação coletiva significa a atuação conjunta de pessoas ou grupos em torno de interesses, problemas ou objetivos compartilhados.",
+        "Movimentos sociais tratam apenas de reações privadas e não de organização pública."
       ],
-      "correta": "A acao coletiva organizada de grupos que buscam defender direitos, reivindicar mudancas ou resistir a desigualdades e opressoes.",
+      "correta": "A ação coletiva organizada de grupos que buscam defender direitos, reivindicar mudancas ou resistir a desigualdades e opressoes.",
       "comentario": "A afirmacao correta retoma o sentido central de conceito de movimento social.",
       "tempoEstimado": 30,
       "tags": [
@@ -175,15 +175,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 4,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a conceito de movimento social.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a conceito de movimento social.",
       "opcoes": [
-        "a ideia de que qualquer acao individual isolada, sem organizacao nem causa comum, ja constitui um movimento social",
+        "a ideia de que qualquer ação individual isolada, sem organização nem causa comum, ja constitui um movimento social",
         "um grupo se organiza de forma continua para reivindicar reconhecimento, direitos e mudancas sociais",
-        "pessoas articulam acoes publicas em torno de uma causa comum e de objetivos coletivos",
-        "movimentos sociais envolvem organizacao, identidade coletiva e busca de transformacao ou resistencia"
+        "pessoas articulam ações públicas em torno de uma causa comum e de objetivos coletivos",
+        "movimentos sociais envolvem organização, identidade coletiva e busca de transformação ou resistencia"
       ],
-      "correta": "a ideia de que qualquer acao individual isolada, sem organizacao nem causa comum, ja constitui um movimento social",
-      "comentario": "a ideia de que qualquer acao individual isolada, sem organizacao nem causa comum, ja constitui um movimento social nao expressa conceito de movimento social, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "a ideia de que qualquer ação individual isolada, sem organização nem causa comum, ja constitui um movimento social",
+      "comentario": "a ideia de que qualquer ação individual isolada, sem organização nem causa comum, ja constitui um movimento social não expressa conceito de movimento social, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "movimentos-sociais",
@@ -216,13 +216,13 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Quando se estuda conceito de movimento social, o foco principal esta em:",
       "opcoes": [
-        "a organizacao coletiva em torno de causas, direitos e transformacoes sociais",
-        "a organizacao dos estudantes em defesa de direitos, representacao e melhorias na educacao",
-        "a defesa coletiva do ambiente e a critica a praticas que produzem danos ecologicos e sociais",
+        "a organização coletiva em torno de causas, direitos e transformações sociais",
+        "a organização dos estudantes em defesa de direitos, representação e melhorias na educação",
+        "a defesa coletiva do ambiente e a crítica a praticas que produzem danos ecologicos e sociais",
         "as disputas por territorio, moradia, infraestrutura e acesso a condicoes dignas de vida"
       ],
-      "correta": "a organizacao coletiva em torno de causas, direitos e transformacoes sociais",
-      "comentario": "Conceito de movimento social volta a atencao para a organizacao coletiva em torno de causas, direitos e transformacoes sociais.",
+      "correta": "a organização coletiva em torno de causas, direitos e transformações sociais",
+      "comentario": "Conceito de movimento social volta a atenção para a organização coletiva em torno de causas, direitos e transformações sociais.",
       "tempoEstimado": 35,
       "tags": [
         "movimentos-sociais",
@@ -253,15 +253,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre conceito de movimento social e acao coletiva e que:",
+      "enunciado": "A principal diferença entre conceito de movimento social e ação coletiva e que:",
       "opcoes": [
-        "conceito de movimento social apresenta a ideia geral de organizacao reivindicativa, enquanto acao coletiva destaca o agir conjunto que pode compor ou nao um movimento estruturado",
-        "Conceito de movimento social e Acao coletiva sao exatamente o mesmo fenomeno social.",
-        "Acao coletiva depende apenas de escolhas privadas, enquanto Conceito de movimento social depende so da biologia.",
-        "Conceito de movimento social elimina a necessidade de observar organizacao coletiva e reivindicacao publica."
+        "conceito de movimento social apresenta a ideia geral de organização reivindicativa, enquanto ação coletiva destaca o agir conjunto que pode compor ou não um movimento estruturado",
+        "Conceito de movimento social e Ação coletiva são exatamente o mesmo fenômeno social.",
+        "Ação coletiva depende apenas de escolhas privadas, enquanto Conceito de movimento social depende so da biologia.",
+        "Conceito de movimento social elimina a necessidade de observar organização coletiva e reivindicacao pública."
       ],
-      "correta": "conceito de movimento social apresenta a ideia geral de organizacao reivindicativa, enquanto acao coletiva destaca o agir conjunto que pode compor ou nao um movimento estruturado",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "correta": "conceito de movimento social apresenta a ideia geral de organização reivindicativa, enquanto ação coletiva destaca o agir conjunto que pode compor ou não um movimento estruturado",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "movimentos-sociais",
@@ -292,15 +292,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: pessoas articulam acoes publicas em torno de uma causa comum e de objetivos coletivos A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: pessoas articulam ações públicas em torno de uma causa comum e de objetivos coletivos A leitura sociológica mais adequada aponta para:",
       "opcoes": [
-        "o conceito de movimento social ajuda a entender formas coletivas de participacao e contestacao",
-        "Conceito de movimento social mostra que causas publicas nao precisam de organizacao coletiva.",
+        "o conceito de movimento social ajuda a entender formas coletivas de participação e contestacao",
+        "Conceito de movimento social mostra que causas públicas não precisam de organização coletiva.",
         "Conceito de movimento social prova que toda reivindicacao nasce sem coordenacao nem continuidade.",
-        "Conceito de movimento social significa ausencia completa de identidade coletiva e pressao publica."
+        "Conceito de movimento social significa ausencia completa de identidade coletiva e pressao pública."
       ],
-      "correta": "o conceito de movimento social ajuda a entender formas coletivas de participacao e contestacao",
-      "comentario": "Conceito de movimento social permite interpretar o caso a partir de organizacao, causa comum e acao publica.",
+      "correta": "o conceito de movimento social ajuda a entender formas coletivas de participação e contestacao",
+      "comentario": "Conceito de movimento social permite interpretar o caso a partir de organização, causa comum e ação pública.",
       "tempoEstimado": 40,
       "tags": [
         "movimentos-sociais",
@@ -331,15 +331,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia conceito de movimento social de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia conceito de movimento social de maneira mais clara?",
       "opcoes": [
-        "movimentos sociais envolvem organizacao, identidade coletiva e busca de transformacao ou resistencia",
-        "movimento estudantil mostra como a juventude tambem atua politicamente na defesa de direitos e condicoes de ensino",
+        "movimentos sociais envolvem organização, identidade coletiva e busca de transformação ou resistencia",
+        "movimento estudantil mostra como a juventude também atua politicamente na defesa de direitos e condicoes de ensino",
         "movimentos ambientais articulam cidadania, ciencia, territorio e defesa do futuro coletivo",
         "movimentos do campo e da cidade mostram como o territorio e um eixo central de conflitos e reivindicacoes sociais"
       ],
-      "correta": "movimentos sociais envolvem organizacao, identidade coletiva e busca de transformacao ou resistencia",
-      "comentario": "A alternativa correta traduz conceito de movimento social em uma situacao concreta de vida social.",
+      "correta": "movimentos sociais envolvem organização, identidade coletiva e busca de transformação ou resistencia",
+      "comentario": "A alternativa correta traduz conceito de movimento social em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "movimentos-sociais",
@@ -370,15 +370,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"um grupo se organiza de forma continua para reivindicar reconhecimento, direitos e mudancas sociais\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"um grupo se organiza de forma continua para reivindicar reconhecimento, direitos e mudancas sociais\", qual conclusão é mais adequada?",
       "opcoes": [
-        "movimentos sociais dependem de articulacao coletiva, objetivos comuns e alguma continuidade de acao",
+        "movimentos sociais dependem de articulacao coletiva, objetivos comuns e alguma continuidade de ação",
         "Conceito de movimento social indica que mobilizacoes nunca variam historicamente.",
         "Conceito de movimento social so pode ser explicado por fatores biologicos.",
         "Conceito de movimento social dispensa comparacao entre grupos e contextos."
       ],
-      "correta": "movimentos sociais dependem de articulacao coletiva, objetivos comuns e alguma continuidade de acao",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "correta": "movimentos sociais dependem de articulacao coletiva, objetivos comuns e alguma continuidade de ação",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "movimentos-sociais",
@@ -411,12 +411,12 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com conceito de movimento social?",
       "opcoes": [
-        "como a organizacao coletiva em torno de direitos e mudancas caracteriza um movimento social?",
-        "como o combate ao racismo se transforma em acao coletiva e reivindicacao publica?",
-        "como estudantes podem se organizar coletivamente em defesa de direitos e melhorias na educacao?",
-        "como danos ambientais se transformam em pauta de mobilizacao publica e coletiva?"
+        "como a organização coletiva em torno de direitos e mudancas caracteriza um movimento social?",
+        "como o combate ao racismo se transforma em ação coletiva e reivindicacao pública?",
+        "como estudantes podem se organizar coletivamente em defesa de direitos e melhorias na educação?",
+        "como danos ambientais se transformam em pauta de mobilizacao pública e coletiva?"
       ],
-      "correta": "como a organizacao coletiva em torno de direitos e mudancas caracteriza um movimento social?",
+      "correta": "como a organização coletiva em torno de direitos e mudancas caracteriza um movimento social?",
       "comentario": "A pergunta correta ajuda a investigar conceito de movimento social de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
@@ -451,9 +451,9 @@ export const movimentosSociais = {
       "enunciado": "Assinale a afirmacao que revela compreensao inadequada de conceito de movimento social.",
       "opcoes": [
         "Um evento casual sem continuidade, identidade coletiva ou objetivo comum.",
-        "Conceito de movimento social pode ser observado em reivindicacoes publicas e organizacao coletiva.",
+        "Conceito de movimento social pode ser observado em reivindicacoes públicas e organização coletiva.",
         "Conceito de movimento social ajuda a analisar disputas por direitos e reconhecimento.",
-        "Conceito de movimento social depende da articulacao entre grupos, pautas e acao social."
+        "Conceito de movimento social depende da articulacao entre grupos, pautas e ação social."
       ],
       "correta": "Um evento casual sem continuidade, identidade coletiva ou objetivo comum.",
       "comentario": "A alternativa incorreta expressa uma confusao comum sobre conceito de movimento social.",
@@ -487,15 +487,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre movimentos sociais, um estudante afirmou: \"movimentos sociais nao se resumem a protestos isolados; eles envolvem organizacao e causa coletiva\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre movimentos sociais, um estudante afirmou: \"movimentos sociais não se resumem a protestos isolados; eles envolvem organização e causa coletiva\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "a afirmacao esta correta, porque continuidade, organizacao e objetivos comuns sao centrais nesse tipo de acao",
-        "Conceito de movimento social nao pode ser observado em situacoes do cotidiano.",
+        "a afirmacao esta correta, porque continuidade, organização e objetivos comuns são centrais nesse tipo de ação",
+        "Conceito de movimento social não pode ser observado em situações do cotidiano.",
         "Conceito de movimento social depende apenas da vontade individual, sem contexto coletivo.",
-        "Conceito de movimento social torna desnecessario comparar organizacao, causa e participacao publica."
+        "Conceito de movimento social torna desnecessario comparar organização, causa e participação pública."
       ],
-      "correta": "a afirmacao esta correta, porque continuidade, organizacao e objetivos comuns sao centrais nesse tipo de acao",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de conceito de movimento social.",
+      "correta": "a afirmacao esta correta, porque continuidade, organização e objetivos comuns são centrais nesse tipo de ação",
+      "comentario": "A avaliação correta recupera o nucleo teorico de conceito de movimento social.",
       "tempoEstimado": 50,
       "tags": [
         "movimentos-sociais",
@@ -526,15 +526,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando um grupo expressa descontentamento individualmente, sem coordenacao, pauta comum nem continuidade, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando um grupo expressa descontentamento individualmente, sem coordenacao, pauta comum nem continuidade, a melhor interpretação sociológica e que:",
       "opcoes": [
         "fica mais dificil caracterizar esse caso como movimento social propriamente dito",
-        "Conceito de movimento social desaparece porque a sociedade nao depende mais de organizacao coletiva.",
+        "Conceito de movimento social desaparece porque a sociedade não depende mais de organização coletiva.",
         "Conceito de movimento social deixa de existir sempre que surgem conflitos entre grupos.",
-        "Conceito de movimento social so importa em sociedades antigas, nao no presente."
+        "Conceito de movimento social so importa em sociedades antigas, não no presente."
       ],
       "correta": "fica mais dificil caracterizar esse caso como movimento social propriamente dito",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "movimentos-sociais",
@@ -565,11 +565,11 @@ export const movimentosSociais = {
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente conceito de movimento social a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente conceito de movimento social a uma situação de comunidade escolar?",
       "opcoes": [
         "a escola debate como coletivos estudantis podem se organizar em torno de causas e reivindicacoes",
-        "a turma analisa campanhas de valorizacao da cultura negra e de enfrentamento ao racismo como acoes coletivas",
-        "a escola debate o papel de gremios, centros academicos e assembleias na participacao estudantil",
+        "a turma analisa campanhas de valorizacao da cultura negra e de enfrentamento ao racismo como ações coletivas",
+        "a escola debate o papel de gremios, centros academicos e assembleias na participação estudantil",
         "a turma analisa campanhas contra poluicao e em defesa de areas verdes como formas de mobilizacao ambiental"
       ],
       "correta": "a escola debate como coletivos estudantis podem se organizar em torno de causas e reivindicacoes",
@@ -606,12 +606,12 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual sintese final representa melhor conceito de movimento social?",
       "opcoes": [
-        "movimento social e a acao coletiva organizada em torno de direitos, reconhecimento e transformacao social",
-        "Conceito de movimento social e um fator biologico fixo, sem relacao com reivindicacao ou organizacao coletiva.",
-        "Conceito de movimento social explica apenas escolhas privadas e ignora a dimensao publica.",
-        "Conceito de movimento social impede qualquer mudanca historica ou social."
+        "movimento social e a ação coletiva organizada em torno de direitos, reconhecimento e transformação social",
+        "Conceito de movimento social e um fator biológico fixo, sem relação com reivindicacao ou organização coletiva.",
+        "Conceito de movimento social explica apenas escolhas privadas e ignora a dimensao pública.",
+        "Conceito de movimento social impede qualquer mudanca histórica ou social."
       ],
-      "correta": "movimento social e a acao coletiva organizada em torno de direitos, reconhecimento e transformacao social",
+      "correta": "movimento social e a ação coletiva organizada em torno de direitos, reconhecimento e transformação social",
       "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de conceito de movimento social.",
       "tempoEstimado": 60,
       "tags": [
@@ -638,20 +638,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Acao coletiva",
+      "subtopico": "Ação coletiva",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Sociologia, acao coletiva pode ser definido(a) como:",
+      "enunciado": "Em Sociologia, ação coletiva pode ser definido(a) como:",
       "opcoes": [
-        "a atuacao conjunta de pessoas ou grupos em torno de interesses, problemas ou objetivos compartilhados",
-        "a acao coletiva organizada de grupos que buscam defender direitos, reivindicar mudancas ou resistir a desigualdades e opressoes",
-        "o envolvimento de grupos e cidadaos em debates, decisoes e acoes relativas a vida publica e aos interesses coletivos",
-        "as mobilizacoes coletivas de trabalhadores em defesa de direitos, melhores condicoes laborais e reconhecimento politico e social"
+        "a atuação conjunta de pessoas ou grupos em torno de interesses, problemas ou objetivos compartilhados",
+        "a ação coletiva organizada de grupos que buscam defender direitos, reivindicar mudancas ou resistir a desigualdades e opressoes",
+        "o envolvimento de grupos e cidadãos em debates, decisões e ações relativas a vida pública e aos interesses coletivos",
+        "as mobilizacoes coletivas de trabalhadores em defesa de direitos, melhores condicoes laborais e reconhecimento político e social"
       ],
-      "correta": "a atuacao conjunta de pessoas ou grupos em torno de interesses, problemas ou objetivos compartilhados",
-      "comentario": "Acao coletiva refere-se a atuacao conjunta de pessoas ou grupos em torno de interesses, problemas ou objetivos compartilhados.",
+      "correta": "a atuação conjunta de pessoas ou grupos em torno de interesses, problemas ou objetivos compartilhados",
+      "comentario": "Ação coletiva refere-se a atuação conjunta de pessoas ou grupos em torno de interesses, problemas ou objetivos compartilhados.",
       "tempoEstimado": 20,
       "tags": [
         "movimentos-sociais",
@@ -677,20 +677,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Acao coletiva",
+      "subtopico": "Ação coletiva",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: moradores se unem para reivindicar melhorias no transporte e no atendimento de saude do bairro Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: moradores se unem para reivindicar melhorias no transporte e no atendimento de saude do bairro Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
-        "Acao coletiva",
+        "Ação coletiva",
         "Conceito de movimento social",
-        "Participacao popular",
+        "Participação popular",
         "Movimentos trabalhistas"
       ],
-      "correta": "Acao coletiva",
-      "comentario": "A situacao apresentada e um exemplo de acao coletiva.",
+      "correta": "Ação coletiva",
+      "comentario": "A situação apresentada é um exemplo de ação coletiva.",
       "tempoEstimado": 25,
       "tags": [
         "movimentos-sociais",
@@ -716,20 +716,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Acao coletiva",
+      "subtopico": "Ação coletiva",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmacao descreve corretamente acao coletiva?",
+      "enunciado": "Qual afirmacao descreve corretamente ação coletiva?",
       "opcoes": [
-        "A atuacao conjunta de pessoas ou grupos em torno de interesses, problemas ou objetivos compartilhados.",
-        "Uma experiencia totalmente privada e sem relacao com organizacao ou interesse compartilhado.",
-        "Participacao popular significa o envolvimento de grupos e cidadaos em debates, decisoes e acoes relativas a vida publica e aos interesses coletivos.",
-        "Movimentos sociais tratam apenas de reacoes privadas e nao de organizacao publica."
+        "A atuação conjunta de pessoas ou grupos em torno de interesses, problemas ou objetivos compartilhados.",
+        "Uma experiencia totalmente privada e sem relação com organização ou interesse compartilhado.",
+        "Participação popular significa o envolvimento de grupos e cidadãos em debates, decisões e ações relativas a vida pública e aos interesses coletivos.",
+        "Movimentos sociais tratam apenas de reações privadas e não de organização pública."
       ],
-      "correta": "A atuacao conjunta de pessoas ou grupos em torno de interesses, problemas ou objetivos compartilhados.",
-      "comentario": "A afirmacao correta retoma o sentido central de acao coletiva.",
+      "correta": "A atuação conjunta de pessoas ou grupos em torno de interesses, problemas ou objetivos compartilhados.",
+      "comentario": "A afirmacao correta retoma o sentido central de ação coletiva.",
       "tempoEstimado": 30,
       "tags": [
         "movimentos-sociais",
@@ -755,20 +755,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Acao coletiva",
+      "subtopico": "Ação coletiva",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a acao coletiva.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a ação coletiva.",
       "opcoes": [
-        "a ideia de que respostas individuais, sem articulacao com outros, representam por si mesmas acao coletiva",
+        "a ideia de que respostas individuais, sem articulacao com outros, representam por si mesmas ação coletiva",
         "moradores se unem para reivindicar melhorias no transporte e no atendimento de saude do bairro",
         "um grupo decide agir em conjunto em vez de enfrentar isoladamente um problema coletivo",
-        "acao coletiva envolve coordenacao entre individuos para produzir efeitos publicos ou sociais"
+        "ação coletiva envolve coordenacao entre indivíduos para produzir efeitos públicos ou sociais"
       ],
-      "correta": "a ideia de que respostas individuais, sem articulacao com outros, representam por si mesmas acao coletiva",
-      "comentario": "a ideia de que respostas individuais, sem articulacao com outros, representam por si mesmas acao coletiva nao expressa acao coletiva, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "a ideia de que respostas individuais, sem articulacao com outros, representam por si mesmas ação coletiva",
+      "comentario": "a ideia de que respostas individuais, sem articulacao com outros, representam por si mesmas ação coletiva não expressa ação coletiva, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "movimentos-sociais",
@@ -794,20 +794,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Acao coletiva",
+      "subtopico": "Ação coletiva",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda acao coletiva, o foco principal esta em:",
+      "enunciado": "Quando se estuda ação coletiva, o foco principal esta em:",
       "opcoes": [
         "a coordenacao entre pessoas em torno de objetivos e interesses compartilhados",
-        "a organizacao coletiva em torno de causas, direitos e transformacoes sociais",
-        "a presenca ativa da populacao na discussao e no acompanhamento de questoes publicas",
+        "a organização coletiva em torno de causas, direitos e transformações sociais",
+        "a presenca ativa da população na discussao e no acompanhamento de questoes públicas",
         "a mobilizacao de trabalhadores em torno de direitos, protecao e melhores condicoes de trabalho"
       ],
       "correta": "a coordenacao entre pessoas em torno de objetivos e interesses compartilhados",
-      "comentario": "Acao coletiva volta a atencao para a coordenacao entre pessoas em torno de objetivos e interesses compartilhados.",
+      "comentario": "Ação coletiva volta a atenção para a coordenacao entre pessoas em torno de objetivos e interesses compartilhados.",
       "tempoEstimado": 35,
       "tags": [
         "movimentos-sociais",
@@ -833,20 +833,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Acao coletiva",
+      "subtopico": "Ação coletiva",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre acao coletiva e participacao popular e que:",
+      "enunciado": "A principal diferença entre ação coletiva e participação popular e que:",
       "opcoes": [
-        "acao coletiva destaca o agir conjunto em torno de objetivos comuns, enquanto participacao popular enfatiza o envolvimento mais amplo da populacao na vida publica",
-        "Acao coletiva e Participacao popular sao exatamente o mesmo fenomeno social.",
-        "Participacao popular depende apenas de escolhas privadas, enquanto Acao coletiva depende so da biologia.",
-        "Acao coletiva elimina a necessidade de observar organizacao coletiva e reivindicacao publica."
+        "ação coletiva destaca o agir conjunto em torno de objetivos comuns, enquanto participação popular enfatiza o envolvimento mais amplo da população na vida pública",
+        "Ação coletiva e Participação popular são exatamente o mesmo fenômeno social.",
+        "Participação popular depende apenas de escolhas privadas, enquanto Ação coletiva depende so da biologia.",
+        "Ação coletiva elimina a necessidade de observar organização coletiva e reivindicacao pública."
       ],
-      "correta": "acao coletiva destaca o agir conjunto em torno de objetivos comuns, enquanto participacao popular enfatiza o envolvimento mais amplo da populacao na vida publica",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "correta": "ação coletiva destaca o agir conjunto em torno de objetivos comuns, enquanto participação popular enfatiza o envolvimento mais amplo da população na vida pública",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "movimentos-sociais",
@@ -872,20 +872,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Acao coletiva",
+      "subtopico": "Ação coletiva",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: um grupo decide agir em conjunto em vez de enfrentar isoladamente um problema coletivo A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: um grupo decide agir em conjunto em vez de enfrentar isoladamente um problema coletivo A leitura sociológica mais adequada aponta para:",
       "opcoes": [
-        "acao coletiva ajuda a entender como demandas sociais se tornam visiveis e ganham forca publica",
-        "Acao coletiva mostra que causas publicas nao precisam de organizacao coletiva.",
-        "Acao coletiva prova que toda reivindicacao nasce sem coordenacao nem continuidade.",
-        "Acao coletiva significa ausencia completa de identidade coletiva e pressao publica."
+        "ação coletiva ajuda a entender como demandas sociais se tornam visíveis e ganham forca pública",
+        "Ação coletiva mostra que causas públicas não precisam de organização coletiva.",
+        "Ação coletiva prova que toda reivindicacao nasce sem coordenacao nem continuidade.",
+        "Ação coletiva significa ausencia completa de identidade coletiva e pressao pública."
       ],
-      "correta": "acao coletiva ajuda a entender como demandas sociais se tornam visiveis e ganham forca publica",
-      "comentario": "Acao coletiva permite interpretar o caso a partir de organizacao, causa comum e acao publica.",
+      "correta": "ação coletiva ajuda a entender como demandas sociais se tornam visíveis e ganham forca pública",
+      "comentario": "Ação coletiva permite interpretar o caso a partir de organização, causa comum e ação pública.",
       "tempoEstimado": 40,
       "tags": [
         "movimentos-sociais",
@@ -911,20 +911,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Acao coletiva",
+      "subtopico": "Ação coletiva",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia acao coletiva de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia ação coletiva de maneira mais clara?",
       "opcoes": [
-        "acao coletiva envolve coordenacao entre individuos para produzir efeitos publicos ou sociais",
-        "movimentos sociais envolvem organizacao, identidade coletiva e busca de transformacao ou resistencia",
-        "participacao popular amplia a presenca da sociedade nas decisoes e no acompanhamento do poder publico",
-        "movimentos trabalhistas expressam a acao coletiva de quem vive do trabalho em defesa de direitos e protecao"
+        "ação coletiva envolve coordenacao entre indivíduos para produzir efeitos públicos ou sociais",
+        "movimentos sociais envolvem organização, identidade coletiva e busca de transformação ou resistencia",
+        "participação popular amplia a presenca da sociedade nas decisões e no acompanhamento do poder público",
+        "movimentos trabalhistas expressam a ação coletiva de quem vive do trabalho em defesa de direitos e protecao"
       ],
-      "correta": "acao coletiva envolve coordenacao entre individuos para produzir efeitos publicos ou sociais",
-      "comentario": "A alternativa correta traduz acao coletiva em uma situacao concreta de vida social.",
+      "correta": "ação coletiva envolve coordenacao entre indivíduos para produzir efeitos públicos ou sociais",
+      "comentario": "A alternativa correta traduz ação coletiva em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "movimentos-sociais",
@@ -950,20 +950,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Acao coletiva",
+      "subtopico": "Ação coletiva",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"moradores se unem para reivindicar melhorias no transporte e no atendimento de saude do bairro\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"moradores se unem para reivindicar melhorias no transporte e no atendimento de saude do bairro\", qual conclusão é mais adequada?",
       "opcoes": [
-        "a acao conjunta amplia capacidade de pressao, visibilidade e organizacao social",
-        "Acao coletiva indica que mobilizacoes nunca variam historicamente.",
-        "Acao coletiva so pode ser explicado por fatores biologicos.",
-        "Acao coletiva dispensa comparacao entre grupos e contextos."
+        "a ação conjunta amplia capacidade de pressao, visibilidade e organização social",
+        "Ação coletiva indica que mobilizacoes nunca variam historicamente.",
+        "Ação coletiva so pode ser explicado por fatores biologicos.",
+        "Ação coletiva dispensa comparacao entre grupos e contextos."
       ],
-      "correta": "a acao conjunta amplia capacidade de pressao, visibilidade e organizacao social",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "correta": "a ação conjunta amplia capacidade de pressao, visibilidade e organização social",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "movimentos-sociais",
@@ -989,20 +989,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Acao coletiva",
+      "subtopico": "Ação coletiva",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com acao coletiva?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com ação coletiva?",
       "opcoes": [
-        "como a coordenacao entre individuos transforma problemas comuns em acao publica?",
-        "como danos ambientais se transformam em pauta de mobilizacao publica e coletiva?",
-        "como conflitos por terra, moradia e servicos se transformam em movimentos sociais?",
-        "como redes e plataformas alteram a organizacao e a visibilidade de mobilizacoes sociais?"
+        "como a coordenacao entre indivíduos transforma problemas comuns em ação pública?",
+        "como danos ambientais se transformam em pauta de mobilizacao pública e coletiva?",
+        "como conflitos por terra, moradia e serviços se transformam em movimentos sociais?",
+        "como redes e plataformas alteram a organização e a visibilidade de mobilizacoes sociais?"
       ],
-      "correta": "como a coordenacao entre individuos transforma problemas comuns em acao publica?",
-      "comentario": "A pergunta correta ajuda a investigar acao coletiva de forma coerente com o subtopico.",
+      "correta": "como a coordenacao entre indivíduos transforma problemas comuns em ação pública?",
+      "comentario": "A pergunta correta ajuda a investigar ação coletiva de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
         "movimentos-sociais",
@@ -1028,20 +1028,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Acao coletiva",
+      "subtopico": "Ação coletiva",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmacao que revela compreensao inadequada de acao coletiva.",
+      "enunciado": "Assinale a afirmacao que revela compreensao inadequada de ação coletiva.",
       "opcoes": [
-        "Uma experiencia totalmente privada e sem relacao com organizacao ou interesse compartilhado.",
-        "Acao coletiva pode ser observado em reivindicacoes publicas e organizacao coletiva.",
-        "Acao coletiva ajuda a analisar disputas por direitos e reconhecimento.",
-        "Acao coletiva depende da articulacao entre grupos, pautas e acao social."
+        "Uma experiencia totalmente privada e sem relação com organização ou interesse compartilhado.",
+        "Ação coletiva pode ser observado em reivindicacoes públicas e organização coletiva.",
+        "Ação coletiva ajuda a analisar disputas por direitos e reconhecimento.",
+        "Ação coletiva depende da articulacao entre grupos, pautas e ação social."
       ],
-      "correta": "Uma experiencia totalmente privada e sem relacao com organizacao ou interesse compartilhado.",
-      "comentario": "A alternativa incorreta expressa uma confusao comum sobre acao coletiva.",
+      "correta": "Uma experiencia totalmente privada e sem relação com organização ou interesse compartilhado.",
+      "comentario": "A alternativa incorreta expressa uma confusao comum sobre ação coletiva.",
       "tempoEstimado": 45,
       "tags": [
         "movimentos-sociais",
@@ -1067,20 +1067,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Acao coletiva",
+      "subtopico": "Ação coletiva",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre movimentos sociais, um estudante afirmou: \"acao coletiva mostra que problemas sociais podem ser enfrentados de modo articulado por grupos\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre movimentos sociais, um estudante afirmou: \"ação coletiva mostra que problemas sociais podem ser enfrentados de modo articulado por grupos\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "a afirmacao esta correta, porque agir junto altera a capacidade de reivindicacao e intervencao publica",
-        "Acao coletiva nao pode ser observado em situacoes do cotidiano.",
-        "Acao coletiva depende apenas da vontade individual, sem contexto coletivo.",
-        "Acao coletiva torna desnecessario comparar organizacao, causa e participacao publica."
+        "a afirmacao esta correta, porque agir junto altera a capacidade de reivindicacao e intervencao pública",
+        "Ação coletiva não pode ser observado em situações do cotidiano.",
+        "Ação coletiva depende apenas da vontade individual, sem contexto coletivo.",
+        "Ação coletiva torna desnecessario comparar organização, causa e participação pública."
       ],
-      "correta": "a afirmacao esta correta, porque agir junto altera a capacidade de reivindicacao e intervencao publica",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de acao coletiva.",
+      "correta": "a afirmacao esta correta, porque agir junto altera a capacidade de reivindicacao e intervencao pública",
+      "comentario": "A avaliação correta recupera o nucleo teorico de ação coletiva.",
       "tempoEstimado": 50,
       "tags": [
         "movimentos-sociais",
@@ -1106,20 +1106,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Acao coletiva",
+      "subtopico": "Ação coletiva",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando cada pessoa tenta resolver sozinha um problema coletivo sem qualquer coordenacao com os demais, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando cada pessoa tenta resolver sozinha um problema coletivo sem qualquer coordenacao com os demais, a melhor interpretação sociológica e que:",
       "opcoes": [
-        "reduz-se a forca e a visibilidade tipicas da acao coletiva",
-        "Acao coletiva desaparece porque a sociedade nao depende mais de organizacao coletiva.",
-        "Acao coletiva deixa de existir sempre que surgem conflitos entre grupos.",
-        "Acao coletiva so importa em sociedades antigas, nao no presente."
+        "reduz-se a forca e a visibilidade tipicas da ação coletiva",
+        "Ação coletiva desaparece porque a sociedade não depende mais de organização coletiva.",
+        "Ação coletiva deixa de existir sempre que surgem conflitos entre grupos.",
+        "Ação coletiva so importa em sociedades antigas, não no presente."
       ],
-      "correta": "reduz-se a forca e a visibilidade tipicas da acao coletiva",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "correta": "reduz-se a forca e a visibilidade tipicas da ação coletiva",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "movimentos-sociais",
@@ -1145,20 +1145,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Acao coletiva",
+      "subtopico": "Ação coletiva",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente acao coletiva a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente ação coletiva a uma situação de comunidade escolar?",
       "opcoes": [
         "a turma analisa campanhas e mutiroes organizados por estudantes em torno de demandas comuns",
         "a turma analisa campanhas contra poluicao e em defesa de areas verdes como formas de mobilizacao ambiental",
-        "a escola discute mobilidade, moradia e acesso a servicos como pautas de mobilizacao urbana e territorial",
+        "a escola discute mobilidade, moradia e acesso a serviços como pautas de mobilizacao urbana e territorial",
         "a turma analisa hashtags, campanhas e convocacoes online como formas de mobilizacao social contemporanea"
       ],
       "correta": "a turma analisa campanhas e mutiroes organizados por estudantes em torno de demandas comuns",
-      "comentario": "A alternativa correta aproxima acao coletiva de um contexto escolar concreto.",
+      "comentario": "A alternativa correta aproxima ação coletiva de um contexto escolar concreto.",
       "tempoEstimado": 55,
       "tags": [
         "movimentos-sociais",
@@ -1184,20 +1184,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Acao coletiva",
+      "subtopico": "Ação coletiva",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual sintese final representa melhor acao coletiva?",
+      "enunciado": "Qual sintese final representa melhor ação coletiva?",
       "opcoes": [
-        "acao coletiva e a coordenacao de pessoas em torno de objetivos e interesses compartilhados",
-        "Acao coletiva e um fator biologico fixo, sem relacao com reivindicacao ou organizacao coletiva.",
-        "Acao coletiva explica apenas escolhas privadas e ignora a dimensao publica.",
-        "Acao coletiva impede qualquer mudanca historica ou social."
+        "ação coletiva e a coordenacao de pessoas em torno de objetivos e interesses compartilhados",
+        "Ação coletiva e um fator biológico fixo, sem relação com reivindicacao ou organização coletiva.",
+        "Ação coletiva explica apenas escolhas privadas e ignora a dimensao pública.",
+        "Ação coletiva impede qualquer mudanca histórica ou social."
       ],
-      "correta": "acao coletiva e a coordenacao de pessoas em torno de objetivos e interesses compartilhados",
-      "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de acao coletiva.",
+      "correta": "ação coletiva e a coordenacao de pessoas em torno de objetivos e interesses compartilhados",
+      "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de ação coletiva.",
       "tempoEstimado": 60,
       "tags": [
         "movimentos-sociais",
@@ -1223,20 +1223,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Participacao popular",
+      "subtopico": "Participação popular",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Sociologia, participacao popular pode ser definido(a) como:",
+      "enunciado": "Em Sociologia, participação popular pode ser definido(a) como:",
       "opcoes": [
-        "o envolvimento de grupos e cidadaos em debates, decisoes e acoes relativas a vida publica e aos interesses coletivos",
-        "a acao coletiva organizada de grupos que buscam defender direitos, reivindicar mudancas ou resistir a desigualdades e opressoes",
-        "a atuacao conjunta de pessoas ou grupos em torno de interesses, problemas ou objetivos compartilhados",
-        "as mobilizacoes coletivas de trabalhadores em defesa de direitos, melhores condicoes laborais e reconhecimento politico e social"
+        "o envolvimento de grupos e cidadãos em debates, decisões e ações relativas a vida pública e aos interesses coletivos",
+        "a ação coletiva organizada de grupos que buscam defender direitos, reivindicar mudancas ou resistir a desigualdades e opressoes",
+        "a atuação conjunta de pessoas ou grupos em torno de interesses, problemas ou objetivos compartilhados",
+        "as mobilizacoes coletivas de trabalhadores em defesa de direitos, melhores condicoes laborais e reconhecimento político e social"
       ],
-      "correta": "o envolvimento de grupos e cidadaos em debates, decisoes e acoes relativas a vida publica e aos interesses coletivos",
-      "comentario": "Participacao popular refere-se a o envolvimento de grupos e cidadaos em debates, decisoes e acoes relativas a vida publica e aos interesses coletivos.",
+      "correta": "o envolvimento de grupos e cidadãos em debates, decisões e ações relativas a vida pública e aos interesses coletivos",
+      "comentario": "Participação popular refere-se a o envolvimento de grupos e cidadãos em debates, decisões e ações relativas a vida pública e aos interesses coletivos.",
       "tempoEstimado": 20,
       "tags": [
         "movimentos-sociais",
@@ -1262,20 +1262,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Participacao popular",
+      "subtopico": "Participação popular",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: moradores participam de reunioes, audiencias e mobilizacoes para discutir problemas do territorio Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: moradores participam de reunioes, audiencias e mobilizacoes para discutir problemas do territorio Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
-        "Participacao popular",
+        "Participação popular",
         "Conceito de movimento social",
-        "Acao coletiva",
+        "Ação coletiva",
         "Movimentos trabalhistas"
       ],
-      "correta": "Participacao popular",
-      "comentario": "A situacao apresentada e um exemplo de participacao popular.",
+      "correta": "Participação popular",
+      "comentario": "A situação apresentada é um exemplo de participação popular.",
       "tempoEstimado": 25,
       "tags": [
         "movimentos-sociais",
@@ -1301,20 +1301,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Participacao popular",
+      "subtopico": "Participação popular",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmacao descreve corretamente participacao popular?",
+      "enunciado": "Qual afirmacao descreve corretamente participação popular?",
       "opcoes": [
-        "O envolvimento de grupos e cidadaos em debates, decisoes e acoes relativas a vida publica e aos interesses coletivos.",
-        "Um detalhe sem relacao com cidadania, controle social ou deliberacao coletiva.",
-        "Conceito de movimento social significa a acao coletiva organizada de grupos que buscam defender direitos, reivindicar mudancas ou resistir a desigualdades e opressoes.",
-        "Movimentos sociais tratam apenas de reacoes privadas e nao de organizacao publica."
+        "O envolvimento de grupos e cidadãos em debates, decisões e ações relativas a vida pública e aos interesses coletivos.",
+        "Um detalhe sem relação com cidadania, controle social ou deliberacao coletiva.",
+        "Conceito de movimento social significa a ação coletiva organizada de grupos que buscam defender direitos, reivindicar mudancas ou resistir a desigualdades e opressoes.",
+        "Movimentos sociais tratam apenas de reações privadas e não de organização pública."
       ],
-      "correta": "O envolvimento de grupos e cidadaos em debates, decisoes e acoes relativas a vida publica e aos interesses coletivos.",
-      "comentario": "A afirmacao correta retoma o sentido central de participacao popular.",
+      "correta": "O envolvimento de grupos e cidadãos em debates, decisões e ações relativas a vida pública e aos interesses coletivos.",
+      "comentario": "A afirmacao correta retoma o sentido central de participação popular.",
       "tempoEstimado": 30,
       "tags": [
         "movimentos-sociais",
@@ -1340,20 +1340,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Participacao popular",
+      "subtopico": "Participação popular",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a participacao popular.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a participação popular.",
       "opcoes": [
-        "a ideia de que a vida publica deve ficar restrita apenas a especialistas e autoridades sem envolvimento da populacao",
+        "a ideia de que a vida pública deve ficar restrita apenas a especialistas e autoridades sem envolvimento da população",
         "moradores participam de reunioes, audiencias e mobilizacoes para discutir problemas do territorio",
-        "a populacao se envolve em conselhos, associacoes e processos publicos para influenciar decisoes",
-        "participacao popular amplia a presenca da sociedade nas decisoes e no acompanhamento do poder publico"
+        "a população se envolve em conselhos, associacoes e processos públicos para influenciar decisões",
+        "participação popular amplia a presenca da sociedade nas decisões e no acompanhamento do poder público"
       ],
-      "correta": "a ideia de que a vida publica deve ficar restrita apenas a especialistas e autoridades sem envolvimento da populacao",
-      "comentario": "a ideia de que a vida publica deve ficar restrita apenas a especialistas e autoridades sem envolvimento da populacao nao expressa participacao popular, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "a ideia de que a vida pública deve ficar restrita apenas a especialistas e autoridades sem envolvimento da população",
+      "comentario": "a ideia de que a vida pública deve ficar restrita apenas a especialistas e autoridades sem envolvimento da população não expressa participação popular, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "movimentos-sociais",
@@ -1379,20 +1379,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Participacao popular",
+      "subtopico": "Participação popular",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda participacao popular, o foco principal esta em:",
+      "enunciado": "Quando se estuda participação popular, o foco principal esta em:",
       "opcoes": [
-        "a presenca ativa da populacao na discussao e no acompanhamento de questoes publicas",
-        "a organizacao coletiva em torno de causas, direitos e transformacoes sociais",
+        "a presenca ativa da população na discussao e no acompanhamento de questoes públicas",
+        "a organização coletiva em torno de causas, direitos e transformações sociais",
         "a coordenacao entre pessoas em torno de objetivos e interesses compartilhados",
         "a mobilizacao de trabalhadores em torno de direitos, protecao e melhores condicoes de trabalho"
       ],
-      "correta": "a presenca ativa da populacao na discussao e no acompanhamento de questoes publicas",
-      "comentario": "Participacao popular volta a atencao para a presenca ativa da populacao na discussao e no acompanhamento de questoes publicas.",
+      "correta": "a presenca ativa da população na discussao e no acompanhamento de questoes públicas",
+      "comentario": "Participação popular volta a atenção para a presenca ativa da população na discussao e no acompanhamento de questoes públicas.",
       "tempoEstimado": 35,
       "tags": [
         "movimentos-sociais",
@@ -1418,20 +1418,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Participacao popular",
+      "subtopico": "Participação popular",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre participacao popular e conceito de movimento social e que:",
+      "enunciado": "A principal diferença entre participação popular e conceito de movimento social e que:",
       "opcoes": [
-        "participacao popular e mais ampla e pode ocorrer em varios espacos publicos, enquanto movimento social e uma forma organizada e continuada de mobilizacao coletiva",
-        "Participacao popular e Conceito de movimento social sao exatamente o mesmo fenomeno social.",
-        "Conceito de movimento social depende apenas de escolhas privadas, enquanto Participacao popular depende so da biologia.",
-        "Participacao popular elimina a necessidade de observar organizacao coletiva e reivindicacao publica."
+        "participação popular e mais ampla e pode ocorrer em varios espacos públicos, enquanto movimento social e uma forma organizada e continuada de mobilizacao coletiva",
+        "Participação popular e Conceito de movimento social são exatamente o mesmo fenômeno social.",
+        "Conceito de movimento social depende apenas de escolhas privadas, enquanto Participação popular depende so da biologia.",
+        "Participação popular elimina a necessidade de observar organização coletiva e reivindicacao pública."
       ],
-      "correta": "participacao popular e mais ampla e pode ocorrer em varios espacos publicos, enquanto movimento social e uma forma organizada e continuada de mobilizacao coletiva",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "correta": "participação popular e mais ampla e pode ocorrer em varios espacos públicos, enquanto movimento social e uma forma organizada e continuada de mobilizacao coletiva",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "movimentos-sociais",
@@ -1457,20 +1457,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Participacao popular",
+      "subtopico": "Participação popular",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: a populacao se envolve em conselhos, associacoes e processos publicos para influenciar decisoes A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: a população se envolve em conselhos, associacoes e processos públicos para influenciar decisões A leitura sociológica mais adequada aponta para:",
       "opcoes": [
-        "participacao popular mostra que cidadania tambem envolve acao para alem do voto",
-        "Participacao popular mostra que causas publicas nao precisam de organizacao coletiva.",
-        "Participacao popular prova que toda reivindicacao nasce sem coordenacao nem continuidade.",
-        "Participacao popular significa ausencia completa de identidade coletiva e pressao publica."
+        "participação popular mostra que cidadania também envolve ação para alem do voto",
+        "Participação popular mostra que causas públicas não precisam de organização coletiva.",
+        "Participação popular prova que toda reivindicacao nasce sem coordenacao nem continuidade.",
+        "Participação popular significa ausencia completa de identidade coletiva e pressao pública."
       ],
-      "correta": "participacao popular mostra que cidadania tambem envolve acao para alem do voto",
-      "comentario": "Participacao popular permite interpretar o caso a partir de organizacao, causa comum e acao publica.",
+      "correta": "participação popular mostra que cidadania também envolve ação para alem do voto",
+      "comentario": "Participação popular permite interpretar o caso a partir de organização, causa comum e ação pública.",
       "tempoEstimado": 40,
       "tags": [
         "movimentos-sociais",
@@ -1496,20 +1496,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Participacao popular",
+      "subtopico": "Participação popular",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia participacao popular de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia participação popular de maneira mais clara?",
       "opcoes": [
-        "participacao popular amplia a presenca da sociedade nas decisoes e no acompanhamento do poder publico",
-        "movimentos sociais envolvem organizacao, identidade coletiva e busca de transformacao ou resistencia",
-        "acao coletiva envolve coordenacao entre individuos para produzir efeitos publicos ou sociais",
-        "movimentos trabalhistas expressam a acao coletiva de quem vive do trabalho em defesa de direitos e protecao"
+        "participação popular amplia a presenca da sociedade nas decisões e no acompanhamento do poder público",
+        "movimentos sociais envolvem organização, identidade coletiva e busca de transformação ou resistencia",
+        "ação coletiva envolve coordenacao entre indivíduos para produzir efeitos públicos ou sociais",
+        "movimentos trabalhistas expressam a ação coletiva de quem vive do trabalho em defesa de direitos e protecao"
       ],
-      "correta": "participacao popular amplia a presenca da sociedade nas decisoes e no acompanhamento do poder publico",
-      "comentario": "A alternativa correta traduz participacao popular em uma situacao concreta de vida social.",
+      "correta": "participação popular amplia a presenca da sociedade nas decisões e no acompanhamento do poder público",
+      "comentario": "A alternativa correta traduz participação popular em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "movimentos-sociais",
@@ -1535,20 +1535,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Participacao popular",
+      "subtopico": "Participação popular",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"moradores participam de reunioes, audiencias e mobilizacoes para discutir problemas do territorio\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"moradores participam de reunioes, audiencias e mobilizacoes para discutir problemas do territorio\", qual conclusão é mais adequada?",
       "opcoes": [
-        "a ampliacao de canais de participacao fortalece a vida publica e a capacidade de controle social",
-        "Participacao popular indica que mobilizacoes nunca variam historicamente.",
-        "Participacao popular so pode ser explicado por fatores biologicos.",
-        "Participacao popular dispensa comparacao entre grupos e contextos."
+        "a ampliacao de canais de participação fortalece a vida pública e a capacidade de controle social",
+        "Participação popular indica que mobilizacoes nunca variam historicamente.",
+        "Participação popular so pode ser explicado por fatores biologicos.",
+        "Participação popular dispensa comparacao entre grupos e contextos."
       ],
-      "correta": "a ampliacao de canais de participacao fortalece a vida publica e a capacidade de controle social",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "correta": "a ampliacao de canais de participação fortalece a vida pública e a capacidade de controle social",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "movimentos-sociais",
@@ -1574,20 +1574,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Participacao popular",
+      "subtopico": "Participação popular",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com participacao popular?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com participação popular?",
       "opcoes": [
-        "como a populacao pode participar das decisoes e do acompanhamento de politicas e acoes publicas?",
-        "como a organizacao coletiva em torno de direitos e mudancas caracteriza um movimento social?",
-        "como a coordenacao entre individuos transforma problemas comuns em acao publica?",
+        "como a população pode participar das decisões e do acompanhamento de politicas e ações públicas?",
+        "como a organização coletiva em torno de direitos e mudancas caracteriza um movimento social?",
+        "como a coordenacao entre indivíduos transforma problemas comuns em ação pública?",
         "como greves e associacoes de trabalhadores expressam mobilizacao coletiva por direitos?"
       ],
-      "correta": "como a populacao pode participar das decisoes e do acompanhamento de politicas e acoes publicas?",
-      "comentario": "A pergunta correta ajuda a investigar participacao popular de forma coerente com o subtopico.",
+      "correta": "como a população pode participar das decisões e do acompanhamento de politicas e ações públicas?",
+      "comentario": "A pergunta correta ajuda a investigar participação popular de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
         "movimentos-sociais",
@@ -1613,20 +1613,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Participacao popular",
+      "subtopico": "Participação popular",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmacao que revela compreensao inadequada de participacao popular.",
+      "enunciado": "Assinale a afirmacao que revela compreensao inadequada de participação popular.",
       "opcoes": [
-        "Um detalhe sem relacao com cidadania, controle social ou deliberacao coletiva.",
-        "Participacao popular pode ser observado em reivindicacoes publicas e organizacao coletiva.",
-        "Participacao popular ajuda a analisar disputas por direitos e reconhecimento.",
-        "Participacao popular depende da articulacao entre grupos, pautas e acao social."
+        "Um detalhe sem relação com cidadania, controle social ou deliberacao coletiva.",
+        "Participação popular pode ser observado em reivindicacoes públicas e organização coletiva.",
+        "Participação popular ajuda a analisar disputas por direitos e reconhecimento.",
+        "Participação popular depende da articulacao entre grupos, pautas e ação social."
       ],
-      "correta": "Um detalhe sem relacao com cidadania, controle social ou deliberacao coletiva.",
-      "comentario": "A alternativa incorreta expressa uma confusao comum sobre participacao popular.",
+      "correta": "Um detalhe sem relação com cidadania, controle social ou deliberacao coletiva.",
+      "comentario": "A alternativa incorreta expressa uma confusao comum sobre participação popular.",
       "tempoEstimado": 45,
       "tags": [
         "movimentos-sociais",
@@ -1652,20 +1652,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Participacao popular",
+      "subtopico": "Participação popular",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre movimentos sociais, um estudante afirmou: \"participacao popular nao se limita a eleicoes; ela inclui presenca ativa em espacos e debates publicos\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre movimentos sociais, um estudante afirmou: \"participação popular não se limita a eleicoes; ela inclui presenca ativa em espacos e debates públicos\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "a afirmacao esta correta, porque participacao cidada pode ocorrer em diferentes arenas da vida publica",
-        "Participacao popular nao pode ser observado em situacoes do cotidiano.",
-        "Participacao popular depende apenas da vontade individual, sem contexto coletivo.",
-        "Participacao popular torna desnecessario comparar organizacao, causa e participacao publica."
+        "a afirmacao esta correta, porque participação cidada pode ocorrer em diferentes arenas da vida pública",
+        "Participação popular não pode ser observado em situações do cotidiano.",
+        "Participação popular depende apenas da vontade individual, sem contexto coletivo.",
+        "Participação popular torna desnecessario comparar organização, causa e participação pública."
       ],
-      "correta": "a afirmacao esta correta, porque participacao cidada pode ocorrer em diferentes arenas da vida publica",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de participacao popular.",
+      "correta": "a afirmacao esta correta, porque participação cidada pode ocorrer em diferentes arenas da vida pública",
+      "comentario": "A avaliação correta recupera o nucleo teorico de participação popular.",
       "tempoEstimado": 50,
       "tags": [
         "movimentos-sociais",
@@ -1691,20 +1691,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Participacao popular",
+      "subtopico": "Participação popular",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando a populacao nao encontra canais para debater, fiscalizar ou influenciar decisoes coletivas, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando a população não encontra canais para debater, fiscalizar ou influenciar decisões coletivas, a melhor interpretação sociológica e que:",
       "opcoes": [
-        "a participacao popular tende a ficar enfraquecida e mais limitada",
-        "Participacao popular desaparece porque a sociedade nao depende mais de organizacao coletiva.",
-        "Participacao popular deixa de existir sempre que surgem conflitos entre grupos.",
-        "Participacao popular so importa em sociedades antigas, nao no presente."
+        "a participação popular tende a ficar enfraquecida e mais limitada",
+        "Participação popular desaparece porque a sociedade não depende mais de organização coletiva.",
+        "Participação popular deixa de existir sempre que surgem conflitos entre grupos.",
+        "Participação popular so importa em sociedades antigas, não no presente."
       ],
-      "correta": "a participacao popular tende a ficar enfraquecida e mais limitada",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "correta": "a participação popular tende a ficar enfraquecida e mais limitada",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "movimentos-sociais",
@@ -1730,20 +1730,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Participacao popular",
+      "subtopico": "Participação popular",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente participacao popular a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente participação popular a uma situação de comunidade escolar?",
       "opcoes": [
-        "a escola discute assembleias, conselhos e gremios como formas de participacao popular em escala local",
+        "a escola discute assembleias, conselhos e gremios como formas de participação popular em escala local",
         "a escola debate como coletivos estudantis podem se organizar em torno de causas e reivindicacoes",
         "a turma analisa campanhas e mutiroes organizados por estudantes em torno de demandas comuns",
         "a turma analisa greves historicas e reivindicacoes por seguranca, jornada e salario digno"
       ],
-      "correta": "a escola discute assembleias, conselhos e gremios como formas de participacao popular em escala local",
-      "comentario": "A alternativa correta aproxima participacao popular de um contexto escolar concreto.",
+      "correta": "a escola discute assembleias, conselhos e gremios como formas de participação popular em escala local",
+      "comentario": "A alternativa correta aproxima participação popular de um contexto escolar concreto.",
       "tempoEstimado": 55,
       "tags": [
         "movimentos-sociais",
@@ -1769,20 +1769,20 @@ export const movimentosSociais = {
       ],
       "materia": "Sociologia",
       "topico": "Movimentos Sociais",
-      "subtopico": "Participacao popular",
+      "subtopico": "Participação popular",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual sintese final representa melhor participacao popular?",
+      "enunciado": "Qual sintese final representa melhor participação popular?",
       "opcoes": [
-        "participacao popular e o envolvimento da populacao nas decisoes e acoes da vida publica",
-        "Participacao popular e um fator biologico fixo, sem relacao com reivindicacao ou organizacao coletiva.",
-        "Participacao popular explica apenas escolhas privadas e ignora a dimensao publica.",
-        "Participacao popular impede qualquer mudanca historica ou social."
+        "participação popular e o envolvimento da população nas decisões e ações da vida pública",
+        "Participação popular e um fator biológico fixo, sem relação com reivindicacao ou organização coletiva.",
+        "Participação popular explica apenas escolhas privadas e ignora a dimensao pública.",
+        "Participação popular impede qualquer mudanca histórica ou social."
       ],
-      "correta": "participacao popular e o envolvimento da populacao nas decisoes e acoes da vida publica",
-      "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de participacao popular.",
+      "correta": "participação popular e o envolvimento da população nas decisões e ações da vida pública",
+      "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de participação popular.",
       "tempoEstimado": 60,
       "tags": [
         "movimentos-sociais",
@@ -1815,13 +1815,13 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Em Sociologia, movimentos trabalhistas pode ser definido(a) como:",
       "opcoes": [
-        "as mobilizacoes coletivas de trabalhadores em defesa de direitos, melhores condicoes laborais e reconhecimento politico e social",
+        "as mobilizacoes coletivas de trabalhadores em defesa de direitos, melhores condicoes laborais e reconhecimento político e social",
         "as mobilizacoes coletivas voltadas ao combate ao racismo, a afirmacao da identidade negra e a luta por igualdade e reconhecimento",
-        "as mobilizacoes organizadas por estudantes em torno de direitos educacionais, participacao e melhoria das condicoes de estudo",
-        "as acoes coletivas voltadas a defesa do meio ambiente, do uso sustentavel dos recursos e do enfrentamento de impactos socioambientais"
+        "as mobilizacoes organizadas por estudantes em torno de direitos educacionais, participação e melhoria das condicoes de estudo",
+        "as ações coletivas voltadas a defesa do meio ambiente, do uso sustentável dos recursos e do enfrentamento de impactos socioambientais"
       ],
-      "correta": "as mobilizacoes coletivas de trabalhadores em defesa de direitos, melhores condicoes laborais e reconhecimento politico e social",
-      "comentario": "Movimentos trabalhistas refere-se a as mobilizacoes coletivas de trabalhadores em defesa de direitos, melhores condicoes laborais e reconhecimento politico e social.",
+      "correta": "as mobilizacoes coletivas de trabalhadores em defesa de direitos, melhores condicoes laborais e reconhecimento político e social",
+      "comentario": "Movimentos trabalhistas refere-se a as mobilizacoes coletivas de trabalhadores em defesa de direitos, melhores condicoes laborais e reconhecimento político e social.",
       "tempoEstimado": 20,
       "tags": [
         "movimentos-sociais",
@@ -1852,7 +1852,7 @@ export const movimentosSociais = {
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: trabalhadores se organizam para contestar jornadas abusivas, salarios baixos e ausencia de protecao Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: trabalhadores se organizam para contestar jornadas abusivas, salarios baixos e ausencia de protecao Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
         "Movimentos trabalhistas",
         "Movimento negro",
@@ -1860,7 +1860,7 @@ export const movimentosSociais = {
         "Movimentos ambientais"
       ],
       "correta": "Movimentos trabalhistas",
-      "comentario": "A situacao apresentada e um exemplo de movimentos trabalhistas.",
+      "comentario": "A situação apresentada é um exemplo de movimentos trabalhistas.",
       "tempoEstimado": 25,
       "tags": [
         "movimentos-sociais",
@@ -1893,12 +1893,12 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual afirmacao descreve corretamente movimentos trabalhistas?",
       "opcoes": [
-        "As mobilizacoes coletivas de trabalhadores em defesa de direitos, melhores condicoes laborais e reconhecimento politico e social.",
-        "Uma disputa estritamente privada sem qualquer vinculo com direitos, organizacao ou interesse coletivo.",
-        "Conceito de movimento social significa a acao coletiva organizada de grupos que buscam defender direitos, reivindicar mudancas ou resistir a desigualdades e opressoes.",
-        "Movimentos sociais tratam apenas de reacoes privadas e nao de organizacao publica."
+        "As mobilizacoes coletivas de trabalhadores em defesa de direitos, melhores condicoes laborais e reconhecimento político e social.",
+        "Uma disputa estritamente privada sem qualquer vínculo com direitos, organização ou interesse coletivo.",
+        "Conceito de movimento social significa a ação coletiva organizada de grupos que buscam defender direitos, reivindicar mudancas ou resistir a desigualdades e opressoes.",
+        "Movimentos sociais tratam apenas de reações privadas e não de organização pública."
       ],
-      "correta": "As mobilizacoes coletivas de trabalhadores em defesa de direitos, melhores condicoes laborais e reconhecimento politico e social.",
+      "correta": "As mobilizacoes coletivas de trabalhadores em defesa de direitos, melhores condicoes laborais e reconhecimento político e social.",
       "comentario": "A afirmacao correta retoma o sentido central de movimentos trabalhistas.",
       "tempoEstimado": 30,
       "tags": [
@@ -1930,15 +1930,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 4,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a movimentos trabalhistas.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a movimentos trabalhistas.",
       "opcoes": [
-        "a ideia de que conflitos de trabalho sempre se resolvem individualmente e nunca geram organizacao coletiva",
+        "a ideia de que conflitos de trabalho sempre se resolvem individualmente e nunca geram organização coletiva",
         "trabalhadores se organizam para contestar jornadas abusivas, salarios baixos e ausencia de protecao",
         "greves e associacoes buscam ampliar direitos e melhorar condicoes de trabalho",
-        "movimentos trabalhistas expressam a acao coletiva de quem vive do trabalho em defesa de direitos e protecao"
+        "movimentos trabalhistas expressam a ação coletiva de quem vive do trabalho em defesa de direitos e protecao"
       ],
-      "correta": "a ideia de que conflitos de trabalho sempre se resolvem individualmente e nunca geram organizacao coletiva",
-      "comentario": "a ideia de que conflitos de trabalho sempre se resolvem individualmente e nunca geram organizacao coletiva nao expressa movimentos trabalhistas, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "a ideia de que conflitos de trabalho sempre se resolvem individualmente e nunca geram organização coletiva",
+      "comentario": "a ideia de que conflitos de trabalho sempre se resolvem individualmente e nunca geram organização coletiva não expressa movimentos trabalhistas, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "movimentos-sociais",
@@ -1972,12 +1972,12 @@ export const movimentosSociais = {
       "enunciado": "Quando se estuda movimentos trabalhistas, o foco principal esta em:",
       "opcoes": [
         "a mobilizacao de trabalhadores em torno de direitos, protecao e melhores condicoes de trabalho",
-        "o enfrentamento do racismo e a luta por reconhecimento, igualdade e valorizacao da populacao negra",
-        "a organizacao dos estudantes em defesa de direitos, representacao e melhorias na educacao",
-        "a defesa coletiva do ambiente e a critica a praticas que produzem danos ecologicos e sociais"
+        "o enfrentamento do racismo e a luta por reconhecimento, igualdade e valorizacao da população negra",
+        "a organização dos estudantes em defesa de direitos, representação e melhorias na educação",
+        "a defesa coletiva do ambiente e a crítica a praticas que produzem danos ecologicos e sociais"
       ],
       "correta": "a mobilizacao de trabalhadores em torno de direitos, protecao e melhores condicoes de trabalho",
-      "comentario": "Movimentos trabalhistas volta a atencao para a mobilizacao de trabalhadores em torno de direitos, protecao e melhores condicoes de trabalho.",
+      "comentario": "Movimentos trabalhistas volta a atenção para a mobilizacao de trabalhadores em torno de direitos, protecao e melhores condicoes de trabalho.",
       "tempoEstimado": 35,
       "tags": [
         "movimentos-sociais",
@@ -2008,15 +2008,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre movimentos trabalhistas e conceito de movimento social e que:",
+      "enunciado": "A principal diferença entre movimentos trabalhistas e conceito de movimento social e que:",
       "opcoes": [
-        "movimentos trabalhistas sao um tipo especifico de movimento social ligado as condicoes e aos direitos do trabalho",
-        "Movimentos trabalhistas e Conceito de movimento social sao exatamente o mesmo fenomeno social.",
+        "movimentos trabalhistas são um tipo específico de movimento social ligado as condicoes e aos direitos do trabalho",
+        "Movimentos trabalhistas e Conceito de movimento social são exatamente o mesmo fenômeno social.",
         "Conceito de movimento social depende apenas de escolhas privadas, enquanto Movimentos trabalhistas depende so da biologia.",
-        "Movimentos trabalhistas elimina a necessidade de observar organizacao coletiva e reivindicacao publica."
+        "Movimentos trabalhistas elimina a necessidade de observar organização coletiva e reivindicacao pública."
       ],
-      "correta": "movimentos trabalhistas sao um tipo especifico de movimento social ligado as condicoes e aos direitos do trabalho",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "correta": "movimentos trabalhistas são um tipo específico de movimento social ligado as condicoes e aos direitos do trabalho",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "movimentos-sociais",
@@ -2047,15 +2047,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: greves e associacoes buscam ampliar direitos e melhorar condicoes de trabalho A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: greves e associacoes buscam ampliar direitos e melhorar condicoes de trabalho A leitura sociológica mais adequada aponta para:",
       "opcoes": [
-        "movimentos trabalhistas ajudam a compreender como o mundo do trabalho tambem e campo de disputa politica",
-        "Movimentos trabalhistas mostra que causas publicas nao precisam de organizacao coletiva.",
+        "movimentos trabalhistas ajudam a compreender como o mundo do trabalho também e campo de disputa política",
+        "Movimentos trabalhistas mostra que causas públicas não precisam de organização coletiva.",
         "Movimentos trabalhistas prova que toda reivindicacao nasce sem coordenacao nem continuidade.",
-        "Movimentos trabalhistas significa ausencia completa de identidade coletiva e pressao publica."
+        "Movimentos trabalhistas significa ausencia completa de identidade coletiva e pressao pública."
       ],
-      "correta": "movimentos trabalhistas ajudam a compreender como o mundo do trabalho tambem e campo de disputa politica",
-      "comentario": "Movimentos trabalhistas permite interpretar o caso a partir de organizacao, causa comum e acao publica.",
+      "correta": "movimentos trabalhistas ajudam a compreender como o mundo do trabalho também e campo de disputa política",
+      "comentario": "Movimentos trabalhistas permite interpretar o caso a partir de organização, causa comum e ação pública.",
       "tempoEstimado": 40,
       "tags": [
         "movimentos-sociais",
@@ -2086,15 +2086,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia movimentos trabalhistas de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia movimentos trabalhistas de maneira mais clara?",
       "opcoes": [
-        "movimentos trabalhistas expressam a acao coletiva de quem vive do trabalho em defesa de direitos e protecao",
+        "movimentos trabalhistas expressam a ação coletiva de quem vive do trabalho em defesa de direitos e protecao",
         "o movimento negro articula luta contra o racismo e afirmacao positiva de identidades e trajetorias negras",
-        "movimento estudantil mostra como a juventude tambem atua politicamente na defesa de direitos e condicoes de ensino",
+        "movimento estudantil mostra como a juventude também atua politicamente na defesa de direitos e condicoes de ensino",
         "movimentos ambientais articulam cidadania, ciencia, territorio e defesa do futuro coletivo"
       ],
-      "correta": "movimentos trabalhistas expressam a acao coletiva de quem vive do trabalho em defesa de direitos e protecao",
-      "comentario": "A alternativa correta traduz movimentos trabalhistas em uma situacao concreta de vida social.",
+      "correta": "movimentos trabalhistas expressam a ação coletiva de quem vive do trabalho em defesa de direitos e protecao",
+      "comentario": "A alternativa correta traduz movimentos trabalhistas em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "movimentos-sociais",
@@ -2125,15 +2125,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"trabalhadores se organizam para contestar jornadas abusivas, salarios baixos e ausencia de protecao\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"trabalhadores se organizam para contestar jornadas abusivas, salarios baixos e ausencia de protecao\", qual conclusão é mais adequada?",
       "opcoes": [
-        "a organizacao dos trabalhadores torna visiveis conflitos e reivindicacoes presentes nas relacoes laborais",
+        "a organização dos trabalhadores torna visíveis conflitos e reivindicacoes presentes nas relações laborais",
         "Movimentos trabalhistas indica que mobilizacoes nunca variam historicamente.",
         "Movimentos trabalhistas so pode ser explicado por fatores biologicos.",
         "Movimentos trabalhistas dispensa comparacao entre grupos e contextos."
       ],
-      "correta": "a organizacao dos trabalhadores torna visiveis conflitos e reivindicacoes presentes nas relacoes laborais",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "correta": "a organização dos trabalhadores torna visíveis conflitos e reivindicacoes presentes nas relações laborais",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "movimentos-sociais",
@@ -2167,9 +2167,9 @@ export const movimentosSociais = {
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com movimentos trabalhistas?",
       "opcoes": [
         "como greves e associacoes de trabalhadores expressam mobilizacao coletiva por direitos?",
-        "como redes e plataformas alteram a organizacao e a visibilidade de mobilizacoes sociais?",
-        "como a organizacao coletiva em torno de direitos e mudancas caracteriza um movimento social?",
-        "como a coordenacao entre individuos transforma problemas comuns em acao publica?"
+        "como redes e plataformas alteram a organização e a visibilidade de mobilizacoes sociais?",
+        "como a organização coletiva em torno de direitos e mudancas caracteriza um movimento social?",
+        "como a coordenacao entre indivíduos transforma problemas comuns em ação pública?"
       ],
       "correta": "como greves e associacoes de trabalhadores expressam mobilizacao coletiva por direitos?",
       "comentario": "A pergunta correta ajuda a investigar movimentos trabalhistas de forma coerente com o subtopico.",
@@ -2205,12 +2205,12 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a afirmacao que revela compreensao inadequada de movimentos trabalhistas.",
       "opcoes": [
-        "Uma disputa estritamente privada sem qualquer vinculo com direitos, organizacao ou interesse coletivo.",
-        "Movimentos trabalhistas pode ser observado em reivindicacoes publicas e organizacao coletiva.",
+        "Uma disputa estritamente privada sem qualquer vínculo com direitos, organização ou interesse coletivo.",
+        "Movimentos trabalhistas pode ser observado em reivindicacoes públicas e organização coletiva.",
         "Movimentos trabalhistas ajuda a analisar disputas por direitos e reconhecimento.",
-        "Movimentos trabalhistas depende da articulacao entre grupos, pautas e acao social."
+        "Movimentos trabalhistas depende da articulacao entre grupos, pautas e ação social."
       ],
-      "correta": "Uma disputa estritamente privada sem qualquer vinculo com direitos, organizacao ou interesse coletivo.",
+      "correta": "Uma disputa estritamente privada sem qualquer vínculo com direitos, organização ou interesse coletivo.",
       "comentario": "A alternativa incorreta expressa uma confusao comum sobre movimentos trabalhistas.",
       "tempoEstimado": 45,
       "tags": [
@@ -2242,15 +2242,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre movimentos sociais, um estudante afirmou: \"movimentos trabalhistas mostram que o trabalho nao e apenas relacao economica, mas tambem campo de luta social\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre movimentos sociais, um estudante afirmou: \"movimentos trabalhistas mostram que o trabalho não é apenas relação economica, mas também campo de luta social\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "a afirmacao esta correta, porque reivindicacoes trabalhistas podem ganhar forma coletiva e politica",
-        "Movimentos trabalhistas nao pode ser observado em situacoes do cotidiano.",
+        "a afirmacao esta correta, porque reivindicacoes trabalhistas podem ganhar forma coletiva e política",
+        "Movimentos trabalhistas não pode ser observado em situações do cotidiano.",
         "Movimentos trabalhistas depende apenas da vontade individual, sem contexto coletivo.",
-        "Movimentos trabalhistas torna desnecessario comparar organizacao, causa e participacao publica."
+        "Movimentos trabalhistas torna desnecessario comparar organização, causa e participação pública."
       ],
-      "correta": "a afirmacao esta correta, porque reivindicacoes trabalhistas podem ganhar forma coletiva e politica",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de movimentos trabalhistas.",
+      "correta": "a afirmacao esta correta, porque reivindicacoes trabalhistas podem ganhar forma coletiva e política",
+      "comentario": "A avaliação correta recupera o nucleo teorico de movimentos trabalhistas.",
       "tempoEstimado": 50,
       "tags": [
         "movimentos-sociais",
@@ -2281,15 +2281,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando trabalhadores enfrentam problemas comuns, mas nao conseguem construir articulacao coletiva duradoura, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando trabalhadores enfrentam problemas comuns, mas não conseguem construir articulacao coletiva duradoura, a melhor interpretação sociológica e que:",
       "opcoes": [
         "a capacidade de pressao e de visibilidade das reivindicacoes tende a ser menor",
-        "Movimentos trabalhistas desaparece porque a sociedade nao depende mais de organizacao coletiva.",
+        "Movimentos trabalhistas desaparece porque a sociedade não depende mais de organização coletiva.",
         "Movimentos trabalhistas deixa de existir sempre que surgem conflitos entre grupos.",
-        "Movimentos trabalhistas so importa em sociedades antigas, nao no presente."
+        "Movimentos trabalhistas so importa em sociedades antigas, não no presente."
       ],
       "correta": "a capacidade de pressao e de visibilidade das reivindicacoes tende a ser menor",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "movimentos-sociais",
@@ -2320,7 +2320,7 @@ export const movimentosSociais = {
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente movimentos trabalhistas a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente movimentos trabalhistas a uma situação de comunidade escolar?",
       "opcoes": [
         "a turma analisa greves historicas e reivindicacoes por seguranca, jornada e salario digno",
         "a turma analisa hashtags, campanhas e convocacoes online como formas de mobilizacao social contemporanea",
@@ -2361,12 +2361,12 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual sintese final representa melhor movimentos trabalhistas?",
       "opcoes": [
-        "movimentos trabalhistas sao mobilizacoes coletivas em defesa de direitos e melhores condicoes de trabalho",
-        "Movimentos trabalhistas e um fator biologico fixo, sem relacao com reivindicacao ou organizacao coletiva.",
-        "Movimentos trabalhistas explica apenas escolhas privadas e ignora a dimensao publica.",
-        "Movimentos trabalhistas impede qualquer mudanca historica ou social."
+        "movimentos trabalhistas são mobilizacoes coletivas em defesa de direitos e melhores condicoes de trabalho",
+        "Movimentos trabalhistas e um fator biológico fixo, sem relação com reivindicacao ou organização coletiva.",
+        "Movimentos trabalhistas explica apenas escolhas privadas e ignora a dimensao pública.",
+        "Movimentos trabalhistas impede qualquer mudanca histórica ou social."
       ],
-      "correta": "movimentos trabalhistas sao mobilizacoes coletivas em defesa de direitos e melhores condicoes de trabalho",
+      "correta": "movimentos trabalhistas são mobilizacoes coletivas em defesa de direitos e melhores condicoes de trabalho",
       "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de movimentos trabalhistas.",
       "tempoEstimado": 60,
       "tags": [
@@ -2400,13 +2400,13 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Em Sociologia, movimentos feministas pode ser definido(a) como:",
       "opcoes": [
-        "as mobilizacoes coletivas em defesa da igualdade de genero, do combate a violencia e da ampliacao de direitos para as mulheres",
-        "a acao coletiva organizada de grupos que buscam defender direitos, reivindicar mudancas ou resistir a desigualdades e opressoes",
-        "a atuacao conjunta de pessoas ou grupos em torno de interesses, problemas ou objetivos compartilhados",
-        "o envolvimento de grupos e cidadaos em debates, decisoes e acoes relativas a vida publica e aos interesses coletivos"
+        "as mobilizacoes coletivas em defesa da igualdade de gênero, do combate a violencia e da ampliacao de direitos para as mulheres",
+        "a ação coletiva organizada de grupos que buscam defender direitos, reivindicar mudancas ou resistir a desigualdades e opressoes",
+        "a atuação conjunta de pessoas ou grupos em torno de interesses, problemas ou objetivos compartilhados",
+        "o envolvimento de grupos e cidadãos em debates, decisões e ações relativas a vida pública e aos interesses coletivos"
       ],
-      "correta": "as mobilizacoes coletivas em defesa da igualdade de genero, do combate a violencia e da ampliacao de direitos para as mulheres",
-      "comentario": "Movimentos feministas refere-se a as mobilizacoes coletivas em defesa da igualdade de genero, do combate a violencia e da ampliacao de direitos para as mulheres.",
+      "correta": "as mobilizacoes coletivas em defesa da igualdade de gênero, do combate a violencia e da ampliacao de direitos para as mulheres",
+      "comentario": "Movimentos feministas refere-se a as mobilizacoes coletivas em defesa da igualdade de gênero, do combate a violencia e da ampliacao de direitos para as mulheres.",
       "tempoEstimado": 20,
       "tags": [
         "movimentos-sociais",
@@ -2437,15 +2437,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: grupos se organizam para denunciar desigualdades de genero, violencias e barreiras no acesso a direitos Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: grupos se organizam para denunciar desigualdades de gênero, violencias e barreiras no acesso a direitos Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
         "Movimentos feministas",
         "Conceito de movimento social",
-        "Acao coletiva",
-        "Participacao popular"
+        "Ação coletiva",
+        "Participação popular"
       ],
       "correta": "Movimentos feministas",
-      "comentario": "A situacao apresentada e um exemplo de movimentos feministas.",
+      "comentario": "A situação apresentada é um exemplo de movimentos feministas.",
       "tempoEstimado": 25,
       "tags": [
         "movimentos-sociais",
@@ -2478,12 +2478,12 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual afirmacao descreve corretamente movimentos feministas?",
       "opcoes": [
-        "As mobilizacoes coletivas em defesa da igualdade de genero, do combate a violencia e da ampliacao de direitos para as mulheres.",
-        "Uma questao sem relacao com direitos, violencia, reconhecimento ou participacao publica.",
+        "As mobilizacoes coletivas em defesa da igualdade de gênero, do combate a violencia e da ampliacao de direitos para as mulheres.",
+        "Uma questao sem relação com direitos, violencia, reconhecimento ou participação pública.",
         "Movimento negro significa as mobilizacoes coletivas voltadas ao combate ao racismo, a afirmacao da identidade negra e a luta por igualdade e reconhecimento.",
-        "Movimentos sociais tratam apenas de reacoes privadas e nao de organizacao publica."
+        "Movimentos sociais tratam apenas de reações privadas e não de organização pública."
       ],
-      "correta": "As mobilizacoes coletivas em defesa da igualdade de genero, do combate a violencia e da ampliacao de direitos para as mulheres.",
+      "correta": "As mobilizacoes coletivas em defesa da igualdade de gênero, do combate a violencia e da ampliacao de direitos para as mulheres.",
       "comentario": "A afirmacao correta retoma o sentido central de movimentos feministas.",
       "tempoEstimado": 30,
       "tags": [
@@ -2515,15 +2515,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 4,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a movimentos feministas.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a movimentos feministas.",
       "opcoes": [
-        "a ideia de que desigualdades de genero sao questoes puramente privadas e sem dimensao coletiva ou politica",
-        "grupos se organizam para denunciar desigualdades de genero, violencias e barreiras no acesso a direitos",
-        "campanhas, marchas e debates publicos articulam demandas por igualdade e reconhecimento",
-        "movimentos feministas atuam pela transformacao de relacoes desiguais entre homens e mulheres e pelo enfrentamento de opressoes de genero"
+        "a ideia de que desigualdades de gênero são questoes puramente privadas e sem dimensao coletiva ou política",
+        "grupos se organizam para denunciar desigualdades de gênero, violencias e barreiras no acesso a direitos",
+        "campanhas, marchas e debates públicos articulam demandas por igualdade e reconhecimento",
+        "movimentos feministas atuam pela transformação de relações desiguais entre homens e mulheres e pelo enfrentamento de opressoes de gênero"
       ],
-      "correta": "a ideia de que desigualdades de genero sao questoes puramente privadas e sem dimensao coletiva ou politica",
-      "comentario": "a ideia de que desigualdades de genero sao questoes puramente privadas e sem dimensao coletiva ou politica nao expressa movimentos feministas, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "a ideia de que desigualdades de gênero são questoes puramente privadas e sem dimensao coletiva ou política",
+      "comentario": "a ideia de que desigualdades de gênero são questoes puramente privadas e sem dimensao coletiva ou política não expressa movimentos feministas, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "movimentos-sociais",
@@ -2556,13 +2556,13 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Quando se estuda movimentos feministas, o foco principal esta em:",
       "opcoes": [
-        "a luta por igualdade de genero, reconhecimento e enfrentamento de violencias e desigualdades",
-        "a organizacao coletiva em torno de causas, direitos e transformacoes sociais",
+        "a luta por igualdade de gênero, reconhecimento e enfrentamento de violencias e desigualdades",
+        "a organização coletiva em torno de causas, direitos e transformações sociais",
         "a coordenacao entre pessoas em torno de objetivos e interesses compartilhados",
-        "a presenca ativa da populacao na discussao e no acompanhamento de questoes publicas"
+        "a presenca ativa da população na discussao e no acompanhamento de questoes públicas"
       ],
-      "correta": "a luta por igualdade de genero, reconhecimento e enfrentamento de violencias e desigualdades",
-      "comentario": "Movimentos feministas volta a atencao para a luta por igualdade de genero, reconhecimento e enfrentamento de violencias e desigualdades.",
+      "correta": "a luta por igualdade de gênero, reconhecimento e enfrentamento de violencias e desigualdades",
+      "comentario": "Movimentos feministas volta a atenção para a luta por igualdade de gênero, reconhecimento e enfrentamento de violencias e desigualdades.",
       "tempoEstimado": 35,
       "tags": [
         "movimentos-sociais",
@@ -2593,15 +2593,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre movimentos feministas e movimento negro e que:",
+      "enunciado": "A principal diferença entre movimentos feministas e movimento negro e que:",
       "opcoes": [
-        "movimentos feministas se organizam em torno das desigualdades de genero, enquanto o movimento negro focaliza o combate ao racismo e a afirmacao etnico-racial",
-        "Movimentos feministas e Movimento negro sao exatamente o mesmo fenomeno social.",
+        "movimentos feministas se organizam em torno das desigualdades de gênero, enquanto o movimento negro focaliza o combate ao racismo e a afirmacao étnico-racial",
+        "Movimentos feministas e Movimento negro são exatamente o mesmo fenômeno social.",
         "Movimento negro depende apenas de escolhas privadas, enquanto Movimentos feministas depende so da biologia.",
-        "Movimentos feministas elimina a necessidade de observar organizacao coletiva e reivindicacao publica."
+        "Movimentos feministas elimina a necessidade de observar organização coletiva e reivindicacao pública."
       ],
-      "correta": "movimentos feministas se organizam em torno das desigualdades de genero, enquanto o movimento negro focaliza o combate ao racismo e a afirmacao etnico-racial",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "correta": "movimentos feministas se organizam em torno das desigualdades de gênero, enquanto o movimento negro focaliza o combate ao racismo e a afirmacao étnico-racial",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "movimentos-sociais",
@@ -2632,15 +2632,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: campanhas, marchas e debates publicos articulam demandas por igualdade e reconhecimento A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: campanhas, marchas e debates públicos articulam demandas por igualdade e reconhecimento A leitura sociológica mais adequada aponta para:",
       "opcoes": [
-        "movimentos feministas mostram como relacoes de genero podem ser objeto de contestacao e transformacao social",
-        "Movimentos feministas mostra que causas publicas nao precisam de organizacao coletiva.",
+        "movimentos feministas mostram como relações de gênero podem ser objeto de contestacao e transformação social",
+        "Movimentos feministas mostra que causas públicas não precisam de organização coletiva.",
         "Movimentos feministas prova que toda reivindicacao nasce sem coordenacao nem continuidade.",
-        "Movimentos feministas significa ausencia completa de identidade coletiva e pressao publica."
+        "Movimentos feministas significa ausencia completa de identidade coletiva e pressao pública."
       ],
-      "correta": "movimentos feministas mostram como relacoes de genero podem ser objeto de contestacao e transformacao social",
-      "comentario": "Movimentos feministas permite interpretar o caso a partir de organizacao, causa comum e acao publica.",
+      "correta": "movimentos feministas mostram como relações de gênero podem ser objeto de contestacao e transformação social",
+      "comentario": "Movimentos feministas permite interpretar o caso a partir de organização, causa comum e ação pública.",
       "tempoEstimado": 40,
       "tags": [
         "movimentos-sociais",
@@ -2671,15 +2671,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia movimentos feministas de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia movimentos feministas de maneira mais clara?",
       "opcoes": [
-        "movimentos feministas atuam pela transformacao de relacoes desiguais entre homens e mulheres e pelo enfrentamento de opressoes de genero",
-        "movimentos sociais envolvem organizacao, identidade coletiva e busca de transformacao ou resistencia",
-        "acao coletiva envolve coordenacao entre individuos para produzir efeitos publicos ou sociais",
-        "participacao popular amplia a presenca da sociedade nas decisoes e no acompanhamento do poder publico"
+        "movimentos feministas atuam pela transformação de relações desiguais entre homens e mulheres e pelo enfrentamento de opressoes de gênero",
+        "movimentos sociais envolvem organização, identidade coletiva e busca de transformação ou resistencia",
+        "ação coletiva envolve coordenacao entre indivíduos para produzir efeitos públicos ou sociais",
+        "participação popular amplia a presenca da sociedade nas decisões e no acompanhamento do poder público"
       ],
-      "correta": "movimentos feministas atuam pela transformacao de relacoes desiguais entre homens e mulheres e pelo enfrentamento de opressoes de genero",
-      "comentario": "A alternativa correta traduz movimentos feministas em uma situacao concreta de vida social.",
+      "correta": "movimentos feministas atuam pela transformação de relações desiguais entre homens e mulheres e pelo enfrentamento de opressoes de gênero",
+      "comentario": "A alternativa correta traduz movimentos feministas em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "movimentos-sociais",
@@ -2710,15 +2710,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"grupos se organizam para denunciar desigualdades de genero, violencias e barreiras no acesso a direitos\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"grupos se organizam para denunciar desigualdades de gênero, violencias e barreiras no acesso a direitos\", qual conclusão é mais adequada?",
       "opcoes": [
-        "as desigualdades de genero podem gerar mobilizacao coletiva em torno de direitos e reconhecimento",
+        "as desigualdades de gênero podem gerar mobilizacao coletiva em torno de direitos e reconhecimento",
         "Movimentos feministas indica que mobilizacoes nunca variam historicamente.",
         "Movimentos feministas so pode ser explicado por fatores biologicos.",
         "Movimentos feministas dispensa comparacao entre grupos e contextos."
       ],
-      "correta": "as desigualdades de genero podem gerar mobilizacao coletiva em torno de direitos e reconhecimento",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "correta": "as desigualdades de gênero podem gerar mobilizacao coletiva em torno de direitos e reconhecimento",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "movimentos-sociais",
@@ -2751,12 +2751,12 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com movimentos feministas?",
       "opcoes": [
-        "como desigualdades de genero podem se transformar em pauta de mobilizacao social?",
-        "como a organizacao coletiva em torno de direitos e mudancas caracteriza um movimento social?",
-        "como a coordenacao entre individuos transforma problemas comuns em acao publica?",
-        "como a populacao pode participar das decisoes e do acompanhamento de politicas e acoes publicas?"
+        "como desigualdades de gênero podem se transformar em pauta de mobilizacao social?",
+        "como a organização coletiva em torno de direitos e mudancas caracteriza um movimento social?",
+        "como a coordenacao entre indivíduos transforma problemas comuns em ação pública?",
+        "como a população pode participar das decisões e do acompanhamento de politicas e ações públicas?"
       ],
-      "correta": "como desigualdades de genero podem se transformar em pauta de mobilizacao social?",
+      "correta": "como desigualdades de gênero podem se transformar em pauta de mobilizacao social?",
       "comentario": "A pergunta correta ajuda a investigar movimentos feministas de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
@@ -2790,12 +2790,12 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a afirmacao que revela compreensao inadequada de movimentos feministas.",
       "opcoes": [
-        "Uma questao sem relacao com direitos, violencia, reconhecimento ou participacao publica.",
-        "Movimentos feministas pode ser observado em reivindicacoes publicas e organizacao coletiva.",
+        "Uma questao sem relação com direitos, violencia, reconhecimento ou participação pública.",
+        "Movimentos feministas pode ser observado em reivindicacoes públicas e organização coletiva.",
         "Movimentos feministas ajuda a analisar disputas por direitos e reconhecimento.",
-        "Movimentos feministas depende da articulacao entre grupos, pautas e acao social."
+        "Movimentos feministas depende da articulacao entre grupos, pautas e ação social."
       ],
-      "correta": "Uma questao sem relacao com direitos, violencia, reconhecimento ou participacao publica.",
+      "correta": "Uma questao sem relação com direitos, violencia, reconhecimento ou participação pública.",
       "comentario": "A alternativa incorreta expressa uma confusao comum sobre movimentos feministas.",
       "tempoEstimado": 45,
       "tags": [
@@ -2827,15 +2827,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre movimentos sociais, um estudante afirmou: \"movimentos feministas articulam demandas por igualdade e protecao diante de desigualdades historicas de genero\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre movimentos sociais, um estudante afirmou: \"movimentos feministas articulam demandas por igualdade e protecao diante de desigualdades historicas de gênero\". Qual avaliação é mais consistente?",
       "opcoes": [
         "a afirmacao esta correta, porque esses movimentos enfrentam desigualdades estruturais e violencias especificas",
-        "Movimentos feministas nao pode ser observado em situacoes do cotidiano.",
+        "Movimentos feministas não pode ser observado em situações do cotidiano.",
         "Movimentos feministas depende apenas da vontade individual, sem contexto coletivo.",
-        "Movimentos feministas torna desnecessario comparar organizacao, causa e participacao publica."
+        "Movimentos feministas torna desnecessario comparar organização, causa e participação pública."
       ],
       "correta": "a afirmacao esta correta, porque esses movimentos enfrentam desigualdades estruturais e violencias especificas",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de movimentos feministas.",
+      "comentario": "A avaliação correta recupera o nucleo teorico de movimentos feministas.",
       "tempoEstimado": 50,
       "tags": [
         "movimentos-sociais",
@@ -2866,15 +2866,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando violencias e desigualdades de genero sao tratadas como problemas individuais, sem espaco de denuncia e organizacao coletiva, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando violencias e desigualdades de gênero são tratadas como problemas individuais, sem espaco de denuncia e organização coletiva, a melhor interpretação sociológica e que:",
       "opcoes": [
-        "o enfrentamento publico dessas desigualdades tende a ficar mais fragil",
-        "Movimentos feministas desaparece porque a sociedade nao depende mais de organizacao coletiva.",
+        "o enfrentamento público dessas desigualdades tende a ficar mais fragil",
+        "Movimentos feministas desaparece porque a sociedade não depende mais de organização coletiva.",
         "Movimentos feministas deixa de existir sempre que surgem conflitos entre grupos.",
-        "Movimentos feministas so importa em sociedades antigas, nao no presente."
+        "Movimentos feministas so importa em sociedades antigas, não no presente."
       ],
-      "correta": "o enfrentamento publico dessas desigualdades tende a ficar mais fragil",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "correta": "o enfrentamento público dessas desigualdades tende a ficar mais fragil",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "movimentos-sociais",
@@ -2905,14 +2905,14 @@ export const movimentosSociais = {
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente movimentos feministas a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente movimentos feministas a uma situação de comunidade escolar?",
       "opcoes": [
-        "a escola discute campanhas contra assedio e desigualdade de genero como expressoes de debate e mobilizacao",
+        "a escola discute campanhas contra assedio e desigualdade de gênero como expressoes de debate e mobilizacao",
         "a escola debate como coletivos estudantis podem se organizar em torno de causas e reivindicacoes",
         "a turma analisa campanhas e mutiroes organizados por estudantes em torno de demandas comuns",
-        "a escola discute assembleias, conselhos e gremios como formas de participacao popular em escala local"
+        "a escola discute assembleias, conselhos e gremios como formas de participação popular em escala local"
       ],
-      "correta": "a escola discute campanhas contra assedio e desigualdade de genero como expressoes de debate e mobilizacao",
+      "correta": "a escola discute campanhas contra assedio e desigualdade de gênero como expressoes de debate e mobilizacao",
       "comentario": "A alternativa correta aproxima movimentos feministas de um contexto escolar concreto.",
       "tempoEstimado": 55,
       "tags": [
@@ -2946,12 +2946,12 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual sintese final representa melhor movimentos feministas?",
       "opcoes": [
-        "movimentos feministas sao acoes coletivas em defesa da igualdade de genero e do combate as opressoes",
-        "Movimentos feministas e um fator biologico fixo, sem relacao com reivindicacao ou organizacao coletiva.",
-        "Movimentos feministas explica apenas escolhas privadas e ignora a dimensao publica.",
-        "Movimentos feministas impede qualquer mudanca historica ou social."
+        "movimentos feministas são ações coletivas em defesa da igualdade de gênero e do combate as opressoes",
+        "Movimentos feministas e um fator biológico fixo, sem relação com reivindicacao ou organização coletiva.",
+        "Movimentos feministas explica apenas escolhas privadas e ignora a dimensao pública.",
+        "Movimentos feministas impede qualquer mudanca histórica ou social."
       ],
-      "correta": "movimentos feministas sao acoes coletivas em defesa da igualdade de genero e do combate as opressoes",
+      "correta": "movimentos feministas são ações coletivas em defesa da igualdade de gênero e do combate as opressoes",
       "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de movimentos feministas.",
       "tempoEstimado": 60,
       "tags": [
@@ -2986,9 +2986,9 @@ export const movimentosSociais = {
       "enunciado": "Em Sociologia, movimento negro pode ser definido(a) como:",
       "opcoes": [
         "as mobilizacoes coletivas voltadas ao combate ao racismo, a afirmacao da identidade negra e a luta por igualdade e reconhecimento",
-        "a atuacao conjunta de pessoas ou grupos em torno de interesses, problemas ou objetivos compartilhados",
-        "o envolvimento de grupos e cidadaos em debates, decisoes e acoes relativas a vida publica e aos interesses coletivos",
-        "as mobilizacoes coletivas de trabalhadores em defesa de direitos, melhores condicoes laborais e reconhecimento politico e social"
+        "a atuação conjunta de pessoas ou grupos em torno de interesses, problemas ou objetivos compartilhados",
+        "o envolvimento de grupos e cidadãos em debates, decisões e ações relativas a vida pública e aos interesses coletivos",
+        "as mobilizacoes coletivas de trabalhadores em defesa de direitos, melhores condicoes laborais e reconhecimento político e social"
       ],
       "correta": "as mobilizacoes coletivas voltadas ao combate ao racismo, a afirmacao da identidade negra e a luta por igualdade e reconhecimento",
       "comentario": "Movimento negro refere-se a as mobilizacoes coletivas voltadas ao combate ao racismo, a afirmacao da identidade negra e a luta por igualdade e reconhecimento.",
@@ -3022,15 +3022,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: grupos se organizam para denunciar discriminacao racial e reivindicar direitos, visibilidade e valorizacao historica Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: grupos se organizam para denunciar discriminacao racial e reivindicar direitos, visibilidade e valorizacao histórica Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
         "Movimento negro",
-        "Acao coletiva",
-        "Participacao popular",
+        "Ação coletiva",
+        "Participação popular",
         "Movimentos trabalhistas"
       ],
       "correta": "Movimento negro",
-      "comentario": "A situacao apresentada e um exemplo de movimento negro.",
+      "comentario": "A situação apresentada é um exemplo de movimento negro.",
       "tempoEstimado": 25,
       "tags": [
         "movimentos-sociais",
@@ -3064,9 +3064,9 @@ export const movimentosSociais = {
       "enunciado": "Qual afirmacao descreve corretamente movimento negro?",
       "opcoes": [
         "As mobilizacoes coletivas voltadas ao combate ao racismo, a afirmacao da identidade negra e a luta por igualdade e reconhecimento.",
-        "Um tema apenas simbolico, sem relacao com desigualdade, direitos ou participacao politica.",
-        "Movimentos feministas significa as mobilizacoes coletivas em defesa da igualdade de genero, do combate a violencia e da ampliacao de direitos para as mulheres.",
-        "Movimentos sociais tratam apenas de reacoes privadas e nao de organizacao publica."
+        "Um tema apenas simbólico, sem relação com desigualdade, direitos ou participação política.",
+        "Movimentos feministas significa as mobilizacoes coletivas em defesa da igualdade de gênero, do combate a violencia e da ampliacao de direitos para as mulheres.",
+        "Movimentos sociais tratam apenas de reações privadas e não de organização pública."
       ],
       "correta": "As mobilizacoes coletivas voltadas ao combate ao racismo, a afirmacao da identidade negra e a luta por igualdade e reconhecimento.",
       "comentario": "A afirmacao correta retoma o sentido central de movimento negro.",
@@ -3100,15 +3100,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 4,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a movimento negro.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a movimento negro.",
       "opcoes": [
-        "a ideia de que desigualdades raciais sao meramente individuais e nao podem gerar acao coletiva organizada",
-        "grupos se organizam para denunciar discriminacao racial e reivindicar direitos, visibilidade e valorizacao historica",
+        "a ideia de que desigualdades raciais são meramente individuais e não podem gerar ação coletiva organizada",
+        "grupos se organizam para denunciar discriminacao racial e reivindicar direitos, visibilidade e valorizacao histórica",
         "campanhas e coletivos enfrentam o racismo estrutural e ampliam o debate sobre desigualdade racial",
         "o movimento negro articula luta contra o racismo e afirmacao positiva de identidades e trajetorias negras"
       ],
-      "correta": "a ideia de que desigualdades raciais sao meramente individuais e nao podem gerar acao coletiva organizada",
-      "comentario": "a ideia de que desigualdades raciais sao meramente individuais e nao podem gerar acao coletiva organizada nao expressa movimento negro, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "a ideia de que desigualdades raciais são meramente individuais e não podem gerar ação coletiva organizada",
+      "comentario": "a ideia de que desigualdades raciais são meramente individuais e não podem gerar ação coletiva organizada não expressa movimento negro, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "movimentos-sociais",
@@ -3141,13 +3141,13 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Quando se estuda movimento negro, o foco principal esta em:",
       "opcoes": [
-        "o enfrentamento do racismo e a luta por reconhecimento, igualdade e valorizacao da populacao negra",
+        "o enfrentamento do racismo e a luta por reconhecimento, igualdade e valorizacao da população negra",
         "a coordenacao entre pessoas em torno de objetivos e interesses compartilhados",
-        "a presenca ativa da populacao na discussao e no acompanhamento de questoes publicas",
+        "a presenca ativa da população na discussao e no acompanhamento de questoes públicas",
         "a mobilizacao de trabalhadores em torno de direitos, protecao e melhores condicoes de trabalho"
       ],
-      "correta": "o enfrentamento do racismo e a luta por reconhecimento, igualdade e valorizacao da populacao negra",
-      "comentario": "Movimento negro volta a atencao para o enfrentamento do racismo e a luta por reconhecimento, igualdade e valorizacao da populacao negra.",
+      "correta": "o enfrentamento do racismo e a luta por reconhecimento, igualdade e valorizacao da população negra",
+      "comentario": "Movimento negro volta a atenção para o enfrentamento do racismo e a luta por reconhecimento, igualdade e valorizacao da população negra.",
       "tempoEstimado": 35,
       "tags": [
         "movimentos-sociais",
@@ -3178,15 +3178,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre movimento negro e movimentos feministas e que:",
+      "enunciado": "A principal diferença entre movimento negro e movimentos feministas e que:",
       "opcoes": [
-        "o movimento negro se organiza em torno do combate ao racismo e da afirmacao etnico-racial, enquanto movimentos feministas focalizam as desigualdades de genero",
-        "Movimento negro e Movimentos feministas sao exatamente o mesmo fenomeno social.",
+        "o movimento negro se organiza em torno do combate ao racismo e da afirmacao étnico-racial, enquanto movimentos feministas focalizam as desigualdades de gênero",
+        "Movimento negro e Movimentos feministas são exatamente o mesmo fenômeno social.",
         "Movimentos feministas depende apenas de escolhas privadas, enquanto Movimento negro depende so da biologia.",
-        "Movimento negro elimina a necessidade de observar organizacao coletiva e reivindicacao publica."
+        "Movimento negro elimina a necessidade de observar organização coletiva e reivindicacao pública."
       ],
-      "correta": "o movimento negro se organiza em torno do combate ao racismo e da afirmacao etnico-racial, enquanto movimentos feministas focalizam as desigualdades de genero",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "correta": "o movimento negro se organiza em torno do combate ao racismo e da afirmacao étnico-racial, enquanto movimentos feministas focalizam as desigualdades de gênero",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "movimentos-sociais",
@@ -3217,15 +3217,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: campanhas e coletivos enfrentam o racismo estrutural e ampliam o debate sobre desigualdade racial A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: campanhas e coletivos enfrentam o racismo estrutural e ampliam o debate sobre desigualdade racial A leitura sociológica mais adequada aponta para:",
       "opcoes": [
-        "o movimento negro ajuda a compreender como desigualdades raciais se tornam pauta publica e politica",
-        "Movimento negro mostra que causas publicas nao precisam de organizacao coletiva.",
+        "o movimento negro ajuda a compreender como desigualdades raciais se tornam pauta pública e política",
+        "Movimento negro mostra que causas públicas não precisam de organização coletiva.",
         "Movimento negro prova que toda reivindicacao nasce sem coordenacao nem continuidade.",
-        "Movimento negro significa ausencia completa de identidade coletiva e pressao publica."
+        "Movimento negro significa ausencia completa de identidade coletiva e pressao pública."
       ],
-      "correta": "o movimento negro ajuda a compreender como desigualdades raciais se tornam pauta publica e politica",
-      "comentario": "Movimento negro permite interpretar o caso a partir de organizacao, causa comum e acao publica.",
+      "correta": "o movimento negro ajuda a compreender como desigualdades raciais se tornam pauta pública e política",
+      "comentario": "Movimento negro permite interpretar o caso a partir de organização, causa comum e ação pública.",
       "tempoEstimado": 40,
       "tags": [
         "movimentos-sociais",
@@ -3256,15 +3256,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia movimento negro de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia movimento negro de maneira mais clara?",
       "opcoes": [
         "o movimento negro articula luta contra o racismo e afirmacao positiva de identidades e trajetorias negras",
-        "acao coletiva envolve coordenacao entre individuos para produzir efeitos publicos ou sociais",
-        "participacao popular amplia a presenca da sociedade nas decisoes e no acompanhamento do poder publico",
-        "movimentos trabalhistas expressam a acao coletiva de quem vive do trabalho em defesa de direitos e protecao"
+        "ação coletiva envolve coordenacao entre indivíduos para produzir efeitos públicos ou sociais",
+        "participação popular amplia a presenca da sociedade nas decisões e no acompanhamento do poder público",
+        "movimentos trabalhistas expressam a ação coletiva de quem vive do trabalho em defesa de direitos e protecao"
       ],
       "correta": "o movimento negro articula luta contra o racismo e afirmacao positiva de identidades e trajetorias negras",
-      "comentario": "A alternativa correta traduz movimento negro em uma situacao concreta de vida social.",
+      "comentario": "A alternativa correta traduz movimento negro em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "movimentos-sociais",
@@ -3295,15 +3295,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"grupos se organizam para denunciar discriminacao racial e reivindicar direitos, visibilidade e valorizacao historica\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"grupos se organizam para denunciar discriminacao racial e reivindicar direitos, visibilidade e valorizacao histórica\", qual conclusão é mais adequada?",
       "opcoes": [
-        "a mobilizacao negra torna visiveis desigualdades raciais historicas e reivindica justica e reconhecimento",
+        "a mobilizacao negra torna visíveis desigualdades raciais historicas e reivindica justiça e reconhecimento",
         "Movimento negro indica que mobilizacoes nunca variam historicamente.",
         "Movimento negro so pode ser explicado por fatores biologicos.",
         "Movimento negro dispensa comparacao entre grupos e contextos."
       ],
-      "correta": "a mobilizacao negra torna visiveis desigualdades raciais historicas e reivindica justica e reconhecimento",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "correta": "a mobilizacao negra torna visíveis desigualdades raciais historicas e reivindica justiça e reconhecimento",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "movimentos-sociais",
@@ -3336,12 +3336,12 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com movimento negro?",
       "opcoes": [
-        "como o combate ao racismo se transforma em acao coletiva e reivindicacao publica?",
-        "como redes e plataformas alteram a organizacao e a visibilidade de mobilizacoes sociais?",
-        "como a organizacao coletiva em torno de direitos e mudancas caracteriza um movimento social?",
-        "como a coordenacao entre individuos transforma problemas comuns em acao publica?"
+        "como o combate ao racismo se transforma em ação coletiva e reivindicacao pública?",
+        "como redes e plataformas alteram a organização e a visibilidade de mobilizacoes sociais?",
+        "como a organização coletiva em torno de direitos e mudancas caracteriza um movimento social?",
+        "como a coordenacao entre indivíduos transforma problemas comuns em ação pública?"
       ],
-      "correta": "como o combate ao racismo se transforma em acao coletiva e reivindicacao publica?",
+      "correta": "como o combate ao racismo se transforma em ação coletiva e reivindicacao pública?",
       "comentario": "A pergunta correta ajuda a investigar movimento negro de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
@@ -3375,12 +3375,12 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a afirmacao que revela compreensao inadequada de movimento negro.",
       "opcoes": [
-        "Um tema apenas simbolico, sem relacao com desigualdade, direitos ou participacao politica.",
-        "Movimento negro pode ser observado em reivindicacoes publicas e organizacao coletiva.",
+        "Um tema apenas simbólico, sem relação com desigualdade, direitos ou participação política.",
+        "Movimento negro pode ser observado em reivindicacoes públicas e organização coletiva.",
         "Movimento negro ajuda a analisar disputas por direitos e reconhecimento.",
-        "Movimento negro depende da articulacao entre grupos, pautas e acao social."
+        "Movimento negro depende da articulacao entre grupos, pautas e ação social."
       ],
-      "correta": "Um tema apenas simbolico, sem relacao com desigualdade, direitos ou participacao politica.",
+      "correta": "Um tema apenas simbólico, sem relação com desigualdade, direitos ou participação política.",
       "comentario": "A alternativa incorreta expressa uma confusao comum sobre movimento negro.",
       "tempoEstimado": 45,
       "tags": [
@@ -3412,15 +3412,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre movimentos sociais, um estudante afirmou: \"movimento negro articula denuncia do racismo e defesa de reconhecimento e igualdade\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre movimentos sociais, um estudante afirmou: \"movimento negro articula denuncia do racismo e defesa de reconhecimento e igualdade\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "a afirmacao esta correta, porque o racismo tambem e enfrentado por meio de mobilizacao organizada",
-        "Movimento negro nao pode ser observado em situacoes do cotidiano.",
+        "a afirmacao esta correta, porque o racismo também e enfrentado por meio de mobilizacao organizada",
+        "Movimento negro não pode ser observado em situações do cotidiano.",
         "Movimento negro depende apenas da vontade individual, sem contexto coletivo.",
-        "Movimento negro torna desnecessario comparar organizacao, causa e participacao publica."
+        "Movimento negro torna desnecessario comparar organização, causa e participação pública."
       ],
-      "correta": "a afirmacao esta correta, porque o racismo tambem e enfrentado por meio de mobilizacao organizada",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de movimento negro.",
+      "correta": "a afirmacao esta correta, porque o racismo também e enfrentado por meio de mobilizacao organizada",
+      "comentario": "A avaliação correta recupera o nucleo teorico de movimento negro.",
       "tempoEstimado": 50,
       "tags": [
         "movimentos-sociais",
@@ -3451,15 +3451,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando a sociedade naturaliza desigualdades raciais e reduz denuncias a experiencias individuais isoladas, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando a sociedade naturaliza desigualdades raciais e reduz denuncias a experiências individuais isoladas, a melhor interpretação sociológica e que:",
       "opcoes": [
-        "a visibilidade publica do problema e a luta por reconhecimento tendem a enfraquecer",
-        "Movimento negro desaparece porque a sociedade nao depende mais de organizacao coletiva.",
+        "a visibilidade pública do problema e a luta por reconhecimento tendem a enfraquecer",
+        "Movimento negro desaparece porque a sociedade não depende mais de organização coletiva.",
         "Movimento negro deixa de existir sempre que surgem conflitos entre grupos.",
-        "Movimento negro so importa em sociedades antigas, nao no presente."
+        "Movimento negro so importa em sociedades antigas, não no presente."
       ],
-      "correta": "a visibilidade publica do problema e a luta por reconhecimento tendem a enfraquecer",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "correta": "a visibilidade pública do problema e a luta por reconhecimento tendem a enfraquecer",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "movimentos-sociais",
@@ -3490,14 +3490,14 @@ export const movimentosSociais = {
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente movimento negro a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente movimento negro a uma situação de comunidade escolar?",
       "opcoes": [
-        "a turma analisa campanhas de valorizacao da cultura negra e de enfrentamento ao racismo como acoes coletivas",
+        "a turma analisa campanhas de valorizacao da cultura negra e de enfrentamento ao racismo como ações coletivas",
         "a turma analisa hashtags, campanhas e convocacoes online como formas de mobilizacao social contemporanea",
         "a escola debate como coletivos estudantis podem se organizar em torno de causas e reivindicacoes",
         "a turma analisa campanhas e mutiroes organizados por estudantes em torno de demandas comuns"
       ],
-      "correta": "a turma analisa campanhas de valorizacao da cultura negra e de enfrentamento ao racismo como acoes coletivas",
+      "correta": "a turma analisa campanhas de valorizacao da cultura negra e de enfrentamento ao racismo como ações coletivas",
       "comentario": "A alternativa correta aproxima movimento negro de um contexto escolar concreto.",
       "tempoEstimado": 55,
       "tags": [
@@ -3531,12 +3531,12 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual sintese final representa melhor movimento negro?",
       "opcoes": [
-        "movimento negro e a mobilizacao coletiva contra o racismo e pela igualdade e valorizacao da populacao negra",
-        "Movimento negro e um fator biologico fixo, sem relacao com reivindicacao ou organizacao coletiva.",
-        "Movimento negro explica apenas escolhas privadas e ignora a dimensao publica.",
-        "Movimento negro impede qualquer mudanca historica ou social."
+        "movimento negro e a mobilizacao coletiva contra o racismo e pela igualdade e valorizacao da população negra",
+        "Movimento negro e um fator biológico fixo, sem relação com reivindicacao ou organização coletiva.",
+        "Movimento negro explica apenas escolhas privadas e ignora a dimensao pública.",
+        "Movimento negro impede qualquer mudanca histórica ou social."
       ],
-      "correta": "movimento negro e a mobilizacao coletiva contra o racismo e pela igualdade e valorizacao da populacao negra",
+      "correta": "movimento negro e a mobilizacao coletiva contra o racismo e pela igualdade e valorizacao da população negra",
       "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de movimento negro.",
       "tempoEstimado": 60,
       "tags": [
@@ -3570,13 +3570,13 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Em Sociologia, movimento estudantil pode ser definido(a) como:",
       "opcoes": [
-        "as mobilizacoes organizadas por estudantes em torno de direitos educacionais, participacao e melhoria das condicoes de estudo",
-        "a acao coletiva organizada de grupos que buscam defender direitos, reivindicar mudancas ou resistir a desigualdades e opressoes",
-        "a atuacao conjunta de pessoas ou grupos em torno de interesses, problemas ou objetivos compartilhados",
-        "o envolvimento de grupos e cidadaos em debates, decisoes e acoes relativas a vida publica e aos interesses coletivos"
+        "as mobilizacoes organizadas por estudantes em torno de direitos educacionais, participação e melhoria das condicoes de estudo",
+        "a ação coletiva organizada de grupos que buscam defender direitos, reivindicar mudancas ou resistir a desigualdades e opressoes",
+        "a atuação conjunta de pessoas ou grupos em torno de interesses, problemas ou objetivos compartilhados",
+        "o envolvimento de grupos e cidadãos em debates, decisões e ações relativas a vida pública e aos interesses coletivos"
       ],
-      "correta": "as mobilizacoes organizadas por estudantes em torno de direitos educacionais, participacao e melhoria das condicoes de estudo",
-      "comentario": "Movimento estudantil refere-se a as mobilizacoes organizadas por estudantes em torno de direitos educacionais, participacao e melhoria das condicoes de estudo.",
+      "correta": "as mobilizacoes organizadas por estudantes em torno de direitos educacionais, participação e melhoria das condicoes de estudo",
+      "comentario": "Movimento estudantil refere-se a as mobilizacoes organizadas por estudantes em torno de direitos educacionais, participação e melhoria das condicoes de estudo.",
       "tempoEstimado": 20,
       "tags": [
         "movimentos-sociais",
@@ -3607,15 +3607,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: estudantes se articulam para reivindicar permanencia, infraestrutura, representacao e qualidade na educacao Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: estudantes se articulam para reivindicar permanencia, infraestrutura, representação e qualidade na educação Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
         "Movimento estudantil",
         "Conceito de movimento social",
-        "Acao coletiva",
-        "Participacao popular"
+        "Ação coletiva",
+        "Participação popular"
       ],
       "correta": "Movimento estudantil",
-      "comentario": "A situacao apresentada e um exemplo de movimento estudantil.",
+      "comentario": "A situação apresentada é um exemplo de movimento estudantil.",
       "tempoEstimado": 25,
       "tags": [
         "movimentos-sociais",
@@ -3648,12 +3648,12 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual afirmacao descreve corretamente movimento estudantil?",
       "opcoes": [
-        "As mobilizacoes organizadas por estudantes em torno de direitos educacionais, participacao e melhoria das condicoes de estudo.",
-        "Um comportamento espontaneo sem reivindicacao, organizacao ou vinculo com direitos educacionais.",
-        "Participacao popular significa o envolvimento de grupos e cidadaos em debates, decisoes e acoes relativas a vida publica e aos interesses coletivos.",
-        "Movimentos sociais tratam apenas de reacoes privadas e nao de organizacao publica."
+        "As mobilizacoes organizadas por estudantes em torno de direitos educacionais, participação e melhoria das condicoes de estudo.",
+        "Um comportamento espontaneo sem reivindicacao, organização ou vínculo com direitos educacionais.",
+        "Participação popular significa o envolvimento de grupos e cidadãos em debates, decisões e ações relativas a vida pública e aos interesses coletivos.",
+        "Movimentos sociais tratam apenas de reações privadas e não de organização pública."
       ],
-      "correta": "As mobilizacoes organizadas por estudantes em torno de direitos educacionais, participacao e melhoria das condicoes de estudo.",
+      "correta": "As mobilizacoes organizadas por estudantes em torno de direitos educacionais, participação e melhoria das condicoes de estudo.",
       "comentario": "A afirmacao correta retoma o sentido central de movimento estudantil.",
       "tempoEstimado": 30,
       "tags": [
@@ -3685,15 +3685,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 4,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a movimento estudantil.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a movimento estudantil.",
       "opcoes": [
-        "a ideia de que estudantes nao podem se organizar coletivamente em torno de demandas relacionadas a educacao",
-        "estudantes se articulam para reivindicar permanencia, infraestrutura, representacao e qualidade na educacao",
-        "gremios, assembleias e protestos expressam a organizacao estudantil em defesa de pautas educacionais",
-        "movimento estudantil mostra como a juventude tambem atua politicamente na defesa de direitos e condicoes de ensino"
+        "a ideia de que estudantes não podem se organizar coletivamente em torno de demandas relacionadas a educação",
+        "estudantes se articulam para reivindicar permanencia, infraestrutura, representação e qualidade na educação",
+        "gremios, assembleias e protestos expressam a organização estudantil em defesa de pautas educacionais",
+        "movimento estudantil mostra como a juventude também atua politicamente na defesa de direitos e condicoes de ensino"
       ],
-      "correta": "a ideia de que estudantes nao podem se organizar coletivamente em torno de demandas relacionadas a educacao",
-      "comentario": "a ideia de que estudantes nao podem se organizar coletivamente em torno de demandas relacionadas a educacao nao expressa movimento estudantil, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "a ideia de que estudantes não podem se organizar coletivamente em torno de demandas relacionadas a educação",
+      "comentario": "a ideia de que estudantes não podem se organizar coletivamente em torno de demandas relacionadas a educação não expressa movimento estudantil, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "movimentos-sociais",
@@ -3726,13 +3726,13 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Quando se estuda movimento estudantil, o foco principal esta em:",
       "opcoes": [
-        "a organizacao dos estudantes em defesa de direitos, representacao e melhorias na educacao",
-        "a organizacao coletiva em torno de causas, direitos e transformacoes sociais",
+        "a organização dos estudantes em defesa de direitos, representação e melhorias na educação",
+        "a organização coletiva em torno de causas, direitos e transformações sociais",
         "a coordenacao entre pessoas em torno de objetivos e interesses compartilhados",
-        "a presenca ativa da populacao na discussao e no acompanhamento de questoes publicas"
+        "a presenca ativa da população na discussao e no acompanhamento de questoes públicas"
       ],
-      "correta": "a organizacao dos estudantes em defesa de direitos, representacao e melhorias na educacao",
-      "comentario": "Movimento estudantil volta a atencao para a organizacao dos estudantes em defesa de direitos, representacao e melhorias na educacao.",
+      "correta": "a organização dos estudantes em defesa de direitos, representação e melhorias na educação",
+      "comentario": "Movimento estudantil volta a atenção para a organização dos estudantes em defesa de direitos, representação e melhorias na educação.",
       "tempoEstimado": 35,
       "tags": [
         "movimentos-sociais",
@@ -3763,15 +3763,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre movimento estudantil e participacao popular e que:",
+      "enunciado": "A principal diferença entre movimento estudantil e participação popular e que:",
       "opcoes": [
-        "movimento estudantil e uma forma especifica de mobilizacao organizada por estudantes, enquanto participacao popular e uma categoria mais ampla de envolvimento publico",
-        "Movimento estudantil e Participacao popular sao exatamente o mesmo fenomeno social.",
-        "Participacao popular depende apenas de escolhas privadas, enquanto Movimento estudantil depende so da biologia.",
-        "Movimento estudantil elimina a necessidade de observar organizacao coletiva e reivindicacao publica."
+        "movimento estudantil e uma forma especifica de mobilizacao organizada por estudantes, enquanto participação popular e uma categoria mais ampla de envolvimento público",
+        "Movimento estudantil e Participação popular são exatamente o mesmo fenômeno social.",
+        "Participação popular depende apenas de escolhas privadas, enquanto Movimento estudantil depende so da biologia.",
+        "Movimento estudantil elimina a necessidade de observar organização coletiva e reivindicacao pública."
       ],
-      "correta": "movimento estudantil e uma forma especifica de mobilizacao organizada por estudantes, enquanto participacao popular e uma categoria mais ampla de envolvimento publico",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "correta": "movimento estudantil e uma forma especifica de mobilizacao organizada por estudantes, enquanto participação popular e uma categoria mais ampla de envolvimento público",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "movimentos-sociais",
@@ -3802,15 +3802,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: gremios, assembleias e protestos expressam a organizacao estudantil em defesa de pautas educacionais A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: gremios, assembleias e protestos expressam a organização estudantil em defesa de pautas educacionais A leitura sociológica mais adequada aponta para:",
       "opcoes": [
-        "o movimento estudantil ajuda a compreender a escola e a universidade como espacos de participacao e disputa publica",
-        "Movimento estudantil mostra que causas publicas nao precisam de organizacao coletiva.",
+        "o movimento estudantil ajuda a compreender a escola e a universidade como espacos de participação e disputa pública",
+        "Movimento estudantil mostra que causas públicas não precisam de organização coletiva.",
         "Movimento estudantil prova que toda reivindicacao nasce sem coordenacao nem continuidade.",
-        "Movimento estudantil significa ausencia completa de identidade coletiva e pressao publica."
+        "Movimento estudantil significa ausencia completa de identidade coletiva e pressao pública."
       ],
-      "correta": "o movimento estudantil ajuda a compreender a escola e a universidade como espacos de participacao e disputa publica",
-      "comentario": "Movimento estudantil permite interpretar o caso a partir de organizacao, causa comum e acao publica.",
+      "correta": "o movimento estudantil ajuda a compreender a escola e a universidade como espacos de participação e disputa pública",
+      "comentario": "Movimento estudantil permite interpretar o caso a partir de organização, causa comum e ação pública.",
       "tempoEstimado": 40,
       "tags": [
         "movimentos-sociais",
@@ -3841,15 +3841,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia movimento estudantil de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia movimento estudantil de maneira mais clara?",
       "opcoes": [
-        "movimento estudantil mostra como a juventude tambem atua politicamente na defesa de direitos e condicoes de ensino",
-        "movimentos sociais envolvem organizacao, identidade coletiva e busca de transformacao ou resistencia",
-        "acao coletiva envolve coordenacao entre individuos para produzir efeitos publicos ou sociais",
-        "participacao popular amplia a presenca da sociedade nas decisoes e no acompanhamento do poder publico"
+        "movimento estudantil mostra como a juventude também atua politicamente na defesa de direitos e condicoes de ensino",
+        "movimentos sociais envolvem organização, identidade coletiva e busca de transformação ou resistencia",
+        "ação coletiva envolve coordenacao entre indivíduos para produzir efeitos públicos ou sociais",
+        "participação popular amplia a presenca da sociedade nas decisões e no acompanhamento do poder público"
       ],
-      "correta": "movimento estudantil mostra como a juventude tambem atua politicamente na defesa de direitos e condicoes de ensino",
-      "comentario": "A alternativa correta traduz movimento estudantil em uma situacao concreta de vida social.",
+      "correta": "movimento estudantil mostra como a juventude também atua politicamente na defesa de direitos e condicoes de ensino",
+      "comentario": "A alternativa correta traduz movimento estudantil em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "movimentos-sociais",
@@ -3880,15 +3880,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"estudantes se articulam para reivindicar permanencia, infraestrutura, representacao e qualidade na educacao\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"estudantes se articulam para reivindicar permanencia, infraestrutura, representação e qualidade na educação\", qual conclusão é mais adequada?",
       "opcoes": [
-        "a organizacao estudantil transforma demandas escolares e educacionais em pautas publicas",
+        "a organização estudantil transforma demandas escolares e educacionais em pautas públicas",
         "Movimento estudantil indica que mobilizacoes nunca variam historicamente.",
         "Movimento estudantil so pode ser explicado por fatores biologicos.",
         "Movimento estudantil dispensa comparacao entre grupos e contextos."
       ],
-      "correta": "a organizacao estudantil transforma demandas escolares e educacionais em pautas publicas",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "correta": "a organização estudantil transforma demandas escolares e educacionais em pautas públicas",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "movimentos-sociais",
@@ -3921,12 +3921,12 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com movimento estudantil?",
       "opcoes": [
-        "como estudantes podem se organizar coletivamente em defesa de direitos e melhorias na educacao?",
-        "como a organizacao coletiva em torno de direitos e mudancas caracteriza um movimento social?",
-        "como a coordenacao entre individuos transforma problemas comuns em acao publica?",
-        "como a populacao pode participar das decisoes e do acompanhamento de politicas e acoes publicas?"
+        "como estudantes podem se organizar coletivamente em defesa de direitos e melhorias na educação?",
+        "como a organização coletiva em torno de direitos e mudancas caracteriza um movimento social?",
+        "como a coordenacao entre indivíduos transforma problemas comuns em ação pública?",
+        "como a população pode participar das decisões e do acompanhamento de politicas e ações públicas?"
       ],
-      "correta": "como estudantes podem se organizar coletivamente em defesa de direitos e melhorias na educacao?",
+      "correta": "como estudantes podem se organizar coletivamente em defesa de direitos e melhorias na educação?",
       "comentario": "A pergunta correta ajuda a investigar movimento estudantil de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
@@ -3960,12 +3960,12 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a afirmacao que revela compreensao inadequada de movimento estudantil.",
       "opcoes": [
-        "Um comportamento espontaneo sem reivindicacao, organizacao ou vinculo com direitos educacionais.",
-        "Movimento estudantil pode ser observado em reivindicacoes publicas e organizacao coletiva.",
+        "Um comportamento espontaneo sem reivindicacao, organização ou vínculo com direitos educacionais.",
+        "Movimento estudantil pode ser observado em reivindicacoes públicas e organização coletiva.",
         "Movimento estudantil ajuda a analisar disputas por direitos e reconhecimento.",
-        "Movimento estudantil depende da articulacao entre grupos, pautas e acao social."
+        "Movimento estudantil depende da articulacao entre grupos, pautas e ação social."
       ],
-      "correta": "Um comportamento espontaneo sem reivindicacao, organizacao ou vinculo com direitos educacionais.",
+      "correta": "Um comportamento espontaneo sem reivindicacao, organização ou vínculo com direitos educacionais.",
       "comentario": "A alternativa incorreta expressa uma confusao comum sobre movimento estudantil.",
       "tempoEstimado": 45,
       "tags": [
@@ -3997,15 +3997,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre movimentos sociais, um estudante afirmou: \"movimento estudantil mostra que a escola e a universidade tambem sao espacos de mobilizacao politica\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre movimentos sociais, um estudante afirmou: \"movimento estudantil mostra que a escola e a universidade também são espacos de mobilizacao política\". Qual avaliação é mais consistente?",
       "opcoes": [
         "a afirmacao esta correta, porque estudantes podem atuar coletivamente na defesa de seus direitos e interesses",
-        "Movimento estudantil nao pode ser observado em situacoes do cotidiano.",
+        "Movimento estudantil não pode ser observado em situações do cotidiano.",
         "Movimento estudantil depende apenas da vontade individual, sem contexto coletivo.",
-        "Movimento estudantil torna desnecessario comparar organizacao, causa e participacao publica."
+        "Movimento estudantil torna desnecessario comparar organização, causa e participação pública."
       ],
       "correta": "a afirmacao esta correta, porque estudantes podem atuar coletivamente na defesa de seus direitos e interesses",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de movimento estudantil.",
+      "comentario": "A avaliação correta recupera o nucleo teorico de movimento estudantil.",
       "tempoEstimado": 50,
       "tags": [
         "movimentos-sociais",
@@ -4036,15 +4036,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando estudantes enfrentam problemas comuns, mas nao possuem canais de organizacao ou representacao, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando estudantes enfrentam problemas comuns, mas não possuem canais de organização ou representação, a melhor interpretação sociológica e que:",
       "opcoes": [
         "a capacidade de mobilizacao e de defesa de pautas educacionais fica reduzida",
-        "Movimento estudantil desaparece porque a sociedade nao depende mais de organizacao coletiva.",
+        "Movimento estudantil desaparece porque a sociedade não depende mais de organização coletiva.",
         "Movimento estudantil deixa de existir sempre que surgem conflitos entre grupos.",
-        "Movimento estudantil so importa em sociedades antigas, nao no presente."
+        "Movimento estudantil so importa em sociedades antigas, não no presente."
       ],
       "correta": "a capacidade de mobilizacao e de defesa de pautas educacionais fica reduzida",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "movimentos-sociais",
@@ -4075,14 +4075,14 @@ export const movimentosSociais = {
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente movimento estudantil a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente movimento estudantil a uma situação de comunidade escolar?",
       "opcoes": [
-        "a escola debate o papel de gremios, centros academicos e assembleias na participacao estudantil",
+        "a escola debate o papel de gremios, centros academicos e assembleias na participação estudantil",
         "a escola debate como coletivos estudantis podem se organizar em torno de causas e reivindicacoes",
         "a turma analisa campanhas e mutiroes organizados por estudantes em torno de demandas comuns",
-        "a escola discute assembleias, conselhos e gremios como formas de participacao popular em escala local"
+        "a escola discute assembleias, conselhos e gremios como formas de participação popular em escala local"
       ],
-      "correta": "a escola debate o papel de gremios, centros academicos e assembleias na participacao estudantil",
+      "correta": "a escola debate o papel de gremios, centros academicos e assembleias na participação estudantil",
       "comentario": "A alternativa correta aproxima movimento estudantil de um contexto escolar concreto.",
       "tempoEstimado": 55,
       "tags": [
@@ -4116,12 +4116,12 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual sintese final representa melhor movimento estudantil?",
       "opcoes": [
-        "movimento estudantil e a mobilizacao coletiva dos estudantes em defesa de direitos e melhorias na educacao",
-        "Movimento estudantil e um fator biologico fixo, sem relacao com reivindicacao ou organizacao coletiva.",
-        "Movimento estudantil explica apenas escolhas privadas e ignora a dimensao publica.",
-        "Movimento estudantil impede qualquer mudanca historica ou social."
+        "movimento estudantil e a mobilizacao coletiva dos estudantes em defesa de direitos e melhorias na educação",
+        "Movimento estudantil e um fator biológico fixo, sem relação com reivindicacao ou organização coletiva.",
+        "Movimento estudantil explica apenas escolhas privadas e ignora a dimensao pública.",
+        "Movimento estudantil impede qualquer mudanca histórica ou social."
       ],
-      "correta": "movimento estudantil e a mobilizacao coletiva dos estudantes em defesa de direitos e melhorias na educacao",
+      "correta": "movimento estudantil e a mobilizacao coletiva dos estudantes em defesa de direitos e melhorias na educação",
       "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de movimento estudantil.",
       "tempoEstimado": 60,
       "tags": [
@@ -4155,13 +4155,13 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Em Sociologia, movimentos ambientais pode ser definido(a) como:",
       "opcoes": [
-        "as acoes coletivas voltadas a defesa do meio ambiente, do uso sustentavel dos recursos e do enfrentamento de impactos socioambientais",
-        "a acao coletiva organizada de grupos que buscam defender direitos, reivindicar mudancas ou resistir a desigualdades e opressoes",
-        "a atuacao conjunta de pessoas ou grupos em torno de interesses, problemas ou objetivos compartilhados",
-        "o envolvimento de grupos e cidadaos em debates, decisoes e acoes relativas a vida publica e aos interesses coletivos"
+        "as ações coletivas voltadas a defesa do meio ambiente, do uso sustentável dos recursos e do enfrentamento de impactos socioambientais",
+        "a ação coletiva organizada de grupos que buscam defender direitos, reivindicar mudancas ou resistir a desigualdades e opressoes",
+        "a atuação conjunta de pessoas ou grupos em torno de interesses, problemas ou objetivos compartilhados",
+        "o envolvimento de grupos e cidadãos em debates, decisões e ações relativas a vida pública e aos interesses coletivos"
       ],
-      "correta": "as acoes coletivas voltadas a defesa do meio ambiente, do uso sustentavel dos recursos e do enfrentamento de impactos socioambientais",
-      "comentario": "Movimentos ambientais refere-se a as acoes coletivas voltadas a defesa do meio ambiente, do uso sustentavel dos recursos e do enfrentamento de impactos socioambientais.",
+      "correta": "as ações coletivas voltadas a defesa do meio ambiente, do uso sustentável dos recursos e do enfrentamento de impactos socioambientais",
+      "comentario": "Movimentos ambientais refere-se a as ações coletivas voltadas a defesa do meio ambiente, do uso sustentável dos recursos e do enfrentamento de impactos socioambientais.",
       "tempoEstimado": 20,
       "tags": [
         "movimentos-sociais",
@@ -4192,15 +4192,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: grupos denunciam poluicao, desmatamento e ameacas a territorios e recursos naturais Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: grupos denunciam poluicao, desmatamento e ameacas a territorios e recursos naturais Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
         "Movimentos ambientais",
         "Conceito de movimento social",
-        "Acao coletiva",
-        "Participacao popular"
+        "Ação coletiva",
+        "Participação popular"
       ],
       "correta": "Movimentos ambientais",
-      "comentario": "A situacao apresentada e um exemplo de movimentos ambientais.",
+      "comentario": "A situação apresentada é um exemplo de movimentos ambientais.",
       "tempoEstimado": 25,
       "tags": [
         "movimentos-sociais",
@@ -4233,12 +4233,12 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual afirmacao descreve corretamente movimentos ambientais?",
       "opcoes": [
-        "As acoes coletivas voltadas a defesa do meio ambiente, do uso sustentavel dos recursos e do enfrentamento de impactos socioambientais.",
-        "Um tema sem relacao com direitos, territorio ou participacao social.",
-        "Movimentos do campo e da cidade significa as mobilizacoes coletivas ligadas a disputas por terra, moradia, mobilidade, servicos urbanos e condicoes de vida em territorios rurais e urbanos.",
-        "Movimentos sociais tratam apenas de reacoes privadas e nao de organizacao publica."
+        "As ações coletivas voltadas a defesa do meio ambiente, do uso sustentável dos recursos e do enfrentamento de impactos socioambientais.",
+        "Um tema sem relação com direitos, territorio ou participação social.",
+        "Movimentos do campo e da cidade significa as mobilizacoes coletivas ligadas a disputas por terra, moradia, mobilidade, serviços urbanos e condicoes de vida em territorios rurais e urbanos.",
+        "Movimentos sociais tratam apenas de reações privadas e não de organização pública."
       ],
-      "correta": "As acoes coletivas voltadas a defesa do meio ambiente, do uso sustentavel dos recursos e do enfrentamento de impactos socioambientais.",
+      "correta": "As ações coletivas voltadas a defesa do meio ambiente, do uso sustentável dos recursos e do enfrentamento de impactos socioambientais.",
       "comentario": "A afirmacao correta retoma o sentido central de movimentos ambientais.",
       "tempoEstimado": 30,
       "tags": [
@@ -4270,15 +4270,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 4,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a movimentos ambientais.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a movimentos ambientais.",
       "opcoes": [
-        "a ideia de que problemas ambientais sao apenas questoes naturais sem relacao com politica, sociedade ou mobilizacao",
+        "a ideia de que problemas ambientais são apenas questoes naturais sem relação com política, sociedade ou mobilizacao",
         "grupos denunciam poluicao, desmatamento e ameacas a territorios e recursos naturais",
         "campanhas e mobilizacoes exigem protecao ambiental e responsabilidade diante de danos ecologicos",
         "movimentos ambientais articulam cidadania, ciencia, territorio e defesa do futuro coletivo"
       ],
-      "correta": "a ideia de que problemas ambientais sao apenas questoes naturais sem relacao com politica, sociedade ou mobilizacao",
-      "comentario": "a ideia de que problemas ambientais sao apenas questoes naturais sem relacao com politica, sociedade ou mobilizacao nao expressa movimentos ambientais, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "a ideia de que problemas ambientais são apenas questoes naturais sem relação com política, sociedade ou mobilizacao",
+      "comentario": "a ideia de que problemas ambientais são apenas questoes naturais sem relação com política, sociedade ou mobilizacao não expressa movimentos ambientais, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "movimentos-sociais",
@@ -4311,13 +4311,13 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Quando se estuda movimentos ambientais, o foco principal esta em:",
       "opcoes": [
-        "a defesa coletiva do ambiente e a critica a praticas que produzem danos ecologicos e sociais",
-        "a organizacao coletiva em torno de causas, direitos e transformacoes sociais",
+        "a defesa coletiva do ambiente e a crítica a praticas que produzem danos ecologicos e sociais",
+        "a organização coletiva em torno de causas, direitos e transformações sociais",
         "a coordenacao entre pessoas em torno de objetivos e interesses compartilhados",
-        "a presenca ativa da populacao na discussao e no acompanhamento de questoes publicas"
+        "a presenca ativa da população na discussao e no acompanhamento de questoes públicas"
       ],
-      "correta": "a defesa coletiva do ambiente e a critica a praticas que produzem danos ecologicos e sociais",
-      "comentario": "Movimentos ambientais volta a atencao para a defesa coletiva do ambiente e a critica a praticas que produzem danos ecologicos e sociais.",
+      "correta": "a defesa coletiva do ambiente e a crítica a praticas que produzem danos ecologicos e sociais",
+      "comentario": "Movimentos ambientais volta a atenção para a defesa coletiva do ambiente e a crítica a praticas que produzem danos ecologicos e sociais.",
       "tempoEstimado": 35,
       "tags": [
         "movimentos-sociais",
@@ -4348,15 +4348,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre movimentos ambientais e movimentos do campo e da cidade e que:",
+      "enunciado": "A principal diferença entre movimentos ambientais e movimentos do campo e da cidade e que:",
       "opcoes": [
         "movimentos ambientais tem foco na defesa socioambiental, enquanto movimentos do campo e da cidade enfatizam conflitos territoriais e urbanos especificos",
-        "Movimentos ambientais e Movimentos do campo e da cidade sao exatamente o mesmo fenomeno social.",
+        "Movimentos ambientais e Movimentos do campo e da cidade são exatamente o mesmo fenômeno social.",
         "Movimentos do campo e da cidade depende apenas de escolhas privadas, enquanto Movimentos ambientais depende so da biologia.",
-        "Movimentos ambientais elimina a necessidade de observar organizacao coletiva e reivindicacao publica."
+        "Movimentos ambientais elimina a necessidade de observar organização coletiva e reivindicacao pública."
       ],
       "correta": "movimentos ambientais tem foco na defesa socioambiental, enquanto movimentos do campo e da cidade enfatizam conflitos territoriais e urbanos especificos",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "movimentos-sociais",
@@ -4387,15 +4387,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: campanhas e mobilizacoes exigem protecao ambiental e responsabilidade diante de danos ecologicos A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: campanhas e mobilizacoes exigem protecao ambiental e responsabilidade diante de danos ecologicos A leitura sociológica mais adequada aponta para:",
       "opcoes": [
-        "movimentos ambientais mostram que questoes ecologicas tambem sao disputas publicas e sociais",
-        "Movimentos ambientais mostra que causas publicas nao precisam de organizacao coletiva.",
+        "movimentos ambientais mostram que questoes ecologicas também são disputas públicas e sociais",
+        "Movimentos ambientais mostra que causas públicas não precisam de organização coletiva.",
         "Movimentos ambientais prova que toda reivindicacao nasce sem coordenacao nem continuidade.",
-        "Movimentos ambientais significa ausencia completa de identidade coletiva e pressao publica."
+        "Movimentos ambientais significa ausencia completa de identidade coletiva e pressao pública."
       ],
-      "correta": "movimentos ambientais mostram que questoes ecologicas tambem sao disputas publicas e sociais",
-      "comentario": "Movimentos ambientais permite interpretar o caso a partir de organizacao, causa comum e acao publica.",
+      "correta": "movimentos ambientais mostram que questoes ecologicas também são disputas públicas e sociais",
+      "comentario": "Movimentos ambientais permite interpretar o caso a partir de organização, causa comum e ação pública.",
       "tempoEstimado": 40,
       "tags": [
         "movimentos-sociais",
@@ -4426,15 +4426,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia movimentos ambientais de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia movimentos ambientais de maneira mais clara?",
       "opcoes": [
         "movimentos ambientais articulam cidadania, ciencia, territorio e defesa do futuro coletivo",
-        "movimentos sociais envolvem organizacao, identidade coletiva e busca de transformacao ou resistencia",
-        "acao coletiva envolve coordenacao entre individuos para produzir efeitos publicos ou sociais",
-        "participacao popular amplia a presenca da sociedade nas decisoes e no acompanhamento do poder publico"
+        "movimentos sociais envolvem organização, identidade coletiva e busca de transformação ou resistencia",
+        "ação coletiva envolve coordenacao entre indivíduos para produzir efeitos públicos ou sociais",
+        "participação popular amplia a presenca da sociedade nas decisões e no acompanhamento do poder público"
       ],
       "correta": "movimentos ambientais articulam cidadania, ciencia, territorio e defesa do futuro coletivo",
-      "comentario": "A alternativa correta traduz movimentos ambientais em uma situacao concreta de vida social.",
+      "comentario": "A alternativa correta traduz movimentos ambientais em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "movimentos-sociais",
@@ -4465,15 +4465,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"grupos denunciam poluicao, desmatamento e ameacas a territorios e recursos naturais\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"grupos denunciam poluicao, desmatamento e ameacas a territorios e recursos naturais\", qual conclusão é mais adequada?",
       "opcoes": [
-        "os problemas ambientais podem gerar organizacao coletiva em defesa da vida, do territorio e do uso responsavel dos recursos",
+        "os problemas ambientais podem gerar organização coletiva em defesa da vida, do territorio e do uso responsavel dos recursos",
         "Movimentos ambientais indica que mobilizacoes nunca variam historicamente.",
         "Movimentos ambientais so pode ser explicado por fatores biologicos.",
         "Movimentos ambientais dispensa comparacao entre grupos e contextos."
       ],
-      "correta": "os problemas ambientais podem gerar organizacao coletiva em defesa da vida, do territorio e do uso responsavel dos recursos",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "correta": "os problemas ambientais podem gerar organização coletiva em defesa da vida, do territorio e do uso responsavel dos recursos",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "movimentos-sociais",
@@ -4506,12 +4506,12 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com movimentos ambientais?",
       "opcoes": [
-        "como danos ambientais se transformam em pauta de mobilizacao publica e coletiva?",
-        "como a organizacao coletiva em torno de direitos e mudancas caracteriza um movimento social?",
-        "como a coordenacao entre individuos transforma problemas comuns em acao publica?",
-        "como a populacao pode participar das decisoes e do acompanhamento de politicas e acoes publicas?"
+        "como danos ambientais se transformam em pauta de mobilizacao pública e coletiva?",
+        "como a organização coletiva em torno de direitos e mudancas caracteriza um movimento social?",
+        "como a coordenacao entre indivíduos transforma problemas comuns em ação pública?",
+        "como a população pode participar das decisões e do acompanhamento de politicas e ações públicas?"
       ],
-      "correta": "como danos ambientais se transformam em pauta de mobilizacao publica e coletiva?",
+      "correta": "como danos ambientais se transformam em pauta de mobilizacao pública e coletiva?",
       "comentario": "A pergunta correta ajuda a investigar movimentos ambientais de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
@@ -4545,12 +4545,12 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a afirmacao que revela compreensao inadequada de movimentos ambientais.",
       "opcoes": [
-        "Um tema sem relacao com direitos, territorio ou participacao social.",
-        "Movimentos ambientais pode ser observado em reivindicacoes publicas e organizacao coletiva.",
+        "Um tema sem relação com direitos, territorio ou participação social.",
+        "Movimentos ambientais pode ser observado em reivindicacoes públicas e organização coletiva.",
         "Movimentos ambientais ajuda a analisar disputas por direitos e reconhecimento.",
-        "Movimentos ambientais depende da articulacao entre grupos, pautas e acao social."
+        "Movimentos ambientais depende da articulacao entre grupos, pautas e ação social."
       ],
-      "correta": "Um tema sem relacao com direitos, territorio ou participacao social.",
+      "correta": "Um tema sem relação com direitos, territorio ou participação social.",
       "comentario": "A alternativa incorreta expressa uma confusao comum sobre movimentos ambientais.",
       "tempoEstimado": 45,
       "tags": [
@@ -4582,15 +4582,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre movimentos sociais, um estudante afirmou: \"movimentos ambientais ligam protecao da natureza a justica social e responsabilidade coletiva\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre movimentos sociais, um estudante afirmou: \"movimentos ambientais ligam protecao da natureza a justiça social e responsabilidade coletiva\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "a afirmacao esta correta, porque a pauta ambiental envolve disputa publica sobre uso do territorio e do futuro comum",
-        "Movimentos ambientais nao pode ser observado em situacoes do cotidiano.",
+        "a afirmacao esta correta, porque a pauta ambiental envolve disputa pública sobre uso do territorio e do futuro comum",
+        "Movimentos ambientais não pode ser observado em situações do cotidiano.",
         "Movimentos ambientais depende apenas da vontade individual, sem contexto coletivo.",
-        "Movimentos ambientais torna desnecessario comparar organizacao, causa e participacao publica."
+        "Movimentos ambientais torna desnecessario comparar organização, causa e participação pública."
       ],
-      "correta": "a afirmacao esta correta, porque a pauta ambiental envolve disputa publica sobre uso do territorio e do futuro comum",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de movimentos ambientais.",
+      "correta": "a afirmacao esta correta, porque a pauta ambiental envolve disputa pública sobre uso do territorio e do futuro comum",
+      "comentario": "A avaliação correta recupera o nucleo teorico de movimentos ambientais.",
       "tempoEstimado": 50,
       "tags": [
         "movimentos-sociais",
@@ -4621,15 +4621,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando danos ambientais sao tratados apenas como acidentes isolados, sem organizacao publica de resposta, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando danos ambientais são tratados apenas como acidentes isolados, sem organização pública de resposta, a melhor interpretação sociológica e que:",
       "opcoes": [
         "a capacidade de denuncia e defesa coletiva do ambiente tende a diminuir",
-        "Movimentos ambientais desaparece porque a sociedade nao depende mais de organizacao coletiva.",
+        "Movimentos ambientais desaparece porque a sociedade não depende mais de organização coletiva.",
         "Movimentos ambientais deixa de existir sempre que surgem conflitos entre grupos.",
-        "Movimentos ambientais so importa em sociedades antigas, nao no presente."
+        "Movimentos ambientais so importa em sociedades antigas, não no presente."
       ],
       "correta": "a capacidade de denuncia e defesa coletiva do ambiente tende a diminuir",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "movimentos-sociais",
@@ -4660,12 +4660,12 @@ export const movimentosSociais = {
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente movimentos ambientais a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente movimentos ambientais a uma situação de comunidade escolar?",
       "opcoes": [
         "a turma analisa campanhas contra poluicao e em defesa de areas verdes como formas de mobilizacao ambiental",
         "a escola debate como coletivos estudantis podem se organizar em torno de causas e reivindicacoes",
         "a turma analisa campanhas e mutiroes organizados por estudantes em torno de demandas comuns",
-        "a escola discute assembleias, conselhos e gremios como formas de participacao popular em escala local"
+        "a escola discute assembleias, conselhos e gremios como formas de participação popular em escala local"
       ],
       "correta": "a turma analisa campanhas contra poluicao e em defesa de areas verdes como formas de mobilizacao ambiental",
       "comentario": "A alternativa correta aproxima movimentos ambientais de um contexto escolar concreto.",
@@ -4701,12 +4701,12 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual sintese final representa melhor movimentos ambientais?",
       "opcoes": [
-        "movimentos ambientais sao acoes coletivas em defesa do meio ambiente e contra danos socioambientais",
-        "Movimentos ambientais e um fator biologico fixo, sem relacao com reivindicacao ou organizacao coletiva.",
-        "Movimentos ambientais explica apenas escolhas privadas e ignora a dimensao publica.",
-        "Movimentos ambientais impede qualquer mudanca historica ou social."
+        "movimentos ambientais são ações coletivas em defesa do meio ambiente e contra danos socioambientais",
+        "Movimentos ambientais e um fator biológico fixo, sem relação com reivindicacao ou organização coletiva.",
+        "Movimentos ambientais explica apenas escolhas privadas e ignora a dimensao pública.",
+        "Movimentos ambientais impede qualquer mudanca histórica ou social."
       ],
-      "correta": "movimentos ambientais sao acoes coletivas em defesa do meio ambiente e contra danos socioambientais",
+      "correta": "movimentos ambientais são ações coletivas em defesa do meio ambiente e contra danos socioambientais",
       "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de movimentos ambientais.",
       "tempoEstimado": 60,
       "tags": [
@@ -4740,13 +4740,13 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Em Sociologia, movimentos do campo e da cidade pode ser definido(a) como:",
       "opcoes": [
-        "as mobilizacoes coletivas ligadas a disputas por terra, moradia, mobilidade, servicos urbanos e condicoes de vida em territorios rurais e urbanos",
+        "as mobilizacoes coletivas ligadas a disputas por terra, moradia, mobilidade, serviços urbanos e condicoes de vida em territorios rurais e urbanos",
         "as mobilizacoes coletivas voltadas ao combate ao racismo, a afirmacao da identidade negra e a luta por igualdade e reconhecimento",
-        "as mobilizacoes organizadas por estudantes em torno de direitos educacionais, participacao e melhoria das condicoes de estudo",
-        "as acoes coletivas voltadas a defesa do meio ambiente, do uso sustentavel dos recursos e do enfrentamento de impactos socioambientais"
+        "as mobilizacoes organizadas por estudantes em torno de direitos educacionais, participação e melhoria das condicoes de estudo",
+        "as ações coletivas voltadas a defesa do meio ambiente, do uso sustentável dos recursos e do enfrentamento de impactos socioambientais"
       ],
-      "correta": "as mobilizacoes coletivas ligadas a disputas por terra, moradia, mobilidade, servicos urbanos e condicoes de vida em territorios rurais e urbanos",
-      "comentario": "Movimentos do campo e da cidade refere-se a as mobilizacoes coletivas ligadas a disputas por terra, moradia, mobilidade, servicos urbanos e condicoes de vida em territorios rurais e urbanos.",
+      "correta": "as mobilizacoes coletivas ligadas a disputas por terra, moradia, mobilidade, serviços urbanos e condicoes de vida em territorios rurais e urbanos",
+      "comentario": "Movimentos do campo e da cidade refere-se a as mobilizacoes coletivas ligadas a disputas por terra, moradia, mobilidade, serviços urbanos e condicoes de vida em territorios rurais e urbanos.",
       "tempoEstimado": 20,
       "tags": [
         "movimentos-sociais",
@@ -4777,7 +4777,7 @@ export const movimentosSociais = {
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: grupos se organizam para reivindicar reforma agraria, moradia digna, transporte e acesso a servicos basicos Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: grupos se organizam para reivindicar reforma agraria, moradia digna, transporte e acesso a serviços basicos Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
         "Movimentos do campo e da cidade",
         "Movimento negro",
@@ -4785,7 +4785,7 @@ export const movimentosSociais = {
         "Movimentos ambientais"
       ],
       "correta": "Movimentos do campo e da cidade",
-      "comentario": "A situacao apresentada e um exemplo de movimentos do campo e da cidade.",
+      "comentario": "A situação apresentada é um exemplo de movimentos do campo e da cidade.",
       "tempoEstimado": 25,
       "tags": [
         "movimentos-sociais",
@@ -4818,12 +4818,12 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual afirmacao descreve corretamente movimentos do campo e da cidade?",
       "opcoes": [
-        "As mobilizacoes coletivas ligadas a disputas por terra, moradia, mobilidade, servicos urbanos e condicoes de vida em territorios rurais e urbanos.",
-        "Uma questao puramente individual sem relacao com espaco, territorio ou politicas publicas.",
-        "Movimentos ambientais significa as acoes coletivas voltadas a defesa do meio ambiente, do uso sustentavel dos recursos e do enfrentamento de impactos socioambientais.",
-        "Movimentos sociais tratam apenas de reacoes privadas e nao de organizacao publica."
+        "As mobilizacoes coletivas ligadas a disputas por terra, moradia, mobilidade, serviços urbanos e condicoes de vida em territorios rurais e urbanos.",
+        "Uma questao puramente individual sem relação com espaco, territorio ou politicas públicas.",
+        "Movimentos ambientais significa as ações coletivas voltadas a defesa do meio ambiente, do uso sustentável dos recursos e do enfrentamento de impactos socioambientais.",
+        "Movimentos sociais tratam apenas de reações privadas e não de organização pública."
       ],
-      "correta": "As mobilizacoes coletivas ligadas a disputas por terra, moradia, mobilidade, servicos urbanos e condicoes de vida em territorios rurais e urbanos.",
+      "correta": "As mobilizacoes coletivas ligadas a disputas por terra, moradia, mobilidade, serviços urbanos e condicoes de vida em territorios rurais e urbanos.",
       "comentario": "A afirmacao correta retoma o sentido central de movimentos do campo e da cidade.",
       "tempoEstimado": 30,
       "tags": [
@@ -4855,15 +4855,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 4,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a movimentos do campo e da cidade.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a movimentos do campo e da cidade.",
       "opcoes": [
-        "a ideia de que problemas de terra, moradia e servicos publicos nao tem dimensao coletiva ou territorial",
-        "grupos se organizam para reivindicar reforma agraria, moradia digna, transporte e acesso a servicos basicos",
+        "a ideia de que problemas de terra, moradia e serviços públicos não tem dimensao coletiva ou territorial",
+        "grupos se organizam para reivindicar reforma agraria, moradia digna, transporte e acesso a serviços basicos",
         "ocupacoes, associacoes e protestos expressam lutas por territorio e condicoes de vida em espacos rurais e urbanos",
         "movimentos do campo e da cidade mostram como o territorio e um eixo central de conflitos e reivindicacoes sociais"
       ],
-      "correta": "a ideia de que problemas de terra, moradia e servicos publicos nao tem dimensao coletiva ou territorial",
-      "comentario": "a ideia de que problemas de terra, moradia e servicos publicos nao tem dimensao coletiva ou territorial nao expressa movimentos do campo e da cidade, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "a ideia de que problemas de terra, moradia e serviços públicos não tem dimensao coletiva ou territorial",
+      "comentario": "a ideia de que problemas de terra, moradia e serviços públicos não tem dimensao coletiva ou territorial não expressa movimentos do campo e da cidade, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "movimentos-sociais",
@@ -4897,12 +4897,12 @@ export const movimentosSociais = {
       "enunciado": "Quando se estuda movimentos do campo e da cidade, o foco principal esta em:",
       "opcoes": [
         "as disputas por territorio, moradia, infraestrutura e acesso a condicoes dignas de vida",
-        "o enfrentamento do racismo e a luta por reconhecimento, igualdade e valorizacao da populacao negra",
-        "a organizacao dos estudantes em defesa de direitos, representacao e melhorias na educacao",
-        "a defesa coletiva do ambiente e a critica a praticas que produzem danos ecologicos e sociais"
+        "o enfrentamento do racismo e a luta por reconhecimento, igualdade e valorizacao da população negra",
+        "a organização dos estudantes em defesa de direitos, representação e melhorias na educação",
+        "a defesa coletiva do ambiente e a crítica a praticas que produzem danos ecologicos e sociais"
       ],
       "correta": "as disputas por territorio, moradia, infraestrutura e acesso a condicoes dignas de vida",
-      "comentario": "Movimentos do campo e da cidade volta a atencao para as disputas por territorio, moradia, infraestrutura e acesso a condicoes dignas de vida.",
+      "comentario": "Movimentos do campo e da cidade volta a atenção para as disputas por territorio, moradia, infraestrutura e acesso a condicoes dignas de vida.",
       "tempoEstimado": 35,
       "tags": [
         "movimentos-sociais",
@@ -4933,15 +4933,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre movimentos do campo e da cidade e movimentos ambientais e que:",
+      "enunciado": "A principal diferença entre movimentos do campo e da cidade e movimentos ambientais e que:",
       "opcoes": [
         "movimentos do campo e da cidade enfatizam conflitos territoriais e condicoes de vida, enquanto movimentos ambientais focalizam a protecao socioambiental de forma mais ampla",
-        "Movimentos do campo e da cidade e Movimentos ambientais sao exatamente o mesmo fenomeno social.",
+        "Movimentos do campo e da cidade e Movimentos ambientais são exatamente o mesmo fenômeno social.",
         "Movimentos ambientais depende apenas de escolhas privadas, enquanto Movimentos do campo e da cidade depende so da biologia.",
-        "Movimentos do campo e da cidade elimina a necessidade de observar organizacao coletiva e reivindicacao publica."
+        "Movimentos do campo e da cidade elimina a necessidade de observar organização coletiva e reivindicacao pública."
       ],
       "correta": "movimentos do campo e da cidade enfatizam conflitos territoriais e condicoes de vida, enquanto movimentos ambientais focalizam a protecao socioambiental de forma mais ampla",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "movimentos-sociais",
@@ -4972,15 +4972,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: ocupacoes, associacoes e protestos expressam lutas por territorio e condicoes de vida em espacos rurais e urbanos A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: ocupacoes, associacoes e protestos expressam lutas por territorio e condicoes de vida em espacos rurais e urbanos A leitura sociológica mais adequada aponta para:",
       "opcoes": [
         "esses movimentos ajudam a entender conflitos sociais ligados ao espaco, ao territorio e ao direito a cidade ou a terra",
-        "Movimentos do campo e da cidade mostra que causas publicas nao precisam de organizacao coletiva.",
+        "Movimentos do campo e da cidade mostra que causas públicas não precisam de organização coletiva.",
         "Movimentos do campo e da cidade prova que toda reivindicacao nasce sem coordenacao nem continuidade.",
-        "Movimentos do campo e da cidade significa ausencia completa de identidade coletiva e pressao publica."
+        "Movimentos do campo e da cidade significa ausencia completa de identidade coletiva e pressao pública."
       ],
       "correta": "esses movimentos ajudam a entender conflitos sociais ligados ao espaco, ao territorio e ao direito a cidade ou a terra",
-      "comentario": "Movimentos do campo e da cidade permite interpretar o caso a partir de organizacao, causa comum e acao publica.",
+      "comentario": "Movimentos do campo e da cidade permite interpretar o caso a partir de organização, causa comum e ação pública.",
       "tempoEstimado": 40,
       "tags": [
         "movimentos-sociais",
@@ -5011,15 +5011,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia movimentos do campo e da cidade de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia movimentos do campo e da cidade de maneira mais clara?",
       "opcoes": [
         "movimentos do campo e da cidade mostram como o territorio e um eixo central de conflitos e reivindicacoes sociais",
         "o movimento negro articula luta contra o racismo e afirmacao positiva de identidades e trajetorias negras",
-        "movimento estudantil mostra como a juventude tambem atua politicamente na defesa de direitos e condicoes de ensino",
+        "movimento estudantil mostra como a juventude também atua politicamente na defesa de direitos e condicoes de ensino",
         "movimentos ambientais articulam cidadania, ciencia, territorio e defesa do futuro coletivo"
       ],
       "correta": "movimentos do campo e da cidade mostram como o territorio e um eixo central de conflitos e reivindicacoes sociais",
-      "comentario": "A alternativa correta traduz movimentos do campo e da cidade em uma situacao concreta de vida social.",
+      "comentario": "A alternativa correta traduz movimentos do campo e da cidade em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "movimentos-sociais",
@@ -5050,15 +5050,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"grupos se organizam para reivindicar reforma agraria, moradia digna, transporte e acesso a servicos basicos\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"grupos se organizam para reivindicar reforma agraria, moradia digna, transporte e acesso a serviços basicos\", qual conclusão é mais adequada?",
       "opcoes": [
-        "territorio, moradia e acesso a servicos podem se tornar eixos de forte mobilizacao coletiva",
+        "territorio, moradia e acesso a serviços podem se tornar eixos de forte mobilizacao coletiva",
         "Movimentos do campo e da cidade indica que mobilizacoes nunca variam historicamente.",
         "Movimentos do campo e da cidade so pode ser explicado por fatores biologicos.",
         "Movimentos do campo e da cidade dispensa comparacao entre grupos e contextos."
       ],
-      "correta": "territorio, moradia e acesso a servicos podem se tornar eixos de forte mobilizacao coletiva",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "correta": "territorio, moradia e acesso a serviços podem se tornar eixos de forte mobilizacao coletiva",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "movimentos-sociais",
@@ -5091,12 +5091,12 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com movimentos do campo e da cidade?",
       "opcoes": [
-        "como conflitos por terra, moradia e servicos se transformam em movimentos sociais?",
-        "como a organizacao coletiva em torno de direitos e mudancas caracteriza um movimento social?",
-        "como a coordenacao entre individuos transforma problemas comuns em acao publica?",
-        "como a populacao pode participar das decisoes e do acompanhamento de politicas e acoes publicas?"
+        "como conflitos por terra, moradia e serviços se transformam em movimentos sociais?",
+        "como a organização coletiva em torno de direitos e mudancas caracteriza um movimento social?",
+        "como a coordenacao entre indivíduos transforma problemas comuns em ação pública?",
+        "como a população pode participar das decisões e do acompanhamento de politicas e ações públicas?"
       ],
-      "correta": "como conflitos por terra, moradia e servicos se transformam em movimentos sociais?",
+      "correta": "como conflitos por terra, moradia e serviços se transformam em movimentos sociais?",
       "comentario": "A pergunta correta ajuda a investigar movimentos do campo e da cidade de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
@@ -5130,12 +5130,12 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a afirmacao que revela compreensao inadequada de movimentos do campo e da cidade.",
       "opcoes": [
-        "Uma questao puramente individual sem relacao com espaco, territorio ou politicas publicas.",
-        "Movimentos do campo e da cidade pode ser observado em reivindicacoes publicas e organizacao coletiva.",
+        "Uma questao puramente individual sem relação com espaco, territorio ou politicas públicas.",
+        "Movimentos do campo e da cidade pode ser observado em reivindicacoes públicas e organização coletiva.",
         "Movimentos do campo e da cidade ajuda a analisar disputas por direitos e reconhecimento.",
-        "Movimentos do campo e da cidade depende da articulacao entre grupos, pautas e acao social."
+        "Movimentos do campo e da cidade depende da articulacao entre grupos, pautas e ação social."
       ],
-      "correta": "Uma questao puramente individual sem relacao com espaco, territorio ou politicas publicas.",
+      "correta": "Uma questao puramente individual sem relação com espaco, territorio ou politicas públicas.",
       "comentario": "A alternativa incorreta expressa uma confusao comum sobre movimentos do campo e da cidade.",
       "tempoEstimado": 45,
       "tags": [
@@ -5167,15 +5167,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre movimentos sociais, um estudante afirmou: \"lutas por terra e moradia revelam que territorio e cidadania estao ligados a conflitos e reivindicacoes coletivas\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre movimentos sociais, um estudante afirmou: \"lutas por terra e moradia revelam que territorio e cidadania estao ligados a conflitos e reivindicacoes coletivas\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "a afirmacao esta correta, porque o espaco social e territorial tambem organiza desigualdades e mobilizacoes",
-        "Movimentos do campo e da cidade nao pode ser observado em situacoes do cotidiano.",
+        "a afirmacao esta correta, porque o espaco social e territorial também organiza desigualdades e mobilizacoes",
+        "Movimentos do campo e da cidade não pode ser observado em situações do cotidiano.",
         "Movimentos do campo e da cidade depende apenas da vontade individual, sem contexto coletivo.",
-        "Movimentos do campo e da cidade torna desnecessario comparar organizacao, causa e participacao publica."
+        "Movimentos do campo e da cidade torna desnecessario comparar organização, causa e participação pública."
       ],
-      "correta": "a afirmacao esta correta, porque o espaco social e territorial tambem organiza desigualdades e mobilizacoes",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de movimentos do campo e da cidade.",
+      "correta": "a afirmacao esta correta, porque o espaco social e territorial também organiza desigualdades e mobilizacoes",
+      "comentario": "A avaliação correta recupera o nucleo teorico de movimentos do campo e da cidade.",
       "tempoEstimado": 50,
       "tags": [
         "movimentos-sociais",
@@ -5206,15 +5206,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando grupos sofrem remocoes ou ausencia de servicos, mas nao conseguem articular acao coletiva ou visibilidade publica, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando grupos sofrem remocoes ou ausencia de serviços, mas não conseguem articular ação coletiva ou visibilidade pública, a melhor interpretação sociológica e que:",
       "opcoes": [
-        "a pauta territorial perde forca politica e capacidade de pressao",
-        "Movimentos do campo e da cidade desaparece porque a sociedade nao depende mais de organizacao coletiva.",
+        "a pauta territorial perde forca política e capacidade de pressao",
+        "Movimentos do campo e da cidade desaparece porque a sociedade não depende mais de organização coletiva.",
         "Movimentos do campo e da cidade deixa de existir sempre que surgem conflitos entre grupos.",
-        "Movimentos do campo e da cidade so importa em sociedades antigas, nao no presente."
+        "Movimentos do campo e da cidade so importa em sociedades antigas, não no presente."
       ],
-      "correta": "a pauta territorial perde forca politica e capacidade de pressao",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "correta": "a pauta territorial perde forca política e capacidade de pressao",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "movimentos-sociais",
@@ -5245,14 +5245,14 @@ export const movimentosSociais = {
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente movimentos do campo e da cidade a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente movimentos do campo e da cidade a uma situação de comunidade escolar?",
       "opcoes": [
-        "a escola discute mobilidade, moradia e acesso a servicos como pautas de mobilizacao urbana e territorial",
+        "a escola discute mobilidade, moradia e acesso a serviços como pautas de mobilizacao urbana e territorial",
         "a escola debate como coletivos estudantis podem se organizar em torno de causas e reivindicacoes",
         "a turma analisa campanhas e mutiroes organizados por estudantes em torno de demandas comuns",
-        "a escola discute assembleias, conselhos e gremios como formas de participacao popular em escala local"
+        "a escola discute assembleias, conselhos e gremios como formas de participação popular em escala local"
       ],
-      "correta": "a escola discute mobilidade, moradia e acesso a servicos como pautas de mobilizacao urbana e territorial",
+      "correta": "a escola discute mobilidade, moradia e acesso a serviços como pautas de mobilizacao urbana e territorial",
       "comentario": "A alternativa correta aproxima movimentos do campo e da cidade de um contexto escolar concreto.",
       "tempoEstimado": 55,
       "tags": [
@@ -5286,12 +5286,12 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual sintese final representa melhor movimentos do campo e da cidade?",
       "opcoes": [
-        "movimentos do campo e da cidade sao mobilizacoes coletivas ligadas a territorio, moradia e condicoes de vida",
-        "Movimentos do campo e da cidade e um fator biologico fixo, sem relacao com reivindicacao ou organizacao coletiva.",
-        "Movimentos do campo e da cidade explica apenas escolhas privadas e ignora a dimensao publica.",
-        "Movimentos do campo e da cidade impede qualquer mudanca historica ou social."
+        "movimentos do campo e da cidade são mobilizacoes coletivas ligadas a territorio, moradia e condicoes de vida",
+        "Movimentos do campo e da cidade e um fator biológico fixo, sem relação com reivindicacao ou organização coletiva.",
+        "Movimentos do campo e da cidade explica apenas escolhas privadas e ignora a dimensao pública.",
+        "Movimentos do campo e da cidade impede qualquer mudanca histórica ou social."
       ],
-      "correta": "movimentos do campo e da cidade sao mobilizacoes coletivas ligadas a territorio, moradia e condicoes de vida",
+      "correta": "movimentos do campo e da cidade são mobilizacoes coletivas ligadas a territorio, moradia e condicoes de vida",
       "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de movimentos do campo e da cidade.",
       "tempoEstimado": 60,
       "tags": [
@@ -5325,13 +5325,13 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Em Sociologia, redes digitais e mobilizacao pode ser definido(a) como:",
       "opcoes": [
-        "o uso de plataformas e ambientes digitais para difundir pautas, organizar acoes e ampliar a visibilidade de movimentos e causas coletivas",
-        "a atuacao conjunta de pessoas ou grupos em torno de interesses, problemas ou objetivos compartilhados",
-        "o envolvimento de grupos e cidadaos em debates, decisoes e acoes relativas a vida publica e aos interesses coletivos",
-        "as mobilizacoes coletivas de trabalhadores em defesa de direitos, melhores condicoes laborais e reconhecimento politico e social"
+        "o uso de plataformas e ambientes digitais para difundir pautas, organizar ações e ampliar a visibilidade de movimentos e causas coletivas",
+        "a atuação conjunta de pessoas ou grupos em torno de interesses, problemas ou objetivos compartilhados",
+        "o envolvimento de grupos e cidadãos em debates, decisões e ações relativas a vida pública e aos interesses coletivos",
+        "as mobilizacoes coletivas de trabalhadores em defesa de direitos, melhores condicoes laborais e reconhecimento político e social"
       ],
-      "correta": "o uso de plataformas e ambientes digitais para difundir pautas, organizar acoes e ampliar a visibilidade de movimentos e causas coletivas",
-      "comentario": "Redes digitais e mobilizacao refere-se a o uso de plataformas e ambientes digitais para difundir pautas, organizar acoes e ampliar a visibilidade de movimentos e causas coletivas.",
+      "correta": "o uso de plataformas e ambientes digitais para difundir pautas, organizar ações e ampliar a visibilidade de movimentos e causas coletivas",
+      "comentario": "Redes digitais e mobilizacao refere-se a o uso de plataformas e ambientes digitais para difundir pautas, organizar ações e ampliar a visibilidade de movimentos e causas coletivas.",
       "tempoEstimado": 20,
       "tags": [
         "movimentos-sociais",
@@ -5362,15 +5362,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: grupos usam redes para convocar atos, divulgar denuncias e articular apoio a causas publicas Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: grupos usam redes para convocar atos, divulgar denuncias e articular apoio a causas públicas Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
         "Redes digitais e mobilizacao",
-        "Acao coletiva",
-        "Participacao popular",
+        "Ação coletiva",
+        "Participação popular",
         "Movimentos trabalhistas"
       ],
       "correta": "Redes digitais e mobilizacao",
-      "comentario": "A situacao apresentada e um exemplo de redes digitais e mobilizacao.",
+      "comentario": "A situação apresentada é um exemplo de redes digitais e mobilizacao.",
       "tempoEstimado": 25,
       "tags": [
         "movimentos-sociais",
@@ -5403,12 +5403,12 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual afirmacao descreve corretamente redes digitais e mobilizacao?",
       "opcoes": [
-        "O uso de plataformas e ambientes digitais para difundir pautas, organizar acoes e ampliar a visibilidade de movimentos e causas coletivas.",
-        "Um espaco restrito ao entretenimento e sem impacto sobre participacao ou reivindicacao publica.",
-        "Acao coletiva significa a atuacao conjunta de pessoas ou grupos em torno de interesses, problemas ou objetivos compartilhados.",
-        "Movimentos sociais tratam apenas de reacoes privadas e nao de organizacao publica."
+        "O uso de plataformas e ambientes digitais para difundir pautas, organizar ações e ampliar a visibilidade de movimentos e causas coletivas.",
+        "Um espaco restrito ao entretenimento e sem impacto sobre participação ou reivindicacao pública.",
+        "Ação coletiva significa a atuação conjunta de pessoas ou grupos em torno de interesses, problemas ou objetivos compartilhados.",
+        "Movimentos sociais tratam apenas de reações privadas e não de organização pública."
       ],
-      "correta": "O uso de plataformas e ambientes digitais para difundir pautas, organizar acoes e ampliar a visibilidade de movimentos e causas coletivas.",
+      "correta": "O uso de plataformas e ambientes digitais para difundir pautas, organizar ações e ampliar a visibilidade de movimentos e causas coletivas.",
       "comentario": "A afirmacao correta retoma o sentido central de redes digitais e mobilizacao.",
       "tempoEstimado": 30,
       "tags": [
@@ -5440,15 +5440,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 4,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a redes digitais e mobilizacao.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a redes digitais e mobilizacao.",
       "opcoes": [
-        "a ideia de que plataformas digitais nao influenciam articulacao, divulgacao ou participacao em movimentos sociais",
-        "grupos usam redes para convocar atos, divulgar denuncias e articular apoio a causas publicas",
-        "campanhas online ampliam alcance, rapidez de comunicacao e circulacao de informacoes sobre mobilizacoes",
-        "redes digitais e mobilizacao mostram como o ambiente conectado se tornou parte da organizacao coletiva contemporanea"
+        "a ideia de que plataformas digitais não influenciam articulacao, divulgacao ou participação em movimentos sociais",
+        "grupos usam redes para convocar atos, divulgar denuncias e articular apoio a causas públicas",
+        "campanhas online ampliam alcance, rapidez de comunicacao e circulação de informacoes sobre mobilizacoes",
+        "redes digitais e mobilizacao mostram como o ambiente conectado se tornou parte da organização coletiva contemporanea"
       ],
-      "correta": "a ideia de que plataformas digitais nao influenciam articulacao, divulgacao ou participacao em movimentos sociais",
-      "comentario": "a ideia de que plataformas digitais nao influenciam articulacao, divulgacao ou participacao em movimentos sociais nao expressa redes digitais e mobilizacao, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "a ideia de que plataformas digitais não influenciam articulacao, divulgacao ou participação em movimentos sociais",
+      "comentario": "a ideia de que plataformas digitais não influenciam articulacao, divulgacao ou participação em movimentos sociais não expressa redes digitais e mobilizacao, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "movimentos-sociais",
@@ -5481,13 +5481,13 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Quando se estuda redes digitais e mobilizacao, o foco principal esta em:",
       "opcoes": [
-        "a circulacao digital de informacoes e a organizacao de acoes coletivas em rede",
+        "a circulação digital de informacoes e a organização de ações coletivas em rede",
         "a coordenacao entre pessoas em torno de objetivos e interesses compartilhados",
-        "a presenca ativa da populacao na discussao e no acompanhamento de questoes publicas",
+        "a presenca ativa da população na discussao e no acompanhamento de questoes públicas",
         "a mobilizacao de trabalhadores em torno de direitos, protecao e melhores condicoes de trabalho"
       ],
-      "correta": "a circulacao digital de informacoes e a organizacao de acoes coletivas em rede",
-      "comentario": "Redes digitais e mobilizacao volta a atencao para a circulacao digital de informacoes e a organizacao de acoes coletivas em rede.",
+      "correta": "a circulação digital de informacoes e a organização de ações coletivas em rede",
+      "comentario": "Redes digitais e mobilizacao volta a atenção para a circulação digital de informacoes e a organização de ações coletivas em rede.",
       "tempoEstimado": 35,
       "tags": [
         "movimentos-sociais",
@@ -5518,15 +5518,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre redes digitais e mobilizacao e acao coletiva e que:",
+      "enunciado": "A principal diferença entre redes digitais e mobilizacao e ação coletiva e que:",
       "opcoes": [
-        "redes digitais e mobilizacao destacam meios contemporaneos de articulacao, enquanto acao coletiva trata da coordenacao conjunta em sentido mais amplo",
-        "Redes digitais e mobilizacao e Acao coletiva sao exatamente o mesmo fenomeno social.",
-        "Acao coletiva depende apenas de escolhas privadas, enquanto Redes digitais e mobilizacao depende so da biologia.",
-        "Redes digitais e mobilizacao elimina a necessidade de observar organizacao coletiva e reivindicacao publica."
+        "redes digitais e mobilizacao destacam meios contemporaneos de articulacao, enquanto ação coletiva trata da coordenacao conjunta em sentido mais amplo",
+        "Redes digitais e mobilizacao e Ação coletiva são exatamente o mesmo fenômeno social.",
+        "Ação coletiva depende apenas de escolhas privadas, enquanto Redes digitais e mobilizacao depende so da biologia.",
+        "Redes digitais e mobilizacao elimina a necessidade de observar organização coletiva e reivindicacao pública."
       ],
-      "correta": "redes digitais e mobilizacao destacam meios contemporaneos de articulacao, enquanto acao coletiva trata da coordenacao conjunta em sentido mais amplo",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "correta": "redes digitais e mobilizacao destacam meios contemporaneos de articulacao, enquanto ação coletiva trata da coordenacao conjunta em sentido mais amplo",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "movimentos-sociais",
@@ -5557,15 +5557,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: campanhas online ampliam alcance, rapidez de comunicacao e circulacao de informacoes sobre mobilizacoes A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: campanhas online ampliam alcance, rapidez de comunicacao e circulação de informacoes sobre mobilizacoes A leitura sociológica mais adequada aponta para:",
       "opcoes": [
-        "redes digitais ajudam a compreender novas formas de visibilidade, coordenacao e pressao publica",
-        "Redes digitais e mobilizacao mostra que causas publicas nao precisam de organizacao coletiva.",
+        "redes digitais ajudam a compreender novas formas de visibilidade, coordenacao e pressao pública",
+        "Redes digitais e mobilizacao mostra que causas públicas não precisam de organização coletiva.",
         "Redes digitais e mobilizacao prova que toda reivindicacao nasce sem coordenacao nem continuidade.",
-        "Redes digitais e mobilizacao significa ausencia completa de identidade coletiva e pressao publica."
+        "Redes digitais e mobilizacao significa ausencia completa de identidade coletiva e pressao pública."
       ],
-      "correta": "redes digitais ajudam a compreender novas formas de visibilidade, coordenacao e pressao publica",
-      "comentario": "Redes digitais e mobilizacao permite interpretar o caso a partir de organizacao, causa comum e acao publica.",
+      "correta": "redes digitais ajudam a compreender novas formas de visibilidade, coordenacao e pressao pública",
+      "comentario": "Redes digitais e mobilizacao permite interpretar o caso a partir de organização, causa comum e ação pública.",
       "tempoEstimado": 40,
       "tags": [
         "movimentos-sociais",
@@ -5596,15 +5596,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia redes digitais e mobilizacao de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia redes digitais e mobilizacao de maneira mais clara?",
       "opcoes": [
-        "redes digitais e mobilizacao mostram como o ambiente conectado se tornou parte da organizacao coletiva contemporanea",
-        "acao coletiva envolve coordenacao entre individuos para produzir efeitos publicos ou sociais",
-        "participacao popular amplia a presenca da sociedade nas decisoes e no acompanhamento do poder publico",
-        "movimentos trabalhistas expressam a acao coletiva de quem vive do trabalho em defesa de direitos e protecao"
+        "redes digitais e mobilizacao mostram como o ambiente conectado se tornou parte da organização coletiva contemporanea",
+        "ação coletiva envolve coordenacao entre indivíduos para produzir efeitos públicos ou sociais",
+        "participação popular amplia a presenca da sociedade nas decisões e no acompanhamento do poder público",
+        "movimentos trabalhistas expressam a ação coletiva de quem vive do trabalho em defesa de direitos e protecao"
       ],
-      "correta": "redes digitais e mobilizacao mostram como o ambiente conectado se tornou parte da organizacao coletiva contemporanea",
-      "comentario": "A alternativa correta traduz redes digitais e mobilizacao em uma situacao concreta de vida social.",
+      "correta": "redes digitais e mobilizacao mostram como o ambiente conectado se tornou parte da organização coletiva contemporanea",
+      "comentario": "A alternativa correta traduz redes digitais e mobilizacao em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "movimentos-sociais",
@@ -5635,15 +5635,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"grupos usam redes para convocar atos, divulgar denuncias e articular apoio a causas publicas\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"grupos usam redes para convocar atos, divulgar denuncias e articular apoio a causas públicas\", qual conclusão é mais adequada?",
       "opcoes": [
-        "plataformas podem acelerar articulacao, alcance e participacao em torno de causas coletivas",
+        "plataformas podem acelerar articulacao, alcance e participação em torno de causas coletivas",
         "Redes digitais e mobilizacao indica que mobilizacoes nunca variam historicamente.",
         "Redes digitais e mobilizacao so pode ser explicado por fatores biologicos.",
         "Redes digitais e mobilizacao dispensa comparacao entre grupos e contextos."
       ],
-      "correta": "plataformas podem acelerar articulacao, alcance e participacao em torno de causas coletivas",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "correta": "plataformas podem acelerar articulacao, alcance e participação em torno de causas coletivas",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "movimentos-sociais",
@@ -5676,12 +5676,12 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com redes digitais e mobilizacao?",
       "opcoes": [
-        "como redes e plataformas alteram a organizacao e a visibilidade de mobilizacoes sociais?",
-        "como desigualdades de genero podem se transformar em pauta de mobilizacao social?",
-        "como o combate ao racismo se transforma em acao coletiva e reivindicacao publica?",
-        "como estudantes podem se organizar coletivamente em defesa de direitos e melhorias na educacao?"
+        "como redes e plataformas alteram a organização e a visibilidade de mobilizacoes sociais?",
+        "como desigualdades de gênero podem se transformar em pauta de mobilizacao social?",
+        "como o combate ao racismo se transforma em ação coletiva e reivindicacao pública?",
+        "como estudantes podem se organizar coletivamente em defesa de direitos e melhorias na educação?"
       ],
-      "correta": "como redes e plataformas alteram a organizacao e a visibilidade de mobilizacoes sociais?",
+      "correta": "como redes e plataformas alteram a organização e a visibilidade de mobilizacoes sociais?",
       "comentario": "A pergunta correta ajuda a investigar redes digitais e mobilizacao de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
@@ -5715,12 +5715,12 @@ export const movimentosSociais = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a afirmacao que revela compreensao inadequada de redes digitais e mobilizacao.",
       "opcoes": [
-        "Um espaco restrito ao entretenimento e sem impacto sobre participacao ou reivindicacao publica.",
-        "Redes digitais e mobilizacao pode ser observado em reivindicacoes publicas e organizacao coletiva.",
+        "Um espaco restrito ao entretenimento e sem impacto sobre participação ou reivindicacao pública.",
+        "Redes digitais e mobilizacao pode ser observado em reivindicacoes públicas e organização coletiva.",
         "Redes digitais e mobilizacao ajuda a analisar disputas por direitos e reconhecimento.",
-        "Redes digitais e mobilizacao depende da articulacao entre grupos, pautas e acao social."
+        "Redes digitais e mobilizacao depende da articulacao entre grupos, pautas e ação social."
       ],
-      "correta": "Um espaco restrito ao entretenimento e sem impacto sobre participacao ou reivindicacao publica.",
+      "correta": "Um espaco restrito ao entretenimento e sem impacto sobre participação ou reivindicacao pública.",
       "comentario": "A alternativa incorreta expressa uma confusao comum sobre redes digitais e mobilizacao.",
       "tempoEstimado": 45,
       "tags": [
@@ -5752,15 +5752,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre movimentos sociais, um estudante afirmou: \"redes digitais nao substituem toda organizacao social, mas ampliam formas de mobilizacao e circulacao de pautas\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre movimentos sociais, um estudante afirmou: \"redes digitais não substituem toda organização social, mas ampliam formas de mobilizacao e circulação de pautas\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "a afirmacao esta correta, porque o ambiente digital tornou-se parte importante da acao coletiva contemporanea",
-        "Redes digitais e mobilizacao nao pode ser observado em situacoes do cotidiano.",
+        "a afirmacao esta correta, porque o ambiente digital tornou-se parte importante da ação coletiva contemporanea",
+        "Redes digitais e mobilizacao não pode ser observado em situações do cotidiano.",
         "Redes digitais e mobilizacao depende apenas da vontade individual, sem contexto coletivo.",
-        "Redes digitais e mobilizacao torna desnecessario comparar organizacao, causa e participacao publica."
+        "Redes digitais e mobilizacao torna desnecessario comparar organização, causa e participação pública."
       ],
-      "correta": "a afirmacao esta correta, porque o ambiente digital tornou-se parte importante da acao coletiva contemporanea",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de redes digitais e mobilizacao.",
+      "correta": "a afirmacao esta correta, porque o ambiente digital tornou-se parte importante da ação coletiva contemporanea",
+      "comentario": "A avaliação correta recupera o nucleo teorico de redes digitais e mobilizacao.",
       "tempoEstimado": 50,
       "tags": [
         "movimentos-sociais",
@@ -5791,15 +5791,15 @@ export const movimentosSociais = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando grupos nao conseguem difundir pautas nem articular apoio publico em meios digitais, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando grupos não conseguem difundir pautas nem articular apoio público em meios digitais, a melhor interpretação sociológica e que:",
       "opcoes": [
         "a visibilidade e a capacidade de mobilizacao podem se reduzir em certos contextos",
-        "Redes digitais e mobilizacao desaparece porque a sociedade nao depende mais de organizacao coletiva.",
+        "Redes digitais e mobilizacao desaparece porque a sociedade não depende mais de organização coletiva.",
         "Redes digitais e mobilizacao deixa de existir sempre que surgem conflitos entre grupos.",
-        "Redes digitais e mobilizacao so importa em sociedades antigas, nao no presente."
+        "Redes digitais e mobilizacao so importa em sociedades antigas, não no presente."
       ],
       "correta": "a visibilidade e a capacidade de mobilizacao podem se reduzir em certos contextos",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "movimentos-sociais",
@@ -5830,12 +5830,12 @@ export const movimentosSociais = {
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente redes digitais e mobilizacao a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente redes digitais e mobilizacao a uma situação de comunidade escolar?",
       "opcoes": [
         "a turma analisa hashtags, campanhas e convocacoes online como formas de mobilizacao social contemporanea",
-        "a escola discute campanhas contra assedio e desigualdade de genero como expressoes de debate e mobilizacao",
-        "a turma analisa campanhas de valorizacao da cultura negra e de enfrentamento ao racismo como acoes coletivas",
-        "a escola debate o papel de gremios, centros academicos e assembleias na participacao estudantil"
+        "a escola discute campanhas contra assedio e desigualdade de gênero como expressoes de debate e mobilizacao",
+        "a turma analisa campanhas de valorizacao da cultura negra e de enfrentamento ao racismo como ações coletivas",
+        "a escola debate o papel de gremios, centros academicos e assembleias na participação estudantil"
       ],
       "correta": "a turma analisa hashtags, campanhas e convocacoes online como formas de mobilizacao social contemporanea",
       "comentario": "A alternativa correta aproxima redes digitais e mobilizacao de um contexto escolar concreto.",
@@ -5872,9 +5872,9 @@ export const movimentosSociais = {
       "enunciado": "Qual sintese final representa melhor redes digitais e mobilizacao?",
       "opcoes": [
         "redes digitais e mobilizacao correspondem ao uso de plataformas para articular, difundir e ampliar causas coletivas",
-        "Redes digitais e mobilizacao e um fator biologico fixo, sem relacao com reivindicacao ou organizacao coletiva.",
-        "Redes digitais e mobilizacao explica apenas escolhas privadas e ignora a dimensao publica.",
-        "Redes digitais e mobilizacao impede qualquer mudanca historica ou social."
+        "Redes digitais e mobilizacao e um fator biológico fixo, sem relação com reivindicacao ou organização coletiva.",
+        "Redes digitais e mobilizacao explica apenas escolhas privadas e ignora a dimensao pública.",
+        "Redes digitais e mobilizacao impede qualquer mudanca histórica ou social."
       ],
       "correta": "redes digitais e mobilizacao correspondem ao uso de plataformas para articular, difundir e ampliar causas coletivas",
       "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de redes digitais e mobilizacao.",

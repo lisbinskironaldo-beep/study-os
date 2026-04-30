@@ -1,0 +1,61 @@
+{
+  "summary": {},
+  "results": [
+    {
+      "file": "questions/banks/1-serie/artes/elementos-visuais/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/artes/historia-da-arte-classica/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/artes/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/artes/arte-moderna/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/artes/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/artes/movimentos-artisticos/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/artes/arte-contemporanea/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/artes/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    }
+  ]
+}

@@ -25,7 +25,7 @@ const blocos = [
       {
         lead: "a superacao do modelo de Dalton",
         answer: "a descoberta de que o atomo possui estrutura interna e particulas menores",
-        why: "experimentos posteriores mostraram que o atomo nao era indivisivel"
+        why: "experimentos posteriores mostraram que o atomo não era indivisivel"
       },
       {
         lead: "o papel dos modelos atomicos",
@@ -34,7 +34,7 @@ const blocos = [
       },
       {
         lead: "a contribuicao de Thomson",
-        answer: "a evidencia de que o atomo contem eletrons",
+        answer: "a evidencia de que o atomo contém eletrons",
         why: "isso alterou profundamente a concepcao de estrutura atomica"
       }
     ]
@@ -101,7 +101,7 @@ const blocos = [
       {
         lead: "a absorcao de energia",
         answer: "o ganho energetico que permite ao eletron ocupar nivel mais externo",
-        why: "sem absorver energia suficiente nao ocorre excitacao"
+        why: "sem absorver energia suficiente não ocorre excitacao"
       }
     ]
   },
@@ -114,7 +114,7 @@ const blocos = [
       {
         lead: "o proton",
         answer: "a particula subatomica de carga positiva localizada no nucleo",
-        why: "o numero de protons define o elemento quimico"
+        why: "o número de protons define o elemento quimico"
       },
       {
         lead: "o neutron",
@@ -127,46 +127,46 @@ const blocos = [
         why: "ele participa diretamente das ligacoes e transformacoes quimicas"
       },
       {
-        lead: "o numero atomico",
+        lead: "o número atomico",
         answer: "a quantidade de protons presente no nucleo de um atomo",
-        why: "esse numero identifica unicamente o elemento"
+        why: "esse número identifica unicamente o elemento"
       },
       {
-        lead: "o numero de massa",
+        lead: "o número de massa",
         answer: "a soma de protons e neutrons no nucleo",
         why: "ele representa aproximadamente a massa do atomo"
       }
     ]
   },
   {
-    subtopico: "Numero atomico e numero de massa",
+    subtopico: "Número atomico e número de massa",
     habilidade:
-      "calcular numero atomico, numero de massa e composicao do atomo",
-    tags: ["numero atomico", "numero de massa", "composicao atomica"],
+      "calcular número atomico, número de massa e composicao do atomo",
+    tags: ["número atomico", "número de massa", "composicao atomica"],
     fatos: [
       {
         lead: "a representacao Z",
-        answer: "o simbolo usado para indicar o numero atomico de um elemento",
+        answer: "o simbolo usado para indicar o número atomico de um elemento",
         why: "Z corresponde ao total de protons"
       },
       {
         lead: "a representacao A",
-        answer: "o simbolo usado para indicar o numero de massa de um atomo",
+        answer: "o simbolo usado para indicar o número de massa de um atomo",
         why: "A corresponde a protons mais neutrons"
       },
       {
         lead: "a quantidade de neutrons",
-        answer: "a diferenca entre numero de massa e numero atomico",
+        answer: "a diferenca entre número de massa e número atomico",
         why: "n = A - Z permite determinar neutrons"
       },
       {
         lead: "um atomo neutro",
-        answer: "a especie em que o numero de protons e igual ao de eletrons",
+        answer: "a especie em que o número de protons e igual ao de eletrons",
         why: "nessa condicao a carga total do atomo e nula"
       },
       {
         lead: "a notacao isotopica",
-        answer: "a forma de representar simbolo do elemento com numero atomico e de massa",
+        answer: "a forma de representar simbolo do elemento com número atomico e de massa",
         why: "ela organiza informacoes fundamentais sobre o atomo"
       }
     ]
@@ -174,22 +174,22 @@ const blocos = [
   {
     subtopico: "Isotopos, isobaros e isotonos",
     habilidade:
-      "comparar especies atomicas segundo numero atomico, massa e neutrons",
+      "comparar especies atomicas segundo número atomico, massa e neutrons",
     tags: ["isotopos", "isobaros", "isotonos"],
     fatos: [
       {
         lead: "os isotopos",
-        answer: "atomos do mesmo elemento com diferente numero de neutrons",
-        why: "eles possuem igual numero atomico e diferente massa"
+        answer: "atomos do mesmo elemento com diferente número de neutrons",
+        why: "eles possuem igual número atomico e diferente massa"
       },
       {
         lead: "os isobaros",
-        answer: "atomos de elementos diferentes com o mesmo numero de massa",
+        answer: "atomos de elementos diferentes com o mesmo número de massa",
         why: "nesse caso o valor de A coincide, mas Z muda"
       },
       {
         lead: "os isotonos",
-        answer: "atomos de elementos diferentes com o mesmo numero de neutrons",
+        answer: "atomos de elementos diferentes com o mesmo número de neutrons",
         why: "eles diferem em protons, mas mantem n igual"
       },
       {
@@ -199,15 +199,15 @@ const blocos = [
       },
       {
         lead: "a massa diferente entre isotopos",
-        answer: "a consequencia da variacao no numero de neutrons",
-        why: "mais neutrons significam maior numero de massa"
+        answer: "a consequência da variação no número de neutrons",
+        why: "mais neutrons significam maior número de massa"
       }
     ]
   },
   {
     subtopico: "Ions e eletrizacao",
     habilidade:
-      "analisar formacao de ions por perda ou ganho de eletrons",
+      "analisar formação de ions por perda ou ganho de eletrons",
     tags: ["ions", "cation", "anion"],
     fatos: [
       {
@@ -222,8 +222,8 @@ const blocos = [
       },
       {
         lead: "a ionizacao",
-        answer: "o processo de formacao de ion positivo por perda de eletrons",
-        why: "esse termo costuma ser associado a formacao de cations"
+        answer: "o processo de formação de ion positivo por perda de eletrons",
+        why: "esse termo costuma ser associado a formação de cations"
       },
       {
         lead: "a afinidade eletrica com carga",
@@ -251,7 +251,7 @@ const blocos = [
       {
         lead: "as camadas eletronicas",
         answer: "os niveis principais de energia ao redor do nucleo",
-        why: "elas sao tradicionalmente identificadas por K, L, M e assim por diante"
+        why: "elas são tradicionalmente identificadas por K, L, M e assim por diante"
       },
       {
         lead: "os subniveis s, p, d e f",
@@ -265,7 +265,7 @@ const blocos = [
       },
       {
         lead: "a regra de preenchimento energetico",
-        answer: "o criterio de ocupar primeiro subniveis de menor energia",
+        answer: "o critério de ocupar primeiro subniveis de menor energia",
         why: "a distribuicao eletronica segue ordem energetica"
       }
     ]
@@ -287,7 +287,7 @@ const blocos = [
         why: "eles determinam varias propriedades quimicas"
       },
       {
-        lead: "a relacao entre valencia e grupo",
+        lead: "a relação entre valencia e grupo",
         answer: "a semelhanca entre elementos de uma mesma familia quanto aos eletrons externos",
         why: "essa regularidade ajuda a prever comportamento"
       },
@@ -299,7 +299,7 @@ const blocos = [
       {
         lead: "a reatividade de um elemento",
         answer: "a facilidade com que sua camada de valencia participa de transformacoes",
-        why: "ela depende do arranjo e do numero de eletrons externos"
+        why: "ela depende do arranjo e do número de eletrons externos"
       }
     ]
   },
@@ -317,17 +317,17 @@ const blocos = [
       {
         lead: "a instabilidade nuclear",
         answer: "a condicao de nucleos com arranjo desfavoravel de particulas",
-        why: "nessa situacao pode ocorrer emissao radioativa"
+        why: "nessa situação pode ocorrer emissao radioativa"
       },
       {
         lead: "a radiacao alfa",
         answer: "a emissao de particulas formadas por dois protons e dois neutrons",
-        why: "ela reduz massa e numero atomico do nucleo emissor"
+        why: "ela reduz massa e número atomico do nucleo emissor"
       },
       {
         lead: "a radiacao beta",
         answer: "a emissao associada a transformacoes internas envolvendo eletrons ou positrons",
-        why: "ela altera o numero atomico sem mudar o numero de massa"
+        why: "ela altera o número atomico sem mudar o número de massa"
       },
       {
         lead: "as aplicacoes da radioatividade",
@@ -340,14 +340,14 @@ const blocos = [
 
 export const estruturaAtomica = {
   id: "quimica_estrutura_atomica",
-  materia: "Quimica",
+  materia: "Química",
   serie: [1],
   topico: "Estrutura Atomica",
   metadados: {
     disciplinaId: "quimica",
     base: "ESCOLAR",
     seloEditorial: "VERIFICADA",
-    eixo: "Quimica",
+    eixo: "Química",
     frente: "Estrutura da materia e modelos atomicos",
     searchAliases: [
       "estrutura atomica",
@@ -361,7 +361,7 @@ export const estruturaAtomica = {
       "identificar a evolucao historica dos modelos atomicos",
       "interpretar experimentos que levaram aos modelos nucleares do atomo",
       "identificar composicao e cargas das particulas subatomicas",
-      "calcular numero atomico, numero de massa e composicao do atomo",
+      "calcular número atomico, número de massa e composicao do atomo",
       "relacionar distribuicao eletronica a propriedades quimicas dos elementos"
     ],
     planejamentoQuestoes: CHEMISTRY_HUNDRED_FIFTY_PLAN,
@@ -371,7 +371,7 @@ export const estruturaAtomica = {
   questoes: buildPlannedQuestions({
     prefix: "ea",
     serie: 1,
-    materia: "Quimica",
+    materia: "Química",
     topico: "Estrutura Atomica",
     blocos,
     stemBuilders: CHEMISTRY_STEM_BUILDERS,

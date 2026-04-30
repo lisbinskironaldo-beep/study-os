@@ -2,7 +2,7 @@ import { buildPlannedQuestions } from "../../../_shared/plannedTopicBuilder.js";
 
 const blocos = [
   {
-    subtopico: "Crise do feudalismo e contexto das navegacoes",
+    subtopico: "Crise do feudalismo e contexto das navegações",
     habilidade: "identificar-fatores-que-explicam-o-contexto-das-grandes-navegacoes",
     tags: ["expansao-maritima", "contexto"],
     fatos: [
@@ -17,19 +17,19 @@ const blocos = [
         why: "essa rede encarecia e controlava o comercio oriental"
       },
       {
-        lead: "o fortalecimento politico das monarquias ao final da Idade Media",
-        answer: "uma condicao para financiar navegacoes",
+        lead: "o fortalecimento político das monarquias ao final da Idade Média",
+        answer: "uma condicao para financiar navegações",
         why: "os reis passaram a reunir recursos para projetos oceanicos"
       },
       {
         lead: "a valorizacao da curiosidade geografica e da iniciativa humana",
-        answer: "o espirito de expansao ultramarina",
+        answer: "o espirito de expansão ultramarina",
         why: "a cultura da epoca estimulava novas exploracoes"
       },
       {
         lead: "a necessidade de metais e de novos circuitos comerciais",
-        answer: "um estimulo economico das grandes navegacoes",
-        why: "a expansao prometia lucro, riqueza e acesso a mercados"
+        answer: "um estimulo economico das grandes navegações",
+        why: "a expansão prometia lucro, riqueza e acesso a mercados"
       }
     ]
   },
@@ -39,24 +39,24 @@ const blocos = [
     tags: ["expansao-maritima", "portugal"],
     fatos: [
       {
-        lead: "a experiencia nautica acumulada pelo reino portugues",
+        lead: "a experiência nautica acumulada pelo reino português",
         answer: "uma vantagem do pioneirismo lusitano",
         why: "ela combinava posicao geografica, navegacao e apoio estatal"
       },
       {
         lead: "a conquista de Ceuta em 1415",
-        answer: "um marco inicial da expansao portuguesa",
-        why: "a ocupacao abriu caminho para a presenca lusa no Atlantico e na Africa"
+        answer: "um marco inicial da expansão portuguesa",
+        why: "a ocupacao abriu caminho para a presenca lusa no Atlantico e na África"
       },
       {
-        lead: "a busca de uma rota para o Oriente contornando a Africa",
+        lead: "a busca de uma rota para o Oriente contornando a África",
         answer: "um objetivo central da Coroa portuguesa",
         why: "ela pretendia romper intermediacoes no comercio oriental"
       },
       {
         lead: "a passagem pelo cabo da Boa Esperanca",
         answer: "a viagem de Bartolomeu Dias",
-        why: "ela demonstrou a possibilidade de seguir pelo sul da Africa"
+        why: "ela demonstrou a possibilidade de seguir pelo sul da África"
       },
       {
         lead: "a chegada europeia por mar as Indias",
@@ -66,17 +66,17 @@ const blocos = [
     ]
   },
   {
-    subtopico: "Espanha e a expansao oceanica",
+    subtopico: "Espanha é a expansão oceanica",
     habilidade: "analisar-o-papel-da-espanha-na-expansao-oceanica",
     tags: ["expansao-maritima", "espanha"],
     fatos: [
       {
         lead: "a expedicao que chegou a America em 1492",
         answer: "a viagem de Cristovao Colombo",
-        why: "ela inaugurou a expansao espanhola no continente americano"
+        why: "ela inaugurou a expansão espanhola no continente americano"
       },
       {
-        lead: "o suporte politico para a viagem de Colombo",
+        lead: "o suporte político para a viagem de Colombo",
         answer: "o apoio da monarquia espanhola",
         why: "os Reis Catolicos financiaram a expedicao"
       },
@@ -88,7 +88,7 @@ const blocos = [
       {
         lead: "a submissao de grandes sociedades americanas pelos conquistadores",
         answer: "a conquista de imperios indigenas",
-        why: "ela marcou a expansao espanhola no Novo Mundo"
+        why: "ela marcou a expansão espanhola no Novo Mundo"
       },
       {
         lead: "a entrada macica de prata e ouro americanos na Espanha",
@@ -98,7 +98,7 @@ const blocos = [
     ]
   },
   {
-    subtopico: "Tecnicas nauticas e cartografia moderna",
+    subtopico: "Técnicas náuticas e cartografia moderna",
     habilidade: "identificar-tecnicas-e-instrumentos-das-navegacoes-modernas",
     tags: ["expansao-maritima", "tecnicas-nauticas"],
     fatos: [
@@ -135,19 +135,19 @@ const blocos = [
     tags: ["expansao-maritima", "mercantilismo"],
     fatos: [
       {
-        lead: "a politica economica voltada a acumular riqueza para o Estado",
+        lead: "a política econômica voltada a acumular riqueza para o Estado",
         answer: "o mercantilismo",
-        why: "ela associava poder politico a intervencao economica"
+        why: "ela associava poder político a intervencao econômica"
       },
       {
-        lead: "a subordinacao economica da colonia aos interesses da metropole",
+        lead: "a subordinacao econômica da colonia aos interesses da metropole",
         answer: "o pacto colonial",
-        why: "a producao colonial devia atender prioridades metropolitanas"
+        why: "a produção colonial devia atender prioridades metropolitanas"
       },
       {
         lead: "a reserva do comercio colonial para a metropole",
         answer: "o exclusivismo comercial",
-        why: "ele limitava a autonomia economica das colonias"
+        why: "ele limitava a autonomia econômica das colonias"
       },
       {
         lead: "a valorizacao de ouro e prata como medida de riqueza",
@@ -172,18 +172,18 @@ const blocos = [
         why: "tratados procuravam organizar a competicao entre monarquias"
       },
       {
-        lead: "o caminho portugues para o Oriente contornando a Africa",
+        lead: "o caminho português para o Oriente contornando a África",
         answer: "a rota do cabo",
-        why: "ela conectou o Atlantico ao Indico"
+        why: "ela conectou o Atlantico ao Índico"
       },
       {
-        lead: "o dominio portugues de entrepostos e passagens no oceano Indico",
+        lead: "o dominio português de entrepostos e passagens no oceano Índico",
         answer: "um foco de disputas entre europeus",
         why: "outras potencias buscavam romper o monopolio luso"
       },
       {
         lead: "os ataques autorizados ou tolerados contra navios rivais",
-        answer: "a pirataria e o corso",
+        answer: "a pirataria é o corso",
         why: "essas praticas fizeram parte da concorrencia maritima"
       },
       {
@@ -211,7 +211,7 @@ const blocos = [
       {
         lead: "a disseminacao de enfermidades trazidas pelos europeus",
         answer: "um fator de queda demografica indigena",
-        why: "muitas populacoes nao tinham resistencia biologica a essas doencas"
+        why: "muitas populacoes não tinham resistência biologica a essas doencas"
       },
       {
         lead: "a tentativa de converter nativos ao cristianismo",
@@ -220,25 +220,25 @@ const blocos = [
       },
       {
         lead: "as reacoes dos povos originarios diante da invasao europeia",
-        answer: "formas de resistencia indigena",
+        answer: "formas de resistência indigena",
         why: "diversos grupos lutaram, negociaram ou recuaram para sobreviver"
       }
     ]
   },
   {
-    subtopico: "Africa, escravizacao e trafico atlantico",
+    subtopico: "África, escravizacao e trafico atlantico",
     habilidade: "relacionar-africa-escravizacao-e-trafico-atlantico-ao-sistema-colonial",
     tags: ["expansao-maritima", "trafico-atlantico"],
     fatos: [
       {
         lead: "o comercio forcado de africanos para diferentes partes do Atlantico",
         answer: "o trafico negreiro",
-        why: "ele integrou Africa, America e Europa em escala violenta"
+        why: "ele integrou África, America e Europa em escala violenta"
       },
       {
         lead: "o uso da mao de obra africana nas colonias americanas",
         answer: "uma base do sistema colonial",
-        why: "a producao exportadora dependeu largamente do trabalho escravizado"
+        why: "a produção exportadora dependeu largamente do trabalho escravizado"
       },
       {
         lead: "os postos comerciais europeus instalados no litoral africano",
@@ -258,7 +258,7 @@ const blocos = [
     ]
   },
   {
-    subtopico: "Colonizacao e formacao do sistema colonial",
+    subtopico: "Colonização e formação do sistema colonial",
     habilidade: "explicar-a-colonizacao-e-a-formacao-do-sistema-colonial",
     tags: ["expansao-maritima", "colonizacao"],
     fatos: [
@@ -270,7 +270,7 @@ const blocos = [
       {
         lead: "a instalacao de autoridades e normas coloniais em terras conquistadas",
         answer: "a administracao colonial",
-        why: "ela garantia obediencia politica e fiscal"
+        why: "ela garantia obediencia política e fiscal"
       },
       {
         lead: "a predominancia de grandes propriedades voltadas a exportacao",
@@ -278,24 +278,24 @@ const blocos = [
         why: "esse modelo marcou varias areas produtivas americanas"
       },
       {
-        lead: "o emprego de formas compulsorias de trabalho na producao",
+        lead: "o emprego de formas compulsorias de trabalho na produção",
         answer: "a sustentacao da economia colonial",
         why: "a riqueza colonial dependeu de coercao sobre trabalhadores"
       },
       {
         lead: "a ligacao desigual entre metropole e territorio dominado",
-        answer: "a dependencia economica e politica",
+        answer: "a dependência econômica e política",
         why: "as colonias tinham autonomia muito limitada"
       }
     ]
   },
   {
-    subtopico: "Consequencias historicas da expansao maritima",
+    subtopico: "Consequências historicas da expansão maritima",
     habilidade: "avaliar-as-consequencias-historicas-da-expansao-maritima",
     tags: ["expansao-maritima", "mundo-moderno"],
     fatos: [
       {
-        lead: "a conexao mais intensa entre continentes depois das navegacoes",
+        lead: "a conexao mais intensa entre continentes depois das navegações",
         answer: "a primeira mundializacao comercial",
         why: "produtos, pessoas e ideias passaram a circular em escala ampliada"
       },
@@ -307,7 +307,7 @@ const blocos = [
       {
         lead: "o enriquecimento de grupos mercantis e monarquias europeias",
         answer: "o fortalecimento do capitalismo mercantil",
-        why: "a expansao ultramarina ampliou acumulacao e investimentos"
+        why: "a expansão ultramarina ampliou acumulacao e investimentos"
       },
       {
         lead: "os efeitos da conquista sobre sociedades colonizadas",
@@ -315,8 +315,8 @@ const blocos = [
         why: "a ocupacao alterou profundamente vidas e culturas locais"
       },
       {
-        lead: "a formacao de um mundo interligado por mares e imperios",
-        answer: "uma consequencia duradoura das navegacoes",
+        lead: "a formação de um mundo interligado por mares e imperios",
+        answer: "uma consequência duradoura das navegações",
         why: "o processo ajudou a definir a Modernidade"
       }
     ]
@@ -326,47 +326,47 @@ const blocos = [
 const questoes = buildPlannedQuestions({
   prefix: "exm",
   serie: [1],
-  materia: "Historia",
-  topico: "Expansao Maritima",
+  materia: "História",
+  topico: "Expansão Maritima",
   blocos
 });
 
 export const expansaoMaritima = {
   id: "historia_expansao_maritima",
-  materia: "Historia",
+  materia: "História",
   serie: [1],
-  topico: "Expansao Maritima",
+  topico: "Expansão Maritima",
   metadados: {
     disciplinaId: "historia",
     base: "ESCOLAR",
-    eixo: "Historia",
-    frente: "Expansao ultramarina e sistema colonial",
+    eixo: "História",
+    frente: "Expansão ultramarina e sistema colonial",
     searchAliases: [
-      "expansao maritima",
-      "grandes navegacoes",
-      "expansao ultramarina",
+      "expansão maritima",
+      "grandes navegações",
+      "expansão ultramarina",
       "portugal e espanha",
       "mercantilismo",
       "sistema colonial"
     ],
     subtopicosBase: [
-      "Crise do feudalismo e contexto das navegacoes",
+      "Crise do feudalismo e contexto das navegações",
       "Portugal e pioneirismo ultramarino",
-      "Espanha e a expansao oceanica",
-      "Tecnicas nauticas e cartografia moderna",
+      "Espanha é a expansão oceanica",
+      "Técnicas náuticas e cartografia moderna",
       "Mercantilismo e economia colonial",
       "Tratados, rotas e disputas maritimas",
       "Conquista e contato com povos amerindios",
-      "Africa, escravizacao e trafico atlantico",
-      "Colonizacao e formacao do sistema colonial",
-      "Consequencias historicas da expansao maritima"
+      "África, escravizacao e trafico atlantico",
+      "Colonização e formação do sistema colonial",
+      "Consequências historicas da expansão maritima"
     ],
     habilidadesBase: [
-      "identificar fatores que impulsionaram as grandes navegacoes",
-      "reconhecer o pioneirismo portugues e a expansao espanhola",
-      "analisar tecnicas nauticas, mercantilismo e sistema colonial",
+      "identificar fatores que impulsionaram as grandes navegações",
+      "reconhecer o pioneirismo português é a expansão espanhola",
+      "analisar técnicas náuticas, mercantilismo e sistema colonial",
       "relacionar conquista, escravizacao e trafico atlantico aos processos coloniais",
-      "avaliar consequencias historicas da expansao maritima"
+      "avaliar consequências historicas da expansão maritima"
     ],
     planejamentoQuestoes: {
       totalAlvo: 200,

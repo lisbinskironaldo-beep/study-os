@@ -2,34 +2,34 @@ import { buildPlannedQuestions } from "../../../_shared/plannedTopicBuilder.js";
 
 const blocos = [
   {
-    subtopico: "Formacao historica do feudalismo",
+    subtopico: "Formação historica do feudalismo",
     habilidade: "identificar-caracteristicas-do-feudalismo-em-sua-formacao-historica",
     tags: ["feudalismo", "origem"],
     fatos: [
       {
         lead: "o encontro entre herancas romanas e costumes germanicos",
         answer: "a origem historica do feudalismo",
-        why: "esse processo ajudou a formar estruturas politicas e sociais medievais"
+        why: "esse processo ajudou a formar estruturas políticas e sociais medievais"
       },
       {
-        lead: "a descentralizacao do poder apos a queda de Roma no Ocidente",
-        answer: "a fragmentacao politica",
+        lead: "a descentralizacao do poder após a queda de Roma no Ocidente",
+        answer: "a fragmentacao política",
         why: "o poder passou a ficar disperso entre senhores locais"
       },
       {
-        lead: "a ruralizacao da vida economica na Alta Idade Media",
+        lead: "a ruralizacao da vida econômica na Alta Idade Média",
         answer: "o recuo das cidades e do comercio",
-        why: "a inseguranca reduziu a circulacao urbana e mercantil"
+        why: "a inseguranca reduziu a circulação urbana e mercantil"
       },
       {
         lead: "a busca por protecao em tempos de invasoes e instabilidade",
-        answer: "a formacao de lacos pessoais de dependencia",
-        why: "senhores e dependentes construiram relacoes de fidelidade"
+        answer: "a formação de lacos pessoais de dependência",
+        why: "senhores e dependentes construiram relações de fidelidade"
       },
       {
         lead: "a organizacao local em terras senhoriais relativamente autonomas",
         answer: "a base do mundo feudal",
-        why: "o feudo tornou-se referencia de poder e producao"
+        why: "o feudo tornou-se referencia de poder e produção"
       }
     ]
   },
@@ -41,17 +41,17 @@ const blocos = [
       {
         lead: "a unidade produtiva que articulava terras, servos e poder senhorial",
         answer: "o senhorio",
-        why: "nele se organizavam producao, obrigacoes e autoridade local"
+        why: "nele se organizavam produção, obrigações e autoridade local"
       },
       {
-        lead: "a producao voltada principalmente ao consumo local",
+        lead: "a produção voltada principalmente ao consumo local",
         answer: "a autossuficiencia relativa",
         why: "o feudo procurava atender internamente grande parte das necessidades"
       },
       {
         lead: "a area explorada diretamente em beneficio do senhor feudal",
         answer: "a reserva senhorial",
-        why: "era cultivada por obrigacoes de trabalho dos servos"
+        why: "era cultivada por obrigações de trabalho dos servos"
       },
       {
         lead: "as terras utilizadas pelos camponeses para seu sustento",
@@ -59,9 +59,9 @@ const blocos = [
         why: "nelas os servos produziam parte do que consumiam"
       },
       {
-        lead: "a circulacao reduzida de moedas nas relacoes economicas feudais",
+        lead: "a circulação reduzida de moedas nas relações econômicas feudais",
         answer: "uma marca da economia feudal",
-        why: "o predomino da producao agraria limitava o uso monetario"
+        why: "o predomino da produção agraria limitava o uso monetario"
       }
     ]
   },
@@ -78,20 +78,20 @@ const blocos = [
       {
         lead: "o grupo social medieval associado a oracao e aos assuntos religiosos",
         answer: "o clero",
-        why: "tinha forte influencia espiritual e politica"
+        why: "tinha forte influencia espiritual e política"
       },
       {
-        lead: "o grupo que concentrava o poder militar e a posse da terra",
+        lead: "o grupo que concentrava o poder militar é a posse da terra",
         answer: "a nobreza",
         why: "ocupava o topo secular da hierarquia feudal"
       },
       {
-        lead: "o grupo que sustentava a producao material no campo",
+        lead: "o grupo que sustentava a produção material no campo",
         answer: "os servos",
-        why: "realizavam o trabalho agricola e cumpriam obrigacoes senhoriais"
+        why: "realizavam o trabalho agricola e cumpriam obrigações senhoriais"
       },
       {
-        lead: "a ideia de que cada ordem possuia funcao social definida",
+        lead: "a ideia de que cada ordem possuia função social definida",
         answer: "a hierarquia de ordens",
         why: "a sociedade medieval justificava desigualdades como naturais"
       }
@@ -105,12 +105,12 @@ const blocos = [
       {
         lead: "o pacto entre nobres baseado em fidelidade e protecao",
         answer: "a suserania e vassalagem",
-        why: "organizava relacoes politicas entre senhores"
+        why: "organizava relações políticas entre senhores"
       },
       {
         lead: "o beneficio cedido por um senhor a outro dentro desse pacto",
         answer: "o feudo",
-        why: "funcionava como base material do compromisso politico"
+        why: "funcionava como base material do compromisso político"
       },
       {
         lead: "a cerimonia que formalizava o compromisso entre nobres",
@@ -120,12 +120,12 @@ const blocos = [
       {
         lead: "a predominancia da autoridade senhorial sobre o poder central",
         answer: "o localismo feudal",
-        why: "a vida politica era marcada pela autonomia regional"
+        why: "a vida política era marcada pela autonomia regional"
       },
       {
         lead: "a obrigacao militar assumida pelo vassalo diante do suserano",
         answer: "o auxilio armado",
-        why: "a relacao de fidelidade incluia servico guerreiro"
+        why: "a relação de fidelidade incluia servico guerreiro"
       }
     ]
   },
@@ -137,12 +137,12 @@ const blocos = [
       {
         lead: "a instituicao que mais unificou o Ocidente medieval",
         answer: "a Igreja Catolica",
-        why: "orientava valores, politica e vida cotidiana"
+        why: "orientava valores, política e vida cotidiana"
       },
       {
         lead: "a visao de mundo que colocava Deus no centro da existencia",
         answer: "o teocentrismo",
-        why: "a religiao organizava explicacoes sobre a sociedade e a natureza"
+        why: "a religiao organizava explicacoes sobre a sociedade é a natureza"
       },
       {
         lead: "o tribunal criado para combater doutrinas consideradas hereticas",
@@ -162,7 +162,7 @@ const blocos = [
     ]
   },
   {
-    subtopico: "Cultura e cotidiano na Idade Media",
+    subtopico: "Cultura e cotidiano na Idade Média",
     habilidade: "identificar-elementos-da-cultura-e-do-cotidiano-medieval",
     tags: ["feudalismo", "cotidiano"],
     fatos: [
@@ -174,15 +174,15 @@ const blocos = [
       {
         lead: "a residencia fortificada que simbolizava poder e defesa",
         answer: "o castelo",
-        why: "ele concentrava autoridade militar e politica local"
+        why: "ele concentrava autoridade militar e política local"
       },
       {
         lead: "a transmissao de historias, valores e tradicoes sem predominio da escrita",
         answer: "a cultura predominantemente oral",
-        why: "grande parte da populacao nao dominava a leitura"
+        why: "grande parte da população não dominava a leitura"
       },
       {
-        lead: "o surgimento de centros formais de ensino superior na Baixa Idade Media",
+        lead: "o surgimento de centros formais de ensino superior na Baixa Idade Média",
         answer: "um sinal de renovacao intelectual",
         why: "as universidades ampliaram debates filosoficos e juridicos"
       },
@@ -201,7 +201,7 @@ const blocos = [
       {
         lead: "a condicao dos trabalhadores presos a terra e subordinados ao senhor",
         answer: "a servidao",
-        why: "os camponeses nao eram escravos, mas tinham liberdade limitada"
+        why: "os camponeses não eram escravos, mas tinham liberdade limitada"
       },
       {
         lead: "a obrigacao de trabalhar gratuitamente alguns dias na terra senhorial",
@@ -209,18 +209,18 @@ const blocos = [
         why: "era uma das principais prestacoes servis"
       },
       {
-        lead: "a entrega de parte da producao agricola ao senhor",
+        lead: "a entrega de parte da produção agricola ao senhor",
         answer: "a talha",
         why: "representava tributo pago com produtos"
       },
       {
         lead: "as taxas cobradas pelo uso de moinho, forno e outros equipamentos do feudo",
         answer: "as banalidades",
-        why: "reforcavam a dependencia economica do servo"
+        why: "reforcavam a dependência econômica do servo"
       },
       {
-        lead: "o conjunto de obrigacoes que restringia a autonomia do campones",
-        answer: "a dependencia camponesa",
+        lead: "o conjunto de obrigações que restringia a autonomia do campones",
+        answer: "a dependência camponesa",
         why: "o trabalho rural era marcado por deveres e subordinacao"
       }
     ]
@@ -231,7 +231,7 @@ const blocos = [
     tags: ["feudalismo", "renascimento-comercial"],
     fatos: [
       {
-        lead: "o crescimento das trocas economicas a partir do seculo XI",
+        lead: "o crescimento das trocas econômicas a partir do seculo XI",
         answer: "a revitalizacao do comercio",
         why: "ela estimulou novas rotas, feiras e especializacoes"
       },
@@ -248,11 +248,11 @@ const blocos = [
       {
         lead: "as associacoes que reuniam artesaos de um mesmo oficio",
         answer: "as corporacoes de oficio",
-        why: "regulavam producao, aprendizagem e qualidade do trabalho"
+        why: "regulavam produção, aprendizagem e qualidade do trabalho"
       },
       {
         lead: "os grandes encontros periodicos de compra e venda na Europa medieval",
-        answer: "espacos de circulacao mercantil",
+        answer: "espacos de circulação mercantil",
         why: "as feiras ligavam diferentes regioes comerciais"
       }
     ]
@@ -268,14 +268,14 @@ const blocos = [
         why: "ela provocou forte queda demografica"
       },
       {
-        lead: "o longo conflito entre Inglaterra e Franca na Baixa Idade Media",
+        lead: "o longo conflito entre Inglaterra e França na Baixa Idade Média",
         answer: "a Guerra dos Cem Anos",
         why: "desgastou economias e populacoes"
       },
       {
         lead: "as revoltas de camponeses contra tributos e opressao senhorial",
         answer: "as jacqueries",
-        why: "expressaram tensoes sociais do periodo"
+        why: "expressaram tensoes sociais do período"
       },
       {
         lead: "o conjunto de problemas que abalou a estrutura feudal no seculo XIV",
@@ -283,40 +283,40 @@ const blocos = [
         why: "envolveu fome, guerra, peste e tensoes sociais"
       },
       {
-        lead: "a falta de trabalhadores apos a grande mortalidade europeia",
-        answer: "um fator de mudanca nas relacoes de trabalho",
-        why: "a escassez de mao de obra alterou negociacoes e obrigacoes"
+        lead: "a falta de trabalhadores após a grande mortalidade europeia",
+        answer: "um fator de mudanca nas relações de trabalho",
+        why: "a escassez de mao de obra alterou negociacoes e obrigações"
       }
     ]
   },
   {
-    subtopico: "Feudalismo e transicao para a modernidade",
+    subtopico: "Feudalismo e transição para a modernidade",
     habilidade: "avaliar-a-transicao-do-feudalismo-para-a-modernidade",
     tags: ["feudalismo", "transicao-historica"],
     fatos: [
       {
-        lead: "o fortalecimento dos reis no fim da Idade Media",
+        lead: "o fortalecimento dos reis no fim da Idade Média",
         answer: "a centralizacao monarquica",
         why: "ela reduziu a fragmentacao tipica do feudalismo"
       },
       {
-        lead: "o crescimento das cidades e do comercio ao final do periodo medieval",
+        lead: "o crescimento das cidades e do comercio ao final do período medieval",
         answer: "um fator de erosao do feudalismo",
-        why: "novas praticas economicas enfraqueceram estruturas senhoriais"
+        why: "novas praticas econômicas enfraqueceram estruturas senhoriais"
       },
       {
         lead: "o uso crescente da moeda nas trocas e nos impostos",
         answer: "a monetarizacao da economia",
-        why: "ela favoreceu transformacoes nas relacoes produtivas"
+        why: "ela favoreceu transformações nas relações produtivas"
       },
       {
-        lead: "o grupo urbano que ganhou peso politico e economico na passagem para a Modernidade",
+        lead: "o grupo urbano que ganhou peso político e economico na passagem para a Modernidade",
         answer: "a burguesia em ascensao",
         why: "seu fortalecimento acompanhou comercio e vida urbana"
       },
       {
-        lead: "a passagem do feudalismo para formas politicas e economicas modernas",
-        answer: "uma transicao historica gradual",
+        lead: "a passagem do feudalismo para formas políticas e econômicas modernas",
+        answer: "uma transição historica gradual",
         why: "as mudancas ocorreram de modo desigual e progressivo"
       }
     ]
@@ -326,47 +326,47 @@ const blocos = [
 const questoes = buildPlannedQuestions({
   prefix: "feu",
   serie: [1],
-  materia: "Historia",
+  materia: "História",
   topico: "Feudalismo",
   blocos
 });
 
 export const feudalismo = {
   id: "historia_feudalismo",
-  materia: "Historia",
+  materia: "História",
   serie: [1],
   topico: "Feudalismo",
   metadados: {
     disciplinaId: "historia",
     base: "ESCOLAR",
-    eixo: "Historia",
-    frente: "Idade Media e sociedade feudal",
+    eixo: "História",
+    frente: "Idade Média e sociedade feudal",
     searchAliases: [
       "feudalismo",
-      "idade media",
+      "idade média",
       "sociedade feudal",
       "senhorio",
       "servidao",
       "crise do feudalismo"
     ],
     subtopicosBase: [
-      "Formacao historica do feudalismo",
+      "Formação historica do feudalismo",
       "Economia agraria e senhorio",
       "Sociedade estamental medieval",
       "Suserania, vassalagem e poder local",
       "Igreja e mentalidade medieval",
-      "Cultura e cotidiano na Idade Media",
+      "Cultura e cotidiano na Idade Média",
       "Trabalho servil e vida camponesa",
       "Renascimento comercial e urbano",
       "Crise do seculo XIV",
-      "Feudalismo e transicao para a modernidade"
+      "Feudalismo e transição para a modernidade"
     ],
     habilidadesBase: [
-      "identificar fatores de formacao do feudalismo",
+      "identificar fatores de formação do feudalismo",
       "analisar economia, trabalho e organizacao social no feudalismo",
-      "explicar relacoes de poder, suserania e vassalagem",
+      "explicar relações de poder, suserania e vassalagem",
       "reconhecer o papel da Igreja e da cultura medieval",
-      "avaliar a crise do feudalismo e a transicao para a modernidade"
+      "avaliar a crise do feudalismo é a transição para a modernidade"
     ],
     planejamentoQuestoes: {
       totalAlvo: 200,

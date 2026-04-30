@@ -1,6 +1,6 @@
 export const geometriaPlana = {
   "id": "matematica_geometria_plana",
-  "materia": "Matematica",
+  "materia": "Matemática",
   "serie": [
     1
   ],
@@ -20,10 +20,10 @@ export const geometriaPlana = {
     "subtopicosBase": [
       "Conceitos iniciais",
       "Ponto reta e plano",
-      "Angulos",
-      "Triangulos - classificacao",
-      "Triangulos - soma dos angulos",
-      "Triangulos - area e perimetro",
+      "Ângulos",
+      "Triângulos - classificacao",
+      "Triângulos - soma dos ângulos",
+      "Triângulos - area e perimetro",
       "Quadrilateros",
       "Poligonos",
       "Circunferencia e circulo",
@@ -31,14 +31,14 @@ export const geometriaPlana = {
       "Area de figuras planas",
       "Escala e semelhanca",
       "Composicao de areas",
-      "Interpretacao indireta",
+      "Interpretação indireta",
       "Pegadinha",
       "Equivalencia de formas"
     ],
     "habilidadesBase": [
       "identificar elementos da geometria plana",
-      "classificar triangulos e quadrilateros",
-      "calcular angulos em figuras planas",
+      "classificar triângulos e quadrilateros",
+      "calcular ângulos em figuras planas",
       "calcular perimetro",
       "calcular area de figuras planas",
       "relacionar propriedades de poligonos",
@@ -56,7 +56,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Conceitos iniciais",
       "dificuldadeLabel": "facil",
@@ -71,7 +71,7 @@ export const geometriaPlana = {
         "circulo"
       ],
       "correta": "triangulo",
-      "comentario": "O triangulo e o poligono com tres lados.",
+      "comentario": "O triângulo e o poligono com tres lados.",
       "tempoEstimado": 20,
       "tags": [
         "conceito",
@@ -94,7 +94,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Ponto reta e plano",
       "dificuldadeLabel": "facil",
@@ -105,11 +105,11 @@ export const geometriaPlana = {
       "opcoes": [
         "dois planos",
         "infinitos pontos",
-        "tres angulos",
+        "tres ângulos",
         "um poligono"
       ],
       "correta": "infinitos pontos",
-      "comentario": "Uma reta contem infinitos pontos alinhados.",
+      "comentario": "Uma reta contém infinitos pontos alinhados.",
       "tempoEstimado": 20,
       "tags": [
         "conceito",
@@ -132,14 +132,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Angulos",
+      "subtopico": "Ângulos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um angulo de 90 graus e chamado de:",
+      "enunciado": "Um ângulo de 90 graus e chamado de:",
       "opcoes": [
         "agudo",
         "obtuso",
@@ -147,7 +147,7 @@ export const geometriaPlana = {
         "raso"
       ],
       "correta": "reto",
-      "comentario": "Angulo reto mede exatamente 90 graus.",
+      "comentario": "Ângulo reto mede exatamente 90 graus.",
       "tempoEstimado": 20,
       "tags": [
         "angulos",
@@ -170,14 +170,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Angulos",
+      "subtopico": "Ângulos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um angulo menor que 90 graus e:",
+      "enunciado": "Um ângulo menor que 90 graus e:",
       "opcoes": [
         "reto",
         "obtuso",
@@ -185,7 +185,7 @@ export const geometriaPlana = {
         "agudo"
       ],
       "correta": "agudo",
-      "comentario": "Angulos agudos medem menos de 90 graus.",
+      "comentario": "Ângulos agudos medem menos de 90 graus.",
       "tempoEstimado": 20,
       "tags": [
         "angulos",
@@ -208,14 +208,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - classificacao",
+      "subtopico": "Triângulos - classificacao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um triangulo com tres lados iguais e:",
+      "enunciado": "Um triângulo com tres lados iguais e:",
       "opcoes": [
         "equilatero",
         "escaleno",
@@ -223,7 +223,7 @@ export const geometriaPlana = {
         "retangulo"
       ],
       "correta": "equilatero",
-      "comentario": "Triangulo equilatero possui tres lados congruentes.",
+      "comentario": "Triângulo equilatero possui tres lados congruentes.",
       "tempoEstimado": 20,
       "tags": [
         "triangulos",
@@ -246,14 +246,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - classificacao",
+      "subtopico": "Triângulos - classificacao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um triangulo com dois lados iguais e:",
+      "enunciado": "Um triângulo com dois lados iguais e:",
       "opcoes": [
         "equilatero",
         "isosceles",
@@ -261,7 +261,7 @@ export const geometriaPlana = {
         "obtusangulo"
       ],
       "correta": "isosceles",
-      "comentario": "Triangulo isosceles possui dois lados iguais.",
+      "comentario": "Triângulo isosceles possui dois lados iguais.",
       "tempoEstimado": 20,
       "tags": [
         "triangulos",
@@ -284,14 +284,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - soma dos angulos",
+      "subtopico": "Triângulos - soma dos ângulos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "A soma dos angulos internos de um triangulo e:",
+      "enunciado": "A soma dos ângulos internos de um triângulo e:",
       "opcoes": [
         "90",
         "270",
@@ -299,7 +299,7 @@ export const geometriaPlana = {
         "360"
       ],
       "correta": "180",
-      "comentario": "Todo triangulo tem soma interna igual a 180 graus.",
+      "comentario": "Todo triângulo tem soma interna igual a 180 graus.",
       "tempoEstimado": 20,
       "tags": [
         "triangulos",
@@ -322,14 +322,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Quadrilateros",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual quadrilatero possui quatro lados iguais e quatro angulos retos?",
+      "enunciado": "Qual quadrilatero possui quatro lados iguais e quatro ângulos retos?",
       "opcoes": [
         "retangulo",
         "losango",
@@ -337,7 +337,7 @@ export const geometriaPlana = {
         "quadrado"
       ],
       "correta": "quadrado",
-      "comentario": "O quadrado une propriedades do losango e do retangulo.",
+      "comentario": "O quadrado une propriedades do losango e do retângulo.",
       "tempoEstimado": 20,
       "tags": [
         "quadrilateros",
@@ -360,14 +360,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Quadrilateros",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Todo quadrado tambem e um:",
+      "enunciado": "Todo quadrado também e um:",
       "opcoes": [
         "retangulo",
         "trapezio",
@@ -375,7 +375,7 @@ export const geometriaPlana = {
         "triangulo"
       ],
       "correta": "retangulo",
-      "comentario": "Todo quadrado tem quatro angulos retos.",
+      "comentario": "Todo quadrado tem quatro ângulos retos.",
       "tempoEstimado": 20,
       "tags": [
         "quadrilateros",
@@ -398,7 +398,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Poligonos",
       "dificuldadeLabel": "facil",
@@ -436,14 +436,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Perimetro",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e o perimetro de um quadrado de lado 4 cm?",
+      "enunciado": "Qual é o perimetro de um quadrado de lado 4 cm?",
       "opcoes": [
         "8 cm",
         "12 cm",
@@ -474,14 +474,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Area de figuras planas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a area de um quadrado de lado 5 cm?",
+      "enunciado": "Qual é a area de um quadrado de lado 5 cm?",
       "opcoes": [
         "10 cm2",
         "20 cm2",
@@ -512,14 +512,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Area de figuras planas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a area de um retangulo de base 6 cm e altura 3 cm?",
+      "enunciado": "Qual é a area de um retângulo de base 6 cm e altura 3 cm?",
       "opcoes": [
         "18 cm2",
         "9 cm2",
@@ -527,7 +527,7 @@ export const geometriaPlana = {
         "24 cm2"
       ],
       "correta": "18 cm2",
-      "comentario": "A area do retangulo e base vezes altura.",
+      "comentario": "A area do retângulo e base vezes altura.",
       "tempoEstimado": 20,
       "tags": [
         "area",
@@ -550,14 +550,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - area e perimetro",
+      "subtopico": "Triângulos - area e perimetro",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "A area de um triangulo de base 8 cm e altura 4 cm e:",
+      "enunciado": "A area de um triângulo de base 8 cm e altura 4 cm e:",
       "opcoes": [
         "12 cm2",
         "16 cm2",
@@ -565,7 +565,7 @@ export const geometriaPlana = {
         "32 cm2"
       ],
       "correta": "16 cm2",
-      "comentario": "A area do triangulo e base vezes altura dividido por 2.",
+      "comentario": "A area do triângulo e base vezes altura dividido por 2.",
       "tempoEstimado": 20,
       "tags": [
         "area",
@@ -588,7 +588,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Circunferencia e circulo",
       "dificuldadeLabel": "facil",
@@ -626,7 +626,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Circunferencia e circulo",
       "dificuldadeLabel": "facil",
@@ -664,7 +664,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Circunferencia e circulo",
       "dificuldadeLabel": "facil",
@@ -702,7 +702,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Ponto reta e plano",
       "dificuldadeLabel": "facil",
@@ -740,7 +740,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Poligonos",
       "dificuldadeLabel": "facil",
@@ -755,7 +755,7 @@ export const geometriaPlana = {
         "invisiveis"
       ],
       "correta": "retos",
-      "comentario": "Poligonos sao formados por segmentos de reta.",
+      "comentario": "Poligonos são formados por segmentos de reta.",
       "tempoEstimado": 20,
       "tags": [
         "poligonos",
@@ -778,14 +778,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Perimetro",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e o perimetro de um retangulo de lados 2 cm e 7 cm?",
+      "enunciado": "Qual é o perimetro de um retângulo de lados 2 cm e 7 cm?",
       "opcoes": [
         "9 cm",
         "14 cm",
@@ -816,14 +816,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Angulos",
+      "subtopico": "Ângulos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um angulo de 180 graus e chamado de:",
+      "enunciado": "Um ângulo de 180 graus e chamado de:",
       "opcoes": [
         "raso",
         "agudo",
@@ -831,7 +831,7 @@ export const geometriaPlana = {
         "obtuso"
       ],
       "correta": "raso",
-      "comentario": "O angulo raso mede 180 graus.",
+      "comentario": "O ângulo raso mede 180 graus.",
       "tempoEstimado": 20,
       "tags": [
         "angulos",
@@ -854,14 +854,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Area de figuras planas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "A area de um retangulo de base 9 cm e altura 2 cm e:",
+      "enunciado": "A area de um retângulo de base 9 cm e altura 2 cm e:",
       "opcoes": [
         "11 cm2",
         "18 cm2",
@@ -892,7 +892,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Quadrilateros",
       "dificuldadeLabel": "facil",
@@ -930,14 +930,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - classificacao",
+      "subtopico": "Triângulos - classificacao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um triangulo com todos os lados diferentes e:",
+      "enunciado": "Um triângulo com todos os lados diferentes e:",
       "opcoes": [
         "equilatero",
         "isosceles",
@@ -968,7 +968,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Escala e semelhanca",
       "dificuldadeLabel": "facil",
@@ -1006,14 +1006,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Angulos",
+      "subtopico": "Ângulos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Dois angulos cuja soma e 90 graus sao:",
+      "enunciado": "Dois ângulos cuja soma e 90 graus são:",
       "opcoes": [
         "suplementares",
         "complementares",
@@ -1021,7 +1021,7 @@ export const geometriaPlana = {
         "congruentes"
       ],
       "correta": "complementares",
-      "comentario": "Angulos complementares somam 90 graus.",
+      "comentario": "Ângulos complementares somam 90 graus.",
       "tempoEstimado": 20,
       "tags": [
         "angulos",
@@ -1044,14 +1044,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Angulos",
+      "subtopico": "Ângulos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Dois angulos cuja soma e 180 graus sao:",
+      "enunciado": "Dois ângulos cuja soma e 180 graus são:",
       "opcoes": [
         "complementares",
         "agudos",
@@ -1059,7 +1059,7 @@ export const geometriaPlana = {
         "congruentes"
       ],
       "correta": "suplementares",
-      "comentario": "Angulos suplementares somam 180 graus.",
+      "comentario": "Ângulos suplementares somam 180 graus.",
       "tempoEstimado": 20,
       "tags": [
         "angulos",
@@ -1082,7 +1082,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Poligonos",
       "dificuldadeLabel": "facil",
@@ -1120,14 +1120,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - area e perimetro",
+      "subtopico": "Triângulos - area e perimetro",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e o perimetro de um triangulo de lados 3 cm, 4 cm e 5 cm?",
+      "enunciado": "Qual é o perimetro de um triângulo de lados 3 cm, 4 cm e 5 cm?",
       "opcoes": [
         "12 cm",
         "9 cm",
@@ -1158,7 +1158,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Composicao de areas",
       "dificuldadeLabel": "facil",
@@ -1173,7 +1173,7 @@ export const geometriaPlana = {
         "anular"
       ],
       "correta": "somar",
-      "comentario": "Sem sobreposicao, as areas sao somadas.",
+      "comentario": "Sem sobreposicao, as areas são somadas.",
       "tempoEstimado": 20,
       "tags": [
         "composicao",
@@ -1196,14 +1196,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - soma dos angulos",
+      "subtopico": "Triângulos - soma dos ângulos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo, dois angulos medem 35 graus e 55 graus. Qual e o terceiro angulo?",
+      "enunciado": "Em um triângulo, dois ângulos medem 35 graus e 55 graus. Qual é o terceiro ângulo?",
       "opcoes": [
         "100",
         "80",
@@ -1211,7 +1211,7 @@ export const geometriaPlana = {
         "110"
       ],
       "correta": "90",
-      "comentario": "A soma dos angulos internos de um triangulo e 180 graus.",
+      "comentario": "A soma dos ângulos internos de um triângulo e 180 graus.",
       "tempoEstimado": 25,
       "tags": [
         "triangulos",
@@ -1234,14 +1234,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - soma dos angulos",
+      "subtopico": "Triângulos - soma dos ângulos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo, dois angulos medem 40 graus e 50 graus. Qual e o terceiro angulo?",
+      "enunciado": "Em um triângulo, dois ângulos medem 40 graus e 50 graus. Qual é o terceiro ângulo?",
       "opcoes": [
         "100",
         "80",
@@ -1249,7 +1249,7 @@ export const geometriaPlana = {
         "90"
       ],
       "correta": "90",
-      "comentario": "A soma dos angulos internos de um triangulo e 180 graus.",
+      "comentario": "A soma dos ângulos internos de um triângulo e 180 graus.",
       "tempoEstimado": 25,
       "tags": [
         "triangulos",
@@ -1272,14 +1272,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - soma dos angulos",
+      "subtopico": "Triângulos - soma dos ângulos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo, dois angulos medem 25 graus e 65 graus. Qual e o terceiro angulo?",
+      "enunciado": "Em um triângulo, dois ângulos medem 25 graus e 65 graus. Qual é o terceiro ângulo?",
       "opcoes": [
         "90",
         "100",
@@ -1287,7 +1287,7 @@ export const geometriaPlana = {
         "110"
       ],
       "correta": "90",
-      "comentario": "A soma dos angulos internos de um triangulo e 180 graus.",
+      "comentario": "A soma dos ângulos internos de um triângulo e 180 graus.",
       "tempoEstimado": 25,
       "tags": [
         "triangulos",
@@ -1310,14 +1310,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - soma dos angulos",
+      "subtopico": "Triângulos - soma dos ângulos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo, dois angulos medem 15 graus e 75 graus. Qual e o terceiro angulo?",
+      "enunciado": "Em um triângulo, dois ângulos medem 15 graus e 75 graus. Qual é o terceiro ângulo?",
       "opcoes": [
         "100",
         "90",
@@ -1325,7 +1325,7 @@ export const geometriaPlana = {
         "110"
       ],
       "correta": "90",
-      "comentario": "A soma dos angulos internos de um triangulo e 180 graus.",
+      "comentario": "A soma dos ângulos internos de um triângulo e 180 graus.",
       "tempoEstimado": 25,
       "tags": [
         "triangulos",
@@ -1348,14 +1348,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - soma dos angulos",
+      "subtopico": "Triângulos - soma dos ângulos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo, dois angulos medem 70 graus e 20 graus. Qual e o terceiro angulo?",
+      "enunciado": "Em um triângulo, dois ângulos medem 70 graus e 20 graus. Qual é o terceiro ângulo?",
       "opcoes": [
         "100",
         "80",
@@ -1363,7 +1363,7 @@ export const geometriaPlana = {
         "110"
       ],
       "correta": "90",
-      "comentario": "A soma dos angulos internos de um triangulo e 180 graus.",
+      "comentario": "A soma dos ângulos internos de um triângulo e 180 graus.",
       "tempoEstimado": 25,
       "tags": [
         "triangulos",
@@ -1386,14 +1386,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - soma dos angulos",
+      "subtopico": "Triângulos - soma dos ângulos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo, dois angulos medem 48 graus e 42 graus. Qual e o terceiro angulo?",
+      "enunciado": "Em um triângulo, dois ângulos medem 48 graus e 42 graus. Qual é o terceiro ângulo?",
       "opcoes": [
         "100",
         "80",
@@ -1401,7 +1401,7 @@ export const geometriaPlana = {
         "90"
       ],
       "correta": "90",
-      "comentario": "A soma dos angulos internos de um triangulo e 180 graus.",
+      "comentario": "A soma dos ângulos internos de um triângulo e 180 graus.",
       "tempoEstimado": 25,
       "tags": [
         "triangulos",
@@ -1424,14 +1424,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - soma dos angulos",
+      "subtopico": "Triângulos - soma dos ângulos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo, dois angulos medem 66 graus e 24 graus. Qual e o terceiro angulo?",
+      "enunciado": "Em um triângulo, dois ângulos medem 66 graus e 24 graus. Qual é o terceiro ângulo?",
       "opcoes": [
         "90",
         "100",
@@ -1439,7 +1439,7 @@ export const geometriaPlana = {
         "110"
       ],
       "correta": "90",
-      "comentario": "A soma dos angulos internos de um triangulo e 180 graus.",
+      "comentario": "A soma dos ângulos internos de um triângulo e 180 graus.",
       "tempoEstimado": 25,
       "tags": [
         "triangulos",
@@ -1462,14 +1462,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - soma dos angulos",
+      "subtopico": "Triângulos - soma dos ângulos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo, dois angulos medem 32 graus e 58 graus. Qual e o terceiro angulo?",
+      "enunciado": "Em um triângulo, dois ângulos medem 32 graus e 58 graus. Qual é o terceiro ângulo?",
       "opcoes": [
         "100",
         "90",
@@ -1477,7 +1477,7 @@ export const geometriaPlana = {
         "110"
       ],
       "correta": "90",
-      "comentario": "A soma dos angulos internos de um triangulo e 180 graus.",
+      "comentario": "A soma dos ângulos internos de um triângulo e 180 graus.",
       "tempoEstimado": 25,
       "tags": [
         "triangulos",
@@ -1500,14 +1500,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - soma dos angulos",
+      "subtopico": "Triângulos - soma dos ângulos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo, dois angulos medem 80 graus e 10 graus. Qual e o terceiro angulo?",
+      "enunciado": "Em um triângulo, dois ângulos medem 80 graus e 10 graus. Qual é o terceiro ângulo?",
       "opcoes": [
         "100",
         "80",
@@ -1515,7 +1515,7 @@ export const geometriaPlana = {
         "110"
       ],
       "correta": "90",
-      "comentario": "A soma dos angulos internos de um triangulo e 180 graus.",
+      "comentario": "A soma dos ângulos internos de um triângulo e 180 graus.",
       "tempoEstimado": 25,
       "tags": [
         "triangulos",
@@ -1538,14 +1538,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - soma dos angulos",
+      "subtopico": "Triângulos - soma dos ângulos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo, dois angulos medem 44 graus e 46 graus. Qual e o terceiro angulo?",
+      "enunciado": "Em um triângulo, dois ângulos medem 44 graus e 46 graus. Qual é o terceiro ângulo?",
       "opcoes": [
         "100",
         "80",
@@ -1553,7 +1553,7 @@ export const geometriaPlana = {
         "90"
       ],
       "correta": "90",
-      "comentario": "A soma dos angulos internos de um triangulo e 180 graus.",
+      "comentario": "A soma dos ângulos internos de um triângulo e 180 graus.",
       "tempoEstimado": 25,
       "tags": [
         "triangulos",
@@ -1576,14 +1576,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Angulos",
+      "subtopico": "Ângulos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um angulo mede 28 graus, quanto deve medir seu complementar?",
+      "enunciado": "Se um ângulo mede 28 graus, quanto deve medir seu complementar?",
       "opcoes": [
         "62",
         "67",
@@ -1591,7 +1591,7 @@ export const geometriaPlana = {
         "72"
       ],
       "correta": "62",
-      "comentario": "Angulos complementares somam 90 graus.",
+      "comentario": "Ângulos complementares somam 90 graus.",
       "tempoEstimado": 25,
       "tags": [
         "angulos",
@@ -1614,14 +1614,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Angulos",
+      "subtopico": "Ângulos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um angulo mede 15 graus, quanto deve medir seu complementar?",
+      "enunciado": "Se um ângulo mede 15 graus, quanto deve medir seu complementar?",
       "opcoes": [
         "80",
         "75",
@@ -1629,7 +1629,7 @@ export const geometriaPlana = {
         "85"
       ],
       "correta": "75",
-      "comentario": "Angulos complementares somam 90 graus.",
+      "comentario": "Ângulos complementares somam 90 graus.",
       "tempoEstimado": 25,
       "tags": [
         "angulos",
@@ -1652,14 +1652,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Angulos",
+      "subtopico": "Ângulos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um angulo mede 47 graus, quanto deve medir seu complementar?",
+      "enunciado": "Se um ângulo mede 47 graus, quanto deve medir seu complementar?",
       "opcoes": [
         "48",
         "38",
@@ -1667,7 +1667,7 @@ export const geometriaPlana = {
         "53"
       ],
       "correta": "43",
-      "comentario": "Angulos complementares somam 90 graus.",
+      "comentario": "Ângulos complementares somam 90 graus.",
       "tempoEstimado": 25,
       "tags": [
         "angulos",
@@ -1690,14 +1690,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Angulos",
+      "subtopico": "Ângulos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um angulo mede 36 graus, quanto deve medir seu complementar?",
+      "enunciado": "Se um ângulo mede 36 graus, quanto deve medir seu complementar?",
       "opcoes": [
         "59",
         "49",
@@ -1705,7 +1705,7 @@ export const geometriaPlana = {
         "54"
       ],
       "correta": "54",
-      "comentario": "Angulos complementares somam 90 graus.",
+      "comentario": "Ângulos complementares somam 90 graus.",
       "tempoEstimado": 25,
       "tags": [
         "angulos",
@@ -1728,14 +1728,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Angulos",
+      "subtopico": "Ângulos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um angulo mede 12 graus, quanto deve medir seu complementar?",
+      "enunciado": "Se um ângulo mede 12 graus, quanto deve medir seu complementar?",
       "opcoes": [
         "78",
         "83",
@@ -1743,7 +1743,7 @@ export const geometriaPlana = {
         "88"
       ],
       "correta": "78",
-      "comentario": "Angulos complementares somam 90 graus.",
+      "comentario": "Ângulos complementares somam 90 graus.",
       "tempoEstimado": 25,
       "tags": [
         "angulos",
@@ -1766,14 +1766,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Angulos",
+      "subtopico": "Ângulos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um angulo mede 28 graus, quanto deve medir seu suplementar?",
+      "enunciado": "Se um ângulo mede 28 graus, quanto deve medir seu suplementar?",
       "opcoes": [
         "162",
         "152",
@@ -1781,7 +1781,7 @@ export const geometriaPlana = {
         "172"
       ],
       "correta": "152",
-      "comentario": "Angulos suplementares somam 180 graus.",
+      "comentario": "Ângulos suplementares somam 180 graus.",
       "tempoEstimado": 25,
       "tags": [
         "angulos",
@@ -1804,14 +1804,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Angulos",
+      "subtopico": "Ângulos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um angulo mede 65 graus, quanto deve medir seu suplementar?",
+      "enunciado": "Se um ângulo mede 65 graus, quanto deve medir seu suplementar?",
       "opcoes": [
         "125",
         "105",
@@ -1819,7 +1819,7 @@ export const geometriaPlana = {
         "135"
       ],
       "correta": "115",
-      "comentario": "Angulos suplementares somam 180 graus.",
+      "comentario": "Ângulos suplementares somam 180 graus.",
       "tempoEstimado": 25,
       "tags": [
         "angulos",
@@ -1842,14 +1842,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Angulos",
+      "subtopico": "Ângulos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um angulo mede 112 graus, quanto deve medir seu suplementar?",
+      "enunciado": "Se um ângulo mede 112 graus, quanto deve medir seu suplementar?",
       "opcoes": [
         "78",
         "58",
@@ -1857,7 +1857,7 @@ export const geometriaPlana = {
         "68"
       ],
       "correta": "68",
-      "comentario": "Angulos suplementares somam 180 graus.",
+      "comentario": "Ângulos suplementares somam 180 graus.",
       "tempoEstimado": 25,
       "tags": [
         "angulos",
@@ -1880,14 +1880,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Angulos",
+      "subtopico": "Ângulos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um angulo mede 33 graus, quanto deve medir seu suplementar?",
+      "enunciado": "Se um ângulo mede 33 graus, quanto deve medir seu suplementar?",
       "opcoes": [
         "147",
         "157",
@@ -1895,7 +1895,7 @@ export const geometriaPlana = {
         "167"
       ],
       "correta": "147",
-      "comentario": "Angulos suplementares somam 180 graus.",
+      "comentario": "Ângulos suplementares somam 180 graus.",
       "tempoEstimado": 25,
       "tags": [
         "angulos",
@@ -1918,14 +1918,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Angulos",
+      "subtopico": "Ângulos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um angulo mede 91 graus, quanto deve medir seu suplementar?",
+      "enunciado": "Se um ângulo mede 91 graus, quanto deve medir seu suplementar?",
       "opcoes": [
         "99",
         "89",
@@ -1933,7 +1933,7 @@ export const geometriaPlana = {
         "109"
       ],
       "correta": "89",
-      "comentario": "Angulos suplementares somam 180 graus.",
+      "comentario": "Ângulos suplementares somam 180 graus.",
       "tempoEstimado": 25,
       "tags": [
         "angulos",
@@ -1956,14 +1956,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - classificacao",
+      "subtopico": "Triângulos - classificacao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um triangulo tem lados 5 cm, 5 cm e 8 cm. Quanto aos lados, esse triangulo e:",
+      "enunciado": "Um triângulo tem lados 5 cm, 5 cm e 8 cm. Quanto aos lados, esse triângulo e:",
       "opcoes": [
         "equilatero",
         "escaleno",
@@ -1971,7 +1971,7 @@ export const geometriaPlana = {
         "retangulo"
       ],
       "correta": "isosceles",
-      "comentario": "Observe a igualdade entre lados ou relacao pitagorica quando indicada.",
+      "comentario": "Observe a igualdade entre lados ou relação pitagorica quando indicada.",
       "tempoEstimado": 28,
       "tags": [
         "triangulos",
@@ -1994,14 +1994,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - classificacao",
+      "subtopico": "Triângulos - classificacao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um triangulo tem lados 4 cm, 6 cm e 7 cm. Quanto aos lados, esse triangulo e:",
+      "enunciado": "Um triângulo tem lados 4 cm, 6 cm e 7 cm. Quanto aos lados, esse triângulo e:",
       "opcoes": [
         "equilatero",
         "isosceles",
@@ -2009,7 +2009,7 @@ export const geometriaPlana = {
         "escaleno"
       ],
       "correta": "escaleno",
-      "comentario": "Observe a igualdade entre lados ou relacao pitagorica quando indicada.",
+      "comentario": "Observe a igualdade entre lados ou relação pitagorica quando indicada.",
       "tempoEstimado": 28,
       "tags": [
         "triangulos",
@@ -2032,14 +2032,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - classificacao",
+      "subtopico": "Triângulos - classificacao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um triangulo tem lados 9 cm, 9 cm e 9 cm. Quanto aos lados, esse triangulo e:",
+      "enunciado": "Um triângulo tem lados 9 cm, 9 cm e 9 cm. Quanto aos lados, esse triângulo e:",
       "opcoes": [
         "equilatero",
         "isosceles",
@@ -2047,7 +2047,7 @@ export const geometriaPlana = {
         "obtusangulo"
       ],
       "correta": "equilatero",
-      "comentario": "Observe a igualdade entre lados ou relacao pitagorica quando indicada.",
+      "comentario": "Observe a igualdade entre lados ou relação pitagorica quando indicada.",
       "tempoEstimado": 28,
       "tags": [
         "triangulos",
@@ -2070,14 +2070,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - classificacao",
+      "subtopico": "Triângulos - classificacao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um triangulo tem lados 3 cm, 4 cm e 5 cm. Quanto aos angulos, esse triangulo e:",
+      "enunciado": "Um triângulo tem lados 3 cm, 4 cm e 5 cm. Quanto aos ângulos, esse triângulo e:",
       "opcoes": [
         "acutangulo",
         "retangulo",
@@ -2085,7 +2085,7 @@ export const geometriaPlana = {
         "equilatero"
       ],
       "correta": "retangulo",
-      "comentario": "Observe a igualdade entre lados ou relacao pitagorica quando indicada.",
+      "comentario": "Observe a igualdade entre lados ou relação pitagorica quando indicada.",
       "tempoEstimado": 28,
       "tags": [
         "triangulos",
@@ -2108,14 +2108,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - classificacao",
+      "subtopico": "Triângulos - classificacao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um triangulo tem lados 5 cm, 12 cm e 13 cm. Quanto aos angulos, esse triangulo e:",
+      "enunciado": "Um triângulo tem lados 5 cm, 12 cm e 13 cm. Quanto aos ângulos, esse triângulo e:",
       "opcoes": [
         "acutangulo",
         "obtusangulo",
@@ -2123,7 +2123,7 @@ export const geometriaPlana = {
         "isosceles"
       ],
       "correta": "retangulo",
-      "comentario": "Observe a igualdade entre lados ou relacao pitagorica quando indicada.",
+      "comentario": "Observe a igualdade entre lados ou relação pitagorica quando indicada.",
       "tempoEstimado": 28,
       "tags": [
         "triangulos",
@@ -2146,14 +2146,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - classificacao",
+      "subtopico": "Triângulos - classificacao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um triangulo tem lados 7 cm, 7 cm e 10 cm. Quanto aos lados, esse triangulo e:",
+      "enunciado": "Um triângulo tem lados 7 cm, 7 cm e 10 cm. Quanto aos lados, esse triângulo e:",
       "opcoes": [
         "equilatero",
         "escaleno",
@@ -2161,7 +2161,7 @@ export const geometriaPlana = {
         "isosceles"
       ],
       "correta": "isosceles",
-      "comentario": "Observe a igualdade entre lados ou relacao pitagorica quando indicada.",
+      "comentario": "Observe a igualdade entre lados ou relação pitagorica quando indicada.",
       "tempoEstimado": 28,
       "tags": [
         "triangulos",
@@ -2184,14 +2184,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - classificacao",
+      "subtopico": "Triângulos - classificacao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um triangulo tem lados 6 cm, 8 cm e 10 cm. Quanto aos angulos, esse triangulo e:",
+      "enunciado": "Um triângulo tem lados 6 cm, 8 cm e 10 cm. Quanto aos ângulos, esse triângulo e:",
       "opcoes": [
         "retangulo",
         "obtusangulo",
@@ -2199,7 +2199,7 @@ export const geometriaPlana = {
         "equilatero"
       ],
       "correta": "retangulo",
-      "comentario": "Observe a igualdade entre lados ou relacao pitagorica quando indicada.",
+      "comentario": "Observe a igualdade entre lados ou relação pitagorica quando indicada.",
       "tempoEstimado": 28,
       "tags": [
         "triangulos",
@@ -2222,14 +2222,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - classificacao",
+      "subtopico": "Triângulos - classificacao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um triangulo tem lados 4 cm, 4 cm e 4 cm. Quanto aos lados, esse triangulo e:",
+      "enunciado": "Um triângulo tem lados 4 cm, 4 cm e 4 cm. Quanto aos lados, esse triângulo e:",
       "opcoes": [
         "isosceles",
         "equilatero",
@@ -2237,7 +2237,7 @@ export const geometriaPlana = {
         "retangulo"
       ],
       "correta": "equilatero",
-      "comentario": "Observe a igualdade entre lados ou relacao pitagorica quando indicada.",
+      "comentario": "Observe a igualdade entre lados ou relação pitagorica quando indicada.",
       "tempoEstimado": 28,
       "tags": [
         "triangulos",
@@ -2260,14 +2260,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - classificacao",
+      "subtopico": "Triângulos - classificacao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um triangulo tem lados 2 cm, 3 cm e 4 cm. Quanto aos lados, esse triangulo e:",
+      "enunciado": "Um triângulo tem lados 2 cm, 3 cm e 4 cm. Quanto aos lados, esse triângulo e:",
       "opcoes": [
         "equilatero",
         "isosceles",
@@ -2275,7 +2275,7 @@ export const geometriaPlana = {
         "obtusangulo"
       ],
       "correta": "escaleno",
-      "comentario": "Observe a igualdade entre lados ou relacao pitagorica quando indicada.",
+      "comentario": "Observe a igualdade entre lados ou relação pitagorica quando indicada.",
       "tempoEstimado": 28,
       "tags": [
         "triangulos",
@@ -2298,14 +2298,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - classificacao",
+      "subtopico": "Triângulos - classificacao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um triangulo tem lados 8 cm, 15 cm e 17 cm. Quanto aos angulos, esse triangulo e:",
+      "enunciado": "Um triângulo tem lados 8 cm, 15 cm e 17 cm. Quanto aos ângulos, esse triângulo e:",
       "opcoes": [
         "agudo",
         "obtusangulo",
@@ -2313,7 +2313,7 @@ export const geometriaPlana = {
         "retangulo"
       ],
       "correta": "retangulo",
-      "comentario": "Observe a igualdade entre lados ou relacao pitagorica quando indicada.",
+      "comentario": "Observe a igualdade entre lados ou relação pitagorica quando indicada.",
       "tempoEstimado": 28,
       "tags": [
         "triangulos",
@@ -2336,14 +2336,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - area e perimetro",
+      "subtopico": "Triângulos - area e perimetro",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a area de um triangulo com base 6 cm e altura 4 cm?",
+      "enunciado": "Qual é a area de um triângulo com base 6 cm e altura 4 cm?",
       "opcoes": [
         "12",
         "15",
@@ -2351,7 +2351,7 @@ export const geometriaPlana = {
         "18"
       ],
       "correta": "12",
-      "comentario": "A area do triangulo e base vezes altura dividido por 2.",
+      "comentario": "A area do triângulo e base vezes altura dividido por 2.",
       "tempoEstimado": 28,
       "tags": [
         "triangulos",
@@ -2374,14 +2374,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - area e perimetro",
+      "subtopico": "Triângulos - area e perimetro",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a area de um triangulo com base 10 cm e altura 3 cm?",
+      "enunciado": "Qual é a area de um triângulo com base 10 cm e altura 3 cm?",
       "opcoes": [
         "18",
         "15",
@@ -2389,7 +2389,7 @@ export const geometriaPlana = {
         "21"
       ],
       "correta": "15",
-      "comentario": "A area do triangulo e base vezes altura dividido por 2.",
+      "comentario": "A area do triângulo e base vezes altura dividido por 2.",
       "tempoEstimado": 28,
       "tags": [
         "triangulos",
@@ -2412,14 +2412,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - area e perimetro",
+      "subtopico": "Triângulos - area e perimetro",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a area de um triangulo com base 12 cm e altura 5 cm?",
+      "enunciado": "Qual é a area de um triângulo com base 12 cm e altura 5 cm?",
       "opcoes": [
         "33",
         "27",
@@ -2427,7 +2427,7 @@ export const geometriaPlana = {
         "36"
       ],
       "correta": "30",
-      "comentario": "A area do triangulo e base vezes altura dividido por 2.",
+      "comentario": "A area do triângulo e base vezes altura dividido por 2.",
       "tempoEstimado": 28,
       "tags": [
         "triangulos",
@@ -2450,14 +2450,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - area e perimetro",
+      "subtopico": "Triângulos - area e perimetro",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a area de um triangulo com base 8 cm e altura 7 cm?",
+      "enunciado": "Qual é a area de um triângulo com base 8 cm e altura 7 cm?",
       "opcoes": [
         "31",
         "25",
@@ -2465,7 +2465,7 @@ export const geometriaPlana = {
         "28"
       ],
       "correta": "28",
-      "comentario": "A area do triangulo e base vezes altura dividido por 2.",
+      "comentario": "A area do triângulo e base vezes altura dividido por 2.",
       "tempoEstimado": 28,
       "tags": [
         "triangulos",
@@ -2488,14 +2488,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - area e perimetro",
+      "subtopico": "Triângulos - area e perimetro",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a area de um triangulo com base 15 cm e altura 4 cm?",
+      "enunciado": "Qual é a area de um triângulo com base 15 cm e altura 4 cm?",
       "opcoes": [
         "30",
         "33",
@@ -2503,7 +2503,7 @@ export const geometriaPlana = {
         "36"
       ],
       "correta": "30",
-      "comentario": "A area do triangulo e base vezes altura dividido por 2.",
+      "comentario": "A area do triângulo e base vezes altura dividido por 2.",
       "tempoEstimado": 28,
       "tags": [
         "triangulos",
@@ -2526,14 +2526,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - area e perimetro",
+      "subtopico": "Triângulos - area e perimetro",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a area de um triangulo com base 9 cm e altura 6 cm?",
+      "enunciado": "Qual é a area de um triângulo com base 9 cm e altura 6 cm?",
       "opcoes": [
         "30",
         "27",
@@ -2541,7 +2541,7 @@ export const geometriaPlana = {
         "33"
       ],
       "correta": "27",
-      "comentario": "A area do triangulo e base vezes altura dividido por 2.",
+      "comentario": "A area do triângulo e base vezes altura dividido por 2.",
       "tempoEstimado": 28,
       "tags": [
         "triangulos",
@@ -2564,14 +2564,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - area e perimetro",
+      "subtopico": "Triângulos - area e perimetro",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a area de um triangulo com base 14 cm e altura 2 cm?",
+      "enunciado": "Qual é a area de um triângulo com base 14 cm e altura 2 cm?",
       "opcoes": [
         "17",
         "11",
@@ -2579,7 +2579,7 @@ export const geometriaPlana = {
         "20"
       ],
       "correta": "14",
-      "comentario": "A area do triangulo e base vezes altura dividido por 2.",
+      "comentario": "A area do triângulo e base vezes altura dividido por 2.",
       "tempoEstimado": 28,
       "tags": [
         "triangulos",
@@ -2602,14 +2602,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - area e perimetro",
+      "subtopico": "Triângulos - area e perimetro",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a area de um triangulo com base 20 cm e altura 3 cm?",
+      "enunciado": "Qual é a area de um triângulo com base 20 cm e altura 3 cm?",
       "opcoes": [
         "33",
         "27",
@@ -2617,7 +2617,7 @@ export const geometriaPlana = {
         "30"
       ],
       "correta": "30",
-      "comentario": "A area do triangulo e base vezes altura dividido por 2.",
+      "comentario": "A area do triângulo e base vezes altura dividido por 2.",
       "tempoEstimado": 28,
       "tags": [
         "triangulos",
@@ -2640,14 +2640,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - area e perimetro",
+      "subtopico": "Triângulos - area e perimetro",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a area de um triangulo com base 11 cm e altura 8 cm?",
+      "enunciado": "Qual é a area de um triângulo com base 11 cm e altura 8 cm?",
       "opcoes": [
         "44",
         "47",
@@ -2655,7 +2655,7 @@ export const geometriaPlana = {
         "50"
       ],
       "correta": "44",
-      "comentario": "A area do triangulo e base vezes altura dividido por 2.",
+      "comentario": "A area do triângulo e base vezes altura dividido por 2.",
       "tempoEstimado": 28,
       "tags": [
         "triangulos",
@@ -2678,14 +2678,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - area e perimetro",
+      "subtopico": "Triângulos - area e perimetro",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a area de um triangulo com base 16 cm e altura 5 cm?",
+      "enunciado": "Qual é a area de um triângulo com base 16 cm e altura 5 cm?",
       "opcoes": [
         "43",
         "40",
@@ -2693,7 +2693,7 @@ export const geometriaPlana = {
         "46"
       ],
       "correta": "40",
-      "comentario": "A area do triangulo e base vezes altura dividido por 2.",
+      "comentario": "A area do triângulo e base vezes altura dividido por 2.",
       "tempoEstimado": 28,
       "tags": [
         "triangulos",
@@ -2716,14 +2716,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Area de figuras planas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a area de um retangulo de base 8 cm e altura 3 cm?",
+      "enunciado": "Qual é a area de um retângulo de base 8 cm e altura 3 cm?",
       "opcoes": [
         "28",
         "20",
@@ -2731,7 +2731,7 @@ export const geometriaPlana = {
         "32"
       ],
       "correta": "24",
-      "comentario": "No retangulo, area = base x altura.",
+      "comentario": "No retângulo, area = base x altura.",
       "tempoEstimado": 28,
       "tags": [
         "area",
@@ -2754,14 +2754,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Area de figuras planas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a area de um retangulo de base 12 cm e altura 4 cm?",
+      "enunciado": "Qual é a area de um retângulo de base 12 cm e altura 4 cm?",
       "opcoes": [
         "52",
         "44",
@@ -2769,7 +2769,7 @@ export const geometriaPlana = {
         "48"
       ],
       "correta": "48",
-      "comentario": "No retangulo, area = base x altura.",
+      "comentario": "No retângulo, area = base x altura.",
       "tempoEstimado": 28,
       "tags": [
         "area",
@@ -2792,14 +2792,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Area de figuras planas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a area de um retangulo de base 15 cm e altura 2 cm?",
+      "enunciado": "Qual é a area de um retângulo de base 15 cm e altura 2 cm?",
       "opcoes": [
         "30",
         "34",
@@ -2807,7 +2807,7 @@ export const geometriaPlana = {
         "38"
       ],
       "correta": "30",
-      "comentario": "No retangulo, area = base x altura.",
+      "comentario": "No retângulo, area = base x altura.",
       "tempoEstimado": 28,
       "tags": [
         "area",
@@ -2830,14 +2830,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Area de figuras planas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a area de um retangulo de base 7 cm e altura 9 cm?",
+      "enunciado": "Qual é a area de um retângulo de base 7 cm e altura 9 cm?",
       "opcoes": [
         "67",
         "63",
@@ -2845,7 +2845,7 @@ export const geometriaPlana = {
         "71"
       ],
       "correta": "63",
-      "comentario": "No retangulo, area = base x altura.",
+      "comentario": "No retângulo, area = base x altura.",
       "tempoEstimado": 28,
       "tags": [
         "area",
@@ -2868,14 +2868,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Area de figuras planas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a area de um retangulo de base 11 cm e altura 5 cm?",
+      "enunciado": "Qual é a area de um retângulo de base 11 cm e altura 5 cm?",
       "opcoes": [
         "59",
         "51",
@@ -2883,7 +2883,7 @@ export const geometriaPlana = {
         "63"
       ],
       "correta": "55",
-      "comentario": "No retangulo, area = base x altura.",
+      "comentario": "No retângulo, area = base x altura.",
       "tempoEstimado": 28,
       "tags": [
         "area",
@@ -2906,14 +2906,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Area de figuras planas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a area de um quadrado de lado 4 cm?",
+      "enunciado": "Qual é a area de um quadrado de lado 4 cm?",
       "opcoes": [
         "21",
         "11",
@@ -2944,14 +2944,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Area de figuras planas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a area de um quadrado de lado 6 cm?",
+      "enunciado": "Qual é a area de um quadrado de lado 6 cm?",
       "opcoes": [
         "36",
         "41",
@@ -2982,14 +2982,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Area de figuras planas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a area de um quadrado de lado 7 cm?",
+      "enunciado": "Qual é a area de um quadrado de lado 7 cm?",
       "opcoes": [
         "54",
         "49",
@@ -3020,14 +3020,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Area de figuras planas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a area de um quadrado de lado 9 cm?",
+      "enunciado": "Qual é a area de um quadrado de lado 9 cm?",
       "opcoes": [
         "86",
         "76",
@@ -3058,14 +3058,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Area de figuras planas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a area de um quadrado de lado 12 cm?",
+      "enunciado": "Qual é a area de um quadrado de lado 12 cm?",
       "opcoes": [
         "149",
         "139",
@@ -3096,14 +3096,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Perimetro",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e o perimetro de um retangulo de lados 4 cm e 9 cm?",
+      "enunciado": "Qual é o perimetro de um retângulo de lados 4 cm e 9 cm?",
       "opcoes": [
         "26",
         "30",
@@ -3134,14 +3134,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Perimetro",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e o perimetro de um retangulo de lados 7 cm e 8 cm?",
+      "enunciado": "Qual é o perimetro de um retângulo de lados 7 cm e 8 cm?",
       "opcoes": [
         "34",
         "30",
@@ -3172,14 +3172,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Perimetro",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e o perimetro de um retangulo de lados 12 cm e 5 cm?",
+      "enunciado": "Qual é o perimetro de um retângulo de lados 12 cm e 5 cm?",
       "opcoes": [
         "38",
         "30",
@@ -3210,14 +3210,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Perimetro",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e o perimetro de um retangulo de lados 3 cm e 14 cm?",
+      "enunciado": "Qual é o perimetro de um retângulo de lados 3 cm e 14 cm?",
       "opcoes": [
         "38",
         "30",
@@ -3248,14 +3248,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Perimetro",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e o perimetro de um retangulo de lados 11 cm e 6 cm?",
+      "enunciado": "Qual é o perimetro de um retângulo de lados 11 cm e 6 cm?",
       "opcoes": [
         "34",
         "38",
@@ -3286,20 +3286,20 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Quadrilateros",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Todo retangulo e um paralelogramo.",
+      "enunciado": "Todo retângulo e um paralelogramo.",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "No retangulo, os lados opostos sao paralelos.",
+      "comentario": "No retângulo, os lados opostos são paralelos.",
       "tempoEstimado": 26,
       "tags": [
         "quadrilateros",
@@ -3322,7 +3322,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Quadrilateros",
       "dificuldadeLabel": "medio",
@@ -3358,7 +3358,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Quadrilateros",
       "dificuldadeLabel": "medio",
@@ -3394,14 +3394,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Quadrilateros",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Todo quadrado e tambem um losango.",
+      "enunciado": "Todo quadrado e também um losango.",
       "opcoes": [
         "Verdadeiro",
         "Falso"
@@ -3430,14 +3430,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Quadrilateros",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Todo losango possui quatro angulos retos.",
+      "enunciado": "Todo losango possui quatro ângulos retos.",
       "opcoes": [
         "Verdadeiro",
         "Falso"
@@ -3466,7 +3466,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Poligonos",
       "dificuldadeLabel": "medio",
@@ -3504,7 +3504,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Poligonos",
       "dificuldadeLabel": "medio",
@@ -3542,7 +3542,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Poligonos",
       "dificuldadeLabel": "medio",
@@ -3580,7 +3580,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Poligonos",
       "dificuldadeLabel": "medio",
@@ -3618,7 +3618,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Poligonos",
       "dificuldadeLabel": "medio",
@@ -3656,14 +3656,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Poligonos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a soma dos angulos internos de um poligono de 5 lados?",
+      "enunciado": "Qual é a soma dos ângulos internos de um poligono de 5 lados?",
       "opcoes": [
         "720",
         "360",
@@ -3694,14 +3694,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Poligonos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a soma dos angulos internos de um poligono de 6 lados?",
+      "enunciado": "Qual é a soma dos ângulos internos de um poligono de 6 lados?",
       "opcoes": [
         "720",
         "900",
@@ -3732,14 +3732,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Poligonos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a soma dos angulos internos de um poligono de 7 lados?",
+      "enunciado": "Qual é a soma dos ângulos internos de um poligono de 7 lados?",
       "opcoes": [
         "1080",
         "900",
@@ -3770,14 +3770,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Poligonos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a soma dos angulos internos de um poligono de 8 lados?",
+      "enunciado": "Qual é a soma dos ângulos internos de um poligono de 8 lados?",
       "opcoes": [
         "1260",
         "900",
@@ -3808,14 +3808,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Poligonos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a soma dos angulos internos de um poligono de 10 lados?",
+      "enunciado": "Qual é a soma dos ângulos internos de um poligono de 10 lados?",
       "opcoes": [
         "1620",
         "1260",
@@ -3846,14 +3846,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Circunferencia e circulo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Adotando pi = 3, qual e o comprimento da circunferencia de raio 3 cm?",
+      "enunciado": "Adotando pi = 3, qual é o comprimento da circunferencia de raio 3 cm?",
       "opcoes": [
         "18",
         "24",
@@ -3884,14 +3884,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Circunferencia e circulo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Adotando pi = 3, qual e o comprimento da circunferencia de raio 4 cm?",
+      "enunciado": "Adotando pi = 3, qual é o comprimento da circunferencia de raio 4 cm?",
       "opcoes": [
         "30",
         "24",
@@ -3922,14 +3922,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Circunferencia e circulo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Adotando pi = 3, qual e o comprimento da circunferencia de raio 5 cm?",
+      "enunciado": "Adotando pi = 3, qual é o comprimento da circunferencia de raio 5 cm?",
       "opcoes": [
         "36",
         "24",
@@ -3960,14 +3960,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Circunferencia e circulo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Adotando pi = 3, qual e o comprimento da circunferencia de raio 7 cm?",
+      "enunciado": "Adotando pi = 3, qual é o comprimento da circunferencia de raio 7 cm?",
       "opcoes": [
         "48",
         "36",
@@ -3998,14 +3998,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Circunferencia e circulo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Adotando pi = 3, qual e o comprimento da circunferencia de raio 9 cm?",
+      "enunciado": "Adotando pi = 3, qual é o comprimento da circunferencia de raio 9 cm?",
       "opcoes": [
         "54",
         "60",
@@ -4036,14 +4036,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Circunferencia e circulo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Adotando pi = 3, qual e a area de um circulo de raio 2 cm?",
+      "enunciado": "Adotando pi = 3, qual é a area de um circulo de raio 2 cm?",
       "opcoes": [
         "18",
         "12",
@@ -4074,14 +4074,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Circunferencia e circulo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Adotando pi = 3, qual e a area de um circulo de raio 3 cm?",
+      "enunciado": "Adotando pi = 3, qual é a area de um circulo de raio 3 cm?",
       "opcoes": [
         "33",
         "21",
@@ -4112,14 +4112,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Circunferencia e circulo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Adotando pi = 3, qual e a area de um circulo de raio 4 cm?",
+      "enunciado": "Adotando pi = 3, qual é a area de um circulo de raio 4 cm?",
       "opcoes": [
         "54",
         "42",
@@ -4150,14 +4150,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Circunferencia e circulo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Adotando pi = 3, qual e a area de um circulo de raio 6 cm?",
+      "enunciado": "Adotando pi = 3, qual é a area de um circulo de raio 6 cm?",
       "opcoes": [
         "108",
         "114",
@@ -4188,14 +4188,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Circunferencia e circulo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Adotando pi = 3, qual e a area de um circulo de raio 8 cm?",
+      "enunciado": "Adotando pi = 3, qual é a area de um circulo de raio 8 cm?",
       "opcoes": [
         "198",
         "192",
@@ -4226,7 +4226,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Escala e semelhanca",
       "dificuldadeLabel": "medio",
@@ -4264,7 +4264,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Escala e semelhanca",
       "dificuldadeLabel": "medio",
@@ -4302,7 +4302,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Escala e semelhanca",
       "dificuldadeLabel": "medio",
@@ -4340,7 +4340,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Escala e semelhanca",
       "dificuldadeLabel": "medio",
@@ -4378,7 +4378,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Escala e semelhanca",
       "dificuldadeLabel": "medio",
@@ -4416,7 +4416,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Escala e semelhanca",
       "dificuldadeLabel": "medio",
@@ -4454,7 +4454,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Escala e semelhanca",
       "dificuldadeLabel": "medio",
@@ -4492,7 +4492,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Escala e semelhanca",
       "dificuldadeLabel": "medio",
@@ -4530,7 +4530,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Escala e semelhanca",
       "dificuldadeLabel": "medio",
@@ -4568,7 +4568,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Escala e semelhanca",
       "dificuldadeLabel": "medio",
@@ -4606,14 +4606,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Composicao de areas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um terreno retangular de 12 m por 8 m possui um canteiro quadrado de lado 4 m ocupando uma parte. Qual e a area livre restante?",
+      "enunciado": "Um terreno retangular de 12 m por 8 m possui um canteiro quadrado de lado 4 m ocupando uma parte. Qual é a area livre restante?",
       "opcoes": [
         "32",
         "42",
@@ -4644,14 +4644,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Composicao de areas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um piso retangular de 15 m por 10 m tera um palco quadrado de lado 5 m. Qual e a area que sobra?",
+      "enunciado": "Um piso retangular de 15 m por 10 m tera um palco quadrado de lado 5 m. Qual é a area que sobra?",
       "opcoes": [
         "135",
         "125",
@@ -4682,14 +4682,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Composicao de areas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um painel retangular de 20 cm por 6 cm possui uma janela quadrada de lado 3 cm recortada. Qual e a area restante?",
+      "enunciado": "Um painel retangular de 20 cm por 6 cm possui uma janela quadrada de lado 3 cm recortada. Qual é a area restante?",
       "opcoes": [
         "121",
         "101",
@@ -4720,14 +4720,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Composicao de areas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma placa retangular de 18 cm por 9 cm tem um quadrado de lado 6 cm removido. Qual e a area restante?",
+      "enunciado": "Uma placa retangular de 18 cm por 9 cm tem um quadrado de lado 6 cm removido. Qual é a area restante?",
       "opcoes": [
         "136",
         "116",
@@ -4758,14 +4758,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Composicao de areas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um tapete retangular de 14 m por 11 m tera uma mesa quadrada de lado 5 m cobrindo parte dele. Qual e a area visivel?",
+      "enunciado": "Um tapete retangular de 14 m por 11 m tera uma mesa quadrada de lado 5 m cobrindo parte dele. Qual é a area visível?",
       "opcoes": [
         "129",
         "139",
@@ -4796,14 +4796,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Angulos",
+      "subtopico": "Ângulos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Dois angulos suplementares estao na razao 2:3. O menor angulo mede:",
+      "enunciado": "Dois ângulos suplementares estao na razao 2:3. O menor ângulo mede:",
       "opcoes": [
         "36 graus",
         "72 graus",
@@ -4834,14 +4834,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Angulos",
+      "subtopico": "Ângulos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Os angulos internos de um triangulo sao x, 2x e 3x. O maior deles mede:",
+      "enunciado": "Os ângulos internos de um triângulo são x, 2x e 3x. O maior deles mede:",
       "opcoes": [
         "30 graus",
         "60 graus",
@@ -4849,7 +4849,7 @@ export const geometriaPlana = {
         "120 graus"
       ],
       "correta": "90 graus",
-      "comentario": "A soma dos angulos e 180 graus: 6x = 180.",
+      "comentario": "A soma dos ângulos e 180 graus: 6x = 180.",
       "tempoEstimado": 34,
       "tags": [
         "angulos",
@@ -4872,14 +4872,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Angulos",
+      "subtopico": "Ângulos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo isosceles, o angulo do vertice mede 40 graus. Cada angulo da base mede:",
+      "enunciado": "Em um triângulo isosceles, o ângulo do vertice mede 40 graus. Cada ângulo da base mede:",
       "opcoes": [
         "50 graus",
         "60 graus",
@@ -4887,7 +4887,7 @@ export const geometriaPlana = {
         "70 graus"
       ],
       "correta": "70 graus",
-      "comentario": "Os angulos da base sao iguais e somam 140 graus.",
+      "comentario": "Os ângulos da base são iguais e somam 140 graus.",
       "tempoEstimado": 34,
       "tags": [
         "angulos",
@@ -4910,14 +4910,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Angulos",
+      "subtopico": "Ângulos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um angulo e o dobro do seu complementar. Quanto mede o maior?",
+      "enunciado": "Um ângulo e o dobro do seu complementar. Quanto mede o maior?",
       "opcoes": [
         "60 graus",
         "30 graus",
@@ -4948,14 +4948,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Angulos",
+      "subtopico": "Ângulos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, um dos angulos agudos mede 35 graus. O outro mede:",
+      "enunciado": "Em um triângulo retângulo, um dos ângulos agudos mede 35 graus. O outro mede:",
       "opcoes": [
         "45 graus",
         "55 graus",
@@ -4963,7 +4963,7 @@ export const geometriaPlana = {
         "65 graus"
       ],
       "correta": "55 graus",
-      "comentario": "Os dois angulos agudos somam 90 graus.",
+      "comentario": "Os dois ângulos agudos somam 90 graus.",
       "tempoEstimado": 34,
       "tags": [
         "angulos",
@@ -4986,14 +4986,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - area e perimetro",
+      "subtopico": "Triângulos - area e perimetro",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e o perimetro de um triangulo com lados 13 cm, 14 cm e 15 cm?",
+      "enunciado": "Qual é o perimetro de um triângulo com lados 13 cm, 14 cm e 15 cm?",
       "opcoes": [
         "46",
         "38",
@@ -5024,14 +5024,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - area e perimetro",
+      "subtopico": "Triângulos - area e perimetro",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e o perimetro de um triangulo com lados 12 cm, 16 cm e 20 cm?",
+      "enunciado": "Qual é o perimetro de um triângulo com lados 12 cm, 16 cm e 20 cm?",
       "opcoes": [
         "52",
         "44",
@@ -5062,14 +5062,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - area e perimetro",
+      "subtopico": "Triângulos - area e perimetro",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um triangulo retangulo possui catetos 9 cm e 12 cm e hipotenusa 15 cm. Qual e a soma dos lados?",
+      "enunciado": "Um triângulo retângulo possui catetos 9 cm e 12 cm e hipotenusa 15 cm. Qual é a soma dos lados?",
       "opcoes": [
         "54",
         "58",
@@ -5100,14 +5100,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - area e perimetro",
+      "subtopico": "Triângulos - area e perimetro",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e o perimetro de um triangulo isosceles de lados 10 cm, 10 cm e 12 cm?",
+      "enunciado": "Qual é o perimetro de um triângulo isosceles de lados 10 cm, 10 cm e 12 cm?",
       "opcoes": [
         "36",
         "32",
@@ -5138,14 +5138,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Triangulos - area e perimetro",
+      "subtopico": "Triângulos - area e perimetro",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um triangulo retangulo tem lados 7 cm, 24 cm e 25 cm. Qual e seu perimetro?",
+      "enunciado": "Um triângulo retângulo tem lados 7 cm, 24 cm e 25 cm. Qual é seu perimetro?",
       "opcoes": [
         "60",
         "52",
@@ -5176,14 +5176,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Quadrilateros",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um retangulo possui perimetro 30 cm e um lado mede 6 cm. O outro lado mede:",
+      "enunciado": "Um retângulo possui perimetro 30 cm e um lado mede 6 cm. O outro lado mede:",
       "opcoes": [
         "7 cm",
         "8 cm",
@@ -5214,7 +5214,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Quadrilateros",
       "dificuldadeLabel": "dificil",
@@ -5252,7 +5252,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Quadrilateros",
       "dificuldadeLabel": "dificil",
@@ -5290,14 +5290,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Quadrilateros",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um retangulo de area 48 cm2 tem base 6 cm. Sua altura mede:",
+      "enunciado": "Um retângulo de area 48 cm2 tem base 6 cm. Sua altura mede:",
       "opcoes": [
         "6 cm",
         "7 cm",
@@ -5328,7 +5328,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Quadrilateros",
       "dificuldadeLabel": "dificil",
@@ -5366,14 +5366,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Poligonos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a soma dos angulos internos de um poligono de 9 lados?",
+      "enunciado": "Qual é a soma dos ângulos internos de um poligono de 9 lados?",
       "opcoes": [
         "1260",
         "1440",
@@ -5404,14 +5404,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Poligonos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a soma dos angulos internos de um poligono de 12 lados?",
+      "enunciado": "Qual é a soma dos ângulos internos de um poligono de 12 lados?",
       "opcoes": [
         "1980",
         "1800",
@@ -5442,14 +5442,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Poligonos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a soma dos angulos internos de um poligono de 15 lados?",
+      "enunciado": "Qual é a soma dos ângulos internos de um poligono de 15 lados?",
       "opcoes": [
         "2520",
         "2160",
@@ -5480,14 +5480,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Poligonos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a soma dos angulos internos de um poligono de 20 lados?",
+      "enunciado": "Qual é a soma dos ângulos internos de um poligono de 20 lados?",
       "opcoes": [
         "3420",
         "3060",
@@ -5518,14 +5518,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Poligonos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a soma dos angulos internos de um poligono de 30 lados?",
+      "enunciado": "Qual é a soma dos ângulos internos de um poligono de 30 lados?",
       "opcoes": [
         "5040",
         "5220",
@@ -5556,7 +5556,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Escala e semelhanca",
       "dificuldadeLabel": "dificil",
@@ -5594,7 +5594,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Escala e semelhanca",
       "dificuldadeLabel": "dificil",
@@ -5632,7 +5632,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Escala e semelhanca",
       "dificuldadeLabel": "dificil",
@@ -5670,7 +5670,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Escala e semelhanca",
       "dificuldadeLabel": "dificil",
@@ -5708,14 +5708,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Escala e semelhanca",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma foto foi reduzida na escala 1:4. Um segmento que media 20 cm passa a medir:",
+      "enunciado": "Uma foto foi reduzida na escala 1:4. Um segmento que média 20 cm passa a medir:",
       "opcoes": [
         "4 cm",
         "5 cm",
@@ -5746,9 +5746,9 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -5784,14 +5784,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma moldura retangular mede 20 cm por 14 cm e envolve uma foto quadrada de lado 12 cm. Qual e a area ocupada apenas pela moldura?",
+      "enunciado": "Uma moldura retangular mede 20 cm por 14 cm e envolve uma foto quadrada de lado 12 cm. Qual é a area ocupada apenas pela moldura?",
       "opcoes": [
         "88 cm2",
         "96 cm2",
@@ -5799,7 +5799,7 @@ export const geometriaPlana = {
         "136 cm2"
       ],
       "correta": "136 cm2",
-      "comentario": "Subtraimos a area da foto da area do retangulo externo.",
+      "comentario": "Subtraimos a area da foto da area do retângulo externo.",
       "tempoEstimado": 40,
       "tags": [
         "composicao",
@@ -5822,14 +5822,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um triangulo isosceles tem angulo do vertice igual a 30 graus. Sem calcular lado algum, o que se conclui sobre os angulos da base?",
+      "enunciado": "Um triângulo isosceles tem ângulo do vertice igual a 30 graus. Sem calcular lado algum, o que se conclui sobre os ângulos da base?",
       "opcoes": [
         "Medem 75 graus cada",
         "Medem 60 graus cada",
@@ -5837,7 +5837,7 @@ export const geometriaPlana = {
         "Medem 90 graus cada"
       ],
       "correta": "Medem 75 graus cada",
-      "comentario": "Os dois angulos da base sao iguais e juntos somam 150 graus.",
+      "comentario": "Os dois ângulos da base são iguais e juntos somam 150 graus.",
       "tempoEstimado": 40,
       "tags": [
         "triangulos",
@@ -5860,9 +5860,9 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -5898,9 +5898,9 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -5936,7 +5936,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
@@ -5946,11 +5946,11 @@ export const geometriaPlana = {
       "enunciado": "Um aluno disse que todo losango e quadrado porque ambos possuem quatro lados iguais. Qual alternativa corrige esse erro?",
       "opcoes": [
         "Todo losango tem diagonais iguais.",
-        "Quadrado nao e quadrilatero.",
+        "Quadrado não e quadrilatero.",
         "Losango possui apenas dois lados iguais.",
-        "Nem todo losango tem quatro angulos retos."
+        "Nem todo losango tem quatro ângulos retos."
       ],
-      "correta": "Nem todo losango tem quatro angulos retos.",
+      "correta": "Nem todo losango tem quatro ângulos retos.",
       "comentario": "O quadrado e um caso particular de losango.",
       "tempoEstimado": 40,
       "tags": [
@@ -5974,22 +5974,22 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um aluno calculou a area de um triangulo multiplicando base por altura sem dividir por 2. Qual foi o erro?",
+      "enunciado": "Um aluno calculou a area de um triângulo multiplicando base por altura sem dividir por 2. Qual foi o erro?",
       "opcoes": [
-        "Ele usou a formula do retangulo.",
+        "Ele usou a formula do retângulo.",
         "Ele deveria somar base e altura.",
         "Ele deveria usar pi.",
         "Ele deveria dividir pela hipotenusa."
       ],
-      "correta": "Ele usou a formula do retangulo.",
-      "comentario": "No triangulo, a area corresponde a metade da do retangulo equivalente.",
+      "correta": "Ele usou a formula do retângulo.",
+      "comentario": "No triângulo, a area corresponde a metade da do retângulo equivalente.",
       "tempoEstimado": 40,
       "tags": [
         "triangulos",
@@ -6012,22 +6012,22 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirmou que a soma dos angulos internos de qualquer poligono e 360 graus. Qual caso mostra que isso e falso?",
+      "enunciado": "Um estudante afirmou que a soma dos ângulos internos de qualquer poligono e 360 graus. Qual caso mostra que isso e falso?",
       "opcoes": [
         "Um quadrilatero tem soma 360 graus.",
         "Um pentagono tem soma 540 graus.",
-        "Um triangulo tem soma 180 graus.",
+        "Um triângulo tem soma 180 graus.",
         "Um hexagono tem seis lados."
       ],
       "correta": "Um pentagono tem soma 540 graus.",
-      "comentario": "A soma depende do numero de lados.",
+      "comentario": "A soma depende do número de lados.",
       "tempoEstimado": 40,
       "tags": [
         "poligonos",
@@ -6050,22 +6050,22 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmacao esta incorreta?",
+      "enunciado": "Qual afirmação esta incorreta?",
       "opcoes": [
-        "Todo quadrado e retangulo.",
+        "Todo quadrado e retângulo.",
         "Todo quadrado e losango.",
-        "Todo retangulo e quadrado.",
+        "Todo retângulo e quadrado.",
         "Todo quadrado e paralelogramo."
       ],
-      "correta": "Todo retangulo e quadrado.",
-      "comentario": "Nem todo retangulo possui quatro lados iguais.",
+      "correta": "Todo retângulo e quadrado.",
+      "comentario": "Nem todo retângulo possui quatro lados iguais.",
       "tempoEstimado": 40,
       "tags": [
         "quadrilateros",
@@ -6088,7 +6088,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
@@ -6097,12 +6097,12 @@ export const geometriaPlana = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual conjunto de medidas representa figuras semelhantes?",
       "opcoes": [
-        "Triangulos de lados 3, 4, 5 e 6, 7, 10",
-        "Quadrados de lados 4 e retangulo 4 por 6",
+        "Triângulos de lados 3, 4, 5 e 6, 7, 10",
+        "Quadrados de lados 4 e retângulo 4 por 6",
         "Retangulos de lados 3 por 5 e 6 por 12",
-        "Triangulos de lados 3, 4, 5 e 6, 8, 10"
+        "Triângulos de lados 3, 4, 5 e 6, 8, 10"
       ],
-      "correta": "Triangulos de lados 3, 4, 5 e 6, 8, 10",
+      "correta": "Triângulos de lados 3, 4, 5 e 6, 8, 10",
       "comentario": "As medidas correspondentes estao na mesma proporcao.",
       "tempoEstimado": 40,
       "tags": [
@@ -6126,14 +6126,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual expressao calcula corretamente a area de um triangulo de base b e altura h?",
+      "enunciado": "Qual expressao calcula corretamente a area de um triângulo de base b e altura h?",
       "opcoes": [
         "(b x h) / 2",
         "b x h",
@@ -6141,7 +6141,7 @@ export const geometriaPlana = {
         "pi x b x h"
       ],
       "correta": "(b x h) / 2",
-      "comentario": "Essa e a formula da area do triangulo.",
+      "comentario": "Essa e a formula da area do triângulo.",
       "tempoEstimado": 40,
       "tags": [
         "triangulos",
@@ -6164,7 +6164,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
@@ -6202,9 +6202,9 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -6240,14 +6240,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, os angulos agudos sao complementares. Se um deles mede 41 graus, o outro mede:",
+      "enunciado": "Em um triângulo retângulo, os ângulos agudos são complementares. Se um deles mede 41 graus, o outro mede:",
       "opcoes": [
         "39 graus",
         "41 graus",
@@ -6255,7 +6255,7 @@ export const geometriaPlana = {
         "49 graus"
       ],
       "correta": "49 graus",
-      "comentario": "Em triangulo retangulo, os angulos agudos somam 90 graus.",
+      "comentario": "Em triângulo retângulo, os ângulos agudos somam 90 graus.",
       "tempoEstimado": 40,
       "tags": [
         "triangulos",
@@ -6278,14 +6278,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma prancha retangular mede 2 m por 0,5 m. Qual e seu perimetro?",
+      "enunciado": "Uma prancha retangular mede 2 m por 0,5 m. Qual é seu perimetro?",
       "opcoes": [
         "5 m",
         "2,5 m",
@@ -6316,9 +6316,9 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -6354,22 +6354,22 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual figura tem area maior: um quadrado de lado 8 cm ou um retangulo de 10 cm por 6 cm?",
+      "enunciado": "Qual figura tem area maior: um quadrado de lado 8 cm ou um retângulo de 10 cm por 6 cm?",
       "opcoes": [
-        "O retangulo",
-        "As duas sao iguais",
+        "O retângulo",
+        "As duas são iguais",
         "O quadrado",
-        "Nao e possivel comparar"
+        "Não e possível comparar"
       ],
       "correta": "O quadrado",
-      "comentario": "As areas sao 64 e 60, respectivamente.",
+      "comentario": "As areas são 64 e 60, respectivamente.",
       "tempoEstimado": 40,
       "tags": [
         "comparacao",
@@ -6392,7 +6392,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
@@ -6430,22 +6430,22 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual erro ha em dizer que um triangulo de lados 2 cm, 3 cm e 6 cm existe?",
+      "enunciado": "Qual erro ha em dizer que um triângulo de lados 2 cm, 3 cm e 6 cm existe?",
       "opcoes": [
-        "A soma de dois lados menores nao supera o maior.",
-        "Todo triangulo precisa ter lados iguais.",
+        "A soma de dois lados menores não supera o maior.",
+        "Todo triângulo precisa ter lados iguais.",
         "O maior lado deveria ser 5.",
-        "Triangulos nao podem ter lados inteiros."
+        "Triângulos não podem ter lados inteiros."
       ],
-      "correta": "A soma de dois lados menores nao supera o maior.",
-      "comentario": "A desigualdade triangular nao e satisfeita.",
+      "correta": "A soma de dois lados menores não supera o maior.",
+      "comentario": "A desigualdade triangular não e satisfeita.",
       "tempoEstimado": 40,
       "tags": [
         "triangulos",
@@ -6468,14 +6468,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa descreve a mesma area de um retangulo 8 por 5?",
+      "enunciado": "Qual alternativa descreve a mesma area de um retângulo 8 por 5?",
       "opcoes": [
         "26 cm2",
         "40 cm2",
@@ -6483,7 +6483,7 @@ export const geometriaPlana = {
         "80 cm2"
       ],
       "correta": "40 cm2",
-      "comentario": "Area do retangulo = base x altura.",
+      "comentario": "Area do retângulo = base x altura.",
       "tempoEstimado": 40,
       "tags": [
         "retangulo",
@@ -6506,7 +6506,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
@@ -6544,14 +6544,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a soma dos angulos internos de um quadrilatero?",
+      "enunciado": "Qual é a soma dos ângulos internos de um quadrilatero?",
       "opcoes": [
         "180 graus",
         "270 graus",
@@ -6559,7 +6559,7 @@ export const geometriaPlana = {
         "360 graus"
       ],
       "correta": "360 graus",
-      "comentario": "Podemos dividi-lo em dois triangulos.",
+      "comentario": "Podemos dividi-lo em dois triângulos.",
       "tempoEstimado": 40,
       "tags": [
         "quadrilateros",
@@ -6582,22 +6582,22 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmacao e falsa?",
+      "enunciado": "Qual afirmação e falsa?",
       "opcoes": [
         "Todo losango e quadrado.",
         "Todo quadrado e losango.",
-        "Todo quadrado e retangulo.",
+        "Todo quadrado e retângulo.",
         "Todo quadrado e paralelogramo."
       ],
       "correta": "Todo losango e quadrado.",
-      "comentario": "O losango nao precisa ter quatro angulos retos.",
+      "comentario": "O losango não precisa ter quatro ângulos retos.",
       "tempoEstimado": 40,
       "tags": [
         "quadrilateros",
@@ -6620,14 +6620,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual forma equivalente representa o perimetro de um retangulo de lados a e b?",
+      "enunciado": "Qual forma equivalente representa o perimetro de um retângulo de lados a e b?",
       "opcoes": [
         "a + b",
         "2a + 2b",
@@ -6635,7 +6635,7 @@ export const geometriaPlana = {
         "a^2 + b^2"
       ],
       "correta": "2a + 2b",
-      "comentario": "Somamos os quatro lados do retangulo.",
+      "comentario": "Somamos os quatro lados do retângulo.",
       "tempoEstimado": 40,
       "tags": [
         "retangulo",
@@ -6658,14 +6658,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um cartaz quadrado tem perimetro 48 cm. Qual e a medida do lado?",
+      "enunciado": "Um cartaz quadrado tem perimetro 48 cm. Qual é a medida do lado?",
       "opcoes": [
         "10 cm",
         "11 cm",
@@ -6696,9 +6696,9 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -6734,14 +6734,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um circulo de raio 6 cm esta desenhado dentro de um quadrado de lado 12 cm. Adotando pi = 3, qual e a area do quadrado que fica fora do circulo?",
+      "enunciado": "Um circulo de raio 6 cm esta desenhado dentro de um quadrado de lado 12 cm. Adotando pi = 3, qual é a area do quadrado que fica fora do circulo?",
       "opcoes": [
         "36 cm2",
         "24 cm2",
@@ -6772,14 +6772,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma maquete na escala 1:100, uma parede aparece com 2,8 cm. Qual e a medida real dessa parede?",
+      "enunciado": "Em uma maquete na escala 1:100, uma parede aparece com 2,8 cm. Qual é a medida real dessa parede?",
       "opcoes": [
         "28 cm",
         "280 cm",
@@ -6810,14 +6810,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um triangulo com angulos 50 graus, 60 graus e 70 graus e classificado quanto aos angulos como:",
+      "enunciado": "Um triângulo com ângulos 50 graus, 60 graus e 70 graus e classificado quanto aos ângulos como:",
       "opcoes": [
         "retangulo",
         "obtusangulo",
@@ -6825,7 +6825,7 @@ export const geometriaPlana = {
         "equilatero"
       ],
       "correta": "acutangulo",
-      "comentario": "Todos os angulos sao menores que 90 graus.",
+      "comentario": "Todos os ângulos são menores que 90 graus.",
       "tempoEstimado": 40,
       "tags": [
         "triangulos",
@@ -6848,9 +6848,9 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -6886,7 +6886,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
@@ -6901,7 +6901,7 @@ export const geometriaPlana = {
         "O valor correto do perimetro"
       ],
       "correta": "A area",
-      "comentario": "Multiplicar lado por lado calcula area, nao perimetro.",
+      "comentario": "Multiplicar lado por lado calcula area, não perimetro.",
       "tempoEstimado": 40,
       "tags": [
         "quadrado",
@@ -6924,22 +6924,22 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual erro esta em afirmar que um angulo de 120 graus e agudo?",
+      "enunciado": "Qual erro esta em afirmar que um ângulo de 120 graus e agudo?",
       "opcoes": [
-        "Angulos obtusos medem menos de 45 graus.",
-        "Angulos agudos medem menos de 90 graus.",
-        "Angulos retos medem 180 graus.",
-        "Nao existe classificacao para angulos."
+        "Ângulos obtusos medem menos de 45 graus.",
+        "Ângulos agudos medem menos de 90 graus.",
+        "Ângulos retos medem 180 graus.",
+        "Não existe classificacao para ângulos."
       ],
-      "correta": "Angulos agudos medem menos de 90 graus.",
-      "comentario": "120 graus e um angulo obtuso.",
+      "correta": "Ângulos agudos medem menos de 90 graus.",
+      "comentario": "120 graus e um ângulo obtuso.",
       "tempoEstimado": 40,
       "tags": [
         "angulos",
@@ -6962,14 +6962,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma pessoa afirmou que o diametro e a metade do raio. Qual alternativa corrige a relacao?",
+      "enunciado": "Uma pessoa afirmou que o diametro e a metade do raio. Qual alternativa corrige a relação?",
       "opcoes": [
         "Diametro e igual ao raio.",
         "Diametro e o triplo do raio.",
@@ -7000,22 +7000,22 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante disse que todo poligono de quatro lados e um quadrado. Qual alternativa corrige esse raciocinio?",
+      "enunciado": "Um estudante disse que todo poligono de quatro lados e um quadrado. Qual alternativa corrige esse raciocínio?",
       "opcoes": [
         "Todo quadrilatero tem lados iguais.",
-        "Quadrado nao e poligono.",
+        "Quadrado não e poligono.",
         "Poligonos so podem ter tres lados.",
         "Existem varios quadrilateros diferentes."
       ],
       "correta": "Existem varios quadrilateros diferentes.",
-      "comentario": "Retangulos, losangos e trapezios sao exemplos.",
+      "comentario": "Retangulos, losangos e trapezios são exemplos.",
       "tempoEstimado": 40,
       "tags": [
         "quadrilateros",
@@ -7038,22 +7038,22 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmacao parece correta, mas esta errada?",
+      "enunciado": "Qual afirmação parece correta, mas esta errada?",
       "opcoes": [
-        "Todo retangulo e quadrado.",
-        "Todo quadrado e retangulo.",
+        "Todo retângulo e quadrado.",
+        "Todo quadrado e retângulo.",
         "Todo quadrado e losango.",
         "Todo quadrado e paralelogramo."
       ],
-      "correta": "Todo retangulo e quadrado.",
-      "comentario": "O retangulo nao precisa ter todos os lados iguais.",
+      "correta": "Todo retângulo e quadrado.",
+      "comentario": "O retângulo não precisa ter todos os lados iguais.",
       "tempoEstimado": 40,
       "tags": [
         "quadrilateros",
@@ -7076,7 +7076,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
@@ -7114,14 +7114,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Dividir um quadrado de lado 10 cm em dois triangulos congruentes pela diagonal produz duas figuras com area:",
+      "enunciado": "Dividir um quadrado de lado 10 cm em dois triângulos congruentes pela diagonal produz duas figuras com area:",
       "opcoes": [
         "25 cm2",
         "75 cm2",
@@ -7129,7 +7129,7 @@ export const geometriaPlana = {
         "100 cm2"
       ],
       "correta": "50 cm2",
-      "comentario": "Cada triangulo fica com metade da area do quadrado.",
+      "comentario": "Cada triângulo fica com metade da area do quadrado.",
       "tempoEstimado": 40,
       "tags": [
         "equivalencia",
@@ -7152,7 +7152,7 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
@@ -7190,14 +7190,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual expressao descreve corretamente a soma dos angulos internos de um pentagono?",
+      "enunciado": "Qual expressao descreve corretamente a soma dos ângulos internos de um pentagono?",
       "opcoes": [
         "3 x 180",
         "4 x 180",
@@ -7228,9 +7228,9 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -7266,9 +7266,9 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -7281,7 +7281,7 @@ export const geometriaPlana = {
         "80 cm"
       ],
       "correta": "60 cm",
-      "comentario": "As medidas dobraram, entao o outro lado tambem dobra.",
+      "comentario": "As medidas dobraram, entao o outro lado também dobra.",
       "tempoEstimado": 40,
       "tags": [
         "semelhanca",
@@ -7304,9 +7304,9 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -7319,7 +7319,7 @@ export const geometriaPlana = {
         "63"
       ],
       "correta": "63",
-      "comentario": "Area do triangulo = 14 x 9 / 2.",
+      "comentario": "Area do triângulo = 14 x 9 / 2.",
       "tempoEstimado": 40,
       "tags": [
         "triangulos",
@@ -7342,9 +7342,9 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -7357,7 +7357,7 @@ export const geometriaPlana = {
         "160"
       ],
       "correta": "52",
-      "comentario": "A fita acompanha o perimetro do retangulo.",
+      "comentario": "A fita acompanha o perimetro do retângulo.",
       "tempoEstimado": 40,
       "tags": [
         "perimetro",
@@ -7380,9 +7380,9 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -7418,22 +7418,22 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual erro esta em afirmar que a soma dos angulos internos de um triangulo e 360 graus?",
+      "enunciado": "Qual erro esta em afirmar que a soma dos ângulos internos de um triângulo e 360 graus?",
       "opcoes": [
         "Confundir area com perimetro.",
         "Confundir raio com diametro.",
-        "Confundir triangulo com quadrilatero.",
+        "Confundir triângulo com quadrilatero.",
         "Usar pi incorretamente."
       ],
-      "correta": "Confundir triangulo com quadrilatero.",
-      "comentario": "O triangulo soma 180 graus; 360 e a soma do quadrilatero.",
+      "correta": "Confundir triângulo com quadrilatero.",
+      "comentario": "O triângulo soma 180 graus; 360 e a soma do quadrilatero.",
       "tempoEstimado": 40,
       "tags": [
         "triangulos",
@@ -7456,14 +7456,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma pessoa somou base e altura para obter a area de um retangulo. O que faltou?",
+      "enunciado": "Uma pessoa somou base e altura para obter a area de um retângulo. O que faltou?",
       "opcoes": [
         "Somar os quatro lados.",
         "Dividir por 2.",
@@ -7471,7 +7471,7 @@ export const geometriaPlana = {
         "Multiplicar base e altura."
       ],
       "correta": "Multiplicar base e altura.",
-      "comentario": "Area do retangulo nao e soma, e produto.",
+      "comentario": "Area do retângulo não e soma, e produto.",
       "tempoEstimado": 40,
       "tags": [
         "retangulo",
@@ -7494,19 +7494,19 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmacao e falsa sobre triangulos?",
+      "enunciado": "Qual afirmação e falsa sobre triângulos?",
       "opcoes": [
         "Todo isosceles e equilatero.",
         "Todo equilatero e isosceles.",
-        "Todo equilatero tem tres angulos iguais.",
-        "Todo triangulo tem soma interna 180 graus."
+        "Todo equilatero tem tres ângulos iguais.",
+        "Todo triângulo tem soma interna 180 graus."
       ],
       "correta": "Todo isosceles e equilatero.",
       "comentario": "O isosceles pode ter apenas dois lados iguais.",
@@ -7532,14 +7532,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um triangulo de base 10 cm e altura 6 cm tem a mesma area de qual retangulo?",
+      "enunciado": "Um triângulo de base 10 cm e altura 6 cm tem a mesma area de qual retângulo?",
       "opcoes": [
         "10 por 6",
         "5 por 6",
@@ -7547,7 +7547,7 @@ export const geometriaPlana = {
         "2 por 6"
       ],
       "correta": "5 por 6",
-      "comentario": "A area do triangulo e 30, igual a do retangulo 5 por 6.",
+      "comentario": "A area do triângulo e 30, igual a do retângulo 5 por 6.",
       "tempoEstimado": 40,
       "tags": [
         "triangulos",
@@ -7570,14 +7570,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa representa corretamente metade do perimetro de um retangulo 8 por 13?",
+      "enunciado": "Qual alternativa representa corretamente metade do perimetro de um retângulo 8 por 13?",
       "opcoes": [
         "2 x 8 + 13",
         "8 x 13",
@@ -7608,14 +7608,14 @@ export const geometriaPlana = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Geometria Plana",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um quadrado tem a mesma area que um retangulo de 12 cm por 3 cm. Qual e a medida do lado do quadrado?",
+      "enunciado": "Um quadrado tem a mesma area que um retângulo de 12 cm por 3 cm. Qual é a medida do lado do quadrado?",
       "opcoes": [
         "4 cm",
         "5 cm",
@@ -7623,7 +7623,7 @@ export const geometriaPlana = {
         "6 cm"
       ],
       "correta": "6 cm",
-      "comentario": "A area do retangulo e 36, e a raiz quadrada de 36 e 6.",
+      "comentario": "A area do retângulo e 36, e a raiz quadrada de 36 e 6.",
       "tempoEstimado": 40,
       "tags": [
         "quadrado",

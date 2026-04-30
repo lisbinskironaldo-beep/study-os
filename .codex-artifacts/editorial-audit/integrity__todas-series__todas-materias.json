@@ -1,0 +1,4661 @@
+{
+  "summary": {
+    "correct-not-in-options": 2,
+    "duplicate-options": 66,
+    "no-topic-export": 37,
+    "odd-ending": 52,
+    "placeholder": 212,
+    "placeholder-option": 175,
+    "thin-comment": 9,
+    "topic-materia": 111
+  },
+  "results": [
+    {
+      "file": "questions/banks/3-serie/quimica/eletroquimica/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 97,
+      "issues": [
+        {
+          "id": "quimica_eletroquimica",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Química"
+        },
+        {
+          "id": "eq_005",
+          "type": "placeholder",
+          "detail": "correta: do ânodo para o cátodo"
+        },
+        {
+          "id": "eq_005",
+          "type": "placeholder",
+          "detail": "comentario: Os elétrons fluem do ânodo (oxidação) para o cátodo (redução)."
+        },
+        {
+          "id": "eq_005",
+          "type": "placeholder-option",
+          "detail": "do ânodo para o cátodo"
+        },
+        {
+          "id": "eq_005",
+          "type": "placeholder-option",
+          "detail": "do cátodo para o ânodo"
+        },
+        {
+          "id": "eq_008",
+          "type": "placeholder",
+          "detail": "enunciado: Em uma pilha, o cátodo é o eletrodo onde ocorre:"
+        },
+        {
+          "id": "eq_008",
+          "type": "placeholder",
+          "detail": "comentario: No cátodo ocorre redução, ou seja, ganho de elétrons."
+        },
+        {
+          "id": "eq_011",
+          "type": "placeholder",
+          "detail": "correta: cátodo"
+        },
+        {
+          "id": "eq_011",
+          "type": "placeholder",
+          "detail": "comentario: O eletrodo com maior potencial padrão de redução tem maior tendência a sofrer redução, funcionando como cátodo."
+        },
+        {
+          "id": "eq_011",
+          "type": "placeholder-option",
+          "detail": "cátodo"
+        },
+        {
+          "id": "eq_016",
+          "type": "placeholder",
+          "detail": "enunciado: Na eletrólise ígnea do cloreto de sódio, o produto obtido no cátodo é:"
+        },
+        {
+          "id": "eq_016",
+          "type": "placeholder",
+          "detail": "comentario: Na eletrólise ígnea do NaCl, o cátion Na+ sofre redução no cátodo, formando sódio metálico."
+        },
+        {
+          "id": "eq_018",
+          "type": "placeholder",
+          "detail": "enunciado: Na eletrólise aquosa de uma solução de CuSO4 com eletrodos inertes, forma-se no cátodo:"
+        },
+        {
+          "id": "eq_018",
+          "type": "placeholder",
+          "detail": "comentario: Em solução aquosa de CuSO4, o cátion Cu2+ possui maior tendência é redução que a água, sendo descarregado no cátodo."
+        },
+        {
+          "id": "eq_022",
+          "type": "placeholder",
+          "detail": "comentario: A ddp padrão da pilha é dada por E°cátodo - E°ânodo = 0,34 - (-0,76) = 1,10 V."
+        },
+        {
+          "id": "eq_024",
+          "type": "placeholder",
+          "detail": "correta: forma-se hidrogênio no cátodo e cloro no ânodo"
+        },
+        {
+          "id": "eq_024",
+          "type": "placeholder",
+          "detail": "comentario: Em solução aquosa, a água é reduzida preferencialmente ao Na+, gerando H2 no cátodo. No ânodo, o Cl- é oxidado, formando"
+        },
+        {
+          "id": "eq_024",
+          "type": "placeholder-option",
+          "detail": "forma-se sódio metálico no cátodo"
+        },
+        {
+          "id": "eq_024",
+          "type": "placeholder-option",
+          "detail": "forma-se oxigênio no cátodo e sódio no ânodo"
+        },
+        {
+          "id": "eq_024",
+          "type": "placeholder-option",
+          "detail": "forma-se hidrogênio no cátodo e cloro no ânodo"
+        },
+        {
+          "id": "eq_031",
+          "type": "placeholder",
+          "detail": "comentario: A ddp da pilha depende da diferença entre os potenciais de redução do cátodo e do ânodo."
+        },
+        {
+          "id": "eq_032",
+          "type": "placeholder",
+          "detail": "enunciado: Na eletrólise da água acidulada, o gás liberado no cátodo é:"
+        },
+        {
+          "id": "eq_032",
+          "type": "placeholder",
+          "detail": "comentario: No cátodo ocorre redução da água, formando gás hidrogênio (H2)."
+        },
+        {
+          "id": "eq_038",
+          "type": "placeholder",
+          "detail": "enunciado: Na eletrólise aquosa de Na2SO4 com eletrodos inertes, o produto formado no cátodo é:"
+        },
+        {
+          "id": "eq_038",
+          "type": "placeholder",
+          "detail": "comentario: A água é reduzida preferencialmente ao Na+, formando hidrogênio no cátodo."
+        },
+        {
+          "id": "eq_046",
+          "type": "placeholder",
+          "detail": "enunciado: Na eletrólise ígnea do CaCl2, o produto obtido no cátodo é:"
+        },
+        {
+          "id": "eq_046",
+          "type": "placeholder",
+          "detail": "comentario: No cátodo ocorre redução. Na eletrólise ígnea do CaCl2, os íons Ca2+ ganham elétrons e formam cálcio metálico."
+        },
+        {
+          "id": "eq_051",
+          "type": "placeholder",
+          "detail": "comentario: O eletrodo de maior potencial de redução funciona como cátodo. Assim, E°pilha = E°cátodo - E°ânodo = 0,80 - (-0,76) = 1,"
+        },
+        {
+          "id": "eq_058",
+          "type": "placeholder",
+          "detail": "correta: cátodo"
+        },
+        {
+          "id": "eq_058",
+          "type": "placeholder",
+          "detail": "comentario: A prata é mais nobre que o magnésio e apresenta maior tendência é redução. Assim, funciona como cátodo."
+        },
+        {
+          "id": "eq_058",
+          "type": "placeholder-option",
+          "detail": "cátodo"
+        },
+        {
+          "id": "eq_059",
+          "type": "placeholder",
+          "detail": "enunciado: Na eletrólise aquosa de CuCl2 com eletrodos inertes, os produtos formados, respectivamente, no cátodo e no ânodo são:"
+        },
+        {
+          "id": "eq_059",
+          "type": "placeholder",
+          "detail": "comentario: No cátodo, Cu2+ é reduzido a cobre metálico. No ânodo, Cl- é oxidado a gás cloro."
+        },
+        {
+          "id": "eq_063",
+          "type": "placeholder",
+          "detail": "enunciado: Na eletrólise aquosa de uma solução de AgNO3 com eletrodos inertes, o produto mais provável no cátodo é:"
+        },
+        {
+          "id": "eq_063",
+          "type": "placeholder",
+          "detail": "comentario: Em solução de nitrato de prata, o íon Ag+ possui maior tendência a se reduzir do que a água. Assim, ocorre deposição de "
+        },
+        {
+          "id": "eq_066",
+          "type": "placeholder",
+          "detail": "enunciado: Considerando os pares Fe2+/Fe e Cu2+/Cu, o cobre tende a atuar como cátodo em uma pilha porque apresenta:"
+        },
+        {
+          "id": "eq_066",
+          "type": "placeholder",
+          "detail": "comentario: O cobre é mais nobre que o ferro e possui maior potencial de redução. Por isso, tende a sofrer redução e atuar como cáto"
+        },
+        {
+          "id": "eq_069",
+          "type": "placeholder",
+          "detail": "correta: há formação de OH- no cátodo pela redução da água"
+        },
+        {
+          "id": "eq_069",
+          "type": "placeholder",
+          "detail": "comentario: Na eletrólise aquosa do NaCl, a água é reduzida no cátodo, formando H2 e íons OH-. Por isso, a solução tende a se tornar"
+        },
+        {
+          "id": "eq_069",
+          "type": "placeholder-option",
+          "detail": "há formação de OH- no cátodo pela redução da água"
+        },
+        {
+          "id": "eq_071",
+          "type": "placeholder",
+          "detail": "comentario: Na eletrólise aquosa da salmoura, forma-se H2 no cátodo, Cl2 no ânodo e a solução remanescente enriquece-se em NaOH."
+        },
+        {
+          "id": "eq_075",
+          "type": "placeholder",
+          "detail": "comentario: A prata atua como cátodo e o ferro como ânodo. Assim, E°pilha = 0,80 - (-0,44) = +1,24 V. Como o valor é positivo, a rea"
+        },
+        {
+          "id": "eq_082",
+          "type": "placeholder",
+          "detail": "enunciado: Em uma pilha formada pelos pares Al3+/Al e Ni2+/Ni, o eletrodo de níquel tende a funcionar como cátodo porque o níquel a"
+        },
+        {
+          "id": "eq_082",
+          "type": "placeholder",
+          "detail": "comentario: Entre os dois metais, o níquel é menos reativo que o alumínio e possui maior tendência a ganhar elétrons. Por isso, atua"
+        },
+        {
+          "id": "eq_085",
+          "type": "placeholder",
+          "detail": "comentario: No cátodo da pilha de Daniell, os íons Cu2+ ganham elétrons e formam cobre metálico, que se deposita sobre o eletrodo, a"
+        },
+        {
+          "id": "eq_092",
+          "type": "placeholder",
+          "detail": "comentario: O cobre funciona como cátodo e o ferro como ânodo. Assim, E°pilha = 0,34 - (-0,44) = 0,78 V."
+        },
+        {
+          "id": "eq_094",
+          "type": "placeholder-option",
+          "detail": "cátodo"
+        },
+        {
+          "id": "eq_099",
+          "type": "placeholder-option",
+          "detail": "o magnésio atua como cátodo e recebe elétrons"
+        },
+        {
+          "id": "eq_102",
+          "type": "placeholder",
+          "detail": "comentario: A prata funciona como cátodo e o chumbo como ânodo. Logo, E°pilha = 0,80 - (-0,13) = 0,93 V."
+        },
+        {
+          "id": "eq_105",
+          "type": "placeholder",
+          "detail": "comentario: No cátodo, Cu2+ é reduzido a Cu metálico. No ânodo de cobre, ocorre oxidação do cobre metálico a Cu2+, compensando aprox"
+        },
+        {
+          "id": "eq_105",
+          "type": "placeholder-option",
+          "detail": "diminuir continuamente, porque Cu2+ é reduzido no cátodo"
+        },
+        {
+          "id": "eq_105",
+          "type": "placeholder-option",
+          "detail": "zerar, porque todo o cobre precipita"
+        },
+        {
+          "id": "eq_110",
+          "type": "placeholder",
+          "detail": "enunciado: Na eletrólise aquosa de uma solução de NaBr com eletrodos inertes, os produtos mais prováveis formados, respectivamente,"
+        },
+        {
+          "id": "eq_110",
+          "type": "placeholder",
+          "detail": "comentario: Em meio aquoso, o Na+ não é reduzido preferencialmente. No cátodo, a água forma H2. No ânodo, o brometo é oxidado a Br2."
+        },
+        {
+          "id": "eq_111",
+          "type": "placeholder",
+          "detail": "comentario: A prata funciona como cátodo e o níquel como ânodo. Assim, E°pilha = 0,80 - (-0,25) = 1,05 V."
+        },
+        {
+          "id": "eq_115",
+          "type": "placeholder",
+          "detail": "comentario: Na galvanoplastia, a peça funciona como cátodo. Nela, os íons metálicos da solução recebem elétrons e se depositam como "
+        },
+        {
+          "id": "eq_119",
+          "type": "placeholder",
+          "detail": "comentario: O cobre atua como cátodo e o magnésio como ânodo. Assim, E°pilha = 0,34 - (-2,37) = 2,71 V."
+        },
+        {
+          "id": "eq_122",
+          "type": "placeholder-option",
+          "detail": "somente quando o cátodo é metálico"
+        },
+        {
+          "id": "eq_123",
+          "type": "placeholder",
+          "detail": "enunciado: As afirmações I e II referem-se a uma pilha galvânica em funcionamento. I. No ânodo ocorre perda de elétrons. II. No cát"
+        },
+        {
+          "id": "eq_123",
+          "type": "placeholder",
+          "detail": "comentario: No ânodo ocorre oxidação, isto é, perda de elétrons. No cátodo ocorre redução, ou seja, ganho de elétrons. As duas afirm"
+        },
+        {
+          "id": "eq_125",
+          "type": "placeholder",
+          "detail": "enunciado: Na eletrólise aquosa de solução de NaCl com eletrodos inertes, um estudante afirmou que se forma sódio metálico no cátod"
+        },
+        {
+          "id": "eq_125",
+          "type": "placeholder",
+          "detail": "comentario: Embora o Na+ seja atraído pelo cátodo, isso não garante seu descarregamento. Em solução aquosa, a água se reduz mais fac"
+        },
+        {
+          "id": "eq_125",
+          "type": "placeholder-option",
+          "detail": "o Na+ não pode migrar até o cátodo"
+        },
+        {
+          "id": "eq_126",
+          "type": "placeholder-option",
+          "detail": "cátodo, oxidação, perda de elétrons"
+        },
+        {
+          "id": "eq_126",
+          "type": "placeholder-option",
+          "detail": "cátodo, oxidação, agente redutor"
+        },
+        {
+          "id": "eq_127",
+          "type": "placeholder",
+          "detail": "comentario: O aumento de massa do eletrodo de cobre indica deposição metálica. Isso ocorre porque os íons Cu2+ da solução recebem el"
+        },
+        {
+          "id": "eq_130",
+          "type": "placeholder",
+          "detail": "comentario: A cor azul da solução está associada aos íons Cu2+. Na eletrólise com eletrodos inertes, esses íons são reduzidos no cát"
+        },
+        {
+          "id": "eq_130",
+          "type": "placeholder-option",
+          "detail": "o cobre metálico foi oxidado continuamente no cátodo"
+        },
+        {
+          "id": "eq_132",
+          "type": "placeholder",
+          "detail": "enunciado: Em uma eletrólise aquosa, afirmar que no cátodo ocorre ganho de elétrons é equivalente a dizer que no cátodo ocorre:"
+        },
+        {
+          "id": "eq_133",
+          "type": "placeholder-option",
+          "detail": "atuava como cátodo e recebia elétrons da água"
+        },
+        {
+          "id": "eq_135",
+          "type": "placeholder-option",
+          "detail": "necessariamente atua como cátodo"
+        },
+        {
+          "id": "eq_136",
+          "type": "placeholder",
+          "detail": "enunciado: Em uma eletrólise aquosa de solução de NaCl com eletrodos inertes, foram coletados dois gases em compartimentos separado"
+        },
+        {
+          "id": "eq_136",
+          "type": "placeholder",
+          "detail": "comentario: No cátodo forma-se H2, gás inflamável. No ânodo forma-se Cl2, gás com ação descolorante e bactericida."
+        },
+        {
+          "id": "eq_137",
+          "type": "placeholder",
+          "detail": "enunciado: Sobre ânodo e cátodo, assinale a alternativa correta:"
+        },
+        {
+          "id": "eq_137",
+          "type": "placeholder",
+          "detail": "correta: cátodo é o eletrodo onde ocorre redução, tanto em pilhas quanto em eletrólise"
+        },
+        {
+          "id": "eq_137",
+          "type": "placeholder",
+          "detail": "comentario: A definição correta e geral é pela reação: no cátodo ocorre redução e no ânodo ocorre oxidação. O sinal do eletrodo depe"
+        },
+        {
+          "id": "eq_137",
+          "type": "placeholder-option",
+          "detail": "cátodo é o eletrodo onde ocorre redução, tanto em pilhas quanto em eletrólise"
+        },
+        {
+          "id": "eq_137",
+          "type": "placeholder-option",
+          "detail": "ânodo é sempre negativo e cátodo sempre positivo"
+        },
+        {
+          "id": "eq_137",
+          "type": "placeholder-option",
+          "detail": "cátodo é sempre o eletrodo que perde massa"
+        },
+        {
+          "id": "eq_139",
+          "type": "placeholder",
+          "detail": "comentario: Na galvanoplastia com ânodo ativo, o metal do ânodo se oxida, liberando cátions para a solução, enquanto a peça-cátodo g"
+        },
+        {
+          "id": "eq_139",
+          "type": "placeholder-option",
+          "detail": "cátodo, sofrendo redução"
+        },
+        {
+          "id": "eq_140",
+          "type": "placeholder-option",
+          "detail": "permaneceu com NOX zero durante todo o processo"
+        },
+        {
+          "id": "eq_141",
+          "type": "placeholder-option",
+          "detail": "o cátodo possui menor potencial de redução que o ânodo"
+        },
+        {
+          "id": "eq_143",
+          "type": "placeholder",
+          "detail": "enunciado: Ao analisar a eletrólise ígnea do NaCl, um aluno afirmou que o cloro se forma no cátodo porque é um elemento eletronegat"
+        },
+        {
+          "id": "eq_143",
+          "type": "placeholder",
+          "detail": "comentario: Na eletrólise ígnea do NaCl, os íons Cl- perdem elétrons no ânodo, formando Cl2. O cátodo é o local de redução de Na+ a "
+        },
+        {
+          "id": "eq_143",
+          "type": "placeholder-option",
+          "detail": "a afirmação é correta, pois o cátodo atrai elementos mais eletronegativos"
+        },
+        {
+          "id": "eq_143",
+          "type": "placeholder-option",
+          "detail": "a afirmação é correta, pois o cloro recebe elétrons no cátodo"
+        },
+        {
+          "id": "eq_145",
+          "type": "placeholder",
+          "detail": "enunciado: Uma solução aquosa de AgNO3 foi submetida à eletrólise com eletrodos inertes. Ao final, observou-se depósito metálico br"
+        },
+        {
+          "id": "eq_145",
+          "type": "placeholder",
+          "detail": "comentario: No cátodo, Ag+ é reduzido a prata metálica. No ânodo inerte, a água é oxidada, produzindo O2 e H+, o que acidifica a sol"
+        },
+        {
+          "id": "eq_146",
+          "type": "placeholder",
+          "detail": "correta: a espécie com maior tendência a reduzir funciona como cátodo e sofre redução"
+        },
+        {
+          "id": "eq_146",
+          "type": "placeholder",
+          "detail": "comentario: A espécie com maior tendência é redução é justamente aquela que recebe elétrons no cátodo. Quem sofre oxidação é a espéc"
+        },
+        {
+          "id": "eq_146",
+          "type": "placeholder-option",
+          "detail": "a espécie com maior tendência a reduzir funciona como cátodo e sofre redução"
+        },
+        {
+          "id": "eq_146",
+          "type": "placeholder-option",
+          "detail": "a espécie com maior tendência a oxidar funciona como cátodo"
+        },
+        {
+          "id": "eq_150",
+          "type": "placeholder",
+          "detail": "correta: cátodo, redução, maior potencial de redução"
+        },
+        {
+          "id": "eq_150",
+          "type": "placeholder",
+          "detail": "comentario: Em uma pilha, o cátodo é o eletrodo onde ocorre redução e corresponde ao par com maior potencial de redução. As outras c"
+        },
+        {
+          "id": "eq_150",
+          "type": "placeholder-option",
+          "detail": "cátodo, redução, maior potencial de redução"
+        },
+        {
+          "id": "eq_150",
+          "type": "placeholder-option",
+          "detail": "cátodo, oxidação, metal mais reativo"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/portugues/ortografia-e-pontuacao/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 95,
+      "issues": [
+        {
+          "id": "op_001",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_002",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_002",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"Ontem, a diretora ____ que o laboraterio ficará aberto até mais tarde.\""
+        },
+        {
+          "id": "op_005",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_010",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_010",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"Ele estudou bastante, ____ ainda ficou inseguro antes da prova.\""
+        },
+        {
+          "id": "op_011",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_012",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"Daqui ____ duas semanas começará a feira cientifica.\""
+        },
+        {
+          "id": "op_014",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_015",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"A professora dividiu o capitulo em uma nova ____.\""
+        },
+        {
+          "id": "op_018",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_026",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_027",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_030",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"No recreio, os alunos fizeram um ____ rápido antes da prova.\""
+        },
+        {
+          "id": "op_034",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_034",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"Eu queria sair cedo, ____ precisei terminar o trabalho.\""
+        },
+        {
+          "id": "op_035",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_037",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"A biblioteca e o lugar ____ costumo estudar.\""
+        },
+        {
+          "id": "op_038",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_039",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_039",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a pergunta? \"Você não veio ontem ____?\""
+        },
+        {
+          "id": "op_041",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"Na próxima ____, discutiremos o relaterio final do projeto.\""
+        },
+        {
+          "id": "op_053",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_053",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"Não se deve ____ no material dos colegas sem permissao.\""
+        },
+        {
+          "id": "op_055",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_056",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_057",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"____ muitos alunos esperando o inicio da palestra.\""
+        },
+        {
+          "id": "op_059",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_060",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"O marceneiro mediu o ____ da mesa antes do corte.\""
+        },
+        {
+          "id": "op_071",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_072",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_072",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"A professora perguntou ____ ninguem havia entregado o exercicio.\""
+        },
+        {
+          "id": "op_073",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_075",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_076",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_076",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"o texto é curto, ____ exige atenção na leitura.\""
+        },
+        {
+          "id": "op_077",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_078",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"Cheguei cedo porque a prova comecaria daqui ____ pouco.\""
+        },
+        {
+          "id": "op_080",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_080",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"Gostaria de entender ____ você mudou de opiniao.\""
+        },
+        {
+          "id": "op_087",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_093",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_093",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"Antes da prova, ele costumava tomar uma ____ de cha.\""
+        },
+        {
+          "id": "op_096",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_096",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"O ____ de tanta pressa ainda não ficou claro.\""
+        },
+        {
+          "id": "op_101",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_101",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"Gostei da proposta, ____ acho que ela ainda precisa de ajustes.\""
+        },
+        {
+          "id": "op_102",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_103",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_103",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"Depois da discussão, ele ficou de ____ humor.\""
+        },
+        {
+          "id": "op_104",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_105",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"Daqui ____ alguns minutos, a apresentação vai comecar.\""
+        },
+        {
+          "id": "op_119",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_121",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"A forte ____ assustou quem estava na rua.\""
+        },
+        {
+          "id": "op_123",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_123",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"Ele saiu cedo ____ precisava resolver um problema em casa.\""
+        },
+        {
+          "id": "op_124",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_126",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_128",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"Depois da tempestade, a cidade sofreu com a ____.\""
+        },
+        {
+          "id": "op_130",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_131",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_132",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"Eles se conhecem ____ muitos anos.\""
+        },
+        {
+          "id": "op_134",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_135",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_146",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_147",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_147",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"Ela explicou o motivo ____ não compareceu e reuniao.\""
+        },
+        {
+          "id": "op_149",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_150",
+          "type": "placeholder",
+          "detail": "correta: que a informação sobre faltar e explicativa e recai sobre o grupo todo"
+        },
+        {
+          "id": "op_150",
+          "type": "placeholder-option",
+          "detail": "que a informação sobre faltar e explicativa e recai sobre o grupo todo"
+        },
+        {
+          "id": "op_153",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_153",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"O carpinteiro usou o ____ para finalizar a peça.\""
+        },
+        {
+          "id": "op_155",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_156",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_157",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"Eles chegarao ____ noite para a reuniao.\""
+        },
+        {
+          "id": "op_159",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_160",
+          "type": "correct-not-in-options",
+          "detail": "Correta: descrição"
+        },
+        {
+          "id": "op_172",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_172",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"Explique ____ você considera essa leitura importante.\""
+        },
+        {
+          "id": "op_176",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_177",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_178",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"No inverno, ela sempre usa um ____ grosso.\""
+        },
+        {
+          "id": "op_180",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_181",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_182",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa corretamente a frase? \"O resultado será divulgado daqui ____ duas horas.\""
+        },
+        {
+          "id": "op_184",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_188",
+          "type": "placeholder",
+          "detail": "correta: Pele, grande nome do futebol brasileiro, e conhecido no mundo todo."
+        },
+        {
+          "id": "op_188",
+          "type": "placeholder-option",
+          "detail": "Pele grande nome do futebol brasileiro, e conhecido no mundo todo."
+        },
+        {
+          "id": "op_188",
+          "type": "placeholder-option",
+          "detail": "Pele, grande nome do futebol brasileiro e conhecido no mundo todo."
+        },
+        {
+          "id": "op_188",
+          "type": "placeholder-option",
+          "detail": "Pele grande nome, do futebol brasileiro e conhecido no mundo todo."
+        },
+        {
+          "id": "op_188",
+          "type": "placeholder-option",
+          "detail": "Pele, grande nome do futebol brasileiro, e conhecido no mundo todo."
+        },
+        {
+          "id": "op_197",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_199",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "op_200",
+          "type": "placeholder",
+          "detail": "correta: que a informação e explicativa e recai sobre todo o grupo mencionado"
+        },
+        {
+          "id": "op_200",
+          "type": "placeholder-option",
+          "detail": "que a informação e explicativa e recai sobre todo o grupo mencionado"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/matematica/geometria-plana/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 38,
+      "issues": [
+        {
+          "id": "matematica_geometria_plana",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Matematica"
+        },
+        {
+          "id": "gp_007",
+          "type": "placeholder",
+          "detail": "comentario: Todo triangulo tem soma interna igual a 180 graus."
+        },
+        {
+          "id": "gp_009",
+          "type": "placeholder",
+          "detail": "enunciado: Todo quadrado tambem e um:"
+        },
+        {
+          "id": "gp_009",
+          "type": "placeholder",
+          "detail": "comentario: Todo quadrado tem quatro angulos retos."
+        },
+        {
+          "id": "gp_019",
+          "type": "placeholder",
+          "detail": "enunciado: Todo poligono possui lados:"
+        },
+        {
+          "id": "gp_086",
+          "type": "placeholder",
+          "detail": "enunciado: Todo retangulo e um paralelogramo."
+        },
+        {
+          "id": "gp_087",
+          "type": "placeholder",
+          "detail": "enunciado: Todo losango tem quatro lados iguais."
+        },
+        {
+          "id": "gp_088",
+          "type": "placeholder",
+          "detail": "enunciado: Todo trapezio possui dois pares de lados paralelos."
+        },
+        {
+          "id": "gp_089",
+          "type": "placeholder",
+          "detail": "enunciado: Todo quadrado e tambem um losango."
+        },
+        {
+          "id": "gp_090",
+          "type": "placeholder",
+          "detail": "enunciado: Todo losango possui quatro angulos retos."
+        },
+        {
+          "id": "gp_156",
+          "type": "placeholder",
+          "detail": "enunciado: Um aluno disse que todo losango e quadrado porque ambos possuem quatro lados iguais. Qual alternativa corrige esse erro?"
+        },
+        {
+          "id": "gp_156",
+          "type": "placeholder",
+          "detail": "correta: Nem todo losango tem quatro angulos retos."
+        },
+        {
+          "id": "gp_156",
+          "type": "placeholder-option",
+          "detail": "Todo losango tem diagonais iguais."
+        },
+        {
+          "id": "gp_156",
+          "type": "placeholder-option",
+          "detail": "Nem todo losango tem quatro angulos retos."
+        },
+        {
+          "id": "gp_159",
+          "type": "placeholder",
+          "detail": "correta: Todo retangulo e quadrado."
+        },
+        {
+          "id": "gp_159",
+          "type": "placeholder",
+          "detail": "comentario: Nem todo retangulo possui quatro lados iguais."
+        },
+        {
+          "id": "gp_159",
+          "type": "placeholder-option",
+          "detail": "Todo quadrado e retangulo."
+        },
+        {
+          "id": "gp_159",
+          "type": "placeholder-option",
+          "detail": "Todo quadrado e losango."
+        },
+        {
+          "id": "gp_159",
+          "type": "placeholder-option",
+          "detail": "Todo retangulo e quadrado."
+        },
+        {
+          "id": "gp_159",
+          "type": "placeholder-option",
+          "detail": "Todo quadrado e paralelogramo."
+        },
+        {
+          "id": "gp_169",
+          "type": "placeholder-option",
+          "detail": "Todo triangulo precisa ter lados iguais."
+        },
+        {
+          "id": "gp_173",
+          "type": "placeholder",
+          "detail": "correta: Todo losango e quadrado."
+        },
+        {
+          "id": "gp_173",
+          "type": "placeholder-option",
+          "detail": "Todo losango e quadrado."
+        },
+        {
+          "id": "gp_173",
+          "type": "placeholder-option",
+          "detail": "Todo quadrado e losango."
+        },
+        {
+          "id": "gp_173",
+          "type": "placeholder-option",
+          "detail": "Todo quadrado e retangulo."
+        },
+        {
+          "id": "gp_173",
+          "type": "placeholder-option",
+          "detail": "Todo quadrado e paralelogramo."
+        },
+        {
+          "id": "gp_184",
+          "type": "placeholder",
+          "detail": "enunciado: Um estudante disse que todo poligono de quatro lados e um quadrado. Qual alternativa corrige esse raciocinio?"
+        },
+        {
+          "id": "gp_184",
+          "type": "placeholder-option",
+          "detail": "Todo quadrilatero tem lados iguais."
+        },
+        {
+          "id": "gp_185",
+          "type": "placeholder",
+          "detail": "correta: Todo retangulo e quadrado."
+        },
+        {
+          "id": "gp_185",
+          "type": "placeholder-option",
+          "detail": "Todo retangulo e quadrado."
+        },
+        {
+          "id": "gp_185",
+          "type": "placeholder-option",
+          "detail": "Todo quadrado e retangulo."
+        },
+        {
+          "id": "gp_185",
+          "type": "placeholder-option",
+          "detail": "Todo quadrado e losango."
+        },
+        {
+          "id": "gp_185",
+          "type": "placeholder-option",
+          "detail": "Todo quadrado e paralelogramo."
+        },
+        {
+          "id": "gp_197",
+          "type": "placeholder",
+          "detail": "correta: Todo isosceles e equilatero."
+        },
+        {
+          "id": "gp_197",
+          "type": "placeholder-option",
+          "detail": "Todo isosceles e equilatero."
+        },
+        {
+          "id": "gp_197",
+          "type": "placeholder-option",
+          "detail": "Todo equilatero e isosceles."
+        },
+        {
+          "id": "gp_197",
+          "type": "placeholder-option",
+          "detail": "Todo equilatero tem tres angulos iguais."
+        },
+        {
+          "id": "gp_197",
+          "type": "placeholder-option",
+          "detail": "Todo triangulo tem soma interna 180 graus."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/matematica/probabilidade/index.js",
+      "topicCount": 1,
+      "questionCount": 210,
+      "issueCount": 21,
+      "issues": [
+        {
+          "id": "matematica_probabilidade",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Matematica"
+        },
+        {
+          "id": "prob_008",
+          "type": "thin-comment",
+          "detail": "1/2 x 1/2."
+        },
+        {
+          "id": "prob_014",
+          "type": "thin-comment",
+          "detail": "(1/2)^3."
+        },
+        {
+          "id": "prob_015",
+          "type": "thin-comment",
+          "detail": "1 - 0,9."
+        },
+        {
+          "id": "prob_017",
+          "type": "thin-comment",
+          "detail": "3/9 = 1/3."
+        },
+        {
+          "id": "prob_018",
+          "type": "thin-comment",
+          "detail": "6 x 2 = 12."
+        },
+        {
+          "id": "prob_019",
+          "type": "thin-comment",
+          "detail": "5/20 = 1/4."
+        },
+        {
+          "id": "prob_032",
+          "type": "thin-comment",
+          "detail": "6/15 = 2/5."
+        },
+        {
+          "id": "prob_037",
+          "type": "thin-comment",
+          "detail": "8/20 = 2/5."
+        },
+        {
+          "id": "prob_038",
+          "type": "thin-comment",
+          "detail": "(1/2)^3."
+        },
+        {
+          "id": "prob_042",
+          "type": "placeholder",
+          "detail": "comentario: Ha 10 canetas ao todo e 5 sao azuis. Logo, a probabilidade e 5/10 = 1/2."
+        },
+        {
+          "id": "prob_051",
+          "type": "placeholder",
+          "detail": "comentario: Ha 12 bolas ao todo e 3 sao amarelas. Logo, a probabilidade e 3/12 = 1/4."
+        },
+        {
+          "id": "prob_061",
+          "type": "placeholder",
+          "detail": "comentario: Ha 14 bolas ao todo e 6 sao azuis. Logo, a probabilidade e 6/14 = 3/7."
+        },
+        {
+          "id": "prob_071",
+          "type": "placeholder",
+          "detail": "comentario: Ha 16 fichas ao todo e 6 sao amarelas. Logo, a probabilidade e 6/16 = 3/8."
+        },
+        {
+          "id": "prob_081",
+          "type": "placeholder",
+          "detail": "comentario: Ha 20 fichas ao todo e 7 delas sao pares. Logo, a probabilidade e 7/20."
+        },
+        {
+          "id": "prob_091",
+          "type": "placeholder",
+          "detail": "comentario: Ha 18 bolas ao todo e 6 sao pretas. Logo, a probabilidade e 6/18 = 1/3."
+        },
+        {
+          "id": "prob_111",
+          "type": "placeholder",
+          "detail": "comentario: Ha 15 bolas ao todo e 9 sao vermelhas. Logo, a probabilidade e 9/15 = 3/5."
+        },
+        {
+          "id": "prob_131",
+          "type": "placeholder",
+          "detail": "comentario: Ha 20 bolas ao todo e 8 sao amarelas. Logo, a probabilidade e 8/20 = 2/5."
+        },
+        {
+          "id": "prob_141",
+          "type": "placeholder",
+          "detail": "comentario: Ha 24 bolas ao todo e 9 sao azuis. Logo, a probabilidade e 9/24 = 3/8."
+        },
+        {
+          "id": "prob_169",
+          "type": "correct-not-in-options",
+          "detail": "Correta: 29/33"
+        },
+        {
+          "id": "prob_188",
+          "type": "placeholder",
+          "detail": "enunciado: Ao escolher aleatoriamente um numero inteiro de 1 a 12, um estudante afirma que a probabilidade de o numero ser divisor "
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/portugues/generos-textuais/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 20,
+      "issues": [
+        {
+          "id": "gt_122",
+          "type": "placeholder-option",
+          "detail": "O estudante acertou, porque todo texto curto pertence ao mesmo gênero."
+        },
+        {
+          "id": "gt_125",
+          "type": "placeholder-option",
+          "detail": "O estudante acertou, porque todo texto curto pertence ao mesmo gênero."
+        },
+        {
+          "id": "gt_128",
+          "type": "placeholder-option",
+          "detail": "O estudante acertou, porque todo texto curto pertence ao mesmo gênero."
+        },
+        {
+          "id": "gt_131",
+          "type": "placeholder-option",
+          "detail": "O estudante acertou, porque todo texto curto pertence ao mesmo gênero."
+        },
+        {
+          "id": "gt_134",
+          "type": "placeholder-option",
+          "detail": "O estudante acertou, porque todo texto curto pertence ao mesmo gênero."
+        },
+        {
+          "id": "gt_137",
+          "type": "placeholder-option",
+          "detail": "O estudante acertou, porque todo texto curto pertence ao mesmo gênero."
+        },
+        {
+          "id": "gt_140",
+          "type": "placeholder-option",
+          "detail": "O estudante acertou, porque todo texto curto pertence ao mesmo gênero."
+        },
+        {
+          "id": "gt_143",
+          "type": "placeholder-option",
+          "detail": "O estudante acertou, porque todo texto curto pertence ao mesmo gênero."
+        },
+        {
+          "id": "gt_146",
+          "type": "placeholder-option",
+          "detail": "O estudante acertou, porque todo texto curto pertence ao mesmo gênero."
+        },
+        {
+          "id": "gt_149",
+          "type": "placeholder-option",
+          "detail": "O estudante acertou, porque todo texto curto pertence ao mesmo gênero."
+        },
+        {
+          "id": "gt_152",
+          "type": "placeholder-option",
+          "detail": "Ela está correta, porque todo texto informativo e noticia."
+        },
+        {
+          "id": "gt_157",
+          "type": "placeholder-option",
+          "detail": "Ela está correta, porque todo texto informativo e noticia."
+        },
+        {
+          "id": "gt_162",
+          "type": "placeholder-option",
+          "detail": "Ela está correta, porque todo texto informativo e noticia."
+        },
+        {
+          "id": "gt_167",
+          "type": "placeholder-option",
+          "detail": "Ela está correta, porque todo texto informativo e noticia."
+        },
+        {
+          "id": "gt_172",
+          "type": "placeholder-option",
+          "detail": "Ela está correta, porque todo texto informativo e noticia."
+        },
+        {
+          "id": "gt_177",
+          "type": "placeholder-option",
+          "detail": "Ela está correta, porque todo texto informativo e noticia."
+        },
+        {
+          "id": "gt_182",
+          "type": "placeholder-option",
+          "detail": "Ela está correta, porque todo texto informativo e noticia."
+        },
+        {
+          "id": "gt_187",
+          "type": "placeholder-option",
+          "detail": "Ela está correta, porque todo texto informativo e noticia."
+        },
+        {
+          "id": "gt_192",
+          "type": "placeholder-option",
+          "detail": "Ela está correta, porque todo texto informativo e noticia."
+        },
+        {
+          "id": "gt_197",
+          "type": "placeholder-option",
+          "detail": "Ela está correta, porque todo texto informativo e noticia."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/geografia/economia-mundial/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 17,
+      "issues": [
+        {
+          "id": "geografia_economia_mundial",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Geografia"
+        },
+        {
+          "id": "em_002",
+          "type": "odd-ending",
+          "detail": "Quando o PIB e dividido pela populacao obtemos o"
+        },
+        {
+          "id": "em_007",
+          "type": "odd-ending",
+          "detail": "Quando a moeda nacional perde valor frente ao dolar ocorre"
+        },
+        {
+          "id": "em_031",
+          "type": "odd-ending",
+          "detail": "Quando um pais amplia pesquisa e engenharia ele tende a subir na cadeia produtiva pelo maior uso de"
+        },
+        {
+          "id": "em_045",
+          "type": "odd-ending",
+          "detail": "Quando um pais recebe etapas de montagem mas nao controla marcas nem tecnologia ele ocupa posicao"
+        },
+        {
+          "id": "em_056",
+          "type": "odd-ending",
+          "detail": "Quando um pais deixa de exportar apenas bens primarios e passa a produzir bens complexos ocorre"
+        },
+        {
+          "id": "em_076",
+          "type": "placeholder",
+          "detail": "correta: todo o fluxo produtivo"
+        },
+        {
+          "id": "em_076",
+          "type": "placeholder-option",
+          "detail": "todo o fluxo produtivo"
+        },
+        {
+          "id": "em_087",
+          "type": "odd-ending",
+          "detail": "Quando um bloco amplia fluxos internos empresas podem reorganizar a producao em funcao de mercado ampliado, custos e"
+        },
+        {
+          "id": "em_090",
+          "type": "odd-ending",
+          "detail": "Quando um bloco enfrenta crise economica ou politica seus efeitos podem atingir comercio, investimentos e"
+        },
+        {
+          "id": "em_117",
+          "type": "odd-ending",
+          "detail": "Quando empresas e capitais globais concentram investimentos nos espacos mais competitivos areas frageis podem aprofundar"
+        },
+        {
+          "id": "em_124",
+          "type": "odd-ending",
+          "detail": "Quando um pais recorre ao FMI em crise externa isso costuma indicar dificuldade para manter"
+        },
+        {
+          "id": "em_151",
+          "type": "odd-ending",
+          "detail": "Quando um pais concentra sua pauta externa em petroleo ou minerios a arrecadacao publica pode oscilar conforme"
+        },
+        {
+          "id": "em_162",
+          "type": "odd-ending",
+          "detail": "Quando um pais se destaca na exportacao de alimentos e fibras ele participa do mercado mundial por meio de"
+        },
+        {
+          "id": "em_169",
+          "type": "odd-ending",
+          "detail": "Quando terras agricolas sao orientadas prioritariamente para exportacao pode haver tensao entre divisas externas e"
+        },
+        {
+          "id": "em_181",
+          "type": "odd-ending",
+          "detail": "Quando um pais usa sua capacidade economica para influenciar outros mercados fala-se em"
+        },
+        {
+          "id": "em_185",
+          "type": "odd-ending",
+          "detail": "Quando uma potencia controla tecnologia, moeda forte, financas e cadeias produtivas ela amplia sua capacidade de"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/geografia/cartografia/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 13,
+      "issues": [
+        {
+          "id": "geografia_cartografia",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Geografia"
+        },
+        {
+          "id": "cg_014",
+          "type": "placeholder-option",
+          "detail": "todo mapa precisa mostrar apenas o Brasil"
+        },
+        {
+          "id": "cg_027",
+          "type": "placeholder-option",
+          "detail": "todo mapa ignora a existencia dos oceanos"
+        },
+        {
+          "id": "cg_061",
+          "type": "placeholder",
+          "detail": "comentario: Todo mapa seleciona informacoes e as organiza segundo uma finalidade."
+        },
+        {
+          "id": "cg_090",
+          "type": "placeholder-option",
+          "detail": "todo mapa tematico elimina localizacao espacial"
+        },
+        {
+          "id": "cg_091",
+          "type": "placeholder-option",
+          "detail": "todo mapa tematico mostra apenas dados absolutos"
+        },
+        {
+          "id": "cg_108",
+          "type": "placeholder-option",
+          "detail": "ela e sempre correta, pois todo mapa preserva areas reais"
+        },
+        {
+          "id": "cg_154",
+          "type": "placeholder",
+          "detail": "correta: todo mapa envolve uma reducao do real que afeta o detalhamento visivel"
+        },
+        {
+          "id": "cg_154",
+          "type": "placeholder-option",
+          "detail": "todo mapa envolve uma reducao do real que afeta o detalhamento visivel"
+        },
+        {
+          "id": "cg_154",
+          "type": "placeholder-option",
+          "detail": "todo mapa pode mostrar qualquer detalhe independentemente do recorte"
+        },
+        {
+          "id": "cg_164",
+          "type": "placeholder-option",
+          "detail": "substitui todo tipo de legenda"
+        },
+        {
+          "id": "cg_177",
+          "type": "placeholder",
+          "detail": "comentario: A legenda precisa ser lida em relação ao método de classificação empregado no mapa."
+        },
+        {
+          "id": "cg_193",
+          "type": "placeholder-option",
+          "detail": "todo mapa tem sempre o mesmo nível de detalhe"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/historia/formacao-dos-estados-modernos/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 13,
+      "issues": [
+        {
+          "id": "historia_formacao_dos_estados_modernos",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Historia"
+        },
+        {
+          "id": "fem_013",
+          "type": "placeholder",
+          "detail": "enunciado: Qual alternativa identifica a cobranca regular de impostos em todo o reino?"
+        },
+        {
+          "id": "fem_014",
+          "type": "placeholder",
+          "detail": "enunciado: Ao estudar crise do feudalismo e centralizacao politica, a cobranca regular de impostos em todo o reino corresponde a:"
+        },
+        {
+          "id": "fem_015",
+          "type": "placeholder",
+          "detail": "enunciado: Se um texto historico mencionar a cobranca regular de impostos em todo o reino, ele estara se referindo a:"
+        },
+        {
+          "id": "fem_016",
+          "type": "placeholder",
+          "detail": "enunciado: Em uma analise sobre crise do feudalismo e centralizacao politica, a cobranca regular de impostos em todo o reino aponta"
+        },
+        {
+          "id": "fem_049",
+          "type": "placeholder",
+          "detail": "enunciado: Qual alternativa identifica a criacao de regras mais uniformes para todo o reino?"
+        },
+        {
+          "id": "fem_050",
+          "type": "placeholder",
+          "detail": "enunciado: Ao estudar formacao do estado moderno, a criacao de regras mais uniformes para todo o reino corresponde a:"
+        },
+        {
+          "id": "fem_051",
+          "type": "placeholder",
+          "detail": "enunciado: Se um texto historico mencionar a criacao de regras mais uniformes para todo o reino, ele estara se referindo a:"
+        },
+        {
+          "id": "fem_052",
+          "type": "placeholder",
+          "detail": "enunciado: Em uma analise sobre formacao do estado moderno, a criacao de regras mais uniformes para todo o reino aponta para:"
+        },
+        {
+          "id": "fem_109",
+          "type": "placeholder",
+          "detail": "enunciado: Qual alternativa identifica a cobranca sistematica de tributos em todo o territorio?"
+        },
+        {
+          "id": "fem_110",
+          "type": "placeholder",
+          "detail": "enunciado: Ao estudar burocracia, exercito e fiscalidade, a cobranca sistematica de tributos em todo o territorio corresponde a:"
+        },
+        {
+          "id": "fem_111",
+          "type": "placeholder",
+          "detail": "enunciado: Se um texto historico mencionar a cobranca sistematica de tributos em todo o territorio, ele estara se referindo a:"
+        },
+        {
+          "id": "fem_112",
+          "type": "placeholder",
+          "detail": "enunciado: Em uma analise sobre burocracia, exercito e fiscalidade, a cobranca sistematica de tributos em todo o territorio aponta "
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/ingles/leitura-e-interpretacao/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 13,
+      "issues": [
+        {
+          "id": "ingles_leitura_e_interpretacao",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Ingles"
+        },
+        {
+          "id": "i1l_002",
+          "type": "placeholder",
+          "detail": "enunciado: Observe a situacao: um texto curto menciona uniforme, intervalo e cantina, mas todo o conteudo gira em torno de regras d"
+        },
+        {
+          "id": "i1l_007",
+          "type": "placeholder",
+          "detail": "enunciado: Em uma atividade de sala, um texto curto menciona uniforme, intervalo e cantina, mas todo o conteudo gira em torno de re"
+        },
+        {
+          "id": "i1l_051",
+          "type": "placeholder-option",
+          "detail": "todo cognato aparente significa exatamente a mesma coisa em portugues"
+        },
+        {
+          "id": "i1l_071",
+          "type": "placeholder-option",
+          "detail": "todo cognato aparente significa exatamente a mesma coisa em portugues"
+        },
+        {
+          "id": "i1l_091",
+          "type": "placeholder-option",
+          "detail": "todo cognato aparente significa exatamente a mesma coisa em portugues"
+        },
+        {
+          "id": "i1l_091",
+          "type": "placeholder-option",
+          "detail": "todo texto em ingles pode ser lido do mesmo jeito, sem observar o genero"
+        },
+        {
+          "id": "i1l_111",
+          "type": "placeholder",
+          "detail": "correta: todo cognato aparente significa exatamente a mesma coisa em portugues"
+        },
+        {
+          "id": "i1l_111",
+          "type": "placeholder-option",
+          "detail": "todo cognato aparente significa exatamente a mesma coisa em portugues"
+        },
+        {
+          "id": "i1l_111",
+          "type": "placeholder-option",
+          "detail": "todo texto em ingles pode ser lido do mesmo jeito, sem observar o genero"
+        },
+        {
+          "id": "i1l_131",
+          "type": "placeholder-option",
+          "detail": "todo texto em ingles pode ser lido do mesmo jeito, sem observar o genero"
+        },
+        {
+          "id": "i1l_151",
+          "type": "placeholder",
+          "detail": "correta: todo texto em ingles pode ser lido do mesmo jeito, sem observar o genero"
+        },
+        {
+          "id": "i1l_151",
+          "type": "placeholder-option",
+          "detail": "todo texto em ingles pode ser lido do mesmo jeito, sem observar o genero"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/filosofia/iluminismo/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 13,
+      "issues": [
+        {
+          "id": "filosofia_iluminismo",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Filosofia"
+        },
+        {
+          "id": "ilu_041",
+          "type": "placeholder",
+          "detail": "correta: as garantias consideradas proprias de todo ser humano"
+        },
+        {
+          "id": "ilu_041",
+          "type": "placeholder",
+          "detail": "comentario: as garantias consideradas proprias de todo ser humano e a resposta correta porque liberdade e igualdade juridica ganham "
+        },
+        {
+          "id": "ilu_041",
+          "type": "placeholder-option",
+          "detail": "as garantias consideradas proprias de todo ser humano"
+        },
+        {
+          "id": "ilu_042",
+          "type": "placeholder",
+          "detail": "correta: as garantias consideradas proprias de todo ser humano"
+        },
+        {
+          "id": "ilu_042",
+          "type": "placeholder",
+          "detail": "comentario: as garantias consideradas proprias de todo ser humano e a resposta correta porque liberdade e igualdade juridica ganham "
+        },
+        {
+          "id": "ilu_042",
+          "type": "placeholder-option",
+          "detail": "as garantias consideradas proprias de todo ser humano"
+        },
+        {
+          "id": "ilu_044",
+          "type": "placeholder-option",
+          "detail": "as garantias consideradas proprias de todo ser humano"
+        },
+        {
+          "id": "ilu_045",
+          "type": "placeholder-option",
+          "detail": "as garantias consideradas proprias de todo ser humano"
+        },
+        {
+          "id": "ilu_046",
+          "type": "placeholder-option",
+          "detail": "as garantias consideradas proprias de todo ser humano"
+        },
+        {
+          "id": "ilu_047",
+          "type": "placeholder-option",
+          "detail": "as garantias consideradas proprias de todo ser humano"
+        },
+        {
+          "id": "ilu_048",
+          "type": "placeholder-option",
+          "detail": "as garantias consideradas proprias de todo ser humano"
+        },
+        {
+          "id": "ilu_049",
+          "type": "placeholder-option",
+          "detail": "as garantias consideradas proprias de todo ser humano"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/portugues/concordancia/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 12,
+      "issues": [
+        {
+          "id": "conc_041",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "conc_043",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "conc_044",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "conc_046",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "conc_047",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "conc_048",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "conc_050",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "conc_051",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "conc_053",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "conc_054",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "conc_057",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        },
+        {
+          "id": "conc_060",
+          "type": "duplicate-options",
+          "detail": "Ha alternativas repetidas."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/ingles/interpretacao-foco-enem/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 12,
+      "issues": [
+        {
+          "id": "ingles_interpretacao_foco_enem",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Ingles"
+        },
+        {
+          "id": "i3e_011",
+          "type": "placeholder-option",
+          "detail": "todo texto publicitario serve apenas para vender um produto"
+        },
+        {
+          "id": "i3e_031",
+          "type": "placeholder-option",
+          "detail": "todo texto publicitario serve apenas para vender um produto"
+        },
+        {
+          "id": "i3e_051",
+          "type": "placeholder-option",
+          "detail": "todo texto publicitario serve apenas para vender um produto"
+        },
+        {
+          "id": "i3e_071",
+          "type": "placeholder",
+          "detail": "correta: todo texto publicitario serve apenas para vender um produto"
+        },
+        {
+          "id": "i3e_071",
+          "type": "placeholder-option",
+          "detail": "todo texto publicitario serve apenas para vender um produto"
+        },
+        {
+          "id": "i3e_071",
+          "type": "placeholder-option",
+          "detail": "todo texto em ingles se dirige ao mesmo publico generico"
+        },
+        {
+          "id": "i3e_091",
+          "type": "placeholder-option",
+          "detail": "todo texto em ingles se dirige ao mesmo publico generico"
+        },
+        {
+          "id": "i3e_111",
+          "type": "placeholder-option",
+          "detail": "todo texto em ingles se dirige ao mesmo publico generico"
+        },
+        {
+          "id": "i3e_112",
+          "type": "placeholder",
+          "detail": "enunciado: Um estudante afirma: \"todo texto com dados estatisticos tem apenas proposito informativo neutro\". A avaliacao mais adequ"
+        },
+        {
+          "id": "i3e_131",
+          "type": "placeholder",
+          "detail": "correta: todo texto em ingles se dirige ao mesmo publico generico"
+        },
+        {
+          "id": "i3e_131",
+          "type": "placeholder-option",
+          "detail": "todo texto em ingles se dirige ao mesmo publico generico"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/ingles/textos-longos/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 12,
+      "issues": [
+        {
+          "id": "ingles_textos_longos",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Ingles"
+        },
+        {
+          "id": "i3l_012",
+          "type": "placeholder",
+          "detail": "enunciado: Um estudante afirma: \"basta ler um unico paragrafo para entender todo o texto longo\". A avaliacao mais adequada e:"
+        },
+        {
+          "id": "i3l_091",
+          "type": "placeholder-option",
+          "detail": "todo texto jornalistico e academico e neutro e sem posicionamento"
+        },
+        {
+          "id": "i3l_111",
+          "type": "placeholder-option",
+          "detail": "todo texto jornalistico e academico e neutro e sem posicionamento"
+        },
+        {
+          "id": "i3l_111",
+          "type": "placeholder-option",
+          "detail": "todo texto longo e apenas argumentativo e nunca traz narracao ou descricao"
+        },
+        {
+          "id": "i3l_131",
+          "type": "placeholder-option",
+          "detail": "todo texto jornalistico e academico e neutro e sem posicionamento"
+        },
+        {
+          "id": "i3l_131",
+          "type": "placeholder-option",
+          "detail": "todo texto longo e apenas argumentativo e nunca traz narracao ou descricao"
+        },
+        {
+          "id": "i3l_151",
+          "type": "placeholder",
+          "detail": "correta: todo texto jornalistico e academico e neutro e sem posicionamento"
+        },
+        {
+          "id": "i3l_151",
+          "type": "placeholder-option",
+          "detail": "todo texto jornalistico e academico e neutro e sem posicionamento"
+        },
+        {
+          "id": "i3l_151",
+          "type": "placeholder-option",
+          "detail": "todo texto longo e apenas argumentativo e nunca traz narracao ou descricao"
+        },
+        {
+          "id": "i3l_171",
+          "type": "placeholder",
+          "detail": "correta: todo texto longo e apenas argumentativo e nunca traz narracao ou descricao"
+        },
+        {
+          "id": "i3l_171",
+          "type": "placeholder-option",
+          "detail": "todo texto longo e apenas argumentativo e nunca traz narracao ou descricao"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/ingles/vocabulario-basico/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 11,
+      "issues": [
+        {
+          "id": "ingles_vocabulario_basico",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Ingles"
+        },
+        {
+          "id": "i1b_011",
+          "type": "placeholder-option",
+          "detail": "todo objeto escolar pode ser entendido apenas pela semelhanca sonora com o portugues"
+        },
+        {
+          "id": "i1b_031",
+          "type": "placeholder-option",
+          "detail": "todo objeto escolar pode ser entendido apenas pela semelhanca sonora com o portugues"
+        },
+        {
+          "id": "i1b_051",
+          "type": "placeholder-option",
+          "detail": "todo objeto escolar pode ser entendido apenas pela semelhanca sonora com o portugues"
+        },
+        {
+          "id": "i1b_071",
+          "type": "placeholder",
+          "detail": "correta: todo objeto escolar pode ser entendido apenas pela semelhanca sonora com o portugues"
+        },
+        {
+          "id": "i1b_071",
+          "type": "placeholder-option",
+          "detail": "todo objeto escolar pode ser entendido apenas pela semelhanca sonora com o portugues"
+        },
+        {
+          "id": "i1b_091",
+          "type": "placeholder-option",
+          "detail": "todo lugar da cidade pode ser identificado apenas pela primeira letra ou por semelhanca"
+        },
+        {
+          "id": "i1b_111",
+          "type": "placeholder-option",
+          "detail": "todo lugar da cidade pode ser identificado apenas pela primeira letra ou por semelhanca"
+        },
+        {
+          "id": "i1b_131",
+          "type": "placeholder-option",
+          "detail": "todo lugar da cidade pode ser identificado apenas pela primeira letra ou por semelhanca"
+        },
+        {
+          "id": "i1b_151",
+          "type": "placeholder",
+          "detail": "correta: todo lugar da cidade pode ser identificado apenas pela primeira letra ou por semelhanca"
+        },
+        {
+          "id": "i1b_151",
+          "type": "placeholder-option",
+          "detail": "todo lugar da cidade pode ser identificado apenas pela primeira letra ou por semelhanca"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/portugues/coesao-e-coerencia/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 11,
+      "issues": [
+        {
+          "id": "cec_059",
+          "type": "placeholder",
+          "detail": "comentario: A coerência global depende da manutenção de um eixo temático articulado em todo o texto."
+        },
+        {
+          "id": "cec_066",
+          "type": "placeholder",
+          "detail": "correta: O corredor venceu a maratona apos permanecer imovel durante todo o percurso."
+        },
+        {
+          "id": "cec_066",
+          "type": "placeholder",
+          "detail": "comentario: Permanecer imovel durante todo o percurso e incompativel com a ideia de vencer uma maratona."
+        },
+        {
+          "id": "cec_066",
+          "type": "placeholder-option",
+          "detail": "O corredor venceu a maratona apos permanecer imovel durante todo o percurso."
+        },
+        {
+          "id": "cec_073",
+          "type": "odd-ending",
+          "detail": "Qual alternativa preserva coerência local e relação lógica plausovele"
+        },
+        {
+          "id": "cec_086",
+          "type": "odd-ending",
+          "detail": "Qual alternativa completa adequadamente o período com relação de oposicao? 'O projeto recebeu investimento; ________, ainda não saiu do papel.'"
+        },
+        {
+          "id": "cec_109",
+          "type": "odd-ending",
+          "detail": "Qual conectivo completa adequadamente a frase com ideia de consequência? 'O cronograma foi seguido com rigor; ________, o trabalho terminou no prazo.'"
+        },
+        {
+          "id": "cec_134",
+          "type": "odd-ending",
+          "detail": "Qual conectivo completa adequadamente o período com ideia de oposicao? 'A proposta foi bem recebida; ________, não houve recursos para executá-la.'"
+        },
+        {
+          "id": "cec_140",
+          "type": "placeholder",
+          "detail": "correta: O corredor venceu a maratona apos permanecer imovel durante todo o percurso."
+        },
+        {
+          "id": "cec_140",
+          "type": "placeholder",
+          "detail": "comentario: Permanecer imovel durante todo o percurso e incompativel com vencer uma maratona."
+        },
+        {
+          "id": "cec_140",
+          "type": "placeholder-option",
+          "detail": "O corredor venceu a maratona apos permanecer imovel durante todo o percurso."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/biologia/origem-da-vida/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 8,
+      "issues": [
+        {
+          "id": "biologia_origem_da_vida",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Biologia"
+        },
+        {
+          "id": "ov_005",
+          "type": "placeholder-option",
+          "detail": "todo caldo fervido se torna toxico"
+        },
+        {
+          "id": "ov_021",
+          "type": "placeholder-option",
+          "detail": "todo caldo fervido perde nutrientes essenciais a vida"
+        },
+        {
+          "id": "ov_044",
+          "type": "placeholder-option",
+          "detail": "invalidou todo estudo posterior sobre origem da vida"
+        },
+        {
+          "id": "ov_086",
+          "type": "placeholder-option",
+          "detail": "todo agregado molecular ja e um organismo vivo"
+        },
+        {
+          "id": "ov_116",
+          "type": "placeholder-option",
+          "detail": "abandono imediato de todo experimento"
+        },
+        {
+          "id": "ov_127",
+          "type": "placeholder",
+          "detail": "enunciado: A afirmacao 'todo ser vivo se origina de outro ser vivo' corresponde ao principio da:"
+        },
+        {
+          "id": "ov_156",
+          "type": "placeholder-option",
+          "detail": "todo caldo nutritivo se transforma espontaneamente em ser vivo quando aquecido"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/fisica/movimento-uniforme-e-variado/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 8,
+      "issues": [
+        {
+          "id": "fisica_movimento_uniforme_e_variado",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Física"
+        },
+        {
+          "id": "fmv_013",
+          "type": "placeholder",
+          "detail": "correta: ficaria impossível determinar a posição do móvel em instantes diferentes sem reconstruir todo o percurso"
+        },
+        {
+          "id": "fmv_013",
+          "type": "placeholder-option",
+          "detail": "ficaria impossível determinar a posição do móvel em instantes diferentes sem reconstruir todo o percurso"
+        },
+        {
+          "id": "fmv_142",
+          "type": "placeholder",
+          "detail": "correta: o caso mostra que a gravidade controla a variação da velocidade durante todo o movimento vertical"
+        },
+        {
+          "id": "fmv_142",
+          "type": "placeholder-option",
+          "detail": "o caso mostra que a gravidade controla a variação da velocidade durante todo o movimento vertical"
+        },
+        {
+          "id": "fmv_144",
+          "type": "placeholder",
+          "detail": "correta: o caso mostra que a gravidade controla a variação da velocidade durante todo o movimento vertical"
+        },
+        {
+          "id": "fmv_144",
+          "type": "placeholder-option",
+          "detail": "o caso mostra que a gravidade controla a variação da velocidade durante todo o movimento vertical"
+        },
+        {
+          "id": "fmv_147",
+          "type": "placeholder",
+          "detail": "enunciado: Em um debate sobre Física, um estudante afirmou: \"em queda livre e lançamento vertical, a aceleração da gravidade atua d"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/portugues/funcoes-da-linguagem/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 8,
+      "issues": [
+        {
+          "id": "fdl_027",
+          "type": "placeholder",
+          "detail": "enunciado: A afirmacao \"No trecho Use cinto de seguranca durante todo o trajeto., predomina a função conativa\" está correta?"
+        },
+        {
+          "id": "fdl_045",
+          "type": "placeholder",
+          "detail": "enunciado: Em \"Use cinto de seguranca durante todo o trajeto.\", a classificação correta e Conativa, e não Fatica, porque:"
+        },
+        {
+          "id": "fdl_075",
+          "type": "placeholder",
+          "detail": "enunciado: Em \"Use cinto de seguranca durante todo o trajeto.\", a classificação correta e Conativa, e não Fatica, porque:"
+        },
+        {
+          "id": "fdl_105",
+          "type": "placeholder",
+          "detail": "enunciado: Em \"Use cinto de seguranca durante todo o trajeto.\", a classificação correta e Conativa, e não Fatica, porque:"
+        },
+        {
+          "id": "fdl_139",
+          "type": "placeholder",
+          "detail": "enunciado: Leia o conjunto de trechos: \"A biblioteca fecha as 18 horas durante a semana. Use cinto de seguranca durante todo o traj"
+        },
+        {
+          "id": "fdl_147",
+          "type": "placeholder",
+          "detail": "enunciado: No trecho \"Use cinto de seguranca durante todo o trajeto.\", qual interpretação explica melhor o uso predominante da ling"
+        },
+        {
+          "id": "fdl_165",
+          "type": "placeholder",
+          "detail": "enunciado: Qual alternativa apresenta uma leitura adequada do trecho \"Use cinto de seguranca durante todo o trajeto.\", evitando um "
+        },
+        {
+          "id": "fdl_195",
+          "type": "placeholder",
+          "detail": "enunciado: Qual alternativa apresenta uma leitura adequada do trecho \"Use cinto de seguranca durante todo o trajeto.\", evitando um "
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/portugues/regencia/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 8,
+      "issues": [
+        {
+          "id": "reg_077",
+          "type": "placeholder",
+          "detail": "comentario: a situacao em que falta preposição exigida, falta artigo ou o contexto não admite fusão e a resposta correta porque nem "
+        },
+        {
+          "id": "reg_078",
+          "type": "placeholder",
+          "detail": "comentario: a situacao em que falta preposição exigida, falta artigo ou o contexto não admite fusão e a resposta correta porque nem "
+        },
+        {
+          "id": "reg_079",
+          "type": "placeholder",
+          "detail": "comentario: a situacao em que falta preposição exigida, falta artigo ou o contexto não admite fusão e a resposta correta porque nem "
+        },
+        {
+          "id": "reg_080",
+          "type": "placeholder",
+          "detail": "comentario: a situacao em que falta preposição exigida, falta artigo ou o contexto não admite fusão e a resposta correta porque nem "
+        },
+        {
+          "id": "reg_125",
+          "type": "placeholder",
+          "detail": "comentario: a operação que exige observar se a estrutura pedia ou não preposição e a resposta correta porque nem todo complemento po"
+        },
+        {
+          "id": "reg_126",
+          "type": "placeholder",
+          "detail": "comentario: a operação que exige observar se a estrutura pedia ou não preposição e a resposta correta porque nem todo complemento po"
+        },
+        {
+          "id": "reg_127",
+          "type": "placeholder",
+          "detail": "comentario: a operação que exige observar se a estrutura pedia ou não preposição e a resposta correta porque nem todo complemento po"
+        },
+        {
+          "id": "reg_128",
+          "type": "placeholder",
+          "detail": "comentario: a operação que exige observar se a estrutura pedia ou não preposição e a resposta correta porque nem todo complemento po"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/portugues/redacao/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 8,
+      "issues": [
+        {
+          "id": "red_021",
+          "type": "placeholder",
+          "detail": "comentario: o assunto central a ser discutido pelo candidato e a resposta correta porque ele orienta todo o planejamento da redação."
+        },
+        {
+          "id": "red_022",
+          "type": "placeholder",
+          "detail": "comentario: o assunto central a ser discutido pelo candidato e a resposta correta porque ele orienta todo o planejamento da redação."
+        },
+        {
+          "id": "red_023",
+          "type": "placeholder",
+          "detail": "comentario: o assunto central a ser discutido pelo candidato e a resposta correta porque ele orienta todo o planejamento da redação."
+        },
+        {
+          "id": "red_024",
+          "type": "placeholder",
+          "detail": "comentario: o assunto central a ser discutido pelo candidato e a resposta correta porque ele orienta todo o planejamento da redação."
+        },
+        {
+          "id": "red_113",
+          "type": "placeholder",
+          "detail": "comentario: a relação efetiva dele com a tese e o recorte temático e a resposta correta porque todo trecho deve contribuir para o pr"
+        },
+        {
+          "id": "red_114",
+          "type": "placeholder",
+          "detail": "comentario: a relação efetiva dele com a tese e o recorte temático e a resposta correta porque todo trecho deve contribuir para o pr"
+        },
+        {
+          "id": "red_115",
+          "type": "placeholder",
+          "detail": "comentario: a relação efetiva dele com a tese e o recorte temático e a resposta correta porque todo trecho deve contribuir para o pr"
+        },
+        {
+          "id": "red_116",
+          "type": "placeholder",
+          "detail": "comentario: a relação efetiva dele com a tese e o recorte temático e a resposta correta porque todo trecho deve contribuir para o pr"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/ingles/verb-to-be-e-simple-present/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 6,
+      "issues": [
+        {
+          "id": "ingles_verb_to_be_e_simple_present",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Ingles"
+        },
+        {
+          "id": "i1v_071",
+          "type": "placeholder-option",
+          "detail": "todo adverbio de frequencia pode ficar em qualquer lugar da frase sem alterar a naturalidade"
+        },
+        {
+          "id": "i1v_091",
+          "type": "placeholder-option",
+          "detail": "todo adverbio de frequencia pode ficar em qualquer lugar da frase sem alterar a naturalidade"
+        },
+        {
+          "id": "i1v_111",
+          "type": "placeholder-option",
+          "detail": "todo adverbio de frequencia pode ficar em qualquer lugar da frase sem alterar a naturalidade"
+        },
+        {
+          "id": "i1v_131",
+          "type": "placeholder",
+          "detail": "correta: todo adverbio de frequencia pode ficar em qualquer lugar da frase sem alterar a naturalidade"
+        },
+        {
+          "id": "i1v_131",
+          "type": "placeholder-option",
+          "detail": "todo adverbio de frequencia pode ficar em qualquer lugar da frase sem alterar a naturalidade"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/ingles/tempos-verbais-past-e-future/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 6,
+      "issues": [
+        {
+          "id": "ingles_tempos_verbais_past_e_future",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Ingles"
+        },
+        {
+          "id": "i2t_011",
+          "type": "placeholder",
+          "detail": "correta: todo verbo no passado precisa da palavra did junto na frase afirmativa"
+        },
+        {
+          "id": "i2t_011",
+          "type": "placeholder-option",
+          "detail": "todo verbo no passado precisa da palavra did junto na frase afirmativa"
+        },
+        {
+          "id": "i2t_151",
+          "type": "placeholder-option",
+          "detail": "todo verbo no passado precisa da palavra did junto na frase afirmativa"
+        },
+        {
+          "id": "i2t_171",
+          "type": "placeholder-option",
+          "detail": "todo verbo no passado precisa da palavra did junto na frase afirmativa"
+        },
+        {
+          "id": "i2t_191",
+          "type": "placeholder-option",
+          "detail": "todo verbo no passado precisa da palavra did junto na frase afirmativa"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/fisica/ondulatoria/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 6,
+      "issues": [
+        {
+          "id": "fisica_ondulatoria",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Física"
+        },
+        {
+          "id": "fon_011",
+          "type": "placeholder",
+          "detail": "correta: a onda carrega a matéria do meio ao longo de todo o percurso"
+        },
+        {
+          "id": "fon_011",
+          "type": "placeholder-option",
+          "detail": "a onda carrega a matéria do meio ao longo de todo o percurso"
+        },
+        {
+          "id": "fon_116",
+          "type": "placeholder-option",
+          "detail": "a onda carrega a matéria do meio ao longo de todo o percurso"
+        },
+        {
+          "id": "fon_131",
+          "type": "placeholder-option",
+          "detail": "a onda carrega a matéria do meio ao longo de todo o percurso"
+        },
+        {
+          "id": "fon_146",
+          "type": "placeholder-option",
+          "detail": "a onda carrega a matéria do meio ao longo de todo o percurso"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/fisica/optica/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 6,
+      "issues": [
+        {
+          "id": "fisica_optica",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Física"
+        },
+        {
+          "id": "fop_011",
+          "type": "placeholder-option",
+          "detail": "todo espelho esferico produz sempre imagens do mesmo tamanho do objeto"
+        },
+        {
+          "id": "fop_026",
+          "type": "placeholder-option",
+          "detail": "todo espelho esferico produz sempre imagens do mesmo tamanho do objeto"
+        },
+        {
+          "id": "fop_041",
+          "type": "placeholder-option",
+          "detail": "todo espelho esferico produz sempre imagens do mesmo tamanho do objeto"
+        },
+        {
+          "id": "fop_056",
+          "type": "placeholder",
+          "detail": "correta: todo espelho esferico produz sempre imagens do mesmo tamanho do objeto"
+        },
+        {
+          "id": "fop_056",
+          "type": "placeholder-option",
+          "detail": "todo espelho esferico produz sempre imagens do mesmo tamanho do objeto"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/historia/independencia-do-brasil/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 5,
+      "issues": [
+        {
+          "id": "historia_independencia_do_brasil",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Historia"
+        },
+        {
+          "id": "idb_101",
+          "type": "placeholder",
+          "detail": "comentario: a existencia de resistencias regionais a independencia e a resposta correta porque nem todo o territorio aceitou imediat"
+        },
+        {
+          "id": "idb_102",
+          "type": "placeholder",
+          "detail": "comentario: a existencia de resistencias regionais a independencia e a resposta correta porque nem todo o territorio aceitou imediat"
+        },
+        {
+          "id": "idb_103",
+          "type": "placeholder",
+          "detail": "comentario: a existencia de resistencias regionais a independencia e a resposta correta porque nem todo o territorio aceitou imediat"
+        },
+        {
+          "id": "idb_104",
+          "type": "placeholder",
+          "detail": "comentario: a existencia de resistencias regionais a independencia e a resposta correta porque nem todo o territorio aceitou imediat"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/matematica/logaritmos/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 5,
+      "issues": [
+        {
+          "id": "matematica_logaritmos",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Matematica"
+        },
+        {
+          "id": "log_093",
+          "type": "placeholder",
+          "detail": "comentario: a etapa que descarta solucoes que tornem algum logaritmando nao positivo e a resposta correta porque nem todo valor alge"
+        },
+        {
+          "id": "log_094",
+          "type": "placeholder",
+          "detail": "comentario: a etapa que descarta solucoes que tornem algum logaritmando nao positivo e a resposta correta porque nem todo valor alge"
+        },
+        {
+          "id": "log_095",
+          "type": "placeholder",
+          "detail": "comentario: a etapa que descarta solucoes que tornem algum logaritmando nao positivo e a resposta correta porque nem todo valor alge"
+        },
+        {
+          "id": "log_096",
+          "type": "placeholder",
+          "detail": "comentario: a etapa que descarta solucoes que tornem algum logaritmando nao positivo e a resposta correta porque nem todo valor alge"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/matematica/progressoes-pa-e-pg/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 5,
+      "issues": [
+        {
+          "id": "matematica_progressoes_pa_e_pg",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Matematica"
+        },
+        {
+          "id": "ppg_077",
+          "type": "placeholder",
+          "detail": "comentario: o fato de uma variar por soma constante e a outra por multiplicacao constante e a resposta correta porque essa distincao"
+        },
+        {
+          "id": "ppg_078",
+          "type": "placeholder",
+          "detail": "comentario: o fato de uma variar por soma constante e a outra por multiplicacao constante e a resposta correta porque essa distincao"
+        },
+        {
+          "id": "ppg_079",
+          "type": "placeholder",
+          "detail": "comentario: o fato de uma variar por soma constante e a outra por multiplicacao constante e a resposta correta porque essa distincao"
+        },
+        {
+          "id": "ppg_080",
+          "type": "placeholder",
+          "detail": "comentario: o fato de uma variar por soma constante e a outra por multiplicacao constante e a resposta correta porque essa distincao"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/matematica/matematica-aplicada-enem/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 5,
+      "issues": [
+        {
+          "id": "matematica_matematica_aplicada_enem",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Matematica"
+        },
+        {
+          "id": "mae_137",
+          "type": "placeholder",
+          "detail": "comentario: um contexto que exige leitura cuidadosa da proporcionalidade envolvida e a resposta correta porque nem todo problema rea"
+        },
+        {
+          "id": "mae_138",
+          "type": "placeholder",
+          "detail": "comentario: um contexto que exige leitura cuidadosa da proporcionalidade envolvida e a resposta correta porque nem todo problema rea"
+        },
+        {
+          "id": "mae_139",
+          "type": "placeholder",
+          "detail": "comentario: um contexto que exige leitura cuidadosa da proporcionalidade envolvida e a resposta correta porque nem todo problema rea"
+        },
+        {
+          "id": "mae_140",
+          "type": "placeholder",
+          "detail": "comentario: um contexto que exige leitura cuidadosa da proporcionalidade envolvida e a resposta correta porque nem todo problema rea"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/matematica/revisao-geral/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 5,
+      "issues": [
+        {
+          "id": "matematica_revisao_geral",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Matematica"
+        },
+        {
+          "id": "revmat_185",
+          "type": "placeholder",
+          "detail": "comentario: a selecao das informacoes necessarias para resolver o problema e a resposta correta porque nem todo dado do enunciado pr"
+        },
+        {
+          "id": "revmat_186",
+          "type": "placeholder",
+          "detail": "comentario: a selecao das informacoes necessarias para resolver o problema e a resposta correta porque nem todo dado do enunciado pr"
+        },
+        {
+          "id": "revmat_187",
+          "type": "placeholder",
+          "detail": "comentario: a selecao das informacoes necessarias para resolver o problema e a resposta correta porque nem todo dado do enunciado pr"
+        },
+        {
+          "id": "revmat_188",
+          "type": "placeholder",
+          "detail": "comentario: a selecao das informacoes necessarias para resolver o problema e a resposta correta porque nem todo dado do enunciado pr"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/biologia/citologia/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 4,
+      "issues": [
+        {
+          "id": "biologia_citologia",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Biologia"
+        },
+        {
+          "id": "ct_023",
+          "type": "placeholder-option",
+          "detail": "que apenas uma célula controle todo o organismo"
+        },
+        {
+          "id": "ct_033",
+          "type": "placeholder-option",
+          "detail": "todo sangue é formado por células idênticas"
+        },
+        {
+          "id": "ct_077",
+          "type": "placeholder-option",
+          "detail": "todo tecido surge sem divisão celular"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/geografia/estrutura-da-terra/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 4,
+      "issues": [
+        {
+          "id": "geografia_estrutura_da_terra",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Geografia"
+        },
+        {
+          "id": "et_078",
+          "type": "placeholder-option",
+          "detail": "estao paradas em todo o planeta"
+        },
+        {
+          "id": "et_131",
+          "type": "placeholder-option",
+          "detail": "porque a atmosfera controla todo o interior"
+        },
+        {
+          "id": "et_170",
+          "type": "placeholder-option",
+          "detail": "clima igual em todo o planeta"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/matematica/funcoes-afim-e-quadratica/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 4,
+      "issues": [
+        {
+          "id": "matematica_funcoes_afim_e_quadratica",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Matematica"
+        },
+        {
+          "id": "faq_067",
+          "type": "placeholder",
+          "detail": "enunciado: Uma impressora ja tinha 30 paginas prontas e passa a imprimir 40 paginas por minuto. Quantas paginas havera ao todo apos"
+        },
+        {
+          "id": "faq_179",
+          "type": "placeholder",
+          "detail": "correta: A funcao e negativa para todo x real."
+        },
+        {
+          "id": "faq_179",
+          "type": "placeholder-option",
+          "detail": "A funcao e negativa para todo x real."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/matematica/numeros-reais/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 4,
+      "issues": [
+        {
+          "id": "matematica_numeros_reais",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Matemática"
+        },
+        {
+          "id": "nr_046",
+          "type": "placeholder",
+          "detail": "enunciado: Todo número decimal finito é racional."
+        },
+        {
+          "id": "nr_186",
+          "type": "placeholder",
+          "detail": "enunciado: Todo número inteiro é racional."
+        },
+        {
+          "id": "nr_194",
+          "type": "placeholder",
+          "detail": "enunciado: Todo número irracional é real."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/sociologia/identidade/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 4,
+      "issues": [
+        {
+          "id": "sociologia_identidade",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Sociologia"
+        },
+        {
+          "id": "sid_077",
+          "type": "placeholder",
+          "detail": "enunciado: Observe a situacao: alguem afirma que todos os jovens, todos os moradores de uma regiao ou todo grupo social tem o mesmo"
+        },
+        {
+          "id": "sid_079",
+          "type": "placeholder-option",
+          "detail": "alguem afirma que todos os jovens, todos os moradores de uma regiao ou todo grupo social tem o mesmo comportamento"
+        },
+        {
+          "id": "sid_084",
+          "type": "placeholder",
+          "detail": "enunciado: Ao analisar o caso \"alguem afirma que todos os jovens, todos os moradores de uma regiao ou todo grupo social tem o mesmo"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/fisica/impulso-e-quantidade-de-movimento/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 4,
+      "issues": [
+        {
+          "id": "fisica_impulso_e_quantidade_de_movimento",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Física"
+        },
+        {
+          "id": "fiq_139",
+          "type": "placeholder",
+          "detail": "correta: dizer que equipamentos de proteção anulam a mudança de quantidade de movimento do corpo em todo impacto."
+        },
+        {
+          "id": "fiq_139",
+          "type": "placeholder",
+          "detail": "comentario: Dizer que equipamentos de proteção anulam a mudança de quantidade de movimento do corpo em todo impacto não representa a"
+        },
+        {
+          "id": "fiq_139",
+          "type": "placeholder-option",
+          "detail": "dizer que equipamentos de proteção anulam a mudança de quantidade de movimento do corpo em todo impacto."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/quimica/estequiometria/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 4,
+      "issues": [
+        {
+          "id": "quimica_estequiometria",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Quimica"
+        },
+        {
+          "id": "est_055",
+          "type": "placeholder",
+          "detail": "comentario: a necessidade de coeficientes corretos para usar proporcoes confiaveis e a resposta correta porque erros no balanceament"
+        },
+        {
+          "id": "est_056",
+          "type": "placeholder",
+          "detail": "comentario: a necessidade de coeficientes corretos para usar proporcoes confiaveis e a resposta correta porque erros no balanceament"
+        },
+        {
+          "id": "est_057",
+          "type": "placeholder",
+          "detail": "comentario: a necessidade de coeficientes corretos para usar proporcoes confiaveis e a resposta correta porque erros no balanceament"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/biologia/metabolismo-celular/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 3,
+      "issues": [
+        {
+          "id": "biologia_metabolismo_celular",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Biologia"
+        },
+        {
+          "id": "mc_059",
+          "type": "placeholder-option",
+          "detail": "a celula interrompe todo o metabolismo energetico"
+        },
+        {
+          "id": "mc_138",
+          "type": "placeholder-option",
+          "detail": "a fotossintese consome todo o ATP da respiracao"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/fisica/cinematica-mru-mruv/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 3,
+      "issues": [
+        {
+          "id": "fisica_cinematica_mru_mruv",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Física"
+        },
+        {
+          "id": "fcm_146",
+          "type": "placeholder",
+          "detail": "correta: Todo movimento com velocidade diferente de zero é MRUV."
+        },
+        {
+          "id": "fcm_146",
+          "type": "placeholder-option",
+          "detail": "Todo movimento com velocidade diferente de zero é MRUV."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/fisica/grandezas-fisicas/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 3,
+      "issues": [
+        {
+          "id": "fisica_grandezas_fisicas",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Física"
+        },
+        {
+          "id": "fgf_146",
+          "type": "placeholder",
+          "detail": "correta: Todo gráfico crescente representa proporcionalidade direta entre as grandezas."
+        },
+        {
+          "id": "fgf_146",
+          "type": "placeholder-option",
+          "detail": "Todo gráfico crescente representa proporcionalidade direta entre as grandezas."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/matematica/introducao-a-trigonometria/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 3,
+      "issues": [
+        {
+          "id": "matematica_introducao_a_trigonometria",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Matematica"
+        },
+        {
+          "id": "trig_022",
+          "type": "placeholder",
+          "detail": "enunciado: Todo triangulo retangulo possui quantos angulos agudos?"
+        },
+        {
+          "id": "trig_125",
+          "type": "placeholder",
+          "detail": "enunciado: Qual par de valores esta todo correto?"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/matematica/notacao-cientifica/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 3,
+      "issues": [
+        {
+          "id": "matematica_notacao_cientifica",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Matemática"
+        },
+        {
+          "id": "nc_140",
+          "type": "placeholder",
+          "detail": "comentario: Todo número elevado a zero vale 1."
+        },
+        {
+          "id": "nc_200",
+          "type": "placeholder",
+          "detail": "comentario: Todo número não nulo elevado a zero vale 1."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/matematica/porcentagem/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 3,
+      "issues": [
+        {
+          "id": "matematica_porcentagem",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Matemática"
+        },
+        {
+          "id": "pc_006",
+          "type": "placeholder",
+          "detail": "correta: todo o valor"
+        },
+        {
+          "id": "pc_006",
+          "type": "placeholder-option",
+          "detail": "todo o valor"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/fisica/dinamica-leis-de-newton/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 3,
+      "issues": [
+        {
+          "id": "fisica_dinamica_leis_de_newton",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Física"
+        },
+        {
+          "id": "fdn_056",
+          "type": "placeholder",
+          "detail": "correta: Todo diagrama de forças deve incluir pares de ação e reação no mesmo corpo."
+        },
+        {
+          "id": "fdn_056",
+          "type": "placeholder-option",
+          "detail": "Todo diagrama de forças deve incluir pares de ação e reação no mesmo corpo."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/ingles/reading-e-interpretacao/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 3,
+      "issues": [
+        {
+          "id": "ingles_reading_e_interpretacao",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Ingles"
+        },
+        {
+          "id": "i2r_052",
+          "type": "placeholder",
+          "detail": "enunciado: Um estudante afirma: \"todo it se refere automaticamente ao ultimo substantivo da frase\". A avaliacao mais adequada e:"
+        },
+        {
+          "id": "i2r_092",
+          "type": "placeholder",
+          "detail": "enunciado: Um estudante afirma: \"todo texto informativo tem o mesmo publico-alvo, independentemente da linguagem\". A avaliacao mais"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/portugues/literatura-realismo-naturalismo-modernismo/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 3,
+      "issues": [
+        {
+          "id": "lrn_039",
+          "type": "odd-ending",
+          "detail": "Quando um texto apresenta personagens dominados por impulsos instintivos, evidencia-se a influencia do"
+        },
+        {
+          "id": "lrn_049",
+          "type": "odd-ending",
+          "detail": "Quando o comportamento humano e explicado por fatores biologicos, o texto se aproxima do"
+        },
+        {
+          "id": "lrn_067",
+          "type": "odd-ending",
+          "detail": "Quando um texto sugere que o meio influencia o comportamento humano, está implícita a ideia de"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/biologia/membrana-plasmatica/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 2,
+      "issues": [
+        {
+          "id": "biologia_membrana_plasmatica",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Biologia"
+        },
+        {
+          "id": "mp_070",
+          "type": "placeholder-option",
+          "detail": "produz todo o ATP da célula"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/biologia/organelas-celulares/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 2,
+      "issues": [
+        {
+          "id": "biologia_organelas_celulares",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Biologia"
+        },
+        {
+          "id": "oc_052",
+          "type": "placeholder-option",
+          "detail": "apenas uma estrutura responsável por todo o metabolismo"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/geografia/clima-e-relevo/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 2,
+      "issues": [
+        {
+          "id": "geografia_clima_e_relevo",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Geografia"
+        },
+        {
+          "id": "clr_139",
+          "type": "placeholder-option",
+          "detail": "definir sozinho todo o clima do planeta"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/matematica/razoes-e-proporcoes/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 2,
+      "issues": [
+        {
+          "id": "matematica_razoes_proporcoes",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Matemática"
+        },
+        {
+          "id": "rp_085",
+          "type": "placeholder",
+          "detail": "enunciado: Qual razão representa a menor parte do todo?"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/portugues/literatura-trovadorismo-humanismo-classicismo/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 2,
+      "issues": [
+        {
+          "id": "lthc_007",
+          "type": "placeholder-option",
+          "detail": "Valorizacao do método experimental e da objetividade cientifica"
+        },
+        {
+          "id": "lthc_115",
+          "type": "placeholder-option",
+          "detail": "ruptura absoluta e imediata com todo passado"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/geografia/industrializacao/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 2,
+      "issues": [
+        {
+          "id": "geografia_industrializacao",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Geografia"
+        },
+        {
+          "id": "in_192",
+          "type": "placeholder",
+          "detail": "enunciado: Nem todo lugar recebe industria; os investimentos escolhem areas com certas vantagens, criando:"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/geografia/brasil-atual/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 2,
+      "issues": [
+        {
+          "id": "geografia_brasil_atual",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Geografia"
+        },
+        {
+          "id": "ba_184",
+          "type": "placeholder",
+          "detail": "enunciado: Infraestruturas, tecnologia e servicos nao avancam com a mesma intensidade em todo o pais, produzindo:"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/matematica/estatistica/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 2,
+      "issues": [
+        {
+          "id": "matematica_estatistica",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Matematica"
+        },
+        {
+          "id": "est_200",
+          "type": "placeholder",
+          "detail": "comentario: Media, mediana e moda nao descrevem sozinhas todo o comportamento de uma distribuicao. A dispersao tambem e essencial."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/portugues/interpretacao-avancada-enem/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 2,
+      "issues": [
+        {
+          "id": "iae_180",
+          "type": "placeholder",
+          "detail": "enunciado: Leia: 'Todo mundo usa, então é certo.' O erro está em:"
+        },
+        {
+          "id": "iae_194",
+          "type": "placeholder-option",
+          "detail": "dominava todo o conteúdo"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/artes/elementos-visuais/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "artes_elementos_visuais",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Artes"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/artes/historia-da-arte-classica/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "artes_historia_da_arte_classica",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Artes"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/artes/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/1-serie/artes/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/biologia/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/1-serie/biologia/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/educacao-fisica/cultura-corporal/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "educacao-fisica_cultura_corporal",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Educacao Fisica"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/educacao-fisica/esportes-basicos/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "educacao-fisica_esportes_basicos",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Educacao Fisica"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/educacao-fisica/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/1-serie/educacao-fisica/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/filosofia/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/1-serie/filosofia/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/filosofia/introducao-a-filosofia/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "filosofia_introducao_a_filosofia",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Filosofia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/filosofia/pre-socraticos/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "filosofia_pre_socraticos",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Filosofia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/filosofia/socrates-platao-aristoteles/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "filosofia_socrates_platao_aristoteles",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Filosofia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/fisica/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/1-serie/fisica/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/fisica/vetores/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "fisica_vetores",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Física"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/geografia/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/1-serie/geografia/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/geografia/populacao/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "geografia_populacao",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Geografia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/historia/antiguidade-egito-grecia-roma/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "historia_antiguidade_egito_grecia_roma",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Historia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/historia/expansao-maritima/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "historia_expansao_maritima",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Historia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/historia/feudalismo/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "historia_feudalismo",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Historia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/historia/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/1-serie/historia/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/1-serie/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/ingles/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/1-serie/ingles/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/matematica/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/1-serie/matematica/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/quimica/estrutura-atomica/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "quimica_estrutura_atomica",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Quimica"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/quimica/funcoes-inorganicas/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "quimica_funcoes_inorganicas",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Quimica"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/quimica/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/1-serie/quimica/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/quimica/ligacoes-quimicas/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "quimica_ligacoes_quimicas",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Quimica"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/quimica/tabela-periodica/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "quimica_tabela_periodica",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Quimica"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/sociologia/cultura-e-sociedade/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "sociologia_cultura_e_sociedade",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Sociologia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/sociologia/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/1-serie/sociologia/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/sociologia/socializacao/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "sociologia_socializacao",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Sociologia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/artes/arte-moderna/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "artes_arte_moderna",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Artes"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/artes/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/2-serie/artes/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/artes/movimentos-artisticos/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "artes_movimentos_artisticos",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Artes"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/biologia/biotecnologia/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "biologia_biotecnologia",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Biologia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/biologia/evolucao/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "biologia_evolucao",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Biologia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/biologia/genetica/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "biologia_genetica",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Biologia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/biologia/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/2-serie/biologia/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/biologia/leis-de-mendel/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "biologia_leis_de_mendel",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Biologia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/educacao-fisica/esportes-coletivos/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "educacao-fisica_esportes_coletivos",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Educacao Fisica"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/educacao-fisica/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/2-serie/educacao-fisica/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/educacao-fisica/saude-e-corpo/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "educacao-fisica_saude_e_corpo",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Educacao Fisica"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/filosofia/filosofia-moderna-descartes-locke-rousseau/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "filosofia_filosofia_moderna_descartes_locke_rousseau",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Filosofia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/filosofia/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/2-serie/filosofia/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/fisica/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/2-serie/fisica/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/fisica/trabalho-e-energia/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "fisica_trabalho_e_energia",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Física"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/geografia/globalizacao/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "geografia_globalizacao",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Geografia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/geografia/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/2-serie/geografia/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/geografia/urbanizacao/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "geografia_urbanizacao",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Geografia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/historia/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/2-serie/historia/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/historia/periodo-imperial/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "historia_periodo_imperial",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Historia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/historia/revolucoes-industrial-e-francesa/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "historia_revolucoes_industrial_e_francesa",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Historia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/2-serie/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/ingles/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/2-serie/ingles/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/ingles/vocabulario-intermediario/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "ingles_vocabulario_intermediario",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Ingles"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/matematica/funcoes-exponenciais/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "matematica_funcoes_exponenciais",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Matematica"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/matematica/geometria-espacial/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "matematica_geometria_espacial",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Matematica"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/matematica/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/2-serie/matematica/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/matematica/trigonometria-completa/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "matematica_trigonometria_completa",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Matematica"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/quimica/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/2-serie/quimica/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/quimica/reacoes-quimicas/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "quimica_reacoes_quimicas",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Quimica"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/quimica/solucoes/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "quimica_solucoes",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Quimica"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/quimica/termoquimica/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "quimica_termoquimica",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Quimica"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/sociologia/classes-sociais/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "sociologia_classes_sociais",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Sociologia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/sociologia/estrutura-social/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "sociologia_estrutura_social",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Sociologia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/sociologia/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/2-serie/sociologia/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/2-serie/sociologia/trabalho/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "sociologia_trabalho",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Sociologia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/artes/arte-contemporanea/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "artes_arte_contemporanea",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Artes"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/artes/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/3-serie/artes/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/biologia/ciclos-biogeoquimicos/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "biologia_ciclos_biogeoquimicos",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Biologia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/biologia/ecologia/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "biologia_ecologia",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Biologia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/biologia/impactos-ambientais/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "biologia_impactos_ambientais",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Biologia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/biologia/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/3-serie/biologia/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/biologia/revisao-geral/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "biologia_revisao_geral",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Biologia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/educacao-fisica/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/3-serie/educacao-fisica/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/educacao-fisica/qualidade-de-vida/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "educacao-fisica_qualidade_de_vida",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Educacao Fisica"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/filosofia/etica/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "filosofia_etica",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Filosofia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/filosofia/existencialismo/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "filosofia_existencialismo",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Filosofia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/filosofia/filosofia-contemporanea/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "filosofia_filosofia_contemporanea",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Filosofia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/filosofia/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/3-serie/filosofia/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/fisica/eletrodinamica/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "fisica_eletrodinamica",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Física"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/fisica/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/3-serie/fisica/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/fisica/magnetismo/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "fisica_magnetismo",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Física"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/geografia/energia/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "geografia_energia",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Geografia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/geografia/geopolitica/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "geografia_geopolitica",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Geografia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/geografia/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/3-serie/geografia/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/geografia/meio-ambiente/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "geografia_meio_ambiente",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Geografia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/historia/ditadura-militar/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "historia_ditadura_militar",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Historia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/historia/historia-contemporanea/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "historia_historia_contemporanea",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Historia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/historia/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/3-serie/historia/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/historia/republica-no-brasil/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "historia_republica_no_brasil",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Historia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/3-serie/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/ingles/grammar-and-language-use/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "ingles_grammar_and_language_use",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Ingles"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/ingles/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/3-serie/ingles/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/matematica/analise-combinatoria/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "matematica_analise_combinatoria",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Matemática"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/matematica/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/3-serie/matematica/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/quimica/funcoes-organicas/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "quimica_funcoes_organicas",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Quimica"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/quimica/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/3-serie/quimica/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/quimica/polimeros/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "quimica_polimeros",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Quimica"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/quimica/quimica-organica/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "quimica_quimica_organica",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Quimica"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/sociologia/cidadania/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "sociologia_cidadania",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Sociologia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/sociologia/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/3-serie/sociologia/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/sociologia/movimentos-sociais/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "sociologia_movimentos_sociais",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Sociologia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/3-serie/sociologia/politica/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "sociologia_politica",
+          "type": "topic-materia",
+          "detail": "Materia inesperada: Sociologia"
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 1,
+      "issues": [
+        {
+          "id": "questions/banks/index.js",
+          "type": "no-topic-export",
+          "detail": "Nenhum export com questoes encontrado."
+        }
+      ]
+    },
+    {
+      "file": "questions/banks/1-serie/portugues/figuras-de-linguagem/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/portugues/gramatica-classes-de-palavras/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/portugues/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/portugues/interpretacao-de-texto/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/portugues/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/portugues/interpretacao-avancada/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/portugues/literatura-barroco-arcadismo-romantismo/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/portugues/sintaxe-periodo-simples-e-composto/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/portugues/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    }
+  ]
+}

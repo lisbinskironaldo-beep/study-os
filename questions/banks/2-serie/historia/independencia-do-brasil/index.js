@@ -7,7 +7,7 @@ const blocos = [
     tags: ["independencia-do-brasil", "crise-colonial"],
     fatos: [
       {
-        lead: "o desgaste da relacao entre colonia e metropole no fim do periodo colonial",
+        lead: "o desgaste da relação entre colonia e metropole no fim do período colonial",
         answer: "a crise do sistema colonial",
         why: "as estruturas coloniais passaram a ser contestadas por diferentes grupos"
       },
@@ -17,19 +17,19 @@ const blocos = [
         why: "o pacto colonial limitava interesses economicos locais"
       },
       {
-        lead: "a influencia das revolucoes americana e francesa sobre colonias ibericas",
-        answer: "a circulacao de ideias de emancipacao politica",
+        lead: "a influencia das revoluções americana e francesa sobre colonias ibericas",
+        answer: "a circulação de ideias de emancipacao política",
         why: "esses exemplos estimularam debates sobre autonomia e ruptura"
       },
       {
-        lead: "o questionamento do exclusivismo comercial portugues",
+        lead: "o questionamento do exclusivismo comercial português",
         answer: "uma critica central ao antigo sistema colonial",
-        why: "setores coloniais queriam maior liberdade economica"
+        why: "setores coloniais queriam maior liberdade econômica"
       },
       {
         lead: "o crescimento de interesses locais na administracao e na economia",
-        answer: "a formacao de elites com projeto autonomista",
-        why: "esses grupos desejavam ampliar seu poder politico"
+        answer: "a formação de elites com projeto autonomista",
+        why: "esses grupos desejavam ampliar seu poder político"
       }
     ]
   },
@@ -41,7 +41,7 @@ const blocos = [
       {
         lead: "a vinda da familia real portuguesa para o Rio de Janeiro em 1808",
         answer: "a transferencia da corte",
-        why: "ela alterou profundamente a condicao politica do Brasil"
+        why: "ela alterou profundamente a condicao política do Brasil"
       },
       {
         lead: "o ato que encerrou o monopolio comercial de Portugal sobre o Brasil",
@@ -50,7 +50,7 @@ const blocos = [
       },
       {
         lead: "a elevacao do Brasil a Reino Unido a Portugal e Algarves",
-        answer: "um passo de valorizacao politica da colonia",
+        answer: "um passo de valorizacao política da colonia",
         why: "o territorio deixou de ocupar posicao formalmente subalterna"
       },
       {
@@ -60,25 +60,25 @@ const blocos = [
       },
       {
         lead: "o fortalecimento economico do Rio de Janeiro com a corte",
-        answer: "uma mudanca importante no centro politico do imperio portugues",
-        why: "a capital americana ganhou protagonismo nas decisoes da monarquia"
+        answer: "uma mudanca importante no centro político do império português",
+        why: "a capital americana ganhou protagonismo nas decisões da monarquia"
       }
     ]
   },
   {
-    subtopico: "Revolucao do Porto e tensoes luso-brasileiras",
+    subtopico: "Revolução do Porto e tensoes luso-brasileiras",
     habilidade: "identificar-fatores-da-crise-do-sistema-colonial-e-da-independencia",
     tags: ["independencia-do-brasil", "revolucao-do-porto"],
     fatos: [
       {
         lead: "o movimento liberal ocorrido em Portugal em 1820",
-        answer: "a Revolucao do Porto",
-        why: "ela exigiu reformas politicas e o retorno da corte"
+        answer: "a Revolução do Porto",
+        why: "ela exigiu reformas políticas é o retorno da corte"
       },
       {
         lead: "a tentativa das Cortes de recolonizar o Brasil",
         answer: "um fator de agravamento das tensoes",
-        why: "as medidas ameacavam ganhos politicos e economicos obtidos desde 1808"
+        why: "as medidas ameacavam ganhos políticos e economicos obtidos desde 1808"
       },
       {
         lead: "a ordem para que D. Pedro retornasse a Portugal",
@@ -93,22 +93,22 @@ const blocos = [
       {
         lead: "o conflito entre projeto centralizador das Cortes e interesses locais brasileiros",
         answer: "a polarizacao luso-brasileira",
-        why: "ela acelerou o caminho para a separacao politica"
+        why: "ela acelerou o caminho para a separacao política"
       }
     ]
   },
   {
-    subtopico: "Projetos politicos de emancipacao",
+    subtopico: "Projetos políticos de emancipacao",
     habilidade: "analisar-o-papel-da-corte-portuguesa-e-das-elites-no-processo-de-emancipacao",
     tags: ["independencia-do-brasil", "projetos-politicos"],
     fatos: [
       {
         lead: "a proposta de manter a unidade territorial sob uma monarquia centralizada",
         answer: "o projeto conservador de independencia",
-        why: "ele buscava autonomia sem revolucao social profunda"
+        why: "ele buscava autonomia sem revolução social profunda"
       },
       {
-        lead: "a defesa de maior participacao politica e limites ao poder do governante",
+        lead: "a defesa de maior participacao política e limites ao poder do governante",
         answer: "o liberalismo constitucional",
         why: "muitos grupos desejavam independencia com ordenamento constitucional"
       },
@@ -120,7 +120,7 @@ const blocos = [
       {
         lead: "a influencia de Jose Bonifacio no processo de 1822",
         answer: "a articulacao de uma independencia liderada pelas elites",
-        why: "ele defendeu unidade politica sob D. Pedro"
+        why: "ele defendeu unidade política sob D. Pedro"
       },
       {
         lead: "a ausencia de ruptura radical com a ordem social",
@@ -130,32 +130,32 @@ const blocos = [
     ]
   },
   {
-    subtopico: "Processo de 1822 e ruptura politica",
+    subtopico: "Processo de 1822 e ruptura política",
     habilidade: "avaliar-o-significado-politico-da-independencia-na-formacao-do-estado-brasileiro",
     tags: ["independencia-do-brasil", "1822"],
     fatos: [
       {
         lead: "o episodio simbolico ocorrido as margens do Ipiranga",
         answer: "a proclamacao da independencia em 1822",
-        why: "ele representa a ruptura politica formal com Portugal"
+        why: "ele representa a ruptura política formal com Portugal"
       },
       {
         lead: "a declaracao liderada por D. Pedro em setembro de 1822",
-        answer: "um ato de separacao politica",
+        answer: "um ato de separacao política",
         why: "o Brasil passou a se afirmar como Estado independente"
       },
       {
-        lead: "a manutencao da monarquia apos a independencia",
+        lead: "a manutencao da monarquia após a independencia",
         answer: "uma peculiaridade do caso brasileiro",
         why: "diferentemente de muitos vizinhos, a emancipacao preservou a forma monarquica"
       },
       {
-        lead: "a continuidade de estruturas administrativas e sociais apos 1822",
+        lead: "a continuidade de estruturas administrativas e sociais após 1822",
         answer: "um sinal de independencia conservadora",
-        why: "houve mudanca politica sem ampla transformacao social"
+        why: "houve mudanca política sem ampla transformação social"
       },
       {
-        lead: "a lideranca do herdeiro portugues no processo emancipador",
+        lead: "a liderança do herdeiro português no processo emancipador",
         answer: "uma estrategia de continuidade dinastica",
         why: "ela ajudou elites a evitar rupturas mais profundas"
       }
@@ -179,10 +179,10 @@ const blocos = [
       {
         lead: "a participacao de setores populares e de mulheres nas lutas regionais",
         answer: "um aspecto frequentemente invisibilizado do processo",
-        why: "a independencia nao foi obra exclusiva de elites"
+        why: "a independencia não foi obra exclusiva de elites"
       },
       {
-        lead: "a resistencia de grupos ligados a administracao portuguesa",
+        lead: "a resistência de grupos ligados a administracao portuguesa",
         answer: "um obstaculo a consolidacao do novo Estado",
         why: "esses setores defendiam a manutencao da uniao com Lisboa"
       },
@@ -199,19 +199,19 @@ const blocos = [
     tags: ["independencia-do-brasil", "escravidao"],
     fatos: [
       {
-        lead: "a manutencao do trabalho escravizado apos 1822",
+        lead: "a manutencao do trabalho escravizado após 1822",
         answer: "uma grande permanencia da independencia",
-        why: "o novo Estado nao rompeu com a base social escravista"
+        why: "o novo Estado não rompeu com a base social escravista"
       },
       {
         lead: "o protagonismo de proprietarios e grupos economicamente dominantes",
         answer: "a conducao elitista da emancipacao",
-        why: "as elites buscaram autonomia politica sem revolucao social"
+        why: "as elites buscaram autonomia política sem revolução social"
       },
       {
-        lead: "a ausencia de cidadania ampla para a maioria da populacao",
+        lead: "a ausencia de cidadania ampla para a maioria da população",
         answer: "um limite da independencia brasileira",
-        why: "direitos politicos permaneceram restritos"
+        why: "direitos políticos permaneceram restritos"
       },
       {
         lead: "a defesa da ordem social e da propriedade escravista pelos lideres de 1822",
@@ -219,8 +219,8 @@ const blocos = [
         why: "a independencia protegeu interesses agrarios e escravistas"
       },
       {
-        lead: "a continuacao do trafico de africanos apos a independencia",
-        answer: "uma evidencia de continuidade economica",
+        lead: "a continuacao do trafico de africanos após a independencia",
+        answer: "uma evidencia de continuidade econômica",
         why: "o sistema escravista seguiu central para a economia"
       }
     ]
@@ -232,28 +232,28 @@ const blocos = [
     fatos: [
       {
         lead: "a mediacao britanica nas negociacoes entre Brasil e Portugal",
-        answer: "um elemento da dependencia externa do novo Estado",
+        answer: "um elemento da dependência externa do novo Estado",
         why: "a Inglaterra teve peso diplomatico e economico no processo"
       },
       {
         lead: "o pagamento de indenizacao a Portugal pelo reconhecimento da independencia",
         answer: "uma exigencia negociada para legitimar a separacao",
-        why: "o acordo reforcou a dependencia financeira brasileira"
+        why: "o acordo reforcou a dependência financeira brasileira"
       },
       {
         lead: "a concessao de vantagens comerciais aos ingleses",
         answer: "um sinal da influencia britanica no Brasil independente",
-        why: "tratados mantiveram condicoes favoraveis ao comercio ingles"
+        why: "tratados mantiveram condições favoraveis ao comercio inglês"
       },
       {
         lead: "a necessidade de obter reconhecimento das grandes potencias",
-        answer: "um desafio diplomatico do novo imperio",
+        answer: "um desafio diplomatico do novo império",
         why: "a legitimacao internacional era importante para sua estabilidade"
       },
       {
-        lead: "a permanencia de vinculos economicos externos apos 1822",
+        lead: "a permanencia de vinculos economicos externos após 1822",
         answer: "uma limitacao da autonomia nacional",
-        why: "a independencia politica nao significou plena independencia economica"
+        why: "a independencia política não significou plena independencia econômica"
       }
     ]
   },
@@ -263,14 +263,14 @@ const blocos = [
     tags: ["independencia-do-brasil", "primeiro-reinado"],
     fatos: [
       {
-        lead: "a Carta que organizou politicamente o Imperio do Brasil",
+        lead: "a Carta que organizou politicamente o Império do Brasil",
         answer: "a Constituicao de 1824",
         why: "ela estruturou o novo Estado independente"
       },
       {
         lead: "o mecanismo que colocava o imperador acima dos demais poderes",
         answer: "o Poder Moderador",
-        why: "ele ampliava a autoridade politica de D. Pedro I"
+        why: "ele ampliava a autoridade política de D. Pedro I"
       },
       {
         lead: "a dissolucao da Assembleia Constituinte em 1823",
@@ -284,7 +284,7 @@ const blocos = [
       },
       {
         lead: "o voto censitario previsto na Constituicao imperial",
-        answer: "um limite da participacao politica",
+        answer: "um limite da participacao política",
         why: "somente determinados grupos podiam exercer direitos eleitorais"
       }
     ]
@@ -295,18 +295,18 @@ const blocos = [
     tags: ["independencia-do-brasil", "significados"],
     fatos: [
       {
-        lead: "a separacao politica sem abolicao da escravidao e sem reforma social ampla",
+        lead: "a separacao política sem abolicao da escravidao e sem reforma social ampla",
         answer: "uma independencia conservadora",
         why: "a ruptura ocorreu com fortes continuidades estruturais"
       },
       {
-        lead: "a preservacao da unidade territorial brasileira apos 1822",
+        lead: "a preservacao da unidade territorial brasileira após 1822",
         answer: "um resultado importante da independencia",
         why: "o novo Estado manteve grande parte do antigo territorio colonial"
       },
       {
-        lead: "a mudanca de colonia para imperio soberano",
-        answer: "o principal significado politico de 1822",
+        lead: "a mudanca de colonia para império soberano",
+        answer: "o principal significado político de 1822",
         why: "o Brasil conquistou autonomia formal diante de Portugal"
       },
       {
@@ -315,9 +315,9 @@ const blocos = [
         why: "as estruturas de poder interno pouco se alteraram"
       },
       {
-        lead: "a avaliacao historica do processo de independencia brasileira",
+        lead: "a avaliação historica do processo de independencia brasileira",
         answer: "uma combinacao de ruptura e continuidade",
-        why: "houve autonomia politica, mas nao transformacao social profunda"
+        why: "houve autonomia política, mas não transformação social profunda"
       }
     ]
   }
@@ -326,34 +326,34 @@ const blocos = [
 const questoes = buildPlannedQuestions({
   prefix: "idb",
   serie: [2],
-  materia: "Historia",
+  materia: "História",
   topico: "Independencia do Brasil",
   blocos
 });
 
 export const independenciaDoBrasil = {
   id: "historia_independencia_do_brasil",
-  materia: "Historia",
+  materia: "História",
   serie: [2],
   topico: "Independencia do Brasil",
   metadados: {
     disciplinaId: "historia",
     base: "ESCOLAR",
-    eixo: "Historia",
-    frente: "Formacao do Estado nacional brasileiro",
+    eixo: "História",
+    frente: "Formação do Estado nacional brasileiro",
     searchAliases: [
       "independencia do brasil",
       "1822",
       "primeiro reinado",
       "corte portuguesa",
-      "emancipacao politica"
+      "emancipacao política"
     ],
     subtopicosBase: [
       "Crise do sistema colonial",
       "Transferencia da corte e abertura dos portos",
-      "Revolucao do Porto e tensoes luso-brasileiras",
-      "Projetos politicos de emancipacao",
-      "Processo de 1822 e ruptura politica",
+      "Revolução do Porto e tensoes luso-brasileiras",
+      "Projetos políticos de emancipacao",
+      "Processo de 1822 e ruptura política",
       "Participacao popular e resistencias regionais",
       "Elites, escravidao e independencia",
       "Reconhecimento internacional e dependencias",
@@ -363,8 +363,8 @@ export const independenciaDoBrasil = {
     habilidadesBase: [
       "identificar fatores da crise do sistema colonial e da independencia",
       "analisar o papel da corte portuguesa e das elites no processo de emancipacao",
-      "relacionar a independencia a conflitos regionais, escravidao e dependencia externa",
-      "avaliar o significado politico da independencia na formacao do Estado brasileiro",
+      "relacionar a independencia a conflitos regionais, escravidao e dependência externa",
+      "avaliar o significado político da independencia na formação do Estado brasileiro",
       "sintetizar permanencias e rupturas do processo de 1822"
     ],
     planejamentoQuestoes: {

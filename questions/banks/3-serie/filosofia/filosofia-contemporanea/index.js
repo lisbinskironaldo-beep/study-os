@@ -19,7 +19,7 @@ const blocos = [
       },
       {
         lead: "a crise de fundamentos no pensamento contemporaneo",
-        answer: "a desconfianca diante de certezas absolutas sobre sujeito, historia e verdade",
+        answer: "a desconfianca diante de certezas absolutas sobre sujeito, história e verdade",
         why: "muitas correntes passam a revisar bases da filosofia moderna"
       },
       {
@@ -29,30 +29,30 @@ const blocos = [
       },
       {
         lead: "o impacto das transformacoes sociais modernas",
-        answer: "a influencia de capitalismo, tecnica e politica de massas sobre a reflexao filosofica",
+        answer: "a influência de capitalismo, técnica e política de massas sobre a reflexão filosófica",
         why: "esses processos alteram temas e urgencias do pensamento"
       },
       {
-        lead: "a critica filosofica do presente",
+        lead: "a crítica filosófica do presente",
         answer: "a tentativa de compreender formas atuais de poder, subjetividade e vida social",
-        why: "a filosofia contemporanea interroga o proprio tempo"
+        why: "a filosofia contemporanea interroga o próprio tempo"
       }
     ]
   },
   {
-    subtopico: "Marx e a critica da sociedade",
+    subtopico: "Marx é a crítica da sociedade",
     habilidade:
-      "identificar conceitos de critica social presentes na filosofia contemporanea",
-    tags: ["marx", "critica social", "trabalho"],
+      "identificar conceitos de crítica social presentes na filosofia contemporanea",
+    tags: ["marx", "crítica social", "trabalho"],
     fatos: [
       {
-        lead: "a critica marxiana do capitalismo",
-        answer: "a analise das desigualdades e exploracoes produzidas pela sociedade capitalista",
+        lead: "a crítica marxiana do capitalismo",
+        answer: "a análise das desigualdades e explorações produzidas pela sociedade capitalista",
         why: "Marx liga economia, classes e alienacao"
       },
       {
         lead: "a alienacao em Marx",
-        answer: "a separacao do trabalhador em relacao ao produto, ao processo e a si mesmo",
+        answer: "a separacao do trabalhador em relação ao produto, ao processo é a si mesmo",
         why: "o trabalho deixa de ser realizacao humana e vira imposicao externa"
       },
       {
@@ -62,35 +62,35 @@ const blocos = [
       },
       {
         lead: "a ideologia em Marx",
-        answer: "o conjunto de ideias que oculta e legitima relacoes de dominacao",
-        why: "ela faz parecer natural o que e historicamente construido"
+        answer: "o conjunto de ideias que oculta e legitima relações de dominacao",
+        why: "ela faz parecer natural o que é historicamente construido"
       },
       {
         lead: "o materialismo historico",
-        answer: "a interpretacao da historia a partir das condicoes materiais e das relacoes de producao",
+        answer: "a interpretação da história a partir das condicoes materiais e das relações de produção",
         why: "ela destaca o papel da economia na vida social"
       }
     ]
   },
   {
-    subtopico: "Nietzsche e a genealogia",
+    subtopico: "Nietzsche é a genealogia",
     habilidade:
-      "identificar conceitos de critica social presentes na filosofia contemporanea",
+      "identificar conceitos de crítica social presentes na filosofia contemporanea",
     tags: ["nietzsche", "genealogia", "moral"],
     fatos: [
       {
         lead: "a genealogia em Nietzsche",
         answer: "o metodo de investigar a origem historica dos valores e conceitos",
-        why: "ele busca mostrar que valores nao sao eternos nem neutros"
+        why: "ele busca mostrar que valores não são eternos nem neutros"
       },
       {
-        lead: "a critica nietzschiana a moral tradicional",
+        lead: "a crítica nietzschiana a moral tradicional",
         answer: "a denuncia de valores que enfraquecem a afirmacao da vida",
         why: "Nietzsche questiona fundamentos da moral dominante"
       },
       {
         lead: "o niilismo",
-        answer: "a experiencia de perda ou esvaziamento de valores supremos",
+        answer: "a experiência de perda ou esvaziamento de valores supremos",
         why: "ela marca a crise cultural do Ocidente segundo Nietzsche"
       },
       {
@@ -108,40 +108,40 @@ const blocos = [
   {
     subtopico: "Fenomenologia",
     habilidade:
-      "compreender correntes contemporaneas voltadas a experiencia, linguagem e subjetividade",
+      "compreender correntes contemporaneas voltadas a experiência, linguagem e subjetividade",
     tags: ["fenomenologia", "experiencia", "consciencia"],
     fatos: [
       {
         lead: "a fenomenologia",
-        answer: "a corrente que descreve a experiencia tal como ela aparece a consciencia",
-        why: "ela busca voltar aos fenomenos antes de explicacoes precipitadas"
+        answer: "a corrente que descreve a experiência tal como ela aparece a consciência",
+        why: "ela busca voltar aos fenômenos antes de explicações precipitadas"
       },
       {
-        lead: "a intencionalidade da consciencia",
-        answer: "a ideia de que toda consciencia e consciencia de algo",
-        why: "a experiencia esta sempre orientada para um objeto"
+        lead: "a intencionalidade da consciência",
+        answer: "a ideia de que toda consciência e consciência de algo",
+        why: "a experiência esta sempre orientada para um objeto"
       },
       {
         lead: "a descricao fenomenologica",
-        answer: "o metodo de analisar como algo se manifesta a experiencia",
+        answer: "o metodo de analisar como algo se manifesta a experiência",
         why: "ela privilegia descricao rigorosa do vivido"
       },
       {
         lead: "o fenomeno",
-        answer: "aquilo que se mostra a consciencia na experiencia",
+        answer: "aquilo que se mostra a consciência na experiência",
         why: "a fenomenologia parte do aparecer das coisas"
       },
       {
         lead: "a suspensao de juizos na fenomenologia",
-        answer: "o cuidado de nao pressupor explicacoes prontas sobre a realidade",
-        why: "isso ajuda a examinar a experiencia de modo mais atento"
+        answer: "o cuidado de não pressupor explicações prontas sobre a realidade",
+        why: "isso ajuda a examinar a experiência de modo mais atento"
       }
     ]
   },
   {
     subtopico: "Filosofia da linguagem",
     habilidade:
-      "compreender correntes contemporaneas voltadas a experiencia, linguagem e subjetividade",
+      "compreender correntes contemporaneas voltadas a experiência, linguagem e subjetividade",
     tags: ["linguagem", "significado", "filosofia analitica"],
     fatos: [
       {
@@ -152,15 +152,15 @@ const blocos = [
       {
         lead: "o significado linguistico",
         answer: "o modo como palavras e enunciados produzem sentido em contextos de uso",
-        why: "na filosofia contemporanea, linguagem nao e mero espelho transparente do mundo"
+        why: "na filosofia contemporanea, linguagem não é mero espelho transparente do mundo"
       },
       {
         lead: "o uso da linguagem",
-        answer: "a pratica concreta em que expressoes ganham funcao e sentido",
-        why: "o contexto de uso pode alterar interpretacao"
+        answer: "a prática concreta em que expressoes ganham função e sentido",
+        why: "o contexto de uso pode alterar interpretação"
       },
       {
-        lead: "a analise conceitual",
+        lead: "a análise conceitual",
         answer: "o exame cuidadoso dos termos empregados em argumentos e teorias",
         why: "ela evita ambiguidades e confusoes conceituais"
       },
@@ -174,64 +174,64 @@ const blocos = [
   {
     subtopico: "Escola de Frankfurt",
     habilidade:
-      "identificar conceitos de critica social presentes na filosofia contemporanea",
-    tags: ["frankfurt", "teoria critica", "industria cultural"],
+      "identificar conceitos de crítica social presentes na filosofia contemporanea",
+    tags: ["frankfurt", "teoria crítica", "industria cultural"],
     fatos: [
       {
         lead: "a Escola de Frankfurt",
-        answer: "o grupo de pensadores que desenvolveu a teoria critica da sociedade moderna",
+        answer: "o grupo de pensadores que desenvolveu a teoria crítica da sociedade moderna",
         why: "eles investigaram dominacao, cultura e racionalidade instrumental"
       },
       {
-        lead: "a teoria critica",
+        lead: "a teoria crítica",
         answer: "a abordagem que analisa sociedade para revelar formas de dominacao e possibilidades de emancipacao",
-        why: "ela une filosofia e critica social"
+        why: "ela une filosofia e crítica social"
       },
       {
         lead: "a industria cultural",
-        answer: "a producao massificada de cultura como mercadoria e instrumento de conformismo",
+        answer: "a produção massificada de cultura como mercadoria e instrumento de conformismo",
         why: "o conceito foi usado para criticar padronizacao cultural"
       },
       {
         lead: "a racionalidade instrumental",
-        answer: "o uso da razao apenas como calculo de eficiencia e controle",
-        why: "a Escola de Frankfurt critica a reducao da razao a utilidade tecnica"
+        answer: "o uso da razão apenas como calculo de eficiencia e controle",
+        why: "a Escola de Frankfurt crítica a reducao da razão a utilidade técnica"
       },
       {
-        lead: "a emancipacao na teoria critica",
+        lead: "a emancipacao na teoria crítica",
         answer: "a superacao de formas de alienacao e dominacao social",
-        why: "a critica busca transformar e nao apenas descrever o mundo"
+        why: "a crítica busca transformar e não apenas descrever o mundo"
       }
     ]
   },
   {
     subtopico: "Estruturalismo e pos-estruturalismo",
     habilidade:
-      "compreender correntes contemporaneas voltadas a experiencia, linguagem e subjetividade",
+      "compreender correntes contemporaneas voltadas a experiência, linguagem e subjetividade",
     tags: ["estruturalismo", "pos-estruturalismo", "estrutura"],
     fatos: [
       {
         lead: "o estruturalismo",
-        answer: "a perspectiva que busca compreender fenomenos a partir de estruturas subjacentes",
-        why: "ela privilegia relacoes e sistemas mais do que elementos isolados"
+        answer: "a perspectiva que busca compreender fenômenos a partir de estruturas subjacentes",
+        why: "ela privilegia relações e sistemas mais do que elementos isolados"
       },
       {
         lead: "a estrutura",
-        answer: "o conjunto organizado de relacoes que produz sentido em um sistema",
-        why: "esse conceito e central para o estruturalismo"
+        answer: "o conjunto organizado de relações que produz sentido em um sistema",
+        why: "esse conceito é central para o estruturalismo"
       },
       {
         lead: "o pos-estruturalismo",
-        answer: "a tendencia que critica fixidez de estruturas e enfatiza diferenca e historicidade",
+        answer: "a tendencia que crítica fixidez de estruturas e enfatiza diferenca e historicidade",
         why: "ela desestabiliza totalidades fechadas"
       },
       {
         lead: "a instabilidade do sentido",
-        answer: "a tese de que significados nao sao totalmente fixos e imutaveis",
+        answer: "a tese de que significados não são totalmente fixos e imutaveis",
         why: "ela aparece em diversas leituras pos-estruturalistas"
       },
       {
-        lead: "a critica a essencias fixas",
+        lead: "a crítica a essencias fixas",
         answer: "a recusa de identidades totalmente estaveis e universais",
         why: "o pensamento contemporaneo problematiza naturalizacoes"
       }
@@ -240,50 +240,50 @@ const blocos = [
   {
     subtopico: "Poder e subjetividade",
     habilidade:
-      "analisar relacoes entre poder, subjetividade e sociedade no pensamento recente",
+      "analisar relações entre poder, subjetividade e sociedade no pensamento recente",
     tags: ["poder", "subjetividade", "controle social"],
     fatos: [
       {
-        lead: "o poder como relacao",
+        lead: "o poder como relação",
         answer: "a ideia de que poder circula em praticas, instituicoes e discursos",
-        why: "ele nao se reduz apenas ao Estado ou a um soberano"
+        why: "ele não se reduz apenas ao Estado ou a um soberano"
       },
       {
         lead: "a subjetividade",
         answer: "o modo como os individuos se constituem e se compreendem",
-        why: "ela e historicamente produzida e nao puramente natural"
+        why: "ela é historicamente produzida e não puramente natural"
       },
       {
         lead: "a disciplina social",
-        answer: "o conjunto de tecnicas que organizam corpos e comportamentos",
+        answer: "o conjunto de técnicas que organizam corpos e comportamentos",
         why: "instituicoes modernas podem moldar condutas de forma difusa"
       },
       {
         lead: "o discurso",
         answer: "a forma socialmente organizada de produzir saber e verdade sobre algo",
-        why: "discursos tambem participam de relacoes de poder"
+        why: "discursos também participam de relações de poder"
       },
       {
-        lead: "a critica contemporanea da normalizacao",
-        answer: "a analise de mecanismos que definem padroes e excluem diferencas",
-        why: "essa critica observa como sociedade produz conformidade"
+        lead: "a crítica contemporanea da normalizacao",
+        answer: "a análise de mecanismos que definem padroes e excluem diferencas",
+        why: "essa crítica observa como sociedade produz conformidade"
       }
     ]
   },
   {
-    subtopico: "Tecnica e sociedade de massas",
+    subtopico: "Técnica e sociedade de massas",
     habilidade:
-      "analisar relacoes entre poder, subjetividade e sociedade no pensamento recente",
+      "analisar relações entre poder, subjetividade e sociedade no pensamento recente",
     tags: ["tecnica", "massas", "tecnologia"],
     fatos: [
       {
-        lead: "a tecnica moderna",
-        answer: "o conjunto de meios e procedimentos que ampliam controle e producao na sociedade",
-        why: "ela influencia trabalho, politica e vida cotidiana"
+        lead: "a técnica moderna",
+        answer: "o conjunto de meios e procedimentos que ampliam controle e produção na sociedade",
+        why: "ela influência trabalho, política e vida cotidiana"
       },
       {
         lead: "a sociedade de massas",
-        answer: "o contexto em que producao, cultura e politica alcancam escala ampliada de populacoes",
+        answer: "o contexto em que produção, cultura e política alcancam escala ampliada de populacoes",
         why: "isso gera novos problemas de manipulacao e participacao"
       },
       {
@@ -292,13 +292,13 @@ const blocos = [
         why: "esse processo pode simplificar experiencias e gostos"
       },
       {
-        lead: "o impacto filosofico da tecnologia",
-        answer: "a necessidade de pensar como tecnicas alteram relacoes humanas e visao de mundo",
-        why: "tecnologia nao e apenas instrumento neutro"
+        lead: "o impacto filosófico da tecnologia",
+        answer: "a necessidade de pensar como técnicas alteram relações humanas e visao de mundo",
+        why: "tecnologia não é apenas instrumento neutro"
       },
       {
-        lead: "a critica da alienacao tecnologica",
-        answer: "a preocupacao com usos da tecnica que reduzem autonomia humana",
+        lead: "a crítica da alienacao tecnologica",
+        answer: "a preocupacao com usos da técnica que reduzem autonomia humana",
         why: "pensadores contemporaneos problematizam dependencia e controle"
       }
     ]
@@ -311,13 +311,13 @@ const blocos = [
     fatos: [
       {
         lead: "o legado da filosofia contemporanea",
-        answer: "a ampliacao da critica sobre poder, linguagem, historia e subjetividade",
+        answer: "a ampliacao da crítica sobre poder, linguagem, história e subjetividade",
         why: "ela diversificou fortemente os temas filosoficos"
       },
       {
-        lead: "a atualidade da critica social",
-        answer: "a permanencia de desigualdades e mecanismos de dominacao como problema filosofico",
-        why: "o presente ainda exige diagnostico e reflexao"
+        lead: "a atualidade da crítica social",
+        answer: "a permanencia de desigualdades e mecanismos de dominacao como problema filosófico",
+        why: "o presente ainda exige diagnostico e reflexão"
       },
       {
         lead: "o desafio da pluralidade",
@@ -325,13 +325,13 @@ const blocos = [
         why: "esse tema ganhou grande peso no pensamento recente"
       },
       {
-        lead: "a reflexao sobre democracia e verdade",
-        answer: "o exame de como sociedades lidam com informacao, poder e decisao coletiva",
+        lead: "a reflexão sobre democracia e verdade",
+        answer: "o exame de como sociedades lidam com informacao, poder e decisão coletiva",
         why: "esses problemas se intensificam no mundo atual"
       },
       {
-        lead: "a funcao critica da filosofia hoje",
-        answer: "interrogar discursos, instituicoes e habitos do presente",
+        lead: "a função crítica da filosofia hoje",
+        answer: "interrogar discursos, instituicoes e hábitos do presente",
         why: "a filosofia continua relevante quando questiona o que parece natural"
       }
     ]
@@ -348,7 +348,7 @@ export const filosofiaContemporanea = {
     base: "ESCOLAR",
     seloEditorial: "VERIFICADA",
     eixo: "Filosofia",
-    frente: "Critica social, linguagem e subjetividade",
+    frente: "Crítica social, linguagem e subjetividade",
     searchAliases: [
       "filosofia contemporanea",
       "marx nietzsche",
@@ -359,9 +359,9 @@ export const filosofiaContemporanea = {
     subtopicosBase: blocos.map((bloco) => bloco.subtopico),
     habilidadesBase: [
       "compreender o contexto historico e intelectual da filosofia contemporanea",
-      "identificar conceitos de critica social presentes na filosofia contemporanea",
-      "compreender correntes contemporaneas voltadas a experiencia, linguagem e subjetividade",
-      "analisar relacoes entre poder, subjetividade e sociedade no pensamento recente",
+      "identificar conceitos de crítica social presentes na filosofia contemporanea",
+      "compreender correntes contemporaneas voltadas a experiência, linguagem e subjetividade",
+      "analisar relações entre poder, subjetividade e sociedade no pensamento recente",
       "avaliar a atualidade dos problemas filosoficos contemporaneos"
     ],
     planejamentoQuestoes: PHILOSOPHY_HUNDRED_PLAN,

@@ -1,6 +1,6 @@
 export const introducaoATrigonometria = {
   "id": "matematica_introducao_a_trigonometria",
-  "materia": "Matematica",
+  "materia": "Matemática",
   "serie": [
     1
   ],
@@ -14,29 +14,29 @@ export const introducaoATrigonometria = {
       "seno",
       "cosseno",
       "tangente",
-      "triangulo retangulo",
-      "angulos notaveis"
+      "triângulo retângulo",
+      "ângulos notaveis"
     ],
     "subtopicosBase": [
       "Conceitos iniciais",
-      "Triangulo retangulo",
+      "Triângulo retângulo",
       "Hipotenusa e catetos",
       "Razoes trigonometricas",
       "Seno",
       "Cosseno",
       "Tangente",
-      "Angulos notaveis",
+      "Ângulos notaveis",
       "Aplicacoes em problemas",
       "Complementares e equivalencias",
-      "Interpretacao indireta",
+      "Interpretação indireta",
       "Pegadinha",
       "Equivalencia de formas"
     ],
     "habilidadesBase": [
-      "identificar elementos da trigonometria no triangulo retangulo",
+      "identificar elementos da trigonometria no triângulo retângulo",
       "relacionar hipotenusa e catetos",
       "calcular seno cosseno e tangente",
-      "usar angulos notaveis",
+      "usar ângulos notaveis",
       "resolver problemas basicos com trigonometria",
       "relacionar razoes trigonometricas equivalentes",
       "evitar erros comuns em trigonometria introdutoria"
@@ -51,22 +51,22 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Conceitos iniciais",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A trigonometria introdutoria estuda relacoes entre lados e angulos principalmente em:",
+      "enunciado": "A trigonometria introdutoria estuda relações entre lados e ângulos principalmente em:",
       "opcoes": [
-        "triangulos retangulos",
+        "triângulos retangulos",
         "circunferencias quaisquer",
         "retangulos",
         "poligonos regulares"
       ],
-      "correta": "triangulos retangulos",
-      "comentario": "No nivel introdutorio, a base e o triangulo retangulo.",
+      "correta": "triângulos retangulos",
+      "comentario": "No nivel introdutorio, a base e o triângulo retângulo.",
       "tempoEstimado": 20,
       "tags": [
         "conceito",
@@ -89,14 +89,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Triangulo retangulo",
+      "subtopico": "Triângulo retângulo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual triangulo possui um angulo de 90 graus?",
+      "enunciado": "Qual triângulo possui um ângulo de 90 graus?",
       "opcoes": [
         "equilatero",
         "retangulo",
@@ -104,7 +104,7 @@ export const introducaoATrigonometria = {
         "escaleno"
       ],
       "correta": "retangulo",
-      "comentario": "O triangulo retangulo possui um angulo reto.",
+      "comentario": "O triângulo retângulo possui um ângulo reto.",
       "tempoEstimado": 20,
       "tags": [
         "triangulo-retangulo",
@@ -127,14 +127,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Hipotenusa e catetos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, o lado oposto ao angulo de 90 graus e a:",
+      "enunciado": "Em um triângulo retângulo, o lado oposto ao ângulo de 90 graus e a:",
       "opcoes": [
         "cateto adjacente",
         "base",
@@ -142,7 +142,7 @@ export const introducaoATrigonometria = {
         "altura"
       ],
       "correta": "hipotenusa",
-      "comentario": "A hipotenusa e sempre o maior lado do triangulo retangulo.",
+      "comentario": "A hipotenusa e sempre o maior lado do triângulo retângulo.",
       "tempoEstimado": 20,
       "tags": [
         "hipotenusa",
@@ -165,14 +165,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Hipotenusa e catetos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Os dois lados que formam o angulo reto sao chamados de:",
+      "enunciado": "Os dois lados que formam o ângulo reto são chamados de:",
       "opcoes": [
         "hipotenusas",
         "diagonais",
@@ -180,7 +180,7 @@ export const introducaoATrigonometria = {
         "catetos"
       ],
       "correta": "catetos",
-      "comentario": "Os lados que se encontram no angulo de 90 graus sao os catetos.",
+      "comentario": "Os lados que se encontram no ângulo de 90 graus são os catetos.",
       "tempoEstimado": 20,
       "tags": [
         "catetos",
@@ -203,7 +203,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Razoes trigonometricas",
       "dificuldadeLabel": "facil",
@@ -241,7 +241,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Razoes trigonometricas",
       "dificuldadeLabel": "facil",
@@ -279,7 +279,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Razoes trigonometricas",
       "dificuldadeLabel": "facil",
@@ -317,14 +317,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Triangulo retangulo",
+      "subtopico": "Triângulo retângulo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um triangulo tem angulos 30 graus, 60 graus e 90 graus, ele e:",
+      "enunciado": "Se um triângulo tem ângulos 30 graus, 60 graus e 90 graus, ele e:",
       "opcoes": [
         "obtusangulo",
         "acutangulo",
@@ -332,7 +332,7 @@ export const introducaoATrigonometria = {
         "retangulo"
       ],
       "correta": "retangulo",
-      "comentario": "A presenca de um angulo de 90 graus o torna retangulo.",
+      "comentario": "A presenca de um ângulo de 90 graus o torna retângulo.",
       "tempoEstimado": 20,
       "tags": [
         "triangulo-retangulo",
@@ -355,14 +355,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Hipotenusa e catetos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em relacao a um angulo agudo de referencia, o cateto que fica em frente a ele e o:",
+      "enunciado": "Em relação a um ângulo agudo de referencia, o cateto que fica em frente a ele e o:",
       "opcoes": [
         "cateto oposto",
         "cateto adjacente",
@@ -370,7 +370,7 @@ export const introducaoATrigonometria = {
         "diametro"
       ],
       "correta": "cateto oposto",
-      "comentario": "O cateto oposto fica de frente para o angulo escolhido.",
+      "comentario": "O cateto oposto fica de frente para o ângulo escolhido.",
       "tempoEstimado": 20,
       "tags": [
         "cateto-oposto",
@@ -393,14 +393,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Hipotenusa e catetos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em relacao a um angulo agudo de referencia, o cateto que toca esse angulo e nao e hipotenusa e o:",
+      "enunciado": "Em relação a um ângulo agudo de referencia, o cateto que toca esse ângulo e não e hipotenusa e o:",
       "opcoes": [
         "cateto oposto",
         "cateto adjacente",
@@ -408,7 +408,7 @@ export const introducaoATrigonometria = {
         "raio"
       ],
       "correta": "cateto adjacente",
-      "comentario": "O cateto adjacente toca o angulo e nao e a hipotenusa.",
+      "comentario": "O cateto adjacente toca o ângulo e não e a hipotenusa.",
       "tempoEstimado": 20,
       "tags": [
         "cateto-adjacente",
@@ -431,7 +431,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Seno",
       "dificuldadeLabel": "facil",
@@ -469,7 +469,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Cosseno",
       "dificuldadeLabel": "facil",
@@ -507,14 +507,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Tangente",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Na tangente de um angulo agudo em triangulo retangulo nao aparece a:",
+      "enunciado": "Na tangente de um ângulo agudo em triângulo retângulo não aparece a:",
       "opcoes": [
         "hipotenusa",
         "cateto oposto",
@@ -545,14 +545,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Angulos notaveis",
+      "subtopico": "Ângulos notaveis",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual destes e um angulo notavel basico da trigonometria introdutoria?",
+      "enunciado": "Qual destes e um ângulo notavel basico da trigonometria introdutoria?",
       "opcoes": [
         "15 graus",
         "30 graus",
@@ -560,7 +560,7 @@ export const introducaoATrigonometria = {
         "105 graus"
       ],
       "correta": "30 graus",
-      "comentario": "No nivel introdutorio, os mais usados sao 30, 45 e 60 graus.",
+      "comentario": "No nivel introdutorio, os mais usados são 30, 45 e 60 graus.",
       "tempoEstimado": 20,
       "tags": [
         "angulos-notaveis",
@@ -583,14 +583,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Angulos notaveis",
+      "subtopico": "Ângulos notaveis",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "O valor de sen 30 graus e:",
+      "enunciado": "O valor de sen 30 graus é:",
       "opcoes": [
         "sqrt(2)/2",
         "sqrt(3)/2",
@@ -621,14 +621,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Angulos notaveis",
+      "subtopico": "Ângulos notaveis",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "O valor de cos 60 graus e:",
+      "enunciado": "O valor de cos 60 graus é:",
       "opcoes": [
         "sqrt(2)/2",
         "sqrt(3)/2",
@@ -659,14 +659,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Angulos notaveis",
+      "subtopico": "Ângulos notaveis",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "O valor de sen 45 graus e:",
+      "enunciado": "O valor de sen 45 graus é:",
       "opcoes": [
         "sqrt(2)/2",
         "1/2",
@@ -697,14 +697,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Angulos notaveis",
+      "subtopico": "Ângulos notaveis",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "O valor de cos 45 graus e:",
+      "enunciado": "O valor de cos 45 graus é:",
       "opcoes": [
         "1/2",
         "sqrt(2)/2",
@@ -735,14 +735,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Angulos notaveis",
+      "subtopico": "Ângulos notaveis",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "O valor de tan 45 graus e:",
+      "enunciado": "O valor de tan 45 graus é:",
       "opcoes": [
         "sqrt(3)",
         "sqrt(3)/3",
@@ -773,14 +773,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Angulos notaveis",
+      "subtopico": "Ângulos notaveis",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "O valor de tan 30 graus e:",
+      "enunciado": "O valor de tan 30 graus é:",
       "opcoes": [
         "sqrt(3)",
         "1",
@@ -811,7 +811,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Conceitos iniciais",
       "dificuldadeLabel": "facil",
@@ -820,12 +820,12 @@ export const introducaoATrigonometria = {
       "tipo": "multipla_escolha",
       "enunciado": "Trigonometria introdutoria e muito usada para calcular:",
       "opcoes": [
-        "relacoes entre lados e angulos",
+        "relações entre lados e ângulos",
         "apenas perimetros de circulos",
         "equacoes do terceiro grau",
         "probabilidades"
       ],
-      "correta": "relacoes entre lados e angulos",
+      "correta": "relações entre lados e ângulos",
       "comentario": "Esse e o foco central da trigonometria basica.",
       "tempoEstimado": 20,
       "tags": [
@@ -849,14 +849,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Triangulo retangulo",
+      "subtopico": "Triângulo retângulo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Todo triangulo retangulo possui quantos angulos agudos?",
+      "enunciado": "Todo triângulo retângulo possui quantos ângulos agudos?",
       "opcoes": [
         "0",
         "2",
@@ -864,7 +864,7 @@ export const introducaoATrigonometria = {
         "3"
       ],
       "correta": "2",
-      "comentario": "Se um angulo e reto, os outros dois sao agudos.",
+      "comentario": "Se um ângulo e reto, os outros dois são agudos.",
       "tempoEstimado": 20,
       "tags": [
         "triangulo-retangulo",
@@ -887,7 +887,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Hipotenusa e catetos",
       "dificuldadeLabel": "facil",
@@ -899,10 +899,10 @@ export const introducaoATrigonometria = {
         "o menor lado",
         "um dos catetos",
         "o maior lado",
-        "um angulo"
+        "um ângulo"
       ],
       "correta": "o maior lado",
-      "comentario": "No triangulo retangulo, a hipotenusa e o maior lado.",
+      "comentario": "No triângulo retângulo, a hipotenusa e o maior lado.",
       "tempoEstimado": 20,
       "tags": [
         "hipotenusa",
@@ -925,7 +925,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Razoes trigonometricas",
       "dificuldadeLabel": "facil",
@@ -963,7 +963,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Razoes trigonometricas",
       "dificuldadeLabel": "facil",
@@ -1001,7 +1001,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Razoes trigonometricas",
       "dificuldadeLabel": "facil",
@@ -1039,9 +1039,9 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Angulos notaveis",
+      "subtopico": "Ângulos notaveis",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
@@ -1077,9 +1077,9 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Angulos notaveis",
+      "subtopico": "Ângulos notaveis",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
@@ -1115,9 +1115,9 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Angulos notaveis",
+      "subtopico": "Ângulos notaveis",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
@@ -1153,22 +1153,22 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Conceitos iniciais",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No estudo inicial da trigonometria, a escolha de um angulo agudo serve para definir:",
+      "enunciado": "No estudo inicial da trigonometria, a escolha de um ângulo agudo serve para definir:",
       "opcoes": [
         "a existencia da hipotenusa",
         "cateto oposto e adjacente",
-        "o numero de lados",
+        "o número de lados",
         "a area do circulo"
       ],
       "correta": "cateto oposto e adjacente",
-      "comentario": "Esses nomes dependem do angulo de referencia.",
+      "comentario": "Esses nomes dependem do ângulo de referencia.",
       "tempoEstimado": 20,
       "tags": [
         "conceito",
@@ -1191,14 +1191,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Seno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 3, o adjacente mede 4 e a hipotenusa mede 5. Qual e o valor de sen(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 3, o adjacente mede 4 e a hipotenusa mede 5. Qual é o valor de sen(theta)?",
       "opcoes": [
         "1/2",
         "3/4",
@@ -1229,14 +1229,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Seno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 5, o adjacente mede 12 e a hipotenusa mede 13. Qual e o valor de sen(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 5, o adjacente mede 12 e a hipotenusa mede 13. Qual é o valor de sen(theta)?",
       "opcoes": [
         "1/2",
         "3/4",
@@ -1267,14 +1267,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Seno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 8, o adjacente mede 15 e a hipotenusa mede 17. Qual e o valor de sen(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 8, o adjacente mede 15 e a hipotenusa mede 17. Qual é o valor de sen(theta)?",
       "opcoes": [
         "8/17",
         "1/2",
@@ -1305,14 +1305,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Seno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 7, o adjacente mede 24 e a hipotenusa mede 25. Qual e o valor de sen(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 7, o adjacente mede 24 e a hipotenusa mede 25. Qual é o valor de sen(theta)?",
       "opcoes": [
         "1/2",
         "7/25",
@@ -1343,14 +1343,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Seno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 9, o adjacente mede 12 e a hipotenusa mede 15. Qual e o valor de sen(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 9, o adjacente mede 12 e a hipotenusa mede 15. Qual é o valor de sen(theta)?",
       "opcoes": [
         "1/2",
         "3/4",
@@ -1381,14 +1381,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Seno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 12, o adjacente mede 16 e a hipotenusa mede 20. Qual e o valor de sen(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 12, o adjacente mede 16 e a hipotenusa mede 20. Qual é o valor de sen(theta)?",
       "opcoes": [
         "1/2",
         "3/4",
@@ -1419,14 +1419,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Seno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 20, o adjacente mede 21 e a hipotenusa mede 29. Qual e o valor de sen(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 20, o adjacente mede 21 e a hipotenusa mede 29. Qual é o valor de sen(theta)?",
       "opcoes": [
         "20/29",
         "1/2",
@@ -1457,14 +1457,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Seno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 11, o adjacente mede 60 e a hipotenusa mede 61. Qual e o valor de sen(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 11, o adjacente mede 60 e a hipotenusa mede 61. Qual é o valor de sen(theta)?",
       "opcoes": [
         "1/2",
         "11/61",
@@ -1495,14 +1495,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Seno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 16, o adjacente mede 30 e a hipotenusa mede 34. Qual e o valor de sen(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 16, o adjacente mede 30 e a hipotenusa mede 34. Qual é o valor de sen(theta)?",
       "opcoes": [
         "1/2",
         "3/4",
@@ -1533,14 +1533,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Seno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 10, o adjacente mede 24 e a hipotenusa mede 26. Qual e o valor de sen(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 10, o adjacente mede 24 e a hipotenusa mede 26. Qual é o valor de sen(theta)?",
       "opcoes": [
         "1/2",
         "3/4",
@@ -1571,14 +1571,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Cosseno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 3, o adjacente mede 4 e a hipotenusa mede 5. Qual e o valor de cos(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 3, o adjacente mede 4 e a hipotenusa mede 5. Qual é o valor de cos(theta)?",
       "opcoes": [
         "4/5",
         "1/2",
@@ -1609,14 +1609,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Cosseno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 5, o adjacente mede 12 e a hipotenusa mede 13. Qual e o valor de cos(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 5, o adjacente mede 12 e a hipotenusa mede 13. Qual é o valor de cos(theta)?",
       "opcoes": [
         "1/2",
         "12/13",
@@ -1647,14 +1647,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Cosseno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 8, o adjacente mede 15 e a hipotenusa mede 17. Qual e o valor de cos(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 8, o adjacente mede 15 e a hipotenusa mede 17. Qual é o valor de cos(theta)?",
       "opcoes": [
         "1/2",
         "3/5",
@@ -1685,14 +1685,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Cosseno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 7, o adjacente mede 24 e a hipotenusa mede 25. Qual e o valor de cos(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 7, o adjacente mede 24 e a hipotenusa mede 25. Qual é o valor de cos(theta)?",
       "opcoes": [
         "1/2",
         "3/5",
@@ -1723,14 +1723,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Cosseno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 9, o adjacente mede 12 e a hipotenusa mede 15. Qual e o valor de cos(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 9, o adjacente mede 12 e a hipotenusa mede 15. Qual é o valor de cos(theta)?",
       "opcoes": [
         "4/5",
         "1/2",
@@ -1761,14 +1761,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Cosseno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 12, o adjacente mede 16 e a hipotenusa mede 20. Qual e o valor de cos(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 12, o adjacente mede 16 e a hipotenusa mede 20. Qual é o valor de cos(theta)?",
       "opcoes": [
         "1/2",
         "4/5",
@@ -1799,14 +1799,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Cosseno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 20, o adjacente mede 21 e a hipotenusa mede 29. Qual e o valor de cos(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 20, o adjacente mede 21 e a hipotenusa mede 29. Qual é o valor de cos(theta)?",
       "opcoes": [
         "1/2",
         "3/5",
@@ -1837,14 +1837,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Cosseno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 11, o adjacente mede 60 e a hipotenusa mede 61. Qual e o valor de cos(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 11, o adjacente mede 60 e a hipotenusa mede 61. Qual é o valor de cos(theta)?",
       "opcoes": [
         "1/2",
         "3/5",
@@ -1875,14 +1875,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Cosseno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 16, o adjacente mede 30 e a hipotenusa mede 34. Qual e o valor de cos(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 16, o adjacente mede 30 e a hipotenusa mede 34. Qual é o valor de cos(theta)?",
       "opcoes": [
         "15/17",
         "1/2",
@@ -1913,14 +1913,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Cosseno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 10, o adjacente mede 24 e a hipotenusa mede 26. Qual e o valor de cos(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 10, o adjacente mede 24 e a hipotenusa mede 26. Qual é o valor de cos(theta)?",
       "opcoes": [
         "1/2",
         "12/13",
@@ -1951,14 +1951,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Tangente",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 3 e o adjacente mede 4. Qual e o valor de tan(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 3 e o adjacente mede 4. Qual é o valor de tan(theta)?",
       "opcoes": [
         "1/2",
         "2/3",
@@ -1989,14 +1989,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Tangente",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 5 e o adjacente mede 12. Qual e o valor de tan(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 5 e o adjacente mede 12. Qual é o valor de tan(theta)?",
       "opcoes": [
         "1/2",
         "2/3",
@@ -2027,14 +2027,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Tangente",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 8 e o adjacente mede 15. Qual e o valor de tan(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 8 e o adjacente mede 15. Qual é o valor de tan(theta)?",
       "opcoes": [
         "8/15",
         "1/2",
@@ -2065,14 +2065,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Tangente",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 7 e o adjacente mede 24. Qual e o valor de tan(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 7 e o adjacente mede 24. Qual é o valor de tan(theta)?",
       "opcoes": [
         "1/2",
         "7/24",
@@ -2103,14 +2103,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Tangente",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 9 e o adjacente mede 12. Qual e o valor de tan(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 9 e o adjacente mede 12. Qual é o valor de tan(theta)?",
       "opcoes": [
         "1/2",
         "2/3",
@@ -2141,14 +2141,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Tangente",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 12 e o adjacente mede 16. Qual e o valor de tan(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 12 e o adjacente mede 16. Qual é o valor de tan(theta)?",
       "opcoes": [
         "1/2",
         "2/3",
@@ -2179,14 +2179,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Tangente",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 20 e o adjacente mede 21. Qual e o valor de tan(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 20 e o adjacente mede 21. Qual é o valor de tan(theta)?",
       "opcoes": [
         "20/21",
         "1/2",
@@ -2217,14 +2217,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Tangente",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 11 e o adjacente mede 60. Qual e o valor de tan(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 11 e o adjacente mede 60. Qual é o valor de tan(theta)?",
       "opcoes": [
         "1/2",
         "11/60",
@@ -2255,14 +2255,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Tangente",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 16 e o adjacente mede 30. Qual e o valor de tan(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 16 e o adjacente mede 30. Qual é o valor de tan(theta)?",
       "opcoes": [
         "1/2",
         "2/3",
@@ -2293,14 +2293,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Tangente",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, em relacao a um angulo agudo theta, o cateto oposto mede 10 e o adjacente mede 24. Qual e o valor de tan(theta)?",
+      "enunciado": "Em um triângulo retângulo, em relação a um ângulo agudo theta, o cateto oposto mede 10 e o adjacente mede 24. Qual é o valor de tan(theta)?",
       "opcoes": [
         "1/2",
         "2/3",
@@ -2331,14 +2331,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Seno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se sen(theta) = 3/5 e a hipotenusa de um triangulo retangulo mede 10, quanto mede o cateto oposto?",
+      "enunciado": "Se sen(theta) = 3/5 e a hipotenusa de um triângulo retângulo mede 10, quanto mede o cateto oposto?",
       "opcoes": [
         "6",
         "8",
@@ -2369,14 +2369,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Seno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se sen(theta) = 5/13 e a hipotenusa de um triangulo retangulo mede 26, quanto mede o cateto oposto?",
+      "enunciado": "Se sen(theta) = 5/13 e a hipotenusa de um triângulo retângulo mede 26, quanto mede o cateto oposto?",
       "opcoes": [
         "12",
         "10",
@@ -2407,14 +2407,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Seno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se sen(theta) = 1/2 e a hipotenusa de um triangulo retangulo mede 18, quanto mede o cateto oposto?",
+      "enunciado": "Se sen(theta) = 1/2 e a hipotenusa de um triângulo retângulo mede 18, quanto mede o cateto oposto?",
       "opcoes": [
         "11",
         "7",
@@ -2445,14 +2445,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Seno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se sen(theta) = 8/17 e a hipotenusa de um triangulo retangulo mede 34, quanto mede o cateto oposto?",
+      "enunciado": "Se sen(theta) = 8/17 e a hipotenusa de um triângulo retângulo mede 34, quanto mede o cateto oposto?",
       "opcoes": [
         "18",
         "14",
@@ -2483,14 +2483,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Seno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se sen(theta) = 7/25 e a hipotenusa de um triangulo retangulo mede 50, quanto mede o cateto oposto?",
+      "enunciado": "Se sen(theta) = 7/25 e a hipotenusa de um triângulo retângulo mede 50, quanto mede o cateto oposto?",
       "opcoes": [
         "14",
         "16",
@@ -2521,14 +2521,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Seno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se sen(theta) = 3/5 e a hipotenusa de um triangulo retangulo mede 25, quanto mede o cateto oposto?",
+      "enunciado": "Se sen(theta) = 3/5 e a hipotenusa de um triângulo retângulo mede 25, quanto mede o cateto oposto?",
       "opcoes": [
         "17",
         "15",
@@ -2559,14 +2559,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Seno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se sen(theta) = 5/13 e a hipotenusa de um triangulo retangulo mede 39, quanto mede o cateto oposto?",
+      "enunciado": "Se sen(theta) = 5/13 e a hipotenusa de um triângulo retângulo mede 39, quanto mede o cateto oposto?",
       "opcoes": [
         "17",
         "13",
@@ -2597,14 +2597,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Seno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se sen(theta) = 1/2 e a hipotenusa de um triangulo retangulo mede 30, quanto mede o cateto oposto?",
+      "enunciado": "Se sen(theta) = 1/2 e a hipotenusa de um triângulo retângulo mede 30, quanto mede o cateto oposto?",
       "opcoes": [
         "17",
         "13",
@@ -2635,14 +2635,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Seno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se sen(theta) = 8/17 e a hipotenusa de um triangulo retangulo mede 51, quanto mede o cateto oposto?",
+      "enunciado": "Se sen(theta) = 8/17 e a hipotenusa de um triângulo retângulo mede 51, quanto mede o cateto oposto?",
       "opcoes": [
         "24",
         "26",
@@ -2673,14 +2673,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Seno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se sen(theta) = 7/25 e a hipotenusa de um triangulo retangulo mede 75, quanto mede o cateto oposto?",
+      "enunciado": "Se sen(theta) = 7/25 e a hipotenusa de um triângulo retângulo mede 75, quanto mede o cateto oposto?",
       "opcoes": [
         "23",
         "21",
@@ -2711,14 +2711,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Cosseno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se cos(theta) = 4/5 e a hipotenusa de um triangulo retangulo mede 10, quanto mede o cateto adjacente?",
+      "enunciado": "Se cos(theta) = 4/5 e a hipotenusa de um triângulo retângulo mede 10, quanto mede o cateto adjacente?",
       "opcoes": [
         "10",
         "6",
@@ -2749,14 +2749,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Cosseno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se cos(theta) = 12/13 e a hipotenusa de um triangulo retangulo mede 26, quanto mede o cateto adjacente?",
+      "enunciado": "Se cos(theta) = 12/13 e a hipotenusa de um triângulo retângulo mede 26, quanto mede o cateto adjacente?",
       "opcoes": [
         "26",
         "22",
@@ -2787,14 +2787,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Cosseno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se cos(theta) = 1/2 e a hipotenusa de um triangulo retangulo mede 18, quanto mede o cateto adjacente?",
+      "enunciado": "Se cos(theta) = 1/2 e a hipotenusa de um triângulo retângulo mede 18, quanto mede o cateto adjacente?",
       "opcoes": [
         "9",
         "11",
@@ -2825,14 +2825,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Cosseno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se cos(theta) = 15/17 e a hipotenusa de um triangulo retangulo mede 34, quanto mede o cateto adjacente?",
+      "enunciado": "Se cos(theta) = 15/17 e a hipotenusa de um triângulo retângulo mede 34, quanto mede o cateto adjacente?",
       "opcoes": [
         "32",
         "30",
@@ -2863,14 +2863,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Cosseno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se cos(theta) = 24/25 e a hipotenusa de um triangulo retangulo mede 50, quanto mede o cateto adjacente?",
+      "enunciado": "Se cos(theta) = 24/25 e a hipotenusa de um triângulo retângulo mede 50, quanto mede o cateto adjacente?",
       "opcoes": [
         "50",
         "46",
@@ -2901,14 +2901,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Cosseno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se cos(theta) = 4/5 e a hipotenusa de um triangulo retangulo mede 25, quanto mede o cateto adjacente?",
+      "enunciado": "Se cos(theta) = 4/5 e a hipotenusa de um triângulo retângulo mede 25, quanto mede o cateto adjacente?",
       "opcoes": [
         "22",
         "18",
@@ -2939,14 +2939,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Cosseno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se cos(theta) = 12/13 e a hipotenusa de um triangulo retangulo mede 39, quanto mede o cateto adjacente?",
+      "enunciado": "Se cos(theta) = 12/13 e a hipotenusa de um triângulo retângulo mede 39, quanto mede o cateto adjacente?",
       "opcoes": [
         "36",
         "38",
@@ -2977,14 +2977,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Cosseno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se cos(theta) = 1/2 e a hipotenusa de um triangulo retangulo mede 30, quanto mede o cateto adjacente?",
+      "enunciado": "Se cos(theta) = 1/2 e a hipotenusa de um triângulo retângulo mede 30, quanto mede o cateto adjacente?",
       "opcoes": [
         "17",
         "15",
@@ -3015,14 +3015,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Cosseno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se cos(theta) = 15/17 e a hipotenusa de um triangulo retangulo mede 51, quanto mede o cateto adjacente?",
+      "enunciado": "Se cos(theta) = 15/17 e a hipotenusa de um triângulo retângulo mede 51, quanto mede o cateto adjacente?",
       "opcoes": [
         "47",
         "43",
@@ -3053,14 +3053,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Cosseno",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se cos(theta) = 24/25 e a hipotenusa de um triangulo retangulo mede 75, quanto mede o cateto adjacente?",
+      "enunciado": "Se cos(theta) = 24/25 e a hipotenusa de um triângulo retângulo mede 75, quanto mede o cateto adjacente?",
       "opcoes": [
         "74",
         "70",
@@ -3091,7 +3091,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Tangente",
       "dificuldadeLabel": "medio",
@@ -3129,7 +3129,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Tangente",
       "dificuldadeLabel": "medio",
@@ -3167,7 +3167,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Tangente",
       "dificuldadeLabel": "medio",
@@ -3205,7 +3205,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Tangente",
       "dificuldadeLabel": "medio",
@@ -3243,7 +3243,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Tangente",
       "dificuldadeLabel": "medio",
@@ -3281,7 +3281,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Tangente",
       "dificuldadeLabel": "medio",
@@ -3319,7 +3319,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Tangente",
       "dificuldadeLabel": "medio",
@@ -3357,7 +3357,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Tangente",
       "dificuldadeLabel": "medio",
@@ -3395,7 +3395,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Tangente",
       "dificuldadeLabel": "medio",
@@ -3433,7 +3433,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Tangente",
       "dificuldadeLabel": "medio",
@@ -3471,14 +3471,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Angulos notaveis",
+      "subtopico": "Ângulos notaveis",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e o valor de sen 30 graus?",
+      "enunciado": "Qual é o valor de sen 30 graus?",
       "opcoes": [
         "sqrt(2)/2",
         "sqrt(3)/2",
@@ -3509,14 +3509,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Angulos notaveis",
+      "subtopico": "Ângulos notaveis",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e o valor de cos 30 graus?",
+      "enunciado": "Qual é o valor de cos 30 graus?",
       "opcoes": [
         "1/2",
         "sqrt(2)/2",
@@ -3547,14 +3547,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Angulos notaveis",
+      "subtopico": "Ângulos notaveis",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e o valor de sen 60 graus?",
+      "enunciado": "Qual é o valor de sen 60 graus?",
       "opcoes": [
         "sqrt(3)/2",
         "1/2",
@@ -3585,14 +3585,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Angulos notaveis",
+      "subtopico": "Ângulos notaveis",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e o valor de cos 60 graus?",
+      "enunciado": "Qual é o valor de cos 60 graus?",
       "opcoes": [
         "sqrt(2)/2",
         "1/2",
@@ -3623,14 +3623,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Angulos notaveis",
+      "subtopico": "Ângulos notaveis",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e o valor de tan 30 graus?",
+      "enunciado": "Qual é o valor de tan 30 graus?",
       "opcoes": [
         "sqrt(3)",
         "1",
@@ -3661,14 +3661,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Angulos notaveis",
+      "subtopico": "Ângulos notaveis",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e o valor de tan 60 graus?",
+      "enunciado": "Qual é o valor de tan 60 graus?",
       "opcoes": [
         "sqrt(3)/3",
         "1",
@@ -3699,14 +3699,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Angulos notaveis",
+      "subtopico": "Ângulos notaveis",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual angulo possui seno igual a sqrt(2)/2?",
+      "enunciado": "Qual ângulo possui seno igual a sqrt(2)/2?",
       "opcoes": [
         "45 graus",
         "30 graus",
@@ -3737,14 +3737,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Angulos notaveis",
+      "subtopico": "Ângulos notaveis",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual angulo possui cosseno igual a 1/2?",
+      "enunciado": "Qual ângulo possui cosseno igual a 1/2?",
       "opcoes": [
         "30 graus",
         "60 graus",
@@ -3775,14 +3775,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Angulos notaveis",
+      "subtopico": "Ângulos notaveis",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual angulo possui tangente igual a 1?",
+      "enunciado": "Qual ângulo possui tangente igual a 1?",
       "opcoes": [
         "30 graus",
         "60 graus",
@@ -3813,9 +3813,9 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Angulos notaveis",
+      "subtopico": "Ângulos notaveis",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
@@ -3851,7 +3851,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Complementares e equivalencias",
       "dificuldadeLabel": "medio",
@@ -3866,7 +3866,7 @@ export const introducaoATrigonometria = {
         "1 - cos(alpha)"
       ],
       "correta": "cos(90 - alpha)",
-      "comentario": "Seno e cosseno de angulos complementares se correspondem.",
+      "comentario": "Seno e cosseno de ângulos complementares se correspondem.",
       "tempoEstimado": 30,
       "tags": [
         "complementares",
@@ -3889,7 +3889,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Complementares e equivalencias",
       "dificuldadeLabel": "medio",
@@ -3927,7 +3927,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Complementares e equivalencias",
       "dificuldadeLabel": "medio",
@@ -3942,7 +3942,7 @@ export const introducaoATrigonometria = {
         "cos 45 = 1/2"
       ],
       "correta": "sen 30 = cos 60",
-      "comentario": "Angulos complementares no par 30 e 60.",
+      "comentario": "Ângulos complementares no par 30 e 60.",
       "tempoEstimado": 30,
       "tags": [
         "complementares",
@@ -3965,7 +3965,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Complementares e equivalencias",
       "dificuldadeLabel": "medio",
@@ -4003,14 +4003,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Complementares e equivalencias",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um angulo mede 20 graus, seu complementar mede:",
+      "enunciado": "Se um ângulo mede 20 graus, seu complementar mede:",
       "opcoes": [
         "70 graus",
         "80 graus",
@@ -4018,7 +4018,7 @@ export const introducaoATrigonometria = {
         "110 graus"
       ],
       "correta": "70 graus",
-      "comentario": "Angulos complementares somam 90 graus.",
+      "comentario": "Ângulos complementares somam 90 graus.",
       "tempoEstimado": 30,
       "tags": [
         "complementares",
@@ -4041,14 +4041,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Complementares e equivalencias",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um angulo mede 35 graus, seu complementar mede:",
+      "enunciado": "Se um ângulo mede 35 graus, seu complementar mede:",
       "opcoes": [
         "45 graus",
         "55 graus",
@@ -4079,7 +4079,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Complementares e equivalencias",
       "dificuldadeLabel": "medio",
@@ -4117,7 +4117,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Complementares e equivalencias",
       "dificuldadeLabel": "medio",
@@ -4155,14 +4155,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Complementares e equivalencias",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual dupla contem apenas angulos complementares?",
+      "enunciado": "Qual dupla contém apenas ângulos complementares?",
       "opcoes": [
         "35 e 55",
         "30 e 45",
@@ -4193,7 +4193,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Complementares e equivalencias",
       "dificuldadeLabel": "medio",
@@ -4231,14 +4231,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Aplicacoes em problemas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma escada encostada na parede forma um angulo de 30 graus com o chao. Se a escada mede 10 m, qual e a altura alcancada na parede?",
+      "enunciado": "Uma escada encostada na parede forma um ângulo de 30 graus com o chao. Se a escada mede 10 m, qual é a altura alcancada na parede?",
       "opcoes": [
         "4 m",
         "8 m",
@@ -4269,14 +4269,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Aplicacoes em problemas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma escada encostada na parede forma um angulo de 60 graus com o chao. Se a escada mede 10 m, qual e a altura alcancada na parede?",
+      "enunciado": "Uma escada encostada na parede forma um ângulo de 60 graus com o chao. Se a escada mede 10 m, qual é a altura alcancada na parede?",
       "opcoes": [
         "5 m",
         "10 m",
@@ -4307,14 +4307,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Aplicacoes em problemas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma rampa forma 45 graus com o solo. Se sua projecao horizontal mede 6 m, qual e sua altura?",
+      "enunciado": "Uma rampa forma 45 graus com o solo. Se sua projecao horizontal mede 6 m, qual é sua altura?",
       "opcoes": [
         "6 m",
         "3 m",
@@ -4345,14 +4345,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Aplicacoes em problemas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um poste projeta sombra de 4 m e o raio solar forma 45 graus com o solo. Qual e a altura do poste?",
+      "enunciado": "Um poste projeta sombra de 4 m e o raio solar forma 45 graus com o solo. Qual é a altura do poste?",
       "opcoes": [
         "2 m",
         "4 m",
@@ -4383,14 +4383,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Aplicacoes em problemas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um observador ve o topo de um predio sob angulo de 30 graus. Estando a 12 m da base, a altura observada e:",
+      "enunciado": "Um observador ve o topo de um predio sob ângulo de 30 graus. Estando a 12 m da base, a altura observada e:",
       "opcoes": [
         "12/sqrt(3) m",
         "6 m",
@@ -4421,14 +4421,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Aplicacoes em problemas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma escada de 8 m forma 60 graus com o solo. Qual e a medida aproximada do cateto adjacente ao angulo com o solo?",
+      "enunciado": "Uma escada de 8 m forma 60 graus com o solo. Qual é a medida aproximada do cateto adjacente ao ângulo com o solo?",
       "opcoes": [
         "2 m",
         "4sqrt(3) m",
@@ -4459,7 +4459,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Aplicacoes em problemas",
       "dificuldadeLabel": "medio",
@@ -4497,7 +4497,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Aplicacoes em problemas",
       "dificuldadeLabel": "medio",
@@ -4535,14 +4535,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Aplicacoes em problemas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se uma rampa sobe 3 m a cada 4 m na horizontal, sua tangente em relacao ao solo e:",
+      "enunciado": "Se uma rampa sobe 3 m a cada 4 m na horizontal, sua tangente em relação ao solo e:",
       "opcoes": [
         "4/3",
         "3/5",
@@ -4573,14 +4573,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Aplicacoes em problemas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um cabo de 20 m preso ao topo de um poste faz 30 graus com o solo. Qual e a altura do poste?",
+      "enunciado": "Um cabo de 20 m preso ao topo de um poste faz 30 graus com o solo. Qual é a altura do poste?",
       "opcoes": [
         "5 m",
         "10sqrt(3) m",
@@ -4611,14 +4611,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Aplicacoes em problemas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma escada de 13 m encostada na parede forma um triangulo retangulo com distancia de 5 m da parede. Qual e a altura alcancada?",
+      "enunciado": "Uma escada de 13 m encostada na parede forma um triângulo retângulo com distância de 5 m da parede. Qual é a altura alcancada?",
       "opcoes": [
         "12 m",
         "8 m",
@@ -4626,7 +4626,7 @@ export const introducaoATrigonometria = {
         "13 m"
       ],
       "correta": "12 m",
-      "comentario": "Usamos o trio pitagorico 5-12-13 e, em trigonometria, reconhecemos os lados do triangulo.",
+      "comentario": "Usamos o trio pitagorico 5-12-13 e, em trigonometria, reconhecemos os lados do triângulo.",
       "tempoEstimado": 35,
       "tags": [
         "aplicacao",
@@ -4649,14 +4649,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Seno",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, sen(theta) = 12/13. Qual trio de lados pode representar oposto, adjacente e hipotenusa em relacao a theta?",
+      "enunciado": "Em um triângulo retângulo, sen(theta) = 12/13. Qual trio de lados pode representar oposto, adjacente e hipotenusa em relação a theta?",
       "opcoes": [
         "5, 12, 13",
         "12, 5, 13",
@@ -4687,14 +4687,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Cosseno",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, cos(theta) = 5/13. Qual trio de lados pode representar oposto, adjacente e hipotenusa em relacao a theta?",
+      "enunciado": "Em um triângulo retângulo, cos(theta) = 5/13. Qual trio de lados pode representar oposto, adjacente e hipotenusa em relação a theta?",
       "opcoes": [
         "5, 12, 13",
         "13, 5, 12",
@@ -4725,14 +4725,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Tangente",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se tan(theta) = 3/4 em um triangulo retangulo, uma possibilidade para os catetos oposto e adjacente e:",
+      "enunciado": "Se tan(theta) = 3/4 em um triângulo retângulo, uma possibilidade para os catetos oposto e adjacente e:",
       "opcoes": [
         "4 e 3",
         "3 e 5",
@@ -4763,9 +4763,9 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Angulos notaveis",
+      "subtopico": "Ângulos notaveis",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
@@ -4778,7 +4778,7 @@ export const introducaoATrigonometria = {
         "sen 45 = 1/2 e cos 45 = 1/2"
       ],
       "correta": "sen 30 = 1/2 e cos 60 = 1/2",
-      "comentario": "Ambos sao valores notaveis corretos.",
+      "comentario": "Ambos são valores notaveis corretos.",
       "tempoEstimado": 35,
       "tags": [
         "angulos-notaveis",
@@ -4801,7 +4801,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Complementares e equivalencias",
       "dificuldadeLabel": "dificil",
@@ -4816,7 +4816,7 @@ export const introducaoATrigonometria = {
         "sen 40 = cos 50"
       ],
       "correta": "tan 30 = tan 60",
-      "comentario": "Tangentes de 30 e 60 sao diferentes.",
+      "comentario": "Tangentes de 30 e 60 são diferentes.",
       "tempoEstimado": 35,
       "tags": [
         "equivalencia",
@@ -4839,14 +4839,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Aplicacoes em problemas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma rampa sobe 4 m a cada 4 m na horizontal. Qual razao trigonometrica em relacao ao solo vale 1?",
+      "enunciado": "Uma rampa sobe 4 m a cada 4 m na horizontal. Qual razao trigonometrica em relação ao solo vale 1?",
       "opcoes": [
         "seno",
         "cosseno",
@@ -4854,7 +4854,7 @@ export const introducaoATrigonometria = {
         "secante"
       ],
       "correta": "tangente",
-      "comentario": "Se oposto e adjacente sao iguais, a tangente vale 1.",
+      "comentario": "Se oposto e adjacente são iguais, a tangente vale 1.",
       "tempoEstimado": 35,
       "tags": [
         "aplicacao",
@@ -4877,14 +4877,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Aplicacoes em problemas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um cabo de 26 m prende o topo de um poste e sua base esta a 10 m do poste. Qual e a altura do poste?",
+      "enunciado": "Um cabo de 26 m prende o topo de um poste e sua base esta a 10 m do poste. Qual é a altura do poste?",
       "opcoes": [
         "10 m",
         "12 m",
@@ -4892,7 +4892,7 @@ export const introducaoATrigonometria = {
         "24 m"
       ],
       "correta": "24 m",
-      "comentario": "Reconhecemos o triangulo 10-24-26.",
+      "comentario": "Reconhecemos o triângulo 10-24-26.",
       "tempoEstimado": 35,
       "tags": [
         "aplicacao",
@@ -4915,19 +4915,19 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Hipotenusa e catetos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, qual lado jamais pode ser cateto em relacao a qualquer angulo agudo?",
+      "enunciado": "Em um triângulo retângulo, qual lado jamais pode ser cateto em relação a qualquer ângulo agudo?",
       "opcoes": [
         "o maior lado",
-        "o lado oposto ao angulo de referencia",
-        "o lado adjacente ao angulo de referencia",
-        "um lado que toca o angulo reto"
+        "o lado oposto ao ângulo de referencia",
+        "o lado adjacente ao ângulo de referencia",
+        "um lado que toca o ângulo reto"
       ],
       "correta": "o maior lado",
       "comentario": "O maior lado e sempre a hipotenusa.",
@@ -4953,9 +4953,9 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Angulos notaveis",
+      "subtopico": "Ângulos notaveis",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
@@ -4991,14 +4991,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Seno",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se sen(theta) = 1/2 e a hipotenusa mede 14, qual e o cateto oposto?",
+      "enunciado": "Se sen(theta) = 1/2 e a hipotenusa mede 14, qual é o cateto oposto?",
       "opcoes": [
         "5",
         "14",
@@ -5029,14 +5029,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Cosseno",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se cos(theta) = 1/2 e a hipotenusa mede 18, qual e o cateto adjacente?",
+      "enunciado": "Se cos(theta) = 1/2 e a hipotenusa mede 18, qual é o cateto adjacente?",
       "opcoes": [
         "6",
         "8",
@@ -5067,14 +5067,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Tangente",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se tan(theta) = 5/12 e o cateto adjacente mede 24, qual e o cateto oposto?",
+      "enunciado": "Se tan(theta) = 5/12 e o cateto adjacente mede 24, qual é o cateto oposto?",
       "opcoes": [
         "10",
         "5",
@@ -5105,14 +5105,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Aplicacoes em problemas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma sombra mede 12 m e o angulo de elevacao do Sol e de 45 graus. A altura do objeto e:",
+      "enunciado": "Uma sombra mede 12 m e o ângulo de elevacao do Sol e de 45 graus. A altura do objeto e:",
       "opcoes": [
         "6 m",
         "12 m",
@@ -5143,7 +5143,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Aplicacoes em problemas",
       "dificuldadeLabel": "dificil",
@@ -5181,14 +5181,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Angulos notaveis",
+      "subtopico": "Ângulos notaveis",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa contem apenas valores iguais?",
+      "enunciado": "Qual alternativa contém apenas valores iguais?",
       "opcoes": [
         "sen 30 e sen 60",
         "tan 30 e tan 60",
@@ -5219,7 +5219,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Complementares e equivalencias",
       "dificuldadeLabel": "dificil",
@@ -5257,7 +5257,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Aplicacoes em problemas",
       "dificuldadeLabel": "dificil",
@@ -5295,14 +5295,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Triangulo retangulo",
+      "subtopico": "Triângulo retângulo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um triangulo retangulo tem angulos agudos de 25 graus e 65 graus. Em relacao ao angulo de 25 graus, o que ocorre com o cateto oposto quando se considera o angulo de 65 graus?",
+      "enunciado": "Um triângulo retângulo tem ângulos agudos de 25 graus e 65 graus. Em relação ao ângulo de 25 graus, o que ocorre com o cateto oposto quando se considera o ângulo de 65 graus?",
       "opcoes": [
         "Passa a ser hipotenusa",
         "Permanece cateto oposto",
@@ -5310,7 +5310,7 @@ export const introducaoATrigonometria = {
         "Deixa de existir"
       ],
       "correta": "Passa a ser cateto adjacente",
-      "comentario": "O nome dos catetos depende do angulo de referencia.",
+      "comentario": "O nome dos catetos depende do ângulo de referencia.",
       "tempoEstimado": 35,
       "tags": [
         "triangulo-retangulo",
@@ -5333,7 +5333,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Aplicacoes em problemas",
       "dificuldadeLabel": "dificil",
@@ -5371,19 +5371,19 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmacao esta correta?",
+      "enunciado": "Qual afirmação está correta?",
       "opcoes": [
         "Cosseno usa cateto adjacente e hipotenusa.",
         "Seno usa os dois catetos.",
         "Tangente usa hipotenusa no denominador.",
-        "Hipotenusa depende do angulo de referencia."
+        "Hipotenusa depende do ângulo de referencia."
       ],
       "correta": "Cosseno usa cateto adjacente e hipotenusa.",
       "comentario": "Essa e a definicao correta de cosseno.",
@@ -5409,7 +5409,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
@@ -5447,7 +5447,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
@@ -5457,11 +5457,11 @@ export const introducaoATrigonometria = {
       "enunciado": "Qual frase e equivalente a dizer que tan(theta) = 1?",
       "opcoes": [
         "A hipotenusa e o dobro do oposto.",
-        "O angulo e necessariamente 30 graus.",
-        "Os catetos sao iguais.",
+        "O ângulo e necessariamente 30 graus.",
+        "Os catetos são iguais.",
         "O cosseno vale 1."
       ],
-      "correta": "Os catetos sao iguais.",
+      "correta": "Os catetos são iguais.",
       "comentario": "Se oposto/adjacente = 1, entao oposto = adjacente.",
       "tempoEstimado": 35,
       "tags": [
@@ -5485,7 +5485,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
@@ -5496,7 +5496,7 @@ export const introducaoATrigonometria = {
       "opcoes": [
         "o cateto adjacente e metade da hipotenusa",
         "a tangente vale 1/2",
-        "o angulo e 45 graus",
+        "o ângulo e 45 graus",
         "o cateto oposto e metade da hipotenusa"
       ],
       "correta": "o cateto oposto e metade da hipotenusa",
@@ -5523,7 +5523,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Complementares e equivalencias",
       "dificuldadeLabel": "dificil",
@@ -5561,14 +5561,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Aplicacoes em problemas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma escada de 10 m forma 30 graus com o solo. A distancia da base da escada ate a parede e:",
+      "enunciado": "Uma escada de 10 m forma 30 graus com o solo. A distância da base da escada ate a parede e:",
       "opcoes": [
         "5 m",
         "5sqrt(3) m",
@@ -5599,14 +5599,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Aplicacoes em problemas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um cabo de sustentacao faz 45 graus com o solo e alcanca 7 m de altura. Qual e a distancia horizontal da base ao ponto de apoio?",
+      "enunciado": "Um cabo de sustentacao faz 45 graus com o solo e alcanca 7 m de altura. Qual é a distância horizontal da base ao ponto de apoio?",
       "opcoes": [
         "3,5 m",
         "7sqrt(2) m",
@@ -5637,9 +5637,9 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Angulos notaveis",
+      "subtopico": "Ângulos notaveis",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -5675,14 +5675,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmacao e falsa?",
+      "enunciado": "Qual afirmação e falsa?",
       "opcoes": [
         "cos 45 = 1/2",
         "sen 30 = 1/2",
@@ -5713,7 +5713,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
@@ -5751,14 +5751,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma escada de 12 m foi apoiada em uma parede e forma 30 graus com o solo. Qual interpretacao esta correta sobre a altura alcancada?",
+      "enunciado": "Uma escada de 12 m foi apoiada em uma parede e forma 30 graus com o solo. Qual interpretação está correta sobre a altura alcancada?",
       "opcoes": [
         "Ela alcanca 12 m de altura.",
         "Ela alcanca 6sqrt(3) m de altura.",
@@ -5789,21 +5789,21 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma rampa tem 10 m de comprimento e sobe 5 m. Qual afirmacao descreve melhor a situacao?",
+      "enunciado": "Uma rampa tem 10 m de comprimento e sobe 5 m. Qual afirmação descreve melhor a situação?",
       "opcoes": [
-        "Seu cosseno em relacao ao solo e 1/2.",
+        "Seu cosseno em relação ao solo e 1/2.",
         "Sua tangente e 2.",
         "Ela forma 45 graus obrigatoriamente.",
-        "Seu seno em relacao ao solo e 1/2."
+        "Seu seno em relação ao solo e 1/2."
       ],
-      "correta": "Seu seno em relacao ao solo e 1/2.",
+      "correta": "Seu seno em relação ao solo e 1/2.",
       "comentario": "Seno = altura/comprimento = 5/10.",
       "tempoEstimado": 40,
       "tags": [
@@ -5827,19 +5827,19 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se a tangente de um angulo em uma rampa e menor que 1, o que isso sugere?",
+      "enunciado": "Se a tangente de um ângulo em uma rampa e menor que 1, o que isso sugere?",
       "opcoes": [
         "A subida e menor que a horizontal.",
         "A subida e maior que a horizontal.",
         "A hipotenusa e menor que o cateto oposto.",
-        "O angulo e maior que 90 graus."
+        "O ângulo e maior que 90 graus."
       ],
       "correta": "A subida e menor que a horizontal.",
       "comentario": "Tangente < 1 indica oposto < adjacente.",
@@ -5865,14 +5865,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um poste projeta sombra de 8 m e o angulo de elevacao do Sol e 30 graus. Qual expressao representa corretamente a altura do poste?",
+      "enunciado": "Um poste projeta sombra de 8 m e o ângulo de elevacao do Sol e 30 graus. Qual expressao representa corretamente a altura do poste?",
       "opcoes": [
         "8sqrt(3)",
         "8/sqrt(3)",
@@ -5903,9 +5903,9 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -5918,7 +5918,7 @@ export const introducaoATrigonometria = {
         "40 m"
       ],
       "correta": "20 m",
-      "comentario": "Tan 45 = 1, entao altura = distancia horizontal.",
+      "comentario": "Tan 45 = 1, entao altura = distância horizontal.",
       "tempoEstimado": 40,
       "tags": [
         "aplicacao",
@@ -5941,14 +5941,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um triangulo retangulo tem hipotenusa 20 e seno de um angulo igual a 3/5. Qual leitura e correta?",
+      "enunciado": "Um triângulo retângulo tem hipotenusa 20 e seno de um ângulo igual a 3/5. Qual leitura e correta?",
       "opcoes": [
         "O cateto adjacente mede 12.",
         "O cateto oposto mede 8.",
@@ -5979,9 +5979,9 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -5994,7 +5994,7 @@ export const introducaoATrigonometria = {
         "altura nula"
       ],
       "correta": "maior altura",
-      "comentario": "Quanto maior o seno do angulo com o solo, maior a altura para o mesmo comprimento.",
+      "comentario": "Quanto maior o seno do ângulo com o solo, maior a altura para o mesmo comprimento.",
       "tempoEstimado": 40,
       "tags": [
         "aplicacao",
@@ -6017,22 +6017,22 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se cos(theta) = 1/2 em um triangulo retangulo, qual afirmacao pode ser concluida?",
+      "enunciado": "Se cos(theta) = 1/2 em um triângulo retângulo, qual afirmação pode ser concluida?",
       "opcoes": [
         "O cateto oposto e metade da hipotenusa.",
         "O cateto adjacente e metade da hipotenusa.",
-        "Os catetos sao iguais.",
+        "Os catetos são iguais.",
         "A tangente vale 1/2."
       ],
       "correta": "O cateto adjacente e metade da hipotenusa.",
-      "comentario": "Essa e a interpretacao direta de cosseno.",
+      "comentario": "Essa e a interpretação direta de cosseno.",
       "tempoEstimado": 40,
       "tags": [
         "cosseno",
@@ -6055,14 +6055,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um triangulo retangulo, se um angulo agudo aumenta, o que tende a acontecer com seu seno?",
+      "enunciado": "Em um triângulo retângulo, se um ângulo agudo aumenta, o que tende a acontecer com seu seno?",
       "opcoes": [
         "Tende a diminuir sempre.",
         "Permanece sempre igual.",
@@ -6070,7 +6070,7 @@ export const introducaoATrigonometria = {
         "Zera automaticamente."
       ],
       "correta": "Tende a aumentar.",
-      "comentario": "Nos angulos agudos basicos, o seno cresce quando o angulo cresce.",
+      "comentario": "Nos ângulos agudos basicos, o seno cresce quando o ângulo cresce.",
       "tempoEstimado": 40,
       "tags": [
         "seno",
@@ -6093,14 +6093,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual triangulo combina melhor com tan(theta) = 1?",
+      "enunciado": "Qual triângulo combina melhor com tan(theta) = 1?",
       "opcoes": [
         "Catetos 3 e 4",
         "Catetos 5 e 10",
@@ -6131,7 +6131,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
@@ -6143,7 +6143,7 @@ export const introducaoATrigonometria = {
         "Ele calculou seno em vez de cosseno.",
         "Ele calculou tangente em vez de cosseno.",
         "Ele calculou secante.",
-        "Nao houve erro."
+        "Não houve erro."
       ],
       "correta": "Ele calculou seno em vez de cosseno.",
       "comentario": "Oposto/hipotenusa e definicao de seno.",
@@ -6169,22 +6169,22 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmacao esta incorreta?",
+      "enunciado": "Qual afirmação esta incorreta?",
       "opcoes": [
-        "Cateto oposto depende do angulo escolhido.",
-        "A hipotenusa depende do angulo escolhido.",
-        "Cateto adjacente depende do angulo escolhido.",
+        "Cateto oposto depende do ângulo escolhido.",
+        "A hipotenusa depende do ângulo escolhido.",
+        "Cateto adjacente depende do ângulo escolhido.",
         "A hipotenusa e o maior lado."
       ],
-      "correta": "A hipotenusa depende do angulo escolhido.",
-      "comentario": "A hipotenusa nao muda com o angulo de referencia.",
+      "correta": "A hipotenusa depende do ângulo escolhido.",
+      "comentario": "A hipotenusa não muda com o ângulo de referencia.",
       "tempoEstimado": 40,
       "tags": [
         "pegadinha",
@@ -6207,7 +6207,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
@@ -6219,7 +6219,7 @@ export const introducaoATrigonometria = {
         "Sen 60 e igual a sen 30.",
         "Sen 60 e negativo.",
         "Sen 60 e maior que sen 30.",
-        "Nao e possivel comparar."
+        "Não e possível comparar."
       ],
       "correta": "Sen 60 e maior que sen 30.",
       "comentario": "Os valores notaveis mostram sqrt(3)/2 > 1/2.",
@@ -6245,7 +6245,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
@@ -6255,7 +6255,7 @@ export const introducaoATrigonometria = {
       "enunciado": "Qual confusao e mais comum ao usar tangente em problemas?",
       "opcoes": [
         "Trocar area por perimetro.",
-        "Somar angulos internos.",
+        "Somar ângulos internos.",
         "Usar pi em vez de graus.",
         "Trocar hipotenusa por cateto adjacente."
       ],
@@ -6283,17 +6283,17 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um aluno viu cos 30 = sqrt(3)/2 e concluiu que sen 30 tambem vale sqrt(3)/2. O que faltou observar?",
+      "enunciado": "Um aluno viu cos 30 = sqrt(3)/2 e concluiu que sen 30 também vale sqrt(3)/2. O que faltou observar?",
       "opcoes": [
         "Seno e cosseno trocam de valor em 30 e 60 graus.",
-        "Seno so existe em triangulos obtusos.",
+        "Seno so existe em triângulos obtusos.",
         "Cosseno sempre vale 1/2.",
         "Tangente e quem troca com o seno."
       ],
@@ -6321,7 +6321,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
@@ -6333,7 +6333,7 @@ export const introducaoATrigonometria = {
         "A cada 5 partes do cateto adjacente, 3 estao na hipotenusa.",
         "A cada 5 partes da hipotenusa, 3 estao no cateto oposto.",
         "A tangente vale 5/3.",
-        "O angulo e necessariamente 30 graus."
+        "O ângulo e necessariamente 30 graus."
       ],
       "correta": "A cada 5 partes da hipotenusa, 3 estao no cateto oposto.",
       "comentario": "Essa e a leitura proporcional do seno.",
@@ -6359,7 +6359,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
@@ -6371,7 +6371,7 @@ export const introducaoATrigonometria = {
         "O cateto oposto corresponde a 4/5 da hipotenusa.",
         "A tangente vale 4/5.",
         "O cateto adjacente corresponde a 4/5 da hipotenusa.",
-        "O angulo e 45 graus."
+        "O ângulo e 45 graus."
       ],
       "correta": "O cateto adjacente corresponde a 4/5 da hipotenusa.",
       "comentario": "Essa e a leitura proporcional do cosseno.",
@@ -6397,14 +6397,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmacao equivale a tan(theta) = 1?",
+      "enunciado": "Qual afirmação equivale a tan(theta) = 1?",
       "opcoes": [
         "A hipotenusa e metade do cateto oposto.",
         "O seno vale zero.",
@@ -6435,7 +6435,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
@@ -6450,7 +6450,7 @@ export const introducaoATrigonometria = {
         "alpha - beta = 90 graus"
       ],
       "correta": "alpha + beta = 90 graus",
-      "comentario": "Seno e cosseno se igualam em angulos complementares.",
+      "comentario": "Seno e cosseno se igualam em ângulos complementares.",
       "tempoEstimado": 40,
       "tags": [
         "equivalencia",
@@ -6473,9 +6473,9 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -6483,11 +6483,11 @@ export const introducaoATrigonometria = {
       "enunciado": "Uma janela esta a 9 m do chao. Se um cabo de manutencao forma 30 graus com a horizontal e vai da janela ate o solo, qual medida esta sendo representada pelo cabo?",
       "opcoes": [
         "cateto oposto",
-        "hipotenusa do triangulo",
+        "hipotenusa do triângulo",
         "cateto adjacente",
         "tangente"
       ],
-      "correta": "hipotenusa do triangulo",
+      "correta": "hipotenusa do triângulo",
       "comentario": "O cabo liga o solo ao topo, formando o maior lado.",
       "tempoEstimado": 40,
       "tags": [
@@ -6511,14 +6511,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma rampa, diminuir o angulo com o solo mantendo o mesmo comprimento faz a altura:",
+      "enunciado": "Em uma rampa, diminuir o ângulo com o solo mantendo o mesmo comprimento faz a altura:",
       "opcoes": [
         "aumentar",
         "permanecer igual",
@@ -6526,7 +6526,7 @@ export const introducaoATrigonometria = {
         "virar negativa"
       ],
       "correta": "diminuir",
-      "comentario": "A altura depende do seno do angulo.",
+      "comentario": "A altura depende do seno do ângulo.",
       "tempoEstimado": 40,
       "tags": [
         "interpretacao",
@@ -6549,14 +6549,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmacao e falsa?",
+      "enunciado": "Qual afirmação e falsa?",
       "opcoes": [
         "Tan 45 = 1",
         "Sen 30 = 1/2",
@@ -6587,7 +6587,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
@@ -6598,7 +6598,7 @@ export const introducaoATrigonometria = {
       "opcoes": [
         "Em 60 graus, o cateto adjacente e metade da hipotenusa.",
         "Em 60 graus, o cateto oposto e metade da hipotenusa.",
-        "Em 60 graus, os catetos sao iguais.",
+        "Em 60 graus, os catetos são iguais.",
         "Em 60 graus, a hipotenusa e metade do adjacente."
       ],
       "correta": "Em 60 graus, o cateto adjacente e metade da hipotenusa.",
@@ -6625,9 +6625,9 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -6637,10 +6637,10 @@ export const introducaoATrigonometria = {
         "Quando forma 30 graus com o solo",
         "Quando forma 60 graus com o solo",
         "As duas deixam igual",
-        "Nao depende do angulo"
+        "Não depende do ângulo"
       ],
       "correta": "Quando forma 60 graus com o solo",
-      "comentario": "Quanto maior o angulo com o solo, menor o cateto adjacente.",
+      "comentario": "Quanto maior o ângulo com o solo, menor o cateto adjacente.",
       "tempoEstimado": 40,
       "tags": [
         "interpretacao",
@@ -6663,22 +6663,22 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao escolher o outro angulo agudo de um triangulo retangulo como referencia, o que muda?",
+      "enunciado": "Ao escolher o outro ângulo agudo de um triângulo retângulo como referencia, o que muda?",
       "opcoes": [
         "A hipotenusa.",
-        "O valor do angulo reto.",
+        "O valor do ângulo reto.",
         "Os nomes dos catetos oposto e adjacente.",
-        "O numero de lados."
+        "O número de lados."
       ],
       "correta": "Os nomes dos catetos oposto e adjacente.",
-      "comentario": "Esses nomes dependem do angulo escolhido.",
+      "comentario": "Esses nomes dependem do ângulo escolhido.",
       "tempoEstimado": 40,
       "tags": [
         "pegadinha",
@@ -6701,14 +6701,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma escada de 15 m encostada em uma parede alcanca 9 m de altura. Qual e o valor de sen(theta), sendo theta o angulo com o solo?",
+      "enunciado": "Uma escada de 15 m encostada em uma parede alcanca 9 m de altura. Qual é o valor de sen(theta), sendo theta o ângulo com o solo?",
       "opcoes": [
         "4/5",
         "5/3",
@@ -6739,9 +6739,9 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -6777,14 +6777,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um triangulo retangulo possui cateto oposto 12 e hipotenusa 24 em relacao a theta. Qual angulo notavel e mais compativel com theta?",
+      "enunciado": "Um triângulo retângulo possui cateto oposto 12 e hipotenusa 24 em relação a theta. Qual ângulo notavel e mais compativel com theta?",
       "opcoes": [
         "45 graus",
         "30 graus",
@@ -6815,14 +6815,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um triangulo retangulo possui cateto adjacente 9 e hipotenusa 18 em relacao a theta. Qual angulo notavel e mais compativel com theta?",
+      "enunciado": "Um triângulo retângulo possui cateto adjacente 9 e hipotenusa 18 em relação a theta. Qual ângulo notavel e mais compativel com theta?",
       "opcoes": [
         "30 graus",
         "45 graus",
@@ -6853,14 +6853,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um telhado sobe 5 m a cada 5 m na horizontal, qual angulo notavel melhor descreve sua inclinacao?",
+      "enunciado": "Se um telhado sobe 5 m a cada 5 m na horizontal, qual ângulo notavel melhor descreve sua inclinacao?",
       "opcoes": [
         "30 graus",
         "60 graus",
@@ -6891,7 +6891,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
@@ -6902,11 +6902,11 @@ export const introducaoATrigonometria = {
       "opcoes": [
         "Ele leu seno como cosseno.",
         "Ele leu seno como tangente.",
-        "Ele trocou o angulo por seu suplemento.",
+        "Ele trocou o ângulo por seu suplemento.",
         "Ele confundiu graos com radianos."
       ],
       "correta": "Ele leu seno como cosseno.",
-      "comentario": "No seno, 4 estaria no cateto oposto, nao no adjacente.",
+      "comentario": "No seno, 4 estaria no cateto oposto, não no adjacente.",
       "tempoEstimado": 40,
       "tags": [
         "pegadinha",
@@ -6929,22 +6929,22 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmacao engana por parecer plausivel, mas esta errada?",
+      "enunciado": "Qual afirmação engana por parecer plausivel, mas esta errada?",
       "opcoes": [
         "Se tan(theta) = 1, os catetos podem ser iguais.",
-        "Se sen(theta) = 1/2, o angulo agudo so pode ser 60 graus.",
+        "Se sen(theta) = 1/2, o ângulo agudo so pode ser 60 graus.",
         "Se cos(theta) = 1/2, o adjacente pode ser metade da hipotenusa.",
         "Se sen(theta) = cos(90 - theta), ha complementaridade."
       ],
-      "correta": "Se sen(theta) = 1/2, o angulo agudo so pode ser 60 graus.",
-      "comentario": "No nivel introdutorio, o angulo notavel correspondente e 30 graus.",
+      "correta": "Se sen(theta) = 1/2, o ângulo agudo so pode ser 60 graus.",
+      "comentario": "No nivel introdutorio, o ângulo notavel correspondente e 30 graus.",
       "tempoEstimado": 40,
       "tags": [
         "pegadinha",
@@ -6967,7 +6967,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
@@ -6976,8 +6976,8 @@ export const introducaoATrigonometria = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual erro existe em dizer que a tangente compara um cateto com a hipotenusa?",
       "opcoes": [
-        "Tangente compara angulo com area.",
-        "Tangente so existe em triangulos equilateros.",
+        "Tangente compara ângulo com area.",
+        "Tangente so existe em triângulos equilateros.",
         "Tangente compara os dois catetos.",
         "Tangente usa graus no denominador."
       ],
@@ -7005,14 +7005,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante concluiu que cos 45 = 1 porque o angulo e \"muito aberto\". Qual correcao esta certa?",
+      "enunciado": "Um estudante concluiu que cos 45 = 1 porque o ângulo e \"muito aberto\". Qual correcao esta certa?",
       "opcoes": [
         "Cos 45 = 1/2.",
         "Cos 45 = sqrt(3)/2.",
@@ -7043,22 +7043,22 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual erro ha em afirmar que o cateto oposto de um angulo continua oposto quando trocamos para o outro angulo agudo?",
+      "enunciado": "Qual erro ha em afirmar que o cateto oposto de um ângulo continua oposto quando trocamos para o outro ângulo agudo?",
       "opcoes": [
         "Os papeis de oposto e adjacente se invertem.",
         "A hipotenusa troca de nome.",
-        "O triangulo deixa de ser retangulo.",
+        "O triângulo deixa de ser retângulo.",
         "A tangente vira seno."
       ],
       "correta": "Os papeis de oposto e adjacente se invertem.",
-      "comentario": "A nomeacao depende do angulo de referencia.",
+      "comentario": "A nomeacao depende do ângulo de referencia.",
       "tempoEstimado": 40,
       "tags": [
         "pegadinha",
@@ -7081,7 +7081,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
@@ -7119,7 +7119,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
@@ -7157,7 +7157,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
@@ -7195,7 +7195,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
@@ -7233,9 +7233,9 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -7271,14 +7271,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma escada de 20 m forma 60 graus com o solo. Qual afirmacao descreve corretamente a distancia da base ate a parede?",
+      "enunciado": "Uma escada de 20 m forma 60 graus com o solo. Qual afirmação descreve corretamente a distância da base ate a parede?",
       "opcoes": [
         "Vale 10sqrt(3) m.",
         "Vale 20 m.",
@@ -7309,14 +7309,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma sombra de 10 m e um angulo de elevacao de 30 graus produzem que altura aproximada?",
+      "enunciado": "Uma sombra de 10 m e um ângulo de elevacao de 30 graus produzem que altura aproximada?",
       "opcoes": [
         "10sqrt(3)",
         "5",
@@ -7347,9 +7347,9 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -7385,14 +7385,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se cos(theta) = sqrt(2)/2, qual angulo notavel se encaixa melhor?",
+      "enunciado": "Se cos(theta) = sqrt(2)/2, qual ângulo notavel se encaixa melhor?",
       "opcoes": [
         "30 graus",
         "45 graus",
@@ -7423,14 +7423,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma rampa com tangente 1/2 sobe menos do que avanca na horizontal. Essa afirmacao e:",
+      "enunciado": "Uma rampa com tangente 1/2 sobe menos do que avanca na horizontal. Essa afirmação e:",
       "opcoes": [
         "Verdadeiro",
         "Falso"
@@ -7459,14 +7459,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmacao e falsa?",
+      "enunciado": "Qual afirmação e falsa?",
       "opcoes": [
         "Sen 60 = sqrt(3)/2",
         "Cos 30 = sqrt(3)/2",
@@ -7497,14 +7497,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um aluno disse que sen e cos de um mesmo angulo agudo sempre sao iguais. Qual contraexemplo basico corrige isso?",
+      "enunciado": "Um aluno disse que sen e cos de um mesmo ângulo agudo sempre são iguais. Qual contraexemplo basico corrige isso?",
       "opcoes": [
         "30 graus",
         "45 graus",
@@ -7535,7 +7535,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
@@ -7544,13 +7544,13 @@ export const introducaoATrigonometria = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual leitura e equivalente a cos(theta) = 1/2?",
       "opcoes": [
-        "O lado em frente ao angulo e metade da hipotenusa.",
-        "O lado ao lado do angulo e metade da hipotenusa.",
-        "Os dois catetos sao iguais.",
+        "O lado em frente ao ângulo e metade da hipotenusa.",
+        "O lado ao lado do ângulo e metade da hipotenusa.",
+        "Os dois catetos são iguais.",
         "A tangente vale 1/2."
       ],
-      "correta": "O lado ao lado do angulo e metade da hipotenusa.",
-      "comentario": "Cateto ao lado do angulo = cateto adjacente.",
+      "correta": "O lado ao lado do ângulo e metade da hipotenusa.",
+      "comentario": "Cateto ao lado do ângulo = cateto adjacente.",
       "tempoEstimado": 40,
       "tags": [
         "equivalencia",
@@ -7573,7 +7573,7 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
@@ -7611,14 +7611,14 @@ export const introducaoATrigonometria = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
+      "materia": "Matemática",
       "topico": "Introducao a Trigonometria",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se dois triangulos retangulos tem o mesmo angulo agudo theta, o que acontece com a razao seno de theta?",
+      "enunciado": "Se dois triângulos retangulos tem o mesmo ângulo agudo theta, o que acontece com a razao seno de theta?",
       "opcoes": [
         "Muda conforme o tamanho.",
         "Vira tangente.",
@@ -7626,7 +7626,7 @@ export const introducaoATrigonometria = {
         "Permanece a mesma."
       ],
       "correta": "Permanece a mesma.",
-      "comentario": "Triangulos semelhantes preservam as razoes trigonometricas.",
+      "comentario": "Triângulos semelhantes preservam as razoes trigonometricas.",
       "tempoEstimado": 40,
       "tags": [
         "interpretacao",

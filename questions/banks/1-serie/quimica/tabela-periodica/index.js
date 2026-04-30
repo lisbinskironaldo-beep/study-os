@@ -9,23 +9,23 @@ const blocos = [
   {
     subtopico: "Organizacao da tabela periodica",
     habilidade:
-      "identificar criterios de organizacao da tabela periodica",
+      "identificar critérios de organizacao da tabela periodica",
     tags: ["tabela periodica", "organizacao", "elementos"],
     fatos: [
       {
         lead: "a tabela periodica",
-        answer: "a organizacao dos elementos quimicos em ordem crescente de numero atomico",
+        answer: "a organizacao dos elementos quimicos em ordem crescente de número atomico",
         why: "essa disposicao evidencia regularidades de propriedades"
       },
       {
-        lead: "o numero atomico na tabela",
-        answer: "o criterio fundamental usado na ordenacao moderna dos elementos",
-        why: "elementos sao posicionados segundo total de protons"
+        lead: "o número atomico na tabela",
+        answer: "o critério fundamental usado na ordenacao moderna dos elementos",
+        why: "elementos são posicionados segundo total de protons"
       },
       {
         lead: "o periodo na tabela periodica",
-        answer: "a linha horizontal que indica o numero de camadas ocupadas",
-        why: "elementos de um mesmo periodo possuem mesmo numero de niveis"
+        answer: "a linha horizontal que indica o número de camadas ocupadas",
+        why: "elementos de um mesmo periodo possuem mesmo número de niveis"
       },
       {
         lead: "o grupo ou familia",
@@ -42,27 +42,27 @@ const blocos = [
   {
     subtopico: "Familias e periodos",
     habilidade:
-      "relacionar grupos e periodos a caracteristicas eletronicas dos elementos",
+      "relacionar grupos e periodos a características eletronicas dos elementos",
     tags: ["familias", "periodos", "camada de valencia"],
     fatos: [
       {
-        lead: "uma familia quimica",
-        answer: "o conjunto de elementos com numero semelhante de eletrons de valencia",
+        lead: "uma familia química",
+        answer: "o conjunto de elementos com número semelhante de eletrons de valencia",
         why: "essa semelhanca produz comportamentos proximos"
       },
       {
         lead: "os elementos de um mesmo periodo",
-        answer: "as especies que possuem igual numero de camadas eletronicas ocupadas",
+        answer: "as especies que possuem igual número de camadas eletronicas ocupadas",
         why: "isso decorre da posicao horizontal na tabela"
       },
       {
-        lead: "a relacao entre familia e valencia",
+        lead: "a relação entre familia e valencia",
         answer: "a correspondencia entre coluna e configuracao eletronica externa semelhante",
         why: "por isso grupos apresentam tendencias quimicas parecidas"
       },
       {
         lead: "a mudanca de periodo",
-        answer: "a alteracao do numero de niveis principais ocupados pelos eletrons",
+        answer: "a alteracao do número de niveis principais ocupados pelos eletrons",
         why: "cada nova linha indica nova camada de energia"
       },
       {
@@ -75,7 +75,7 @@ const blocos = [
   {
     subtopico: "Metais, ametais e semimetais",
     habilidade:
-      "classificar elementos segundo caracteristicas metalicas e nao metalicas",
+      "classificar elementos segundo características metalicas e não metalicas",
     tags: ["metais", "ametais", "semimetais"],
     fatos: [
       {
@@ -94,14 +94,14 @@ const blocos = [
         why: "eles podem apresentar comportamento misto"
       },
       {
-        lead: "o carater metalico",
+        lead: "o caráter metalico",
         answer: "a tendencia do elemento a perder eletrons formando cations",
-        why: "esse carater cresce em certas direcoes da tabela"
+        why: "esse caráter cresce em certas direcoes da tabela"
       },
       {
-        lead: "o carater ametalico",
+        lead: "o caráter ametalico",
         answer: "a tendencia a ganhar eletrons e formar anions ou compartilhamentos fortes",
-        why: "ele e comum em elementos da direita da tabela"
+        why: "ele é comum em elementos da direita da tabela"
       }
     ]
   },
@@ -114,7 +114,7 @@ const blocos = [
       {
         lead: "os metais alcalinos",
         answer: "os elementos da familia 1 que possuem um eletron na camada de valencia",
-        why: "eles sao bastante reativos e formam cations +1"
+        why: "eles são bastante reativos e formam cations +1"
       },
       {
         lead: "os metais alcalino-terrosos",
@@ -156,7 +156,7 @@ const blocos = [
       },
       {
         lead: "a baixa reatividade dos gases nobres",
-        answer: "a consequencia de uma configuracao eletronica externa muito estavel",
+        answer: "a consequência de uma configuracao eletronica externa muito estavel",
         why: "por isso eles raramente participam de ligacoes"
       },
       {
@@ -180,7 +180,7 @@ const blocos = [
       {
         lead: "o raio atomico",
         answer: "a medida aproximada do tamanho do atomo",
-        why: "essa propriedade varia com numero de camadas e atracao nuclear"
+        why: "essa propriedade varia com número de camadas e atracao nuclear"
       },
       {
         lead: "a energia de ionizacao",
@@ -189,7 +189,7 @@ const blocos = [
       },
       {
         lead: "a eletroafinidade",
-        answer: "a variacao energetica associada ao ganho de um eletron por um atomo",
+        answer: "a variação energetica associada ao ganho de um eletron por um atomo",
         why: "ela ajuda a entender tendencia de formar anions"
       },
       {
@@ -212,13 +212,13 @@ const blocos = [
     fatos: [
       {
         lead: "o aumento do raio atomico em um grupo",
-        answer: "a consequencia da adicao de novas camadas eletronicas para baixo na tabela",
+        answer: "a consequência da adicao de novas camadas eletronicas para baixo na tabela",
         why: "mais camadas ampliam o tamanho do atomo"
       },
       {
         lead: "a diminuicao do raio atomico em um periodo",
         answer: "o efeito do aumento da carga nuclear efetiva da esquerda para a direita",
-        why: "os eletrons sao atraidos mais fortemente para o nucleo"
+        why: "os eletrons são atraidos mais fortemente para o nucleo"
       },
       {
         lead: "a energia de ionizacao alta",
@@ -231,7 +231,7 @@ const blocos = [
         why: "metais reativos costumam apresentar esse comportamento"
       },
       {
-        lead: "a relacao entre raio e ionizacao",
+        lead: "a relação entre raio e ionizacao",
         answer: "o fato de atomos maiores tenderem a prender menos fortemente os eletrons externos",
         why: "isso favorece menor energia para remocao"
       }
@@ -264,7 +264,7 @@ const blocos = [
         why: "isso explica sua forte participacao em reacoes"
       },
       {
-        lead: "a relacao entre eletronegatividade e polaridade",
+        lead: "a relação entre eletronegatividade e polaridade",
         answer: "a influencia da atracao desigual de eletrons sobre a distribuicao de cargas",
         why: "diferencas maiores tendem a gerar ligacoes mais polares"
       }
@@ -298,13 +298,13 @@ const blocos = [
       },
       {
         lead: "a variedade de estados de oxidacao dos metais de transicao",
-        answer: "a consequencia de configuracoes eletronicas que permitem diferentes perdas de eletrons",
+        answer: "a consequência de configuracoes eletronicas que permitem diferentes perdas de eletrons",
         why: "isso diferencia esses elementos de muitas familias representativas"
       }
     ]
   },
   {
-    subtopico: "Aplicacoes e interpretacao da tabela",
+    subtopico: "Aplicacoes e interpretação da tabela",
     habilidade:
       "utilizar a tabela periodica para prever propriedades e comportamentos",
     tags: ["aplicacoes", "interpretacao", "previsao"],
@@ -316,21 +316,21 @@ const blocos = [
       },
       {
         lead: "a previsao de carga ionica por familia",
-        answer: "a inferencia baseada no numero de eletrons de valencia e na estabilidade buscada",
-        why: "isso ajuda a antecipar formacao de ions"
+        answer: "a inferencia baseada no número de eletrons de valencia e na estabilidade buscada",
+        why: "isso ajuda a antecipar formação de ions"
       },
       {
         lead: "a comparacao entre elementos vizinhos",
-        answer: "a analise de tendencias gradativas ao longo de grupos e periodos",
+        answer: "a análise de tendencias gradativas ao longo de grupos e periodos",
         why: "posicoes proximas revelam regularidades importantes"
       },
       {
         lead: "a tabela como ferramenta de estudo",
         answer: "o recurso para relacionar configuracao eletronica, propriedades e reatividade",
-        why: "ela sintetiza varias informacoes da quimica geral"
+        why: "ela sintetiza varias informacoes da química geral"
       },
       {
-        lead: "a interpretacao de uma familia desconhecida",
+        lead: "a interpretação de uma familia desconhecida",
         answer: "a possibilidade de inferir comportamento a partir do grupo e periodo observados",
         why: "a logica periodica permite extrapolacoes fundamentadas"
       }
@@ -340,14 +340,14 @@ const blocos = [
 
 export const tabelaPeriodica = {
   id: "quimica_tabela_periodica",
-  materia: "Quimica",
+  materia: "Química",
   serie: [1],
   topico: "Tabela Periodica",
   metadados: {
     disciplinaId: "quimica",
     base: "ESCOLAR",
     seloEditorial: "VERIFICADA",
-    eixo: "Quimica",
+    eixo: "Química",
     frente: "Classificacao e propriedades dos elementos",
     searchAliases: [
       "tabela periodica",
@@ -358,9 +358,9 @@ export const tabelaPeriodica = {
     ],
     subtopicosBase: blocos.map((bloco) => bloco.subtopico),
     habilidadesBase: [
-      "identificar criterios de organizacao da tabela periodica",
-      "relacionar grupos e periodos a caracteristicas eletronicas dos elementos",
-      "classificar elementos segundo caracteristicas metalicas e nao metalicas",
+      "identificar critérios de organizacao da tabela periodica",
+      "relacionar grupos e periodos a características eletronicas dos elementos",
+      "classificar elementos segundo características metalicas e não metalicas",
       "analisar tendencias periodicas na tabela",
       "utilizar a tabela periodica para prever propriedades e comportamentos"
     ],
@@ -371,7 +371,7 @@ export const tabelaPeriodica = {
   questoes: buildPlannedQuestions({
     prefix: "tp",
     serie: 1,
-    materia: "Quimica",
+    materia: "Química",
     topico: "Tabela Periodica",
     blocos,
     stemBuilders: CHEMISTRY_STEM_BUILDERS,

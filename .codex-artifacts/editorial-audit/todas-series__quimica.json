@@ -1,0 +1,170 @@
+{
+  "summary": {},
+  "results": [
+    {
+      "file": "questions/banks/1-serie/quimica/estrutura-atomica/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/quimica/funcoes-inorganicas/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/quimica/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/quimica/ligacoes-quimicas/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/quimica/tabela-periodica/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/quimica/estequiometria/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/quimica/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/quimica/reacoes-quimicas/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/quimica/solucoes/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/quimica/termoquimica/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/quimica/eletroquimica/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-10",
+        "auditoriaTipo": "varredura-rapida",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/quimica/funcoes-organicas/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/quimica/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/quimica/polimeros/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/quimica/quimica-organica/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    }
+  ]
+}

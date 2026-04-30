@@ -4708,7 +4708,10 @@ window.QuestionsPage = {
         const orderedList =
             QuestionsService.orderDirectSearchQuestions(
                 list,
-                strategy
+                strategy,
+                {
+                    terms: this.directSearchTerms
+                }
             );
 
         this.clearRuntimeNotice();

@@ -14,18 +14,18 @@ const blocos = [
     fatos: [
       {
         lead: "a polis grega",
-        answer: "o espaco politico e cultural em que debate e vida publica ganharam relevancia",
+        answer: "o espaco político e cultural em que debate e vida publica ganharam relevancia",
         why: "a vida na polis favoreceu argumentacao e participacao racional"
       },
       {
         lead: "o surgimento da filosofia na Grecia",
-        answer: "o aparecimento de explicacoes racionais sobre natureza e realidade",
+        answer: "o aparecimento de explicações racionais sobre natureza e realidade",
         why: "pensadores passaram a buscar causas naturais para o cosmo"
       },
       {
-        lead: "a importancia da escrita e do comercio",
+        lead: "a importância da escrita e do comercio",
         answer: "a ampliacao de trocas culturais que favoreceu comparacao de ideias e conhecimentos",
-        why: "circulacao de informacoes estimula investigacao e critica"
+        why: "circulacao de informacoes estimula investigação e crítica"
       },
       {
         lead: "a cidade de Mileto",
@@ -33,8 +33,8 @@ const blocos = [
         why: "ali atuaram Tales, Anaximandro e Anaximenes"
       },
       {
-        lead: "a busca racional pelo principio das coisas",
-        answer: "a tentativa de encontrar uma explicacao natural para a origem do cosmo",
+        lead: "a busca racional pelo princípio das coisas",
+        answer: "a tentativa de encontrar uma explicação natural para a origem do cosmo",
         why: "essa busca substitui narrativas exclusivamente miticas"
       }
     ]
@@ -47,7 +47,7 @@ const blocos = [
     fatos: [
       {
         lead: "a physis",
-        answer: "a natureza entendida como principio de surgimento e transformacao das coisas",
+        answer: "a natureza entendida como princípio de surgimento e transformacao das coisas",
         why: "os pre-socraticos investigavam a realidade natural como ordem racional"
       },
       {
@@ -57,18 +57,18 @@ const blocos = [
       },
       {
         lead: "a arche",
-        answer: "o principio originario de que todas as coisas derivam",
+        answer: "o princípio originario de que todas as coisas derivam",
         why: "cada pensador buscou definir qual seria esse fundamento"
       },
       {
         lead: "a unidade por tras da multiplicidade",
-        answer: "a tentativa de explicar a diversidade do real por um principio comum",
+        answer: "a tentativa de explicar a diversidade do real por um princípio comum",
         why: "essa questao orienta muitas doutrinas pre-socraticas"
       },
       {
-        lead: "a explicacao cosmologica",
-        answer: "a interpretacao racional da estrutura e origem do universo",
-        why: "ela substitui genealogias divinas por principios naturais"
+        lead: "a explicação cosmologica",
+        answer: "a interpretação racional da estrutura e origem do universo",
+        why: "ela substitui genealogias divinas por princípios naturais"
       }
     ]
   },
@@ -80,28 +80,28 @@ const blocos = [
     fatos: [
       {
         lead: "a escola jonica",
-        answer: "o conjunto de pensadores que buscou explicar a natureza por principios materiais",
-        why: "ela inaugura investigacao racional sobre a physis"
+        answer: "o conjunto de pensadores que buscou explicar a natureza por princípios materiais",
+        why: "ela inaugura investigação racional sobre a physis"
       },
       {
         lead: "o interesse dos jonicos",
-        answer: "a explicacao da origem e da composicao do mundo natural",
-        why: "seu foco estava no cosmo e nao em narrativas miticas"
+        answer: "a explicação da origem e da composicao do mundo natural",
+        why: "seu foco estava no cosmo e não em narrativas miticas"
       },
       {
-        lead: "a observacao da natureza",
+        lead: "a observação da natureza",
         answer: "um recurso intelectual importante para formular hipoteses sobre o real",
-        why: "os jonicos ligavam reflexao a fenomenos do mundo"
+        why: "os jonicos ligavam reflexão a fenômenos do mundo"
       },
       {
         lead: "o monismo jonico",
-        answer: "a ideia de que um unico principio explica a totalidade das coisas",
+        answer: "a ideia de que um unico princípio explica a totalidade das coisas",
         why: "muitos primeiros filosofos procuravam uma arche unica"
       },
       {
-        lead: "a investigacao cosmologica inicial",
+        lead: "a investigação cosmologica inicial",
         answer: "o momento em que a filosofia se volta a ordem natural do universo",
-        why: "ela marca a ruptura com explicacoes sagradas tradicionais"
+        why: "ela marca a ruptura com explicações sagradas tradicionais"
       }
     ]
   },
@@ -113,12 +113,12 @@ const blocos = [
     fatos: [
       {
         lead: "a agua em Tales",
-        answer: "o principio originario escolhido para explicar a origem de todas as coisas",
+        answer: "o princípio originario escolhido para explicar a origem de todas as coisas",
         why: "Tales via na agua a base vital e material do cosmo"
       },
       {
         lead: "o apeiron em Anaximandro",
-        answer: "o principio indefinido e ilimitado de que surgem os seres",
+        answer: "o princípio indefinido e ilimitado de que surgem os seres",
         why: "ele considerava insuficiente reduzir tudo a um elemento conhecido"
       },
       {
@@ -127,12 +127,12 @@ const blocos = [
         why: "o filosofo explica mudancas por transformacoes do ar"
       },
       {
-        lead: "a rarefacao e a condensacao",
+        lead: "a rarefacao é a condensacao",
         answer: "processos usados por Anaximenes para explicar mudancas da materia",
         why: "esses movimentos dariam origem a diferentes formas do real"
       },
       {
-        lead: "a busca de principio material pelos milesios",
+        lead: "a busca de princípio material pelos milesios",
         answer: "a tentativa de explicar o cosmo a partir de um elemento originario",
         why: "Tales, Anaximandro e Anaximenes compartilham esse problema central"
       }
@@ -141,7 +141,7 @@ const blocos = [
   {
     subtopico: "Heraclito",
     habilidade:
-      "analisar concepcoes de mudanca e permanencia entre os pre-socraticos",
+      "analisar concepcoes de mudança e permanencia entre os pre-socraticos",
     tags: ["heraclito", "devir", "logos"],
     fatos: [
       {
@@ -151,8 +151,8 @@ const blocos = [
       },
       {
         lead: "o logos em Heraclito",
-        answer: "a razao ou ordem que estrutura o movimento do mundo",
-        why: "a mudanca nao e caos puro, mas possui inteligibilidade"
+        answer: "a razão ou ordem que estrutura o movimento do mundo",
+        why: "a mudança não é caos puro, mas possui inteligibilidade"
       },
       {
         lead: "o fogo em Heraclito",
@@ -161,46 +161,46 @@ const blocos = [
       },
       {
         lead: "a unidade dos contrarios",
-        answer: "a relacao pela qual opostos participam de uma mesma ordem do real",
+        answer: "a relação pela qual opostos participam de uma mesma ordem do real",
         why: "Heraclito pensava tensao e harmonia como inseparaveis"
       },
       {
         lead: "a frase sobre o rio em Heraclito",
         answer: "a imagem usada para mostrar que tudo flui e se transforma",
-        why: "ela expressa o carater movente da existencia"
+        why: "ela expressa o caráter movente da existência"
       }
     ]
   },
   {
     subtopico: "Parmenides e escola eleatica",
     habilidade:
-      "analisar concepcoes de mudanca e permanencia entre os pre-socraticos",
+      "analisar concepcoes de mudança e permanencia entre os pre-socraticos",
     tags: ["parmenides", "eleatas", "ser"],
     fatos: [
       {
         lead: "o ser em Parmenides",
         answer: "o que e uno, eterno e imutavel",
-        why: "para ele, o verdadeiro ser nao pode nascer nem perecer"
+        why: "para ele, o verdadeiro ser não pode nascer nem perecer"
       },
       {
-        lead: "a critica de Parmenides a mudanca",
+        lead: "a crítica de Parmenides a mudança",
         answer: "a ideia de que transformacao pertence ao mundo enganoso das aparencias",
         why: "o pensamento rigoroso deveria afirmar a identidade do ser"
       },
       {
         lead: "a via da verdade",
         answer: "o caminho racional que afirma o ser como necessario e uno",
-        why: "ela se opoe ao caminho da opiniao"
+        why: "ela se opoe ao caminho da opinião"
       },
       {
-        lead: "a via da opiniao",
+        lead: "a via da opinião",
         answer: "o nivel das aparencias sensiveis e das percepcoes enganosas",
         why: "Parmenides considera insuficiente confiar nos sentidos"
       },
       {
         lead: "a escola eleatica",
-        answer: "a corrente filosofica que enfatizou unidade e imobilidade do ser",
-        why: "ela radicalizou a busca por consistencia logica no pensamento"
+        answer: "a corrente filosófica que enfatizou unidade e imobilidade do ser",
+        why: "ela radicalizou a busca por consistencia lógica no pensamento"
       }
     ]
   },
@@ -212,28 +212,28 @@ const blocos = [
     fatos: [
       {
         lead: "os pitagoricos",
-        answer: "o grupo que atribuiu aos numeros papel fundamental na estrutura do real",
+        answer: "o grupo que atribuiu aos números papel fundamental na estrutura do real",
         why: "para eles, ordem e proporcao explicam o cosmo"
       },
       {
-        lead: "o numero como principio",
-        answer: "a ideia de que a realidade pode ser compreendida por relacoes numericas",
+        lead: "o número como princípio",
+        answer: "a ideia de que a realidade pode ser compreendida por relações numericas",
         why: "a matematizacao do cosmo marca essa escola"
       },
       {
         lead: "a harmonia cosmica",
         answer: "a ordem do universo entendida como proporcao entre elementos",
-        why: "musica e matematica serviam de modelo para pensar o real"
+        why: "musica e matemática serviam de modelo para pensar o real"
       },
       {
         lead: "a comunidade pitagorica",
         answer: "um modo de vida que combinava filosofia, disciplina e simbolismo",
-        why: "os pitagoricos eram tambem uma fraternidade com regras proprias"
+        why: "os pitagoricos eram também uma fraternidade com regras próprias"
       },
       {
-        lead: "a importancia da matematica nos pitagoricos",
-        answer: "o uso de relacoes numericas para explicar estrutura e ordem do mundo",
-        why: "isso ampliou a ligacao entre razao e medida"
+        lead: "a importância da matemática nos pitagoricos",
+        answer: "o uso de relações numericas para explicar estrutura e ordem do mundo",
+        why: "isso ampliou a ligacao entre razão e medida"
       }
     ]
   },
@@ -256,16 +256,16 @@ const blocos = [
       {
         lead: "as homeomerias em Anaxagoras",
         answer: "as sementes de todas as coisas presentes na composicao do mundo",
-        why: "ele defende que tudo contem partes de tudo"
+        why: "ele defende que tudo contém partes de tudo"
       },
       {
         lead: "o nous em Anaxagoras",
         answer: "a inteligencia ordenadora que organiza o cosmo",
-        why: "esse principio racional inicia o movimento do universo"
+        why: "esse princípio racional inicia o movimento do universo"
       },
       {
         lead: "o pluralismo pre-socratico",
-        answer: "a tese de que mais de um principio compoe a realidade",
+        answer: "a tese de que mais de um princípio compoe a realidade",
         why: "Empedocles e Anaxagoras ampliam a busca por fundamentos"
       }
     ]
@@ -279,7 +279,7 @@ const blocos = [
       {
         lead: "o atomismo",
         answer: "a doutrina segundo a qual a realidade e composta por atomos e vazio",
-        why: "ela explica mudanca pela combinacao e separacao de unidades indivisiveis"
+        why: "ela explica mudança pela combinacao e separacao de unidades indivisiveis"
       },
       {
         lead: "os atomos",
@@ -289,16 +289,16 @@ const blocos = [
       {
         lead: "o vazio no atomismo",
         answer: "o espaco necessario para movimento e rearranjo dos atomos",
-        why: "sem vazio, nao haveria deslocamento nem transformacao"
+        why: "sem vazio, não haveria deslocamento nem transformacao"
       },
       {
         lead: "Democrito",
-        answer: "um dos principais representantes da explicacao atomista da natureza",
+        answer: "um dos principais representantes da explicação atomista da natureza",
         why: "ele desenvolveu uma visao mecanica do cosmo"
       },
       {
-        lead: "a explicacao mecanica do mundo",
-        answer: "a ideia de que fenomenos decorrem de movimento e combinacao materiais",
+        lead: "a explicação mecanica do mundo",
+        answer: "a ideia de que fenômenos decorrem de movimento e combinacao materiais",
         why: "isso dispensa causas miticas para explicar a realidade"
       }
     ]
@@ -306,32 +306,32 @@ const blocos = [
   {
     subtopico: "Legado dos pre-socraticos",
     habilidade:
-      "avaliar a importancia dos pre-socraticos para a historia da filosofia",
-    tags: ["legado", "historia da filosofia", "cosmologia"],
+      "avaliar a importância dos pre-socraticos para a história da filosofia",
+    tags: ["legado", "história da filosofia", "cosmologia"],
     fatos: [
       {
         lead: "o legado dos pre-socraticos",
-        answer: "a inauguracao da investigacao racional sobre natureza e principio das coisas",
+        answer: "a inauguracao da investigação racional sobre natureza e princípio das coisas",
         why: "eles abriram caminho para a filosofia ocidental"
       },
       {
-        lead: "a importancia da cosmologia pre-socratica",
+        lead: "a importância da cosmologia pre-socratica",
         answer: "o esforco de compreender o universo por meio de causas naturais",
-        why: "isso influenciou filosofia e ciencia posteriores"
+        why: "isso influenciou filosofia e ciência posteriores"
       },
       {
         lead: "a pluralidade de respostas pre-socraticas",
-        answer: "a diversidade de teorias sobre arche, mudanca e composicao do real",
+        answer: "a diversidade de teorias sobre arche, mudança e composicao do real",
         why: "essa variedade mostra a riqueza do debate inicial"
       },
       {
         lead: "a valorizacao do argumento racional",
-        answer: "a substituicao gradual da autoridade da tradicao pelo exame conceitual",
+        answer: "a substituicao gradual da autoridade da tradição pelo exame conceitual",
         why: "esse gesto marca a identidade da filosofia"
       },
       {
-        lead: "a influencia sobre filosofos posteriores",
-        answer: "a permanencia de problemas sobre ser, mudanca e conhecimento na tradicao filosofica",
+        lead: "a influência sobre filosofos posteriores",
+        answer: "a permanencia de problemas sobre ser, mudança e conhecimento na tradição filosófica",
         why: "Socrates, Platao e Aristoteles herdam e reelaboram essas questoes"
       }
     ]
@@ -348,7 +348,7 @@ export const preSocraticos = {
     base: "ESCOLAR",
     seloEditorial: "VERIFICADA",
     eixo: "Filosofia",
-    frente: "Origem da cosmologia filosofica",
+    frente: "Origem da cosmologia filosófica",
     searchAliases: [
       "pre socraticos",
       "physis e arche",
@@ -361,8 +361,8 @@ export const preSocraticos = {
       "compreender o contexto historico e cultural do surgimento da filosofia grega",
       "identificar conceitos basicos da filosofia pre-socratica",
       "reconhecer propostas fundamentais dos filosofos da escola jonica",
-      "analisar concepcoes de mudanca e permanencia entre os pre-socraticos",
-      "avaliar a importancia dos pre-socraticos para a historia da filosofia"
+      "analisar concepcoes de mudança e permanencia entre os pre-socraticos",
+      "avaliar a importância dos pre-socraticos para a história da filosofia"
     ],
     planejamentoQuestoes: PHILOSOPHY_HUNDRED_PLAN,
     auditado: true,

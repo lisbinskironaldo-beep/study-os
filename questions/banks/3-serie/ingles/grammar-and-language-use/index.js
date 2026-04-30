@@ -1,6 +1,6 @@
 ﻿export const grammarAndLanguageUse = {
   "id": "ingles_grammar_and_language_use",
-  "materia": "Ingles",
+  "materia": "Inglês",
   "serie": [
     3
   ],
@@ -9,8 +9,8 @@
     "disciplinaId": "ingles",
     "base": "ESCOLAR",
     "seloEditorial": "VERIFICADA",
-    "eixo": "Gramatica aplicada e uso da lingua",
-    "frente": "Estruturas recorrentes em leitura, interpretacao e revisao para exames",
+    "eixo": "Gramática aplicada e uso da língua",
+    "frente": "Estruturas recorrentes em leitura, interpretação e revisao para exames",
     "searchAliases": [
       "grammar and language use",
       "modals",
@@ -35,9 +35,9 @@
       "reconhecer estruturas gramaticais frequentes em contexto",
       "interpretar modalizacao, condicao e voz passiva",
       "relacionar conectores a organizacao logica do texto",
-      "analisar formacao de palavras e sentido lexical",
+      "analisar formação de palavras e sentido lexical",
       "identificar usos gramaticais recorrentes em exames",
-      "resolver questoes de lingua em articulacao com leitura"
+      "resolver questoes de língua em articulacao com leitura"
     ],
     "auditado": true,
     "auditadoEm": "2026-04-12",
@@ -49,22 +49,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Modal verbs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, Modal verbs refere-se a:",
+      "enunciado": "Em Inglês, Modal verbs refere-se a:",
       "opcoes": [
-        "os verbos modais usados para expressar possibilidade, obrigacao, conselho, permissao ou capacidade",
-        "as estruturas condicionais usadas para expressar hipotese, consequencia e possibilidade",
-        "a estrutura que destaca a acao ou o resultado, e nao o agente que a pratica",
-        "os pronomes relativos que conectam ideias e introduzem informacoes adicionais sobre pessoas, objetos ou lugares"
+        "os verbos modais usados para expressar possibilidade, obrigação, conselho, permissao ou capacidade",
+        "as estruturas condicionais usadas para expressar hipótese, consequência e possibilidade",
+        "a estrutura que destaca a ação ou o resultado, e não o agente que a pratica",
+        "os pronomes relativos que conectam ideias e introduzem informações adicionais sobre pessoas, objetos ou lugares"
       ],
-      "correta": "os verbos modais usados para expressar possibilidade, obrigacao, conselho, permissao ou capacidade",
-      "comentario": "Modal verbs refere-se aos verbos modais usados para expressar possibilidade, obrigacao, conselho, permissao ou capacidade.",
+      "correta": "os verbos modais usados para expressar possibilidade, obrigação, conselho, permissao ou capacidade",
+      "comentario": "Modal verbs refere-se aos verbos modais usados para expressar possibilidade, obrigação, conselho, permissao ou capacidade.",
       "tempoEstimado": 20,
       "tags": [
         "grammar-and-language-use",
@@ -88,14 +88,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Modal verbs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: um texto usa should, must, can e might para orientar comportamentos. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: um texto usa should, must, can e might para orientar comportamentos. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
         "Modal verbs",
         "Conditionals",
@@ -103,7 +103,7 @@
         "Relative pronouns"
       ],
       "correta": "Modal verbs",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de modal verbs.",
+      "comentario": "A situação apresentada é melhor compreendida por meio de modal verbs.",
       "tempoEstimado": 20,
       "tags": [
         "grammar-and-language-use",
@@ -127,7 +127,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Modal verbs",
       "dificuldadeLabel": "facil",
@@ -166,22 +166,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Modal verbs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente modal verbs?",
+      "enunciado": "Qual alternativa NÃO representa corretamente modal verbs?",
       "opcoes": [
         "If you study regularly, you will feel more confident.",
         "Students should check their sources before sharing information.",
         "observar o efeito de sentido produzido pelo modal no contexto.",
-        "entender intencao e grau de obrigacao ou possibilidade em frases."
+        "entender intenção e grau de obrigação ou possibilidade em frases."
       ],
       "correta": "If you study regularly, you will feel more confident.",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao modal verbs.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não modal verbs.",
       "tempoEstimado": 25,
       "tags": [
         "grammar-and-language-use",
@@ -205,17 +205,17 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Modal verbs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar modal verbs, o foco principal e:",
+      "enunciado": "Ao estudar modal verbs, o foco principal é:",
       "opcoes": [
         "interpretar nuance de sentido em estruturas com modais",
-        "reconhecer relacao entre condicao e resultado",
+        "reconhecer relação entre condicao e resultado",
         "reconhecer frases em voz passiva em contexto",
         "entender como as frases se ligam por who, which, that e similares"
       ],
@@ -244,21 +244,21 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Modal verbs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Conditionals trata de as estruturas condicionais usadas para expressar hipotese, consequencia e possibilidade, Modal verbs destaca:",
+      "enunciado": "Enquanto Conditionals trata de as estruturas condicionais usadas para expressar hipótese, consequência e possibilidade, Modal verbs destaca:",
       "opcoes": [
-        "Os verbos modais usados para expressar possibilidade, obrigacao, conselho, permissao ou capacidade.",
-        "As estruturas condicionais usadas para expressar hipotese, consequencia e possibilidade.",
-        "A estrutura que destaca a acao ou o resultado, e nao o agente que a pratica.",
-        "Os pronomes relativos que conectam ideias e introduzem informacoes adicionais sobre pessoas, objetos ou lugares."
+        "Os verbos modais usados para expressar possibilidade, obrigação, conselho, permissao ou capacidade.",
+        "As estruturas condicionais usadas para expressar hipótese, consequência e possibilidade.",
+        "A estrutura que destaca a ação ou o resultado, e não o agente que a pratica.",
+        "Os pronomes relativos que conectam ideias e introduzem informações adicionais sobre pessoas, objetos ou lugares."
       ],
-      "correta": "Os verbos modais usados para expressar possibilidade, obrigacao, conselho, permissao ou capacidade.",
+      "correta": "Os verbos modais usados para expressar possibilidade, obrigação, conselho, permissao ou capacidade.",
       "comentario": "A comparacao correta mostra a especificidade de modal verbs.",
       "tempoEstimado": 30,
       "tags": [
@@ -283,7 +283,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Modal verbs",
       "dificuldadeLabel": "facil",
@@ -298,7 +298,7 @@
         "Reported speech"
       ],
       "correta": "Modal verbs",
-      "comentario": "Esse tipo de tarefa exige dominio de modal verbs.",
+      "comentario": "Esse tipo de tarefa exige domínio de modal verbs.",
       "tempoEstimado": 35,
       "tags": [
         "grammar-and-language-use",
@@ -322,22 +322,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Modal verbs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de Modal verbs?",
+      "enunciado": "Qual situação pratica depende mais diretamente de Modal verbs?",
       "opcoes": [
-        "entender intencao e grau de obrigacao ou possibilidade em frases",
+        "entender intenção e grau de obrigação ou possibilidade em frases",
         "interpretar frases hipoteticas e relacionais em leitura",
         "interpretar foco de informacao em textos informativos e institucionais",
         "interpretar noticias, relatos e citacoes indiretas"
       ],
-      "correta": "entender intencao e grau de obrigacao ou possibilidade em frases",
-      "comentario": "Modal verbs aparece de forma direta em entender intencao e grau de obrigacao ou possibilidade em frases.",
+      "correta": "entender intenção e grau de obrigação ou possibilidade em frases",
+      "comentario": "Modal verbs aparece de forma direta em entender intenção e grau de obrigação ou possibilidade em frases.",
       "tempoEstimado": 35,
       "tags": [
         "grammar-and-language-use",
@@ -361,14 +361,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Modal verbs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre modal verbs?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre modal verbs?",
       "opcoes": [
         "o caso e resolvido com foco em modal verbs.",
         "o caso e melhor resolvido por conditionals.",
@@ -376,7 +376,7 @@
         "o caso impede qualquer uso de relative pronouns."
       ],
       "correta": "o caso e resolvido com foco em modal verbs.",
-      "comentario": "A conclusao correta retoma a funcao central de modal verbs.",
+      "comentario": "A conclusão correta retoma a função central de modal verbs.",
       "tempoEstimado": 40,
       "tags": [
         "grammar-and-language-use",
@@ -400,7 +400,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Modal verbs",
       "dificuldadeLabel": "facil",
@@ -409,12 +409,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar modal verbs, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como modal verbs aparece em entender intencao e grau de obrigacao ou possibilidade em frases?",
-        "Como conditionals substitui totalmente entender intencao e grau de obrigacao ou possibilidade em frases?",
+        "Como modal verbs aparece em entender intenção e grau de obrigação ou possibilidade em frases?",
+        "Como conditionals substitui totalmente entender intenção e grau de obrigação ou possibilidade em frases?",
         "Por que passive voice torna desnecessario estudar Modal verbs?",
         "De que modo relative pronouns elimina toda leitura de contexto?"
       ],
-      "correta": "Como modal verbs aparece em entender intencao e grau de obrigacao ou possibilidade em frases?",
+      "correta": "Como modal verbs aparece em entender intenção e grau de obrigação ou possibilidade em frases?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de modal verbs.",
       "tempoEstimado": 40,
       "tags": [
@@ -439,22 +439,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Modal verbs",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em modal verbs e pensar que:",
+      "enunciado": "Um erro comum em modal verbs é pensar que:",
       "opcoes": [
         "todos os modal verbs significam apenas futuro",
-        "all conditionals expressam situacoes impossiveis",
+        "all conditionals expressam situações impossiveis",
         "a voz passiva e apenas uma forma mais dificil de dizer a mesma coisa sem mudanca de foco",
-        "relative pronouns sao dispensaveis e nao alteram o sentido da frase"
+        "relative pronouns são dispensáveis e não alteram o sentido da frase"
       ],
       "correta": "todos os modal verbs significam apenas futuro",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de modal verbs.",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de modal verbs.",
       "tempoEstimado": 45,
       "tags": [
         "grammar-and-language-use",
@@ -478,21 +478,21 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Modal verbs",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"must, can e might servem para a mesma ideia sem diferenca de sentido\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"must, can e might servem para a mesma ideia sem diferenca de sentido\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque os verbos modais usados para expressar possibilidade, obrigacao, conselho, permissao ou capacidade.",
-        "A afirmacao esta correta, pois resume integralmente modal verbs.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque os verbos modais usados para expressar possibilidade, obrigação, conselho, permissao ou capacidade.",
+        "A afirmação está correta, pois resume integralmente modal verbs.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque os verbos modais usados para expressar possibilidade, obrigacao, conselho, permissao ou capacidade.",
+      "correta": "A afirmação está incorreta, porque os verbos modais usados para expressar possibilidade, obrigação, conselho, permissao ou capacidade.",
       "comentario": "A fala do estudante apresenta um equivoco conceitual sobre modal verbs.",
       "tempoEstimado": 45,
       "tags": [
@@ -517,22 +517,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Modal verbs",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se modal verbs fosse ignorado(a) em entender intencao e grau de obrigacao ou possibilidade em frases, o resultado mais provavel seria:",
+      "enunciado": "Se modal verbs fosse ignorado(a) em entender intenção e grau de obrigação ou possibilidade em frases, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em entender intencao e grau de obrigacao ou possibilidade em frases.",
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em entender intenção e grau de obrigação ou possibilidade em frases.",
         "a questao seria resolvida automaticamente por conditionals.",
-        "nenhuma interpretacao seria alterada, porque Modal verbs nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "nenhuma interpretação seria alterada, porque Modal verbs não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em entender intencao e grau de obrigacao ou possibilidade em frases.",
-      "comentario": "Ignorar modal verbs compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em entender intenção e grau de obrigação ou possibilidade em frases.",
+      "comentario": "Ignorar modal verbs compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "grammar-and-language-use",
@@ -556,14 +556,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Modal verbs",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor Modal verbs?",
+      "enunciado": "Qual trecho ou ação ilustra melhor Modal verbs?",
       "opcoes": [
         "Students should check their sources before sharing information.",
         "If you study regularly, you will feel more confident.",
@@ -571,7 +571,7 @@
         "The student who won the contest is from our class."
       ],
       "correta": "Students should check their sources before sharing information.",
-      "comentario": "O item correto e o que melhor exemplifica modal verbs.",
+      "comentario": "O item correto é o que melhor exemplifica modal verbs.",
       "tempoEstimado": 50,
       "tags": [
         "grammar-and-language-use",
@@ -595,7 +595,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Modal verbs",
       "dificuldadeLabel": "dificil",
@@ -606,7 +606,7 @@
       "opcoes": [
         "o modal indica conselho ou recomendacao",
         "a frase relaciona condicao a resultado provavel",
-        "a frase destaca o projeto e o resultado da acao",
+        "a frase destaca o projeto e o resultado da ação",
         "o pronome relativo conecta a informacao adicional ao referente correto"
       ],
       "correta": "o modal indica conselho ou recomendacao",
@@ -634,22 +634,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Modal verbs",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar modal verbs?",
+      "enunciado": "Qual estratégia ajuda mais a estudar modal verbs?",
       "opcoes": [
         "observar o efeito de sentido produzido pelo modal no contexto",
-        "identificar a parte da condicao e a consequencia prevista",
+        "identificar a parte da condicao e a consequência prevista",
         "observar estrutura com be mais participio e a mudanca de foco da frase",
         "identificar o termo retomado e o pronome usado para liga-lo a informacao extra"
       ],
       "correta": "observar o efeito de sentido produzido pelo modal no contexto",
-      "comentario": "A estrategia correta fortalece o dominio de modal verbs.",
+      "comentario": "A estratégia correta fortalece o domínio de modal verbs.",
       "tempoEstimado": 55,
       "tags": [
         "grammar-and-language-use",
@@ -673,22 +673,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Modal verbs",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Modal verbs e mais cobrado quando:",
+      "enunciado": "Em uma prova, Modal verbs é mais cobrado quando:",
       "opcoes": [
         "a questao pede interpretar valor de modal verb em uso",
         "o item cobra leitura do efeito de sentido em estruturas condicionais",
         "a questao pede identificar ou interpretar voz passiva",
-        "o item cobra coesao e relacao entre referente e informacao complementar"
+        "o item cobra coesão e relação entre referente e informacao complementar"
       ],
       "correta": "a questao pede interpretar valor de modal verb em uso",
-      "comentario": "Esse e o tipo de demanda em que modal verbs aparece com mais frequencia.",
+      "comentario": "Esse é o tipo de demanda em que modal verbs aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "grammar-and-language-use",
@@ -712,7 +712,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Modal verbs",
       "dificuldadeLabel": "dificil",
@@ -721,13 +721,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Modal verbs?",
       "opcoes": [
-        "Em sintese, os verbos modais usados para expressar possibilidade, obrigacao, conselho, permissao ou capacidade.",
-        "Em sintese, as estruturas condicionais usadas para expressar hipotese, consequencia e possibilidade.",
-        "Em sintese, a estrutura que destaca a acao ou o resultado, e nao o agente que a pratica.",
-        "Em sintese, os pronomes relativos que conectam ideias e introduzem informacoes adicionais sobre pessoas, objetos ou lugares."
+        "Em sintese, os verbos modais usados para expressar possibilidade, obrigação, conselho, permissao ou capacidade.",
+        "Em sintese, as estruturas condicionais usadas para expressar hipótese, consequência e possibilidade.",
+        "Em sintese, a estrutura que destaca a ação ou o resultado, e não o agente que a pratica.",
+        "Em sintese, os pronomes relativos que conectam ideias e introduzem informações adicionais sobre pessoas, objetos ou lugares."
       ],
-      "correta": "Em sintese, os verbos modais usados para expressar possibilidade, obrigacao, conselho, permissao ou capacidade.",
-      "comentario": "O resumo correto recupera o nucleo de modal verbs.",
+      "correta": "Em sintese, os verbos modais usados para expressar possibilidade, obrigação, conselho, permissao ou capacidade.",
+      "comentario": "O resumo correto recupera o núcleo de modal verbs.",
       "tempoEstimado": 60,
       "tags": [
         "grammar-and-language-use",
@@ -751,14 +751,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Modal verbs",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Modal verbs?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em Modal verbs?",
       "opcoes": [
         "Students should check their sources before sharing information. -> o modal indica conselho ou recomendacao",
         "If you study regularly, you will feel more confident. -> o modal indica conselho ou recomendacao",
@@ -766,7 +766,7 @@
         "The student who won the contest is from our class. -> a frase relaciona condicao a resultado provavel"
       ],
       "correta": "Students should check their sources before sharing information. -> o modal indica conselho ou recomendacao",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em modal verbs.",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em modal verbs.",
       "tempoEstimado": 65,
       "tags": [
         "grammar-and-language-use",
@@ -790,7 +790,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Modal verbs",
       "dificuldadeLabel": "dificil",
@@ -801,7 +801,7 @@
       "opcoes": [
         "interpretar nuance de sentido em estruturas com modais",
         "observar o efeito de sentido produzido pelo modal no contexto",
-        "entender intencao e grau de obrigacao ou possibilidade em frases",
+        "entender intenção e grau de obrigação ou possibilidade em frases",
         "a questao pede interpretar valor de modal verb em uso"
       ],
       "correta": "interpretar nuance de sentido em estruturas com modais",
@@ -829,22 +829,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Conditionals",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, Conditionals refere-se a:",
+      "enunciado": "Em Inglês, Conditionals refere-se a:",
       "opcoes": [
-        "as estruturas condicionais usadas para expressar hipotese, consequencia e possibilidade",
-        "a estrutura que destaca a acao ou o resultado, e nao o agente que a pratica",
-        "os pronomes relativos que conectam ideias e introduzem informacoes adicionais sobre pessoas, objetos ou lugares",
+        "as estruturas condicionais usadas para expressar hipótese, consequência e possibilidade",
+        "a estrutura que destaca a ação ou o resultado, e não o agente que a pratica",
+        "os pronomes relativos que conectam ideias e introduzem informações adicionais sobre pessoas, objetos ou lugares",
         "a forma de relatar falas e ideias de outra pessoa sem repetir exatamente suas palavras originais"
       ],
-      "correta": "as estruturas condicionais usadas para expressar hipotese, consequencia e possibilidade",
-      "comentario": "Conditionals refere-se as estruturas condicionais usadas para expressar hipotese, consequencia e possibilidade.",
+      "correta": "as estruturas condicionais usadas para expressar hipótese, consequência e possibilidade",
+      "comentario": "Conditionals refere-se as estruturas condicionais usadas para expressar hipótese, consequência e possibilidade.",
       "tempoEstimado": 20,
       "tags": [
         "grammar-and-language-use",
@@ -868,14 +868,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Conditionals",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: um texto afirma that if people reduce waste, cities will become cleaner. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: um texto afirma that if people reduce waste, cities will become cleaner. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
         "Conditionals",
         "Passive voice",
@@ -883,7 +883,7 @@
         "Reported speech"
       ],
       "correta": "Conditionals",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de conditionals.",
+      "comentario": "A situação apresentada é melhor compreendida por meio de conditionals.",
       "tempoEstimado": 20,
       "tags": [
         "grammar-and-language-use",
@@ -907,7 +907,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Conditionals",
       "dificuldadeLabel": "facil",
@@ -946,22 +946,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Conditionals",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente conditionals?",
+      "enunciado": "Qual alternativa NÃO representa corretamente conditionals?",
       "opcoes": [
         "The project was created by local students.",
         "If you study regularly, you will feel more confident.",
-        "identificar a parte da condicao e a consequencia prevista.",
+        "identificar a parte da condicao e a consequência prevista.",
         "interpretar frases hipoteticas e relacionais em leitura."
       ],
       "correta": "The project was created by local students.",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao conditionals.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não conditionals.",
       "tempoEstimado": 25,
       "tags": [
         "grammar-and-language-use",
@@ -985,22 +985,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Conditionals",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar conditionals, o foco principal e:",
+      "enunciado": "Ao estudar conditionals, o foco principal é:",
       "opcoes": [
-        "reconhecer relacao entre condicao e resultado",
+        "reconhecer relação entre condicao e resultado",
         "reconhecer frases em voz passiva em contexto",
         "entender como as frases se ligam por who, which, that e similares",
         "reconhecer mudanca de ponto de vista e reformulacao de fala"
       ],
-      "correta": "reconhecer relacao entre condicao e resultado",
-      "comentario": "Conditionals concentra-se em reconhecer relacao entre condicao e resultado.",
+      "correta": "reconhecer relação entre condicao e resultado",
+      "comentario": "Conditionals concentra-se em reconhecer relação entre condicao e resultado.",
       "tempoEstimado": 30,
       "tags": [
         "grammar-and-language-use",
@@ -1024,21 +1024,21 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Conditionals",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Passive voice trata de a estrutura que destaca a acao ou o resultado, e nao o agente que a pratica, Conditionals destaca:",
+      "enunciado": "Enquanto Passive voice trata de a estrutura que destaca a ação ou o resultado, e não o agente que a pratica, Conditionals destaca:",
       "opcoes": [
-        "As estruturas condicionais usadas para expressar hipotese, consequencia e possibilidade.",
-        "A estrutura que destaca a acao ou o resultado, e nao o agente que a pratica.",
-        "Os pronomes relativos que conectam ideias e introduzem informacoes adicionais sobre pessoas, objetos ou lugares.",
+        "As estruturas condicionais usadas para expressar hipótese, consequência e possibilidade.",
+        "A estrutura que destaca a ação ou o resultado, e não o agente que a pratica.",
+        "Os pronomes relativos que conectam ideias e introduzem informações adicionais sobre pessoas, objetos ou lugares.",
         "A forma de relatar falas e ideias de outra pessoa sem repetir exatamente suas palavras originais."
       ],
-      "correta": "As estruturas condicionais usadas para expressar hipotese, consequencia e possibilidade.",
+      "correta": "As estruturas condicionais usadas para expressar hipótese, consequência e possibilidade.",
       "comentario": "A comparacao correta mostra a especificidade de conditionals.",
       "tempoEstimado": 30,
       "tags": [
@@ -1063,7 +1063,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Conditionals",
       "dificuldadeLabel": "facil",
@@ -1078,7 +1078,7 @@
         "Linking words"
       ],
       "correta": "Conditionals",
-      "comentario": "Esse tipo de tarefa exige dominio de conditionals.",
+      "comentario": "Esse tipo de tarefa exige domínio de conditionals.",
       "tempoEstimado": 35,
       "tags": [
         "grammar-and-language-use",
@@ -1102,19 +1102,19 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Conditionals",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de Conditionals?",
+      "enunciado": "Qual situação pratica depende mais diretamente de Conditionals?",
       "opcoes": [
         "interpretar frases hipoteticas e relacionais em leitura",
         "interpretar foco de informacao em textos informativos e institucionais",
-        "interpretar coesao e detalhamento em frases mais elaboradas",
-        "acompanhar a logica do texto e a relacao entre frases"
+        "interpretar coesão e detalhamento em frases mais elaboradas",
+        "acompanhar a logica do texto e a relação entre frases"
       ],
       "correta": "interpretar frases hipoteticas e relacionais em leitura",
       "comentario": "Conditionals aparece de forma direta em interpretar frases hipoteticas e relacionais em leitura.",
@@ -1141,14 +1141,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Conditionals",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre conditionals?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre conditionals?",
       "opcoes": [
         "o caso e resolvido com foco em conditionals.",
         "o caso e melhor resolvido por passive voice.",
@@ -1156,7 +1156,7 @@
         "o caso impede qualquer uso de reported speech."
       ],
       "correta": "o caso e resolvido com foco em conditionals.",
-      "comentario": "A conclusao correta retoma a funcao central de conditionals.",
+      "comentario": "A conclusão correta retoma a função central de conditionals.",
       "tempoEstimado": 40,
       "tags": [
         "grammar-and-language-use",
@@ -1180,7 +1180,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Conditionals",
       "dificuldadeLabel": "facil",
@@ -1219,22 +1219,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Conditionals",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em conditionals e pensar que:",
+      "enunciado": "Um erro comum em conditionals é pensar que:",
       "opcoes": [
-        "all conditionals expressam situacoes impossiveis",
+        "all conditionals expressam situações impossiveis",
         "a voz passiva e apenas uma forma mais dificil de dizer a mesma coisa sem mudanca de foco",
-        "relative pronouns sao dispensaveis e nao alteram o sentido da frase",
+        "relative pronouns são dispensáveis e não alteram o sentido da frase",
         "reported speech e apenas colocar aspas em torno da fala"
       ],
-      "correta": "all conditionals expressam situacoes impossiveis",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de conditionals.",
+      "correta": "all conditionals expressam situações impossiveis",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de conditionals.",
       "tempoEstimado": 45,
       "tags": [
         "grammar-and-language-use",
@@ -1258,21 +1258,21 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Conditionals",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"if clauses sempre falam de algo que nunca vai acontecer\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"if clauses sempre falam de algo que nunca vai acontecer\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque as estruturas condicionais usadas para expressar hipotese, consequencia e possibilidade.",
-        "A afirmacao esta correta, pois resume integralmente conditionals.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque as estruturas condicionais usadas para expressar hipótese, consequência e possibilidade.",
+        "A afirmação está correta, pois resume integralmente conditionals.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque as estruturas condicionais usadas para expressar hipotese, consequencia e possibilidade.",
+      "correta": "A afirmação está incorreta, porque as estruturas condicionais usadas para expressar hipótese, consequência e possibilidade.",
       "comentario": "A fala do estudante apresenta um equivoco conceitual sobre conditionals.",
       "tempoEstimado": 45,
       "tags": [
@@ -1297,7 +1297,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Conditionals",
       "dificuldadeLabel": "medio",
@@ -1306,13 +1306,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Se conditionals fosse ignorado(a) em interpretar frases hipoteticas e relacionais em leitura, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar frases hipoteticas e relacionais em leitura.",
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar frases hipoteticas e relacionais em leitura.",
         "a questao seria resolvida automaticamente por passive voice.",
-        "nenhuma interpretacao seria alterada, porque Conditionals nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "nenhuma interpretação seria alterada, porque Conditionals não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar frases hipoteticas e relacionais em leitura.",
-      "comentario": "Ignorar conditionals compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar frases hipoteticas e relacionais em leitura.",
+      "comentario": "Ignorar conditionals compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "grammar-and-language-use",
@@ -1336,14 +1336,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Conditionals",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor Conditionals?",
+      "enunciado": "Qual trecho ou ação ilustra melhor Conditionals?",
       "opcoes": [
         "If you study regularly, you will feel more confident.",
         "The project was created by local students.",
@@ -1351,7 +1351,7 @@
         "She said that the results were surprising."
       ],
       "correta": "If you study regularly, you will feel more confident.",
-      "comentario": "O item correto e o que melhor exemplifica conditionals.",
+      "comentario": "O item correto é o que melhor exemplifica conditionals.",
       "tempoEstimado": 50,
       "tags": [
         "grammar-and-language-use",
@@ -1375,7 +1375,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Conditionals",
       "dificuldadeLabel": "dificil",
@@ -1385,7 +1385,7 @@
       "enunciado": "Ao encontrar o exemplo \"If you study regularly, you will feel more confident.\", a leitura mais adequada e:",
       "opcoes": [
         "a frase relaciona condicao a resultado provavel",
-        "a frase destaca o projeto e o resultado da acao",
+        "a frase destaca o projeto e o resultado da ação",
         "o pronome relativo conecta a informacao adicional ao referente correto",
         "a frase apresenta discurso relatado em vez de citacao direta"
       ],
@@ -1414,22 +1414,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Conditionals",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar conditionals?",
+      "enunciado": "Qual estratégia ajuda mais a estudar conditionals?",
       "opcoes": [
-        "identificar a parte da condicao e a consequencia prevista",
+        "identificar a parte da condicao e a consequência prevista",
         "observar estrutura com be mais participio e a mudanca de foco da frase",
         "identificar o termo retomado e o pronome usado para liga-lo a informacao extra",
-        "observar marcas de relato e mudanca estrutural em relacao a fala original"
+        "observar marcas de relato e mudanca estrutural em relação a fala original"
       ],
-      "correta": "identificar a parte da condicao e a consequencia prevista",
-      "comentario": "A estrategia correta fortalece o dominio de conditionals.",
+      "correta": "identificar a parte da condicao e a consequência prevista",
+      "comentario": "A estratégia correta fortalece o domínio de conditionals.",
       "tempoEstimado": 55,
       "tags": [
         "grammar-and-language-use",
@@ -1453,22 +1453,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Conditionals",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Conditionals e mais cobrado quando:",
+      "enunciado": "Em uma prova, Conditionals é mais cobrado quando:",
       "opcoes": [
         "o item cobra leitura do efeito de sentido em estruturas condicionais",
         "a questao pede identificar ou interpretar voz passiva",
-        "o item cobra coesao e relacao entre referente e informacao complementar",
+        "o item cobra coesão e relação entre referente e informacao complementar",
         "a questao pede identificar discurso indireto e seu efeito"
       ],
       "correta": "o item cobra leitura do efeito de sentido em estruturas condicionais",
-      "comentario": "Esse e o tipo de demanda em que conditionals aparece com mais frequencia.",
+      "comentario": "Esse é o tipo de demanda em que conditionals aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "grammar-and-language-use",
@@ -1492,7 +1492,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Conditionals",
       "dificuldadeLabel": "dificil",
@@ -1501,13 +1501,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Conditionals?",
       "opcoes": [
-        "Em sintese, as estruturas condicionais usadas para expressar hipotese, consequencia e possibilidade.",
-        "Em sintese, a estrutura que destaca a acao ou o resultado, e nao o agente que a pratica.",
-        "Em sintese, os pronomes relativos que conectam ideias e introduzem informacoes adicionais sobre pessoas, objetos ou lugares.",
+        "Em sintese, as estruturas condicionais usadas para expressar hipótese, consequência e possibilidade.",
+        "Em sintese, a estrutura que destaca a ação ou o resultado, e não o agente que a pratica.",
+        "Em sintese, os pronomes relativos que conectam ideias e introduzem informações adicionais sobre pessoas, objetos ou lugares.",
         "Em sintese, a forma de relatar falas e ideias de outra pessoa sem repetir exatamente suas palavras originais."
       ],
-      "correta": "Em sintese, as estruturas condicionais usadas para expressar hipotese, consequencia e possibilidade.",
-      "comentario": "O resumo correto recupera o nucleo de conditionals.",
+      "correta": "Em sintese, as estruturas condicionais usadas para expressar hipótese, consequência e possibilidade.",
+      "comentario": "O resumo correto recupera o núcleo de conditionals.",
       "tempoEstimado": 60,
       "tags": [
         "grammar-and-language-use",
@@ -1531,22 +1531,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Conditionals",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Conditionals?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em Conditionals?",
       "opcoes": [
         "If you study regularly, you will feel more confident. -> a frase relaciona condicao a resultado provavel",
         "The project was created by local students. -> a frase relaciona condicao a resultado provavel",
         "The student who won the contest is from our class. -> a frase apresenta discurso relatado em vez de citacao direta",
-        "She said that the results were surprising. -> a frase destaca o projeto e o resultado da acao"
+        "She said that the results were surprising. -> a frase destaca o projeto e o resultado da ação"
       ],
       "correta": "If you study regularly, you will feel more confident. -> a frase relaciona condicao a resultado provavel",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em conditionals.",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em conditionals.",
       "tempoEstimado": 65,
       "tags": [
         "grammar-and-language-use",
@@ -1570,7 +1570,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Conditionals",
       "dificuldadeLabel": "dificil",
@@ -1579,13 +1579,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Ao resolver uma atividade sobre conditionals, o estudante deve principalmente:",
       "opcoes": [
-        "reconhecer relacao entre condicao e resultado",
-        "identificar a parte da condicao e a consequencia prevista",
+        "reconhecer relação entre condicao e resultado",
+        "identificar a parte da condicao e a consequência prevista",
         "interpretar frases hipoteticas e relacionais em leitura",
         "o item cobra leitura do efeito de sentido em estruturas condicionais"
       ],
-      "correta": "reconhecer relacao entre condicao e resultado",
-      "comentario": "O objetivo central de conditionals e reconhecer relacao entre condicao e resultado.",
+      "correta": "reconhecer relação entre condicao e resultado",
+      "comentario": "O objetivo central de conditionals e reconhecer relação entre condicao e resultado.",
       "tempoEstimado": 70,
       "tags": [
         "grammar-and-language-use",
@@ -1609,22 +1609,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Passive voice",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, Passive voice refere-se a:",
+      "enunciado": "Em Inglês, Passive voice refere-se a:",
       "opcoes": [
-        "a estrutura que destaca a acao ou o resultado, e nao o agente que a pratica",
-        "os pronomes relativos que conectam ideias e introduzem informacoes adicionais sobre pessoas, objetos ou lugares",
+        "a estrutura que destaca a ação ou o resultado, e não o agente que a pratica",
+        "os pronomes relativos que conectam ideias e introduzem informações adicionais sobre pessoas, objetos ou lugares",
         "a forma de relatar falas e ideias de outra pessoa sem repetir exatamente suas palavras originais",
-        "as palavras e expressoes que conectam ideias e organizam a logica do texto"
+        "as palavras e expressões que conectam ideias e organizam a logica do texto"
       ],
-      "correta": "a estrutura que destaca a acao ou o resultado, e nao o agente que a pratica",
-      "comentario": "Passive voice refere-se a estrutura que destaca a acao ou o resultado, e nao o agente que a pratica.",
+      "correta": "a estrutura que destaca a ação ou o resultado, e não o agente que a pratica",
+      "comentario": "Passive voice refere-se a estrutura que destaca a ação ou o resultado, e não o agente que a pratica.",
       "tempoEstimado": 20,
       "tags": [
         "grammar-and-language-use",
@@ -1648,14 +1648,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Passive voice",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: uma noticia informa that plastic bottles are collected and recycled every day. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: uma noticia informa that plastic bottles are collected and recycled every day. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
         "Passive voice",
         "Relative pronouns",
@@ -1663,7 +1663,7 @@
         "Linking words"
       ],
       "correta": "Passive voice",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de passive voice.",
+      "comentario": "A situação apresentada é melhor compreendida por meio de passive voice.",
       "tempoEstimado": 20,
       "tags": [
         "grammar-and-language-use",
@@ -1687,7 +1687,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Passive voice",
       "dificuldadeLabel": "facil",
@@ -1726,14 +1726,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Passive voice",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente passive voice?",
+      "enunciado": "Qual alternativa NÃO representa corretamente passive voice?",
       "opcoes": [
         "The student who won the contest is from our class.",
         "The project was created by local students.",
@@ -1741,7 +1741,7 @@
         "interpretar foco de informacao em textos informativos e institucionais."
       ],
       "correta": "The student who won the contest is from our class.",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao passive voice.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não passive voice.",
       "tempoEstimado": 25,
       "tags": [
         "grammar-and-language-use",
@@ -1765,19 +1765,19 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Passive voice",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar passive voice, o foco principal e:",
+      "enunciado": "Ao estudar passive voice, o foco principal é:",
       "opcoes": [
         "reconhecer frases em voz passiva em contexto",
         "entender como as frases se ligam por who, which, that e similares",
         "reconhecer mudanca de ponto de vista e reformulacao de fala",
-        "interpretar contraste, causa, consequencia, adicao e exemplificacao"
+        "interpretar contraste, causa, consequência, adicao e exemplificacao"
       ],
       "correta": "reconhecer frases em voz passiva em contexto",
       "comentario": "Passive voice concentra-se em reconhecer frases em voz passiva em contexto.",
@@ -1804,21 +1804,21 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Passive voice",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Relative pronouns trata de os pronomes relativos que conectam ideias e introduzem informacoes adicionais sobre pessoas, objetos ou lugares, Passive voice destaca:",
+      "enunciado": "Enquanto Relative pronouns trata de os pronomes relativos que conectam ideias e introduzem informações adicionais sobre pessoas, objetos ou lugares, Passive voice destaca:",
       "opcoes": [
-        "A estrutura que destaca a acao ou o resultado, e nao o agente que a pratica.",
-        "Os pronomes relativos que conectam ideias e introduzem informacoes adicionais sobre pessoas, objetos ou lugares.",
+        "A estrutura que destaca a ação ou o resultado, e não o agente que a pratica.",
+        "Os pronomes relativos que conectam ideias e introduzem informações adicionais sobre pessoas, objetos ou lugares.",
         "A forma de relatar falas e ideias de outra pessoa sem repetir exatamente suas palavras originais.",
-        "As palavras e expressoes que conectam ideias e organizam a logica do texto."
+        "As palavras e expressões que conectam ideias e organizam a logica do texto."
       ],
-      "correta": "A estrutura que destaca a acao ou o resultado, e nao o agente que a pratica.",
+      "correta": "A estrutura que destaca a ação ou o resultado, e não o agente que a pratica.",
       "comentario": "A comparacao correta mostra a especificidade de passive voice.",
       "tempoEstimado": 30,
       "tags": [
@@ -1843,7 +1843,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Passive voice",
       "dificuldadeLabel": "facil",
@@ -1858,7 +1858,7 @@
         "Phrasal verbs"
       ],
       "correta": "Passive voice",
-      "comentario": "Esse tipo de tarefa exige dominio de passive voice.",
+      "comentario": "Esse tipo de tarefa exige domínio de passive voice.",
       "tempoEstimado": 35,
       "tags": [
         "grammar-and-language-use",
@@ -1882,19 +1882,19 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Passive voice",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de Passive voice?",
+      "enunciado": "Qual situação pratica depende mais diretamente de Passive voice?",
       "opcoes": [
         "interpretar foco de informacao em textos informativos e institucionais",
-        "interpretar coesao e detalhamento em frases mais elaboradas",
+        "interpretar coesão e detalhamento em frases mais elaboradas",
         "interpretar noticias, relatos e citacoes indiretas",
-        "interpretar expressoes frequentes da lingua em contextos reais"
+        "interpretar expressões frequentes da língua em contextos reais"
       ],
       "correta": "interpretar foco de informacao em textos informativos e institucionais",
       "comentario": "Passive voice aparece de forma direta em interpretar foco de informacao em textos informativos e institucionais.",
@@ -1921,14 +1921,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Passive voice",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre passive voice?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre passive voice?",
       "opcoes": [
         "o caso e resolvido com foco em passive voice.",
         "o caso e melhor resolvido por relative pronouns.",
@@ -1936,7 +1936,7 @@
         "o caso impede qualquer uso de linking words."
       ],
       "correta": "o caso e resolvido com foco em passive voice.",
-      "comentario": "A conclusao correta retoma a funcao central de passive voice.",
+      "comentario": "A conclusão correta retoma a função central de passive voice.",
       "tempoEstimado": 40,
       "tags": [
         "grammar-and-language-use",
@@ -1960,7 +1960,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Passive voice",
       "dificuldadeLabel": "facil",
@@ -1999,22 +1999,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Passive voice",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em passive voice e pensar que:",
+      "enunciado": "Um erro comum em passive voice é pensar que:",
       "opcoes": [
         "a voz passiva e apenas uma forma mais dificil de dizer a mesma coisa sem mudanca de foco",
-        "relative pronouns sao dispensaveis e nao alteram o sentido da frase",
+        "relative pronouns são dispensáveis e não alteram o sentido da frase",
         "reported speech e apenas colocar aspas em torno da fala",
-        "linking words sao meros conectores visuais sem impacto semantico real"
+        "linking words são meros conectores visuais sem impacto semantico real"
       ],
       "correta": "a voz passiva e apenas uma forma mais dificil de dizer a mesma coisa sem mudanca de foco",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de passive voice.",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de passive voice.",
       "tempoEstimado": 45,
       "tags": [
         "grammar-and-language-use",
@@ -2038,21 +2038,21 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Passive voice",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"na passive voice, o agente sempre precisa aparecer na frase\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"na passive voice, o agente sempre precisa aparecer na frase\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque a estrutura que destaca a acao ou o resultado, e nao o agente que a pratica.",
-        "A afirmacao esta correta, pois resume integralmente passive voice.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque a estrutura que destaca a ação ou o resultado, e não o agente que a pratica.",
+        "A afirmação está correta, pois resume integralmente passive voice.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque a estrutura que destaca a acao ou o resultado, e nao o agente que a pratica.",
+      "correta": "A afirmação está incorreta, porque a estrutura que destaca a ação ou o resultado, e não o agente que a pratica.",
       "comentario": "A fala do estudante apresenta um equivoco conceitual sobre passive voice.",
       "tempoEstimado": 45,
       "tags": [
@@ -2077,7 +2077,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Passive voice",
       "dificuldadeLabel": "medio",
@@ -2086,13 +2086,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Se passive voice fosse ignorado(a) em interpretar foco de informacao em textos informativos e institucionais, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar foco de informacao em textos informativos e institucionais.",
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar foco de informacao em textos informativos e institucionais.",
         "a questao seria resolvida automaticamente por relative pronouns.",
-        "nenhuma interpretacao seria alterada, porque Passive voice nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "nenhuma interpretação seria alterada, porque Passive voice não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar foco de informacao em textos informativos e institucionais.",
-      "comentario": "Ignorar passive voice compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar foco de informacao em textos informativos e institucionais.",
+      "comentario": "Ignorar passive voice compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "grammar-and-language-use",
@@ -2116,14 +2116,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Passive voice",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor Passive voice?",
+      "enunciado": "Qual trecho ou ação ilustra melhor Passive voice?",
       "opcoes": [
         "The project was created by local students.",
         "The student who won the contest is from our class.",
@@ -2131,7 +2131,7 @@
         "The problem is serious; therefore, action is necessary."
       ],
       "correta": "The project was created by local students.",
-      "comentario": "O item correto e o que melhor exemplifica passive voice.",
+      "comentario": "O item correto é o que melhor exemplifica passive voice.",
       "tempoEstimado": 50,
       "tags": [
         "grammar-and-language-use",
@@ -2155,7 +2155,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Passive voice",
       "dificuldadeLabel": "dificil",
@@ -2164,12 +2164,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Ao encontrar o exemplo \"The project was created by local students.\", a leitura mais adequada e:",
       "opcoes": [
-        "a frase destaca o projeto e o resultado da acao",
+        "a frase destaca o projeto e o resultado da ação",
         "o pronome relativo conecta a informacao adicional ao referente correto",
         "a frase apresenta discurso relatado em vez de citacao direta",
-        "o conector sinaliza consequencia e organiza a leitura"
+        "o conector sinaliza consequência e organiza a leitura"
       ],
-      "correta": "a frase destaca o projeto e o resultado da acao",
+      "correta": "a frase destaca o projeto e o resultado da ação",
       "comentario": "A leitura correta do exemplo revela o papel de passive voice.",
       "tempoEstimado": 55,
       "tags": [
@@ -2194,22 +2194,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Passive voice",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar passive voice?",
+      "enunciado": "Qual estratégia ajuda mais a estudar passive voice?",
       "opcoes": [
         "observar estrutura com be mais participio e a mudanca de foco da frase",
         "identificar o termo retomado e o pronome usado para liga-lo a informacao extra",
-        "observar marcas de relato e mudanca estrutural em relacao a fala original",
-        "observar a relacao logica produzida pelo conector no contexto"
+        "observar marcas de relato e mudanca estrutural em relação a fala original",
+        "observar a relação logica produzida pelo conector no contexto"
       ],
       "correta": "observar estrutura com be mais participio e a mudanca de foco da frase",
-      "comentario": "A estrategia correta fortalece o dominio de passive voice.",
+      "comentario": "A estratégia correta fortalece o domínio de passive voice.",
       "tempoEstimado": 55,
       "tags": [
         "grammar-and-language-use",
@@ -2233,22 +2233,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Passive voice",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Passive voice e mais cobrado quando:",
+      "enunciado": "Em uma prova, Passive voice é mais cobrado quando:",
       "opcoes": [
         "a questao pede identificar ou interpretar voz passiva",
-        "o item cobra coesao e relacao entre referente e informacao complementar",
+        "o item cobra coesão e relação entre referente e informacao complementar",
         "a questao pede identificar discurso indireto e seu efeito",
-        "o item cobra funcao semantica e textual do linking word"
+        "o item cobra função semantica e textual do linking word"
       ],
       "correta": "a questao pede identificar ou interpretar voz passiva",
-      "comentario": "Esse e o tipo de demanda em que passive voice aparece com mais frequencia.",
+      "comentario": "Esse é o tipo de demanda em que passive voice aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "grammar-and-language-use",
@@ -2272,7 +2272,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Passive voice",
       "dificuldadeLabel": "dificil",
@@ -2281,13 +2281,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Passive voice?",
       "opcoes": [
-        "Em sintese, a estrutura que destaca a acao ou o resultado, e nao o agente que a pratica.",
-        "Em sintese, os pronomes relativos que conectam ideias e introduzem informacoes adicionais sobre pessoas, objetos ou lugares.",
+        "Em sintese, a estrutura que destaca a ação ou o resultado, e não o agente que a pratica.",
+        "Em sintese, os pronomes relativos que conectam ideias e introduzem informações adicionais sobre pessoas, objetos ou lugares.",
         "Em sintese, a forma de relatar falas e ideias de outra pessoa sem repetir exatamente suas palavras originais.",
-        "Em sintese, as palavras e expressoes que conectam ideias e organizam a logica do texto."
+        "Em sintese, as palavras e expressões que conectam ideias e organizam a logica do texto."
       ],
-      "correta": "Em sintese, a estrutura que destaca a acao ou o resultado, e nao o agente que a pratica.",
-      "comentario": "O resumo correto recupera o nucleo de passive voice.",
+      "correta": "Em sintese, a estrutura que destaca a ação ou o resultado, e não o agente que a pratica.",
+      "comentario": "O resumo correto recupera o núcleo de passive voice.",
       "tempoEstimado": 60,
       "tags": [
         "grammar-and-language-use",
@@ -2311,22 +2311,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Passive voice",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Passive voice?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em Passive voice?",
       "opcoes": [
-        "The project was created by local students. -> a frase destaca o projeto e o resultado da acao",
-        "The student who won the contest is from our class. -> a frase destaca o projeto e o resultado da acao",
-        "She said that the results were surprising. -> o conector sinaliza consequencia e organiza a leitura",
+        "The project was created by local students. -> a frase destaca o projeto e o resultado da ação",
+        "The student who won the contest is from our class. -> a frase destaca o projeto e o resultado da ação",
+        "She said that the results were surprising. -> o conector sinaliza consequência e organiza a leitura",
         "The problem is serious; therefore, action is necessary. -> o pronome relativo conecta a informacao adicional ao referente correto"
       ],
-      "correta": "The project was created by local students. -> a frase destaca o projeto e o resultado da acao",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em passive voice.",
+      "correta": "The project was created by local students. -> a frase destaca o projeto e o resultado da ação",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em passive voice.",
       "tempoEstimado": 65,
       "tags": [
         "grammar-and-language-use",
@@ -2350,7 +2350,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Passive voice",
       "dificuldadeLabel": "dificil",
@@ -2389,22 +2389,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Relative pronouns",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, Relative pronouns refere-se a:",
+      "enunciado": "Em Inglês, Relative pronouns refere-se a:",
       "opcoes": [
-        "os pronomes relativos que conectam ideias e introduzem informacoes adicionais sobre pessoas, objetos ou lugares",
+        "os pronomes relativos que conectam ideias e introduzem informações adicionais sobre pessoas, objetos ou lugares",
         "a forma de relatar falas e ideias de outra pessoa sem repetir exatamente suas palavras originais",
-        "as palavras e expressoes que conectam ideias e organizam a logica do texto",
+        "as palavras e expressões que conectam ideias e organizam a logica do texto",
         "as combinacoes de verbo e particula que formam significados especificos em contexto"
       ],
-      "correta": "os pronomes relativos que conectam ideias e introduzem informacoes adicionais sobre pessoas, objetos ou lugares",
-      "comentario": "Relative pronouns refere-se aos pronomes relativos que conectam ideias e introduzem informacoes adicionais sobre pessoas, objetos ou lugares.",
+      "correta": "os pronomes relativos que conectam ideias e introduzem informações adicionais sobre pessoas, objetos ou lugares",
+      "comentario": "Relative pronouns refere-se aos pronomes relativos que conectam ideias e introduzem informações adicionais sobre pessoas, objetos ou lugares.",
       "tempoEstimado": 20,
       "tags": [
         "grammar-and-language-use",
@@ -2428,14 +2428,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Relative pronouns",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: um texto apresenta a woman who organized the event and the project that changed the school. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: um texto apresenta a woman who organized the event and the project that changed the school. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
         "Relative pronouns",
         "Reported speech",
@@ -2443,7 +2443,7 @@
         "Phrasal verbs"
       ],
       "correta": "Relative pronouns",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de relative pronouns.",
+      "comentario": "A situação apresentada é melhor compreendida por meio de relative pronouns.",
       "tempoEstimado": 20,
       "tags": [
         "grammar-and-language-use",
@@ -2467,7 +2467,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Relative pronouns",
       "dificuldadeLabel": "facil",
@@ -2506,22 +2506,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Relative pronouns",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente relative pronouns?",
+      "enunciado": "Qual alternativa NÃO representa corretamente relative pronouns?",
       "opcoes": [
         "She said that the results were surprising.",
         "The student who won the contest is from our class.",
         "identificar o termo retomado e o pronome usado para liga-lo a informacao extra.",
-        "interpretar coesao e detalhamento em frases mais elaboradas."
+        "interpretar coesão e detalhamento em frases mais elaboradas."
       ],
       "correta": "She said that the results were surprising.",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao relative pronouns.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não relative pronouns.",
       "tempoEstimado": 25,
       "tags": [
         "grammar-and-language-use",
@@ -2545,18 +2545,18 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Relative pronouns",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar relative pronouns, o foco principal e:",
+      "enunciado": "Ao estudar relative pronouns, o foco principal é:",
       "opcoes": [
         "entender como as frases se ligam por who, which, that e similares",
         "reconhecer mudanca de ponto de vista e reformulacao de fala",
-        "interpretar contraste, causa, consequencia, adicao e exemplificacao",
+        "interpretar contraste, causa, consequência, adicao e exemplificacao",
         "reconhecer sentido contextual de verbos frasais comuns"
       ],
       "correta": "entender como as frases se ligam por who, which, that e similares",
@@ -2584,7 +2584,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Relative pronouns",
       "dificuldadeLabel": "facil",
@@ -2593,12 +2593,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Enquanto Reported speech trata de a forma de relatar falas e ideias de outra pessoa sem repetir exatamente suas palavras originais, Relative pronouns destaca:",
       "opcoes": [
-        "Os pronomes relativos que conectam ideias e introduzem informacoes adicionais sobre pessoas, objetos ou lugares.",
+        "Os pronomes relativos que conectam ideias e introduzem informações adicionais sobre pessoas, objetos ou lugares.",
         "A forma de relatar falas e ideias de outra pessoa sem repetir exatamente suas palavras originais.",
-        "As palavras e expressoes que conectam ideias e organizam a logica do texto.",
+        "As palavras e expressões que conectam ideias e organizam a logica do texto.",
         "As combinacoes de verbo e particula que formam significados especificos em contexto."
       ],
-      "correta": "Os pronomes relativos que conectam ideias e introduzem informacoes adicionais sobre pessoas, objetos ou lugares.",
+      "correta": "Os pronomes relativos que conectam ideias e introduzem informações adicionais sobre pessoas, objetos ou lugares.",
       "comentario": "A comparacao correta mostra a especificidade de relative pronouns.",
       "tempoEstimado": 30,
       "tags": [
@@ -2623,7 +2623,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Relative pronouns",
       "dificuldadeLabel": "facil",
@@ -2638,7 +2638,7 @@
         "Word formation"
       ],
       "correta": "Relative pronouns",
-      "comentario": "Esse tipo de tarefa exige dominio de relative pronouns.",
+      "comentario": "Esse tipo de tarefa exige domínio de relative pronouns.",
       "tempoEstimado": 35,
       "tags": [
         "grammar-and-language-use",
@@ -2662,22 +2662,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Relative pronouns",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de Relative pronouns?",
+      "enunciado": "Qual situação pratica depende mais diretamente de Relative pronouns?",
       "opcoes": [
-        "interpretar coesao e detalhamento em frases mais elaboradas",
+        "interpretar coesão e detalhamento em frases mais elaboradas",
         "interpretar noticias, relatos e citacoes indiretas",
-        "acompanhar a logica do texto e a relacao entre frases",
-        "inferir sentido lexical e funcao gramatical em contexto"
+        "acompanhar a logica do texto e a relação entre frases",
+        "inferir sentido lexical e função gramatical em contexto"
       ],
-      "correta": "interpretar coesao e detalhamento em frases mais elaboradas",
-      "comentario": "Relative pronouns aparece de forma direta em interpretar coesao e detalhamento em frases mais elaboradas.",
+      "correta": "interpretar coesão e detalhamento em frases mais elaboradas",
+      "comentario": "Relative pronouns aparece de forma direta em interpretar coesão e detalhamento em frases mais elaboradas.",
       "tempoEstimado": 35,
       "tags": [
         "grammar-and-language-use",
@@ -2701,14 +2701,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Relative pronouns",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre relative pronouns?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre relative pronouns?",
       "opcoes": [
         "o caso e resolvido com foco em relative pronouns.",
         "o caso e melhor resolvido por reported speech.",
@@ -2716,7 +2716,7 @@
         "o caso impede qualquer uso de phrasal verbs."
       ],
       "correta": "o caso e resolvido com foco em relative pronouns.",
-      "comentario": "A conclusao correta retoma a funcao central de relative pronouns.",
+      "comentario": "A conclusão correta retoma a função central de relative pronouns.",
       "tempoEstimado": 40,
       "tags": [
         "grammar-and-language-use",
@@ -2740,7 +2740,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Relative pronouns",
       "dificuldadeLabel": "facil",
@@ -2749,12 +2749,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar relative pronouns, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como relative pronouns aparece em interpretar coesao e detalhamento em frases mais elaboradas?",
-        "Como reported speech substitui totalmente interpretar coesao e detalhamento em frases mais elaboradas?",
+        "Como relative pronouns aparece em interpretar coesão e detalhamento em frases mais elaboradas?",
+        "Como reported speech substitui totalmente interpretar coesão e detalhamento em frases mais elaboradas?",
         "Por que linking words torna desnecessario estudar Relative pronouns?",
         "De que modo phrasal verbs elimina toda leitura de contexto?"
       ],
-      "correta": "Como relative pronouns aparece em interpretar coesao e detalhamento em frases mais elaboradas?",
+      "correta": "Como relative pronouns aparece em interpretar coesão e detalhamento em frases mais elaboradas?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de relative pronouns.",
       "tempoEstimado": 40,
       "tags": [
@@ -2779,22 +2779,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Relative pronouns",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em relative pronouns e pensar que:",
+      "enunciado": "Um erro comum em relative pronouns é pensar que:",
       "opcoes": [
-        "relative pronouns sao dispensaveis e nao alteram o sentido da frase",
+        "relative pronouns são dispensáveis e não alteram o sentido da frase",
         "reported speech e apenas colocar aspas em torno da fala",
-        "linking words sao meros conectores visuais sem impacto semantico real",
+        "linking words são meros conectores visuais sem impacto semantico real",
         "o sentido do phrasal verb sempre e a soma literal do verbo e da particula"
       ],
-      "correta": "relative pronouns sao dispensaveis e nao alteram o sentido da frase",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de relative pronouns.",
+      "correta": "relative pronouns são dispensáveis e não alteram o sentido da frase",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de relative pronouns.",
       "tempoEstimado": 45,
       "tags": [
         "grammar-and-language-use",
@@ -2818,21 +2818,21 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Relative pronouns",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"who e which podem ser usados da mesma forma para qualquer referente\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"who e which podem ser usados da mesma forma para qualquer referente\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque os pronomes relativos que conectam ideias e introduzem informacoes adicionais sobre pessoas, objetos ou lugares.",
-        "A afirmacao esta correta, pois resume integralmente relative pronouns.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque os pronomes relativos que conectam ideias e introduzem informações adicionais sobre pessoas, objetos ou lugares.",
+        "A afirmação está correta, pois resume integralmente relative pronouns.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque os pronomes relativos que conectam ideias e introduzem informacoes adicionais sobre pessoas, objetos ou lugares.",
+      "correta": "A afirmação está incorreta, porque os pronomes relativos que conectam ideias e introduzem informações adicionais sobre pessoas, objetos ou lugares.",
       "comentario": "A fala do estudante apresenta um equivoco conceitual sobre relative pronouns.",
       "tempoEstimado": 45,
       "tags": [
@@ -2857,22 +2857,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Relative pronouns",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se relative pronouns fosse ignorado(a) em interpretar coesao e detalhamento em frases mais elaboradas, o resultado mais provavel seria:",
+      "enunciado": "Se relative pronouns fosse ignorado(a) em interpretar coesão e detalhamento em frases mais elaboradas, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar coesao e detalhamento em frases mais elaboradas.",
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar coesão e detalhamento em frases mais elaboradas.",
         "a questao seria resolvida automaticamente por reported speech.",
-        "nenhuma interpretacao seria alterada, porque Relative pronouns nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "nenhuma interpretação seria alterada, porque Relative pronouns não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar coesao e detalhamento em frases mais elaboradas.",
-      "comentario": "Ignorar relative pronouns compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar coesão e detalhamento em frases mais elaboradas.",
+      "comentario": "Ignorar relative pronouns compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "grammar-and-language-use",
@@ -2896,14 +2896,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Relative pronouns",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor Relative pronouns?",
+      "enunciado": "Qual trecho ou ação ilustra melhor Relative pronouns?",
       "opcoes": [
         "The student who won the contest is from our class.",
         "She said that the results were surprising.",
@@ -2911,7 +2911,7 @@
         "She looked after her younger brother after school."
       ],
       "correta": "The student who won the contest is from our class.",
-      "comentario": "O item correto e o que melhor exemplifica relative pronouns.",
+      "comentario": "O item correto é o que melhor exemplifica relative pronouns.",
       "tempoEstimado": 50,
       "tags": [
         "grammar-and-language-use",
@@ -2935,7 +2935,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Relative pronouns",
       "dificuldadeLabel": "dificil",
@@ -2946,7 +2946,7 @@
       "opcoes": [
         "o pronome relativo conecta a informacao adicional ao referente correto",
         "a frase apresenta discurso relatado em vez de citacao direta",
-        "o conector sinaliza consequencia e organiza a leitura",
+        "o conector sinaliza consequência e organiza a leitura",
         "o phrasal verb assume um sentido especifico no uso real"
       ],
       "correta": "o pronome relativo conecta a informacao adicional ao referente correto",
@@ -2974,22 +2974,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Relative pronouns",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar relative pronouns?",
+      "enunciado": "Qual estratégia ajuda mais a estudar relative pronouns?",
       "opcoes": [
         "identificar o termo retomado e o pronome usado para liga-lo a informacao extra",
-        "observar marcas de relato e mudanca estrutural em relacao a fala original",
-        "observar a relacao logica produzida pelo conector no contexto",
-        "evitar traducao palavra por palavra e confirmar o sentido na situacao"
+        "observar marcas de relato e mudanca estrutural em relação a fala original",
+        "observar a relação logica produzida pelo conector no contexto",
+        "evitar traducao palavra por palavra e confirmar o sentido na situação"
       ],
       "correta": "identificar o termo retomado e o pronome usado para liga-lo a informacao extra",
-      "comentario": "A estrategia correta fortalece o dominio de relative pronouns.",
+      "comentario": "A estratégia correta fortalece o domínio de relative pronouns.",
       "tempoEstimado": 55,
       "tags": [
         "grammar-and-language-use",
@@ -3013,22 +3013,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Relative pronouns",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Relative pronouns e mais cobrado quando:",
+      "enunciado": "Em uma prova, Relative pronouns é mais cobrado quando:",
       "opcoes": [
-        "o item cobra coesao e relacao entre referente e informacao complementar",
+        "o item cobra coesão e relação entre referente e informacao complementar",
         "a questao pede identificar discurso indireto e seu efeito",
-        "o item cobra funcao semantica e textual do linking word",
-        "a questao pede interpretacao contextual de phrasal verb"
+        "o item cobra função semantica e textual do linking word",
+        "a questao pede interpretação contextual de phrasal verb"
       ],
-      "correta": "o item cobra coesao e relacao entre referente e informacao complementar",
-      "comentario": "Esse e o tipo de demanda em que relative pronouns aparece com mais frequencia.",
+      "correta": "o item cobra coesão e relação entre referente e informacao complementar",
+      "comentario": "Esse é o tipo de demanda em que relative pronouns aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "grammar-and-language-use",
@@ -3052,7 +3052,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Relative pronouns",
       "dificuldadeLabel": "dificil",
@@ -3061,13 +3061,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Relative pronouns?",
       "opcoes": [
-        "Em sintese, os pronomes relativos que conectam ideias e introduzem informacoes adicionais sobre pessoas, objetos ou lugares.",
+        "Em sintese, os pronomes relativos que conectam ideias e introduzem informações adicionais sobre pessoas, objetos ou lugares.",
         "Em sintese, a forma de relatar falas e ideias de outra pessoa sem repetir exatamente suas palavras originais.",
-        "Em sintese, as palavras e expressoes que conectam ideias e organizam a logica do texto.",
+        "Em sintese, as palavras e expressões que conectam ideias e organizam a logica do texto.",
         "Em sintese, as combinacoes de verbo e particula que formam significados especificos em contexto."
       ],
-      "correta": "Em sintese, os pronomes relativos que conectam ideias e introduzem informacoes adicionais sobre pessoas, objetos ou lugares.",
-      "comentario": "O resumo correto recupera o nucleo de relative pronouns.",
+      "correta": "Em sintese, os pronomes relativos que conectam ideias e introduzem informações adicionais sobre pessoas, objetos ou lugares.",
+      "comentario": "O resumo correto recupera o núcleo de relative pronouns.",
       "tempoEstimado": 60,
       "tags": [
         "grammar-and-language-use",
@@ -3091,14 +3091,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Relative pronouns",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Relative pronouns?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em Relative pronouns?",
       "opcoes": [
         "The student who won the contest is from our class. -> o pronome relativo conecta a informacao adicional ao referente correto",
         "She said that the results were surprising. -> o pronome relativo conecta a informacao adicional ao referente correto",
@@ -3106,7 +3106,7 @@
         "She looked after her younger brother after school. -> a frase apresenta discurso relatado em vez de citacao direta"
       ],
       "correta": "The student who won the contest is from our class. -> o pronome relativo conecta a informacao adicional ao referente correto",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em relative pronouns.",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em relative pronouns.",
       "tempoEstimado": 65,
       "tags": [
         "grammar-and-language-use",
@@ -3130,7 +3130,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Relative pronouns",
       "dificuldadeLabel": "dificil",
@@ -3141,8 +3141,8 @@
       "opcoes": [
         "entender como as frases se ligam por who, which, that e similares",
         "identificar o termo retomado e o pronome usado para liga-lo a informacao extra",
-        "interpretar coesao e detalhamento em frases mais elaboradas",
-        "o item cobra coesao e relacao entre referente e informacao complementar"
+        "interpretar coesão e detalhamento em frases mais elaboradas",
+        "o item cobra coesão e relação entre referente e informacao complementar"
       ],
       "correta": "entender como as frases se ligam por who, which, that e similares",
       "comentario": "O objetivo central de relative pronouns e entender como as frases se ligam por who, which, that e similares.",
@@ -3169,19 +3169,19 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Reported speech",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, Reported speech refere-se a:",
+      "enunciado": "Em Inglês, Reported speech refere-se a:",
       "opcoes": [
         "a forma de relatar falas e ideias de outra pessoa sem repetir exatamente suas palavras originais",
-        "as palavras e expressoes que conectam ideias e organizam a logica do texto",
+        "as palavras e expressões que conectam ideias e organizam a logica do texto",
         "as combinacoes de verbo e particula que formam significados especificos em contexto",
-        "a formacao de palavras por prefixos, sufixos e mudancas de classe gramatical"
+        "a formação de palavras por prefixos, sufixos e mudanças de classe gramatical"
       ],
       "correta": "a forma de relatar falas e ideias de outra pessoa sem repetir exatamente suas palavras originais",
       "comentario": "Reported speech refere-se a forma de relatar falas e ideias de outra pessoa sem repetir exatamente suas palavras originais.",
@@ -3208,14 +3208,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Reported speech",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: uma reportagem informa that the teacher said the project was important. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: uma reportagem informa that the teacher said the project was important. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
         "Reported speech",
         "Linking words",
@@ -3223,7 +3223,7 @@
         "Word formation"
       ],
       "correta": "Reported speech",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de reported speech.",
+      "comentario": "A situação apresentada é melhor compreendida por meio de reported speech.",
       "tempoEstimado": 20,
       "tags": [
         "grammar-and-language-use",
@@ -3247,7 +3247,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Reported speech",
       "dificuldadeLabel": "facil",
@@ -3286,22 +3286,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Reported speech",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente reported speech?",
+      "enunciado": "Qual alternativa NÃO representa corretamente reported speech?",
       "opcoes": [
         "The problem is serious; therefore, action is necessary.",
         "She said that the results were surprising.",
-        "observar marcas de relato e mudanca estrutural em relacao a fala original.",
+        "observar marcas de relato e mudanca estrutural em relação a fala original.",
         "interpretar noticias, relatos e citacoes indiretas."
       ],
       "correta": "The problem is serious; therefore, action is necessary.",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao reported speech.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não reported speech.",
       "tempoEstimado": 25,
       "tags": [
         "grammar-and-language-use",
@@ -3325,17 +3325,17 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Reported speech",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar reported speech, o foco principal e:",
+      "enunciado": "Ao estudar reported speech, o foco principal é:",
       "opcoes": [
         "reconhecer mudanca de ponto de vista e reformulacao de fala",
-        "interpretar contraste, causa, consequencia, adicao e exemplificacao",
+        "interpretar contraste, causa, consequência, adicao e exemplificacao",
         "reconhecer sentido contextual de verbos frasais comuns",
         "perceber como a forma da palavra ajuda a construir significado"
       ],
@@ -3364,19 +3364,19 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Reported speech",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Linking words trata de as palavras e expressoes que conectam ideias e organizam a logica do texto, Reported speech destaca:",
+      "enunciado": "Enquanto Linking words trata de as palavras e expressões que conectam ideias e organizam a logica do texto, Reported speech destaca:",
       "opcoes": [
         "A forma de relatar falas e ideias de outra pessoa sem repetir exatamente suas palavras originais.",
-        "As palavras e expressoes que conectam ideias e organizam a logica do texto.",
+        "As palavras e expressões que conectam ideias e organizam a logica do texto.",
         "As combinacoes de verbo e particula que formam significados especificos em contexto.",
-        "A formacao de palavras por prefixos, sufixos e mudancas de classe gramatical."
+        "A formação de palavras por prefixos, sufixos e mudanças de classe gramatical."
       ],
       "correta": "A forma de relatar falas e ideias de outra pessoa sem repetir exatamente suas palavras originais.",
       "comentario": "A comparacao correta mostra a especificidade de reported speech.",
@@ -3403,7 +3403,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Reported speech",
       "dificuldadeLabel": "facil",
@@ -3418,7 +3418,7 @@
         "Prepositions and articles"
       ],
       "correta": "Reported speech",
-      "comentario": "Esse tipo de tarefa exige dominio de reported speech.",
+      "comentario": "Esse tipo de tarefa exige domínio de reported speech.",
       "tempoEstimado": 35,
       "tags": [
         "grammar-and-language-use",
@@ -3442,19 +3442,19 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Reported speech",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de Reported speech?",
+      "enunciado": "Qual situação pratica depende mais diretamente de Reported speech?",
       "opcoes": [
         "interpretar noticias, relatos e citacoes indiretas",
-        "acompanhar a logica do texto e a relacao entre frases",
-        "interpretar expressoes frequentes da lingua em contextos reais",
-        "interpretar relacoes espaciais, temporais e referenciais em frases"
+        "acompanhar a logica do texto e a relação entre frases",
+        "interpretar expressões frequentes da língua em contextos reais",
+        "interpretar relações espaciais, temporais e referenciais em frases"
       ],
       "correta": "interpretar noticias, relatos e citacoes indiretas",
       "comentario": "Reported speech aparece de forma direta em interpretar noticias, relatos e citacoes indiretas.",
@@ -3481,14 +3481,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Reported speech",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre reported speech?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre reported speech?",
       "opcoes": [
         "o caso e resolvido com foco em reported speech.",
         "o caso e melhor resolvido por linking words.",
@@ -3496,7 +3496,7 @@
         "o caso impede qualquer uso de word formation."
       ],
       "correta": "o caso e resolvido com foco em reported speech.",
-      "comentario": "A conclusao correta retoma a funcao central de reported speech.",
+      "comentario": "A conclusão correta retoma a função central de reported speech.",
       "tempoEstimado": 40,
       "tags": [
         "grammar-and-language-use",
@@ -3520,7 +3520,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Reported speech",
       "dificuldadeLabel": "facil",
@@ -3559,22 +3559,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Reported speech",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em reported speech e pensar que:",
+      "enunciado": "Um erro comum em reported speech é pensar que:",
       "opcoes": [
         "reported speech e apenas colocar aspas em torno da fala",
-        "linking words sao meros conectores visuais sem impacto semantico real",
+        "linking words são meros conectores visuais sem impacto semantico real",
         "o sentido do phrasal verb sempre e a soma literal do verbo e da particula",
-        "prefixos e sufixos so servem para decorar vocabulario isolado"
+        "prefixos e sufixos so servem para decorar vocabulário isolado"
       ],
       "correta": "reported speech e apenas colocar aspas em torno da fala",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de reported speech.",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de reported speech.",
       "tempoEstimado": 45,
       "tags": [
         "grammar-and-language-use",
@@ -3598,21 +3598,21 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Reported speech",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"para relatar fala alheia basta repetir a frase original sem adaptacao\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"para relatar fala alheia basta repetir a frase original sem adaptacao\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque a forma de relatar falas e ideias de outra pessoa sem repetir exatamente suas palavras originais.",
-        "A afirmacao esta correta, pois resume integralmente reported speech.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque a forma de relatar falas e ideias de outra pessoa sem repetir exatamente suas palavras originais.",
+        "A afirmação está correta, pois resume integralmente reported speech.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque a forma de relatar falas e ideias de outra pessoa sem repetir exatamente suas palavras originais.",
+      "correta": "A afirmação está incorreta, porque a forma de relatar falas e ideias de outra pessoa sem repetir exatamente suas palavras originais.",
       "comentario": "A fala do estudante apresenta um equivoco conceitual sobre reported speech.",
       "tempoEstimado": 45,
       "tags": [
@@ -3637,7 +3637,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Reported speech",
       "dificuldadeLabel": "medio",
@@ -3646,13 +3646,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Se reported speech fosse ignorado(a) em interpretar noticias, relatos e citacoes indiretas, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar noticias, relatos e citacoes indiretas.",
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar noticias, relatos e citacoes indiretas.",
         "a questao seria resolvida automaticamente por linking words.",
-        "nenhuma interpretacao seria alterada, porque Reported speech nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "nenhuma interpretação seria alterada, porque Reported speech não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar noticias, relatos e citacoes indiretas.",
-      "comentario": "Ignorar reported speech compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar noticias, relatos e citacoes indiretas.",
+      "comentario": "Ignorar reported speech compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "grammar-and-language-use",
@@ -3676,14 +3676,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Reported speech",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor Reported speech?",
+      "enunciado": "Qual trecho ou ação ilustra melhor Reported speech?",
       "opcoes": [
         "She said that the results were surprising.",
         "The problem is serious; therefore, action is necessary.",
@@ -3691,7 +3691,7 @@
         "The suffix in careful helps indicate an adjective."
       ],
       "correta": "She said that the results were surprising.",
-      "comentario": "O item correto e o que melhor exemplifica reported speech.",
+      "comentario": "O item correto é o que melhor exemplifica reported speech.",
       "tempoEstimado": 50,
       "tags": [
         "grammar-and-language-use",
@@ -3715,7 +3715,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Reported speech",
       "dificuldadeLabel": "dificil",
@@ -3725,7 +3725,7 @@
       "enunciado": "Ao encontrar o exemplo \"She said that the results were surprising.\", a leitura mais adequada e:",
       "opcoes": [
         "a frase apresenta discurso relatado em vez de citacao direta",
-        "o conector sinaliza consequencia e organiza a leitura",
+        "o conector sinaliza consequência e organiza a leitura",
         "o phrasal verb assume um sentido especifico no uso real",
         "a forma da palavra da pistas sobre seu papel e significado"
       ],
@@ -3754,22 +3754,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Reported speech",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar reported speech?",
+      "enunciado": "Qual estratégia ajuda mais a estudar reported speech?",
       "opcoes": [
-        "observar marcas de relato e mudanca estrutural em relacao a fala original",
-        "observar a relacao logica produzida pelo conector no contexto",
-        "evitar traducao palavra por palavra e confirmar o sentido na situacao",
-        "observar partes da palavra e sua funcao no contexto da frase"
+        "observar marcas de relato e mudanca estrutural em relação a fala original",
+        "observar a relação logica produzida pelo conector no contexto",
+        "evitar traducao palavra por palavra e confirmar o sentido na situação",
+        "observar partes da palavra e sua função no contexto da frase"
       ],
-      "correta": "observar marcas de relato e mudanca estrutural em relacao a fala original",
-      "comentario": "A estrategia correta fortalece o dominio de reported speech.",
+      "correta": "observar marcas de relato e mudanca estrutural em relação a fala original",
+      "comentario": "A estratégia correta fortalece o domínio de reported speech.",
       "tempoEstimado": 55,
       "tags": [
         "grammar-and-language-use",
@@ -3793,22 +3793,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Reported speech",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Reported speech e mais cobrado quando:",
+      "enunciado": "Em uma prova, Reported speech é mais cobrado quando:",
       "opcoes": [
         "a questao pede identificar discurso indireto e seu efeito",
-        "o item cobra funcao semantica e textual do linking word",
-        "a questao pede interpretacao contextual de phrasal verb",
-        "o item cobra formacao de palavras e inferencia lexical"
+        "o item cobra função semantica e textual do linking word",
+        "a questao pede interpretação contextual de phrasal verb",
+        "o item cobra formação de palavras e inferencia lexical"
       ],
       "correta": "a questao pede identificar discurso indireto e seu efeito",
-      "comentario": "Esse e o tipo de demanda em que reported speech aparece com mais frequencia.",
+      "comentario": "Esse é o tipo de demanda em que reported speech aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "grammar-and-language-use",
@@ -3832,7 +3832,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Reported speech",
       "dificuldadeLabel": "dificil",
@@ -3842,12 +3842,12 @@
       "enunciado": "Qual resumo sintetiza melhor a ideia de Reported speech?",
       "opcoes": [
         "Em sintese, a forma de relatar falas e ideias de outra pessoa sem repetir exatamente suas palavras originais.",
-        "Em sintese, as palavras e expressoes que conectam ideias e organizam a logica do texto.",
+        "Em sintese, as palavras e expressões que conectam ideias e organizam a logica do texto.",
         "Em sintese, as combinacoes de verbo e particula que formam significados especificos em contexto.",
-        "Em sintese, a formacao de palavras por prefixos, sufixos e mudancas de classe gramatical."
+        "Em sintese, a formação de palavras por prefixos, sufixos e mudanças de classe gramatical."
       ],
       "correta": "Em sintese, a forma de relatar falas e ideias de outra pessoa sem repetir exatamente suas palavras originais.",
-      "comentario": "O resumo correto recupera o nucleo de reported speech.",
+      "comentario": "O resumo correto recupera o núcleo de reported speech.",
       "tempoEstimado": 60,
       "tags": [
         "grammar-and-language-use",
@@ -3871,22 +3871,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Reported speech",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Reported speech?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em Reported speech?",
       "opcoes": [
         "She said that the results were surprising. -> a frase apresenta discurso relatado em vez de citacao direta",
         "The problem is serious; therefore, action is necessary. -> a frase apresenta discurso relatado em vez de citacao direta",
         "She looked after her younger brother after school. -> a forma da palavra da pistas sobre seu papel e significado",
-        "The suffix in careful helps indicate an adjective. -> o conector sinaliza consequencia e organiza a leitura"
+        "The suffix in careful helps indicate an adjective. -> o conector sinaliza consequência e organiza a leitura"
       ],
       "correta": "She said that the results were surprising. -> a frase apresenta discurso relatado em vez de citacao direta",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em reported speech.",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em reported speech.",
       "tempoEstimado": 65,
       "tags": [
         "grammar-and-language-use",
@@ -3910,7 +3910,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Reported speech",
       "dificuldadeLabel": "dificil",
@@ -3920,7 +3920,7 @@
       "enunciado": "Ao resolver uma atividade sobre reported speech, o estudante deve principalmente:",
       "opcoes": [
         "reconhecer mudanca de ponto de vista e reformulacao de fala",
-        "observar marcas de relato e mudanca estrutural em relacao a fala original",
+        "observar marcas de relato e mudanca estrutural em relação a fala original",
         "interpretar noticias, relatos e citacoes indiretas",
         "a questao pede identificar discurso indireto e seu efeito"
       ],
@@ -3949,22 +3949,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Linking words",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, Linking words refere-se a:",
+      "enunciado": "Em Inglês, Linking words refere-se a:",
       "opcoes": [
-        "as palavras e expressoes que conectam ideias e organizam a logica do texto",
+        "as palavras e expressões que conectam ideias e organizam a logica do texto",
         "as combinacoes de verbo e particula que formam significados especificos em contexto",
-        "a formacao de palavras por prefixos, sufixos e mudancas de classe gramatical",
-        "o uso contextual de preposicoes e artigos para marcar relacao, referencia e naturalidade na frase"
+        "a formação de palavras por prefixos, sufixos e mudanças de classe gramatical",
+        "o uso contextual de preposicoes e artigos para marcar relação, referência e naturalidade na frase"
       ],
-      "correta": "as palavras e expressoes que conectam ideias e organizam a logica do texto",
-      "comentario": "Linking words refere-se as palavras e expressoes que conectam ideias e organizam a logica do texto.",
+      "correta": "as palavras e expressões que conectam ideias e organizam a logica do texto",
+      "comentario": "Linking words refere-se as palavras e expressões que conectam ideias e organizam a logica do texto.",
       "tempoEstimado": 20,
       "tags": [
         "grammar-and-language-use",
@@ -3988,14 +3988,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Linking words",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: um artigo usa although, therefore, moreover e for instance para estruturar a argumentacao. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: um artigo usa although, therefore, moreover e for instance para estruturar a argumentacao. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
         "Linking words",
         "Phrasal verbs",
@@ -4003,7 +4003,7 @@
         "Prepositions and articles"
       ],
       "correta": "Linking words",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de linking words.",
+      "comentario": "A situação apresentada é melhor compreendida por meio de linking words.",
       "tempoEstimado": 20,
       "tags": [
         "grammar-and-language-use",
@@ -4027,7 +4027,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Linking words",
       "dificuldadeLabel": "facil",
@@ -4066,22 +4066,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Linking words",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente linking words?",
+      "enunciado": "Qual alternativa NÃO representa corretamente linking words?",
       "opcoes": [
         "She looked after her younger brother after school.",
         "The problem is serious; therefore, action is necessary.",
-        "observar a relacao logica produzida pelo conector no contexto.",
-        "acompanhar a logica do texto e a relacao entre frases."
+        "observar a relação logica produzida pelo conector no contexto.",
+        "acompanhar a logica do texto e a relação entre frases."
       ],
       "correta": "She looked after her younger brother after school.",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao linking words.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não linking words.",
       "tempoEstimado": 25,
       "tags": [
         "grammar-and-language-use",
@@ -4105,22 +4105,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Linking words",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar linking words, o foco principal e:",
+      "enunciado": "Ao estudar linking words, o foco principal é:",
       "opcoes": [
-        "interpretar contraste, causa, consequencia, adicao e exemplificacao",
+        "interpretar contraste, causa, consequência, adicao e exemplificacao",
         "reconhecer sentido contextual de verbos frasais comuns",
         "perceber como a forma da palavra ajuda a construir significado",
         "identificar escolhas corretas de prepositions and articles em contexto"
       ],
-      "correta": "interpretar contraste, causa, consequencia, adicao e exemplificacao",
-      "comentario": "Linking words concentra-se em interpretar contraste, causa, consequencia, adicao e exemplificacao.",
+      "correta": "interpretar contraste, causa, consequência, adicao e exemplificacao",
+      "comentario": "Linking words concentra-se em interpretar contraste, causa, consequência, adicao e exemplificacao.",
       "tempoEstimado": 30,
       "tags": [
         "grammar-and-language-use",
@@ -4144,7 +4144,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Linking words",
       "dificuldadeLabel": "facil",
@@ -4153,12 +4153,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Enquanto Phrasal verbs trata de as combinacoes de verbo e particula que formam significados especificos em contexto, Linking words destaca:",
       "opcoes": [
-        "As palavras e expressoes que conectam ideias e organizam a logica do texto.",
+        "As palavras e expressões que conectam ideias e organizam a logica do texto.",
         "As combinacoes de verbo e particula que formam significados especificos em contexto.",
-        "A formacao de palavras por prefixos, sufixos e mudancas de classe gramatical.",
-        "O uso contextual de preposicoes e artigos para marcar relacao, referencia e naturalidade na frase."
+        "A formação de palavras por prefixos, sufixos e mudanças de classe gramatical.",
+        "O uso contextual de preposicoes e artigos para marcar relação, referência e naturalidade na frase."
       ],
-      "correta": "As palavras e expressoes que conectam ideias e organizam a logica do texto.",
+      "correta": "As palavras e expressões que conectam ideias e organizam a logica do texto.",
       "comentario": "A comparacao correta mostra a especificidade de linking words.",
       "tempoEstimado": 30,
       "tags": [
@@ -4183,7 +4183,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Linking words",
       "dificuldadeLabel": "facil",
@@ -4198,7 +4198,7 @@
         "Grammar in context"
       ],
       "correta": "Linking words",
-      "comentario": "Esse tipo de tarefa exige dominio de linking words.",
+      "comentario": "Esse tipo de tarefa exige domínio de linking words.",
       "tempoEstimado": 35,
       "tags": [
         "grammar-and-language-use",
@@ -4222,22 +4222,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Linking words",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de Linking words?",
+      "enunciado": "Qual situação pratica depende mais diretamente de Linking words?",
       "opcoes": [
-        "acompanhar a logica do texto e a relacao entre frases",
-        "interpretar expressoes frequentes da lingua em contextos reais",
-        "inferir sentido lexical e funcao gramatical em contexto",
-        "resolver questoes em que a gramatica aparece integrada a leitura"
+        "acompanhar a logica do texto e a relação entre frases",
+        "interpretar expressões frequentes da língua em contextos reais",
+        "inferir sentido lexical e função gramatical em contexto",
+        "resolver questoes em que a gramática aparece integrada a leitura"
       ],
-      "correta": "acompanhar a logica do texto e a relacao entre frases",
-      "comentario": "Linking words aparece de forma direta em acompanhar a logica do texto e a relacao entre frases.",
+      "correta": "acompanhar a logica do texto e a relação entre frases",
+      "comentario": "Linking words aparece de forma direta em acompanhar a logica do texto e a relação entre frases.",
       "tempoEstimado": 35,
       "tags": [
         "grammar-and-language-use",
@@ -4261,14 +4261,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Linking words",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre linking words?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre linking words?",
       "opcoes": [
         "o caso e resolvido com foco em linking words.",
         "o caso e melhor resolvido por phrasal verbs.",
@@ -4276,7 +4276,7 @@
         "o caso impede qualquer uso de prepositions and articles."
       ],
       "correta": "o caso e resolvido com foco em linking words.",
-      "comentario": "A conclusao correta retoma a funcao central de linking words.",
+      "comentario": "A conclusão correta retoma a função central de linking words.",
       "tempoEstimado": 40,
       "tags": [
         "grammar-and-language-use",
@@ -4300,7 +4300,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Linking words",
       "dificuldadeLabel": "facil",
@@ -4309,12 +4309,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar linking words, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como linking words aparece em acompanhar a logica do texto e a relacao entre frases?",
-        "Como phrasal verbs substitui totalmente acompanhar a logica do texto e a relacao entre frases?",
+        "Como linking words aparece em acompanhar a logica do texto e a relação entre frases?",
+        "Como phrasal verbs substitui totalmente acompanhar a logica do texto e a relação entre frases?",
         "Por que word formation torna desnecessario estudar Linking words?",
         "De que modo prepositions and articles elimina toda leitura de contexto?"
       ],
-      "correta": "Como linking words aparece em acompanhar a logica do texto e a relacao entre frases?",
+      "correta": "Como linking words aparece em acompanhar a logica do texto e a relação entre frases?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de linking words.",
       "tempoEstimado": 40,
       "tags": [
@@ -4339,22 +4339,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Linking words",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em linking words e pensar que:",
+      "enunciado": "Um erro comum em linking words é pensar que:",
       "opcoes": [
-        "linking words sao meros conectores visuais sem impacto semantico real",
+        "linking words são meros conectores visuais sem impacto semantico real",
         "o sentido do phrasal verb sempre e a soma literal do verbo e da particula",
-        "prefixos e sufixos so servem para decorar vocabulario isolado",
-        "prepositions and articles podem ser escolhidos apenas por traducao direta do portugues"
+        "prefixos e sufixos so servem para decorar vocabulário isolado",
+        "prepositions and articles podem ser escolhidos apenas por traducao direta do português"
       ],
-      "correta": "linking words sao meros conectores visuais sem impacto semantico real",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de linking words.",
+      "correta": "linking words são meros conectores visuais sem impacto semantico real",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de linking words.",
       "tempoEstimado": 45,
       "tags": [
         "grammar-and-language-use",
@@ -4378,21 +4378,21 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Linking words",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"therefore e however podem ser trocados sem alterar a mensagem\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"therefore e however podem ser trocados sem alterar a mensagem\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque as palavras e expressoes que conectam ideias e organizam a logica do texto.",
-        "A afirmacao esta correta, pois resume integralmente linking words.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque as palavras e expressões que conectam ideias e organizam a logica do texto.",
+        "A afirmação está correta, pois resume integralmente linking words.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque as palavras e expressoes que conectam ideias e organizam a logica do texto.",
+      "correta": "A afirmação está incorreta, porque as palavras e expressões que conectam ideias e organizam a logica do texto.",
       "comentario": "A fala do estudante apresenta um equivoco conceitual sobre linking words.",
       "tempoEstimado": 45,
       "tags": [
@@ -4417,22 +4417,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Linking words",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se linking words fosse ignorado(a) em acompanhar a logica do texto e a relacao entre frases, o resultado mais provavel seria:",
+      "enunciado": "Se linking words fosse ignorado(a) em acompanhar a logica do texto e a relação entre frases, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em acompanhar a logica do texto e a relacao entre frases.",
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em acompanhar a logica do texto e a relação entre frases.",
         "a questao seria resolvida automaticamente por phrasal verbs.",
-        "nenhuma interpretacao seria alterada, porque Linking words nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "nenhuma interpretação seria alterada, porque Linking words não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em acompanhar a logica do texto e a relacao entre frases.",
-      "comentario": "Ignorar linking words compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em acompanhar a logica do texto e a relação entre frases.",
+      "comentario": "Ignorar linking words compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "grammar-and-language-use",
@@ -4456,14 +4456,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Linking words",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor Linking words?",
+      "enunciado": "Qual trecho ou ação ilustra melhor Linking words?",
       "opcoes": [
         "The problem is serious; therefore, action is necessary.",
         "She looked after her younger brother after school.",
@@ -4471,7 +4471,7 @@
         "The students arrived at school in the morning."
       ],
       "correta": "The problem is serious; therefore, action is necessary.",
-      "comentario": "O item correto e o que melhor exemplifica linking words.",
+      "comentario": "O item correto é o que melhor exemplifica linking words.",
       "tempoEstimado": 50,
       "tags": [
         "grammar-and-language-use",
@@ -4495,7 +4495,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Linking words",
       "dificuldadeLabel": "dificil",
@@ -4504,12 +4504,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Ao encontrar o exemplo \"The problem is serious; therefore, action is necessary.\", a leitura mais adequada e:",
       "opcoes": [
-        "o conector sinaliza consequencia e organiza a leitura",
+        "o conector sinaliza consequência e organiza a leitura",
         "o phrasal verb assume um sentido especifico no uso real",
         "a forma da palavra da pistas sobre seu papel e significado",
-        "a frase depende de escolhas contextuais de preposicao e artigo"
+        "a frase depende de escolhas contextuais de preposição e artigo"
       ],
-      "correta": "o conector sinaliza consequencia e organiza a leitura",
+      "correta": "o conector sinaliza consequência e organiza a leitura",
       "comentario": "A leitura correta do exemplo revela o papel de linking words.",
       "tempoEstimado": 55,
       "tags": [
@@ -4534,22 +4534,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Linking words",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar linking words?",
+      "enunciado": "Qual estratégia ajuda mais a estudar linking words?",
       "opcoes": [
-        "observar a relacao logica produzida pelo conector no contexto",
-        "evitar traducao palavra por palavra e confirmar o sentido na situacao",
-        "observar partes da palavra e sua funcao no contexto da frase",
-        "analisar a relacao expressa entre os elementos da frase"
+        "observar a relação logica produzida pelo conector no contexto",
+        "evitar traducao palavra por palavra e confirmar o sentido na situação",
+        "observar partes da palavra e sua função no contexto da frase",
+        "analisar a relação expressa entre os elementos da frase"
       ],
-      "correta": "observar a relacao logica produzida pelo conector no contexto",
-      "comentario": "A estrategia correta fortalece o dominio de linking words.",
+      "correta": "observar a relação logica produzida pelo conector no contexto",
+      "comentario": "A estratégia correta fortalece o domínio de linking words.",
       "tempoEstimado": 55,
       "tags": [
         "grammar-and-language-use",
@@ -4573,22 +4573,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Linking words",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Linking words e mais cobrado quando:",
+      "enunciado": "Em uma prova, Linking words é mais cobrado quando:",
       "opcoes": [
-        "o item cobra funcao semantica e textual do linking word",
-        "a questao pede interpretacao contextual de phrasal verb",
-        "o item cobra formacao de palavras e inferencia lexical",
-        "a questao exige reconhecer uso contextual adequado de artigo e preposicao"
+        "o item cobra função semantica e textual do linking word",
+        "a questao pede interpretação contextual de phrasal verb",
+        "o item cobra formação de palavras e inferencia lexical",
+        "a questao exige reconhecer uso contextual adequado de artigo e preposição"
       ],
-      "correta": "o item cobra funcao semantica e textual do linking word",
-      "comentario": "Esse e o tipo de demanda em que linking words aparece com mais frequencia.",
+      "correta": "o item cobra função semantica e textual do linking word",
+      "comentario": "Esse é o tipo de demanda em que linking words aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "grammar-and-language-use",
@@ -4612,7 +4612,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Linking words",
       "dificuldadeLabel": "dificil",
@@ -4621,13 +4621,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Linking words?",
       "opcoes": [
-        "Em sintese, as palavras e expressoes que conectam ideias e organizam a logica do texto.",
+        "Em sintese, as palavras e expressões que conectam ideias e organizam a logica do texto.",
         "Em sintese, as combinacoes de verbo e particula que formam significados especificos em contexto.",
-        "Em sintese, a formacao de palavras por prefixos, sufixos e mudancas de classe gramatical.",
-        "Em sintese, o uso contextual de preposicoes e artigos para marcar relacao, referencia e naturalidade na frase."
+        "Em sintese, a formação de palavras por prefixos, sufixos e mudanças de classe gramatical.",
+        "Em sintese, o uso contextual de preposicoes e artigos para marcar relação, referência e naturalidade na frase."
       ],
-      "correta": "Em sintese, as palavras e expressoes que conectam ideias e organizam a logica do texto.",
-      "comentario": "O resumo correto recupera o nucleo de linking words.",
+      "correta": "Em sintese, as palavras e expressões que conectam ideias e organizam a logica do texto.",
+      "comentario": "O resumo correto recupera o núcleo de linking words.",
       "tempoEstimado": 60,
       "tags": [
         "grammar-and-language-use",
@@ -4651,22 +4651,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Linking words",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Linking words?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em Linking words?",
       "opcoes": [
-        "The problem is serious; therefore, action is necessary. -> o conector sinaliza consequencia e organiza a leitura",
-        "She looked after her younger brother after school. -> o conector sinaliza consequencia e organiza a leitura",
-        "The suffix in careful helps indicate an adjective. -> a frase depende de escolhas contextuais de preposicao e artigo",
+        "The problem is serious; therefore, action is necessary. -> o conector sinaliza consequência e organiza a leitura",
+        "She looked after her younger brother after school. -> o conector sinaliza consequência e organiza a leitura",
+        "The suffix in careful helps indicate an adjective. -> a frase depende de escolhas contextuais de preposição e artigo",
         "The students arrived at school in the morning. -> o phrasal verb assume um sentido especifico no uso real"
       ],
-      "correta": "The problem is serious; therefore, action is necessary. -> o conector sinaliza consequencia e organiza a leitura",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em linking words.",
+      "correta": "The problem is serious; therefore, action is necessary. -> o conector sinaliza consequência e organiza a leitura",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em linking words.",
       "tempoEstimado": 65,
       "tags": [
         "grammar-and-language-use",
@@ -4690,7 +4690,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Linking words",
       "dificuldadeLabel": "dificil",
@@ -4699,13 +4699,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Ao resolver uma atividade sobre linking words, o estudante deve principalmente:",
       "opcoes": [
-        "interpretar contraste, causa, consequencia, adicao e exemplificacao",
-        "observar a relacao logica produzida pelo conector no contexto",
-        "acompanhar a logica do texto e a relacao entre frases",
-        "o item cobra funcao semantica e textual do linking word"
+        "interpretar contraste, causa, consequência, adicao e exemplificacao",
+        "observar a relação logica produzida pelo conector no contexto",
+        "acompanhar a logica do texto e a relação entre frases",
+        "o item cobra função semantica e textual do linking word"
       ],
-      "correta": "interpretar contraste, causa, consequencia, adicao e exemplificacao",
-      "comentario": "O objetivo central de linking words e interpretar contraste, causa, consequencia, adicao e exemplificacao.",
+      "correta": "interpretar contraste, causa, consequência, adicao e exemplificacao",
+      "comentario": "O objetivo central de linking words e interpretar contraste, causa, consequência, adicao e exemplificacao.",
       "tempoEstimado": 70,
       "tags": [
         "grammar-and-language-use",
@@ -4729,19 +4729,19 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Phrasal verbs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, Phrasal verbs refere-se a:",
+      "enunciado": "Em Inglês, Phrasal verbs refere-se a:",
       "opcoes": [
         "as combinacoes de verbo e particula que formam significados especificos em contexto",
-        "a formacao de palavras por prefixos, sufixos e mudancas de classe gramatical",
-        "o uso contextual de preposicoes e artigos para marcar relacao, referencia e naturalidade na frase",
-        "a leitura de estruturas gramaticais em situacoes reais de uso, articuladas ao sentido do texto"
+        "a formação de palavras por prefixos, sufixos e mudanças de classe gramatical",
+        "o uso contextual de preposicoes e artigos para marcar relação, referência e naturalidade na frase",
+        "a leitura de estruturas gramaticais em situações reais de uso, articuladas ao sentido do texto"
       ],
       "correta": "as combinacoes de verbo e particula que formam significados especificos em contexto",
       "comentario": "Phrasal verbs refere-se as combinacoes de verbo e particula que formam significados especificos em contexto.",
@@ -4768,14 +4768,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Phrasal verbs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: um texto usa give up, find out e look after em situacoes cotidianas. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: um texto usa give up, find out e look after em situações cotidianas. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
         "Phrasal verbs",
         "Word formation",
@@ -4783,7 +4783,7 @@
         "Grammar in context"
       ],
       "correta": "Phrasal verbs",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de phrasal verbs.",
+      "comentario": "A situação apresentada é melhor compreendida por meio de phrasal verbs.",
       "tempoEstimado": 20,
       "tags": [
         "grammar-and-language-use",
@@ -4807,7 +4807,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Phrasal verbs",
       "dificuldadeLabel": "facil",
@@ -4846,22 +4846,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Phrasal verbs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente phrasal verbs?",
+      "enunciado": "Qual alternativa NÃO representa corretamente phrasal verbs?",
       "opcoes": [
         "The suffix in careful helps indicate an adjective.",
         "She looked after her younger brother after school.",
-        "evitar traducao palavra por palavra e confirmar o sentido na situacao.",
-        "interpretar expressoes frequentes da lingua em contextos reais."
+        "evitar traducao palavra por palavra e confirmar o sentido na situação.",
+        "interpretar expressões frequentes da língua em contextos reais."
       ],
       "correta": "The suffix in careful helps indicate an adjective.",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao phrasal verbs.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não phrasal verbs.",
       "tempoEstimado": 25,
       "tags": [
         "grammar-and-language-use",
@@ -4885,19 +4885,19 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Phrasal verbs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar phrasal verbs, o foco principal e:",
+      "enunciado": "Ao estudar phrasal verbs, o foco principal é:",
       "opcoes": [
         "reconhecer sentido contextual de verbos frasais comuns",
         "perceber como a forma da palavra ajuda a construir significado",
         "identificar escolhas corretas de prepositions and articles em contexto",
-        "interpretar gramatica a servico da compreensao textual"
+        "interpretar gramática a servico da compreensão textual"
       ],
       "correta": "reconhecer sentido contextual de verbos frasais comuns",
       "comentario": "Phrasal verbs concentra-se em reconhecer sentido contextual de verbos frasais comuns.",
@@ -4924,19 +4924,19 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Phrasal verbs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Word formation trata de a formacao de palavras por prefixos, sufixos e mudancas de classe gramatical, Phrasal verbs destaca:",
+      "enunciado": "Enquanto Word formation trata de a formação de palavras por prefixos, sufixos e mudanças de classe gramatical, Phrasal verbs destaca:",
       "opcoes": [
         "As combinacoes de verbo e particula que formam significados especificos em contexto.",
-        "A formacao de palavras por prefixos, sufixos e mudancas de classe gramatical.",
-        "O uso contextual de preposicoes e artigos para marcar relacao, referencia e naturalidade na frase.",
-        "A leitura de estruturas gramaticais em situacoes reais de uso, articuladas ao sentido do texto."
+        "A formação de palavras por prefixos, sufixos e mudanças de classe gramatical.",
+        "O uso contextual de preposicoes e artigos para marcar relação, referência e naturalidade na frase.",
+        "A leitura de estruturas gramaticais em situações reais de uso, articuladas ao sentido do texto."
       ],
       "correta": "As combinacoes de verbo e particula que formam significados especificos em contexto.",
       "comentario": "A comparacao correta mostra a especificidade de phrasal verbs.",
@@ -4963,14 +4963,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Phrasal verbs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma atividade de sala, um texto usa give up, find out e look after em situacoes cotidianas. Para responder bem, o estudante deve mobilizar principalmente:",
+      "enunciado": "Em uma atividade de sala, um texto usa give up, find out e look after em situações cotidianas. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
         "Phrasal verbs",
         "Word formation",
@@ -4978,7 +4978,7 @@
         "Modal verbs"
       ],
       "correta": "Phrasal verbs",
-      "comentario": "Esse tipo de tarefa exige dominio de phrasal verbs.",
+      "comentario": "Esse tipo de tarefa exige domínio de phrasal verbs.",
       "tempoEstimado": 35,
       "tags": [
         "grammar-and-language-use",
@@ -5002,22 +5002,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Phrasal verbs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de Phrasal verbs?",
+      "enunciado": "Qual situação pratica depende mais diretamente de Phrasal verbs?",
       "opcoes": [
-        "interpretar expressoes frequentes da lingua em contextos reais",
-        "inferir sentido lexical e funcao gramatical em contexto",
-        "interpretar relacoes espaciais, temporais e referenciais em frases",
-        "entender intencao e grau de obrigacao ou possibilidade em frases"
+        "interpretar expressões frequentes da língua em contextos reais",
+        "inferir sentido lexical e função gramatical em contexto",
+        "interpretar relações espaciais, temporais e referenciais em frases",
+        "entender intenção e grau de obrigação ou possibilidade em frases"
       ],
-      "correta": "interpretar expressoes frequentes da lingua em contextos reais",
-      "comentario": "Phrasal verbs aparece de forma direta em interpretar expressoes frequentes da lingua em contextos reais.",
+      "correta": "interpretar expressões frequentes da língua em contextos reais",
+      "comentario": "Phrasal verbs aparece de forma direta em interpretar expressões frequentes da língua em contextos reais.",
       "tempoEstimado": 35,
       "tags": [
         "grammar-and-language-use",
@@ -5041,14 +5041,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Phrasal verbs",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre phrasal verbs?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre phrasal verbs?",
       "opcoes": [
         "o caso e resolvido com foco em phrasal verbs.",
         "o caso e melhor resolvido por word formation.",
@@ -5056,7 +5056,7 @@
         "o caso impede qualquer uso de grammar in context."
       ],
       "correta": "o caso e resolvido com foco em phrasal verbs.",
-      "comentario": "A conclusao correta retoma a funcao central de phrasal verbs.",
+      "comentario": "A conclusão correta retoma a função central de phrasal verbs.",
       "tempoEstimado": 40,
       "tags": [
         "grammar-and-language-use",
@@ -5080,7 +5080,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Phrasal verbs",
       "dificuldadeLabel": "facil",
@@ -5089,12 +5089,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar phrasal verbs, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como phrasal verbs aparece em interpretar expressoes frequentes da lingua em contextos reais?",
-        "Como word formation substitui totalmente interpretar expressoes frequentes da lingua em contextos reais?",
+        "Como phrasal verbs aparece em interpretar expressões frequentes da língua em contextos reais?",
+        "Como word formation substitui totalmente interpretar expressões frequentes da língua em contextos reais?",
         "Por que prepositions and articles torna desnecessario estudar Phrasal verbs?",
         "De que modo grammar in context elimina toda leitura de contexto?"
       ],
-      "correta": "Como phrasal verbs aparece em interpretar expressoes frequentes da lingua em contextos reais?",
+      "correta": "Como phrasal verbs aparece em interpretar expressões frequentes da língua em contextos reais?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de phrasal verbs.",
       "tempoEstimado": 40,
       "tags": [
@@ -5119,22 +5119,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Phrasal verbs",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em phrasal verbs e pensar que:",
+      "enunciado": "Um erro comum em phrasal verbs é pensar que:",
       "opcoes": [
         "o sentido do phrasal verb sempre e a soma literal do verbo e da particula",
-        "prefixos e sufixos so servem para decorar vocabulario isolado",
-        "prepositions and articles podem ser escolhidos apenas por traducao direta do portugues",
-        "gramatica em contexto e igual a decorar regra solta fora do texto"
+        "prefixos e sufixos so servem para decorar vocabulário isolado",
+        "prepositions and articles podem ser escolhidos apenas por traducao direta do português",
+        "gramática em contexto e igual a decorar regra solta fora do texto"
       ],
       "correta": "o sentido do phrasal verb sempre e a soma literal do verbo e da particula",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de phrasal verbs.",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de phrasal verbs.",
       "tempoEstimado": 45,
       "tags": [
         "grammar-and-language-use",
@@ -5158,21 +5158,21 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Phrasal verbs",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"look after significa olhar depois porque essa e a traducao de cada palavra\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"look after significa olhar depois porque essa e a traducao de cada palavra\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque as combinacoes de verbo e particula que formam significados especificos em contexto.",
-        "A afirmacao esta correta, pois resume integralmente phrasal verbs.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque as combinacoes de verbo e particula que formam significados especificos em contexto.",
+        "A afirmação está correta, pois resume integralmente phrasal verbs.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque as combinacoes de verbo e particula que formam significados especificos em contexto.",
+      "correta": "A afirmação está incorreta, porque as combinacoes de verbo e particula que formam significados especificos em contexto.",
       "comentario": "A fala do estudante apresenta um equivoco conceitual sobre phrasal verbs.",
       "tempoEstimado": 45,
       "tags": [
@@ -5197,22 +5197,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Phrasal verbs",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se phrasal verbs fosse ignorado(a) em interpretar expressoes frequentes da lingua em contextos reais, o resultado mais provavel seria:",
+      "enunciado": "Se phrasal verbs fosse ignorado(a) em interpretar expressões frequentes da língua em contextos reais, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar expressoes frequentes da lingua em contextos reais.",
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar expressões frequentes da língua em contextos reais.",
         "a questao seria resolvida automaticamente por word formation.",
-        "nenhuma interpretacao seria alterada, porque Phrasal verbs nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "nenhuma interpretação seria alterada, porque Phrasal verbs não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar expressoes frequentes da lingua em contextos reais.",
-      "comentario": "Ignorar phrasal verbs compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar expressões frequentes da língua em contextos reais.",
+      "comentario": "Ignorar phrasal verbs compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "grammar-and-language-use",
@@ -5236,14 +5236,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Phrasal verbs",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor Phrasal verbs?",
+      "enunciado": "Qual trecho ou ação ilustra melhor Phrasal verbs?",
       "opcoes": [
         "She looked after her younger brother after school.",
         "The suffix in careful helps indicate an adjective.",
@@ -5251,7 +5251,7 @@
         "The language choice helps the reader understand the author's intention."
       ],
       "correta": "She looked after her younger brother after school.",
-      "comentario": "O item correto e o que melhor exemplifica phrasal verbs.",
+      "comentario": "O item correto é o que melhor exemplifica phrasal verbs.",
       "tempoEstimado": 50,
       "tags": [
         "grammar-and-language-use",
@@ -5275,7 +5275,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Phrasal verbs",
       "dificuldadeLabel": "dificil",
@@ -5286,8 +5286,8 @@
       "opcoes": [
         "o phrasal verb assume um sentido especifico no uso real",
         "a forma da palavra da pistas sobre seu papel e significado",
-        "a frase depende de escolhas contextuais de preposicao e artigo",
-        "a gramatica e analisada dentro do funcionamento real do texto"
+        "a frase depende de escolhas contextuais de preposição e artigo",
+        "a gramática e analisada dentro do funcionamento real do texto"
       ],
       "correta": "o phrasal verb assume um sentido especifico no uso real",
       "comentario": "A leitura correta do exemplo revela o papel de phrasal verbs.",
@@ -5314,22 +5314,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Phrasal verbs",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar phrasal verbs?",
+      "enunciado": "Qual estratégia ajuda mais a estudar phrasal verbs?",
       "opcoes": [
-        "evitar traducao palavra por palavra e confirmar o sentido na situacao",
-        "observar partes da palavra e sua funcao no contexto da frase",
-        "analisar a relacao expressa entre os elementos da frase",
-        "ler a estrutura em relacao ao contexto e ao efeito de sentido"
+        "evitar traducao palavra por palavra e confirmar o sentido na situação",
+        "observar partes da palavra e sua função no contexto da frase",
+        "analisar a relação expressa entre os elementos da frase",
+        "ler a estrutura em relação ao contexto e ao efeito de sentido"
       ],
-      "correta": "evitar traducao palavra por palavra e confirmar o sentido na situacao",
-      "comentario": "A estrategia correta fortalece o dominio de phrasal verbs.",
+      "correta": "evitar traducao palavra por palavra e confirmar o sentido na situação",
+      "comentario": "A estratégia correta fortalece o domínio de phrasal verbs.",
       "tempoEstimado": 55,
       "tags": [
         "grammar-and-language-use",
@@ -5353,22 +5353,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Phrasal verbs",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Phrasal verbs e mais cobrado quando:",
+      "enunciado": "Em uma prova, Phrasal verbs é mais cobrado quando:",
       "opcoes": [
-        "a questao pede interpretacao contextual de phrasal verb",
-        "o item cobra formacao de palavras e inferencia lexical",
-        "a questao exige reconhecer uso contextual adequado de artigo e preposicao",
-        "o item cobra leitura gramatical articulada a interpretacao"
+        "a questao pede interpretação contextual de phrasal verb",
+        "o item cobra formação de palavras e inferencia lexical",
+        "a questao exige reconhecer uso contextual adequado de artigo e preposição",
+        "o item cobra leitura gramatical articulada a interpretação"
       ],
-      "correta": "a questao pede interpretacao contextual de phrasal verb",
-      "comentario": "Esse e o tipo de demanda em que phrasal verbs aparece com mais frequencia.",
+      "correta": "a questao pede interpretação contextual de phrasal verb",
+      "comentario": "Esse é o tipo de demanda em que phrasal verbs aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "grammar-and-language-use",
@@ -5392,7 +5392,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Phrasal verbs",
       "dificuldadeLabel": "dificil",
@@ -5402,12 +5402,12 @@
       "enunciado": "Qual resumo sintetiza melhor a ideia de Phrasal verbs?",
       "opcoes": [
         "Em sintese, as combinacoes de verbo e particula que formam significados especificos em contexto.",
-        "Em sintese, a formacao de palavras por prefixos, sufixos e mudancas de classe gramatical.",
-        "Em sintese, o uso contextual de preposicoes e artigos para marcar relacao, referencia e naturalidade na frase.",
-        "Em sintese, a leitura de estruturas gramaticais em situacoes reais de uso, articuladas ao sentido do texto."
+        "Em sintese, a formação de palavras por prefixos, sufixos e mudanças de classe gramatical.",
+        "Em sintese, o uso contextual de preposicoes e artigos para marcar relação, referência e naturalidade na frase.",
+        "Em sintese, a leitura de estruturas gramaticais em situações reais de uso, articuladas ao sentido do texto."
       ],
       "correta": "Em sintese, as combinacoes de verbo e particula que formam significados especificos em contexto.",
-      "comentario": "O resumo correto recupera o nucleo de phrasal verbs.",
+      "comentario": "O resumo correto recupera o núcleo de phrasal verbs.",
       "tempoEstimado": 60,
       "tags": [
         "grammar-and-language-use",
@@ -5431,22 +5431,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Phrasal verbs",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Phrasal verbs?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em Phrasal verbs?",
       "opcoes": [
         "She looked after her younger brother after school. -> o phrasal verb assume um sentido especifico no uso real",
         "The suffix in careful helps indicate an adjective. -> o phrasal verb assume um sentido especifico no uso real",
-        "The students arrived at school in the morning. -> a gramatica e analisada dentro do funcionamento real do texto",
+        "The students arrived at school in the morning. -> a gramática e analisada dentro do funcionamento real do texto",
         "The language choice helps the reader understand the author's intention. -> a forma da palavra da pistas sobre seu papel e significado"
       ],
       "correta": "She looked after her younger brother after school. -> o phrasal verb assume um sentido especifico no uso real",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em phrasal verbs.",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em phrasal verbs.",
       "tempoEstimado": 65,
       "tags": [
         "grammar-and-language-use",
@@ -5470,7 +5470,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Phrasal verbs",
       "dificuldadeLabel": "dificil",
@@ -5480,9 +5480,9 @@
       "enunciado": "Ao resolver uma atividade sobre phrasal verbs, o estudante deve principalmente:",
       "opcoes": [
         "reconhecer sentido contextual de verbos frasais comuns",
-        "evitar traducao palavra por palavra e confirmar o sentido na situacao",
-        "interpretar expressoes frequentes da lingua em contextos reais",
-        "a questao pede interpretacao contextual de phrasal verb"
+        "evitar traducao palavra por palavra e confirmar o sentido na situação",
+        "interpretar expressões frequentes da língua em contextos reais",
+        "a questao pede interpretação contextual de phrasal verb"
       ],
       "correta": "reconhecer sentido contextual de verbos frasais comuns",
       "comentario": "O objetivo central de phrasal verbs e reconhecer sentido contextual de verbos frasais comuns.",
@@ -5509,22 +5509,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Word formation",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, Word formation refere-se a:",
+      "enunciado": "Em Inglês, Word formation refere-se a:",
       "opcoes": [
-        "a formacao de palavras por prefixos, sufixos e mudancas de classe gramatical",
-        "o uso contextual de preposicoes e artigos para marcar relacao, referencia e naturalidade na frase",
-        "a leitura de estruturas gramaticais em situacoes reais de uso, articuladas ao sentido do texto",
-        "os verbos modais usados para expressar possibilidade, obrigacao, conselho, permissao ou capacidade"
+        "a formação de palavras por prefixos, sufixos e mudanças de classe gramatical",
+        "o uso contextual de preposicoes e artigos para marcar relação, referência e naturalidade na frase",
+        "a leitura de estruturas gramaticais em situações reais de uso, articuladas ao sentido do texto",
+        "os verbos modais usados para expressar possibilidade, obrigação, conselho, permissao ou capacidade"
       ],
-      "correta": "a formacao de palavras por prefixos, sufixos e mudancas de classe gramatical",
-      "comentario": "Word formation refere-se a formacao de palavras por prefixos, sufixos e mudancas de classe gramatical.",
+      "correta": "a formação de palavras por prefixos, sufixos e mudanças de classe gramatical",
+      "comentario": "Word formation refere-se a formação de palavras por prefixos, sufixos e mudanças de classe gramatical.",
       "tempoEstimado": 20,
       "tags": [
         "grammar-and-language-use",
@@ -5548,14 +5548,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Word formation",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: um texto usa words like useful, useless, education and educational. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: um texto usa words like useful, useless, education and educational. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
         "Word formation",
         "Prepositions and articles",
@@ -5563,7 +5563,7 @@
         "Modal verbs"
       ],
       "correta": "Word formation",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de word formation.",
+      "comentario": "A situação apresentada é melhor compreendida por meio de word formation.",
       "tempoEstimado": 20,
       "tags": [
         "grammar-and-language-use",
@@ -5587,7 +5587,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Word formation",
       "dificuldadeLabel": "facil",
@@ -5626,22 +5626,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Word formation",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente word formation?",
+      "enunciado": "Qual alternativa NÃO representa corretamente word formation?",
       "opcoes": [
         "The students arrived at school in the morning.",
         "The suffix in careful helps indicate an adjective.",
-        "observar partes da palavra e sua funcao no contexto da frase.",
-        "inferir sentido lexical e funcao gramatical em contexto."
+        "observar partes da palavra e sua função no contexto da frase.",
+        "inferir sentido lexical e função gramatical em contexto."
       ],
       "correta": "The students arrived at school in the morning.",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao word formation.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não word formation.",
       "tempoEstimado": 25,
       "tags": [
         "grammar-and-language-use",
@@ -5665,18 +5665,18 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Word formation",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar word formation, o foco principal e:",
+      "enunciado": "Ao estudar word formation, o foco principal é:",
       "opcoes": [
         "perceber como a forma da palavra ajuda a construir significado",
         "identificar escolhas corretas de prepositions and articles em contexto",
-        "interpretar gramatica a servico da compreensao textual",
+        "interpretar gramática a servico da compreensão textual",
         "interpretar nuance de sentido em estruturas com modais"
       ],
       "correta": "perceber como a forma da palavra ajuda a construir significado",
@@ -5704,21 +5704,21 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Word formation",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Prepositions and articles trata de o uso contextual de preposicoes e artigos para marcar relacao, referencia e naturalidade na frase, Word formation destaca:",
+      "enunciado": "Enquanto Prepositions and articles trata de o uso contextual de preposicoes e artigos para marcar relação, referência e naturalidade na frase, Word formation destaca:",
       "opcoes": [
-        "A formacao de palavras por prefixos, sufixos e mudancas de classe gramatical.",
-        "O uso contextual de preposicoes e artigos para marcar relacao, referencia e naturalidade na frase.",
-        "A leitura de estruturas gramaticais em situacoes reais de uso, articuladas ao sentido do texto.",
-        "Os verbos modais usados para expressar possibilidade, obrigacao, conselho, permissao ou capacidade."
+        "A formação de palavras por prefixos, sufixos e mudanças de classe gramatical.",
+        "O uso contextual de preposicoes e artigos para marcar relação, referência e naturalidade na frase.",
+        "A leitura de estruturas gramaticais em situações reais de uso, articuladas ao sentido do texto.",
+        "Os verbos modais usados para expressar possibilidade, obrigação, conselho, permissao ou capacidade."
       ],
-      "correta": "A formacao de palavras por prefixos, sufixos e mudancas de classe gramatical.",
+      "correta": "A formação de palavras por prefixos, sufixos e mudanças de classe gramatical.",
       "comentario": "A comparacao correta mostra a especificidade de word formation.",
       "tempoEstimado": 30,
       "tags": [
@@ -5743,7 +5743,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Word formation",
       "dificuldadeLabel": "facil",
@@ -5758,7 +5758,7 @@
         "Conditionals"
       ],
       "correta": "Word formation",
-      "comentario": "Esse tipo de tarefa exige dominio de word formation.",
+      "comentario": "Esse tipo de tarefa exige domínio de word formation.",
       "tempoEstimado": 35,
       "tags": [
         "grammar-and-language-use",
@@ -5782,22 +5782,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Word formation",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de Word formation?",
+      "enunciado": "Qual situação pratica depende mais diretamente de Word formation?",
       "opcoes": [
-        "inferir sentido lexical e funcao gramatical em contexto",
-        "interpretar relacoes espaciais, temporais e referenciais em frases",
-        "resolver questoes em que a gramatica aparece integrada a leitura",
+        "inferir sentido lexical e função gramatical em contexto",
+        "interpretar relações espaciais, temporais e referenciais em frases",
+        "resolver questoes em que a gramática aparece integrada a leitura",
         "interpretar frases hipoteticas e relacionais em leitura"
       ],
-      "correta": "inferir sentido lexical e funcao gramatical em contexto",
-      "comentario": "Word formation aparece de forma direta em inferir sentido lexical e funcao gramatical em contexto.",
+      "correta": "inferir sentido lexical e função gramatical em contexto",
+      "comentario": "Word formation aparece de forma direta em inferir sentido lexical e função gramatical em contexto.",
       "tempoEstimado": 35,
       "tags": [
         "grammar-and-language-use",
@@ -5821,14 +5821,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Word formation",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre word formation?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre word formation?",
       "opcoes": [
         "o caso e resolvido com foco em word formation.",
         "o caso e melhor resolvido por prepositions and articles.",
@@ -5836,7 +5836,7 @@
         "o caso impede qualquer uso de modal verbs."
       ],
       "correta": "o caso e resolvido com foco em word formation.",
-      "comentario": "A conclusao correta retoma a funcao central de word formation.",
+      "comentario": "A conclusão correta retoma a função central de word formation.",
       "tempoEstimado": 40,
       "tags": [
         "grammar-and-language-use",
@@ -5860,7 +5860,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Word formation",
       "dificuldadeLabel": "facil",
@@ -5869,12 +5869,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar word formation, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como word formation aparece em inferir sentido lexical e funcao gramatical em contexto?",
-        "Como prepositions and articles substitui totalmente inferir sentido lexical e funcao gramatical em contexto?",
+        "Como word formation aparece em inferir sentido lexical e função gramatical em contexto?",
+        "Como prepositions and articles substitui totalmente inferir sentido lexical e função gramatical em contexto?",
         "Por que grammar in context torna desnecessario estudar Word formation?",
         "De que modo modal verbs elimina toda leitura de contexto?"
       ],
-      "correta": "Como word formation aparece em inferir sentido lexical e funcao gramatical em contexto?",
+      "correta": "Como word formation aparece em inferir sentido lexical e função gramatical em contexto?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de word formation.",
       "tempoEstimado": 40,
       "tags": [
@@ -5899,22 +5899,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Word formation",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em word formation e pensar que:",
+      "enunciado": "Um erro comum em word formation é pensar que:",
       "opcoes": [
-        "prefixos e sufixos so servem para decorar vocabulario isolado",
-        "prepositions and articles podem ser escolhidos apenas por traducao direta do portugues",
-        "gramatica em contexto e igual a decorar regra solta fora do texto",
+        "prefixos e sufixos so servem para decorar vocabulário isolado",
+        "prepositions and articles podem ser escolhidos apenas por traducao direta do português",
+        "gramática em contexto e igual a decorar regra solta fora do texto",
         "todos os modal verbs significam apenas futuro"
       ],
-      "correta": "prefixos e sufixos so servem para decorar vocabulario isolado",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de word formation.",
+      "correta": "prefixos e sufixos so servem para decorar vocabulário isolado",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de word formation.",
       "tempoEstimado": 45,
       "tags": [
         "grammar-and-language-use",
@@ -5938,21 +5938,21 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Word formation",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"educational e education tem exatamente a mesma funcao e o mesmo sentido\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"educational e education tem exatamente a mesma função e o mesmo sentido\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque a formacao de palavras por prefixos, sufixos e mudancas de classe gramatical.",
-        "A afirmacao esta correta, pois resume integralmente word formation.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque a formação de palavras por prefixos, sufixos e mudanças de classe gramatical.",
+        "A afirmação está correta, pois resume integralmente word formation.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque a formacao de palavras por prefixos, sufixos e mudancas de classe gramatical.",
+      "correta": "A afirmação está incorreta, porque a formação de palavras por prefixos, sufixos e mudanças de classe gramatical.",
       "comentario": "A fala do estudante apresenta um equivoco conceitual sobre word formation.",
       "tempoEstimado": 45,
       "tags": [
@@ -5977,22 +5977,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Word formation",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se word formation fosse ignorado(a) em inferir sentido lexical e funcao gramatical em contexto, o resultado mais provavel seria:",
+      "enunciado": "Se word formation fosse ignorado(a) em inferir sentido lexical e função gramatical em contexto, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em inferir sentido lexical e funcao gramatical em contexto.",
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em inferir sentido lexical e função gramatical em contexto.",
         "a questao seria resolvida automaticamente por prepositions and articles.",
-        "nenhuma interpretacao seria alterada, porque Word formation nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "nenhuma interpretação seria alterada, porque Word formation não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em inferir sentido lexical e funcao gramatical em contexto.",
-      "comentario": "Ignorar word formation compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em inferir sentido lexical e função gramatical em contexto.",
+      "comentario": "Ignorar word formation compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "grammar-and-language-use",
@@ -6016,14 +6016,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Word formation",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor Word formation?",
+      "enunciado": "Qual trecho ou ação ilustra melhor Word formation?",
       "opcoes": [
         "The suffix in careful helps indicate an adjective.",
         "The students arrived at school in the morning.",
@@ -6031,7 +6031,7 @@
         "Students should check their sources before sharing information."
       ],
       "correta": "The suffix in careful helps indicate an adjective.",
-      "comentario": "O item correto e o que melhor exemplifica word formation.",
+      "comentario": "O item correto é o que melhor exemplifica word formation.",
       "tempoEstimado": 50,
       "tags": [
         "grammar-and-language-use",
@@ -6055,7 +6055,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Word formation",
       "dificuldadeLabel": "dificil",
@@ -6065,8 +6065,8 @@
       "enunciado": "Ao encontrar o exemplo \"The suffix in careful helps indicate an adjective.\", a leitura mais adequada e:",
       "opcoes": [
         "a forma da palavra da pistas sobre seu papel e significado",
-        "a frase depende de escolhas contextuais de preposicao e artigo",
-        "a gramatica e analisada dentro do funcionamento real do texto",
+        "a frase depende de escolhas contextuais de preposição e artigo",
+        "a gramática e analisada dentro do funcionamento real do texto",
         "o modal indica conselho ou recomendacao"
       ],
       "correta": "a forma da palavra da pistas sobre seu papel e significado",
@@ -6094,22 +6094,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Word formation",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar word formation?",
+      "enunciado": "Qual estratégia ajuda mais a estudar word formation?",
       "opcoes": [
-        "observar partes da palavra e sua funcao no contexto da frase",
-        "analisar a relacao expressa entre os elementos da frase",
-        "ler a estrutura em relacao ao contexto e ao efeito de sentido",
+        "observar partes da palavra e sua função no contexto da frase",
+        "analisar a relação expressa entre os elementos da frase",
+        "ler a estrutura em relação ao contexto e ao efeito de sentido",
         "observar o efeito de sentido produzido pelo modal no contexto"
       ],
-      "correta": "observar partes da palavra e sua funcao no contexto da frase",
-      "comentario": "A estrategia correta fortalece o dominio de word formation.",
+      "correta": "observar partes da palavra e sua função no contexto da frase",
+      "comentario": "A estratégia correta fortalece o domínio de word formation.",
       "tempoEstimado": 55,
       "tags": [
         "grammar-and-language-use",
@@ -6133,22 +6133,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Word formation",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Word formation e mais cobrado quando:",
+      "enunciado": "Em uma prova, Word formation é mais cobrado quando:",
       "opcoes": [
-        "o item cobra formacao de palavras e inferencia lexical",
-        "a questao exige reconhecer uso contextual adequado de artigo e preposicao",
-        "o item cobra leitura gramatical articulada a interpretacao",
+        "o item cobra formação de palavras e inferencia lexical",
+        "a questao exige reconhecer uso contextual adequado de artigo e preposição",
+        "o item cobra leitura gramatical articulada a interpretação",
         "a questao pede interpretar valor de modal verb em uso"
       ],
-      "correta": "o item cobra formacao de palavras e inferencia lexical",
-      "comentario": "Esse e o tipo de demanda em que word formation aparece com mais frequencia.",
+      "correta": "o item cobra formação de palavras e inferencia lexical",
+      "comentario": "Esse é o tipo de demanda em que word formation aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "grammar-and-language-use",
@@ -6172,7 +6172,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Word formation",
       "dificuldadeLabel": "dificil",
@@ -6181,13 +6181,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Word formation?",
       "opcoes": [
-        "Em sintese, a formacao de palavras por prefixos, sufixos e mudancas de classe gramatical.",
-        "Em sintese, o uso contextual de preposicoes e artigos para marcar relacao, referencia e naturalidade na frase.",
-        "Em sintese, a leitura de estruturas gramaticais em situacoes reais de uso, articuladas ao sentido do texto.",
-        "Em sintese, os verbos modais usados para expressar possibilidade, obrigacao, conselho, permissao ou capacidade."
+        "Em sintese, a formação de palavras por prefixos, sufixos e mudanças de classe gramatical.",
+        "Em sintese, o uso contextual de preposicoes e artigos para marcar relação, referência e naturalidade na frase.",
+        "Em sintese, a leitura de estruturas gramaticais em situações reais de uso, articuladas ao sentido do texto.",
+        "Em sintese, os verbos modais usados para expressar possibilidade, obrigação, conselho, permissao ou capacidade."
       ],
-      "correta": "Em sintese, a formacao de palavras por prefixos, sufixos e mudancas de classe gramatical.",
-      "comentario": "O resumo correto recupera o nucleo de word formation.",
+      "correta": "Em sintese, a formação de palavras por prefixos, sufixos e mudanças de classe gramatical.",
+      "comentario": "O resumo correto recupera o núcleo de word formation.",
       "tempoEstimado": 60,
       "tags": [
         "grammar-and-language-use",
@@ -6211,22 +6211,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Word formation",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Word formation?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em Word formation?",
       "opcoes": [
         "The suffix in careful helps indicate an adjective. -> a forma da palavra da pistas sobre seu papel e significado",
         "The students arrived at school in the morning. -> a forma da palavra da pistas sobre seu papel e significado",
         "The language choice helps the reader understand the author's intention. -> o modal indica conselho ou recomendacao",
-        "Students should check their sources before sharing information. -> a frase depende de escolhas contextuais de preposicao e artigo"
+        "Students should check their sources before sharing information. -> a frase depende de escolhas contextuais de preposição e artigo"
       ],
       "correta": "The suffix in careful helps indicate an adjective. -> a forma da palavra da pistas sobre seu papel e significado",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em word formation.",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em word formation.",
       "tempoEstimado": 65,
       "tags": [
         "grammar-and-language-use",
@@ -6250,7 +6250,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Word formation",
       "dificuldadeLabel": "dificil",
@@ -6260,9 +6260,9 @@
       "enunciado": "Ao resolver uma atividade sobre word formation, o estudante deve principalmente:",
       "opcoes": [
         "perceber como a forma da palavra ajuda a construir significado",
-        "observar partes da palavra e sua funcao no contexto da frase",
-        "inferir sentido lexical e funcao gramatical em contexto",
-        "o item cobra formacao de palavras e inferencia lexical"
+        "observar partes da palavra e sua função no contexto da frase",
+        "inferir sentido lexical e função gramatical em contexto",
+        "o item cobra formação de palavras e inferencia lexical"
       ],
       "correta": "perceber como a forma da palavra ajuda a construir significado",
       "comentario": "O objetivo central de word formation e perceber como a forma da palavra ajuda a construir significado.",
@@ -6289,22 +6289,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Prepositions and articles",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, Prepositions and articles refere-se a:",
+      "enunciado": "Em Inglês, Prepositions and articles refere-se a:",
       "opcoes": [
-        "o uso contextual de preposicoes e artigos para marcar relacao, referencia e naturalidade na frase",
-        "a leitura de estruturas gramaticais em situacoes reais de uso, articuladas ao sentido do texto",
-        "os verbos modais usados para expressar possibilidade, obrigacao, conselho, permissao ou capacidade",
-        "as estruturas condicionais usadas para expressar hipotese, consequencia e possibilidade"
+        "o uso contextual de preposicoes e artigos para marcar relação, referência e naturalidade na frase",
+        "a leitura de estruturas gramaticais em situações reais de uso, articuladas ao sentido do texto",
+        "os verbos modais usados para expressar possibilidade, obrigação, conselho, permissao ou capacidade",
+        "as estruturas condicionais usadas para expressar hipótese, consequência e possibilidade"
       ],
-      "correta": "o uso contextual de preposicoes e artigos para marcar relacao, referencia e naturalidade na frase",
-      "comentario": "Prepositions and articles refere-se ao uso contextual de preposicoes e artigos para marcar relacao, referencia e naturalidade na frase.",
+      "correta": "o uso contextual de preposicoes e artigos para marcar relação, referência e naturalidade na frase",
+      "comentario": "Prepositions and articles refere-se ao uso contextual de preposicoes e artigos para marcar relação, referência e naturalidade na frase.",
       "tempoEstimado": 20,
       "tags": [
         "grammar-and-language-use",
@@ -6328,14 +6328,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Prepositions and articles",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: um texto contrasta in the city, at school, on the bus and an idea in a paragraph. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: um texto contrasta in the city, at school, on the bus and an idea in a paragraph. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
         "Prepositions and articles",
         "Grammar in context",
@@ -6343,7 +6343,7 @@
         "Conditionals"
       ],
       "correta": "Prepositions and articles",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de prepositions and articles.",
+      "comentario": "A situação apresentada é melhor compreendida por meio de prepositions and articles.",
       "tempoEstimado": 20,
       "tags": [
         "grammar-and-language-use",
@@ -6367,7 +6367,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Prepositions and articles",
       "dificuldadeLabel": "facil",
@@ -6406,22 +6406,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Prepositions and articles",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente prepositions and articles?",
+      "enunciado": "Qual alternativa NÃO representa corretamente prepositions and articles?",
       "opcoes": [
         "The language choice helps the reader understand the author's intention.",
         "The students arrived at school in the morning.",
-        "analisar a relacao expressa entre os elementos da frase.",
-        "interpretar relacoes espaciais, temporais e referenciais em frases."
+        "analisar a relação expressa entre os elementos da frase.",
+        "interpretar relações espaciais, temporais e referenciais em frases."
       ],
       "correta": "The language choice helps the reader understand the author's intention.",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao prepositions and articles.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não prepositions and articles.",
       "tempoEstimado": 25,
       "tags": [
         "grammar-and-language-use",
@@ -6445,19 +6445,19 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Prepositions and articles",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar prepositions and articles, o foco principal e:",
+      "enunciado": "Ao estudar prepositions and articles, o foco principal é:",
       "opcoes": [
         "identificar escolhas corretas de prepositions and articles em contexto",
-        "interpretar gramatica a servico da compreensao textual",
+        "interpretar gramática a servico da compreensão textual",
         "interpretar nuance de sentido em estruturas com modais",
-        "reconhecer relacao entre condicao e resultado"
+        "reconhecer relação entre condicao e resultado"
       ],
       "correta": "identificar escolhas corretas de prepositions and articles em contexto",
       "comentario": "Prepositions and articles concentra-se em identificar escolhas corretas de prepositions and articles em contexto.",
@@ -6484,21 +6484,21 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Prepositions and articles",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Grammar in context trata de a leitura de estruturas gramaticais em situacoes reais de uso, articuladas ao sentido do texto, Prepositions and articles destaca:",
+      "enunciado": "Enquanto Grammar in context trata de a leitura de estruturas gramaticais em situações reais de uso, articuladas ao sentido do texto, Prepositions and articles destaca:",
       "opcoes": [
-        "O uso contextual de preposicoes e artigos para marcar relacao, referencia e naturalidade na frase.",
-        "A leitura de estruturas gramaticais em situacoes reais de uso, articuladas ao sentido do texto.",
-        "Os verbos modais usados para expressar possibilidade, obrigacao, conselho, permissao ou capacidade.",
-        "As estruturas condicionais usadas para expressar hipotese, consequencia e possibilidade."
+        "O uso contextual de preposicoes e artigos para marcar relação, referência e naturalidade na frase.",
+        "A leitura de estruturas gramaticais em situações reais de uso, articuladas ao sentido do texto.",
+        "Os verbos modais usados para expressar possibilidade, obrigação, conselho, permissao ou capacidade.",
+        "As estruturas condicionais usadas para expressar hipótese, consequência e possibilidade."
       ],
-      "correta": "O uso contextual de preposicoes e artigos para marcar relacao, referencia e naturalidade na frase.",
+      "correta": "O uso contextual de preposicoes e artigos para marcar relação, referência e naturalidade na frase.",
       "comentario": "A comparacao correta mostra a especificidade de prepositions and articles.",
       "tempoEstimado": 30,
       "tags": [
@@ -6523,7 +6523,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Prepositions and articles",
       "dificuldadeLabel": "facil",
@@ -6538,7 +6538,7 @@
         "Passive voice"
       ],
       "correta": "Prepositions and articles",
-      "comentario": "Esse tipo de tarefa exige dominio de prepositions and articles.",
+      "comentario": "Esse tipo de tarefa exige domínio de prepositions and articles.",
       "tempoEstimado": 35,
       "tags": [
         "grammar-and-language-use",
@@ -6562,22 +6562,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Prepositions and articles",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de Prepositions and articles?",
+      "enunciado": "Qual situação pratica depende mais diretamente de Prepositions and articles?",
       "opcoes": [
-        "interpretar relacoes espaciais, temporais e referenciais em frases",
-        "resolver questoes em que a gramatica aparece integrada a leitura",
-        "entender intencao e grau de obrigacao ou possibilidade em frases",
+        "interpretar relações espaciais, temporais e referenciais em frases",
+        "resolver questoes em que a gramática aparece integrada a leitura",
+        "entender intenção e grau de obrigação ou possibilidade em frases",
         "interpretar foco de informacao em textos informativos e institucionais"
       ],
-      "correta": "interpretar relacoes espaciais, temporais e referenciais em frases",
-      "comentario": "Prepositions and articles aparece de forma direta em interpretar relacoes espaciais, temporais e referenciais em frases.",
+      "correta": "interpretar relações espaciais, temporais e referenciais em frases",
+      "comentario": "Prepositions and articles aparece de forma direta em interpretar relações espaciais, temporais e referenciais em frases.",
       "tempoEstimado": 35,
       "tags": [
         "grammar-and-language-use",
@@ -6601,14 +6601,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Prepositions and articles",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre prepositions and articles?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre prepositions and articles?",
       "opcoes": [
         "o caso e resolvido com foco em prepositions and articles.",
         "o caso e melhor resolvido por grammar in context.",
@@ -6616,7 +6616,7 @@
         "o caso impede qualquer uso de conditionals."
       ],
       "correta": "o caso e resolvido com foco em prepositions and articles.",
-      "comentario": "A conclusao correta retoma a funcao central de prepositions and articles.",
+      "comentario": "A conclusão correta retoma a função central de prepositions and articles.",
       "tempoEstimado": 40,
       "tags": [
         "grammar-and-language-use",
@@ -6640,7 +6640,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Prepositions and articles",
       "dificuldadeLabel": "facil",
@@ -6649,12 +6649,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar prepositions and articles, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como prepositions and articles aparece em interpretar relacoes espaciais, temporais e referenciais em frases?",
-        "Como grammar in context substitui totalmente interpretar relacoes espaciais, temporais e referenciais em frases?",
+        "Como prepositions and articles aparece em interpretar relações espaciais, temporais e referenciais em frases?",
+        "Como grammar in context substitui totalmente interpretar relações espaciais, temporais e referenciais em frases?",
         "Por que modal verbs torna desnecessario estudar Prepositions and articles?",
         "De que modo conditionals elimina toda leitura de contexto?"
       ],
-      "correta": "Como prepositions and articles aparece em interpretar relacoes espaciais, temporais e referenciais em frases?",
+      "correta": "Como prepositions and articles aparece em interpretar relações espaciais, temporais e referenciais em frases?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de prepositions and articles.",
       "tempoEstimado": 40,
       "tags": [
@@ -6679,22 +6679,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Prepositions and articles",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em prepositions and articles e pensar que:",
+      "enunciado": "Um erro comum em prepositions and articles é pensar que:",
       "opcoes": [
-        "prepositions and articles podem ser escolhidos apenas por traducao direta do portugues",
-        "gramatica em contexto e igual a decorar regra solta fora do texto",
+        "prepositions and articles podem ser escolhidos apenas por traducao direta do português",
+        "gramática em contexto e igual a decorar regra solta fora do texto",
         "todos os modal verbs significam apenas futuro",
-        "all conditionals expressam situacoes impossiveis"
+        "all conditionals expressam situações impossiveis"
       ],
-      "correta": "prepositions and articles podem ser escolhidos apenas por traducao direta do portugues",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de prepositions and articles.",
+      "correta": "prepositions and articles podem ser escolhidos apenas por traducao direta do português",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de prepositions and articles.",
       "tempoEstimado": 45,
       "tags": [
         "grammar-and-language-use",
@@ -6718,21 +6718,21 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Prepositions and articles",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"in, on e at podem ser trocados livremente porque todos indicam lugar\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"in, on e at podem ser trocados livremente porque todos indicam lugar\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque o uso contextual de preposicoes e artigos para marcar relacao, referencia e naturalidade na frase.",
-        "A afirmacao esta correta, pois resume integralmente prepositions and articles.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque o uso contextual de preposicoes e artigos para marcar relação, referência e naturalidade na frase.",
+        "A afirmação está correta, pois resume integralmente prepositions and articles.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque o uso contextual de preposicoes e artigos para marcar relacao, referencia e naturalidade na frase.",
+      "correta": "A afirmação está incorreta, porque o uso contextual de preposicoes e artigos para marcar relação, referência e naturalidade na frase.",
       "comentario": "A fala do estudante apresenta um equivoco conceitual sobre prepositions and articles.",
       "tempoEstimado": 45,
       "tags": [
@@ -6757,22 +6757,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Prepositions and articles",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se prepositions and articles fosse ignorado(a) em interpretar relacoes espaciais, temporais e referenciais em frases, o resultado mais provavel seria:",
+      "enunciado": "Se prepositions and articles fosse ignorado(a) em interpretar relações espaciais, temporais e referenciais em frases, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar relacoes espaciais, temporais e referenciais em frases.",
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar relações espaciais, temporais e referenciais em frases.",
         "a questao seria resolvida automaticamente por grammar in context.",
-        "nenhuma interpretacao seria alterada, porque Prepositions and articles nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "nenhuma interpretação seria alterada, porque Prepositions and articles não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar relacoes espaciais, temporais e referenciais em frases.",
-      "comentario": "Ignorar prepositions and articles compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar relações espaciais, temporais e referenciais em frases.",
+      "comentario": "Ignorar prepositions and articles compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "grammar-and-language-use",
@@ -6796,14 +6796,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Prepositions and articles",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor Prepositions and articles?",
+      "enunciado": "Qual trecho ou ação ilustra melhor Prepositions and articles?",
       "opcoes": [
         "The students arrived at school in the morning.",
         "The language choice helps the reader understand the author's intention.",
@@ -6811,7 +6811,7 @@
         "If you study regularly, you will feel more confident."
       ],
       "correta": "The students arrived at school in the morning.",
-      "comentario": "O item correto e o que melhor exemplifica prepositions and articles.",
+      "comentario": "O item correto é o que melhor exemplifica prepositions and articles.",
       "tempoEstimado": 50,
       "tags": [
         "grammar-and-language-use",
@@ -6835,7 +6835,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Prepositions and articles",
       "dificuldadeLabel": "dificil",
@@ -6844,12 +6844,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Ao encontrar o exemplo \"The students arrived at school in the morning.\", a leitura mais adequada e:",
       "opcoes": [
-        "a frase depende de escolhas contextuais de preposicao e artigo",
-        "a gramatica e analisada dentro do funcionamento real do texto",
+        "a frase depende de escolhas contextuais de preposição e artigo",
+        "a gramática e analisada dentro do funcionamento real do texto",
         "o modal indica conselho ou recomendacao",
         "a frase relaciona condicao a resultado provavel"
       ],
-      "correta": "a frase depende de escolhas contextuais de preposicao e artigo",
+      "correta": "a frase depende de escolhas contextuais de preposição e artigo",
       "comentario": "A leitura correta do exemplo revela o papel de prepositions and articles.",
       "tempoEstimado": 55,
       "tags": [
@@ -6874,22 +6874,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Prepositions and articles",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar prepositions and articles?",
+      "enunciado": "Qual estratégia ajuda mais a estudar prepositions and articles?",
       "opcoes": [
-        "analisar a relacao expressa entre os elementos da frase",
-        "ler a estrutura em relacao ao contexto e ao efeito de sentido",
+        "analisar a relação expressa entre os elementos da frase",
+        "ler a estrutura em relação ao contexto e ao efeito de sentido",
         "observar o efeito de sentido produzido pelo modal no contexto",
-        "identificar a parte da condicao e a consequencia prevista"
+        "identificar a parte da condicao e a consequência prevista"
       ],
-      "correta": "analisar a relacao expressa entre os elementos da frase",
-      "comentario": "A estrategia correta fortalece o dominio de prepositions and articles.",
+      "correta": "analisar a relação expressa entre os elementos da frase",
+      "comentario": "A estratégia correta fortalece o domínio de prepositions and articles.",
       "tempoEstimado": 55,
       "tags": [
         "grammar-and-language-use",
@@ -6913,22 +6913,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Prepositions and articles",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Prepositions and articles e mais cobrado quando:",
+      "enunciado": "Em uma prova, Prepositions and articles é mais cobrado quando:",
       "opcoes": [
-        "a questao exige reconhecer uso contextual adequado de artigo e preposicao",
-        "o item cobra leitura gramatical articulada a interpretacao",
+        "a questao exige reconhecer uso contextual adequado de artigo e preposição",
+        "o item cobra leitura gramatical articulada a interpretação",
         "a questao pede interpretar valor de modal verb em uso",
         "o item cobra leitura do efeito de sentido em estruturas condicionais"
       ],
-      "correta": "a questao exige reconhecer uso contextual adequado de artigo e preposicao",
-      "comentario": "Esse e o tipo de demanda em que prepositions and articles aparece com mais frequencia.",
+      "correta": "a questao exige reconhecer uso contextual adequado de artigo e preposição",
+      "comentario": "Esse é o tipo de demanda em que prepositions and articles aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "grammar-and-language-use",
@@ -6952,7 +6952,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Prepositions and articles",
       "dificuldadeLabel": "dificil",
@@ -6961,13 +6961,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Prepositions and articles?",
       "opcoes": [
-        "Em sintese, o uso contextual de preposicoes e artigos para marcar relacao, referencia e naturalidade na frase.",
-        "Em sintese, a leitura de estruturas gramaticais em situacoes reais de uso, articuladas ao sentido do texto.",
-        "Em sintese, os verbos modais usados para expressar possibilidade, obrigacao, conselho, permissao ou capacidade.",
-        "Em sintese, as estruturas condicionais usadas para expressar hipotese, consequencia e possibilidade."
+        "Em sintese, o uso contextual de preposicoes e artigos para marcar relação, referência e naturalidade na frase.",
+        "Em sintese, a leitura de estruturas gramaticais em situações reais de uso, articuladas ao sentido do texto.",
+        "Em sintese, os verbos modais usados para expressar possibilidade, obrigação, conselho, permissao ou capacidade.",
+        "Em sintese, as estruturas condicionais usadas para expressar hipótese, consequência e possibilidade."
       ],
-      "correta": "Em sintese, o uso contextual de preposicoes e artigos para marcar relacao, referencia e naturalidade na frase.",
-      "comentario": "O resumo correto recupera o nucleo de prepositions and articles.",
+      "correta": "Em sintese, o uso contextual de preposicoes e artigos para marcar relação, referência e naturalidade na frase.",
+      "comentario": "O resumo correto recupera o núcleo de prepositions and articles.",
       "tempoEstimado": 60,
       "tags": [
         "grammar-and-language-use",
@@ -6991,22 +6991,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Prepositions and articles",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Prepositions and articles?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em Prepositions and articles?",
       "opcoes": [
-        "The students arrived at school in the morning. -> a frase depende de escolhas contextuais de preposicao e artigo",
-        "The language choice helps the reader understand the author's intention. -> a frase depende de escolhas contextuais de preposicao e artigo",
+        "The students arrived at school in the morning. -> a frase depende de escolhas contextuais de preposição e artigo",
+        "The language choice helps the reader understand the author's intention. -> a frase depende de escolhas contextuais de preposição e artigo",
         "Students should check their sources before sharing information. -> a frase relaciona condicao a resultado provavel",
-        "If you study regularly, you will feel more confident. -> a gramatica e analisada dentro do funcionamento real do texto"
+        "If you study regularly, you will feel more confident. -> a gramática e analisada dentro do funcionamento real do texto"
       ],
-      "correta": "The students arrived at school in the morning. -> a frase depende de escolhas contextuais de preposicao e artigo",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em prepositions and articles.",
+      "correta": "The students arrived at school in the morning. -> a frase depende de escolhas contextuais de preposição e artigo",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em prepositions and articles.",
       "tempoEstimado": 65,
       "tags": [
         "grammar-and-language-use",
@@ -7030,7 +7030,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Prepositions and articles",
       "dificuldadeLabel": "dificil",
@@ -7040,9 +7040,9 @@
       "enunciado": "Ao resolver uma atividade sobre prepositions and articles, o estudante deve principalmente:",
       "opcoes": [
         "identificar escolhas corretas de prepositions and articles em contexto",
-        "analisar a relacao expressa entre os elementos da frase",
-        "interpretar relacoes espaciais, temporais e referenciais em frases",
-        "a questao exige reconhecer uso contextual adequado de artigo e preposicao"
+        "analisar a relação expressa entre os elementos da frase",
+        "interpretar relações espaciais, temporais e referenciais em frases",
+        "a questao exige reconhecer uso contextual adequado de artigo e preposição"
       ],
       "correta": "identificar escolhas corretas de prepositions and articles em contexto",
       "comentario": "O objetivo central de prepositions and articles e identificar escolhas corretas de prepositions and articles em contexto.",
@@ -7069,22 +7069,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Grammar in context",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, Grammar in context refere-se a:",
+      "enunciado": "Em Inglês, Grammar in context refere-se a:",
       "opcoes": [
-        "a leitura de estruturas gramaticais em situacoes reais de uso, articuladas ao sentido do texto",
-        "os verbos modais usados para expressar possibilidade, obrigacao, conselho, permissao ou capacidade",
-        "as estruturas condicionais usadas para expressar hipotese, consequencia e possibilidade",
-        "a estrutura que destaca a acao ou o resultado, e nao o agente que a pratica"
+        "a leitura de estruturas gramaticais em situações reais de uso, articuladas ao sentido do texto",
+        "os verbos modais usados para expressar possibilidade, obrigação, conselho, permissao ou capacidade",
+        "as estruturas condicionais usadas para expressar hipótese, consequência e possibilidade",
+        "a estrutura que destaca a ação ou o resultado, e não o agente que a pratica"
       ],
-      "correta": "a leitura de estruturas gramaticais em situacoes reais de uso, articuladas ao sentido do texto",
-      "comentario": "Grammar in context refere-se a leitura de estruturas gramaticais em situacoes reais de uso, articuladas ao sentido do texto.",
+      "correta": "a leitura de estruturas gramaticais em situações reais de uso, articuladas ao sentido do texto",
+      "comentario": "Grammar in context refere-se a leitura de estruturas gramaticais em situações reais de uso, articuladas ao sentido do texto.",
       "tempoEstimado": 20,
       "tags": [
         "grammar-and-language-use",
@@ -7108,14 +7108,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Grammar in context",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: um texto curto combina modals, connectors e passive voice para defender uma ideia. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: um texto curto combina modals, connectors e passive voice para defender uma ideia. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
         "Grammar in context",
         "Modal verbs",
@@ -7123,7 +7123,7 @@
         "Passive voice"
       ],
       "correta": "Grammar in context",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de grammar in context.",
+      "comentario": "A situação apresentada é melhor compreendida por meio de grammar in context.",
       "tempoEstimado": 20,
       "tags": [
         "grammar-and-language-use",
@@ -7147,7 +7147,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Grammar in context",
       "dificuldadeLabel": "facil",
@@ -7186,22 +7186,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Grammar in context",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente grammar in context?",
+      "enunciado": "Qual alternativa NÃO representa corretamente grammar in context?",
       "opcoes": [
         "Students should check their sources before sharing information.",
         "The language choice helps the reader understand the author's intention.",
-        "ler a estrutura em relacao ao contexto e ao efeito de sentido.",
-        "resolver questoes em que a gramatica aparece integrada a leitura."
+        "ler a estrutura em relação ao contexto e ao efeito de sentido.",
+        "resolver questoes em que a gramática aparece integrada a leitura."
       ],
       "correta": "Students should check their sources before sharing information.",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao grammar in context.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não grammar in context.",
       "tempoEstimado": 25,
       "tags": [
         "grammar-and-language-use",
@@ -7225,22 +7225,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Grammar in context",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar grammar in context, o foco principal e:",
+      "enunciado": "Ao estudar grammar in context, o foco principal é:",
       "opcoes": [
-        "interpretar gramatica a servico da compreensao textual",
+        "interpretar gramática a servico da compreensão textual",
         "interpretar nuance de sentido em estruturas com modais",
-        "reconhecer relacao entre condicao e resultado",
+        "reconhecer relação entre condicao e resultado",
         "reconhecer frases em voz passiva em contexto"
       ],
-      "correta": "interpretar gramatica a servico da compreensao textual",
-      "comentario": "Grammar in context concentra-se em interpretar gramatica a servico da compreensao textual.",
+      "correta": "interpretar gramática a servico da compreensão textual",
+      "comentario": "Grammar in context concentra-se em interpretar gramática a servico da compreensão textual.",
       "tempoEstimado": 30,
       "tags": [
         "grammar-and-language-use",
@@ -7264,21 +7264,21 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Grammar in context",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Modal verbs trata de os verbos modais usados para expressar possibilidade, obrigacao, conselho, permissao ou capacidade, Grammar in context destaca:",
+      "enunciado": "Enquanto Modal verbs trata de os verbos modais usados para expressar possibilidade, obrigação, conselho, permissao ou capacidade, Grammar in context destaca:",
       "opcoes": [
-        "A leitura de estruturas gramaticais em situacoes reais de uso, articuladas ao sentido do texto.",
-        "Os verbos modais usados para expressar possibilidade, obrigacao, conselho, permissao ou capacidade.",
-        "As estruturas condicionais usadas para expressar hipotese, consequencia e possibilidade.",
-        "A estrutura que destaca a acao ou o resultado, e nao o agente que a pratica."
+        "A leitura de estruturas gramaticais em situações reais de uso, articuladas ao sentido do texto.",
+        "Os verbos modais usados para expressar possibilidade, obrigação, conselho, permissao ou capacidade.",
+        "As estruturas condicionais usadas para expressar hipótese, consequência e possibilidade.",
+        "A estrutura que destaca a ação ou o resultado, e não o agente que a pratica."
       ],
-      "correta": "A leitura de estruturas gramaticais em situacoes reais de uso, articuladas ao sentido do texto.",
+      "correta": "A leitura de estruturas gramaticais em situações reais de uso, articuladas ao sentido do texto.",
       "comentario": "A comparacao correta mostra a especificidade de grammar in context.",
       "tempoEstimado": 30,
       "tags": [
@@ -7303,7 +7303,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Grammar in context",
       "dificuldadeLabel": "facil",
@@ -7318,7 +7318,7 @@
         "Relative pronouns"
       ],
       "correta": "Grammar in context",
-      "comentario": "Esse tipo de tarefa exige dominio de grammar in context.",
+      "comentario": "Esse tipo de tarefa exige domínio de grammar in context.",
       "tempoEstimado": 35,
       "tags": [
         "grammar-and-language-use",
@@ -7342,22 +7342,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Grammar in context",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de Grammar in context?",
+      "enunciado": "Qual situação pratica depende mais diretamente de Grammar in context?",
       "opcoes": [
-        "resolver questoes em que a gramatica aparece integrada a leitura",
-        "entender intencao e grau de obrigacao ou possibilidade em frases",
+        "resolver questoes em que a gramática aparece integrada a leitura",
+        "entender intenção e grau de obrigação ou possibilidade em frases",
         "interpretar frases hipoteticas e relacionais em leitura",
-        "interpretar coesao e detalhamento em frases mais elaboradas"
+        "interpretar coesão e detalhamento em frases mais elaboradas"
       ],
-      "correta": "resolver questoes em que a gramatica aparece integrada a leitura",
-      "comentario": "Grammar in context aparece de forma direta em resolver questoes em que a gramatica aparece integrada a leitura.",
+      "correta": "resolver questoes em que a gramática aparece integrada a leitura",
+      "comentario": "Grammar in context aparece de forma direta em resolver questoes em que a gramática aparece integrada a leitura.",
       "tempoEstimado": 35,
       "tags": [
         "grammar-and-language-use",
@@ -7381,14 +7381,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Grammar in context",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre grammar in context?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre grammar in context?",
       "opcoes": [
         "o caso e resolvido com foco em grammar in context.",
         "o caso e melhor resolvido por modal verbs.",
@@ -7396,7 +7396,7 @@
         "o caso impede qualquer uso de passive voice."
       ],
       "correta": "o caso e resolvido com foco em grammar in context.",
-      "comentario": "A conclusao correta retoma a funcao central de grammar in context.",
+      "comentario": "A conclusão correta retoma a função central de grammar in context.",
       "tempoEstimado": 40,
       "tags": [
         "grammar-and-language-use",
@@ -7420,7 +7420,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Grammar in context",
       "dificuldadeLabel": "facil",
@@ -7429,12 +7429,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar grammar in context, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como grammar in context aparece em resolver questoes em que a gramatica aparece integrada a leitura?",
-        "Como modal verbs substitui totalmente resolver questoes em que a gramatica aparece integrada a leitura?",
+        "Como grammar in context aparece em resolver questoes em que a gramática aparece integrada a leitura?",
+        "Como modal verbs substitui totalmente resolver questoes em que a gramática aparece integrada a leitura?",
         "Por que conditionals torna desnecessario estudar Grammar in context?",
         "De que modo passive voice elimina toda leitura de contexto?"
       ],
-      "correta": "Como grammar in context aparece em resolver questoes em que a gramatica aparece integrada a leitura?",
+      "correta": "Como grammar in context aparece em resolver questoes em que a gramática aparece integrada a leitura?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de grammar in context.",
       "tempoEstimado": 40,
       "tags": [
@@ -7459,22 +7459,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Grammar in context",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em grammar in context e pensar que:",
+      "enunciado": "Um erro comum em grammar in context é pensar que:",
       "opcoes": [
-        "gramatica em contexto e igual a decorar regra solta fora do texto",
+        "gramática em contexto e igual a decorar regra solta fora do texto",
         "todos os modal verbs significam apenas futuro",
-        "all conditionals expressam situacoes impossiveis",
+        "all conditionals expressam situações impossiveis",
         "a voz passiva e apenas uma forma mais dificil de dizer a mesma coisa sem mudanca de foco"
       ],
-      "correta": "gramatica em contexto e igual a decorar regra solta fora do texto",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de grammar in context.",
+      "correta": "gramática em contexto e igual a decorar regra solta fora do texto",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de grammar in context.",
       "tempoEstimado": 45,
       "tags": [
         "grammar-and-language-use",
@@ -7498,21 +7498,21 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Grammar in context",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"para resolver grammar in context basta lembrar uma formula sem ler o enunciado\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"para resolver grammar in context basta lembrar uma formula sem ler o enunciado\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque a leitura de estruturas gramaticais em situacoes reais de uso, articuladas ao sentido do texto.",
-        "A afirmacao esta correta, pois resume integralmente grammar in context.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque a leitura de estruturas gramaticais em situações reais de uso, articuladas ao sentido do texto.",
+        "A afirmação está correta, pois resume integralmente grammar in context.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque a leitura de estruturas gramaticais em situacoes reais de uso, articuladas ao sentido do texto.",
+      "correta": "A afirmação está incorreta, porque a leitura de estruturas gramaticais em situações reais de uso, articuladas ao sentido do texto.",
       "comentario": "A fala do estudante apresenta um equivoco conceitual sobre grammar in context.",
       "tempoEstimado": 45,
       "tags": [
@@ -7537,22 +7537,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Grammar in context",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se grammar in context fosse ignorado(a) em resolver questoes em que a gramatica aparece integrada a leitura, o resultado mais provavel seria:",
+      "enunciado": "Se grammar in context fosse ignorado(a) em resolver questoes em que a gramática aparece integrada a leitura, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em resolver questoes em que a gramatica aparece integrada a leitura.",
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em resolver questoes em que a gramática aparece integrada a leitura.",
         "a questao seria resolvida automaticamente por modal verbs.",
-        "nenhuma interpretacao seria alterada, porque Grammar in context nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "nenhuma interpretação seria alterada, porque Grammar in context não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em resolver questoes em que a gramatica aparece integrada a leitura.",
-      "comentario": "Ignorar grammar in context compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em resolver questoes em que a gramática aparece integrada a leitura.",
+      "comentario": "Ignorar grammar in context compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "grammar-and-language-use",
@@ -7576,14 +7576,14 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Grammar in context",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor Grammar in context?",
+      "enunciado": "Qual trecho ou ação ilustra melhor Grammar in context?",
       "opcoes": [
         "The language choice helps the reader understand the author's intention.",
         "Students should check their sources before sharing information.",
@@ -7591,7 +7591,7 @@
         "The project was created by local students."
       ],
       "correta": "The language choice helps the reader understand the author's intention.",
-      "comentario": "O item correto e o que melhor exemplifica grammar in context.",
+      "comentario": "O item correto é o que melhor exemplifica grammar in context.",
       "tempoEstimado": 50,
       "tags": [
         "grammar-and-language-use",
@@ -7615,7 +7615,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Grammar in context",
       "dificuldadeLabel": "dificil",
@@ -7624,12 +7624,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Ao encontrar o exemplo \"The language choice helps the reader understand the author's intention.\", a leitura mais adequada e:",
       "opcoes": [
-        "a gramatica e analisada dentro do funcionamento real do texto",
+        "a gramática e analisada dentro do funcionamento real do texto",
         "o modal indica conselho ou recomendacao",
         "a frase relaciona condicao a resultado provavel",
-        "a frase destaca o projeto e o resultado da acao"
+        "a frase destaca o projeto e o resultado da ação"
       ],
-      "correta": "a gramatica e analisada dentro do funcionamento real do texto",
+      "correta": "a gramática e analisada dentro do funcionamento real do texto",
       "comentario": "A leitura correta do exemplo revela o papel de grammar in context.",
       "tempoEstimado": 55,
       "tags": [
@@ -7654,22 +7654,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Grammar in context",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar grammar in context?",
+      "enunciado": "Qual estratégia ajuda mais a estudar grammar in context?",
       "opcoes": [
-        "ler a estrutura em relacao ao contexto e ao efeito de sentido",
+        "ler a estrutura em relação ao contexto e ao efeito de sentido",
         "observar o efeito de sentido produzido pelo modal no contexto",
-        "identificar a parte da condicao e a consequencia prevista",
+        "identificar a parte da condicao e a consequência prevista",
         "observar estrutura com be mais participio e a mudanca de foco da frase"
       ],
-      "correta": "ler a estrutura em relacao ao contexto e ao efeito de sentido",
-      "comentario": "A estrategia correta fortalece o dominio de grammar in context.",
+      "correta": "ler a estrutura em relação ao contexto e ao efeito de sentido",
+      "comentario": "A estratégia correta fortalece o domínio de grammar in context.",
       "tempoEstimado": 55,
       "tags": [
         "grammar-and-language-use",
@@ -7693,22 +7693,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Grammar in context",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Grammar in context e mais cobrado quando:",
+      "enunciado": "Em uma prova, Grammar in context é mais cobrado quando:",
       "opcoes": [
-        "o item cobra leitura gramatical articulada a interpretacao",
+        "o item cobra leitura gramatical articulada a interpretação",
         "a questao pede interpretar valor de modal verb em uso",
         "o item cobra leitura do efeito de sentido em estruturas condicionais",
         "a questao pede identificar ou interpretar voz passiva"
       ],
-      "correta": "o item cobra leitura gramatical articulada a interpretacao",
-      "comentario": "Esse e o tipo de demanda em que grammar in context aparece com mais frequencia.",
+      "correta": "o item cobra leitura gramatical articulada a interpretação",
+      "comentario": "Esse é o tipo de demanda em que grammar in context aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "grammar-and-language-use",
@@ -7732,7 +7732,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Grammar in context",
       "dificuldadeLabel": "dificil",
@@ -7741,13 +7741,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Grammar in context?",
       "opcoes": [
-        "Em sintese, a leitura de estruturas gramaticais em situacoes reais de uso, articuladas ao sentido do texto.",
-        "Em sintese, os verbos modais usados para expressar possibilidade, obrigacao, conselho, permissao ou capacidade.",
-        "Em sintese, as estruturas condicionais usadas para expressar hipotese, consequencia e possibilidade.",
-        "Em sintese, a estrutura que destaca a acao ou o resultado, e nao o agente que a pratica."
+        "Em sintese, a leitura de estruturas gramaticais em situações reais de uso, articuladas ao sentido do texto.",
+        "Em sintese, os verbos modais usados para expressar possibilidade, obrigação, conselho, permissao ou capacidade.",
+        "Em sintese, as estruturas condicionais usadas para expressar hipótese, consequência e possibilidade.",
+        "Em sintese, a estrutura que destaca a ação ou o resultado, e não o agente que a pratica."
       ],
-      "correta": "Em sintese, a leitura de estruturas gramaticais em situacoes reais de uso, articuladas ao sentido do texto.",
-      "comentario": "O resumo correto recupera o nucleo de grammar in context.",
+      "correta": "Em sintese, a leitura de estruturas gramaticais em situações reais de uso, articuladas ao sentido do texto.",
+      "comentario": "O resumo correto recupera o núcleo de grammar in context.",
       "tempoEstimado": 60,
       "tags": [
         "grammar-and-language-use",
@@ -7771,22 +7771,22 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Grammar in context",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Grammar in context?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em Grammar in context?",
       "opcoes": [
-        "The language choice helps the reader understand the author's intention. -> a gramatica e analisada dentro do funcionamento real do texto",
-        "Students should check their sources before sharing information. -> a gramatica e analisada dentro do funcionamento real do texto",
-        "If you study regularly, you will feel more confident. -> a frase destaca o projeto e o resultado da acao",
+        "The language choice helps the reader understand the author's intention. -> a gramática e analisada dentro do funcionamento real do texto",
+        "Students should check their sources before sharing information. -> a gramática e analisada dentro do funcionamento real do texto",
+        "If you study regularly, you will feel more confident. -> a frase destaca o projeto e o resultado da ação",
         "The project was created by local students. -> o modal indica conselho ou recomendacao"
       ],
-      "correta": "The language choice helps the reader understand the author's intention. -> a gramatica e analisada dentro do funcionamento real do texto",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em grammar in context.",
+      "correta": "The language choice helps the reader understand the author's intention. -> a gramática e analisada dentro do funcionamento real do texto",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em grammar in context.",
       "tempoEstimado": 65,
       "tags": [
         "grammar-and-language-use",
@@ -7810,7 +7810,7 @@
       "serie": [
         3
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Grammar and Language Use",
       "subtopico": "Grammar in context",
       "dificuldadeLabel": "dificil",
@@ -7819,13 +7819,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Ao resolver uma atividade sobre grammar in context, o estudante deve principalmente:",
       "opcoes": [
-        "interpretar gramatica a servico da compreensao textual",
-        "ler a estrutura em relacao ao contexto e ao efeito de sentido",
-        "resolver questoes em que a gramatica aparece integrada a leitura",
-        "o item cobra leitura gramatical articulada a interpretacao"
+        "interpretar gramática a servico da compreensão textual",
+        "ler a estrutura em relação ao contexto e ao efeito de sentido",
+        "resolver questoes em que a gramática aparece integrada a leitura",
+        "o item cobra leitura gramatical articulada a interpretação"
       ],
-      "correta": "interpretar gramatica a servico da compreensao textual",
-      "comentario": "O objetivo central de grammar in context e interpretar gramatica a servico da compreensao textual.",
+      "correta": "interpretar gramática a servico da compreensão textual",
+      "comentario": "O objetivo central de grammar in context e interpretar gramática a servico da compreensão textual.",
       "tempoEstimado": 70,
       "tags": [
         "grammar-and-language-use",

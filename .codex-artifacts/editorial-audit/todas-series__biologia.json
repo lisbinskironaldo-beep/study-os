@@ -1,0 +1,181 @@
+{
+  "summary": {},
+  "results": [
+    {
+      "file": "questions/banks/1-serie/biologia/citologia/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-10",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/biologia/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/biologia/membrana-plasmatica/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-10",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/biologia/metabolismo-celular/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/biologia/organelas-celulares/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-10",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/biologia/origem-da-vida/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/biologia/biotecnologia/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/biologia/evolucao/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/biologia/genetica/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/biologia/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/biologia/leis-de-mendel/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/biologia/ciclos-biogeoquimicos/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/biologia/ecologia/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/biologia/impactos-ambientais/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/biologia/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/biologia/revisao-geral/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    }
+  ]
+}

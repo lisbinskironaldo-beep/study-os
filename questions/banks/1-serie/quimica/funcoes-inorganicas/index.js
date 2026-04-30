@@ -7,35 +7,35 @@ import {
 
 const blocos = [
   {
-    subtopico: "Conceito de funcoes inorganicas",
+    subtopico: "Conceito de funções inorganicas",
     habilidade:
-      "identificar criterios de classificacao das funcoes inorganicas",
-    tags: ["funcoes inorganicas", "classificacao", "compostos"],
+      "identificar critérios de classificacao das funções inorganicas",
+    tags: ["funções inorganicas", "classificacao", "compostos"],
     fatos: [
       {
-        lead: "as funcoes inorganicas",
+        lead: "as funções inorganicas",
         answer: "os grupos de compostos classificados por propriedades e comportamento quimico semelhantes",
-        why: "acidos, bases, sais e oxidos sao exemplos principais"
+        why: "acidos, bases, sais e oxidos são exemplos principais"
       },
       {
         lead: "a classificacao inorganica",
-        answer: "a organizacao dos compostos conforme grupos funcionais e respostas caracteristicas",
+        answer: "a organizacao dos compostos conforme grupos funcionais e respostas características",
         why: "ela ajuda a prever reatividade e nomenclatura"
       },
       {
-        lead: "o estudo das funcoes",
-        answer: "a analise das propriedades comuns entre classes de substancias",
+        lead: "o estudo das funções",
+        answer: "a análise das propriedades comuns entre classes de substancias",
         why: "isso facilita entender reacoes e usos dos compostos"
       },
       {
         lead: "um composto inorganico",
         answer: "a substancia normalmente pertencente a classes como acidos, bases, sais e oxidos",
-        why: "essas classes compoem o nucleo da quimica inorganica escolar"
+        why: "essas classes compoem o nucleo da química inorganica escolar"
       },
       {
         lead: "a importancia da classificacao funcional",
         answer: "a possibilidade de reconhecer comportamento quimico a partir da formula",
-        why: "o agrupamento por funcoes organiza o estudo da materia"
+        why: "o agrupamento por funções organiza o estudo da materia"
       }
     ]
   },
@@ -48,22 +48,22 @@ const blocos = [
       {
         lead: "um acido segundo Arrhenius",
         answer: "a substancia que em agua libera ions H+",
-        why: "essa definicao e a mais usada no estudo inicial das funcoes"
+        why: "essa definicao e a mais usada no estudo inicial das funções"
       },
       {
         lead: "a ionizacao de um acido",
-        answer: "a formacao de ions quando a substancia molecular e dissolvida em agua",
+        answer: "a formação de ions quando a substancia molecular e dissolvida em agua",
         why: "o processo produz H+ e anions correspondentes"
       },
       {
         lead: "a propriedade acida em solucao",
         answer: "a presenca de ions hidrogenio que influencia pH e reatividade",
-        why: "isso explica caracteristicas como azedume e condutividade"
+        why: "isso explica características como azedume e condutividade"
       },
       {
         lead: "a formula geral de muitos acidos",
         answer: "a presenca de hidrogenio ionizavel no inicio da formula",
-        why: "essa observacao ajuda a reconhecer a funcao"
+        why: "essa observação ajuda a reconhecer a função"
       },
       {
         lead: "o papel do pH acido",
@@ -81,7 +81,7 @@ const blocos = [
       {
         lead: "uma base segundo Arrhenius",
         answer: "a substancia que em agua libera ions OH-",
-        why: "essa liberacao define a funcao basica no enfoque escolar"
+        why: "essa liberacao define a função basica no enfoque escolar"
       },
       {
         lead: "a dissociacao de uma base ionica",
@@ -91,7 +91,7 @@ const blocos = [
       {
         lead: "a hidroxila",
         answer: "o grupo OH- caracteristico das bases no modelo de Arrhenius",
-        why: "sua presenca ajuda a reconhecer a funcao"
+        why: "sua presenca ajuda a reconhecer a função"
       },
       {
         lead: "uma propriedade das bases",
@@ -124,7 +124,7 @@ const blocos = [
       {
         lead: "a estrutura de um sal",
         answer: "a associacao entre um cation e um anion em rede ionica",
-        why: "por isso muitos sais sao solidos cristalinos"
+        why: "por isso muitos sais são solidos cristalinos"
       },
       {
         lead: "a dissociacao de um sal",
@@ -150,14 +150,14 @@ const blocos = [
         why: "essa definicao separa oxidos de outras classes"
       },
       {
-        lead: "o numero de oxidacao do oxigenio em muitos oxidos",
+        lead: "o número de oxidacao do oxigenio em muitos oxidos",
         answer: "o valor -2",
-        why: "essa regularidade auxilia no reconhecimento da funcao"
+        why: "essa regularidade auxilia no reconhecimento da função"
       },
       {
         lead: "o oxido basico",
         answer: "o oxido que reage com acidos formando sal e agua",
-        why: "ele e geralmente formado por metal"
+        why: "ele é geralmente formado por metal"
       },
       {
         lead: "o oxido acido",
@@ -185,12 +185,12 @@ const blocos = [
       {
         lead: "a nomenclatura das bases",
         answer: "a expressao hidroxido seguida do nome do cation",
-        why: "essa e a forma basica de nomear compostos da classe"
+        why: "essa é a forma basica de nomear compostos da classe"
       },
       {
         lead: "a nomenclatura dos oxidos",
         answer: "a expressao oxido de seguida do elemento ligado ao oxigenio",
-        why: "pode incluir numero de oxidacao quando necessario"
+        why: "pode incluir número de oxidacao quando necessario"
       },
       {
         lead: "a nomenclatura dos sais",
@@ -198,7 +198,7 @@ const blocos = [
         why: "isso identifica a composicao ionica do composto"
       },
       {
-        lead: "a funcao da nomenclatura quimica",
+        lead: "a função da nomenclatura química",
         answer: "padronizar a identificacao das substancias e reduzir ambiguidades",
         why: "nomes sistematicos facilitam comunicacao cientifica"
       }
@@ -228,11 +228,11 @@ const blocos = [
       {
         lead: "o pH maior que 7",
         answer: "a indicacao de meio basico",
-        why: "nessa faixa predominam caracteristicas alcalinas"
+        why: "nessa faixa predominam características alcalinas"
       },
       {
         lead: "a faixa neutra de pH",
-        answer: "a condicao aproximada em que o meio nao se mostra nem acido nem basico",
+        answer: "a condicao aproximada em que o meio não se mostra nem acido nem basico",
         why: "a neutralidade costuma ser associada ao valor 7"
       }
     ]
@@ -249,47 +249,47 @@ const blocos = [
         why: "ela envolve combinacao de H+ com OH-"
       },
       {
-        lead: "a formacao de agua na neutralizacao",
+        lead: "a formação de agua na neutralizacao",
         answer: "o resultado do encontro entre ions hidrogenio e hidroxila",
         why: "essa combinacao reduz acidez e basicidade livres"
       },
       {
         lead: "a reacao entre oxido basico e acido",
-        answer: "a producao de sal e agua em muitas situacoes",
+        answer: "a produção de sal e agua em muitas situações",
         why: "o comportamento do oxido basico lembra o de uma base"
       },
       {
         lead: "a reacao entre oxido acido e base",
-        answer: "a producao de sal e agua em varias circunstancias",
+        answer: "a produção de sal e agua em varias circunstancias",
         why: "o oxido acido apresenta comportamento analogo ao dos acidos"
       },
       {
-        lead: "a interpretacao funcional de uma reacao",
+        lead: "a interpretação funcional de uma reacao",
         answer: "a identificacao das classes reagentes para prever os produtos",
-        why: "reconhecer a funcao ajuda a antecipar o tipo de transformacao"
+        why: "reconhecer a função ajuda a antecipar o tipo de transformacao"
       }
     ]
   },
   {
     subtopico: "Acidos, bases e cotidiano",
     habilidade:
-      "relacionar funcoes inorganicas a situacoes do cotidiano",
+      "relacionar funções inorganicas a situações do cotidiano",
     tags: ["cotidiano", "aplicacoes", "substancias comuns"],
     fatos: [
       {
         lead: "o vinagre como exemplo",
         answer: "uma substancia cotidiana associada a comportamento acido",
-        why: "ele contem acido acetico em solucao"
+        why: "ele contém acido acetico em solucao"
       },
       {
         lead: "a soda caustica como exemplo",
         answer: "uma base forte usada em processos de limpeza e industria",
-        why: "ela contem hidroxido de sodio"
+        why: "ela contém hidroxido de sodio"
       },
       {
         lead: "o sal de cozinha como exemplo",
         answer: "um sal ionico amplamente utilizado na alimentacao",
-        why: "ele e representado pelo cloreto de sodio"
+        why: "ele é representado pelo cloreto de sodio"
       },
       {
         lead: "a cal virgem como exemplo",
@@ -298,15 +298,15 @@ const blocos = [
       },
       {
         lead: "a leitura funcional de substancias do cotidiano",
-        answer: "a identificacao da classe quimica para compreender uso e reatividade",
+        answer: "a identificacao da classe química para compreender uso e reatividade",
         why: "isso aproxima a teoria da experiencia diaria"
       }
     ]
   },
   {
-    subtopico: "Comparacoes e interpretacao",
+    subtopico: "Comparacoes e interpretação",
     habilidade:
-      "comparar propriedades das funcoes inorganicas e interpretar formulas",
+      "comparar propriedades das funções inorganicas e interpretar formulas",
     tags: ["comparacao", "interpretacao", "propriedades"],
     fatos: [
       {
@@ -321,18 +321,18 @@ const blocos = [
       },
       {
         lead: "a presenca de OH- na formula",
-        answer: "um indicio importante de que a substancia pertence a funcao base",
+        answer: "um indicio importante de que a substancia pertence a função base",
         why: "o grupo hidroxila caracteriza a classe no modelo escolar"
       },
       {
         lead: "a presenca de oxigenio e outro elemento apenas",
         answer: "um indicio de classificacao como oxido",
-        why: "a funcao envolve compostos binarios do oxigenio"
+        why: "a função envolve compostos binarios do oxigenio"
       },
       {
-        lead: "o estudo das funcoes inorganicas",
+        lead: "o estudo das funções inorganicas",
         answer: "a base para compreender formulas, nomenclatura e reatividade de compostos comuns",
-        why: "ele organiza grande parte da quimica inorganica introdutoria"
+        why: "ele organiza grande parte da química inorganica introdutoria"
       }
     ]
   }
@@ -340,17 +340,17 @@ const blocos = [
 
 export const funcoesInorganicas = {
   id: "quimica_funcoes_inorganicas",
-  materia: "Quimica",
+  materia: "Química",
   serie: [1],
-  topico: "Funcoes Inorganicas",
+  topico: "Funções Inorganicas",
   metadados: {
     disciplinaId: "quimica",
     base: "ESCOLAR",
     seloEditorial: "VERIFICADA",
-    eixo: "Quimica",
+    eixo: "Química",
     frente: "Classificacao e reatividade de compostos inorganicos",
     searchAliases: [
-      "funcoes inorganicas",
+      "funções inorganicas",
       "acidos bases sais oxidos",
       "nomenclatura inorganica",
       "neutralizacao",
@@ -358,7 +358,7 @@ export const funcoesInorganicas = {
     ],
     subtopicosBase: blocos.map((bloco) => bloco.subtopico),
     habilidadesBase: [
-      "identificar criterios de classificacao das funcoes inorganicas",
+      "identificar critérios de classificacao das funções inorganicas",
       "identificar formulas, propriedades e nomenclatura de acidos",
       "identificar formulas, propriedades e nomenclatura de bases",
       "identificar formulas, propriedades e nomenclatura de sais",
@@ -371,8 +371,8 @@ export const funcoesInorganicas = {
   questoes: buildPlannedQuestions({
     prefix: "fin",
     serie: 1,
-    materia: "Quimica",
-    topico: "Funcoes Inorganicas",
+    materia: "Química",
+    topico: "Funções Inorganicas",
     blocos,
     stemBuilders: CHEMISTRY_STEM_BUILDERS,
     globalMatrix: CHEMISTRY_HUNDRED_FIFTY_MATRIX

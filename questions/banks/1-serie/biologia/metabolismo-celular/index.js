@@ -31,14 +31,14 @@ export const metabolismoCelular = {
       "Fermentacao",
       "Fotossintese",
       "Integracao energetica",
-      "Interpretacao aplicada"
+      "Interpretação aplicada"
     ],
     habilidadesBase: [
       "identificar os conceitos fundamentais de metabolismo celular",
       "comparar processos anabolicos e catabolicos",
-      "relacionar ATP e enzimas ao funcionamento da celula",
+      "relacionar ATP e enzimas ao funcionamento da célula",
       "analisar etapas e condicoes da respiracao celular e da fermentacao",
-      "interpretar situacoes e experimentos envolvendo producao e uso de energia"
+      "interpretar situações e experimentos envolvendo produção e uso de energia"
     ]
   },
   questoes: [
@@ -54,13 +54,13 @@ export const metabolismoCelular = {
       tipo: "multipla_escolha",
       enunciado: "Metabolismo celular corresponde ao conjunto de:",
       opcoes: [
-        "reacoes quimicas que ocorrem na celula",
+        "reacoes quimicas que ocorrem na célula",
         "estruturas rigidas que formam a parede celular",
         "moleculas de DNA presentes no nucleo",
         "tecidos responsaveis pela digestao do organismo"
       ],
-      correta: "reacoes quimicas que ocorrem na celula",
-      comentario: "Metabolismo celular e o conjunto de reacoes quimicas que mantem a vida e o funcionamento da celula.",
+      correta: "reacoes quimicas que ocorrem na célula",
+      comentario: "Metabolismo celular é o conjunto de reacoes quimicas que mantem a vida e o funcionamento da célula.",
       tempoEstimado: 20,
       tags: ["metabolismo", "conceito-geral"],
       habilidades: ["identificar-conceitos-basicos-do-metabolismo"],
@@ -110,7 +110,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 2,
       cognicao: "identificacao",
       tipo: "multipla_escolha",
-      enunciado: "O ATP e importante para a celula porque atua principalmente como:",
+      enunciado: "O ATP é importante para a célula porque atua principalmente como:",
       opcoes: [
         "material genetico",
         "reserva estrutural da membrana",
@@ -141,13 +141,13 @@ export const metabolismoCelular = {
       tipo: "multipla_escolha",
       enunciado: "As enzimas participam do metabolismo celular porque:",
       opcoes: [
-        "impedem qualquer reacao quimica espontanea",
+        "impedem qualquer reacao química espontanea",
         "aceleram reacoes ao reduzir a energia de ativacao",
         "fornecem DNA para a sintese proteica",
-        "substituem o ATP em todas as celulas"
+        "substituem o ATP em todas as células"
       ],
       correta: "aceleram reacoes ao reduzir a energia de ativacao",
-      comentario: "Enzimas sao catalisadores biologicos que facilitam as reacoes quimicas sem serem consumidas no processo.",
+      comentario: "Enzimas são catalisadores biologicos que facilitam as reacoes quimicas sem serem consumidas no processo.",
       tempoEstimado: 30,
       tags: ["enzimas", "catalise"],
       habilidades: ["explicar-acao-das-enzimas-no-metabolismo"],
@@ -168,11 +168,11 @@ export const metabolismoCelular = {
       dificuldadeNivel: 3,
       cognicao: "compreensao",
       tipo: "multipla_escolha",
-      enunciado: "A respiracao celular aerobica tem como funcao central:",
+      enunciado: "A respiracao celular aerobica tem como função central:",
       opcoes: [
         "produzir ATP a partir da oxidacao de moleculas organicas",
         "formar acidos nucleicos no nucleo",
-        "fabricar clorofila em todas as celulas",
+        "fabricar clorofila em todas as células",
         "bloquear a entrada de oxigenio na mitocondria"
       ],
       correta: "produzir ATP a partir da oxidacao de moleculas organicas",
@@ -197,7 +197,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 4,
       cognicao: "identificacao",
       tipo: "multipla_escolha",
-      enunciado: "A glicolise ocorre, em celulas eucariontes, principalmente no:",
+      enunciado: "A glicolise ocorre, em células eucariontes, principalmente no:",
       opcoes: [
         "complexo golgiense",
         "citoplasma",
@@ -258,7 +258,7 @@ export const metabolismoCelular = {
       enunciado: "Na respiracao aerobica, o oxigenio e essencial porque ele:",
       opcoes: [
         "age como aceptor final de eletrons",
-        "fornece glicose para a celula",
+        "fornece glicose para a célula",
         "substitui o ATP nas reacoes",
         "interrompe a cadeia respiratoria"
       ],
@@ -284,7 +284,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 5,
       cognicao: "compreensao",
       tipo: "multipla_escolha",
-      enunciado: "Uma funcao importante do ciclo de Krebs e:",
+      enunciado: "Uma função importante do ciclo de Krebs é:",
       opcoes: [
         "produzir clorofila para a fotossintese",
         "fornecer eletrons de alta energia por meio de NADH e FADH2",
@@ -313,7 +313,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 5,
       cognicao: "compreensao",
       tipo: "multipla_escolha",
-      enunciado: "A maior producao de ATP na respiracao aerobica ocorre principalmente durante:",
+      enunciado: "A maior produção de ATP na respiracao aerobica ocorre principalmente durante:",
       opcoes: [
         "a glicolise",
         "a fermentacao lactica",
@@ -321,7 +321,7 @@ export const metabolismoCelular = {
         "a sintese de proteinas"
       ],
       correta: "a cadeia respiratoria",
-      comentario: "A cadeia respiratoria concentra a maior parte da producao de ATP devido ao gradiente de protons e a fosforilacao oxidativa.",
+      comentario: "A cadeia respiratoria concentra a maior parte da produção de ATP devido ao gradiente de protons e a fosforilacao oxidativa.",
       tempoEstimado: 40,
       tags: ["cadeia-respiratoria", "fosforilacao-oxidativa"],
       habilidades: ["identificar-etapa-de-maior-producao-de-atp"],
@@ -342,14 +342,14 @@ export const metabolismoCelular = {
       dificuldadeNivel: 5,
       cognicao: "interpretacao",
       tipo: "multipla_escolha",
-      enunciado: "A fermentacao costuma ocorrer quando a celula:",
+      enunciado: "A fermentacao costuma ocorrer quando a célula:",
       opcoes: [
         "dispoe de oxigenio em abundancia",
-        "nao consegue manter a respiracao aerobica",
+        "não consegue manter a respiracao aerobica",
         "precisa realizar fotossintese",
         "entra em divisao mitotica"
       ],
-      correta: "nao consegue manter a respiracao aerobica",
+      correta: "não consegue manter a respiracao aerobica",
       comentario: "A fermentacao e uma alternativa metabolica quando falta oxigenio ou quando o organismo vive em condicoes anaerobias.",
       tempoEstimado: 35,
       tags: ["fermentacao", "anaerobiose"],
@@ -400,7 +400,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 6,
       cognicao: "identificacao",
       tipo: "multipla_escolha",
-      enunciado: "Na fermentacao alcoolica, os principais produtos formados sao:",
+      enunciado: "Na fermentacao alcoolica, os principais produtos formados são:",
       opcoes: [
         "acido latico e agua",
         "etanol e dioxido de carbono",
@@ -461,11 +461,11 @@ export const metabolismoCelular = {
       enunciado: "Quando uma enzima reduz a energia de ativacao de uma reacao, isso significa que ela:",
       opcoes: [
         "torna a reacao inviavel",
-        "facilita o inicio da transformacao quimica",
-        "impede a formacao de produtos",
+        "facilita o inicio da transformacao química",
+        "impede a formação de produtos",
         "elimina a necessidade de substratos"
       ],
-      correta: "facilita o inicio da transformacao quimica",
+      correta: "facilita o inicio da transformacao química",
       comentario: "Ao diminuir a energia de ativacao, a enzima torna mais facil a ocorrencia da reacao nas condicoes celulares.",
       tempoEstimado: 45,
       tags: ["energia-de-ativacao", "enzimas"],
@@ -489,12 +489,12 @@ export const metabolismoCelular = {
       tipo: "multipla_escolha",
       enunciado: "A hidrolise do ATP libera energia porque rompe uma ligacao cuja quebra esta associada a:",
       opcoes: [
-        "reorganizacao quimica que resulta em produtos mais estaveis",
+        "reorganizacao química que resulta em produtos mais estaveis",
         "desaparecimento da materia no citoplasma",
-        "multiplicacao do numero de enzimas da celula",
-        "formacao obrigatoria de glicose"
+        "multiplicacao do número de enzimas da célula",
+        "formação obrigatoria de glicose"
       ],
-      correta: "reorganizacao quimica que resulta em produtos mais estaveis",
+      correta: "reorganizacao química que resulta em produtos mais estaveis",
       comentario: "A energia util associada ao ATP decorre da diferenca energetica entre reagentes e produtos apos a hidrolise.",
       tempoEstimado: 55,
       tags: ["atp", "hidrolise"],
@@ -550,7 +550,7 @@ export const metabolismoCelular = {
         "produz menos ATP por molecula de glicose",
         "depende de cadeia transportadora de eletrons e rende mais ATP",
         "ocorre somente em bacterias",
-        "nao utiliza enzimas em nenhuma etapa"
+        "não utiliza enzimas em nenhuma etapa"
       ],
       correta: "depende de cadeia transportadora de eletrons e rende mais ATP",
       comentario: "A respiracao aerobica usa cadeia respiratoria e, em geral, e energeticamente mais eficiente que a fermentacao.",
@@ -574,7 +574,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 7,
       cognicao: "identificacao",
       tipo: "multipla_escolha",
-      enunciado: "Em celulas eucariontes, o ciclo de Krebs e a cadeia respiratoria ocorrem, respectivamente, na:",
+      enunciado: "Em células eucariontes, o ciclo de Krebs e a cadeia respiratoria ocorrem, respectivamente, na:",
       opcoes: [
         "matriz mitocondrial e membrana interna da mitocondria",
         "parede celular e nucleo",
@@ -598,19 +598,19 @@ export const metabolismoCelular = {
       serie: [1],
       materia: "Biologia",
       topico: "Metabolismo Celular",
-      subtopico: "Interpretacao aplicada",
+      subtopico: "Interpretação aplicada",
       dificuldadeLabel: "medio",
       dificuldadeNivel: 7,
       cognicao: "interpretacao",
       tipo: "multipla_escolha",
-      enunciado: "Em um experimento, celulas musculares passam a consumir mais oxigenio logo apos o inicio de uma atividade intensa. Esse dado indica aumento de:",
+      enunciado: "Em um experimento, células musculares passam a consumir mais oxigenio logo apos o inicio de uma atividade intensa. Esse dado indica aumento de:",
       opcoes: [
         "sintese de parede celular",
         "replicacao do DNA",
-        "respiracao aerobica para producao de ATP",
+        "respiracao aerobica para produção de ATP",
         "digestao lisossomica de organelas"
       ],
-      correta: "respiracao aerobica para producao de ATP",
+      correta: "respiracao aerobica para produção de ATP",
       comentario: "Maior consumo de oxigenio sugere intensificacao da respiracao aerobica para suprir a demanda energetica.",
       tempoEstimado: 55,
       tags: ["interpretacao-aplicada", "consumo-de-oxigenio"],
@@ -634,7 +634,7 @@ export const metabolismoCelular = {
       tipo: "multipla_escolha",
       enunciado: "Uma substancia bloqueia a passagem de eletrons na cadeia respiratoria mitocondrial. O efeito mais direto esperado e:",
       opcoes: [
-        "aumento imediato da producao de ATP na membrana interna",
+        "aumento imediato da produção de ATP na membrana interna",
         "interrupcao do gradiente de protons e queda da fosforilacao oxidativa",
         "transformacao da respiracao em fotossintese",
         "duplicacao automatica das mitocondrias"
@@ -661,7 +661,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 8,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Se uma celula apresentar reducao acentuada no numero de cristas mitocondriais, a consequencia mais provavel sera:",
+      enunciado: "Se uma célula apresentar reducao acentuada no número de cristas mitocondriais, a consequência mais provavel sera:",
       opcoes: [
         "maior capacidade de armazenar DNA no citoplasma",
         "aumento da fotossintese celular",
@@ -690,7 +690,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 9,
       cognicao: "interpretacao",
       tipo: "multipla_escolha",
-      enunciado: "Durante uma corrida curta e muito intensa, o aumento temporario da fermentacao lactica ajuda a manter a producao de ATP porque:",
+      enunciado: "Durante uma corrida curta e muito intensa, o aumento temporario da fermentacao lactica ajuda a manter a produção de ATP porque:",
       opcoes: [
         "permite a regeneracao de NAD+, mantendo a glicolise em funcionamento",
         "substitui totalmente a mitocondria na respiracao aerobica",
@@ -714,7 +714,7 @@ export const metabolismoCelular = {
       serie: [1],
       materia: "Biologia",
       topico: "Metabolismo Celular",
-      subtopico: "Interpretacao aplicada",
+      subtopico: "Interpretação aplicada",
       dificuldadeLabel: "dificil",
       dificuldadeNivel: 9,
       cognicao: "analise",
@@ -752,7 +752,7 @@ export const metabolismoCelular = {
       opcoes: [
         "produza menos ATP por glicose, porque a presenca de oxigenio inibe enzimas",
         "produza mais ATP por glicose, devido ao uso da respiracao aerobica",
-        "nao forme dioxido de carbono em nenhuma etapa",
+        "não forme dioxido de carbono em nenhuma etapa",
         "deixe de degradar glicose por completo"
       ],
       correta: "produza mais ATP por glicose, devido ao uso da respiracao aerobica",
@@ -806,7 +806,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 2,
       cognicao: "identificacao",
       tipo: "multipla_escolha",
-      enunciado: "A organela diretamente relacionada a fotossintese em celulas vegetais e o:",
+      enunciado: "A organela diretamente relacionada a fotossintese em células vegetais e o:",
       opcoes: [
         "lisossomo",
         "cloroplasto",
@@ -814,7 +814,7 @@ export const metabolismoCelular = {
         "centriolo"
       ],
       correta: "cloroplasto",
-      comentario: "Os cloroplastos contem pigmentos e estruturas especializadas na captacao de luz e na sintese de compostos organicos.",
+      comentario: "Os cloroplastos contém pigmentos e estruturas especializadas na captacao de luz e na sintese de compostos organicos.",
       tempoEstimado: 20,
       tags: ["cloroplasto", "fotossintese"],
       habilidades: ["relacionar-cloroplastos-a-fotossintese"],
@@ -843,7 +843,7 @@ export const metabolismoCelular = {
         "insulina"
       ],
       correta: "clorofila",
-      comentario: "A clorofila absorve luz e participa das etapas iniciais da conversao de energia luminosa em energia quimica.",
+      comentario: "A clorofila absorve luz e participa das etapas iniciais da conversao de energia luminosa em energia química.",
       tempoEstimado: 25,
       tags: ["clorofila", "pigmentos"],
       habilidades: ["identificar-pigmentos-relacionados-a-fotossintese"],
@@ -953,12 +953,12 @@ export const metabolismoCelular = {
       tipo: "multipla_escolha",
       enunciado: "Nas reacoes luminosas da fotossintese, ocorre principalmente:",
       opcoes: [
-        "a producao de ATP e NADPH",
-        "a formacao direta de amido no nucleo",
+        "a produção de ATP e NADPH",
+        "a formação direta de amido no nucleo",
         "a digestao de pigmentos fotossinteticos",
         "a liberacao de acido latico"
       ],
-      correta: "a producao de ATP e NADPH",
+      correta: "a produção de ATP e NADPH",
       comentario: "As reacoes luminosas geram ATP e NADPH, que serao usados nas etapas de sintese de compostos organicos.",
       tempoEstimado: 40,
       tags: ["reacoes-luminosas", "atp", "nadph"],
@@ -1033,7 +1033,7 @@ export const metabolismoCelular = {
       serie: [1],
       materia: "Biologia",
       topico: "Metabolismo Celular",
-      subtopico: "Interpretacao aplicada",
+      subtopico: "Interpretação aplicada",
       dificuldadeLabel: "medio",
       dificuldadeNivel: 5,
       cognicao: "interpretacao",
@@ -1046,7 +1046,7 @@ export const metabolismoCelular = {
         "a glicolise passara a ocorrer no nucleo"
       ],
       correta: "faltara energia luminosa para as etapas iniciais do processo",
-      comentario: "Sem luz, as etapas fotoquimicas nao podem ocorrer adequadamente, reduzindo a producao de ATP e NADPH para a fotossintese.",
+      comentario: "Sem luz, as etapas fotoquimicas não podem ocorrer adequadamente, reduzindo a produção de ATP e NADPH para a fotossintese.",
       tempoEstimado: 45,
       tags: ["fotossintese", "luz", "interpretacao-aplicada"],
       habilidades: ["interpretar-condicoes-necessarias-para-a-fotossintese"],
@@ -1067,12 +1067,12 @@ export const metabolismoCelular = {
       dificuldadeNivel: 5,
       cognicao: "compreensao",
       tipo: "multipla_escolha",
-      enunciado: "Mesmo sendo fundamental, o ATP nao e considerado uma boa reserva energetica de longo prazo porque:",
+      enunciado: "Mesmo sendo fundamental, o ATP não e considerado uma boa reserva energetica de longo prazo porque:",
       opcoes: [
-        "nao participa de reacoes endergonicas",
+        "não participa de reacoes endergonicas",
         "e usado e regenerado continuamente em pequenas quantidades",
-        "so existe em celulas vegetais",
-        "nao pode liberar energia em nenhuma situacao"
+        "so existe em células vegetais",
+        "não pode liberar energia em nenhuma situação"
       ],
       correta: "e usado e regenerado continuamente em pequenas quantidades",
       comentario: "O ATP funciona como intermediario energetico imediato, enquanto reservas de longo prazo incluem moleculas como glicogenio e lipideos.",
@@ -1101,7 +1101,7 @@ export const metabolismoCelular = {
         "o pH pode alterar a conformacao da enzima e o encaixe com o substrato",
         "enzimas humanas funcionam melhor apenas sem agua",
         "o pH acido transforma toda enzima em lipidio",
-        "a celula deixa de produzir ATP em qualquer compartimento"
+        "a célula deixa de produzir ATP em qualquer compartimento"
       ],
       correta: "o pH pode alterar a conformacao da enzima e o encaixe com o substrato",
       comentario: "Mudancas intensas de pH podem interferir na estrutura da enzima e reduzir sua eficiencia catalitica.",
@@ -1125,15 +1125,15 @@ export const metabolismoCelular = {
       dificuldadeNivel: 6,
       cognicao: "interpretacao",
       tipo: "multipla_escolha",
-      enunciado: "Plantas tambem realizam respiracao celular porque precisam:",
+      enunciado: "Plantas também realizam respiracao celular porque precisam:",
       opcoes: [
         "consumir materia organica para obter ATP para suas atividades",
         "produzir luz para o ambiente noturno",
-        "substituir a funcao dos cloroplastos",
+        "substituir a função dos cloroplastos",
         "impedir qualquer perda de agua pelos estomatos"
       ],
       correta: "consumir materia organica para obter ATP para suas atividades",
-      comentario: "As plantas fazem fotossintese, mas tambem respiram continuamente para disponibilizar energia utilisavel na forma de ATP.",
+      comentario: "As plantas fazem fotossintese, mas também respiram continuamente para disponibilizar energia utilisavel na forma de ATP.",
       tempoEstimado: 45,
       tags: ["plantas", "respiracao-celular"],
       habilidades: ["reconhecer-que-plantas-tambem-realizam-respiracao"],
@@ -1157,11 +1157,11 @@ export const metabolismoCelular = {
       enunciado: "Uma diferenca central entre a mitocondria e o cloroplasto e que a mitocondria esta mais ligada a:",
       opcoes: [
         "armazenamento de pigmentos cuticulares",
-        "producao de ATP a partir da oxidacao de compostos organicos",
+        "produção de ATP a partir da oxidacao de compostos organicos",
         "sintese direta de celulose da parede celular",
         "replicacao de cromossomos nucleares"
       ],
-      correta: "producao de ATP a partir da oxidacao de compostos organicos",
+      correta: "produção de ATP a partir da oxidacao de compostos organicos",
       comentario: "A mitocondria participa da respiracao celular, enquanto o cloroplasto e especializado na fotossintese.",
       tempoEstimado: 45,
       tags: ["mitocondria", "cloroplasto", "comparacao"],
@@ -1183,7 +1183,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 6,
       cognicao: "aplicacao",
       tipo: "multipla_escolha",
-      enunciado: "Na producao de pao, o crescimento da massa relaciona-se principalmente a liberacao de:",
+      enunciado: "Na produção de pao, o crescimento da massa relaciona-se principalmente a liberacao de:",
       opcoes: [
         "oxigenio pelas leveduras",
         "dioxido de carbono na fermentacao alcoolica",
@@ -1217,10 +1217,10 @@ export const metabolismoCelular = {
         "aumento da fixacao de carbono no ciclo de Calvin",
         "reducao da sintese de materia organica",
         "substituicao imediata da fotossintese por fermentacao alcoolica",
-        "interrupcao completa da glicolise em todas as celulas"
+        "interrupcao completa da glicolise em todas as células"
       ],
       correta: "reducao da sintese de materia organica",
-      comentario: "Com menos dioxido de carbono disponivel, a fixacao de carbono diminui e a producao de compostos organicos tende a cair.",
+      comentario: "Com menos dioxido de carbono disponivel, a fixacao de carbono diminui e a produção de compostos organicos tende a cair.",
       tempoEstimado: 50,
       tags: ["fotossintese", "dioxido-de-carbono", "calvin"],
       habilidades: ["analisar-fatores-que-limitam-a-fotossintese"],
@@ -1236,12 +1236,12 @@ export const metabolismoCelular = {
       serie: [1],
       materia: "Biologia",
       topico: "Metabolismo Celular",
-      subtopico: "Interpretacao aplicada",
+      subtopico: "Interpretação aplicada",
       dificuldadeLabel: "medio",
       dificuldadeNivel: 6,
       cognicao: "interpretacao",
       tipo: "multipla_escolha",
-      enunciado: "Em uma amostra de agua com algas, a taxa de oxigenio dissolvido aumenta durante o dia e cai a noite. A explicacao mais adequada para essa variacao e:",
+      enunciado: "Em uma amostra de agua com algas, a taxa de oxigenio dissolvido aumenta durante o dia e cai a noite. A explicacao mais adequada para essa variação e:",
       opcoes: [
         "a fotossintese predomina sob luz, enquanto a respiracao continua ocorrendo",
         "as algas respiram apenas a noite e deixam de existir durante o dia",
@@ -1273,11 +1273,11 @@ export const metabolismoCelular = {
       enunciado: "Se uma droga bloquear a ATP sintase mitocondrial, o efeito mais imediato sera:",
       opcoes: [
         "maior sintese de ATP pela fosforilacao oxidativa",
-        "queda importante na formacao de ATP na cadeia respiratoria",
+        "queda importante na formação de ATP na cadeia respiratoria",
         "transformacao do piruvato em clorofila",
         "parada obrigatoria da transcricao no nucleo"
       ],
-      correta: "queda importante na formacao de ATP na cadeia respiratoria",
+      correta: "queda importante na formação de ATP na cadeia respiratoria",
       comentario: "A ATP sintase participa diretamente da sintese de ATP usando o gradiente de protons gerado pela cadeia respiratoria.",
       tempoEstimado: 55,
       tags: ["atp-sintase", "cadeia-respiratoria", "mitocondria"],
@@ -1304,7 +1304,7 @@ export const metabolismoCelular = {
         "maior concentracao de clorofila e maior atividade fotossintetica",
         "ausencia completa de respiracao celular",
         "substituicao dos cloroplastos por mitocondrias",
-        "producao exclusiva de acido latico"
+        "produção exclusiva de acido latico"
       ],
       correta: "maior concentracao de clorofila e maior atividade fotossintetica",
       comentario: "As regioes verdes possuem mais clorofila e, por isso, realizam mais fotossintese, acumulando mais carboidratos.",
@@ -1330,12 +1330,12 @@ export const metabolismoCelular = {
       tipo: "multipla_escolha",
       enunciado: "Em termos energeticos, ATP e NADPH na fotossintese se relacionam com o metabolismo porque:",
       opcoes: [
-        "sao utilizados na etapa de fixacao de carbono para formar compostos organicos",
+        "são utilizados na etapa de fixacao de carbono para formar compostos organicos",
         "substituem totalmente a agua como fonte de eletrons",
-        "impedem a formacao de glicose no cloroplasto",
+        "impedem a formação de glicose no cloroplasto",
         "atuam apenas na degradacao anaerobia da glicose"
       ],
-      correta: "sao utilizados na etapa de fixacao de carbono para formar compostos organicos",
+      correta: "são utilizados na etapa de fixacao de carbono para formar compostos organicos",
       comentario: "ATP e NADPH produzidos nas reacoes luminosas fornecem energia e poder redutor para a sintese de materia organica.",
       tempoEstimado: 55,
       tags: ["atp", "nadph", "fotossintese"],
@@ -1352,12 +1352,12 @@ export const metabolismoCelular = {
       serie: [1],
       materia: "Biologia",
       topico: "Metabolismo Celular",
-      subtopico: "Interpretacao aplicada",
+      subtopico: "Interpretação aplicada",
       dificuldadeLabel: "dificil",
       dificuldadeNivel: 8,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Pesquisadores adicionaram um composto que impede a regeneracao de NAD+ em celulas musculares submetidas a baixa oferta de oxigenio. Nessa condicao, o efeito mais provavel sera:",
+      enunciado: "Pesquisadores adicionaram um composto que impede a regeneracao de NAD+ em células musculares submetidas a baixa oferta de oxigenio. Nessa condicao, o efeito mais provavel sera:",
       opcoes: [
         "manutencao normal da glicolise anaerobia",
         "interrupcao progressiva da glicolise por falta de NAD+ disponivel",
@@ -1365,7 +1365,7 @@ export const metabolismoCelular = {
         "duplicacao da quantidade de mitocondrias em segundos"
       ],
       correta: "interrupcao progressiva da glicolise por falta de NAD+ disponivel",
-      comentario: "Sem regeneracao de NAD+, a glicolise nao consegue prosseguir adequadamente em condicoes anaerobias.",
+      comentario: "Sem regeneracao de NAD+, a glicolise não consegue prosseguir adequadamente em condicoes anaerobias.",
       tempoEstimado: 70,
       tags: ["nadh", "glicolise", "anaerobiose"],
       habilidades: ["inferir-consequencias-da-indisponibilidade-de-nad"],
@@ -1386,7 +1386,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 8,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Se um herbicida bloquear a producao de NADPH nas reacoes luminosas, o ciclo de Calvin sera prejudicado principalmente porque faltara:",
+      enunciado: "Se um herbicida bloquear a produção de NADPH nas reacoes luminosas, o ciclo de Calvin sera prejudicado principalmente porque faltara:",
       opcoes: [
         "parede celular para sustentar os cloroplastos",
         "poder redutor para a sintese de compostos organicos",
@@ -1415,15 +1415,15 @@ export const metabolismoCelular = {
       dificuldadeNivel: 9,
       cognicao: "comparacao",
       tipo: "multipla_escolha",
-      enunciado: "Uma celula vegetal de raiz e uma celula do mesofilo foliar diferem quanto ao metabolismo predominante porque a celula do mesofilo foliar:",
+      enunciado: "Uma célula vegetal de raiz e uma célula do mesofilo foliar diferem quanto ao metabolismo predominante porque a célula do mesofilo foliar:",
       opcoes: [
-        "nao realiza respiracao celular",
+        "não realiza respiracao celular",
         "costuma apresentar mais cloroplastos e maior capacidade fotossintetica",
-        "nao necessita de ATP para suas atividades",
+        "não necessita de ATP para suas atividades",
         "substitui a glicolise por quimiossintese"
       ],
       correta: "costuma apresentar mais cloroplastos e maior capacidade fotossintetica",
-      comentario: "Celulas do mesofilo foliar sao especializadas em fotossintese, enquanto celulas da raiz dependem mais diretamente da materia organica produzida em outras regioes.",
+      comentario: "Células do mesofilo foliar são especializadas em fotossintese, enquanto células da raiz dependem mais diretamente da materia organica produzida em outras regioes.",
       tempoEstimado: 80,
       tags: ["mesofilo", "raiz", "cloroplastos"],
       habilidades: ["comparar-metabolismo-de-diferentes-celulas-vegetais"],
@@ -1439,7 +1439,7 @@ export const metabolismoCelular = {
       serie: [1],
       materia: "Biologia",
       topico: "Metabolismo Celular",
-      subtopico: "Interpretacao aplicada",
+      subtopico: "Interpretação aplicada",
       dificuldadeLabel: "dificil",
       dificuldadeNivel: 9,
       cognicao: "interpretacao",
@@ -1448,7 +1448,7 @@ export const metabolismoCelular = {
       opcoes: [
         "intensa atividade catabolica com liberacao de energia na respiracao celular",
         "paralisacao completa do metabolismo para preservar reservas",
-        "transformacao de ATP em luz visivel",
+        "transformacao de ATP em luz visível",
         "substituicao da respiracao por digestao extracelular"
       ],
       correta: "intensa atividade catabolica com liberacao de energia na respiracao celular",
@@ -1468,7 +1468,7 @@ export const metabolismoCelular = {
       serie: [1],
       materia: "Biologia",
       topico: "Metabolismo Celular",
-      subtopico: "Interpretacao aplicada",
+      subtopico: "Interpretação aplicada",
       dificuldadeLabel: "dificil",
       dificuldadeNivel: 10,
       cognicao: "analise",
@@ -1476,11 +1476,11 @@ export const metabolismoCelular = {
       enunciado: "Em um cultivo de microorganismos, a oferta de glicose foi mantida constante. No entanto, ao retirar o oxigenio do sistema, a biomassa continuou viva, mas o rendimento energetico por glicose caiu bastante. A explicacao mais coerente e que os organismos passaram a depender principalmente de:",
       opcoes: [
         "fotossintese com liberacao de oxigenio",
-        "fermentacao, processo menos eficiente em producao de ATP",
+        "fermentacao, processo menos eficiente em produção de ATP",
         "anabolismo proteico como principal fonte de ATP",
         "replicacao do DNA para compensar a falta de energia"
       ],
-      correta: "fermentacao, processo menos eficiente em producao de ATP",
+      correta: "fermentacao, processo menos eficiente em produção de ATP",
       comentario: "Sem oxigenio, muitos microorganismos passam a usar fermentacao, que mantem a glicolise, mas produz menos ATP por molecula de glicose.",
       tempoEstimado: 90,
       tags: ["microorganismos", "anaerobiose", "rendimento-energetico"],
@@ -1560,15 +1560,15 @@ export const metabolismoCelular = {
       dificuldadeNivel: 2,
       cognicao: "compreensao",
       tipo: "multipla_escolha",
-      enunciado: "Quando a celula usa ATP para transportar substancias contra o gradiente, ela esta realizando um processo que depende de:",
+      enunciado: "Quando a célula usa ATP para transportar substancias contra o gradiente, ela esta realizando um processo que depende de:",
       opcoes: [
-        "energia quimica imediatamente disponivel",
+        "energia química imediatamente disponivel",
         "luz solar direta",
-        "formacao de amido no nucleo",
+        "formação de amido no nucleo",
         "ausencia total de enzimas"
       ],
-      correta: "energia quimica imediatamente disponivel",
-      comentario: "O ATP fornece energia quimica pronta para processos celulares que exigem gasto energetico, como o transporte ativo.",
+      correta: "energia química imediatamente disponivel",
+      comentario: "O ATP fornece energia química pronta para processos celulares que exigem gasto energetico, como o transporte ativo.",
       tempoEstimado: 25,
       tags: ["atp", "transporte-ativo"],
       habilidades: ["relacionar-atp-a-processos-celulares-com-gasto-energetico"],
@@ -1594,10 +1594,10 @@ export const metabolismoCelular = {
         "e um deposito permanente de DNA viral",
         "participa de etapas centrais da respiracao celular",
         "substitui os ribossomos na sintese proteica",
-        "realiza a digestao de particulas fora da celula"
+        "realiza a digestao de particulas fora da célula"
       ],
       correta: "participa de etapas centrais da respiracao celular",
-      comentario: "A mitocondria abriga etapas importantes da respiracao aerobica, ligadas a producao de ATP.",
+      comentario: "A mitocondria abriga etapas importantes da respiracao aerobica, ligadas a produção de ATP.",
       tempoEstimado: 30,
       tags: ["mitocondria", "respiracao-celular"],
       habilidades: ["relacionar-mitocondria-ao-metabolismo-energetico"],
@@ -1621,12 +1621,12 @@ export const metabolismoCelular = {
       enunciado: "Entre um processo catabolico e um anabolico, o catabolico se destaca por:",
       opcoes: [
         "degradar moleculas e liberar energia",
-        "produzir DNA apenas em celulas animais",
+        "produzir DNA apenas em células animais",
         "ocorrer somente em cloroplastos",
         "sintetizar proteinas sem uso de enzimas"
       ],
       correta: "degradar moleculas e liberar energia",
-      comentario: "Processos catabolicos quebram moleculas complexas e costumam liberar energia para a celula.",
+      comentario: "Processos catabolicos quebram moleculas complexas e costumam liberar energia para a célula.",
       tempoEstimado: 30,
       tags: ["catabolismo", "energia"],
       habilidades: ["comparar-processos-catabolicos-e-anabolicos"],
@@ -1655,7 +1655,7 @@ export const metabolismoCelular = {
         "interrupcao da difusao de oxigenio no sangue"
       ],
       correta: "alteracao da estrutura da enzima e do encaixe com o substrato",
-      comentario: "Mudancas extremas de pH podem modificar a conformacao da enzima e comprometer sua funcao catalitica.",
+      comentario: "Mudancas extremas de pH podem modificar a conformacao da enzima e comprometer sua função catalitica.",
       tempoEstimado: 40,
       tags: ["enzimas", "ph", "estrutura"],
       habilidades: ["analisar-efeitos-do-ph-sobre-enzimas"],
@@ -1676,7 +1676,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 4,
       cognicao: "comparacao",
       tipo: "multipla_escolha",
-      enunciado: "Se compararmos uma celula em intensa atividade com outra em repouso, a primeira tende a apresentar maior consumo de oxigenio porque:",
+      enunciado: "Se compararmos uma célula em intensa atividade com outra em repouso, a primeira tende a apresentar maior consumo de oxigenio porque:",
       opcoes: [
         "precisa reduzir a glicolise ao minimo",
         "necessita produzir mais ATP pela respiracao aerobica",
@@ -1684,7 +1684,7 @@ export const metabolismoCelular = {
         "substitui a respiracao por fotossintese"
       ],
       correta: "necessita produzir mais ATP pela respiracao aerobica",
-      comentario: "Celulas mais ativas demandam mais energia e, por isso, costumam intensificar a respiracao celular.",
+      comentario: "Células mais ativas demandam mais energia e, por isso, costumam intensificar a respiracao celular.",
       tempoEstimado: 35,
       tags: ["oxigenio", "atp", "atividade-celular"],
       habilidades: ["relacionar-demanda-energetica-ao-consumo-de-oxigenio"],
@@ -1713,7 +1713,7 @@ export const metabolismoCelular = {
         "impede completamente a glicolise"
       ],
       correta: "utiliza menos etapas de extracao de energia da glicose",
-      comentario: "Na fermentacao, a glicose nao e completamente oxidada, o que reduz o rendimento total de ATP.",
+      comentario: "Na fermentacao, a glicose não e completamente oxidada, o que reduz o rendimento total de ATP.",
       tempoEstimado: 40,
       tags: ["fermentacao", "rendimento-energetico"],
       habilidades: ["comparar-rendimento-de-fermentacao-e-respiracao"],
@@ -1739,10 +1739,10 @@ export const metabolismoCelular = {
         "a respiracao continua consumindo materia organica produzida anteriormente",
         "a fotossintese segue intensa mesmo sem luz",
         "o cloroplasto passa a produzir glicose a partir de ATP mitocondrial sem reagentes",
-        "a celula interrompe todo o metabolismo energetico"
+        "a célula interrompe todo o metabolismo energetico"
       ],
       correta: "a respiracao continua consumindo materia organica produzida anteriormente",
-      comentario: "Sem luz, a fotossintese fica comprometida, mas a respiracao continua usando reservas para manter a celula viva.",
+      comentario: "Sem luz, a fotossintese fica comprometida, mas a respiracao continua usando reservas para manter a célula viva.",
       tempoEstimado: 45,
       tags: ["fotossintese", "respiracao-celular", "reservas"],
       habilidades: ["interpretar-uso-de-reservas-em-ausencia-de-luz"],
@@ -1792,7 +1792,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 5,
       cognicao: "comparacao",
       tipo: "multipla_escolha",
-      enunciado: "Uma relacao correta entre fotossintese e respiracao celular e que:",
+      enunciado: "Uma relação correta entre fotossintese e respiracao celular e que:",
       opcoes: [
         "ambas sempre liberam o mesmo produto final em qualquer condicao",
         "produtos de uma podem servir como reagentes gerais da outra",
@@ -1879,15 +1879,15 @@ export const metabolismoCelular = {
       dificuldadeNivel: 6,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Uma toxina impede a formacao de ATP, mas nao bloqueia diretamente a sintese de proteinas. Ainda assim, apos algum tempo, a sintese proteica cai porque:",
+      enunciado: "Uma toxina impede a formação de ATP, mas não bloqueia diretamente a sintese de proteinas. Ainda assim, apos algum tempo, a sintese proteica cai porque:",
       opcoes: [
         "a sintese proteica depende de energia fornecida por ATP",
         "os ribossomos so funcionam na presenca de luz",
-        "proteinas nao podem ser produzidas em meio aquoso",
+        "proteinas não podem ser produzidas em meio aquoso",
         "o DNA deixa de existir no nucleo"
       ],
       correta: "a sintese proteica depende de energia fornecida por ATP",
-      comentario: "Mesmo processos nao diretamente ligados a cadeia respiratoria precisam de ATP para serem mantidos.",
+      comentario: "Mesmo processos não diretamente ligados a cadeia respiratoria precisam de ATP para serem mantidos.",
       tempoEstimado: 50,
       tags: ["atp", "sintese-proteica", "energia"],
       habilidades: ["inferir-consequencias-da-queda-de-atp-em-processos-celulares"],
@@ -1932,12 +1932,12 @@ export const metabolismoCelular = {
       serie: [1],
       materia: "Biologia",
       topico: "Metabolismo Celular",
-      subtopico: "Interpretacao aplicada",
+      subtopico: "Interpretação aplicada",
       dificuldadeLabel: "medio",
       dificuldadeNivel: 6,
       cognicao: "interpretacao",
       tipo: "multipla_escolha",
-      enunciado: "Em uma cultura de leveduras, a producao de etanol aumenta quando o meio deixa de receber oxigenio. Isso mostra que as leveduras passaram a obter energia predominantemente por:",
+      enunciado: "Em uma cultura de leveduras, a produção de etanol aumenta quando o meio deixa de receber oxigenio. Isso mostra que as leveduras passaram a obter energia predominantemente por:",
       opcoes: [
         "respiracao aerobica",
         "fermentacao alcoolica",
@@ -1945,7 +1945,7 @@ export const metabolismoCelular = {
         "quimiossintese"
       ],
       correta: "fermentacao alcoolica",
-      comentario: "A maior producao de etanol em ausencia de oxigenio indica predominio da fermentacao alcoolica.",
+      comentario: "A maior produção de etanol em ausencia de oxigenio indica predominio da fermentacao alcoolica.",
       tempoEstimado: 45,
       tags: ["leveduras", "etanol", "fermentacao-alcoolica"],
       habilidades: ["interpretar-mudancas-metabolicas-em-leveduras"],
@@ -1966,7 +1966,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 7,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Se uma celula deixa de oxidar adequadamente lipideos e carboidratos, a tendencia e que ela apresente:",
+      enunciado: "Se uma célula deixa de oxidar adequadamente lipideos e carboidratos, a tendencia e que ela apresente:",
       opcoes: [
         "reduzida disponibilidade de energia para varias atividades",
         "aumento automatico da fotossintese",
@@ -1974,7 +1974,7 @@ export const metabolismoCelular = {
         "eliminacao da necessidade de ATP"
       ],
       correta: "reduzida disponibilidade de energia para varias atividades",
-      comentario: "A oxidacao de nutrientes e essencial para sustentar a producao de ATP e o funcionamento celular.",
+      comentario: "A oxidacao de nutrientes e essencial para sustentar a produção de ATP e o funcionamento celular.",
       tempoEstimado: 55,
       tags: ["nutrientes", "energia", "catabolismo"],
       habilidades: ["analisar-relacao-entre-oxidacao-de-nutrientes-e-producao-de-energia"],
@@ -2027,7 +2027,7 @@ export const metabolismoCelular = {
       enunciado: "Entre a fase luminosa da fotossintese e a cadeia respiratoria, uma semelhanca relevante e que ambas envolvem:",
       opcoes: [
         "fluxo de eletrons associado a membranas especializadas",
-        "producao de etanol como produto principal",
+        "produção de etanol como produto principal",
         "ocorrencia exclusiva no citoplasma",
         "degradacao inicial da glicose em piruvato"
       ],
@@ -2048,12 +2048,12 @@ export const metabolismoCelular = {
       serie: [1],
       materia: "Biologia",
       topico: "Metabolismo Celular",
-      subtopico: "Interpretacao aplicada",
+      subtopico: "Interpretação aplicada",
       dificuldadeLabel: "medio",
       dificuldadeNivel: 7,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Uma celula foi mantida com suprimento normal de glicose, mas sem fosfato suficiente para regenerar ATP a partir de ADP. O efeito mais provavel sera:",
+      enunciado: "Uma célula foi mantida com suprimento normal de glicose, mas sem fosfato suficiente para regenerar ATP a partir de ADP. O efeito mais provavel sera:",
       opcoes: [
         "comprometimento de varias atividades que dependem de ATP",
         "aumento obrigatorio da replicacao do DNA",
@@ -2082,11 +2082,11 @@ export const metabolismoCelular = {
       dificuldadeNivel: 8,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Se o oxigenio deixa de atuar como aceptor final de eletrons, uma consequencia esperada e:",
+      enunciado: "Se o oxigenio deixa de atuar como aceptor final de eletrons, uma consequência esperada e:",
       opcoes: [
         "maior eficiencia da fosforilacao oxidativa",
         "acumulo de transportadores reduzidos e queda da cadeia respiratoria",
-        "aumento da producao de NADPH no cloroplasto",
+        "aumento da produção de NADPH no cloroplasto",
         "transformacao do piruvato em DNA mitocondrial"
       ],
       correta: "acumulo de transportadores reduzidos e queda da cadeia respiratoria",
@@ -2111,7 +2111,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 8,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Uma planta apresenta cloroplastos estruturalmente normais, mas baixa producao de ATP nas reacoes luminosas. O impacto mais direto esperado e:",
+      enunciado: "Uma planta apresenta cloroplastos estruturalmente normais, mas baixa produção de ATP nas reacoes luminosas. O impacto mais direto esperado e:",
       opcoes: [
         "reducao da fixacao de carbono no ciclo de Calvin",
         "aumento automatico da fermentacao alcoolica",
@@ -2148,7 +2148,7 @@ export const metabolismoCelular = {
         "eliminacao da necessidade de nutrientes energeticos"
       ],
       correta: "dificuldade para manter processos celulares que exigem muito ATP",
-      comentario: "Menor numero de mitocondrias funcionais compromete a capacidade de producao aerobica de ATP em tecidos exigentes.",
+      comentario: "Menor número de mitocondrias funcionais compromete a capacidade de produção aerobica de ATP em tecidos exigentes.",
       tempoEstimado: 80,
       tags: ["mitocondrias", "tecido", "atp"],
       habilidades: ["inferir-impactos-da-reducao-da-capacidade-mitocondrial"],
@@ -2169,7 +2169,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 9,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Uma mutacao altera a forma do sitio ativo de determinada enzima, sem impedir sua sintese. A consequencia mais provavel e:",
+      enunciado: "Uma mutacao altera a forma do sitio ativo de determinada enzima, sem impedir sua sintese. A consequência mais provavel e:",
       opcoes: [
         "melhor encaixe universal com qualquer substrato",
         "reducao da especificidade e da eficiencia catalitica",
@@ -2193,7 +2193,7 @@ export const metabolismoCelular = {
       serie: [1],
       materia: "Biologia",
       topico: "Metabolismo Celular",
-      subtopico: "Interpretacao aplicada",
+      subtopico: "Interpretação aplicada",
       dificuldadeLabel: "dificil",
       dificuldadeNivel: 10,
       cognicao: "comparacao",
@@ -2203,7 +2203,7 @@ export const metabolismoCelular = {
         "menor rendimento energetico, porque o oxigenio inibe a glicolise",
         "maior rendimento de ATP, devido a respiracao aerobica mais eficiente",
         "mesmo rendimento que a amostra B, porque ambas iniciam pela glicolise",
-        "ausencia de metabolismo, porque a glicose nao pode ser utilizada em aerobiose"
+        "ausencia de metabolismo, porque a glicose não pode ser utilizada em aerobiose"
       ],
       correta: "maior rendimento de ATP, devido a respiracao aerobica mais eficiente",
       comentario: "Com oxigenio e condicoes enzimatica favoraveis, a respiracao aerobica tende a gerar mais ATP do que vias anaerobias em condicoes desfavoraveis.",
@@ -2229,12 +2229,12 @@ export const metabolismoCelular = {
       tipo: "multipla_escolha",
       enunciado: "A glicose e importante no metabolismo celular porque pode funcionar como:",
       opcoes: [
-        "fonte de energia para a producao de ATP",
+        "fonte de energia para a produção de ATP",
         "membrana externa da mitocondria",
         "enzima de digestao intracelular",
         "pigmento que absorve luz"
       ],
-      correta: "fonte de energia para a producao de ATP",
+      correta: "fonte de energia para a produção de ATP",
       comentario: "A glicose e um dos principais combustiveis celulares utilizados na obtencao de energia.",
       tempoEstimado: 20,
       tags: ["glicose", "energia"],
@@ -2258,13 +2258,13 @@ export const metabolismoCelular = {
       tipo: "multipla_escolha",
       enunciado: "A energia luminosa absorvida na fotossintese e convertida principalmente em:",
       opcoes: [
-        "energia quimica armazenada em moleculas",
+        "energia química armazenada em moleculas",
         "energia nuclear do citoplasma",
         "movimento dos centriolos",
         "desaparecimento do dioxido de carbono"
       ],
-      correta: "energia quimica armazenada em moleculas",
-      comentario: "A fotossintese converte energia luminosa em energia quimica, que pode ser armazenada em compostos organicos.",
+      correta: "energia química armazenada em moleculas",
+      comentario: "A fotossintese converte energia luminosa em energia química, que pode ser armazenada em compostos organicos.",
       tempoEstimado: 25,
       tags: ["fotossintese", "energia-quimica"],
       habilidades: ["relacionar-fotossintese-a-conversao-de-energia"],
@@ -2289,7 +2289,7 @@ export const metabolismoCelular = {
       opcoes: [
         "atua melhor sobre determinados substratos",
         "produz qualquer substancia do organismo",
-        "substitui o material genetico da celula",
+        "substitui o material genetico da célula",
         "funciona sem depender de forma molecular"
       ],
       correta: "atua melhor sobre determinados substratos",
@@ -2343,7 +2343,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 3,
       cognicao: "compreensao",
       tipo: "multipla_escolha",
-      enunciado: "Quando o ATP perde um fosfato e se transforma em ADP, a celula costuma:",
+      enunciado: "Quando o ATP perde um fosfato e se transforma em ADP, a célula costuma:",
       opcoes: [
         "liberar energia para realizar trabalho celular",
         "destruir definitivamente a materia",
@@ -2367,7 +2367,7 @@ export const metabolismoCelular = {
       serie: [1],
       materia: "Biologia",
       topico: "Metabolismo Celular",
-      subtopico: "Interpretacao aplicada",
+      subtopico: "Interpretação aplicada",
       dificuldadeLabel: "medio",
       dificuldadeNivel: 4,
       cognicao: "interpretacao",
@@ -2376,7 +2376,7 @@ export const metabolismoCelular = {
       opcoes: [
         "reducao do rendimento energetico aerobico",
         "aumento da sintese de clorofila",
-        "formacao de parede celular nas mitocondrias",
+        "formação de parede celular nas mitocondrias",
         "transformacao do ATP em DNA"
       ],
       correta: "reducao do rendimento energetico aerobico",
@@ -2405,7 +2405,7 @@ export const metabolismoCelular = {
       opcoes: [
         "reducao da velocidade de varias reacoes metabolicas desses organismos",
         "aumento imediato da fotossintese no alimento",
-        "formacao espontanea de ATP sem reacoes quimicas",
+        "formação espontanea de ATP sem reacoes quimicas",
         "substituicao das enzimas por material genetico"
       ],
       correta: "reducao da velocidade de varias reacoes metabolicas desses organismos",
@@ -2462,7 +2462,7 @@ export const metabolismoCelular = {
       enunciado: "A agua participa das reacoes luminosas da fotossintese e sua quebra contribui diretamente para:",
       opcoes: [
         "liberacao de oxigenio e fornecimento de eletrons",
-        "producao de etanol no estroma",
+        "produção de etanol no estroma",
         "duplicacao do DNA cloroplastidial",
         "transformacao de ATP em glicose sem enzimas"
       ],
@@ -2488,11 +2488,11 @@ export const metabolismoCelular = {
       dificuldadeNivel: 5,
       cognicao: "comparacao",
       tipo: "multipla_escolha",
-      enunciado: "Uma semelhanca entre cloroplastos e mitocondrias que ajuda a explicar sua funcao energetica e que ambos:",
+      enunciado: "Uma semelhanca entre cloroplastos e mitocondrias que ajuda a explicar sua função energetica e que ambos:",
       opcoes: [
         "possuem membranas internas relacionadas a processos de conversao de energia",
         "produzem etanol como produto final principal",
-        "ocorrem apenas em celulas animais",
+        "ocorrem apenas em células animais",
         "realizam exclusivamente reacoes de sintese de DNA"
       ],
       correta: "possuem membranas internas relacionadas a processos de conversao de energia",
@@ -2546,7 +2546,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 5,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Se uma celula aumenta muito seu trabalho de transporte ativo, e esperado que ela precise:",
+      enunciado: "Se uma célula aumenta muito seu trabalho de transporte ativo, e esperado que ela precise:",
       opcoes: [
         "aumentar a demanda por ATP",
         "reduzir obrigatoriamente o uso de enzimas",
@@ -2575,15 +2575,15 @@ export const metabolismoCelular = {
       dificuldadeNivel: 5,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Uma diminuicao no numero de mitocondrias por celula tende a afetar mais diretamente:",
+      enunciado: "Uma diminuicao no número de mitocondrias por célula tende a afetar mais diretamente:",
       opcoes: [
-        "a capacidade de producao aerobica de ATP",
+        "a capacidade de produção aerobica de ATP",
         "a composicao do DNA nuclear",
         "a fotolise da agua nos cloroplastos",
         "a estrutura primaria das enzimas digestivas"
       ],
-      correta: "a capacidade de producao aerobica de ATP",
-      comentario: "Com menos mitocondrias, a capacidade de respiracao aerobica e de producao de ATP tende a diminuir.",
+      correta: "a capacidade de produção aerobica de ATP",
+      comentario: "Com menos mitocondrias, a capacidade de respiracao aerobica e de produção de ATP tende a diminuir.",
       tempoEstimado: 45,
       tags: ["mitocondria", "atp", "respiracao-celular"],
       habilidades: ["inferir-consequencias-da-reducao-de-mitocondrias"],
@@ -2604,10 +2604,10 @@ export const metabolismoCelular = {
       dificuldadeNivel: 5,
       cognicao: "interpretacao",
       tipo: "multipla_escolha",
-      enunciado: "Uma planta aquatica exposta a luz intensa passa a liberar mais bolhas visiveis. Esse fenomeno indica principalmente aumento de:",
+      enunciado: "Uma planta aquatica exposta a luz intensa passa a liberar mais bolhas visíveis. Esse fenomeno indica principalmente aumento de:",
       opcoes: [
         "liberacao de oxigenio pela fotossintese",
-        "producao de etanol no cloroplasto",
+        "produção de etanol no cloroplasto",
         "sintese de DNA nas raizes",
         "fermentacao lactica nas folhas"
       ],
@@ -2636,9 +2636,9 @@ export const metabolismoCelular = {
       enunciado: "Se uma droga ocupa o sitio ativo de uma enzima sem ser transformada, ela tende a:",
       opcoes: [
         "dificultar a ligacao do substrato e reduzir a atividade enzimatica",
-        "aumentar automaticamente a producao de ATP",
+        "aumentar automaticamente a produção de ATP",
         "transformar a enzima em carboidrato",
-        "estimular a fotossintese em qualquer celula"
+        "estimular a fotossintese em qualquer célula"
       ],
       correta: "dificultar a ligacao do substrato e reduzir a atividade enzimatica",
       comentario: "Ao ocupar o sitio ativo, a droga pode impedir o encaixe do substrato e diminuir a taxa da reacao.",
@@ -2657,16 +2657,16 @@ export const metabolismoCelular = {
       serie: [1],
       materia: "Biologia",
       topico: "Metabolismo Celular",
-      subtopico: "Interpretacao aplicada",
+      subtopico: "Interpretação aplicada",
       dificuldadeLabel: "medio",
       dificuldadeNivel: 6,
       cognicao: "interpretacao",
       tipo: "multipla_escolha",
-      enunciado: "Uma suspensao de leveduras foi dividida em dois frascos com glicose. No frasco A, havia oxigenio; no B, nao. Se ambos permanecerem viaveis, a tendencia e o frasco A apresentar:",
+      enunciado: "Uma suspensao de leveduras foi dividida em dois frascos com glicose. No frasco A, havia oxigenio; no B, não. Se ambos permanecerem viaveis, a tendencia e o frasco A apresentar:",
       opcoes: [
         "maior rendimento de ATP por glicose",
         "ausencia total de metabolismo",
-        "producao obrigatoria de acido latico",
+        "produção obrigatoria de acido latico",
         "incapacidade de iniciar a glicolise"
       ],
       correta: "maior rendimento de ATP por glicose",
@@ -2693,12 +2693,12 @@ export const metabolismoCelular = {
       tipo: "multipla_escolha",
       enunciado: "Um organismo heterotrofo depende, em ultima instancia, da fotossintese realizada por outros seres porque ela:",
       opcoes: [
-        "introduz materia organica e energia quimica nas cadeias alimentares",
+        "introduz materia organica e energia química nas cadeias alimentares",
         "elimina a necessidade de respiracao nos consumidores",
         "produz diretamente ATP para todos os animais",
         "impede a degradacao de nutrientes nos ecossistemas"
       ],
-      correta: "introduz materia organica e energia quimica nas cadeias alimentares",
+      correta: "introduz materia organica e energia química nas cadeias alimentares",
       comentario: "A fotossintese sustenta a base energetica da maioria das cadeias alimentares ao formar materia organica.",
       tempoEstimado: 50,
       tags: ["heterotrofos", "cadeias-alimentares", "fotossintese"],
@@ -2720,12 +2720,12 @@ export const metabolismoCelular = {
       dificuldadeNivel: 7,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Se a glicolise ocorre normalmente, mas o piruvato nao consegue entrar na mitocondria, a celula tende a:",
+      enunciado: "Se a glicolise ocorre normalmente, mas o piruvato não consegue entrar na mitocondria, a célula tende a:",
       opcoes: [
         "ter menor aproveitamento aerobico da glicose",
         "aumentar a fotolise da agua",
         "duplicar os cloroplastos automaticamente",
-        "interromper toda producao de ATP imediatamente"
+        "interromper toda produção de ATP imediatamente"
       ],
       correta: "ter menor aproveitamento aerobico da glicose",
       comentario: "Sem o encaminhamento do piruvato para etapas mitocondriais, o rendimento aerobico da glicose fica comprometido.",
@@ -2751,12 +2751,12 @@ export const metabolismoCelular = {
       tipo: "multipla_escolha",
       enunciado: "Uma folha foi mantida com um trecho coberto e outro exposto a luz. Depois, o teste para amido mostrou resultado positivo apenas na regiao iluminada. Isso indica que:",
       opcoes: [
-        "a luz foi necessaria para a producao local de carboidratos",
+        "a luz foi necessaria para a produção local de carboidratos",
         "o amido so pode existir fora dos cloroplastos",
         "a respiracao ocorreu apenas na parte coberta",
         "a agua deixou de participar da fotossintese"
       ],
-      correta: "a luz foi necessaria para a producao local de carboidratos",
+      correta: "a luz foi necessaria para a produção local de carboidratos",
       comentario: "O amido acumulado na regiao iluminada mostra que a luz foi essencial para a fotossintese naquela area.",
       tempoEstimado: 55,
       tags: ["amido", "luz", "experimento"],
@@ -2778,14 +2778,14 @@ export const metabolismoCelular = {
       dificuldadeNivel: 7,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "O bloqueio do bombeamento de protons na cadeia respiratoria compromete a producao de ATP porque dificulta:",
+      enunciado: "O bloqueio do bombeamento de protons na cadeia respiratoria compromete a produção de ATP porque dificulta:",
       opcoes: [
-        "a formacao do gradiente necessario para a ATP sintase",
+        "a formação do gradiente necessario para a ATP sintase",
         "a quebra inicial da glicose no citoplasma",
         "a sintese de clorofila nos cloroplastos",
-        "a producao de piruvato pela glicolise"
+        "a produção de piruvato pela glicolise"
       ],
-      correta: "a formacao do gradiente necessario para a ATP sintase",
+      correta: "a formação do gradiente necessario para a ATP sintase",
       comentario: "Sem gradiente de protons suficiente, a ATP sintase perde a principal fonte de energia para formar ATP.",
       tempoEstimado: 55,
       tags: ["protons", "atp-sintase", "cadeia-respiratoria"],
@@ -2807,7 +2807,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 8,
       cognicao: "interpretacao",
       tipo: "multipla_escolha",
-      enunciado: "Em um grafico de atividade enzimatica por temperatura, a curva sobe ate um ponto otimo e depois cai. A queda apos o ponto otimo se explica principalmente por:",
+      enunciado: "Em um gráfico de atividade enzimatica por temperatura, a curva sobe ate um ponto otimo e depois cai. A queda apos o ponto otimo se explica principalmente por:",
       opcoes: [
         "desorganizacao estrutural da enzima em temperaturas elevadas",
         "eliminacao do substrato pelo ATP",
@@ -2836,7 +2836,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 8,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Uma celula apresentou glicolise preservada, mas fortissima queda na producao total de ATP. A interpretacao mais coerente e que houve comprometimento principal em:",
+      enunciado: "Uma célula apresentou glicolise preservada, mas fortissima queda na produção total de ATP. A interpretação mais coerente e que houve comprometimento principal em:",
       opcoes: [
         "etapas mitocondriais de maior rendimento energetico",
         "sintese de celulose na parede celular",
@@ -2865,7 +2865,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 8,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Se as reacoes luminosas produzem ATP, mas nao ha oferta suficiente de NADPH, a fotossintese sera prejudicada porque faltara:",
+      enunciado: "Se as reacoes luminosas produzem ATP, mas não ha oferta suficiente de NADPH, a fotossintese sera prejudicada porque faltara:",
       opcoes: [
         "poder redutor para etapas de sintese organica",
         "glicolise mitocondrial",
@@ -2894,15 +2894,15 @@ export const metabolismoCelular = {
       dificuldadeNivel: 9,
       cognicao: "comparacao",
       tipo: "multipla_escolha",
-      enunciado: "Em condicoes equivalentes de disponibilidade de glicose, uma celula aerobica funcional tende a superar uma anaerobica em rendimento energetico porque:",
+      enunciado: "Em condicoes equivalentes de disponibilidade de glicose, uma célula aerobica funcional tende a superar uma anaerobica em rendimento energetico porque:",
       opcoes: [
         "explora etapas adicionais de oxidacao e cadeia respiratoria",
-        "nao precisa de enzimas",
+        "não precisa de enzimas",
         "substitui ATP por glicose pronta",
-        "impede a formacao de ADP"
+        "impede a formação de ADP"
       ],
       correta: "explora etapas adicionais de oxidacao e cadeia respiratoria",
-      comentario: "A respiracao aerobica utiliza etapas extras de aproveitamento energetico que elevam bastante a producao total de ATP.",
+      comentario: "A respiracao aerobica utiliza etapas extras de aproveitamento energetico que elevam bastante a produção total de ATP.",
       tempoEstimado: 80,
       tags: ["rendimento-energetico", "aerobiose", "anaerobiose"],
       habilidades: ["comparar-rendimento-de-vias-aerobias-e-anaerobias"],
@@ -2918,12 +2918,12 @@ export const metabolismoCelular = {
       serie: [1],
       materia: "Biologia",
       topico: "Metabolismo Celular",
-      subtopico: "Interpretacao aplicada",
+      subtopico: "Interpretação aplicada",
       dificuldadeLabel: "dificil",
       dificuldadeNivel: 10,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Em um experimento com plantas, a luz e a agua foram mantidas constantes, mas a concentracao de CO2 caiu drasticamente. Ao mesmo tempo, as celulas permaneceram vivas. A conclusao mais coerente e que:",
+      enunciado: "Em um experimento com plantas, a luz e a agua foram mantidas constantes, mas a concentracao de CO2 caiu drasticamente. Ao mesmo tempo, as células permaneceram vivas. A conclusao mais coerente e que:",
       opcoes: [
         "a fotossintese foi reduzida, mas a respiracao celular pode continuar usando reservas",
         "a respiracao celular foi completamente interrompida",
@@ -2931,7 +2931,7 @@ export const metabolismoCelular = {
         "a ausencia de CO2 estimula a sintese maxima de glicose"
       ],
       correta: "a fotossintese foi reduzida, mas a respiracao celular pode continuar usando reservas",
-      comentario: "O CO2 baixo limita a fotossintese, mas as celulas podem continuar vivas por algum tempo utilizando reservas organicas na respiracao.",
+      comentario: "O CO2 baixo limita a fotossintese, mas as células podem continuar vivas por algum tempo utilizando reservas organicas na respiracao.",
       tempoEstimado: 90,
       tags: ["co2", "fotossintese", "respiracao-celular"],
       habilidades: ["integrar-fatores-limitantes-da-fotossintese-a-manutencao-da-vida-celular"],
@@ -2955,7 +2955,7 @@ export const metabolismoCelular = {
       enunciado: "A principal importancia biologica do ATP esta no fato de ele:",
       opcoes: [
         "transportar energia de forma imediata entre reacoes celulares",
-        "substituir o DNA nas funcoes de hereditariedade",
+        "substituir o DNA nas funções de hereditariedade",
         "formar a parede celular das bacterias",
         "ser o principal pigmento da fotossintese"
       ],
@@ -2984,12 +2984,12 @@ export const metabolismoCelular = {
       enunciado: "Uma enzima se diferencia de um reagente comum porque ela:",
       opcoes: [
         "acelera a reacao sem ser consumida ao final",
-        "impede toda transformacao quimica no citoplasma",
-        "substitui sempre a funcao do ATP",
+        "impede toda transformacao química no citoplasma",
+        "substitui sempre a função do ATP",
         "atua apenas no interior do nucleo"
       ],
       correta: "acelera a reacao sem ser consumida ao final",
-      comentario: "Enzimas sao catalisadores biologicos: participam da reacao, mas nao se esgotam no processo.",
+      comentario: "Enzimas são catalisadores biologicos: participam da reacao, mas não se esgotam no processo.",
       tempoEstimado: 25,
       tags: ["enzimas", "catalise"],
       habilidades: ["reconhecer-propriedades-gerais-das-enzimas"],
@@ -3018,7 +3018,7 @@ export const metabolismoCelular = {
         "DNA"
       ],
       correta: "ATP",
-      comentario: "A respiracao celular transforma parte da energia quimica dos nutrientes em ATP, que pode ser usado pela celula.",
+      comentario: "A respiracao celular transforma parte da energia química dos nutrientes em ATP, que pode ser usado pela célula.",
       tempoEstimado: 20,
       tags: ["respiracao-celular", "atp", "energia"],
       habilidades: ["relacionar-respiracao-celular-a-producao-de-atp"],
@@ -3047,7 +3047,7 @@ export const metabolismoCelular = {
         "produz apenas calor para a planta"
       ],
       correta: "constroi moleculas organicas a partir de substancias mais simples",
-      comentario: "Na fotossintese, a celula sintetiza compostos organicos, caracteristica tipica de vias anabolicas.",
+      comentario: "Na fotossintese, a célula sintetiza compostos organicos, caracteristica tipica de vias anabolicas.",
       tempoEstimado: 30,
       tags: ["fotossintese", "anabolismo"],
       habilidades: ["identificar-fotossintese-como-via-anabolica"],
@@ -3130,8 +3130,8 @@ export const metabolismoCelular = {
       opcoes: [
         "a chance de encontro eficiente com o substrato tende a ser maior",
         "ela deixa de depender de forma tridimensional",
-        "o substrato nao sofre qualquer transformacao",
-        "a celula nao precisa mais de ATP"
+        "o substrato não sofre qualquer transformacao",
+        "a célula não precisa mais de ATP"
       ],
       correta: "a chance de encontro eficiente com o substrato tende a ser maior",
       comentario: "A temperatura ideal favorece a atividade enzimatica sem causar desnaturacao importante da proteina.",
@@ -3155,7 +3155,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 4,
       cognicao: "interpretacao",
       tipo: "multipla_escolha",
-      enunciado: "Em um tecido que aumenta bruscamente sua atividade, o consumo de nutrientes e oxigenio tende a crescer porque a celula precisa:",
+      enunciado: "Em um tecido que aumenta bruscamente sua atividade, o consumo de nutrientes e oxigenio tende a crescer porque a célula precisa:",
       opcoes: [
         "produzir mais ATP para sustentar seu funcionamento",
         "interromper completamente o catabolismo",
@@ -3189,10 +3189,10 @@ export const metabolismoCelular = {
         "produzir diretamente clorofila",
         "gerar transportadores reduzidos que alimentam a cadeia respiratoria",
         "ocorrer no interior do nucleo",
-        "substituir a glicolise em todas as celulas"
+        "substituir a glicolise em todas as células"
       ],
       correta: "gerar transportadores reduzidos que alimentam a cadeia respiratoria",
-      comentario: "O ciclo de Krebs forma NADH e FADH2, moleculas essenciais para o transporte de eletrons e a producao de ATP.",
+      comentario: "O ciclo de Krebs forma NADH e FADH2, moleculas essenciais para o transporte de eletrons e a produção de ATP.",
       tempoEstimado: 45,
       tags: ["ciclo-de-krebs", "nadh", "fadh2"],
       habilidades: ["relacionar-ciclo-de-krebs-a-cadeia-respiratoria"],
@@ -3213,15 +3213,15 @@ export const metabolismoCelular = {
       dificuldadeNivel: 5,
       cognicao: "comparacao",
       tipo: "multipla_escolha",
-      enunciado: "Ao comparar uma celula do mesofilo foliar com uma celula de raiz, espera-se que a do mesofilo apresente maior capacidade de:",
+      enunciado: "Ao comparar uma célula do mesofilo foliar com uma célula de raiz, espera-se que a do mesofilo apresente maior capacidade de:",
       opcoes: [
         "fotossintese, por possuir mais cloroplastos funcionais",
         "fermentacao alcoolica, por possuir mais etanol",
-        "formacao de parede celular, por nao ter ATP",
-        "glicolise, por nao realizar respiracao"
+        "formação de parede celular, por não ter ATP",
+        "glicolise, por não realizar respiracao"
       ],
       correta: "fotossintese, por possuir mais cloroplastos funcionais",
-      comentario: "Celulas do mesofilo sao especializadas em captar luz e realizar fotossintese de forma mais intensa.",
+      comentario: "Células do mesofilo são especializadas em captar luz e realizar fotossintese de forma mais intensa.",
       tempoEstimado: 45,
       tags: ["mesofilo", "raiz", "fotossintese"],
       habilidades: ["comparar-especializacao-metabolica-de-celulas-vegetais"],
@@ -3242,7 +3242,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 5,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Se a celula nao consegue regenerar ATP a partir de ADP de forma eficiente, uma consequencia esperada e:",
+      enunciado: "Se a célula não consegue regenerar ATP a partir de ADP de forma eficiente, uma consequência esperada e:",
       opcoes: [
         "comprometimento de varios processos que dependem de energia",
         "aumento automatico da sintese de DNA",
@@ -3271,7 +3271,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 5,
       cognicao: "aplicacao",
       tipo: "multipla_escolha",
-      enunciado: "Na producao de bebidas fermentadas, o metabolismo das leveduras e aproveitado porque elas:",
+      enunciado: "Na produção de bebidas fermentadas, o metabolismo das leveduras e aproveitado porque elas:",
       opcoes: [
         "convertem acucares em etanol e dioxido de carbono",
         "transformam luz diretamente em ATP para o meio",
@@ -3329,10 +3329,10 @@ export const metabolismoCelular = {
       dificuldadeNivel: 6,
       cognicao: "interpretacao",
       tipo: "multipla_escolha",
-      enunciado: "Em um grafico de velocidade de reacao em funcao da concentracao de substrato, a tendencia a estabilizacao da curva indica, em geral, que:",
+      enunciado: "Em um gráfico de velocidade de reacao em função da concentracao de substrato, a tendencia a estabilizacao da curva indica, em geral, que:",
       opcoes: [
         "os sitios ativos das enzimas disponiveis estao proximos da saturacao",
-        "o ATP foi totalmente eliminado da celula",
+        "o ATP foi totalmente eliminado da célula",
         "as enzimas deixaram de existir no sistema",
         "a reacao passou a depender somente de luz"
       ],
@@ -3382,7 +3382,7 @@ export const metabolismoCelular = {
       serie: [1],
       materia: "Biologia",
       topico: "Metabolismo Celular",
-      subtopico: "Interpretacao aplicada",
+      subtopico: "Interpretação aplicada",
       dificuldadeLabel: "medio",
       dificuldadeNivel: 6,
       cognicao: "interpretacao",
@@ -3391,7 +3391,7 @@ export const metabolismoCelular = {
       opcoes: [
         "respiracao celular a partir de reservas organicas",
         "fotolise da agua nos cloroplastos",
-        "producao de etanol nas folhas",
+        "produção de etanol nas folhas",
         "duplicacao espontanea da clorofila"
       ],
       correta: "respiracao celular a partir de reservas organicas",
@@ -3418,7 +3418,7 @@ export const metabolismoCelular = {
       tipo: "multipla_escolha",
       enunciado: "Uma afirmacao correta sobre fotossintese e respiracao celular e que:",
       opcoes: [
-        "sao processos totalmente independentes na biosfera",
+        "são processos totalmente independentes na biosfera",
         "podem ser vistos como complementares no fluxo de materia e energia",
         "ocorrem apenas em organismos vegetais",
         "produzem necessariamente as mesmas quantidades de ATP"
@@ -3445,12 +3445,12 @@ export const metabolismoCelular = {
       dificuldadeNivel: 7,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Se uma folha perde grande parte da clorofila, a consequencia mais provavel e:",
+      enunciado: "Se uma folha perde grande parte da clorofila, a consequência mais provavel e:",
       opcoes: [
         "queda na captacao de luz e na taxa fotossintetica",
         "aumento direto da fermentacao lactica",
         "maior eficiencia da cadeia respiratoria mitocondrial",
-        "interrupcao da glicolise em todas as celulas da planta"
+        "interrupcao da glicolise em todas as células da planta"
       ],
       correta: "queda na captacao de luz e na taxa fotossintetica",
       comentario: "A clorofila participa da absorcao de luz; sua reducao compromete a eficiencia da fotossintese.",
@@ -3474,15 +3474,15 @@ export const metabolismoCelular = {
       dificuldadeNivel: 7,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Em celulas musculares submetidas a esforco intenso, a fermentacao lactica pode ser acionada para:",
+      enunciado: "Em células musculares submetidas a esforco intenso, a fermentacao lactica pode ser acionada para:",
       opcoes: [
         "regenerar NAD+ e permitir a continuidade da glicolise",
         "produzir oxigenio para a cadeia respiratoria",
-        "aumentar diretamente o numero de mitocondrias",
+        "aumentar diretamente o número de mitocondrias",
         "substituir todas as enzimas do citoplasma"
       ],
       correta: "regenerar NAD+ e permitir a continuidade da glicolise",
-      comentario: "A fermentacao lactica ajuda a manter a producao de ATP pela glicolise quando o fornecimento de oxigenio e limitado.",
+      comentario: "A fermentacao lactica ajuda a manter a produção de ATP pela glicolise quando o fornecimento de oxigenio e limitado.",
       tempoEstimado: 55,
       tags: ["fermentacao-lactica", "nad", "glicolise"],
       habilidades: ["explicar-funcao-da-fermentacao-na-regeneracao-de-nad"],
@@ -3498,12 +3498,12 @@ export const metabolismoCelular = {
       serie: [1],
       materia: "Biologia",
       topico: "Metabolismo Celular",
-      subtopico: "Interpretacao aplicada",
+      subtopico: "Interpretação aplicada",
       dificuldadeLabel: "medio",
       dificuldadeNivel: 7,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Um experimento mostrou que uma planta apresentou aumento de fotossintese ao passar de baixa para media intensidade luminosa, mas nao aumentou mais quando a luz continuou crescendo. Isso sugere que:",
+      enunciado: "Um experimento mostrou que uma planta apresentou aumento de fotossintese ao passar de baixa para média intensidade luminosa, mas não aumentou mais quando a luz continuou crescendo. Isso sugere que:",
       opcoes: [
         "a luz deixou de ser o principal fator limitante",
         "a respiracao celular foi completamente interrompida",
@@ -3532,7 +3532,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 8,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Uma queda abrupta no oxigenio disponivel tende a afetar mais fortemente a producao de ATP em qual etapa da respiracao celular?",
+      enunciado: "Uma queda abrupta no oxigenio disponivel tende a afetar mais fortemente a produção de ATP em qual etapa da respiracao celular?",
       opcoes: [
         "Cadeia respiratoria, por depender do aceptor final de eletrons",
         "Glicolise, por ocorrer apenas com oxigenio",
@@ -3561,10 +3561,10 @@ export const metabolismoCelular = {
       dificuldadeNivel: 8,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Se uma mutacao reduz drasticamente a producao de NADPH nos cloroplastos, a etapa mais diretamente prejudicada sera:",
+      enunciado: "Se uma mutacao reduz drasticamente a produção de NADPH nos cloroplastos, a etapa mais diretamente prejudicada sera:",
       opcoes: [
         "a fixacao e reducao do carbono no ciclo de Calvin",
-        "a formacao de piruvato na glicolise",
+        "a formação de piruvato na glicolise",
         "a digestao intracelular por lisossomos",
         "a organizacao do fuso mitotico"
       ],
@@ -3590,12 +3590,12 @@ export const metabolismoCelular = {
       dificuldadeNivel: 9,
       cognicao: "comparacao",
       tipo: "multipla_escolha",
-      enunciado: "Uma celula com respiracao aerobica plena e outra limitada a fermentacao recebem a mesma quantidade de glicose. A primeira tende a sustentar mais trabalho celular porque:",
+      enunciado: "Uma célula com respiracao aerobica plena e outra limitada a fermentacao recebem a mesma quantidade de glicose. A primeira tende a sustentar mais trabalho celular porque:",
       opcoes: [
         "consegue extrair mais energia total por molecula de glicose",
         "deixa de precisar de enzimas para funcionar",
         "transforma toda glicose em clorofila",
-        "nao produz ADP durante o metabolismo"
+        "não produz ADP durante o metabolismo"
       ],
       correta: "consegue extrair mais energia total por molecula de glicose",
       comentario: "A respiracao aerobica explora etapas adicionais de oxidacao e rende muito mais ATP do que a fermentacao.",
@@ -3619,15 +3619,15 @@ export const metabolismoCelular = {
       dificuldadeNivel: 9,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Uma enzima sofreu alteracao estrutural que nao mudou sua quantidade, mas diminuiu fortemente sua afinidade pelo substrato. O efeito mais provavel e:",
+      enunciado: "Uma enzima sofreu alteracao estrutural que não mudou sua quantidade, mas diminuiu fortemente sua afinidade pelo substrato. O efeito mais provavel e:",
       opcoes: [
         "queda da velocidade da reacao catalisada",
-        "aumento imediato da producao de ATP em qualquer via",
+        "aumento imediato da produção de ATP em qualquer via",
         "transformacao da enzima em lipidio de membrana",
         "bloqueio total da fotossintese em todos os organismos"
       ],
       correta: "queda da velocidade da reacao catalisada",
-      comentario: "Menor afinidade entre enzima e substrato tende a reduzir a frequencia de complexos eficientes e diminuir a taxa reacional.",
+      comentario: "Menor afinidade entre enzima e substrato tende a reduzir a frequência de complexos eficientes e diminuir a taxa reacional.",
       tempoEstimado: 80,
       tags: ["enzimas", "substrato", "afinidade"],
       habilidades: ["analisar-impacto-da-afinidade-enzimatica-sobre-a-velocidade-reacional"],
@@ -3643,7 +3643,7 @@ export const metabolismoCelular = {
       serie: [1],
       materia: "Biologia",
       topico: "Metabolismo Celular",
-      subtopico: "Interpretacao aplicada",
+      subtopico: "Interpretação aplicada",
       dificuldadeLabel: "dificil",
       dificuldadeNivel: 10,
       cognicao: "analise",
@@ -3651,12 +3651,12 @@ export const metabolismoCelular = {
       enunciado: "Em um experimento, duas amostras de tecido receberam nutrientes iguais. A amostra A tinha mitocondrias funcionais; a amostra B, mitocondrias severamente comprometidas, embora ainda apresentasse glicolise. A conclusao mais coerente e que a amostra B:",
       opcoes: [
         "mantera rendimento energetico semelhante ao da amostra A",
-        "tera menor producao total de ATP, apesar de ainda conseguir algum rendimento pela glicolise",
+        "tera menor produção total de ATP, apesar de ainda conseguir algum rendimento pela glicolise",
         "passara a realizar fotossintese para compensar",
         "deixara de consumir glicose imediatamente"
       ],
-      correta: "tera menor producao total de ATP, apesar de ainda conseguir algum rendimento pela glicolise",
-      comentario: "Mesmo com a glicolise preservada, o comprometimento mitocondrial reduz fortemente as etapas aerobicas de maior producao de ATP.",
+      correta: "tera menor produção total de ATP, apesar de ainda conseguir algum rendimento pela glicolise",
+      comentario: "Mesmo com a glicolise preservada, o comprometimento mitocondrial reduz fortemente as etapas aerobicas de maior produção de ATP.",
       tempoEstimado: 90,
       tags: ["mitocondria", "glicolise", "rendimento-energetico"],
       habilidades: ["inferir-efeitos-do-comprometimento-mitocondrial-no-rendimento-energetico"],
@@ -3677,7 +3677,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 1,
       cognicao: "compreensao",
       tipo: "multipla_escolha",
-      enunciado: "Quando se afirma que uma celula esta metabolicamente ativa, isso significa que nela ha:",
+      enunciado: "Quando se afirma que uma célula esta metabolicamente ativa, isso significa que nela ha:",
       opcoes: [
         "reacoes quimicas acontecendo para manter a vida celular",
         "ausencia total de consumo de energia",
@@ -3714,7 +3714,7 @@ export const metabolismoCelular = {
         "exclusivo da fotossintese"
       ],
       correta: "anabolico",
-      comentario: "A formacao de uma molecula maior a partir de unidades menores caracteriza um processo anabolico.",
+      comentario: "A formação de uma molecula maior a partir de unidades menores caracteriza um processo anabolico.",
       tempoEstimado: 25,
       tags: ["anabolismo", "glicogenio"],
       habilidades: ["identificar-vias-anabolicas"],
@@ -3764,12 +3764,12 @@ export const metabolismoCelular = {
       dificuldadeNivel: 3,
       cognicao: "compreensao",
       tipo: "multipla_escolha",
-      enunciado: "A funcao geral da respiracao celular pode ser resumida como:",
+      enunciado: "A função geral da respiracao celular pode ser resumida como:",
       opcoes: [
         "liberar energia de nutrientes para formar ATP",
         "produzir luz para o citoplasma",
         "transformar ATP em parede celular",
-        "substituir a funcao das enzimas"
+        "substituir a função das enzimas"
       ],
       correta: "liberar energia de nutrientes para formar ATP",
       comentario: "A respiracao celular transfere para ATP parte da energia presente em moleculas organicas.",
@@ -3798,7 +3798,7 @@ export const metabolismoCelular = {
         "produzir materia organica a partir de reagentes inorganicos",
         "degradar ATP em DNA",
         "bloquear a respiracao celular da planta",
-        "substituir a funcao dos ribossomos"
+        "substituir a função dos ribossomos"
       ],
       correta: "produzir materia organica a partir de reagentes inorganicos",
       comentario: "A fotossintese usa energia luminosa para sintetizar compostos organicos a partir de agua e dioxido de carbono.",
@@ -3822,11 +3822,11 @@ export const metabolismoCelular = {
       dificuldadeNivel: 4,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "A importancia da glicolise para diferentes tipos de celula esta no fato de que ela:",
+      enunciado: "A importancia da glicolise para diferentes tipos de célula esta no fato de que ela:",
       opcoes: [
         "pode fornecer ATP mesmo na ausencia de oxigenio",
         "ocorre somente em organismos com cloroplastos",
-        "substitui o ciclo de Krebs em todas as situacoes",
+        "substitui o ciclo de Krebs em todas as situações",
         "produz diretamente clorofila"
       ],
       correta: "pode fornecer ATP mesmo na ausencia de oxigenio",
@@ -3859,7 +3859,7 @@ export const metabolismoCelular = {
         "ser transferida para o nucleo"
       ],
       correta: "ser prejudicada ou reduzida",
-      comentario: "Sem reconhecimento adequado entre enzima e substrato, a formacao do complexo enzima-substrato fica comprometida.",
+      comentario: "Sem reconhecimento adequado entre enzima e substrato, a formação do complexo enzima-substrato fica comprometida.",
       tempoEstimado: 40,
       tags: ["enzimas", "substrato", "complexo-enzima-substrato"],
       habilidades: ["analisar-consequencias-da-perda-de-especificidade-enzimatica"],
@@ -3880,7 +3880,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 4,
       cognicao: "interpretacao",
       tipo: "multipla_escolha",
-      enunciado: "Quando um musculo entra em esforco intenso e o suprimento de oxigenio nao acompanha a demanda, o metabolismo pode recorrer a uma via que:",
+      enunciado: "Quando um musculo entra em esforco intenso e o suprimento de oxigenio não acompanha a demanda, o metabolismo pode recorrer a uma via que:",
       opcoes: [
         "regenera NAD+ e mantem a glicolise",
         "substitui totalmente o ATP por glicose",
@@ -3962,12 +3962,12 @@ export const metabolismoCelular = {
       serie: [1],
       materia: "Biologia",
       topico: "Metabolismo Celular",
-      subtopico: "Interpretacao aplicada",
+      subtopico: "Interpretação aplicada",
       dificuldadeLabel: "medio",
       dificuldadeNivel: 5,
       cognicao: "interpretacao",
       tipo: "multipla_escolha",
-      enunciado: "Em um grafico, a taxa de fotossintese aumenta com a luz ate certo ponto e depois se estabiliza. A melhor interpretacao para esse comportamento e que:",
+      enunciado: "Em um gráfico, a taxa de fotossintese aumenta com a luz ate certo ponto e depois se estabiliza. A melhor interpretação para esse comportamento e que:",
       opcoes: [
         "outro fator passou a limitar o processo",
         "a planta deixou de precisar de CO2",
@@ -3996,7 +3996,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 5,
       cognicao: "aplicacao",
       tipo: "multipla_escolha",
-      enunciado: "Uma celula especializada em transporte ativo intenso tende a apresentar maior necessidade de:",
+      enunciado: "Uma célula especializada em transporte ativo intenso tende a apresentar maior necessidade de:",
       opcoes: [
         "ATP disponivel para sustentar o processo",
         "clorofila dissolvida no citoplasma",
@@ -4057,12 +4057,12 @@ export const metabolismoCelular = {
       enunciado: "Se um medicamento compete com o substrato pelo sitio ativo de uma enzima, o efeito mais esperado e:",
       opcoes: [
         "reduzir a velocidade da reacao ao dificultar o encaixe do substrato",
-        "aumentar automaticamente a energia de todas as celulas",
+        "aumentar automaticamente a energia de todas as células",
         "eliminar a necessidade de ATP",
         "estimular a sintese de clorofila"
       ],
       correta: "reduzir a velocidade da reacao ao dificultar o encaixe do substrato",
-      comentario: "Competicao pelo sitio ativo tende a diminuir a formacao do complexo enzima-substrato e reduzir a taxa reacional.",
+      comentario: "Competicao pelo sitio ativo tende a diminuir a formação do complexo enzima-substrato e reduzir a taxa reacional.",
       tempoEstimado: 50,
       tags: ["enzimas", "inibicao", "sitio-ativo"],
       habilidades: ["analisar-efeito-de-competicao-no-sitio-ativo"],
@@ -4083,7 +4083,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 6,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Uma forte reducao da area de cristas mitocondriais tende a diminuir o rendimento energetico da celula porque:",
+      enunciado: "Uma forte reducao da area de cristas mitocondriais tende a diminuir o rendimento energetico da célula porque:",
       opcoes: [
         "reduz a superficie disponivel para processos da cadeia respiratoria",
         "impede a existencia da glicolise no citoplasma",
@@ -4172,12 +4172,12 @@ export const metabolismoCelular = {
       tipo: "multipla_escolha",
       enunciado: "Se o fluxo de eletrons na cadeia respiratoria e interrompido, um efeito direto esperado e:",
       opcoes: [
-        "queda na formacao do gradiente de protons e na sintese de ATP",
-        "aumento da producao de etanol no nucleo",
+        "queda na formação do gradiente de protons e na sintese de ATP",
+        "aumento da produção de etanol no nucleo",
         "substituicao do oxigenio por clorofila",
-        "formacao acelerada de amido no citoplasma"
+        "formação acelerada de amido no citoplasma"
       ],
-      correta: "queda na formacao do gradiente de protons e na sintese de ATP",
+      correta: "queda na formação do gradiente de protons e na sintese de ATP",
       comentario: "O transporte de eletrons esta ligado ao bombeamento de protons, que sustenta a atividade da ATP sintase.",
       tempoEstimado: 55,
       tags: ["cadeia-respiratoria", "protons", "atp"],
@@ -4194,19 +4194,19 @@ export const metabolismoCelular = {
       serie: [1],
       materia: "Biologia",
       topico: "Metabolismo Celular",
-      subtopico: "Interpretacao aplicada",
+      subtopico: "Interpretação aplicada",
       dificuldadeLabel: "medio",
       dificuldadeNivel: 7,
       cognicao: "analise",
       tipo: "multipla_escolha",
       enunciado: "Uma folha parcialmente coberta foi exposta a luz e depois testada para amido. Somente a parte iluminada apresentou resultado positivo. A melhor conclusao e que:",
       opcoes: [
-        "a producao de carboidratos dependeu da incidencia de luz",
+        "a produção de carboidratos dependeu da incidencia de luz",
         "a respiracao ocorre apenas na parte coberta",
         "a agua e desnecessaria para a fotossintese",
         "a glicolise foi bloqueada na parte iluminada"
       ],
-      correta: "a producao de carboidratos dependeu da incidencia de luz",
+      correta: "a produção de carboidratos dependeu da incidencia de luz",
       comentario: "A presenca de amido na parte iluminada indica que a luz foi essencial para a sintese local de materia organica.",
       tempoEstimado: 55,
       tags: ["luz", "amido", "experimento"],
@@ -4236,7 +4236,7 @@ export const metabolismoCelular = {
         "a fermentacao elimina a necessidade de glicose"
       ],
       correta: "a respiracao continua usando reservas previamente acumuladas",
-      comentario: "Mesmo sem fotossintese ativa, a celula pode manter algum metabolismo usando compostos organicos ja armazenados.",
+      comentario: "Mesmo sem fotossintese ativa, a célula pode manter algum metabolismo usando compostos organicos ja armazenados.",
       tempoEstimado: 55,
       tags: ["reservas", "respiracao-celular", "fotossintese"],
       habilidades: ["analisar-manutencao-da-vida-celular-em-ausencia-de-luz"],
@@ -4257,12 +4257,12 @@ export const metabolismoCelular = {
       dificuldadeNivel: 8,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Uma celula mantem glicolise normal, mas apresenta forte queda de ATP total e acumulo de NADH. A interpretacao mais coerente e um problema predominante em:",
+      enunciado: "Uma célula mantem glicolise normal, mas apresenta forte queda de ATP total e acumulo de NADH. A interpretação mais coerente e um problema predominante em:",
       opcoes: [
         "etapas mitocondriais ligadas a oxidacao de transportadores reduzidos",
         "sintese de clorofila nos cloroplastos",
         "organizacao do nucleolo",
-        "formacao da membrana plasmatica"
+        "formação da membrana plasmatica"
       ],
       correta: "etapas mitocondriais ligadas a oxidacao de transportadores reduzidos",
       comentario: "O acumulo de NADH sugere prejuizo no aproveitamento desses eletrons na cadeia respiratoria, reduzindo o ATP total.",
@@ -4286,7 +4286,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 8,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Se uma mutacao impede a formacao do gradiente de protons nos tilacoides, a consequencia mais imediata sera:",
+      enunciado: "Se uma mutacao impede a formação do gradiente de protons nos tilacoides, a consequência mais imediata sera:",
       opcoes: [
         "reducao da sintese de ATP nas reacoes luminosas",
         "aumento da glicolise no cloroplasto",
@@ -4294,7 +4294,7 @@ export const metabolismoCelular = {
         "interrupcao do transporte ativo pela membrana plasmatica"
       ],
       correta: "reducao da sintese de ATP nas reacoes luminosas",
-      comentario: "O gradiente de protons nos tilacoides e essencial para a producao de ATP associada as reacoes luminosas.",
+      comentario: "O gradiente de protons nos tilacoides e essencial para a produção de ATP associada as reacoes luminosas.",
       tempoEstimado: 75,
       tags: ["tilacoides", "protons", "atp"],
       habilidades: ["analisar-papel-do-gradiente-de-protons-na-fotossintese"],
@@ -4315,14 +4315,14 @@ export const metabolismoCelular = {
       dificuldadeNivel: 9,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Uma alteracao no sitio ativo de uma enzima reduziu a velocidade de reacao, embora a quantidade de enzima produzida pela celula tenha permanecido igual. Isso indica que:",
+      enunciado: "Uma alteracao no sitio ativo de uma enzima reduziu a velocidade de reacao, embora a quantidade de enzima produzida pela célula tenha permanecido igual. Isso indica que:",
       opcoes: [
-        "o problema esta na eficiencia de interacao com o substrato, nao na quantidade da enzima",
+        "o problema esta na eficiencia de interacao com o substrato, não na quantidade da enzima",
         "a enzima foi substituida por ATP",
         "a reacao deixou de depender de energia",
         "houve aumento obrigatorio do rendimento aerobico"
       ],
-      correta: "o problema esta na eficiencia de interacao com o substrato, nao na quantidade da enzima",
+      correta: "o problema esta na eficiencia de interacao com o substrato, não na quantidade da enzima",
       comentario: "Mudancas estruturais no sitio ativo podem reduzir a eficiencia catalitica mesmo sem queda na quantidade de enzima.",
       tempoEstimado: 80,
       tags: ["enzimas", "sitio-ativo", "eficiencia-catalitica"],
@@ -4344,15 +4344,15 @@ export const metabolismoCelular = {
       dificuldadeNivel: 9,
       cognicao: "comparacao",
       tipo: "multipla_escolha",
-      enunciado: "Ao comparar uma celula vegetal iluminada e outra mantida no escuro por longo periodo, a primeira tende a apresentar maior capacidade de acumular materia organica porque:",
+      enunciado: "Ao comparar uma célula vegetal iluminada e outra mantida no escuro por longo periodo, a primeira tende a apresentar maior capacidade de acumular materia organica porque:",
       opcoes: [
         "consegue associar captura de energia luminosa a sintese de compostos organicos",
-        "nao realiza respiracao celular",
+        "não realiza respiracao celular",
         "dispensa completamente o uso de ATP",
         "substitui a glicose por oxigenio como combustivel"
       ],
       correta: "consegue associar captura de energia luminosa a sintese de compostos organicos",
-      comentario: "Sob luz, a fotossintese favorece a producao e o acumulo de compostos organicos, diferentemente da celula mantida no escuro.",
+      comentario: "Sob luz, a fotossintese favorece a produção e o acumulo de compostos organicos, diferentemente da célula mantida no escuro.",
       tempoEstimado: 80,
       tags: ["luz", "materia-organica", "fotossintese"],
       habilidades: ["comparar-acumulo-de-materia-organica-em-diferentes-condicoes-de-luz"],
@@ -4368,7 +4368,7 @@ export const metabolismoCelular = {
       serie: [1],
       materia: "Biologia",
       topico: "Metabolismo Celular",
-      subtopico: "Interpretacao aplicada",
+      subtopico: "Interpretação aplicada",
       dificuldadeLabel: "dificil",
       dificuldadeNivel: 10,
       cognicao: "analise",
@@ -4378,7 +4378,7 @@ export const metabolismoCelular = {
         "tera maior rendimento energetico por combinar boas condicoes para respiracao aerobica",
         "tera o mesmo rendimento da amostra B, pois ambas iniciam pela glicolise",
         "produzira menos ATP por usar oxigenio",
-        "nao dependera de enzimas para manter a vida celular"
+        "não dependera de enzimas para manter a vida celular"
       ],
       correta: "tera maior rendimento energetico por combinar boas condicoes para respiracao aerobica",
       comentario: "A presença de oxigenio e a atividade enzimatica adequada favorecem maior aproveitamento energetico da glicose na amostra A.",
@@ -4397,20 +4397,20 @@ export const metabolismoCelular = {
       serie: [1],
       materia: "Biologia",
       topico: "Metabolismo Celular",
-      subtopico: "Interpretacao aplicada",
+      subtopico: "Interpretação aplicada",
       dificuldadeLabel: "medio",
       dificuldadeNivel: 7,
       cognicao: "interpretacao",
       tipo: "multipla_escolha",
-      enunciado: "Uma celula apresentou queda acentuada de ATP, mas manteve alguma producao energetica residual. O dado sugere, de forma mais coerente, que:",
+      enunciado: "Uma célula apresentou queda acentuada de ATP, mas manteve alguma produção energetica residual. O dado sugere, de forma mais coerente, que:",
       opcoes: [
         "todas as vias metabolicas foram eliminadas ao mesmo tempo",
         "alguma etapa de alto rendimento foi comprometida, mas a glicolise ainda ocorre",
-        "a celula passou a realizar fotossintese para compensar",
+        "a célula passou a realizar fotossintese para compensar",
         "o ATP deixou de ser necessario para a vida celular"
       ],
       correta: "alguma etapa de alto rendimento foi comprometida, mas a glicolise ainda ocorre",
-      comentario: "Uma queda grande, mas nao total, de ATP indica que vias como a glicolise podem continuar ativas, enquanto etapas mais eficientes foram prejudicadas.",
+      comentario: "Uma queda grande, mas não total, de ATP indica que vias como a glicolise podem continuar ativas, enquanto etapas mais eficientes foram prejudicadas.",
       tempoEstimado: 55,
       tags: ["interpretacao-aplicada", "atp", "glicolise"],
       habilidades: ["inferir-etapas-metabolicas-a-partir-da-producao-residual-de-atp"],
@@ -4434,11 +4434,11 @@ export const metabolismoCelular = {
       enunciado: "Dizer que a fotossintese armazena energia e que a respiracao a libera e uma forma equivalente de afirmar que:",
       opcoes: [
         "a fotossintese produz energia do nada, e a respiracao a destroi",
-        "a fotossintese converte energia luminosa em quimica, e a respiracao aproveita essa energia quimica",
+        "a fotossintese converte energia luminosa em química, e a respiracao aproveita essa energia química",
         "a respiracao ocorre apenas em vegetais, e a fotossintese apenas em animais",
         "os dois processos produzem sempre a mesma quantidade de ATP"
       ],
-      correta: "a fotossintese converte energia luminosa em quimica, e a respiracao aproveita essa energia quimica",
+      correta: "a fotossintese converte energia luminosa em química, e a respiracao aproveita essa energia química",
       comentario: "Essa formulacao expressa a complementaridade energetica entre os dois processos sem alterar o sentido biologico.",
       tempoEstimado: 55,
       tags: ["integracao-energetica", "fotossintese", "respiracao-celular"],
@@ -4468,7 +4468,7 @@ export const metabolismoCelular = {
         "funcionam apenas quando ha luz"
       ],
       correta: "reduzem a energia de ativacao, sem criar energia para o sistema",
-      comentario: "Enzimas facilitam o andamento das reacoes, mas nao geram energia do nada nem alteram a natureza energetica global do sistema.",
+      comentario: "Enzimas facilitam o andamento das reacoes, mas não geram energia do nada nem alteram a natureza energetica global do sistema.",
       tempoEstimado: 60,
       tags: ["enzimas", "energia-de-ativacao", "pegadinha"],
       habilidades: ["corrigir-interpretacoes-equivocadas-sobre-funcao-das-enzimas"],
@@ -4489,7 +4489,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 7,
       cognicao: "interpretacao",
       tipo: "multipla_escolha",
-      enunciado: "Se a oferta de oxigenio aumenta e a producao de ATP tambem cresce, a inferencia mais adequada e que:",
+      enunciado: "Se a oferta de oxigenio aumenta e a produção de ATP também cresce, a inferencia mais adequada e que:",
       opcoes: [
         "a fotossintese foi obrigatoriamente ativada",
         "etapas aerobicas do metabolismo puderam ser melhor aproveitadas",
@@ -4526,7 +4526,7 @@ export const metabolismoCelular = {
         "Fermentacao so ocorre em folhas iluminadas"
       ],
       correta: "Fermentacao e um processo que pode substituir parte do aproveitamento energetico quando a respiracao aerobica fica limitada",
-      comentario: "A fermentacao nao equivale a toda a respiracao celular, mas permite manutencao parcial da producao de ATP em certas condicoes.",
+      comentario: "A fermentacao não equivale a toda a respiracao celular, mas permite manutencao parcial da produção de ATP em certas condicoes.",
       tempoEstimado: 60,
       tags: ["fermentacao", "pegadinha", "respiracao-celular"],
       habilidades: ["distinguir-fermentacao-de-respiracao-aerobica"],
@@ -4555,7 +4555,7 @@ export const metabolismoCelular = {
         "deixar de depender de metabolismo"
       ],
       correta: "realizar respiracao celular utilizando reservas organicas",
-      comentario: "A ausencia de luz reduz a fotossintese, mas nao impede de imediato a respiracao celular a partir de reservas.",
+      comentario: "A ausencia de luz reduz a fotossintese, mas não impede de imediato a respiracao celular a partir de reservas.",
       tempoEstimado: 55,
       tags: ["fotossintese", "respiracao-celular", "pegadinha"],
       habilidades: ["corrigir-generalizacoes-equivocadas-sobre-plantas-sem-luz"],
@@ -4571,12 +4571,12 @@ export const metabolismoCelular = {
       serie: [1],
       materia: "Biologia",
       topico: "Metabolismo Celular",
-      subtopico: "Interpretacao aplicada",
+      subtopico: "Interpretação aplicada",
       dificuldadeLabel: "medio",
       dificuldadeNivel: 7,
       cognicao: "interpretacao",
       tipo: "multipla_escolha",
-      enunciado: "Uma celula apresentou boa oferta de glicose, mas baixo rendimento final de ATP e aumento de lactato. O conjunto de dados indica mais provavelmente:",
+      enunciado: "Uma célula apresentou boa oferta de glicose, mas baixo rendimento final de ATP e aumento de lactato. O conjunto de dados indica mais provavelmente:",
       opcoes: [
         "predominio de fotossintese",
         "predominio de fermentacao lactica",
@@ -4613,7 +4613,7 @@ export const metabolismoCelular = {
         "funciona apenas em organismos eucariontes"
       ],
       correta: "intermedeia a transferencia imediata de energia entre reacoes",
-      comentario: "A expressao 'moeda energetica' resume a funcao do ATP como intermediario de uso rapido na celula.",
+      comentario: "A expressao 'moeda energetica' resume a função do ATP como intermediario de uso rapido na célula.",
       tempoEstimado: 55,
       tags: ["atp", "equivalencia", "energia"],
       habilidades: ["reconhecer-equivalencias-de-linguagem-sobre-funcao-do-atp"],
@@ -4634,12 +4634,12 @@ export const metabolismoCelular = {
       dificuldadeNivel: 7,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Em uma prova, um estudante escreveu que 'temperatura sempre maior significa metabolismo sempre maior'. A melhor avaliacao dessa frase e:",
+      enunciado: "Em uma prova, um estudante escreveu que 'temperatura sempre maior significa metabolismo sempre maior'. A melhor avaliação dessa frase e:",
       opcoes: [
         "correta, porque altas temperaturas nunca prejudicam enzimas",
         "incorreta, porque acima de certos limites a atividade enzimatica pode cair",
         "correta apenas para fotossintese e nunca para respiracao",
-        "incorreta porque temperatura nao interfere em reacoes biologicas"
+        "incorreta porque temperatura não interfere em reacoes biologicas"
       ],
       correta: "incorreta, porque acima de certos limites a atividade enzimatica pode cair",
       comentario: "Ha uma faixa otima de temperatura; acima dela, enzimas podem desnaturar e reduzir a taxa das reacoes.",
@@ -4663,11 +4663,11 @@ export const metabolismoCelular = {
       dificuldadeNivel: 7,
       cognicao: "comparacao",
       tipo: "multipla_escolha",
-      enunciado: "Qual alternativa expressa corretamente, em outra formulacao, a relacao entre anabolismo e catabolismo?",
+      enunciado: "Qual alternativa expressa corretamente, em outra formulacao, a relação entre anabolismo e catabolismo?",
       opcoes: [
         "O anabolismo libera energia ao quebrar moleculas, enquanto o catabolismo a gasta ao construir",
         "O anabolismo tende a construir moleculas e o catabolismo tende a degradar moleculas",
-        "Ambos sao termos exclusivos da fotossintese",
+        "Ambos são termos exclusivos da fotossintese",
         "Ambos descrevem exatamente a mesma classe de reacao"
       ],
       correta: "O anabolismo tende a construir moleculas e o catabolismo tende a degradar moleculas",
@@ -4723,13 +4723,13 @@ export const metabolismoCelular = {
       tipo: "multipla_escolha",
       enunciado: "Um estudante disse que a fotossintese 'produz energia para a planta'. A formulacao mais rigorosa seria afirmar que a fotossintese:",
       opcoes: [
-        "converte energia luminosa em energia quimica armazenada em moleculas organicas",
+        "converte energia luminosa em energia química armazenada em moleculas organicas",
         "cria energia nova dentro do cloroplasto",
         "elimina a necessidade de respiracao celular",
         "substitui o ATP por glicose livre"
       ],
-      correta: "converte energia luminosa em energia quimica armazenada em moleculas organicas",
-      comentario: "O processo nao cria energia do nada; ele transforma a energia luminosa em uma forma quimica armazenavel.",
+      correta: "converte energia luminosa em energia química armazenada em moleculas organicas",
+      comentario: "O processo não cria energia do nada; ele transforma a energia luminosa em uma forma química armazenavel.",
       tempoEstimado: 60,
       tags: ["fotossintese", "equivalencia", "energia-quimica"],
       habilidades: ["refinar-conceitualmente-explicacoes-sobre-fotossintese"],
@@ -4750,7 +4750,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 7,
       cognicao: "interpretacao",
       tipo: "multipla_escolha",
-      enunciado: "Em uma cultura de leveduras, a retirada de oxigenio elevou a producao de etanol sem impedir completamente a sobrevivencia celular. A inferencia mais adequada e que:",
+      enunciado: "Em uma cultura de leveduras, a retirada de oxigenio elevou a produção de etanol sem impedir completamente a sobrevivencia celular. A inferencia mais adequada e que:",
       opcoes: [
         "as leveduras passaram a usar predominantemente fermentacao alcoolica",
         "o metabolismo foi totalmente interrompido",
@@ -4774,17 +4774,17 @@ export const metabolismoCelular = {
       serie: [1],
       materia: "Biologia",
       topico: "Metabolismo Celular",
-      subtopico: "Interpretacao aplicada",
+      subtopico: "Interpretação aplicada",
       dificuldadeLabel: "medio",
       dificuldadeNivel: 7,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Uma linhagem celular continua consumindo glicose, mas a relacao entre glicose consumida e ATP produzido piorou muito. Sem outras informacoes, a melhor inferencia inicial e que:",
+      enunciado: "Uma linhagem celular continua consumindo glicose, mas a relação entre glicose consumida e ATP produzido piorou muito. Sem outras informacoes, a melhor inferencia inicial e que:",
       opcoes: [
         "o aproveitamento energetico da glicose ficou menos eficiente",
-        "a celula passou a produzir energia por osmose",
+        "a célula passou a produzir energia por osmose",
         "toda glicose foi convertida em DNA",
-        "o ATP deixou de ter funcao biologica"
+        "o ATP deixou de ter função biologica"
       ],
       correta: "o aproveitamento energetico da glicose ficou menos eficiente",
       comentario: "Se mais glicose gera proporcionalmente menos ATP, o rendimento global das vias energeticas foi comprometido.",
@@ -4811,7 +4811,7 @@ export const metabolismoCelular = {
       enunciado: "Qual formulacao expressa de modo equivalente a ideia de que 'a glicose e combustivel celular'?",
       opcoes: [
         "A glicose pode ser degradada para transferir energia a processos celulares",
-        "A glicose substitui todas as enzimas da celula",
+        "A glicose substitui todas as enzimas da célula",
         "A glicose atua como pigmento fotossintetico",
         "A glicose elimina a necessidade de ATP"
       ],
@@ -4841,7 +4841,7 @@ export const metabolismoCelular = {
       opcoes: [
         "permite formar um gradiente de protons aproveitado pela ATP sintase",
         "gera glicose no interior da mitocondria",
-        "substitui toda a funcao do ciclo de Krebs",
+        "substitui toda a função do ciclo de Krebs",
         "elimina a necessidade de membranas"
       ],
       correta: "permite formar um gradiente de protons aproveitado pela ATP sintase",
@@ -4866,7 +4866,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 7,
       cognicao: "interpretacao",
       tipo: "multipla_escolha",
-      enunciado: "Em um lago, a producao de oxigenio aumenta durante o dia e cai a noite. A leitura mais coerente desse dado e que:",
+      enunciado: "Em um lago, a produção de oxigenio aumenta durante o dia e cai a noite. A leitura mais coerente desse dado e que:",
       opcoes: [
         "a fotossintese se destaca sob luz, enquanto a respiracao continua ocorrendo sempre",
         "a respiracao so ocorre a noite",
@@ -4895,14 +4895,14 @@ export const metabolismoCelular = {
       dificuldadeNivel: 7,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "A frase 'mais mitocondrias significam, necessariamente, mais ATP em qualquer situacao' deve ser lida com cautela porque:",
+      enunciado: "A frase 'mais mitocondrias significam, necessariamente, mais ATP em qualquer situação' deve ser lida com cautela porque:",
       opcoes: [
-        "a producao de ATP tambem depende de disponibilidade de substratos, oxigenio e condicoes celulares",
-        "mitocondrias nao participam do metabolismo energetico",
+        "a produção de ATP também depende de disponibilidade de substratos, oxigenio e condicoes celulares",
+        "mitocondrias não participam do metabolismo energetico",
         "ATP so pode ser produzido no nucleo",
         "glicolise e fotossintese substituem completamente a respiracao"
       ],
-      correta: "a producao de ATP tambem depende de disponibilidade de substratos, oxigenio e condicoes celulares",
+      correta: "a produção de ATP também depende de disponibilidade de substratos, oxigenio e condicoes celulares",
       comentario: "Ter mais mitocondrias pode favorecer a capacidade energetica, mas o rendimento real depende de varios fatores associados.",
       tempoEstimado: 60,
       tags: ["mitocondria", "atp", "pegadinha"],
@@ -4926,12 +4926,12 @@ export const metabolismoCelular = {
       tipo: "multipla_escolha",
       enunciado: "Assinale a alternativa que preserva o sentido biologico de 'o metabolismo integra obtencao, transformacao e uso de energia'.",
       opcoes: [
-        "O metabolismo envolve vias que captam, convertem e aplicam energia em funcoes celulares",
+        "O metabolismo envolve vias que captam, convertem e aplicam energia em funções celulares",
         "Metabolismo e apenas digestao de nutrientes no organismo inteiro",
-        "Metabolismo significa somente producao de ATP na mitocondria",
+        "Metabolismo significa somente produção de ATP na mitocondria",
         "Metabolismo corresponde unicamente a processos de crescimento"
       ],
-      correta: "O metabolismo envolve vias que captam, convertem e aplicam energia em funcoes celulares",
+      correta: "O metabolismo envolve vias que captam, convertem e aplicam energia em funções celulares",
       comentario: "Essa reformulacao mantem a ideia central de integracao entre diferentes etapas e finalidades energeticas do metabolismo.",
       tempoEstimado: 55,
       tags: ["metabolismo", "equivalencia", "energia"],
@@ -4948,7 +4948,7 @@ export const metabolismoCelular = {
       serie: [1],
       materia: "Biologia",
       topico: "Metabolismo Celular",
-      subtopico: "Interpretacao aplicada",
+      subtopico: "Interpretação aplicada",
       dificuldadeLabel: "medio",
       dificuldadeNivel: 7,
       cognicao: "analise",
@@ -4958,7 +4958,7 @@ export const metabolismoCelular = {
         "houve prejuizo na atividade de enzimas dessa via",
         "a via passou automaticamente a produzir mais ATP",
         "o substrato foi convertido em oxigenio",
-        "o pH nao tem relacao com o metabolismo"
+        "o pH não tem relação com o metabolismo"
       ],
       correta: "houve prejuizo na atividade de enzimas dessa via",
       comentario: "Alteracoes de pH podem modificar a conformacao e o desempenho das enzimas, afetando o rendimento da via metabolica.",
@@ -4982,7 +4982,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 8,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Uma celula manteve glicolise e ciclo de Krebs parcialmente ativos, mas quase nao formou ATP por fosforilacao oxidativa. O dado aponta mais diretamente para falha em:",
+      enunciado: "Uma célula manteve glicolise e ciclo de Krebs parcialmente ativos, mas quase não formou ATP por fosforilacao oxidativa. O dado aponta mais diretamente para falha em:",
       opcoes: [
         "mecanismos ligados a cadeia respiratoria e ao aproveitamento do gradiente de protons",
         "duplicacao do DNA nuclear",
@@ -5011,7 +5011,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 8,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Uma planta apresenta reacoes luminosas funcionais, mas sintese muito baixa de compostos organicos. Se nao houver falta de CO2, a hipotese mais coerente e:",
+      enunciado: "Uma planta apresenta reacoes luminosas funcionais, mas sintese muito baixa de compostos organicos. Se não houver falta de CO2, a hipotese mais coerente e:",
       opcoes: [
         "comprometimento do uso de ATP e NADPH na fixacao do carbono",
         "excesso de glicolise no citoplasma",
@@ -5042,9 +5042,9 @@ export const metabolismoCelular = {
       tipo: "multipla_escolha",
       enunciado: "Do ponto de vista do rendimento energetico, qual comparacao e mais precisa?",
       opcoes: [
-        "Fermentacao e respiracao aerobica sao equivalentes porque ambas comecam pela glicolise",
+        "Fermentacao e respiracao aerobica são equivalentes porque ambas comecam pela glicolise",
         "Respiracao aerobica tende a render mais ATP porque continua o aproveitamento energetico para alem da glicolise",
-        "Fotossintese e sempre uma etapa obrigatoria antes da respiracao em qualquer celula",
+        "Fotossintese e sempre uma etapa obrigatoria antes da respiracao em qualquer célula",
         "Catabolismo e anabolismo apresentam sempre o mesmo saldo energetico"
       ],
       correta: "Respiracao aerobica tende a render mais ATP porque continua o aproveitamento energetico para alem da glicolise",
@@ -5074,7 +5074,7 @@ export const metabolismoCelular = {
         "a possibilidade de saturacao dos sitios ativos das enzimas",
         "o fato de que enzimas nunca interagem com substratos",
         "que o ATP substitui todas as enzimas",
-        "que fotossintese e respiracao sao identicas"
+        "que fotossintese e respiracao são identicas"
       ],
       correta: "a possibilidade de saturacao dos sitios ativos das enzimas",
       comentario: "A velocidade pode deixar de aumentar quando os sitios ativos disponiveis atingem um limite de ocupacao.",
@@ -5093,12 +5093,12 @@ export const metabolismoCelular = {
       serie: [1],
       materia: "Biologia",
       topico: "Metabolismo Celular",
-      subtopico: "Interpretacao aplicada",
+      subtopico: "Interpretação aplicada",
       dificuldadeLabel: "dificil",
       dificuldadeNivel: 10,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Duas culturas celulares receberam a mesma glicose. A cultura A tinha oxigenio, pH adequado e mitocondrias funcionais; a cultura B tinha pouco oxigenio, pH desfavoravel para enzimas e aumento de lactato. A interpretacao mais coerente e que a cultura B:",
+      enunciado: "Duas culturas celulares receberam a mesma glicose. A cultura A tinha oxigenio, pH adequado e mitocondrias funcionais; a cultura B tinha pouco oxigenio, pH desfavoravel para enzimas e aumento de lactato. A interpretação mais coerente e que a cultura B:",
       opcoes: [
         "manteve o mesmo rendimento energetico da cultura A",
         "passou a depender mais de vias menos eficientes e com menor aproveitamento global da glicose",
@@ -5122,7 +5122,7 @@ export const metabolismoCelular = {
       serie: [1],
       materia: "Biologia",
       topico: "Metabolismo Celular",
-      subtopico: "Interpretacao aplicada",
+      subtopico: "Interpretação aplicada",
       dificuldadeLabel: "medio",
       dificuldadeNivel: 7,
       cognicao: "analise",
@@ -5132,7 +5132,7 @@ export const metabolismoCelular = {
         "a glicolise ainda pode fornecer alguma energia, embora com baixo rendimento",
         "a fotossintese passou a ocorrer na mitocondria",
         "o ATP deixou de ser necessario para a sobrevivencia celular",
-        "a cadeia respiratoria nao participa da producao de ATP"
+        "a cadeia respiratoria não participa da produção de ATP"
       ],
       correta: "a glicolise ainda pode fornecer alguma energia, embora com baixo rendimento",
       comentario: "A sobrevivencia temporaria com forte queda de ATP sugere manutencao de uma via residual, como a glicolise, apesar da perda das etapas mais eficientes.",
@@ -5214,15 +5214,15 @@ export const metabolismoCelular = {
       dificuldadeNivel: 7,
       cognicao: "comparacao",
       tipo: "multipla_escolha",
-      enunciado: "Qual formulacao traduz melhor, sem mudar o sentido, a ideia de que 'o catabolismo sustenta outras funcoes celulares'?",
+      enunciado: "Qual formulacao traduz melhor, sem mudar o sentido, a ideia de que 'o catabolismo sustenta outras funções celulares'?",
       opcoes: [
         "o catabolismo libera energia e intermediarios que podem ser aproveitados em outras atividades",
         "o catabolismo impede qualquer forma de sintese celular",
-        "o catabolismo substitui todas as enzimas da celula",
+        "o catabolismo substitui todas as enzimas da célula",
         "o catabolismo e identico a fotossintese"
       ],
       correta: "o catabolismo libera energia e intermediarios que podem ser aproveitados em outras atividades",
-      comentario: "A degradacao de moleculas no catabolismo fornece energia e materia-prima para diferentes processos da celula.",
+      comentario: "A degradacao de moleculas no catabolismo fornece energia e materia-prima para diferentes processos da célula.",
       tempoEstimado: 55,
       tags: ["catabolismo", "equivalencia", "energia"],
       habilidades: ["reformular-o-papel-do-catabolismo-no-funcionamento-celular"],
@@ -5243,7 +5243,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 7,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Uma questao afirma que 'sem oxigenio nao existe qualquer producao de ATP'. A melhor resposta a essa afirmacao e que ela esta:",
+      enunciado: "Uma questao afirma que 'sem oxigenio não existe qualquer produção de ATP'. A melhor resposta a essa afirmacao e que ela esta:",
       opcoes: [
         "correta, porque toda forma de ATP depende de cadeia respiratoria",
         "incorreta, porque a glicolise ainda pode gerar ATP em ausencia de oxigenio",
@@ -5251,7 +5251,7 @@ export const metabolismoCelular = {
         "incorreta apenas em plantas iluminadas"
       ],
       correta: "incorreta, porque a glicolise ainda pode gerar ATP em ausencia de oxigenio",
-      comentario: "A ausencia de oxigenio compromete a respiracao aerobica, mas nao impede necessariamente a producao limitada de ATP pela glicolise.",
+      comentario: "A ausencia de oxigenio compromete a respiracao aerobica, mas não impede necessariamente a produção limitada de ATP pela glicolise.",
       tempoEstimado: 60,
       tags: ["oxigenio", "atp", "glicolise"],
       habilidades: ["corrigir-pegadinhas-sobre-producao-de-atp-sem-oxigenio"],
@@ -5301,7 +5301,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 7,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Uma celula aumentou muito a realizacao de transporte ativo, sintese proteica e movimento interno. O aumento conjunto desses processos sugere elevacao sobretudo na necessidade de:",
+      enunciado: "Uma célula aumentou muito a realizacao de transporte ativo, sintese proteica e movimento interno. O aumento conjunto desses processos sugere elevacao sobretudo na necessidade de:",
       opcoes: [
         "ATP disponivel",
         "clorofila livre",
@@ -5338,7 +5338,7 @@ export const metabolismoCelular = {
         "ao DNA do nucleo"
       ],
       correta: "a agua utilizada nas reacoes luminosas",
-      comentario: "Na fotossintese, o oxigenio liberado esta ligado a fotolise da agua, nao diretamente ao CO2.",
+      comentario: "Na fotossintese, o oxigenio liberado esta ligado a fotolise da agua, não diretamente ao CO2.",
       tempoEstimado: 60,
       tags: ["oxigenio", "fotossintese", "agua"],
       habilidades: ["corrigir-erros-conceituais-sobre-origem-do-oxigenio-fotossintetico"],
@@ -5354,7 +5354,7 @@ export const metabolismoCelular = {
       serie: [1],
       materia: "Biologia",
       topico: "Metabolismo Celular",
-      subtopico: "Interpretacao aplicada",
+      subtopico: "Interpretação aplicada",
       dificuldadeLabel: "medio",
       dificuldadeNivel: 7,
       cognicao: "interpretacao",
@@ -5362,7 +5362,7 @@ export const metabolismoCelular = {
       enunciado: "Uma planta ficou varios dias no escuro e perdeu parte de suas reservas, mas permaneceu viva. Isso mostra que, nesse periodo, predominou:",
       opcoes: [
         "consumo de reservas organicas na respiracao celular",
-        "formacao intensa de amido por fotossintese",
+        "formação intensa de amido por fotossintese",
         "substituicao do metabolismo por repouso absoluto",
         "transformacao de ATP em luz"
       ],
@@ -5388,7 +5388,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 8,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Uma via metabolica teve queda abrupta de rendimento depois que uma substancia passou a ocupar o sitio ativo de sua enzima-chave. A melhor interpretacao e que houve:",
+      enunciado: "Uma via metabolica teve queda abrupta de rendimento depois que uma substancia passou a ocupar o sitio ativo de sua enzima-chave. A melhor interpretação e que houve:",
       opcoes: [
         "inibicao da enzima com prejuizo para a interacao com o substrato",
         "aumento inevitavel da velocidade reacional",
@@ -5417,12 +5417,12 @@ export const metabolismoCelular = {
       dificuldadeNivel: 8,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Uma celula manteve glicolise normal, formou piruvato, mas a producao de ATP adicional caiu muito e o NADH se acumulou. O quadro sugere principalmente falha em:",
+      enunciado: "Uma célula manteve glicolise normal, formou piruvato, mas a produção de ATP adicional caiu muito e o NADH se acumulou. O quadro sugere principalmente falha em:",
       opcoes: [
         "etapas mitocondriais de oxidacao do NADH",
         "fotolise da agua",
         "sintese de ribossomos",
-        "formacao da membrana nuclear"
+        "formação da membrana nuclear"
       ],
       correta: "etapas mitocondriais de oxidacao do NADH",
       comentario: "O acumulo de NADH junto com baixo ATP adicional aponta para dificuldade de aproveitar esses eletrons na cadeia respiratoria.",
@@ -5446,7 +5446,7 @@ export const metabolismoCelular = {
       dificuldadeNivel: 8,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Se uma planta produz ATP nas reacoes luminosas, mas nao consegue reduzir adequadamente compostos do ciclo de Calvin, a hipotese mais coerente e insuficiencia de:",
+      enunciado: "Se uma planta produz ATP nas reacoes luminosas, mas não consegue reduzir adequadamente compostos do ciclo de Calvin, a hipotese mais coerente e insuficiencia de:",
       opcoes: [
         "NADPH",
         "DNA nuclear",
@@ -5483,7 +5483,7 @@ export const metabolismoCelular = {
         "Respiracao e sempre menos eficiente que fermentacao"
       ],
       correta: "A respiracao aerobica e a fermentacao podem iniciar com glicolise, mas diferem muito no aproveitamento energetico posterior",
-      comentario: "Ambas compartilham a glicolise, mas nao sao equivalentes, pois o rendimento final e o destino do piruvato mudam bastante.",
+      comentario: "Ambas compartilham a glicolise, mas não são equivalentes, pois o rendimento final e o destino do piruvato mudam bastante.",
       tempoEstimado: 80,
       tags: ["respiracao-celular", "fermentacao", "comparacao"],
       habilidades: ["distinguir-semelhancas-e-diferencas-sem-exagerar-equivalencias"],
@@ -5499,12 +5499,12 @@ export const metabolismoCelular = {
       serie: [1],
       materia: "Biologia",
       topico: "Metabolismo Celular",
-      subtopico: "Interpretacao aplicada",
+      subtopico: "Interpretação aplicada",
       dificuldadeLabel: "dificil",
       dificuldadeNivel: 8,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Em um experimento, duas amostras celulares consumiram a mesma glicose. A amostra A produziu muito ATP e pouco lactato; a B produziu pouco ATP e bastante lactato. A melhor interpretacao e que a amostra B:",
+      enunciado: "Em um experimento, duas amostras celulares consumiram a mesma glicose. A amostra A produziu muito ATP e pouco lactato; a B produziu pouco ATP e bastante lactato. A melhor interpretação e que a amostra B:",
       opcoes: [
         "dependeu mais de vias anaerobias de baixo rendimento",
         "ativou intensamente a fotossintese",
@@ -5533,15 +5533,15 @@ export const metabolismoCelular = {
       dificuldadeNivel: 8,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Se uma droga impede o reaproveitamento do gradiente de protons pela ATP sintase, a consequencia mais direta sera:",
+      enunciado: "Se uma droga impede o reaproveitamento do gradiente de protons pela ATP sintase, a consequência mais direta sera:",
       opcoes: [
         "queda importante da sintese de ATP por fosforilacao oxidativa",
-        "aumento da producao de glicose na mitocondria",
+        "aumento da produção de glicose na mitocondria",
         "transformacao do NADH em oxigenio",
         "suspensao imediata da glicolise citoplasmatica"
       ],
       correta: "queda importante da sintese de ATP por fosforilacao oxidativa",
-      comentario: "Sem aproveitar o gradiente de protons, a ATP sintase nao consegue manter a producao eficiente de ATP na cadeia respiratoria.",
+      comentario: "Sem aproveitar o gradiente de protons, a ATP sintase não consegue manter a produção eficiente de ATP na cadeia respiratoria.",
       tempoEstimado: 75,
       tags: ["atp-sintase", "protons", "fosforilacao-oxidativa"],
       habilidades: ["analisar-falhas-no-aproveitamento-do-gradiente-de-protons"],
@@ -5562,14 +5562,14 @@ export const metabolismoCelular = {
       dificuldadeNivel: 8,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Uma via metabolica teve o mesmo numero de enzimas disponiveis, mas sua velocidade caiu apos mudanca forte de pH. Isso indica que o fator decisivo foi:",
+      enunciado: "Uma via metabolica teve o mesmo número de enzimas disponiveis, mas sua velocidade caiu apos mudanca forte de pH. Isso indica que o fator decisivo foi:",
       opcoes: [
-        "alteracao funcional das enzimas, e nao sua quantidade",
+        "alteracao funcional das enzimas, e não sua quantidade",
         "desaparecimento do ATP do organismo",
         "ativacao da fotossintese",
         "substituicao do substrato por oxigenio"
       ],
-      correta: "alteracao funcional das enzimas, e nao sua quantidade",
+      correta: "alteracao funcional das enzimas, e não sua quantidade",
       comentario: "O pH pode comprometer o desempenho enzimatico mesmo sem reduzir a quantidade total de enzimas presentes.",
       tempoEstimado: 75,
       tags: ["enzimas", "ph", "via-metabolica"],
@@ -5594,9 +5594,9 @@ export const metabolismoCelular = {
       enunciado: "Uma planta apresenta boa captacao de luz, mas baixa acumulacao de amido e pouca fixacao de carbono. O dado sugere, de forma mais coerente, problema predominante em:",
       opcoes: [
         "etapas de sintese organica posteriores as reacoes luminosas",
-        "producao de ribossomos no nucleolo",
+        "produção de ribossomos no nucleolo",
         "glicolise muscular",
-        "formacao de membrana plasmatica"
+        "formação de membrana plasmatica"
       ],
       correta: "etapas de sintese organica posteriores as reacoes luminosas",
       comentario: "Se a luz e captada, mas a sintese organica cai, o problema tende a estar no aproveitamento de ATP/NADPH e na fixacao do carbono.",
@@ -5624,8 +5624,8 @@ export const metabolismoCelular = {
       opcoes: [
         "Moleculas organicas podem funcionar como reserva, enquanto ATP atua como intermediario energetico de uso rapido",
         "ATP e reserva de longo prazo, e glicose serve apenas para hereditariedade",
-        "Reserva energetica e ATP sao exatamente a mesma coisa",
-        "Glicose e ATP so existem em celulas vegetais"
+        "Reserva energetica e ATP são exatamente a mesma coisa",
+        "Glicose e ATP so existem em células vegetais"
       ],
       correta: "Moleculas organicas podem funcionar como reserva, enquanto ATP atua como intermediario energetico de uso rapido",
       comentario: "A questao diferencia corretamente reserva de energia e moeda energetica imediata, evitando confusao conceitual comum.",
@@ -5657,7 +5657,7 @@ export const metabolismoCelular = {
         "substituicao da glicolise por replicacao"
       ],
       correta: "queda na capacidade de sustentar alto rendimento aerobico",
-      comentario: "Mitocondrias danificadas comprometem o principal sistema de alto rendimento para producao de ATP em tecidos exigentes.",
+      comentario: "Mitocondrias danificadas comprometem o principal sistema de alto rendimento para produção de ATP em tecidos exigentes.",
       tempoEstimado: 80,
       tags: ["mitocondria", "tecido", "rendimento-energetico"],
       habilidades: ["inferir-limitacoes-energeticas-em-tecidos-de-alta-demanda"],
@@ -5680,13 +5680,13 @@ export const metabolismoCelular = {
       tipo: "multipla_escolha",
       enunciado: "Uma prova traz a frase 'enzimas tornam qualquer reacao espontanea'. A critica mais adequada e que enzimas:",
       opcoes: [
-        "facilitam reacoes possiveis nas condicoes biologicas, mas nao tornam qualquer processo espontaneo",
+        "facilitam reacoes possíveis nas condicoes biologicas, mas não tornam qualquer processo espontaneo",
         "produzem energia suficiente para realizar qualquer transformacao",
         "dispensam completamente substratos",
         "funcionam somente em ausencia de agua"
       ],
-      correta: "facilitam reacoes possiveis nas condicoes biologicas, mas nao tornam qualquer processo espontaneo",
-      comentario: "Enzimas reduzem barreiras energeticas, mas nao criam possibilidades termodinamicas inexistentes para qualquer reacao.",
+      correta: "facilitam reacoes possíveis nas condicoes biologicas, mas não tornam qualquer processo espontaneo",
+      comentario: "Enzimas reduzem barreiras energeticas, mas não criam possibilidades termodinamicas inexistentes para qualquer reacao.",
       tempoEstimado: 85,
       tags: ["enzimas", "pegadinha", "espontaneidade"],
       habilidades: ["corrigir-generalizacoes-indevidas-sobre-acao-enzimatica"],
@@ -5707,12 +5707,12 @@ export const metabolismoCelular = {
       dificuldadeNivel: 9,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Se uma folha recebe luz, agua e CO2, mas nao consegue formar ATP nas reacoes luminosas, o resultado mais provavel e:",
+      enunciado: "Se uma folha recebe luz, agua e CO2, mas não consegue formar ATP nas reacoes luminosas, o resultado mais provavel e:",
       opcoes: [
         "grave comprometimento da sintese de compostos organicos",
         "aumento do rendimento da fermentacao alcoolica",
         "substituicao do ciclo de Calvin por glicolise",
-        "formacao de glicose diretamente no nucleo"
+        "formação de glicose diretamente no nucleo"
       ],
       correta: "grave comprometimento da sintese de compostos organicos",
       comentario: "Sem ATP nas reacoes luminosas, falta energia imediata para a etapa de fixacao e reducao do carbono.",
@@ -5731,12 +5731,12 @@ export const metabolismoCelular = {
       serie: [1],
       materia: "Biologia",
       topico: "Metabolismo Celular",
-      subtopico: "Interpretacao aplicada",
+      subtopico: "Interpretação aplicada",
       dificuldadeLabel: "dificil",
       dificuldadeNivel: 9,
       cognicao: "analise",
       tipo: "multipla_escolha",
-      enunciado: "Em um experimento, a remocao de oxigenio nao impediu totalmente a producao de ATP, mas a queda foi acentuada. Entre as inferencias a seguir, a mais precisa e:",
+      enunciado: "Em um experimento, a remocao de oxigenio não impediu totalmente a produção de ATP, mas a queda foi acentuada. Entre as inferencias a seguir, a mais precisa e:",
       opcoes: [
         "vias sem dependencia direta de oxigenio ainda funcionam, mas com menor rendimento global",
         "a cadeia respiratoria passou a render mais ATP",
@@ -5765,14 +5765,14 @@ export const metabolismoCelular = {
       dificuldadeNivel: 9,
       cognicao: "comparacao",
       tipo: "multipla_escolha",
-      enunciado: "Qual leitura e mais adequada para a relacao entre fotossintese, respiracao celular e cadeia alimentar?",
+      enunciado: "Qual leitura e mais adequada para a relação entre fotossintese, respiracao celular e cadeia alimentar?",
       opcoes: [
-        "A fotossintese introduz materia organica e energia quimica que depois podem sustentar a respiracao de outros organismos",
+        "A fotossintese introduz materia organica e energia química que depois podem sustentar a respiracao de outros organismos",
         "A respiracao celular cria a energia inicial das cadeias alimentares",
         "A cadeia alimentar independe de fotossintese e respiracao",
         "A fotossintese ocorre apenas em consumidores"
       ],
-      correta: "A fotossintese introduz materia organica e energia quimica que depois podem sustentar a respiracao de outros organismos",
+      correta: "A fotossintese introduz materia organica e energia química que depois podem sustentar a respiracao de outros organismos",
       comentario: "Essa formulacao integra corretamente o papel da fotossintese na base energetica dos ecossistemas e o da respiracao no aproveitamento dessa energia.",
       tempoEstimado: 85,
       tags: ["cadeia-alimentar", "fotossintese", "respiracao-celular"],
@@ -5818,7 +5818,7 @@ export const metabolismoCelular = {
       serie: [1],
       materia: "Biologia",
       topico: "Metabolismo Celular",
-      subtopico: "Interpretacao aplicada",
+      subtopico: "Interpretação aplicada",
       dificuldadeLabel: "dificil",
       dificuldadeNivel: 10,
       cognicao: "analise",

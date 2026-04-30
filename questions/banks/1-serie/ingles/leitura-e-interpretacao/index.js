@@ -1,19 +1,19 @@
 ﻿export const leituraEInterpretacao = {
   "id": "ingles_leitura_e_interpretacao",
-  "materia": "Ingles",
+  "materia": "Inglês",
   "serie": [
     1
   ],
-  "topico": "Leitura e Interpretacao",
+  "topico": "Leitura e Interpretação",
   "metadados": {
     "disciplinaId": "ingles",
     "base": "ESCOLAR",
     "seloEditorial": "VERIFICADA",
-    "eixo": "Leitura inicial em ingles",
-    "frente": "Estrategias basicas para localizar e compreender informacoes em textos curtos",
+    "eixo": "Leitura inicial em inglês",
+    "frente": "Estratégias basicas para localizar e compreender informações em textos curtos",
     "searchAliases": [
-      "leitura em ingles",
-      "interpretacao ingles",
+      "leitura em inglês",
+      "interpretação inglês",
       "reading basics",
       "skimming",
       "scanning",
@@ -21,23 +21,23 @@
     ],
     "subtopicosBase": [
       "Ideia principal",
-      "Informacoes explicitas",
+      "Informações explícitas",
       "Skimming",
       "Scanning",
       "Elementos visuais de apoio",
       "Cognatos em contexto",
       "Falsos cognatos em leitura",
-      "Generos textuais simples",
-      "Proposito comunicativo",
+      "Gêneros textuais simples",
+      "Propósito comunicativo",
       "Inferencia basica"
     ],
     "habilidadesBase": [
-      "localizar informacoes explicitas em textos curtos",
+      "localizar informações explícitas em textos curtos",
       "identificar a ideia principal de pequenos textos",
-      "usar estrategias de skimming e scanning",
+      "usar estratégias de skimming e scanning",
       "relacionar imagens, titulos e palavras-chave ao sentido global",
-      "inferir significados basicos a partir do contexto",
-      "reconhecer o proposito comunicativo de generos simples"
+      "inferir significados básicos a partir do contexto",
+      "reconhecer o propósito comunicativo de gêneros simples"
     ],
     "auditado": true,
     "auditadoEm": "2026-04-12",
@@ -49,22 +49,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, Ideia principal refere-se a:",
+      "enunciado": "Em Inglês, Ideia principal refere-se a:",
       "opcoes": [
-        "a identificacao do assunto central que organiza as demais informacoes do texto",
+        "a identificacao do assunto central que organiza as demais informações do texto",
         "a localizacao de dados que aparecem de forma direta no texto",
-        "a leitura rapida para captar a ideia geral antes da analise detalhada",
+        "a leitura rápida para captar a ideia geral antes da análise detalhada",
         "a leitura seletiva voltada para encontrar uma informacao especifica"
       ],
-      "correta": "a identificacao do assunto central que organiza as demais informacoes do texto",
-      "comentario": "Ideia principal refere-se a identificacao do assunto central que organiza as demais informacoes do texto.",
+      "correta": "a identificacao do assunto central que organiza as demais informações do texto",
+      "comentario": "Ideia principal refere-se a identificacao do assunto central que organiza as demais informações do texto.",
       "tempoEstimado": 20,
       "tags": [
         "leitura-e-interpretacao",
@@ -88,22 +88,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: um texto curto menciona uniforme, intervalo e cantina, mas todo o conteudo gira em torno de regras da escola. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: um texto curto menciona uniforme, intervalo e cantina, mas todo o conteúdo gira em torno de regras da escola. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
         "Ideia principal",
-        "Informacoes explicitas",
+        "Informações explícitas",
         "Skimming",
         "Scanning"
       ],
       "correta": "Ideia principal",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de ideia principal.",
+      "comentario": "A situação apresentada é melhor compreendida por meio de ideia principal.",
       "tempoEstimado": 20,
       "tags": [
         "leitura-e-interpretacao",
@@ -127,8 +127,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -166,14 +166,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente ideia principal?",
+      "enunciado": "Qual alternativa NÃO representa corretamente ideia principal?",
       "opcoes": [
         "Lucy studies in the morning.",
         "The text is mainly about school rules.",
@@ -181,7 +181,7 @@
         "responder perguntas sobre o tema central de textos curtos."
       ],
       "correta": "Lucy studies in the morning.",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao ideia principal.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não ideia principal.",
       "tempoEstimado": 25,
       "tags": [
         "leitura-e-interpretacao",
@@ -205,14 +205,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar ideia principal, o foco principal e:",
+      "enunciado": "Ao estudar ideia principal, o foco principal é:",
       "opcoes": [
         "reconhecer o tema central e diferenciar ideia geral de detalhe",
         "identificar respostas literais sem depender de grande inferencia",
@@ -244,21 +244,21 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Informacoes explicitas trata de a localizacao de dados que aparecem de forma direta no texto, Ideia principal destaca:",
+      "enunciado": "Enquanto Informações explícitas trata de a localizacao de dados que aparecem de forma direta no texto, Ideia principal destaca:",
       "opcoes": [
-        "A identificacao do assunto central que organiza as demais informacoes do texto.",
+        "A identificacao do assunto central que organiza as demais informações do texto.",
         "A localizacao de dados que aparecem de forma direta no texto.",
-        "A leitura rapida para captar a ideia geral antes da analise detalhada.",
+        "A leitura rápida para captar a ideia geral antes da análise detalhada.",
         "A leitura seletiva voltada para encontrar uma informacao especifica."
       ],
-      "correta": "A identificacao do assunto central que organiza as demais informacoes do texto.",
+      "correta": "A identificacao do assunto central que organiza as demais informações do texto.",
       "comentario": "A comparacao correta mostra a especificidade de ideia principal.",
       "tempoEstimado": 30,
       "tags": [
@@ -283,22 +283,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma atividade de sala, um texto curto menciona uniforme, intervalo e cantina, mas todo o conteudo gira em torno de regras da escola. Para responder bem, o estudante deve mobilizar principalmente:",
+      "enunciado": "Em uma atividade de sala, um texto curto menciona uniforme, intervalo e cantina, mas todo o conteúdo gira em torno de regras da escola. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
         "Ideia principal",
-        "Informacoes explicitas",
+        "Informações explícitas",
         "Scanning",
         "Elementos visuais de apoio"
       ],
       "correta": "Ideia principal",
-      "comentario": "Esse tipo de tarefa exige dominio de ideia principal.",
+      "comentario": "Esse tipo de tarefa exige domínio de ideia principal.",
       "tempoEstimado": 35,
       "tags": [
         "leitura-e-interpretacao",
@@ -322,14 +322,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de Ideia principal?",
+      "enunciado": "Qual situação pratica depende mais diretamente de Ideia principal?",
       "opcoes": [
         "responder perguntas sobre o tema central de textos curtos",
         "retirar do texto nomes, horarios, lugares e fatos escritos claramente",
@@ -361,22 +361,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre ideia principal?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre ideia principal?",
       "opcoes": [
         "o caso e resolvido com foco em ideia principal.",
-        "o caso e melhor resolvido por informacoes explicitas.",
+        "o caso e melhor resolvido por informações explícitas.",
         "o caso elimina a necessidade de skimming.",
         "o caso impede qualquer uso de scanning."
       ],
       "correta": "o caso e resolvido com foco em ideia principal.",
-      "comentario": "A conclusao correta retoma a funcao central de ideia principal.",
+      "comentario": "A conclusão correta retoma a função central de ideia principal.",
       "tempoEstimado": 40,
       "tags": [
         "leitura-e-interpretacao",
@@ -400,8 +400,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -410,7 +410,7 @@
       "enunciado": "Se a turma fosse revisar ideia principal, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
         "Como ideia principal aparece em responder perguntas sobre o tema central de textos curtos?",
-        "Como informacoes explicitas substitui totalmente responder perguntas sobre o tema central de textos curtos?",
+        "Como informações explícitas substitui totalmente responder perguntas sobre o tema central de textos curtos?",
         "Por que skimming torna desnecessario estudar Ideia principal?",
         "De que modo scanning elimina toda leitura de contexto?"
       ],
@@ -439,22 +439,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em ideia principal e pensar que:",
+      "enunciado": "Um erro comum em ideia principal é pensar que:",
       "opcoes": [
         "a ideia principal e sempre a primeira frase do texto",
-        "toda pergunta de leitura exige interpretacao implicita",
+        "toda pergunta de leitura exige interpretação implícita",
         "skimming significa ignorar completamente o texto",
         "scanning serve para entender o texto inteiro em profundidade"
       ],
       "correta": "a ideia principal e sempre a primeira frase do texto",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de ideia principal.",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de ideia principal.",
       "tempoEstimado": 45,
       "tags": [
         "leitura-e-interpretacao",
@@ -478,21 +478,21 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"para encontrar a ideia principal basta traduzir cada palavra separadamente\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"para encontrar a ideia principal basta traduzir cada palavra separadamente\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque a identificacao do assunto central que organiza as demais informacoes do texto.",
-        "A afirmacao esta correta, pois resume integralmente ideia principal.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque a identificacao do assunto central que organiza as demais informações do texto.",
+        "A afirmação está correta, pois resume integralmente ideia principal.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque a identificacao do assunto central que organiza as demais informacoes do texto.",
+      "correta": "A afirmação está incorreta, porque a identificacao do assunto central que organiza as demais informações do texto.",
       "comentario": "A fala do estudante apresenta um equivoco conceitual sobre ideia principal.",
       "tempoEstimado": 45,
       "tags": [
@@ -517,8 +517,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -526,13 +526,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Se ideia principal fosse ignorado(a) em responder perguntas sobre o tema central de textos curtos, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em responder perguntas sobre o tema central de textos curtos.",
-        "a questao seria resolvida automaticamente por informacoes explicitas.",
-        "nenhuma interpretacao seria alterada, porque Ideia principal nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em responder perguntas sobre o tema central de textos curtos.",
+        "a questao seria resolvida automaticamente por informações explícitas.",
+        "nenhuma interpretação seria alterada, porque Ideia principal não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em responder perguntas sobre o tema central de textos curtos.",
-      "comentario": "Ignorar ideia principal compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em responder perguntas sobre o tema central de textos curtos.",
+      "comentario": "Ignorar ideia principal compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "leitura-e-interpretacao",
@@ -556,14 +556,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor Ideia principal?",
+      "enunciado": "Qual trecho ou ação ilustra melhor Ideia principal?",
       "opcoes": [
         "The text is mainly about school rules.",
         "Lucy studies in the morning.",
@@ -571,7 +571,7 @@
         "The student looks only for the date of the school trip."
       ],
       "correta": "The text is mainly about school rules.",
-      "comentario": "O item correto e o que melhor exemplifica ideia principal.",
+      "comentario": "O item correto é o que melhor exemplifica ideia principal.",
       "tempoEstimado": 50,
       "tags": [
         "leitura-e-interpretacao",
@@ -595,8 +595,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
@@ -604,12 +604,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Ao encontrar o exemplo \"The text is mainly about school rules.\", a leitura mais adequada e:",
       "opcoes": [
-        "o leitor deve identificar o tema central do texto, e nao um detalhe isolado",
+        "o leitor deve identificar o tema central do texto, e não um detalhe isolado",
         "a resposta pode ser retirada literalmente do enunciado ou do texto",
         "o objetivo e captar rapidamente o assunto do texto",
         "a atencao esta voltada para uma informacao especifica"
       ],
-      "correta": "o leitor deve identificar o tema central do texto, e nao um detalhe isolado",
+      "correta": "o leitor deve identificar o tema central do texto, e não um detalhe isolado",
       "comentario": "A leitura correta do exemplo revela o papel de ideia principal.",
       "tempoEstimado": 55,
       "tags": [
@@ -634,14 +634,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar ideia principal?",
+      "enunciado": "Qual estratégia ajuda mais a estudar ideia principal?",
       "opcoes": [
         "observar titulo, palavras recorrentes e repeticao de assunto",
         "procurar palavras-chave e conferir a informacao exata no trecho",
@@ -649,7 +649,7 @@
         "procurar visualmente a palavra ou categoria pedida na questao"
       ],
       "correta": "observar titulo, palavras recorrentes e repeticao de assunto",
-      "comentario": "A estrategia correta fortalece o dominio de ideia principal.",
+      "comentario": "A estratégia correta fortalece o domínio de ideia principal.",
       "tempoEstimado": 55,
       "tags": [
         "leitura-e-interpretacao",
@@ -673,14 +673,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Ideia principal e mais cobrado quando:",
+      "enunciado": "Em uma prova, Ideia principal é mais cobrado quando:",
       "opcoes": [
         "a questao pede o assunto principal ou o melhor titulo para o texto",
         "a atividade pede informacao direta como nome, horario ou lugar",
@@ -688,7 +688,7 @@
         "a pergunta exige encontrar um dado pontual sem resumir o texto inteiro"
       ],
       "correta": "a questao pede o assunto principal ou o melhor titulo para o texto",
-      "comentario": "Esse e o tipo de demanda em que ideia principal aparece com mais frequencia.",
+      "comentario": "Esse é o tipo de demanda em que ideia principal aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "leitura-e-interpretacao",
@@ -712,8 +712,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -721,13 +721,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Ideia principal?",
       "opcoes": [
-        "Em sintese, a identificacao do assunto central que organiza as demais informacoes do texto.",
+        "Em sintese, a identificacao do assunto central que organiza as demais informações do texto.",
         "Em sintese, a localizacao de dados que aparecem de forma direta no texto.",
-        "Em sintese, a leitura rapida para captar a ideia geral antes da analise detalhada.",
+        "Em sintese, a leitura rápida para captar a ideia geral antes da análise detalhada.",
         "Em sintese, a leitura seletiva voltada para encontrar uma informacao especifica."
       ],
-      "correta": "Em sintese, a identificacao do assunto central que organiza as demais informacoes do texto.",
-      "comentario": "O resumo correto recupera o nucleo de ideia principal.",
+      "correta": "Em sintese, a identificacao do assunto central que organiza as demais informações do texto.",
+      "comentario": "O resumo correto recupera o núcleo de ideia principal.",
       "tempoEstimado": 60,
       "tags": [
         "leitura-e-interpretacao",
@@ -751,22 +751,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Ideia principal?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em Ideia principal?",
       "opcoes": [
-        "The text is mainly about school rules. -> o leitor deve identificar o tema central do texto, e nao um detalhe isolado",
-        "Lucy studies in the morning. -> o leitor deve identificar o tema central do texto, e nao um detalhe isolado",
+        "The text is mainly about school rules. -> o leitor deve identificar o tema central do texto, e não um detalhe isolado",
+        "Lucy studies in the morning. -> o leitor deve identificar o tema central do texto, e não um detalhe isolado",
         "The student reads the title and the first lines to get the general idea. -> a atencao esta voltada para uma informacao especifica",
         "The student looks only for the date of the school trip. -> a resposta pode ser retirada literalmente do enunciado ou do texto"
       ],
-      "correta": "The text is mainly about school rules. -> o leitor deve identificar o tema central do texto, e nao um detalhe isolado",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em ideia principal.",
+      "correta": "The text is mainly about school rules. -> o leitor deve identificar o tema central do texto, e não um detalhe isolado",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em ideia principal.",
       "tempoEstimado": 65,
       "tags": [
         "leitura-e-interpretacao",
@@ -790,8 +790,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Ideia principal",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -829,22 +829,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Informacoes explicitas",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Informações explícitas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, Informacoes explicitas refere-se a:",
+      "enunciado": "Em Inglês, Informações explícitas refere-se a:",
       "opcoes": [
         "a localizacao de dados que aparecem de forma direta no texto",
-        "a leitura rapida para captar a ideia geral antes da analise detalhada",
+        "a leitura rápida para captar a ideia geral antes da análise detalhada",
         "a leitura seletiva voltada para encontrar uma informacao especifica",
-        "o uso de imagens, layout, icones e titulos para ajudar na compreensao do texto"
+        "o uso de imagens, layout, icones e titulos para ajudar na compreensão do texto"
       ],
       "correta": "a localizacao de dados que aparecem de forma direta no texto",
-      "comentario": "Informacoes explicitas refere-se a localizacao de dados que aparecem de forma direta no texto.",
+      "comentario": "Informações explícitas refere-se a localizacao de dados que aparecem de forma direta no texto.",
       "tempoEstimado": 20,
       "tags": [
         "leitura-e-interpretacao",
@@ -868,22 +868,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Informacoes explicitas",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Informações explícitas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: um anuncio informa dia, horario e local de um evento escolar. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: um anuncio informa dia, horario e local de um evento escolar. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
-        "Informacoes explicitas",
+        "Informações explícitas",
         "Skimming",
         "Scanning",
         "Elementos visuais de apoio"
       ],
-      "correta": "Informacoes explicitas",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de informacoes explicitas.",
+      "correta": "Informações explícitas",
+      "comentario": "A situação apresentada é melhor compreendida por meio de informações explícitas.",
       "tempoEstimado": 20,
       "tags": [
         "leitura-e-interpretacao",
@@ -907,14 +907,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Informacoes explicitas",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Informações explícitas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual exemplo combina melhor com informacoes explicitas?",
+      "enunciado": "Qual exemplo combina melhor com informações explícitas?",
       "opcoes": [
         "Lucy studies in the morning.",
         "The student reads the title and the first lines to get the general idea.",
@@ -922,7 +922,7 @@
         "A poster uses icons and colors to reinforce the message."
       ],
       "correta": "Lucy studies in the morning.",
-      "comentario": "O exemplo correto ilustra o uso de informacoes explicitas.",
+      "comentario": "O exemplo correto ilustra o uso de informações explícitas.",
       "tempoEstimado": 25,
       "tags": [
         "leitura-e-interpretacao",
@@ -946,14 +946,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Informacoes explicitas",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Informações explícitas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente informacoes explicitas?",
+      "enunciado": "Qual alternativa NÃO representa corretamente informações explícitas?",
       "opcoes": [
         "The student reads the title and the first lines to get the general idea.",
         "Lucy studies in the morning.",
@@ -961,7 +961,7 @@
         "retirar do texto nomes, horarios, lugares e fatos escritos claramente."
       ],
       "correta": "The student reads the title and the first lines to get the general idea.",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao informacoes explicitas.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não informações explícitas.",
       "tempoEstimado": 25,
       "tags": [
         "leitura-e-interpretacao",
@@ -985,14 +985,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Informacoes explicitas",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Informações explícitas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar informacoes explicitas, o foco principal e:",
+      "enunciado": "Ao estudar informações explícitas, o foco principal é:",
       "opcoes": [
         "identificar respostas literais sem depender de grande inferencia",
         "obter visao global do texto em pouco tempo",
@@ -1000,7 +1000,7 @@
         "relacionar pistas visuais ao sentido global da mensagem"
       ],
       "correta": "identificar respostas literais sem depender de grande inferencia",
-      "comentario": "Informacoes explicitas concentra-se em identificar respostas literais sem depender de grande inferencia.",
+      "comentario": "Informações explícitas concentra-se em identificar respostas literais sem depender de grande inferencia.",
       "tempoEstimado": 30,
       "tags": [
         "leitura-e-interpretacao",
@@ -1024,22 +1024,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Informacoes explicitas",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Informações explícitas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Skimming trata de a leitura rapida para captar a ideia geral antes da analise detalhada, Informacoes explicitas destaca:",
+      "enunciado": "Enquanto Skimming trata de a leitura rápida para captar a ideia geral antes da análise detalhada, Informações explícitas destaca:",
       "opcoes": [
         "A localizacao de dados que aparecem de forma direta no texto.",
-        "A leitura rapida para captar a ideia geral antes da analise detalhada.",
+        "A leitura rápida para captar a ideia geral antes da análise detalhada.",
         "A leitura seletiva voltada para encontrar uma informacao especifica.",
-        "O uso de imagens, layout, icones e titulos para ajudar na compreensao do texto."
+        "O uso de imagens, layout, icones e titulos para ajudar na compreensão do texto."
       ],
       "correta": "A localizacao de dados que aparecem de forma direta no texto.",
-      "comentario": "A comparacao correta mostra a especificidade de informacoes explicitas.",
+      "comentario": "A comparacao correta mostra a especificidade de informações explícitas.",
       "tempoEstimado": 30,
       "tags": [
         "leitura-e-interpretacao",
@@ -1063,22 +1063,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Informacoes explicitas",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Informações explícitas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
       "enunciado": "Em uma atividade de sala, um anuncio informa dia, horario e local de um evento escolar. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
-        "Informacoes explicitas",
+        "Informações explícitas",
         "Skimming",
         "Elementos visuais de apoio",
         "Cognatos em contexto"
       ],
-      "correta": "Informacoes explicitas",
-      "comentario": "Esse tipo de tarefa exige dominio de informacoes explicitas.",
+      "correta": "Informações explícitas",
+      "comentario": "Esse tipo de tarefa exige domínio de informações explícitas.",
       "tempoEstimado": 35,
       "tags": [
         "leitura-e-interpretacao",
@@ -1102,22 +1102,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Informacoes explicitas",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Informações explícitas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de Informacoes explicitas?",
+      "enunciado": "Qual situação pratica depende mais diretamente de Informações explícitas?",
       "opcoes": [
         "retirar do texto nomes, horarios, lugares e fatos escritos claramente",
         "ganhar visao geral de textos curtos antes de buscar detalhes",
-        "buscar numeros, nomes, datas e palavras especificas no texto",
+        "buscar números, nomes, datas e palavras especificas no texto",
         "inferir o tema geral do texto com apoio de palavras transparentes"
       ],
       "correta": "retirar do texto nomes, horarios, lugares e fatos escritos claramente",
-      "comentario": "Informacoes explicitas aparece de forma direta em retirar do texto nomes, horarios, lugares e fatos escritos claramente.",
+      "comentario": "Informações explícitas aparece de forma direta em retirar do texto nomes, horarios, lugares e fatos escritos claramente.",
       "tempoEstimado": 35,
       "tags": [
         "leitura-e-interpretacao",
@@ -1141,22 +1141,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Informacoes explicitas",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Informações explícitas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre informacoes explicitas?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre informações explícitas?",
       "opcoes": [
-        "o caso e resolvido com foco em informacoes explicitas.",
+        "o caso e resolvido com foco em informações explícitas.",
         "o caso e melhor resolvido por skimming.",
         "o caso elimina a necessidade de scanning.",
         "o caso impede qualquer uso de elementos visuais de apoio."
       ],
-      "correta": "o caso e resolvido com foco em informacoes explicitas.",
-      "comentario": "A conclusao correta retoma a funcao central de informacoes explicitas.",
+      "correta": "o caso e resolvido com foco em informações explícitas.",
+      "comentario": "A conclusão correta retoma a função central de informações explícitas.",
       "tempoEstimado": 40,
       "tags": [
         "leitura-e-interpretacao",
@@ -1180,22 +1180,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Informacoes explicitas",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Informações explícitas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se a turma fosse revisar informacoes explicitas, qual pergunta de estudo seria a mais adequada?",
+      "enunciado": "Se a turma fosse revisar informações explícitas, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como informacoes explicitas aparece em retirar do texto nomes, horarios, lugares e fatos escritos claramente?",
+        "Como informações explícitas aparece em retirar do texto nomes, horarios, lugares e fatos escritos claramente?",
         "Como skimming substitui totalmente retirar do texto nomes, horarios, lugares e fatos escritos claramente?",
-        "Por que scanning torna desnecessario estudar Informacoes explicitas?",
+        "Por que scanning torna desnecessario estudar Informações explícitas?",
         "De que modo elementos visuais de apoio elimina toda leitura de contexto?"
       ],
-      "correta": "Como informacoes explicitas aparece em retirar do texto nomes, horarios, lugares e fatos escritos claramente?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de informacoes explicitas.",
+      "correta": "Como informações explícitas aparece em retirar do texto nomes, horarios, lugares e fatos escritos claramente?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de informações explícitas.",
       "tempoEstimado": 40,
       "tags": [
         "leitura-e-interpretacao",
@@ -1219,22 +1219,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Informacoes explicitas",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Informações explícitas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em informacoes explicitas e pensar que:",
+      "enunciado": "Um erro comum em informações explícitas é pensar que:",
       "opcoes": [
-        "toda pergunta de leitura exige interpretacao implicita",
+        "toda pergunta de leitura exige interpretação implícita",
         "skimming significa ignorar completamente o texto",
         "scanning serve para entender o texto inteiro em profundidade",
-        "as imagens nao ajudam em nada na leitura em ingles"
+        "as imagens não ajudam em nada na leitura em inglês"
       ],
-      "correta": "toda pergunta de leitura exige interpretacao implicita",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de informacoes explicitas.",
+      "correta": "toda pergunta de leitura exige interpretação implícita",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de informações explícitas.",
       "tempoEstimado": 45,
       "tags": [
         "leitura-e-interpretacao",
@@ -1258,22 +1258,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Informacoes explicitas",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Informações explícitas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"nao vale a pena procurar no texto quando a questao parece simples\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"não vale a pena procurar no texto quando a questao parece simples\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque a localizacao de dados que aparecem de forma direta no texto.",
-        "A afirmacao esta correta, pois resume integralmente informacoes explicitas.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque a localizacao de dados que aparecem de forma direta no texto.",
+        "A afirmação está correta, pois resume integralmente informações explícitas.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque a localizacao de dados que aparecem de forma direta no texto.",
-      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre informacoes explicitas.",
+      "correta": "A afirmação está incorreta, porque a localizacao de dados que aparecem de forma direta no texto.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre informações explícitas.",
       "tempoEstimado": 45,
       "tags": [
         "leitura-e-interpretacao",
@@ -1297,22 +1297,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Informacoes explicitas",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Informações explícitas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se informacoes explicitas fosse ignorado(a) em retirar do texto nomes, horarios, lugares e fatos escritos claramente, o resultado mais provavel seria:",
+      "enunciado": "Se informações explícitas fosse ignorado(a) em retirar do texto nomes, horarios, lugares e fatos escritos claramente, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em retirar do texto nomes, horarios, lugares e fatos escritos claramente.",
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em retirar do texto nomes, horarios, lugares e fatos escritos claramente.",
         "a questao seria resolvida automaticamente por skimming.",
-        "nenhuma interpretacao seria alterada, porque Informacoes explicitas nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "nenhuma interpretação seria alterada, porque Informações explícitas não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em retirar do texto nomes, horarios, lugares e fatos escritos claramente.",
-      "comentario": "Ignorar informacoes explicitas compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em retirar do texto nomes, horarios, lugares e fatos escritos claramente.",
+      "comentario": "Ignorar informações explícitas compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "leitura-e-interpretacao",
@@ -1336,14 +1336,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Informacoes explicitas",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Informações explícitas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor Informacoes explicitas?",
+      "enunciado": "Qual trecho ou ação ilustra melhor Informações explícitas?",
       "opcoes": [
         "Lucy studies in the morning.",
         "The student reads the title and the first lines to get the general idea.",
@@ -1351,7 +1351,7 @@
         "A poster uses icons and colors to reinforce the message."
       ],
       "correta": "Lucy studies in the morning.",
-      "comentario": "O item correto e o que melhor exemplifica informacoes explicitas.",
+      "comentario": "O item correto é o que melhor exemplifica informações explícitas.",
       "tempoEstimado": 50,
       "tags": [
         "leitura-e-interpretacao",
@@ -1375,9 +1375,9 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Informacoes explicitas",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Informações explícitas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
@@ -1387,10 +1387,10 @@
         "a resposta pode ser retirada literalmente do enunciado ou do texto",
         "o objetivo e captar rapidamente o assunto do texto",
         "a atencao esta voltada para uma informacao especifica",
-        "a imagem ajuda a confirmar o tema e a intencao do texto"
+        "a imagem ajuda a confirmar o tema e a intenção do texto"
       ],
       "correta": "a resposta pode ser retirada literalmente do enunciado ou do texto",
-      "comentario": "A leitura correta do exemplo revela o papel de informacoes explicitas.",
+      "comentario": "A leitura correta do exemplo revela o papel de informações explícitas.",
       "tempoEstimado": 55,
       "tags": [
         "leitura-e-interpretacao",
@@ -1414,14 +1414,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Informacoes explicitas",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Informações explícitas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar informacoes explicitas?",
+      "enunciado": "Qual estratégia ajuda mais a estudar informações explícitas?",
       "opcoes": [
         "procurar palavras-chave e conferir a informacao exata no trecho",
         "ler rapidamente titulo, imagens e partes iniciais para localizar o tema",
@@ -1429,7 +1429,7 @@
         "observar imagens, cores, titulos e organizacao visual antes de responder"
       ],
       "correta": "procurar palavras-chave e conferir a informacao exata no trecho",
-      "comentario": "A estrategia correta fortalece o dominio de informacoes explicitas.",
+      "comentario": "A estratégia correta fortalece o domínio de informações explícitas.",
       "tempoEstimado": 55,
       "tags": [
         "leitura-e-interpretacao",
@@ -1453,14 +1453,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Informacoes explicitas",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Informações explícitas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Informacoes explicitas e mais cobrado quando:",
+      "enunciado": "Em uma prova, Informações explícitas é mais cobrado quando:",
       "opcoes": [
         "a atividade pede informacao direta como nome, horario ou lugar",
         "a prova exige nocao geral do texto antes de responder aos itens",
@@ -1468,7 +1468,7 @@
         "o item combina texto verbal e imagem para construir sentido"
       ],
       "correta": "a atividade pede informacao direta como nome, horario ou lugar",
-      "comentario": "Esse e o tipo de demanda em que informacoes explicitas aparece com mais frequencia.",
+      "comentario": "Esse é o tipo de demanda em que informações explícitas aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "leitura-e-interpretacao",
@@ -1492,22 +1492,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Informacoes explicitas",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Informações explícitas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia de Informacoes explicitas?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia de Informações explícitas?",
       "opcoes": [
         "Em sintese, a localizacao de dados que aparecem de forma direta no texto.",
-        "Em sintese, a leitura rapida para captar a ideia geral antes da analise detalhada.",
+        "Em sintese, a leitura rápida para captar a ideia geral antes da análise detalhada.",
         "Em sintese, a leitura seletiva voltada para encontrar uma informacao especifica.",
-        "Em sintese, o uso de imagens, layout, icones e titulos para ajudar na compreensao do texto."
+        "Em sintese, o uso de imagens, layout, icones e titulos para ajudar na compreensão do texto."
       ],
       "correta": "Em sintese, a localizacao de dados que aparecem de forma direta no texto.",
-      "comentario": "O resumo correto recupera o nucleo de informacoes explicitas.",
+      "comentario": "O resumo correto recupera o núcleo de informações explícitas.",
       "tempoEstimado": 60,
       "tags": [
         "leitura-e-interpretacao",
@@ -1531,22 +1531,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Informacoes explicitas",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Informações explícitas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Informacoes explicitas?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em Informações explícitas?",
       "opcoes": [
         "Lucy studies in the morning. -> a resposta pode ser retirada literalmente do enunciado ou do texto",
         "The student reads the title and the first lines to get the general idea. -> a resposta pode ser retirada literalmente do enunciado ou do texto",
-        "The student looks only for the date of the school trip. -> a imagem ajuda a confirmar o tema e a intencao do texto",
+        "The student looks only for the date of the school trip. -> a imagem ajuda a confirmar o tema e a intenção do texto",
         "A poster uses icons and colors to reinforce the message. -> o objetivo e captar rapidamente o assunto do texto"
       ],
       "correta": "Lucy studies in the morning. -> a resposta pode ser retirada literalmente do enunciado ou do texto",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em informacoes explicitas.",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em informações explícitas.",
       "tempoEstimado": 65,
       "tags": [
         "leitura-e-interpretacao",
@@ -1570,14 +1570,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Informacoes explicitas",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Informações explícitas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao resolver uma atividade sobre informacoes explicitas, o estudante deve principalmente:",
+      "enunciado": "Ao resolver uma atividade sobre informações explícitas, o estudante deve principalmente:",
       "opcoes": [
         "identificar respostas literais sem depender de grande inferencia",
         "procurar palavras-chave e conferir a informacao exata no trecho",
@@ -1585,7 +1585,7 @@
         "a atividade pede informacao direta como nome, horario ou lugar"
       ],
       "correta": "identificar respostas literais sem depender de grande inferencia",
-      "comentario": "O objetivo central de informacoes explicitas e identificar respostas literais sem depender de grande inferencia.",
+      "comentario": "O objetivo central de informações explícitas e identificar respostas literais sem depender de grande inferencia.",
       "tempoEstimado": 70,
       "tags": [
         "leitura-e-interpretacao",
@@ -1609,22 +1609,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Skimming",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, Skimming refere-se a:",
+      "enunciado": "Em Inglês, Skimming refere-se a:",
       "opcoes": [
-        "a leitura rapida para captar a ideia geral antes da analise detalhada",
+        "a leitura rápida para captar a ideia geral antes da análise detalhada",
         "a leitura seletiva voltada para encontrar uma informacao especifica",
-        "o uso de imagens, layout, icones e titulos para ajudar na compreensao do texto",
-        "o reconhecimento de palavras parecidas com o portugues que ajudam a compreender o texto"
+        "o uso de imagens, layout, icones e titulos para ajudar na compreensão do texto",
+        "o reconhecimento de palavras parecidas com o português que ajudam a compreender o texto"
       ],
-      "correta": "a leitura rapida para captar a ideia geral antes da analise detalhada",
-      "comentario": "Skimming refere-se a leitura rapida para captar a ideia geral antes da analise detalhada.",
+      "correta": "a leitura rápida para captar a ideia geral antes da análise detalhada",
+      "comentario": "Skimming refere-se a leitura rápida para captar a ideia geral antes da análise detalhada.",
       "tempoEstimado": 20,
       "tags": [
         "leitura-e-interpretacao",
@@ -1648,14 +1648,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Skimming",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: antes de responder, o estudante le titulo, subtitulo e primeiras linhas para entender o assunto. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: antes de responder, o estudante le titulo, subtitulo e primeiras linhas para entender o assunto. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
         "Skimming",
         "Scanning",
@@ -1663,7 +1663,7 @@
         "Cognatos em contexto"
       ],
       "correta": "Skimming",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de skimming.",
+      "comentario": "A situação apresentada é melhor compreendida por meio de skimming.",
       "tempoEstimado": 20,
       "tags": [
         "leitura-e-interpretacao",
@@ -1687,8 +1687,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Skimming",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -1726,14 +1726,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Skimming",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente skimming?",
+      "enunciado": "Qual alternativa NÃO representa corretamente skimming?",
       "opcoes": [
         "The student looks only for the date of the school trip.",
         "The student reads the title and the first lines to get the general idea.",
@@ -1741,7 +1741,7 @@
         "ganhar visao geral de textos curtos antes de buscar detalhes."
       ],
       "correta": "The student looks only for the date of the school trip.",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao skimming.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não skimming.",
       "tempoEstimado": 25,
       "tags": [
         "leitura-e-interpretacao",
@@ -1765,14 +1765,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Skimming",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar skimming, o foco principal e:",
+      "enunciado": "Ao estudar skimming, o foco principal é:",
       "opcoes": [
         "obter visao global do texto em pouco tempo",
         "localizar dados pontuais com rapidez",
@@ -1804,8 +1804,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Skimming",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -1813,12 +1813,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Enquanto Scanning trata de a leitura seletiva voltada para encontrar uma informacao especifica, Skimming destaca:",
       "opcoes": [
-        "A leitura rapida para captar a ideia geral antes da analise detalhada.",
+        "A leitura rápida para captar a ideia geral antes da análise detalhada.",
         "A leitura seletiva voltada para encontrar uma informacao especifica.",
-        "O uso de imagens, layout, icones e titulos para ajudar na compreensao do texto.",
-        "O reconhecimento de palavras parecidas com o portugues que ajudam a compreender o texto."
+        "O uso de imagens, layout, icones e titulos para ajudar na compreensão do texto.",
+        "O reconhecimento de palavras parecidas com o português que ajudam a compreender o texto."
       ],
-      "correta": "A leitura rapida para captar a ideia geral antes da analise detalhada.",
+      "correta": "A leitura rápida para captar a ideia geral antes da análise detalhada.",
       "comentario": "A comparacao correta mostra a especificidade de skimming.",
       "tempoEstimado": 30,
       "tags": [
@@ -1843,8 +1843,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Skimming",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -1858,7 +1858,7 @@
         "Falsos cognatos em leitura"
       ],
       "correta": "Skimming",
-      "comentario": "Esse tipo de tarefa exige dominio de skimming.",
+      "comentario": "Esse tipo de tarefa exige domínio de skimming.",
       "tempoEstimado": 35,
       "tags": [
         "leitura-e-interpretacao",
@@ -1882,17 +1882,17 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Skimming",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de Skimming?",
+      "enunciado": "Qual situação pratica depende mais diretamente de Skimming?",
       "opcoes": [
         "ganhar visao geral de textos curtos antes de buscar detalhes",
-        "buscar numeros, nomes, datas e palavras especificas no texto",
+        "buscar números, nomes, datas e palavras especificas no texto",
         "interpretar cartazes, anuncios e posts com apoio visual",
         "evitar erros de sentido em textos com palavras enganosamente familiares"
       ],
@@ -1921,14 +1921,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Skimming",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre skimming?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre skimming?",
       "opcoes": [
         "o caso e resolvido com foco em skimming.",
         "o caso e melhor resolvido por scanning.",
@@ -1936,7 +1936,7 @@
         "o caso impede qualquer uso de cognatos em contexto."
       ],
       "correta": "o caso e resolvido com foco em skimming.",
-      "comentario": "A conclusao correta retoma a funcao central de skimming.",
+      "comentario": "A conclusão correta retoma a função central de skimming.",
       "tempoEstimado": 40,
       "tags": [
         "leitura-e-interpretacao",
@@ -1960,8 +1960,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Skimming",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -1999,22 +1999,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Skimming",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em skimming e pensar que:",
+      "enunciado": "Um erro comum em skimming é pensar que:",
       "opcoes": [
         "skimming significa ignorar completamente o texto",
         "scanning serve para entender o texto inteiro em profundidade",
-        "as imagens nao ajudam em nada na leitura em ingles",
-        "todo cognato aparente significa exatamente a mesma coisa em portugues"
+        "as imagens não ajudam em nada na leitura em inglês",
+        "todo cognato aparente significa exatamente a mesma coisa em português"
       ],
       "correta": "skimming significa ignorar completamente o texto",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de skimming.",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de skimming.",
       "tempoEstimado": 45,
       "tags": [
         "leitura-e-interpretacao",
@@ -2038,21 +2038,21 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Skimming",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"skimming e o mesmo que pular a leitura e marcar qualquer opcao\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"skimming e o mesmo que pular a leitura e marcar qualquer opção\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque a leitura rapida para captar a ideia geral antes da analise detalhada.",
-        "A afirmacao esta correta, pois resume integralmente skimming.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque a leitura rápida para captar a ideia geral antes da análise detalhada.",
+        "A afirmação está correta, pois resume integralmente skimming.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque a leitura rapida para captar a ideia geral antes da analise detalhada.",
+      "correta": "A afirmação está incorreta, porque a leitura rápida para captar a ideia geral antes da análise detalhada.",
       "comentario": "A fala do estudante apresenta um equivoco conceitual sobre skimming.",
       "tempoEstimado": 45,
       "tags": [
@@ -2077,8 +2077,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Skimming",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -2086,13 +2086,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Se skimming fosse ignorado(a) em ganhar visao geral de textos curtos antes de buscar detalhes, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em ganhar visao geral de textos curtos antes de buscar detalhes.",
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em ganhar visao geral de textos curtos antes de buscar detalhes.",
         "a questao seria resolvida automaticamente por scanning.",
-        "nenhuma interpretacao seria alterada, porque Skimming nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "nenhuma interpretação seria alterada, porque Skimming não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em ganhar visao geral de textos curtos antes de buscar detalhes.",
-      "comentario": "Ignorar skimming compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em ganhar visao geral de textos curtos antes de buscar detalhes.",
+      "comentario": "Ignorar skimming compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "leitura-e-interpretacao",
@@ -2116,14 +2116,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Skimming",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor Skimming?",
+      "enunciado": "Qual trecho ou ação ilustra melhor Skimming?",
       "opcoes": [
         "The student reads the title and the first lines to get the general idea.",
         "The student looks only for the date of the school trip.",
@@ -2131,7 +2131,7 @@
         "Hospital and natural are clues to understand the text."
       ],
       "correta": "The student reads the title and the first lines to get the general idea.",
-      "comentario": "O item correto e o que melhor exemplifica skimming.",
+      "comentario": "O item correto é o que melhor exemplifica skimming.",
       "tempoEstimado": 50,
       "tags": [
         "leitura-e-interpretacao",
@@ -2155,8 +2155,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Skimming",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
@@ -2166,8 +2166,8 @@
       "opcoes": [
         "o objetivo e captar rapidamente o assunto do texto",
         "a atencao esta voltada para uma informacao especifica",
-        "a imagem ajuda a confirmar o tema e a intencao do texto",
-        "algumas palavras parecidas com o portugues ajudam a montar o sentido global"
+        "a imagem ajuda a confirmar o tema e a intenção do texto",
+        "algumas palavras parecidas com o português ajudam a montar o sentido global"
       ],
       "correta": "o objetivo e captar rapidamente o assunto do texto",
       "comentario": "A leitura correta do exemplo revela o papel de skimming.",
@@ -2194,14 +2194,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Skimming",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar skimming?",
+      "enunciado": "Qual estratégia ajuda mais a estudar skimming?",
       "opcoes": [
         "ler rapidamente titulo, imagens e partes iniciais para localizar o tema",
         "procurar visualmente a palavra ou categoria pedida na questao",
@@ -2209,7 +2209,7 @@
         "identificar palavras transparentes e confirmar se combinam com o contexto"
       ],
       "correta": "ler rapidamente titulo, imagens e partes iniciais para localizar o tema",
-      "comentario": "A estrategia correta fortalece o dominio de skimming.",
+      "comentario": "A estratégia correta fortalece o domínio de skimming.",
       "tempoEstimado": 55,
       "tags": [
         "leitura-e-interpretacao",
@@ -2233,14 +2233,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Skimming",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Skimming e mais cobrado quando:",
+      "enunciado": "Em uma prova, Skimming é mais cobrado quando:",
       "opcoes": [
         "a prova exige nocao geral do texto antes de responder aos itens",
         "a pergunta exige encontrar um dado pontual sem resumir o texto inteiro",
@@ -2248,7 +2248,7 @@
         "a questao exige usar pistas lexicais para avancar na leitura"
       ],
       "correta": "a prova exige nocao geral do texto antes de responder aos itens",
-      "comentario": "Esse e o tipo de demanda em que skimming aparece com mais frequencia.",
+      "comentario": "Esse é o tipo de demanda em que skimming aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "leitura-e-interpretacao",
@@ -2272,8 +2272,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Skimming",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -2281,13 +2281,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Skimming?",
       "opcoes": [
-        "Em sintese, a leitura rapida para captar a ideia geral antes da analise detalhada.",
+        "Em sintese, a leitura rápida para captar a ideia geral antes da análise detalhada.",
         "Em sintese, a leitura seletiva voltada para encontrar uma informacao especifica.",
-        "Em sintese, o uso de imagens, layout, icones e titulos para ajudar na compreensao do texto.",
-        "Em sintese, o reconhecimento de palavras parecidas com o portugues que ajudam a compreender o texto."
+        "Em sintese, o uso de imagens, layout, icones e titulos para ajudar na compreensão do texto.",
+        "Em sintese, o reconhecimento de palavras parecidas com o português que ajudam a compreender o texto."
       ],
-      "correta": "Em sintese, a leitura rapida para captar a ideia geral antes da analise detalhada.",
-      "comentario": "O resumo correto recupera o nucleo de skimming.",
+      "correta": "Em sintese, a leitura rápida para captar a ideia geral antes da análise detalhada.",
+      "comentario": "O resumo correto recupera o núcleo de skimming.",
       "tempoEstimado": 60,
       "tags": [
         "leitura-e-interpretacao",
@@ -2311,22 +2311,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Skimming",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Skimming?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em Skimming?",
       "opcoes": [
         "The student reads the title and the first lines to get the general idea. -> o objetivo e captar rapidamente o assunto do texto",
         "The student looks only for the date of the school trip. -> o objetivo e captar rapidamente o assunto do texto",
-        "A poster uses icons and colors to reinforce the message. -> algumas palavras parecidas com o portugues ajudam a montar o sentido global",
+        "A poster uses icons and colors to reinforce the message. -> algumas palavras parecidas com o português ajudam a montar o sentido global",
         "Hospital and natural are clues to understand the text. -> a atencao esta voltada para uma informacao especifica"
       ],
       "correta": "The student reads the title and the first lines to get the general idea. -> o objetivo e captar rapidamente o assunto do texto",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em skimming.",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em skimming.",
       "tempoEstimado": 65,
       "tags": [
         "leitura-e-interpretacao",
@@ -2350,8 +2350,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Skimming",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -2389,19 +2389,19 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Scanning",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, Scanning refere-se a:",
+      "enunciado": "Em Inglês, Scanning refere-se a:",
       "opcoes": [
         "a leitura seletiva voltada para encontrar uma informacao especifica",
-        "o uso de imagens, layout, icones e titulos para ajudar na compreensao do texto",
-        "o reconhecimento de palavras parecidas com o portugues que ajudam a compreender o texto",
-        "o reconhecimento de palavras parecidas com o portugues que podem induzir a interpretacao errada"
+        "o uso de imagens, layout, icones e titulos para ajudar na compreensão do texto",
+        "o reconhecimento de palavras parecidas com o português que ajudam a compreender o texto",
+        "o reconhecimento de palavras parecidas com o português que podem induzir a interpretação errada"
       ],
       "correta": "a leitura seletiva voltada para encontrar uma informacao especifica",
       "comentario": "Scanning refere-se a leitura seletiva voltada para encontrar uma informacao especifica.",
@@ -2428,14 +2428,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Scanning",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: o estudante precisa achar apenas a idade do personagem em um pequeno perfil. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: o estudante precisa achar apenas a idade do personagem em um pequeno perfil. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
         "Scanning",
         "Elementos visuais de apoio",
@@ -2443,7 +2443,7 @@
         "Falsos cognatos em leitura"
       ],
       "correta": "Scanning",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de scanning.",
+      "comentario": "A situação apresentada é melhor compreendida por meio de scanning.",
       "tempoEstimado": 20,
       "tags": [
         "leitura-e-interpretacao",
@@ -2467,8 +2467,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Scanning",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -2506,22 +2506,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Scanning",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente scanning?",
+      "enunciado": "Qual alternativa NÃO representa corretamente scanning?",
       "opcoes": [
         "A poster uses icons and colors to reinforce the message.",
         "The student looks only for the date of the school trip.",
         "procurar visualmente a palavra ou categoria pedida na questao.",
-        "buscar numeros, nomes, datas e palavras especificas no texto."
+        "buscar números, nomes, datas e palavras especificas no texto."
       ],
       "correta": "A poster uses icons and colors to reinforce the message.",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao scanning.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não scanning.",
       "tempoEstimado": 25,
       "tags": [
         "leitura-e-interpretacao",
@@ -2545,14 +2545,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Scanning",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar scanning, o foco principal e:",
+      "enunciado": "Ao estudar scanning, o foco principal é:",
       "opcoes": [
         "localizar dados pontuais com rapidez",
         "relacionar pistas visuais ao sentido global da mensagem",
@@ -2584,19 +2584,19 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Scanning",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Elementos visuais de apoio trata de o uso de imagens, layout, icones e titulos para ajudar na compreensao do texto, Scanning destaca:",
+      "enunciado": "Enquanto Elementos visuais de apoio trata de o uso de imagens, layout, icones e titulos para ajudar na compreensão do texto, Scanning destaca:",
       "opcoes": [
         "A leitura seletiva voltada para encontrar uma informacao especifica.",
-        "O uso de imagens, layout, icones e titulos para ajudar na compreensao do texto.",
-        "O reconhecimento de palavras parecidas com o portugues que ajudam a compreender o texto.",
-        "O reconhecimento de palavras parecidas com o portugues que podem induzir a interpretacao errada."
+        "O uso de imagens, layout, icones e titulos para ajudar na compreensão do texto.",
+        "O reconhecimento de palavras parecidas com o português que ajudam a compreender o texto.",
+        "O reconhecimento de palavras parecidas com o português que podem induzir a interpretação errada."
       ],
       "correta": "A leitura seletiva voltada para encontrar uma informacao especifica.",
       "comentario": "A comparacao correta mostra a especificidade de scanning.",
@@ -2623,8 +2623,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Scanning",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -2635,10 +2635,10 @@
         "Scanning",
         "Elementos visuais de apoio",
         "Falsos cognatos em leitura",
-        "Generos textuais simples"
+        "Gêneros textuais simples"
       ],
       "correta": "Scanning",
-      "comentario": "Esse tipo de tarefa exige dominio de scanning.",
+      "comentario": "Esse tipo de tarefa exige domínio de scanning.",
       "tempoEstimado": 35,
       "tags": [
         "leitura-e-interpretacao",
@@ -2662,22 +2662,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Scanning",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de Scanning?",
+      "enunciado": "Qual situação pratica depende mais diretamente de Scanning?",
       "opcoes": [
-        "buscar numeros, nomes, datas e palavras especificas no texto",
+        "buscar números, nomes, datas e palavras especificas no texto",
         "interpretar cartazes, anuncios e posts com apoio visual",
         "inferir o tema geral do texto com apoio de palavras transparentes",
         "distinguir tipos de texto e suas finalidades basicas"
       ],
-      "correta": "buscar numeros, nomes, datas e palavras especificas no texto",
-      "comentario": "Scanning aparece de forma direta em buscar numeros, nomes, datas e palavras especificas no texto.",
+      "correta": "buscar números, nomes, datas e palavras especificas no texto",
+      "comentario": "Scanning aparece de forma direta em buscar números, nomes, datas e palavras especificas no texto.",
       "tempoEstimado": 35,
       "tags": [
         "leitura-e-interpretacao",
@@ -2701,14 +2701,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Scanning",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre scanning?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre scanning?",
       "opcoes": [
         "o caso e resolvido com foco em scanning.",
         "o caso e melhor resolvido por elementos visuais de apoio.",
@@ -2716,7 +2716,7 @@
         "o caso impede qualquer uso de falso cognatos em leitura."
       ],
       "correta": "o caso e resolvido com foco em scanning.",
-      "comentario": "A conclusao correta retoma a funcao central de scanning.",
+      "comentario": "A conclusão correta retoma a função central de scanning.",
       "tempoEstimado": 40,
       "tags": [
         "leitura-e-interpretacao",
@@ -2740,8 +2740,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Scanning",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -2749,12 +2749,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar scanning, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como scanning aparece em buscar numeros, nomes, datas e palavras especificas no texto?",
-        "Como elementos visuais de apoio substitui totalmente buscar numeros, nomes, datas e palavras especificas no texto?",
+        "Como scanning aparece em buscar números, nomes, datas e palavras especificas no texto?",
+        "Como elementos visuais de apoio substitui totalmente buscar números, nomes, datas e palavras especificas no texto?",
         "Por que cognatos em contexto torna desnecessario estudar Scanning?",
         "De que modo falso cognatos em leitura elimina toda leitura de contexto?"
       ],
-      "correta": "Como scanning aparece em buscar numeros, nomes, datas e palavras especificas no texto?",
+      "correta": "Como scanning aparece em buscar números, nomes, datas e palavras especificas no texto?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de scanning.",
       "tempoEstimado": 40,
       "tags": [
@@ -2779,22 +2779,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Scanning",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em scanning e pensar que:",
+      "enunciado": "Um erro comum em scanning é pensar que:",
       "opcoes": [
         "scanning serve para entender o texto inteiro em profundidade",
-        "as imagens nao ajudam em nada na leitura em ingles",
-        "todo cognato aparente significa exatamente a mesma coisa em portugues",
-        "palavras semelhantes ao portugues sempre mantem o mesmo significado"
+        "as imagens não ajudam em nada na leitura em inglês",
+        "todo cognato aparente significa exatamente a mesma coisa em português",
+        "palavras semelhantes ao português sempre mantém o mesmo significado"
       ],
       "correta": "scanning serve para entender o texto inteiro em profundidade",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de scanning.",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de scanning.",
       "tempoEstimado": 45,
       "tags": [
         "leitura-e-interpretacao",
@@ -2818,21 +2818,21 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Scanning",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"fazer scanning significa interpretar todas as frases com o mesmo cuidado\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"fazer scanning significa interpretar todas as frases com o mesmo cuidado\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque a leitura seletiva voltada para encontrar uma informacao especifica.",
-        "A afirmacao esta correta, pois resume integralmente scanning.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque a leitura seletiva voltada para encontrar uma informacao especifica.",
+        "A afirmação está correta, pois resume integralmente scanning.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque a leitura seletiva voltada para encontrar uma informacao especifica.",
+      "correta": "A afirmação está incorreta, porque a leitura seletiva voltada para encontrar uma informacao especifica.",
       "comentario": "A fala do estudante apresenta um equivoco conceitual sobre scanning.",
       "tempoEstimado": 45,
       "tags": [
@@ -2857,22 +2857,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Scanning",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se scanning fosse ignorado(a) em buscar numeros, nomes, datas e palavras especificas no texto, o resultado mais provavel seria:",
+      "enunciado": "Se scanning fosse ignorado(a) em buscar números, nomes, datas e palavras especificas no texto, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em buscar numeros, nomes, datas e palavras especificas no texto.",
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em buscar números, nomes, datas e palavras especificas no texto.",
         "a questao seria resolvida automaticamente por elementos visuais de apoio.",
-        "nenhuma interpretacao seria alterada, porque Scanning nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "nenhuma interpretação seria alterada, porque Scanning não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em buscar numeros, nomes, datas e palavras especificas no texto.",
-      "comentario": "Ignorar scanning compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em buscar números, nomes, datas e palavras especificas no texto.",
+      "comentario": "Ignorar scanning compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "leitura-e-interpretacao",
@@ -2896,14 +2896,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Scanning",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor Scanning?",
+      "enunciado": "Qual trecho ou ação ilustra melhor Scanning?",
       "opcoes": [
         "The student looks only for the date of the school trip.",
         "A poster uses icons and colors to reinforce the message.",
@@ -2911,7 +2911,7 @@
         "Parents does not mean parentes."
       ],
       "correta": "The student looks only for the date of the school trip.",
-      "comentario": "O item correto e o que melhor exemplifica scanning.",
+      "comentario": "O item correto é o que melhor exemplifica scanning.",
       "tempoEstimado": 50,
       "tags": [
         "leitura-e-interpretacao",
@@ -2935,8 +2935,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Scanning",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
@@ -2945,9 +2945,9 @@
       "enunciado": "Ao encontrar o exemplo \"The student looks only for the date of the school trip.\", a leitura mais adequada e:",
       "opcoes": [
         "a atencao esta voltada para uma informacao especifica",
-        "a imagem ajuda a confirmar o tema e a intencao do texto",
-        "algumas palavras parecidas com o portugues ajudam a montar o sentido global",
-        "algumas palavras parecem familiares, mas tem sentido diferente no ingles"
+        "a imagem ajuda a confirmar o tema e a intenção do texto",
+        "algumas palavras parecidas com o português ajudam a montar o sentido global",
+        "algumas palavras parecem familiares, mas tem sentido diferente no inglês"
       ],
       "correta": "a atencao esta voltada para uma informacao especifica",
       "comentario": "A leitura correta do exemplo revela o papel de scanning.",
@@ -2974,14 +2974,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Scanning",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar scanning?",
+      "enunciado": "Qual estratégia ajuda mais a estudar scanning?",
       "opcoes": [
         "procurar visualmente a palavra ou categoria pedida na questao",
         "observar imagens, cores, titulos e organizacao visual antes de responder",
@@ -2989,7 +2989,7 @@
         "desconfiar de palavras muito parecidas e conferir o contexto da frase"
       ],
       "correta": "procurar visualmente a palavra ou categoria pedida na questao",
-      "comentario": "A estrategia correta fortalece o dominio de scanning.",
+      "comentario": "A estratégia correta fortalece o domínio de scanning.",
       "tempoEstimado": 55,
       "tags": [
         "leitura-e-interpretacao",
@@ -3013,22 +3013,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Scanning",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Scanning e mais cobrado quando:",
+      "enunciado": "Em uma prova, Scanning é mais cobrado quando:",
       "opcoes": [
         "a pergunta exige encontrar um dado pontual sem resumir o texto inteiro",
         "o item combina texto verbal e imagem para construir sentido",
         "a questao exige usar pistas lexicais para avancar na leitura",
-        "o item explora confusao lexical por semelhanca entre ingles e portugues"
+        "o item explora confusao lexical por semelhanca entre inglês e português"
       ],
       "correta": "a pergunta exige encontrar um dado pontual sem resumir o texto inteiro",
-      "comentario": "Esse e o tipo de demanda em que scanning aparece com mais frequencia.",
+      "comentario": "Esse é o tipo de demanda em que scanning aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "leitura-e-interpretacao",
@@ -3052,8 +3052,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Scanning",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -3062,12 +3062,12 @@
       "enunciado": "Qual resumo sintetiza melhor a ideia de Scanning?",
       "opcoes": [
         "Em sintese, a leitura seletiva voltada para encontrar uma informacao especifica.",
-        "Em sintese, o uso de imagens, layout, icones e titulos para ajudar na compreensao do texto.",
-        "Em sintese, o reconhecimento de palavras parecidas com o portugues que ajudam a compreender o texto.",
-        "Em sintese, o reconhecimento de palavras parecidas com o portugues que podem induzir a interpretacao errada."
+        "Em sintese, o uso de imagens, layout, icones e titulos para ajudar na compreensão do texto.",
+        "Em sintese, o reconhecimento de palavras parecidas com o português que ajudam a compreender o texto.",
+        "Em sintese, o reconhecimento de palavras parecidas com o português que podem induzir a interpretação errada."
       ],
       "correta": "Em sintese, a leitura seletiva voltada para encontrar uma informacao especifica.",
-      "comentario": "O resumo correto recupera o nucleo de scanning.",
+      "comentario": "O resumo correto recupera o núcleo de scanning.",
       "tempoEstimado": 60,
       "tags": [
         "leitura-e-interpretacao",
@@ -3091,22 +3091,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Scanning",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Scanning?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em Scanning?",
       "opcoes": [
         "The student looks only for the date of the school trip. -> a atencao esta voltada para uma informacao especifica",
         "A poster uses icons and colors to reinforce the message. -> a atencao esta voltada para uma informacao especifica",
-        "Hospital and natural are clues to understand the text. -> algumas palavras parecem familiares, mas tem sentido diferente no ingles",
-        "Parents does not mean parentes. -> a imagem ajuda a confirmar o tema e a intencao do texto"
+        "Hospital and natural are clues to understand the text. -> algumas palavras parecem familiares, mas tem sentido diferente no inglês",
+        "Parents does not mean parentes. -> a imagem ajuda a confirmar o tema e a intenção do texto"
       ],
       "correta": "The student looks only for the date of the school trip. -> a atencao esta voltada para uma informacao especifica",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em scanning.",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em scanning.",
       "tempoEstimado": 65,
       "tags": [
         "leitura-e-interpretacao",
@@ -3130,8 +3130,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Scanning",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -3141,7 +3141,7 @@
       "opcoes": [
         "localizar dados pontuais com rapidez",
         "procurar visualmente a palavra ou categoria pedida na questao",
-        "buscar numeros, nomes, datas e palavras especificas no texto",
+        "buscar números, nomes, datas e palavras especificas no texto",
         "a pergunta exige encontrar um dado pontual sem resumir o texto inteiro"
       ],
       "correta": "localizar dados pontuais com rapidez",
@@ -3169,22 +3169,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Elementos visuais de apoio",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, Elementos visuais de apoio refere-se a:",
+      "enunciado": "Em Inglês, Elementos visuais de apoio refere-se a:",
       "opcoes": [
-        "o uso de imagens, layout, icones e titulos para ajudar na compreensao do texto",
-        "o reconhecimento de palavras parecidas com o portugues que ajudam a compreender o texto",
-        "o reconhecimento de palavras parecidas com o portugues que podem induzir a interpretacao errada",
+        "o uso de imagens, layout, icones e titulos para ajudar na compreensão do texto",
+        "o reconhecimento de palavras parecidas com o português que ajudam a compreender o texto",
+        "o reconhecimento de palavras parecidas com o português que podem induzir a interpretação errada",
         "a identificacao de formatos como aviso, convite, anuncio, bilhete ou e-mail curto"
       ],
-      "correta": "o uso de imagens, layout, icones e titulos para ajudar na compreensao do texto",
-      "comentario": "Elementos visuais de apoio refere-se ao uso de imagens, layout, icones e titulos para ajudar na compreensao do texto.",
+      "correta": "o uso de imagens, layout, icones e titulos para ajudar na compreensão do texto",
+      "comentario": "Elementos visuais de apoio refere-se ao uso de imagens, layout, icones e titulos para ajudar na compreensão do texto.",
       "tempoEstimado": 20,
       "tags": [
         "leitura-e-interpretacao",
@@ -3208,22 +3208,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Elementos visuais de apoio",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: um cartaz mostra uma bicicleta, uma cidade limpa e a frase sobre mobilidade sustentavel. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: um cartaz mostra uma bicicleta, uma cidade limpa e a frase sobre mobilidade sustentavel. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
         "Elementos visuais de apoio",
         "Cognatos em contexto",
         "Falsos cognatos em leitura",
-        "Generos textuais simples"
+        "Gêneros textuais simples"
       ],
       "correta": "Elementos visuais de apoio",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de elementos visuais de apoio.",
+      "comentario": "A situação apresentada é melhor compreendida por meio de elementos visuais de apoio.",
       "tempoEstimado": 20,
       "tags": [
         "leitura-e-interpretacao",
@@ -3247,8 +3247,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Elementos visuais de apoio",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -3286,14 +3286,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Elementos visuais de apoio",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente elementos visuais de apoio?",
+      "enunciado": "Qual alternativa NÃO representa corretamente elementos visuais de apoio?",
       "opcoes": [
         "Hospital and natural are clues to understand the text.",
         "A poster uses icons and colors to reinforce the message.",
@@ -3301,7 +3301,7 @@
         "interpretar cartazes, anuncios e posts com apoio visual."
       ],
       "correta": "Hospital and natural are clues to understand the text.",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao elementos visuais de apoio.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não elementos visuais de apoio.",
       "tempoEstimado": 25,
       "tags": [
         "leitura-e-interpretacao",
@@ -3325,19 +3325,19 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Elementos visuais de apoio",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar elementos visuais de apoio, o foco principal e:",
+      "enunciado": "Ao estudar elementos visuais de apoio, o foco principal é:",
       "opcoes": [
         "relacionar pistas visuais ao sentido global da mensagem",
         "usar semelhancas lexicais reais para apoiar a leitura",
         "evitar traducoes automaticas que distorcem o sentido do texto",
-        "reconhecer a forma do texto e relaciona-la a funcao que ele cumpre"
+        "reconhecer a forma do texto e relaciona-la a função que ele cumpre"
       ],
       "correta": "relacionar pistas visuais ao sentido global da mensagem",
       "comentario": "Elementos visuais de apoio concentra-se em relacionar pistas visuais ao sentido global da mensagem.",
@@ -3364,21 +3364,21 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Elementos visuais de apoio",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Cognatos em contexto trata de o reconhecimento de palavras parecidas com o portugues que ajudam a compreender o texto, Elementos visuais de apoio destaca:",
+      "enunciado": "Enquanto Cognatos em contexto trata de o reconhecimento de palavras parecidas com o português que ajudam a compreender o texto, Elementos visuais de apoio destaca:",
       "opcoes": [
-        "O uso de imagens, layout, icones e titulos para ajudar na compreensao do texto.",
-        "O reconhecimento de palavras parecidas com o portugues que ajudam a compreender o texto.",
-        "O reconhecimento de palavras parecidas com o portugues que podem induzir a interpretacao errada.",
+        "O uso de imagens, layout, icones e titulos para ajudar na compreensão do texto.",
+        "O reconhecimento de palavras parecidas com o português que ajudam a compreender o texto.",
+        "O reconhecimento de palavras parecidas com o português que podem induzir a interpretação errada.",
         "A identificacao de formatos como aviso, convite, anuncio, bilhete ou e-mail curto."
       ],
-      "correta": "O uso de imagens, layout, icones e titulos para ajudar na compreensao do texto.",
+      "correta": "O uso de imagens, layout, icones e titulos para ajudar na compreensão do texto.",
       "comentario": "A comparacao correta mostra a especificidade de elementos visuais de apoio.",
       "tempoEstimado": 30,
       "tags": [
@@ -3403,8 +3403,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Elementos visuais de apoio",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -3414,11 +3414,11 @@
       "opcoes": [
         "Elementos visuais de apoio",
         "Cognatos em contexto",
-        "Generos textuais simples",
-        "Proposito comunicativo"
+        "Gêneros textuais simples",
+        "Propósito comunicativo"
       ],
       "correta": "Elementos visuais de apoio",
-      "comentario": "Esse tipo de tarefa exige dominio de elementos visuais de apoio.",
+      "comentario": "Esse tipo de tarefa exige domínio de elementos visuais de apoio.",
       "tempoEstimado": 35,
       "tags": [
         "leitura-e-interpretacao",
@@ -3442,14 +3442,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Elementos visuais de apoio",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de Elementos visuais de apoio?",
+      "enunciado": "Qual situação pratica depende mais diretamente de Elementos visuais de apoio?",
       "opcoes": [
         "interpretar cartazes, anuncios e posts com apoio visual",
         "inferir o tema geral do texto com apoio de palavras transparentes",
@@ -3481,22 +3481,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Elementos visuais de apoio",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre elementos visuais de apoio?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre elementos visuais de apoio?",
       "opcoes": [
         "o caso e resolvido com foco em elementos visuais de apoio.",
         "o caso e melhor resolvido por cognatos em contexto.",
         "o caso elimina a necessidade de falso cognatos em leitura.",
-        "o caso impede qualquer uso de generos textuais simples."
+        "o caso impede qualquer uso de gêneros textuais simples."
       ],
       "correta": "o caso e resolvido com foco em elementos visuais de apoio.",
-      "comentario": "A conclusao correta retoma a funcao central de elementos visuais de apoio.",
+      "comentario": "A conclusão correta retoma a função central de elementos visuais de apoio.",
       "tempoEstimado": 40,
       "tags": [
         "leitura-e-interpretacao",
@@ -3520,8 +3520,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Elementos visuais de apoio",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -3532,7 +3532,7 @@
         "Como elementos visuais de apoio aparece em interpretar cartazes, anuncios e posts com apoio visual?",
         "Como cognatos em contexto substitui totalmente interpretar cartazes, anuncios e posts com apoio visual?",
         "Por que falso cognatos em leitura torna desnecessario estudar Elementos visuais de apoio?",
-        "De que modo generos textuais simples elimina toda leitura de contexto?"
+        "De que modo gêneros textuais simples elimina toda leitura de contexto?"
       ],
       "correta": "Como elementos visuais de apoio aparece em interpretar cartazes, anuncios e posts com apoio visual?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de elementos visuais de apoio.",
@@ -3559,22 +3559,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Elementos visuais de apoio",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em elementos visuais de apoio e pensar que:",
+      "enunciado": "Um erro comum em elementos visuais de apoio é pensar que:",
       "opcoes": [
-        "as imagens nao ajudam em nada na leitura em ingles",
-        "todo cognato aparente significa exatamente a mesma coisa em portugues",
-        "palavras semelhantes ao portugues sempre mantem o mesmo significado",
-        "todo texto em ingles pode ser lido do mesmo jeito, sem observar o genero"
+        "as imagens não ajudam em nada na leitura em inglês",
+        "todo cognato aparente significa exatamente a mesma coisa em português",
+        "palavras semelhantes ao português sempre mantém o mesmo significado",
+        "todo texto em inglês pode ser lido do mesmo jeito, sem observar o gênero"
       ],
-      "correta": "as imagens nao ajudam em nada na leitura em ingles",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de elementos visuais de apoio.",
+      "correta": "as imagens não ajudam em nada na leitura em inglês",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de elementos visuais de apoio.",
       "tempoEstimado": 45,
       "tags": [
         "leitura-e-interpretacao",
@@ -3598,21 +3598,21 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Elementos visuais de apoio",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"basta ler as palavras; a parte visual nunca interfere na resposta\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"basta ler as palavras; a parte visual nunca interfere na resposta\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque o uso de imagens, layout, icones e titulos para ajudar na compreensao do texto.",
-        "A afirmacao esta correta, pois resume integralmente elementos visuais de apoio.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque o uso de imagens, layout, icones e titulos para ajudar na compreensão do texto.",
+        "A afirmação está correta, pois resume integralmente elementos visuais de apoio.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque o uso de imagens, layout, icones e titulos para ajudar na compreensao do texto.",
+      "correta": "A afirmação está incorreta, porque o uso de imagens, layout, icones e titulos para ajudar na compreensão do texto.",
       "comentario": "A fala do estudante apresenta um equivoco conceitual sobre elementos visuais de apoio.",
       "tempoEstimado": 45,
       "tags": [
@@ -3637,8 +3637,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Elementos visuais de apoio",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -3646,13 +3646,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Se elementos visuais de apoio fosse ignorado(a) em interpretar cartazes, anuncios e posts com apoio visual, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar cartazes, anuncios e posts com apoio visual.",
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar cartazes, anuncios e posts com apoio visual.",
         "a questao seria resolvida automaticamente por cognatos em contexto.",
-        "nenhuma interpretacao seria alterada, porque Elementos visuais de apoio nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "nenhuma interpretação seria alterada, porque Elementos visuais de apoio não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar cartazes, anuncios e posts com apoio visual.",
-      "comentario": "Ignorar elementos visuais de apoio compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar cartazes, anuncios e posts com apoio visual.",
+      "comentario": "Ignorar elementos visuais de apoio compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "leitura-e-interpretacao",
@@ -3676,14 +3676,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Elementos visuais de apoio",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor Elementos visuais de apoio?",
+      "enunciado": "Qual trecho ou ação ilustra melhor Elementos visuais de apoio?",
       "opcoes": [
         "A poster uses icons and colors to reinforce the message.",
         "Hospital and natural are clues to understand the text.",
@@ -3691,7 +3691,7 @@
         "An invitation usually includes date, place and purpose."
       ],
       "correta": "A poster uses icons and colors to reinforce the message.",
-      "comentario": "O item correto e o que melhor exemplifica elementos visuais de apoio.",
+      "comentario": "O item correto é o que melhor exemplifica elementos visuais de apoio.",
       "tempoEstimado": 50,
       "tags": [
         "leitura-e-interpretacao",
@@ -3715,8 +3715,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Elementos visuais de apoio",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
@@ -3724,12 +3724,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Ao encontrar o exemplo \"A poster uses icons and colors to reinforce the message.\", a leitura mais adequada e:",
       "opcoes": [
-        "a imagem ajuda a confirmar o tema e a intencao do texto",
-        "algumas palavras parecidas com o portugues ajudam a montar o sentido global",
-        "algumas palavras parecem familiares, mas tem sentido diferente no ingles",
-        "o formato do texto oferece pistas sobre sua funcao e organizacao"
+        "a imagem ajuda a confirmar o tema e a intenção do texto",
+        "algumas palavras parecidas com o português ajudam a montar o sentido global",
+        "algumas palavras parecem familiares, mas tem sentido diferente no inglês",
+        "o formato do texto oferece pistas sobre sua função e organizacao"
       ],
-      "correta": "a imagem ajuda a confirmar o tema e a intencao do texto",
+      "correta": "a imagem ajuda a confirmar o tema e a intenção do texto",
       "comentario": "A leitura correta do exemplo revela o papel de elementos visuais de apoio.",
       "tempoEstimado": 55,
       "tags": [
@@ -3754,14 +3754,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Elementos visuais de apoio",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar elementos visuais de apoio?",
+      "enunciado": "Qual estratégia ajuda mais a estudar elementos visuais de apoio?",
       "opcoes": [
         "observar imagens, cores, titulos e organizacao visual antes de responder",
         "identificar palavras transparentes e confirmar se combinam com o contexto",
@@ -3769,7 +3769,7 @@
         "observar estrutura, marcas tipicas e finalidade do texto"
       ],
       "correta": "observar imagens, cores, titulos e organizacao visual antes de responder",
-      "comentario": "A estrategia correta fortalece o dominio de elementos visuais de apoio.",
+      "comentario": "A estratégia correta fortalece o domínio de elementos visuais de apoio.",
       "tempoEstimado": 55,
       "tags": [
         "leitura-e-interpretacao",
@@ -3793,22 +3793,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Elementos visuais de apoio",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Elementos visuais de apoio e mais cobrado quando:",
+      "enunciado": "Em uma prova, Elementos visuais de apoio é mais cobrado quando:",
       "opcoes": [
         "o item combina texto verbal e imagem para construir sentido",
         "a questao exige usar pistas lexicais para avancar na leitura",
-        "o item explora confusao lexical por semelhanca entre ingles e portugues",
+        "o item explora confusao lexical por semelhanca entre inglês e português",
         "a pergunta pede identificar o tipo de texto ou sua organizacao"
       ],
       "correta": "o item combina texto verbal e imagem para construir sentido",
-      "comentario": "Esse e o tipo de demanda em que elementos visuais de apoio aparece com mais frequencia.",
+      "comentario": "Esse é o tipo de demanda em que elementos visuais de apoio aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "leitura-e-interpretacao",
@@ -3832,8 +3832,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Elementos visuais de apoio",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -3841,13 +3841,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Elementos visuais de apoio?",
       "opcoes": [
-        "Em sintese, o uso de imagens, layout, icones e titulos para ajudar na compreensao do texto.",
-        "Em sintese, o reconhecimento de palavras parecidas com o portugues que ajudam a compreender o texto.",
-        "Em sintese, o reconhecimento de palavras parecidas com o portugues que podem induzir a interpretacao errada.",
+        "Em sintese, o uso de imagens, layout, icones e titulos para ajudar na compreensão do texto.",
+        "Em sintese, o reconhecimento de palavras parecidas com o português que ajudam a compreender o texto.",
+        "Em sintese, o reconhecimento de palavras parecidas com o português que podem induzir a interpretação errada.",
         "Em sintese, a identificacao de formatos como aviso, convite, anuncio, bilhete ou e-mail curto."
       ],
-      "correta": "Em sintese, o uso de imagens, layout, icones e titulos para ajudar na compreensao do texto.",
-      "comentario": "O resumo correto recupera o nucleo de elementos visuais de apoio.",
+      "correta": "Em sintese, o uso de imagens, layout, icones e titulos para ajudar na compreensão do texto.",
+      "comentario": "O resumo correto recupera o núcleo de elementos visuais de apoio.",
       "tempoEstimado": 60,
       "tags": [
         "leitura-e-interpretacao",
@@ -3871,22 +3871,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Elementos visuais de apoio",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Elementos visuais de apoio?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em Elementos visuais de apoio?",
       "opcoes": [
-        "A poster uses icons and colors to reinforce the message. -> a imagem ajuda a confirmar o tema e a intencao do texto",
-        "Hospital and natural are clues to understand the text. -> a imagem ajuda a confirmar o tema e a intencao do texto",
-        "Parents does not mean parentes. -> o formato do texto oferece pistas sobre sua funcao e organizacao",
-        "An invitation usually includes date, place and purpose. -> algumas palavras parecidas com o portugues ajudam a montar o sentido global"
+        "A poster uses icons and colors to reinforce the message. -> a imagem ajuda a confirmar o tema e a intenção do texto",
+        "Hospital and natural are clues to understand the text. -> a imagem ajuda a confirmar o tema e a intenção do texto",
+        "Parents does not mean parentes. -> o formato do texto oferece pistas sobre sua função e organizacao",
+        "An invitation usually includes date, place and purpose. -> algumas palavras parecidas com o português ajudam a montar o sentido global"
       ],
-      "correta": "A poster uses icons and colors to reinforce the message. -> a imagem ajuda a confirmar o tema e a intencao do texto",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em elementos visuais de apoio.",
+      "correta": "A poster uses icons and colors to reinforce the message. -> a imagem ajuda a confirmar o tema e a intenção do texto",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em elementos visuais de apoio.",
       "tempoEstimado": 65,
       "tags": [
         "leitura-e-interpretacao",
@@ -3910,8 +3910,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Elementos visuais de apoio",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -3949,22 +3949,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Cognatos em contexto",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, Cognatos em contexto refere-se a:",
+      "enunciado": "Em Inglês, Cognatos em contexto refere-se a:",
       "opcoes": [
-        "o reconhecimento de palavras parecidas com o portugues que ajudam a compreender o texto",
-        "o reconhecimento de palavras parecidas com o portugues que podem induzir a interpretacao errada",
+        "o reconhecimento de palavras parecidas com o português que ajudam a compreender o texto",
+        "o reconhecimento de palavras parecidas com o português que podem induzir a interpretação errada",
         "a identificacao de formatos como aviso, convite, anuncio, bilhete ou e-mail curto",
-        "a compreensao da intencao principal do texto, como informar, convidar, alertar ou vender"
+        "a compreensão da intenção principal do texto, como informar, convidar, alertar ou vender"
       ],
-      "correta": "o reconhecimento de palavras parecidas com o portugues que ajudam a compreender o texto",
-      "comentario": "Cognatos em contexto refere-se ao reconhecimento de palavras parecidas com o portugues que ajudam a compreender o texto.",
+      "correta": "o reconhecimento de palavras parecidas com o português que ajudam a compreender o texto",
+      "comentario": "Cognatos em contexto refere-se ao reconhecimento de palavras parecidas com o português que ajudam a compreender o texto.",
       "tempoEstimado": 20,
       "tags": [
         "leitura-e-interpretacao",
@@ -3988,22 +3988,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Cognatos em contexto",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: em um texto sobre alimentacao, aparecem as palavras natural, hospital e different. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: em um texto sobre alimentacao, aparecem as palavras natural, hospital e different. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
         "Cognatos em contexto",
         "Falsos cognatos em leitura",
-        "Generos textuais simples",
-        "Proposito comunicativo"
+        "Gêneros textuais simples",
+        "Propósito comunicativo"
       ],
       "correta": "Cognatos em contexto",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de cognatos em contexto.",
+      "comentario": "A situação apresentada é melhor compreendida por meio de cognatos em contexto.",
       "tempoEstimado": 20,
       "tags": [
         "leitura-e-interpretacao",
@@ -4027,8 +4027,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Cognatos em contexto",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -4066,14 +4066,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Cognatos em contexto",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente cognatos em contexto?",
+      "enunciado": "Qual alternativa NÃO representa corretamente cognatos em contexto?",
       "opcoes": [
         "Parents does not mean parentes.",
         "Hospital and natural are clues to understand the text.",
@@ -4081,7 +4081,7 @@
         "inferir o tema geral do texto com apoio de palavras transparentes."
       ],
       "correta": "Parents does not mean parentes.",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao cognatos em contexto.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não cognatos em contexto.",
       "tempoEstimado": 25,
       "tags": [
         "leitura-e-interpretacao",
@@ -4105,18 +4105,18 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Cognatos em contexto",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar cognatos em contexto, o foco principal e:",
+      "enunciado": "Ao estudar cognatos em contexto, o foco principal é:",
       "opcoes": [
         "usar semelhancas lexicais reais para apoiar a leitura",
         "evitar traducoes automaticas que distorcem o sentido do texto",
-        "reconhecer a forma do texto e relaciona-la a funcao que ele cumpre",
+        "reconhecer a forma do texto e relaciona-la a função que ele cumpre",
         "identificar para que o texto foi produzido"
       ],
       "correta": "usar semelhancas lexicais reais para apoiar a leitura",
@@ -4144,21 +4144,21 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Cognatos em contexto",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Falsos cognatos em leitura trata de o reconhecimento de palavras parecidas com o portugues que podem induzir a interpretacao errada, Cognatos em contexto destaca:",
+      "enunciado": "Enquanto Falsos cognatos em leitura trata de o reconhecimento de palavras parecidas com o português que podem induzir a interpretação errada, Cognatos em contexto destaca:",
       "opcoes": [
-        "O reconhecimento de palavras parecidas com o portugues que ajudam a compreender o texto.",
-        "O reconhecimento de palavras parecidas com o portugues que podem induzir a interpretacao errada.",
+        "O reconhecimento de palavras parecidas com o português que ajudam a compreender o texto.",
+        "O reconhecimento de palavras parecidas com o português que podem induzir a interpretação errada.",
         "A identificacao de formatos como aviso, convite, anuncio, bilhete ou e-mail curto.",
-        "A compreensao da intencao principal do texto, como informar, convidar, alertar ou vender."
+        "A compreensão da intenção principal do texto, como informar, convidar, alertar ou vender."
       ],
-      "correta": "O reconhecimento de palavras parecidas com o portugues que ajudam a compreender o texto.",
+      "correta": "O reconhecimento de palavras parecidas com o português que ajudam a compreender o texto.",
       "comentario": "A comparacao correta mostra a especificidade de cognatos em contexto.",
       "tempoEstimado": 30,
       "tags": [
@@ -4183,8 +4183,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Cognatos em contexto",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -4194,11 +4194,11 @@
       "opcoes": [
         "Cognatos em contexto",
         "Falsos cognatos em leitura",
-        "Proposito comunicativo",
+        "Propósito comunicativo",
         "Inferencia basica"
       ],
       "correta": "Cognatos em contexto",
-      "comentario": "Esse tipo de tarefa exige dominio de cognatos em contexto.",
+      "comentario": "Esse tipo de tarefa exige domínio de cognatos em contexto.",
       "tempoEstimado": 35,
       "tags": [
         "leitura-e-interpretacao",
@@ -4222,19 +4222,19 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Cognatos em contexto",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de Cognatos em contexto?",
+      "enunciado": "Qual situação pratica depende mais diretamente de Cognatos em contexto?",
       "opcoes": [
         "inferir o tema geral do texto com apoio de palavras transparentes",
         "evitar erros de sentido em textos com palavras enganosamente familiares",
         "distinguir tipos de texto e suas finalidades basicas",
-        "deduzir informacoes basicas a partir do contexto"
+        "deduzir informações basicas a partir do contexto"
       ],
       "correta": "inferir o tema geral do texto com apoio de palavras transparentes",
       "comentario": "Cognatos em contexto aparece de forma direta em inferir o tema geral do texto com apoio de palavras transparentes.",
@@ -4261,22 +4261,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Cognatos em contexto",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre cognatos em contexto?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre cognatos em contexto?",
       "opcoes": [
         "o caso e resolvido com foco em cognatos em contexto.",
         "o caso e melhor resolvido por falso cognatos em leitura.",
-        "o caso elimina a necessidade de generos textuais simples.",
-        "o caso impede qualquer uso de proposito comunicativo."
+        "o caso elimina a necessidade de gêneros textuais simples.",
+        "o caso impede qualquer uso de propósito comunicativo."
       ],
       "correta": "o caso e resolvido com foco em cognatos em contexto.",
-      "comentario": "A conclusao correta retoma a funcao central de cognatos em contexto.",
+      "comentario": "A conclusão correta retoma a função central de cognatos em contexto.",
       "tempoEstimado": 40,
       "tags": [
         "leitura-e-interpretacao",
@@ -4300,8 +4300,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Cognatos em contexto",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -4311,8 +4311,8 @@
       "opcoes": [
         "Como cognatos em contexto aparece em inferir o tema geral do texto com apoio de palavras transparentes?",
         "Como falso cognatos em leitura substitui totalmente inferir o tema geral do texto com apoio de palavras transparentes?",
-        "Por que generos textuais simples torna desnecessario estudar Cognatos em contexto?",
-        "De que modo proposito comunicativo elimina toda leitura de contexto?"
+        "Por que gêneros textuais simples torna desnecessario estudar Cognatos em contexto?",
+        "De que modo propósito comunicativo elimina toda leitura de contexto?"
       ],
       "correta": "Como cognatos em contexto aparece em inferir o tema geral do texto com apoio de palavras transparentes?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de cognatos em contexto.",
@@ -4339,22 +4339,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Cognatos em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em cognatos em contexto e pensar que:",
+      "enunciado": "Um erro comum em cognatos em contexto é pensar que:",
       "opcoes": [
-        "todo cognato aparente significa exatamente a mesma coisa em portugues",
-        "palavras semelhantes ao portugues sempre mantem o mesmo significado",
-        "todo texto em ingles pode ser lido do mesmo jeito, sem observar o genero",
-        "o proposito do texto depende apenas de traduzir seu titulo"
+        "todo cognato aparente significa exatamente a mesma coisa em português",
+        "palavras semelhantes ao português sempre mantém o mesmo significado",
+        "todo texto em inglês pode ser lido do mesmo jeito, sem observar o gênero",
+        "o propósito do texto depende apenas de traduzir seu titulo"
       ],
-      "correta": "todo cognato aparente significa exatamente a mesma coisa em portugues",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de cognatos em contexto.",
+      "correta": "todo cognato aparente significa exatamente a mesma coisa em português",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de cognatos em contexto.",
       "tempoEstimado": 45,
       "tags": [
         "leitura-e-interpretacao",
@@ -4378,21 +4378,21 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Cognatos em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"se a palavra parecer portuguesa, a interpretacao sempre estara correta\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"se a palavra parecer portuguesa, a interpretação sempre estara correta\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque o reconhecimento de palavras parecidas com o portugues que ajudam a compreender o texto.",
-        "A afirmacao esta correta, pois resume integralmente cognatos em contexto.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque o reconhecimento de palavras parecidas com o português que ajudam a compreender o texto.",
+        "A afirmação está correta, pois resume integralmente cognatos em contexto.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque o reconhecimento de palavras parecidas com o portugues que ajudam a compreender o texto.",
+      "correta": "A afirmação está incorreta, porque o reconhecimento de palavras parecidas com o português que ajudam a compreender o texto.",
       "comentario": "A fala do estudante apresenta um equivoco conceitual sobre cognatos em contexto.",
       "tempoEstimado": 45,
       "tags": [
@@ -4417,8 +4417,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Cognatos em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -4426,13 +4426,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Se cognatos em contexto fosse ignorado(a) em inferir o tema geral do texto com apoio de palavras transparentes, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em inferir o tema geral do texto com apoio de palavras transparentes.",
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em inferir o tema geral do texto com apoio de palavras transparentes.",
         "a questao seria resolvida automaticamente por falso cognatos em leitura.",
-        "nenhuma interpretacao seria alterada, porque Cognatos em contexto nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "nenhuma interpretação seria alterada, porque Cognatos em contexto não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em inferir o tema geral do texto com apoio de palavras transparentes.",
-      "comentario": "Ignorar cognatos em contexto compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em inferir o tema geral do texto com apoio de palavras transparentes.",
+      "comentario": "Ignorar cognatos em contexto compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "leitura-e-interpretacao",
@@ -4456,14 +4456,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Cognatos em contexto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor Cognatos em contexto?",
+      "enunciado": "Qual trecho ou ação ilustra melhor Cognatos em contexto?",
       "opcoes": [
         "Hospital and natural are clues to understand the text.",
         "Parents does not mean parentes.",
@@ -4471,7 +4471,7 @@
         "The poster encourages students to save water."
       ],
       "correta": "Hospital and natural are clues to understand the text.",
-      "comentario": "O item correto e o que melhor exemplifica cognatos em contexto.",
+      "comentario": "O item correto é o que melhor exemplifica cognatos em contexto.",
       "tempoEstimado": 50,
       "tags": [
         "leitura-e-interpretacao",
@@ -4495,8 +4495,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Cognatos em contexto",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
@@ -4504,12 +4504,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Ao encontrar o exemplo \"Hospital and natural are clues to understand the text.\", a leitura mais adequada e:",
       "opcoes": [
-        "algumas palavras parecidas com o portugues ajudam a montar o sentido global",
-        "algumas palavras parecem familiares, mas tem sentido diferente no ingles",
-        "o formato do texto oferece pistas sobre sua funcao e organizacao",
-        "o texto procura orientar ou incentivar uma acao especifica"
+        "algumas palavras parecidas com o português ajudam a montar o sentido global",
+        "algumas palavras parecem familiares, mas tem sentido diferente no inglês",
+        "o formato do texto oferece pistas sobre sua função e organizacao",
+        "o texto procura orientar ou incentivar uma ação especifica"
       ],
-      "correta": "algumas palavras parecidas com o portugues ajudam a montar o sentido global",
+      "correta": "algumas palavras parecidas com o português ajudam a montar o sentido global",
       "comentario": "A leitura correta do exemplo revela o papel de cognatos em contexto.",
       "tempoEstimado": 55,
       "tags": [
@@ -4534,14 +4534,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Cognatos em contexto",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar cognatos em contexto?",
+      "enunciado": "Qual estratégia ajuda mais a estudar cognatos em contexto?",
       "opcoes": [
         "identificar palavras transparentes e confirmar se combinam com o contexto",
         "desconfiar de palavras muito parecidas e conferir o contexto da frase",
@@ -4549,7 +4549,7 @@
         "observar verbos de comando, tom da mensagem e publico envolvido"
       ],
       "correta": "identificar palavras transparentes e confirmar se combinam com o contexto",
-      "comentario": "A estrategia correta fortalece o dominio de cognatos em contexto.",
+      "comentario": "A estratégia correta fortalece o domínio de cognatos em contexto.",
       "tempoEstimado": 55,
       "tags": [
         "leitura-e-interpretacao",
@@ -4573,22 +4573,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Cognatos em contexto",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Cognatos em contexto e mais cobrado quando:",
+      "enunciado": "Em uma prova, Cognatos em contexto é mais cobrado quando:",
       "opcoes": [
         "a questao exige usar pistas lexicais para avancar na leitura",
-        "o item explora confusao lexical por semelhanca entre ingles e portugues",
+        "o item explora confusao lexical por semelhanca entre inglês e português",
         "a pergunta pede identificar o tipo de texto ou sua organizacao",
         "a questao pede a finalidade principal do texto"
       ],
       "correta": "a questao exige usar pistas lexicais para avancar na leitura",
-      "comentario": "Esse e o tipo de demanda em que cognatos em contexto aparece com mais frequencia.",
+      "comentario": "Esse é o tipo de demanda em que cognatos em contexto aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "leitura-e-interpretacao",
@@ -4612,8 +4612,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Cognatos em contexto",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -4621,13 +4621,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Cognatos em contexto?",
       "opcoes": [
-        "Em sintese, o reconhecimento de palavras parecidas com o portugues que ajudam a compreender o texto.",
-        "Em sintese, o reconhecimento de palavras parecidas com o portugues que podem induzir a interpretacao errada.",
+        "Em sintese, o reconhecimento de palavras parecidas com o português que ajudam a compreender o texto.",
+        "Em sintese, o reconhecimento de palavras parecidas com o português que podem induzir a interpretação errada.",
         "Em sintese, a identificacao de formatos como aviso, convite, anuncio, bilhete ou e-mail curto.",
-        "Em sintese, a compreensao da intencao principal do texto, como informar, convidar, alertar ou vender."
+        "Em sintese, a compreensão da intenção principal do texto, como informar, convidar, alertar ou vender."
       ],
-      "correta": "Em sintese, o reconhecimento de palavras parecidas com o portugues que ajudam a compreender o texto.",
-      "comentario": "O resumo correto recupera o nucleo de cognatos em contexto.",
+      "correta": "Em sintese, o reconhecimento de palavras parecidas com o português que ajudam a compreender o texto.",
+      "comentario": "O resumo correto recupera o núcleo de cognatos em contexto.",
       "tempoEstimado": 60,
       "tags": [
         "leitura-e-interpretacao",
@@ -4651,22 +4651,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Cognatos em contexto",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Cognatos em contexto?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em Cognatos em contexto?",
       "opcoes": [
-        "Hospital and natural are clues to understand the text. -> algumas palavras parecidas com o portugues ajudam a montar o sentido global",
-        "Parents does not mean parentes. -> algumas palavras parecidas com o portugues ajudam a montar o sentido global",
-        "An invitation usually includes date, place and purpose. -> o texto procura orientar ou incentivar uma acao especifica",
-        "The poster encourages students to save water. -> algumas palavras parecem familiares, mas tem sentido diferente no ingles"
+        "Hospital and natural are clues to understand the text. -> algumas palavras parecidas com o português ajudam a montar o sentido global",
+        "Parents does not mean parentes. -> algumas palavras parecidas com o português ajudam a montar o sentido global",
+        "An invitation usually includes date, place and purpose. -> o texto procura orientar ou incentivar uma ação especifica",
+        "The poster encourages students to save water. -> algumas palavras parecem familiares, mas tem sentido diferente no inglês"
       ],
-      "correta": "Hospital and natural are clues to understand the text. -> algumas palavras parecidas com o portugues ajudam a montar o sentido global",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em cognatos em contexto.",
+      "correta": "Hospital and natural are clues to understand the text. -> algumas palavras parecidas com o português ajudam a montar o sentido global",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em cognatos em contexto.",
       "tempoEstimado": 65,
       "tags": [
         "leitura-e-interpretacao",
@@ -4690,8 +4690,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Cognatos em contexto",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -4729,22 +4729,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Falsos cognatos em leitura",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, Falsos cognatos em leitura refere-se a:",
+      "enunciado": "Em Inglês, Falsos cognatos em leitura refere-se a:",
       "opcoes": [
-        "o reconhecimento de palavras parecidas com o portugues que podem induzir a interpretacao errada",
+        "o reconhecimento de palavras parecidas com o português que podem induzir a interpretação errada",
         "a identificacao de formatos como aviso, convite, anuncio, bilhete ou e-mail curto",
-        "a compreensao da intencao principal do texto, como informar, convidar, alertar ou vender",
-        "a conclusao simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita"
+        "a compreensão da intenção principal do texto, como informar, convidar, alertar ou vender",
+        "a conclusão simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita"
       ],
-      "correta": "o reconhecimento de palavras parecidas com o portugues que podem induzir a interpretacao errada",
-      "comentario": "Falsos cognatos em leitura refere-se ao reconhecimento de palavras parecidas com o portugues que podem induzir a interpretacao errada.",
+      "correta": "o reconhecimento de palavras parecidas com o português que podem induzir a interpretação errada",
+      "comentario": "Falsos cognatos em leitura refere-se ao reconhecimento de palavras parecidas com o português que podem induzir a interpretação errada.",
       "tempoEstimado": 20,
       "tags": [
         "leitura-e-interpretacao",
@@ -4768,22 +4768,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Falsos cognatos em leitura",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: um estudante le parents e entende parentes, comprometendo a resposta. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: um estudante le parents e entende parentes, comprometendo a resposta. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
         "Falsos cognatos em leitura",
-        "Generos textuais simples",
-        "Proposito comunicativo",
+        "Gêneros textuais simples",
+        "Propósito comunicativo",
         "Inferencia basica"
       ],
       "correta": "Falsos cognatos em leitura",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de falso cognatos em leitura.",
+      "comentario": "A situação apresentada é melhor compreendida por meio de falso cognatos em leitura.",
       "tempoEstimado": 20,
       "tags": [
         "leitura-e-interpretacao",
@@ -4807,8 +4807,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Falsos cognatos em leitura",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -4846,14 +4846,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Falsos cognatos em leitura",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente falso cognatos em leitura?",
+      "enunciado": "Qual alternativa NÃO representa corretamente falso cognatos em leitura?",
       "opcoes": [
         "An invitation usually includes date, place and purpose.",
         "Parents does not mean parentes.",
@@ -4861,7 +4861,7 @@
         "evitar erros de sentido em textos com palavras enganosamente familiares."
       ],
       "correta": "An invitation usually includes date, place and purpose.",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao falso cognatos em leitura.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não falso cognatos em leitura.",
       "tempoEstimado": 25,
       "tags": [
         "leitura-e-interpretacao",
@@ -4885,17 +4885,17 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Falsos cognatos em leitura",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar falso cognatos em leitura, o foco principal e:",
+      "enunciado": "Ao estudar falso cognatos em leitura, o foco principal é:",
       "opcoes": [
         "evitar traducoes automaticas que distorcem o sentido do texto",
-        "reconhecer a forma do texto e relaciona-la a funcao que ele cumpre",
+        "reconhecer a forma do texto e relaciona-la a função que ele cumpre",
         "identificar para que o texto foi produzido",
         "deduzir sentido com base em indicios textuais e visuais"
       ],
@@ -4924,21 +4924,21 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Falsos cognatos em leitura",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Generos textuais simples trata de a identificacao de formatos como aviso, convite, anuncio, bilhete ou e-mail curto, Falsos cognatos em leitura destaca:",
+      "enunciado": "Enquanto Gêneros textuais simples trata de a identificacao de formatos como aviso, convite, anuncio, bilhete ou e-mail curto, Falsos cognatos em leitura destaca:",
       "opcoes": [
-        "O reconhecimento de palavras parecidas com o portugues que podem induzir a interpretacao errada.",
+        "O reconhecimento de palavras parecidas com o português que podem induzir a interpretação errada.",
         "A identificacao de formatos como aviso, convite, anuncio, bilhete ou e-mail curto.",
-        "A compreensao da intencao principal do texto, como informar, convidar, alertar ou vender.",
-        "A conclusao simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita."
+        "A compreensão da intenção principal do texto, como informar, convidar, alertar ou vender.",
+        "A conclusão simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita."
       ],
-      "correta": "O reconhecimento de palavras parecidas com o portugues que podem induzir a interpretacao errada.",
+      "correta": "O reconhecimento de palavras parecidas com o português que podem induzir a interpretação errada.",
       "comentario": "A comparacao correta mostra a especificidade de falso cognatos em leitura.",
       "tempoEstimado": 30,
       "tags": [
@@ -4963,8 +4963,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Falsos cognatos em leitura",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -4973,12 +4973,12 @@
       "enunciado": "Em uma atividade de sala, um estudante le parents e entende parentes, comprometendo a resposta. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
         "Falsos cognatos em leitura",
-        "Generos textuais simples",
+        "Gêneros textuais simples",
         "Inferencia basica",
         "Ideia principal"
       ],
       "correta": "Falsos cognatos em leitura",
-      "comentario": "Esse tipo de tarefa exige dominio de falso cognatos em leitura.",
+      "comentario": "Esse tipo de tarefa exige domínio de falso cognatos em leitura.",
       "tempoEstimado": 35,
       "tags": [
         "leitura-e-interpretacao",
@@ -5002,14 +5002,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Falsos cognatos em leitura",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de Falsos cognatos em leitura?",
+      "enunciado": "Qual situação pratica depende mais diretamente de Falsos cognatos em leitura?",
       "opcoes": [
         "evitar erros de sentido em textos com palavras enganosamente familiares",
         "distinguir tipos de texto e suas finalidades basicas",
@@ -5041,22 +5041,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Falsos cognatos em leitura",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre falso cognatos em leitura?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre falso cognatos em leitura?",
       "opcoes": [
         "o caso e resolvido com foco em falso cognatos em leitura.",
-        "o caso e melhor resolvido por generos textuais simples.",
-        "o caso elimina a necessidade de proposito comunicativo.",
+        "o caso e melhor resolvido por gêneros textuais simples.",
+        "o caso elimina a necessidade de propósito comunicativo.",
         "o caso impede qualquer uso de inferencia basica."
       ],
       "correta": "o caso e resolvido com foco em falso cognatos em leitura.",
-      "comentario": "A conclusao correta retoma a funcao central de falso cognatos em leitura.",
+      "comentario": "A conclusão correta retoma a função central de falso cognatos em leitura.",
       "tempoEstimado": 40,
       "tags": [
         "leitura-e-interpretacao",
@@ -5080,8 +5080,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Falsos cognatos em leitura",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -5090,8 +5090,8 @@
       "enunciado": "Se a turma fosse revisar falso cognatos em leitura, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
         "Como falso cognatos em leitura aparece em evitar erros de sentido em textos com palavras enganosamente familiares?",
-        "Como generos textuais simples substitui totalmente evitar erros de sentido em textos com palavras enganosamente familiares?",
-        "Por que proposito comunicativo torna desnecessario estudar Falsos cognatos em leitura?",
+        "Como gêneros textuais simples substitui totalmente evitar erros de sentido em textos com palavras enganosamente familiares?",
+        "Por que propósito comunicativo torna desnecessario estudar Falsos cognatos em leitura?",
         "De que modo inferencia basica elimina toda leitura de contexto?"
       ],
       "correta": "Como falso cognatos em leitura aparece em evitar erros de sentido em textos com palavras enganosamente familiares?",
@@ -5119,22 +5119,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Falsos cognatos em leitura",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em falso cognatos em leitura e pensar que:",
+      "enunciado": "Um erro comum em falso cognatos em leitura é pensar que:",
       "opcoes": [
-        "palavras semelhantes ao portugues sempre mantem o mesmo significado",
-        "todo texto em ingles pode ser lido do mesmo jeito, sem observar o genero",
-        "o proposito do texto depende apenas de traduzir seu titulo",
-        "inferir e inventar qualquer resposta que pareca possivel"
+        "palavras semelhantes ao português sempre mantém o mesmo significado",
+        "todo texto em inglês pode ser lido do mesmo jeito, sem observar o gênero",
+        "o propósito do texto depende apenas de traduzir seu titulo",
+        "inferir e inventar qualquer resposta que pareca possível"
       ],
-      "correta": "palavras semelhantes ao portugues sempre mantem o mesmo significado",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de falso cognatos em leitura.",
+      "correta": "palavras semelhantes ao português sempre mantém o mesmo significado",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de falso cognatos em leitura.",
       "tempoEstimado": 45,
       "tags": [
         "leitura-e-interpretacao",
@@ -5158,21 +5158,21 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Falsos cognatos em leitura",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"se parece portugues, entao significa a mesma coisa sem excecao\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"se parece português, entao significa a mesma coisa sem excecao\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque o reconhecimento de palavras parecidas com o portugues que podem induzir a interpretacao errada.",
-        "A afirmacao esta correta, pois resume integralmente falso cognatos em leitura.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque o reconhecimento de palavras parecidas com o português que podem induzir a interpretação errada.",
+        "A afirmação está correta, pois resume integralmente falso cognatos em leitura.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque o reconhecimento de palavras parecidas com o portugues que podem induzir a interpretacao errada.",
+      "correta": "A afirmação está incorreta, porque o reconhecimento de palavras parecidas com o português que podem induzir a interpretação errada.",
       "comentario": "A fala do estudante apresenta um equivoco conceitual sobre falso cognatos em leitura.",
       "tempoEstimado": 45,
       "tags": [
@@ -5197,8 +5197,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Falsos cognatos em leitura",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -5206,13 +5206,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Se falso cognatos em leitura fosse ignorado(a) em evitar erros de sentido em textos com palavras enganosamente familiares, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em evitar erros de sentido em textos com palavras enganosamente familiares.",
-        "a questao seria resolvida automaticamente por generos textuais simples.",
-        "nenhuma interpretacao seria alterada, porque Falsos cognatos em leitura nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em evitar erros de sentido em textos com palavras enganosamente familiares.",
+        "a questao seria resolvida automaticamente por gêneros textuais simples.",
+        "nenhuma interpretação seria alterada, porque Falsos cognatos em leitura não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em evitar erros de sentido em textos com palavras enganosamente familiares.",
-      "comentario": "Ignorar falso cognatos em leitura compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em evitar erros de sentido em textos com palavras enganosamente familiares.",
+      "comentario": "Ignorar falso cognatos em leitura compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "leitura-e-interpretacao",
@@ -5236,14 +5236,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Falsos cognatos em leitura",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor Falsos cognatos em leitura?",
+      "enunciado": "Qual trecho ou ação ilustra melhor Falsos cognatos em leitura?",
       "opcoes": [
         "Parents does not mean parentes.",
         "An invitation usually includes date, place and purpose.",
@@ -5251,7 +5251,7 @@
         "The girl took an umbrella, so it was probably raining."
       ],
       "correta": "Parents does not mean parentes.",
-      "comentario": "O item correto e o que melhor exemplifica falso cognatos em leitura.",
+      "comentario": "O item correto é o que melhor exemplifica falso cognatos em leitura.",
       "tempoEstimado": 50,
       "tags": [
         "leitura-e-interpretacao",
@@ -5275,8 +5275,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Falsos cognatos em leitura",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
@@ -5284,12 +5284,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Ao encontrar o exemplo \"Parents does not mean parentes.\", a leitura mais adequada e:",
       "opcoes": [
-        "algumas palavras parecem familiares, mas tem sentido diferente no ingles",
-        "o formato do texto oferece pistas sobre sua funcao e organizacao",
-        "o texto procura orientar ou incentivar uma acao especifica",
-        "a conclusao surge de pistas do contexto, nao de traducao literal"
+        "algumas palavras parecem familiares, mas tem sentido diferente no inglês",
+        "o formato do texto oferece pistas sobre sua função e organizacao",
+        "o texto procura orientar ou incentivar uma ação especifica",
+        "a conclusão surge de pistas do contexto, não de traducao literal"
       ],
-      "correta": "algumas palavras parecem familiares, mas tem sentido diferente no ingles",
+      "correta": "algumas palavras parecem familiares, mas tem sentido diferente no inglês",
       "comentario": "A leitura correta do exemplo revela o papel de falso cognatos em leitura.",
       "tempoEstimado": 55,
       "tags": [
@@ -5314,22 +5314,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Falsos cognatos em leitura",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar falso cognatos em leitura?",
+      "enunciado": "Qual estratégia ajuda mais a estudar falso cognatos em leitura?",
       "opcoes": [
         "desconfiar de palavras muito parecidas e conferir o contexto da frase",
         "observar estrutura, marcas tipicas e finalidade do texto",
         "observar verbos de comando, tom da mensagem e publico envolvido",
-        "juntar pistas do texto e escolher a interpretacao mais coerente"
+        "juntar pistas do texto e escolher a interpretação mais coerente"
       ],
       "correta": "desconfiar de palavras muito parecidas e conferir o contexto da frase",
-      "comentario": "A estrategia correta fortalece o dominio de falso cognatos em leitura.",
+      "comentario": "A estratégia correta fortalece o domínio de falso cognatos em leitura.",
       "tempoEstimado": 55,
       "tags": [
         "leitura-e-interpretacao",
@@ -5353,22 +5353,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Falsos cognatos em leitura",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Falsos cognatos em leitura e mais cobrado quando:",
+      "enunciado": "Em uma prova, Falsos cognatos em leitura é mais cobrado quando:",
       "opcoes": [
-        "o item explora confusao lexical por semelhanca entre ingles e portugues",
+        "o item explora confusao lexical por semelhanca entre inglês e português",
         "a pergunta pede identificar o tipo de texto ou sua organizacao",
         "a questao pede a finalidade principal do texto",
-        "a prova cobra uma conclusao provavel, mesmo sem frase explicita"
+        "a prova cobra uma conclusão provavel, mesmo sem frase explicita"
       ],
-      "correta": "o item explora confusao lexical por semelhanca entre ingles e portugues",
-      "comentario": "Esse e o tipo de demanda em que falso cognatos em leitura aparece com mais frequencia.",
+      "correta": "o item explora confusao lexical por semelhanca entre inglês e português",
+      "comentario": "Esse é o tipo de demanda em que falso cognatos em leitura aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "leitura-e-interpretacao",
@@ -5392,8 +5392,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Falsos cognatos em leitura",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -5401,13 +5401,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Falsos cognatos em leitura?",
       "opcoes": [
-        "Em sintese, o reconhecimento de palavras parecidas com o portugues que podem induzir a interpretacao errada.",
+        "Em sintese, o reconhecimento de palavras parecidas com o português que podem induzir a interpretação errada.",
         "Em sintese, a identificacao de formatos como aviso, convite, anuncio, bilhete ou e-mail curto.",
-        "Em sintese, a compreensao da intencao principal do texto, como informar, convidar, alertar ou vender.",
-        "Em sintese, a conclusao simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita."
+        "Em sintese, a compreensão da intenção principal do texto, como informar, convidar, alertar ou vender.",
+        "Em sintese, a conclusão simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita."
       ],
-      "correta": "Em sintese, o reconhecimento de palavras parecidas com o portugues que podem induzir a interpretacao errada.",
-      "comentario": "O resumo correto recupera o nucleo de falso cognatos em leitura.",
+      "correta": "Em sintese, o reconhecimento de palavras parecidas com o português que podem induzir a interpretação errada.",
+      "comentario": "O resumo correto recupera o núcleo de falso cognatos em leitura.",
       "tempoEstimado": 60,
       "tags": [
         "leitura-e-interpretacao",
@@ -5431,22 +5431,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Falsos cognatos em leitura",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Falsos cognatos em leitura?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em Falsos cognatos em leitura?",
       "opcoes": [
-        "Parents does not mean parentes. -> algumas palavras parecem familiares, mas tem sentido diferente no ingles",
-        "An invitation usually includes date, place and purpose. -> algumas palavras parecem familiares, mas tem sentido diferente no ingles",
-        "The poster encourages students to save water. -> a conclusao surge de pistas do contexto, nao de traducao literal",
-        "The girl took an umbrella, so it was probably raining. -> o formato do texto oferece pistas sobre sua funcao e organizacao"
+        "Parents does not mean parentes. -> algumas palavras parecem familiares, mas tem sentido diferente no inglês",
+        "An invitation usually includes date, place and purpose. -> algumas palavras parecem familiares, mas tem sentido diferente no inglês",
+        "The poster encourages students to save water. -> a conclusão surge de pistas do contexto, não de traducao literal",
+        "The girl took an umbrella, so it was probably raining. -> o formato do texto oferece pistas sobre sua função e organizacao"
       ],
-      "correta": "Parents does not mean parentes. -> algumas palavras parecem familiares, mas tem sentido diferente no ingles",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em falso cognatos em leitura.",
+      "correta": "Parents does not mean parentes. -> algumas palavras parecem familiares, mas tem sentido diferente no inglês",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em falso cognatos em leitura.",
       "tempoEstimado": 65,
       "tags": [
         "leitura-e-interpretacao",
@@ -5470,8 +5470,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Falsos cognatos em leitura",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -5482,7 +5482,7 @@
         "evitar traducoes automaticas que distorcem o sentido do texto",
         "desconfiar de palavras muito parecidas e conferir o contexto da frase",
         "evitar erros de sentido em textos com palavras enganosamente familiares",
-        "o item explora confusao lexical por semelhanca entre ingles e portugues"
+        "o item explora confusao lexical por semelhanca entre inglês e português"
       ],
       "correta": "evitar traducoes automaticas que distorcem o sentido do texto",
       "comentario": "O objetivo central de falso cognatos em leitura e evitar traducoes automaticas que distorcem o sentido do texto.",
@@ -5509,22 +5509,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Generos textuais simples",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Gêneros textuais simples",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, Generos textuais simples refere-se a:",
+      "enunciado": "Em Inglês, Gêneros textuais simples refere-se a:",
       "opcoes": [
         "a identificacao de formatos como aviso, convite, anuncio, bilhete ou e-mail curto",
-        "a compreensao da intencao principal do texto, como informar, convidar, alertar ou vender",
-        "a conclusao simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita",
-        "a identificacao do assunto central que organiza as demais informacoes do texto"
+        "a compreensão da intenção principal do texto, como informar, convidar, alertar ou vender",
+        "a conclusão simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita",
+        "a identificacao do assunto central que organiza as demais informações do texto"
       ],
       "correta": "a identificacao de formatos como aviso, convite, anuncio, bilhete ou e-mail curto",
-      "comentario": "Generos textuais simples refere-se a identificacao de formatos como aviso, convite, anuncio, bilhete ou e-mail curto.",
+      "comentario": "Gêneros textuais simples refere-se a identificacao de formatos como aviso, convite, anuncio, bilhete ou e-mail curto.",
       "tempoEstimado": 20,
       "tags": [
         "leitura-e-interpretacao",
@@ -5548,22 +5548,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Generos textuais simples",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Gêneros textuais simples",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: o estudante le um pequeno e-mail com saudacao, mensagem curta e despedida. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: o estudante le um pequeno e-mail com saudacao, mensagem curta e despedida. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
-        "Generos textuais simples",
-        "Proposito comunicativo",
+        "Gêneros textuais simples",
+        "Propósito comunicativo",
         "Inferencia basica",
         "Ideia principal"
       ],
-      "correta": "Generos textuais simples",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de generos textuais simples.",
+      "correta": "Gêneros textuais simples",
+      "comentario": "A situação apresentada é melhor compreendida por meio de gêneros textuais simples.",
       "tempoEstimado": 20,
       "tags": [
         "leitura-e-interpretacao",
@@ -5587,14 +5587,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Generos textuais simples",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Gêneros textuais simples",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual exemplo combina melhor com generos textuais simples?",
+      "enunciado": "Qual exemplo combina melhor com gêneros textuais simples?",
       "opcoes": [
         "An invitation usually includes date, place and purpose.",
         "The poster encourages students to save water.",
@@ -5602,7 +5602,7 @@
         "The text is mainly about school rules."
       ],
       "correta": "An invitation usually includes date, place and purpose.",
-      "comentario": "O exemplo correto ilustra o uso de generos textuais simples.",
+      "comentario": "O exemplo correto ilustra o uso de gêneros textuais simples.",
       "tempoEstimado": 25,
       "tags": [
         "leitura-e-interpretacao",
@@ -5626,14 +5626,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Generos textuais simples",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Gêneros textuais simples",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente generos textuais simples?",
+      "enunciado": "Qual alternativa NÃO representa corretamente gêneros textuais simples?",
       "opcoes": [
         "The poster encourages students to save water.",
         "An invitation usually includes date, place and purpose.",
@@ -5641,7 +5641,7 @@
         "distinguir tipos de texto e suas finalidades basicas."
       ],
       "correta": "The poster encourages students to save water.",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao generos textuais simples.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não gêneros textuais simples.",
       "tempoEstimado": 25,
       "tags": [
         "leitura-e-interpretacao",
@@ -5665,22 +5665,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Generos textuais simples",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Gêneros textuais simples",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar generos textuais simples, o foco principal e:",
+      "enunciado": "Ao estudar gêneros textuais simples, o foco principal é:",
       "opcoes": [
-        "reconhecer a forma do texto e relaciona-la a funcao que ele cumpre",
+        "reconhecer a forma do texto e relaciona-la a função que ele cumpre",
         "identificar para que o texto foi produzido",
         "deduzir sentido com base em indicios textuais e visuais",
         "reconhecer o tema central e diferenciar ideia geral de detalhe"
       ],
-      "correta": "reconhecer a forma do texto e relaciona-la a funcao que ele cumpre",
-      "comentario": "Generos textuais simples concentra-se em reconhecer a forma do texto e relaciona-la a funcao que ele cumpre.",
+      "correta": "reconhecer a forma do texto e relaciona-la a função que ele cumpre",
+      "comentario": "Gêneros textuais simples concentra-se em reconhecer a forma do texto e relaciona-la a função que ele cumpre.",
       "tempoEstimado": 30,
       "tags": [
         "leitura-e-interpretacao",
@@ -5704,22 +5704,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Generos textuais simples",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Gêneros textuais simples",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Proposito comunicativo trata de a compreensao da intencao principal do texto, como informar, convidar, alertar ou vender, Generos textuais simples destaca:",
+      "enunciado": "Enquanto Propósito comunicativo trata de a compreensão da intenção principal do texto, como informar, convidar, alertar ou vender, Gêneros textuais simples destaca:",
       "opcoes": [
         "A identificacao de formatos como aviso, convite, anuncio, bilhete ou e-mail curto.",
-        "A compreensao da intencao principal do texto, como informar, convidar, alertar ou vender.",
-        "A conclusao simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita.",
-        "A identificacao do assunto central que organiza as demais informacoes do texto."
+        "A compreensão da intenção principal do texto, como informar, convidar, alertar ou vender.",
+        "A conclusão simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita.",
+        "A identificacao do assunto central que organiza as demais informações do texto."
       ],
       "correta": "A identificacao de formatos como aviso, convite, anuncio, bilhete ou e-mail curto.",
-      "comentario": "A comparacao correta mostra a especificidade de generos textuais simples.",
+      "comentario": "A comparacao correta mostra a especificidade de gêneros textuais simples.",
       "tempoEstimado": 30,
       "tags": [
         "leitura-e-interpretacao",
@@ -5743,22 +5743,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Generos textuais simples",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Gêneros textuais simples",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
       "enunciado": "Em uma atividade de sala, o estudante le um pequeno e-mail com saudacao, mensagem curta e despedida. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
-        "Generos textuais simples",
-        "Proposito comunicativo",
+        "Gêneros textuais simples",
+        "Propósito comunicativo",
         "Ideia principal",
-        "Informacoes explicitas"
+        "Informações explícitas"
       ],
-      "correta": "Generos textuais simples",
-      "comentario": "Esse tipo de tarefa exige dominio de generos textuais simples.",
+      "correta": "Gêneros textuais simples",
+      "comentario": "Esse tipo de tarefa exige domínio de gêneros textuais simples.",
       "tempoEstimado": 35,
       "tags": [
         "leitura-e-interpretacao",
@@ -5782,22 +5782,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Generos textuais simples",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Gêneros textuais simples",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de Generos textuais simples?",
+      "enunciado": "Qual situação pratica depende mais diretamente de Gêneros textuais simples?",
       "opcoes": [
         "distinguir tipos de texto e suas finalidades basicas",
         "distinguir se o texto quer informar, convencer, orientar ou convidar",
-        "deduzir informacoes basicas a partir do contexto",
+        "deduzir informações basicas a partir do contexto",
         "retirar do texto nomes, horarios, lugares e fatos escritos claramente"
       ],
       "correta": "distinguir tipos de texto e suas finalidades basicas",
-      "comentario": "Generos textuais simples aparece de forma direta em distinguir tipos de texto e suas finalidades basicas.",
+      "comentario": "Gêneros textuais simples aparece de forma direta em distinguir tipos de texto e suas finalidades basicas.",
       "tempoEstimado": 35,
       "tags": [
         "leitura-e-interpretacao",
@@ -5821,22 +5821,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Generos textuais simples",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Gêneros textuais simples",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre generos textuais simples?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre gêneros textuais simples?",
       "opcoes": [
-        "o caso e resolvido com foco em generos textuais simples.",
-        "o caso e melhor resolvido por proposito comunicativo.",
+        "o caso e resolvido com foco em gêneros textuais simples.",
+        "o caso e melhor resolvido por propósito comunicativo.",
         "o caso elimina a necessidade de inferencia basica.",
         "o caso impede qualquer uso de ideia principal."
       ],
-      "correta": "o caso e resolvido com foco em generos textuais simples.",
-      "comentario": "A conclusao correta retoma a funcao central de generos textuais simples.",
+      "correta": "o caso e resolvido com foco em gêneros textuais simples.",
+      "comentario": "A conclusão correta retoma a função central de gêneros textuais simples.",
       "tempoEstimado": 40,
       "tags": [
         "leitura-e-interpretacao",
@@ -5860,22 +5860,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Generos textuais simples",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Gêneros textuais simples",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se a turma fosse revisar generos textuais simples, qual pergunta de estudo seria a mais adequada?",
+      "enunciado": "Se a turma fosse revisar gêneros textuais simples, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como generos textuais simples aparece em distinguir tipos de texto e suas finalidades basicas?",
-        "Como proposito comunicativo substitui totalmente distinguir tipos de texto e suas finalidades basicas?",
-        "Por que inferencia basica torna desnecessario estudar Generos textuais simples?",
+        "Como gêneros textuais simples aparece em distinguir tipos de texto e suas finalidades basicas?",
+        "Como propósito comunicativo substitui totalmente distinguir tipos de texto e suas finalidades basicas?",
+        "Por que inferencia basica torna desnecessario estudar Gêneros textuais simples?",
         "De que modo ideia principal elimina toda leitura de contexto?"
       ],
-      "correta": "Como generos textuais simples aparece em distinguir tipos de texto e suas finalidades basicas?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de generos textuais simples.",
+      "correta": "Como gêneros textuais simples aparece em distinguir tipos de texto e suas finalidades basicas?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de gêneros textuais simples.",
       "tempoEstimado": 40,
       "tags": [
         "leitura-e-interpretacao",
@@ -5899,22 +5899,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Generos textuais simples",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Gêneros textuais simples",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em generos textuais simples e pensar que:",
+      "enunciado": "Um erro comum em gêneros textuais simples é pensar que:",
       "opcoes": [
-        "todo texto em ingles pode ser lido do mesmo jeito, sem observar o genero",
-        "o proposito do texto depende apenas de traduzir seu titulo",
-        "inferir e inventar qualquer resposta que pareca possivel",
+        "todo texto em inglês pode ser lido do mesmo jeito, sem observar o gênero",
+        "o propósito do texto depende apenas de traduzir seu titulo",
+        "inferir e inventar qualquer resposta que pareca possível",
         "a ideia principal e sempre a primeira frase do texto"
       ],
-      "correta": "todo texto em ingles pode ser lido do mesmo jeito, sem observar o genero",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de generos textuais simples.",
+      "correta": "todo texto em inglês pode ser lido do mesmo jeito, sem observar o gênero",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de gêneros textuais simples.",
       "tempoEstimado": 45,
       "tags": [
         "leitura-e-interpretacao",
@@ -5938,22 +5938,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Generos textuais simples",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Gêneros textuais simples",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"nao faz diferenca saber se o texto e anuncio, bilhete ou convite\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"não faz diferenca saber se o texto e anuncio, bilhete ou convite\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque a identificacao de formatos como aviso, convite, anuncio, bilhete ou e-mail curto.",
-        "A afirmacao esta correta, pois resume integralmente generos textuais simples.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque a identificacao de formatos como aviso, convite, anuncio, bilhete ou e-mail curto.",
+        "A afirmação está correta, pois resume integralmente gêneros textuais simples.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque a identificacao de formatos como aviso, convite, anuncio, bilhete ou e-mail curto.",
-      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre generos textuais simples.",
+      "correta": "A afirmação está incorreta, porque a identificacao de formatos como aviso, convite, anuncio, bilhete ou e-mail curto.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre gêneros textuais simples.",
       "tempoEstimado": 45,
       "tags": [
         "leitura-e-interpretacao",
@@ -5977,22 +5977,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Generos textuais simples",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Gêneros textuais simples",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se generos textuais simples fosse ignorado(a) em distinguir tipos de texto e suas finalidades basicas, o resultado mais provavel seria:",
+      "enunciado": "Se gêneros textuais simples fosse ignorado(a) em distinguir tipos de texto e suas finalidades basicas, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em distinguir tipos de texto e suas finalidades basicas.",
-        "a questao seria resolvida automaticamente por proposito comunicativo.",
-        "nenhuma interpretacao seria alterada, porque Generos textuais simples nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em distinguir tipos de texto e suas finalidades basicas.",
+        "a questao seria resolvida automaticamente por propósito comunicativo.",
+        "nenhuma interpretação seria alterada, porque Gêneros textuais simples não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em distinguir tipos de texto e suas finalidades basicas.",
-      "comentario": "Ignorar generos textuais simples compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em distinguir tipos de texto e suas finalidades basicas.",
+      "comentario": "Ignorar gêneros textuais simples compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "leitura-e-interpretacao",
@@ -6016,14 +6016,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Generos textuais simples",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Gêneros textuais simples",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor Generos textuais simples?",
+      "enunciado": "Qual trecho ou ação ilustra melhor Gêneros textuais simples?",
       "opcoes": [
         "An invitation usually includes date, place and purpose.",
         "The poster encourages students to save water.",
@@ -6031,7 +6031,7 @@
         "The text is mainly about school rules."
       ],
       "correta": "An invitation usually includes date, place and purpose.",
-      "comentario": "O item correto e o que melhor exemplifica generos textuais simples.",
+      "comentario": "O item correto é o que melhor exemplifica gêneros textuais simples.",
       "tempoEstimado": 50,
       "tags": [
         "leitura-e-interpretacao",
@@ -6055,22 +6055,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Generos textuais simples",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Gêneros textuais simples",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Ao encontrar o exemplo \"An invitation usually includes date, place and purpose.\", a leitura mais adequada e:",
       "opcoes": [
-        "o formato do texto oferece pistas sobre sua funcao e organizacao",
-        "o texto procura orientar ou incentivar uma acao especifica",
-        "a conclusao surge de pistas do contexto, nao de traducao literal",
-        "o leitor deve identificar o tema central do texto, e nao um detalhe isolado"
+        "o formato do texto oferece pistas sobre sua função e organizacao",
+        "o texto procura orientar ou incentivar uma ação especifica",
+        "a conclusão surge de pistas do contexto, não de traducao literal",
+        "o leitor deve identificar o tema central do texto, e não um detalhe isolado"
       ],
-      "correta": "o formato do texto oferece pistas sobre sua funcao e organizacao",
-      "comentario": "A leitura correta do exemplo revela o papel de generos textuais simples.",
+      "correta": "o formato do texto oferece pistas sobre sua função e organizacao",
+      "comentario": "A leitura correta do exemplo revela o papel de gêneros textuais simples.",
       "tempoEstimado": 55,
       "tags": [
         "leitura-e-interpretacao",
@@ -6094,22 +6094,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Generos textuais simples",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Gêneros textuais simples",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar generos textuais simples?",
+      "enunciado": "Qual estratégia ajuda mais a estudar gêneros textuais simples?",
       "opcoes": [
         "observar estrutura, marcas tipicas e finalidade do texto",
         "observar verbos de comando, tom da mensagem e publico envolvido",
-        "juntar pistas do texto e escolher a interpretacao mais coerente",
+        "juntar pistas do texto e escolher a interpretação mais coerente",
         "observar titulo, palavras recorrentes e repeticao de assunto"
       ],
       "correta": "observar estrutura, marcas tipicas e finalidade do texto",
-      "comentario": "A estrategia correta fortalece o dominio de generos textuais simples.",
+      "comentario": "A estratégia correta fortalece o domínio de gêneros textuais simples.",
       "tempoEstimado": 55,
       "tags": [
         "leitura-e-interpretacao",
@@ -6133,22 +6133,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Generos textuais simples",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Gêneros textuais simples",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Generos textuais simples e mais cobrado quando:",
+      "enunciado": "Em uma prova, Gêneros textuais simples é mais cobrado quando:",
       "opcoes": [
         "a pergunta pede identificar o tipo de texto ou sua organizacao",
         "a questao pede a finalidade principal do texto",
-        "a prova cobra uma conclusao provavel, mesmo sem frase explicita",
+        "a prova cobra uma conclusão provavel, mesmo sem frase explicita",
         "a questao pede o assunto principal ou o melhor titulo para o texto"
       ],
       "correta": "a pergunta pede identificar o tipo de texto ou sua organizacao",
-      "comentario": "Esse e o tipo de demanda em que generos textuais simples aparece com mais frequencia.",
+      "comentario": "Esse é o tipo de demanda em que gêneros textuais simples aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "leitura-e-interpretacao",
@@ -6172,22 +6172,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Generos textuais simples",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Gêneros textuais simples",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia de Generos textuais simples?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia de Gêneros textuais simples?",
       "opcoes": [
         "Em sintese, a identificacao de formatos como aviso, convite, anuncio, bilhete ou e-mail curto.",
-        "Em sintese, a compreensao da intencao principal do texto, como informar, convidar, alertar ou vender.",
-        "Em sintese, a conclusao simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita.",
-        "Em sintese, a identificacao do assunto central que organiza as demais informacoes do texto."
+        "Em sintese, a compreensão da intenção principal do texto, como informar, convidar, alertar ou vender.",
+        "Em sintese, a conclusão simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita.",
+        "Em sintese, a identificacao do assunto central que organiza as demais informações do texto."
       ],
       "correta": "Em sintese, a identificacao de formatos como aviso, convite, anuncio, bilhete ou e-mail curto.",
-      "comentario": "O resumo correto recupera o nucleo de generos textuais simples.",
+      "comentario": "O resumo correto recupera o núcleo de gêneros textuais simples.",
       "tempoEstimado": 60,
       "tags": [
         "leitura-e-interpretacao",
@@ -6211,22 +6211,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Generos textuais simples",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Gêneros textuais simples",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Generos textuais simples?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em Gêneros textuais simples?",
       "opcoes": [
-        "An invitation usually includes date, place and purpose. -> o formato do texto oferece pistas sobre sua funcao e organizacao",
-        "The poster encourages students to save water. -> o formato do texto oferece pistas sobre sua funcao e organizacao",
-        "The girl took an umbrella, so it was probably raining. -> o leitor deve identificar o tema central do texto, e nao um detalhe isolado",
-        "The text is mainly about school rules. -> o texto procura orientar ou incentivar uma acao especifica"
+        "An invitation usually includes date, place and purpose. -> o formato do texto oferece pistas sobre sua função e organizacao",
+        "The poster encourages students to save water. -> o formato do texto oferece pistas sobre sua função e organizacao",
+        "The girl took an umbrella, so it was probably raining. -> o leitor deve identificar o tema central do texto, e não um detalhe isolado",
+        "The text is mainly about school rules. -> o texto procura orientar ou incentivar uma ação especifica"
       ],
-      "correta": "An invitation usually includes date, place and purpose. -> o formato do texto oferece pistas sobre sua funcao e organizacao",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em generos textuais simples.",
+      "correta": "An invitation usually includes date, place and purpose. -> o formato do texto oferece pistas sobre sua função e organizacao",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em gêneros textuais simples.",
       "tempoEstimado": 65,
       "tags": [
         "leitura-e-interpretacao",
@@ -6250,22 +6250,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Generos textuais simples",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Gêneros textuais simples",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao resolver uma atividade sobre generos textuais simples, o estudante deve principalmente:",
+      "enunciado": "Ao resolver uma atividade sobre gêneros textuais simples, o estudante deve principalmente:",
       "opcoes": [
-        "reconhecer a forma do texto e relaciona-la a funcao que ele cumpre",
+        "reconhecer a forma do texto e relaciona-la a função que ele cumpre",
         "observar estrutura, marcas tipicas e finalidade do texto",
         "distinguir tipos de texto e suas finalidades basicas",
         "a pergunta pede identificar o tipo de texto ou sua organizacao"
       ],
-      "correta": "reconhecer a forma do texto e relaciona-la a funcao que ele cumpre",
-      "comentario": "O objetivo central de generos textuais simples e reconhecer a forma do texto e relaciona-la a funcao que ele cumpre.",
+      "correta": "reconhecer a forma do texto e relaciona-la a função que ele cumpre",
+      "comentario": "O objetivo central de gêneros textuais simples e reconhecer a forma do texto e relaciona-la a função que ele cumpre.",
       "tempoEstimado": 70,
       "tags": [
         "leitura-e-interpretacao",
@@ -6289,22 +6289,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Proposito comunicativo",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Propósito comunicativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, Proposito comunicativo refere-se a:",
+      "enunciado": "Em Inglês, Propósito comunicativo refere-se a:",
       "opcoes": [
-        "a compreensao da intencao principal do texto, como informar, convidar, alertar ou vender",
-        "a conclusao simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita",
-        "a identificacao do assunto central que organiza as demais informacoes do texto",
+        "a compreensão da intenção principal do texto, como informar, convidar, alertar ou vender",
+        "a conclusão simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita",
+        "a identificacao do assunto central que organiza as demais informações do texto",
         "a localizacao de dados que aparecem de forma direta no texto"
       ],
-      "correta": "a compreensao da intencao principal do texto, como informar, convidar, alertar ou vender",
-      "comentario": "Proposito comunicativo refere-se a compreensao da intencao principal do texto, como informar, convidar, alertar ou vender.",
+      "correta": "a compreensão da intenção principal do texto, como informar, convidar, alertar ou vender",
+      "comentario": "Propósito comunicativo refere-se a compreensão da intenção principal do texto, como informar, convidar, alertar ou vender.",
       "tempoEstimado": 20,
       "tags": [
         "leitura-e-interpretacao",
@@ -6328,22 +6328,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Proposito comunicativo",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Propósito comunicativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: um cartaz escolar orienta os alunos a economizar agua durante a semana do meio ambiente. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: um cartaz escolar orienta os alunos a economizar agua durante a semana do meio ambiente. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
-        "Proposito comunicativo",
+        "Propósito comunicativo",
         "Inferencia basica",
         "Ideia principal",
-        "Informacoes explicitas"
+        "Informações explícitas"
       ],
-      "correta": "Proposito comunicativo",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de proposito comunicativo.",
+      "correta": "Propósito comunicativo",
+      "comentario": "A situação apresentada é melhor compreendida por meio de propósito comunicativo.",
       "tempoEstimado": 20,
       "tags": [
         "leitura-e-interpretacao",
@@ -6367,14 +6367,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Proposito comunicativo",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Propósito comunicativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual exemplo combina melhor com proposito comunicativo?",
+      "enunciado": "Qual exemplo combina melhor com propósito comunicativo?",
       "opcoes": [
         "The poster encourages students to save water.",
         "The girl took an umbrella, so it was probably raining.",
@@ -6382,7 +6382,7 @@
         "Lucy studies in the morning."
       ],
       "correta": "The poster encourages students to save water.",
-      "comentario": "O exemplo correto ilustra o uso de proposito comunicativo.",
+      "comentario": "O exemplo correto ilustra o uso de propósito comunicativo.",
       "tempoEstimado": 25,
       "tags": [
         "leitura-e-interpretacao",
@@ -6406,14 +6406,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Proposito comunicativo",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Propósito comunicativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente proposito comunicativo?",
+      "enunciado": "Qual alternativa NÃO representa corretamente propósito comunicativo?",
       "opcoes": [
         "The girl took an umbrella, so it was probably raining.",
         "The poster encourages students to save water.",
@@ -6421,7 +6421,7 @@
         "distinguir se o texto quer informar, convencer, orientar ou convidar."
       ],
       "correta": "The girl took an umbrella, so it was probably raining.",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao proposito comunicativo.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não propósito comunicativo.",
       "tempoEstimado": 25,
       "tags": [
         "leitura-e-interpretacao",
@@ -6445,14 +6445,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Proposito comunicativo",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Propósito comunicativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar proposito comunicativo, o foco principal e:",
+      "enunciado": "Ao estudar propósito comunicativo, o foco principal é:",
       "opcoes": [
         "identificar para que o texto foi produzido",
         "deduzir sentido com base em indicios textuais e visuais",
@@ -6460,7 +6460,7 @@
         "identificar respostas literais sem depender de grande inferencia"
       ],
       "correta": "identificar para que o texto foi produzido",
-      "comentario": "Proposito comunicativo concentra-se em identificar para que o texto foi produzido.",
+      "comentario": "Propósito comunicativo concentra-se em identificar para que o texto foi produzido.",
       "tempoEstimado": 30,
       "tags": [
         "leitura-e-interpretacao",
@@ -6484,22 +6484,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Proposito comunicativo",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Propósito comunicativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Inferencia basica trata de a conclusao simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita, Proposito comunicativo destaca:",
+      "enunciado": "Enquanto Inferencia basica trata de a conclusão simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita, Propósito comunicativo destaca:",
       "opcoes": [
-        "A compreensao da intencao principal do texto, como informar, convidar, alertar ou vender.",
-        "A conclusao simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita.",
-        "A identificacao do assunto central que organiza as demais informacoes do texto.",
+        "A compreensão da intenção principal do texto, como informar, convidar, alertar ou vender.",
+        "A conclusão simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita.",
+        "A identificacao do assunto central que organiza as demais informações do texto.",
         "A localizacao de dados que aparecem de forma direta no texto."
       ],
-      "correta": "A compreensao da intencao principal do texto, como informar, convidar, alertar ou vender.",
-      "comentario": "A comparacao correta mostra a especificidade de proposito comunicativo.",
+      "correta": "A compreensão da intenção principal do texto, como informar, convidar, alertar ou vender.",
+      "comentario": "A comparacao correta mostra a especificidade de propósito comunicativo.",
       "tempoEstimado": 30,
       "tags": [
         "leitura-e-interpretacao",
@@ -6523,22 +6523,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Proposito comunicativo",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Propósito comunicativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
       "enunciado": "Em uma atividade de sala, um cartaz escolar orienta os alunos a economizar agua durante a semana do meio ambiente. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
-        "Proposito comunicativo",
+        "Propósito comunicativo",
         "Inferencia basica",
-        "Informacoes explicitas",
+        "Informações explícitas",
         "Skimming"
       ],
-      "correta": "Proposito comunicativo",
-      "comentario": "Esse tipo de tarefa exige dominio de proposito comunicativo.",
+      "correta": "Propósito comunicativo",
+      "comentario": "Esse tipo de tarefa exige domínio de propósito comunicativo.",
       "tempoEstimado": 35,
       "tags": [
         "leitura-e-interpretacao",
@@ -6562,22 +6562,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Proposito comunicativo",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Propósito comunicativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de Proposito comunicativo?",
+      "enunciado": "Qual situação pratica depende mais diretamente de Propósito comunicativo?",
       "opcoes": [
         "distinguir se o texto quer informar, convencer, orientar ou convidar",
-        "deduzir informacoes basicas a partir do contexto",
+        "deduzir informações basicas a partir do contexto",
         "responder perguntas sobre o tema central de textos curtos",
         "ganhar visao geral de textos curtos antes de buscar detalhes"
       ],
       "correta": "distinguir se o texto quer informar, convencer, orientar ou convidar",
-      "comentario": "Proposito comunicativo aparece de forma direta em distinguir se o texto quer informar, convencer, orientar ou convidar.",
+      "comentario": "Propósito comunicativo aparece de forma direta em distinguir se o texto quer informar, convencer, orientar ou convidar.",
       "tempoEstimado": 35,
       "tags": [
         "leitura-e-interpretacao",
@@ -6601,22 +6601,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Proposito comunicativo",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Propósito comunicativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre proposito comunicativo?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre propósito comunicativo?",
       "opcoes": [
-        "o caso e resolvido com foco em proposito comunicativo.",
+        "o caso e resolvido com foco em propósito comunicativo.",
         "o caso e melhor resolvido por inferencia basica.",
         "o caso elimina a necessidade de ideia principal.",
-        "o caso impede qualquer uso de informacoes explicitas."
+        "o caso impede qualquer uso de informações explícitas."
       ],
-      "correta": "o caso e resolvido com foco em proposito comunicativo.",
-      "comentario": "A conclusao correta retoma a funcao central de proposito comunicativo.",
+      "correta": "o caso e resolvido com foco em propósito comunicativo.",
+      "comentario": "A conclusão correta retoma a função central de propósito comunicativo.",
       "tempoEstimado": 40,
       "tags": [
         "leitura-e-interpretacao",
@@ -6640,22 +6640,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Proposito comunicativo",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Propósito comunicativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se a turma fosse revisar proposito comunicativo, qual pergunta de estudo seria a mais adequada?",
+      "enunciado": "Se a turma fosse revisar propósito comunicativo, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como proposito comunicativo aparece em distinguir se o texto quer informar, convencer, orientar ou convidar?",
+        "Como propósito comunicativo aparece em distinguir se o texto quer informar, convencer, orientar ou convidar?",
         "Como inferencia basica substitui totalmente distinguir se o texto quer informar, convencer, orientar ou convidar?",
-        "Por que ideia principal torna desnecessario estudar Proposito comunicativo?",
-        "De que modo informacoes explicitas elimina toda leitura de contexto?"
+        "Por que ideia principal torna desnecessario estudar Propósito comunicativo?",
+        "De que modo informações explícitas elimina toda leitura de contexto?"
       ],
-      "correta": "Como proposito comunicativo aparece em distinguir se o texto quer informar, convencer, orientar ou convidar?",
-      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de proposito comunicativo.",
+      "correta": "Como propósito comunicativo aparece em distinguir se o texto quer informar, convencer, orientar ou convidar?",
+      "comentario": "A pergunta correta investiga diretamente o objeto de estudo de propósito comunicativo.",
       "tempoEstimado": 40,
       "tags": [
         "leitura-e-interpretacao",
@@ -6679,22 +6679,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Proposito comunicativo",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Propósito comunicativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em proposito comunicativo e pensar que:",
+      "enunciado": "Um erro comum em propósito comunicativo é pensar que:",
       "opcoes": [
-        "o proposito do texto depende apenas de traduzir seu titulo",
-        "inferir e inventar qualquer resposta que pareca possivel",
+        "o propósito do texto depende apenas de traduzir seu titulo",
+        "inferir e inventar qualquer resposta que pareca possível",
         "a ideia principal e sempre a primeira frase do texto",
-        "toda pergunta de leitura exige interpretacao implicita"
+        "toda pergunta de leitura exige interpretação implícita"
       ],
-      "correta": "o proposito do texto depende apenas de traduzir seu titulo",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de proposito comunicativo.",
+      "correta": "o propósito do texto depende apenas de traduzir seu titulo",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de propósito comunicativo.",
       "tempoEstimado": 45,
       "tags": [
         "leitura-e-interpretacao",
@@ -6718,22 +6718,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Proposito comunicativo",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Propósito comunicativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"para descobrir o proposito do texto basta escolher a palavra mais conhecida\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"para descobrir o propósito do texto basta escolher a palavra mais conhecida\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque a compreensao da intencao principal do texto, como informar, convidar, alertar ou vender.",
-        "A afirmacao esta correta, pois resume integralmente proposito comunicativo.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque a compreensão da intenção principal do texto, como informar, convidar, alertar ou vender.",
+        "A afirmação está correta, pois resume integralmente propósito comunicativo.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque a compreensao da intencao principal do texto, como informar, convidar, alertar ou vender.",
-      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre proposito comunicativo.",
+      "correta": "A afirmação está incorreta, porque a compreensão da intenção principal do texto, como informar, convidar, alertar ou vender.",
+      "comentario": "A fala do estudante apresenta um equivoco conceitual sobre propósito comunicativo.",
       "tempoEstimado": 45,
       "tags": [
         "leitura-e-interpretacao",
@@ -6757,22 +6757,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Proposito comunicativo",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Propósito comunicativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se proposito comunicativo fosse ignorado(a) em distinguir se o texto quer informar, convencer, orientar ou convidar, o resultado mais provavel seria:",
+      "enunciado": "Se propósito comunicativo fosse ignorado(a) em distinguir se o texto quer informar, convencer, orientar ou convidar, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em distinguir se o texto quer informar, convencer, orientar ou convidar.",
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em distinguir se o texto quer informar, convencer, orientar ou convidar.",
         "a questao seria resolvida automaticamente por inferencia basica.",
-        "nenhuma interpretacao seria alterada, porque Proposito comunicativo nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "nenhuma interpretação seria alterada, porque Propósito comunicativo não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em distinguir se o texto quer informar, convencer, orientar ou convidar.",
-      "comentario": "Ignorar proposito comunicativo compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em distinguir se o texto quer informar, convencer, orientar ou convidar.",
+      "comentario": "Ignorar propósito comunicativo compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "leitura-e-interpretacao",
@@ -6796,14 +6796,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Proposito comunicativo",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Propósito comunicativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor Proposito comunicativo?",
+      "enunciado": "Qual trecho ou ação ilustra melhor Propósito comunicativo?",
       "opcoes": [
         "The poster encourages students to save water.",
         "The girl took an umbrella, so it was probably raining.",
@@ -6811,7 +6811,7 @@
         "Lucy studies in the morning."
       ],
       "correta": "The poster encourages students to save water.",
-      "comentario": "O item correto e o que melhor exemplifica proposito comunicativo.",
+      "comentario": "O item correto é o que melhor exemplifica propósito comunicativo.",
       "tempoEstimado": 50,
       "tags": [
         "leitura-e-interpretacao",
@@ -6835,22 +6835,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Proposito comunicativo",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Propósito comunicativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Ao encontrar o exemplo \"The poster encourages students to save water.\", a leitura mais adequada e:",
       "opcoes": [
-        "o texto procura orientar ou incentivar uma acao especifica",
-        "a conclusao surge de pistas do contexto, nao de traducao literal",
-        "o leitor deve identificar o tema central do texto, e nao um detalhe isolado",
+        "o texto procura orientar ou incentivar uma ação especifica",
+        "a conclusão surge de pistas do contexto, não de traducao literal",
+        "o leitor deve identificar o tema central do texto, e não um detalhe isolado",
         "a resposta pode ser retirada literalmente do enunciado ou do texto"
       ],
-      "correta": "o texto procura orientar ou incentivar uma acao especifica",
-      "comentario": "A leitura correta do exemplo revela o papel de proposito comunicativo.",
+      "correta": "o texto procura orientar ou incentivar uma ação especifica",
+      "comentario": "A leitura correta do exemplo revela o papel de propósito comunicativo.",
       "tempoEstimado": 55,
       "tags": [
         "leitura-e-interpretacao",
@@ -6874,22 +6874,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Proposito comunicativo",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Propósito comunicativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar proposito comunicativo?",
+      "enunciado": "Qual estratégia ajuda mais a estudar propósito comunicativo?",
       "opcoes": [
         "observar verbos de comando, tom da mensagem e publico envolvido",
-        "juntar pistas do texto e escolher a interpretacao mais coerente",
+        "juntar pistas do texto e escolher a interpretação mais coerente",
         "observar titulo, palavras recorrentes e repeticao de assunto",
         "procurar palavras-chave e conferir a informacao exata no trecho"
       ],
       "correta": "observar verbos de comando, tom da mensagem e publico envolvido",
-      "comentario": "A estrategia correta fortalece o dominio de proposito comunicativo.",
+      "comentario": "A estratégia correta fortalece o domínio de propósito comunicativo.",
       "tempoEstimado": 55,
       "tags": [
         "leitura-e-interpretacao",
@@ -6913,22 +6913,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Proposito comunicativo",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Propósito comunicativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Proposito comunicativo e mais cobrado quando:",
+      "enunciado": "Em uma prova, Propósito comunicativo é mais cobrado quando:",
       "opcoes": [
         "a questao pede a finalidade principal do texto",
-        "a prova cobra uma conclusao provavel, mesmo sem frase explicita",
+        "a prova cobra uma conclusão provavel, mesmo sem frase explicita",
         "a questao pede o assunto principal ou o melhor titulo para o texto",
         "a atividade pede informacao direta como nome, horario ou lugar"
       ],
       "correta": "a questao pede a finalidade principal do texto",
-      "comentario": "Esse e o tipo de demanda em que proposito comunicativo aparece com mais frequencia.",
+      "comentario": "Esse é o tipo de demanda em que propósito comunicativo aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "leitura-e-interpretacao",
@@ -6952,22 +6952,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Proposito comunicativo",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Propósito comunicativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual resumo sintetiza melhor a ideia de Proposito comunicativo?",
+      "enunciado": "Qual resumo sintetiza melhor a ideia de Propósito comunicativo?",
       "opcoes": [
-        "Em sintese, a compreensao da intencao principal do texto, como informar, convidar, alertar ou vender.",
-        "Em sintese, a conclusao simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita.",
-        "Em sintese, a identificacao do assunto central que organiza as demais informacoes do texto.",
+        "Em sintese, a compreensão da intenção principal do texto, como informar, convidar, alertar ou vender.",
+        "Em sintese, a conclusão simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita.",
+        "Em sintese, a identificacao do assunto central que organiza as demais informações do texto.",
         "Em sintese, a localizacao de dados que aparecem de forma direta no texto."
       ],
-      "correta": "Em sintese, a compreensao da intencao principal do texto, como informar, convidar, alertar ou vender.",
-      "comentario": "O resumo correto recupera o nucleo de proposito comunicativo.",
+      "correta": "Em sintese, a compreensão da intenção principal do texto, como informar, convidar, alertar ou vender.",
+      "comentario": "O resumo correto recupera o núcleo de propósito comunicativo.",
       "tempoEstimado": 60,
       "tags": [
         "leitura-e-interpretacao",
@@ -6991,22 +6991,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Proposito comunicativo",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Propósito comunicativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Proposito comunicativo?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em Propósito comunicativo?",
       "opcoes": [
-        "The poster encourages students to save water. -> o texto procura orientar ou incentivar uma acao especifica",
-        "The girl took an umbrella, so it was probably raining. -> o texto procura orientar ou incentivar uma acao especifica",
+        "The poster encourages students to save water. -> o texto procura orientar ou incentivar uma ação especifica",
+        "The girl took an umbrella, so it was probably raining. -> o texto procura orientar ou incentivar uma ação especifica",
         "The text is mainly about school rules. -> a resposta pode ser retirada literalmente do enunciado ou do texto",
-        "Lucy studies in the morning. -> a conclusao surge de pistas do contexto, nao de traducao literal"
+        "Lucy studies in the morning. -> a conclusão surge de pistas do contexto, não de traducao literal"
       ],
-      "correta": "The poster encourages students to save water. -> o texto procura orientar ou incentivar uma acao especifica",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em proposito comunicativo.",
+      "correta": "The poster encourages students to save water. -> o texto procura orientar ou incentivar uma ação especifica",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em propósito comunicativo.",
       "tempoEstimado": 65,
       "tags": [
         "leitura-e-interpretacao",
@@ -7030,14 +7030,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
-      "subtopico": "Proposito comunicativo",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
+      "subtopico": "Propósito comunicativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao resolver uma atividade sobre proposito comunicativo, o estudante deve principalmente:",
+      "enunciado": "Ao resolver uma atividade sobre propósito comunicativo, o estudante deve principalmente:",
       "opcoes": [
         "identificar para que o texto foi produzido",
         "observar verbos de comando, tom da mensagem e publico envolvido",
@@ -7045,7 +7045,7 @@
         "a questao pede a finalidade principal do texto"
       ],
       "correta": "identificar para que o texto foi produzido",
-      "comentario": "O objetivo central de proposito comunicativo e identificar para que o texto foi produzido.",
+      "comentario": "O objetivo central de propósito comunicativo e identificar para que o texto foi produzido.",
       "tempoEstimado": 70,
       "tags": [
         "leitura-e-interpretacao",
@@ -7069,22 +7069,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Inferencia basica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, Inferencia basica refere-se a:",
+      "enunciado": "Em Inglês, Inferencia basica refere-se a:",
       "opcoes": [
-        "a conclusao simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita",
-        "a identificacao do assunto central que organiza as demais informacoes do texto",
+        "a conclusão simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita",
+        "a identificacao do assunto central que organiza as demais informações do texto",
         "a localizacao de dados que aparecem de forma direta no texto",
-        "a leitura rapida para captar a ideia geral antes da analise detalhada"
+        "a leitura rápida para captar a ideia geral antes da análise detalhada"
       ],
-      "correta": "a conclusao simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita",
-      "comentario": "Inferencia basica refere-se a conclusao simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita.",
+      "correta": "a conclusão simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita",
+      "comentario": "Inferencia basica refere-se a conclusão simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita.",
       "tempoEstimado": 20,
       "tags": [
         "leitura-e-interpretacao",
@@ -7108,22 +7108,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Inferencia basica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: o texto diz que a menina pegou o guarda-chuva e saiu correndo; a chuva nao e mencionada diretamente. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: o texto diz que a menina pegou o guarda-chuva e saiu correndo; a chuva não e mencionada diretamente. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
         "Inferencia basica",
         "Ideia principal",
-        "Informacoes explicitas",
+        "Informações explícitas",
         "Skimming"
       ],
       "correta": "Inferencia basica",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de inferencia basica.",
+      "comentario": "A situação apresentada é melhor compreendida por meio de inferencia basica.",
       "tempoEstimado": 20,
       "tags": [
         "leitura-e-interpretacao",
@@ -7147,8 +7147,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Inferencia basica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -7186,22 +7186,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Inferencia basica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente inferencia basica?",
+      "enunciado": "Qual alternativa NÃO representa corretamente inferencia basica?",
       "opcoes": [
         "The text is mainly about school rules.",
         "The girl took an umbrella, so it was probably raining.",
-        "juntar pistas do texto e escolher a interpretacao mais coerente.",
-        "deduzir informacoes basicas a partir do contexto."
+        "juntar pistas do texto e escolher a interpretação mais coerente.",
+        "deduzir informações basicas a partir do contexto."
       ],
       "correta": "The text is mainly about school rules.",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao inferencia basica.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não inferencia basica.",
       "tempoEstimado": 25,
       "tags": [
         "leitura-e-interpretacao",
@@ -7225,14 +7225,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Inferencia basica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar inferencia basica, o foco principal e:",
+      "enunciado": "Ao estudar inferencia basica, o foco principal é:",
       "opcoes": [
         "deduzir sentido com base em indicios textuais e visuais",
         "reconhecer o tema central e diferenciar ideia geral de detalhe",
@@ -7264,21 +7264,21 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Inferencia basica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Ideia principal trata de a identificacao do assunto central que organiza as demais informacoes do texto, Inferencia basica destaca:",
+      "enunciado": "Enquanto Ideia principal trata de a identificacao do assunto central que organiza as demais informações do texto, Inferencia basica destaca:",
       "opcoes": [
-        "A conclusao simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita.",
-        "A identificacao do assunto central que organiza as demais informacoes do texto.",
+        "A conclusão simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita.",
+        "A identificacao do assunto central que organiza as demais informações do texto.",
         "A localizacao de dados que aparecem de forma direta no texto.",
-        "A leitura rapida para captar a ideia geral antes da analise detalhada."
+        "A leitura rápida para captar a ideia geral antes da análise detalhada."
       ],
-      "correta": "A conclusao simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita.",
+      "correta": "A conclusão simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita.",
       "comentario": "A comparacao correta mostra a especificidade de inferencia basica.",
       "tempoEstimado": 30,
       "tags": [
@@ -7303,14 +7303,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Inferencia basica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma atividade de sala, o texto diz que a menina pegou o guarda-chuva e saiu correndo; a chuva nao e mencionada diretamente. Para responder bem, o estudante deve mobilizar principalmente:",
+      "enunciado": "Em uma atividade de sala, o texto diz que a menina pegou o guarda-chuva e saiu correndo; a chuva não e mencionada diretamente. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
         "Inferencia basica",
         "Ideia principal",
@@ -7318,7 +7318,7 @@
         "Scanning"
       ],
       "correta": "Inferencia basica",
-      "comentario": "Esse tipo de tarefa exige dominio de inferencia basica.",
+      "comentario": "Esse tipo de tarefa exige domínio de inferencia basica.",
       "tempoEstimado": 35,
       "tags": [
         "leitura-e-interpretacao",
@@ -7342,22 +7342,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Inferencia basica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de Inferencia basica?",
+      "enunciado": "Qual situação pratica depende mais diretamente de Inferencia basica?",
       "opcoes": [
-        "deduzir informacoes basicas a partir do contexto",
+        "deduzir informações basicas a partir do contexto",
         "responder perguntas sobre o tema central de textos curtos",
         "retirar do texto nomes, horarios, lugares e fatos escritos claramente",
-        "buscar numeros, nomes, datas e palavras especificas no texto"
+        "buscar números, nomes, datas e palavras especificas no texto"
       ],
-      "correta": "deduzir informacoes basicas a partir do contexto",
-      "comentario": "Inferencia basica aparece de forma direta em deduzir informacoes basicas a partir do contexto.",
+      "correta": "deduzir informações basicas a partir do contexto",
+      "comentario": "Inferencia basica aparece de forma direta em deduzir informações basicas a partir do contexto.",
       "tempoEstimado": 35,
       "tags": [
         "leitura-e-interpretacao",
@@ -7381,22 +7381,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Inferencia basica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre inferencia basica?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre inferencia basica?",
       "opcoes": [
         "o caso e resolvido com foco em inferencia basica.",
         "o caso e melhor resolvido por ideia principal.",
-        "o caso elimina a necessidade de informacoes explicitas.",
+        "o caso elimina a necessidade de informações explícitas.",
         "o caso impede qualquer uso de skimming."
       ],
       "correta": "o caso e resolvido com foco em inferencia basica.",
-      "comentario": "A conclusao correta retoma a funcao central de inferencia basica.",
+      "comentario": "A conclusão correta retoma a função central de inferencia basica.",
       "tempoEstimado": 40,
       "tags": [
         "leitura-e-interpretacao",
@@ -7420,8 +7420,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Inferencia basica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -7429,12 +7429,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar inferencia basica, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como inferencia basica aparece em deduzir informacoes basicas a partir do contexto?",
-        "Como ideia principal substitui totalmente deduzir informacoes basicas a partir do contexto?",
-        "Por que informacoes explicitas torna desnecessario estudar Inferencia basica?",
+        "Como inferencia basica aparece em deduzir informações basicas a partir do contexto?",
+        "Como ideia principal substitui totalmente deduzir informações basicas a partir do contexto?",
+        "Por que informações explícitas torna desnecessario estudar Inferencia basica?",
         "De que modo skimming elimina toda leitura de contexto?"
       ],
-      "correta": "Como inferencia basica aparece em deduzir informacoes basicas a partir do contexto?",
+      "correta": "Como inferencia basica aparece em deduzir informações basicas a partir do contexto?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de inferencia basica.",
       "tempoEstimado": 40,
       "tags": [
@@ -7459,22 +7459,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Inferencia basica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em inferencia basica e pensar que:",
+      "enunciado": "Um erro comum em inferencia basica é pensar que:",
       "opcoes": [
-        "inferir e inventar qualquer resposta que pareca possivel",
+        "inferir e inventar qualquer resposta que pareca possível",
         "a ideia principal e sempre a primeira frase do texto",
-        "toda pergunta de leitura exige interpretacao implicita",
+        "toda pergunta de leitura exige interpretação implícita",
         "skimming significa ignorar completamente o texto"
       ],
-      "correta": "inferir e inventar qualquer resposta que pareca possivel",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de inferencia basica.",
+      "correta": "inferir e inventar qualquer resposta que pareca possível",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de inferencia basica.",
       "tempoEstimado": 45,
       "tags": [
         "leitura-e-interpretacao",
@@ -7498,21 +7498,21 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Inferencia basica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"inferencia e chute, porque o texto nao precisa dar pistas\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"inferencia e chute, porque o texto não precisa dar pistas\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque a conclusao simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita.",
-        "A afirmacao esta correta, pois resume integralmente inferencia basica.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque a conclusão simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita.",
+        "A afirmação está correta, pois resume integralmente inferencia basica.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque a conclusao simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita.",
+      "correta": "A afirmação está incorreta, porque a conclusão simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita.",
       "comentario": "A fala do estudante apresenta um equivoco conceitual sobre inferencia basica.",
       "tempoEstimado": 45,
       "tags": [
@@ -7537,22 +7537,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Inferencia basica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se inferencia basica fosse ignorado(a) em deduzir informacoes basicas a partir do contexto, o resultado mais provavel seria:",
+      "enunciado": "Se inferencia basica fosse ignorado(a) em deduzir informações basicas a partir do contexto, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em deduzir informacoes basicas a partir do contexto.",
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em deduzir informações basicas a partir do contexto.",
         "a questao seria resolvida automaticamente por ideia principal.",
-        "nenhuma interpretacao seria alterada, porque Inferencia basica nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "nenhuma interpretação seria alterada, porque Inferencia basica não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em deduzir informacoes basicas a partir do contexto.",
-      "comentario": "Ignorar inferencia basica compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em deduzir informações basicas a partir do contexto.",
+      "comentario": "Ignorar inferencia basica compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "leitura-e-interpretacao",
@@ -7576,14 +7576,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Inferencia basica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor Inferencia basica?",
+      "enunciado": "Qual trecho ou ação ilustra melhor Inferencia basica?",
       "opcoes": [
         "The girl took an umbrella, so it was probably raining.",
         "The text is mainly about school rules.",
@@ -7591,7 +7591,7 @@
         "The student reads the title and the first lines to get the general idea."
       ],
       "correta": "The girl took an umbrella, so it was probably raining.",
-      "comentario": "O item correto e o que melhor exemplifica inferencia basica.",
+      "comentario": "O item correto é o que melhor exemplifica inferencia basica.",
       "tempoEstimado": 50,
       "tags": [
         "leitura-e-interpretacao",
@@ -7615,8 +7615,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Inferencia basica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
@@ -7624,12 +7624,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Ao encontrar o exemplo \"The girl took an umbrella, so it was probably raining.\", a leitura mais adequada e:",
       "opcoes": [
-        "a conclusao surge de pistas do contexto, nao de traducao literal",
-        "o leitor deve identificar o tema central do texto, e nao um detalhe isolado",
+        "a conclusão surge de pistas do contexto, não de traducao literal",
+        "o leitor deve identificar o tema central do texto, e não um detalhe isolado",
         "a resposta pode ser retirada literalmente do enunciado ou do texto",
         "o objetivo e captar rapidamente o assunto do texto"
       ],
-      "correta": "a conclusao surge de pistas do contexto, nao de traducao literal",
+      "correta": "a conclusão surge de pistas do contexto, não de traducao literal",
       "comentario": "A leitura correta do exemplo revela o papel de inferencia basica.",
       "tempoEstimado": 55,
       "tags": [
@@ -7654,22 +7654,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Inferencia basica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar inferencia basica?",
+      "enunciado": "Qual estratégia ajuda mais a estudar inferencia basica?",
       "opcoes": [
-        "juntar pistas do texto e escolher a interpretacao mais coerente",
+        "juntar pistas do texto e escolher a interpretação mais coerente",
         "observar titulo, palavras recorrentes e repeticao de assunto",
         "procurar palavras-chave e conferir a informacao exata no trecho",
         "ler rapidamente titulo, imagens e partes iniciais para localizar o tema"
       ],
-      "correta": "juntar pistas do texto e escolher a interpretacao mais coerente",
-      "comentario": "A estrategia correta fortalece o dominio de inferencia basica.",
+      "correta": "juntar pistas do texto e escolher a interpretação mais coerente",
+      "comentario": "A estratégia correta fortalece o domínio de inferencia basica.",
       "tempoEstimado": 55,
       "tags": [
         "leitura-e-interpretacao",
@@ -7693,22 +7693,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Inferencia basica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Inferencia basica e mais cobrado quando:",
+      "enunciado": "Em uma prova, Inferencia basica é mais cobrado quando:",
       "opcoes": [
-        "a prova cobra uma conclusao provavel, mesmo sem frase explicita",
+        "a prova cobra uma conclusão provavel, mesmo sem frase explicita",
         "a questao pede o assunto principal ou o melhor titulo para o texto",
         "a atividade pede informacao direta como nome, horario ou lugar",
         "a prova exige nocao geral do texto antes de responder aos itens"
       ],
-      "correta": "a prova cobra uma conclusao provavel, mesmo sem frase explicita",
-      "comentario": "Esse e o tipo de demanda em que inferencia basica aparece com mais frequencia.",
+      "correta": "a prova cobra uma conclusão provavel, mesmo sem frase explicita",
+      "comentario": "Esse é o tipo de demanda em que inferencia basica aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "leitura-e-interpretacao",
@@ -7732,8 +7732,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Inferencia basica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -7741,13 +7741,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Inferencia basica?",
       "opcoes": [
-        "Em sintese, a conclusao simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita.",
-        "Em sintese, a identificacao do assunto central que organiza as demais informacoes do texto.",
+        "Em sintese, a conclusão simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita.",
+        "Em sintese, a identificacao do assunto central que organiza as demais informações do texto.",
         "Em sintese, a localizacao de dados que aparecem de forma direta no texto.",
-        "Em sintese, a leitura rapida para captar a ideia geral antes da analise detalhada."
+        "Em sintese, a leitura rápida para captar a ideia geral antes da análise detalhada."
       ],
-      "correta": "Em sintese, a conclusao simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita.",
-      "comentario": "O resumo correto recupera o nucleo de inferencia basica.",
+      "correta": "Em sintese, a conclusão simples construida a partir de pistas do texto, mesmo sem informacao totalmente explicita.",
+      "comentario": "O resumo correto recupera o núcleo de inferencia basica.",
       "tempoEstimado": 60,
       "tags": [
         "leitura-e-interpretacao",
@@ -7771,22 +7771,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Inferencia basica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Inferencia basica?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em Inferencia basica?",
       "opcoes": [
-        "The girl took an umbrella, so it was probably raining. -> a conclusao surge de pistas do contexto, nao de traducao literal",
-        "The text is mainly about school rules. -> a conclusao surge de pistas do contexto, nao de traducao literal",
+        "The girl took an umbrella, so it was probably raining. -> a conclusão surge de pistas do contexto, não de traducao literal",
+        "The text is mainly about school rules. -> a conclusão surge de pistas do contexto, não de traducao literal",
         "Lucy studies in the morning. -> o objetivo e captar rapidamente o assunto do texto",
-        "The student reads the title and the first lines to get the general idea. -> o leitor deve identificar o tema central do texto, e nao um detalhe isolado"
+        "The student reads the title and the first lines to get the general idea. -> o leitor deve identificar o tema central do texto, e não um detalhe isolado"
       ],
-      "correta": "The girl took an umbrella, so it was probably raining. -> a conclusao surge de pistas do contexto, nao de traducao literal",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em inferencia basica.",
+      "correta": "The girl took an umbrella, so it was probably raining. -> a conclusão surge de pistas do contexto, não de traducao literal",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em inferencia basica.",
       "tempoEstimado": 65,
       "tags": [
         "leitura-e-interpretacao",
@@ -7810,8 +7810,8 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
-      "topico": "Leitura e Interpretacao",
+      "materia": "Inglês",
+      "topico": "Leitura e Interpretação",
       "subtopico": "Inferencia basica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -7820,9 +7820,9 @@
       "enunciado": "Ao resolver uma atividade sobre inferencia basica, o estudante deve principalmente:",
       "opcoes": [
         "deduzir sentido com base em indicios textuais e visuais",
-        "juntar pistas do texto e escolher a interpretacao mais coerente",
-        "deduzir informacoes basicas a partir do contexto",
-        "a prova cobra uma conclusao provavel, mesmo sem frase explicita"
+        "juntar pistas do texto e escolher a interpretação mais coerente",
+        "deduzir informações basicas a partir do contexto",
+        "a prova cobra uma conclusão provavel, mesmo sem frase explicita"
       ],
       "correta": "deduzir sentido com base em indicios textuais e visuais",
       "comentario": "O objetivo central de inferencia basica e deduzir sentido com base em indicios textuais e visuais.",

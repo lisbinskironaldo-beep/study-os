@@ -7,9 +7,9 @@ const blocos = [
     tags: ["historia-contemporanea", "primeira-guerra"],
     fatos: [
       {
-        lead: "a expansao das potencias europeias sobre Africa e Asia no fim do seculo XIX",
+        lead: "a expansão das potencias europeias sobre África e Asia no fim do seculo XIX",
         answer: "o imperialismo",
-        why: "esse processo intensificou disputas territoriais e economicas"
+        why: "esse processo intensificou disputas territoriais e econômicas"
       },
       {
         lead: "a rivalidade entre grandes potencias por colonias, mercados e influencia",
@@ -27,24 +27,24 @@ const blocos = [
         why: "ela simbolizou a brutalidade do conflito no front ocidental"
       },
       {
-        lead: "o tratado que impos duras penalidades a Alemanha apos 1918",
+        lead: "o tratado que impos duras penalidades a Alemanha após 1918",
         answer: "o Tratado de Versalhes",
         why: "ele redesenhou a Europa e alimentou novas tensoes"
       }
     ]
   },
   {
-    subtopico: "Revolucao Russa e socialismo",
+    subtopico: "Revolução Russa e socialismo",
     habilidade: "analisar-guerras-mundiais-revolucoes-e-totalitarismos-do-seculo-xx",
     tags: ["historia-contemporanea", "revolucao-russa"],
     fatos: [
       {
         lead: "a crise do regime autocratico russo no inicio do seculo XX",
         answer: "o enfraquecimento do czarismo",
-        why: "a insatisfacao social e politica abriu caminho para a revolucao"
+        why: "a insatisfacao social e política abriu caminho para a revolução"
       },
       {
-        lead: "o grupo liderado por Lenin que defendeu revolucao socialista imediata",
+        lead: "o grupo liderado por Lenin que defendeu revolução socialista imediata",
         answer: "os bolcheviques",
         why: "eles assumiram o poder em outubro de 1917"
       },
@@ -54,12 +54,12 @@ const blocos = [
         why: "o programa respondia a guerra, fome e desigualdade agraria"
       },
       {
-        lead: "a tentativa de organizar uma economia e um Estado sob controle socialista",
-        answer: "a experiencia sovietica",
-        why: "ela inaugurou novo modelo politico no seculo XX"
+        lead: "a tentativa de organizar uma economia é um Estado sob controle socialista",
+        answer: "a experiência sovietica",
+        why: "ela inaugurou novo modelo político no seculo XX"
       },
       {
-        lead: "a guerra interna entre vermelhos e brancos apos 1917",
+        lead: "a guerra interna entre vermelhos e brancos após 1917",
         answer: "a Guerra Civil Russa",
         why: "o conflito definiu os rumos iniciais do novo regime"
       }
@@ -73,7 +73,7 @@ const blocos = [
       {
         lead: "a quebra da Bolsa de Nova York em 1929",
         answer: "o marco da Grande Depressao",
-        why: "ela desencadeou crise economica internacional"
+        why: "ela desencadeou crise econômica internacional"
       },
       {
         lead: "a combinacao de especulacao financeira e superproducao",
@@ -83,7 +83,7 @@ const blocos = [
       {
         lead: "o programa intervencionista adotado nos Estados Unidos para enfrentar a depressao",
         answer: "o New Deal",
-        why: "ele ampliou a acao do Estado na economia"
+        why: "ele ampliou a ação do Estado na economia"
       },
       {
         lead: "o regime de partido unico e culto ao lider na Italia",
@@ -140,7 +140,7 @@ const blocos = [
         why: "ele simboliza a violencia extrema do racismo de Estado"
       },
       {
-        lead: "os julgamentos de lideres nazistas apos a guerra",
+        lead: "os julgamentos de lideres nazistas após a guerra",
         answer: "os Julgamentos de Nuremberg",
         why: "eles estabeleceram referencias juridicas internacionais para crimes de guerra"
       },
@@ -150,7 +150,7 @@ const blocos = [
         why: "ela se tornou instituicao central da ordem do pos-guerra"
       },
       {
-        lead: "a divisao do mundo em duas grandes areas de influencia apos 1945",
+        lead: "a divisao do mundo em duas grandes areas de influencia após 1945",
         answer: "a reorganizacao bipolar do pos-guerra",
         why: "ela preparou o terreno para a Guerra Fria"
       },
@@ -172,24 +172,24 @@ const blocos = [
         why: "o conflito articulou ideologia, poder militar e influencia mundial"
       },
       {
-        lead: "a existencia de dois blocos politico-ideologicos rivais apos 1945",
+        lead: "a existencia de dois blocos político-ideologicos rivais após 1945",
         answer: "o mundo bipolar",
         why: "capitalismo e socialismo organizaram a ordem internacional"
       },
       {
-        lead: "o programa norte-americano de ajuda economica para reconstruir a Europa",
+        lead: "o programa norte-americano de ajuda econômica para reconstruir a Europa",
         answer: "o Plano Marshall",
-        why: "ele buscou conter a expansao da influencia sovietica"
+        why: "ele buscou conter a expansão da influencia sovietica"
       },
       {
         lead: "as aliancas militares organizadas por EUA e URSS",
-        answer: "a OTAN e o Pacto de Varsovia",
+        answer: "a OTAN é o Pacto de Varsovia",
         why: "elas institucionalizaram a disputa dos blocos"
       },
       {
         lead: "a tensao nuclear evidenciada em episodios como Cuba e Berlim",
         answer: "a corrida armamentista da Guerra Fria",
-        why: "o equilibrio do terror marcou o periodo"
+        why: "o equilíbrio do terror marcou o período"
       }
     ]
   },
@@ -199,9 +199,9 @@ const blocos = [
     tags: ["historia-contemporanea", "descolonizacao"],
     fatos: [
       {
-        lead: "o processo de independencia de colonias na Africa e na Asia apos 1945",
+        lead: "o processo de independencia de colonias na África e na Asia após 1945",
         answer: "a descolonizacao afro-asiatica",
-        why: "ele redesenhou o mapa politico mundial"
+        why: "ele redesenhou o mapa político mundial"
       },
       {
         lead: "a independencia da India em 1947",
@@ -216,10 +216,10 @@ const blocos = [
       {
         lead: "a reuniao de paises recem-independentes que defendiam autonomia diante dos blocos",
         answer: "a Conferencia de Bandung",
-        why: "ela foi referencia para o nao alinhamento"
+        why: "ela foi referencia para o não alinhamento"
       },
       {
-        lead: "a permanencia de dependencia economica apos a independencia formal",
+        lead: "a permanencia de dependência econômica após a independencia formal",
         answer: "um desafio do pos-colonialismo",
         why: "muitos paises seguiram subordinados a interesses externos"
       }
@@ -232,7 +232,7 @@ const blocos = [
     fatos: [
       {
         lead: "as reformas propostas por Mikhail Gorbachev na URSS",
-        answer: "a glasnost e a perestroika",
+        answer: "a glasnost é a perestroika",
         why: "elas buscaram abrir e reestruturar o sistema sovietico"
       },
       {
@@ -246,14 +246,14 @@ const blocos = [
         why: "ela encerrou uma das grandes potencias do seculo XX"
       },
       {
-        lead: "o esgotamento economico e politico dos regimes do Leste Europeu",
+        lead: "o esgotamento economico e político dos regimes do Leste Europeu",
         answer: "uma causa da queda do socialismo real",
         why: "o modelo enfrentou dificuldades internas crescentes"
       },
       {
         lead: "o desaparecimento da ordem internacional organizada por dois blocos fixos",
         answer: "o fim da bipolaridade",
-        why: "a politica mundial entrou em nova fase apos 1991"
+        why: "a política mundial entrou em nova fase após 1991"
       }
     ]
   },
@@ -263,7 +263,7 @@ const blocos = [
     tags: ["historia-contemporanea", "globalizacao"],
     fatos: [
       {
-        lead: "a intensificacao da circulacao de capitais, mercadorias, informacoes e pessoas",
+        lead: "a intensificacao da circulação de capitais, mercadorias, informacoes e pessoas",
         answer: "a globalizacao",
         why: "esse processo ampliou interdependencias entre sociedades"
       },
@@ -273,14 +273,14 @@ const blocos = [
         why: "essa orientacao ganhou forca a partir do fim do seculo XX"
       },
       {
-        lead: "a formacao de agrupamentos economicos entre paises",
+        lead: "a formação de agrupamentos economicos entre paises",
         answer: "os blocos economicos",
         why: "eles buscam ampliar mercados e coordenar interesses regionais"
       },
       {
         lead: "o papel das tecnologias digitais na economia e na comunicacao global",
-        answer: "a revolucao informacional",
-        why: "ela acelerou o tempo e a escala das conexoes mundiais"
+        answer: "a revolução informacional",
+        why: "ela acelerou o tempo é a escala das conexoes mundiais"
       },
       {
         lead: "a redistribuicao relativa de poder em um mundo sem ordem bipolar fixa",
@@ -312,7 +312,7 @@ const blocos = [
       {
         lead: "a permanencia de fortes disparidades entre paises e grupos sociais",
         answer: "a desigualdade global",
-        why: "a integracao mundial nao eliminou hierarquias economicas e sociais"
+        why: "a integracao mundial não eliminou hierarquias econômicas e sociais"
       },
       {
         lead: "os conflitos regionais que combinam recursos, identidades e interesses geopoliticos",
@@ -326,23 +326,23 @@ const blocos = [
 const questoes = buildPlannedQuestions({
   prefix: "hc",
   serie: [3],
-  materia: "Historia",
-  topico: "Historia Contemporanea",
+  materia: "História",
+  topico: "História Contemporanea",
   blocos
 });
 
 export const historiaContemporanea = {
   id: "historia_historia_contemporanea",
-  materia: "Historia",
+  materia: "História",
   serie: [3],
-  topico: "Historia Contemporanea",
+  topico: "História Contemporanea",
   metadados: {
     disciplinaId: "historia",
     base: "ESCOLAR",
-    eixo: "Historia",
+    eixo: "História",
     frente: "Mundo contemporaneo",
     searchAliases: [
-      "historia contemporanea",
+      "história contemporanea",
       "guerra fria",
       "segunda guerra mundial",
       "globalizacao",
@@ -350,7 +350,7 @@ export const historiaContemporanea = {
     ],
     subtopicosBase: [
       "Imperialismo e Primeira Guerra Mundial",
-      "Revolucao Russa e socialismo",
+      "Revolução Russa e socialismo",
       "Crise de 1929 e totalitarismos",
       "Segunda Guerra Mundial",
       "Holocausto e reorganizacao do pos-guerra",
@@ -361,11 +361,11 @@ export const historiaContemporanea = {
       "Conflitos e desafios do mundo contemporaneo"
     ],
     habilidadesBase: [
-      "identificar processos e conflitos centrais da historia contemporanea",
-      "analisar guerras mundiais, revolucoes e totalitarismos do seculo XX",
+      "identificar processos e conflitos centrais da história contemporanea",
+      "analisar guerras mundiais, revoluções e totalitarismos do seculo XX",
       "relacionar Guerra Fria, descolonizacao e reorganizacao geopolitica mundial",
       "avaliar globalizacao, queda do socialismo real e conflitos recentes",
-      "sintetizar transformacoes politicas, sociais e economicas do mundo contemporaneo"
+      "sintetizar transformações políticas, sociais e econômicas do mundo contemporaneo"
     ],
     planejamentoQuestoes: {
       totalAlvo: 200,

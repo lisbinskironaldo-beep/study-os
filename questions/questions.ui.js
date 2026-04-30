@@ -7360,7 +7360,19 @@
                 meta.serieLabel || "-",
             modeLabel:
                 meta.modeLabel ||
-                "Treino"
+                "Treino",
+            searchLabel:
+                meta.sourceMode ===
+                    "direct_search" &&
+                Array.isArray(meta.directSearchTerms)
+                    ? meta.directSearchTerms
+                          .map((term) =>
+                              String(term || "").trim()
+                          )
+                          .filter(Boolean)
+                          .slice(0, 3)
+                          .join(" + ")
+                    : ""
         };
     },
 
@@ -7414,6 +7426,7 @@
                 <div class="questions-session-focus-copy">
                     <span>${this.escapeHtml(model.subjectLabel)}</span>
                     <strong>${this.escapeHtml(model.topicLabel)}</strong>
+                    ${model.searchLabel ? `<small>Busca: ${this.escapeHtml(model.searchLabel)}</small>` : ""}
                 </div>
 
                 <div class="questions-session-focus-pills" aria-label="Resumo da sessao">
@@ -7468,6 +7481,12 @@
                         <span>Assunto</span>
                         <strong>${model.topicLabel}</strong>
                     </div>
+                    ${model.searchLabel ? `
+                    <div>
+                        <span>Busca</span>
+                        <strong>${this.escapeHtml(model.searchLabel)}</strong>
+                    </div>
+                    ` : ""}
                 </div>
             </details>
         `;

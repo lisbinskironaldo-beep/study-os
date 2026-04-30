@@ -10,7 +10,7 @@ export const socializacao = {
     "base": "ESCOLAR",
     "seloEditorial": "VERIFICADA",
     "eixo": "Socializacao e vida coletiva",
-    "frente": "Agentes e processos de formacao social",
+    "frente": "Agentes e processos de formação social",
     "searchAliases": [
       "socializacao",
       "familia",
@@ -29,7 +29,7 @@ export const socializacao = {
       "Escola",
       "Grupo de pares",
       "Midia e redes",
-      "Papeis sociais",
+      "Papéis sociais",
       "Controle social",
       "Desvios e sancoes"
     ],
@@ -37,9 +37,9 @@ export const socializacao = {
       "identificar o processo de socializacao",
       "diferenciar socializacao primaria e secundaria",
       "reconhecer agentes de socializacao na vida cotidiana",
-      "relacionar papeis sociais e expectativas coletivas",
+      "relacionar papéis sociais e expectativas coletivas",
       "interpretar mecanismos de controle social e sancoes",
-      "analisar conflitos e aprendizagens na formacao social do individuo"
+      "analisar conflitos e aprendizagens na formação social do individuo"
     ],
     "auditado": true,
     "auditadoEm": "2026-04-13",
@@ -60,13 +60,13 @@ export const socializacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Em Sociologia, conceito de socializacao pode ser definido(a) como:",
       "opcoes": [
-        "o processo pelo qual individuos aprendem normas, valores, papeis e formas de agir necessarios a vida em sociedade",
+        "o processo pelo qual indivíduos aprendem normas, valores, papéis e formas de agir necessarios a vida em sociedade",
         "a fase inicial da socializacao, geralmente ligada aos primeiros grupos de convivio, em que se aprendem linguagem, regras basicas e formas de interacao",
-        "o conjunto de aprendizagens sociais que ocorre em novos espacos e instituicoes alem dos primeiros grupos de convivencia",
+        "o conjunto de aprendizagens sociais que ocorre em novos espacos e instituições alem dos primeiros grupos de convivencia",
         "um dos principais agentes de socializacao, responsavel por transmitir cuidados, linguagens, regras e referencias de convivencia nos primeiros anos e ao longo da vida"
       ],
-      "correta": "o processo pelo qual individuos aprendem normas, valores, papeis e formas de agir necessarios a vida em sociedade",
-      "comentario": "Conceito de socializacao refere-se ao processo pelo qual individuos aprendem normas, valores, papeis e formas de agir necessarios a vida em sociedade.",
+      "correta": "o processo pelo qual indivíduos aprendem normas, valores, papéis e formas de agir necessarios a vida em sociedade",
+      "comentario": "Conceito de socializacao refere-se ao processo pelo qual indivíduos aprendem normas, valores, papéis e formas de agir necessarios a vida em sociedade.",
       "tempoEstimado": 20,
       "tags": [
         "socializacao",
@@ -97,7 +97,7 @@ export const socializacao = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: uma crianca aprende regras de convivio, linguagem e habitos ao interagir com outras pessoas Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: uma crianca aprende regras de convivio, linguagem e hábitos ao interagir com outras pessoas Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
         "Conceito de socializacao",
         "Socializacao primaria",
@@ -105,7 +105,7 @@ export const socializacao = {
         "Familia"
       ],
       "correta": "Conceito de socializacao",
-      "comentario": "A situacao apresentada e um exemplo de conceito de socializacao.",
+      "comentario": "A situação apresentada é um exemplo de conceito de socializacao.",
       "tempoEstimado": 25,
       "tags": [
         "socializacao",
@@ -138,12 +138,12 @@ export const socializacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual afirmacao descreve corretamente conceito de socializacao?",
       "opcoes": [
-        "O processo pelo qual individuos aprendem normas, valores, papeis e formas de agir necessarios a vida em sociedade.",
-        "Um processo puramente biologico e sem relacao com grupos e instituicoes.",
+        "O processo pelo qual indivíduos aprendem normas, valores, papéis e formas de agir necessarios a vida em sociedade.",
+        "Um processo puramente biológico e sem relação com grupos e instituições.",
         "Socializacao primaria significa a fase inicial da socializacao, geralmente ligada aos primeiros grupos de convivio, em que se aprendem linguagem, regras basicas e formas de interacao.",
-        "Socializacao trata apenas de reflexos biologicos e nao de aprendizagem social."
+        "Socializacao trata apenas de reflexos biologicos e não de aprendizagem social."
       ],
-      "correta": "O processo pelo qual individuos aprendem normas, valores, papeis e formas de agir necessarios a vida em sociedade.",
+      "correta": "O processo pelo qual indivíduos aprendem normas, valores, papéis e formas de agir necessarios a vida em sociedade.",
       "comentario": "A afirmacao correta retoma o sentido central de conceito de socializacao.",
       "tempoEstimado": 30,
       "tags": [
@@ -175,15 +175,15 @@ export const socializacao = {
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a conceito de socializacao.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a conceito de socializacao.",
       "opcoes": [
-        "um reflexo biologico automatico que dispensa aprendizagem e interacao social",
-        "uma crianca aprende regras de convivio, linguagem e habitos ao interagir com outras pessoas",
+        "um reflexo biológico automatico que dispensa aprendizagem e interacao social",
+        "uma crianca aprende regras de convivio, linguagem e hábitos ao interagir com outras pessoas",
         "no cotidiano, sujeitos incorporam expectativas e maneiras de agir consideradas adequadas por seus grupos",
-        "o convivio social ensina modos de comportamento, pertencimento e interpretacao do mundo"
+        "o convivio social ensina modos de comportamento, pertencimento e interpretação do mundo"
       ],
-      "correta": "um reflexo biologico automatico que dispensa aprendizagem e interacao social",
-      "comentario": "um reflexo biologico automatico que dispensa aprendizagem e interacao social nao expressa conceito de socializacao, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "um reflexo biológico automatico que dispensa aprendizagem e interacao social",
+      "comentario": "um reflexo biológico automatico que dispensa aprendizagem e interacao social não expressa conceito de socializacao, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "socializacao",
@@ -218,11 +218,11 @@ export const socializacao = {
       "opcoes": [
         "a aprendizagem social de comportamentos, valores e expectativas coletivas",
         "as aprendizagens iniciais que inserem o sujeito nas primeiras formas de convivio social",
-        "as novas aprendizagens exigidas por instituicoes e grupos posteriores aos primeiros vinculos sociais",
-        "a transmissao de habitos, afetos e regras de convivencia no nucleo familiar"
+        "as novas aprendizagens exigidas por instituições e grupos posteriores aos primeiros vinculos sociais",
+        "a transmissao de hábitos, afetos e regras de convivencia no nucleo familiar"
       ],
       "correta": "a aprendizagem social de comportamentos, valores e expectativas coletivas",
-      "comentario": "Conceito de socializacao volta a atencao para a aprendizagem social de comportamentos, valores e expectativas coletivas.",
+      "comentario": "Conceito de socializacao volta a atenção para a aprendizagem social de comportamentos, valores e expectativas coletivas.",
       "tempoEstimado": 35,
       "tags": [
         "socializacao",
@@ -253,15 +253,15 @@ export const socializacao = {
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre conceito de socializacao e socializacao primaria e que:",
+      "enunciado": "A principal diferença entre conceito de socializacao e socializacao primaria e que:",
       "opcoes": [
         "conceito de socializacao apresenta o processo geral, enquanto socializacao primaria destaca o primeiro nucleo de aprendizagens sociais",
-        "Conceito de socializacao e Socializacao primaria sao exatamente o mesmo fenomeno social.",
+        "Conceito de socializacao e Socializacao primaria são exatamente o mesmo fenômeno social.",
         "Socializacao primaria depende apenas da biologia, enquanto Conceito de socializacao depende so da economia.",
-        "Conceito de socializacao elimina a necessidade de observar contextos e instituicoes."
+        "Conceito de socializacao elimina a necessidade de observar contextos e instituições."
       ],
       "correta": "conceito de socializacao apresenta o processo geral, enquanto socializacao primaria destaca o primeiro nucleo de aprendizagens sociais",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "socializacao",
@@ -292,14 +292,14 @@ export const socializacao = {
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: no cotidiano, sujeitos incorporam expectativas e maneiras de agir consideradas adequadas por seus grupos A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: no cotidiano, sujeitos incorporam expectativas e maneiras de agir consideradas adequadas por seus grupos A leitura sociológica mais adequada aponta para:",
       "opcoes": [
-        "socializacao mostra que grande parte do comportamento humano e aprendida nas relacoes sociais",
-        "Conceito de socializacao mostra que a vida social nao interfere nas formas de agir.",
+        "socializacao mostra que grande parte do comportamento humano e aprendida nas relações sociais",
+        "Conceito de socializacao mostra que a vida social não interfere nas formas de agir.",
         "Conceito de socializacao prova que todos os grupos agem da mesma forma em qualquer contexto.",
         "Conceito de socializacao significa ausencia completa de normas e expectativas."
       ],
-      "correta": "socializacao mostra que grande parte do comportamento humano e aprendida nas relacoes sociais",
+      "correta": "socializacao mostra que grande parte do comportamento humano e aprendida nas relações sociais",
       "comentario": "Conceito de socializacao permite interpretar o caso a partir de aprendizagem, interacao e vida coletiva.",
       "tempoEstimado": 40,
       "tags": [
@@ -331,15 +331,15 @@ export const socializacao = {
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia conceito de socializacao de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia conceito de socializacao de maneira mais clara?",
       "opcoes": [
-        "o convivio social ensina modos de comportamento, pertencimento e interpretacao do mundo",
+        "o convivio social ensina modos de comportamento, pertencimento e interpretação do mundo",
         "os primeiros vinculos sociais moldam referencias fundamentais para a insercao do sujeito na vida coletiva",
         "novos ambientes sociais ensinam linguagens, regras e expectativas diferentes das aprendidas inicialmente",
-        "a familia participa da formacao de habitos, valores e expectativas sobre o comportamento"
+        "a familia participa da formação de hábitos, valores e expectativas sobre o comportamento"
       ],
-      "correta": "o convivio social ensina modos de comportamento, pertencimento e interpretacao do mundo",
-      "comentario": "A alternativa correta traduz conceito de socializacao em uma situacao concreta de vida social.",
+      "correta": "o convivio social ensina modos de comportamento, pertencimento e interpretação do mundo",
+      "comentario": "A alternativa correta traduz conceito de socializacao em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "socializacao",
@@ -370,15 +370,15 @@ export const socializacao = {
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"uma crianca aprende regras de convivio, linguagem e habitos ao interagir com outras pessoas\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"uma crianca aprende regras de convivio, linguagem e hábitos ao interagir com outras pessoas\", qual conclusão é mais adequada?",
       "opcoes": [
         "a vida social depende de aprendizagens que inserem o individuo em normas e referencias coletivas",
         "Conceito de socializacao indica que normas sociais nunca mudam.",
         "Conceito de socializacao so pode ser explicado por fatores biologicos.",
-        "Conceito de socializacao dispensa comparacao entre grupos e instituicoes."
+        "Conceito de socializacao dispensa comparacao entre grupos e instituições."
       ],
       "correta": "a vida social depende de aprendizagens que inserem o individuo em normas e referencias coletivas",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "socializacao",
@@ -411,12 +411,12 @@ export const socializacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com conceito de socializacao?",
       "opcoes": [
-        "como individuos aprendem comportamentos e expectativas sociais em diferentes contextos?",
-        "quais aprendizagens fundamentais sao adquiridas nos primeiros grupos de convivio?",
-        "como escola, trabalho e outros ambientes ampliam a formacao social do individuo?",
-        "de que modo rotinas e relacoes familiares influenciam a formacao social do individuo?"
+        "como indivíduos aprendem comportamentos e expectativas sociais em diferentes contextos?",
+        "quais aprendizagens fundamentais são adquiridas nos primeiros grupos de convivio?",
+        "como escola, trabalho e outros ambientes ampliam a formação social do individuo?",
+        "de que modo rotinas e relações familiares influenciam a formação social do individuo?"
       ],
-      "correta": "como individuos aprendem comportamentos e expectativas sociais em diferentes contextos?",
+      "correta": "como indivíduos aprendem comportamentos e expectativas sociais em diferentes contextos?",
       "comentario": "A pergunta correta ajuda a investigar conceito de socializacao de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
@@ -450,12 +450,12 @@ export const socializacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a afirmacao que revela compreensao inadequada de conceito de socializacao.",
       "opcoes": [
-        "Um processo puramente biologico e sem relacao com grupos e instituicoes.",
+        "Um processo puramente biológico e sem relação com grupos e instituições.",
         "Conceito de socializacao pode ser observado em contextos de convivencia, regras e expectativas sociais.",
-        "Conceito de socializacao ajuda a analisar aprendizagens e papeis na vida coletiva.",
-        "Conceito de socializacao depende da interacao entre individuos, grupos e instituicoes."
+        "Conceito de socializacao ajuda a analisar aprendizagens e papéis na vida coletiva.",
+        "Conceito de socializacao depende da interacao entre indivíduos, grupos e instituições."
       ],
-      "correta": "Um processo puramente biologico e sem relacao com grupos e instituicoes.",
+      "correta": "Um processo puramente biológico e sem relação com grupos e instituições.",
       "comentario": "A alternativa incorreta expressa uma confusao comum sobre conceito de socializacao.",
       "tempoEstimado": 45,
       "tags": [
@@ -487,15 +487,15 @@ export const socializacao = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre socializacao, um estudante afirmou: \"socializacao envolve aprendizagem de normas e valores por meio da convivencia\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre socializacao, um estudante afirmou: \"socializacao envolve aprendizagem de normas e valores por meio da convivencia\". Qual avaliação é mais consistente?",
       "opcoes": [
         "a afirmacao esta correta, porque socializacao depende de interacao e vida coletiva",
-        "Conceito de socializacao nao pode ser observado em situacoes do cotidiano.",
+        "Conceito de socializacao não pode ser observado em situações do cotidiano.",
         "Conceito de socializacao depende apenas da vontade individual, sem contexto social.",
-        "Conceito de socializacao torna desnecessario comparar grupos, regras e instituicoes."
+        "Conceito de socializacao torna desnecessario comparar grupos, regras e instituições."
       ],
       "correta": "a afirmacao esta correta, porque socializacao depende de interacao e vida coletiva",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de conceito de socializacao.",
+      "comentario": "A avaliação correta recupera o nucleo teorico de conceito de socializacao.",
       "tempoEstimado": 50,
       "tags": [
         "socializacao",
@@ -526,15 +526,15 @@ export const socializacao = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando um individuo cresce sem interacoes consistentes com grupos e instituicoes, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando um individuo cresce sem interacoes consistentes com grupos e instituições, a melhor interpretação sociológica e que:",
       "opcoes": [
-        "o aprendizado de normas, linguagem e papeis sociais tende a ficar comprometido",
-        "Conceito de socializacao desaparece porque a sociedade nao produz regras nem expectativas.",
+        "o aprendizado de normas, linguagem e papéis sociais tende a ficar comprometido",
+        "Conceito de socializacao desaparece porque a sociedade não produz regras nem expectativas.",
         "Conceito de socializacao deixa de existir sempre que surgem conflitos entre grupos.",
-        "Conceito de socializacao so importa em sociedades antigas, nao no presente."
+        "Conceito de socializacao so importa em sociedades antigas, não no presente."
       ],
-      "correta": "o aprendizado de normas, linguagem e papeis sociais tende a ficar comprometido",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "correta": "o aprendizado de normas, linguagem e papéis sociais tende a ficar comprometido",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "socializacao",
@@ -565,11 +565,11 @@ export const socializacao = {
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente conceito de socializacao a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente conceito de socializacao a uma situação de comunidade escolar?",
       "opcoes": [
         "a escola discute como os estudantes aprendem regras, horarios e formas de cooperacao no convivio escolar",
         "a turma analisa como rotinas familiares e cuidados iniciais participam da socializacao primaria",
-        "a escola mostra como regras de laboratorio, esportes e projetos coletivos fazem parte da socializacao secundaria",
+        "a escola mostra como regras de laboratório, esportes e projetos coletivos fazem parte da socializacao secundaria",
         "a turma discute como combinados, rotinas e formas de cuidado na familia influenciam a socializacao"
       ],
       "correta": "a escola discute como os estudantes aprendem regras, horarios e formas de cooperacao no convivio escolar",
@@ -606,12 +606,12 @@ export const socializacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual sintese final representa melhor conceito de socializacao?",
       "opcoes": [
-        "socializacao e o processo de aprendizagem social que integra individuos a vida coletiva",
-        "Conceito de socializacao e um fator biologico fixo, sem relacao com aprendizagem e grupos sociais.",
+        "socializacao e o processo de aprendizagem social que integra indivíduos a vida coletiva",
+        "Conceito de socializacao e um fator biológico fixo, sem relação com aprendizagem e grupos sociais.",
         "Conceito de socializacao explica apenas escolhas privadas e ignora a dimensao coletiva.",
-        "Conceito de socializacao impede qualquer mudanca historica ou social."
+        "Conceito de socializacao impede qualquer mudanca histórica ou social."
       ],
-      "correta": "socializacao e o processo de aprendizagem social que integra individuos a vida coletiva",
+      "correta": "socializacao e o processo de aprendizagem social que integra indivíduos a vida coletiva",
       "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de conceito de socializacao.",
       "tempoEstimado": 60,
       "tags": [
@@ -646,8 +646,8 @@ export const socializacao = {
       "enunciado": "Em Sociologia, socializacao primaria pode ser definido(a) como:",
       "opcoes": [
         "a fase inicial da socializacao, geralmente ligada aos primeiros grupos de convivio, em que se aprendem linguagem, regras basicas e formas de interacao",
-        "o processo pelo qual individuos aprendem normas, valores, papeis e formas de agir necessarios a vida em sociedade",
-        "o conjunto de aprendizagens sociais que ocorre em novos espacos e instituicoes alem dos primeiros grupos de convivencia",
+        "o processo pelo qual indivíduos aprendem normas, valores, papéis e formas de agir necessarios a vida em sociedade",
+        "o conjunto de aprendizagens sociais que ocorre em novos espacos e instituições alem dos primeiros grupos de convivencia",
         "um dos principais agentes de socializacao, responsavel por transmitir cuidados, linguagens, regras e referencias de convivencia nos primeiros anos e ao longo da vida"
       ],
       "correta": "a fase inicial da socializacao, geralmente ligada aos primeiros grupos de convivio, em que se aprendem linguagem, regras basicas e formas de interacao",
@@ -682,7 +682,7 @@ export const socializacao = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: na infancia, a pessoa aprende modos de falar, se comportar e reconhecer limites em seus primeiros contatos sociais Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: na infancia, a pessoa aprende modos de falar, se comportar e reconhecer limites em seus primeiros contatos sociais Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
         "Socializacao primaria",
         "Conceito de socializacao",
@@ -690,7 +690,7 @@ export const socializacao = {
         "Familia"
       ],
       "correta": "Socializacao primaria",
-      "comentario": "A situacao apresentada e um exemplo de socializacao primaria.",
+      "comentario": "A situação apresentada é um exemplo de socializacao primaria.",
       "tempoEstimado": 25,
       "tags": [
         "socializacao",
@@ -725,8 +725,8 @@ export const socializacao = {
       "opcoes": [
         "A fase inicial da socializacao, geralmente ligada aos primeiros grupos de convivio, em que se aprendem linguagem, regras basicas e formas de interacao.",
         "Um processo restrito apenas a escola e ao mercado de trabalho.",
-        "Socializacao secundaria significa o conjunto de aprendizagens sociais que ocorre em novos espacos e instituicoes alem dos primeiros grupos de convivencia.",
-        "Socializacao trata apenas de reflexos biologicos e nao de aprendizagem social."
+        "Socializacao secundaria significa o conjunto de aprendizagens sociais que ocorre em novos espacos e instituições alem dos primeiros grupos de convivencia.",
+        "Socializacao trata apenas de reflexos biologicos e não de aprendizagem social."
       ],
       "correta": "A fase inicial da socializacao, geralmente ligada aos primeiros grupos de convivio, em que se aprendem linguagem, regras basicas e formas de interacao.",
       "comentario": "A afirmacao correta retoma o sentido central de socializacao primaria.",
@@ -760,7 +760,7 @@ export const socializacao = {
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a socializacao primaria.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a socializacao primaria.",
       "opcoes": [
         "o aprendizado de normas profissionais em um novo trabalho na vida adulta",
         "na infancia, a pessoa aprende modos de falar, se comportar e reconhecer limites em seus primeiros contatos sociais",
@@ -768,7 +768,7 @@ export const socializacao = {
         "os primeiros vinculos sociais moldam referencias fundamentais para a insercao do sujeito na vida coletiva"
       ],
       "correta": "o aprendizado de normas profissionais em um novo trabalho na vida adulta",
-      "comentario": "o aprendizado de normas profissionais em um novo trabalho na vida adulta nao expressa socializacao primaria, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "comentario": "o aprendizado de normas profissionais em um novo trabalho na vida adulta não expressa socializacao primaria, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "socializacao",
@@ -803,11 +803,11 @@ export const socializacao = {
       "opcoes": [
         "as aprendizagens iniciais que inserem o sujeito nas primeiras formas de convivio social",
         "a aprendizagem social de comportamentos, valores e expectativas coletivas",
-        "as novas aprendizagens exigidas por instituicoes e grupos posteriores aos primeiros vinculos sociais",
-        "a transmissao de habitos, afetos e regras de convivencia no nucleo familiar"
+        "as novas aprendizagens exigidas por instituições e grupos posteriores aos primeiros vinculos sociais",
+        "a transmissao de hábitos, afetos e regras de convivencia no nucleo familiar"
       ],
       "correta": "as aprendizagens iniciais que inserem o sujeito nas primeiras formas de convivio social",
-      "comentario": "Socializacao primaria volta a atencao para as aprendizagens iniciais que inserem o sujeito nas primeiras formas de convivio social.",
+      "comentario": "Socializacao primaria volta a atenção para as aprendizagens iniciais que inserem o sujeito nas primeiras formas de convivio social.",
       "tempoEstimado": 35,
       "tags": [
         "socializacao",
@@ -838,15 +838,15 @@ export const socializacao = {
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre socializacao primaria e socializacao secundaria e que:",
+      "enunciado": "A principal diferença entre socializacao primaria e socializacao secundaria e que:",
       "opcoes": [
-        "socializacao primaria ocorre nos primeiros ambientes de formacao do sujeito, enquanto socializacao secundaria amplia e reelabora aprendizados em novos espacos sociais",
-        "Socializacao primaria e Socializacao secundaria sao exatamente o mesmo fenomeno social.",
+        "socializacao primaria ocorre nos primeiros ambientes de formação do sujeito, enquanto socializacao secundaria amplia e reelabora aprendizados em novos espacos sociais",
+        "Socializacao primaria e Socializacao secundaria são exatamente o mesmo fenômeno social.",
         "Socializacao secundaria depende apenas da biologia, enquanto Socializacao primaria depende so da economia.",
-        "Socializacao primaria elimina a necessidade de observar contextos e instituicoes."
+        "Socializacao primaria elimina a necessidade de observar contextos e instituições."
       ],
-      "correta": "socializacao primaria ocorre nos primeiros ambientes de formacao do sujeito, enquanto socializacao secundaria amplia e reelabora aprendizados em novos espacos sociais",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "correta": "socializacao primaria ocorre nos primeiros ambientes de formação do sujeito, enquanto socializacao secundaria amplia e reelabora aprendizados em novos espacos sociais",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "socializacao",
@@ -877,10 +877,10 @@ export const socializacao = {
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: familiares e cuidadores apresentam regras basicas, rotinas e formas iniciais de convivencia A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: familiares e cuidadores apresentam regras basicas, rotinas e formas iniciais de convivencia A leitura sociológica mais adequada aponta para:",
       "opcoes": [
         "socializacao primaria constroi bases de linguagem, afetos, limites e reconhecimento do outro",
-        "Socializacao primaria mostra que a vida social nao interfere nas formas de agir.",
+        "Socializacao primaria mostra que a vida social não interfere nas formas de agir.",
         "Socializacao primaria prova que todos os grupos agem da mesma forma em qualquer contexto.",
         "Socializacao primaria significa ausencia completa de normas e expectativas."
       ],
@@ -916,15 +916,15 @@ export const socializacao = {
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia socializacao primaria de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia socializacao primaria de maneira mais clara?",
       "opcoes": [
         "os primeiros vinculos sociais moldam referencias fundamentais para a insercao do sujeito na vida coletiva",
-        "o convivio social ensina modos de comportamento, pertencimento e interpretacao do mundo",
+        "o convivio social ensina modos de comportamento, pertencimento e interpretação do mundo",
         "novos ambientes sociais ensinam linguagens, regras e expectativas diferentes das aprendidas inicialmente",
-        "a familia participa da formacao de habitos, valores e expectativas sobre o comportamento"
+        "a familia participa da formação de hábitos, valores e expectativas sobre o comportamento"
       ],
       "correta": "os primeiros vinculos sociais moldam referencias fundamentais para a insercao do sujeito na vida coletiva",
-      "comentario": "A alternativa correta traduz socializacao primaria em uma situacao concreta de vida social.",
+      "comentario": "A alternativa correta traduz socializacao primaria em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "socializacao",
@@ -955,15 +955,15 @@ export const socializacao = {
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"na infancia, a pessoa aprende modos de falar, se comportar e reconhecer limites em seus primeiros contatos sociais\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"na infancia, a pessoa aprende modos de falar, se comportar e reconhecer limites em seus primeiros contatos sociais\", qual conclusão é mais adequada?",
       "opcoes": [
-        "os primeiros vinculos de convivencia tem peso importante na formacao social inicial do individuo",
+        "os primeiros vinculos de convivencia tem peso importante na formação social inicial do individuo",
         "Socializacao primaria indica que normas sociais nunca mudam.",
         "Socializacao primaria so pode ser explicado por fatores biologicos.",
-        "Socializacao primaria dispensa comparacao entre grupos e instituicoes."
+        "Socializacao primaria dispensa comparacao entre grupos e instituições."
       ],
-      "correta": "os primeiros vinculos de convivencia tem peso importante na formacao social inicial do individuo",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "correta": "os primeiros vinculos de convivencia tem peso importante na formação social inicial do individuo",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "socializacao",
@@ -996,12 +996,12 @@ export const socializacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com socializacao primaria?",
       "opcoes": [
-        "quais aprendizagens fundamentais sao adquiridas nos primeiros grupos de convivio?",
-        "como individuos aprendem comportamentos e expectativas sociais em diferentes contextos?",
-        "como escola, trabalho e outros ambientes ampliam a formacao social do individuo?",
-        "de que modo rotinas e relacoes familiares influenciam a formacao social do individuo?"
+        "quais aprendizagens fundamentais são adquiridas nos primeiros grupos de convivio?",
+        "como indivíduos aprendem comportamentos e expectativas sociais em diferentes contextos?",
+        "como escola, trabalho e outros ambientes ampliam a formação social do individuo?",
+        "de que modo rotinas e relações familiares influenciam a formação social do individuo?"
       ],
-      "correta": "quais aprendizagens fundamentais sao adquiridas nos primeiros grupos de convivio?",
+      "correta": "quais aprendizagens fundamentais são adquiridas nos primeiros grupos de convivio?",
       "comentario": "A pergunta correta ajuda a investigar socializacao primaria de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
@@ -1037,8 +1037,8 @@ export const socializacao = {
       "opcoes": [
         "Um processo restrito apenas a escola e ao mercado de trabalho.",
         "Socializacao primaria pode ser observado em contextos de convivencia, regras e expectativas sociais.",
-        "Socializacao primaria ajuda a analisar aprendizagens e papeis na vida coletiva.",
-        "Socializacao primaria depende da interacao entre individuos, grupos e instituicoes."
+        "Socializacao primaria ajuda a analisar aprendizagens e papéis na vida coletiva.",
+        "Socializacao primaria depende da interacao entre indivíduos, grupos e instituições."
       ],
       "correta": "Um processo restrito apenas a escola e ao mercado de trabalho.",
       "comentario": "A alternativa incorreta expressa uma confusao comum sobre socializacao primaria.",
@@ -1072,15 +1072,15 @@ export const socializacao = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre socializacao, um estudante afirmou: \"socializacao primaria cria bases iniciais para a vida em sociedade\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre socializacao, um estudante afirmou: \"socializacao primaria cria bases iniciais para a vida em sociedade\". Qual avaliação é mais consistente?",
       "opcoes": [
         "a afirmacao esta correta, porque ela envolve aprendizagens fundamentais da infancia e dos primeiros grupos",
-        "Socializacao primaria nao pode ser observado em situacoes do cotidiano.",
+        "Socializacao primaria não pode ser observado em situações do cotidiano.",
         "Socializacao primaria depende apenas da vontade individual, sem contexto social.",
-        "Socializacao primaria torna desnecessario comparar grupos, regras e instituicoes."
+        "Socializacao primaria torna desnecessario comparar grupos, regras e instituições."
       ],
       "correta": "a afirmacao esta correta, porque ela envolve aprendizagens fundamentais da infancia e dos primeiros grupos",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de socializacao primaria.",
+      "comentario": "A avaliação correta recupera o nucleo teorico de socializacao primaria.",
       "tempoEstimado": 50,
       "tags": [
         "socializacao",
@@ -1111,15 +1111,15 @@ export const socializacao = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando faltam interacoes estaveis e referencias basicas na primeira infancia, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando faltam interacoes estaveis e referencias basicas na primeira infancia, a melhor interpretação sociológica e que:",
       "opcoes": [
-        "a formacao inicial de linguagem, limites e convivencia tende a ficar mais fragil",
-        "Socializacao primaria desaparece porque a sociedade nao produz regras nem expectativas.",
+        "a formação inicial de linguagem, limites e convivencia tende a ficar mais fragil",
+        "Socializacao primaria desaparece porque a sociedade não produz regras nem expectativas.",
         "Socializacao primaria deixa de existir sempre que surgem conflitos entre grupos.",
-        "Socializacao primaria so importa em sociedades antigas, nao no presente."
+        "Socializacao primaria so importa em sociedades antigas, não no presente."
       ],
-      "correta": "a formacao inicial de linguagem, limites e convivencia tende a ficar mais fragil",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "correta": "a formação inicial de linguagem, limites e convivencia tende a ficar mais fragil",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "socializacao",
@@ -1150,11 +1150,11 @@ export const socializacao = {
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente socializacao primaria a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente socializacao primaria a uma situação de comunidade escolar?",
       "opcoes": [
         "a turma analisa como rotinas familiares e cuidados iniciais participam da socializacao primaria",
         "a escola discute como os estudantes aprendem regras, horarios e formas de cooperacao no convivio escolar",
-        "a escola mostra como regras de laboratorio, esportes e projetos coletivos fazem parte da socializacao secundaria",
+        "a escola mostra como regras de laboratório, esportes e projetos coletivos fazem parte da socializacao secundaria",
         "a turma discute como combinados, rotinas e formas de cuidado na familia influenciam a socializacao"
       ],
       "correta": "a turma analisa como rotinas familiares e cuidados iniciais participam da socializacao primaria",
@@ -1192,9 +1192,9 @@ export const socializacao = {
       "enunciado": "Qual sintese final representa melhor socializacao primaria?",
       "opcoes": [
         "socializacao primaria e a fase inicial em que o sujeito aprende referencias basicas de convivio",
-        "Socializacao primaria e um fator biologico fixo, sem relacao com aprendizagem e grupos sociais.",
+        "Socializacao primaria e um fator biológico fixo, sem relação com aprendizagem e grupos sociais.",
         "Socializacao primaria explica apenas escolhas privadas e ignora a dimensao coletiva.",
-        "Socializacao primaria impede qualquer mudanca historica ou social."
+        "Socializacao primaria impede qualquer mudanca histórica ou social."
       ],
       "correta": "socializacao primaria e a fase inicial em que o sujeito aprende referencias basicas de convivio",
       "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de socializacao primaria.",
@@ -1230,13 +1230,13 @@ export const socializacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Em Sociologia, socializacao secundaria pode ser definido(a) como:",
       "opcoes": [
-        "o conjunto de aprendizagens sociais que ocorre em novos espacos e instituicoes alem dos primeiros grupos de convivencia",
-        "o processo pelo qual individuos aprendem normas, valores, papeis e formas de agir necessarios a vida em sociedade",
+        "o conjunto de aprendizagens sociais que ocorre em novos espacos e instituições alem dos primeiros grupos de convivencia",
+        "o processo pelo qual indivíduos aprendem normas, valores, papéis e formas de agir necessarios a vida em sociedade",
         "a fase inicial da socializacao, geralmente ligada aos primeiros grupos de convivio, em que se aprendem linguagem, regras basicas e formas de interacao",
         "um dos principais agentes de socializacao, responsavel por transmitir cuidados, linguagens, regras e referencias de convivencia nos primeiros anos e ao longo da vida"
       ],
-      "correta": "o conjunto de aprendizagens sociais que ocorre em novos espacos e instituicoes alem dos primeiros grupos de convivencia",
-      "comentario": "Socializacao secundaria refere-se ao conjunto de aprendizagens sociais que ocorre em novos espacos e instituicoes alem dos primeiros grupos de convivencia.",
+      "correta": "o conjunto de aprendizagens sociais que ocorre em novos espacos e instituições alem dos primeiros grupos de convivencia",
+      "comentario": "Socializacao secundaria refere-se ao conjunto de aprendizagens sociais que ocorre em novos espacos e instituições alem dos primeiros grupos de convivencia.",
       "tempoEstimado": 20,
       "tags": [
         "socializacao",
@@ -1267,7 +1267,7 @@ export const socializacao = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: ao entrar na escola, no trabalho ou em grupos organizados, a pessoa aprende novas regras e papeis Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: ao entrar na escola, no trabalho ou em grupos organizados, a pessoa aprende novas regras e papéis Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
         "Socializacao secundaria",
         "Conceito de socializacao",
@@ -1275,7 +1275,7 @@ export const socializacao = {
         "Familia"
       ],
       "correta": "Socializacao secundaria",
-      "comentario": "A situacao apresentada e um exemplo de socializacao secundaria.",
+      "comentario": "A situação apresentada é um exemplo de socializacao secundaria.",
       "tempoEstimado": 25,
       "tags": [
         "socializacao",
@@ -1308,12 +1308,12 @@ export const socializacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual afirmacao descreve corretamente socializacao secundaria?",
       "opcoes": [
-        "O conjunto de aprendizagens sociais que ocorre em novos espacos e instituicoes alem dos primeiros grupos de convivencia.",
+        "O conjunto de aprendizagens sociais que ocorre em novos espacos e instituições alem dos primeiros grupos de convivencia.",
         "Um processo que substitui totalmente todas as aprendizagens anteriores de forma imediata.",
         "Socializacao primaria significa a fase inicial da socializacao, geralmente ligada aos primeiros grupos de convivio, em que se aprendem linguagem, regras basicas e formas de interacao.",
-        "Socializacao trata apenas de reflexos biologicos e nao de aprendizagem social."
+        "Socializacao trata apenas de reflexos biologicos e não de aprendizagem social."
       ],
-      "correta": "O conjunto de aprendizagens sociais que ocorre em novos espacos e instituicoes alem dos primeiros grupos de convivencia.",
+      "correta": "O conjunto de aprendizagens sociais que ocorre em novos espacos e instituições alem dos primeiros grupos de convivencia.",
       "comentario": "A afirmacao correta retoma o sentido central de socializacao secundaria.",
       "tempoEstimado": 30,
       "tags": [
@@ -1345,15 +1345,15 @@ export const socializacao = {
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a socializacao secundaria.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a socializacao secundaria.",
       "opcoes": [
         "o aprendizado inicial da linguagem com os primeiros cuidadores",
-        "ao entrar na escola, no trabalho ou em grupos organizados, a pessoa aprende novas regras e papeis",
+        "ao entrar na escola, no trabalho ou em grupos organizados, a pessoa aprende novas regras e papéis",
         "um jovem adapta sua conduta a normas especificas de clubes, cursos, redes e ambientes institucionais",
         "novos ambientes sociais ensinam linguagens, regras e expectativas diferentes das aprendidas inicialmente"
       ],
       "correta": "o aprendizado inicial da linguagem com os primeiros cuidadores",
-      "comentario": "o aprendizado inicial da linguagem com os primeiros cuidadores nao expressa socializacao secundaria, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "comentario": "o aprendizado inicial da linguagem com os primeiros cuidadores não expressa socializacao secundaria, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "socializacao",
@@ -1386,13 +1386,13 @@ export const socializacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Quando se estuda socializacao secundaria, o foco principal esta em:",
       "opcoes": [
-        "as novas aprendizagens exigidas por instituicoes e grupos posteriores aos primeiros vinculos sociais",
+        "as novas aprendizagens exigidas por instituições e grupos posteriores aos primeiros vinculos sociais",
         "a aprendizagem social de comportamentos, valores e expectativas coletivas",
         "as aprendizagens iniciais que inserem o sujeito nas primeiras formas de convivio social",
-        "a transmissao de habitos, afetos e regras de convivencia no nucleo familiar"
+        "a transmissao de hábitos, afetos e regras de convivencia no nucleo familiar"
       ],
-      "correta": "as novas aprendizagens exigidas por instituicoes e grupos posteriores aos primeiros vinculos sociais",
-      "comentario": "Socializacao secundaria volta a atencao para as novas aprendizagens exigidas por instituicoes e grupos posteriores aos primeiros vinculos sociais.",
+      "correta": "as novas aprendizagens exigidas por instituições e grupos posteriores aos primeiros vinculos sociais",
+      "comentario": "Socializacao secundaria volta a atenção para as novas aprendizagens exigidas por instituições e grupos posteriores aos primeiros vinculos sociais.",
       "tempoEstimado": 35,
       "tags": [
         "socializacao",
@@ -1423,15 +1423,15 @@ export const socializacao = {
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre socializacao secundaria e socializacao primaria e que:",
+      "enunciado": "A principal diferença entre socializacao secundaria e socializacao primaria e que:",
       "opcoes": [
-        "socializacao secundaria ocorre em novos espacos institucionais e grupos, enquanto a primaria se liga aos primeiros processos de formacao",
-        "Socializacao secundaria e Socializacao primaria sao exatamente o mesmo fenomeno social.",
+        "socializacao secundaria ocorre em novos espacos institucionais e grupos, enquanto a primaria se liga aos primeiros processos de formação",
+        "Socializacao secundaria e Socializacao primaria são exatamente o mesmo fenômeno social.",
         "Socializacao primaria depende apenas da biologia, enquanto Socializacao secundaria depende so da economia.",
-        "Socializacao secundaria elimina a necessidade de observar contextos e instituicoes."
+        "Socializacao secundaria elimina a necessidade de observar contextos e instituições."
       ],
-      "correta": "socializacao secundaria ocorre em novos espacos institucionais e grupos, enquanto a primaria se liga aos primeiros processos de formacao",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "correta": "socializacao secundaria ocorre em novos espacos institucionais e grupos, enquanto a primaria se liga aos primeiros processos de formação",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "socializacao",
@@ -1462,10 +1462,10 @@ export const socializacao = {
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: um jovem adapta sua conduta a normas especificas de clubes, cursos, redes e ambientes institucionais A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: um jovem adapta sua conduta a normas especificas de clubes, cursos, redes e ambientes institucionais A leitura sociológica mais adequada aponta para:",
       "opcoes": [
         "socializacao secundaria amplia e reorganiza comportamentos conforme novos contextos sociais",
-        "Socializacao secundaria mostra que a vida social nao interfere nas formas de agir.",
+        "Socializacao secundaria mostra que a vida social não interfere nas formas de agir.",
         "Socializacao secundaria prova que todos os grupos agem da mesma forma em qualquer contexto.",
         "Socializacao secundaria significa ausencia completa de normas e expectativas."
       ],
@@ -1501,15 +1501,15 @@ export const socializacao = {
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia socializacao secundaria de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia socializacao secundaria de maneira mais clara?",
       "opcoes": [
         "novos ambientes sociais ensinam linguagens, regras e expectativas diferentes das aprendidas inicialmente",
-        "o convivio social ensina modos de comportamento, pertencimento e interpretacao do mundo",
+        "o convivio social ensina modos de comportamento, pertencimento e interpretação do mundo",
         "os primeiros vinculos sociais moldam referencias fundamentais para a insercao do sujeito na vida coletiva",
-        "a familia participa da formacao de habitos, valores e expectativas sobre o comportamento"
+        "a familia participa da formação de hábitos, valores e expectativas sobre o comportamento"
       ],
       "correta": "novos ambientes sociais ensinam linguagens, regras e expectativas diferentes das aprendidas inicialmente",
-      "comentario": "A alternativa correta traduz socializacao secundaria em uma situacao concreta de vida social.",
+      "comentario": "A alternativa correta traduz socializacao secundaria em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "socializacao",
@@ -1540,15 +1540,15 @@ export const socializacao = {
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"ao entrar na escola, no trabalho ou em grupos organizados, a pessoa aprende novas regras e papeis\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"ao entrar na escola, no trabalho ou em grupos organizados, a pessoa aprende novas regras e papéis\", qual conclusão é mais adequada?",
       "opcoes": [
         "a entrada em novos contextos sociais exige reelaboracao de comportamentos e expectativas",
         "Socializacao secundaria indica que normas sociais nunca mudam.",
         "Socializacao secundaria so pode ser explicado por fatores biologicos.",
-        "Socializacao secundaria dispensa comparacao entre grupos e instituicoes."
+        "Socializacao secundaria dispensa comparacao entre grupos e instituições."
       ],
       "correta": "a entrada em novos contextos sociais exige reelaboracao de comportamentos e expectativas",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "socializacao",
@@ -1581,12 +1581,12 @@ export const socializacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com socializacao secundaria?",
       "opcoes": [
-        "como escola, trabalho e outros ambientes ampliam a formacao social do individuo?",
+        "como escola, trabalho e outros ambientes ampliam a formação social do individuo?",
         "quais mecanismos um grupo usa para reforcar normas e limitar condutas?",
         "como grupos definem e respondem a comportamentos considerados desviantes?",
-        "como individuos aprendem comportamentos e expectativas sociais em diferentes contextos?"
+        "como indivíduos aprendem comportamentos e expectativas sociais em diferentes contextos?"
       ],
-      "correta": "como escola, trabalho e outros ambientes ampliam a formacao social do individuo?",
+      "correta": "como escola, trabalho e outros ambientes ampliam a formação social do individuo?",
       "comentario": "A pergunta correta ajuda a investigar socializacao secundaria de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
@@ -1622,8 +1622,8 @@ export const socializacao = {
       "opcoes": [
         "Um processo que substitui totalmente todas as aprendizagens anteriores de forma imediata.",
         "Socializacao secundaria pode ser observado em contextos de convivencia, regras e expectativas sociais.",
-        "Socializacao secundaria ajuda a analisar aprendizagens e papeis na vida coletiva.",
-        "Socializacao secundaria depende da interacao entre individuos, grupos e instituicoes."
+        "Socializacao secundaria ajuda a analisar aprendizagens e papéis na vida coletiva.",
+        "Socializacao secundaria depende da interacao entre indivíduos, grupos e instituições."
       ],
       "correta": "Um processo que substitui totalmente todas as aprendizagens anteriores de forma imediata.",
       "comentario": "A alternativa incorreta expressa uma confusao comum sobre socializacao secundaria.",
@@ -1657,15 +1657,15 @@ export const socializacao = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre socializacao, um estudante afirmou: \"socializacao secundaria acrescenta novas referencias e adapta o sujeito a outros papeis sociais\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre socializacao, um estudante afirmou: \"socializacao secundaria acrescenta novas referencias e adapta o sujeito a outros papéis sociais\". Qual avaliação é mais consistente?",
       "opcoes": [
         "a afirmacao esta correta, porque o processo continua ao longo da vida social",
-        "Socializacao secundaria nao pode ser observado em situacoes do cotidiano.",
+        "Socializacao secundaria não pode ser observado em situações do cotidiano.",
         "Socializacao secundaria depende apenas da vontade individual, sem contexto social.",
-        "Socializacao secundaria torna desnecessario comparar grupos, regras e instituicoes."
+        "Socializacao secundaria torna desnecessario comparar grupos, regras e instituições."
       ],
       "correta": "a afirmacao esta correta, porque o processo continua ao longo da vida social",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de socializacao secundaria.",
+      "comentario": "A avaliação correta recupera o nucleo teorico de socializacao secundaria.",
       "tempoEstimado": 50,
       "tags": [
         "socializacao",
@@ -1696,15 +1696,15 @@ export const socializacao = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando o sujeito nao acessa novos grupos nem instituicoes ao longo de sua trajetoria, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando o sujeito não acessa novos grupos nem instituições ao longo de sua trajetoria, a melhor interpretação sociológica e que:",
       "opcoes": [
         "diminuem as oportunidades de ampliar e reelaborar aprendizagens sociais",
-        "Socializacao secundaria desaparece porque a sociedade nao produz regras nem expectativas.",
+        "Socializacao secundaria desaparece porque a sociedade não produz regras nem expectativas.",
         "Socializacao secundaria deixa de existir sempre que surgem conflitos entre grupos.",
-        "Socializacao secundaria so importa em sociedades antigas, nao no presente."
+        "Socializacao secundaria so importa em sociedades antigas, não no presente."
       ],
       "correta": "diminuem as oportunidades de ampliar e reelaborar aprendizagens sociais",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "socializacao",
@@ -1735,14 +1735,14 @@ export const socializacao = {
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente socializacao secundaria a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente socializacao secundaria a uma situação de comunidade escolar?",
       "opcoes": [
-        "a escola mostra como regras de laboratorio, esportes e projetos coletivos fazem parte da socializacao secundaria",
+        "a escola mostra como regras de laboratório, esportes e projetos coletivos fazem parte da socializacao secundaria",
         "a turma analisa como combinados, conselhos e advertencias integram o controle social na escola",
-        "a escola debate por que cola, agressao e vandalismo sao tratados como desvios em certas regras de convivencia",
+        "a escola debate por que cola, agressao e vandalismo são tratados como desvios em certas regras de convivencia",
         "a escola discute como os estudantes aprendem regras, horarios e formas de cooperacao no convivio escolar"
       ],
-      "correta": "a escola mostra como regras de laboratorio, esportes e projetos coletivos fazem parte da socializacao secundaria",
+      "correta": "a escola mostra como regras de laboratório, esportes e projetos coletivos fazem parte da socializacao secundaria",
       "comentario": "A alternativa correta aproxima socializacao secundaria de um contexto escolar concreto.",
       "tempoEstimado": 55,
       "tags": [
@@ -1776,12 +1776,12 @@ export const socializacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual sintese final representa melhor socializacao secundaria?",
       "opcoes": [
-        "socializacao secundaria amplia a formacao social em novos grupos e instituicoes",
-        "Socializacao secundaria e um fator biologico fixo, sem relacao com aprendizagem e grupos sociais.",
+        "socializacao secundaria amplia a formação social em novos grupos e instituições",
+        "Socializacao secundaria e um fator biológico fixo, sem relação com aprendizagem e grupos sociais.",
         "Socializacao secundaria explica apenas escolhas privadas e ignora a dimensao coletiva.",
-        "Socializacao secundaria impede qualquer mudanca historica ou social."
+        "Socializacao secundaria impede qualquer mudanca histórica ou social."
       ],
-      "correta": "socializacao secundaria amplia a formacao social em novos grupos e instituicoes",
+      "correta": "socializacao secundaria amplia a formação social em novos grupos e instituições",
       "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de socializacao secundaria.",
       "tempoEstimado": 60,
       "tags": [
@@ -1816,9 +1816,9 @@ export const socializacao = {
       "enunciado": "Em Sociologia, familia pode ser definido(a) como:",
       "opcoes": [
         "um dos principais agentes de socializacao, responsavel por transmitir cuidados, linguagens, regras e referencias de convivencia nos primeiros anos e ao longo da vida",
-        "o processo pelo qual individuos aprendem normas, valores, papeis e formas de agir necessarios a vida em sociedade",
+        "o processo pelo qual indivíduos aprendem normas, valores, papéis e formas de agir necessarios a vida em sociedade",
         "a fase inicial da socializacao, geralmente ligada aos primeiros grupos de convivio, em que se aprendem linguagem, regras basicas e formas de interacao",
-        "o conjunto de aprendizagens sociais que ocorre em novos espacos e instituicoes alem dos primeiros grupos de convivencia"
+        "o conjunto de aprendizagens sociais que ocorre em novos espacos e instituições alem dos primeiros grupos de convivencia"
       ],
       "correta": "um dos principais agentes de socializacao, responsavel por transmitir cuidados, linguagens, regras e referencias de convivencia nos primeiros anos e ao longo da vida",
       "comentario": "Familia refere-se a um dos principais agentes de socializacao, responsavel por transmitir cuidados, linguagens, regras e referencias de convivencia nos primeiros anos e ao longo da vida.",
@@ -1852,7 +1852,7 @@ export const socializacao = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: em casa, uma crianca aprende formas de falar, dividir tarefas e lidar com limites Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: em casa, uma crianca aprende formas de falar, dividir tarefas e lidar com limites Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
         "Familia",
         "Conceito de socializacao",
@@ -1860,7 +1860,7 @@ export const socializacao = {
         "Socializacao secundaria"
       ],
       "correta": "Familia",
-      "comentario": "A situacao apresentada e um exemplo de familia.",
+      "comentario": "A situação apresentada é um exemplo de familia.",
       "tempoEstimado": 25,
       "tags": [
         "socializacao",
@@ -1896,7 +1896,7 @@ export const socializacao = {
         "Um dos principais agentes de socializacao, responsavel por transmitir cuidados, linguagens, regras e referencias de convivencia nos primeiros anos e ao longo da vida.",
         "Um agente irrelevante para a aprendizagem de normas e valores.",
         "Escola significa a instituicao social que amplia a socializacao ao ensinar conhecimentos, regras formais, cooperacao e convivencia com diferentes grupos.",
-        "Socializacao trata apenas de reflexos biologicos e nao de aprendizagem social."
+        "Socializacao trata apenas de reflexos biologicos e não de aprendizagem social."
       ],
       "correta": "Um dos principais agentes de socializacao, responsavel por transmitir cuidados, linguagens, regras e referencias de convivencia nos primeiros anos e ao longo da vida.",
       "comentario": "A afirmacao correta retoma o sentido central de familia.",
@@ -1930,15 +1930,15 @@ export const socializacao = {
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a familia.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a familia.",
       "opcoes": [
         "um espaco sem nenhuma influencia sobre a aprendizagem social do individuo",
         "em casa, uma crianca aprende formas de falar, dividir tarefas e lidar com limites",
         "rotinas familiares ensinam horarios, responsabilidades e modos de tratar os outros",
-        "a familia participa da formacao de habitos, valores e expectativas sobre o comportamento"
+        "a familia participa da formação de hábitos, valores e expectativas sobre o comportamento"
       ],
       "correta": "um espaco sem nenhuma influencia sobre a aprendizagem social do individuo",
-      "comentario": "um espaco sem nenhuma influencia sobre a aprendizagem social do individuo nao expressa familia, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "comentario": "um espaco sem nenhuma influencia sobre a aprendizagem social do individuo não expressa familia, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "socializacao",
@@ -1971,13 +1971,13 @@ export const socializacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Quando se estuda familia, o foco principal esta em:",
       "opcoes": [
-        "a transmissao de habitos, afetos e regras de convivencia no nucleo familiar",
+        "a transmissao de hábitos, afetos e regras de convivencia no nucleo familiar",
         "a aprendizagem social de comportamentos, valores e expectativas coletivas",
         "as aprendizagens iniciais que inserem o sujeito nas primeiras formas de convivio social",
-        "as novas aprendizagens exigidas por instituicoes e grupos posteriores aos primeiros vinculos sociais"
+        "as novas aprendizagens exigidas por instituições e grupos posteriores aos primeiros vinculos sociais"
       ],
-      "correta": "a transmissao de habitos, afetos e regras de convivencia no nucleo familiar",
-      "comentario": "Familia volta a atencao para a transmissao de habitos, afetos e regras de convivencia no nucleo familiar.",
+      "correta": "a transmissao de hábitos, afetos e regras de convivencia no nucleo familiar",
+      "comentario": "Familia volta a atenção para a transmissao de hábitos, afetos e regras de convivencia no nucleo familiar.",
       "tempoEstimado": 35,
       "tags": [
         "socializacao",
@@ -2008,15 +2008,15 @@ export const socializacao = {
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre familia e escola e que:",
+      "enunciado": "A principal diferença entre familia e escola e que:",
       "opcoes": [
-        "familia socializa em relacoes afetivas e cotidianas do nucleo domestico, enquanto escola atua como instituicao formal e ampliada",
-        "Familia e Escola sao exatamente o mesmo fenomeno social.",
+        "familia socializa em relações afetivas e cotidianas do nucleo doméstico, enquanto escola atua como instituicao formal e ampliada",
+        "Familia e Escola são exatamente o mesmo fenômeno social.",
         "Escola depende apenas da biologia, enquanto Familia depende so da economia.",
-        "Familia elimina a necessidade de observar contextos e instituicoes."
+        "Familia elimina a necessidade de observar contextos e instituições."
       ],
-      "correta": "familia socializa em relacoes afetivas e cotidianas do nucleo domestico, enquanto escola atua como instituicao formal e ampliada",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "correta": "familia socializa em relações afetivas e cotidianas do nucleo doméstico, enquanto escola atua como instituicao formal e ampliada",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "socializacao",
@@ -2047,10 +2047,10 @@ export const socializacao = {
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: rotinas familiares ensinam horarios, responsabilidades e modos de tratar os outros A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: rotinas familiares ensinam horarios, responsabilidades e modos de tratar os outros A leitura sociológica mais adequada aponta para:",
       "opcoes": [
         "familia atua como agente central de socializacao, mesmo variando conforme contexto e composicao",
-        "Familia mostra que a vida social nao interfere nas formas de agir.",
+        "Familia mostra que a vida social não interfere nas formas de agir.",
         "Familia prova que todos os grupos agem da mesma forma em qualquer contexto.",
         "Familia significa ausencia completa de normas e expectativas."
       ],
@@ -2086,15 +2086,15 @@ export const socializacao = {
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia familia de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia familia de maneira mais clara?",
       "opcoes": [
-        "a familia participa da formacao de habitos, valores e expectativas sobre o comportamento",
-        "o convivio social ensina modos de comportamento, pertencimento e interpretacao do mundo",
+        "a familia participa da formação de hábitos, valores e expectativas sobre o comportamento",
+        "o convivio social ensina modos de comportamento, pertencimento e interpretação do mundo",
         "os primeiros vinculos sociais moldam referencias fundamentais para a insercao do sujeito na vida coletiva",
         "novos ambientes sociais ensinam linguagens, regras e expectativas diferentes das aprendidas inicialmente"
       ],
-      "correta": "a familia participa da formacao de habitos, valores e expectativas sobre o comportamento",
-      "comentario": "A alternativa correta traduz familia em uma situacao concreta de vida social.",
+      "correta": "a familia participa da formação de hábitos, valores e expectativas sobre o comportamento",
+      "comentario": "A alternativa correta traduz familia em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "socializacao",
@@ -2125,15 +2125,15 @@ export const socializacao = {
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"em casa, uma crianca aprende formas de falar, dividir tarefas e lidar com limites\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"em casa, uma crianca aprende formas de falar, dividir tarefas e lidar com limites\", qual conclusão é mais adequada?",
       "opcoes": [
         "o ambiente familiar participa de forma decisiva das primeiras aprendizagens sociais",
         "Familia indica que normas sociais nunca mudam.",
         "Familia so pode ser explicado por fatores biologicos.",
-        "Familia dispensa comparacao entre grupos e instituicoes."
+        "Familia dispensa comparacao entre grupos e instituições."
       ],
       "correta": "o ambiente familiar participa de forma decisiva das primeiras aprendizagens sociais",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "socializacao",
@@ -2166,12 +2166,12 @@ export const socializacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com familia?",
       "opcoes": [
-        "de que modo rotinas e relacoes familiares influenciam a formacao social do individuo?",
-        "como individuos aprendem comportamentos e expectativas sociais em diferentes contextos?",
-        "quais aprendizagens fundamentais sao adquiridas nos primeiros grupos de convivio?",
-        "como escola, trabalho e outros ambientes ampliam a formacao social do individuo?"
+        "de que modo rotinas e relações familiares influenciam a formação social do individuo?",
+        "como indivíduos aprendem comportamentos e expectativas sociais em diferentes contextos?",
+        "quais aprendizagens fundamentais são adquiridas nos primeiros grupos de convivio?",
+        "como escola, trabalho e outros ambientes ampliam a formação social do individuo?"
       ],
-      "correta": "de que modo rotinas e relacoes familiares influenciam a formacao social do individuo?",
+      "correta": "de que modo rotinas e relações familiares influenciam a formação social do individuo?",
       "comentario": "A pergunta correta ajuda a investigar familia de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
@@ -2207,8 +2207,8 @@ export const socializacao = {
       "opcoes": [
         "Um agente irrelevante para a aprendizagem de normas e valores.",
         "Familia pode ser observado em contextos de convivencia, regras e expectativas sociais.",
-        "Familia ajuda a analisar aprendizagens e papeis na vida coletiva.",
-        "Familia depende da interacao entre individuos, grupos e instituicoes."
+        "Familia ajuda a analisar aprendizagens e papéis na vida coletiva.",
+        "Familia depende da interacao entre indivíduos, grupos e instituições."
       ],
       "correta": "Um agente irrelevante para a aprendizagem de normas e valores.",
       "comentario": "A alternativa incorreta expressa uma confusao comum sobre familia.",
@@ -2242,15 +2242,15 @@ export const socializacao = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre socializacao, um estudante afirmou: \"a familia socializa ao transmitir habitos, limites, afetos e expectativas de convivencia\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre socializacao, um estudante afirmou: \"a familia socializa ao transmitir hábitos, limites, afetos e expectativas de convivencia\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "a afirmacao esta correta, porque a familia e um agente importante da formacao social",
-        "Familia nao pode ser observado em situacoes do cotidiano.",
+        "a afirmacao esta correta, porque a familia e um agente importante da formação social",
+        "Familia não pode ser observado em situações do cotidiano.",
         "Familia depende apenas da vontade individual, sem contexto social.",
-        "Familia torna desnecessario comparar grupos, regras e instituicoes."
+        "Familia torna desnecessario comparar grupos, regras e instituições."
       ],
-      "correta": "a afirmacao esta correta, porque a familia e um agente importante da formacao social",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de familia.",
+      "correta": "a afirmacao esta correta, porque a familia e um agente importante da formação social",
+      "comentario": "A avaliação correta recupera o nucleo teorico de familia.",
       "tempoEstimado": 50,
       "tags": [
         "socializacao",
@@ -2281,15 +2281,15 @@ export const socializacao = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando ha forte descontinuidade de cuidados e de referencias no ambiente familiar, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando ha forte descontinuidade de cuidados e de referencias no ambiente familiar, a melhor interpretação sociológica e que:",
       "opcoes": [
         "podem surgir fragilidades nas primeiras aprendizagens de convivencia e reconhecimento",
-        "Familia desaparece porque a sociedade nao produz regras nem expectativas.",
+        "Familia desaparece porque a sociedade não produz regras nem expectativas.",
         "Familia deixa de existir sempre que surgem conflitos entre grupos.",
-        "Familia so importa em sociedades antigas, nao no presente."
+        "Familia so importa em sociedades antigas, não no presente."
       ],
       "correta": "podem surgir fragilidades nas primeiras aprendizagens de convivencia e reconhecimento",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "socializacao",
@@ -2320,12 +2320,12 @@ export const socializacao = {
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente familia a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente familia a uma situação de comunidade escolar?",
       "opcoes": [
         "a turma discute como combinados, rotinas e formas de cuidado na familia influenciam a socializacao",
         "a escola discute como os estudantes aprendem regras, horarios e formas de cooperacao no convivio escolar",
         "a turma analisa como rotinas familiares e cuidados iniciais participam da socializacao primaria",
-        "a escola mostra como regras de laboratorio, esportes e projetos coletivos fazem parte da socializacao secundaria"
+        "a escola mostra como regras de laboratório, esportes e projetos coletivos fazem parte da socializacao secundaria"
       ],
       "correta": "a turma discute como combinados, rotinas e formas de cuidado na familia influenciam a socializacao",
       "comentario": "A alternativa correta aproxima familia de um contexto escolar concreto.",
@@ -2361,12 +2361,12 @@ export const socializacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual sintese final representa melhor familia?",
       "opcoes": [
-        "familia e um agente central de socializacao na transmissao de habitos, afetos e normas",
-        "Familia e um fator biologico fixo, sem relacao com aprendizagem e grupos sociais.",
+        "familia e um agente central de socializacao na transmissao de hábitos, afetos e normas",
+        "Familia e um fator biológico fixo, sem relação com aprendizagem e grupos sociais.",
         "Familia explica apenas escolhas privadas e ignora a dimensao coletiva.",
-        "Familia impede qualquer mudanca historica ou social."
+        "Familia impede qualquer mudanca histórica ou social."
       ],
-      "correta": "familia e um agente central de socializacao na transmissao de habitos, afetos e normas",
+      "correta": "familia e um agente central de socializacao na transmissao de hábitos, afetos e normas",
       "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de familia.",
       "tempoEstimado": 60,
       "tags": [
@@ -2402,7 +2402,7 @@ export const socializacao = {
       "opcoes": [
         "a instituicao social que amplia a socializacao ao ensinar conhecimentos, regras formais, cooperacao e convivencia com diferentes grupos",
         "a fase inicial da socializacao, geralmente ligada aos primeiros grupos de convivio, em que se aprendem linguagem, regras basicas e formas de interacao",
-        "o conjunto de aprendizagens sociais que ocorre em novos espacos e instituicoes alem dos primeiros grupos de convivencia",
+        "o conjunto de aprendizagens sociais que ocorre em novos espacos e instituições alem dos primeiros grupos de convivencia",
         "um dos principais agentes de socializacao, responsavel por transmitir cuidados, linguagens, regras e referencias de convivencia nos primeiros anos e ao longo da vida"
       ],
       "correta": "a instituicao social que amplia a socializacao ao ensinar conhecimentos, regras formais, cooperacao e convivencia com diferentes grupos",
@@ -2437,7 +2437,7 @@ export const socializacao = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: na escola, estudantes aprendem horarios, turnos de fala, responsabilidades e interacao com colegas diversos Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: na escola, estudantes aprendem horarios, turnos de fala, responsabilidades e interacao com colegas diversos Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
         "Escola",
         "Socializacao primaria",
@@ -2445,7 +2445,7 @@ export const socializacao = {
         "Familia"
       ],
       "correta": "Escola",
-      "comentario": "A situacao apresentada e um exemplo de escola.",
+      "comentario": "A situação apresentada é um exemplo de escola.",
       "tempoEstimado": 25,
       "tags": [
         "socializacao",
@@ -2479,9 +2479,9 @@ export const socializacao = {
       "enunciado": "Qual afirmacao descreve corretamente escola?",
       "opcoes": [
         "A instituicao social que amplia a socializacao ao ensinar conhecimentos, regras formais, cooperacao e convivencia com diferentes grupos.",
-        "Uma instituicao voltada somente a informacao tecnica e sem papel socializador.",
+        "Uma instituicao voltada somente a informacao técnica e sem papel socializador.",
         "Familia significa um dos principais agentes de socializacao, responsavel por transmitir cuidados, linguagens, regras e referencias de convivencia nos primeiros anos e ao longo da vida.",
-        "Socializacao trata apenas de reflexos biologicos e nao de aprendizagem social."
+        "Socializacao trata apenas de reflexos biologicos e não de aprendizagem social."
       ],
       "correta": "A instituicao social que amplia a socializacao ao ensinar conhecimentos, regras formais, cooperacao e convivencia com diferentes grupos.",
       "comentario": "A afirmacao correta retoma o sentido central de escola.",
@@ -2515,15 +2515,15 @@ export const socializacao = {
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a escola.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a escola.",
       "opcoes": [
         "um espaco sem regras, sem expectativas de convivencia e sem papel formativo",
         "na escola, estudantes aprendem horarios, turnos de fala, responsabilidades e interacao com colegas diversos",
         "atividades coletivas, avaliacoes e regras de convivencia organizam comportamentos no espaco escolar",
-        "a escola ensina conteudos e tambem formas de participar, respeitar normas e lidar com a diversidade"
+        "a escola ensina conteudos e também formas de participar, respeitar normas e lidar com a diversidade"
       ],
       "correta": "um espaco sem regras, sem expectativas de convivencia e sem papel formativo",
-      "comentario": "um espaco sem regras, sem expectativas de convivencia e sem papel formativo nao expressa escola, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "comentario": "um espaco sem regras, sem expectativas de convivencia e sem papel formativo não expressa escola, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "socializacao",
@@ -2558,11 +2558,11 @@ export const socializacao = {
       "opcoes": [
         "a socializacao formal mediada por conhecimentos, normas e convivencia ampliada",
         "as aprendizagens iniciais que inserem o sujeito nas primeiras formas de convivio social",
-        "as novas aprendizagens exigidas por instituicoes e grupos posteriores aos primeiros vinculos sociais",
-        "a transmissao de habitos, afetos e regras de convivencia no nucleo familiar"
+        "as novas aprendizagens exigidas por instituições e grupos posteriores aos primeiros vinculos sociais",
+        "a transmissao de hábitos, afetos e regras de convivencia no nucleo familiar"
       ],
       "correta": "a socializacao formal mediada por conhecimentos, normas e convivencia ampliada",
-      "comentario": "Escola volta a atencao para a socializacao formal mediada por conhecimentos, normas e convivencia ampliada.",
+      "comentario": "Escola volta a atenção para a socializacao formal mediada por conhecimentos, normas e convivencia ampliada.",
       "tempoEstimado": 35,
       "tags": [
         "socializacao",
@@ -2593,15 +2593,15 @@ export const socializacao = {
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre escola e familia e que:",
+      "enunciado": "A principal diferença entre escola e familia e que:",
       "opcoes": [
-        "escola atua como instituicao formal e ampliada, enquanto familia opera no nucleo de convivio domestico e afetivo",
-        "Escola e Familia sao exatamente o mesmo fenomeno social.",
+        "escola atua como instituicao formal e ampliada, enquanto familia opera no nucleo de convivio doméstico e afetivo",
+        "Escola e Familia são exatamente o mesmo fenômeno social.",
         "Familia depende apenas da biologia, enquanto Escola depende so da economia.",
-        "Escola elimina a necessidade de observar contextos e instituicoes."
+        "Escola elimina a necessidade de observar contextos e instituições."
       ],
-      "correta": "escola atua como instituicao formal e ampliada, enquanto familia opera no nucleo de convivio domestico e afetivo",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "correta": "escola atua como instituicao formal e ampliada, enquanto familia opera no nucleo de convivio doméstico e afetivo",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "socializacao",
@@ -2632,10 +2632,10 @@ export const socializacao = {
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: atividades coletivas, avaliacoes e regras de convivencia organizam comportamentos no espaco escolar A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: atividades coletivas, avaliacoes e regras de convivencia organizam comportamentos no espaco escolar A leitura sociológica mais adequada aponta para:",
       "opcoes": [
         "a escola ajuda a formar sujeitos para a vida coletiva ao combinar ensino e convivencia social",
-        "Escola mostra que a vida social nao interfere nas formas de agir.",
+        "Escola mostra que a vida social não interfere nas formas de agir.",
         "Escola prova que todos os grupos agem da mesma forma em qualquer contexto.",
         "Escola significa ausencia completa de normas e expectativas."
       ],
@@ -2671,15 +2671,15 @@ export const socializacao = {
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia escola de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia escola de maneira mais clara?",
       "opcoes": [
-        "a escola ensina conteudos e tambem formas de participar, respeitar normas e lidar com a diversidade",
+        "a escola ensina conteudos e também formas de participar, respeitar normas e lidar com a diversidade",
         "os primeiros vinculos sociais moldam referencias fundamentais para a insercao do sujeito na vida coletiva",
         "novos ambientes sociais ensinam linguagens, regras e expectativas diferentes das aprendidas inicialmente",
-        "a familia participa da formacao de habitos, valores e expectativas sobre o comportamento"
+        "a familia participa da formação de hábitos, valores e expectativas sobre o comportamento"
       ],
-      "correta": "a escola ensina conteudos e tambem formas de participar, respeitar normas e lidar com a diversidade",
-      "comentario": "A alternativa correta traduz escola em uma situacao concreta de vida social.",
+      "correta": "a escola ensina conteudos e também formas de participar, respeitar normas e lidar com a diversidade",
+      "comentario": "A alternativa correta traduz escola em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "socializacao",
@@ -2710,15 +2710,15 @@ export const socializacao = {
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"na escola, estudantes aprendem horarios, turnos de fala, responsabilidades e interacao com colegas diversos\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"na escola, estudantes aprendem horarios, turnos de fala, responsabilidades e interacao com colegas diversos\", qual conclusão é mais adequada?",
       "opcoes": [
-        "a escola nao transmite apenas conteudos, mas tambem regras e expectativas de participacao social",
+        "a escola não transmite apenas conteudos, mas também regras e expectativas de participação social",
         "Escola indica que normas sociais nunca mudam.",
         "Escola so pode ser explicado por fatores biologicos.",
-        "Escola dispensa comparacao entre grupos e instituicoes."
+        "Escola dispensa comparacao entre grupos e instituições."
       ],
-      "correta": "a escola nao transmite apenas conteudos, mas tambem regras e expectativas de participacao social",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "correta": "a escola não transmite apenas conteudos, mas também regras e expectativas de participação social",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "socializacao",
@@ -2752,9 +2752,9 @@ export const socializacao = {
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com escola?",
       "opcoes": [
         "como a escola contribui para a aprendizagem de regras e formas de convivencia?",
-        "quais aprendizagens fundamentais sao adquiridas nos primeiros grupos de convivio?",
-        "como escola, trabalho e outros ambientes ampliam a formacao social do individuo?",
-        "de que modo rotinas e relacoes familiares influenciam a formacao social do individuo?"
+        "quais aprendizagens fundamentais são adquiridas nos primeiros grupos de convivio?",
+        "como escola, trabalho e outros ambientes ampliam a formação social do individuo?",
+        "de que modo rotinas e relações familiares influenciam a formação social do individuo?"
       ],
       "correta": "como a escola contribui para a aprendizagem de regras e formas de convivencia?",
       "comentario": "A pergunta correta ajuda a investigar escola de forma coerente com o subtopico.",
@@ -2790,12 +2790,12 @@ export const socializacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a afirmacao que revela compreensao inadequada de escola.",
       "opcoes": [
-        "Uma instituicao voltada somente a informacao tecnica e sem papel socializador.",
+        "Uma instituicao voltada somente a informacao técnica e sem papel socializador.",
         "Escola pode ser observado em contextos de convivencia, regras e expectativas sociais.",
-        "Escola ajuda a analisar aprendizagens e papeis na vida coletiva.",
-        "Escola depende da interacao entre individuos, grupos e instituicoes."
+        "Escola ajuda a analisar aprendizagens e papéis na vida coletiva.",
+        "Escola depende da interacao entre indivíduos, grupos e instituições."
       ],
-      "correta": "Uma instituicao voltada somente a informacao tecnica e sem papel socializador.",
+      "correta": "Uma instituicao voltada somente a informacao técnica e sem papel socializador.",
       "comentario": "A alternativa incorreta expressa uma confusao comum sobre escola.",
       "tempoEstimado": 45,
       "tags": [
@@ -2827,15 +2827,15 @@ export const socializacao = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre socializacao, um estudante afirmou: \"aprender a conviver com colegas diferentes tambem faz parte da socializacao escolar\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre socializacao, um estudante afirmou: \"aprender a conviver com colegas diferentes também faz parte da socializacao escolar\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "a afirmacao esta correta, porque a escola e um espaco importante de formacao social",
-        "Escola nao pode ser observado em situacoes do cotidiano.",
+        "a afirmacao esta correta, porque a escola e um espaco importante de formação social",
+        "Escola não pode ser observado em situações do cotidiano.",
         "Escola depende apenas da vontade individual, sem contexto social.",
-        "Escola torna desnecessario comparar grupos, regras e instituicoes."
+        "Escola torna desnecessario comparar grupos, regras e instituições."
       ],
-      "correta": "a afirmacao esta correta, porque a escola e um espaco importante de formacao social",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de escola.",
+      "correta": "a afirmacao esta correta, porque a escola e um espaco importante de formação social",
+      "comentario": "A avaliação correta recupera o nucleo teorico de escola.",
       "tempoEstimado": 50,
       "tags": [
         "socializacao",
@@ -2866,15 +2866,15 @@ export const socializacao = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando um ambiente escolar ignora convivencia, participacao e respeito entre os estudantes, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando um ambiente escolar ignora convivencia, participação e respeito entre os estudantes, a melhor interpretação sociológica e que:",
       "opcoes": [
-        "enfraquece-se uma parte importante da funcao socializadora da escola",
-        "Escola desaparece porque a sociedade nao produz regras nem expectativas.",
+        "enfraquece-se uma parte importante da função socializadora da escola",
+        "Escola desaparece porque a sociedade não produz regras nem expectativas.",
         "Escola deixa de existir sempre que surgem conflitos entre grupos.",
-        "Escola so importa em sociedades antigas, nao no presente."
+        "Escola so importa em sociedades antigas, não no presente."
       ],
-      "correta": "enfraquece-se uma parte importante da funcao socializadora da escola",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "correta": "enfraquece-se uma parte importante da função socializadora da escola",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "socializacao",
@@ -2905,11 +2905,11 @@ export const socializacao = {
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente escola a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente escola a uma situação de comunidade escolar?",
       "opcoes": [
         "a turma analisa como regras de convivencia e trabalhos em grupo fazem parte da socializacao escolar",
         "a turma analisa como rotinas familiares e cuidados iniciais participam da socializacao primaria",
-        "a escola mostra como regras de laboratorio, esportes e projetos coletivos fazem parte da socializacao secundaria",
+        "a escola mostra como regras de laboratório, esportes e projetos coletivos fazem parte da socializacao secundaria",
         "a turma discute como combinados, rotinas e formas de cuidado na familia influenciam a socializacao"
       ],
       "correta": "a turma analisa como regras de convivencia e trabalhos em grupo fazem parte da socializacao escolar",
@@ -2947,9 +2947,9 @@ export const socializacao = {
       "enunciado": "Qual sintese final representa melhor escola?",
       "opcoes": [
         "escola e um agente de socializacao que ensina conhecimentos, regras e convivencia ampliada",
-        "Escola e um fator biologico fixo, sem relacao com aprendizagem e grupos sociais.",
+        "Escola e um fator biológico fixo, sem relação com aprendizagem e grupos sociais.",
         "Escola explica apenas escolhas privadas e ignora a dimensao coletiva.",
-        "Escola impede qualquer mudanca historica ou social."
+        "Escola impede qualquer mudanca histórica ou social."
       ],
       "correta": "escola e um agente de socializacao que ensina conhecimentos, regras e convivencia ampliada",
       "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de escola.",
@@ -2987,7 +2987,7 @@ export const socializacao = {
       "opcoes": [
         "o conjunto de pessoas de convivio semelhante, como amigos e colegas, que influencia comportamentos, gostos, linguagens e formas de pertencimento",
         "a fase inicial da socializacao, geralmente ligada aos primeiros grupos de convivio, em que se aprendem linguagem, regras basicas e formas de interacao",
-        "o conjunto de aprendizagens sociais que ocorre em novos espacos e instituicoes alem dos primeiros grupos de convivencia",
+        "o conjunto de aprendizagens sociais que ocorre em novos espacos e instituições alem dos primeiros grupos de convivencia",
         "um dos principais agentes de socializacao, responsavel por transmitir cuidados, linguagens, regras e referencias de convivencia nos primeiros anos e ao longo da vida"
       ],
       "correta": "o conjunto de pessoas de convivio semelhante, como amigos e colegas, que influencia comportamentos, gostos, linguagens e formas de pertencimento",
@@ -3022,7 +3022,7 @@ export const socializacao = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: amigos compartilham expressoes, preferencias e modos de agir que influenciam uns aos outros Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: amigos compartilham expressoes, preferencias e modos de agir que influenciam uns aos outros Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
         "Grupo de pares",
         "Socializacao primaria",
@@ -3030,7 +3030,7 @@ export const socializacao = {
         "Familia"
       ],
       "correta": "Grupo de pares",
-      "comentario": "A situacao apresentada e um exemplo de grupo de pares.",
+      "comentario": "A situação apresentada é um exemplo de grupo de pares.",
       "tempoEstimado": 25,
       "tags": [
         "socializacao",
@@ -3066,7 +3066,7 @@ export const socializacao = {
         "O conjunto de pessoas de convivio semelhante, como amigos e colegas, que influencia comportamentos, gostos, linguagens e formas de pertencimento.",
         "Um conjunto sem impacto algum sobre socializacao e pertencimento.",
         "Familia significa um dos principais agentes de socializacao, responsavel por transmitir cuidados, linguagens, regras e referencias de convivencia nos primeiros anos e ao longo da vida.",
-        "Socializacao trata apenas de reflexos biologicos e nao de aprendizagem social."
+        "Socializacao trata apenas de reflexos biologicos e não de aprendizagem social."
       ],
       "correta": "O conjunto de pessoas de convivio semelhante, como amigos e colegas, que influencia comportamentos, gostos, linguagens e formas de pertencimento.",
       "comentario": "A afirmacao correta retoma o sentido central de grupo de pares.",
@@ -3100,7 +3100,7 @@ export const socializacao = {
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a grupo de pares.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a grupo de pares.",
       "opcoes": [
         "um espaco sem qualquer efeito sobre escolhas, linguagens ou comportamentos juvenis",
         "amigos compartilham expressoes, preferencias e modos de agir que influenciam uns aos outros",
@@ -3108,7 +3108,7 @@ export const socializacao = {
         "o grupo de pares reforca reconhecimento, pertencimento e pressao para adequacao a expectativas coletivas"
       ],
       "correta": "um espaco sem qualquer efeito sobre escolhas, linguagens ou comportamentos juvenis",
-      "comentario": "um espaco sem qualquer efeito sobre escolhas, linguagens ou comportamentos juvenis nao expressa grupo de pares, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "comentario": "um espaco sem qualquer efeito sobre escolhas, linguagens ou comportamentos juvenis não expressa grupo de pares, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "socializacao",
@@ -3141,13 +3141,13 @@ export const socializacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Quando se estuda grupo de pares, o foco principal esta em:",
       "opcoes": [
-        "a influencia horizontal exercida por amigos e colegas na formacao social",
+        "a influencia horizontal exercida por amigos e colegas na formação social",
         "as aprendizagens iniciais que inserem o sujeito nas primeiras formas de convivio social",
-        "as novas aprendizagens exigidas por instituicoes e grupos posteriores aos primeiros vinculos sociais",
-        "a transmissao de habitos, afetos e regras de convivencia no nucleo familiar"
+        "as novas aprendizagens exigidas por instituições e grupos posteriores aos primeiros vinculos sociais",
+        "a transmissao de hábitos, afetos e regras de convivencia no nucleo familiar"
       ],
-      "correta": "a influencia horizontal exercida por amigos e colegas na formacao social",
-      "comentario": "Grupo de pares volta a atencao para a influencia horizontal exercida por amigos e colegas na formacao social.",
+      "correta": "a influencia horizontal exercida por amigos e colegas na formação social",
+      "comentario": "Grupo de pares volta a atenção para a influencia horizontal exercida por amigos e colegas na formação social.",
       "tempoEstimado": 35,
       "tags": [
         "socializacao",
@@ -3178,15 +3178,15 @@ export const socializacao = {
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre grupo de pares e familia e que:",
+      "enunciado": "A principal diferença entre grupo de pares e familia e que:",
       "opcoes": [
-        "grupo de pares influencia por convivencia entre semelhantes, enquanto familia socializa em relacoes domesticas e afetivas mais assimetricas",
-        "Grupo de pares e Familia sao exatamente o mesmo fenomeno social.",
+        "grupo de pares influencia por convivencia entre semelhantes, enquanto familia socializa em relações domesticas e afetivas mais assimetricas",
+        "Grupo de pares e Familia são exatamente o mesmo fenômeno social.",
         "Familia depende apenas da biologia, enquanto Grupo de pares depende so da economia.",
-        "Grupo de pares elimina a necessidade de observar contextos e instituicoes."
+        "Grupo de pares elimina a necessidade de observar contextos e instituições."
       ],
-      "correta": "grupo de pares influencia por convivencia entre semelhantes, enquanto familia socializa em relacoes domesticas e afetivas mais assimetricas",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "correta": "grupo de pares influencia por convivencia entre semelhantes, enquanto familia socializa em relações domesticas e afetivas mais assimetricas",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "socializacao",
@@ -3217,10 +3217,10 @@ export const socializacao = {
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: colegas de turma ajudam a definir estilos, gostos musicais e maneiras de se posicionar A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: colegas de turma ajudam a definir estilos, gostos musicais e maneiras de se posicionar A leitura sociológica mais adequada aponta para:",
       "opcoes": [
         "grupos de pares moldam gostos, linguagens e sentimentos de pertencimento especialmente na juventude",
-        "Grupo de pares mostra que a vida social nao interfere nas formas de agir.",
+        "Grupo de pares mostra que a vida social não interfere nas formas de agir.",
         "Grupo de pares prova que todos os grupos agem da mesma forma em qualquer contexto.",
         "Grupo de pares significa ausencia completa de normas e expectativas."
       ],
@@ -3256,15 +3256,15 @@ export const socializacao = {
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia grupo de pares de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia grupo de pares de maneira mais clara?",
       "opcoes": [
         "o grupo de pares reforca reconhecimento, pertencimento e pressao para adequacao a expectativas coletivas",
         "os primeiros vinculos sociais moldam referencias fundamentais para a insercao do sujeito na vida coletiva",
         "novos ambientes sociais ensinam linguagens, regras e expectativas diferentes das aprendidas inicialmente",
-        "a familia participa da formacao de habitos, valores e expectativas sobre o comportamento"
+        "a familia participa da formação de hábitos, valores e expectativas sobre o comportamento"
       ],
       "correta": "o grupo de pares reforca reconhecimento, pertencimento e pressao para adequacao a expectativas coletivas",
-      "comentario": "A alternativa correta traduz grupo de pares em uma situacao concreta de vida social.",
+      "comentario": "A alternativa correta traduz grupo de pares em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "socializacao",
@@ -3295,15 +3295,15 @@ export const socializacao = {
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"amigos compartilham expressoes, preferencias e modos de agir que influenciam uns aos outros\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"amigos compartilham expressoes, preferencias e modos de agir que influenciam uns aos outros\", qual conclusão é mais adequada?",
       "opcoes": [
-        "colegas e amigos participam ativamente da construcao de comportamentos e identidades",
+        "colegas e amigos participam ativamente da construção de comportamentos e identidades",
         "Grupo de pares indica que normas sociais nunca mudam.",
         "Grupo de pares so pode ser explicado por fatores biologicos.",
-        "Grupo de pares dispensa comparacao entre grupos e instituicoes."
+        "Grupo de pares dispensa comparacao entre grupos e instituições."
       ],
-      "correta": "colegas e amigos participam ativamente da construcao de comportamentos e identidades",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "correta": "colegas e amigos participam ativamente da construção de comportamentos e identidades",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "socializacao",
@@ -3337,9 +3337,9 @@ export const socializacao = {
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com grupo de pares?",
       "opcoes": [
         "como amigos e colegas influenciam escolhas e linguagens de jovens?",
-        "como individuos aprendem comportamentos e expectativas sociais em diferentes contextos?",
-        "quais aprendizagens fundamentais sao adquiridas nos primeiros grupos de convivio?",
-        "como escola, trabalho e outros ambientes ampliam a formacao social do individuo?"
+        "como indivíduos aprendem comportamentos e expectativas sociais em diferentes contextos?",
+        "quais aprendizagens fundamentais são adquiridas nos primeiros grupos de convivio?",
+        "como escola, trabalho e outros ambientes ampliam a formação social do individuo?"
       ],
       "correta": "como amigos e colegas influenciam escolhas e linguagens de jovens?",
       "comentario": "A pergunta correta ajuda a investigar grupo de pares de forma coerente com o subtopico.",
@@ -3377,8 +3377,8 @@ export const socializacao = {
       "opcoes": [
         "Um conjunto sem impacto algum sobre socializacao e pertencimento.",
         "Grupo de pares pode ser observado em contextos de convivencia, regras e expectativas sociais.",
-        "Grupo de pares ajuda a analisar aprendizagens e papeis na vida coletiva.",
-        "Grupo de pares depende da interacao entre individuos, grupos e instituicoes."
+        "Grupo de pares ajuda a analisar aprendizagens e papéis na vida coletiva.",
+        "Grupo de pares depende da interacao entre indivíduos, grupos e instituições."
       ],
       "correta": "Um conjunto sem impacto algum sobre socializacao e pertencimento.",
       "comentario": "A alternativa incorreta expressa uma confusao comum sobre grupo de pares.",
@@ -3412,15 +3412,15 @@ export const socializacao = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre socializacao, um estudante afirmou: \"o grupo de pares pode gerar apoio, pertencimento e tambem pressao por conformidade\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre socializacao, um estudante afirmou: \"o grupo de pares pode gerar apoio, pertencimento e também pressao por conformidade\". Qual avaliação é mais consistente?",
       "opcoes": [
         "a afirmacao esta correta, porque a influencia entre pares pode ser acolhedora e normativa ao mesmo tempo",
-        "Grupo de pares nao pode ser observado em situacoes do cotidiano.",
+        "Grupo de pares não pode ser observado em situações do cotidiano.",
         "Grupo de pares depende apenas da vontade individual, sem contexto social.",
-        "Grupo de pares torna desnecessario comparar grupos, regras e instituicoes."
+        "Grupo de pares torna desnecessario comparar grupos, regras e instituições."
       ],
       "correta": "a afirmacao esta correta, porque a influencia entre pares pode ser acolhedora e normativa ao mesmo tempo",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de grupo de pares.",
+      "comentario": "A avaliação correta recupera o nucleo teorico de grupo de pares.",
       "tempoEstimado": 50,
       "tags": [
         "socializacao",
@@ -3451,15 +3451,15 @@ export const socializacao = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando um jovem permanece isolado e sem interacao com colegas de referencia, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando um jovem permanece isolado e sem interacao com colegas de referencia, a melhor interpretação sociológica e que:",
       "opcoes": [
-        "diminuem experiencias de pertencimento e influencia horizontal entre pares",
-        "Grupo de pares desaparece porque a sociedade nao produz regras nem expectativas.",
+        "diminuem experiências de pertencimento e influencia horizontal entre pares",
+        "Grupo de pares desaparece porque a sociedade não produz regras nem expectativas.",
         "Grupo de pares deixa de existir sempre que surgem conflitos entre grupos.",
-        "Grupo de pares so importa em sociedades antigas, nao no presente."
+        "Grupo de pares so importa em sociedades antigas, não no presente."
       ],
-      "correta": "diminuem experiencias de pertencimento e influencia horizontal entre pares",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "correta": "diminuem experiências de pertencimento e influencia horizontal entre pares",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "socializacao",
@@ -3490,14 +3490,14 @@ export const socializacao = {
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente grupo de pares a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente grupo de pares a uma situação de comunidade escolar?",
       "opcoes": [
-        "a escola discute como amizades e grupos influenciam estilos, opinioes e formas de participacao",
+        "a escola discute como amizades e grupos influenciam estilos, opiniões e formas de participação",
         "a escola discute como os estudantes aprendem regras, horarios e formas de cooperacao no convivio escolar",
         "a turma analisa como rotinas familiares e cuidados iniciais participam da socializacao primaria",
-        "a escola mostra como regras de laboratorio, esportes e projetos coletivos fazem parte da socializacao secundaria"
+        "a escola mostra como regras de laboratório, esportes e projetos coletivos fazem parte da socializacao secundaria"
       ],
-      "correta": "a escola discute como amizades e grupos influenciam estilos, opinioes e formas de participacao",
+      "correta": "a escola discute como amizades e grupos influenciam estilos, opiniões e formas de participação",
       "comentario": "A alternativa correta aproxima grupo de pares de um contexto escolar concreto.",
       "tempoEstimado": 55,
       "tags": [
@@ -3532,9 +3532,9 @@ export const socializacao = {
       "enunciado": "Qual sintese final representa melhor grupo de pares?",
       "opcoes": [
         "grupo de pares e um agente de socializacao formado por amigos e colegas que influenciam comportamentos e pertencimento",
-        "Grupo de pares e um fator biologico fixo, sem relacao com aprendizagem e grupos sociais.",
+        "Grupo de pares e um fator biológico fixo, sem relação com aprendizagem e grupos sociais.",
         "Grupo de pares explica apenas escolhas privadas e ignora a dimensao coletiva.",
-        "Grupo de pares impede qualquer mudanca historica ou social."
+        "Grupo de pares impede qualquer mudanca histórica ou social."
       ],
       "correta": "grupo de pares e um agente de socializacao formado por amigos e colegas que influenciam comportamentos e pertencimento",
       "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de grupo de pares.",
@@ -3572,7 +3572,7 @@ export const socializacao = {
       "opcoes": [
         "os meios de comunicacao e plataformas digitais que difundem referencias, normas, estilos e visoes de mundo capazes de influenciar a socializacao",
         "a fase inicial da socializacao, geralmente ligada aos primeiros grupos de convivio, em que se aprendem linguagem, regras basicas e formas de interacao",
-        "o conjunto de aprendizagens sociais que ocorre em novos espacos e instituicoes alem dos primeiros grupos de convivencia",
+        "o conjunto de aprendizagens sociais que ocorre em novos espacos e instituições alem dos primeiros grupos de convivencia",
         "um dos principais agentes de socializacao, responsavel por transmitir cuidados, linguagens, regras e referencias de convivencia nos primeiros anos e ao longo da vida"
       ],
       "correta": "os meios de comunicacao e plataformas digitais que difundem referencias, normas, estilos e visoes de mundo capazes de influenciar a socializacao",
@@ -3607,7 +3607,7 @@ export const socializacao = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: conteudos em redes e programas de grande alcance moldam gostos, opinioes e expectativas sociais Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: conteudos em redes e programas de grande alcance moldam gostos, opiniões e expectativas sociais Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
         "Midia e redes",
         "Socializacao primaria",
@@ -3615,7 +3615,7 @@ export const socializacao = {
         "Familia"
       ],
       "correta": "Midia e redes",
-      "comentario": "A situacao apresentada e um exemplo de midia e redes.",
+      "comentario": "A situação apresentada é um exemplo de midia e redes.",
       "tempoEstimado": 25,
       "tags": [
         "socializacao",
@@ -3649,9 +3649,9 @@ export const socializacao = {
       "enunciado": "Qual afirmacao descreve corretamente midia e redes?",
       "opcoes": [
         "Os meios de comunicacao e plataformas digitais que difundem referencias, normas, estilos e visoes de mundo capazes de influenciar a socializacao.",
-        "Instrumentos neutros que nao interferem em habitos, opinioes ou pertencimentos.",
+        "Instrumentos neutros que não interferem em hábitos, opiniões ou pertencimentos.",
         "Grupo de pares significa o conjunto de pessoas de convivio semelhante, como amigos e colegas, que influencia comportamentos, gostos, linguagens e formas de pertencimento.",
-        "Socializacao trata apenas de reflexos biologicos e nao de aprendizagem social."
+        "Socializacao trata apenas de reflexos biologicos e não de aprendizagem social."
       ],
       "correta": "Os meios de comunicacao e plataformas digitais que difundem referencias, normas, estilos e visoes de mundo capazes de influenciar a socializacao.",
       "comentario": "A afirmacao correta retoma o sentido central de midia e redes.",
@@ -3685,15 +3685,15 @@ export const socializacao = {
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a midia e redes.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a midia e redes.",
       "opcoes": [
-        "canais sem qualquer efeito sobre referenciais culturais e sociais do publico",
-        "conteudos em redes e programas de grande alcance moldam gostos, opinioes e expectativas sociais",
+        "canais sem qualquer efeito sobre referenciais culturais e sociais do público",
+        "conteudos em redes e programas de grande alcance moldam gostos, opiniões e expectativas sociais",
         "jovens aprendem expressoes, tendencias e formas de se posicionar ao circular por redes digitais",
         "midia e redes funcionam como agentes de socializacao ao orientar repertorios, consumos e visibilidades"
       ],
-      "correta": "canais sem qualquer efeito sobre referenciais culturais e sociais do publico",
-      "comentario": "canais sem qualquer efeito sobre referenciais culturais e sociais do publico nao expressa midia e redes, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "canais sem qualquer efeito sobre referenciais culturais e sociais do público",
+      "comentario": "canais sem qualquer efeito sobre referenciais culturais e sociais do público não expressa midia e redes, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "socializacao",
@@ -3726,13 +3726,13 @@ export const socializacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Quando se estuda midia e redes, o foco principal esta em:",
       "opcoes": [
-        "a influencia comunicacional de meios e plataformas na formacao de comportamentos e referencias",
+        "a influencia comunicacional de meios e plataformas na formação de comportamentos e referencias",
         "as aprendizagens iniciais que inserem o sujeito nas primeiras formas de convivio social",
-        "as novas aprendizagens exigidas por instituicoes e grupos posteriores aos primeiros vinculos sociais",
-        "a transmissao de habitos, afetos e regras de convivencia no nucleo familiar"
+        "as novas aprendizagens exigidas por instituições e grupos posteriores aos primeiros vinculos sociais",
+        "a transmissao de hábitos, afetos e regras de convivencia no nucleo familiar"
       ],
-      "correta": "a influencia comunicacional de meios e plataformas na formacao de comportamentos e referencias",
-      "comentario": "Midia e redes volta a atencao para a influencia comunicacional de meios e plataformas na formacao de comportamentos e referencias.",
+      "correta": "a influencia comunicacional de meios e plataformas na formação de comportamentos e referencias",
+      "comentario": "Midia e redes volta a atenção para a influencia comunicacional de meios e plataformas na formação de comportamentos e referencias.",
       "tempoEstimado": 35,
       "tags": [
         "socializacao",
@@ -3763,15 +3763,15 @@ export const socializacao = {
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre midia e redes e grupo de pares e que:",
+      "enunciado": "A principal diferença entre midia e redes e grupo de pares e que:",
       "opcoes": [
         "midia e redes socializam por ampla difusao comunicacional, enquanto grupo de pares influencia pelo convivio direto entre semelhantes",
-        "Midia e redes e Grupo de pares sao exatamente o mesmo fenomeno social.",
+        "Midia e redes e Grupo de pares são exatamente o mesmo fenômeno social.",
         "Grupo de pares depende apenas da biologia, enquanto Midia e redes depende so da economia.",
-        "Midia e redes elimina a necessidade de observar contextos e instituicoes."
+        "Midia e redes elimina a necessidade de observar contextos e instituições."
       ],
       "correta": "midia e redes socializam por ampla difusao comunicacional, enquanto grupo de pares influencia pelo convivio direto entre semelhantes",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "socializacao",
@@ -3802,14 +3802,14 @@ export const socializacao = {
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: jovens aprendem expressoes, tendencias e formas de se posicionar ao circular por redes digitais A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: jovens aprendem expressoes, tendencias e formas de se posicionar ao circular por redes digitais A leitura sociológica mais adequada aponta para:",
       "opcoes": [
-        "midia e redes ampliam a circulacao de normas, modelos e disputas por reconhecimento",
-        "Midia e redes mostra que a vida social nao interfere nas formas de agir.",
+        "midia e redes ampliam a circulação de normas, modelos e disputas por reconhecimento",
+        "Midia e redes mostra que a vida social não interfere nas formas de agir.",
         "Midia e redes prova que todos os grupos agem da mesma forma em qualquer contexto.",
         "Midia e redes significa ausencia completa de normas e expectativas."
       ],
-      "correta": "midia e redes ampliam a circulacao de normas, modelos e disputas por reconhecimento",
+      "correta": "midia e redes ampliam a circulação de normas, modelos e disputas por reconhecimento",
       "comentario": "Midia e redes permite interpretar o caso a partir de aprendizagem, interacao e vida coletiva.",
       "tempoEstimado": 40,
       "tags": [
@@ -3841,15 +3841,15 @@ export const socializacao = {
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia midia e redes de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia midia e redes de maneira mais clara?",
       "opcoes": [
         "midia e redes funcionam como agentes de socializacao ao orientar repertorios, consumos e visibilidades",
         "os primeiros vinculos sociais moldam referencias fundamentais para a insercao do sujeito na vida coletiva",
         "novos ambientes sociais ensinam linguagens, regras e expectativas diferentes das aprendidas inicialmente",
-        "a familia participa da formacao de habitos, valores e expectativas sobre o comportamento"
+        "a familia participa da formação de hábitos, valores e expectativas sobre o comportamento"
       ],
       "correta": "midia e redes funcionam como agentes de socializacao ao orientar repertorios, consumos e visibilidades",
-      "comentario": "A alternativa correta traduz midia e redes em uma situacao concreta de vida social.",
+      "comentario": "A alternativa correta traduz midia e redes em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "socializacao",
@@ -3880,15 +3880,15 @@ export const socializacao = {
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"conteudos em redes e programas de grande alcance moldam gostos, opinioes e expectativas sociais\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"conteudos em redes e programas de grande alcance moldam gostos, opiniões e expectativas sociais\", qual conclusão é mais adequada?",
       "opcoes": [
-        "a socializacao contemporanea passa tambem por fluxos digitais de informacao, tendencia e reconhecimento",
+        "a socializacao contemporanea passa também por fluxos digitais de informacao, tendencia e reconhecimento",
         "Midia e redes indica que normas sociais nunca mudam.",
         "Midia e redes so pode ser explicado por fatores biologicos.",
-        "Midia e redes dispensa comparacao entre grupos e instituicoes."
+        "Midia e redes dispensa comparacao entre grupos e instituições."
       ],
-      "correta": "a socializacao contemporanea passa tambem por fluxos digitais de informacao, tendencia e reconhecimento",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "correta": "a socializacao contemporanea passa também por fluxos digitais de informacao, tendencia e reconhecimento",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "socializacao",
@@ -3922,9 +3922,9 @@ export const socializacao = {
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com midia e redes?",
       "opcoes": [
         "como plataformas e meios de comunicacao influenciam comportamentos e referencias juvenis?",
-        "como individuos aprendem comportamentos e expectativas sociais em diferentes contextos?",
-        "quais aprendizagens fundamentais sao adquiridas nos primeiros grupos de convivio?",
-        "como escola, trabalho e outros ambientes ampliam a formacao social do individuo?"
+        "como indivíduos aprendem comportamentos e expectativas sociais em diferentes contextos?",
+        "quais aprendizagens fundamentais são adquiridas nos primeiros grupos de convivio?",
+        "como escola, trabalho e outros ambientes ampliam a formação social do individuo?"
       ],
       "correta": "como plataformas e meios de comunicacao influenciam comportamentos e referencias juvenis?",
       "comentario": "A pergunta correta ajuda a investigar midia e redes de forma coerente com o subtopico.",
@@ -3960,12 +3960,12 @@ export const socializacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a afirmacao que revela compreensao inadequada de midia e redes.",
       "opcoes": [
-        "Instrumentos neutros que nao interferem em habitos, opinioes ou pertencimentos.",
+        "Instrumentos neutros que não interferem em hábitos, opiniões ou pertencimentos.",
         "Midia e redes pode ser observado em contextos de convivencia, regras e expectativas sociais.",
-        "Midia e redes ajuda a analisar aprendizagens e papeis na vida coletiva.",
-        "Midia e redes depende da interacao entre individuos, grupos e instituicoes."
+        "Midia e redes ajuda a analisar aprendizagens e papéis na vida coletiva.",
+        "Midia e redes depende da interacao entre indivíduos, grupos e instituições."
       ],
-      "correta": "Instrumentos neutros que nao interferem em habitos, opinioes ou pertencimentos.",
+      "correta": "Instrumentos neutros que não interferem em hábitos, opiniões ou pertencimentos.",
       "comentario": "A alternativa incorreta expressa uma confusao comum sobre midia e redes.",
       "tempoEstimado": 45,
       "tags": [
@@ -3997,15 +3997,15 @@ export const socializacao = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre socializacao, um estudante afirmou: \"midia e redes nao so informam; elas tambem orientam formas de ver, consumir e interagir\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre socializacao, um estudante afirmou: \"midia e redes não so informam; elas também orientam formas de ver, consumir e interagir\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "a afirmacao esta correta, porque esses meios participam da formacao social cotidiana",
-        "Midia e redes nao pode ser observado em situacoes do cotidiano.",
+        "a afirmacao esta correta, porque esses meios participam da formação social cotidiana",
+        "Midia e redes não pode ser observado em situações do cotidiano.",
         "Midia e redes depende apenas da vontade individual, sem contexto social.",
-        "Midia e redes torna desnecessario comparar grupos, regras e instituicoes."
+        "Midia e redes torna desnecessario comparar grupos, regras e instituições."
       ],
-      "correta": "a afirmacao esta correta, porque esses meios participam da formacao social cotidiana",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de midia e redes.",
+      "correta": "a afirmacao esta correta, porque esses meios participam da formação social cotidiana",
+      "comentario": "A avaliação correta recupera o nucleo teorico de midia e redes.",
       "tempoEstimado": 50,
       "tags": [
         "socializacao",
@@ -4036,15 +4036,15 @@ export const socializacao = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando um grupo nao tem acesso nem contato relevante com fluxos de informacao e interacao digital, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando um grupo não tem acesso nem contato relevante com fluxos de informacao e interacao digital, a melhor interpretação sociológica e que:",
       "opcoes": [
         "reduz-se um dos agentes contemporaneos de socializacao",
-        "Midia e redes desaparece porque a sociedade nao produz regras nem expectativas.",
+        "Midia e redes desaparece porque a sociedade não produz regras nem expectativas.",
         "Midia e redes deixa de existir sempre que surgem conflitos entre grupos.",
-        "Midia e redes so importa em sociedades antigas, nao no presente."
+        "Midia e redes so importa em sociedades antigas, não no presente."
       ],
       "correta": "reduz-se um dos agentes contemporaneos de socializacao",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "socializacao",
@@ -4075,12 +4075,12 @@ export const socializacao = {
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente midia e redes a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente midia e redes a uma situação de comunidade escolar?",
       "opcoes": [
         "a turma analisa como desafios, trends e influenciadores moldam linguagens e expectativas",
         "a escola discute como os estudantes aprendem regras, horarios e formas de cooperacao no convivio escolar",
         "a turma analisa como rotinas familiares e cuidados iniciais participam da socializacao primaria",
-        "a escola mostra como regras de laboratorio, esportes e projetos coletivos fazem parte da socializacao secundaria"
+        "a escola mostra como regras de laboratório, esportes e projetos coletivos fazem parte da socializacao secundaria"
       ],
       "correta": "a turma analisa como desafios, trends e influenciadores moldam linguagens e expectativas",
       "comentario": "A alternativa correta aproxima midia e redes de um contexto escolar concreto.",
@@ -4116,12 +4116,12 @@ export const socializacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual sintese final representa melhor midia e redes?",
       "opcoes": [
-        "midia e redes sao agentes de socializacao que influenciam referencias, comportamentos e reconhecimento",
-        "Midia e redes e um fator biologico fixo, sem relacao com aprendizagem e grupos sociais.",
+        "midia e redes são agentes de socializacao que influenciam referencias, comportamentos e reconhecimento",
+        "Midia e redes e um fator biológico fixo, sem relação com aprendizagem e grupos sociais.",
         "Midia e redes explica apenas escolhas privadas e ignora a dimensao coletiva.",
-        "Midia e redes impede qualquer mudanca historica ou social."
+        "Midia e redes impede qualquer mudanca histórica ou social."
       ],
-      "correta": "midia e redes sao agentes de socializacao que influenciam referencias, comportamentos e reconhecimento",
+      "correta": "midia e redes são agentes de socializacao que influenciam referencias, comportamentos e reconhecimento",
       "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de midia e redes.",
       "tempoEstimado": 60,
       "tags": [
@@ -4148,20 +4148,20 @@ export const socializacao = {
       ],
       "materia": "Sociologia",
       "topico": "Socializacao",
-      "subtopico": "Papeis sociais",
+      "subtopico": "Papéis sociais",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Sociologia, papeis sociais pode ser definido(a) como:",
+      "enunciado": "Em Sociologia, papéis sociais pode ser definido(a) como:",
       "opcoes": [
-        "os conjuntos de expectativas e comportamentos associados as posicoes que individuos ocupam em diferentes contextos sociais",
-        "o conjunto de aprendizagens sociais que ocorre em novos espacos e instituicoes alem dos primeiros grupos de convivencia",
+        "os conjuntos de expectativas e comportamentos associados as posições que indivíduos ocupam em diferentes contextos sociais",
+        "o conjunto de aprendizagens sociais que ocorre em novos espacos e instituições alem dos primeiros grupos de convivencia",
         "um dos principais agentes de socializacao, responsavel por transmitir cuidados, linguagens, regras e referencias de convivencia nos primeiros anos e ao longo da vida",
         "a instituicao social que amplia a socializacao ao ensinar conhecimentos, regras formais, cooperacao e convivencia com diferentes grupos"
       ],
-      "correta": "os conjuntos de expectativas e comportamentos associados as posicoes que individuos ocupam em diferentes contextos sociais",
-      "comentario": "Papeis sociais refere-se a os conjuntos de expectativas e comportamentos associados as posicoes que individuos ocupam em diferentes contextos sociais.",
+      "correta": "os conjuntos de expectativas e comportamentos associados as posições que indivíduos ocupam em diferentes contextos sociais",
+      "comentario": "Papéis sociais refere-se a os conjuntos de expectativas e comportamentos associados as posições que indivíduos ocupam em diferentes contextos sociais.",
       "tempoEstimado": 20,
       "tags": [
         "socializacao",
@@ -4187,20 +4187,20 @@ export const socializacao = {
       ],
       "materia": "Sociologia",
       "topico": "Socializacao",
-      "subtopico": "Papeis sociais",
+      "subtopico": "Papéis sociais",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: como estudante, uma pessoa e esperada a cumprir horarios, participar de atividades e respeitar combinados Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: como estudante, uma pessoa e esperada a cumprir horarios, participar de atividades e respeitar combinados Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
-        "Papeis sociais",
+        "Papéis sociais",
         "Socializacao secundaria",
         "Familia",
         "Escola"
       ],
-      "correta": "Papeis sociais",
-      "comentario": "A situacao apresentada e um exemplo de papeis sociais.",
+      "correta": "Papéis sociais",
+      "comentario": "A situação apresentada é um exemplo de papéis sociais.",
       "tempoEstimado": 25,
       "tags": [
         "socializacao",
@@ -4226,20 +4226,20 @@ export const socializacao = {
       ],
       "materia": "Sociologia",
       "topico": "Socializacao",
-      "subtopico": "Papeis sociais",
+      "subtopico": "Papéis sociais",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmacao descreve corretamente papeis sociais?",
+      "enunciado": "Qual afirmacao descreve corretamente papéis sociais?",
       "opcoes": [
-        "Os conjuntos de expectativas e comportamentos associados as posicoes que individuos ocupam em diferentes contextos sociais.",
-        "Rotulos sem qualquer relacao com comportamento ou expectativa coletiva.",
+        "Os conjuntos de expectativas e comportamentos associados as posições que indivíduos ocupam em diferentes contextos sociais.",
+        "Rotulos sem qualquer relação com comportamento ou expectativa coletiva.",
         "Controle social significa o conjunto de mecanismos formais e informais que regulam comportamentos e reforcam normas na vida coletiva.",
-        "Socializacao trata apenas de reflexos biologicos e nao de aprendizagem social."
+        "Socializacao trata apenas de reflexos biologicos e não de aprendizagem social."
       ],
-      "correta": "Os conjuntos de expectativas e comportamentos associados as posicoes que individuos ocupam em diferentes contextos sociais.",
-      "comentario": "A afirmacao correta retoma o sentido central de papeis sociais.",
+      "correta": "Os conjuntos de expectativas e comportamentos associados as posições que indivíduos ocupam em diferentes contextos sociais.",
+      "comentario": "A afirmacao correta retoma o sentido central de papéis sociais.",
       "tempoEstimado": 30,
       "tags": [
         "socializacao",
@@ -4265,20 +4265,20 @@ export const socializacao = {
       ],
       "materia": "Sociologia",
       "topico": "Socializacao",
-      "subtopico": "Papeis sociais",
+      "subtopico": "Papéis sociais",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a papeis sociais.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a papéis sociais.",
       "opcoes": [
-        "a ideia de que posicoes sociais nao geram qualquer expectativa de comportamento",
+        "a ideia de que posições sociais não geram qualquer expectativa de comportamento",
         "como estudante, uma pessoa e esperada a cumprir horarios, participar de atividades e respeitar combinados",
         "a mesma pessoa assume comportamentos diferentes ao atuar como filha, aluna, amiga ou monitora",
-        "papeis sociais orientam condutas esperadas conforme a posicao ocupada em cada situacao"
+        "papéis sociais orientam condutas esperadas conforme a posição ocupada em cada situação"
       ],
-      "correta": "a ideia de que posicoes sociais nao geram qualquer expectativa de comportamento",
-      "comentario": "a ideia de que posicoes sociais nao geram qualquer expectativa de comportamento nao expressa papeis sociais, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "a ideia de que posições sociais não geram qualquer expectativa de comportamento",
+      "comentario": "a ideia de que posições sociais não geram qualquer expectativa de comportamento não expressa papéis sociais, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "socializacao",
@@ -4304,20 +4304,20 @@ export const socializacao = {
       ],
       "materia": "Sociologia",
       "topico": "Socializacao",
-      "subtopico": "Papeis sociais",
+      "subtopico": "Papéis sociais",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda papeis sociais, o foco principal esta em:",
+      "enunciado": "Quando se estuda papéis sociais, o foco principal esta em:",
       "opcoes": [
-        "as expectativas associadas as posicoes desempenhadas pelos individuos em grupos e instituicoes",
-        "as novas aprendizagens exigidas por instituicoes e grupos posteriores aos primeiros vinculos sociais",
-        "a transmissao de habitos, afetos e regras de convivencia no nucleo familiar",
+        "as expectativas associadas as posições desempenhadas pelos indivíduos em grupos e instituições",
+        "as novas aprendizagens exigidas por instituições e grupos posteriores aos primeiros vinculos sociais",
+        "a transmissao de hábitos, afetos e regras de convivencia no nucleo familiar",
         "a socializacao formal mediada por conhecimentos, normas e convivencia ampliada"
       ],
-      "correta": "as expectativas associadas as posicoes desempenhadas pelos individuos em grupos e instituicoes",
-      "comentario": "Papeis sociais volta a atencao para as expectativas associadas as posicoes desempenhadas pelos individuos em grupos e instituicoes.",
+      "correta": "as expectativas associadas as posições desempenhadas pelos indivíduos em grupos e instituições",
+      "comentario": "Papéis sociais volta a atenção para as expectativas associadas as posições desempenhadas pelos indivíduos em grupos e instituições.",
       "tempoEstimado": 35,
       "tags": [
         "socializacao",
@@ -4343,20 +4343,20 @@ export const socializacao = {
       ],
       "materia": "Sociologia",
       "topico": "Socializacao",
-      "subtopico": "Papeis sociais",
+      "subtopico": "Papéis sociais",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre papeis sociais e controle social e que:",
+      "enunciado": "A principal diferença entre papéis sociais e controle social e que:",
       "opcoes": [
-        "papeis sociais indicam expectativas ligadas a posicoes, enquanto controle social se refere aos mecanismos que reforcam o cumprimento dessas expectativas",
-        "Papeis sociais e Controle social sao exatamente o mesmo fenomeno social.",
-        "Controle social depende apenas da biologia, enquanto Papeis sociais depende so da economia.",
-        "Papeis sociais elimina a necessidade de observar contextos e instituicoes."
+        "papéis sociais indicam expectativas ligadas a posições, enquanto controle social se refere aos mecanismos que reforcam o cumprimento dessas expectativas",
+        "Papéis sociais e Controle social são exatamente o mesmo fenômeno social.",
+        "Controle social depende apenas da biologia, enquanto Papéis sociais depende so da economia.",
+        "Papéis sociais elimina a necessidade de observar contextos e instituições."
       ],
-      "correta": "papeis sociais indicam expectativas ligadas a posicoes, enquanto controle social se refere aos mecanismos que reforcam o cumprimento dessas expectativas",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "correta": "papéis sociais indicam expectativas ligadas a posições, enquanto controle social se refere aos mecanismos que reforcam o cumprimento dessas expectativas",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "socializacao",
@@ -4382,20 +4382,20 @@ export const socializacao = {
       ],
       "materia": "Sociologia",
       "topico": "Socializacao",
-      "subtopico": "Papeis sociais",
+      "subtopico": "Papéis sociais",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: a mesma pessoa assume comportamentos diferentes ao atuar como filha, aluna, amiga ou monitora A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: a mesma pessoa assume comportamentos diferentes ao atuar como filha, aluna, amiga ou monitora A leitura sociológica mais adequada aponta para:",
       "opcoes": [
-        "papeis sociais ajudam a organizar a vida coletiva, mas podem gerar tensoes quando expectativas entram em conflito",
-        "Papeis sociais mostra que a vida social nao interfere nas formas de agir.",
-        "Papeis sociais prova que todos os grupos agem da mesma forma em qualquer contexto.",
-        "Papeis sociais significa ausencia completa de normas e expectativas."
+        "papéis sociais ajudam a organizar a vida coletiva, mas podem gerar tensoes quando expectativas entram em conflito",
+        "Papéis sociais mostra que a vida social não interfere nas formas de agir.",
+        "Papéis sociais prova que todos os grupos agem da mesma forma em qualquer contexto.",
+        "Papéis sociais significa ausencia completa de normas e expectativas."
       ],
-      "correta": "papeis sociais ajudam a organizar a vida coletiva, mas podem gerar tensoes quando expectativas entram em conflito",
-      "comentario": "Papeis sociais permite interpretar o caso a partir de aprendizagem, interacao e vida coletiva.",
+      "correta": "papéis sociais ajudam a organizar a vida coletiva, mas podem gerar tensoes quando expectativas entram em conflito",
+      "comentario": "Papéis sociais permite interpretar o caso a partir de aprendizagem, interacao e vida coletiva.",
       "tempoEstimado": 40,
       "tags": [
         "socializacao",
@@ -4421,20 +4421,20 @@ export const socializacao = {
       ],
       "materia": "Sociologia",
       "topico": "Socializacao",
-      "subtopico": "Papeis sociais",
+      "subtopico": "Papéis sociais",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia papeis sociais de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia papéis sociais de maneira mais clara?",
       "opcoes": [
-        "papeis sociais orientam condutas esperadas conforme a posicao ocupada em cada situacao",
+        "papéis sociais orientam condutas esperadas conforme a posição ocupada em cada situação",
         "novos ambientes sociais ensinam linguagens, regras e expectativas diferentes das aprendidas inicialmente",
-        "a familia participa da formacao de habitos, valores e expectativas sobre o comportamento",
-        "a escola ensina conteudos e tambem formas de participar, respeitar normas e lidar com a diversidade"
+        "a familia participa da formação de hábitos, valores e expectativas sobre o comportamento",
+        "a escola ensina conteudos e também formas de participar, respeitar normas e lidar com a diversidade"
       ],
-      "correta": "papeis sociais orientam condutas esperadas conforme a posicao ocupada em cada situacao",
-      "comentario": "A alternativa correta traduz papeis sociais em uma situacao concreta de vida social.",
+      "correta": "papéis sociais orientam condutas esperadas conforme a posição ocupada em cada situação",
+      "comentario": "A alternativa correta traduz papéis sociais em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "socializacao",
@@ -4460,20 +4460,20 @@ export const socializacao = {
       ],
       "materia": "Sociologia",
       "topico": "Socializacao",
-      "subtopico": "Papeis sociais",
+      "subtopico": "Papéis sociais",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"como estudante, uma pessoa e esperada a cumprir horarios, participar de atividades e respeitar combinados\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"como estudante, uma pessoa e esperada a cumprir horarios, participar de atividades e respeitar combinados\", qual conclusão é mais adequada?",
       "opcoes": [
-        "compreender papeis sociais ajuda a explicar por que comportamentos variam conforme contexto e posicao",
-        "Papeis sociais indica que normas sociais nunca mudam.",
-        "Papeis sociais so pode ser explicado por fatores biologicos.",
-        "Papeis sociais dispensa comparacao entre grupos e instituicoes."
+        "compreender papéis sociais ajuda a explicar por que comportamentos variam conforme contexto e posição",
+        "Papéis sociais indica que normas sociais nunca mudam.",
+        "Papéis sociais so pode ser explicado por fatores biologicos.",
+        "Papéis sociais dispensa comparacao entre grupos e instituições."
       ],
-      "correta": "compreender papeis sociais ajuda a explicar por que comportamentos variam conforme contexto e posicao",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "correta": "compreender papéis sociais ajuda a explicar por que comportamentos variam conforme contexto e posição",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "socializacao",
@@ -4499,20 +4499,20 @@ export const socializacao = {
       ],
       "materia": "Sociologia",
       "topico": "Socializacao",
-      "subtopico": "Papeis sociais",
+      "subtopico": "Papéis sociais",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com papeis sociais?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com papéis sociais?",
       "opcoes": [
-        "quais expectativas recaem sobre uma pessoa em diferentes posicoes sociais?",
-        "como individuos aprendem comportamentos e expectativas sociais em diferentes contextos?",
-        "quais aprendizagens fundamentais sao adquiridas nos primeiros grupos de convivio?",
-        "como escola, trabalho e outros ambientes ampliam a formacao social do individuo?"
+        "quais expectativas recaem sobre uma pessoa em diferentes posições sociais?",
+        "como indivíduos aprendem comportamentos e expectativas sociais em diferentes contextos?",
+        "quais aprendizagens fundamentais são adquiridas nos primeiros grupos de convivio?",
+        "como escola, trabalho e outros ambientes ampliam a formação social do individuo?"
       ],
-      "correta": "quais expectativas recaem sobre uma pessoa em diferentes posicoes sociais?",
-      "comentario": "A pergunta correta ajuda a investigar papeis sociais de forma coerente com o subtopico.",
+      "correta": "quais expectativas recaem sobre uma pessoa em diferentes posições sociais?",
+      "comentario": "A pergunta correta ajuda a investigar papéis sociais de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
         "socializacao",
@@ -4538,20 +4538,20 @@ export const socializacao = {
       ],
       "materia": "Sociologia",
       "topico": "Socializacao",
-      "subtopico": "Papeis sociais",
+      "subtopico": "Papéis sociais",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmacao que revela compreensao inadequada de papeis sociais.",
+      "enunciado": "Assinale a afirmacao que revela compreensao inadequada de papéis sociais.",
       "opcoes": [
-        "Rotulos sem qualquer relacao com comportamento ou expectativa coletiva.",
-        "Papeis sociais pode ser observado em contextos de convivencia, regras e expectativas sociais.",
-        "Papeis sociais ajuda a analisar aprendizagens e papeis na vida coletiva.",
-        "Papeis sociais depende da interacao entre individuos, grupos e instituicoes."
+        "Rotulos sem qualquer relação com comportamento ou expectativa coletiva.",
+        "Papéis sociais pode ser observado em contextos de convivencia, regras e expectativas sociais.",
+        "Papéis sociais ajuda a analisar aprendizagens e papéis na vida coletiva.",
+        "Papéis sociais depende da interacao entre indivíduos, grupos e instituições."
       ],
-      "correta": "Rotulos sem qualquer relacao com comportamento ou expectativa coletiva.",
-      "comentario": "A alternativa incorreta expressa uma confusao comum sobre papeis sociais.",
+      "correta": "Rotulos sem qualquer relação com comportamento ou expectativa coletiva.",
+      "comentario": "A alternativa incorreta expressa uma confusao comum sobre papéis sociais.",
       "tempoEstimado": 45,
       "tags": [
         "socializacao",
@@ -4577,20 +4577,20 @@ export const socializacao = {
       ],
       "materia": "Sociologia",
       "topico": "Socializacao",
-      "subtopico": "Papeis sociais",
+      "subtopico": "Papéis sociais",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre socializacao, um estudante afirmou: \"uma pessoa pode desempenhar varios papeis sociais ao mesmo tempo, em contextos diferentes\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre socializacao, um estudante afirmou: \"uma pessoa pode desempenhar varios papéis sociais ao mesmo tempo, em contextos diferentes\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "a afirmacao esta correta, porque os sujeitos ocupam multiplas posicoes na vida social",
-        "Papeis sociais nao pode ser observado em situacoes do cotidiano.",
-        "Papeis sociais depende apenas da vontade individual, sem contexto social.",
-        "Papeis sociais torna desnecessario comparar grupos, regras e instituicoes."
+        "a afirmacao esta correta, porque os sujeitos ocupam multiplas posições na vida social",
+        "Papéis sociais não pode ser observado em situações do cotidiano.",
+        "Papéis sociais depende apenas da vontade individual, sem contexto social.",
+        "Papéis sociais torna desnecessario comparar grupos, regras e instituições."
       ],
-      "correta": "a afirmacao esta correta, porque os sujeitos ocupam multiplas posicoes na vida social",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de papeis sociais.",
+      "correta": "a afirmacao esta correta, porque os sujeitos ocupam multiplas posições na vida social",
+      "comentario": "A avaliação correta recupera o nucleo teorico de papéis sociais.",
       "tempoEstimado": 50,
       "tags": [
         "socializacao",
@@ -4616,20 +4616,20 @@ export const socializacao = {
       ],
       "materia": "Sociologia",
       "topico": "Socializacao",
-      "subtopico": "Papeis sociais",
+      "subtopico": "Papéis sociais",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando nao ha clareza sobre responsabilidades e expectativas em determinada posicao coletiva, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando não ha clareza sobre responsabilidades e expectativas em determinada posição coletiva, a melhor interpretação sociológica e que:",
       "opcoes": [
         "a convivencia tende a gerar mais incerteza e conflito de conduta",
-        "Papeis sociais desaparece porque a sociedade nao produz regras nem expectativas.",
-        "Papeis sociais deixa de existir sempre que surgem conflitos entre grupos.",
-        "Papeis sociais so importa em sociedades antigas, nao no presente."
+        "Papéis sociais desaparece porque a sociedade não produz regras nem expectativas.",
+        "Papéis sociais deixa de existir sempre que surgem conflitos entre grupos.",
+        "Papéis sociais so importa em sociedades antigas, não no presente."
       ],
       "correta": "a convivencia tende a gerar mais incerteza e conflito de conduta",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "socializacao",
@@ -4655,20 +4655,20 @@ export const socializacao = {
       ],
       "materia": "Sociologia",
       "topico": "Socializacao",
-      "subtopico": "Papeis sociais",
+      "subtopico": "Papéis sociais",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente papeis sociais a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente papéis sociais a uma situação de comunidade escolar?",
       "opcoes": [
-        "a escola discute as diferencas entre o papel de representante de turma, professor e estudante",
+        "a escola discute as diferenças entre o papel de representante de turma, professor e estudante",
         "a escola discute como os estudantes aprendem regras, horarios e formas de cooperacao no convivio escolar",
         "a turma analisa como rotinas familiares e cuidados iniciais participam da socializacao primaria",
-        "a escola mostra como regras de laboratorio, esportes e projetos coletivos fazem parte da socializacao secundaria"
+        "a escola mostra como regras de laboratório, esportes e projetos coletivos fazem parte da socializacao secundaria"
       ],
-      "correta": "a escola discute as diferencas entre o papel de representante de turma, professor e estudante",
-      "comentario": "A alternativa correta aproxima papeis sociais de um contexto escolar concreto.",
+      "correta": "a escola discute as diferenças entre o papel de representante de turma, professor e estudante",
+      "comentario": "A alternativa correta aproxima papéis sociais de um contexto escolar concreto.",
       "tempoEstimado": 55,
       "tags": [
         "socializacao",
@@ -4694,20 +4694,20 @@ export const socializacao = {
       ],
       "materia": "Sociologia",
       "topico": "Socializacao",
-      "subtopico": "Papeis sociais",
+      "subtopico": "Papéis sociais",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual sintese final representa melhor papeis sociais?",
+      "enunciado": "Qual sintese final representa melhor papéis sociais?",
       "opcoes": [
-        "papeis sociais sao expectativas de comportamento associadas as posicoes ocupadas pelos individuos",
-        "Papeis sociais e um fator biologico fixo, sem relacao com aprendizagem e grupos sociais.",
-        "Papeis sociais explica apenas escolhas privadas e ignora a dimensao coletiva.",
-        "Papeis sociais impede qualquer mudanca historica ou social."
+        "papéis sociais são expectativas de comportamento associadas as posições ocupadas pelos indivíduos",
+        "Papéis sociais e um fator biológico fixo, sem relação com aprendizagem e grupos sociais.",
+        "Papéis sociais explica apenas escolhas privadas e ignora a dimensao coletiva.",
+        "Papéis sociais impede qualquer mudanca histórica ou social."
       ],
-      "correta": "papeis sociais sao expectativas de comportamento associadas as posicoes ocupadas pelos individuos",
-      "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de papeis sociais.",
+      "correta": "papéis sociais são expectativas de comportamento associadas as posições ocupadas pelos indivíduos",
+      "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de papéis sociais.",
       "tempoEstimado": 60,
       "tags": [
         "socializacao",
@@ -4777,7 +4777,7 @@ export const socializacao = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: regras, advertencias, elogios e desaprovacoes orientam o que e considerado adequado em um grupo Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: regras, advertencias, elogios e desaprovacoes orientam o que e considerado adequado em um grupo Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
         "Controle social",
         "Familia",
@@ -4785,7 +4785,7 @@ export const socializacao = {
         "Grupo de pares"
       ],
       "correta": "Controle social",
-      "comentario": "A situacao apresentada e um exemplo de controle social.",
+      "comentario": "A situação apresentada é um exemplo de controle social.",
       "tempoEstimado": 25,
       "tags": [
         "socializacao",
@@ -4820,8 +4820,8 @@ export const socializacao = {
       "opcoes": [
         "O conjunto de mecanismos formais e informais que regulam comportamentos e reforcam normas na vida coletiva.",
         "Um processo exclusivo da policia e das leis formais.",
-        "Desvios e sancoes significa as condutas que rompem normas sociais e as respostas que grupos ou instituicoes aplicam diante delas.",
-        "Socializacao trata apenas de reflexos biologicos e nao de aprendizagem social."
+        "Desvios e sancoes significa as condutas que rompem normas sociais e as respostas que grupos ou instituições aplicam diante delas.",
+        "Socializacao trata apenas de reflexos biologicos e não de aprendizagem social."
       ],
       "correta": "O conjunto de mecanismos formais e informais que regulam comportamentos e reforcam normas na vida coletiva.",
       "comentario": "A afirmacao correta retoma o sentido central de controle social.",
@@ -4855,15 +4855,15 @@ export const socializacao = {
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a controle social.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a controle social.",
       "opcoes": [
-        "uma situacao em que nenhuma norma e nenhuma reacao coletiva influenciam condutas",
+        "uma situação em que nenhuma norma e nenhuma reacao coletiva influenciam condutas",
         "regras, advertencias, elogios e desaprovacoes orientam o que e considerado adequado em um grupo",
-        "uma turma corrige atitudes consideradas desrespeitosas por meio de regras e reacoes coletivas",
-        "o controle social atua quando grupos e instituicoes reforcam limites e expectativas de comportamento"
+        "uma turma corrige atitudes consideradas desrespeitosas por meio de regras e reações coletivas",
+        "o controle social atua quando grupos e instituições reforcam limites e expectativas de comportamento"
       ],
-      "correta": "uma situacao em que nenhuma norma e nenhuma reacao coletiva influenciam condutas",
-      "comentario": "uma situacao em que nenhuma norma e nenhuma reacao coletiva influenciam condutas nao expressa controle social, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "uma situação em que nenhuma norma e nenhuma reacao coletiva influenciam condutas",
+      "comentario": "uma situação em que nenhuma norma e nenhuma reacao coletiva influenciam condutas não expressa controle social, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "socializacao",
@@ -4897,12 +4897,12 @@ export const socializacao = {
       "enunciado": "Quando se estuda controle social, o foco principal esta em:",
       "opcoes": [
         "os mecanismos que regulam comportamentos e reforcam normas coletivas",
-        "a transmissao de habitos, afetos e regras de convivencia no nucleo familiar",
+        "a transmissao de hábitos, afetos e regras de convivencia no nucleo familiar",
         "a socializacao formal mediada por conhecimentos, normas e convivencia ampliada",
-        "a influencia horizontal exercida por amigos e colegas na formacao social"
+        "a influencia horizontal exercida por amigos e colegas na formação social"
       ],
       "correta": "os mecanismos que regulam comportamentos e reforcam normas coletivas",
-      "comentario": "Controle social volta a atencao para os mecanismos que regulam comportamentos e reforcam normas coletivas.",
+      "comentario": "Controle social volta a atenção para os mecanismos que regulam comportamentos e reforcam normas coletivas.",
       "tempoEstimado": 35,
       "tags": [
         "socializacao",
@@ -4933,15 +4933,15 @@ export const socializacao = {
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre controle social e desvios e sancoes e que:",
+      "enunciado": "A principal diferença entre controle social e desvios e sancoes e que:",
       "opcoes": [
         "controle social diz respeito aos mecanismos de regulacao, enquanto desvios e sancoes tratam das transgressoes e das respostas a elas",
-        "Controle social e Desvios e sancoes sao exatamente o mesmo fenomeno social.",
+        "Controle social e Desvios e sancoes são exatamente o mesmo fenômeno social.",
         "Desvios e sancoes depende apenas da biologia, enquanto Controle social depende so da economia.",
-        "Controle social elimina a necessidade de observar contextos e instituicoes."
+        "Controle social elimina a necessidade de observar contextos e instituições."
       ],
       "correta": "controle social diz respeito aos mecanismos de regulacao, enquanto desvios e sancoes tratam das transgressoes e das respostas a elas",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "socializacao",
@@ -4972,10 +4972,10 @@ export const socializacao = {
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: uma turma corrige atitudes consideradas desrespeitosas por meio de regras e reacoes coletivas A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: uma turma corrige atitudes consideradas desrespeitosas por meio de regras e reações coletivas A leitura sociológica mais adequada aponta para:",
       "opcoes": [
         "controle social ajuda a manter padroes de convivencia, ainda que possa ser disputado e variar entre contextos",
-        "Controle social mostra que a vida social nao interfere nas formas de agir.",
+        "Controle social mostra que a vida social não interfere nas formas de agir.",
         "Controle social prova que todos os grupos agem da mesma forma em qualquer contexto.",
         "Controle social significa ausencia completa de normas e expectativas."
       ],
@@ -5011,15 +5011,15 @@ export const socializacao = {
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia controle social de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia controle social de maneira mais clara?",
       "opcoes": [
-        "o controle social atua quando grupos e instituicoes reforcam limites e expectativas de comportamento",
-        "a familia participa da formacao de habitos, valores e expectativas sobre o comportamento",
-        "a escola ensina conteudos e tambem formas de participar, respeitar normas e lidar com a diversidade",
+        "o controle social atua quando grupos e instituições reforcam limites e expectativas de comportamento",
+        "a familia participa da formação de hábitos, valores e expectativas sobre o comportamento",
+        "a escola ensina conteudos e também formas de participar, respeitar normas e lidar com a diversidade",
         "o grupo de pares reforca reconhecimento, pertencimento e pressao para adequacao a expectativas coletivas"
       ],
-      "correta": "o controle social atua quando grupos e instituicoes reforcam limites e expectativas de comportamento",
-      "comentario": "A alternativa correta traduz controle social em uma situacao concreta de vida social.",
+      "correta": "o controle social atua quando grupos e instituições reforcam limites e expectativas de comportamento",
+      "comentario": "A alternativa correta traduz controle social em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "socializacao",
@@ -5050,15 +5050,15 @@ export const socializacao = {
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"regras, advertencias, elogios e desaprovacoes orientam o que e considerado adequado em um grupo\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"regras, advertencias, elogios e desaprovacoes orientam o que e considerado adequado em um grupo\", qual conclusão é mais adequada?",
       "opcoes": [
-        "grupos e instituicoes regulam comportamentos por meio de regras e reacoes sociais",
+        "grupos e instituições regulam comportamentos por meio de regras e reações sociais",
         "Controle social indica que normas sociais nunca mudam.",
         "Controle social so pode ser explicado por fatores biologicos.",
-        "Controle social dispensa comparacao entre grupos e instituicoes."
+        "Controle social dispensa comparacao entre grupos e instituições."
       ],
-      "correta": "grupos e instituicoes regulam comportamentos por meio de regras e reacoes sociais",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "correta": "grupos e instituições regulam comportamentos por meio de regras e reações sociais",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "socializacao",
@@ -5092,9 +5092,9 @@ export const socializacao = {
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com controle social?",
       "opcoes": [
         "quais mecanismos um grupo usa para reforcar normas e limitar condutas?",
-        "como individuos aprendem comportamentos e expectativas sociais em diferentes contextos?",
-        "quais aprendizagens fundamentais sao adquiridas nos primeiros grupos de convivio?",
-        "como escola, trabalho e outros ambientes ampliam a formacao social do individuo?"
+        "como indivíduos aprendem comportamentos e expectativas sociais em diferentes contextos?",
+        "quais aprendizagens fundamentais são adquiridas nos primeiros grupos de convivio?",
+        "como escola, trabalho e outros ambientes ampliam a formação social do individuo?"
       ],
       "correta": "quais mecanismos um grupo usa para reforcar normas e limitar condutas?",
       "comentario": "A pergunta correta ajuda a investigar controle social de forma coerente com o subtopico.",
@@ -5132,8 +5132,8 @@ export const socializacao = {
       "opcoes": [
         "Um processo exclusivo da policia e das leis formais.",
         "Controle social pode ser observado em contextos de convivencia, regras e expectativas sociais.",
-        "Controle social ajuda a analisar aprendizagens e papeis na vida coletiva.",
-        "Controle social depende da interacao entre individuos, grupos e instituicoes."
+        "Controle social ajuda a analisar aprendizagens e papéis na vida coletiva.",
+        "Controle social depende da interacao entre indivíduos, grupos e instituições."
       ],
       "correta": "Um processo exclusivo da policia e das leis formais.",
       "comentario": "A alternativa incorreta expressa uma confusao comum sobre controle social.",
@@ -5167,15 +5167,15 @@ export const socializacao = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre socializacao, um estudante afirmou: \"controle social pode ocorrer por regras escritas, mas tambem por olhares, elogios e reprovacoes informais\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre socializacao, um estudante afirmou: \"controle social pode ocorrer por regras escritas, mas também por olhares, elogios e reprovacoes informais\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "a afirmacao esta correta, porque o controle social nao se limita a mecanismos oficiais",
-        "Controle social nao pode ser observado em situacoes do cotidiano.",
+        "a afirmacao esta correta, porque o controle social não se limita a mecanismos oficiais",
+        "Controle social não pode ser observado em situações do cotidiano.",
         "Controle social depende apenas da vontade individual, sem contexto social.",
-        "Controle social torna desnecessario comparar grupos, regras e instituicoes."
+        "Controle social torna desnecessario comparar grupos, regras e instituições."
       ],
-      "correta": "a afirmacao esta correta, porque o controle social nao se limita a mecanismos oficiais",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de controle social.",
+      "correta": "a afirmacao esta correta, porque o controle social não se limita a mecanismos oficiais",
+      "comentario": "A avaliação correta recupera o nucleo teorico de controle social.",
       "tempoEstimado": 50,
       "tags": [
         "socializacao",
@@ -5206,15 +5206,15 @@ export const socializacao = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando um grupo perde referencias normativas e nao reage a condutas que rompem combinados basicos, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando um grupo perde referencias normativas e não reage a condutas que rompem combinados basicos, a melhor interpretação sociológica e que:",
       "opcoes": [
         "o controle social se enfraquece e a regulacao coletiva fica mais instavel",
-        "Controle social desaparece porque a sociedade nao produz regras nem expectativas.",
+        "Controle social desaparece porque a sociedade não produz regras nem expectativas.",
         "Controle social deixa de existir sempre que surgem conflitos entre grupos.",
-        "Controle social so importa em sociedades antigas, nao no presente."
+        "Controle social so importa em sociedades antigas, não no presente."
       ],
       "correta": "o controle social se enfraquece e a regulacao coletiva fica mais instavel",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "socializacao",
@@ -5245,12 +5245,12 @@ export const socializacao = {
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente controle social a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente controle social a uma situação de comunidade escolar?",
       "opcoes": [
         "a turma analisa como combinados, conselhos e advertencias integram o controle social na escola",
         "a escola discute como os estudantes aprendem regras, horarios e formas de cooperacao no convivio escolar",
         "a turma analisa como rotinas familiares e cuidados iniciais participam da socializacao primaria",
-        "a escola mostra como regras de laboratorio, esportes e projetos coletivos fazem parte da socializacao secundaria"
+        "a escola mostra como regras de laboratório, esportes e projetos coletivos fazem parte da socializacao secundaria"
       ],
       "correta": "a turma analisa como combinados, conselhos e advertencias integram o controle social na escola",
       "comentario": "A alternativa correta aproxima controle social de um contexto escolar concreto.",
@@ -5287,9 +5287,9 @@ export const socializacao = {
       "enunciado": "Qual sintese final representa melhor controle social?",
       "opcoes": [
         "controle social e o conjunto de mecanismos que regulam comportamentos e reforcam normas",
-        "Controle social e um fator biologico fixo, sem relacao com aprendizagem e grupos sociais.",
+        "Controle social e um fator biológico fixo, sem relação com aprendizagem e grupos sociais.",
         "Controle social explica apenas escolhas privadas e ignora a dimensao coletiva.",
-        "Controle social impede qualquer mudanca historica ou social."
+        "Controle social impede qualquer mudanca histórica ou social."
       ],
       "correta": "controle social e o conjunto de mecanismos que regulam comportamentos e reforcam normas",
       "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de controle social.",
@@ -5325,13 +5325,13 @@ export const socializacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Em Sociologia, desvios e sancoes pode ser definido(a) como:",
       "opcoes": [
-        "as condutas que rompem normas sociais e as respostas que grupos ou instituicoes aplicam diante delas",
+        "as condutas que rompem normas sociais e as respostas que grupos ou instituições aplicam diante delas",
         "o conjunto de mecanismos formais e informais que regulam comportamentos e reforcam normas na vida coletiva",
-        "o processo pelo qual individuos aprendem normas, valores, papeis e formas de agir necessarios a vida em sociedade",
+        "o processo pelo qual indivíduos aprendem normas, valores, papéis e formas de agir necessarios a vida em sociedade",
         "a fase inicial da socializacao, geralmente ligada aos primeiros grupos de convivio, em que se aprendem linguagem, regras basicas e formas de interacao"
       ],
-      "correta": "as condutas que rompem normas sociais e as respostas que grupos ou instituicoes aplicam diante delas",
-      "comentario": "Desvios e sancoes refere-se a as condutas que rompem normas sociais e as respostas que grupos ou instituicoes aplicam diante delas.",
+      "correta": "as condutas que rompem normas sociais e as respostas que grupos ou instituições aplicam diante delas",
+      "comentario": "Desvios e sancoes refere-se a as condutas que rompem normas sociais e as respostas que grupos ou instituições aplicam diante delas.",
       "tempoEstimado": 20,
       "tags": [
         "socializacao",
@@ -5362,7 +5362,7 @@ export const socializacao = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: quando alguem desrespeita um combinado coletivo, pode receber advertencia, reprovacao ou outra resposta social Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: quando alguem desrespeita um combinado coletivo, pode receber advertencia, reprovacao ou outra resposta social Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
         "Desvios e sancoes",
         "Controle social",
@@ -5370,7 +5370,7 @@ export const socializacao = {
         "Socializacao primaria"
       ],
       "correta": "Desvios e sancoes",
-      "comentario": "A situacao apresentada e um exemplo de desvios e sancoes.",
+      "comentario": "A situação apresentada é um exemplo de desvios e sancoes.",
       "tempoEstimado": 25,
       "tags": [
         "socializacao",
@@ -5403,12 +5403,12 @@ export const socializacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual afirmacao descreve corretamente desvios e sancoes?",
       "opcoes": [
-        "As condutas que rompem normas sociais e as respostas que grupos ou instituicoes aplicam diante delas.",
-        "Qualquer diferenca individual, mesmo sem relacao com normas e regras coletivas.",
+        "As condutas que rompem normas sociais e as respostas que grupos ou instituições aplicam diante delas.",
+        "Qualquer diferença individual, mesmo sem relação com normas e regras coletivas.",
         "Controle social significa o conjunto de mecanismos formais e informais que regulam comportamentos e reforcam normas na vida coletiva.",
-        "Socializacao trata apenas de reflexos biologicos e nao de aprendizagem social."
+        "Socializacao trata apenas de reflexos biologicos e não de aprendizagem social."
       ],
-      "correta": "As condutas que rompem normas sociais e as respostas que grupos ou instituicoes aplicam diante delas.",
+      "correta": "As condutas que rompem normas sociais e as respostas que grupos ou instituições aplicam diante delas.",
       "comentario": "A afirmacao correta retoma o sentido central de desvios e sancoes.",
       "tempoEstimado": 30,
       "tags": [
@@ -5440,15 +5440,15 @@ export const socializacao = {
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a desvios e sancoes.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a desvios e sancoes.",
       "opcoes": [
-        "um comportamento aceito e esperado pelo proprio grupo em determinado contexto",
+        "um comportamento aceito e esperado pelo próprio grupo em determinado contexto",
         "quando alguem desrespeita um combinado coletivo, pode receber advertencia, reprovacao ou outra resposta social",
         "uma escola responde a atitudes de fraude ou agressao com medidas previstas em regras e combinados",
         "desvio e sancao so podem ser compreendidos levando em conta normas e expectativas do grupo"
       ],
-      "correta": "um comportamento aceito e esperado pelo proprio grupo em determinado contexto",
-      "comentario": "um comportamento aceito e esperado pelo proprio grupo em determinado contexto nao expressa desvios e sancoes, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "um comportamento aceito e esperado pelo próprio grupo em determinado contexto",
+      "comentario": "um comportamento aceito e esperado pelo próprio grupo em determinado contexto não expressa desvios e sancoes, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "socializacao",
@@ -5481,13 +5481,13 @@ export const socializacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Quando se estuda desvios e sancoes, o foco principal esta em:",
       "opcoes": [
-        "as transgressoes de normas e as reacoes coletivas ou institucionais diante delas",
+        "as transgressoes de normas e as reações coletivas ou institucionais diante delas",
         "os mecanismos que regulam comportamentos e reforcam normas coletivas",
         "a aprendizagem social de comportamentos, valores e expectativas coletivas",
         "as aprendizagens iniciais que inserem o sujeito nas primeiras formas de convivio social"
       ],
-      "correta": "as transgressoes de normas e as reacoes coletivas ou institucionais diante delas",
-      "comentario": "Desvios e sancoes volta a atencao para as transgressoes de normas e as reacoes coletivas ou institucionais diante delas.",
+      "correta": "as transgressoes de normas e as reações coletivas ou institucionais diante delas",
+      "comentario": "Desvios e sancoes volta a atenção para as transgressoes de normas e as reações coletivas ou institucionais diante delas.",
       "tempoEstimado": 35,
       "tags": [
         "socializacao",
@@ -5518,15 +5518,15 @@ export const socializacao = {
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre desvios e sancoes e controle social e que:",
+      "enunciado": "A principal diferença entre desvios e sancoes e controle social e que:",
       "opcoes": [
         "desvios e sancoes tratam das transgressoes e das respostas a elas, enquanto controle social abrange o conjunto mais amplo de regulacao das condutas",
-        "Desvios e sancoes e Controle social sao exatamente o mesmo fenomeno social.",
+        "Desvios e sancoes e Controle social são exatamente o mesmo fenômeno social.",
         "Controle social depende apenas da biologia, enquanto Desvios e sancoes depende so da economia.",
-        "Desvios e sancoes elimina a necessidade de observar contextos e instituicoes."
+        "Desvios e sancoes elimina a necessidade de observar contextos e instituições."
       ],
       "correta": "desvios e sancoes tratam das transgressoes e das respostas a elas, enquanto controle social abrange o conjunto mais amplo de regulacao das condutas",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "socializacao",
@@ -5557,10 +5557,10 @@ export const socializacao = {
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: uma escola responde a atitudes de fraude ou agressao com medidas previstas em regras e combinados A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: uma escola responde a atitudes de fraude ou agressao com medidas previstas em regras e combinados A leitura sociológica mais adequada aponta para:",
       "opcoes": [
         "desvio e sancao variam conforme as normas do grupo e ajudam a entender como a ordem social e negociada",
-        "Desvios e sancoes mostra que a vida social nao interfere nas formas de agir.",
+        "Desvios e sancoes mostra que a vida social não interfere nas formas de agir.",
         "Desvios e sancoes prova que todos os grupos agem da mesma forma em qualquer contexto.",
         "Desvios e sancoes significa ausencia completa de normas e expectativas."
       ],
@@ -5596,15 +5596,15 @@ export const socializacao = {
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia desvios e sancoes de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia desvios e sancoes de maneira mais clara?",
       "opcoes": [
         "desvio e sancao so podem ser compreendidos levando em conta normas e expectativas do grupo",
-        "o controle social atua quando grupos e instituicoes reforcam limites e expectativas de comportamento",
-        "o convivio social ensina modos de comportamento, pertencimento e interpretacao do mundo",
+        "o controle social atua quando grupos e instituições reforcam limites e expectativas de comportamento",
+        "o convivio social ensina modos de comportamento, pertencimento e interpretação do mundo",
         "os primeiros vinculos sociais moldam referencias fundamentais para a insercao do sujeito na vida coletiva"
       ],
       "correta": "desvio e sancao so podem ser compreendidos levando em conta normas e expectativas do grupo",
-      "comentario": "A alternativa correta traduz desvios e sancoes em uma situacao concreta de vida social.",
+      "comentario": "A alternativa correta traduz desvios e sancoes em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "socializacao",
@@ -5635,15 +5635,15 @@ export const socializacao = {
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"quando alguem desrespeita um combinado coletivo, pode receber advertencia, reprovacao ou outra resposta social\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"quando alguem desrespeita um combinado coletivo, pode receber advertencia, reprovacao ou outra resposta social\", qual conclusão é mais adequada?",
       "opcoes": [
         "o que conta como desvio depende das normas em vigor e das respostas coletivas a seu descumprimento",
         "Desvios e sancoes indica que normas sociais nunca mudam.",
         "Desvios e sancoes so pode ser explicado por fatores biologicos.",
-        "Desvios e sancoes dispensa comparacao entre grupos e instituicoes."
+        "Desvios e sancoes dispensa comparacao entre grupos e instituições."
       ],
       "correta": "o que conta como desvio depende das normas em vigor e das respostas coletivas a seu descumprimento",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "socializacao",
@@ -5677,9 +5677,9 @@ export const socializacao = {
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com desvios e sancoes?",
       "opcoes": [
         "como grupos definem e respondem a comportamentos considerados desviantes?",
-        "como individuos aprendem comportamentos e expectativas sociais em diferentes contextos?",
-        "quais aprendizagens fundamentais sao adquiridas nos primeiros grupos de convivio?",
-        "como escola, trabalho e outros ambientes ampliam a formacao social do individuo?"
+        "como indivíduos aprendem comportamentos e expectativas sociais em diferentes contextos?",
+        "quais aprendizagens fundamentais são adquiridas nos primeiros grupos de convivio?",
+        "como escola, trabalho e outros ambientes ampliam a formação social do individuo?"
       ],
       "correta": "como grupos definem e respondem a comportamentos considerados desviantes?",
       "comentario": "A pergunta correta ajuda a investigar desvios e sancoes de forma coerente com o subtopico.",
@@ -5715,12 +5715,12 @@ export const socializacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a afirmacao que revela compreensao inadequada de desvios e sancoes.",
       "opcoes": [
-        "Qualquer diferenca individual, mesmo sem relacao com normas e regras coletivas.",
+        "Qualquer diferença individual, mesmo sem relação com normas e regras coletivas.",
         "Desvios e sancoes pode ser observado em contextos de convivencia, regras e expectativas sociais.",
-        "Desvios e sancoes ajuda a analisar aprendizagens e papeis na vida coletiva.",
-        "Desvios e sancoes depende da interacao entre individuos, grupos e instituicoes."
+        "Desvios e sancoes ajuda a analisar aprendizagens e papéis na vida coletiva.",
+        "Desvios e sancoes depende da interacao entre indivíduos, grupos e instituições."
       ],
-      "correta": "Qualquer diferenca individual, mesmo sem relacao com normas e regras coletivas.",
+      "correta": "Qualquer diferença individual, mesmo sem relação com normas e regras coletivas.",
       "comentario": "A alternativa incorreta expressa uma confusao comum sobre desvios e sancoes.",
       "tempoEstimado": 45,
       "tags": [
@@ -5752,15 +5752,15 @@ export const socializacao = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre socializacao, um estudante afirmou: \"desvio nao e uma qualidade natural do individuo; ele depende de regras e reacoes sociais\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre socializacao, um estudante afirmou: \"desvio não é uma qualidade natural do individuo; ele depende de regras e reações sociais\". Qual avaliação é mais consistente?",
       "opcoes": [
         "a afirmacao esta correta, porque a classificacao de um ato como desvio e socialmente definida",
-        "Desvios e sancoes nao pode ser observado em situacoes do cotidiano.",
+        "Desvios e sancoes não pode ser observado em situações do cotidiano.",
         "Desvios e sancoes depende apenas da vontade individual, sem contexto social.",
-        "Desvios e sancoes torna desnecessario comparar grupos, regras e instituicoes."
+        "Desvios e sancoes torna desnecessario comparar grupos, regras e instituições."
       ],
       "correta": "a afirmacao esta correta, porque a classificacao de um ato como desvio e socialmente definida",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de desvios e sancoes.",
+      "comentario": "A avaliação correta recupera o nucleo teorico de desvios e sancoes.",
       "tempoEstimado": 50,
       "tags": [
         "socializacao",
@@ -5791,15 +5791,15 @@ export const socializacao = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando nao existem regras claras nem respostas coletivas para condutas consideradas inadequadas, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando não existem regras claras nem respostas coletivas para condutas consideradas inadequadas, a melhor interpretação sociológica e que:",
       "opcoes": [
         "fica mais dificil definir desvios e aplicar sancoes de forma coerente",
-        "Desvios e sancoes desaparece porque a sociedade nao produz regras nem expectativas.",
+        "Desvios e sancoes desaparece porque a sociedade não produz regras nem expectativas.",
         "Desvios e sancoes deixa de existir sempre que surgem conflitos entre grupos.",
-        "Desvios e sancoes so importa em sociedades antigas, nao no presente."
+        "Desvios e sancoes so importa em sociedades antigas, não no presente."
       ],
       "correta": "fica mais dificil definir desvios e aplicar sancoes de forma coerente",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "socializacao",
@@ -5830,14 +5830,14 @@ export const socializacao = {
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente desvios e sancoes a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente desvios e sancoes a uma situação de comunidade escolar?",
       "opcoes": [
-        "a escola debate por que cola, agressao e vandalismo sao tratados como desvios em certas regras de convivencia",
+        "a escola debate por que cola, agressao e vandalismo são tratados como desvios em certas regras de convivencia",
         "a escola discute como os estudantes aprendem regras, horarios e formas de cooperacao no convivio escolar",
         "a turma analisa como rotinas familiares e cuidados iniciais participam da socializacao primaria",
-        "a escola mostra como regras de laboratorio, esportes e projetos coletivos fazem parte da socializacao secundaria"
+        "a escola mostra como regras de laboratório, esportes e projetos coletivos fazem parte da socializacao secundaria"
       ],
-      "correta": "a escola debate por que cola, agressao e vandalismo sao tratados como desvios em certas regras de convivencia",
+      "correta": "a escola debate por que cola, agressao e vandalismo são tratados como desvios em certas regras de convivencia",
       "comentario": "A alternativa correta aproxima desvios e sancoes de um contexto escolar concreto.",
       "tempoEstimado": 55,
       "tags": [
@@ -5872,9 +5872,9 @@ export const socializacao = {
       "enunciado": "Qual sintese final representa melhor desvios e sancoes?",
       "opcoes": [
         "desvios e sancoes dizem respeito ao rompimento de normas e as respostas sociais a esse rompimento",
-        "Desvios e sancoes e um fator biologico fixo, sem relacao com aprendizagem e grupos sociais.",
+        "Desvios e sancoes e um fator biológico fixo, sem relação com aprendizagem e grupos sociais.",
         "Desvios e sancoes explica apenas escolhas privadas e ignora a dimensao coletiva.",
-        "Desvios e sancoes impede qualquer mudanca historica ou social."
+        "Desvios e sancoes impede qualquer mudanca histórica ou social."
       ],
       "correta": "desvios e sancoes dizem respeito ao rompimento de normas e as respostas sociais a esse rompimento",
       "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de desvios e sancoes.",

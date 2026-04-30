@@ -9,7 +9,7 @@ const blocos = [
   {
     subtopico: "Estabilidade e regra do octeto",
     habilidade:
-      "relacionar estabilidade eletronica a formacao de ligacoes quimicas",
+      "relacionar estabilidade eletronica a formação de ligacoes quimicas",
     tags: ["octeto", "estabilidade", "ligacoes"],
     fatos: [
       {
@@ -24,7 +24,7 @@ const blocos = [
       },
       {
         lead: "a camada de valencia incompleta",
-        answer: "a situacao que favorece ganho, perda ou compartilhamento de eletrons",
+        answer: "a situação que favorece ganho, perda ou compartilhamento de eletrons",
         why: "elementos reativos tendem a buscar configuracao mais estavel"
       },
       {
@@ -33,7 +33,7 @@ const blocos = [
         why: "sua baixa reatividade inspirou a regra do octeto"
       },
       {
-        lead: "a formacao de ligacoes",
+        lead: "a formação de ligacoes",
         answer: "o processo de reorganizacao eletronica para obter maior estabilidade",
         why: "atomos ligam-se quando isso reduz a energia do sistema"
       }
@@ -42,7 +42,7 @@ const blocos = [
   {
     subtopico: "Ligacao ionica",
     habilidade:
-      "identificar caracteristicas e formacao da ligacao ionica",
+      "identificar características e formação da ligacao ionica",
     tags: ["ligacao ionica", "ions", "transferencia de eletrons"],
     fatos: [
       {
@@ -61,8 +61,8 @@ const blocos = [
         why: "sua estrutura resulta da atracao entre cargas opostas"
       },
       {
-        lead: "a formacao de cation e anion",
-        answer: "a consequencia da perda e do ganho de eletrons respectivamente",
+        lead: "a formação de cation e anion",
+        answer: "a consequência da perda e do ganho de eletrons respectivamente",
         why: "esses ions participam da ligacao ionica"
       },
       {
@@ -75,13 +75,13 @@ const blocos = [
   {
     subtopico: "Ligacao covalente",
     habilidade:
-      "identificar caracteristicas e formacao da ligacao covalente",
+      "identificar características e formação da ligacao covalente",
     tags: ["ligacao covalente", "compartilhamento", "moleculas"],
     fatos: [
       {
         lead: "a ligacao covalente",
         answer: "a uniao entre atomos por compartilhamento de pares de eletrons",
-        why: "ela ocorre com frequencia entre ametais"
+        why: "ela ocorre com frequência entre ametais"
       },
       {
         lead: "o compartilhamento eletronico",
@@ -96,11 +96,11 @@ const blocos = [
       {
         lead: "a ligacao simples",
         answer: "a covalencia formada por um par de eletrons compartilhado",
-        why: "ela e o caso mais basico de compartilhamento"
+        why: "ela é o caso mais basico de compartilhamento"
       },
       {
         lead: "a ligacao multipla",
-        answer: "a situacao em que dois ou tres pares de eletrons sao compartilhados",
+        answer: "a situação em que dois ou tres pares de eletrons são compartilhados",
         why: "ligacoes duplas e triplas reforcam a uniao entre atomos"
       }
     ]
@@ -108,7 +108,7 @@ const blocos = [
   {
     subtopico: "Ligacao metalica",
     habilidade:
-      "identificar caracteristicas e formacao da ligacao metalica",
+      "identificar características e formação da ligacao metalica",
     tags: ["ligacao metalica", "metais", "mar de eletrons"],
     fatos: [
       {
@@ -134,7 +134,7 @@ const blocos = [
       {
         lead: "a ductilidade",
         answer: "a possibilidade de transformar metais em fios",
-        why: "ela tambem decorre da natureza da ligacao metalica"
+        why: "ela também decorre da natureza da ligacao metalica"
       }
     ]
   },
@@ -167,7 +167,7 @@ const blocos = [
       {
         lead: "a eletronegatividade",
         answer: "a tendencia de um atomo atrair eletrons em uma ligacao",
-        why: "ela e central para entender polaridade"
+        why: "ela é central para entender polaridade"
       }
     ]
   },
@@ -195,7 +195,7 @@ const blocos = [
       {
         lead: "a geometria angular",
         answer: "a forma dobrada de uma molecula com pares isolados influenciando a estrutura",
-        why: "pares nao ligantes alteram o arranjo espacial"
+        why: "pares não ligantes alteram o arranjo espacial"
       },
       {
         lead: "a geometria tetraedrica",
@@ -228,7 +228,7 @@ const blocos = [
       {
         lead: "as forcas de dispersao",
         answer: "as interacoes presentes mesmo entre moleculas apolares por dipolos instantaneos",
-        why: "tambem sao chamadas forcas de London"
+        why: "também são chamadas forcas de London"
       },
       {
         lead: "a diferenca entre ligacao e forca intermolecular",
@@ -245,13 +245,13 @@ const blocos = [
     fatos: [
       {
         lead: "o alto ponto de fusao de compostos ionicos",
-        answer: "a consequencia da forte atracao eletrostatica no reticulo cristalino",
+        answer: "a consequência da forte atracao eletrostatica no reticulo cristalino",
         why: "romper essas interacoes exige muita energia"
       },
       {
         lead: "a baixa conducao de compostos moleculares",
-        answer: "a ausencia de cargas livres para transportar corrente em muitas situacoes",
-        why: "moleculas neutras nao conduzem como metais ou ionicos fundidos"
+        answer: "a ausencia de cargas livres para transportar corrente em muitas situações",
+        why: "moleculas neutras não conduzem como metais ou ionicos fundidos"
       },
       {
         lead: "a boa conducao eletrica dos metais",
@@ -265,7 +265,7 @@ const blocos = [
       },
       {
         lead: "a volatilidade de substancias moleculares",
-        answer: "a facilidade maior de separar moleculas quando forcas intermoleculares sao fracas",
+        answer: "a facilidade maior de separar moleculas quando forcas intermoleculares são fracas",
         why: "isso pode resultar em menor ponto de ebulicao"
       }
     ]
@@ -287,7 +287,7 @@ const blocos = [
         why: "eles unem atomos na estrutura de Lewis"
       },
       {
-        lead: "os pares nao ligantes",
+        lead: "os pares não ligantes",
         answer: "os pares de eletrons que permanecem localizados em um unico atomo",
         why: "eles influenciam polaridade e geometria"
       },
@@ -306,7 +306,7 @@ const blocos = [
   {
     subtopico: "Aplicacoes e comparacoes",
     habilidade:
-      "comparar diferentes tipos de ligacao e suas consequencias",
+      "comparar diferentes tipos de ligacao e suas consequências",
     tags: ["comparacao", "aplicacoes", "materiais"],
     fatos: [
       {
@@ -321,11 +321,11 @@ const blocos = [
       },
       {
         lead: "a escolha do tipo de ligacao entre elementos",
-        answer: "a consequencia das caracteristicas eletronicas e da diferenca de eletronegatividade",
+        answer: "a consequência das características eletronicas e da diferenca de eletronegatividade",
         why: "metais e ametais tendem a interagir de formas distintas"
       },
       {
-        lead: "a relacao entre ligacao e material do cotidiano",
+        lead: "a relação entre ligacao e material do cotidiano",
         answer: "a explicacao de propriedades como dureza, conducao e solubilidade por sua estrutura",
         why: "tipos de ligacao influenciam diretamente uso dos materiais"
       },
@@ -340,14 +340,14 @@ const blocos = [
 
 export const ligacoesQuimicas = {
   id: "quimica_ligacoes_quimicas",
-  materia: "Quimica",
+  materia: "Química",
   serie: [1],
   topico: "Ligacoes Quimicas",
   metadados: {
     disciplinaId: "quimica",
     base: "ESCOLAR",
     seloEditorial: "VERIFICADA",
-    eixo: "Quimica",
+    eixo: "Química",
     frente: "Interacoes atomicas e propriedades da materia",
     searchAliases: [
       "ligacoes quimicas",
@@ -358,9 +358,9 @@ export const ligacoesQuimicas = {
     ],
     subtopicosBase: blocos.map((bloco) => bloco.subtopico),
     habilidadesBase: [
-      "relacionar estabilidade eletronica a formacao de ligacoes quimicas",
-      "identificar caracteristicas e formacao da ligacao ionica",
-      "identificar caracteristicas e formacao da ligacao covalente",
+      "relacionar estabilidade eletronica a formação de ligacoes quimicas",
+      "identificar características e formação da ligacao ionica",
+      "identificar características e formação da ligacao covalente",
       "relacionar diferenca de eletronegatividade a polaridade",
       "relacionar tipos de ligacao a propriedades fisicas das substancias"
     ],
@@ -371,7 +371,7 @@ export const ligacoesQuimicas = {
   questoes: buildPlannedQuestions({
     prefix: "lq",
     serie: 1,
-    materia: "Quimica",
+    materia: "Química",
     topico: "Ligacoes Quimicas",
     blocos,
     stemBuilders: CHEMISTRY_STEM_BUILDERS,

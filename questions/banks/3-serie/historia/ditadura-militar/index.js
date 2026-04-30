@@ -12,7 +12,7 @@ const blocos = [
         why: "ele interrompeu a ordem democratica vigente"
       },
       {
-        lead: "o clima de polarizacao politica no inicio dos anos 1960",
+        lead: "o clima de polarizacao política no inicio dos anos 1960",
         answer: "um elemento do contexto do golpe",
         why: "setores conservadores e reformistas disputavam projetos de pais"
       },
@@ -51,22 +51,22 @@ const blocos = [
       {
         lead: "o ato que extinguiu partidos e implantou o bipartidarismo",
         answer: "o AI-2",
-        why: "ele reorganizou o sistema politico sob controle do governo"
+        why: "ele reorganizou o sistema político sob controle do governo"
       },
       {
         lead: "o ato de 1968 que aprofundou a repressao e fechou o regime",
         answer: "o AI-5",
-        why: "ele marcou o periodo mais duro da ditadura"
+        why: "ele marcou o período mais duro da ditadura"
       },
       {
-        lead: "a concentracao de poder no Executivo e a limitacao de liberdades",
+        lead: "a concentracao de poder no Executivo é a limitacao de liberdades",
         answer: "uma marca do autoritarismo do regime",
-        why: "o Estado restringiu direitos politicos e civis"
+        why: "o Estado restringiu direitos políticos e civis"
       }
     ]
   },
   {
-    subtopico: "Repressao politica e censura",
+    subtopico: "Repressao política e censura",
     habilidade: "analisar-autoritarismo-repressao-censura-e-resistencia-politica",
     tags: ["ditadura-militar", "repressao"],
     fatos: [
@@ -78,10 +78,10 @@ const blocos = [
       {
         lead: "o controle previo sobre jornais, livros, musicas e espetaculos",
         answer: "a censura",
-        why: "ela restringiu a circulacao de ideias e criticas ao governo"
+        why: "ela restringiu a circulação de ideias e criticas ao governo"
       },
       {
-        lead: "a prisao, a tortura e o desaparecimento de opositores politicos",
+        lead: "a prisao, a tortura é o desaparecimento de opositores políticos",
         answer: "praticas de violencia de Estado",
         why: "o regime utilizou meios ilegais para eliminar resistencias"
       },
@@ -91,8 +91,8 @@ const blocos = [
         why: "o governo monitorava espacos vistos como focos de oposicao"
       },
       {
-        lead: "o silenciamento imposto a imprensa e a producao cultural",
-        answer: "um efeito da repressao politica",
+        lead: "o silenciamento imposto a imprensa é a produção cultural",
+        answer: "um efeito da repressao política",
         why: "a ditadura buscou limitar a livre expressao"
       }
     ]
@@ -103,23 +103,23 @@ const blocos = [
     tags: ["ditadura-militar", "milagre-economico"],
     fatos: [
       {
-        lead: "o periodo de forte crescimento economico entre o fim dos anos 1960 e inicio dos 1970",
+        lead: "o período de forte crescimento economico entre o fim dos anos 1960 e inicio dos 1970",
         answer: "o milagre economico",
         why: "ele foi amplamente usado na propaganda do regime"
       },
       {
         lead: "o investimento estatal em grandes obras de infraestrutura",
         answer: "uma caracteristica do modelo de desenvolvimento da ditadura",
-        why: "o governo apostou em projetos de integracao e expansao economica"
+        why: "o governo apostou em projetos de integracao e expansão econômica"
       },
       {
         lead: "a compressao salarial em meio ao crescimento do PIB",
         answer: "o arrocho salarial",
-        why: "a politica economica elevou desigualdades sociais"
+        why: "a política econômica elevou desigualdades sociais"
       },
       {
-        lead: "o aumento da dependencia de emprestimos externos",
-        answer: "um limite do crescimento do periodo",
+        lead: "o aumento da dependência de emprestimos externos",
+        answer: "um limite do crescimento do período",
         why: "o endividamento pesou na crise posterior"
       },
       {
@@ -130,7 +130,7 @@ const blocos = [
     ]
   },
   {
-    subtopico: "Movimentos de resistencia e oposicao",
+    subtopico: "Movimentos de resistência e oposicao",
     habilidade: "analisar-autoritarismo-repressao-censura-e-resistencia-politica",
     tags: ["ditadura-militar", "resistencia"],
     fatos: [
@@ -150,14 +150,14 @@ const blocos = [
         why: "elas expressaram nova fase de oposicao ao regime"
       },
       {
-        lead: "a atuacao de setores da Igreja em defesa de perseguidos politicos",
-        answer: "uma frente de resistencia ao autoritarismo",
+        lead: "a atuacao de setores da Igreja em defesa de perseguidos políticos",
+        answer: "uma frente de resistência ao autoritarismo",
         why: "grupos religiosos denunciaram violencia e injusticas"
       },
       {
-        lead: "a soma de acoes legais, sociais e culturais contra a ditadura",
+        lead: "a soma de ações legais, sociais e culturais contra a ditadura",
         answer: "a pluralidade da oposicao ao regime",
-        why: "a resistencia nao se restringiu a um unico setor"
+        why: "a resistência não se restringiu a um unico setor"
       }
     ]
   },
@@ -179,17 +179,17 @@ const blocos = [
       {
         lead: "os festivais de musica televisionados no final dos anos 1960",
         answer: "espacos de expressao e disputa cultural",
-        why: "eles revelaram artistas e tensoes politicas do periodo"
+        why: "eles revelaram artistas e tensoes políticas do período"
       },
       {
         lead: "a aproximacao entre juventude, comportamento e critica ao conservadorismo",
         answer: "uma forma de contestacao cultural",
-        why: "a oposicao ao regime tambem passou por estilos de vida e arte"
+        why: "a oposicao ao regime também passou por estilos de vida e arte"
       },
       {
         lead: "a vigilancia do Estado sobre artistas, intelectuais e estudantes",
         answer: "um indiciario do medo oficial da critica cultural",
-        why: "o regime tratava producoes simbolicas como possivel ameaca politica"
+        why: "o regime tratava producoes simbolicas como possível ameaça política"
       }
     ]
   },
@@ -199,23 +199,23 @@ const blocos = [
     tags: ["ditadura-militar", "luta-armada"],
     fatos: [
       {
-        lead: "as organizacoes que optaram por enfrentar a ditadura com acoes armadas",
+        lead: "as organizacoes que optaram por enfrentar a ditadura com ações armadas",
         answer: "a luta armada contra o regime",
         why: "alguns grupos concluiram que a oposicao pacifica era insuficiente"
       },
       {
         lead: "a organizacao liderada por Carlos Marighella",
         answer: "a ALN",
-        why: "ela esteve entre os principais grupos da resistencia armada"
+        why: "ela esteve entre os principais grupos da resistência armada"
       },
       {
-        lead: "a experiencia guerrilheira no interior da regiao Norte",
+        lead: "a experiência guerrilheira no interior da regiao Norte",
         answer: "a Guerrilha do Araguaia",
         why: "ela foi duramente combatida pelas Forcas Armadas"
       },
       {
         lead: "os sequestros de embaixadores por grupos de oposicao",
-        answer: "acoes para denunciar o regime e trocar presos politicos",
+        answer: "ações para denunciar o regime e trocar presos políticos",
         why: "essas iniciativas buscaram repercussao nacional e internacional"
       },
       {
@@ -238,11 +238,11 @@ const blocos = [
       {
         lead: "o aumento da inflacao e do endividamento externo",
         answer: "sinais do esgotamento economico da ditadura",
-        why: "o crescimento anterior nao se sustentou indefinidamente"
+        why: "o crescimento anterior não se sustentou indefinidamente"
       },
       {
         lead: "as denuncias de violacoes de direitos humanos no exterior e no pais",
-        answer: "um desgaste politico do regime",
+        answer: "um desgaste político do regime",
         why: "a repressao passou a enfrentar maior critica publica"
       },
       {
@@ -251,14 +251,14 @@ const blocos = [
         why: "novos atores coletivos desafiaram a estabilidade autoritaria"
       },
       {
-        lead: "a tentativa do governo de controlar a transicao sem perder a iniciativa",
+        lead: "a tentativa do governo de controlar a transição sem perder a iniciativa",
         answer: "a estrategia de distensao",
         why: "o regime procurou conduzir a propria abertura"
       }
     ]
   },
   {
-    subtopico: "Abertura politica, anistia e transicao",
+    subtopico: "Abertura política, anistia e transição",
     habilidade: "avaliar-a-abertura-politica-a-anistia-e-a-transicao-democratica",
     tags: ["ditadura-militar", "abertura-politica"],
     fatos: [
@@ -270,7 +270,7 @@ const blocos = [
       {
         lead: "a lei aprovada em 1979 que permitiu retorno de exilados e libertacao de presos",
         answer: "a Lei da Anistia",
-        why: "ela marcou etapa importante da transicao politica"
+        why: "ela marcou etapa importante da transição política"
       },
       {
         lead: "a campanha popular por eleicoes diretas para presidente",
@@ -280,11 +280,11 @@ const blocos = [
       {
         lead: "a eleicao indireta de Tancredo Neves em 1985",
         answer: "um marco do fim do ciclo ditatorial",
-        why: "ela simbolizou a passagem para a Nova Republica"
+        why: "ela simbolizou a passagem para a Nova República"
       },
       {
-        lead: "a reconstrucao institucional do pais apos o regime militar",
-        answer: "a transicao democratica",
+        lead: "a reconstrucao institucional do pais após o regime militar",
+        answer: "a transição democratica",
         why: "o Brasil retomou gradualmente mecanismos de representacao e direitos"
       }
     ]
@@ -295,12 +295,12 @@ const blocos = [
     tags: ["ditadura-militar", "memoria-e-verdade"],
     fatos: [
       {
-        lead: "a apuracao publica das violacoes praticadas pelo Estado no periodo autoritario",
-        answer: "a politica de memoria e verdade",
-        why: "ela busca reconhecer crimes e preservar a historia do periodo"
+        lead: "a apuracao publica das violacoes praticadas pelo Estado no período autoritario",
+        answer: "a política de memoria e verdade",
+        why: "ela busca reconhecer crimes e preservar a história do período"
       },
       {
-        lead: "o orgao criado para investigar graves violacoes de direitos humanos no periodo",
+        lead: "o orgao criado para investigar graves violacoes de direitos humanos no período",
         answer: "a Comissao Nacional da Verdade",
         why: "ela reuniu depoimentos e documentos sobre a ditadura"
       },
@@ -310,14 +310,14 @@ const blocos = [
         why: "nem todas as estruturas de excecao foram plenamente superadas"
       },
       {
-        lead: "a valorizacao dos direitos humanos apos o regime",
+        lead: "a valorizacao dos direitos humanos após o regime",
         answer: "uma resposta democratica ao autoritarismo",
-        why: "a memoria do periodo fortaleceu a defesa de garantias civis"
+        why: "a memoria do período fortaleceu a defesa de garantias civis"
       },
       {
         lead: "o debate atual sobre anistia, responsabilizacao e memoria publica",
         answer: "uma disputa sobre o sentido historico da ditadura",
-        why: "o passado continua influenciando a politica brasileira"
+        why: "o passado continua influenciando a política brasileira"
       }
     ]
   }
@@ -326,45 +326,45 @@ const blocos = [
 const questoes = buildPlannedQuestions({
   prefix: "dm",
   serie: [3],
-  materia: "Historia",
+  materia: "História",
   topico: "Ditadura Militar",
   blocos
 });
 
 export const ditaduraMilitar = {
   id: "historia_ditadura_militar",
-  materia: "Historia",
+  materia: "História",
   serie: [3],
   topico: "Ditadura Militar",
   metadados: {
     disciplinaId: "historia",
     base: "ESCOLAR",
-    eixo: "Historia",
-    frente: "Regime autoritario e resistencia no Brasil",
+    eixo: "História",
+    frente: "Regime autoritario e resistência no Brasil",
     searchAliases: [
       "ditadura militar",
       "1964",
       "ai-5",
       "milagre economico",
-      "abertura politica"
+      "abertura política"
     ],
     subtopicosBase: [
       "Golpe de 1964 e contexto historico",
       "Atos institucionais e autoritarismo",
-      "Repressao politica e censura",
+      "Repressao política e censura",
       "Milagre economico e modelo de desenvolvimento",
-      "Movimentos de resistencia e oposicao",
+      "Movimentos de resistência e oposicao",
       "Cultura, juventude e contestacao",
       "Luta armada e repressao estatal",
       "Crise do regime na decada de 1970",
-      "Abertura politica, anistia e transicao",
+      "Abertura política, anistia e transição",
       "Memoria, verdade e legados da ditadura"
     ],
     habilidadesBase: [
-      "identificar o contexto do golpe de 1964 e a estrutura do regime militar",
-      "analisar autoritarismo, repressao, censura e resistencia politica",
-      "relacionar milagre economico, crise e desigualdades do periodo",
-      "avaliar a abertura politica, a anistia e a transicao democratica",
+      "identificar o contexto do golpe de 1964 é a estrutura do regime militar",
+      "analisar autoritarismo, repressao, censura e resistência política",
+      "relacionar milagre economico, crise e desigualdades do período",
+      "avaliar a abertura política, a anistia é a transição democratica",
       "sintetizar os legados historicos da ditadura militar para o Brasil contemporaneo"
     ],
     planejamentoQuestoes: {

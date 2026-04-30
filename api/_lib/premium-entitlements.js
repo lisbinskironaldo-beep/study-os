@@ -83,7 +83,7 @@ function parseExternalReference(value) {
     const raw = String(value || "");
     const parts = raw.split(":");
 
-    if (parts[0] !== "rotanota") {
+    if (!["rotanota", "papiro-tools", "papiro_tools"].includes(parts[0])) {
         return {
             customerId: "",
             planId: ""

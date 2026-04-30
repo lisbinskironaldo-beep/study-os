@@ -1,16 +1,16 @@
 export const ortografiaEPontuacao = {
   "id": "portugues_ortografia_e_pontuacao",
-  "materia": "Portugues",
+  "materia": "Português",
   "serie": [
     1
   ],
-  "topico": "Ortografia e Pontuacao",
+  "topico": "Ortografia e Pontuação",
   "metadados": {
     "disciplinaId": "portugues",
     "base": "ESCOLAR",
     "seloEditorial": "VERIFICADA",
-    "eixo": "Escrita e convenções da lingua",
-    "frente": "Ortografia oficial e sinais de pontuacao",
+    "eixo": "Escrita e convenções da língua",
+    "frente": "Ortografia oficial e sinais de pontuação",
     "searchAliases": [
       "acentuacao grafica",
       "pontuacao",
@@ -27,7 +27,7 @@ export const ortografiaEPontuacao = {
       "Uso de G e J",
       "Mas e mais",
       "Mal e mau",
-      "A e ha",
+      "A e há",
       "Onde e aonde",
       "Por que, porque, por que e porque",
       "Paronimos e homofonos",
@@ -38,16 +38,16 @@ export const ortografiaEPontuacao = {
       "Dois-pontos",
       "Travessao",
       "Ponto e virgula",
-      "Efeito de sentido da pontuacao",
-      "Interpretacao indireta",
-      "Reescrita com correcao"
+      "Efeito de sentido da pontuação",
+      "Interpretação indireta",
+      "Reescrita com correção"
     ],
     "habilidadesBase": [
       "aplicar regras ortograficas e de acentuacao em contextos de uso",
       "distinguir palavras e expressoes de grafia ou emprego proximos",
-      "identificar efeitos de sentido produzidos pela pontuacao",
-      "empregar corretamente sinais de pontuacao em frases e periodos",
-      "reescrever trechos com correcao ortografica e pontuacao adequada"
+      "identificar efeitos de sentido produzidos pela pontuação",
+      "empregar corretamente sinais de pontuação em frases e periodos",
+      "reescrever trechos com correção ortografica e pontuação adequada"
     ],
     "auditado": true,
     "auditadoEm": "2026-04-12",
@@ -59,22 +59,22 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Acentuacao grafica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que todas as palavras estao corretamente acentuadas.",
+      "enunciado": "Assinale a alternativa em que todas as palavras estão corretamente acentuadas.",
       "opcoes": [
-        "lapis, onibus, matematica",
-        "lapis, onibus, matematica",
-        "lapis, onibus, matematica",
-        "lapos, onibus, matematica"
+        "lápis, ônibus, matemática",
+        "lapis, ônibus, matemática",
+        "lápis, ônibus, matemáticá",
+        "lápis ônibus matemática"
       ],
-      "correta": "lapis, onibus, matematica",
-      "comentario": "As tras palavras exigem acento gráfico conforme as regras de acentuacao da lingua portuguesa.",
+      "correta": "lápis, ônibus, matemática",
+      "comentario": "As três palavras exigem acento gráfico conforme as regras de acentuação da língua portuguesa.",
       "tempoEstimado": 20,
       "tags": [
         "acentuacao",
@@ -97,22 +97,20 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Acentuacao grafica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa completa corretamente a frase? \"Ontem, a diretora ____ que o laboraterio ficará aberto ate mais tarde.\"",
+      "enunciado": "Qual alternativa completa corretamente a frase? \"Ontem, a diretora ____ que o laboraterio ficará aberto até mais tarde.\"",
       "opcoes": [
         "anunciou",
-        "anunciou",
-        "anunciou",
-        "anunciou"
+        "anunciouo"
       ],
       "correta": "anunciou",
-      "comentario": "\"Anunciou\" nao recebe acento gráfico nessa forma verbal.",
+      "comentario": "\"Anunciou\" não recebe acento gráfico nessa forma verbal.",
       "tempoEstimado": 20,
       "tags": [
         "acentuacao",
@@ -135,8 +133,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Acentuacao grafica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -173,8 +171,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de S e Z",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -211,8 +209,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de S e Z",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -222,11 +220,11 @@ export const ortografiaEPontuacao = {
       "opcoes": [
         "analise",
         "analize",
-        "analise",
-        "análise"
+        "análise",
+        "analiseo"
       ],
       "correta": "analise",
-      "comentario": "O substantivo correto e \"analise\", com S e acento agudo.",
+      "comentario": "O substantivo correto e \"análise\", com S e acento agudo.",
       "tempoEstimado": 20,
       "tags": [
         "ortografia",
@@ -250,8 +248,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de X e CH",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -288,8 +286,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de X e CH",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -326,8 +324,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de G e J",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -364,8 +362,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de G e J",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -402,8 +400,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Mas e mais",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -413,8 +411,8 @@ export const ortografiaEPontuacao = {
       "opcoes": [
         "mais",
         "mas",
-        "mais",
-        "maiz"
+        "maiz",
+        "más"
       ],
       "correta": "mas",
       "comentario": "\"Mas\" indica oposicao; \"mais\" expressa ideia de quantidade ou intensidade.",
@@ -440,8 +438,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Mal e mau",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -450,9 +448,9 @@ export const ortografiaEPontuacao = {
       "enunciado": "Assinale a opção que completa corretamente a frase: \"Depois de dormir pouco, ele passou o dia de ____ humor.\"",
       "opcoes": [
         "mal",
-        "mal",
         "mau",
-        "ma"
+        "ma",
+        "máu"
       ],
       "correta": "mau",
       "comentario": "\"Mau\" e adjetivo e se opoe a \"bom\". Na expressao \"mau humor\", essa e a forma adequada.",
@@ -478,9 +476,9 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "A e ha",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "A e há",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
@@ -493,7 +491,7 @@ export const ortografiaEPontuacao = {
         "a"
       ],
       "correta": "a",
-      "comentario": "Quando a ideia e de tempo futuro, usa-se \"a\". \"Ha\" indica tempo passado.",
+      "comentario": "Quando a ideia e de tempo futuro, usa-se \"a\". \"Há\" indica tempo passado.",
       "tempoEstimado": 20,
       "tags": [
         "a-ha",
@@ -516,14 +514,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Onde e aonde",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Complete corretamente a frase: \"Voce sabe ____ eles vao depois da aula?\"",
+      "enunciado": "Complete corretamente a frase: \"Você sabe ____ eles vao depois da aula?\"",
       "opcoes": [
         "aonde",
         "onde",
@@ -554,8 +552,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Por que, porque, por que e porque",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -565,8 +563,8 @@ export const ortografiaEPontuacao = {
       "opcoes": [
         "porque",
         "por que",
-        "por que",
-        "porque"
+        "por que?",
+        "Assinale a alternativa que completa corretamente a frase: \"Ninguém explicou ____ o experimento foi cancelado."
       ],
       "correta": "por que",
       "comentario": "Nesse caso, a expressao equivale a \"por qual motivo\", por isso a forma correta e \"por que\".",
@@ -592,8 +590,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Paronimos e homofonos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -630,8 +628,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula em enumeracao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -669,14 +667,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula com vocativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o vocativo esta pontuado corretamente.",
+      "enunciado": "Assinale a alternativa em que o vocativo está pontuado corretamente.",
       "opcoes": [
         "Lucas, feche a janela, por favor.",
         "Lucas feche, a janela por favor.",
@@ -708,21 +706,21 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula com aposto",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em qual alternativa o aposto esta corretamente isolado por virgulas?",
+      "enunciado": "Em qual alternativa o aposto está corretamente isolado por virgulas?",
       "opcoes": [
-        "Machado de Assis grande escritor brasileiro, e lido ate hoje.",
-        "Machado de Assis, grande escritor brasileiro, e lido ate hoje.",
-        "Machado de Assis, grande escritor brasileiro e lido ate hoje.",
-        "Machado de Assis, grande escritor brasileiro, e lido ate hoje."
+        "Machado de Assis grande escritor brasileiro, e lido até hoje.",
+        "Machado de Assis, grande escritor brasileiro, e lido até hoje.",
+        "Machado de Assis, grande escritor brasileiro e lido até hoje.",
+        "Machado de Assis, grande escritor brasileiro, e lido até hoje"
       ],
-      "correta": "Machado de Assis, grande escritor brasileiro, e lido ate hoje.",
+      "correta": "Machado de Assis, grande escritor brasileiro, e lido até hoje.",
       "comentario": "O trecho explicativo \"grande escritor brasileiro\" funciona como aposto e deve ser isolado por virgulas.",
       "tempoEstimado": 25,
       "tags": [
@@ -747,8 +745,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula com termo deslocado",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -786,8 +784,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Dois-pontos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -795,12 +793,12 @@ export const ortografiaEPontuacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Em qual alternativa os dois-pontos foram usados corretamente?",
       "opcoes": [
-        "A coordenadora: fez um pedido silencio durante a apresentacao.",
-        "A coordenadora fez um pedido silencio: durante a apresentacao.",
-        "A coordenadora fez: um pedido silencio durante a apresentacao.",
-        "A coordenadora fez um pedido: silencio durante a apresentacao."
+        "A coordenadora: fez um pedido silencio durante a apresentação.",
+        "A coordenadora fez um pedido silencio: durante a apresentação.",
+        "A coordenadora fez: um pedido silencio durante a apresentação.",
+        "A coordenadora fez um pedido: silencio durante a apresentação."
       ],
-      "correta": "A coordenadora fez um pedido: silencio durante a apresentacao.",
+      "correta": "A coordenadora fez um pedido: silencio durante a apresentação.",
       "comentario": "Os dois-pontos introduzem adequadamente a explicacao do pedido feito.",
       "tempoEstimado": 20,
       "tags": [
@@ -824,8 +822,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Travessao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -833,12 +831,12 @@ export const ortografiaEPontuacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a alternativa em que o travessao foi empregado adequadamente para marcar fala no dialogo.",
       "opcoes": [
-        "Voce terminou o exercicio? - perguntou a professora.",
-        "Voce - terminou o exercicio? perguntou a professora.",
-        "- Voce terminou o exercicio? - perguntou a professora.",
-        "Voce terminou o exercicio e perguntou a professora."
+        "Você terminou o exercicio? - perguntou a professora.",
+        "Você - terminou o exercicio? perguntou a professora.",
+        "- Você terminou o exercicio? - perguntou a professora.",
+        "Você terminou o exercicio e perguntou a professora."
       ],
-      "correta": "Voce terminou o exercicio? - perguntou a professora.",
+      "correta": "Você terminou o exercicio? - perguntou a professora.",
       "comentario": "O travessao marca corretamente a fala da personagem e a indicacao do interlocutor.",
       "tempoEstimado": 20,
       "tags": [
@@ -863,8 +861,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Ponto e virgula",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -901,14 +899,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Efeito de sentido da pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Efeito de sentido da pontuação",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Na frase \"Nao, espere\", a virgula contribui principalmente para:",
+      "enunciado": "Na frase \"Não, espere\", a virgula contribui principalmente para:",
       "opcoes": [
         "indicar enumeracao de objetos",
         "marcar uma explicacao extensa",
@@ -939,9 +937,9 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Reescrita com correcao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Reescrita com correção",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
@@ -979,9 +977,9 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
@@ -1019,8 +1017,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Acentuacao grafica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -1029,9 +1027,8 @@ export const ortografiaEPontuacao = {
       "enunciado": "Assinale a alternativa em que a palavra completa corretamente a frase: \"O aluno consultou o ____ escolar antes da matrícula.\"",
       "opcoes": [
         "historico",
-        "historico",
-        "historico",
-        "histórico"
+        "histórico",
+        "historicoo"
       ],
       "correta": "historico",
       "comentario": "A forma correta e \"historico\", com acento agudo na solaba tunica.",
@@ -1057,19 +1054,19 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Acentuacao grafica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em qual alternativa a palavra esta grafada corretamente?",
+      "enunciado": "Em qual alternativa a palavra está grafada corretamente?",
       "opcoes": [
         "saida",
         "saída",
-        "saída",
-        "soida"
+        "soida",
+        "saidao"
       ],
       "correta": "saída",
       "comentario": "A forma correta e \"saída\", com acento no i tunico em hiato.",
@@ -1095,8 +1092,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de S e Z",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -1133,14 +1130,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de S e Z",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que a palavra esta escrita corretamente.",
+      "enunciado": "Assinale a alternativa em que a palavra está escrita corretamente.",
       "opcoes": [
         "certeza",
         "certesa",
@@ -1171,8 +1168,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de X e CH",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -1209,8 +1206,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de X e CH",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1247,8 +1244,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de G e J",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1285,8 +1282,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de G e J",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1323,8 +1320,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Mas e mais",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1335,7 +1332,7 @@ export const ortografiaEPontuacao = {
         "mais",
         "mas",
         "maiz",
-        "mais"
+        "más"
       ],
       "correta": "mas",
       "comentario": "\"Mas\" indica oposicao entre o desejo de sair cedo e a necessidade de continuar o trabalho.",
@@ -1361,8 +1358,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Mal e mau",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1373,7 +1370,7 @@ export const ortografiaEPontuacao = {
         "mau",
         "ma",
         "mal",
-        "mal"
+        "máu"
       ],
       "correta": "mal",
       "comentario": "\"Mal\" funciona como adverbio, indicando o modo ou estado em que a pessoa se sentiu.",
@@ -1399,9 +1396,9 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "A e ha",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "A e há",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
@@ -1414,7 +1411,7 @@ export const ortografiaEPontuacao = {
         "ha"
       ],
       "correta": "ha",
-      "comentario": "\"Ha\" e usado para indicar tempo decorrido no passado.",
+      "comentario": "\"Há\" e usado para indicar tempo decorrido no passado.",
       "tempoEstimado": 20,
       "tags": [
         "a-ha",
@@ -1437,8 +1434,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Onde e aonde",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1475,8 +1472,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Por que, porque, por que e porque",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1486,8 +1483,8 @@ export const ortografiaEPontuacao = {
       "opcoes": [
         "por que",
         "porque",
-        "por que",
-        "porque"
+        "porquê",
+        "por quê"
       ],
       "correta": "porque",
       "comentario": "\"Porque\" e usado para introduzir causa ou explicacao.",
@@ -1513,19 +1510,19 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Por que, porque, por que e porque",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa completa corretamente a pergunta? \"Voce nao veio ontem ____?\"",
+      "enunciado": "Qual alternativa completa corretamente a pergunta? \"Você não veio ontem ____?\"",
       "opcoes": [
         "porque",
         "por que",
-        "por que",
-        "porque"
+        "por que?",
+        "Qual alternativa completa corretamente a pergunta? \"Você não veio ontem ____?"
       ],
       "correta": "por que",
       "comentario": "No fim da pergunta, a forma correta e \"por que\", com acento.",
@@ -1551,8 +1548,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Paronimos e homofonos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1589,8 +1586,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Paronimos e homofonos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1604,7 +1601,7 @@ export const ortografiaEPontuacao = {
         "sesao"
       ],
       "correta": "sessao",
-      "comentario": "\"Sessao\" se refere a reuniao, periodo ou atividade marcada. Nesse contexto, e a forma adequada.",
+      "comentario": "\"Sessao\" se refere a reuniao, período ou atividade marcada. Nesse contexto, e a forma adequada.",
       "tempoEstimado": 25,
       "tags": [
         "paronimos",
@@ -1627,8 +1624,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula em enumeracao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1666,21 +1663,21 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula com vocativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa com pontuacao correta do vocativo.",
+      "enunciado": "Assinale a alternativa com pontuação correta do vocativo.",
       "opcoes": [
-        "Amigos prestem, atencao ao aviso.",
-        "Amigos prestem atencao, ao aviso.",
-        "Amigos, prestem atencao ao aviso.",
-        "Amigos prestem atencao ao aviso."
+        "Amigos prestem, atenção ao aviso.",
+        "Amigos prestem atenção, ao aviso.",
+        "Amigos, prestem atenção ao aviso.",
+        "Amigos prestem atenção ao aviso."
       ],
-      "correta": "Amigos, prestem atencao ao aviso.",
+      "correta": "Amigos, prestem atenção ao aviso.",
       "comentario": "O vocativo \"Amigos\" deve ser separado por virgula.",
       "tempoEstimado": 20,
       "tags": [
@@ -1705,14 +1702,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula com aposto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em qual alternativa o aposto esta pontuado corretamente?",
+      "enunciado": "Em qual alternativa o aposto está pontuado corretamente?",
       "opcoes": [
         "Santos Dumont pioneiro da aviacao, e tema de muitos estudos.",
         "Santos Dumont, pioneiro da aviacao e tema de muitos estudos.",
@@ -1744,8 +1741,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula com termo deslocado",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1783,8 +1780,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Dois-pontos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1821,8 +1818,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Travessao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1860,8 +1857,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Ponto e virgula",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1898,14 +1895,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Efeito de sentido da pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Efeito de sentido da pontuação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Compare: I. \"Que surpresa!\" II. \"Que surpresa?\" A diferenca principal entre as frases esta no fato de que a pontuacao:",
+      "enunciado": "Compare: I. \"Que surpresa!\" II. \"Que surpresa?\" A diferenca principal entre as frases está no fato de que a pontuação:",
       "opcoes": [
         "altera a entonacao e o efeito de sentido do enunciado",
         "corrige um erro ortográfico na segunda frase",
@@ -1936,22 +1933,22 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Reescrita com correcao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Reescrita com correção",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa reescreve corretamente a frase \"Aonde voce mora\"?",
+      "enunciado": "Qual alternativa reescreve corretamente a frase \"Aonde você mora\"?",
       "opcoes": [
-        "Aonde voce mora?",
-        "Onde voce mora?",
-        "Onde voce mora.",
-        "A onde voce mora?"
+        "Aonde você mora?",
+        "Onde você mora?",
+        "Onde você mora.",
+        "A onde você mora?"
       ],
-      "correta": "Onde voce mora?",
-      "comentario": "Com o verbo \"morar\", a forma adequada e \"onde\", pois a ideia e de permanencia, nao de movimento. A frase tambem pede ponto de interrogacao.",
+      "correta": "Onde você mora?",
+      "comentario": "Com o verbo \"morar\", a forma adequada e \"onde\", pois a ideia e de permanencia, não de movimento. A frase também pede ponto de interrogacao.",
       "tempoEstimado": 30,
       "tags": [
         "reescrita",
@@ -1976,14 +1973,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Acentuacao grafica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que a palavra esta escrita corretamente.",
+      "enunciado": "Assinale a alternativa em que a palavra está escrita corretamente.",
       "opcoes": [
         "juizes",
         "juaseis",
@@ -2014,8 +2011,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de S e Z",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -2052,19 +2049,19 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de X e CH",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa completa corretamente a frase? \"Nao se deve ____ no material dos colegas sem permissao.\"",
+      "enunciado": "Qual alternativa completa corretamente a frase? \"Não se deve ____ no material dos colegas sem permissao.\"",
       "opcoes": [
         "mexer",
         "mecher",
-        "mexer",
-        "mecherr"
+        "mecherr",
+        "mexerr"
       ],
       "correta": "mexer",
       "comentario": "A grafia correta do verbo e \"mexer\", com X.",
@@ -2090,8 +2087,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de G e J",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -2128,8 +2125,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Mas e mais",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -2139,8 +2136,8 @@ export const ortografiaEPontuacao = {
       "opcoes": [
         "mas",
         "mais",
-        "mais",
-        "maiz"
+        "maiz",
+        "más"
       ],
       "correta": "mais",
       "comentario": "\"Mais\" indica aumento de quantidade. \"Mas\" introduz oposicao.",
@@ -2166,8 +2163,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Mal e mau",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -2178,7 +2175,7 @@ export const ortografiaEPontuacao = {
         "mau",
         "mal",
         "ma",
-        "mal"
+        "máu"
       ],
       "correta": "mal",
       "comentario": "\"Fazer mal\" e a expressao correta nesse contexto. \"Mau\" funciona como adjetivo.",
@@ -2204,22 +2201,22 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "A e ha",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "A e há",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa completa corretamente a frase? \"____ muitos alunos esperando o inicio da palestra.\"",
       "opcoes": [
-        "Ha",
+        "Há",
         "A",
         "Ah",
         "à"
       ],
-      "correta": "Ha",
-      "comentario": "\"Ha\" e usado com sentido de existir.",
+      "correta": "Há",
+      "comentario": "\"Há\" e usado com sentido de existir.",
       "tempoEstimado": 20,
       "tags": [
         "a-ha",
@@ -2243,14 +2240,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Onde e aonde",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Complete corretamente a frase: \"____ voce quer chegar com essa explicacao?\"",
+      "enunciado": "Complete corretamente a frase: \"____ você quer chegar com essa explicacao?\"",
       "opcoes": [
         "Onde",
         "Aonde",
@@ -2281,19 +2278,19 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Por que, porque, por que e porque",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que completa corretamente a frase: \"Ninguém entendeu o ____ da mudanca de horario.\"",
+      "enunciado": "Assinale a alternativa que completa corretamente a frase: \"Ninguém entendeu o ____ da mudança de horario.\"",
       "opcoes": [
         "por que",
         "porque",
-        "porque",
-        "por que"
+        "porquê",
+        "por quê"
       ],
       "correta": "porque",
       "comentario": "Quando atua como substantivo e pode vir com artigo, usa-se \"porque\".",
@@ -2319,8 +2316,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Paronimos e homofonos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -2357,14 +2354,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula em enumeracao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em qual alternativa a enumeracao esta corretamente pontuada?",
+      "enunciado": "Em qual alternativa a enumeracao está corretamente pontuada?",
       "opcoes": [
         "Trouxe caderno, livro, pasta e estojo.",
         "Trouxe caderno livro, pasta e estojo.",
@@ -2396,8 +2393,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula com vocativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -2435,14 +2432,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula com aposto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em qual alternativa o aposto esta corretamente isolado por virgulas?",
+      "enunciado": "Em qual alternativa o aposto está corretamente isolado por virgulas?",
       "opcoes": [
         "Brasolia capital do Brasil, recebe muitos visitantes.",
         "Brasolia, capital do Brasil recebe muitos visitantes.",
@@ -2474,8 +2471,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula com termo deslocado",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -2483,12 +2480,12 @@ export const ortografiaEPontuacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a alternativa em que a virgula foi usada corretamente com termo deslocado.",
       "opcoes": [
-        "Com muita, atencao a turma ouviu as instrucoes.",
-        "Com muita atencao a turma, ouviu as instrucoes.",
-        "Com muita atencao a turma ouviu, as instrucoes.",
-        "Com muita atencao, a turma ouviu as instrucoes."
+        "Com muita, atenção a turma ouviu as instrucoes.",
+        "Com muita atenção a turma, ouviu as instrucoes.",
+        "Com muita atenção a turma ouviu, as instrucoes.",
+        "Com muita atenção, a turma ouviu as instrucoes."
       ],
-      "correta": "Com muita atencao, a turma ouviu as instrucoes.",
+      "correta": "Com muita atenção, a turma ouviu as instrucoes.",
       "comentario": "A virgula separa adequadamente o adjunto adverbial deslocado no inicio da oracao.",
       "tempoEstimado": 25,
       "tags": [
@@ -2513,8 +2510,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Dois-pontos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -2551,22 +2548,22 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Travessao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em qual alternativa o travessao foi usado corretamente para isolar uma informacao explicativa?",
+      "enunciado": "Em qual alternativa o travessao foi usado corretamente para isolar uma informação explicativa?",
       "opcoes": [
-        "A leitura e habito importante amplia o repertorio.",
-        "A leitura e habito importante e amplia o repertorio.",
-        "A leitura habito importante e amplia o repertorio.",
-        "A leitura habito e importante amplia o repertorio."
+        "A leitura e hábito importante amplia o repertório.",
+        "A leitura e hábito importante e amplia o repertório.",
+        "A leitura hábito importante e amplia o repertório.",
+        "A leitura hábito e importante amplia o repertório."
       ],
-      "correta": "A leitura e habito importante e amplia o repertorio.",
-      "comentario": "O travessao pode isolar uma informacao explicativa intercalada no periodo.",
+      "correta": "A leitura e hábito importante e amplia o repertório.",
+      "comentario": "O travessao pode isolar uma informação explicativa intercalada no período.",
       "tempoEstimado": 25,
       "tags": [
         "pontuacao",
@@ -2590,8 +2587,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Ponto e virgula",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -2605,7 +2602,7 @@ export const ortografiaEPontuacao = {
         "Participaram Ana da equipe azul; Bruno da verde e; Carla da amarela."
       ],
       "correta": "Participaram Ana, da equipe azul; Bruno, da verde; e Carla, da amarela.",
-      "comentario": "O ponto e virgula ajuda a separar itens mais complexos de uma enumeracao que ja contem virgulas.",
+      "comentario": "O ponto e virgula ajuda a separar itens mais complexos de uma enumeracao que já contém virgulas.",
       "tempoEstimado": 30,
       "tags": [
         "pontuacao",
@@ -2629,9 +2626,9 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Efeito de sentido da pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Efeito de sentido da pontuação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
@@ -2667,22 +2664,22 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Compare: I. \"Nao, quero saber.\" II. \"Nao quero saber.\" A virgula na frase I altera o sentido porque:",
+      "enunciado": "Compare: I. \"Não, quero saber.\" II. \"Não quero saber.\" A virgula na frase I altera o sentido porque:",
       "opcoes": [
-        "separa a negativa do restante da frase e produz um enunciado afirmativo em relacao ao verbo seguinte",
+        "separa a negativa do restante da frase e produz um enunciado afirmativo em relação ao verbo seguinte",
         "serve apenas para marcar uma pausa sem efeito de sentido",
         "transforma o verbo em substantivo",
         "indica uma enumeracao incompleta"
       ],
-      "correta": "separa a negativa do restante da frase e produz um enunciado afirmativo em relacao ao verbo seguinte",
-      "comentario": "Na frase I, a virgula muda a organizacao sintetica e o sentido global do enunciado.",
+      "correta": "separa a negativa do restante da frase e produz um enunciado afirmativo em relação ao verbo seguinte",
+      "comentario": "Na frase I, a virgula muda a organização sintetica e o sentido global do enunciado.",
       "tempoEstimado": 35,
       "tags": [
         "interpretacao-indireta",
@@ -2706,9 +2703,9 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Reescrita com correcao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Reescrita com correção",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "aplicacao",
@@ -2745,19 +2742,19 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Acentuacao grafica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que a palavra esta corretamente acentuada.",
+      "enunciado": "Assinale a alternativa em que a palavra está corretamente acentuada.",
       "opcoes": [
         "bau",
         "baúu",
         "baú",
-        "baú"
+        "bauo"
       ],
       "correta": "baú",
       "comentario": "A forma correta e \"baú\", com acento no u tunico em hiato.",
@@ -2783,8 +2780,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Por que, porque, por que e porque",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -2794,8 +2791,8 @@ export const ortografiaEPontuacao = {
       "opcoes": [
         "porque",
         "por que",
-        "porque",
-        "por que"
+        "por que?",
+        "Qual alternativa completa corretamente a frase? \"A professora perguntou ____ ninguem havia entregado o exercicio."
       ],
       "correta": "por que",
       "comentario": "Nesse caso, a expressao equivale a \"por qual motivo\", por isso se usa \"por que\".",
@@ -2821,8 +2818,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Paronimos e homofonos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -2833,10 +2830,10 @@ export const ortografiaEPontuacao = {
         "conserto",
         "concerto",
         "consserto",
-        "conserto"
+        "conzerto"
       ],
       "correta": "conserto",
-      "comentario": "\"Conserto\" e reparo; \"concerto\" se refere a apresentacao musical.",
+      "comentario": "\"Conserto\" e reparo; \"concerto\" se refere a apresentação musical.",
       "tempoEstimado": 25,
       "tags": [
         "paronimos",
@@ -2859,9 +2856,9 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
@@ -2869,11 +2866,11 @@ export const ortografiaEPontuacao = {
       "enunciado": "Compare: I. \"Os alunos que estudaram passaram.\" II. \"Os alunos, que estudaram, passaram.\" A diferenca principal entre as frases e que, na II, as virgulas sugerem:",
       "opcoes": [
         "que apenas parte dos alunos estudou",
-        "que a informacao \"que estudaram\" e explicativa e se aplica ao grupo inteiro",
-        "que nao houve relacao entre estudo e aprovacao",
+        "que a informação \"que estudaram\" e explicativa e se aplica ao grupo inteiro",
+        "que não houve relação entre estudo e aprovacao",
         "que a oracao foi transformada em pergunta"
       ],
-      "correta": "que a informacao \"que estudaram\" e explicativa e se aplica ao grupo inteiro",
+      "correta": "que a informação \"que estudaram\" e explicativa e se aplica ao grupo inteiro",
       "comentario": "As virgulas transformam a oracao em explicativa, produzindo um sentido diferente do da oracao restritiva.",
       "tempoEstimado": 40,
       "tags": [
@@ -2898,22 +2895,22 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Reescrita com correcao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Reescrita com correção",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa reescreve corretamente a frase \"Porque voce faltou a aula ontem\"?",
+      "enunciado": "Qual alternativa reescreve corretamente a frase \"Porque você faltou a aula ontem\"?",
       "opcoes": [
-        "Porque voce faltou a aula ontem?",
-        "Por que voce faltou a aula ontem.",
-        "Por que voce faltou a aula ontem?",
-        "Porque voce faltou a aula ontem?"
+        "Porque você faltou a aula ontem?",
+        "Por que você faltou a aula ontem.",
+        "Por que você faltou a aula ontem?",
+        "Por que você faltou a aula ontem"
       ],
-      "correta": "Por que voce faltou a aula ontem?",
-      "comentario": "Em pergunta direta, usa-se \"por que\". A frase tambem exige ponto de interrogacao e a crase em \"? aula\".",
+      "correta": "Por que você faltou a aula ontem?",
+      "comentario": "Em pergunta direta, usa-se \"por que\". A frase também exige ponto de interrogacao e a crase em \"? aula\".",
       "tempoEstimado": 35,
       "tags": [
         "reescrita",
@@ -2938,19 +2935,19 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Mas e mais",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa completa corretamente a frase? \"O texto e curto, ____ exige atencao na leitura.\"",
+      "enunciado": "Qual alternativa completa corretamente a frase? \"o texto é curto, ____ exige atenção na leitura.\"",
       "opcoes": [
         "mais",
         "maiz",
-        "mais",
-        "mas"
+        "mas",
+        "más"
       ],
       "correta": "mas",
       "comentario": "\"Mas\" introduz oposicao entre as ideias. \"Mais\" indica quantidade ou intensidade.",
@@ -2976,22 +2973,22 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Mal e mau",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que completa corretamente a frase: \"Ela passou ____ na apresentacao por causa do nervosismo.\"",
+      "enunciado": "Assinale a alternativa que completa corretamente a frase: \"Ela passou ____ na apresentação por causa do nervosismo.\"",
       "opcoes": [
         "mal",
         "mau",
-        "mal",
-        "ma"
+        "ma",
+        "máu"
       ],
       "correta": "mal",
-      "comentario": "\"Mal\" funciona como adverbio e indica o modo como a apresentacao ocorreu.",
+      "comentario": "\"Mal\" funciona como adverbio e indica o modo como a apresentação ocorreu.",
       "tempoEstimado": 20,
       "tags": [
         "paronimos",
@@ -3014,9 +3011,9 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "A e ha",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "A e há",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "aplicacao",
@@ -3029,7 +3026,7 @@ export const ortografiaEPontuacao = {
         "à"
       ],
       "correta": "a",
-      "comentario": "Usa-se \"a\" para indicar tempo futuro. \"Ha\" marca tempo decorrido no passado.",
+      "comentario": "Usa-se \"a\" para indicar tempo futuro. \"Há\" marca tempo decorrido no passado.",
       "tempoEstimado": 20,
       "tags": [
         "a-ha",
@@ -3052,8 +3049,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Onde e aonde",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -3090,19 +3087,19 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Por que, porque, por que e porque",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa completa corretamente a frase? \"Gostaria de entender ____ voce mudou de opiniao.\"",
+      "enunciado": "Qual alternativa completa corretamente a frase? \"Gostaria de entender ____ você mudou de opiniao.\"",
       "opcoes": [
         "porque",
         "por que",
-        "porque",
-        "por que"
+        "por que?",
+        "Qual alternativa completa corretamente a frase? \"Gostaria de entender ____ você mudou de opiniao."
       ],
       "correta": "por que",
       "comentario": "Nesse contexto, a expressao equivale a \"por qual motivo\", por isso a forma correta e \"por que\".",
@@ -3128,8 +3125,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Paronimos e homofonos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -3166,8 +3163,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula em enumeracao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -3205,14 +3202,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula com vocativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o vocativo esta pontuado corretamente.",
+      "enunciado": "Assinale a alternativa em que o vocativo está pontuado corretamente.",
       "opcoes": [
         "Senhores a reuniao, começará em instantes.",
         "Senhores a reuniao começará, em instantes.",
@@ -3244,14 +3241,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula com aposto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em qual alternativa o aposto esta corretamente isolado por virgulas?",
+      "enunciado": "Em qual alternativa o aposto está corretamente isolado por virgulas?",
       "opcoes": [
         "Clarice Lispector escritora brasileira, publicou romances e contos marcantes.",
         "Clarice Lispector, escritora brasileira publicou romances e contos marcantes.",
@@ -3283,8 +3280,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula com termo deslocado",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -3322,8 +3319,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Dois-pontos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -3360,8 +3357,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Travessao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -3371,8 +3368,8 @@ export const ortografiaEPontuacao = {
       "opcoes": [
         "Amanhã - entregarei o trabalho afirmou a aluna.",
         "- Amanhã entregarei o trabalho - afirmou a aluna.",
-        "- Amanhã entregarei o trabalho - afirmou a aluna.",
-        "Amanhã entregarei o trabalho - afirmou a aluna"
+        "Amanhã entregarei o trabalho - afirmou a aluna",
+        "- Amanhã entregarei o trabalho - afirmou a aluna"
       ],
       "correta": "- Amanhã entregarei o trabalho - afirmou a aluna.",
       "comentario": "O travessao marca corretamente a fala da personagem e a indicacao do verbo de elocucao.",
@@ -3399,8 +3396,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Ponto e virgula",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -3409,8 +3406,8 @@ export const ortografiaEPontuacao = {
       "enunciado": "Assinale a alternativa em que o ponto e virgula foi usado adequadamente.",
       "opcoes": [
         "O prazo; termina hoje portanto, e melhor revisar o texto agora.",
-        "O prazo termina hoje,; portanto e melhor revisar o texto agora.",
-        "O prazo termina; hoje, portanto e melhor revisar o texto agora.",
+        "O prazo termina hoje,; portanto é melhor revisar o texto agora.",
+        "O prazo termina; hoje, portanto é melhor revisar o texto agora.",
         "O prazo termina hoje; portanto, e melhor revisar o texto agora."
       ],
       "correta": "O prazo termina hoje; portanto, e melhor revisar o texto agora.",
@@ -3437,9 +3434,9 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Efeito de sentido da pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Efeito de sentido da pontuação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
@@ -3475,14 +3472,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Compare: I. \"Nao, obrigado.\" II. \"Nao obrigado.\" A principal diferenca e que, na frase I, a virgula:",
+      "enunciado": "Compare: I. \"Não, obrigado.\" II. \"Não obrigado.\" A principal diferenca e que, na frase I, a virgula:",
       "opcoes": [
         "indica apenas uma pausa sem efeito de sentido",
         "ajuda a separar a recusa da forma de tratamento, produzindo um enunciado claro",
@@ -3514,21 +3511,21 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Reescrita com correcao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Reescrita com correção",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa reescreve corretamente a frase \"Joao por que voce saiu mais cedo\"?",
+      "enunciado": "Qual alternativa reescreve corretamente a frase \"Joao por que você saiu mais cedo\"?",
       "opcoes": [
-        "Joao por que voce saiu mais cedo.",
-        "Joao, porque voce saiu mais cedo?",
-        "Joao, por que voce saiu mais cedo?",
-        "Joao; por que voce saiu mais cedo?"
+        "Joao por que você saiu mais cedo.",
+        "Joao, porque você saiu mais cedo?",
+        "Joao, por que você saiu mais cedo?",
+        "Joao; por que você saiu mais cedo?"
       ],
-      "correta": "Joao, por que voce saiu mais cedo?",
+      "correta": "Joao, por que você saiu mais cedo?",
       "comentario": "A frase correta exige virgula para isolar o vocativo, ponto de interrogacao e o uso de \"por que\" em pergunta direta.",
       "tempoEstimado": 30,
       "tags": [
@@ -3554,14 +3551,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de S e Z",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que a palavra esta escrita corretamente.",
+      "enunciado": "Assinale a alternativa em que a palavra está escrita corretamente.",
       "opcoes": [
         "pezquisa",
         "pesquiza",
@@ -3592,8 +3589,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de X e CH",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -3603,8 +3600,8 @@ export const ortografiaEPontuacao = {
       "opcoes": [
         "xícara",
         "chacara",
-        "xícara",
-        "xícara"
+        "chícara",
+        "xicara"
       ],
       "correta": "xícara",
       "comentario": "A forma correta e \"xícara\", com X.",
@@ -3630,14 +3627,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de G e J",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que a palavra esta escrita corretamente.",
+      "enunciado": "Assinale a alternativa em que a palavra está escrita corretamente.",
       "opcoes": [
         "gorgeta",
         "gorjeta",
@@ -3668,14 +3665,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Acentuacao grafica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que a palavra esta corretamente acentuada.",
+      "enunciado": "Assinale a alternativa em que a palavra está corretamente acentuada.",
       "opcoes": [
         "pais",
         "país",
@@ -3706,19 +3703,19 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Por que, porque, por que e porque",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa completa corretamente a frase? \"O ____ de tanta pressa ainda nao ficou claro.\"",
+      "enunciado": "Qual alternativa completa corretamente a frase? \"O ____ de tanta pressa ainda não ficou claro.\"",
       "opcoes": [
         "porque",
         "por que",
-        "por que",
-        "porque"
+        "porquê",
+        "por quê"
       ],
       "correta": "porque",
       "comentario": "Quando funciona como substantivo e admite artigo, usa-se \"porque\".",
@@ -3744,8 +3741,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Paronimos e homofonos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -3759,7 +3756,7 @@ export const ortografiaEPontuacao = {
         "discressao"
       ],
       "correta": "descrição",
-      "comentario": "\"Descrição\" e exposicao de caracteristicas. \"Discrição\" se relaciona a reserva e moderacao.",
+      "comentario": "\"Descrição\" e exposicao de características. \"Discrição\" se relaciona a reserva e moderacao.",
       "tempoEstimado": 25,
       "tags": [
         "paronimos",
@@ -3782,9 +3779,9 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
@@ -3797,7 +3794,7 @@ export const ortografiaEPontuacao = {
         "substitui o uso do ponto final"
       ],
       "correta": "isola a expressao adverbial e organiza melhor a leitura do enunciado",
-      "comentario": "A virgula ajuda a destacar a condicao expressa por \"Se possovel\", tornando a articulacao do periodo mais clara.",
+      "comentario": "A virgula ajuda a destacar a condicao expressa por \"Se possovel\", tornando a articulação do período mais clara.",
       "tempoEstimado": 35,
       "tags": [
         "interpretacao-indireta",
@@ -3821,22 +3818,22 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Reescrita com correcao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Reescrita com correção",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa reescreve corretamente a frase \"Ha quanto tempo voce mora aqui\"?",
+      "enunciado": "Qual alternativa reescreve corretamente a frase \"Há quanto tempo você mora aqui\"?",
       "opcoes": [
-        "A quanto tempo voce mora aqui?",
-        "Ha quanto tempo voce mora aqui.",
-        "Ha quanto tempo voce mora aqui?",
-        "Ha quanto tempo voce mora aqui"
+        "A quanto tempo você mora aqui?",
+        "Há quanto tempo você mora aqui.",
+        "Há quanto tempo você mora aqui?",
+        "Há quanto tempo você mora aqui"
       ],
-      "correta": "Ha quanto tempo voce mora aqui?",
-      "comentario": "Para indicar tempo decorrido, usa-se \"ha\". Como se trata de pergunta direta, a frase exige ponto de interrogacao.",
+      "correta": "Há quanto tempo você mora aqui?",
+      "comentario": "Para indicar tempo decorrido, usa-se \"há\". Como se trata de pergunta direta, a frase exige ponto de interrogacao.",
       "tempoEstimado": 30,
       "tags": [
         "reescrita",
@@ -3861,14 +3858,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Efeito de sentido da pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Efeito de sentido da pontuação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Compare: I. \"Voce terminou.\" II. \"Voce terminou?\" A principal diferenca de sentido e que a segunda frase:",
+      "enunciado": "Compare: I. \"Você terminou.\" II. \"Você terminou?\" A principal diferenca de sentido e que a segunda frase:",
       "opcoes": [
         "elimina o sujeito da oracao",
         "corrige um erro ortográfico da primeira",
@@ -3900,8 +3897,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Mas e mais",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -3912,7 +3909,7 @@ export const ortografiaEPontuacao = {
         "mas",
         "mais",
         "maiz",
-        "mais"
+        "más"
       ],
       "correta": "mas",
       "comentario": "\"Mas\" introduz oposicao entre gostar da proposta e considerar que ela precisa de ajustes.",
@@ -3938,8 +3935,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Mas e mais",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -3949,8 +3946,8 @@ export const ortografiaEPontuacao = {
       "opcoes": [
         "mas",
         "mais",
-        "mais",
-        "maiz"
+        "maiz",
+        "más"
       ],
       "correta": "mais",
       "comentario": "\"Mais\" expressa aumento de quantidade.",
@@ -3976,19 +3973,19 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Mal e mau",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa completa corretamente a frase? \"Depois da discussao, ele ficou de ____ humor.\"",
+      "enunciado": "Qual alternativa completa corretamente a frase? \"Depois da discussão, ele ficou de ____ humor.\"",
       "opcoes": [
         "mal",
-        "mal",
         "mau",
-        "ma"
+        "ma",
+        "máu"
       ],
       "correta": "mau",
       "comentario": "\"Mau\" e adjetivo e se opoe a \"bom\". Na expressao \"mau humor\", essa e a forma correta.",
@@ -4014,8 +4011,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Mal e mau",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -4026,7 +4023,7 @@ export const ortografiaEPontuacao = {
         "mau",
         "mal",
         "ma",
-        "mal"
+        "máu"
       ],
       "correta": "mal",
       "comentario": "\"Mal\" funciona como adverbio, modificando o verbo \"explicado\".",
@@ -4052,14 +4049,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "A e ha",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "A e há",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa completa corretamente a frase? \"Daqui ____ alguns minutos, a apresentacao vai comecar.\"",
+      "enunciado": "Qual alternativa completa corretamente a frase? \"Daqui ____ alguns minutos, a apresentação vai comecar.\"",
       "opcoes": [
         "a",
         "ha",
@@ -4067,7 +4064,7 @@ export const ortografiaEPontuacao = {
         "à"
       ],
       "correta": "a",
-      "comentario": "Quando a ideia e de tempo futuro, a forma adequada e \"a\".",
+      "comentario": "Quando a ideia é de tempo futuro, a forma adequada é \"a\".",
       "tempoEstimado": 20,
       "tags": [
         "a-ha",
@@ -4090,22 +4087,22 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "A e ha",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "A e há",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que completa corretamente a frase: \"____ dois meses nao chovia com tanta intensidade.\"",
+      "enunciado": "Assinale a alternativa que completa corretamente a frase: \"____ dois meses não chovia com tanta intensidade.\"",
       "opcoes": [
         "A",
-        "Ha",
+        "Há",
         "Ah",
         "à"
       ],
-      "correta": "Ha",
-      "comentario": "\"Ha\" indica tempo decorrido no passado.",
+      "correta": "Há",
+      "comentario": "\"Há\" indica tempo decorrido no passado.",
       "tempoEstimado": 20,
       "tags": [
         "a-ha",
@@ -4128,14 +4125,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Onde e aonde",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Complete corretamente a frase: \"____ voce pretende chegar com esse argumento?\"",
+      "enunciado": "Complete corretamente a frase: \"____ você pretende chegar com esse argumento?\"",
       "opcoes": [
         "Onde",
         "A onde",
@@ -4166,8 +4163,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Onde e aonde",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -4204,21 +4201,21 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula em enumeracao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em qual alternativa a enumeracao esta corretamente pontuada?",
+      "enunciado": "Em qual alternativa a enumeracao está corretamente pontuada?",
       "opcoes": [
-        "No experimento usamos agua, sal, oleo e corante.",
-        "No experimento usamos agua sal, oleo e corante.",
-        "No experimento, usamos agua sal oleo, e corante.",
-        "No experimento usamos, agua, sal oleo e corante."
+        "No experimento usamos água, sal, oleo e corante.",
+        "No experimento usamos água sal, oleo e corante.",
+        "No experimento, usamos água sal oleo, e corante.",
+        "No experimento usamos, água, sal oleo e corante."
       ],
-      "correta": "No experimento usamos agua, sal, oleo e corante.",
+      "correta": "No experimento usamos água, sal, oleo e corante.",
       "comentario": "As virgulas separam corretamente os itens da enumeracao.",
       "tempoEstimado": 20,
       "tags": [
@@ -4243,14 +4240,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula com vocativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o vocativo esta pontuado corretamente.",
+      "enunciado": "Assinale a alternativa em que o vocativo está pontuado corretamente.",
       "opcoes": [
         "Professora posso, entregar o trabalho amanha?",
         "Professora, posso entregar o trabalho amanha?",
@@ -4282,14 +4279,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula com aposto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em qual alternativa o aposto esta corretamente isolado por virgulas?",
+      "enunciado": "Em qual alternativa o aposto está corretamente isolado por virgulas?",
       "opcoes": [
         "A Amazonia maior floresta tropical do planeta, tem enorme biodiversidade.",
         "A Amazonia, maior floresta tropical do planeta tem enorme biodiversidade.",
@@ -4321,8 +4318,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula com termo deslocado",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -4360,8 +4357,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Dois-pontos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -4398,21 +4395,21 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Travessao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em qual alternativa o travessao foi usado corretamente para isolar uma informacao explicativa?",
+      "enunciado": "Em qual alternativa o travessao foi usado corretamente para isolar uma informação explicativa?",
       "opcoes": [
-        "A leitura e habito fundamental amplia o repertorio cultural.",
-        "A leitura e habito fundamental e amplia o repertorio cultural.",
-        "A leitura habito fundamental e amplia o repertorio cultural.",
-        "A leitura habito e fundamental amplia o repertorio cultural."
+        "A leitura e hábito fundamental amplia o repertório cultural.",
+        "A leitura e hábito fundamental e amplia o repertório cultural.",
+        "A leitura hábito fundamental e amplia o repertório cultural.",
+        "A leitura hábito e fundamental amplia o repertório cultural."
       ],
-      "correta": "A leitura e habito fundamental e amplia o repertorio cultural.",
+      "correta": "A leitura e hábito fundamental e amplia o repertório cultural.",
       "comentario": "O travessao pode isolar uma explicacao intercalada, como ocorre no exemplo.",
       "tempoEstimado": 25,
       "tags": [
@@ -4437,8 +4434,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Ponto e virgula",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -4475,9 +4472,9 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Efeito de sentido da pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Efeito de sentido da pontuação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
@@ -4485,7 +4482,7 @@ export const ortografiaEPontuacao = {
       "enunciado": "Compare: I. \"Sim.\" II. \"Sim!\" A principal diferenca e que a segunda frase:",
       "opcoes": [
         "transforma a afirmacao em pergunta",
-        "elimina a concordancia verbal",
+        "elimina a concordância verbal",
         "passa a ter sentido de negacao",
         "apresenta maior intensidade expressiva"
       ],
@@ -4513,21 +4510,21 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Compare: I. \"Quando terminar, avise.\" II. \"Quando terminar avise.\" A virgula na frase I ajuda principalmente a:",
       "opcoes": [
-        "destacar a oracao adverbial e organizar melhor a leitura do periodo",
+        "destacar a oracao adverbial e organizar melhor a leitura do período",
         "transformar o verbo em substantivo",
         "eliminar a ideia de tempo",
         "substituir o ponto final"
       ],
-      "correta": "destacar a oracao adverbial e organizar melhor a leitura do periodo",
+      "correta": "destacar a oracao adverbial e organizar melhor a leitura do período",
       "comentario": "A virgula isola a oracao adverbial deslocada e torna a estrutura mais clara.",
       "tempoEstimado": 35,
       "tags": [
@@ -4552,9 +4549,9 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Reescrita com correcao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Reescrita com correção",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
@@ -4591,19 +4588,19 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Acentuacao grafica",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que a palavra esta corretamente acentuada.",
+      "enunciado": "Assinale a alternativa em que a palavra está corretamente acentuada.",
       "opcoes": [
         "saude",
         "saúde",
-        "saude",
-        "soude"
+        "soude",
+        "saudeo"
       ],
       "correta": "saude",
       "comentario": "A forma correta e \"saude\", com acento no u tunico em hiato.",
@@ -4629,8 +4626,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de S e Z",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -4667,8 +4664,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de X e CH",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -4705,8 +4702,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de G e J",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -4743,8 +4740,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Por que, porque, por que e porque",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -4753,9 +4750,9 @@ export const ortografiaEPontuacao = {
       "enunciado": "Qual alternativa completa corretamente a frase? \"Ele saiu cedo ____ precisava resolver um problema em casa.\"",
       "opcoes": [
         "por que",
-        "por que",
         "porque",
-        "porque"
+        "porquê",
+        "por quê"
       ],
       "correta": "porque",
       "comentario": "\"Porque\" introduz causa ou explicacao.",
@@ -4781,8 +4778,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Paronimos e homofonos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -4793,7 +4790,7 @@ export const ortografiaEPontuacao = {
         "eminente",
         "iminente",
         "eminnente",
-        "iminente"
+        "imimente"
       ],
       "correta": "iminente",
       "comentario": "\"Iminente\" significa prestes a acontecer. \"Eminente\" se refere a alguem ilustre ou elevado.",
@@ -4819,9 +4816,9 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Reescrita com correcao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Reescrita com correção",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
@@ -4834,7 +4831,7 @@ export const ortografiaEPontuacao = {
         "A onde voces foram ontem e por que voltaram cedo?"
       ],
       "correta": "Aonde voces foram ontem e por que voltaram cedo?",
-      "comentario": "Com o verbo \"ir\", usa-se \"aonde\". Ja \"por que\" aparece em pergunta direta. A frase tambem exige ponto de interrogacao.",
+      "comentario": "Com o verbo \"ir\", usa-se \"aonde\". Já \"por que\" aparece em pergunta direta. A frase também exige ponto de interrogacao.",
       "tempoEstimado": 35,
       "tags": [
         "reescrita",
@@ -4860,19 +4857,19 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Acentuacao grafica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que a palavra esta corretamente acentuada.",
+      "enunciado": "Assinale a alternativa em que a palavra está corretamente acentuada.",
       "opcoes": [
         "ruido",
         "ruído",
         "ruídoo",
-        "ruído"
+        "ruidoo"
       ],
       "correta": "ruído",
       "comentario": "A forma correta e \"ruído\", com acento no i tunico em hiato.",
@@ -4898,8 +4895,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de S e Z",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -4936,8 +4933,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de X e CH",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -4974,14 +4971,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de G e J",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que a palavra esta escrita corretamente.",
+      "enunciado": "Assinale a alternativa em que a palavra está escrita corretamente.",
       "opcoes": [
         "jejum",
         "gejum",
@@ -5012,19 +5009,19 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Mas e mais",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Complete corretamente a frase: \"Ela estudou bastante, ____ nao conseguiu terminar todas as questaes.\"",
+      "enunciado": "Complete corretamente a frase: \"Ela estudou bastante, ____ não conseguiu terminar todas as questaes.\"",
       "opcoes": [
         "mais",
         "mas",
-        "mais",
-        "maiz"
+        "maiz",
+        "más"
       ],
       "correta": "mas",
       "comentario": "\"Mas\" introduz oposicao entre as ideias apresentadas.",
@@ -5050,19 +5047,19 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Mal e mau",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que completa corretamente a frase: \"Aquele aluno nao e ____, apenas esta desmotivado.\"",
+      "enunciado": "Assinale a alternativa que completa corretamente a frase: \"Aquele aluno não e ____, apenas está desmotivado.\"",
       "opcoes": [
         "mal",
-        "mal",
         "mau",
-        "ma"
+        "ma",
+        "máu"
       ],
       "correta": "mau",
       "comentario": "\"Mau\" e adjetivo e caracteriza o aluno. \"Mal\" costuma funcionar como adverbio.",
@@ -5088,9 +5085,9 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "A e ha",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "A e há",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
@@ -5103,7 +5100,7 @@ export const ortografiaEPontuacao = {
         "ha"
       ],
       "correta": "ha",
-      "comentario": "\"Ha\" indica tempo decorrido no passado.",
+      "comentario": "\"Há\" indica tempo decorrido no passado.",
       "tempoEstimado": 20,
       "tags": [
         "a-ha",
@@ -5126,14 +5123,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Onde e aonde",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que completa corretamente a frase: \"Nao sei ____ deixei meu caderno.\"",
+      "enunciado": "Assinale a alternativa que completa corretamente a frase: \"Não sei ____ deixei meu caderno.\"",
       "opcoes": [
         "onde",
         "aonde",
@@ -5164,19 +5161,19 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Por que, porque, por que e porque",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que completa corretamente a frase: \"Voce saiu cedo, ____?\"",
+      "enunciado": "Assinale a alternativa que completa corretamente a frase: \"Você saiu cedo, ____?\"",
       "opcoes": [
         "porque",
         "por que",
-        "por que",
-        "porque"
+        "por que?",
+        "Assinale a alternativa que completa corretamente a frase: \"Você saiu cedo, ____?"
       ],
       "correta": "por que",
       "comentario": "No fim de pergunta direta, a forma correta e \"por que\", com acento.",
@@ -5202,8 +5199,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Paronimos e homofonos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -5213,7 +5210,6 @@ export const ortografiaEPontuacao = {
       "opcoes": [
         "tráfico",
         "trafego",
-        "tráfego",
         "tráfego"
       ],
       "correta": "tráfego",
@@ -5240,8 +5236,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula em enumeracao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -5279,14 +5275,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula com vocativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o vocativo esta pontuado corretamente.",
+      "enunciado": "Assinale a alternativa em que o vocativo está pontuado corretamente.",
       "opcoes": [
         "Pedro, guarde seu celular agora.",
         "Pedro guarde, seu celular agora.",
@@ -5318,14 +5314,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula com aposto",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em qual alternativa o aposto esta corretamente isolado por virgulas?",
+      "enunciado": "Em qual alternativa o aposto está corretamente isolado por virgulas?",
       "opcoes": [
         "Carlos Drummond de Andrade poeta mineiro, escreveu obras marcantes.",
         "Carlos Drummond de Andrade, poeta mineiro, escreveu obras marcantes.",
@@ -5357,8 +5353,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula com termo deslocado",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -5396,8 +5392,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Dois-pontos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -5405,12 +5401,12 @@ export const ortografiaEPontuacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa apresenta uso correto dos dois-pontos?",
       "opcoes": [
-        "Ela concluiu: o seguinte precisava revisar mais o conteudo.",
-        "Ela concluiu o seguinte precisava: revisar mais o conteudo.",
-        "Ela concluiu o: seguinte precisava revisar mais o conteudo.",
-        "Ela concluiu o seguinte: precisava revisar mais o conteudo."
+        "Ela concluiu: o seguinte precisava revisar mais o conteúdo.",
+        "Ela concluiu o seguinte precisava: revisar mais o conteúdo.",
+        "Ela concluiu o: seguinte precisava revisar mais o conteúdo.",
+        "Ela concluiu o seguinte: precisava revisar mais o conteúdo."
       ],
-      "correta": "Ela concluiu o seguinte: precisava revisar mais o conteudo.",
+      "correta": "Ela concluiu o seguinte: precisava revisar mais o conteúdo.",
       "comentario": "Os dois-pontos introduzem adequadamente a explicacao anunciada antes.",
       "tempoEstimado": 20,
       "tags": [
@@ -5434,8 +5430,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Travessao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -5443,12 +5439,12 @@ export const ortografiaEPontuacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Em qual alternativa o travessao foi usado corretamente para marcar fala em dialogo?",
       "opcoes": [
-        "- Nao esqueca o prazo e lembrou o coordenador.",
-        "Nao e esqueca o prazo lembrou o coordenador.",
-        "- Nao esqueca o prazo - lembrou o coordenador.",
-        "Nao esqueca o prazo - lembrou o coordenador."
+        "- Não esqueca o prazo e lembrou o coordenador.",
+        "Não e esqueca o prazo lembrou o coordenador.",
+        "- Não esqueca o prazo - lembrou o coordenador.",
+        "Não esqueca o prazo - lembrou o coordenador."
       ],
-      "correta": "- Nao esqueca o prazo e lembrou o coordenador.",
+      "correta": "- Não esqueca o prazo e lembrou o coordenador.",
       "comentario": "O travessao marca corretamente a fala e a intercalacao do verbo de elocucao.",
       "tempoEstimado": 20,
       "tags": [
@@ -5473,8 +5469,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Ponto e virgula",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -5511,9 +5507,9 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Efeito de sentido da pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Efeito de sentido da pontuação",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
@@ -5549,9 +5545,9 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
@@ -5561,9 +5557,9 @@ export const ortografiaEPontuacao = {
         "eliminar a ideia de hipotese",
         "substituir o ponto final obrigaterio",
         "transformar a frase em enumeracao",
-        "destacar a condicao e tornar a articulacao do periodo mais clara"
+        "destacar a condicao e tornar a articulação do período mais clara"
       ],
-      "correta": "destacar a condicao e tornar a articulacao do periodo mais clara",
+      "correta": "destacar a condicao e tornar a articulação do período mais clara",
       "comentario": "A virgula ajuda a isolar a oracao adverbial condicional deslocada e melhora a leitura do enunciado.",
       "tempoEstimado": 35,
       "tags": [
@@ -5588,21 +5584,21 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Reescrita com correcao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Reescrita com correção",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa reescreve corretamente a frase \"Marcos onde voce estava ontem\"?",
+      "enunciado": "Qual alternativa reescreve corretamente a frase \"Marcos onde você estava ontem\"?",
       "opcoes": [
-        "Marcos, onde voce estava ontem?",
-        "Marcos, aonde voce estava ontem?",
-        "Marcos onde, voce estava ontem?",
-        "Marcos; onde voce estava ontem."
+        "Marcos, onde você estava ontem?",
+        "Marcos, aonde você estava ontem?",
+        "Marcos onde, você estava ontem?",
+        "Marcos; onde você estava ontem."
       ],
-      "correta": "Marcos, onde voce estava ontem?",
+      "correta": "Marcos, onde você estava ontem?",
       "comentario": "A frase correta exige virgula para isolar o vocativo, uso de \"onde\" com ideia de permanencia e ponto de interrogacao.",
       "tempoEstimado": 30,
       "tags": [
@@ -5628,19 +5624,19 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Acentuacao grafica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que a palavra esta corretamente acentuada.",
+      "enunciado": "Assinale a alternativa em que a palavra está corretamente acentuada.",
       "opcoes": [
         "saiam",
         "saíam",
         "saíamm",
-        "saíam"
+        "saiamo"
       ],
       "correta": "saíam",
       "comentario": "A forma correta e \"saíam\", com acento no i tunico em hiato.",
@@ -5666,19 +5662,19 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Por que, porque, por que e porque",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa completa corretamente a frase? \"Ela explicou o motivo ____ nao compareceu e reuniao.\"",
+      "enunciado": "Qual alternativa completa corretamente a frase? \"Ela explicou o motivo ____ não compareceu e reuniao.\"",
       "opcoes": [
         "porque",
         "por que",
-        "por que",
-        "porque"
+        "por que?",
+        "Qual alternativa completa corretamente a frase? \"Ela explicou o motivo ____ não compareceu e reuniao."
       ],
       "correta": "por que",
       "comentario": "Nesse caso, a expressao equivale a \"pelo qual\" ou \"por qual razao\", por isso se usa \"por que\".",
@@ -5704,14 +5700,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Paronimos e homofonos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que completa corretamente a frase: \"A professora fez uma breve ____ do conteudo antes da prova.\"",
+      "enunciado": "Assinale a alternativa que completa corretamente a frase: \"A professora fez uma breve ____ do conteúdo antes da prova.\"",
       "opcoes": [
         "revissao",
         "revisão",
@@ -5742,22 +5738,22 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Reescrita com correcao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Reescrita com correção",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa reescreve corretamente a frase \"Porque eles nao chegaram a tempo\"?",
+      "enunciado": "Qual alternativa reescreve corretamente a frase \"Porque eles não chegaram a tempo\"?",
       "opcoes": [
-        "Por que eles nao chegaram a tempo?",
-        "Porque eles nao chegaram a tempo?",
-        "Por que eles nao chegaram a tempo.",
-        "Porque eles nao chegaram a tempo?"
+        "Por que eles não chegaram a tempo?",
+        "Porque eles não chegaram a tempo?",
+        "Por que eles não chegaram a tempo.",
+        "Por que eles não chegaram a tempo"
       ],
-      "correta": "Por que eles nao chegaram a tempo?",
-      "comentario": "Em pergunta direta, usa-se \"por que\". A frase tambem exige ponto de interrogacao.",
+      "correta": "Por que eles não chegaram a tempo?",
+      "comentario": "Em pergunta direta, usa-se \"por que\". A frase também exige ponto de interrogacao.",
       "tempoEstimado": 30,
       "tags": [
         "reescrita",
@@ -5782,9 +5778,9 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -5792,12 +5788,12 @@ export const ortografiaEPontuacao = {
       "enunciado": "Compare: I. \"Os professores que faltaram serao substituídos.\" II. \"Os professores, que faltaram, serao substituídos.\" Na frase II, as virgulas sugerem principalmente:",
       "opcoes": [
         "que apenas alguns professores faltaram",
-        "que a informacao sobre faltar e explicativa e recai sobre o grupo todo",
+        "que a informação sobre faltar e explicativa e recai sobre o grupo todo",
         "que a frase se tornou interrogativa",
-        "que nao haverá substituicao"
+        "que não haverá substituição"
       ],
-      "correta": "que a informacao sobre faltar e explicativa e recai sobre o grupo todo",
-      "comentario": "As virgulas transformam a oracao em explicativa, alterando o sentido em relacao e forma sem virgulas.",
+      "correta": "que a informação sobre faltar e explicativa e recai sobre o grupo todo",
+      "comentario": "As virgulas transformam a oracao em explicativa, alterando o sentido em relação e forma sem virgulas.",
       "tempoEstimado": 40,
       "tags": [
         "interpretacao-indireta",
@@ -5821,14 +5817,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Acentuacao grafica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que a palavra esta corretamente acentuada.",
+      "enunciado": "Assinale a alternativa em que a palavra está corretamente acentuada.",
       "opcoes": [
         "sauva",
         "saúvaa",
@@ -5859,8 +5855,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de S e Z",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -5897,8 +5893,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de X e CH",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -5908,8 +5904,8 @@ export const ortografiaEPontuacao = {
       "opcoes": [
         "enxó",
         "encha",
-        "enxó",
-        "enchoo"
+        "enchoo",
+        "enchó"
       ],
       "correta": "enxó",
       "comentario": "A forma correta e \"enxó\", com X e acento agudo.",
@@ -5935,8 +5931,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de G e J",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -5973,8 +5969,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Mas e mais",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -5983,12 +5979,12 @@ export const ortografiaEPontuacao = {
       "enunciado": "Complete corretamente a frase: \"Ela queria participar, ____ decidiu ficar em casa para estudar.\"",
       "opcoes": [
         "mais",
-        "mais",
         "mas",
-        "maiz"
+        "maiz",
+        "más"
       ],
       "correta": "mas",
-      "comentario": "\"Mas\" introduz oposicao entre a vontade de participar e a decisao tomada.",
+      "comentario": "\"Mas\" introduz oposicao entre a vontade de participar e a decisão tomada.",
       "tempoEstimado": 20,
       "tags": [
         "paronimos",
@@ -6011,19 +6007,19 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Mal e mau",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que completa corretamente a frase: \"O aluno se saiu ____ na apresentacao oral.\"",
+      "enunciado": "Assinale a alternativa que completa corretamente a frase: \"O aluno se saiu ____ na apresentação oral.\"",
       "opcoes": [
         "mau",
         "mal",
         "ma",
-        "mal"
+        "máu"
       ],
       "correta": "mal",
       "comentario": "\"Mal\" funciona como adverbio, indicando o modo como ele se saiu.",
@@ -6049,9 +6045,9 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "A e ha",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "A e há",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
@@ -6087,8 +6083,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Onde e aonde",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -6125,19 +6121,19 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Por que, porque, por que e porque",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que completa corretamente a frase: \"Ninguém sabia o ____ daquela mudanca repentina.\"",
+      "enunciado": "Assinale a alternativa que completa corretamente a frase: \"Ninguém sabia o ____ daquela mudança repentina.\"",
       "opcoes": [
         "porque",
         "por que",
-        "porque",
-        "por que"
+        "porquê",
+        "por quê"
       ],
       "correta": "porque",
       "comentario": "Quando a palavra atua como substantivo e pode ser antecedida de artigo, usa-se \"porque\".",
@@ -6163,8 +6159,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Paronimos e homofonos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -6172,13 +6168,13 @@ export const ortografiaEPontuacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a alternativa que completa corretamente a frase: \"A ____ do visitante foi bastante cordial logo na chegada.\"",
       "opcoes": [
+        "recepção",
+        "descrição",
         "discrição",
-        "descriçãu",
-        "discreção",
-        "descricao"
+        "percepção"
       ],
-      "correta": "descrição",
-      "comentario": "A palavra escolhida deve indicar apresentacao de caracteristicas. \"Discrição\" se refere a reserva ou recato.",
+      "correta": "recepção",
+      "comentario": "A palavra escolhida deve indicar acolhimento na chegada. \"Descrição\" indica apresentação de características, e \"discrição\" se refere a reserva ou recato.",
       "tempoEstimado": 25,
       "tags": [
         "paronimos",
@@ -6201,8 +6197,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula em enumeracao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -6240,14 +6236,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula com vocativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o vocativo esta pontuado corretamente.",
+      "enunciado": "Assinale a alternativa em que o vocativo está pontuado corretamente.",
       "opcoes": [
         "Carla feche, a porta por favor.",
         "Carla, feche a porta, por favor.",
@@ -6279,14 +6275,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula com aposto",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em qual alternativa o aposto esta corretamente isolado por virgulas?",
+      "enunciado": "Em qual alternativa o aposto está corretamente isolado por virgulas?",
       "opcoes": [
         "O Tiete importante rio paulista, atravessa varias cidades.",
         "O Tiete, importante rio paulista atravessa varias cidades.",
@@ -6318,8 +6314,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula com termo deslocado",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -6357,8 +6353,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Dois-pontos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -6366,13 +6362,13 @@ export const ortografiaEPontuacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa apresenta uso correto dos dois-pontos?",
       "opcoes": [
-        "A coordenadora anunciou a decisao: a prova sera remarcada.",
-        "A coordenadora: anunciou a decisao a prova sera remarcada.",
-        "A coordenadora anunciou: a decisao a prova sera remarcada.",
-        "A coordenadora anunciou a decisao a: prova sera remarcada."
+        "A coordenadora anunciou a decisão: a prova será remarcada.",
+        "A coordenadora: anunciou a decisão a prova será remarcada.",
+        "A coordenadora anunciou: a decisão a prova será remarcada.",
+        "A coordenadora anunciou a decisão a: prova será remarcada."
       ],
-      "correta": "A coordenadora anunciou a decisao: a prova sera remarcada.",
-      "comentario": "Os dois-pontos introduzem adequadamente a explicitacao da decisao anunciada.",
+      "correta": "A coordenadora anunciou a decisão: a prova será remarcada.",
+      "comentario": "Os dois-pontos introduzem adequadamente a explicitacao da decisão anunciada.",
       "tempoEstimado": 20,
       "tags": [
         "pontuacao",
@@ -6395,8 +6391,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Travessao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -6404,12 +6400,12 @@ export const ortografiaEPontuacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Em qual alternativa o travessao foi usado corretamente para marcar fala em dialogo?",
       "opcoes": [
-        "Ja e terminei a atividade respondeu o estudante.",
-        "- Ja terminei a atividade e respondeu o estudante.",
-        "- Ja terminei a atividade - respondeu o estudante.",
-        "Ja terminei a atividade - respondeu o estudante."
+        "Já e terminei a atividade respondeu o estudante.",
+        "- Já terminei a atividade e respondeu o estudante.",
+        "- Já terminei a atividade - respondeu o estudante.",
+        "Já terminei a atividade - respondeu o estudante."
       ],
-      "correta": "- Ja terminei a atividade e respondeu o estudante.",
+      "correta": "- Já terminei a atividade e respondeu o estudante.",
       "comentario": "O travessao marca corretamente a fala e a intercalacao do verbo de elocucao.",
       "tempoEstimado": 20,
       "tags": [
@@ -6434,8 +6430,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Ponto e virgula",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -6472,9 +6468,9 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Efeito de sentido da pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Efeito de sentido da pontuação",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -6510,22 +6506,22 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Compare: I. \"Enquanto lia, ele anotava.\" II. \"Enquanto lia ele anotava.\" A virgula na frase I contribui principalmente para:",
       "opcoes": [
-        "isolar a oracao adverbial e tornar a organizacao do periodo mais clara",
+        "isolar a oracao adverbial e tornar a organização do período mais clara",
         "transformar a frase em enumeracao",
-        "eliminar a relacao temporal entre as acoes",
+        "eliminar a relação temporal entre as ações",
         "substituir obrigatoriamente o ponto final"
       ],
-      "correta": "isolar a oracao adverbial e tornar a organizacao do periodo mais clara",
-      "comentario": "A virgula destaca a oracao adverbial deslocada e facilita a leitura do periodo.",
+      "correta": "isolar a oracao adverbial e tornar a organização do período mais clara",
+      "comentario": "A virgula destaca a oracao adverbial deslocada e facilita a leitura do período.",
       "tempoEstimado": 35,
       "tags": [
         "interpretacao-indireta",
@@ -6549,9 +6545,9 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Reescrita com correcao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Reescrita com correção",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
@@ -6589,14 +6585,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Acentuacao grafica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que a palavra esta corretamente acentuada.",
+      "enunciado": "Assinale a alternativa em que a palavra está corretamente acentuada.",
       "opcoes": [
         "saira",
         "saírra",
@@ -6627,19 +6623,19 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Por que, porque, por que e porque",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa completa corretamente a frase? \"Explique ____ voce considera essa leitura importante.\"",
+      "enunciado": "Qual alternativa completa corretamente a frase? \"Explique ____ você considera essa leitura importante.\"",
       "opcoes": [
         "porque",
         "por que",
-        "porque",
-        "por que"
+        "por que?",
+        "Qual alternativa completa corretamente a frase? \"Explique ____ você considera essa leitura importante."
       ],
       "correta": "por que",
       "comentario": "Nesse contexto, a expressao equivale a \"por qual motivo\", por isso a forma correta e \"por que\".",
@@ -6665,8 +6661,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Paronimos e homofonos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -6703,22 +6699,22 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Reescrita com correcao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Reescrita com correção",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa reescreve corretamente a frase \"Ha quantos dias voces chegaram aqui\"?",
+      "enunciado": "Qual alternativa reescreve corretamente a frase \"Há quantos dias voces chegaram aqui\"?",
       "opcoes": [
         "A quantos dias voces chegaram aqui?",
-        "Ha quantos dias voces chegaram aqui?",
-        "Ha quantos dias voces chegaram aqui.",
-        "Ha quantos dias voces chegaram aqui"
+        "Há quantos dias voces chegaram aqui?",
+        "Há quantos dias voces chegaram aqui.",
+        "Há quantos dias voces chegaram aqui"
       ],
-      "correta": "Ha quantos dias voces chegaram aqui?",
-      "comentario": "Para indicar tempo decorrido, usa-se \"ha\". A frase tambem exige ponto de interrogacao por ser uma pergunta direta.",
+      "correta": "Há quantos dias voces chegaram aqui?",
+      "comentario": "Para indicar tempo decorrido, usa-se \"há\". A frase também exige ponto de interrogacao por ser uma pergunta direta.",
       "tempoEstimado": 30,
       "tags": [
         "reescrita",
@@ -6743,14 +6739,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Compare: I. \"Vamos perder, nada foi resolvido.\" II. \"Vamos perder nada, foi resolvido.\" A diferenca principal e que a pontuacao:",
+      "enunciado": "Compare: I. \"Vamos perder, nada foi resolvido.\" II. \"Vamos perder nada, foi resolvido.\" A diferenca principal e que a pontuação:",
       "opcoes": [
         "apenas cria uma pausa sem mudar o significado",
         "corrige um erro de acentuacao",
@@ -6758,7 +6754,7 @@ export const ortografiaEPontuacao = {
         "transforma a frase em pergunta"
       ],
       "correta": "reorganiza o enunciado e altera profundamente o sentido da mensagem",
-      "comentario": "A mudanca de pontuacao altera a organizacao sintetica e o sentido global do enunciado.",
+      "comentario": "A mudança de pontuação altera a organização sintetica e o sentido global do enunciado.",
       "tempoEstimado": 40,
       "tags": [
         "interpretacao-indireta",
@@ -6782,19 +6778,19 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Acentuacao grafica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que a palavra esta corretamente acentuada.",
+      "enunciado": "Assinale a alternativa em que a palavra está corretamente acentuada.",
       "opcoes": [
         "bênção",
-        "bênção",
-        "bênção",
-        "bênção"
+        "bencao",
+        "bencaoo",
+        "banção"
       ],
       "correta": "bênção",
       "comentario": "A forma correta e \"bênção\", com acento circunflexo e cedilha.",
@@ -6820,8 +6816,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de S e Z",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -6832,7 +6828,7 @@ export const ortografiaEPontuacao = {
         "precisar",
         "prezisar",
         "precizzar",
-        "precisar"
+        "presisar"
       ],
       "correta": "precisar",
       "comentario": "A grafia correta do verbo e \"precisar\", com S.",
@@ -6858,8 +6854,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de X e CH",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -6896,8 +6892,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Uso de G e J",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -6934,8 +6930,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Mas e mais",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -6944,9 +6940,9 @@ export const ortografiaEPontuacao = {
       "enunciado": "Complete corretamente a frase: \"Eu queria descansar, ____ precisava terminar o relaterio.\"",
       "opcoes": [
         "mais",
-        "mais",
         "maiz",
-        "mas"
+        "mas",
+        "más"
       ],
       "correta": "mas",
       "comentario": "\"Mas\" indica oposicao entre as ideias apresentadas.",
@@ -6972,8 +6968,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Mal e mau",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -6983,8 +6979,8 @@ export const ortografiaEPontuacao = {
       "opcoes": [
         "mal",
         "mau",
-        "mal",
-        "ma"
+        "ma",
+        "máu"
       ],
       "correta": "mal",
       "comentario": "\"Mal\" funciona como adverbio, indicando o modo como o grupo compreendeu a explicacao.",
@@ -7010,14 +7006,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "A e ha",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "A e há",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa completa corretamente a frase? \"O resultado sera divulgado daqui ____ duas horas.\"",
+      "enunciado": "Qual alternativa completa corretamente a frase? \"O resultado será divulgado daqui ____ duas horas.\"",
       "opcoes": [
         "ha",
         "a",
@@ -7048,14 +7044,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Onde e aonde",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que completa corretamente a frase: \"Nao sei ____ voce quer levar essa conversa.\"",
+      "enunciado": "Assinale a alternativa que completa corretamente a frase: \"Não sei ____ você quer levar essa conversa.\"",
       "opcoes": [
         "onde",
         "a onde",
@@ -7086,19 +7082,19 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Por que, porque, por que e porque",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que completa corretamente a frase: \"Ainda nao sei ____ ele recusou o convite.\"",
+      "enunciado": "Assinale a alternativa que completa corretamente a frase: \"Ainda não sei ____ ele recusou o convite.\"",
       "opcoes": [
         "porque",
         "por que",
-        "porque",
-        "por que"
+        "por que?",
+        "Assinale a alternativa que completa corretamente a frase: \"Ainda não sei ____ ele recusou o convite."
       ],
       "correta": "por que",
       "comentario": "Nesse contexto, a expressao equivale a \"por qual motivo\", por isso a forma correta e \"por que\".",
@@ -7124,8 +7120,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Paronimos e homofonos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -7162,8 +7158,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula em enumeracao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -7201,14 +7197,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula com vocativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o vocativo esta pontuado corretamente.",
+      "enunciado": "Assinale a alternativa em que o vocativo está pontuado corretamente.",
       "opcoes": [
         "Pessoal aguardem, um instante.",
         "Pessoal aguardem um, instante.",
@@ -7240,14 +7236,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula com aposto",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em qual alternativa o aposto esta corretamente isolado por virgulas?",
+      "enunciado": "Em qual alternativa o aposto está corretamente isolado por virgulas?",
       "opcoes": [
         "Pele grande nome do futebol brasileiro, e conhecido no mundo todo.",
         "Pele, grande nome do futebol brasileiro e conhecido no mundo todo.",
@@ -7279,8 +7275,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Virgula com termo deslocado",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -7318,8 +7314,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Dois-pontos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -7327,12 +7323,12 @@ export const ortografiaEPontuacao = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa apresenta uso correto dos dois-pontos?",
       "opcoes": [
-        "Ele tinha: uma meta melhorar a organizacao dos estudos.",
-        "Ele tinha uma meta: melhorar a organizacao dos estudos.",
-        "Ele tinha uma meta melhorar: a organizacao dos estudos.",
-        "Ele tinha uma: meta melhorar a organizacao dos estudos."
+        "Ele tinha: uma meta melhorar a organização dos estudos.",
+        "Ele tinha uma meta: melhorar a organização dos estudos.",
+        "Ele tinha uma meta melhorar: a organização dos estudos.",
+        "Ele tinha uma: meta melhorar a organização dos estudos."
       ],
-      "correta": "Ele tinha uma meta: melhorar a organizacao dos estudos.",
+      "correta": "Ele tinha uma meta: melhorar a organização dos estudos.",
       "comentario": "Os dois-pontos introduzem adequadamente a explicitacao da meta mencionada antes.",
       "tempoEstimado": 20,
       "tags": [
@@ -7356,14 +7352,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Travessao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em qual alternativa o travessao foi usado corretamente para isolar uma informacao explicativa?",
+      "enunciado": "Em qual alternativa o travessao foi usado corretamente para isolar uma informação explicativa?",
       "opcoes": [
         "A pesquisa e resultado de meses de estudo foi apresentada e turma.",
         "A pesquisa resultado de meses de estudo e foi apresentada e turma.",
@@ -7371,7 +7367,7 @@ export const ortografiaEPontuacao = {
         "A pesquisa resultado e de meses de estudo foi apresentada e turma."
       ],
       "correta": "A pesquisa e resultado de meses de estudo e foi apresentada e turma.",
-      "comentario": "O travessao isola adequadamente a informacao explicativa intercalada no periodo.",
+      "comentario": "O travessao isola adequadamente a informação explicativa intercalada no período.",
       "tempoEstimado": 25,
       "tags": [
         "pontuacao",
@@ -7395,8 +7391,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Ponto e virgula",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -7433,9 +7429,9 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Efeito de sentido da pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Efeito de sentido da pontuação",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -7445,7 +7441,7 @@ export const ortografiaEPontuacao = {
         "intensifica a ordem e torna o enunciado mais expressivo",
         "transforma a ordem em pergunta",
         "elimina a intencao de comando",
-        "substitui a necessidade de pontuacao final"
+        "substitui a necessidade de pontuação final"
       ],
       "correta": "intensifica a ordem e torna o enunciado mais expressivo",
       "comentario": "O ponto de exclamacao reforca a intensidade do comando e aumenta a expressividade do enunciado.",
@@ -7471,9 +7467,9 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Reescrita com correcao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Reescrita com correção",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "aplicacao",
@@ -7511,9 +7507,9 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -7521,12 +7517,12 @@ export const ortografiaEPontuacao = {
       "enunciado": "Compare: I. \"Antes de sair, avise.\" II. \"Antes de sair avise.\" A virgula na frase I ajuda principalmente a:",
       "opcoes": [
         "transformar a frase em enumeracao",
-        "eliminar a relacao de tempo",
+        "eliminar a relação de tempo",
         "isolar a expressao adverbial e tornar a leitura mais clara",
         "substituir o ponto final"
       ],
       "correta": "isolar a expressao adverbial e tornar a leitura mais clara",
-      "comentario": "A virgula ajuda a destacar a expressao inicial e melhora a articulacao do periodo.",
+      "comentario": "A virgula ajuda a destacar a expressao inicial e melhora a articulação do período.",
       "tempoEstimado": 35,
       "tags": [
         "interpretacao-indireta",
@@ -7550,14 +7546,14 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Acentuacao grafica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que a palavra esta corretamente acentuada.",
+      "enunciado": "Assinale a alternativa em que a palavra está corretamente acentuada.",
       "opcoes": [
         "saisse",
         "saassee",
@@ -7588,22 +7584,22 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Reescrita com correcao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Reescrita com correção",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa reescreve corretamente a frase \"Porque voce nao respondeu a mensagem\"?",
+      "enunciado": "Qual alternativa reescreve corretamente a frase \"Porque você não respondeu a mensagem\"?",
       "opcoes": [
-        "Por que voce nao respondeu a mensagem?",
-        "Porque voce nao respondeu a mensagem?",
-        "Por que voce nao respondeu a mensagem.",
-        "Porque voce nao respondeu a mensagem?"
+        "Por que você não respondeu a mensagem?",
+        "Porque você não respondeu a mensagem?",
+        "Por que você não respondeu a mensagem.",
+        "Por que você não respondeu a mensagem"
       ],
-      "correta": "Por que voce nao respondeu a mensagem?",
-      "comentario": "Em pergunta direta, usa-se \"por que\". A frase tambem exige ponto de interrogacao.",
+      "correta": "Por que você não respondeu a mensagem?",
+      "comentario": "Em pergunta direta, usa-se \"por que\". A frase também exige ponto de interrogacao.",
       "tempoEstimado": 30,
       "tags": [
         "reescrita",
@@ -7628,18 +7624,18 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Efeito de sentido da pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Efeito de sentido da pontuação",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Compare: I. \"Voce conseguiu.\" II. \"Voce conseguiu!\" A principal diferenca e que a segunda frase:",
+      "enunciado": "Compare: I. \"Você conseguiu.\" II. \"Você conseguiu!\" A principal diferenca e que a segunda frase:",
       "opcoes": [
         "transforma a afirmacao em pergunta",
         "intensifica a emocao e torna o enunciado mais expressivo",
-        "elimina o sentido de conclusao",
+        "elimina o sentido de conclusão",
         "passa a indicar dúvida"
       ],
       "correta": "intensifica a emocao e torna o enunciado mais expressivo",
@@ -7667,8 +7663,8 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
       "subtopico": "Paronimos e homofonos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -7679,7 +7675,7 @@ export const ortografiaEPontuacao = {
         "apoioo",
         "apoiyo",
         "apoio",
-        "apoio"
+        "apóio"
       ],
       "correta": "apoio",
       "comentario": "A forma correta e \"apoio\", sem acento gráfico nessa grafia.",
@@ -7705,9 +7701,9 @@ export const ortografiaEPontuacao = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Ortografia e Pontuacao",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Ortografia e Pontuação",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -7716,11 +7712,11 @@ export const ortografiaEPontuacao = {
       "opcoes": [
         "que apenas parte dos candidatos passou",
         "que a frase se transformou em pergunta",
-        "que ninguem sera chamado",
-        "que a informacao e explicativa e recai sobre todo o grupo mencionado"
+        "que ninguem será chamado",
+        "que a informação e explicativa e recai sobre todo o grupo mencionado"
       ],
-      "correta": "que a informacao e explicativa e recai sobre todo o grupo mencionado",
-      "comentario": "As virgulas transformam a oracao em explicativa, alterando o sentido em relacao e construcao sem virgulas.",
+      "correta": "que a informação e explicativa e recai sobre todo o grupo mencionado",
+      "comentario": "As virgulas transformam a oracao em explicativa, alterando o sentido em relação e construção sem virgulas.",
       "tempoEstimado": 40,
       "tags": [
         "interpretacao-indireta",

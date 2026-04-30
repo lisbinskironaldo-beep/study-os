@@ -14,27 +14,27 @@ const blocos = [
     fatos: [
       {
         lead: "a cultura corporal",
-        answer: "o conjunto de praticas e significados ligados ao corpo e ao movimento",
+        answer: "o conjunto de práticas e significados ligados ao corpo e ao movimento",
         why: "ela inclui jogos, dancas, esportes, lutas e outras manifestacoes corporais"
       },
       {
-        lead: "as praticas corporais",
+        lead: "as práticas corporais",
         answer: "formas culturais de movimentar o corpo em diferentes contextos",
         why: "elas variam conforme tempo, grupo social e objetivo"
       },
       {
         lead: "o movimento humano",
-        answer: "uma acao corporal que tambem carrega valores sociais e culturais",
-        why: "mover-se nao e apenas um ato biologico, mas tambem cultural"
+        answer: "uma ação corporal que também carrega valores sociais e culturais",
+        why: "mover-se não é apenas um ato biológico, mas também cultural"
       },
       {
-        lead: "a Educacao Fisica escolar",
-        answer: "um espaco de estudo e vivencia das praticas corporais",
-        why: "na escola, essas praticas sao tratadas como conhecimento e experiencia"
+        lead: "a Educação Física escolar",
+        answer: "um espaco de estudo e vivencia das práticas corporais",
+        why: "na escola, essas práticas são tratadas como conhecimento e experiência"
       },
       {
         lead: "a diversidade corporal",
-        answer: "a existencia de diferentes formas de participacao e expressao do corpo",
+        answer: "a existencia de diferentes formas de participação e expressao do corpo",
         why: "a cultura corporal reconhece sujeitos com historias e capacidades diversas"
       }
     ]
@@ -47,7 +47,7 @@ const blocos = [
     fatos: [
       {
         lead: "os jogos e brincadeiras",
-        answer: "praticas corporais que articulam regras, imaginacao e interacao social",
+        answer: "práticas corporais que articulam regras, imaginacao e interação social",
         why: "eles promovem aprendizagem motora e convivencia"
       },
       {
@@ -57,18 +57,18 @@ const blocos = [
       },
       {
         lead: "as regras do jogo",
-        answer: "combinados que organizam a participacao dos jogadores",
+        answer: "combinados que organizam a participação dos jogadores",
         why: "as regras tornam a atividade compreensivel e compartilhada"
       },
       {
         lead: "o jogo cooperativo",
-        answer: "uma pratica em que o objetivo prioriza colaboracao entre participantes",
+        answer: "uma prática em que o objetivo prioriza colaboracao entre participantes",
         why: "nesse tipo de jogo, o grupo busca resolver desafios em conjunto"
       },
       {
         lead: "o brincar na escola",
-        answer: "uma experiencia que favorece autonomia, criatividade e socializacao",
-        why: "brincar tambem e forma de aprender e se relacionar"
+        answer: "uma experiência que favorece autonomia, criatividade e socializacao",
+        why: "brincar também e forma de aprender e se relacionar"
       }
     ]
   },
@@ -85,30 +85,30 @@ const blocos = [
       },
       {
         lead: "o ritmo corporal",
-        answer: "a organizacao temporal dos movimentos durante uma pratica",
+        answer: "a organização temporal dos movimentos durante uma prática",
         why: "ritmo orienta repeticao, intensidade e sequencia de gestos"
       },
       {
         lead: "as dancas populares",
-        answer: "praticas ligadas a tradicoes culturais de diferentes grupos",
+        answer: "práticas ligadas a tradicoes culturais de diferentes grupos",
         why: "elas expressam identidades coletivas e memorias sociais"
       },
       {
         lead: "a coreografia",
-        answer: "a organizacao planejada de movimentos em uma sequencia",
+        answer: "a organização planejada de movimentos em uma sequencia",
         why: "ela estrutura a apresentacao corporal no espaco e no tempo"
       },
       {
         lead: "a expressao ritmica",
         answer: "a capacidade de responder ao som com movimentos coordenados",
-        why: "essa habilidade articula percepcao auditiva e acao corporal"
+        why: "essa habilidade articula percepção auditiva e ação corporal"
       }
     ]
   },
   {
     subtopico: "Ginasticas",
     habilidade:
-      "relacionar corpo e movimento com saude e bem-estar",
+      "relacionar corpo e movimento com saúde e bem-estar",
     tags: ["ginastica", "movimento", "condicionamento"],
     fatos: [
       {
@@ -118,8 +118,8 @@ const blocos = [
       },
       {
         lead: "a ginastica de alongamento",
-        answer: "uma pratica voltada a ampliar a mobilidade e a flexibilidade corporal",
-        why: "ela ajuda na preparacao e na recuperacao do corpo"
+        answer: "uma prática voltada a ampliar a mobilidade e a flexibilidade corporal",
+        why: "ela ajuda na preparacao e na recuperação do corpo"
       },
       {
         lead: "a ginastica laboral",
@@ -128,7 +128,7 @@ const blocos = [
       },
       {
         lead: "a ginastica geral",
-        answer: "uma pratica que combina exercicios, criatividade e participacao coletiva",
+        answer: "uma prática que combina exercicios, criatividade e participação coletiva",
         why: "ela valoriza movimento, expressao e integracao do grupo"
       },
       {
@@ -139,35 +139,35 @@ const blocos = [
     ]
   },
   {
-    subtopico: "Lutas e praticas corporais",
+    subtopico: "Lutas e práticas corporais",
     habilidade:
       "identificar conceitos fundamentais da cultura corporal",
-    tags: ["lutas", "respeito", "praticas corporais"],
+    tags: ["lutas", "respeito", "práticas corporais"],
     fatos: [
       {
         lead: "as lutas",
-        answer: "praticas corporais com tecnicas de oposicao reguladas por regras",
-        why: "elas exigem controle, estrategia e respeito ao oponente"
+        answer: "práticas corporais com técnicas de oposicao reguladas por regras",
+        why: "elas exigem controle, estratégia e respeito ao oponente"
       },
       {
         lead: "o combate esportivo",
         answer: "uma disputa corporal organizada com limites tecnicos e eticos",
-        why: "o objetivo nao e machucar, mas aplicar tecnicas com seguranca"
+        why: "o objetivo não é machucar, mas aplicar técnicas com segurança"
       },
       {
         lead: "o respeito nas lutas",
-        answer: "um principio que orienta a relacao entre praticantes e regras",
-        why: "sem respeito, a pratica perde seu carater educativo e esportivo"
+        answer: "um principio que orienta a relação entre praticantes e regras",
+        why: "sem respeito, a prática perde seu caráter educativo e esportivo"
       },
       {
         lead: "a capoeira",
-        answer: "uma pratica corporal brasileira que combina luta, musica e cultura",
-        why: "ela articula movimento, ritmo e historia social"
+        answer: "uma prática corporal brasileira que combina luta, musica e cultura",
+        why: "ela articula movimento, ritmo e história social"
       },
       {
         lead: "a defesa pessoal",
-        answer: "o uso consciente de tecnicas corporais para protecao em situacoes de risco",
-        why: "essa pratica envolve controle emocional e tomada de decisao"
+        answer: "o uso consciente de técnicas corporais para proteção em situações de risco",
+        why: "essa prática envolve controle emocional e tomada de decisão"
       }
     ]
   },
@@ -183,14 +183,14 @@ const blocos = [
         why: "gestos, posturas e deslocamentos podem produzir sentido"
       },
       {
-        lead: "a comunicacao nao verbal",
+        lead: "a comunicação não verbal",
         answer: "a transmissao de mensagens por gestos, olhares e movimentos",
-        why: "o corpo tambem comunica sem depender de fala"
+        why: "o corpo também comunica sem depender de fala"
       },
       {
         lead: "a postura corporal",
         answer: "a maneira como o corpo se organiza no espaco",
-        why: "ela influencia equilibrio, saude e forma de expressao"
+        why: "ela influencia equilíbrio, saúde e forma de expressao"
       },
       {
         lead: "o gesto expressivo",
@@ -198,65 +198,65 @@ const blocos = [
         why: "gestos podem representar emocao, intencao ou convencao cultural"
       },
       {
-        lead: "a consciencia corporal",
-        answer: "a percepcao do proprio corpo em movimento e repouso",
+        lead: "a consciência corporal",
+        answer: "a percepção do próprio corpo em movimento e repouso",
         why: "ela favorece controle motor e autoconhecimento"
       }
     ]
   },
   {
-    subtopico: "Inclusao e participacao",
+    subtopico: "Inclusão e participação",
     habilidade:
-      "aplicar principios de inclusao na pratica fisica",
+      "aplicar princípios de inclusão na prática física",
     tags: ["inclusao", "participacao", "adaptacao"],
     fatos: [
       {
-        lead: "a inclusao nas aulas",
-        answer: "a garantia de participacao de todos nas praticas corporais",
+        lead: "a inclusão nas aulas",
+        answer: "a garantia de participação de todos nas práticas corporais",
         why: "a aula deve considerar necessidades, ritmos e possibilidades diversas"
       },
       {
         lead: "a adaptacao de regras",
-        answer: "uma estrategia para ampliar acesso e permanencia dos participantes",
+        answer: "uma estratégia para ampliar acesso e permanencia dos participantes",
         why: "ajustes tornam a atividade mais justa e viavel para o grupo"
       },
       {
         lead: "a acessibilidade corporal",
         answer: "a criacao de condicoes para que diferentes pessoas possam se movimentar e participar",
-        why: "ela envolve espaco, materiais e organizacao adequados"
+        why: "ela envolve espaco, materiais e organização adequados"
       },
       {
         lead: "o respeito as diferencas",
-        answer: "uma atitude essencial para convivencia em praticas corporais",
+        answer: "uma atitude essencial para convivencia em práticas corporais",
         why: "reconhecer diferencas evita exclusao e fortalece o grupo"
       },
       {
-        lead: "a participacao colaborativa",
-        answer: "o envolvimento do grupo em acoes de ajuda mutua e cooperacao",
+        lead: "a participação colaborativa",
+        answer: "o envolvimento do grupo em ações de ajuda mútua e cooperação",
         why: "ela favorece aprendizagem compartilhada e pertencimento"
       }
     ]
   },
   {
-    subtopico: "Saude e bem-estar",
+    subtopico: "Saúde e bem-estar",
     habilidade:
-      "relacionar corpo e movimento com saude e bem-estar",
-    tags: ["saude", "bem-estar", "atividade fisica"],
+      "relacionar corpo e movimento com saúde e bem-estar",
+    tags: ["saude", "bem-estar", "atividade física"],
     fatos: [
       {
-        lead: "a atividade fisica regular",
-        answer: "uma pratica que contribui para o funcionamento saudavel do organismo",
-        why: "ela melhora resistencia, controle corporal e disposicao"
+        lead: "a atividade física regular",
+        answer: "uma prática que contribui para o funcionamento saudavel do organismo",
+        why: "ela melhora resistencia, controle corporal e disposição"
       },
       {
         lead: "o bem-estar corporal",
-        answer: "uma sensacao de equilibrio fisico e funcionalidade do corpo",
-        why: "ele depende de habitos de movimento, descanso e cuidados diarios"
+        answer: "uma sensacao de equilíbrio fisico e funcionalidade do corpo",
+        why: "ele depende de hábitos de movimento, descanso e cuidados diarios"
       },
       {
         lead: "o sedentarismo",
         answer: "um estilo de vida com pouca movimentacao corporal cotidiana",
-        why: "a ausencia de movimento aumenta riscos para a saude"
+        why: "a ausencia de movimento aumenta riscos para a saúde"
       },
       {
         lead: "o aquecimento",
@@ -264,9 +264,9 @@ const blocos = [
         why: "ele ajuda o corpo a responder melhor ao esforco fisico"
       },
       {
-        lead: "a recuperacao corporal",
-        answer: "o periodo de descanso e reorganizacao do corpo apos o esforco",
-        why: "ela e importante para evitar fadiga excessiva e lesoes"
+        lead: "a recuperação corporal",
+        answer: "o período de descanso e reorganizacao do corpo após o esforco",
+        why: "ela é importante para evitar fadiga excessiva e lesoes"
       }
     ]
   },
@@ -283,35 +283,35 @@ const blocos = [
       },
       {
         lead: "o convivio social",
-        answer: "a relacao entre pessoas em experiencias coletivas de participacao",
-        why: "praticas corporais tambem fortalecem lacos e cooperacao"
+        answer: "a relação entre pessoas em experiências coletivas de participação",
+        why: "práticas corporais também fortalecem laços e cooperação"
       },
       {
         lead: "o uso do tempo livre",
-        answer: "a forma como uma pessoa organiza momentos fora das obrigacoes",
-        why: "esse tempo pode favorecer saude, cultura e socializacao"
+        answer: "a forma como uma pessoa organiza momentos fora das obrigações",
+        why: "esse tempo pode favorecer saúde, cultura e socializacao"
       },
       {
         lead: "as atividades recreativas",
-        answer: "praticas que unem prazer, movimento e interacao",
+        answer: "práticas que unem prazer, movimento e interação",
         why: "elas ampliam possibilidades de lazer ativo"
       },
       {
         lead: "o lazer ativo",
-        answer: "a participacao em atividades que envolvem movimento corporal no tempo livre",
-        why: "essa escolha contribui para saude e bem-estar"
+        answer: "a participação em atividades que envolvem movimento corporal no tempo livre",
+        why: "essa escolha contribui para saúde e bem-estar"
       }
     ]
   },
   {
     subtopico: "Midia e cultura do corpo",
     habilidade:
-      "interpretar situacoes aplicadas em cultura corporal",
+      "interpretar situações aplicadas em cultura corporal",
     tags: ["midia", "imagem corporal", "cultura do corpo"],
     fatos: [
       {
         lead: "a cultura da imagem corporal",
-        answer: "a valorizacao social de determinados padroes de aparencia",
+        answer: "a valorizacao social de determinados padrões de aparencia",
         why: "midias e discursos publicos podem reforcar modelos limitados de corpo"
       },
       {
@@ -320,13 +320,13 @@ const blocos = [
         why: "mensagens midiaticas afetam percepcoes e comportamentos"
       },
       {
-        lead: "o padrao corporal idealizado",
+        lead: "o padrão corporal idealizado",
         answer: "uma representacao simplificada e muitas vezes irreal do corpo considerado correto",
         why: "ele desconsidera diversidade e contextos individuais"
       },
       {
         lead: "a leitura critica da propaganda",
-        answer: "a analise das mensagens que associam corpo a sucesso e aceitacao",
+        answer: "a análise das mensagens que associam corpo a sucesso e aceitacao",
         why: "essa leitura ajuda a questionar promessas e imposicoes"
       },
       {
@@ -340,29 +340,29 @@ const blocos = [
 
 export const culturaCorporal = {
   id: "educacao-fisica_cultura_corporal",
-  materia: "Educacao Fisica",
+  materia: "Educação Física",
   serie: [1],
   topico: "Cultura Corporal",
   metadados: {
     disciplinaId: "educacao-fisica",
     base: "ESCOLAR",
     seloEditorial: "VERIFICADA",
-    eixo: "Educacao Fisica",
-    frente: "Praticas corporais e formacao humana",
+    eixo: "Educação Física",
+    frente: "Práticas corporais e formação humana",
     searchAliases: [
       "cultura corporal",
       "corpo e movimento",
       "jogos e brincadeiras",
       "danca e expressao corporal",
-      "saude e bem-estar"
+      "saúde e bem-estar"
     ],
     subtopicosBase: blocos.map((bloco) => bloco.subtopico),
     habilidadesBase: [
       "identificar conceitos fundamentais da cultura corporal",
-      "relacionar corpo e movimento com saude e bem-estar",
+      "relacionar corpo e movimento com saúde e bem-estar",
       "reconhecer a importancia da expressao corporal em dancas e ritmos",
       "compreender o papel de jogos e brincadeiras no desenvolvimento",
-      "aplicar principios de inclusao na pratica fisica"
+      "aplicar princípios de inclusão na prática física"
     ],
     planejamentoQuestoes: PHYSICAL_EDUCATION_HUNDRED_PLAN,
     auditado: true,
@@ -371,7 +371,7 @@ export const culturaCorporal = {
   questoes: buildPlannedQuestions({
     prefix: "cc",
     serie: 1,
-    materia: "Educacao Fisica",
+    materia: "Educação Física",
     topico: "Cultura Corporal",
     blocos,
     stemBuilders: PHYSICAL_EDUCATION_STEM_BUILDERS,

@@ -1,15 +1,15 @@
 export const gramaticaClassesDePalavras = {
   "id": "portugues_gramatica_classes_de_palavras",
-  "materia": "Portugues",
+  "materia": "Português",
   "serie": [
     1
   ],
-  "topico": "Gramatica: Classes de Palavras",
+  "topico": "Gramática: Classes de Palavras",
   "metadados": {
     "disciplinaId": "portugues",
     "base": "ESCOLAR",
     "seloEditorial": "VERIFICADA",
-    "eixo": "Analise linguastica",
+    "eixo": "Análise linguastica",
     "frente": "Morfologia",
     "searchAliases": [
       "morfologia",
@@ -26,22 +26,22 @@ export const gramaticaClassesDePalavras = {
       "Numeral",
       "Verbo",
       "Adverbio",
-      "Preposicao",
+      "Preposição",
       "Conjuncao",
       "Interjeicao",
       "Identificacao em frase",
-      "Funcao na oracao",
-      "Diferenciacao entre classes",
-      "Interpretacao indireta",
+      "Função na oracao",
+      "Diferenciação entre classes",
+      "Interpretação indireta",
       "Pegadinha",
-      "Equivalencia de formas"
+      "Equivalência de formas"
     ],
     "habilidadesBase": [
       "identificar classes de palavras em frases curtas",
-      "reconhecer a funcao basica das classes de palavras",
+      "reconhecer a função básica das classes de palavras",
       "distinguir classes de palavras com comportamento semelhante",
       "analisar o valor da palavra de acordo com o contexto",
-      "relacionar exemplos e definicoes das classes de palavras"
+      "relacionar exemplos e definições das classes de palavras"
     ],
     "auditado": true,
     "auditadoEm": "2026-04-12",
@@ -53,8 +53,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Substantivo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -91,8 +91,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -106,7 +106,7 @@ export const gramaticaClassesDePalavras = {
         "aplaudiu - A turma aplaudiu o colega."
       ],
       "correta": "O - O caderno sumiu.",
-      "comentario": "A resposta correta apresenta artigo, cuja funcao basica e acompanhar e determinar o substantivo.",
+      "comentario": "A resposta correta apresenta artigo, cuja função básica e acompanhar e determinar o substantivo.",
       "tempoEstimado": 20,
       "tags": [
         "artigo",
@@ -129,20 +129,20 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Adjetivo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmacao \"Na frase A prova dificil assustou alguns alunos., a palavra dificil e adjetivo\" esta correta?",
+      "enunciado": "A afirmacao \"Na frase A prova dificil assustou alguns alunos., a palavra dificil e adjetivo\" está correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Esta correta porque dificil indica qualidade, estado ou aspecto de um nome.",
+      "comentario": "Está correta porque dificil indica qualidade, estado ou aspecto de um nome.",
       "tempoEstimado": 20,
       "tags": [
         "adjetivo",
@@ -165,8 +165,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pronome",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -203,8 +203,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -218,7 +218,7 @@ export const gramaticaClassesDePalavras = {
         "O - O caderno sumiu."
       ],
       "correta": "Dois - Dois alunos faltaram.",
-      "comentario": "A resposta correta apresenta numeral, cuja funcao basica e expressar numero, ordem ou quantidade.",
+      "comentario": "A resposta correta apresenta numeral, cuja função básica e expressar número, ordem ou quantidade.",
       "tempoEstimado": 20,
       "tags": [
         "numeral",
@@ -241,20 +241,20 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Verbo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmacao \"Na frase Os atletas correram cedo., a palavra correram e verbo\" esta correta?",
+      "enunciado": "A afirmacao \"Na frase Os atletas correram cedo., a palavra correram e verbo\" está correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Esta correta porque correram situa a acao ou o estado no tempo.",
+      "comentario": "Está correta porque correram situa a ação ou o estado no tempo.",
       "tempoEstimado": 20,
       "tags": [
         "verbo",
@@ -277,8 +277,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Adverbio",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -289,7 +289,7 @@ export const gramaticaClassesDePalavras = {
         "Adverbio",
         "Adjetivo",
         "Pronome",
-        "Preposicao"
+        "Preposição"
       ],
       "correta": "Adverbio",
       "comentario": "Adverbio modifica verbo, adjetivo ou outro adverbio, indicando circunstancia.",
@@ -315,22 +315,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa traz um exemplo de preposicao?",
+      "enunciado": "Qual alternativa traz um exemplo de preposição?",
       "opcoes": [
         "para - Foi para a biblioteca.",
         "correram - Os atletas correram cedo.",
         "bem - A turma respondeu bem.",
-        "e - Leu o texto e respondeu."
+        "e - Leu o texto é respondeu."
       ],
       "correta": "para - Foi para a biblioteca.",
-      "comentario": "A resposta correta apresenta preposicao, cuja funcao basica e ligar termos e indicar relacoes.",
+      "comentario": "A resposta correta apresenta preposição, cuja função básica e ligar termos e indicar relações.",
       "tempoEstimado": 20,
       "tags": [
         "preposicao",
@@ -353,20 +353,20 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Conjuncao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmacao \"Na frase Estudou, mas continuou inseguro., a palavra mas e conjuncao\" esta correta?",
+      "enunciado": "A afirmacao \"Na frase Estudou, mas continuou inseguro., a palavra mas e conjuncao\" está correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Esta correta porque mas conecta partes do enunciado, indicando adicao, oposicao, causa e outras relacoes.",
+      "comentario": "Está correta porque mas conecta partes do enunciado, indicando adicao, oposicao, causa e outras relações.",
       "tempoEstimado": 20,
       "tags": [
         "conjuncao",
@@ -389,8 +389,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Interjeicao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -427,8 +427,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -442,7 +442,7 @@ export const gramaticaClassesDePalavras = {
         "Ninguem - Ninguem faltou hoje."
       ],
       "correta": "livro - O livro caiu da mesa.",
-      "comentario": "A resposta correta apresenta substantivo, cuja funcao basica e nomear um ser, objeto, lugar ou ideia.",
+      "comentario": "A resposta correta apresenta substantivo, cuja função básica e nomear um ser, objeto, lugar ou ideia.",
       "tempoEstimado": 20,
       "tags": [
         "substantivo",
@@ -465,20 +465,20 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Artigo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmacao \"Na frase Uma menina entrou na sala., a palavra Uma e artigo\" esta correta?",
+      "enunciado": "A afirmacao \"Na frase Uma menina entrou na sala., a palavra Uma e artigo\" está correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Esta correta porque Uma vem ligado ao substantivo para defini-lo ou indefini-lo.",
+      "comentario": "Está correta porque Uma vem ligado ao substantivo para defini-lo ou indefini-lo.",
       "tempoEstimado": 20,
       "tags": [
         "artigo",
@@ -501,8 +501,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Adjetivo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -516,7 +516,7 @@ export const gramaticaClassesDePalavras = {
         "Pronome"
       ],
       "correta": "Adjetivo",
-      "comentario": "Adjetivo atribui caracteristicas, qualidades ou estados ao substantivo.",
+      "comentario": "Adjetivo atribui características, qualidades ou estados ao substantivo.",
       "tempoEstimado": 20,
       "tags": [
         "adjetivo",
@@ -539,8 +539,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -554,7 +554,7 @@ export const gramaticaClassesDePalavras = {
         "Ei - Ei, espere um pouco!"
       ],
       "correta": "Isso - Isso foi inesperado.",
-      "comentario": "A resposta correta apresenta pronome, cuja funcao basica e retomar, substituir ou acompanhar o nome.",
+      "comentario": "A resposta correta apresenta pronome, cuja função básica e retomar, substituir ou acompanhar o nome.",
       "tempoEstimado": 20,
       "tags": [
         "pronome",
@@ -577,20 +577,20 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Numeral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmacao \"Na frase Cheguei em primeiro lugar., a palavra primeiro e numeral\" esta correta?",
+      "enunciado": "A afirmacao \"Na frase Cheguei em primeiro lugar., a palavra primeiro e numeral\" está correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Esta correta porque primeiro aponta quantidade ou posicao numerica.",
+      "comentario": "Está correta porque primeiro aponta quantidade ou posição numerica.",
       "tempoEstimado": 20,
       "tags": [
         "numeral",
@@ -613,8 +613,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Verbo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -628,7 +628,7 @@ export const gramaticaClassesDePalavras = {
         "Conjuncao"
       ],
       "correta": "Verbo",
-      "comentario": "Verbo indica acao, estado, fenomeno ou processo.",
+      "comentario": "Verbo indica ação, estado, fenomeno ou processo.",
       "tempoEstimado": 20,
       "tags": [
         "verbo",
@@ -651,8 +651,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -666,7 +666,7 @@ export const gramaticaClassesDePalavras = {
         "aplaudiu - A turma aplaudiu o colega."
       ],
       "correta": "Quase - Quase todos participaram.",
-      "comentario": "A resposta correta apresenta adverbio, cuja funcao basica e indicar circunstancia como tempo, modo, intensidade ou duvida.",
+      "comentario": "A resposta correta apresenta adverbio, cuja função básica e indicar circunstancia como tempo, modo, intensidade ou dúvida.",
       "tempoEstimado": 20,
       "tags": [
         "adverbio",
@@ -689,20 +689,20 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Preposicao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Preposição",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmacao \"Na frase Estudou com os amigos., a palavra com e preposicao\" esta correta?",
+      "enunciado": "A afirmacao \"Na frase Estudou com os amigos., a palavra com e preposição\" está correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Esta correta porque com aparece antes de um termo, conectando-o a outro.",
+      "comentario": "Está correta porque com aparece antes de um termo, conectando-o a outro.",
       "tempoEstimado": 20,
       "tags": [
         "preposicao",
@@ -725,8 +725,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Conjuncao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -735,12 +735,12 @@ export const gramaticaClassesDePalavras = {
       "enunciado": "Na frase \"Saiu cedo porque chovia.\", a palavra \"porque\" pertence a qual classe de palavras?",
       "opcoes": [
         "Conjuncao",
-        "Preposicao",
+        "Preposição",
         "Adverbio",
         "Pronome"
       ],
       "correta": "Conjuncao",
-      "comentario": "Conjuncao liga oracoes ou termos de mesma funcao, estabelecendo relacoes de sentido.",
+      "comentario": "Conjuncao liga oracoes ou termos de mesma função, estabelecendo relações de sentido.",
       "tempoEstimado": 20,
       "tags": [
         "conjuncao",
@@ -763,8 +763,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -778,7 +778,7 @@ export const gramaticaClassesDePalavras = {
         "correta - A resposta correta apareceu no quadro."
       ],
       "correta": "Ah - Ah, agora entendi!",
-      "comentario": "A resposta correta apresenta interjeicao, cuja funcao basica e expressar reacao ou emocao instantanea.",
+      "comentario": "A resposta correta apresenta interjeicao, cuja função básica e expressar reacao ou emocao instantanea.",
       "tempoEstimado": 20,
       "tags": [
         "interjeicao",
@@ -801,20 +801,20 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Substantivo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmacao \"Na frase A amizade fortalece a turma., a palavra amizade e substantivo\" esta correta?",
+      "enunciado": "A afirmacao \"Na frase A amizade fortalece a turma., a palavra amizade e substantivo\" está correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Esta correta porque amizade aparece como nome de algo ou alguem.",
+      "comentario": "Está correta porque amizade aparece como nome de algo ou alguem.",
       "tempoEstimado": 20,
       "tags": [
         "substantivo",
@@ -837,8 +837,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Artigo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -849,7 +849,7 @@ export const gramaticaClassesDePalavras = {
         "Artigo",
         "Pronome",
         "Numeral",
-        "Preposicao"
+        "Preposição"
       ],
       "correta": "Artigo",
       "comentario": "Artigo acompanha o substantivo, determinando-o ou indefinindo-o.",
@@ -875,8 +875,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -890,7 +890,7 @@ export const gramaticaClassesDePalavras = {
         "por - Passou por aqui ontem."
       ],
       "correta": "gentil - Ele usou um tom gentil.",
-      "comentario": "A resposta correta apresenta adjetivo, cuja funcao basica e caracterizar ou qualificar um substantivo.",
+      "comentario": "A resposta correta apresenta adjetivo, cuja função básica e caracterizar ou qualificar um substantivo.",
       "tempoEstimado": 20,
       "tags": [
         "adjetivo",
@@ -913,20 +913,20 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pronome",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmacao \"Na frase Ninguem faltou hoje., a palavra Ninguem e pronome\" esta correta?",
+      "enunciado": "A afirmacao \"Na frase Ninguem faltou hoje., a palavra Ninguem e pronome\" está correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Esta correta porque Ninguem faz referencia a pessoas do discurso ou ao nome.",
+      "comentario": "Está correta porque Ninguem faz referência a pessoas do discurso ou ao nome.",
       "tempoEstimado": 20,
       "tags": [
         "pronome",
@@ -949,8 +949,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Numeral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -987,8 +987,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -1002,7 +1002,7 @@ export const gramaticaClassesDePalavras = {
         "Ninguem - Ninguem faltou hoje."
       ],
       "correta": "estudo - Eu estudo todos os dias.",
-      "comentario": "A resposta correta apresenta verbo, cuja funcao basica e indicar acao, estado ou processo.",
+      "comentario": "A resposta correta apresenta verbo, cuja função básica e indicar ação, estado ou processo.",
       "tempoEstimado": 20,
       "tags": [
         "verbo",
@@ -1025,20 +1025,20 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Adverbio",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmacao \"Na frase Quase todos participaram., a palavra Quase e adverbio\" esta correta?",
+      "enunciado": "A afirmacao \"Na frase Quase todos participaram., a palavra Quase e adverbio\" está correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Esta correta porque Quase altera o sentido de verbo, adjetivo ou outro adverbio.",
+      "comentario": "Está correta porque Quase altera o sentido de verbo, adjetivo ou outro adverbio.",
       "tempoEstimado": 20,
       "tags": [
         "adverbio",
@@ -1061,22 +1061,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Preposicao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Preposição",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
       "enunciado": "Na frase \"Passou por aqui ontem.\", a palavra \"por\" pertence a qual classe de palavras?",
       "opcoes": [
-        "Preposicao",
+        "Preposição",
         "Conjuncao",
         "Adverbio",
         "Artigo"
       ],
-      "correta": "Preposicao",
-      "comentario": "Preposicao liga palavras ou termos, estabelecendo relacoes entre eles.",
+      "correta": "Preposição",
+      "comentario": "Preposição liga palavras ou termos, estabelecendo relações entre eles.",
       "tempoEstimado": 20,
       "tags": [
         "preposicao",
@@ -1099,8 +1099,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -1108,13 +1108,13 @@ export const gramaticaClassesDePalavras = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa traz um exemplo de conjuncao?",
       "opcoes": [
-        "ou - Ou voce revisa, ou sente dificuldade.",
+        "ou - Ou você revisa, ou sente dificuldade.",
         "de - Saiu de casa cedo.",
         "Nossa - Nossa, que susto!",
         "amizade - A amizade fortalece a turma."
       ],
-      "correta": "ou - Ou voce revisa, ou sente dificuldade.",
-      "comentario": "A resposta correta apresenta conjuncao, cuja funcao basica e ligar oracoes ou termos e marcar relacoes logicas.",
+      "correta": "ou - Ou você revisa, ou sente dificuldade.",
+      "comentario": "A resposta correta apresenta conjuncao, cuja função básica e ligar oracoes ou termos e marcar relações logicas.",
       "tempoEstimado": 20,
       "tags": [
         "conjuncao",
@@ -1137,20 +1137,20 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Interjeicao",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmacao \"Na frase Ei, espere um pouco!, a palavra Ei e interjeicao\" esta correta?",
+      "enunciado": "A afirmacao \"Na frase Ei, espere um pouco!, a palavra Ei e interjeicao\" está correta?",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Esta correta porque Ei surge como exclamacao, chamado ou resposta espontanea.",
+      "comentario": "Está correta porque Ei surge como exclamacao, chamado ou resposta espontanea.",
       "tempoEstimado": 20,
       "tags": [
         "interjeicao",
@@ -1173,8 +1173,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1212,18 +1212,18 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Funcao na oracao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Função na oracao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao basica a palavra \"Uma\" exerce em \"Uma menina entrou na sala.\"?",
+      "enunciado": "Qual função básica a palavra \"Uma\" exerce em \"Uma menina entrou na sala.\"?",
       "opcoes": [
         "acompanhar e determinar o substantivo",
-        "apenas repetir uma palavra sem funcao gramatical",
-        "eliminar qualquer relacao sintatica do enunciado",
+        "apenas repetir uma palavra sem função gramatical",
+        "eliminar qualquer relação sintática do enunciado",
         "substituir a frase por um conjunto aleatorio de termos"
       ],
       "correta": "acompanhar e determinar o substantivo",
@@ -1250,22 +1250,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Diferenciacao entre classes",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Diferenciação entre classes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Na frase \"A resposta correta apareceu no quadro.\", a palavra \"correta\" e Adjetivo, e nao Substantivo, porque:",
+      "enunciado": "Na frase \"A resposta correta apareceu no quadro.\", a palavra \"correta\" e Adjetivo, e não Substantivo, porque:",
       "opcoes": [
         "indica qualidade, estado ou aspecto de um nome.",
         "Substantivo sempre aparece no inicio da frase.",
-        "Substantivo nao depende do contexto em que a palavra aparece.",
+        "Substantivo não depende do contexto em que a palavra aparece.",
         "Substantivo se reconhece apenas pelo tamanho da palavra."
       ],
       "correta": "indica qualidade, estado ou aspecto de um nome.",
-      "comentario": "A classificacao depende do papel desempenhado pela palavra no contexto.",
+      "comentario": "A classificação depende do papel desempenhado pela palavra no contexto.",
       "tempoEstimado": 35,
       "tags": [
         "adjetivo",
@@ -1288,8 +1288,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pronome",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1326,22 +1326,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor a classe gramatical da palavra \"segundo\" em \"O capitulo segundo sera revisado.\"?",
+      "enunciado": "Qual definição corresponde melhor a classe gramatical da palavra \"segundo\" em \"O capitulo segundo será revisado.\"?",
       "opcoes": [
         "indica quantidade, ordem, multiplicacao ou fracao",
         "nomeia seres, lugares, sentimentos, ideias ou objetos",
         "acompanha o substantivo, determinando-o ou indefinindo-o",
-        "atribui caracteristicas, qualidades ou estados ao substantivo"
+        "atribui características, qualidades ou estados ao substantivo"
       ],
       "correta": "indica quantidade, ordem, multiplicacao ou fracao",
-      "comentario": "A definicao correta recupera o papel gramatical do termo no enunciado.",
+      "comentario": "A definição correta recupera o papel gramatical do termo no enunciado.",
       "tempoEstimado": 30,
       "tags": [
         "numeral",
@@ -1364,14 +1364,14 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO traz uma palavra da classe verbo?",
+      "enunciado": "Qual alternativa NÃO traz uma palavra da classe verbo?",
       "opcoes": [
         "claro",
         "estudo",
@@ -1402,8 +1402,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1414,7 +1414,7 @@ export const gramaticaClassesDePalavras = {
         "Adverbio",
         "Numeral",
         "Verbo",
-        "Preposicao"
+        "Preposição"
       ],
       "correta": "Adverbio",
       "comentario": "Nesse contexto, bem funciona como adverbio.",
@@ -1441,22 +1441,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Funcao na oracao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Função na oracao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao basica a palavra \"por\" exerce em \"Passou por aqui ontem.\"?",
+      "enunciado": "Qual função básica a palavra \"por\" exerce em \"Passou por aqui ontem.\"?",
       "opcoes": [
-        "ligar termos e indicar relacoes",
-        "apenas repetir uma palavra sem funcao gramatical",
-        "eliminar qualquer relacao sintatica do enunciado",
+        "ligar termos e indicar relações",
+        "apenas repetir uma palavra sem função gramatical",
+        "eliminar qualquer relação sintática do enunciado",
         "substituir a frase por um conjunto aleatorio de termos"
       ],
-      "correta": "ligar termos e indicar relacoes",
-      "comentario": "Preposicao costuma ligar termos e indicar relacoes.",
+      "correta": "ligar termos e indicar relações",
+      "comentario": "Preposição costuma ligar termos e indicar relações.",
       "tempoEstimado": 35,
       "tags": [
         "preposicao",
@@ -1479,22 +1479,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Diferenciacao entre classes",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Diferenciação entre classes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Na frase \"Se chover, ficaremos em casa.\", a palavra \"Se\" e Conjuncao, e nao Preposicao, porque:",
+      "enunciado": "Na frase \"Se chover, ficaremos em casa.\", a palavra \"Se\" e Conjuncao, e não Preposição, porque:",
       "opcoes": [
-        "conecta partes do enunciado, indicando adicao, oposicao, causa e outras relacoes.",
-        "Preposicao sempre aparece no inicio da frase.",
-        "Preposicao nao depende do contexto em que a palavra aparece.",
-        "Preposicao se reconhece apenas pelo tamanho da palavra."
+        "conecta partes do enunciado, indicando adicao, oposicao, causa e outras relações.",
+        "Preposição sempre aparece no inicio da frase.",
+        "Preposição não depende do contexto em que a palavra aparece.",
+        "Preposição se reconhece apenas pelo tamanho da palavra."
       ],
-      "correta": "conecta partes do enunciado, indicando adicao, oposicao, causa e outras relacoes.",
-      "comentario": "A classificacao depende do papel desempenhado pela palavra no contexto.",
+      "correta": "conecta partes do enunciado, indicando adicao, oposicao, causa e outras relações.",
+      "comentario": "A classificação depende do papel desempenhado pela palavra no contexto.",
       "tempoEstimado": 35,
       "tags": [
         "conjuncao",
@@ -1517,8 +1517,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Interjeicao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1555,22 +1555,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor a classe gramatical da palavra \"escola\" em \"A escola abriu cedo hoje.\"?",
+      "enunciado": "Qual definição corresponde melhor a classe gramatical da palavra \"escola\" em \"A escola abriu cedo hoje.\"?",
       "opcoes": [
         "nomeia seres, lugares, sentimentos, ideias ou objetos",
-        "atribui caracteristicas, qualidades ou estados ao substantivo",
+        "atribui características, qualidades ou estados ao substantivo",
         "substitui ou acompanha o substantivo, retomando pessoas ou seres do discurso",
         "indica quantidade, ordem, multiplicacao ou fracao"
       ],
       "correta": "nomeia seres, lugares, sentimentos, ideias ou objetos",
-      "comentario": "A definicao correta recupera o papel gramatical do termo no enunciado.",
+      "comentario": "A definição correta recupera o papel gramatical do termo no enunciado.",
       "tempoEstimado": 30,
       "tags": [
         "substantivo",
@@ -1593,14 +1593,14 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO traz uma palavra da classe artigo?",
+      "enunciado": "Qual alternativa NÃO traz uma palavra da classe artigo?",
       "opcoes": [
         "Metade",
         "O",
@@ -1631,8 +1631,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1642,7 +1642,7 @@ export const gramaticaClassesDePalavras = {
       "opcoes": [
         "Adjetivo",
         "Adverbio",
-        "Preposicao",
+        "Preposição",
         "Conjuncao"
       ],
       "correta": "Adjetivo",
@@ -1670,18 +1670,18 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Funcao na oracao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Função na oracao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao basica a palavra \"Aquele\" exerce em \"Aquele aluno respondeu rapido.\"?",
+      "enunciado": "Qual função básica a palavra \"Aquele\" exerce em \"Aquele aluno respondeu rapido.\"?",
       "opcoes": [
         "retomar, substituir ou acompanhar o nome",
-        "apenas repetir uma palavra sem funcao gramatical",
-        "eliminar qualquer relacao sintatica do enunciado",
+        "apenas repetir uma palavra sem função gramatical",
+        "eliminar qualquer relação sintática do enunciado",
         "substituir a frase por um conjunto aleatorio de termos"
       ],
       "correta": "retomar, substituir ou acompanhar o nome",
@@ -1708,22 +1708,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Diferenciacao entre classes",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Diferenciação entre classes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Na frase \"O capitulo segundo sera revisado.\", a palavra \"segundo\" e Numeral, e nao Artigo, porque:",
+      "enunciado": "Na frase \"O capitulo segundo será revisado.\", a palavra \"segundo\" e Numeral, e não Artigo, porque:",
       "opcoes": [
-        "aponta quantidade ou posicao numerica.",
+        "aponta quantidade ou posição numerica.",
         "Artigo sempre aparece no inicio da frase.",
-        "Artigo nao depende do contexto em que a palavra aparece.",
+        "Artigo não depende do contexto em que a palavra aparece.",
         "Artigo se reconhece apenas pelo tamanho da palavra."
       ],
-      "correta": "aponta quantidade ou posicao numerica.",
-      "comentario": "A classificacao depende do papel desempenhado pela palavra no contexto.",
+      "correta": "aponta quantidade ou posição numerica.",
+      "comentario": "A classificação depende do papel desempenhado pela palavra no contexto.",
       "tempoEstimado": 35,
       "tags": [
         "numeral",
@@ -1746,8 +1746,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Verbo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1784,22 +1784,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor a classe gramatical da palavra \"bem\" em \"A turma respondeu bem.\"?",
+      "enunciado": "Qual definição corresponde melhor a classe gramatical da palavra \"bem\" em \"A turma respondeu bem.\"?",
       "opcoes": [
         "modifica verbo, adjetivo ou outro adverbio, indicando circunstancia",
         "indica quantidade, ordem, multiplicacao ou fracao",
-        "indica acao, estado, fenomeno ou processo",
-        "liga palavras ou termos, estabelecendo relacoes entre eles"
+        "indica ação, estado, fenomeno ou processo",
+        "liga palavras ou termos, estabelecendo relações entre eles"
       ],
       "correta": "modifica verbo, adjetivo ou outro adverbio, indicando circunstancia",
-      "comentario": "A definicao correta recupera o papel gramatical do termo no enunciado.",
+      "comentario": "A definição correta recupera o papel gramatical do termo no enunciado.",
       "tempoEstimado": 30,
       "tags": [
         "adverbio",
@@ -1822,14 +1822,14 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO traz uma palavra da classe preposicao?",
+      "enunciado": "Qual alternativa NÃO traz uma palavra da classe preposição?",
       "opcoes": [
         "Talvez",
         "para",
@@ -1860,8 +1860,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1899,18 +1899,18 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Funcao na oracao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Função na oracao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao basica a palavra \"Puxa\" exerce em \"Puxa, isso foi rapido!\"?",
+      "enunciado": "Qual função básica a palavra \"Puxa\" exerce em \"Puxa, isso foi rapido!\"?",
       "opcoes": [
         "expressar reacao ou emocao instantanea",
-        "apenas repetir uma palavra sem funcao gramatical",
-        "eliminar qualquer relacao sintatica do enunciado",
+        "apenas repetir uma palavra sem função gramatical",
+        "eliminar qualquer relação sintática do enunciado",
         "substituir a frase por um conjunto aleatorio de termos"
       ],
       "correta": "expressar reacao ou emocao instantanea",
@@ -1937,22 +1937,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Diferenciacao entre classes",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Diferenciação entre classes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Na frase \"A escola abriu cedo hoje.\", a palavra \"escola\" e Substantivo, e nao Adjetivo, porque:",
+      "enunciado": "Na frase \"A escola abriu cedo hoje.\", a palavra \"escola\" e Substantivo, e não Adjetivo, porque:",
       "opcoes": [
         "aparece como nome de algo ou alguem.",
         "Adjetivo sempre aparece no inicio da frase.",
-        "Adjetivo nao depende do contexto em que a palavra aparece.",
+        "Adjetivo não depende do contexto em que a palavra aparece.",
         "Adjetivo se reconhece apenas pelo tamanho da palavra."
       ],
       "correta": "aparece como nome de algo ou alguem.",
-      "comentario": "A classificacao depende do papel desempenhado pela palavra no contexto.",
+      "comentario": "A classificação depende do papel desempenhado pela palavra no contexto.",
       "tempoEstimado": 35,
       "tags": [
         "substantivo",
@@ -1975,8 +1975,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Artigo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -2013,22 +2013,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor a classe gramatical da palavra \"correta\" em \"A resposta correta apareceu no quadro.\"?",
+      "enunciado": "Qual definição corresponde melhor a classe gramatical da palavra \"correta\" em \"A resposta correta apareceu no quadro.\"?",
       "opcoes": [
-        "atribui caracteristicas, qualidades ou estados ao substantivo",
+        "atribui características, qualidades ou estados ao substantivo",
         "modifica verbo, adjetivo ou outro adverbio, indicando circunstancia",
-        "liga palavras ou termos, estabelecendo relacoes entre eles",
-        "liga oracoes ou termos de mesma funcao, estabelecendo relacoes de sentido"
+        "liga palavras ou termos, estabelecendo relações entre eles",
+        "liga oracoes ou termos de mesma função, estabelecendo relações de sentido"
       ],
-      "correta": "atribui caracteristicas, qualidades ou estados ao substantivo",
-      "comentario": "A definicao correta recupera o papel gramatical do termo no enunciado.",
+      "correta": "atribui características, qualidades ou estados ao substantivo",
+      "comentario": "A definição correta recupera o papel gramatical do termo no enunciado.",
       "tempoEstimado": 30,
       "tags": [
         "adjetivo",
@@ -2051,14 +2051,14 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO traz uma palavra da classe pronome?",
+      "enunciado": "Qual alternativa NÃO traz uma palavra da classe pronome?",
       "opcoes": [
         "ou",
         "Isso",
@@ -2089,14 +2089,14 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"O capitulo segundo sera revisado.\", a palavra \"segundo\" deve ser classificada como:",
+      "enunciado": "Em \"O capitulo segundo será revisado.\", a palavra \"segundo\" deve ser classificada como:",
       "opcoes": [
         "Numeral",
         "Substantivo",
@@ -2128,22 +2128,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Funcao na oracao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Função na oracao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao basica a palavra \"correram\" exerce em \"Os atletas correram cedo.\"?",
+      "enunciado": "Qual função básica a palavra \"correram\" exerce em \"Os atletas correram cedo.\"?",
       "opcoes": [
-        "indicar acao, estado ou processo",
-        "apenas repetir uma palavra sem funcao gramatical",
-        "eliminar qualquer relacao sintatica do enunciado",
+        "indicar ação, estado ou processo",
+        "apenas repetir uma palavra sem função gramatical",
+        "eliminar qualquer relação sintática do enunciado",
         "substituir a frase por um conjunto aleatorio de termos"
       ],
-      "correta": "indicar acao, estado ou processo",
-      "comentario": "Verbo costuma indicar acao, estado ou processo.",
+      "correta": "indicar ação, estado ou processo",
+      "comentario": "Verbo costuma indicar ação, estado ou processo.",
       "tempoEstimado": 35,
       "tags": [
         "verbo",
@@ -2166,22 +2166,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Diferenciacao entre classes",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Diferenciação entre classes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Na frase \"A turma respondeu bem.\", a palavra \"bem\" e Adverbio, e nao Adjetivo, porque:",
+      "enunciado": "Na frase \"A turma respondeu bem.\", a palavra \"bem\" e Adverbio, e não Adjetivo, porque:",
       "opcoes": [
         "altera o sentido de verbo, adjetivo ou outro adverbio.",
         "Adjetivo sempre aparece no inicio da frase.",
-        "Adjetivo nao depende do contexto em que a palavra aparece.",
+        "Adjetivo não depende do contexto em que a palavra aparece.",
         "Adjetivo se reconhece apenas pelo tamanho da palavra."
       ],
       "correta": "altera o sentido de verbo, adjetivo ou outro adverbio.",
-      "comentario": "A classificacao depende do papel desempenhado pela palavra no contexto.",
+      "comentario": "A classificação depende do papel desempenhado pela palavra no contexto.",
       "tempoEstimado": 35,
       "tags": [
         "adverbio",
@@ -2204,9 +2204,9 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Preposicao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Preposição",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
@@ -2242,22 +2242,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor a classe gramatical da palavra \"Se\" em \"Se chover, ficaremos em casa.\"?",
+      "enunciado": "Qual definição corresponde melhor a classe gramatical da palavra \"Se\" em \"Se chover, ficaremos em casa.\"?",
       "opcoes": [
-        "liga oracoes ou termos de mesma funcao, estabelecendo relacoes de sentido",
+        "liga oracoes ou termos de mesma função, estabelecendo relações de sentido",
         "expressa emocoes, reacoes ou chamamentos de modo imediato",
         "nomeia seres, lugares, sentimentos, ideias ou objetos",
         "acompanha o substantivo, determinando-o ou indefinindo-o"
       ],
-      "correta": "liga oracoes ou termos de mesma funcao, estabelecendo relacoes de sentido",
-      "comentario": "A definicao correta recupera o papel gramatical do termo no enunciado.",
+      "correta": "liga oracoes ou termos de mesma função, estabelecendo relações de sentido",
+      "comentario": "A definição correta recupera o papel gramatical do termo no enunciado.",
       "tempoEstimado": 30,
       "tags": [
         "conjuncao",
@@ -2280,14 +2280,14 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO traz uma palavra da classe interjeicao?",
+      "enunciado": "Qual alternativa NÃO traz uma palavra da classe interjeicao?",
       "opcoes": [
         "escola",
         "Ah",
@@ -2318,8 +2318,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -2357,18 +2357,18 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Funcao na oracao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Função na oracao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao basica a palavra \"Uma\" exerce em \"Uma menina entrou na sala.\"?",
+      "enunciado": "Qual função básica a palavra \"Uma\" exerce em \"Uma menina entrou na sala.\"?",
       "opcoes": [
         "acompanhar e determinar o substantivo",
-        "apenas repetir uma palavra sem funcao gramatical",
-        "eliminar qualquer relacao sintatica do enunciado",
+        "apenas repetir uma palavra sem função gramatical",
+        "eliminar qualquer relação sintática do enunciado",
         "substituir a frase por um conjunto aleatorio de termos"
       ],
       "correta": "acompanhar e determinar o substantivo",
@@ -2395,22 +2395,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Diferenciacao entre classes",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Diferenciação entre classes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Na frase \"A resposta correta apareceu no quadro.\", a palavra \"correta\" e Adjetivo, e nao Substantivo, porque:",
+      "enunciado": "Na frase \"A resposta correta apareceu no quadro.\", a palavra \"correta\" e Adjetivo, e não Substantivo, porque:",
       "opcoes": [
         "indica qualidade, estado ou aspecto de um nome.",
         "Substantivo sempre aparece no inicio da frase.",
-        "Substantivo nao depende do contexto em que a palavra aparece.",
+        "Substantivo não depende do contexto em que a palavra aparece.",
         "Substantivo se reconhece apenas pelo tamanho da palavra."
       ],
       "correta": "indica qualidade, estado ou aspecto de um nome.",
-      "comentario": "A classificacao depende do papel desempenhado pela palavra no contexto.",
+      "comentario": "A classificação depende do papel desempenhado pela palavra no contexto.",
       "tempoEstimado": 35,
       "tags": [
         "adjetivo",
@@ -2433,8 +2433,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pronome",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -2471,22 +2471,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor a classe gramatical da palavra \"segundo\" em \"O capitulo segundo sera revisado.\"?",
+      "enunciado": "Qual definição corresponde melhor a classe gramatical da palavra \"segundo\" em \"O capitulo segundo será revisado.\"?",
       "opcoes": [
         "indica quantidade, ordem, multiplicacao ou fracao",
         "nomeia seres, lugares, sentimentos, ideias ou objetos",
         "acompanha o substantivo, determinando-o ou indefinindo-o",
-        "atribui caracteristicas, qualidades ou estados ao substantivo"
+        "atribui características, qualidades ou estados ao substantivo"
       ],
       "correta": "indica quantidade, ordem, multiplicacao ou fracao",
-      "comentario": "A definicao correta recupera o papel gramatical do termo no enunciado.",
+      "comentario": "A definição correta recupera o papel gramatical do termo no enunciado.",
       "tempoEstimado": 30,
       "tags": [
         "numeral",
@@ -2509,14 +2509,14 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO traz uma palavra da classe verbo?",
+      "enunciado": "Qual alternativa NÃO traz uma palavra da classe verbo?",
       "opcoes": [
         "claro",
         "estudo",
@@ -2547,8 +2547,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -2559,7 +2559,7 @@ export const gramaticaClassesDePalavras = {
         "Adverbio",
         "Numeral",
         "Verbo",
-        "Preposicao"
+        "Preposição"
       ],
       "correta": "Adverbio",
       "comentario": "Nesse contexto, bem funciona como adverbio.",
@@ -2586,22 +2586,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Funcao na oracao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Função na oracao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao basica a palavra \"por\" exerce em \"Passou por aqui ontem.\"?",
+      "enunciado": "Qual função básica a palavra \"por\" exerce em \"Passou por aqui ontem.\"?",
       "opcoes": [
-        "ligar termos e indicar relacoes",
-        "apenas repetir uma palavra sem funcao gramatical",
-        "eliminar qualquer relacao sintatica do enunciado",
+        "ligar termos e indicar relações",
+        "apenas repetir uma palavra sem função gramatical",
+        "eliminar qualquer relação sintática do enunciado",
         "substituir a frase por um conjunto aleatorio de termos"
       ],
-      "correta": "ligar termos e indicar relacoes",
-      "comentario": "Preposicao costuma ligar termos e indicar relacoes.",
+      "correta": "ligar termos e indicar relações",
+      "comentario": "Preposição costuma ligar termos e indicar relações.",
       "tempoEstimado": 35,
       "tags": [
         "preposicao",
@@ -2624,22 +2624,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Diferenciacao entre classes",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Diferenciação entre classes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Na frase \"Se chover, ficaremos em casa.\", a palavra \"Se\" e Conjuncao, e nao Preposicao, porque:",
+      "enunciado": "Na frase \"Se chover, ficaremos em casa.\", a palavra \"Se\" e Conjuncao, e não Preposição, porque:",
       "opcoes": [
-        "conecta partes do enunciado, indicando adicao, oposicao, causa e outras relacoes.",
-        "Preposicao sempre aparece no inicio da frase.",
-        "Preposicao nao depende do contexto em que a palavra aparece.",
-        "Preposicao se reconhece apenas pelo tamanho da palavra."
+        "conecta partes do enunciado, indicando adicao, oposicao, causa e outras relações.",
+        "Preposição sempre aparece no inicio da frase.",
+        "Preposição não depende do contexto em que a palavra aparece.",
+        "Preposição se reconhece apenas pelo tamanho da palavra."
       ],
-      "correta": "conecta partes do enunciado, indicando adicao, oposicao, causa e outras relacoes.",
-      "comentario": "A classificacao depende do papel desempenhado pela palavra no contexto.",
+      "correta": "conecta partes do enunciado, indicando adicao, oposicao, causa e outras relações.",
+      "comentario": "A classificação depende do papel desempenhado pela palavra no contexto.",
       "tempoEstimado": 35,
       "tags": [
         "conjuncao",
@@ -2662,8 +2662,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Interjeicao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -2700,22 +2700,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor a classe gramatical da palavra \"escola\" em \"A escola abriu cedo hoje.\"?",
+      "enunciado": "Qual definição corresponde melhor a classe gramatical da palavra \"escola\" em \"A escola abriu cedo hoje.\"?",
       "opcoes": [
         "nomeia seres, lugares, sentimentos, ideias ou objetos",
-        "atribui caracteristicas, qualidades ou estados ao substantivo",
+        "atribui características, qualidades ou estados ao substantivo",
         "substitui ou acompanha o substantivo, retomando pessoas ou seres do discurso",
         "indica quantidade, ordem, multiplicacao ou fracao"
       ],
       "correta": "nomeia seres, lugares, sentimentos, ideias ou objetos",
-      "comentario": "A definicao correta recupera o papel gramatical do termo no enunciado.",
+      "comentario": "A definição correta recupera o papel gramatical do termo no enunciado.",
       "tempoEstimado": 30,
       "tags": [
         "substantivo",
@@ -2738,14 +2738,14 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO traz uma palavra da classe artigo?",
+      "enunciado": "Qual alternativa NÃO traz uma palavra da classe artigo?",
       "opcoes": [
         "Metade",
         "O",
@@ -2776,8 +2776,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -2787,7 +2787,7 @@ export const gramaticaClassesDePalavras = {
       "opcoes": [
         "Adjetivo",
         "Adverbio",
-        "Preposicao",
+        "Preposição",
         "Conjuncao"
       ],
       "correta": "Adjetivo",
@@ -2815,18 +2815,18 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Funcao na oracao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Função na oracao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao basica a palavra \"Aquele\" exerce em \"Aquele aluno respondeu rapido.\"?",
+      "enunciado": "Qual função básica a palavra \"Aquele\" exerce em \"Aquele aluno respondeu rapido.\"?",
       "opcoes": [
         "retomar, substituir ou acompanhar o nome",
-        "apenas repetir uma palavra sem funcao gramatical",
-        "eliminar qualquer relacao sintatica do enunciado",
+        "apenas repetir uma palavra sem função gramatical",
+        "eliminar qualquer relação sintática do enunciado",
         "substituir a frase por um conjunto aleatorio de termos"
       ],
       "correta": "retomar, substituir ou acompanhar o nome",
@@ -2853,22 +2853,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Diferenciacao entre classes",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Diferenciação entre classes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Na frase \"O capitulo segundo sera revisado.\", a palavra \"segundo\" e Numeral, e nao Artigo, porque:",
+      "enunciado": "Na frase \"O capitulo segundo será revisado.\", a palavra \"segundo\" e Numeral, e não Artigo, porque:",
       "opcoes": [
-        "aponta quantidade ou posicao numerica.",
+        "aponta quantidade ou posição numerica.",
         "Artigo sempre aparece no inicio da frase.",
-        "Artigo nao depende do contexto em que a palavra aparece.",
+        "Artigo não depende do contexto em que a palavra aparece.",
         "Artigo se reconhece apenas pelo tamanho da palavra."
       ],
-      "correta": "aponta quantidade ou posicao numerica.",
-      "comentario": "A classificacao depende do papel desempenhado pela palavra no contexto.",
+      "correta": "aponta quantidade ou posição numerica.",
+      "comentario": "A classificação depende do papel desempenhado pela palavra no contexto.",
       "tempoEstimado": 35,
       "tags": [
         "numeral",
@@ -2891,8 +2891,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Verbo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -2929,22 +2929,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor a classe gramatical da palavra \"bem\" em \"A turma respondeu bem.\"?",
+      "enunciado": "Qual definição corresponde melhor a classe gramatical da palavra \"bem\" em \"A turma respondeu bem.\"?",
       "opcoes": [
         "modifica verbo, adjetivo ou outro adverbio, indicando circunstancia",
         "indica quantidade, ordem, multiplicacao ou fracao",
-        "indica acao, estado, fenomeno ou processo",
-        "liga palavras ou termos, estabelecendo relacoes entre eles"
+        "indica ação, estado, fenomeno ou processo",
+        "liga palavras ou termos, estabelecendo relações entre eles"
       ],
       "correta": "modifica verbo, adjetivo ou outro adverbio, indicando circunstancia",
-      "comentario": "A definicao correta recupera o papel gramatical do termo no enunciado.",
+      "comentario": "A definição correta recupera o papel gramatical do termo no enunciado.",
       "tempoEstimado": 30,
       "tags": [
         "adverbio",
@@ -2967,14 +2967,14 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO traz uma palavra da classe preposicao?",
+      "enunciado": "Qual alternativa NÃO traz uma palavra da classe preposição?",
       "opcoes": [
         "Talvez",
         "para",
@@ -3005,8 +3005,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -3044,18 +3044,18 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Funcao na oracao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Função na oracao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao basica a palavra \"Puxa\" exerce em \"Puxa, isso foi rapido!\"?",
+      "enunciado": "Qual função básica a palavra \"Puxa\" exerce em \"Puxa, isso foi rapido!\"?",
       "opcoes": [
         "expressar reacao ou emocao instantanea",
-        "apenas repetir uma palavra sem funcao gramatical",
-        "eliminar qualquer relacao sintatica do enunciado",
+        "apenas repetir uma palavra sem função gramatical",
+        "eliminar qualquer relação sintática do enunciado",
         "substituir a frase por um conjunto aleatorio de termos"
       ],
       "correta": "expressar reacao ou emocao instantanea",
@@ -3082,22 +3082,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Diferenciacao entre classes",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Diferenciação entre classes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Na frase \"A escola abriu cedo hoje.\", a palavra \"escola\" e Substantivo, e nao Adjetivo, porque:",
+      "enunciado": "Na frase \"A escola abriu cedo hoje.\", a palavra \"escola\" e Substantivo, e não Adjetivo, porque:",
       "opcoes": [
         "aparece como nome de algo ou alguem.",
         "Adjetivo sempre aparece no inicio da frase.",
-        "Adjetivo nao depende do contexto em que a palavra aparece.",
+        "Adjetivo não depende do contexto em que a palavra aparece.",
         "Adjetivo se reconhece apenas pelo tamanho da palavra."
       ],
       "correta": "aparece como nome de algo ou alguem.",
-      "comentario": "A classificacao depende do papel desempenhado pela palavra no contexto.",
+      "comentario": "A classificação depende do papel desempenhado pela palavra no contexto.",
       "tempoEstimado": 35,
       "tags": [
         "substantivo",
@@ -3120,8 +3120,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Artigo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -3158,22 +3158,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor a classe gramatical da palavra \"correta\" em \"A resposta correta apareceu no quadro.\"?",
+      "enunciado": "Qual definição corresponde melhor a classe gramatical da palavra \"correta\" em \"A resposta correta apareceu no quadro.\"?",
       "opcoes": [
-        "atribui caracteristicas, qualidades ou estados ao substantivo",
+        "atribui características, qualidades ou estados ao substantivo",
         "modifica verbo, adjetivo ou outro adverbio, indicando circunstancia",
-        "liga palavras ou termos, estabelecendo relacoes entre eles",
-        "liga oracoes ou termos de mesma funcao, estabelecendo relacoes de sentido"
+        "liga palavras ou termos, estabelecendo relações entre eles",
+        "liga oracoes ou termos de mesma função, estabelecendo relações de sentido"
       ],
-      "correta": "atribui caracteristicas, qualidades ou estados ao substantivo",
-      "comentario": "A definicao correta recupera o papel gramatical do termo no enunciado.",
+      "correta": "atribui características, qualidades ou estados ao substantivo",
+      "comentario": "A definição correta recupera o papel gramatical do termo no enunciado.",
       "tempoEstimado": 30,
       "tags": [
         "adjetivo",
@@ -3196,14 +3196,14 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO traz uma palavra da classe pronome?",
+      "enunciado": "Qual alternativa NÃO traz uma palavra da classe pronome?",
       "opcoes": [
         "ou",
         "Isso",
@@ -3234,14 +3234,14 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"O capitulo segundo sera revisado.\", a palavra \"segundo\" deve ser classificada como:",
+      "enunciado": "Em \"O capitulo segundo será revisado.\", a palavra \"segundo\" deve ser classificada como:",
       "opcoes": [
         "Numeral",
         "Substantivo",
@@ -3273,22 +3273,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Funcao na oracao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Função na oracao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao basica a palavra \"correram\" exerce em \"Os atletas correram cedo.\"?",
+      "enunciado": "Qual função básica a palavra \"correram\" exerce em \"Os atletas correram cedo.\"?",
       "opcoes": [
-        "indicar acao, estado ou processo",
-        "apenas repetir uma palavra sem funcao gramatical",
-        "eliminar qualquer relacao sintatica do enunciado",
+        "indicar ação, estado ou processo",
+        "apenas repetir uma palavra sem função gramatical",
+        "eliminar qualquer relação sintática do enunciado",
         "substituir a frase por um conjunto aleatorio de termos"
       ],
-      "correta": "indicar acao, estado ou processo",
-      "comentario": "Verbo costuma indicar acao, estado ou processo.",
+      "correta": "indicar ação, estado ou processo",
+      "comentario": "Verbo costuma indicar ação, estado ou processo.",
       "tempoEstimado": 35,
       "tags": [
         "verbo",
@@ -3311,22 +3311,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Diferenciacao entre classes",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Diferenciação entre classes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Na frase \"A turma respondeu bem.\", a palavra \"bem\" e Adverbio, e nao Adjetivo, porque:",
+      "enunciado": "Na frase \"A turma respondeu bem.\", a palavra \"bem\" e Adverbio, e não Adjetivo, porque:",
       "opcoes": [
         "altera o sentido de verbo, adjetivo ou outro adverbio.",
         "Adjetivo sempre aparece no inicio da frase.",
-        "Adjetivo nao depende do contexto em que a palavra aparece.",
+        "Adjetivo não depende do contexto em que a palavra aparece.",
         "Adjetivo se reconhece apenas pelo tamanho da palavra."
       ],
       "correta": "altera o sentido de verbo, adjetivo ou outro adverbio.",
-      "comentario": "A classificacao depende do papel desempenhado pela palavra no contexto.",
+      "comentario": "A classificação depende do papel desempenhado pela palavra no contexto.",
       "tempoEstimado": 35,
       "tags": [
         "adverbio",
@@ -3349,9 +3349,9 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Preposicao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Preposição",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
@@ -3387,22 +3387,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor a classe gramatical da palavra \"Se\" em \"Se chover, ficaremos em casa.\"?",
+      "enunciado": "Qual definição corresponde melhor a classe gramatical da palavra \"Se\" em \"Se chover, ficaremos em casa.\"?",
       "opcoes": [
-        "liga oracoes ou termos de mesma funcao, estabelecendo relacoes de sentido",
+        "liga oracoes ou termos de mesma função, estabelecendo relações de sentido",
         "expressa emocoes, reacoes ou chamamentos de modo imediato",
         "nomeia seres, lugares, sentimentos, ideias ou objetos",
         "acompanha o substantivo, determinando-o ou indefinindo-o"
       ],
-      "correta": "liga oracoes ou termos de mesma funcao, estabelecendo relacoes de sentido",
-      "comentario": "A definicao correta recupera o papel gramatical do termo no enunciado.",
+      "correta": "liga oracoes ou termos de mesma função, estabelecendo relações de sentido",
+      "comentario": "A definição correta recupera o papel gramatical do termo no enunciado.",
       "tempoEstimado": 30,
       "tags": [
         "conjuncao",
@@ -3425,14 +3425,14 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO traz uma palavra da classe interjeicao?",
+      "enunciado": "Qual alternativa NÃO traz uma palavra da classe interjeicao?",
       "opcoes": [
         "escola",
         "Ah",
@@ -3463,8 +3463,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -3502,18 +3502,18 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Funcao na oracao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Função na oracao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao basica a palavra \"Uma\" exerce em \"Uma menina entrou na sala.\"?",
+      "enunciado": "Qual função básica a palavra \"Uma\" exerce em \"Uma menina entrou na sala.\"?",
       "opcoes": [
         "acompanhar e determinar o substantivo",
-        "apenas repetir uma palavra sem funcao gramatical",
-        "eliminar qualquer relacao sintatica do enunciado",
+        "apenas repetir uma palavra sem função gramatical",
+        "eliminar qualquer relação sintática do enunciado",
         "substituir a frase por um conjunto aleatorio de termos"
       ],
       "correta": "acompanhar e determinar o substantivo",
@@ -3540,22 +3540,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Diferenciacao entre classes",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Diferenciação entre classes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Na frase \"A resposta correta apareceu no quadro.\", a palavra \"correta\" e Adjetivo, e nao Substantivo, porque:",
+      "enunciado": "Na frase \"A resposta correta apareceu no quadro.\", a palavra \"correta\" e Adjetivo, e não Substantivo, porque:",
       "opcoes": [
         "indica qualidade, estado ou aspecto de um nome.",
         "Substantivo sempre aparece no inicio da frase.",
-        "Substantivo nao depende do contexto em que a palavra aparece.",
+        "Substantivo não depende do contexto em que a palavra aparece.",
         "Substantivo se reconhece apenas pelo tamanho da palavra."
       ],
       "correta": "indica qualidade, estado ou aspecto de um nome.",
-      "comentario": "A classificacao depende do papel desempenhado pela palavra no contexto.",
+      "comentario": "A classificação depende do papel desempenhado pela palavra no contexto.",
       "tempoEstimado": 35,
       "tags": [
         "adjetivo",
@@ -3578,8 +3578,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pronome",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -3616,22 +3616,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor a classe gramatical da palavra \"segundo\" em \"O capitulo segundo sera revisado.\"?",
+      "enunciado": "Qual definição corresponde melhor a classe gramatical da palavra \"segundo\" em \"O capitulo segundo será revisado.\"?",
       "opcoes": [
         "indica quantidade, ordem, multiplicacao ou fracao",
         "nomeia seres, lugares, sentimentos, ideias ou objetos",
         "acompanha o substantivo, determinando-o ou indefinindo-o",
-        "atribui caracteristicas, qualidades ou estados ao substantivo"
+        "atribui características, qualidades ou estados ao substantivo"
       ],
       "correta": "indica quantidade, ordem, multiplicacao ou fracao",
-      "comentario": "A definicao correta recupera o papel gramatical do termo no enunciado.",
+      "comentario": "A definição correta recupera o papel gramatical do termo no enunciado.",
       "tempoEstimado": 30,
       "tags": [
         "numeral",
@@ -3654,14 +3654,14 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO traz uma palavra da classe verbo?",
+      "enunciado": "Qual alternativa NÃO traz uma palavra da classe verbo?",
       "opcoes": [
         "claro",
         "estudo",
@@ -3692,8 +3692,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -3704,7 +3704,7 @@ export const gramaticaClassesDePalavras = {
         "Adverbio",
         "Numeral",
         "Verbo",
-        "Preposicao"
+        "Preposição"
       ],
       "correta": "Adverbio",
       "comentario": "Nesse contexto, bem funciona como adverbio.",
@@ -3731,22 +3731,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Funcao na oracao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Função na oracao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao basica a palavra \"por\" exerce em \"Passou por aqui ontem.\"?",
+      "enunciado": "Qual função básica a palavra \"por\" exerce em \"Passou por aqui ontem.\"?",
       "opcoes": [
-        "ligar termos e indicar relacoes",
-        "apenas repetir uma palavra sem funcao gramatical",
-        "eliminar qualquer relacao sintatica do enunciado",
+        "ligar termos e indicar relações",
+        "apenas repetir uma palavra sem função gramatical",
+        "eliminar qualquer relação sintática do enunciado",
         "substituir a frase por um conjunto aleatorio de termos"
       ],
-      "correta": "ligar termos e indicar relacoes",
-      "comentario": "Preposicao costuma ligar termos e indicar relacoes.",
+      "correta": "ligar termos e indicar relações",
+      "comentario": "Preposição costuma ligar termos e indicar relações.",
       "tempoEstimado": 35,
       "tags": [
         "preposicao",
@@ -3769,22 +3769,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Diferenciacao entre classes",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Diferenciação entre classes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Na frase \"Se chover, ficaremos em casa.\", a palavra \"Se\" e Conjuncao, e nao Preposicao, porque:",
+      "enunciado": "Na frase \"Se chover, ficaremos em casa.\", a palavra \"Se\" e Conjuncao, e não Preposição, porque:",
       "opcoes": [
-        "conecta partes do enunciado, indicando adicao, oposicao, causa e outras relacoes.",
-        "Preposicao sempre aparece no inicio da frase.",
-        "Preposicao nao depende do contexto em que a palavra aparece.",
-        "Preposicao se reconhece apenas pelo tamanho da palavra."
+        "conecta partes do enunciado, indicando adicao, oposicao, causa e outras relações.",
+        "Preposição sempre aparece no inicio da frase.",
+        "Preposição não depende do contexto em que a palavra aparece.",
+        "Preposição se reconhece apenas pelo tamanho da palavra."
       ],
-      "correta": "conecta partes do enunciado, indicando adicao, oposicao, causa e outras relacoes.",
-      "comentario": "A classificacao depende do papel desempenhado pela palavra no contexto.",
+      "correta": "conecta partes do enunciado, indicando adicao, oposicao, causa e outras relações.",
+      "comentario": "A classificação depende do papel desempenhado pela palavra no contexto.",
       "tempoEstimado": 35,
       "tags": [
         "conjuncao",
@@ -3807,8 +3807,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Interjeicao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -3845,22 +3845,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor a classe gramatical da palavra \"escola\" em \"A escola abriu cedo hoje.\"?",
+      "enunciado": "Qual definição corresponde melhor a classe gramatical da palavra \"escola\" em \"A escola abriu cedo hoje.\"?",
       "opcoes": [
         "nomeia seres, lugares, sentimentos, ideias ou objetos",
-        "atribui caracteristicas, qualidades ou estados ao substantivo",
+        "atribui características, qualidades ou estados ao substantivo",
         "substitui ou acompanha o substantivo, retomando pessoas ou seres do discurso",
         "indica quantidade, ordem, multiplicacao ou fracao"
       ],
       "correta": "nomeia seres, lugares, sentimentos, ideias ou objetos",
-      "comentario": "A definicao correta recupera o papel gramatical do termo no enunciado.",
+      "comentario": "A definição correta recupera o papel gramatical do termo no enunciado.",
       "tempoEstimado": 30,
       "tags": [
         "substantivo",
@@ -3883,14 +3883,14 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO traz uma palavra da classe artigo?",
+      "enunciado": "Qual alternativa NÃO traz uma palavra da classe artigo?",
       "opcoes": [
         "Metade",
         "O",
@@ -3921,8 +3921,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -3932,7 +3932,7 @@ export const gramaticaClassesDePalavras = {
       "opcoes": [
         "Adjetivo",
         "Adverbio",
-        "Preposicao",
+        "Preposição",
         "Conjuncao"
       ],
       "correta": "Adjetivo",
@@ -3960,18 +3960,18 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Funcao na oracao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Função na oracao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao basica a palavra \"Aquele\" exerce em \"Aquele aluno respondeu rapido.\"?",
+      "enunciado": "Qual função básica a palavra \"Aquele\" exerce em \"Aquele aluno respondeu rapido.\"?",
       "opcoes": [
         "retomar, substituir ou acompanhar o nome",
-        "apenas repetir uma palavra sem funcao gramatical",
-        "eliminar qualquer relacao sintatica do enunciado",
+        "apenas repetir uma palavra sem função gramatical",
+        "eliminar qualquer relação sintática do enunciado",
         "substituir a frase por um conjunto aleatorio de termos"
       ],
       "correta": "retomar, substituir ou acompanhar o nome",
@@ -3998,22 +3998,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Diferenciacao entre classes",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Diferenciação entre classes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Na frase \"O capitulo segundo sera revisado.\", a palavra \"segundo\" e Numeral, e nao Artigo, porque:",
+      "enunciado": "Na frase \"O capitulo segundo será revisado.\", a palavra \"segundo\" e Numeral, e não Artigo, porque:",
       "opcoes": [
-        "aponta quantidade ou posicao numerica.",
+        "aponta quantidade ou posição numerica.",
         "Artigo sempre aparece no inicio da frase.",
-        "Artigo nao depende do contexto em que a palavra aparece.",
+        "Artigo não depende do contexto em que a palavra aparece.",
         "Artigo se reconhece apenas pelo tamanho da palavra."
       ],
-      "correta": "aponta quantidade ou posicao numerica.",
-      "comentario": "A classificacao depende do papel desempenhado pela palavra no contexto.",
+      "correta": "aponta quantidade ou posição numerica.",
+      "comentario": "A classificação depende do papel desempenhado pela palavra no contexto.",
       "tempoEstimado": 35,
       "tags": [
         "numeral",
@@ -4036,8 +4036,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Verbo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -4074,22 +4074,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor a classe gramatical da palavra \"bem\" em \"A turma respondeu bem.\"?",
+      "enunciado": "Qual definição corresponde melhor a classe gramatical da palavra \"bem\" em \"A turma respondeu bem.\"?",
       "opcoes": [
         "modifica verbo, adjetivo ou outro adverbio, indicando circunstancia",
         "indica quantidade, ordem, multiplicacao ou fracao",
-        "indica acao, estado, fenomeno ou processo",
-        "liga palavras ou termos, estabelecendo relacoes entre eles"
+        "indica ação, estado, fenomeno ou processo",
+        "liga palavras ou termos, estabelecendo relações entre eles"
       ],
       "correta": "modifica verbo, adjetivo ou outro adverbio, indicando circunstancia",
-      "comentario": "A definicao correta recupera o papel gramatical do termo no enunciado.",
+      "comentario": "A definição correta recupera o papel gramatical do termo no enunciado.",
       "tempoEstimado": 30,
       "tags": [
         "adverbio",
@@ -4112,14 +4112,14 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO traz uma palavra da classe preposicao?",
+      "enunciado": "Qual alternativa NÃO traz uma palavra da classe preposição?",
       "opcoes": [
         "Talvez",
         "para",
@@ -4150,8 +4150,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -4189,18 +4189,18 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Funcao na oracao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Função na oracao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao basica a palavra \"Puxa\" exerce em \"Puxa, isso foi rapido!\"?",
+      "enunciado": "Qual função básica a palavra \"Puxa\" exerce em \"Puxa, isso foi rapido!\"?",
       "opcoes": [
         "expressar reacao ou emocao instantanea",
-        "apenas repetir uma palavra sem funcao gramatical",
-        "eliminar qualquer relacao sintatica do enunciado",
+        "apenas repetir uma palavra sem função gramatical",
+        "eliminar qualquer relação sintática do enunciado",
         "substituir a frase por um conjunto aleatorio de termos"
       ],
       "correta": "expressar reacao ou emocao instantanea",
@@ -4227,22 +4227,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Diferenciacao entre classes",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Diferenciação entre classes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Na frase \"A escola abriu cedo hoje.\", a palavra \"escola\" e Substantivo, e nao Adjetivo, porque:",
+      "enunciado": "Na frase \"A escola abriu cedo hoje.\", a palavra \"escola\" e Substantivo, e não Adjetivo, porque:",
       "opcoes": [
         "aparece como nome de algo ou alguem.",
         "Adjetivo sempre aparece no inicio da frase.",
-        "Adjetivo nao depende do contexto em que a palavra aparece.",
+        "Adjetivo não depende do contexto em que a palavra aparece.",
         "Adjetivo se reconhece apenas pelo tamanho da palavra."
       ],
       "correta": "aparece como nome de algo ou alguem.",
-      "comentario": "A classificacao depende do papel desempenhado pela palavra no contexto.",
+      "comentario": "A classificação depende do papel desempenhado pela palavra no contexto.",
       "tempoEstimado": 35,
       "tags": [
         "substantivo",
@@ -4265,8 +4265,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Artigo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -4303,22 +4303,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor a classe gramatical da palavra \"correta\" em \"A resposta correta apareceu no quadro.\"?",
+      "enunciado": "Qual definição corresponde melhor a classe gramatical da palavra \"correta\" em \"A resposta correta apareceu no quadro.\"?",
       "opcoes": [
-        "atribui caracteristicas, qualidades ou estados ao substantivo",
+        "atribui características, qualidades ou estados ao substantivo",
         "modifica verbo, adjetivo ou outro adverbio, indicando circunstancia",
-        "liga palavras ou termos, estabelecendo relacoes entre eles",
-        "liga oracoes ou termos de mesma funcao, estabelecendo relacoes de sentido"
+        "liga palavras ou termos, estabelecendo relações entre eles",
+        "liga oracoes ou termos de mesma função, estabelecendo relações de sentido"
       ],
-      "correta": "atribui caracteristicas, qualidades ou estados ao substantivo",
-      "comentario": "A definicao correta recupera o papel gramatical do termo no enunciado.",
+      "correta": "atribui características, qualidades ou estados ao substantivo",
+      "comentario": "A definição correta recupera o papel gramatical do termo no enunciado.",
       "tempoEstimado": 30,
       "tags": [
         "adjetivo",
@@ -4341,14 +4341,14 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO traz uma palavra da classe pronome?",
+      "enunciado": "Qual alternativa NÃO traz uma palavra da classe pronome?",
       "opcoes": [
         "ou",
         "Isso",
@@ -4379,14 +4379,14 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em \"O capitulo segundo sera revisado.\", a palavra \"segundo\" deve ser classificada como:",
+      "enunciado": "Em \"O capitulo segundo será revisado.\", a palavra \"segundo\" deve ser classificada como:",
       "opcoes": [
         "Numeral",
         "Substantivo",
@@ -4418,22 +4418,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Funcao na oracao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Função na oracao",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao basica a palavra \"correram\" exerce em \"Os atletas correram cedo.\"?",
+      "enunciado": "Qual função básica a palavra \"correram\" exerce em \"Os atletas correram cedo.\"?",
       "opcoes": [
-        "indicar acao, estado ou processo",
-        "apenas repetir uma palavra sem funcao gramatical",
-        "eliminar qualquer relacao sintatica do enunciado",
+        "indicar ação, estado ou processo",
+        "apenas repetir uma palavra sem função gramatical",
+        "eliminar qualquer relação sintática do enunciado",
         "substituir a frase por um conjunto aleatorio de termos"
       ],
-      "correta": "indicar acao, estado ou processo",
-      "comentario": "Verbo costuma indicar acao, estado ou processo.",
+      "correta": "indicar ação, estado ou processo",
+      "comentario": "Verbo costuma indicar ação, estado ou processo.",
       "tempoEstimado": 35,
       "tags": [
         "verbo",
@@ -4456,22 +4456,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Diferenciacao entre classes",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Diferenciação entre classes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Na frase \"A turma respondeu bem.\", a palavra \"bem\" e Adverbio, e nao Adjetivo, porque:",
+      "enunciado": "Na frase \"A turma respondeu bem.\", a palavra \"bem\" e Adverbio, e não Adjetivo, porque:",
       "opcoes": [
         "altera o sentido de verbo, adjetivo ou outro adverbio.",
         "Adjetivo sempre aparece no inicio da frase.",
-        "Adjetivo nao depende do contexto em que a palavra aparece.",
+        "Adjetivo não depende do contexto em que a palavra aparece.",
         "Adjetivo se reconhece apenas pelo tamanho da palavra."
       ],
       "correta": "altera o sentido de verbo, adjetivo ou outro adverbio.",
-      "comentario": "A classificacao depende do papel desempenhado pela palavra no contexto.",
+      "comentario": "A classificação depende do papel desempenhado pela palavra no contexto.",
       "tempoEstimado": 35,
       "tags": [
         "adverbio",
@@ -4494,9 +4494,9 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Preposicao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Preposição",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
@@ -4532,22 +4532,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual definicao corresponde melhor a classe gramatical da palavra \"Se\" em \"Se chover, ficaremos em casa.\"?",
+      "enunciado": "Qual definição corresponde melhor a classe gramatical da palavra \"Se\" em \"Se chover, ficaremos em casa.\"?",
       "opcoes": [
-        "liga oracoes ou termos de mesma funcao, estabelecendo relacoes de sentido",
+        "liga oracoes ou termos de mesma função, estabelecendo relações de sentido",
         "expressa emocoes, reacoes ou chamamentos de modo imediato",
         "nomeia seres, lugares, sentimentos, ideias ou objetos",
         "acompanha o substantivo, determinando-o ou indefinindo-o"
       ],
-      "correta": "liga oracoes ou termos de mesma funcao, estabelecendo relacoes de sentido",
-      "comentario": "A definicao correta recupera o papel gramatical do termo no enunciado.",
+      "correta": "liga oracoes ou termos de mesma função, estabelecendo relações de sentido",
+      "comentario": "A definição correta recupera o papel gramatical do termo no enunciado.",
       "tempoEstimado": 30,
       "tags": [
         "conjuncao",
@@ -4570,14 +4570,14 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Identificacao em frase",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO traz uma palavra da classe interjeicao?",
+      "enunciado": "Qual alternativa NÃO traz uma palavra da classe interjeicao?",
       "opcoes": [
         "escola",
         "Ah",
@@ -4608,8 +4608,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
@@ -4646,19 +4646,19 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Diferenciacao entre classes",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Diferenciação entre classes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"Comi meia ma no intervalo.\" e disse que a palavra \"meia\" e Substantivo. Qual avaliacao esta correta?",
+      "enunciado": "Um estudante leu \"Comi meia ma no intervalo.\" e disse que a palavra \"meia\" e Substantivo. Qual avaliação está correta?",
       "opcoes": [
         "O estudante errou, porque o contexto mostra que a palavra e Numeral.",
-        "O estudante acertou, porque Numeral e Substantivo sao equivalentes.",
-        "O estudante acertou, porque o contexto nao altera a classe da palavra.",
-        "Nao e possivel classificar a palavra nessa frase."
+        "O estudante acertou, porque Numeral e Substantivo são equivalentes.",
+        "O estudante acertou, porque o contexto não altera a classe da palavra.",
+        "Não e possível classificar a palavra nessa frase."
       ],
       "correta": "O estudante errou, porque o contexto mostra que a palavra e Numeral.",
       "comentario": "Aqui meia indica fracao, portanto funciona como numeral.",
@@ -4684,22 +4684,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Funcao na oracao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Função na oracao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual interpretacao explica melhor a classificacao de \"muito\" em \"Estudei muito ontem.\"?",
+      "enunciado": "Qual interpretação explica melhor a classificação de \"muito\" em \"Estudei muito ontem.\"?",
       "opcoes": [
         "Muito intensifica o verbo estudar e funciona como adverbio.",
         "A palavra mantem sempre a mesma classe, independentemente do uso.",
-        "A classificacao depende apenas da primeira letra da palavra.",
-        "A palavra nao exerce funcao na frase."
+        "A classificação depende apenas da primeira letra da palavra.",
+        "A palavra não exerce função na frase."
       ],
       "correta": "Muito intensifica o verbo estudar e funciona como adverbio.",
-      "comentario": "O contexto da frase e decisivo para a classificacao correta.",
+      "comentario": "O contexto da frase e decisivo para a classificação correta.",
       "tempoEstimado": 40,
       "tags": [
         "interpretacao",
@@ -4722,8 +4722,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -4760,19 +4760,19 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Diferenciacao entre classes",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Diferenciação entre classes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"Ele disse que voltaria.\" e disse que a palavra \"que\" e Substantivo. Qual avaliacao esta correta?",
+      "enunciado": "Um estudante leu \"Ele disse que voltaria.\" e disse que a palavra \"que\" e Substantivo. Qual avaliação está correta?",
       "opcoes": [
         "O estudante errou, porque o contexto mostra que a palavra e Conjuncao.",
-        "O estudante acertou, porque Conjuncao e Substantivo sao equivalentes.",
-        "O estudante acertou, porque o contexto nao altera a classe da palavra.",
-        "Nao e possivel classificar a palavra nessa frase."
+        "O estudante acertou, porque Conjuncao e Substantivo são equivalentes.",
+        "O estudante acertou, porque o contexto não altera a classe da palavra.",
+        "Não e possível classificar a palavra nessa frase."
       ],
       "correta": "O estudante errou, porque o contexto mostra que a palavra e Conjuncao.",
       "comentario": "Que liga as oracoes e introduz a subordinada, funcionando como conjuncao.",
@@ -4798,22 +4798,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Funcao na oracao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Função na oracao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual interpretacao explica melhor a classificacao de \"Que\" em \"Que ideia curiosa!\"?",
+      "enunciado": "Qual interpretação explica melhor a classificação de \"Que\" em \"Que ideia curiosa!\"?",
       "opcoes": [
         "Que acompanha o substantivo ideia com valor exclamativo, funcionando como pronome.",
         "A palavra mantem sempre a mesma classe, independentemente do uso.",
-        "A classificacao depende apenas da primeira letra da palavra.",
-        "A palavra nao exerce funcao na frase."
+        "A classificação depende apenas da primeira letra da palavra.",
+        "A palavra não exerce função na frase."
       ],
       "correta": "Que acompanha o substantivo ideia com valor exclamativo, funcionando como pronome.",
-      "comentario": "O contexto da frase e decisivo para a classificacao correta.",
+      "comentario": "O contexto da frase e decisivo para a classificação correta.",
       "tempoEstimado": 40,
       "tags": [
         "interpretacao",
@@ -4836,8 +4836,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
@@ -4874,19 +4874,19 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Diferenciacao entre classes",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Diferenciação entre classes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"Ela e leve como o vento.\" e disse que a palavra \"como\" e Substantivo. Qual avaliacao esta correta?",
+      "enunciado": "Um estudante leu \"ela é leve como o vento.\" e disse que a palavra \"como\" e Substantivo. Qual avaliação está correta?",
       "opcoes": [
         "O estudante errou, porque o contexto mostra que a palavra e Conjuncao.",
-        "O estudante acertou, porque Conjuncao e Substantivo sao equivalentes.",
-        "O estudante acertou, porque o contexto nao altera a classe da palavra.",
-        "Nao e possivel classificar a palavra nessa frase."
+        "O estudante acertou, porque Conjuncao e Substantivo são equivalentes.",
+        "O estudante acertou, porque o contexto não altera a classe da palavra.",
+        "Não e possível classificar a palavra nessa frase."
       ],
       "correta": "O estudante errou, porque o contexto mostra que a palavra e Conjuncao.",
       "comentario": "Como estabelece comparacao entre os termos, funcionando como conjuncao.",
@@ -4912,22 +4912,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Funcao na oracao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Função na oracao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual interpretacao explica melhor a classificacao de \"velho\" em \"O velho amigo chegou cedo.\"?",
+      "enunciado": "Qual interpretação explica melhor a classificação de \"velho\" em \"O velho amigo chegou cedo.\"?",
       "opcoes": [
         "Velho caracteriza o substantivo amigo e atua como adjetivo.",
         "A palavra mantem sempre a mesma classe, independentemente do uso.",
-        "A classificacao depende apenas da primeira letra da palavra.",
-        "A palavra nao exerce funcao na frase."
+        "A classificação depende apenas da primeira letra da palavra.",
+        "A palavra não exerce função na frase."
       ],
       "correta": "Velho caracteriza o substantivo amigo e atua como adjetivo.",
-      "comentario": "O contexto da frase e decisivo para a classificacao correta.",
+      "comentario": "O contexto da frase e decisivo para a classificação correta.",
       "tempoEstimado": 40,
       "tags": [
         "interpretacao",
@@ -4950,8 +4950,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -4988,19 +4988,19 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Diferenciacao entre classes",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Diferenciação entre classes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"Eu meio que concordei com a ideia.\" e disse que a palavra \"meio\" e Substantivo. Qual avaliacao esta correta?",
+      "enunciado": "Um estudante leu \"Eu meio que concordei com a ideia.\" e disse que a palavra \"meio\" e Substantivo. Qual avaliação está correta?",
       "opcoes": [
         "O estudante errou, porque o contexto mostra que a palavra e Adverbio.",
-        "O estudante acertou, porque Adverbio e Substantivo sao equivalentes.",
-        "O estudante acertou, porque o contexto nao altera a classe da palavra.",
-        "Nao e possivel classificar a palavra nessa frase."
+        "O estudante acertou, porque Adverbio e Substantivo são equivalentes.",
+        "O estudante acertou, porque o contexto não altera a classe da palavra.",
+        "Não e possível classificar a palavra nessa frase."
       ],
       "correta": "O estudante errou, porque o contexto mostra que a palavra e Adverbio.",
       "comentario": "Nessa frase, meio intensifica a ideia de concordar parcialmente.",
@@ -5026,22 +5026,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Funcao na oracao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Função na oracao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual interpretacao explica melhor a classificacao de \"meia\" em \"Comi meia ma no intervalo.\"?",
+      "enunciado": "Qual interpretação explica melhor a classificação de \"meia\" em \"Comi meia ma no intervalo.\"?",
       "opcoes": [
         "Aqui meia indica fracao, portanto funciona como numeral.",
         "A palavra mantem sempre a mesma classe, independentemente do uso.",
-        "A classificacao depende apenas da primeira letra da palavra.",
-        "A palavra nao exerce funcao na frase."
+        "A classificação depende apenas da primeira letra da palavra.",
+        "A palavra não exerce função na frase."
       ],
       "correta": "Aqui meia indica fracao, portanto funciona como numeral.",
-      "comentario": "O contexto da frase e decisivo para a classificacao correta.",
+      "comentario": "O contexto da frase e decisivo para a classificação correta.",
       "tempoEstimado": 40,
       "tags": [
         "interpretacao",
@@ -5064,8 +5064,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
@@ -5102,19 +5102,19 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Diferenciacao entre classes",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Diferenciação entre classes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"Muitos alunos faltaram.\" e disse que a palavra \"Muitos\" e Substantivo. Qual avaliacao esta correta?",
+      "enunciado": "Um estudante leu \"Muitos alunos faltaram.\" e disse que a palavra \"Muitos\" e Substantivo. Qual avaliação está correta?",
       "opcoes": [
         "O estudante errou, porque o contexto mostra que a palavra e Pronome.",
-        "O estudante acertou, porque Pronome e Substantivo sao equivalentes.",
-        "O estudante acertou, porque o contexto nao altera a classe da palavra.",
-        "Nao e possivel classificar a palavra nessa frase."
+        "O estudante acertou, porque Pronome e Substantivo são equivalentes.",
+        "O estudante acertou, porque o contexto não altera a classe da palavra.",
+        "Não e possível classificar a palavra nessa frase."
       ],
       "correta": "O estudante errou, porque o contexto mostra que a palavra e Pronome.",
       "comentario": "Muitos acompanha o substantivo alunos com valor pronominal indefinido.",
@@ -5140,22 +5140,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Funcao na oracao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Função na oracao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual interpretacao explica melhor a classificacao de \"que\" em \"Ele disse que voltaria.\"?",
+      "enunciado": "Qual interpretação explica melhor a classificação de \"que\" em \"Ele disse que voltaria.\"?",
       "opcoes": [
         "Que liga as oracoes e introduz a subordinada, funcionando como conjuncao.",
         "A palavra mantem sempre a mesma classe, independentemente do uso.",
-        "A classificacao depende apenas da primeira letra da palavra.",
-        "A palavra nao exerce funcao na frase."
+        "A classificação depende apenas da primeira letra da palavra.",
+        "A palavra não exerce função na frase."
       ],
       "correta": "Que liga as oracoes e introduz a subordinada, funcionando como conjuncao.",
-      "comentario": "O contexto da frase e decisivo para a classificacao correta.",
+      "comentario": "O contexto da frase e decisivo para a classificação correta.",
       "tempoEstimado": 40,
       "tags": [
         "interpretacao",
@@ -5178,8 +5178,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -5216,19 +5216,19 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Diferenciacao entre classes",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Diferenciação entre classes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"Como arroz todos os dias.\" e disse que a palavra \"Como\" e Substantivo. Qual avaliacao esta correta?",
+      "enunciado": "Um estudante leu \"Como arroz todos os dias.\" e disse que a palavra \"Como\" e Substantivo. Qual avaliação está correta?",
       "opcoes": [
         "O estudante errou, porque o contexto mostra que a palavra e Verbo.",
-        "O estudante acertou, porque Verbo e Substantivo sao equivalentes.",
-        "O estudante acertou, porque o contexto nao altera a classe da palavra.",
-        "Nao e possivel classificar a palavra nessa frase."
+        "O estudante acertou, porque Verbo e Substantivo são equivalentes.",
+        "O estudante acertou, porque o contexto não altera a classe da palavra.",
+        "Não e possível classificar a palavra nessa frase."
       ],
       "correta": "O estudante errou, porque o contexto mostra que a palavra e Verbo.",
       "comentario": "Como e forma verbal de comer nessa frase.",
@@ -5254,22 +5254,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Funcao na oracao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Função na oracao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual interpretacao explica melhor a classificacao de \"como\" em \"Ela e leve como o vento.\"?",
+      "enunciado": "Qual interpretação explica melhor a classificação de \"como\" em \"ela é leve como o vento.\"?",
       "opcoes": [
         "Como estabelece comparacao entre os termos, funcionando como conjuncao.",
         "A palavra mantem sempre a mesma classe, independentemente do uso.",
-        "A classificacao depende apenas da primeira letra da palavra.",
-        "A palavra nao exerce funcao na frase."
+        "A classificação depende apenas da primeira letra da palavra.",
+        "A palavra não exerce função na frase."
       ],
       "correta": "Como estabelece comparacao entre os termos, funcionando como conjuncao.",
-      "comentario": "O contexto da frase e decisivo para a classificacao correta.",
+      "comentario": "O contexto da frase e decisivo para a classificação correta.",
       "tempoEstimado": 40,
       "tags": [
         "interpretacao",
@@ -5292,8 +5292,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
@@ -5330,19 +5330,19 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Diferenciacao entre classes",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Diferenciação entre classes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"O velho atravessou a rua com calma.\" e disse que a palavra \"velho\" e Artigo. Qual avaliacao esta correta?",
+      "enunciado": "Um estudante leu \"O velho atravessou a rua com calma.\" e disse que a palavra \"velho\" e Artigo. Qual avaliação está correta?",
       "opcoes": [
         "O estudante errou, porque o contexto mostra que a palavra e Substantivo.",
-        "O estudante acertou, porque Substantivo e Artigo sao equivalentes.",
-        "O estudante acertou, porque o contexto nao altera a classe da palavra.",
-        "Nao e possivel classificar a palavra nessa frase."
+        "O estudante acertou, porque Substantivo e Artigo são equivalentes.",
+        "O estudante acertou, porque o contexto não altera a classe da palavra.",
+        "Não e possível classificar a palavra nessa frase."
       ],
       "correta": "O estudante errou, porque o contexto mostra que a palavra e Substantivo.",
       "comentario": "Aqui velho nomeia a pessoa, funcionando como substantivo.",
@@ -5368,22 +5368,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Funcao na oracao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Função na oracao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual interpretacao explica melhor a classificacao de \"meio\" em \"Eu meio que concordei com a ideia.\"?",
+      "enunciado": "Qual interpretação explica melhor a classificação de \"meio\" em \"Eu meio que concordei com a ideia.\"?",
       "opcoes": [
         "Nessa frase, meio intensifica a ideia de concordar parcialmente.",
         "A palavra mantem sempre a mesma classe, independentemente do uso.",
-        "A classificacao depende apenas da primeira letra da palavra.",
-        "A palavra nao exerce funcao na frase."
+        "A classificação depende apenas da primeira letra da palavra.",
+        "A palavra não exerce função na frase."
       ],
       "correta": "Nessa frase, meio intensifica a ideia de concordar parcialmente.",
-      "comentario": "O contexto da frase e decisivo para a classificacao correta.",
+      "comentario": "O contexto da frase e decisivo para a classificação correta.",
       "tempoEstimado": 40,
       "tags": [
         "interpretacao",
@@ -5406,8 +5406,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -5444,19 +5444,19 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Diferenciacao entre classes",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Diferenciação entre classes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"Estudei muito ontem.\" e disse que a palavra \"muito\" e Substantivo. Qual avaliacao esta correta?",
+      "enunciado": "Um estudante leu \"Estudei muito ontem.\" e disse que a palavra \"muito\" e Substantivo. Qual avaliação está correta?",
       "opcoes": [
         "O estudante errou, porque o contexto mostra que a palavra e Adverbio.",
-        "O estudante acertou, porque Adverbio e Substantivo sao equivalentes.",
-        "O estudante acertou, porque o contexto nao altera a classe da palavra.",
-        "Nao e possivel classificar a palavra nessa frase."
+        "O estudante acertou, porque Adverbio e Substantivo são equivalentes.",
+        "O estudante acertou, porque o contexto não altera a classe da palavra.",
+        "Não e possível classificar a palavra nessa frase."
       ],
       "correta": "O estudante errou, porque o contexto mostra que a palavra e Adverbio.",
       "comentario": "Muito intensifica o verbo estudar e funciona como adverbio.",
@@ -5482,22 +5482,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Funcao na oracao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Função na oracao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual interpretacao explica melhor a classificacao de \"Muitos\" em \"Muitos alunos faltaram.\"?",
+      "enunciado": "Qual interpretação explica melhor a classificação de \"Muitos\" em \"Muitos alunos faltaram.\"?",
       "opcoes": [
         "Muitos acompanha o substantivo alunos com valor pronominal indefinido.",
         "A palavra mantem sempre a mesma classe, independentemente do uso.",
-        "A classificacao depende apenas da primeira letra da palavra.",
-        "A palavra nao exerce funcao na frase."
+        "A classificação depende apenas da primeira letra da palavra.",
+        "A palavra não exerce função na frase."
       ],
       "correta": "Muitos acompanha o substantivo alunos com valor pronominal indefinido.",
-      "comentario": "O contexto da frase e decisivo para a classificacao correta.",
+      "comentario": "O contexto da frase e decisivo para a classificação correta.",
       "tempoEstimado": 40,
       "tags": [
         "interpretacao",
@@ -5520,8 +5520,8 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
@@ -5558,19 +5558,19 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Diferenciacao entre classes",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Diferenciação entre classes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"Que ideia curiosa!\" e disse que a palavra \"Que\" e Substantivo. Qual avaliacao esta correta?",
+      "enunciado": "Um estudante leu \"Que ideia curiosa!\" e disse que a palavra \"Que\" e Substantivo. Qual avaliação está correta?",
       "opcoes": [
         "O estudante errou, porque o contexto mostra que a palavra e Pronome.",
-        "O estudante acertou, porque Pronome e Substantivo sao equivalentes.",
-        "O estudante acertou, porque o contexto nao altera a classe da palavra.",
-        "Nao e possivel classificar a palavra nessa frase."
+        "O estudante acertou, porque Pronome e Substantivo são equivalentes.",
+        "O estudante acertou, porque o contexto não altera a classe da palavra.",
+        "Não e possível classificar a palavra nessa frase."
       ],
       "correta": "O estudante errou, porque o contexto mostra que a palavra e Pronome.",
       "comentario": "Que acompanha o substantivo ideia com valor exclamativo, funcionando como pronome.",
@@ -5596,22 +5596,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Funcao na oracao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Função na oracao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual interpretacao explica melhor a classificacao de \"Como\" em \"Como arroz todos os dias.\"?",
+      "enunciado": "Qual interpretação explica melhor a classificação de \"Como\" em \"Como arroz todos os dias.\"?",
       "opcoes": [
         "Como e forma verbal de comer nessa frase.",
         "A palavra mantem sempre a mesma classe, independentemente do uso.",
-        "A classificacao depende apenas da primeira letra da palavra.",
-        "A palavra nao exerce funcao na frase."
+        "A classificação depende apenas da primeira letra da palavra.",
+        "A palavra não exerce função na frase."
       ],
       "correta": "Como e forma verbal de comer nessa frase.",
-      "comentario": "O contexto da frase e decisivo para a classificacao correta.",
+      "comentario": "O contexto da frase e decisivo para a classificação correta.",
       "tempoEstimado": 40,
       "tags": [
         "interpretacao",
@@ -5634,14 +5634,14 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Na frase \"Ela e leve como o vento.\", a palavra \"como\" pertence a qual classe gramatical?",
+      "enunciado": "Na frase \"ela é leve como o vento.\", a palavra \"como\" pertence a qual classe gramatical?",
       "opcoes": [
         "Conjuncao",
         "Substantivo",
@@ -5672,19 +5672,19 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Diferenciacao entre classes",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Diferenciação entre classes",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante leu \"O velho amigo chegou cedo.\" e disse que a palavra \"velho\" e Substantivo. Qual avaliacao esta correta?",
+      "enunciado": "Um estudante leu \"O velho amigo chegou cedo.\" e disse que a palavra \"velho\" e Substantivo. Qual avaliação está correta?",
       "opcoes": [
         "O estudante errou, porque o contexto mostra que a palavra e Adjetivo.",
-        "O estudante acertou, porque Adjetivo e Substantivo sao equivalentes.",
-        "O estudante acertou, porque o contexto nao altera a classe da palavra.",
-        "Nao e possivel classificar a palavra nessa frase."
+        "O estudante acertou, porque Adjetivo e Substantivo são equivalentes.",
+        "O estudante acertou, porque o contexto não altera a classe da palavra.",
+        "Não e possível classificar a palavra nessa frase."
       ],
       "correta": "O estudante errou, porque o contexto mostra que a palavra e Adjetivo.",
       "comentario": "Velho caracteriza o substantivo amigo e atua como adjetivo.",
@@ -5710,22 +5710,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Funcao na oracao",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Função na oracao",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual interpretacao explica melhor a classificacao de \"velho\" em \"O velho atravessou a rua com calma.\"?",
+      "enunciado": "Qual interpretação explica melhor a classificação de \"velho\" em \"O velho atravessou a rua com calma.\"?",
       "opcoes": [
         "Aqui velho nomeia a pessoa, funcionando como substantivo.",
         "A palavra mantem sempre a mesma classe, independentemente do uso.",
-        "A classificacao depende apenas da primeira letra da palavra.",
-        "A palavra nao exerce funcao na frase."
+        "A classificação depende apenas da primeira letra da palavra.",
+        "A palavra não exerce função na frase."
       ],
       "correta": "Aqui velho nomeia a pessoa, funcionando como substantivo.",
-      "comentario": "O contexto da frase e decisivo para a classificacao correta.",
+      "comentario": "O contexto da frase e decisivo para a classificação correta.",
       "tempoEstimado": 40,
       "tags": [
         "interpretacao",
@@ -5748,9 +5748,9 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -5760,10 +5760,10 @@ export const gramaticaClassesDePalavras = {
         "Porque a palavra atua para nomear um ser, objeto, lugar ou ideia.",
         "Porque toda palavra da frase pertence a mesma classe.",
         "Porque a classe se define apenas pelo som da palavra.",
-        "Porque o contexto nao interfere na classificacao."
+        "Porque o contexto não interfere na classificação."
       ],
       "correta": "Porque a palavra atua para nomear um ser, objeto, lugar ou ideia.",
-      "comentario": "A classificacao depende do papel que o termo desempenha no enunciado.",
+      "comentario": "A classificação depende do papel que o termo desempenha no enunciado.",
       "tempoEstimado": 50,
       "tags": [
         "substantivo",
@@ -5786,22 +5786,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a afirmacao: \"Como a palavra Uma e curta, ela so pode ser pronome\". Qual alternativa avalia melhor essa ideia?",
+      "enunciado": "Leia a afirmacao: \"Como a palavra Uma e curta, ela só pode ser pronome\". Qual alternativa avalia melhor essa ideia?",
       "opcoes": [
-        "Ela esta errada, porque o tamanho da palavra nao define a classe; aqui ela e artigo.",
-        "Ela esta correta, porque palavras curtas sempre pertencem a mesma classe.",
-        "Ela esta correta, porque a classe gramatical nunca depende da frase.",
-        "Ela esta errada apenas se houver ponto final."
+        "Ela está errada, porque o tamanho da palavra não define a classe; aqui ela é artigo.",
+        "Ela está correta, porque palavras curtas sempre pertencem a mesma classe.",
+        "Ela está correta, porque a classe gramatical nunca depende da frase.",
+        "Ela está errada apenas se houver ponto final."
       ],
-      "correta": "Ela esta errada, porque o tamanho da palavra nao define a classe; aqui ela e artigo.",
-      "comentario": "O erro comum esta em ignorar a funcao exercida pela palavra no contexto.",
+      "correta": "Ela está errada, porque o tamanho da palavra não define a classe; aqui ela é artigo.",
+      "comentario": "O erro comum está em ignorar a função exercida pela palavra no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "artigo",
@@ -5824,9 +5824,9 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -5862,21 +5862,21 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "No enunciado \"Aquele aluno respondeu rapido.\", o reconhecimento de \"Aquele\" depende principalmente de observar:",
       "opcoes": [
-        "a funcao exercida pela palavra no contexto",
+        "a função exercida pela palavra no contexto",
         "apenas a quantidade de letras da palavra",
-        "somente a pontuacao final da frase",
-        "exclusivamente a posicao da palavra no dicionario"
+        "somente a pontuação final da frase",
+        "exclusivamente a posição da palavra no dicionario"
       ],
-      "correta": "a funcao exercida pela palavra no contexto",
+      "correta": "a função exercida pela palavra no contexto",
       "comentario": "Classe de palavras se define pelo comportamento do termo na frase.",
       "tempoEstimado": 55,
       "tags": [
@@ -5900,18 +5900,18 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada da palavra \"segundo\" em \"O capitulo segundo sera revisado.\", evitando erro de classificacao?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada da palavra \"segundo\" em \"O capitulo segundo será revisado.\", evitando erro de classificação?",
       "opcoes": [
         "Reconhecer que a palavra funciona como numeral.",
         "Classificar automaticamente a palavra como interjeicao fora do contexto.",
-        "Afirmar que a frase nao permite qualquer classificacao.",
+        "Afirmar que a frase não permite qualquer classificação.",
         "Dizer que toda palavra destacada pertence a mesma classe gramatical."
       ],
       "correta": "Reconhecer que a palavra funciona como numeral.",
@@ -5938,22 +5938,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Em uma atividade de revisao, aparece a frase \"Os atletas correram cedo.\". Qual leitura melhor justifica a classe da palavra \"correram\"?",
       "opcoes": [
-        "Porque a palavra atua para indicar acao, estado ou processo.",
+        "Porque a palavra atua para indicar ação, estado ou processo.",
         "Porque toda palavra da frase pertence a mesma classe.",
         "Porque a classe se define apenas pelo som da palavra.",
-        "Porque o contexto nao interfere na classificacao."
+        "Porque o contexto não interfere na classificação."
       ],
-      "correta": "Porque a palavra atua para indicar acao, estado ou processo.",
-      "comentario": "A classificacao depende do papel que o termo desempenha no enunciado.",
+      "correta": "Porque a palavra atua para indicar ação, estado ou processo.",
+      "comentario": "A classificação depende do papel que o termo desempenha no enunciado.",
       "tempoEstimado": 50,
       "tags": [
         "verbo",
@@ -5976,22 +5976,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a afirmacao: \"Como a palavra bem e curta, ela so pode ser pronome\". Qual alternativa avalia melhor essa ideia?",
+      "enunciado": "Leia a afirmacao: \"Como a palavra bem e curta, ela só pode ser pronome\". Qual alternativa avalia melhor essa ideia?",
       "opcoes": [
-        "Ela esta errada, porque o tamanho da palavra nao define a classe; aqui ela e adverbio.",
-        "Ela esta correta, porque palavras curtas sempre pertencem a mesma classe.",
-        "Ela esta correta, porque a classe gramatical nunca depende da frase.",
-        "Ela esta errada apenas se houver ponto final."
+        "Ela está errada, porque o tamanho da palavra não define a classe; aqui ela é adverbio.",
+        "Ela está correta, porque palavras curtas sempre pertencem a mesma classe.",
+        "Ela está correta, porque a classe gramatical nunca depende da frase.",
+        "Ela está errada apenas se houver ponto final."
       ],
-      "correta": "Ela esta errada, porque o tamanho da palavra nao define a classe; aqui ela e adverbio.",
-      "comentario": "O erro comum esta em ignorar a funcao exercida pela palavra no contexto.",
+      "correta": "Ela está errada, porque o tamanho da palavra não define a classe; aqui ela é adverbio.",
+      "comentario": "O erro comum está em ignorar a função exercida pela palavra no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "adverbio",
@@ -6014,9 +6014,9 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -6052,21 +6052,21 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "No enunciado \"Se chover, ficaremos em casa.\", o reconhecimento de \"Se\" depende principalmente de observar:",
       "opcoes": [
-        "a funcao exercida pela palavra no contexto",
+        "a função exercida pela palavra no contexto",
         "apenas a quantidade de letras da palavra",
-        "somente a pontuacao final da frase",
-        "exclusivamente a posicao da palavra no dicionario"
+        "somente a pontuação final da frase",
+        "exclusivamente a posição da palavra no dicionario"
       ],
-      "correta": "a funcao exercida pela palavra no contexto",
+      "correta": "a função exercida pela palavra no contexto",
       "comentario": "Classe de palavras se define pelo comportamento do termo na frase.",
       "tempoEstimado": 55,
       "tags": [
@@ -6090,18 +6090,18 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada da palavra \"Puxa\" em \"Puxa, isso foi rapido!\", evitando erro de classificacao?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada da palavra \"Puxa\" em \"Puxa, isso foi rapido!\", evitando erro de classificação?",
       "opcoes": [
         "Reconhecer que a palavra funciona como interjeicao.",
         "Classificar automaticamente a palavra como substantivo fora do contexto.",
-        "Afirmar que a frase nao permite qualquer classificacao.",
+        "Afirmar que a frase não permite qualquer classificação.",
         "Dizer que toda palavra destacada pertence a mesma classe gramatical."
       ],
       "correta": "Reconhecer que a palavra funciona como interjeicao.",
@@ -6128,9 +6128,9 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -6140,10 +6140,10 @@ export const gramaticaClassesDePalavras = {
         "Porque a palavra atua para nomear um ser, objeto, lugar ou ideia.",
         "Porque toda palavra da frase pertence a mesma classe.",
         "Porque a classe se define apenas pelo som da palavra.",
-        "Porque o contexto nao interfere na classificacao."
+        "Porque o contexto não interfere na classificação."
       ],
       "correta": "Porque a palavra atua para nomear um ser, objeto, lugar ou ideia.",
-      "comentario": "A classificacao depende do papel que o termo desempenha no enunciado.",
+      "comentario": "A classificação depende do papel que o termo desempenha no enunciado.",
       "tempoEstimado": 50,
       "tags": [
         "substantivo",
@@ -6166,22 +6166,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a afirmacao: \"Como a palavra Uma e curta, ela so pode ser pronome\". Qual alternativa avalia melhor essa ideia?",
+      "enunciado": "Leia a afirmacao: \"Como a palavra Uma e curta, ela só pode ser pronome\". Qual alternativa avalia melhor essa ideia?",
       "opcoes": [
-        "Ela esta errada, porque o tamanho da palavra nao define a classe; aqui ela e artigo.",
-        "Ela esta correta, porque palavras curtas sempre pertencem a mesma classe.",
-        "Ela esta correta, porque a classe gramatical nunca depende da frase.",
-        "Ela esta errada apenas se houver ponto final."
+        "Ela está errada, porque o tamanho da palavra não define a classe; aqui ela é artigo.",
+        "Ela está correta, porque palavras curtas sempre pertencem a mesma classe.",
+        "Ela está correta, porque a classe gramatical nunca depende da frase.",
+        "Ela está errada apenas se houver ponto final."
       ],
-      "correta": "Ela esta errada, porque o tamanho da palavra nao define a classe; aqui ela e artigo.",
-      "comentario": "O erro comum esta em ignorar a funcao exercida pela palavra no contexto.",
+      "correta": "Ela está errada, porque o tamanho da palavra não define a classe; aqui ela é artigo.",
+      "comentario": "O erro comum está em ignorar a função exercida pela palavra no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "artigo",
@@ -6204,9 +6204,9 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -6242,21 +6242,21 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "No enunciado \"Aquele aluno respondeu rapido.\", o reconhecimento de \"Aquele\" depende principalmente de observar:",
       "opcoes": [
-        "a funcao exercida pela palavra no contexto",
+        "a função exercida pela palavra no contexto",
         "apenas a quantidade de letras da palavra",
-        "somente a pontuacao final da frase",
-        "exclusivamente a posicao da palavra no dicionario"
+        "somente a pontuação final da frase",
+        "exclusivamente a posição da palavra no dicionario"
       ],
-      "correta": "a funcao exercida pela palavra no contexto",
+      "correta": "a função exercida pela palavra no contexto",
       "comentario": "Classe de palavras se define pelo comportamento do termo na frase.",
       "tempoEstimado": 55,
       "tags": [
@@ -6280,18 +6280,18 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada da palavra \"segundo\" em \"O capitulo segundo sera revisado.\", evitando erro de classificacao?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada da palavra \"segundo\" em \"O capitulo segundo será revisado.\", evitando erro de classificação?",
       "opcoes": [
         "Reconhecer que a palavra funciona como numeral.",
         "Classificar automaticamente a palavra como interjeicao fora do contexto.",
-        "Afirmar que a frase nao permite qualquer classificacao.",
+        "Afirmar que a frase não permite qualquer classificação.",
         "Dizer que toda palavra destacada pertence a mesma classe gramatical."
       ],
       "correta": "Reconhecer que a palavra funciona como numeral.",
@@ -6318,22 +6318,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Em uma atividade de revisao, aparece a frase \"Os atletas correram cedo.\". Qual leitura melhor justifica a classe da palavra \"correram\"?",
       "opcoes": [
-        "Porque a palavra atua para indicar acao, estado ou processo.",
+        "Porque a palavra atua para indicar ação, estado ou processo.",
         "Porque toda palavra da frase pertence a mesma classe.",
         "Porque a classe se define apenas pelo som da palavra.",
-        "Porque o contexto nao interfere na classificacao."
+        "Porque o contexto não interfere na classificação."
       ],
-      "correta": "Porque a palavra atua para indicar acao, estado ou processo.",
-      "comentario": "A classificacao depende do papel que o termo desempenha no enunciado.",
+      "correta": "Porque a palavra atua para indicar ação, estado ou processo.",
+      "comentario": "A classificação depende do papel que o termo desempenha no enunciado.",
       "tempoEstimado": 50,
       "tags": [
         "verbo",
@@ -6356,22 +6356,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a afirmacao: \"Como a palavra bem e curta, ela so pode ser pronome\". Qual alternativa avalia melhor essa ideia?",
+      "enunciado": "Leia a afirmacao: \"Como a palavra bem e curta, ela só pode ser pronome\". Qual alternativa avalia melhor essa ideia?",
       "opcoes": [
-        "Ela esta errada, porque o tamanho da palavra nao define a classe; aqui ela e adverbio.",
-        "Ela esta correta, porque palavras curtas sempre pertencem a mesma classe.",
-        "Ela esta correta, porque a classe gramatical nunca depende da frase.",
-        "Ela esta errada apenas se houver ponto final."
+        "Ela está errada, porque o tamanho da palavra não define a classe; aqui ela é adverbio.",
+        "Ela está correta, porque palavras curtas sempre pertencem a mesma classe.",
+        "Ela está correta, porque a classe gramatical nunca depende da frase.",
+        "Ela está errada apenas se houver ponto final."
       ],
-      "correta": "Ela esta errada, porque o tamanho da palavra nao define a classe; aqui ela e adverbio.",
-      "comentario": "O erro comum esta em ignorar a funcao exercida pela palavra no contexto.",
+      "correta": "Ela está errada, porque o tamanho da palavra não define a classe; aqui ela é adverbio.",
+      "comentario": "O erro comum está em ignorar a função exercida pela palavra no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "adverbio",
@@ -6394,9 +6394,9 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -6432,21 +6432,21 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "No enunciado \"Se chover, ficaremos em casa.\", o reconhecimento de \"Se\" depende principalmente de observar:",
       "opcoes": [
-        "a funcao exercida pela palavra no contexto",
+        "a função exercida pela palavra no contexto",
         "apenas a quantidade de letras da palavra",
-        "somente a pontuacao final da frase",
-        "exclusivamente a posicao da palavra no dicionario"
+        "somente a pontuação final da frase",
+        "exclusivamente a posição da palavra no dicionario"
       ],
-      "correta": "a funcao exercida pela palavra no contexto",
+      "correta": "a função exercida pela palavra no contexto",
       "comentario": "Classe de palavras se define pelo comportamento do termo na frase.",
       "tempoEstimado": 55,
       "tags": [
@@ -6470,18 +6470,18 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada da palavra \"Puxa\" em \"Puxa, isso foi rapido!\", evitando erro de classificacao?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada da palavra \"Puxa\" em \"Puxa, isso foi rapido!\", evitando erro de classificação?",
       "opcoes": [
         "Reconhecer que a palavra funciona como interjeicao.",
         "Classificar automaticamente a palavra como substantivo fora do contexto.",
-        "Afirmar que a frase nao permite qualquer classificacao.",
+        "Afirmar que a frase não permite qualquer classificação.",
         "Dizer que toda palavra destacada pertence a mesma classe gramatical."
       ],
       "correta": "Reconhecer que a palavra funciona como interjeicao.",
@@ -6508,9 +6508,9 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -6520,10 +6520,10 @@ export const gramaticaClassesDePalavras = {
         "Porque a palavra atua para nomear um ser, objeto, lugar ou ideia.",
         "Porque toda palavra da frase pertence a mesma classe.",
         "Porque a classe se define apenas pelo som da palavra.",
-        "Porque o contexto nao interfere na classificacao."
+        "Porque o contexto não interfere na classificação."
       ],
       "correta": "Porque a palavra atua para nomear um ser, objeto, lugar ou ideia.",
-      "comentario": "A classificacao depende do papel que o termo desempenha no enunciado.",
+      "comentario": "A classificação depende do papel que o termo desempenha no enunciado.",
       "tempoEstimado": 50,
       "tags": [
         "substantivo",
@@ -6546,22 +6546,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a afirmacao: \"Como a palavra Uma e curta, ela so pode ser pronome\". Qual alternativa avalia melhor essa ideia?",
+      "enunciado": "Leia a afirmacao: \"Como a palavra Uma e curta, ela só pode ser pronome\". Qual alternativa avalia melhor essa ideia?",
       "opcoes": [
-        "Ela esta errada, porque o tamanho da palavra nao define a classe; aqui ela e artigo.",
-        "Ela esta correta, porque palavras curtas sempre pertencem a mesma classe.",
-        "Ela esta correta, porque a classe gramatical nunca depende da frase.",
-        "Ela esta errada apenas se houver ponto final."
+        "Ela está errada, porque o tamanho da palavra não define a classe; aqui ela é artigo.",
+        "Ela está correta, porque palavras curtas sempre pertencem a mesma classe.",
+        "Ela está correta, porque a classe gramatical nunca depende da frase.",
+        "Ela está errada apenas se houver ponto final."
       ],
-      "correta": "Ela esta errada, porque o tamanho da palavra nao define a classe; aqui ela e artigo.",
-      "comentario": "O erro comum esta em ignorar a funcao exercida pela palavra no contexto.",
+      "correta": "Ela está errada, porque o tamanho da palavra não define a classe; aqui ela é artigo.",
+      "comentario": "O erro comum está em ignorar a função exercida pela palavra no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "artigo",
@@ -6584,9 +6584,9 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -6622,21 +6622,21 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "No enunciado \"Aquele aluno respondeu rapido.\", o reconhecimento de \"Aquele\" depende principalmente de observar:",
       "opcoes": [
-        "a funcao exercida pela palavra no contexto",
+        "a função exercida pela palavra no contexto",
         "apenas a quantidade de letras da palavra",
-        "somente a pontuacao final da frase",
-        "exclusivamente a posicao da palavra no dicionario"
+        "somente a pontuação final da frase",
+        "exclusivamente a posição da palavra no dicionario"
       ],
-      "correta": "a funcao exercida pela palavra no contexto",
+      "correta": "a função exercida pela palavra no contexto",
       "comentario": "Classe de palavras se define pelo comportamento do termo na frase.",
       "tempoEstimado": 55,
       "tags": [
@@ -6660,18 +6660,18 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada da palavra \"segundo\" em \"O capitulo segundo sera revisado.\", evitando erro de classificacao?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada da palavra \"segundo\" em \"O capitulo segundo será revisado.\", evitando erro de classificação?",
       "opcoes": [
         "Reconhecer que a palavra funciona como numeral.",
         "Classificar automaticamente a palavra como interjeicao fora do contexto.",
-        "Afirmar que a frase nao permite qualquer classificacao.",
+        "Afirmar que a frase não permite qualquer classificação.",
         "Dizer que toda palavra destacada pertence a mesma classe gramatical."
       ],
       "correta": "Reconhecer que a palavra funciona como numeral.",
@@ -6698,22 +6698,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Em uma atividade de revisao, aparece a frase \"Os atletas correram cedo.\". Qual leitura melhor justifica a classe da palavra \"correram\"?",
       "opcoes": [
-        "Porque a palavra atua para indicar acao, estado ou processo.",
+        "Porque a palavra atua para indicar ação, estado ou processo.",
         "Porque toda palavra da frase pertence a mesma classe.",
         "Porque a classe se define apenas pelo som da palavra.",
-        "Porque o contexto nao interfere na classificacao."
+        "Porque o contexto não interfere na classificação."
       ],
-      "correta": "Porque a palavra atua para indicar acao, estado ou processo.",
-      "comentario": "A classificacao depende do papel que o termo desempenha no enunciado.",
+      "correta": "Porque a palavra atua para indicar ação, estado ou processo.",
+      "comentario": "A classificação depende do papel que o termo desempenha no enunciado.",
       "tempoEstimado": 50,
       "tags": [
         "verbo",
@@ -6736,22 +6736,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a afirmacao: \"Como a palavra bem e curta, ela so pode ser pronome\". Qual alternativa avalia melhor essa ideia?",
+      "enunciado": "Leia a afirmacao: \"Como a palavra bem e curta, ela só pode ser pronome\". Qual alternativa avalia melhor essa ideia?",
       "opcoes": [
-        "Ela esta errada, porque o tamanho da palavra nao define a classe; aqui ela e adverbio.",
-        "Ela esta correta, porque palavras curtas sempre pertencem a mesma classe.",
-        "Ela esta correta, porque a classe gramatical nunca depende da frase.",
-        "Ela esta errada apenas se houver ponto final."
+        "Ela está errada, porque o tamanho da palavra não define a classe; aqui ela é adverbio.",
+        "Ela está correta, porque palavras curtas sempre pertencem a mesma classe.",
+        "Ela está correta, porque a classe gramatical nunca depende da frase.",
+        "Ela está errada apenas se houver ponto final."
       ],
-      "correta": "Ela esta errada, porque o tamanho da palavra nao define a classe; aqui ela e adverbio.",
-      "comentario": "O erro comum esta em ignorar a funcao exercida pela palavra no contexto.",
+      "correta": "Ela está errada, porque o tamanho da palavra não define a classe; aqui ela é adverbio.",
+      "comentario": "O erro comum está em ignorar a função exercida pela palavra no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "adverbio",
@@ -6774,9 +6774,9 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -6812,21 +6812,21 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "No enunciado \"Se chover, ficaremos em casa.\", o reconhecimento de \"Se\" depende principalmente de observar:",
       "opcoes": [
-        "a funcao exercida pela palavra no contexto",
+        "a função exercida pela palavra no contexto",
         "apenas a quantidade de letras da palavra",
-        "somente a pontuacao final da frase",
-        "exclusivamente a posicao da palavra no dicionario"
+        "somente a pontuação final da frase",
+        "exclusivamente a posição da palavra no dicionario"
       ],
-      "correta": "a funcao exercida pela palavra no contexto",
+      "correta": "a função exercida pela palavra no contexto",
       "comentario": "Classe de palavras se define pelo comportamento do termo na frase.",
       "tempoEstimado": 55,
       "tags": [
@@ -6850,18 +6850,18 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada da palavra \"Puxa\" em \"Puxa, isso foi rapido!\", evitando erro de classificacao?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada da palavra \"Puxa\" em \"Puxa, isso foi rapido!\", evitando erro de classificação?",
       "opcoes": [
         "Reconhecer que a palavra funciona como interjeicao.",
         "Classificar automaticamente a palavra como substantivo fora do contexto.",
-        "Afirmar que a frase nao permite qualquer classificacao.",
+        "Afirmar que a frase não permite qualquer classificação.",
         "Dizer que toda palavra destacada pertence a mesma classe gramatical."
       ],
       "correta": "Reconhecer que a palavra funciona como interjeicao.",
@@ -6888,9 +6888,9 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -6900,10 +6900,10 @@ export const gramaticaClassesDePalavras = {
         "Porque a palavra atua para nomear um ser, objeto, lugar ou ideia.",
         "Porque toda palavra da frase pertence a mesma classe.",
         "Porque a classe se define apenas pelo som da palavra.",
-        "Porque o contexto nao interfere na classificacao."
+        "Porque o contexto não interfere na classificação."
       ],
       "correta": "Porque a palavra atua para nomear um ser, objeto, lugar ou ideia.",
-      "comentario": "A classificacao depende do papel que o termo desempenha no enunciado.",
+      "comentario": "A classificação depende do papel que o termo desempenha no enunciado.",
       "tempoEstimado": 50,
       "tags": [
         "substantivo",
@@ -6926,22 +6926,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a afirmacao: \"Como a palavra Uma e curta, ela so pode ser pronome\". Qual alternativa avalia melhor essa ideia?",
+      "enunciado": "Leia a afirmacao: \"Como a palavra Uma e curta, ela só pode ser pronome\". Qual alternativa avalia melhor essa ideia?",
       "opcoes": [
-        "Ela esta errada, porque o tamanho da palavra nao define a classe; aqui ela e artigo.",
-        "Ela esta correta, porque palavras curtas sempre pertencem a mesma classe.",
-        "Ela esta correta, porque a classe gramatical nunca depende da frase.",
-        "Ela esta errada apenas se houver ponto final."
+        "Ela está errada, porque o tamanho da palavra não define a classe; aqui ela é artigo.",
+        "Ela está correta, porque palavras curtas sempre pertencem a mesma classe.",
+        "Ela está correta, porque a classe gramatical nunca depende da frase.",
+        "Ela está errada apenas se houver ponto final."
       ],
-      "correta": "Ela esta errada, porque o tamanho da palavra nao define a classe; aqui ela e artigo.",
-      "comentario": "O erro comum esta em ignorar a funcao exercida pela palavra no contexto.",
+      "correta": "Ela está errada, porque o tamanho da palavra não define a classe; aqui ela é artigo.",
+      "comentario": "O erro comum está em ignorar a função exercida pela palavra no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "artigo",
@@ -6964,9 +6964,9 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -7002,21 +7002,21 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "No enunciado \"Aquele aluno respondeu rapido.\", o reconhecimento de \"Aquele\" depende principalmente de observar:",
       "opcoes": [
-        "a funcao exercida pela palavra no contexto",
+        "a função exercida pela palavra no contexto",
         "apenas a quantidade de letras da palavra",
-        "somente a pontuacao final da frase",
-        "exclusivamente a posicao da palavra no dicionario"
+        "somente a pontuação final da frase",
+        "exclusivamente a posição da palavra no dicionario"
       ],
-      "correta": "a funcao exercida pela palavra no contexto",
+      "correta": "a função exercida pela palavra no contexto",
       "comentario": "Classe de palavras se define pelo comportamento do termo na frase.",
       "tempoEstimado": 55,
       "tags": [
@@ -7040,18 +7040,18 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada da palavra \"segundo\" em \"O capitulo segundo sera revisado.\", evitando erro de classificacao?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada da palavra \"segundo\" em \"O capitulo segundo será revisado.\", evitando erro de classificação?",
       "opcoes": [
         "Reconhecer que a palavra funciona como numeral.",
         "Classificar automaticamente a palavra como interjeicao fora do contexto.",
-        "Afirmar que a frase nao permite qualquer classificacao.",
+        "Afirmar que a frase não permite qualquer classificação.",
         "Dizer que toda palavra destacada pertence a mesma classe gramatical."
       ],
       "correta": "Reconhecer que a palavra funciona como numeral.",
@@ -7078,22 +7078,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Em uma atividade de revisao, aparece a frase \"Os atletas correram cedo.\". Qual leitura melhor justifica a classe da palavra \"correram\"?",
       "opcoes": [
-        "Porque a palavra atua para indicar acao, estado ou processo.",
+        "Porque a palavra atua para indicar ação, estado ou processo.",
         "Porque toda palavra da frase pertence a mesma classe.",
         "Porque a classe se define apenas pelo som da palavra.",
-        "Porque o contexto nao interfere na classificacao."
+        "Porque o contexto não interfere na classificação."
       ],
-      "correta": "Porque a palavra atua para indicar acao, estado ou processo.",
-      "comentario": "A classificacao depende do papel que o termo desempenha no enunciado.",
+      "correta": "Porque a palavra atua para indicar ação, estado ou processo.",
+      "comentario": "A classificação depende do papel que o termo desempenha no enunciado.",
       "tempoEstimado": 50,
       "tags": [
         "verbo",
@@ -7116,22 +7116,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a afirmacao: \"Como a palavra bem e curta, ela so pode ser pronome\". Qual alternativa avalia melhor essa ideia?",
+      "enunciado": "Leia a afirmacao: \"Como a palavra bem e curta, ela só pode ser pronome\". Qual alternativa avalia melhor essa ideia?",
       "opcoes": [
-        "Ela esta errada, porque o tamanho da palavra nao define a classe; aqui ela e adverbio.",
-        "Ela esta correta, porque palavras curtas sempre pertencem a mesma classe.",
-        "Ela esta correta, porque a classe gramatical nunca depende da frase.",
-        "Ela esta errada apenas se houver ponto final."
+        "Ela está errada, porque o tamanho da palavra não define a classe; aqui ela é adverbio.",
+        "Ela está correta, porque palavras curtas sempre pertencem a mesma classe.",
+        "Ela está correta, porque a classe gramatical nunca depende da frase.",
+        "Ela está errada apenas se houver ponto final."
       ],
-      "correta": "Ela esta errada, porque o tamanho da palavra nao define a classe; aqui ela e adverbio.",
-      "comentario": "O erro comum esta em ignorar a funcao exercida pela palavra no contexto.",
+      "correta": "Ela está errada, porque o tamanho da palavra não define a classe; aqui ela é adverbio.",
+      "comentario": "O erro comum está em ignorar a função exercida pela palavra no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "adverbio",
@@ -7154,9 +7154,9 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -7192,21 +7192,21 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "No enunciado \"Se chover, ficaremos em casa.\", o reconhecimento de \"Se\" depende principalmente de observar:",
       "opcoes": [
-        "a funcao exercida pela palavra no contexto",
+        "a função exercida pela palavra no contexto",
         "apenas a quantidade de letras da palavra",
-        "somente a pontuacao final da frase",
-        "exclusivamente a posicao da palavra no dicionario"
+        "somente a pontuação final da frase",
+        "exclusivamente a posição da palavra no dicionario"
       ],
-      "correta": "a funcao exercida pela palavra no contexto",
+      "correta": "a função exercida pela palavra no contexto",
       "comentario": "Classe de palavras se define pelo comportamento do termo na frase.",
       "tempoEstimado": 55,
       "tags": [
@@ -7230,18 +7230,18 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada da palavra \"Puxa\" em \"Puxa, isso foi rapido!\", evitando erro de classificacao?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada da palavra \"Puxa\" em \"Puxa, isso foi rapido!\", evitando erro de classificação?",
       "opcoes": [
         "Reconhecer que a palavra funciona como interjeicao.",
         "Classificar automaticamente a palavra como substantivo fora do contexto.",
-        "Afirmar que a frase nao permite qualquer classificacao.",
+        "Afirmar que a frase não permite qualquer classificação.",
         "Dizer que toda palavra destacada pertence a mesma classe gramatical."
       ],
       "correta": "Reconhecer que a palavra funciona como interjeicao.",
@@ -7268,9 +7268,9 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -7280,10 +7280,10 @@ export const gramaticaClassesDePalavras = {
         "Porque a palavra atua para nomear um ser, objeto, lugar ou ideia.",
         "Porque toda palavra da frase pertence a mesma classe.",
         "Porque a classe se define apenas pelo som da palavra.",
-        "Porque o contexto nao interfere na classificacao."
+        "Porque o contexto não interfere na classificação."
       ],
       "correta": "Porque a palavra atua para nomear um ser, objeto, lugar ou ideia.",
-      "comentario": "A classificacao depende do papel que o termo desempenha no enunciado.",
+      "comentario": "A classificação depende do papel que o termo desempenha no enunciado.",
       "tempoEstimado": 50,
       "tags": [
         "substantivo",
@@ -7306,22 +7306,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a afirmacao: \"Como a palavra Uma e curta, ela so pode ser pronome\". Qual alternativa avalia melhor essa ideia?",
+      "enunciado": "Leia a afirmacao: \"Como a palavra Uma e curta, ela só pode ser pronome\". Qual alternativa avalia melhor essa ideia?",
       "opcoes": [
-        "Ela esta errada, porque o tamanho da palavra nao define a classe; aqui ela e artigo.",
-        "Ela esta correta, porque palavras curtas sempre pertencem a mesma classe.",
-        "Ela esta correta, porque a classe gramatical nunca depende da frase.",
-        "Ela esta errada apenas se houver ponto final."
+        "Ela está errada, porque o tamanho da palavra não define a classe; aqui ela é artigo.",
+        "Ela está correta, porque palavras curtas sempre pertencem a mesma classe.",
+        "Ela está correta, porque a classe gramatical nunca depende da frase.",
+        "Ela está errada apenas se houver ponto final."
       ],
-      "correta": "Ela esta errada, porque o tamanho da palavra nao define a classe; aqui ela e artigo.",
-      "comentario": "O erro comum esta em ignorar a funcao exercida pela palavra no contexto.",
+      "correta": "Ela está errada, porque o tamanho da palavra não define a classe; aqui ela é artigo.",
+      "comentario": "O erro comum está em ignorar a função exercida pela palavra no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "artigo",
@@ -7344,9 +7344,9 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -7382,21 +7382,21 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "No enunciado \"Aquele aluno respondeu rapido.\", o reconhecimento de \"Aquele\" depende principalmente de observar:",
       "opcoes": [
-        "a funcao exercida pela palavra no contexto",
+        "a função exercida pela palavra no contexto",
         "apenas a quantidade de letras da palavra",
-        "somente a pontuacao final da frase",
-        "exclusivamente a posicao da palavra no dicionario"
+        "somente a pontuação final da frase",
+        "exclusivamente a posição da palavra no dicionario"
       ],
-      "correta": "a funcao exercida pela palavra no contexto",
+      "correta": "a função exercida pela palavra no contexto",
       "comentario": "Classe de palavras se define pelo comportamento do termo na frase.",
       "tempoEstimado": 55,
       "tags": [
@@ -7420,18 +7420,18 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada da palavra \"segundo\" em \"O capitulo segundo sera revisado.\", evitando erro de classificacao?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada da palavra \"segundo\" em \"O capitulo segundo será revisado.\", evitando erro de classificação?",
       "opcoes": [
         "Reconhecer que a palavra funciona como numeral.",
         "Classificar automaticamente a palavra como interjeicao fora do contexto.",
-        "Afirmar que a frase nao permite qualquer classificacao.",
+        "Afirmar que a frase não permite qualquer classificação.",
         "Dizer que toda palavra destacada pertence a mesma classe gramatical."
       ],
       "correta": "Reconhecer que a palavra funciona como numeral.",
@@ -7458,22 +7458,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Em uma atividade de revisao, aparece a frase \"Os atletas correram cedo.\". Qual leitura melhor justifica a classe da palavra \"correram\"?",
       "opcoes": [
-        "Porque a palavra atua para indicar acao, estado ou processo.",
+        "Porque a palavra atua para indicar ação, estado ou processo.",
         "Porque toda palavra da frase pertence a mesma classe.",
         "Porque a classe se define apenas pelo som da palavra.",
-        "Porque o contexto nao interfere na classificacao."
+        "Porque o contexto não interfere na classificação."
       ],
-      "correta": "Porque a palavra atua para indicar acao, estado ou processo.",
-      "comentario": "A classificacao depende do papel que o termo desempenha no enunciado.",
+      "correta": "Porque a palavra atua para indicar ação, estado ou processo.",
+      "comentario": "A classificação depende do papel que o termo desempenha no enunciado.",
       "tempoEstimado": 50,
       "tags": [
         "verbo",
@@ -7496,22 +7496,22 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a afirmacao: \"Como a palavra bem e curta, ela so pode ser pronome\". Qual alternativa avalia melhor essa ideia?",
+      "enunciado": "Leia a afirmacao: \"Como a palavra bem e curta, ela só pode ser pronome\". Qual alternativa avalia melhor essa ideia?",
       "opcoes": [
-        "Ela esta errada, porque o tamanho da palavra nao define a classe; aqui ela e adverbio.",
-        "Ela esta correta, porque palavras curtas sempre pertencem a mesma classe.",
-        "Ela esta correta, porque a classe gramatical nunca depende da frase.",
-        "Ela esta errada apenas se houver ponto final."
+        "Ela está errada, porque o tamanho da palavra não define a classe; aqui ela é adverbio.",
+        "Ela está correta, porque palavras curtas sempre pertencem a mesma classe.",
+        "Ela está correta, porque a classe gramatical nunca depende da frase.",
+        "Ela está errada apenas se houver ponto final."
       ],
-      "correta": "Ela esta errada, porque o tamanho da palavra nao define a classe; aqui ela e adverbio.",
-      "comentario": "O erro comum esta em ignorar a funcao exercida pela palavra no contexto.",
+      "correta": "Ela está errada, porque o tamanho da palavra não define a classe; aqui ela é adverbio.",
+      "comentario": "O erro comum está em ignorar a função exercida pela palavra no contexto.",
       "tempoEstimado": 50,
       "tags": [
         "adverbio",
@@ -7534,9 +7534,9 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
@@ -7572,21 +7572,21 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "No enunciado \"Se chover, ficaremos em casa.\", o reconhecimento de \"Se\" depende principalmente de observar:",
       "opcoes": [
-        "a funcao exercida pela palavra no contexto",
+        "a função exercida pela palavra no contexto",
         "apenas a quantidade de letras da palavra",
-        "somente a pontuacao final da frase",
-        "exclusivamente a posicao da palavra no dicionario"
+        "somente a pontuação final da frase",
+        "exclusivamente a posição da palavra no dicionario"
       ],
-      "correta": "a funcao exercida pela palavra no contexto",
+      "correta": "a função exercida pela palavra no contexto",
       "comentario": "Classe de palavras se define pelo comportamento do termo na frase.",
       "tempoEstimado": 55,
       "tags": [
@@ -7610,18 +7610,18 @@ export const gramaticaClassesDePalavras = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
-      "topico": "Gramatica: Classes de Palavras",
+      "materia": "Português",
+      "topico": "Gramática: Classes de Palavras",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma leitura adequada da palavra \"Puxa\" em \"Puxa, isso foi rapido!\", evitando erro de classificacao?",
+      "enunciado": "Qual alternativa apresenta uma leitura adequada da palavra \"Puxa\" em \"Puxa, isso foi rapido!\", evitando erro de classificação?",
       "opcoes": [
         "Reconhecer que a palavra funciona como interjeicao.",
         "Classificar automaticamente a palavra como substantivo fora do contexto.",
-        "Afirmar que a frase nao permite qualquer classificacao.",
+        "Afirmar que a frase não permite qualquer classificação.",
         "Dizer que toda palavra destacada pertence a mesma classe gramatical."
       ],
       "correta": "Reconhecer que a palavra funciona como interjeicao.",

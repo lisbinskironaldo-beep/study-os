@@ -1,0 +1,137 @@
+{
+  "summary": {},
+  "results": [
+    {
+      "file": "questions/banks/1-serie/sociologia/cultura-e-sociedade/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-13",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": "VERIFICADA"
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/sociologia/identidade/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-13",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": "VERIFICADA"
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/sociologia/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/sociologia/socializacao/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-13",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": "VERIFICADA"
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/sociologia/classes-sociais/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-13",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": "VERIFICADA"
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/sociologia/estrutura-social/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-13",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": "VERIFICADA"
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/sociologia/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/sociologia/trabalho/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-13",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": "VERIFICADA"
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/sociologia/cidadania/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-13",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": "VERIFICADA"
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/sociologia/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/sociologia/movimentos-sociais/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-13",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": "VERIFICADA"
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/sociologia/politica/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-13",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": "VERIFICADA"
+      },
+      "issues": []
+    }
+  ]
+}

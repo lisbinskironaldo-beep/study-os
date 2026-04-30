@@ -3,6 +3,7 @@ import { sintaxePeriodoSimplesEComposto } from "./sintaxe-periodo-simples-e-comp
 import { concordancia } from "./concordancia/index.js";
 import { regencia } from "./regencia/index.js";
 import { literaturaBarrocoArcadismoRomantismo } from "./literatura-barroco-arcadismo-romantismo/index.js";
+import { withPortugueseEditorialAudit } from "../../_shared/editorialAuditMetadata.js";
 
 export const portugues2Serie = [
   interpretacaoAvancada,
@@ -10,5 +11,5 @@ export const portugues2Serie = [
   concordancia,
   regencia,
   literaturaBarrocoArcadismoRomantismo
-];
+].map(withPortugueseEditorialAudit);
 

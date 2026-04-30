@@ -1,0 +1,137 @@
+{
+  "summary": {},
+  "results": [
+    {
+      "file": "questions/banks/1-serie/ingles/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/ingles/leitura-e-interpretacao/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-12",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": "VERIFICADA"
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/ingles/verb-to-be-e-simple-present/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-12",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": "VERIFICADA"
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/ingles/vocabulario-basico/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-12",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": "VERIFICADA"
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/ingles/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/ingles/reading-e-interpretacao/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-12",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": "VERIFICADA"
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/ingles/tempos-verbais-past-e-future/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-12",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": "VERIFICADA"
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/ingles/vocabulario-intermediario/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-12",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": "VERIFICADA"
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/ingles/grammar-and-language-use/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-12",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": "VERIFICADA"
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/ingles/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": false,
+        "auditadoEm": "",
+        "auditoriaTipo": "",
+        "seloEditorial": ""
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/ingles/interpretacao-foco-enem/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-12",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": "VERIFICADA"
+      },
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/ingles/textos-longos/index.js",
+      "issueCount": 0,
+      "auditMetadata": {
+        "auditado": true,
+        "auditadoEm": "2026-04-12",
+        "auditoriaTipo": "varredura-mais-profunda",
+        "seloEditorial": "VERIFICADA"
+      },
+      "issues": []
+    }
+  ]
+}

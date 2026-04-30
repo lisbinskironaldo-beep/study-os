@@ -9,36 +9,36 @@ export const cidadania = {
     "disciplinaId": "sociologia",
     "base": "ESCOLAR",
     "seloEditorial": "VERIFICADA",
-    "eixo": "Direitos, participacao e vida publica",
+    "eixo": "Direitos, participação e vida pública",
     "frente": "Cidadania, democracia e garantia de direitos",
     "searchAliases": [
       "cidadania",
       "direitos civis",
-      "direitos politicos",
+      "direitos políticos",
       "direitos sociais",
       "constituicao",
       "democracia",
-      "politicas publicas",
+      "politicas públicas",
       "direitos humanos"
     ],
     "subtopicosBase": [
       "Conceito de cidadania",
       "Direitos civis",
-      "Direitos politicos",
+      "Direitos políticos",
       "Direitos sociais",
-      "Constituicao e participacao",
+      "Constituição e participação",
       "Cidadania e democracia",
       "Inclusao e exclusao",
-      "Politicas publicas",
+      "Politicas públicas",
       "Cidadania digital",
       "Direitos humanos"
     ],
     "habilidadesBase": [
-      "identificar o conceito sociologico de cidadania",
-      "diferenciar direitos civis, politicos e sociais",
-      "relacionar constituicao, participacao e democracia",
+      "identificar o conceito sociológico de cidadania",
+      "diferenciar direitos civis, políticos e sociais",
+      "relacionar constituição, participação e democracia",
       "interpretar processos de inclusao e exclusao cidada",
-      "analisar o papel das politicas publicas no acesso a direitos",
+      "analisar o papel das politicas públicas no acesso a direitos",
       "compreender cidadania digital e direitos humanos na vida contemporanea"
     ],
     "auditado": true,
@@ -60,13 +60,13 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Em Sociologia, conceito de cidadania pode ser definido(a) como:",
       "opcoes": [
-        "a condicao de pertencimento a uma comunidade politica com acesso a direitos, deveres e participacao na vida coletiva",
-        "a relacao entre as regras fundamentais do Estado e as formas pelas quais os cidadaos participam da vida publica",
-        "a relacao entre o exercicio de direitos, a participacao cidada e um regime politico baseado em pluralidade, representacao e controle do poder",
-        "os processos que ampliam ou restringem o acesso de grupos a direitos, reconhecimento, participacao e recursos sociais"
+        "a condição de pertencimento a uma comunidade política com acesso a direitos, deveres e participação na vida coletiva",
+        "a relação entre as regras fundamentais do Estado e as formas pelas quais os cidadãos participam da vida pública",
+        "a relação entre o exercicio de direitos, a participação cidada e um regime político baseado em pluralidade, representação e controle do poder",
+        "os processos que ampliam ou restringem o acesso de grupos a direitos, reconhecimento, participação e recursos sociais"
       ],
-      "correta": "a condicao de pertencimento a uma comunidade politica com acesso a direitos, deveres e participacao na vida coletiva",
-      "comentario": "Conceito de cidadania refere-se a condicao de pertencimento a uma comunidade politica com acesso a direitos, deveres e participacao na vida coletiva.",
+      "correta": "a condição de pertencimento a uma comunidade política com acesso a direitos, deveres e participação na vida coletiva",
+      "comentario": "Conceito de cidadania refere-se a condição de pertencimento a uma comunidade política com acesso a direitos, deveres e participação na vida coletiva.",
       "tempoEstimado": 20,
       "tags": [
         "cidadania",
@@ -97,15 +97,15 @@ export const cidadania = {
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: uma sociedade reconhece seus membros como sujeitos de direitos e deveres diante da vida publica Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: uma sociedade reconhece seus membros como sujeitos de direitos e deveres diante da vida pública Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
         "Conceito de cidadania",
-        "Constituicao e participacao",
+        "Constituição e participação",
         "Cidadania e democracia",
         "Inclusao e exclusao"
       ],
       "correta": "Conceito de cidadania",
-      "comentario": "A situacao apresentada e um exemplo de conceito de cidadania.",
+      "comentario": "A situação apresentada é um exemplo de conceito de cidadania.",
       "tempoEstimado": 25,
       "tags": [
         "cidadania",
@@ -138,12 +138,12 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual afirmacao descreve corretamente conceito de cidadania?",
       "opcoes": [
-        "A condicao de pertencimento a uma comunidade politica com acesso a direitos, deveres e participacao na vida coletiva.",
-        "Uma situacao privada e individual sem relacao com vida publica, direitos ou deveres coletivos.",
+        "A condição de pertencimento a uma comunidade política com acesso a direitos, deveres e participação na vida coletiva.",
+        "Uma situação privada e individual sem relação com vida pública, direitos ou deveres coletivos.",
         "Direitos civis significa as garantias ligadas a liberdade individual, a igualdade perante a lei e a protecao da integridade e da propriedade.",
-        "Cidadania trata apenas de interesses privados e nao de vida publica."
+        "Cidadania trata apenas de interesses privados e não de vida pública."
       ],
-      "correta": "A condicao de pertencimento a uma comunidade politica com acesso a direitos, deveres e participacao na vida coletiva.",
+      "correta": "A condição de pertencimento a uma comunidade política com acesso a direitos, deveres e participação na vida coletiva.",
       "comentario": "A afirmacao correta retoma o sentido central de conceito de cidadania.",
       "tempoEstimado": 30,
       "tags": [
@@ -175,15 +175,15 @@ export const cidadania = {
       "dificuldadeNivel": 4,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a conceito de cidadania.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a conceito de cidadania.",
       "opcoes": [
-        "a ideia de que cidadania se resume apenas a morar em um territorio sem qualquer relacao com direitos e participacao",
-        "uma sociedade reconhece seus membros como sujeitos de direitos e deveres diante da vida publica",
-        "cidadaos participam de decisoes, cobram direitos e respondem por deveres em uma coletividade",
-        "cidadania envolve pertencer a vida publica com direitos, deveres e possibilidade de participacao"
+        "a ideia de que cidadania se resume apenas a morar em um territorio sem qualquer relação com direitos e participação",
+        "uma sociedade reconhece seus membros como sujeitos de direitos e deveres diante da vida pública",
+        "cidadãos participam de decisões, cobram direitos e respondem por deveres em uma coletividade",
+        "cidadania envolve pertencer a vida pública com direitos, deveres e possibilidade de participação"
       ],
-      "correta": "a ideia de que cidadania se resume apenas a morar em um territorio sem qualquer relacao com direitos e participacao",
-      "comentario": "a ideia de que cidadania se resume apenas a morar em um territorio sem qualquer relacao com direitos e participacao nao expressa conceito de cidadania, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "a ideia de que cidadania se resume apenas a morar em um territorio sem qualquer relação com direitos e participação",
+      "comentario": "a ideia de que cidadania se resume apenas a morar em um territorio sem qualquer relação com direitos e participação não expressa conceito de cidadania, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "cidadania",
@@ -216,13 +216,13 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Quando se estuda conceito de cidadania, o foco principal esta em:",
       "opcoes": [
-        "o vinculo entre pertencimento politico, direitos, deveres e participacao social",
-        "a articulacao entre ordem constitucional, garantias de direitos e mecanismos de participacao",
-        "a interdependencia entre participacao cidada, garantia de direitos e funcionamento democratico",
-        "as barreiras e oportunidades que definem quem acessa direitos e participacao de forma efetiva"
+        "o vínculo entre pertencimento político, direitos, deveres e participação social",
+        "a articulacao entre ordem constitucional, garantias de direitos e mecanismos de participação",
+        "a interdependencia entre participação cidada, garantia de direitos e funcionamento democratico",
+        "as barreiras e oportunidades que definem quem acessa direitos e participação de forma efetiva"
       ],
-      "correta": "o vinculo entre pertencimento politico, direitos, deveres e participacao social",
-      "comentario": "Conceito de cidadania volta a atencao para o vinculo entre pertencimento politico, direitos, deveres e participacao social.",
+      "correta": "o vínculo entre pertencimento político, direitos, deveres e participação social",
+      "comentario": "Conceito de cidadania volta a atenção para o vínculo entre pertencimento político, direitos, deveres e participação social.",
       "tempoEstimado": 35,
       "tags": [
         "cidadania",
@@ -253,15 +253,15 @@ export const cidadania = {
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre conceito de cidadania e direitos civis e que:",
+      "enunciado": "A principal diferença entre conceito de cidadania e direitos civis e que:",
       "opcoes": [
-        "conceito de cidadania apresenta a ideia geral de pertencimento politico com direitos e deveres, enquanto direitos civis correspondem a uma dimensao especifica dessa cidadania",
-        "Conceito de cidadania e Direitos civis sao exatamente o mesmo fenomeno social.",
+        "conceito de cidadania apresenta a ideia geral de pertencimento político com direitos e deveres, enquanto direitos civis correspondem a uma dimensao especifica dessa cidadania",
+        "Conceito de cidadania e Direitos civis são exatamente o mesmo fenômeno social.",
         "Direitos civis depende apenas de escolhas privadas, enquanto Conceito de cidadania depende so da biologia.",
-        "Conceito de cidadania elimina a necessidade de observar direitos, deveres e participacao."
+        "Conceito de cidadania elimina a necessidade de observar direitos, deveres e participação."
       ],
-      "correta": "conceito de cidadania apresenta a ideia geral de pertencimento politico com direitos e deveres, enquanto direitos civis correspondem a uma dimensao especifica dessa cidadania",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "correta": "conceito de cidadania apresenta a ideia geral de pertencimento político com direitos e deveres, enquanto direitos civis correspondem a uma dimensao especifica dessa cidadania",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "cidadania",
@@ -292,15 +292,15 @@ export const cidadania = {
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: cidadaos participam de decisoes, cobram direitos e respondem por deveres em uma coletividade A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: cidadãos participam de decisões, cobram direitos e respondem por deveres em uma coletividade A leitura sociológica mais adequada aponta para:",
       "opcoes": [
-        "cidadania ajuda a compreender como individuos se inserem na vida publica e na garantia de direitos",
-        "Conceito de cidadania mostra que a vida publica nao interfere no acesso a direitos.",
+        "cidadania ajuda a compreender como indivíduos se inserem na vida pública e na garantia de direitos",
+        "Conceito de cidadania mostra que a vida pública não interfere no acesso a direitos.",
         "Conceito de cidadania prova que todos os grupos exercem cidadania da mesma forma.",
         "Conceito de cidadania significa ausencia completa de desigualdades de acesso a direitos."
       ],
-      "correta": "cidadania ajuda a compreender como individuos se inserem na vida publica e na garantia de direitos",
-      "comentario": "Conceito de cidadania permite interpretar o caso a partir de direitos, deveres, participacao e acesso a vida publica.",
+      "correta": "cidadania ajuda a compreender como indivíduos se inserem na vida pública e na garantia de direitos",
+      "comentario": "Conceito de cidadania permite interpretar o caso a partir de direitos, deveres, participação e acesso a vida pública.",
       "tempoEstimado": 40,
       "tags": [
         "cidadania",
@@ -331,15 +331,15 @@ export const cidadania = {
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia conceito de cidadania de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia conceito de cidadania de maneira mais clara?",
       "opcoes": [
-        "cidadania envolve pertencer a vida publica com direitos, deveres e possibilidade de participacao",
-        "constituicao e participacao ligam normas fundamentais do Estado ao exercicio concreto da cidadania",
-        "cidadania e democracia mostram que direitos e participacao se fortalecem em contextos de abertura politica e controle social do poder",
+        "cidadania envolve pertencer a vida pública com direitos, deveres e possibilidade de participação",
+        "constituição e participação ligam normas fundamentais do Estado ao exercicio concreto da cidadania",
+        "cidadania e democracia mostram que direitos e participação se fortalecem em contextos de abertura política e controle social do poder",
         "inclusao e exclusao ajudam a analisar desigualdades no acesso a cidadania e ao reconhecimento social"
       ],
-      "correta": "cidadania envolve pertencer a vida publica com direitos, deveres e possibilidade de participacao",
-      "comentario": "A alternativa correta traduz conceito de cidadania em uma situacao concreta de vida social.",
+      "correta": "cidadania envolve pertencer a vida pública com direitos, deveres e possibilidade de participação",
+      "comentario": "A alternativa correta traduz conceito de cidadania em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "cidadania",
@@ -370,15 +370,15 @@ export const cidadania = {
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"uma sociedade reconhece seus membros como sujeitos de direitos e deveres diante da vida publica\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"uma sociedade reconhece seus membros como sujeitos de direitos e deveres diante da vida pública\", qual conclusão é mais adequada?",
       "opcoes": [
-        "a cidadania ultrapassa a presenca formal no Estado e envolve participacao e acesso efetivo a direitos",
-        "Conceito de cidadania indica que direitos e participacao nunca variam historicamente.",
+        "a cidadania ultrapassa a presenca formal no Estado e envolve participação e acesso efetivo a direitos",
+        "Conceito de cidadania indica que direitos e participação nunca variam historicamente.",
         "Conceito de cidadania so pode ser explicado por fatores biologicos.",
         "Conceito de cidadania dispensa comparacao entre grupos e contextos."
       ],
-      "correta": "a cidadania ultrapassa a presenca formal no Estado e envolve participacao e acesso efetivo a direitos",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "correta": "a cidadania ultrapassa a presenca formal no Estado e envolve participação e acesso efetivo a direitos",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "cidadania",
@@ -411,12 +411,12 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com conceito de cidadania?",
       "opcoes": [
-        "como direitos, deveres e participacao definem a cidadania em uma sociedade?",
+        "como direitos, deveres e participação definem a cidadania em uma sociedade?",
         "como liberdade, protecao legal e igualdade perante a lei integram a cidadania?",
-        "como voto, representacao e participacao publica se relacionam com a cidadania?",
-        "como acesso a saude, educacao e trabalho se relaciona com o exercicio da cidadania?"
+        "como voto, representação e participação pública se relacionam com a cidadania?",
+        "como acesso a saude, educação e trabalho se relaciona com o exercicio da cidadania?"
       ],
-      "correta": "como direitos, deveres e participacao definem a cidadania em uma sociedade?",
+      "correta": "como direitos, deveres e participação definem a cidadania em uma sociedade?",
       "comentario": "A pergunta correta ajuda a investigar conceito de cidadania de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
@@ -450,12 +450,12 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a afirmacao que revela compreensao inadequada de conceito de cidadania.",
       "opcoes": [
-        "Uma situacao privada e individual sem relacao com vida publica, direitos ou deveres coletivos.",
-        "Conceito de cidadania pode ser observado em direitos, deveres e participacao publica.",
+        "Uma situação privada e individual sem relação com vida pública, direitos ou deveres coletivos.",
+        "Conceito de cidadania pode ser observado em direitos, deveres e participação pública.",
         "Conceito de cidadania ajuda a analisar acesso a garantias e a vida coletiva.",
-        "Conceito de cidadania depende da relacao entre pertencimento politico e exercicio de direitos."
+        "Conceito de cidadania depende da relação entre pertencimento político e exercicio de direitos."
       ],
-      "correta": "Uma situacao privada e individual sem relacao com vida publica, direitos ou deveres coletivos.",
+      "correta": "Uma situação privada e individual sem relação com vida pública, direitos ou deveres coletivos.",
       "comentario": "A alternativa incorreta expressa uma confusao comum sobre conceito de cidadania.",
       "tempoEstimado": 45,
       "tags": [
@@ -487,15 +487,15 @@ export const cidadania = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre cidadania, um estudante afirmou: \"cidadania nao e apenas status juridico; ela depende tambem de participacao e acesso real a direitos\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre cidadania, um estudante afirmou: \"cidadania não é apenas status juridico; ela depende também de participação e acesso real a direitos\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "a afirmacao esta correta, porque cidadania envolve dimensao legal, politica e social",
-        "Conceito de cidadania nao pode ser observado em situacoes do cotidiano.",
-        "Conceito de cidadania depende apenas da vontade individual, sem contexto politico e social.",
-        "Conceito de cidadania torna desnecessario comparar direitos, deveres e participacao."
+        "a afirmacao esta correta, porque cidadania envolve dimensao legal, política e social",
+        "Conceito de cidadania não pode ser observado em situações do cotidiano.",
+        "Conceito de cidadania depende apenas da vontade individual, sem contexto político e social.",
+        "Conceito de cidadania torna desnecessario comparar direitos, deveres e participação."
       ],
-      "correta": "a afirmacao esta correta, porque cidadania envolve dimensao legal, politica e social",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de conceito de cidadania.",
+      "correta": "a afirmacao esta correta, porque cidadania envolve dimensao legal, política e social",
+      "comentario": "A avaliação correta recupera o nucleo teorico de conceito de cidadania.",
       "tempoEstimado": 50,
       "tags": [
         "cidadania",
@@ -526,15 +526,15 @@ export const cidadania = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando uma sociedade reconhece formalmente a cidadania, mas impede parte da populacao de exercer direitos basicos, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando uma sociedade reconhece formalmente a cidadania, mas impede parte da população de exercer direitos basicos, a melhor interpretação sociológica e que:",
       "opcoes": [
         "a cidadania torna-se limitada e incompleta na pratica social",
-        "Conceito de cidadania desaparece porque a sociedade nao depende mais de direitos.",
+        "Conceito de cidadania desaparece porque a sociedade não depende mais de direitos.",
         "Conceito de cidadania deixa de existir sempre que surgem conflitos entre grupos.",
-        "Conceito de cidadania so importa em sociedades antigas, nao no presente."
+        "Conceito de cidadania so importa em sociedades antigas, não no presente."
       ],
       "correta": "a cidadania torna-se limitada e incompleta na pratica social",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "cidadania",
@@ -565,14 +565,14 @@ export const cidadania = {
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente conceito de cidadania a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente conceito de cidadania a uma situação de comunidade escolar?",
       "opcoes": [
-        "a escola discute como representacao de turma, regras coletivas e participacao estudantil ajudam a exercitar cidadania",
+        "a escola discute como representação de turma, regras coletivas e participação estudantil ajudam a exercitar cidadania",
         "a turma debate liberdade de expressao, seguranca e igualdade perante regras e leis",
-        "a escola discute gremios, assembleias e eleicoes como formas de aprendizado sobre participacao politica",
+        "a escola discute gremios, assembleias e eleicoes como formas de aprendizado sobre participação política",
         "a turma analisa como transporte, escola e saude influenciam a possibilidade real de exercer direitos"
       ],
-      "correta": "a escola discute como representacao de turma, regras coletivas e participacao estudantil ajudam a exercitar cidadania",
+      "correta": "a escola discute como representação de turma, regras coletivas e participação estudantil ajudam a exercitar cidadania",
       "comentario": "A alternativa correta aproxima conceito de cidadania de um contexto escolar concreto.",
       "tempoEstimado": 55,
       "tags": [
@@ -606,12 +606,12 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual sintese final representa melhor conceito de cidadania?",
       "opcoes": [
-        "cidadania e a condicao de pertencimento politico com direitos, deveres e participacao na vida coletiva",
-        "Conceito de cidadania e um fator biologico fixo, sem relacao com direitos ou participacao coletiva.",
-        "Conceito de cidadania explica apenas escolhas privadas e ignora a dimensao publica.",
-        "Conceito de cidadania impede qualquer mudanca historica ou social."
+        "cidadania e a condição de pertencimento político com direitos, deveres e participação na vida coletiva",
+        "Conceito de cidadania e um fator biológico fixo, sem relação com direitos ou participação coletiva.",
+        "Conceito de cidadania explica apenas escolhas privadas e ignora a dimensao pública.",
+        "Conceito de cidadania impede qualquer mudanca histórica ou social."
       ],
-      "correta": "cidadania e a condicao de pertencimento politico com direitos, deveres e participacao na vida coletiva",
+      "correta": "cidadania e a condição de pertencimento político com direitos, deveres e participação na vida coletiva",
       "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de conceito de cidadania.",
       "tempoEstimado": 60,
       "tags": [
@@ -646,9 +646,9 @@ export const cidadania = {
       "enunciado": "Em Sociologia, direitos civis pode ser definido(a) como:",
       "opcoes": [
         "as garantias ligadas a liberdade individual, a igualdade perante a lei e a protecao da integridade e da propriedade",
-        "a condicao de pertencimento a uma comunidade politica com acesso a direitos, deveres e participacao na vida coletiva",
-        "as garantias de participacao na vida politica, como votar, ser votado e influenciar decisoes coletivas",
-        "as garantias de acesso a condicoes de vida dignas, como educacao, saude, trabalho, moradia e protecao social"
+        "a condição de pertencimento a uma comunidade política com acesso a direitos, deveres e participação na vida coletiva",
+        "as garantias de participação na vida política, como votar, ser votado e influenciar decisões coletivas",
+        "as garantias de acesso a condicoes de vida dignas, como educação, saude, trabalho, moradia e protecao social"
       ],
       "correta": "as garantias ligadas a liberdade individual, a igualdade perante a lei e a protecao da integridade e da propriedade",
       "comentario": "Direitos civis refere-se a as garantias ligadas a liberdade individual, a igualdade perante a lei e a protecao da integridade e da propriedade.",
@@ -682,15 +682,15 @@ export const cidadania = {
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: uma pessoa pode circular, expressar opinioes e buscar protecao legal contra agressoes e arbitrariedades Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: uma pessoa pode circular, expressar opiniões e buscar protecao legal contra agressoes e arbitrariedades Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
         "Direitos civis",
         "Conceito de cidadania",
-        "Direitos politicos",
+        "Direitos políticos",
         "Direitos sociais"
       ],
       "correta": "Direitos civis",
-      "comentario": "A situacao apresentada e um exemplo de direitos civis.",
+      "comentario": "A situação apresentada é um exemplo de direitos civis.",
       "tempoEstimado": 25,
       "tags": [
         "cidadania",
@@ -724,9 +724,9 @@ export const cidadania = {
       "enunciado": "Qual afirmacao descreve corretamente direitos civis?",
       "opcoes": [
         "As garantias ligadas a liberdade individual, a igualdade perante a lei e a protecao da integridade e da propriedade.",
-        "Um conjunto de privilegios opcionais sem relacao com a condicao de cidadania.",
-        "Direitos politicos significa as garantias de participacao na vida politica, como votar, ser votado e influenciar decisoes coletivas.",
-        "Cidadania trata apenas de interesses privados e nao de vida publica."
+        "Um conjunto de privilegios opcionais sem relação com a condição de cidadania.",
+        "Direitos políticos significa as garantias de participação na vida política, como votar, ser votado e influenciar decisões coletivas.",
+        "Cidadania trata apenas de interesses privados e não de vida pública."
       ],
       "correta": "As garantias ligadas a liberdade individual, a igualdade perante a lei e a protecao da integridade e da propriedade.",
       "comentario": "A afirmacao correta retoma o sentido central de direitos civis.",
@@ -760,15 +760,15 @@ export const cidadania = {
       "dificuldadeNivel": 4,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a direitos civis.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a direitos civis.",
       "opcoes": [
-        "a ideia de que a liberdade individual nao depende de garantias legais ou protecao institucional",
-        "uma pessoa pode circular, expressar opinioes e buscar protecao legal contra agressoes e arbitrariedades",
+        "a ideia de que a liberdade individual não depende de garantias legais ou protecao institucional",
+        "uma pessoa pode circular, expressar opiniões e buscar protecao legal contra agressoes e arbitrariedades",
         "o Estado deve garantir seguranca, liberdade e igualdade formal diante das leis",
-        "direitos civis estruturam liberdades basicas e protecao juridica aos individuos"
+        "direitos civis estruturam liberdades basicas e protecao juridica aos indivíduos"
       ],
-      "correta": "a ideia de que a liberdade individual nao depende de garantias legais ou protecao institucional",
-      "comentario": "a ideia de que a liberdade individual nao depende de garantias legais ou protecao institucional nao expressa direitos civis, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "a ideia de que a liberdade individual não depende de garantias legais ou protecao institucional",
+      "comentario": "a ideia de que a liberdade individual não depende de garantias legais ou protecao institucional não expressa direitos civis, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "cidadania",
@@ -802,12 +802,12 @@ export const cidadania = {
       "enunciado": "Quando se estuda direitos civis, o foco principal esta em:",
       "opcoes": [
         "as garantias de liberdade, protecao e igualdade formal diante da lei",
-        "o vinculo entre pertencimento politico, direitos, deveres e participacao social",
-        "a participacao dos cidadaos na escolha e no controle dos rumos politicos da coletividade",
-        "as condicoes materiais e institucionais necessarias ao exercicio concreto da cidadania"
+        "o vínculo entre pertencimento político, direitos, deveres e participação social",
+        "a participação dos cidadãos na escolha e no controle dos rumos políticos da coletividade",
+        "as condicoes materiais e institucionais necessárias ao exercicio concreto da cidadania"
       ],
       "correta": "as garantias de liberdade, protecao e igualdade formal diante da lei",
-      "comentario": "Direitos civis volta a atencao para as garantias de liberdade, protecao e igualdade formal diante da lei.",
+      "comentario": "Direitos civis volta a atenção para as garantias de liberdade, protecao e igualdade formal diante da lei.",
       "tempoEstimado": 35,
       "tags": [
         "cidadania",
@@ -838,15 +838,15 @@ export const cidadania = {
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre direitos civis e direitos politicos e que:",
+      "enunciado": "A principal diferença entre direitos civis e direitos políticos e que:",
       "opcoes": [
-        "direitos civis protegem liberdades e garantias individuais, enquanto direitos politicos dizem respeito a participacao nas decisoes coletivas",
-        "Direitos civis e Direitos politicos sao exatamente o mesmo fenomeno social.",
-        "Direitos politicos depende apenas de escolhas privadas, enquanto Direitos civis depende so da biologia.",
-        "Direitos civis elimina a necessidade de observar direitos, deveres e participacao."
+        "direitos civis protegem liberdades e garantias individuais, enquanto direitos políticos dizem respeito a participação nas decisões coletivas",
+        "Direitos civis e Direitos políticos são exatamente o mesmo fenômeno social.",
+        "Direitos políticos depende apenas de escolhas privadas, enquanto Direitos civis depende so da biologia.",
+        "Direitos civis elimina a necessidade de observar direitos, deveres e participação."
       ],
-      "correta": "direitos civis protegem liberdades e garantias individuais, enquanto direitos politicos dizem respeito a participacao nas decisoes coletivas",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "correta": "direitos civis protegem liberdades e garantias individuais, enquanto direitos políticos dizem respeito a participação nas decisões coletivas",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "cidadania",
@@ -877,15 +877,15 @@ export const cidadania = {
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: o Estado deve garantir seguranca, liberdade e igualdade formal diante das leis A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: o Estado deve garantir seguranca, liberdade e igualdade formal diante das leis A leitura sociológica mais adequada aponta para:",
       "opcoes": [
         "direitos civis ajudam a entender a base juridica da cidadania e da protecao do individuo",
-        "Direitos civis mostra que a vida publica nao interfere no acesso a direitos.",
+        "Direitos civis mostra que a vida pública não interfere no acesso a direitos.",
         "Direitos civis prova que todos os grupos exercem cidadania da mesma forma.",
         "Direitos civis significa ausencia completa de desigualdades de acesso a direitos."
       ],
       "correta": "direitos civis ajudam a entender a base juridica da cidadania e da protecao do individuo",
-      "comentario": "Direitos civis permite interpretar o caso a partir de direitos, deveres, participacao e acesso a vida publica.",
+      "comentario": "Direitos civis permite interpretar o caso a partir de direitos, deveres, participação e acesso a vida pública.",
       "tempoEstimado": 40,
       "tags": [
         "cidadania",
@@ -916,15 +916,15 @@ export const cidadania = {
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia direitos civis de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia direitos civis de maneira mais clara?",
       "opcoes": [
-        "direitos civis estruturam liberdades basicas e protecao juridica aos individuos",
-        "cidadania envolve pertencer a vida publica com direitos, deveres e possibilidade de participacao",
-        "direitos politicos tornam possivel participar das escolhas coletivas e da representacao publica",
-        "direitos sociais traduzem a cidadania em condicoes reais de existencia e participacao social"
+        "direitos civis estruturam liberdades basicas e protecao juridica aos indivíduos",
+        "cidadania envolve pertencer a vida pública com direitos, deveres e possibilidade de participação",
+        "direitos políticos tornam possível participar das escolhas coletivas e da representação pública",
+        "direitos sociais traduzem a cidadania em condicoes reais de existencia e participação social"
       ],
-      "correta": "direitos civis estruturam liberdades basicas e protecao juridica aos individuos",
-      "comentario": "A alternativa correta traduz direitos civis em uma situacao concreta de vida social.",
+      "correta": "direitos civis estruturam liberdades basicas e protecao juridica aos indivíduos",
+      "comentario": "A alternativa correta traduz direitos civis em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "cidadania",
@@ -955,15 +955,15 @@ export const cidadania = {
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"uma pessoa pode circular, expressar opinioes e buscar protecao legal contra agressoes e arbitrariedades\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"uma pessoa pode circular, expressar opiniões e buscar protecao legal contra agressoes e arbitrariedades\", qual conclusão é mais adequada?",
       "opcoes": [
         "sem direitos civis, a cidadania fica fragilizada em sua dimensao de liberdade e protecao legal",
-        "Direitos civis indica que direitos e participacao nunca variam historicamente.",
+        "Direitos civis indica que direitos e participação nunca variam historicamente.",
         "Direitos civis so pode ser explicado por fatores biologicos.",
         "Direitos civis dispensa comparacao entre grupos e contextos."
       ],
       "correta": "sem direitos civis, a cidadania fica fragilizada em sua dimensao de liberdade e protecao legal",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "cidadania",
@@ -997,9 +997,9 @@ export const cidadania = {
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com direitos civis?",
       "opcoes": [
         "como liberdade, protecao legal e igualdade perante a lei integram a cidadania?",
-        "como direitos, deveres e participacao definem a cidadania em uma sociedade?",
-        "como voto, representacao e participacao publica se relacionam com a cidadania?",
-        "como acesso a saude, educacao e trabalho se relaciona com o exercicio da cidadania?"
+        "como direitos, deveres e participação definem a cidadania em uma sociedade?",
+        "como voto, representação e participação pública se relacionam com a cidadania?",
+        "como acesso a saude, educação e trabalho se relaciona com o exercicio da cidadania?"
       ],
       "correta": "como liberdade, protecao legal e igualdade perante a lei integram a cidadania?",
       "comentario": "A pergunta correta ajuda a investigar direitos civis de forma coerente com o subtopico.",
@@ -1035,12 +1035,12 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a afirmacao que revela compreensao inadequada de direitos civis.",
       "opcoes": [
-        "Um conjunto de privilegios opcionais sem relacao com a condicao de cidadania.",
-        "Direitos civis pode ser observado em direitos, deveres e participacao publica.",
+        "Um conjunto de privilegios opcionais sem relação com a condição de cidadania.",
+        "Direitos civis pode ser observado em direitos, deveres e participação pública.",
         "Direitos civis ajuda a analisar acesso a garantias e a vida coletiva.",
-        "Direitos civis depende da relacao entre pertencimento politico e exercicio de direitos."
+        "Direitos civis depende da relação entre pertencimento político e exercicio de direitos."
       ],
-      "correta": "Um conjunto de privilegios opcionais sem relacao com a condicao de cidadania.",
+      "correta": "Um conjunto de privilegios opcionais sem relação com a condição de cidadania.",
       "comentario": "A alternativa incorreta expressa uma confusao comum sobre direitos civis.",
       "tempoEstimado": 45,
       "tags": [
@@ -1072,15 +1072,15 @@ export const cidadania = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre cidadania, um estudante afirmou: \"direitos civis sao fundamentais para assegurar liberdade e protecao diante do poder e das violencias sociais\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre cidadania, um estudante afirmou: \"direitos civis são fundamentais para assegurar liberdade e protecao diante do poder e das violencias sociais\". Qual avaliação é mais consistente?",
       "opcoes": [
         "a afirmacao esta correta, porque esses direitos sustentam a dimensao juridica da cidadania",
-        "Direitos civis nao pode ser observado em situacoes do cotidiano.",
-        "Direitos civis depende apenas da vontade individual, sem contexto politico e social.",
-        "Direitos civis torna desnecessario comparar direitos, deveres e participacao."
+        "Direitos civis não pode ser observado em situações do cotidiano.",
+        "Direitos civis depende apenas da vontade individual, sem contexto político e social.",
+        "Direitos civis torna desnecessario comparar direitos, deveres e participação."
       ],
       "correta": "a afirmacao esta correta, porque esses direitos sustentam a dimensao juridica da cidadania",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de direitos civis.",
+      "comentario": "A avaliação correta recupera o nucleo teorico de direitos civis.",
       "tempoEstimado": 50,
       "tags": [
         "cidadania",
@@ -1111,15 +1111,15 @@ export const cidadania = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando uma populacao nao consegue acessar justica ou protecao legal em condicoes minimamente iguais, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando uma população não consegue acessar justiça ou protecao legal em condicoes minimamente iguais, a melhor interpretação sociológica e que:",
       "opcoes": [
         "os direitos civis deixam de operar de forma efetiva para todos",
-        "Direitos civis desaparece porque a sociedade nao depende mais de direitos.",
+        "Direitos civis desaparece porque a sociedade não depende mais de direitos.",
         "Direitos civis deixa de existir sempre que surgem conflitos entre grupos.",
-        "Direitos civis so importa em sociedades antigas, nao no presente."
+        "Direitos civis so importa em sociedades antigas, não no presente."
       ],
       "correta": "os direitos civis deixam de operar de forma efetiva para todos",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "cidadania",
@@ -1150,11 +1150,11 @@ export const cidadania = {
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente direitos civis a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente direitos civis a uma situação de comunidade escolar?",
       "opcoes": [
         "a turma debate liberdade de expressao, seguranca e igualdade perante regras e leis",
-        "a escola discute como representacao de turma, regras coletivas e participacao estudantil ajudam a exercitar cidadania",
-        "a escola discute gremios, assembleias e eleicoes como formas de aprendizado sobre participacao politica",
+        "a escola discute como representação de turma, regras coletivas e participação estudantil ajudam a exercitar cidadania",
+        "a escola discute gremios, assembleias e eleicoes como formas de aprendizado sobre participação política",
         "a turma analisa como transporte, escola e saude influenciam a possibilidade real de exercer direitos"
       ],
       "correta": "a turma debate liberdade de expressao, seguranca e igualdade perante regras e leis",
@@ -1191,12 +1191,12 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual sintese final representa melhor direitos civis?",
       "opcoes": [
-        "direitos civis correspondem as garantias de liberdade e protecao legal dos individuos",
-        "Direitos civis e um fator biologico fixo, sem relacao com direitos ou participacao coletiva.",
-        "Direitos civis explica apenas escolhas privadas e ignora a dimensao publica.",
-        "Direitos civis impede qualquer mudanca historica ou social."
+        "direitos civis correspondem as garantias de liberdade e protecao legal dos indivíduos",
+        "Direitos civis e um fator biológico fixo, sem relação com direitos ou participação coletiva.",
+        "Direitos civis explica apenas escolhas privadas e ignora a dimensao pública.",
+        "Direitos civis impede qualquer mudanca histórica ou social."
       ],
-      "correta": "direitos civis correspondem as garantias de liberdade e protecao legal dos individuos",
+      "correta": "direitos civis correspondem as garantias de liberdade e protecao legal dos indivíduos",
       "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de direitos civis.",
       "tempoEstimado": 60,
       "tags": [
@@ -1223,20 +1223,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Direitos politicos",
+      "subtopico": "Direitos políticos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Sociologia, direitos politicos pode ser definido(a) como:",
+      "enunciado": "Em Sociologia, direitos políticos pode ser definido(a) como:",
       "opcoes": [
-        "as garantias de participacao na vida politica, como votar, ser votado e influenciar decisoes coletivas",
-        "a relacao entre o exercicio de direitos, a participacao cidada e um regime politico baseado em pluralidade, representacao e controle do poder",
-        "os processos que ampliam ou restringem o acesso de grupos a direitos, reconhecimento, participacao e recursos sociais",
-        "as acoes e programas organizados pelo Estado para enfrentar problemas coletivos e garantir direitos a populacao"
+        "as garantias de participação na vida política, como votar, ser votado e influenciar decisões coletivas",
+        "a relação entre o exercicio de direitos, a participação cidada e um regime político baseado em pluralidade, representação e controle do poder",
+        "os processos que ampliam ou restringem o acesso de grupos a direitos, reconhecimento, participação e recursos sociais",
+        "as ações e programas organizados pelo Estado para enfrentar problemas coletivos e garantir direitos a população"
       ],
-      "correta": "as garantias de participacao na vida politica, como votar, ser votado e influenciar decisoes coletivas",
-      "comentario": "Direitos politicos refere-se a as garantias de participacao na vida politica, como votar, ser votado e influenciar decisoes coletivas.",
+      "correta": "as garantias de participação na vida política, como votar, ser votado e influenciar decisões coletivas",
+      "comentario": "Direitos políticos refere-se a as garantias de participação na vida política, como votar, ser votado e influenciar decisões coletivas.",
       "tempoEstimado": 20,
       "tags": [
         "cidadania",
@@ -1262,20 +1262,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Direitos politicos",
+      "subtopico": "Direitos políticos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: cidadaos escolhem representantes e participam de processos que definem rumos do governo Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: cidadãos escolhem representantes e participam de processos que definem rumos do governo Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
-        "Direitos politicos",
+        "Direitos políticos",
         "Cidadania e democracia",
         "Inclusao e exclusao",
-        "Politicas publicas"
+        "Politicas públicas"
       ],
-      "correta": "Direitos politicos",
-      "comentario": "A situacao apresentada e um exemplo de direitos politicos.",
+      "correta": "Direitos políticos",
+      "comentario": "A situação apresentada é um exemplo de direitos políticos.",
       "tempoEstimado": 25,
       "tags": [
         "cidadania",
@@ -1301,20 +1301,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Direitos politicos",
+      "subtopico": "Direitos políticos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmacao descreve corretamente direitos politicos?",
+      "enunciado": "Qual afirmacao descreve corretamente direitos políticos?",
       "opcoes": [
-        "As garantias de participacao na vida politica, como votar, ser votado e influenciar decisoes coletivas.",
-        "Um detalhe institucional sem impacto sobre a capacidade de interferir na vida publica.",
-        "Direitos sociais significa as garantias de acesso a condicoes de vida dignas, como educacao, saude, trabalho, moradia e protecao social.",
-        "Cidadania trata apenas de interesses privados e nao de vida publica."
+        "As garantias de participação na vida política, como votar, ser votado e influenciar decisões coletivas.",
+        "Um detalhe institucional sem impacto sobre a capacidade de interferir na vida pública.",
+        "Direitos sociais significa as garantias de acesso a condicoes de vida dignas, como educação, saude, trabalho, moradia e protecao social.",
+        "Cidadania trata apenas de interesses privados e não de vida pública."
       ],
-      "correta": "As garantias de participacao na vida politica, como votar, ser votado e influenciar decisoes coletivas.",
-      "comentario": "A afirmacao correta retoma o sentido central de direitos politicos.",
+      "correta": "As garantias de participação na vida política, como votar, ser votado e influenciar decisões coletivas.",
+      "comentario": "A afirmacao correta retoma o sentido central de direitos políticos.",
       "tempoEstimado": 30,
       "tags": [
         "cidadania",
@@ -1340,20 +1340,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Direitos politicos",
+      "subtopico": "Direitos políticos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a direitos politicos.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a direitos políticos.",
       "opcoes": [
-        "a ideia de que cidadania independe totalmente de participacao politica ou de representacao",
-        "cidadaos escolhem representantes e participam de processos que definem rumos do governo",
-        "o direito ao voto e a organizacao politica permite intervir nas decisoes publicas",
-        "direitos politicos tornam possivel participar das escolhas coletivas e da representacao publica"
+        "a ideia de que cidadania independe totalmente de participação política ou de representação",
+        "cidadãos escolhem representantes e participam de processos que definem rumos do governo",
+        "o direito ao voto e a organização política permite intervir nas decisões públicas",
+        "direitos políticos tornam possível participar das escolhas coletivas e da representação pública"
       ],
-      "correta": "a ideia de que cidadania independe totalmente de participacao politica ou de representacao",
-      "comentario": "a ideia de que cidadania independe totalmente de participacao politica ou de representacao nao expressa direitos politicos, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "a ideia de que cidadania independe totalmente de participação política ou de representação",
+      "comentario": "a ideia de que cidadania independe totalmente de participação política ou de representação não expressa direitos políticos, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "cidadania",
@@ -1379,20 +1379,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Direitos politicos",
+      "subtopico": "Direitos políticos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda direitos politicos, o foco principal esta em:",
+      "enunciado": "Quando se estuda direitos políticos, o foco principal esta em:",
       "opcoes": [
-        "a participacao dos cidadaos na escolha e no controle dos rumos politicos da coletividade",
-        "a interdependencia entre participacao cidada, garantia de direitos e funcionamento democratico",
-        "as barreiras e oportunidades que definem quem acessa direitos e participacao de forma efetiva",
-        "a acao organizada do Estado na oferta de servicos, garantias e respostas a problemas sociais"
+        "a participação dos cidadãos na escolha e no controle dos rumos políticos da coletividade",
+        "a interdependencia entre participação cidada, garantia de direitos e funcionamento democratico",
+        "as barreiras e oportunidades que definem quem acessa direitos e participação de forma efetiva",
+        "a ação organizada do Estado na oferta de serviços, garantias e respostas a problemas sociais"
       ],
-      "correta": "a participacao dos cidadaos na escolha e no controle dos rumos politicos da coletividade",
-      "comentario": "Direitos politicos volta a atencao para a participacao dos cidadaos na escolha e no controle dos rumos politicos da coletividade.",
+      "correta": "a participação dos cidadãos na escolha e no controle dos rumos políticos da coletividade",
+      "comentario": "Direitos políticos volta a atenção para a participação dos cidadãos na escolha e no controle dos rumos políticos da coletividade.",
       "tempoEstimado": 35,
       "tags": [
         "cidadania",
@@ -1418,20 +1418,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Direitos politicos",
+      "subtopico": "Direitos políticos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre direitos politicos e direitos sociais e que:",
+      "enunciado": "A principal diferença entre direitos políticos e direitos sociais e que:",
       "opcoes": [
-        "direitos politicos garantem participacao nas decisoes coletivas, enquanto direitos sociais se referem a condicoes de vida e acesso a servicos essenciais",
-        "Direitos politicos e Direitos sociais sao exatamente o mesmo fenomeno social.",
-        "Direitos sociais depende apenas de escolhas privadas, enquanto Direitos politicos depende so da biologia.",
-        "Direitos politicos elimina a necessidade de observar direitos, deveres e participacao."
+        "direitos políticos garantem participação nas decisões coletivas, enquanto direitos sociais se referem a condicoes de vida e acesso a serviços essenciais",
+        "Direitos políticos e Direitos sociais são exatamente o mesmo fenômeno social.",
+        "Direitos sociais depende apenas de escolhas privadas, enquanto Direitos políticos depende so da biologia.",
+        "Direitos políticos elimina a necessidade de observar direitos, deveres e participação."
       ],
-      "correta": "direitos politicos garantem participacao nas decisoes coletivas, enquanto direitos sociais se referem a condicoes de vida e acesso a servicos essenciais",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "correta": "direitos políticos garantem participação nas decisões coletivas, enquanto direitos sociais se referem a condicoes de vida e acesso a serviços essenciais",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "cidadania",
@@ -1457,20 +1457,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Direitos politicos",
+      "subtopico": "Direitos políticos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: o direito ao voto e a organizacao politica permite intervir nas decisoes publicas A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: o direito ao voto e a organização política permite intervir nas decisões públicas A leitura sociológica mais adequada aponta para:",
       "opcoes": [
-        "direitos politicos mostram que cidadania envolve capacidade de interferir no poder e nas decisoes publicas",
-        "Direitos politicos mostra que a vida publica nao interfere no acesso a direitos.",
-        "Direitos politicos prova que todos os grupos exercem cidadania da mesma forma.",
-        "Direitos politicos significa ausencia completa de desigualdades de acesso a direitos."
+        "direitos políticos mostram que cidadania envolve capacidade de interferir no poder e nas decisões públicas",
+        "Direitos políticos mostra que a vida pública não interfere no acesso a direitos.",
+        "Direitos políticos prova que todos os grupos exercem cidadania da mesma forma.",
+        "Direitos políticos significa ausencia completa de desigualdades de acesso a direitos."
       ],
-      "correta": "direitos politicos mostram que cidadania envolve capacidade de interferir no poder e nas decisoes publicas",
-      "comentario": "Direitos politicos permite interpretar o caso a partir de direitos, deveres, participacao e acesso a vida publica.",
+      "correta": "direitos políticos mostram que cidadania envolve capacidade de interferir no poder e nas decisões públicas",
+      "comentario": "Direitos políticos permite interpretar o caso a partir de direitos, deveres, participação e acesso a vida pública.",
       "tempoEstimado": 40,
       "tags": [
         "cidadania",
@@ -1496,20 +1496,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Direitos politicos",
+      "subtopico": "Direitos políticos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia direitos politicos de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia direitos políticos de maneira mais clara?",
       "opcoes": [
-        "direitos politicos tornam possivel participar das escolhas coletivas e da representacao publica",
-        "cidadania e democracia mostram que direitos e participacao se fortalecem em contextos de abertura politica e controle social do poder",
+        "direitos políticos tornam possível participar das escolhas coletivas e da representação pública",
+        "cidadania e democracia mostram que direitos e participação se fortalecem em contextos de abertura política e controle social do poder",
         "inclusao e exclusao ajudam a analisar desigualdades no acesso a cidadania e ao reconhecimento social",
-        "politicas publicas sao instrumentos pelos quais o Estado organiza respostas para necessidades coletivas"
+        "politicas públicas são instrumentos pelos quais o Estado organiza respostas para necessidades coletivas"
       ],
-      "correta": "direitos politicos tornam possivel participar das escolhas coletivas e da representacao publica",
-      "comentario": "A alternativa correta traduz direitos politicos em uma situacao concreta de vida social.",
+      "correta": "direitos políticos tornam possível participar das escolhas coletivas e da representação pública",
+      "comentario": "A alternativa correta traduz direitos políticos em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "cidadania",
@@ -1535,20 +1535,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Direitos politicos",
+      "subtopico": "Direitos políticos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"cidadaos escolhem representantes e participam de processos que definem rumos do governo\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"cidadãos escolhem representantes e participam de processos que definem rumos do governo\", qual conclusão é mais adequada?",
       "opcoes": [
-        "sem direitos politicos, a cidadania perde sua dimensao de participacao no poder publico",
-        "Direitos politicos indica que direitos e participacao nunca variam historicamente.",
-        "Direitos politicos so pode ser explicado por fatores biologicos.",
-        "Direitos politicos dispensa comparacao entre grupos e contextos."
+        "sem direitos políticos, a cidadania perde sua dimensao de participação no poder público",
+        "Direitos políticos indica que direitos e participação nunca variam historicamente.",
+        "Direitos políticos so pode ser explicado por fatores biologicos.",
+        "Direitos políticos dispensa comparacao entre grupos e contextos."
       ],
-      "correta": "sem direitos politicos, a cidadania perde sua dimensao de participacao no poder publico",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "correta": "sem direitos políticos, a cidadania perde sua dimensao de participação no poder público",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "cidadania",
@@ -1574,20 +1574,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Direitos politicos",
+      "subtopico": "Direitos políticos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com direitos politicos?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com direitos políticos?",
       "opcoes": [
-        "como voto, representacao e participacao publica se relacionam com a cidadania?",
-        "como direitos, deveres e participacao definem a cidadania em uma sociedade?",
+        "como voto, representação e participação pública se relacionam com a cidadania?",
+        "como direitos, deveres e participação definem a cidadania em uma sociedade?",
         "como liberdade, protecao legal e igualdade perante a lei integram a cidadania?",
-        "como acesso a saude, educacao e trabalho se relaciona com o exercicio da cidadania?"
+        "como acesso a saude, educação e trabalho se relaciona com o exercicio da cidadania?"
       ],
-      "correta": "como voto, representacao e participacao publica se relacionam com a cidadania?",
-      "comentario": "A pergunta correta ajuda a investigar direitos politicos de forma coerente com o subtopico.",
+      "correta": "como voto, representação e participação pública se relacionam com a cidadania?",
+      "comentario": "A pergunta correta ajuda a investigar direitos políticos de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
         "cidadania",
@@ -1613,20 +1613,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Direitos politicos",
+      "subtopico": "Direitos políticos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmacao que revela compreensao inadequada de direitos politicos.",
+      "enunciado": "Assinale a afirmacao que revela compreensao inadequada de direitos políticos.",
       "opcoes": [
-        "Um detalhe institucional sem impacto sobre a capacidade de interferir na vida publica.",
-        "Direitos politicos pode ser observado em direitos, deveres e participacao publica.",
-        "Direitos politicos ajuda a analisar acesso a garantias e a vida coletiva.",
-        "Direitos politicos depende da relacao entre pertencimento politico e exercicio de direitos."
+        "Um detalhe institucional sem impacto sobre a capacidade de interferir na vida pública.",
+        "Direitos políticos pode ser observado em direitos, deveres e participação pública.",
+        "Direitos políticos ajuda a analisar acesso a garantias e a vida coletiva.",
+        "Direitos políticos depende da relação entre pertencimento político e exercicio de direitos."
       ],
-      "correta": "Um detalhe institucional sem impacto sobre a capacidade de interferir na vida publica.",
-      "comentario": "A alternativa incorreta expressa uma confusao comum sobre direitos politicos.",
+      "correta": "Um detalhe institucional sem impacto sobre a capacidade de interferir na vida pública.",
+      "comentario": "A alternativa incorreta expressa uma confusao comum sobre direitos políticos.",
       "tempoEstimado": 45,
       "tags": [
         "cidadania",
@@ -1652,20 +1652,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Direitos politicos",
+      "subtopico": "Direitos políticos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre cidadania, um estudante afirmou: \"direitos politicos sao essenciais para que a cidadania inclua voz e participacao nas decisoes coletivas\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre cidadania, um estudante afirmou: \"direitos políticos são essenciais para que a cidadania inclua voz e participação nas decisões coletivas\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "a afirmacao esta correta, porque participacao politica e dimensao central da cidadania",
-        "Direitos politicos nao pode ser observado em situacoes do cotidiano.",
-        "Direitos politicos depende apenas da vontade individual, sem contexto politico e social.",
-        "Direitos politicos torna desnecessario comparar direitos, deveres e participacao."
+        "a afirmacao esta correta, porque participação política e dimensao central da cidadania",
+        "Direitos políticos não pode ser observado em situações do cotidiano.",
+        "Direitos políticos depende apenas da vontade individual, sem contexto político e social.",
+        "Direitos políticos torna desnecessario comparar direitos, deveres e participação."
       ],
-      "correta": "a afirmacao esta correta, porque participacao politica e dimensao central da cidadania",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de direitos politicos.",
+      "correta": "a afirmacao esta correta, porque participação política e dimensao central da cidadania",
+      "comentario": "A avaliação correta recupera o nucleo teorico de direitos políticos.",
       "tempoEstimado": 50,
       "tags": [
         "cidadania",
@@ -1691,20 +1691,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Direitos politicos",
+      "subtopico": "Direitos políticos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando grupos sociais sao impedidos de votar, se organizar ou influenciar decisoes publicas, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando grupos sociais são impedidos de votar, se organizar ou influenciar decisões públicas, a melhor interpretação sociológica e que:",
       "opcoes": [
         "a cidadania desses grupos fica politicamente restringida",
-        "Direitos politicos desaparece porque a sociedade nao depende mais de direitos.",
-        "Direitos politicos deixa de existir sempre que surgem conflitos entre grupos.",
-        "Direitos politicos so importa em sociedades antigas, nao no presente."
+        "Direitos políticos desaparece porque a sociedade não depende mais de direitos.",
+        "Direitos políticos deixa de existir sempre que surgem conflitos entre grupos.",
+        "Direitos políticos so importa em sociedades antigas, não no presente."
       ],
       "correta": "a cidadania desses grupos fica politicamente restringida",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "cidadania",
@@ -1730,20 +1730,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Direitos politicos",
+      "subtopico": "Direitos políticos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente direitos politicos a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente direitos políticos a uma situação de comunidade escolar?",
       "opcoes": [
-        "a escola discute gremios, assembleias e eleicoes como formas de aprendizado sobre participacao politica",
-        "a escola discute como representacao de turma, regras coletivas e participacao estudantil ajudam a exercitar cidadania",
+        "a escola discute gremios, assembleias e eleicoes como formas de aprendizado sobre participação política",
+        "a escola discute como representação de turma, regras coletivas e participação estudantil ajudam a exercitar cidadania",
         "a turma debate liberdade de expressao, seguranca e igualdade perante regras e leis",
         "a turma analisa como transporte, escola e saude influenciam a possibilidade real de exercer direitos"
       ],
-      "correta": "a escola discute gremios, assembleias e eleicoes como formas de aprendizado sobre participacao politica",
-      "comentario": "A alternativa correta aproxima direitos politicos de um contexto escolar concreto.",
+      "correta": "a escola discute gremios, assembleias e eleicoes como formas de aprendizado sobre participação política",
+      "comentario": "A alternativa correta aproxima direitos políticos de um contexto escolar concreto.",
       "tempoEstimado": 55,
       "tags": [
         "cidadania",
@@ -1769,20 +1769,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Direitos politicos",
+      "subtopico": "Direitos políticos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual sintese final representa melhor direitos politicos?",
+      "enunciado": "Qual sintese final representa melhor direitos políticos?",
       "opcoes": [
-        "direitos politicos correspondem as garantias de participacao na vida publica e nas decisoes coletivas",
-        "Direitos politicos e um fator biologico fixo, sem relacao com direitos ou participacao coletiva.",
-        "Direitos politicos explica apenas escolhas privadas e ignora a dimensao publica.",
-        "Direitos politicos impede qualquer mudanca historica ou social."
+        "direitos políticos correspondem as garantias de participação na vida pública e nas decisões coletivas",
+        "Direitos políticos e um fator biológico fixo, sem relação com direitos ou participação coletiva.",
+        "Direitos políticos explica apenas escolhas privadas e ignora a dimensao pública.",
+        "Direitos políticos impede qualquer mudanca histórica ou social."
       ],
-      "correta": "direitos politicos correspondem as garantias de participacao na vida publica e nas decisoes coletivas",
-      "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de direitos politicos.",
+      "correta": "direitos políticos correspondem as garantias de participação na vida pública e nas decisões coletivas",
+      "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de direitos políticos.",
       "tempoEstimado": 60,
       "tags": [
         "cidadania",
@@ -1815,13 +1815,13 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Em Sociologia, direitos sociais pode ser definido(a) como:",
       "opcoes": [
-        "as garantias de acesso a condicoes de vida dignas, como educacao, saude, trabalho, moradia e protecao social",
-        "o exercicio de direitos, deveres e participacao na vida publica mediada por ambientes digitais e tecnologias de informacao",
+        "as garantias de acesso a condicoes de vida dignas, como educação, saude, trabalho, moradia e protecao social",
+        "o exercicio de direitos, deveres e participação na vida pública mediada por ambientes digitais e tecnologias de informacao",
         "o conjunto de principios e garantias voltados a protecao da dignidade, da liberdade e da igualdade de todos os seres humanos",
-        "a condicao de pertencimento a uma comunidade politica com acesso a direitos, deveres e participacao na vida coletiva"
+        "a condição de pertencimento a uma comunidade política com acesso a direitos, deveres e participação na vida coletiva"
       ],
-      "correta": "as garantias de acesso a condicoes de vida dignas, como educacao, saude, trabalho, moradia e protecao social",
-      "comentario": "Direitos sociais refere-se a as garantias de acesso a condicoes de vida dignas, como educacao, saude, trabalho, moradia e protecao social.",
+      "correta": "as garantias de acesso a condicoes de vida dignas, como educação, saude, trabalho, moradia e protecao social",
+      "comentario": "Direitos sociais refere-se a as garantias de acesso a condicoes de vida dignas, como educação, saude, trabalho, moradia e protecao social.",
       "tempoEstimado": 20,
       "tags": [
         "cidadania",
@@ -1852,7 +1852,7 @@ export const cidadania = {
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: uma populacao depende de escola, saude e trabalho protegido para exercer cidadania de forma concreta Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: uma população depende de escola, saude e trabalho protegido para exercer cidadania de forma concreta Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
         "Direitos sociais",
         "Cidadania digital",
@@ -1860,7 +1860,7 @@ export const cidadania = {
         "Conceito de cidadania"
       ],
       "correta": "Direitos sociais",
-      "comentario": "A situacao apresentada e um exemplo de direitos sociais.",
+      "comentario": "A situação apresentada é um exemplo de direitos sociais.",
       "tempoEstimado": 25,
       "tags": [
         "cidadania",
@@ -1893,12 +1893,12 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual afirmacao descreve corretamente direitos sociais?",
       "opcoes": [
-        "As garantias de acesso a condicoes de vida dignas, como educacao, saude, trabalho, moradia e protecao social.",
-        "Um conjunto secundario de beneficios sem ligacao com igualdade e participacao social.",
-        "Constituicao e participacao significa a relacao entre as regras fundamentais do Estado e as formas pelas quais os cidadaos participam da vida publica.",
-        "Cidadania trata apenas de interesses privados e nao de vida publica."
+        "As garantias de acesso a condicoes de vida dignas, como educação, saude, trabalho, moradia e protecao social.",
+        "Um conjunto secundario de beneficios sem ligacao com igualdade e participação social.",
+        "Constituição e participação significa a relação entre as regras fundamentais do Estado e as formas pelas quais os cidadãos participam da vida pública.",
+        "Cidadania trata apenas de interesses privados e não de vida pública."
       ],
-      "correta": "As garantias de acesso a condicoes de vida dignas, como educacao, saude, trabalho, moradia e protecao social.",
+      "correta": "As garantias de acesso a condicoes de vida dignas, como educação, saude, trabalho, moradia e protecao social.",
       "comentario": "A afirmacao correta retoma o sentido central de direitos sociais.",
       "tempoEstimado": 30,
       "tags": [
@@ -1930,15 +1930,15 @@ export const cidadania = {
       "dificuldadeNivel": 4,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a direitos sociais.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a direitos sociais.",
       "opcoes": [
-        "a ideia de que cidadania se realiza plenamente mesmo sem acesso a educacao, saude ou trabalho digno",
-        "uma populacao depende de escola, saude e trabalho protegido para exercer cidadania de forma concreta",
-        "sem acesso a servicos essenciais, direitos formais tornam-se insuficientes no cotidiano",
-        "direitos sociais traduzem a cidadania em condicoes reais de existencia e participacao social"
+        "a ideia de que cidadania se realiza plenamente mesmo sem acesso a educação, saude ou trabalho digno",
+        "uma população depende de escola, saude e trabalho protegido para exercer cidadania de forma concreta",
+        "sem acesso a serviços essenciais, direitos formais tornam-se insuficientes no cotidiano",
+        "direitos sociais traduzem a cidadania em condicoes reais de existencia e participação social"
       ],
-      "correta": "a ideia de que cidadania se realiza plenamente mesmo sem acesso a educacao, saude ou trabalho digno",
-      "comentario": "a ideia de que cidadania se realiza plenamente mesmo sem acesso a educacao, saude ou trabalho digno nao expressa direitos sociais, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "a ideia de que cidadania se realiza plenamente mesmo sem acesso a educação, saude ou trabalho digno",
+      "comentario": "a ideia de que cidadania se realiza plenamente mesmo sem acesso a educação, saude ou trabalho digno não expressa direitos sociais, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "cidadania",
@@ -1971,13 +1971,13 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Quando se estuda direitos sociais, o foco principal esta em:",
       "opcoes": [
-        "as condicoes materiais e institucionais necessarias ao exercicio concreto da cidadania",
-        "a atuacao cidada em ambientes digitais com direitos, deveres e impactos publicos",
+        "as condicoes materiais e institucionais necessárias ao exercicio concreto da cidadania",
+        "a atuação cidada em ambientes digitais com direitos, deveres e impactos públicos",
         "a protecao universal da dignidade humana e das liberdades fundamentais",
-        "o vinculo entre pertencimento politico, direitos, deveres e participacao social"
+        "o vínculo entre pertencimento político, direitos, deveres e participação social"
       ],
-      "correta": "as condicoes materiais e institucionais necessarias ao exercicio concreto da cidadania",
-      "comentario": "Direitos sociais volta a atencao para as condicoes materiais e institucionais necessarias ao exercicio concreto da cidadania.",
+      "correta": "as condicoes materiais e institucionais necessárias ao exercicio concreto da cidadania",
+      "comentario": "Direitos sociais volta a atenção para as condicoes materiais e institucionais necessárias ao exercicio concreto da cidadania.",
       "tempoEstimado": 35,
       "tags": [
         "cidadania",
@@ -2008,15 +2008,15 @@ export const cidadania = {
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre direitos sociais e constituicao e participacao e que:",
+      "enunciado": "A principal diferença entre direitos sociais e constituição e participação e que:",
       "opcoes": [
-        "direitos sociais tratam das garantias materiais da cidadania, enquanto constituicao e participacao destacam sua organizacao juridico-politica e seu exercicio coletivo",
-        "Direitos sociais e Constituicao e participacao sao exatamente o mesmo fenomeno social.",
-        "Constituicao e participacao depende apenas de escolhas privadas, enquanto Direitos sociais depende so da biologia.",
-        "Direitos sociais elimina a necessidade de observar direitos, deveres e participacao."
+        "direitos sociais tratam das garantias materiais da cidadania, enquanto constituição e participação destacam sua organização juridico-política e seu exercicio coletivo",
+        "Direitos sociais e Constituição e participação são exatamente o mesmo fenômeno social.",
+        "Constituição e participação depende apenas de escolhas privadas, enquanto Direitos sociais depende so da biologia.",
+        "Direitos sociais elimina a necessidade de observar direitos, deveres e participação."
       ],
-      "correta": "direitos sociais tratam das garantias materiais da cidadania, enquanto constituicao e participacao destacam sua organizacao juridico-politica e seu exercicio coletivo",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "correta": "direitos sociais tratam das garantias materiais da cidadania, enquanto constituição e participação destacam sua organização juridico-política e seu exercicio coletivo",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "cidadania",
@@ -2047,15 +2047,15 @@ export const cidadania = {
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: sem acesso a servicos essenciais, direitos formais tornam-se insuficientes no cotidiano A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: sem acesso a serviços essenciais, direitos formais tornam-se insuficientes no cotidiano A leitura sociológica mais adequada aponta para:",
       "opcoes": [
-        "direitos sociais mostram que cidadania depende tambem de bem-estar, protecao e acesso a servicos",
-        "Direitos sociais mostra que a vida publica nao interfere no acesso a direitos.",
+        "direitos sociais mostram que cidadania depende também de bem-estar, protecao e acesso a serviços",
+        "Direitos sociais mostra que a vida pública não interfere no acesso a direitos.",
         "Direitos sociais prova que todos os grupos exercem cidadania da mesma forma.",
         "Direitos sociais significa ausencia completa de desigualdades de acesso a direitos."
       ],
-      "correta": "direitos sociais mostram que cidadania depende tambem de bem-estar, protecao e acesso a servicos",
-      "comentario": "Direitos sociais permite interpretar o caso a partir de direitos, deveres, participacao e acesso a vida publica.",
+      "correta": "direitos sociais mostram que cidadania depende também de bem-estar, protecao e acesso a serviços",
+      "comentario": "Direitos sociais permite interpretar o caso a partir de direitos, deveres, participação e acesso a vida pública.",
       "tempoEstimado": 40,
       "tags": [
         "cidadania",
@@ -2086,15 +2086,15 @@ export const cidadania = {
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia direitos sociais de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia direitos sociais de maneira mais clara?",
       "opcoes": [
-        "direitos sociais traduzem a cidadania em condicoes reais de existencia e participacao social",
-        "cidadania digital amplia a esfera da participacao e dos direitos para os ambientes conectados",
+        "direitos sociais traduzem a cidadania em condicoes reais de existencia e participação social",
+        "cidadania digital amplia a esfera da participação e dos direitos para os ambientes conectados",
         "direitos humanos funcionam como referencia ampla para protecao da dignidade e combate a violacoes",
-        "cidadania envolve pertencer a vida publica com direitos, deveres e possibilidade de participacao"
+        "cidadania envolve pertencer a vida pública com direitos, deveres e possibilidade de participação"
       ],
-      "correta": "direitos sociais traduzem a cidadania em condicoes reais de existencia e participacao social",
-      "comentario": "A alternativa correta traduz direitos sociais em uma situacao concreta de vida social.",
+      "correta": "direitos sociais traduzem a cidadania em condicoes reais de existencia e participação social",
+      "comentario": "A alternativa correta traduz direitos sociais em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "cidadania",
@@ -2125,15 +2125,15 @@ export const cidadania = {
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"uma populacao depende de escola, saude e trabalho protegido para exercer cidadania de forma concreta\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"uma população depende de escola, saude e trabalho protegido para exercer cidadania de forma concreta\", qual conclusão é mais adequada?",
       "opcoes": [
         "sem direitos sociais efetivos, a cidadania tende a ser mais formal do que vivida na pratica",
-        "Direitos sociais indica que direitos e participacao nunca variam historicamente.",
+        "Direitos sociais indica que direitos e participação nunca variam historicamente.",
         "Direitos sociais so pode ser explicado por fatores biologicos.",
         "Direitos sociais dispensa comparacao entre grupos e contextos."
       ],
       "correta": "sem direitos sociais efetivos, a cidadania tende a ser mais formal do que vivida na pratica",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "cidadania",
@@ -2166,12 +2166,12 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com direitos sociais?",
       "opcoes": [
-        "como acesso a saude, educacao e trabalho se relaciona com o exercicio da cidadania?",
-        "como voto, representacao e participacao publica se relacionam com a cidadania?",
-        "como a Constituicao organiza direitos e formas de participacao dos cidadaos?",
-        "como participacao cidada e garantia de direitos se relacionam com a democracia?"
+        "como acesso a saude, educação e trabalho se relaciona com o exercicio da cidadania?",
+        "como voto, representação e participação pública se relacionam com a cidadania?",
+        "como a Constituição organiza direitos e formas de participação dos cidadãos?",
+        "como participação cidada e garantia de direitos se relacionam com a democracia?"
       ],
-      "correta": "como acesso a saude, educacao e trabalho se relaciona com o exercicio da cidadania?",
+      "correta": "como acesso a saude, educação e trabalho se relaciona com o exercicio da cidadania?",
       "comentario": "A pergunta correta ajuda a investigar direitos sociais de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
@@ -2205,12 +2205,12 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a afirmacao que revela compreensao inadequada de direitos sociais.",
       "opcoes": [
-        "Um conjunto secundario de beneficios sem ligacao com igualdade e participacao social.",
-        "Direitos sociais pode ser observado em direitos, deveres e participacao publica.",
+        "Um conjunto secundario de beneficios sem ligacao com igualdade e participação social.",
+        "Direitos sociais pode ser observado em direitos, deveres e participação pública.",
         "Direitos sociais ajuda a analisar acesso a garantias e a vida coletiva.",
-        "Direitos sociais depende da relacao entre pertencimento politico e exercicio de direitos."
+        "Direitos sociais depende da relação entre pertencimento político e exercicio de direitos."
       ],
-      "correta": "Um conjunto secundario de beneficios sem ligacao com igualdade e participacao social.",
+      "correta": "Um conjunto secundario de beneficios sem ligacao com igualdade e participação social.",
       "comentario": "A alternativa incorreta expressa uma confusao comum sobre direitos sociais.",
       "tempoEstimado": 45,
       "tags": [
@@ -2242,15 +2242,15 @@ export const cidadania = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre cidadania, um estudante afirmou: \"direitos sociais ampliam a cidadania ao transformar direitos em condicoes concretas de vida\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre cidadania, um estudante afirmou: \"direitos sociais ampliam a cidadania ao transformar direitos em condicoes concretas de vida\". Qual avaliação é mais consistente?",
       "opcoes": [
         "a afirmacao esta correta, porque direitos sociais ajudam a materializar a cidadania",
-        "Direitos sociais nao pode ser observado em situacoes do cotidiano.",
-        "Direitos sociais depende apenas da vontade individual, sem contexto politico e social.",
-        "Direitos sociais torna desnecessario comparar direitos, deveres e participacao."
+        "Direitos sociais não pode ser observado em situações do cotidiano.",
+        "Direitos sociais depende apenas da vontade individual, sem contexto político e social.",
+        "Direitos sociais torna desnecessario comparar direitos, deveres e participação."
       ],
       "correta": "a afirmacao esta correta, porque direitos sociais ajudam a materializar a cidadania",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de direitos sociais.",
+      "comentario": "A avaliação correta recupera o nucleo teorico de direitos sociais.",
       "tempoEstimado": 50,
       "tags": [
         "cidadania",
@@ -2281,15 +2281,15 @@ export const cidadania = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando uma sociedade reconhece cidadania formal, mas nega acesso amplo a escola, saude e protecao social, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando uma sociedade reconhece cidadania formal, mas nega acesso amplo a escola, saude e protecao social, a melhor interpretação sociológica e que:",
       "opcoes": [
-        "a cidadania permanece desigual e incompleta para parte da populacao",
-        "Direitos sociais desaparece porque a sociedade nao depende mais de direitos.",
+        "a cidadania permanece desigual e incompleta para parte da população",
+        "Direitos sociais desaparece porque a sociedade não depende mais de direitos.",
         "Direitos sociais deixa de existir sempre que surgem conflitos entre grupos.",
-        "Direitos sociais so importa em sociedades antigas, nao no presente."
+        "Direitos sociais so importa em sociedades antigas, não no presente."
       ],
-      "correta": "a cidadania permanece desigual e incompleta para parte da populacao",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "correta": "a cidadania permanece desigual e incompleta para parte da população",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "cidadania",
@@ -2320,12 +2320,12 @@ export const cidadania = {
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente direitos sociais a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente direitos sociais a uma situação de comunidade escolar?",
       "opcoes": [
         "a turma analisa como transporte, escola e saude influenciam a possibilidade real de exercer direitos",
-        "a escola discute gremios, assembleias e eleicoes como formas de aprendizado sobre participacao politica",
-        "a escola trabalha nocoes de Constituicao, direitos e participacao em debates sobre vida publica",
-        "a turma debate como participacao estudantil e liberdade de opiniao se ligam a praticas democraticas"
+        "a escola discute gremios, assembleias e eleicoes como formas de aprendizado sobre participação política",
+        "a escola trabalha nocoes de Constituição, direitos e participação em debates sobre vida pública",
+        "a turma debate como participação estudantil e liberdade de opiniao se ligam a praticas democraticas"
       ],
       "correta": "a turma analisa como transporte, escola e saude influenciam a possibilidade real de exercer direitos",
       "comentario": "A alternativa correta aproxima direitos sociais de um contexto escolar concreto.",
@@ -2361,12 +2361,12 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual sintese final representa melhor direitos sociais?",
       "opcoes": [
-        "direitos sociais correspondem as garantias de condicoes dignas de vida necessarias a cidadania",
-        "Direitos sociais e um fator biologico fixo, sem relacao com direitos ou participacao coletiva.",
-        "Direitos sociais explica apenas escolhas privadas e ignora a dimensao publica.",
-        "Direitos sociais impede qualquer mudanca historica ou social."
+        "direitos sociais correspondem as garantias de condicoes dignas de vida necessárias a cidadania",
+        "Direitos sociais e um fator biológico fixo, sem relação com direitos ou participação coletiva.",
+        "Direitos sociais explica apenas escolhas privadas e ignora a dimensao pública.",
+        "Direitos sociais impede qualquer mudanca histórica ou social."
       ],
-      "correta": "direitos sociais correspondem as garantias de condicoes dignas de vida necessarias a cidadania",
+      "correta": "direitos sociais correspondem as garantias de condicoes dignas de vida necessárias a cidadania",
       "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de direitos sociais.",
       "tempoEstimado": 60,
       "tags": [
@@ -2393,20 +2393,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Constituicao e participacao",
+      "subtopico": "Constituição e participação",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Sociologia, constituicao e participacao pode ser definido(a) como:",
+      "enunciado": "Em Sociologia, constituição e participação pode ser definido(a) como:",
       "opcoes": [
-        "a relacao entre as regras fundamentais do Estado e as formas pelas quais os cidadaos participam da vida publica",
+        "a relação entre as regras fundamentais do Estado e as formas pelas quais os cidadãos participam da vida pública",
         "as garantias ligadas a liberdade individual, a igualdade perante a lei e a protecao da integridade e da propriedade",
-        "as garantias de participacao na vida politica, como votar, ser votado e influenciar decisoes coletivas",
-        "as garantias de acesso a condicoes de vida dignas, como educacao, saude, trabalho, moradia e protecao social"
+        "as garantias de participação na vida política, como votar, ser votado e influenciar decisões coletivas",
+        "as garantias de acesso a condicoes de vida dignas, como educação, saude, trabalho, moradia e protecao social"
       ],
-      "correta": "a relacao entre as regras fundamentais do Estado e as formas pelas quais os cidadaos participam da vida publica",
-      "comentario": "Constituicao e participacao refere-se a relacao entre as regras fundamentais do Estado e as formas pelas quais os cidadaos participam da vida publica.",
+      "correta": "a relação entre as regras fundamentais do Estado e as formas pelas quais os cidadãos participam da vida pública",
+      "comentario": "Constituição e participação refere-se a relação entre as regras fundamentais do Estado e as formas pelas quais os cidadãos participam da vida pública.",
       "tempoEstimado": 20,
       "tags": [
         "cidadania",
@@ -2432,20 +2432,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Constituicao e participacao",
+      "subtopico": "Constituição e participação",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: a Constituicao organiza direitos, deveres, instituicoes e mecanismos de participacao politica Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: a Constituição organiza direitos, deveres, instituições e mecanismos de participação política Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
-        "Constituicao e participacao",
+        "Constituição e participação",
         "Direitos civis",
-        "Direitos politicos",
+        "Direitos políticos",
         "Direitos sociais"
       ],
-      "correta": "Constituicao e participacao",
-      "comentario": "A situacao apresentada e um exemplo de constituicao e participacao.",
+      "correta": "Constituição e participação",
+      "comentario": "A situação apresentada é um exemplo de constituição e participação.",
       "tempoEstimado": 25,
       "tags": [
         "cidadania",
@@ -2471,20 +2471,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Constituicao e participacao",
+      "subtopico": "Constituição e participação",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmacao descreve corretamente constituicao e participacao?",
+      "enunciado": "Qual afirmacao descreve corretamente constituição e participação?",
       "opcoes": [
-        "A relacao entre as regras fundamentais do Estado e as formas pelas quais os cidadaos participam da vida publica.",
-        "Um documento sem efeito pratico sobre o exercicio da cidadania e da vida publica.",
-        "Cidadania e democracia significa a relacao entre o exercicio de direitos, a participacao cidada e um regime politico baseado em pluralidade, representacao e controle do poder.",
-        "Cidadania trata apenas de interesses privados e nao de vida publica."
+        "A relação entre as regras fundamentais do Estado e as formas pelas quais os cidadãos participam da vida pública.",
+        "Um documento sem efeito pratico sobre o exercicio da cidadania e da vida pública.",
+        "Cidadania e democracia significa a relação entre o exercicio de direitos, a participação cidada e um regime político baseado em pluralidade, representação e controle do poder.",
+        "Cidadania trata apenas de interesses privados e não de vida pública."
       ],
-      "correta": "A relacao entre as regras fundamentais do Estado e as formas pelas quais os cidadaos participam da vida publica.",
-      "comentario": "A afirmacao correta retoma o sentido central de constituicao e participacao.",
+      "correta": "A relação entre as regras fundamentais do Estado e as formas pelas quais os cidadãos participam da vida pública.",
+      "comentario": "A afirmacao correta retoma o sentido central de constituição e participação.",
       "tempoEstimado": 30,
       "tags": [
         "cidadania",
@@ -2510,20 +2510,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Constituicao e participacao",
+      "subtopico": "Constituição e participação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a constituicao e participacao.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a constituição e participação.",
       "opcoes": [
-        "a ideia de que as regras constitucionais nao afetam direitos, deveres ou participacao dos cidadaos",
-        "a Constituicao organiza direitos, deveres, instituicoes e mecanismos de participacao politica",
-        "cidadaos recorrem a regras constitucionais para exigir direitos e participar de decisoes coletivas",
-        "constituicao e participacao ligam normas fundamentais do Estado ao exercicio concreto da cidadania"
+        "a ideia de que as regras constitucionais não afetam direitos, deveres ou participação dos cidadãos",
+        "a Constituição organiza direitos, deveres, instituições e mecanismos de participação política",
+        "cidadãos recorrem a regras constitucionais para exigir direitos e participar de decisões coletivas",
+        "constituição e participação ligam normas fundamentais do Estado ao exercicio concreto da cidadania"
       ],
-      "correta": "a ideia de que as regras constitucionais nao afetam direitos, deveres ou participacao dos cidadaos",
-      "comentario": "a ideia de que as regras constitucionais nao afetam direitos, deveres ou participacao dos cidadaos nao expressa constituicao e participacao, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "a ideia de que as regras constitucionais não afetam direitos, deveres ou participação dos cidadãos",
+      "comentario": "a ideia de que as regras constitucionais não afetam direitos, deveres ou participação dos cidadãos não expressa constituição e participação, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "cidadania",
@@ -2549,20 +2549,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Constituicao e participacao",
+      "subtopico": "Constituição e participação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda constituicao e participacao, o foco principal esta em:",
+      "enunciado": "Quando se estuda constituição e participação, o foco principal esta em:",
       "opcoes": [
-        "a articulacao entre ordem constitucional, garantias de direitos e mecanismos de participacao",
+        "a articulacao entre ordem constitucional, garantias de direitos e mecanismos de participação",
         "as garantias de liberdade, protecao e igualdade formal diante da lei",
-        "a participacao dos cidadaos na escolha e no controle dos rumos politicos da coletividade",
-        "as condicoes materiais e institucionais necessarias ao exercicio concreto da cidadania"
+        "a participação dos cidadãos na escolha e no controle dos rumos políticos da coletividade",
+        "as condicoes materiais e institucionais necessárias ao exercicio concreto da cidadania"
       ],
-      "correta": "a articulacao entre ordem constitucional, garantias de direitos e mecanismos de participacao",
-      "comentario": "Constituicao e participacao volta a atencao para a articulacao entre ordem constitucional, garantias de direitos e mecanismos de participacao.",
+      "correta": "a articulacao entre ordem constitucional, garantias de direitos e mecanismos de participação",
+      "comentario": "Constituição e participação volta a atenção para a articulacao entre ordem constitucional, garantias de direitos e mecanismos de participação.",
       "tempoEstimado": 35,
       "tags": [
         "cidadania",
@@ -2588,20 +2588,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Constituicao e participacao",
+      "subtopico": "Constituição e participação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre constituicao e participacao e cidadania e democracia e que:",
+      "enunciado": "A principal diferença entre constituição e participação e cidadania e democracia e que:",
       "opcoes": [
-        "constituicao e participacao enfatizam o marco juridico e os mecanismos de intervencao cidada, enquanto cidadania e democracia destacam a relacao mais ampla entre direitos e regime politico",
-        "Constituicao e participacao e Cidadania e democracia sao exatamente o mesmo fenomeno social.",
-        "Cidadania e democracia depende apenas de escolhas privadas, enquanto Constituicao e participacao depende so da biologia.",
-        "Constituicao e participacao elimina a necessidade de observar direitos, deveres e participacao."
+        "constituição e participação enfatizam o marco juridico e os mecanismos de intervencao cidada, enquanto cidadania e democracia destacam a relação mais ampla entre direitos e regime político",
+        "Constituição e participação e Cidadania e democracia são exatamente o mesmo fenômeno social.",
+        "Cidadania e democracia depende apenas de escolhas privadas, enquanto Constituição e participação depende so da biologia.",
+        "Constituição e participação elimina a necessidade de observar direitos, deveres e participação."
       ],
-      "correta": "constituicao e participacao enfatizam o marco juridico e os mecanismos de intervencao cidada, enquanto cidadania e democracia destacam a relacao mais ampla entre direitos e regime politico",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "correta": "constituição e participação enfatizam o marco juridico e os mecanismos de intervencao cidada, enquanto cidadania e democracia destacam a relação mais ampla entre direitos e regime político",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "cidadania",
@@ -2627,20 +2627,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Constituicao e participacao",
+      "subtopico": "Constituição e participação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: cidadaos recorrem a regras constitucionais para exigir direitos e participar de decisoes coletivas A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: cidadãos recorrem a regras constitucionais para exigir direitos e participar de decisões coletivas A leitura sociológica mais adequada aponta para:",
       "opcoes": [
-        "compreender constituicao e participacao ajuda a ligar cidadania a estrutura juridica e politica do Estado",
-        "Constituicao e participacao mostra que a vida publica nao interfere no acesso a direitos.",
-        "Constituicao e participacao prova que todos os grupos exercem cidadania da mesma forma.",
-        "Constituicao e participacao significa ausencia completa de desigualdades de acesso a direitos."
+        "compreender constituição e participação ajuda a ligar cidadania a estrutura juridica e política do Estado",
+        "Constituição e participação mostra que a vida pública não interfere no acesso a direitos.",
+        "Constituição e participação prova que todos os grupos exercem cidadania da mesma forma.",
+        "Constituição e participação significa ausencia completa de desigualdades de acesso a direitos."
       ],
-      "correta": "compreender constituicao e participacao ajuda a ligar cidadania a estrutura juridica e politica do Estado",
-      "comentario": "Constituicao e participacao permite interpretar o caso a partir de direitos, deveres, participacao e acesso a vida publica.",
+      "correta": "compreender constituição e participação ajuda a ligar cidadania a estrutura juridica e política do Estado",
+      "comentario": "Constituição e participação permite interpretar o caso a partir de direitos, deveres, participação e acesso a vida pública.",
       "tempoEstimado": 40,
       "tags": [
         "cidadania",
@@ -2666,20 +2666,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Constituicao e participacao",
+      "subtopico": "Constituição e participação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia constituicao e participacao de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia constituição e participação de maneira mais clara?",
       "opcoes": [
-        "constituicao e participacao ligam normas fundamentais do Estado ao exercicio concreto da cidadania",
-        "direitos civis estruturam liberdades basicas e protecao juridica aos individuos",
-        "direitos politicos tornam possivel participar das escolhas coletivas e da representacao publica",
-        "direitos sociais traduzem a cidadania em condicoes reais de existencia e participacao social"
+        "constituição e participação ligam normas fundamentais do Estado ao exercicio concreto da cidadania",
+        "direitos civis estruturam liberdades basicas e protecao juridica aos indivíduos",
+        "direitos políticos tornam possível participar das escolhas coletivas e da representação pública",
+        "direitos sociais traduzem a cidadania em condicoes reais de existencia e participação social"
       ],
-      "correta": "constituicao e participacao ligam normas fundamentais do Estado ao exercicio concreto da cidadania",
-      "comentario": "A alternativa correta traduz constituicao e participacao em uma situacao concreta de vida social.",
+      "correta": "constituição e participação ligam normas fundamentais do Estado ao exercicio concreto da cidadania",
+      "comentario": "A alternativa correta traduz constituição e participação em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "cidadania",
@@ -2705,20 +2705,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Constituicao e participacao",
+      "subtopico": "Constituição e participação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"a Constituicao organiza direitos, deveres, instituicoes e mecanismos de participacao politica\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"a Constituição organiza direitos, deveres, instituições e mecanismos de participação política\", qual conclusão é mais adequada?",
       "opcoes": [
         "as regras constitucionais ajudam a definir como a cidadania pode ser exercida e defendida",
-        "Constituicao e participacao indica que direitos e participacao nunca variam historicamente.",
-        "Constituicao e participacao so pode ser explicado por fatores biologicos.",
-        "Constituicao e participacao dispensa comparacao entre grupos e contextos."
+        "Constituição e participação indica que direitos e participação nunca variam historicamente.",
+        "Constituição e participação so pode ser explicado por fatores biologicos.",
+        "Constituição e participação dispensa comparacao entre grupos e contextos."
       ],
       "correta": "as regras constitucionais ajudam a definir como a cidadania pode ser exercida e defendida",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "cidadania",
@@ -2744,20 +2744,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Constituicao e participacao",
+      "subtopico": "Constituição e participação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com constituicao e participacao?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com constituição e participação?",
       "opcoes": [
-        "como a Constituicao organiza direitos e formas de participacao dos cidadaos?",
-        "como plataformas e redes influenciam a participacao cidada e o acesso a informacao?",
+        "como a Constituição organiza direitos e formas de participação dos cidadãos?",
+        "como plataformas e redes influenciam a participação cidada e o acesso a informacao?",
         "como a ideia de dignidade humana se relaciona com direitos e cidadania?",
-        "como direitos, deveres e participacao definem a cidadania em uma sociedade?"
+        "como direitos, deveres e participação definem a cidadania em uma sociedade?"
       ],
-      "correta": "como a Constituicao organiza direitos e formas de participacao dos cidadaos?",
-      "comentario": "A pergunta correta ajuda a investigar constituicao e participacao de forma coerente com o subtopico.",
+      "correta": "como a Constituição organiza direitos e formas de participação dos cidadãos?",
+      "comentario": "A pergunta correta ajuda a investigar constituição e participação de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
         "cidadania",
@@ -2783,20 +2783,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Constituicao e participacao",
+      "subtopico": "Constituição e participação",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmacao que revela compreensao inadequada de constituicao e participacao.",
+      "enunciado": "Assinale a afirmacao que revela compreensao inadequada de constituição e participação.",
       "opcoes": [
-        "Um documento sem efeito pratico sobre o exercicio da cidadania e da vida publica.",
-        "Constituicao e participacao pode ser observado em direitos, deveres e participacao publica.",
-        "Constituicao e participacao ajuda a analisar acesso a garantias e a vida coletiva.",
-        "Constituicao e participacao depende da relacao entre pertencimento politico e exercicio de direitos."
+        "Um documento sem efeito pratico sobre o exercicio da cidadania e da vida pública.",
+        "Constituição e participação pode ser observado em direitos, deveres e participação pública.",
+        "Constituição e participação ajuda a analisar acesso a garantias e a vida coletiva.",
+        "Constituição e participação depende da relação entre pertencimento político e exercicio de direitos."
       ],
-      "correta": "Um documento sem efeito pratico sobre o exercicio da cidadania e da vida publica.",
-      "comentario": "A alternativa incorreta expressa uma confusao comum sobre constituicao e participacao.",
+      "correta": "Um documento sem efeito pratico sobre o exercicio da cidadania e da vida pública.",
+      "comentario": "A alternativa incorreta expressa uma confusao comum sobre constituição e participação.",
       "tempoEstimado": 45,
       "tags": [
         "cidadania",
@@ -2822,20 +2822,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Constituicao e participacao",
+      "subtopico": "Constituição e participação",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre cidadania, um estudante afirmou: \"a Constituicao nao se limita a regras abstratas; ela orienta garantias e mecanismos de participacao\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre cidadania, um estudante afirmou: \"a Constituição não se limita a regras abstratas; ela orienta garantias e mecanismos de participação\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "a afirmacao esta correta, porque o texto constitucional estrutura direitos e formas de acao publica",
-        "Constituicao e participacao nao pode ser observado em situacoes do cotidiano.",
-        "Constituicao e participacao depende apenas da vontade individual, sem contexto politico e social.",
-        "Constituicao e participacao torna desnecessario comparar direitos, deveres e participacao."
+        "a afirmacao esta correta, porque o texto constitucional estrutura direitos e formas de ação pública",
+        "Constituição e participação não pode ser observado em situações do cotidiano.",
+        "Constituição e participação depende apenas da vontade individual, sem contexto político e social.",
+        "Constituição e participação torna desnecessario comparar direitos, deveres e participação."
       ],
-      "correta": "a afirmacao esta correta, porque o texto constitucional estrutura direitos e formas de acao publica",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de constituicao e participacao.",
+      "correta": "a afirmacao esta correta, porque o texto constitucional estrutura direitos e formas de ação pública",
+      "comentario": "A avaliação correta recupera o nucleo teorico de constituição e participação.",
       "tempoEstimado": 50,
       "tags": [
         "cidadania",
@@ -2861,20 +2861,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Constituicao e participacao",
+      "subtopico": "Constituição e participação",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando a populacao desconhece as regras fundamentais que organizam direitos e canais de participacao, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando a população desconhece as regras fundamentais que organizam direitos e canais de participação, a melhor interpretação sociológica e que:",
       "opcoes": [
         "o exercicio da cidadania tende a ficar mais fragil e limitado",
-        "Constituicao e participacao desaparece porque a sociedade nao depende mais de direitos.",
-        "Constituicao e participacao deixa de existir sempre que surgem conflitos entre grupos.",
-        "Constituicao e participacao so importa em sociedades antigas, nao no presente."
+        "Constituição e participação desaparece porque a sociedade não depende mais de direitos.",
+        "Constituição e participação deixa de existir sempre que surgem conflitos entre grupos.",
+        "Constituição e participação so importa em sociedades antigas, não no presente."
       ],
       "correta": "o exercicio da cidadania tende a ficar mais fragil e limitado",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "cidadania",
@@ -2900,20 +2900,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Constituicao e participacao",
+      "subtopico": "Constituição e participação",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente constituicao e participacao a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente constituição e participação a uma situação de comunidade escolar?",
       "opcoes": [
-        "a escola trabalha nocoes de Constituicao, direitos e participacao em debates sobre vida publica",
-        "a escola debate uso responsavel de redes, acesso a informacao e participacao online em temas publicos",
+        "a escola trabalha nocoes de Constituição, direitos e participação em debates sobre vida pública",
+        "a escola debate uso responsavel de redes, acesso a informacao e participação online em temas públicos",
         "a turma discute igualdade, combate a discriminacao e protecao da dignidade como bases dos direitos humanos",
-        "a escola discute como representacao de turma, regras coletivas e participacao estudantil ajudam a exercitar cidadania"
+        "a escola discute como representação de turma, regras coletivas e participação estudantil ajudam a exercitar cidadania"
       ],
-      "correta": "a escola trabalha nocoes de Constituicao, direitos e participacao em debates sobre vida publica",
-      "comentario": "A alternativa correta aproxima constituicao e participacao de um contexto escolar concreto.",
+      "correta": "a escola trabalha nocoes de Constituição, direitos e participação em debates sobre vida pública",
+      "comentario": "A alternativa correta aproxima constituição e participação de um contexto escolar concreto.",
       "tempoEstimado": 55,
       "tags": [
         "cidadania",
@@ -2939,20 +2939,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Constituicao e participacao",
+      "subtopico": "Constituição e participação",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual sintese final representa melhor constituicao e participacao?",
+      "enunciado": "Qual sintese final representa melhor constituição e participação?",
       "opcoes": [
-        "constituicao e participacao articulam regras fundamentais do Estado e exercicio concreto da cidadania",
-        "Constituicao e participacao e um fator biologico fixo, sem relacao com direitos ou participacao coletiva.",
-        "Constituicao e participacao explica apenas escolhas privadas e ignora a dimensao publica.",
-        "Constituicao e participacao impede qualquer mudanca historica ou social."
+        "constituição e participação articulam regras fundamentais do Estado e exercicio concreto da cidadania",
+        "Constituição e participação e um fator biológico fixo, sem relação com direitos ou participação coletiva.",
+        "Constituição e participação explica apenas escolhas privadas e ignora a dimensao pública.",
+        "Constituição e participação impede qualquer mudanca histórica ou social."
       ],
-      "correta": "constituicao e participacao articulam regras fundamentais do Estado e exercicio concreto da cidadania",
-      "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de constituicao e participacao.",
+      "correta": "constituição e participação articulam regras fundamentais do Estado e exercicio concreto da cidadania",
+      "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de constituição e participação.",
       "tempoEstimado": 60,
       "tags": [
         "cidadania",
@@ -2985,13 +2985,13 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Em Sociologia, cidadania e democracia pode ser definido(a) como:",
       "opcoes": [
-        "a relacao entre o exercicio de direitos, a participacao cidada e um regime politico baseado em pluralidade, representacao e controle do poder",
-        "as acoes e programas organizados pelo Estado para enfrentar problemas coletivos e garantir direitos a populacao",
-        "o exercicio de direitos, deveres e participacao na vida publica mediada por ambientes digitais e tecnologias de informacao",
+        "a relação entre o exercicio de direitos, a participação cidada e um regime político baseado em pluralidade, representação e controle do poder",
+        "as ações e programas organizados pelo Estado para enfrentar problemas coletivos e garantir direitos a população",
+        "o exercicio de direitos, deveres e participação na vida pública mediada por ambientes digitais e tecnologias de informacao",
         "o conjunto de principios e garantias voltados a protecao da dignidade, da liberdade e da igualdade de todos os seres humanos"
       ],
-      "correta": "a relacao entre o exercicio de direitos, a participacao cidada e um regime politico baseado em pluralidade, representacao e controle do poder",
-      "comentario": "Cidadania e democracia refere-se a relacao entre o exercicio de direitos, a participacao cidada e um regime politico baseado em pluralidade, representacao e controle do poder.",
+      "correta": "a relação entre o exercicio de direitos, a participação cidada e um regime político baseado em pluralidade, representação e controle do poder",
+      "comentario": "Cidadania e democracia refere-se a relação entre o exercicio de direitos, a participação cidada e um regime político baseado em pluralidade, representação e controle do poder.",
       "tempoEstimado": 20,
       "tags": [
         "cidadania",
@@ -3022,15 +3022,15 @@ export const cidadania = {
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: uma democracia depende de cidadaos capazes de participar, fiscalizar e reivindicar direitos Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: uma democracia depende de cidadãos capazes de participar, fiscalizar e reivindicar direitos Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
         "Cidadania e democracia",
-        "Politicas publicas",
+        "Politicas públicas",
         "Cidadania digital",
         "Direitos humanos"
       ],
       "correta": "Cidadania e democracia",
-      "comentario": "A situacao apresentada e um exemplo de cidadania e democracia.",
+      "comentario": "A situação apresentada é um exemplo de cidadania e democracia.",
       "tempoEstimado": 25,
       "tags": [
         "cidadania",
@@ -3063,12 +3063,12 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual afirmacao descreve corretamente cidadania e democracia?",
       "opcoes": [
-        "A relacao entre o exercicio de direitos, a participacao cidada e um regime politico baseado em pluralidade, representacao e controle do poder.",
-        "Um vinculo sem importancia entre regime politico e exercicio de direitos.",
-        "Direitos politicos significa as garantias de participacao na vida politica, como votar, ser votado e influenciar decisoes coletivas.",
-        "Cidadania trata apenas de interesses privados e nao de vida publica."
+        "A relação entre o exercicio de direitos, a participação cidada e um regime político baseado em pluralidade, representação e controle do poder.",
+        "Um vínculo sem importancia entre regime político e exercicio de direitos.",
+        "Direitos políticos significa as garantias de participação na vida política, como votar, ser votado e influenciar decisões coletivas.",
+        "Cidadania trata apenas de interesses privados e não de vida pública."
       ],
-      "correta": "A relacao entre o exercicio de direitos, a participacao cidada e um regime politico baseado em pluralidade, representacao e controle do poder.",
+      "correta": "A relação entre o exercicio de direitos, a participação cidada e um regime político baseado em pluralidade, representação e controle do poder.",
       "comentario": "A afirmacao correta retoma o sentido central de cidadania e democracia.",
       "tempoEstimado": 30,
       "tags": [
@@ -3100,15 +3100,15 @@ export const cidadania = {
       "dificuldadeNivel": 4,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a cidadania e democracia.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a cidadania e democracia.",
       "opcoes": [
-        "a ideia de que democracia pode existir sem participacao cidada, pluralidade ou garantia de direitos",
-        "uma democracia depende de cidadaos capazes de participar, fiscalizar e reivindicar direitos",
-        "quando ha liberdade, representacao e canais de participacao, a cidadania tende a ganhar mais espaco de exercicio",
-        "cidadania e democracia mostram que direitos e participacao se fortalecem em contextos de abertura politica e controle social do poder"
+        "a ideia de que democracia pode existir sem participação cidada, pluralidade ou garantia de direitos",
+        "uma democracia depende de cidadãos capazes de participar, fiscalizar e reivindicar direitos",
+        "quando ha liberdade, representação e canais de participação, a cidadania tende a ganhar mais espaco de exercicio",
+        "cidadania e democracia mostram que direitos e participação se fortalecem em contextos de abertura política e controle social do poder"
       ],
-      "correta": "a ideia de que democracia pode existir sem participacao cidada, pluralidade ou garantia de direitos",
-      "comentario": "a ideia de que democracia pode existir sem participacao cidada, pluralidade ou garantia de direitos nao expressa cidadania e democracia, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "a ideia de que democracia pode existir sem participação cidada, pluralidade ou garantia de direitos",
+      "comentario": "a ideia de que democracia pode existir sem participação cidada, pluralidade ou garantia de direitos não expressa cidadania e democracia, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "cidadania",
@@ -3141,13 +3141,13 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Quando se estuda cidadania e democracia, o foco principal esta em:",
       "opcoes": [
-        "a interdependencia entre participacao cidada, garantia de direitos e funcionamento democratico",
-        "a acao organizada do Estado na oferta de servicos, garantias e respostas a problemas sociais",
-        "a atuacao cidada em ambientes digitais com direitos, deveres e impactos publicos",
+        "a interdependencia entre participação cidada, garantia de direitos e funcionamento democratico",
+        "a ação organizada do Estado na oferta de serviços, garantias e respostas a problemas sociais",
+        "a atuação cidada em ambientes digitais com direitos, deveres e impactos públicos",
         "a protecao universal da dignidade humana e das liberdades fundamentais"
       ],
-      "correta": "a interdependencia entre participacao cidada, garantia de direitos e funcionamento democratico",
-      "comentario": "Cidadania e democracia volta a atencao para a interdependencia entre participacao cidada, garantia de direitos e funcionamento democratico.",
+      "correta": "a interdependencia entre participação cidada, garantia de direitos e funcionamento democratico",
+      "comentario": "Cidadania e democracia volta a atenção para a interdependencia entre participação cidada, garantia de direitos e funcionamento democratico.",
       "tempoEstimado": 35,
       "tags": [
         "cidadania",
@@ -3178,15 +3178,15 @@ export const cidadania = {
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre cidadania e democracia e direitos politicos e que:",
+      "enunciado": "A principal diferença entre cidadania e democracia e direitos políticos e que:",
       "opcoes": [
-        "cidadania e democracia tratam da relacao ampla entre regime politico e exercicio de direitos, enquanto direitos politicos recortam mecanismos especificos de participacao",
-        "Cidadania e democracia e Direitos politicos sao exatamente o mesmo fenomeno social.",
-        "Direitos politicos depende apenas de escolhas privadas, enquanto Cidadania e democracia depende so da biologia.",
-        "Cidadania e democracia elimina a necessidade de observar direitos, deveres e participacao."
+        "cidadania e democracia tratam da relação ampla entre regime político e exercicio de direitos, enquanto direitos políticos recortam mecanismos especificos de participação",
+        "Cidadania e democracia e Direitos políticos são exatamente o mesmo fenômeno social.",
+        "Direitos políticos depende apenas de escolhas privadas, enquanto Cidadania e democracia depende so da biologia.",
+        "Cidadania e democracia elimina a necessidade de observar direitos, deveres e participação."
       ],
-      "correta": "cidadania e democracia tratam da relacao ampla entre regime politico e exercicio de direitos, enquanto direitos politicos recortam mecanismos especificos de participacao",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "correta": "cidadania e democracia tratam da relação ampla entre regime político e exercicio de direitos, enquanto direitos políticos recortam mecanismos especificos de participação",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "cidadania",
@@ -3217,15 +3217,15 @@ export const cidadania = {
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: quando ha liberdade, representacao e canais de participacao, a cidadania tende a ganhar mais espaco de exercicio A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: quando ha liberdade, representação e canais de participação, a cidadania tende a ganhar mais espaco de exercicio A leitura sociológica mais adequada aponta para:",
       "opcoes": [
-        "a cidadania ganha forca quando encontra instituicoes democraticas e canais de participacao efetivos",
-        "Cidadania e democracia mostra que a vida publica nao interfere no acesso a direitos.",
+        "a cidadania ganha forca quando encontra instituições democraticas e canais de participação efetivos",
+        "Cidadania e democracia mostra que a vida pública não interfere no acesso a direitos.",
         "Cidadania e democracia prova que todos os grupos exercem cidadania da mesma forma.",
         "Cidadania e democracia significa ausencia completa de desigualdades de acesso a direitos."
       ],
-      "correta": "a cidadania ganha forca quando encontra instituicoes democraticas e canais de participacao efetivos",
-      "comentario": "Cidadania e democracia permite interpretar o caso a partir de direitos, deveres, participacao e acesso a vida publica.",
+      "correta": "a cidadania ganha forca quando encontra instituições democraticas e canais de participação efetivos",
+      "comentario": "Cidadania e democracia permite interpretar o caso a partir de direitos, deveres, participação e acesso a vida pública.",
       "tempoEstimado": 40,
       "tags": [
         "cidadania",
@@ -3256,15 +3256,15 @@ export const cidadania = {
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia cidadania e democracia de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia cidadania e democracia de maneira mais clara?",
       "opcoes": [
-        "cidadania e democracia mostram que direitos e participacao se fortalecem em contextos de abertura politica e controle social do poder",
-        "politicas publicas sao instrumentos pelos quais o Estado organiza respostas para necessidades coletivas",
-        "cidadania digital amplia a esfera da participacao e dos direitos para os ambientes conectados",
+        "cidadania e democracia mostram que direitos e participação se fortalecem em contextos de abertura política e controle social do poder",
+        "politicas públicas são instrumentos pelos quais o Estado organiza respostas para necessidades coletivas",
+        "cidadania digital amplia a esfera da participação e dos direitos para os ambientes conectados",
         "direitos humanos funcionam como referencia ampla para protecao da dignidade e combate a violacoes"
       ],
-      "correta": "cidadania e democracia mostram que direitos e participacao se fortalecem em contextos de abertura politica e controle social do poder",
-      "comentario": "A alternativa correta traduz cidadania e democracia em uma situacao concreta de vida social.",
+      "correta": "cidadania e democracia mostram que direitos e participação se fortalecem em contextos de abertura política e controle social do poder",
+      "comentario": "A alternativa correta traduz cidadania e democracia em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "cidadania",
@@ -3295,15 +3295,15 @@ export const cidadania = {
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"uma democracia depende de cidadaos capazes de participar, fiscalizar e reivindicar direitos\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"uma democracia depende de cidadãos capazes de participar, fiscalizar e reivindicar direitos\", qual conclusão é mais adequada?",
       "opcoes": [
-        "democracia e cidadania se reforcam quando direitos e participacao publica sao efetivos",
-        "Cidadania e democracia indica que direitos e participacao nunca variam historicamente.",
+        "democracia e cidadania se reforcam quando direitos e participação pública são efetivos",
+        "Cidadania e democracia indica que direitos e participação nunca variam historicamente.",
         "Cidadania e democracia so pode ser explicado por fatores biologicos.",
         "Cidadania e democracia dispensa comparacao entre grupos e contextos."
       ],
-      "correta": "democracia e cidadania se reforcam quando direitos e participacao publica sao efetivos",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "correta": "democracia e cidadania se reforcam quando direitos e participação pública são efetivos",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "cidadania",
@@ -3336,12 +3336,12 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com cidadania e democracia?",
       "opcoes": [
-        "como participacao cidada e garantia de direitos se relacionam com a democracia?",
-        "como plataformas e redes influenciam a participacao cidada e o acesso a informacao?",
+        "como participação cidada e garantia de direitos se relacionam com a democracia?",
+        "como plataformas e redes influenciam a participação cidada e o acesso a informacao?",
         "como a ideia de dignidade humana se relaciona com direitos e cidadania?",
-        "como direitos, deveres e participacao definem a cidadania em uma sociedade?"
+        "como direitos, deveres e participação definem a cidadania em uma sociedade?"
       ],
-      "correta": "como participacao cidada e garantia de direitos se relacionam com a democracia?",
+      "correta": "como participação cidada e garantia de direitos se relacionam com a democracia?",
       "comentario": "A pergunta correta ajuda a investigar cidadania e democracia de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
@@ -3375,12 +3375,12 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a afirmacao que revela compreensao inadequada de cidadania e democracia.",
       "opcoes": [
-        "Um vinculo sem importancia entre regime politico e exercicio de direitos.",
-        "Cidadania e democracia pode ser observado em direitos, deveres e participacao publica.",
+        "Um vínculo sem importancia entre regime político e exercicio de direitos.",
+        "Cidadania e democracia pode ser observado em direitos, deveres e participação pública.",
         "Cidadania e democracia ajuda a analisar acesso a garantias e a vida coletiva.",
-        "Cidadania e democracia depende da relacao entre pertencimento politico e exercicio de direitos."
+        "Cidadania e democracia depende da relação entre pertencimento político e exercicio de direitos."
       ],
-      "correta": "Um vinculo sem importancia entre regime politico e exercicio de direitos.",
+      "correta": "Um vínculo sem importancia entre regime político e exercicio de direitos.",
       "comentario": "A alternativa incorreta expressa uma confusao comum sobre cidadania e democracia.",
       "tempoEstimado": 45,
       "tags": [
@@ -3412,15 +3412,15 @@ export const cidadania = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre cidadania, um estudante afirmou: \"a democracia nao se resume a eleicoes; ela depende tambem de cidadania ativa e garantia de direitos\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre cidadania, um estudante afirmou: \"a democracia não se resume a eleicoes; ela depende também de cidadania ativa e garantia de direitos\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "a afirmacao esta correta, porque participacao e direitos sao centrais para a vida democratica",
-        "Cidadania e democracia nao pode ser observado em situacoes do cotidiano.",
-        "Cidadania e democracia depende apenas da vontade individual, sem contexto politico e social.",
-        "Cidadania e democracia torna desnecessario comparar direitos, deveres e participacao."
+        "a afirmacao esta correta, porque participação e direitos são centrais para a vida democratica",
+        "Cidadania e democracia não pode ser observado em situações do cotidiano.",
+        "Cidadania e democracia depende apenas da vontade individual, sem contexto político e social.",
+        "Cidadania e democracia torna desnecessario comparar direitos, deveres e participação."
       ],
-      "correta": "a afirmacao esta correta, porque participacao e direitos sao centrais para a vida democratica",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de cidadania e democracia.",
+      "correta": "a afirmacao esta correta, porque participação e direitos são centrais para a vida democratica",
+      "comentario": "A avaliação correta recupera o nucleo teorico de cidadania e democracia.",
       "tempoEstimado": 50,
       "tags": [
         "cidadania",
@@ -3451,15 +3451,15 @@ export const cidadania = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando ha eleicoes formais, mas pouca garantia de direitos e quase nenhum espaco de participacao social efetiva, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando ha eleicoes formais, mas pouca garantia de direitos e quase nenhum espaco de participação social efetiva, a melhor interpretação sociológica e que:",
       "opcoes": [
         "a democracia se torna mais limitada e a cidadania perde densidade",
-        "Cidadania e democracia desaparece porque a sociedade nao depende mais de direitos.",
+        "Cidadania e democracia desaparece porque a sociedade não depende mais de direitos.",
         "Cidadania e democracia deixa de existir sempre que surgem conflitos entre grupos.",
-        "Cidadania e democracia so importa em sociedades antigas, nao no presente."
+        "Cidadania e democracia so importa em sociedades antigas, não no presente."
       ],
       "correta": "a democracia se torna mais limitada e a cidadania perde densidade",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "cidadania",
@@ -3490,14 +3490,14 @@ export const cidadania = {
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente cidadania e democracia a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente cidadania e democracia a uma situação de comunidade escolar?",
       "opcoes": [
-        "a turma debate como participacao estudantil e liberdade de opiniao se ligam a praticas democraticas",
-        "a escola debate uso responsavel de redes, acesso a informacao e participacao online em temas publicos",
+        "a turma debate como participação estudantil e liberdade de opiniao se ligam a praticas democraticas",
+        "a escola debate uso responsavel de redes, acesso a informacao e participação online em temas públicos",
         "a turma discute igualdade, combate a discriminacao e protecao da dignidade como bases dos direitos humanos",
-        "a escola discute como representacao de turma, regras coletivas e participacao estudantil ajudam a exercitar cidadania"
+        "a escola discute como representação de turma, regras coletivas e participação estudantil ajudam a exercitar cidadania"
       ],
-      "correta": "a turma debate como participacao estudantil e liberdade de opiniao se ligam a praticas democraticas",
+      "correta": "a turma debate como participação estudantil e liberdade de opiniao se ligam a praticas democraticas",
       "comentario": "A alternativa correta aproxima cidadania e democracia de um contexto escolar concreto.",
       "tempoEstimado": 55,
       "tags": [
@@ -3531,12 +3531,12 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual sintese final representa melhor cidadania e democracia?",
       "opcoes": [
-        "cidadania e democracia se relacionam pelo exercicio de direitos e pela participacao no controle do poder",
-        "Cidadania e democracia e um fator biologico fixo, sem relacao com direitos ou participacao coletiva.",
-        "Cidadania e democracia explica apenas escolhas privadas e ignora a dimensao publica.",
-        "Cidadania e democracia impede qualquer mudanca historica ou social."
+        "cidadania e democracia se relacionam pelo exercicio de direitos e pela participação no controle do poder",
+        "Cidadania e democracia e um fator biológico fixo, sem relação com direitos ou participação coletiva.",
+        "Cidadania e democracia explica apenas escolhas privadas e ignora a dimensao pública.",
+        "Cidadania e democracia impede qualquer mudanca histórica ou social."
       ],
-      "correta": "cidadania e democracia se relacionam pelo exercicio de direitos e pela participacao no controle do poder",
+      "correta": "cidadania e democracia se relacionam pelo exercicio de direitos e pela participação no controle do poder",
       "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de cidadania e democracia.",
       "tempoEstimado": 60,
       "tags": [
@@ -3570,13 +3570,13 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Em Sociologia, inclusao e exclusao pode ser definido(a) como:",
       "opcoes": [
-        "os processos que ampliam ou restringem o acesso de grupos a direitos, reconhecimento, participacao e recursos sociais",
-        "a condicao de pertencimento a uma comunidade politica com acesso a direitos, deveres e participacao na vida coletiva",
+        "os processos que ampliam ou restringem o acesso de grupos a direitos, reconhecimento, participação e recursos sociais",
+        "a condição de pertencimento a uma comunidade política com acesso a direitos, deveres e participação na vida coletiva",
         "as garantias ligadas a liberdade individual, a igualdade perante a lei e a protecao da integridade e da propriedade",
-        "as garantias de participacao na vida politica, como votar, ser votado e influenciar decisoes coletivas"
+        "as garantias de participação na vida política, como votar, ser votado e influenciar decisões coletivas"
       ],
-      "correta": "os processos que ampliam ou restringem o acesso de grupos a direitos, reconhecimento, participacao e recursos sociais",
-      "comentario": "Inclusao e exclusao refere-se a os processos que ampliam ou restringem o acesso de grupos a direitos, reconhecimento, participacao e recursos sociais.",
+      "correta": "os processos que ampliam ou restringem o acesso de grupos a direitos, reconhecimento, participação e recursos sociais",
+      "comentario": "Inclusao e exclusao refere-se a os processos que ampliam ou restringem o acesso de grupos a direitos, reconhecimento, participação e recursos sociais.",
       "tempoEstimado": 20,
       "tags": [
         "cidadania",
@@ -3607,15 +3607,15 @@ export const cidadania = {
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: alguns grupos encontram barreiras para acessar escola, trabalho, justica e representacao politica Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: alguns grupos encontram barreiras para acessar escola, trabalho, justiça e representação política Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
         "Inclusao e exclusao",
         "Conceito de cidadania",
         "Direitos civis",
-        "Direitos politicos"
+        "Direitos políticos"
       ],
       "correta": "Inclusao e exclusao",
-      "comentario": "A situacao apresentada e um exemplo de inclusao e exclusao.",
+      "comentario": "A situação apresentada é um exemplo de inclusao e exclusao.",
       "tempoEstimado": 25,
       "tags": [
         "cidadania",
@@ -3648,12 +3648,12 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual afirmacao descreve corretamente inclusao e exclusao?",
       "opcoes": [
-        "Os processos que ampliam ou restringem o acesso de grupos a direitos, reconhecimento, participacao e recursos sociais.",
-        "Um fenomeno sem impacto sobre direitos, participacao ou reconhecimento social.",
-        "Politicas publicas significa as acoes e programas organizados pelo Estado para enfrentar problemas coletivos e garantir direitos a populacao.",
-        "Cidadania trata apenas de interesses privados e nao de vida publica."
+        "Os processos que ampliam ou restringem o acesso de grupos a direitos, reconhecimento, participação e recursos sociais.",
+        "Um fenômeno sem impacto sobre direitos, participação ou reconhecimento social.",
+        "Politicas públicas significa as ações e programas organizados pelo Estado para enfrentar problemas coletivos e garantir direitos a população.",
+        "Cidadania trata apenas de interesses privados e não de vida pública."
       ],
-      "correta": "Os processos que ampliam ou restringem o acesso de grupos a direitos, reconhecimento, participacao e recursos sociais.",
+      "correta": "Os processos que ampliam ou restringem o acesso de grupos a direitos, reconhecimento, participação e recursos sociais.",
       "comentario": "A afirmacao correta retoma o sentido central de inclusao e exclusao.",
       "tempoEstimado": 30,
       "tags": [
@@ -3685,15 +3685,15 @@ export const cidadania = {
       "dificuldadeNivel": 4,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a inclusao e exclusao.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a inclusao e exclusao.",
       "opcoes": [
         "a ideia de que todos os grupos participam da cidadania em condicoes iguais e sem barreiras concretas",
-        "alguns grupos encontram barreiras para acessar escola, trabalho, justica e representacao politica",
-        "politicas e praticas sociais podem incluir mais pessoas ou reforcar exclusoes ja existentes",
+        "alguns grupos encontram barreiras para acessar escola, trabalho, justiça e representação política",
+        "politicas e praticas sociais podem incluir mais pessoas ou reforcar exclusões ja existentes",
         "inclusao e exclusao ajudam a analisar desigualdades no acesso a cidadania e ao reconhecimento social"
       ],
       "correta": "a ideia de que todos os grupos participam da cidadania em condicoes iguais e sem barreiras concretas",
-      "comentario": "a ideia de que todos os grupos participam da cidadania em condicoes iguais e sem barreiras concretas nao expressa inclusao e exclusao, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "comentario": "a ideia de que todos os grupos participam da cidadania em condicoes iguais e sem barreiras concretas não expressa inclusao e exclusao, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "cidadania",
@@ -3726,13 +3726,13 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Quando se estuda inclusao e exclusao, o foco principal esta em:",
       "opcoes": [
-        "as barreiras e oportunidades que definem quem acessa direitos e participacao de forma efetiva",
-        "o vinculo entre pertencimento politico, direitos, deveres e participacao social",
+        "as barreiras e oportunidades que definem quem acessa direitos e participação de forma efetiva",
+        "o vínculo entre pertencimento político, direitos, deveres e participação social",
         "as garantias de liberdade, protecao e igualdade formal diante da lei",
-        "a participacao dos cidadaos na escolha e no controle dos rumos politicos da coletividade"
+        "a participação dos cidadãos na escolha e no controle dos rumos políticos da coletividade"
       ],
-      "correta": "as barreiras e oportunidades que definem quem acessa direitos e participacao de forma efetiva",
-      "comentario": "Inclusao e exclusao volta a atencao para as barreiras e oportunidades que definem quem acessa direitos e participacao de forma efetiva.",
+      "correta": "as barreiras e oportunidades que definem quem acessa direitos e participação de forma efetiva",
+      "comentario": "Inclusao e exclusao volta a atenção para as barreiras e oportunidades que definem quem acessa direitos e participação de forma efetiva.",
       "tempoEstimado": 35,
       "tags": [
         "cidadania",
@@ -3763,15 +3763,15 @@ export const cidadania = {
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre inclusao e exclusao e politicas publicas e que:",
+      "enunciado": "A principal diferença entre inclusao e exclusao e politicas públicas e que:",
       "opcoes": [
-        "inclusao e exclusao descrevem processos de acesso desigual, enquanto politicas publicas dizem respeito as acoes institucionais que podem enfrentar ou reforcar esses processos",
-        "Inclusao e exclusao e Politicas publicas sao exatamente o mesmo fenomeno social.",
-        "Politicas publicas depende apenas de escolhas privadas, enquanto Inclusao e exclusao depende so da biologia.",
-        "Inclusao e exclusao elimina a necessidade de observar direitos, deveres e participacao."
+        "inclusao e exclusao descrevem processos de acesso desigual, enquanto politicas públicas dizem respeito as ações institucionais que podem enfrentar ou reforcar esses processos",
+        "Inclusao e exclusao e Politicas públicas são exatamente o mesmo fenômeno social.",
+        "Politicas públicas depende apenas de escolhas privadas, enquanto Inclusao e exclusao depende so da biologia.",
+        "Inclusao e exclusao elimina a necessidade de observar direitos, deveres e participação."
       ],
-      "correta": "inclusao e exclusao descrevem processos de acesso desigual, enquanto politicas publicas dizem respeito as acoes institucionais que podem enfrentar ou reforcar esses processos",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "correta": "inclusao e exclusao descrevem processos de acesso desigual, enquanto politicas públicas dizem respeito as ações institucionais que podem enfrentar ou reforcar esses processos",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "cidadania",
@@ -3802,15 +3802,15 @@ export const cidadania = {
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: politicas e praticas sociais podem incluir mais pessoas ou reforcar exclusoes ja existentes A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: politicas e praticas sociais podem incluir mais pessoas ou reforcar exclusões ja existentes A leitura sociológica mais adequada aponta para:",
       "opcoes": [
-        "inclusao e exclusao mostram que cidadania nao se distribui automaticamente de forma igual para todos",
-        "Inclusao e exclusao mostra que a vida publica nao interfere no acesso a direitos.",
+        "inclusao e exclusao mostram que cidadania não se distribui automaticamente de forma igual para todos",
+        "Inclusao e exclusao mostra que a vida pública não interfere no acesso a direitos.",
         "Inclusao e exclusao prova que todos os grupos exercem cidadania da mesma forma.",
         "Inclusao e exclusao significa ausencia completa de desigualdades de acesso a direitos."
       ],
-      "correta": "inclusao e exclusao mostram que cidadania nao se distribui automaticamente de forma igual para todos",
-      "comentario": "Inclusao e exclusao permite interpretar o caso a partir de direitos, deveres, participacao e acesso a vida publica.",
+      "correta": "inclusao e exclusao mostram que cidadania não se distribui automaticamente de forma igual para todos",
+      "comentario": "Inclusao e exclusao permite interpretar o caso a partir de direitos, deveres, participação e acesso a vida pública.",
       "tempoEstimado": 40,
       "tags": [
         "cidadania",
@@ -3841,15 +3841,15 @@ export const cidadania = {
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia inclusao e exclusao de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia inclusao e exclusao de maneira mais clara?",
       "opcoes": [
         "inclusao e exclusao ajudam a analisar desigualdades no acesso a cidadania e ao reconhecimento social",
-        "cidadania envolve pertencer a vida publica com direitos, deveres e possibilidade de participacao",
-        "direitos civis estruturam liberdades basicas e protecao juridica aos individuos",
-        "direitos politicos tornam possivel participar das escolhas coletivas e da representacao publica"
+        "cidadania envolve pertencer a vida pública com direitos, deveres e possibilidade de participação",
+        "direitos civis estruturam liberdades basicas e protecao juridica aos indivíduos",
+        "direitos políticos tornam possível participar das escolhas coletivas e da representação pública"
       ],
       "correta": "inclusao e exclusao ajudam a analisar desigualdades no acesso a cidadania e ao reconhecimento social",
-      "comentario": "A alternativa correta traduz inclusao e exclusao em uma situacao concreta de vida social.",
+      "comentario": "A alternativa correta traduz inclusao e exclusao em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "cidadania",
@@ -3880,15 +3880,15 @@ export const cidadania = {
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"alguns grupos encontram barreiras para acessar escola, trabalho, justica e representacao politica\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"alguns grupos encontram barreiras para acessar escola, trabalho, justiça e representação política\", qual conclusão é mais adequada?",
       "opcoes": [
         "a cidadania pode ser ampliada ou restringida conforme existam mecanismos de inclusao ou exclusao social",
-        "Inclusao e exclusao indica que direitos e participacao nunca variam historicamente.",
+        "Inclusao e exclusao indica que direitos e participação nunca variam historicamente.",
         "Inclusao e exclusao so pode ser explicado por fatores biologicos.",
         "Inclusao e exclusao dispensa comparacao entre grupos e contextos."
       ],
       "correta": "a cidadania pode ser ampliada ou restringida conforme existam mecanismos de inclusao ou exclusao social",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "cidadania",
@@ -3921,12 +3921,12 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com inclusao e exclusao?",
       "opcoes": [
-        "como barreiras de acesso a direitos afetam a inclusao de grupos na vida publica?",
-        "como direitos, deveres e participacao definem a cidadania em uma sociedade?",
+        "como barreiras de acesso a direitos afetam a inclusao de grupos na vida pública?",
+        "como direitos, deveres e participação definem a cidadania em uma sociedade?",
         "como liberdade, protecao legal e igualdade perante a lei integram a cidadania?",
-        "como voto, representacao e participacao publica se relacionam com a cidadania?"
+        "como voto, representação e participação pública se relacionam com a cidadania?"
       ],
-      "correta": "como barreiras de acesso a direitos afetam a inclusao de grupos na vida publica?",
+      "correta": "como barreiras de acesso a direitos afetam a inclusao de grupos na vida pública?",
       "comentario": "A pergunta correta ajuda a investigar inclusao e exclusao de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
@@ -3960,12 +3960,12 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a afirmacao que revela compreensao inadequada de inclusao e exclusao.",
       "opcoes": [
-        "Um fenomeno sem impacto sobre direitos, participacao ou reconhecimento social.",
-        "Inclusao e exclusao pode ser observado em direitos, deveres e participacao publica.",
+        "Um fenômeno sem impacto sobre direitos, participação ou reconhecimento social.",
+        "Inclusao e exclusao pode ser observado em direitos, deveres e participação pública.",
         "Inclusao e exclusao ajuda a analisar acesso a garantias e a vida coletiva.",
-        "Inclusao e exclusao depende da relacao entre pertencimento politico e exercicio de direitos."
+        "Inclusao e exclusao depende da relação entre pertencimento político e exercicio de direitos."
       ],
-      "correta": "Um fenomeno sem impacto sobre direitos, participacao ou reconhecimento social.",
+      "correta": "Um fenômeno sem impacto sobre direitos, participação ou reconhecimento social.",
       "comentario": "A alternativa incorreta expressa uma confusao comum sobre inclusao e exclusao.",
       "tempoEstimado": 45,
       "tags": [
@@ -3997,15 +3997,15 @@ export const cidadania = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre cidadania, um estudante afirmou: \"falar em cidadania exige observar tambem quem fica de fora do acesso real a direitos e participacao\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre cidadania, um estudante afirmou: \"falar em cidadania exige observar também quem fica de fora do acesso real a direitos e participação\". Qual avaliação é mais consistente?",
       "opcoes": [
         "a afirmacao esta correta, porque cidadania envolve observar desigualdades de acesso e pertencimento",
-        "Inclusao e exclusao nao pode ser observado em situacoes do cotidiano.",
-        "Inclusao e exclusao depende apenas da vontade individual, sem contexto politico e social.",
-        "Inclusao e exclusao torna desnecessario comparar direitos, deveres e participacao."
+        "Inclusao e exclusao não pode ser observado em situações do cotidiano.",
+        "Inclusao e exclusao depende apenas da vontade individual, sem contexto político e social.",
+        "Inclusao e exclusao torna desnecessario comparar direitos, deveres e participação."
       ],
       "correta": "a afirmacao esta correta, porque cidadania envolve observar desigualdades de acesso e pertencimento",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de inclusao e exclusao.",
+      "comentario": "A avaliação correta recupera o nucleo teorico de inclusao e exclusao.",
       "tempoEstimado": 50,
       "tags": [
         "cidadania",
@@ -4036,15 +4036,15 @@ export const cidadania = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando determinados grupos sao sistematicamente afastados de servicos, representacao e reconhecimento, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando determinados grupos são sistematicamente afastados de serviços, representação e reconhecimento, a melhor interpretação sociológica e que:",
       "opcoes": [
         "ha reforco de exclusao e cidadania desigual",
-        "Inclusao e exclusao desaparece porque a sociedade nao depende mais de direitos.",
+        "Inclusao e exclusao desaparece porque a sociedade não depende mais de direitos.",
         "Inclusao e exclusao deixa de existir sempre que surgem conflitos entre grupos.",
-        "Inclusao e exclusao so importa em sociedades antigas, nao no presente."
+        "Inclusao e exclusao so importa em sociedades antigas, não no presente."
       ],
       "correta": "ha reforco de exclusao e cidadania desigual",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "cidadania",
@@ -4075,14 +4075,14 @@ export const cidadania = {
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente inclusao e exclusao a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente inclusao e exclusao a uma situação de comunidade escolar?",
       "opcoes": [
-        "a escola discute acessibilidade, permanencia e participacao como dimensoes de inclusao cidada",
-        "a escola discute como representacao de turma, regras coletivas e participacao estudantil ajudam a exercitar cidadania",
+        "a escola discute acessibilidade, permanencia e participação como dimensoes de inclusao cidada",
+        "a escola discute como representação de turma, regras coletivas e participação estudantil ajudam a exercitar cidadania",
         "a turma debate liberdade de expressao, seguranca e igualdade perante regras e leis",
-        "a escola discute gremios, assembleias e eleicoes como formas de aprendizado sobre participacao politica"
+        "a escola discute gremios, assembleias e eleicoes como formas de aprendizado sobre participação política"
       ],
-      "correta": "a escola discute acessibilidade, permanencia e participacao como dimensoes de inclusao cidada",
+      "correta": "a escola discute acessibilidade, permanencia e participação como dimensoes de inclusao cidada",
       "comentario": "A alternativa correta aproxima inclusao e exclusao de um contexto escolar concreto.",
       "tempoEstimado": 55,
       "tags": [
@@ -4117,9 +4117,9 @@ export const cidadania = {
       "enunciado": "Qual sintese final representa melhor inclusao e exclusao?",
       "opcoes": [
         "inclusao e exclusao correspondem a processos que ampliam ou restringem o acesso efetivo a cidadania",
-        "Inclusao e exclusao e um fator biologico fixo, sem relacao com direitos ou participacao coletiva.",
-        "Inclusao e exclusao explica apenas escolhas privadas e ignora a dimensao publica.",
-        "Inclusao e exclusao impede qualquer mudanca historica ou social."
+        "Inclusao e exclusao e um fator biológico fixo, sem relação com direitos ou participação coletiva.",
+        "Inclusao e exclusao explica apenas escolhas privadas e ignora a dimensao pública.",
+        "Inclusao e exclusao impede qualquer mudanca histórica ou social."
       ],
       "correta": "inclusao e exclusao correspondem a processos que ampliam ou restringem o acesso efetivo a cidadania",
       "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de inclusao e exclusao.",
@@ -4148,20 +4148,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Politicas publicas",
+      "subtopico": "Politicas públicas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Sociologia, politicas publicas pode ser definido(a) como:",
+      "enunciado": "Em Sociologia, politicas públicas pode ser definido(a) como:",
       "opcoes": [
-        "as acoes e programas organizados pelo Estado para enfrentar problemas coletivos e garantir direitos a populacao",
-        "o exercicio de direitos, deveres e participacao na vida publica mediada por ambientes digitais e tecnologias de informacao",
+        "as ações e programas organizados pelo Estado para enfrentar problemas coletivos e garantir direitos a população",
+        "o exercicio de direitos, deveres e participação na vida pública mediada por ambientes digitais e tecnologias de informacao",
         "o conjunto de principios e garantias voltados a protecao da dignidade, da liberdade e da igualdade de todos os seres humanos",
-        "a condicao de pertencimento a uma comunidade politica com acesso a direitos, deveres e participacao na vida coletiva"
+        "a condição de pertencimento a uma comunidade política com acesso a direitos, deveres e participação na vida coletiva"
       ],
-      "correta": "as acoes e programas organizados pelo Estado para enfrentar problemas coletivos e garantir direitos a populacao",
-      "comentario": "Politicas publicas refere-se a as acoes e programas organizados pelo Estado para enfrentar problemas coletivos e garantir direitos a populacao.",
+      "correta": "as ações e programas organizados pelo Estado para enfrentar problemas coletivos e garantir direitos a população",
+      "comentario": "Politicas públicas refere-se a as ações e programas organizados pelo Estado para enfrentar problemas coletivos e garantir direitos a população.",
       "tempoEstimado": 20,
       "tags": [
         "cidadania",
@@ -4187,20 +4187,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Politicas publicas",
+      "subtopico": "Politicas públicas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: governos implementam programas de saude, educacao, moradia e transporte para responder a demandas sociais Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: governos implementam programas de saude, educação, moradia e transporte para responder a demandas sociais Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
-        "Politicas publicas",
+        "Politicas públicas",
         "Cidadania digital",
         "Direitos humanos",
         "Conceito de cidadania"
       ],
-      "correta": "Politicas publicas",
-      "comentario": "A situacao apresentada e um exemplo de politicas publicas.",
+      "correta": "Politicas públicas",
+      "comentario": "A situação apresentada é um exemplo de politicas públicas.",
       "tempoEstimado": 25,
       "tags": [
         "cidadania",
@@ -4226,20 +4226,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Politicas publicas",
+      "subtopico": "Politicas públicas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmacao descreve corretamente politicas publicas?",
+      "enunciado": "Qual afirmacao descreve corretamente politicas públicas?",
       "opcoes": [
-        "As acoes e programas organizados pelo Estado para enfrentar problemas coletivos e garantir direitos a populacao.",
-        "Um detalhe burocratico sem relacao com desigualdade, direitos ou acesso a servicos.",
-        "Direitos sociais significa as garantias de acesso a condicoes de vida dignas, como educacao, saude, trabalho, moradia e protecao social.",
-        "Cidadania trata apenas de interesses privados e nao de vida publica."
+        "As ações e programas organizados pelo Estado para enfrentar problemas coletivos e garantir direitos a população.",
+        "Um detalhe burocratico sem relação com desigualdade, direitos ou acesso a serviços.",
+        "Direitos sociais significa as garantias de acesso a condicoes de vida dignas, como educação, saude, trabalho, moradia e protecao social.",
+        "Cidadania trata apenas de interesses privados e não de vida pública."
       ],
-      "correta": "As acoes e programas organizados pelo Estado para enfrentar problemas coletivos e garantir direitos a populacao.",
-      "comentario": "A afirmacao correta retoma o sentido central de politicas publicas.",
+      "correta": "As ações e programas organizados pelo Estado para enfrentar problemas coletivos e garantir direitos a população.",
+      "comentario": "A afirmacao correta retoma o sentido central de politicas públicas.",
       "tempoEstimado": 30,
       "tags": [
         "cidadania",
@@ -4265,20 +4265,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Politicas publicas",
+      "subtopico": "Politicas públicas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a politicas publicas.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a politicas públicas.",
       "opcoes": [
-        "a ideia de que direitos se realizam sem qualquer acao institucional ou politica do poder publico",
-        "governos implementam programas de saude, educacao, moradia e transporte para responder a demandas sociais",
-        "uma politica publica busca transformar direitos previstos em acesso real a servicos e protecao social",
-        "politicas publicas sao instrumentos pelos quais o Estado organiza respostas para necessidades coletivas"
+        "a ideia de que direitos se realizam sem qualquer ação institucional ou política do poder público",
+        "governos implementam programas de saude, educação, moradia e transporte para responder a demandas sociais",
+        "uma política pública busca transformar direitos previstos em acesso real a serviços e protecao social",
+        "politicas públicas são instrumentos pelos quais o Estado organiza respostas para necessidades coletivas"
       ],
-      "correta": "a ideia de que direitos se realizam sem qualquer acao institucional ou politica do poder publico",
-      "comentario": "a ideia de que direitos se realizam sem qualquer acao institucional ou politica do poder publico nao expressa politicas publicas, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "a ideia de que direitos se realizam sem qualquer ação institucional ou política do poder público",
+      "comentario": "a ideia de que direitos se realizam sem qualquer ação institucional ou política do poder público não expressa politicas públicas, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "cidadania",
@@ -4304,20 +4304,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Politicas publicas",
+      "subtopico": "Politicas públicas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se estuda politicas publicas, o foco principal esta em:",
+      "enunciado": "Quando se estuda politicas públicas, o foco principal esta em:",
       "opcoes": [
-        "a acao organizada do Estado na oferta de servicos, garantias e respostas a problemas sociais",
-        "a atuacao cidada em ambientes digitais com direitos, deveres e impactos publicos",
+        "a ação organizada do Estado na oferta de serviços, garantias e respostas a problemas sociais",
+        "a atuação cidada em ambientes digitais com direitos, deveres e impactos públicos",
         "a protecao universal da dignidade humana e das liberdades fundamentais",
-        "o vinculo entre pertencimento politico, direitos, deveres e participacao social"
+        "o vínculo entre pertencimento político, direitos, deveres e participação social"
       ],
-      "correta": "a acao organizada do Estado na oferta de servicos, garantias e respostas a problemas sociais",
-      "comentario": "Politicas publicas volta a atencao para a acao organizada do Estado na oferta de servicos, garantias e respostas a problemas sociais.",
+      "correta": "a ação organizada do Estado na oferta de serviços, garantias e respostas a problemas sociais",
+      "comentario": "Politicas públicas volta a atenção para a ação organizada do Estado na oferta de serviços, garantias e respostas a problemas sociais.",
       "tempoEstimado": 35,
       "tags": [
         "cidadania",
@@ -4343,20 +4343,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Politicas publicas",
+      "subtopico": "Politicas públicas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre politicas publicas e direitos sociais e que:",
+      "enunciado": "A principal diferença entre politicas públicas e direitos sociais e que:",
       "opcoes": [
-        "politicas publicas sao meios institucionais de implementacao, enquanto direitos sociais sao as garantias que elas procuram efetivar",
-        "Politicas publicas e Direitos sociais sao exatamente o mesmo fenomeno social.",
-        "Direitos sociais depende apenas de escolhas privadas, enquanto Politicas publicas depende so da biologia.",
-        "Politicas publicas elimina a necessidade de observar direitos, deveres e participacao."
+        "politicas públicas são meios institucionais de implementacao, enquanto direitos sociais são as garantias que elas procuram efetivar",
+        "Politicas públicas e Direitos sociais são exatamente o mesmo fenômeno social.",
+        "Direitos sociais depende apenas de escolhas privadas, enquanto Politicas públicas depende so da biologia.",
+        "Politicas públicas elimina a necessidade de observar direitos, deveres e participação."
       ],
-      "correta": "politicas publicas sao meios institucionais de implementacao, enquanto direitos sociais sao as garantias que elas procuram efetivar",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "correta": "politicas públicas são meios institucionais de implementacao, enquanto direitos sociais são as garantias que elas procuram efetivar",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "cidadania",
@@ -4382,20 +4382,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Politicas publicas",
+      "subtopico": "Politicas públicas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: uma politica publica busca transformar direitos previstos em acesso real a servicos e protecao social A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: uma política pública busca transformar direitos previstos em acesso real a serviços e protecao social A leitura sociológica mais adequada aponta para:",
       "opcoes": [
-        "politicas publicas ajudam a concretizar direitos e a reduzir desigualdades no acesso a cidadania",
-        "Politicas publicas mostra que a vida publica nao interfere no acesso a direitos.",
-        "Politicas publicas prova que todos os grupos exercem cidadania da mesma forma.",
-        "Politicas publicas significa ausencia completa de desigualdades de acesso a direitos."
+        "politicas públicas ajudam a concretizar direitos e a reduzir desigualdades no acesso a cidadania",
+        "Politicas públicas mostra que a vida pública não interfere no acesso a direitos.",
+        "Politicas públicas prova que todos os grupos exercem cidadania da mesma forma.",
+        "Politicas públicas significa ausencia completa de desigualdades de acesso a direitos."
       ],
-      "correta": "politicas publicas ajudam a concretizar direitos e a reduzir desigualdades no acesso a cidadania",
-      "comentario": "Politicas publicas permite interpretar o caso a partir de direitos, deveres, participacao e acesso a vida publica.",
+      "correta": "politicas públicas ajudam a concretizar direitos e a reduzir desigualdades no acesso a cidadania",
+      "comentario": "Politicas públicas permite interpretar o caso a partir de direitos, deveres, participação e acesso a vida pública.",
       "tempoEstimado": 40,
       "tags": [
         "cidadania",
@@ -4421,20 +4421,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Politicas publicas",
+      "subtopico": "Politicas públicas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia politicas publicas de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia politicas públicas de maneira mais clara?",
       "opcoes": [
-        "politicas publicas sao instrumentos pelos quais o Estado organiza respostas para necessidades coletivas",
-        "cidadania digital amplia a esfera da participacao e dos direitos para os ambientes conectados",
+        "politicas públicas são instrumentos pelos quais o Estado organiza respostas para necessidades coletivas",
+        "cidadania digital amplia a esfera da participação e dos direitos para os ambientes conectados",
         "direitos humanos funcionam como referencia ampla para protecao da dignidade e combate a violacoes",
-        "cidadania envolve pertencer a vida publica com direitos, deveres e possibilidade de participacao"
+        "cidadania envolve pertencer a vida pública com direitos, deveres e possibilidade de participação"
       ],
-      "correta": "politicas publicas sao instrumentos pelos quais o Estado organiza respostas para necessidades coletivas",
-      "comentario": "A alternativa correta traduz politicas publicas em uma situacao concreta de vida social.",
+      "correta": "politicas públicas são instrumentos pelos quais o Estado organiza respostas para necessidades coletivas",
+      "comentario": "A alternativa correta traduz politicas públicas em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "cidadania",
@@ -4460,20 +4460,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Politicas publicas",
+      "subtopico": "Politicas públicas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"governos implementam programas de saude, educacao, moradia e transporte para responder a demandas sociais\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"governos implementam programas de saude, educação, moradia e transporte para responder a demandas sociais\", qual conclusão é mais adequada?",
       "opcoes": [
-        "sem politicas publicas, muitos direitos tendem a permanecer apenas formais e pouco acessiveis",
-        "Politicas publicas indica que direitos e participacao nunca variam historicamente.",
-        "Politicas publicas so pode ser explicado por fatores biologicos.",
-        "Politicas publicas dispensa comparacao entre grupos e contextos."
+        "sem politicas públicas, muitos direitos tendem a permanecer apenas formais e pouco acessiveis",
+        "Politicas públicas indica que direitos e participação nunca variam historicamente.",
+        "Politicas públicas so pode ser explicado por fatores biologicos.",
+        "Politicas públicas dispensa comparacao entre grupos e contextos."
       ],
-      "correta": "sem politicas publicas, muitos direitos tendem a permanecer apenas formais e pouco acessiveis",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "correta": "sem politicas públicas, muitos direitos tendem a permanecer apenas formais e pouco acessiveis",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "cidadania",
@@ -4499,20 +4499,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Politicas publicas",
+      "subtopico": "Politicas públicas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com politicas publicas?",
+      "enunciado": "Qual pergunta de pesquisa se relaciona melhor com politicas públicas?",
       "opcoes": [
-        "como acoes do Estado ajudam a transformar direitos em acesso concreto a servicos?",
-        "como acesso a saude, educacao e trabalho se relaciona com o exercicio da cidadania?",
-        "como a Constituicao organiza direitos e formas de participacao dos cidadaos?",
-        "como participacao cidada e garantia de direitos se relacionam com a democracia?"
+        "como ações do Estado ajudam a transformar direitos em acesso concreto a serviços?",
+        "como acesso a saude, educação e trabalho se relaciona com o exercicio da cidadania?",
+        "como a Constituição organiza direitos e formas de participação dos cidadãos?",
+        "como participação cidada e garantia de direitos se relacionam com a democracia?"
       ],
-      "correta": "como acoes do Estado ajudam a transformar direitos em acesso concreto a servicos?",
-      "comentario": "A pergunta correta ajuda a investigar politicas publicas de forma coerente com o subtopico.",
+      "correta": "como ações do Estado ajudam a transformar direitos em acesso concreto a serviços?",
+      "comentario": "A pergunta correta ajuda a investigar politicas públicas de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
         "cidadania",
@@ -4538,20 +4538,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Politicas publicas",
+      "subtopico": "Politicas públicas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a afirmacao que revela compreensao inadequada de politicas publicas.",
+      "enunciado": "Assinale a afirmacao que revela compreensao inadequada de politicas públicas.",
       "opcoes": [
-        "Um detalhe burocratico sem relacao com desigualdade, direitos ou acesso a servicos.",
-        "Politicas publicas pode ser observado em direitos, deveres e participacao publica.",
-        "Politicas publicas ajuda a analisar acesso a garantias e a vida coletiva.",
-        "Politicas publicas depende da relacao entre pertencimento politico e exercicio de direitos."
+        "Um detalhe burocratico sem relação com desigualdade, direitos ou acesso a serviços.",
+        "Politicas públicas pode ser observado em direitos, deveres e participação pública.",
+        "Politicas públicas ajuda a analisar acesso a garantias e a vida coletiva.",
+        "Politicas públicas depende da relação entre pertencimento político e exercicio de direitos."
       ],
-      "correta": "Um detalhe burocratico sem relacao com desigualdade, direitos ou acesso a servicos.",
-      "comentario": "A alternativa incorreta expressa uma confusao comum sobre politicas publicas.",
+      "correta": "Um detalhe burocratico sem relação com desigualdade, direitos ou acesso a serviços.",
+      "comentario": "A alternativa incorreta expressa uma confusao comum sobre politicas públicas.",
       "tempoEstimado": 45,
       "tags": [
         "cidadania",
@@ -4577,20 +4577,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Politicas publicas",
+      "subtopico": "Politicas públicas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre cidadania, um estudante afirmou: \"politicas publicas sao centrais para transformar direitos previstos em condicoes reais de cidadania\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre cidadania, um estudante afirmou: \"politicas públicas são centrais para transformar direitos previstos em condicoes reais de cidadania\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "a afirmacao esta correta, porque a acao estatal pode ampliar ou limitar o acesso concreto a direitos",
-        "Politicas publicas nao pode ser observado em situacoes do cotidiano.",
-        "Politicas publicas depende apenas da vontade individual, sem contexto politico e social.",
-        "Politicas publicas torna desnecessario comparar direitos, deveres e participacao."
+        "a afirmacao esta correta, porque a ação estatal pode ampliar ou limitar o acesso concreto a direitos",
+        "Politicas públicas não pode ser observado em situações do cotidiano.",
+        "Politicas públicas depende apenas da vontade individual, sem contexto político e social.",
+        "Politicas públicas torna desnecessario comparar direitos, deveres e participação."
       ],
-      "correta": "a afirmacao esta correta, porque a acao estatal pode ampliar ou limitar o acesso concreto a direitos",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de politicas publicas.",
+      "correta": "a afirmacao esta correta, porque a ação estatal pode ampliar ou limitar o acesso concreto a direitos",
+      "comentario": "A avaliação correta recupera o nucleo teorico de politicas públicas.",
       "tempoEstimado": 50,
       "tags": [
         "cidadania",
@@ -4616,20 +4616,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Politicas publicas",
+      "subtopico": "Politicas públicas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando o Estado retira ou enfraquece acoes voltadas a saude, educacao e protecao social, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando o Estado retira ou enfraquece ações voltadas a saude, educação e protecao social, a melhor interpretação sociológica e que:",
       "opcoes": [
         "o exercicio da cidadania tende a ficar mais desigual e restrito",
-        "Politicas publicas desaparece porque a sociedade nao depende mais de direitos.",
-        "Politicas publicas deixa de existir sempre que surgem conflitos entre grupos.",
-        "Politicas publicas so importa em sociedades antigas, nao no presente."
+        "Politicas públicas desaparece porque a sociedade não depende mais de direitos.",
+        "Politicas públicas deixa de existir sempre que surgem conflitos entre grupos.",
+        "Politicas públicas so importa em sociedades antigas, não no presente."
       ],
       "correta": "o exercicio da cidadania tende a ficar mais desigual e restrito",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "cidadania",
@@ -4655,20 +4655,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Politicas publicas",
+      "subtopico": "Politicas públicas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente politicas publicas a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente politicas públicas a uma situação de comunidade escolar?",
       "opcoes": [
         "a turma analisa como programas de transporte, escola e saude afetam o cotidiano da comunidade",
         "a turma analisa como transporte, escola e saude influenciam a possibilidade real de exercer direitos",
-        "a escola trabalha nocoes de Constituicao, direitos e participacao em debates sobre vida publica",
-        "a turma debate como participacao estudantil e liberdade de opiniao se ligam a praticas democraticas"
+        "a escola trabalha nocoes de Constituição, direitos e participação em debates sobre vida pública",
+        "a turma debate como participação estudantil e liberdade de opiniao se ligam a praticas democraticas"
       ],
       "correta": "a turma analisa como programas de transporte, escola e saude afetam o cotidiano da comunidade",
-      "comentario": "A alternativa correta aproxima politicas publicas de um contexto escolar concreto.",
+      "comentario": "A alternativa correta aproxima politicas públicas de um contexto escolar concreto.",
       "tempoEstimado": 55,
       "tags": [
         "cidadania",
@@ -4694,20 +4694,20 @@ export const cidadania = {
       ],
       "materia": "Sociologia",
       "topico": "Cidadania",
-      "subtopico": "Politicas publicas",
+      "subtopico": "Politicas públicas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual sintese final representa melhor politicas publicas?",
+      "enunciado": "Qual sintese final representa melhor politicas públicas?",
       "opcoes": [
-        "politicas publicas sao acoes do Estado para garantir direitos e responder a demandas coletivas",
-        "Politicas publicas e um fator biologico fixo, sem relacao com direitos ou participacao coletiva.",
-        "Politicas publicas explica apenas escolhas privadas e ignora a dimensao publica.",
-        "Politicas publicas impede qualquer mudanca historica ou social."
+        "politicas públicas são ações do Estado para garantir direitos e responder a demandas coletivas",
+        "Politicas públicas e um fator biológico fixo, sem relação com direitos ou participação coletiva.",
+        "Politicas públicas explica apenas escolhas privadas e ignora a dimensao pública.",
+        "Politicas públicas impede qualquer mudanca histórica ou social."
       ],
-      "correta": "politicas publicas sao acoes do Estado para garantir direitos e responder a demandas coletivas",
-      "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de politicas publicas.",
+      "correta": "politicas públicas são ações do Estado para garantir direitos e responder a demandas coletivas",
+      "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de politicas públicas.",
       "tempoEstimado": 60,
       "tags": [
         "cidadania",
@@ -4740,13 +4740,13 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Em Sociologia, cidadania digital pode ser definido(a) como:",
       "opcoes": [
-        "o exercicio de direitos, deveres e participacao na vida publica mediada por ambientes digitais e tecnologias de informacao",
-        "as garantias de participacao na vida politica, como votar, ser votado e influenciar decisoes coletivas",
-        "as garantias de acesso a condicoes de vida dignas, como educacao, saude, trabalho, moradia e protecao social",
-        "a relacao entre as regras fundamentais do Estado e as formas pelas quais os cidadaos participam da vida publica"
+        "o exercicio de direitos, deveres e participação na vida pública mediada por ambientes digitais e tecnologias de informacao",
+        "as garantias de participação na vida política, como votar, ser votado e influenciar decisões coletivas",
+        "as garantias de acesso a condicoes de vida dignas, como educação, saude, trabalho, moradia e protecao social",
+        "a relação entre as regras fundamentais do Estado e as formas pelas quais os cidadãos participam da vida pública"
       ],
-      "correta": "o exercicio de direitos, deveres e participacao na vida publica mediada por ambientes digitais e tecnologias de informacao",
-      "comentario": "Cidadania digital refere-se a o exercicio de direitos, deveres e participacao na vida publica mediada por ambientes digitais e tecnologias de informacao.",
+      "correta": "o exercicio de direitos, deveres e participação na vida pública mediada por ambientes digitais e tecnologias de informacao",
+      "comentario": "Cidadania digital refere-se a o exercicio de direitos, deveres e participação na vida pública mediada por ambientes digitais e tecnologias de informacao.",
       "tempoEstimado": 20,
       "tags": [
         "cidadania",
@@ -4777,15 +4777,15 @@ export const cidadania = {
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: cidadaos usam redes e plataformas para informar-se, participar de debates e cobrar acoes publicas Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: cidadãos usam redes e plataformas para informar-se, participar de debates e cobrar ações públicas Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
         "Cidadania digital",
-        "Direitos politicos",
+        "Direitos políticos",
         "Direitos sociais",
-        "Constituicao e participacao"
+        "Constituição e participação"
       ],
       "correta": "Cidadania digital",
-      "comentario": "A situacao apresentada e um exemplo de cidadania digital.",
+      "comentario": "A situação apresentada é um exemplo de cidadania digital.",
       "tempoEstimado": 25,
       "tags": [
         "cidadania",
@@ -4818,12 +4818,12 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual afirmacao descreve corretamente cidadania digital?",
       "opcoes": [
-        "O exercicio de direitos, deveres e participacao na vida publica mediada por ambientes digitais e tecnologias de informacao.",
-        "Um tema restrito ao entretenimento online e sem ligacao com vida publica ou direitos.",
+        "O exercicio de direitos, deveres e participação na vida pública mediada por ambientes digitais e tecnologias de informacao.",
+        "Um tema restrito ao entretenimento online e sem ligacao com vida pública ou direitos.",
         "Direitos humanos significa o conjunto de principios e garantias voltados a protecao da dignidade, da liberdade e da igualdade de todos os seres humanos.",
-        "Cidadania trata apenas de interesses privados e nao de vida publica."
+        "Cidadania trata apenas de interesses privados e não de vida pública."
       ],
-      "correta": "O exercicio de direitos, deveres e participacao na vida publica mediada por ambientes digitais e tecnologias de informacao.",
+      "correta": "O exercicio de direitos, deveres e participação na vida pública mediada por ambientes digitais e tecnologias de informacao.",
       "comentario": "A afirmacao correta retoma o sentido central de cidadania digital.",
       "tempoEstimado": 30,
       "tags": [
@@ -4855,15 +4855,15 @@ export const cidadania = {
       "dificuldadeNivel": 4,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a cidadania digital.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a cidadania digital.",
       "opcoes": [
-        "a ideia de que internet e plataformas nao afetam participacao, direitos ou responsabilidades cidadas",
-        "cidadaos usam redes e plataformas para informar-se, participar de debates e cobrar acoes publicas",
+        "a ideia de que internet e plataformas não afetam participação, direitos ou responsabilidades cidadas",
+        "cidadãos usam redes e plataformas para informar-se, participar de debates e cobrar ações públicas",
         "a vida digital envolve liberdade de expressao, acesso a informacao, responsabilidade e protecao de dados",
-        "cidadania digital amplia a esfera da participacao e dos direitos para os ambientes conectados"
+        "cidadania digital amplia a esfera da participação e dos direitos para os ambientes conectados"
       ],
-      "correta": "a ideia de que internet e plataformas nao afetam participacao, direitos ou responsabilidades cidadas",
-      "comentario": "a ideia de que internet e plataformas nao afetam participacao, direitos ou responsabilidades cidadas nao expressa cidadania digital, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "correta": "a ideia de que internet e plataformas não afetam participação, direitos ou responsabilidades cidadas",
+      "comentario": "a ideia de que internet e plataformas não afetam participação, direitos ou responsabilidades cidadas não expressa cidadania digital, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "cidadania",
@@ -4896,13 +4896,13 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Quando se estuda cidadania digital, o foco principal esta em:",
       "opcoes": [
-        "a atuacao cidada em ambientes digitais com direitos, deveres e impactos publicos",
-        "a participacao dos cidadaos na escolha e no controle dos rumos politicos da coletividade",
-        "as condicoes materiais e institucionais necessarias ao exercicio concreto da cidadania",
-        "a articulacao entre ordem constitucional, garantias de direitos e mecanismos de participacao"
+        "a atuação cidada em ambientes digitais com direitos, deveres e impactos públicos",
+        "a participação dos cidadãos na escolha e no controle dos rumos políticos da coletividade",
+        "as condicoes materiais e institucionais necessárias ao exercicio concreto da cidadania",
+        "a articulacao entre ordem constitucional, garantias de direitos e mecanismos de participação"
       ],
-      "correta": "a atuacao cidada em ambientes digitais com direitos, deveres e impactos publicos",
-      "comentario": "Cidadania digital volta a atencao para a atuacao cidada em ambientes digitais com direitos, deveres e impactos publicos.",
+      "correta": "a atuação cidada em ambientes digitais com direitos, deveres e impactos públicos",
+      "comentario": "Cidadania digital volta a atenção para a atuação cidada em ambientes digitais com direitos, deveres e impactos públicos.",
       "tempoEstimado": 35,
       "tags": [
         "cidadania",
@@ -4933,15 +4933,15 @@ export const cidadania = {
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre cidadania digital e direitos humanos e que:",
+      "enunciado": "A principal diferença entre cidadania digital e direitos humanos e que:",
       "opcoes": [
         "cidadania digital trata do exercicio de direitos e deveres em ambientes tecnologicos, enquanto direitos humanos oferecem um horizonte mais amplo de protecao da dignidade",
-        "Cidadania digital e Direitos humanos sao exatamente o mesmo fenomeno social.",
+        "Cidadania digital e Direitos humanos são exatamente o mesmo fenômeno social.",
         "Direitos humanos depende apenas de escolhas privadas, enquanto Cidadania digital depende so da biologia.",
-        "Cidadania digital elimina a necessidade de observar direitos, deveres e participacao."
+        "Cidadania digital elimina a necessidade de observar direitos, deveres e participação."
       ],
       "correta": "cidadania digital trata do exercicio de direitos e deveres em ambientes tecnologicos, enquanto direitos humanos oferecem um horizonte mais amplo de protecao da dignidade",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "cidadania",
@@ -4972,15 +4972,15 @@ export const cidadania = {
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: a vida digital envolve liberdade de expressao, acesso a informacao, responsabilidade e protecao de dados A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: a vida digital envolve liberdade de expressao, acesso a informacao, responsabilidade e protecao de dados A leitura sociológica mais adequada aponta para:",
       "opcoes": [
-        "cidadania digital ajuda a pensar participacao, informacao e responsabilidade no mundo conectado",
-        "Cidadania digital mostra que a vida publica nao interfere no acesso a direitos.",
+        "cidadania digital ajuda a pensar participação, informacao e responsabilidade no mundo conectado",
+        "Cidadania digital mostra que a vida pública não interfere no acesso a direitos.",
         "Cidadania digital prova que todos os grupos exercem cidadania da mesma forma.",
         "Cidadania digital significa ausencia completa de desigualdades de acesso a direitos."
       ],
-      "correta": "cidadania digital ajuda a pensar participacao, informacao e responsabilidade no mundo conectado",
-      "comentario": "Cidadania digital permite interpretar o caso a partir de direitos, deveres, participacao e acesso a vida publica.",
+      "correta": "cidadania digital ajuda a pensar participação, informacao e responsabilidade no mundo conectado",
+      "comentario": "Cidadania digital permite interpretar o caso a partir de direitos, deveres, participação e acesso a vida pública.",
       "tempoEstimado": 40,
       "tags": [
         "cidadania",
@@ -5011,15 +5011,15 @@ export const cidadania = {
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia cidadania digital de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia cidadania digital de maneira mais clara?",
       "opcoes": [
-        "cidadania digital amplia a esfera da participacao e dos direitos para os ambientes conectados",
-        "direitos politicos tornam possivel participar das escolhas coletivas e da representacao publica",
-        "direitos sociais traduzem a cidadania em condicoes reais de existencia e participacao social",
-        "constituicao e participacao ligam normas fundamentais do Estado ao exercicio concreto da cidadania"
+        "cidadania digital amplia a esfera da participação e dos direitos para os ambientes conectados",
+        "direitos políticos tornam possível participar das escolhas coletivas e da representação pública",
+        "direitos sociais traduzem a cidadania em condicoes reais de existencia e participação social",
+        "constituição e participação ligam normas fundamentais do Estado ao exercicio concreto da cidadania"
       ],
-      "correta": "cidadania digital amplia a esfera da participacao e dos direitos para os ambientes conectados",
-      "comentario": "A alternativa correta traduz cidadania digital em uma situacao concreta de vida social.",
+      "correta": "cidadania digital amplia a esfera da participação e dos direitos para os ambientes conectados",
+      "comentario": "A alternativa correta traduz cidadania digital em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "cidadania",
@@ -5050,15 +5050,15 @@ export const cidadania = {
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"cidadaos usam redes e plataformas para informar-se, participar de debates e cobrar acoes publicas\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"cidadãos usam redes e plataformas para informar-se, participar de debates e cobrar ações públicas\", qual conclusão é mais adequada?",
       "opcoes": [
-        "os ambientes digitais se tornaram espacos importantes de participacao, disputa e exercicio de cidadania",
-        "Cidadania digital indica que direitos e participacao nunca variam historicamente.",
+        "os ambientes digitais se tornaram espacos importantes de participação, disputa e exercicio de cidadania",
+        "Cidadania digital indica que direitos e participação nunca variam historicamente.",
         "Cidadania digital so pode ser explicado por fatores biologicos.",
         "Cidadania digital dispensa comparacao entre grupos e contextos."
       ],
-      "correta": "os ambientes digitais se tornaram espacos importantes de participacao, disputa e exercicio de cidadania",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "correta": "os ambientes digitais se tornaram espacos importantes de participação, disputa e exercicio de cidadania",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "cidadania",
@@ -5091,12 +5091,12 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com cidadania digital?",
       "opcoes": [
-        "como plataformas e redes influenciam a participacao cidada e o acesso a informacao?",
-        "como barreiras de acesso a direitos afetam a inclusao de grupos na vida publica?",
-        "como acoes do Estado ajudam a transformar direitos em acesso concreto a servicos?",
+        "como plataformas e redes influenciam a participação cidada e o acesso a informacao?",
+        "como barreiras de acesso a direitos afetam a inclusao de grupos na vida pública?",
+        "como ações do Estado ajudam a transformar direitos em acesso concreto a serviços?",
         "como a ideia de dignidade humana se relaciona com direitos e cidadania?"
       ],
-      "correta": "como plataformas e redes influenciam a participacao cidada e o acesso a informacao?",
+      "correta": "como plataformas e redes influenciam a participação cidada e o acesso a informacao?",
       "comentario": "A pergunta correta ajuda a investigar cidadania digital de forma coerente com o subtopico.",
       "tempoEstimado": 45,
       "tags": [
@@ -5130,12 +5130,12 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a afirmacao que revela compreensao inadequada de cidadania digital.",
       "opcoes": [
-        "Um tema restrito ao entretenimento online e sem ligacao com vida publica ou direitos.",
-        "Cidadania digital pode ser observado em direitos, deveres e participacao publica.",
+        "Um tema restrito ao entretenimento online e sem ligacao com vida pública ou direitos.",
+        "Cidadania digital pode ser observado em direitos, deveres e participação pública.",
         "Cidadania digital ajuda a analisar acesso a garantias e a vida coletiva.",
-        "Cidadania digital depende da relacao entre pertencimento politico e exercicio de direitos."
+        "Cidadania digital depende da relação entre pertencimento político e exercicio de direitos."
       ],
-      "correta": "Um tema restrito ao entretenimento online e sem ligacao com vida publica ou direitos.",
+      "correta": "Um tema restrito ao entretenimento online e sem ligacao com vida pública ou direitos.",
       "comentario": "A alternativa incorreta expressa uma confusao comum sobre cidadania digital.",
       "tempoEstimado": 45,
       "tags": [
@@ -5167,15 +5167,15 @@ export const cidadania = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre cidadania, um estudante afirmou: \"cidadania digital envolve participacao e responsabilidade, e nao apenas uso tecnico de plataformas\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre cidadania, um estudante afirmou: \"cidadania digital envolve participação e responsabilidade, e não apenas uso tecnico de plataformas\". Qual avaliação é mais consistente?",
       "opcoes": [
-        "a afirmacao esta correta, porque a esfera digital tambem integra a vida publica contemporanea",
-        "Cidadania digital nao pode ser observado em situacoes do cotidiano.",
-        "Cidadania digital depende apenas da vontade individual, sem contexto politico e social.",
-        "Cidadania digital torna desnecessario comparar direitos, deveres e participacao."
+        "a afirmacao esta correta, porque a esfera digital também integra a vida pública contemporanea",
+        "Cidadania digital não pode ser observado em situações do cotidiano.",
+        "Cidadania digital depende apenas da vontade individual, sem contexto político e social.",
+        "Cidadania digital torna desnecessario comparar direitos, deveres e participação."
       ],
-      "correta": "a afirmacao esta correta, porque a esfera digital tambem integra a vida publica contemporanea",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de cidadania digital.",
+      "correta": "a afirmacao esta correta, porque a esfera digital também integra a vida pública contemporanea",
+      "comentario": "A avaliação correta recupera o nucleo teorico de cidadania digital.",
       "tempoEstimado": 50,
       "tags": [
         "cidadania",
@@ -5206,15 +5206,15 @@ export const cidadania = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando grupos nao conseguem acessar informacao, se expressar ou se proteger em ambientes digitais, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando grupos não conseguem acessar informacao, se expressar ou se proteger em ambientes digitais, a melhor interpretação sociológica e que:",
       "opcoes": [
         "a cidadania digital desses grupos fica mais limitada e desigual",
-        "Cidadania digital desaparece porque a sociedade nao depende mais de direitos.",
+        "Cidadania digital desaparece porque a sociedade não depende mais de direitos.",
         "Cidadania digital deixa de existir sempre que surgem conflitos entre grupos.",
-        "Cidadania digital so importa em sociedades antigas, nao no presente."
+        "Cidadania digital so importa em sociedades antigas, não no presente."
       ],
       "correta": "a cidadania digital desses grupos fica mais limitada e desigual",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "cidadania",
@@ -5245,14 +5245,14 @@ export const cidadania = {
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente cidadania digital a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente cidadania digital a uma situação de comunidade escolar?",
       "opcoes": [
-        "a escola debate uso responsavel de redes, acesso a informacao e participacao online em temas publicos",
-        "a escola discute acessibilidade, permanencia e participacao como dimensoes de inclusao cidada",
+        "a escola debate uso responsavel de redes, acesso a informacao e participação online em temas públicos",
+        "a escola discute acessibilidade, permanencia e participação como dimensoes de inclusao cidada",
         "a turma analisa como programas de transporte, escola e saude afetam o cotidiano da comunidade",
         "a turma discute igualdade, combate a discriminacao e protecao da dignidade como bases dos direitos humanos"
       ],
-      "correta": "a escola debate uso responsavel de redes, acesso a informacao e participacao online em temas publicos",
+      "correta": "a escola debate uso responsavel de redes, acesso a informacao e participação online em temas públicos",
       "comentario": "A alternativa correta aproxima cidadania digital de um contexto escolar concreto.",
       "tempoEstimado": 55,
       "tags": [
@@ -5286,12 +5286,12 @@ export const cidadania = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual sintese final representa melhor cidadania digital?",
       "opcoes": [
-        "cidadania digital corresponde ao exercicio de direitos, deveres e participacao em ambientes conectados",
-        "Cidadania digital e um fator biologico fixo, sem relacao com direitos ou participacao coletiva.",
-        "Cidadania digital explica apenas escolhas privadas e ignora a dimensao publica.",
-        "Cidadania digital impede qualquer mudanca historica ou social."
+        "cidadania digital corresponde ao exercicio de direitos, deveres e participação em ambientes conectados",
+        "Cidadania digital e um fator biológico fixo, sem relação com direitos ou participação coletiva.",
+        "Cidadania digital explica apenas escolhas privadas e ignora a dimensao pública.",
+        "Cidadania digital impede qualquer mudanca histórica ou social."
       ],
-      "correta": "cidadania digital corresponde ao exercicio de direitos, deveres e participacao em ambientes conectados",
+      "correta": "cidadania digital corresponde ao exercicio de direitos, deveres e participação em ambientes conectados",
       "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de cidadania digital.",
       "tempoEstimado": 60,
       "tags": [
@@ -5326,9 +5326,9 @@ export const cidadania = {
       "enunciado": "Em Sociologia, direitos humanos pode ser definido(a) como:",
       "opcoes": [
         "o conjunto de principios e garantias voltados a protecao da dignidade, da liberdade e da igualdade de todos os seres humanos",
-        "a condicao de pertencimento a uma comunidade politica com acesso a direitos, deveres e participacao na vida coletiva",
+        "a condição de pertencimento a uma comunidade política com acesso a direitos, deveres e participação na vida coletiva",
         "as garantias ligadas a liberdade individual, a igualdade perante a lei e a protecao da integridade e da propriedade",
-        "as garantias de participacao na vida politica, como votar, ser votado e influenciar decisoes coletivas"
+        "as garantias de participação na vida política, como votar, ser votado e influenciar decisões coletivas"
       ],
       "correta": "o conjunto de principios e garantias voltados a protecao da dignidade, da liberdade e da igualdade de todos os seres humanos",
       "comentario": "Direitos humanos refere-se a o conjunto de principios e garantias voltados a protecao da dignidade, da liberdade e da igualdade de todos os seres humanos.",
@@ -5362,15 +5362,15 @@ export const cidadania = {
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: a defesa contra violencia, discriminacao e negacao de direitos se apoia em principios de dignidade humana Esse caso exemplifica melhor qual subtopico?",
+      "enunciado": "Observe a situação: a defesa contra violencia, discriminacao e negacao de direitos se apoia em principios de dignidade humana Esse caso exemplifica melhor qual subtopico?",
       "opcoes": [
         "Direitos humanos",
         "Conceito de cidadania",
         "Direitos civis",
-        "Direitos politicos"
+        "Direitos políticos"
       ],
       "correta": "Direitos humanos",
-      "comentario": "A situacao apresentada e um exemplo de direitos humanos.",
+      "comentario": "A situação apresentada é um exemplo de direitos humanos.",
       "tempoEstimado": 25,
       "tags": [
         "cidadania",
@@ -5405,8 +5405,8 @@ export const cidadania = {
       "opcoes": [
         "O conjunto de principios e garantias voltados a protecao da dignidade, da liberdade e da igualdade de todos os seres humanos.",
         "Um discurso abstrato sem efeitos sobre protecao, igualdade ou combate a violacoes.",
-        "Conceito de cidadania significa a condicao de pertencimento a uma comunidade politica com acesso a direitos, deveres e participacao na vida coletiva.",
-        "Cidadania trata apenas de interesses privados e nao de vida publica."
+        "Conceito de cidadania significa a condição de pertencimento a uma comunidade política com acesso a direitos, deveres e participação na vida coletiva.",
+        "Cidadania trata apenas de interesses privados e não de vida pública."
       ],
       "correta": "O conjunto de principios e garantias voltados a protecao da dignidade, da liberdade e da igualdade de todos os seres humanos.",
       "comentario": "A afirmacao correta retoma o sentido central de direitos humanos.",
@@ -5440,7 +5440,7 @@ export const cidadania = {
       "dificuldadeNivel": 4,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o exemplo NAO corresponde a direitos humanos.",
+      "enunciado": "Assinale a alternativa em que o exemplo NÃO corresponde a direitos humanos.",
       "opcoes": [
         "a ideia de que alguns grupos podem ser privados de dignidade e protecao basica sem que isso afete a cidadania",
         "a defesa contra violencia, discriminacao e negacao de direitos se apoia em principios de dignidade humana",
@@ -5448,7 +5448,7 @@ export const cidadania = {
         "direitos humanos funcionam como referencia ampla para protecao da dignidade e combate a violacoes"
       ],
       "correta": "a ideia de que alguns grupos podem ser privados de dignidade e protecao basica sem que isso afete a cidadania",
-      "comentario": "a ideia de que alguns grupos podem ser privados de dignidade e protecao basica sem que isso afete a cidadania nao expressa direitos humanos, enquanto as demais alternativas se relacionam com esse subtopico.",
+      "comentario": "a ideia de que alguns grupos podem ser privados de dignidade e protecao basica sem que isso afete a cidadania não expressa direitos humanos, enquanto as demais alternativas se relacionam com esse subtopico.",
       "tempoEstimado": 30,
       "tags": [
         "cidadania",
@@ -5482,12 +5482,12 @@ export const cidadania = {
       "enunciado": "Quando se estuda direitos humanos, o foco principal esta em:",
       "opcoes": [
         "a protecao universal da dignidade humana e das liberdades fundamentais",
-        "o vinculo entre pertencimento politico, direitos, deveres e participacao social",
+        "o vínculo entre pertencimento político, direitos, deveres e participação social",
         "as garantias de liberdade, protecao e igualdade formal diante da lei",
-        "a participacao dos cidadaos na escolha e no controle dos rumos politicos da coletividade"
+        "a participação dos cidadãos na escolha e no controle dos rumos políticos da coletividade"
       ],
       "correta": "a protecao universal da dignidade humana e das liberdades fundamentais",
-      "comentario": "Direitos humanos volta a atencao para a protecao universal da dignidade humana e das liberdades fundamentais.",
+      "comentario": "Direitos humanos volta a atenção para a protecao universal da dignidade humana e das liberdades fundamentais.",
       "tempoEstimado": 35,
       "tags": [
         "cidadania",
@@ -5518,15 +5518,15 @@ export const cidadania = {
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre direitos humanos e conceito de cidadania e que:",
+      "enunciado": "A principal diferença entre direitos humanos e conceito de cidadania e que:",
       "opcoes": [
-        "direitos humanos tem alcance universal de protecao da dignidade, enquanto cidadania se refere ao pertencimento politico e ao exercicio de direitos em uma coletividade especifica",
-        "Direitos humanos e Conceito de cidadania sao exatamente o mesmo fenomeno social.",
+        "direitos humanos tem alcance universal de protecao da dignidade, enquanto cidadania se refere ao pertencimento político e ao exercicio de direitos em uma coletividade especifica",
+        "Direitos humanos e Conceito de cidadania são exatamente o mesmo fenômeno social.",
         "Conceito de cidadania depende apenas de escolhas privadas, enquanto Direitos humanos depende so da biologia.",
-        "Direitos humanos elimina a necessidade de observar direitos, deveres e participacao."
+        "Direitos humanos elimina a necessidade de observar direitos, deveres e participação."
       ],
-      "correta": "direitos humanos tem alcance universal de protecao da dignidade, enquanto cidadania se refere ao pertencimento politico e ao exercicio de direitos em uma coletividade especifica",
-      "comentario": "A diferenca correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
+      "correta": "direitos humanos tem alcance universal de protecao da dignidade, enquanto cidadania se refere ao pertencimento político e ao exercicio de direitos em uma coletividade especifica",
+      "comentario": "A diferença correta ajuda a separar dois conceitos proximos sem misturar seus significados.",
       "tempoEstimado": 35,
       "tags": [
         "cidadania",
@@ -5557,15 +5557,15 @@ export const cidadania = {
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: direitos humanos orientam protecao a vida, a liberdade e a igualdade sem depender de privilegios de grupo A leitura sociologica mais adequada aponta para:",
+      "enunciado": "Em uma pesquisa escolar, um grupo registrou o seguinte caso: direitos humanos orientam protecao a vida, a liberdade e a igualdade sem depender de privilegios de grupo A leitura sociológica mais adequada aponta para:",
       "opcoes": [
         "direitos humanos ajudam a ampliar a compreensao da cidadania para alem de direitos formais restritos",
-        "Direitos humanos mostra que a vida publica nao interfere no acesso a direitos.",
+        "Direitos humanos mostra que a vida pública não interfere no acesso a direitos.",
         "Direitos humanos prova que todos os grupos exercem cidadania da mesma forma.",
         "Direitos humanos significa ausencia completa de desigualdades de acesso a direitos."
       ],
       "correta": "direitos humanos ajudam a ampliar a compreensao da cidadania para alem de direitos formais restritos",
-      "comentario": "Direitos humanos permite interpretar o caso a partir de direitos, deveres, participacao e acesso a vida publica.",
+      "comentario": "Direitos humanos permite interpretar o caso a partir de direitos, deveres, participação e acesso a vida pública.",
       "tempoEstimado": 40,
       "tags": [
         "cidadania",
@@ -5596,15 +5596,15 @@ export const cidadania = {
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo evidencia direitos humanos de maneira mais clara?",
+      "enunciado": "Qual situação abaixo evidencia direitos humanos de maneira mais clara?",
       "opcoes": [
         "direitos humanos funcionam como referencia ampla para protecao da dignidade e combate a violacoes",
-        "cidadania envolve pertencer a vida publica com direitos, deveres e possibilidade de participacao",
-        "direitos civis estruturam liberdades basicas e protecao juridica aos individuos",
-        "direitos politicos tornam possivel participar das escolhas coletivas e da representacao publica"
+        "cidadania envolve pertencer a vida pública com direitos, deveres e possibilidade de participação",
+        "direitos civis estruturam liberdades basicas e protecao juridica aos indivíduos",
+        "direitos políticos tornam possível participar das escolhas coletivas e da representação pública"
       ],
       "correta": "direitos humanos funcionam como referencia ampla para protecao da dignidade e combate a violacoes",
-      "comentario": "A alternativa correta traduz direitos humanos em uma situacao concreta de vida social.",
+      "comentario": "A alternativa correta traduz direitos humanos em uma situação concreta de vida social.",
       "tempoEstimado": 40,
       "tags": [
         "cidadania",
@@ -5635,15 +5635,15 @@ export const cidadania = {
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao analisar o caso \"a defesa contra violencia, discriminacao e negacao de direitos se apoia em principios de dignidade humana\", qual conclusao e mais adequada?",
+      "enunciado": "Ao analisar o caso \"a defesa contra violencia, discriminacao e negacao de direitos se apoia em principios de dignidade humana\", qual conclusão é mais adequada?",
       "opcoes": [
         "a defesa da dignidade e da igualdade amplia o sentido da cidadania e da protecao social",
-        "Direitos humanos indica que direitos e participacao nunca variam historicamente.",
+        "Direitos humanos indica que direitos e participação nunca variam historicamente.",
         "Direitos humanos so pode ser explicado por fatores biologicos.",
         "Direitos humanos dispensa comparacao entre grupos e contextos."
       ],
       "correta": "a defesa da dignidade e da igualdade amplia o sentido da cidadania e da protecao social",
-      "comentario": "A conclusao correta mantem o foco no sentido sociologico do caso apresentado.",
+      "comentario": "A conclusão correta mantem o foco no sentido sociológico do caso apresentado.",
       "tempoEstimado": 45,
       "tags": [
         "cidadania",
@@ -5677,8 +5677,8 @@ export const cidadania = {
       "enunciado": "Qual pergunta de pesquisa se relaciona melhor com direitos humanos?",
       "opcoes": [
         "como a ideia de dignidade humana se relaciona com direitos e cidadania?",
-        "como plataformas e redes influenciam a participacao cidada e o acesso a informacao?",
-        "como direitos, deveres e participacao definem a cidadania em uma sociedade?",
+        "como plataformas e redes influenciam a participação cidada e o acesso a informacao?",
+        "como direitos, deveres e participação definem a cidadania em uma sociedade?",
         "como liberdade, protecao legal e igualdade perante a lei integram a cidadania?"
       ],
       "correta": "como a ideia de dignidade humana se relaciona com direitos e cidadania?",
@@ -5716,9 +5716,9 @@ export const cidadania = {
       "enunciado": "Assinale a afirmacao que revela compreensao inadequada de direitos humanos.",
       "opcoes": [
         "Um discurso abstrato sem efeitos sobre protecao, igualdade ou combate a violacoes.",
-        "Direitos humanos pode ser observado em direitos, deveres e participacao publica.",
+        "Direitos humanos pode ser observado em direitos, deveres e participação pública.",
         "Direitos humanos ajuda a analisar acesso a garantias e a vida coletiva.",
-        "Direitos humanos depende da relacao entre pertencimento politico e exercicio de direitos."
+        "Direitos humanos depende da relação entre pertencimento político e exercicio de direitos."
       ],
       "correta": "Um discurso abstrato sem efeitos sobre protecao, igualdade ou combate a violacoes.",
       "comentario": "A alternativa incorreta expressa uma confusao comum sobre direitos humanos.",
@@ -5752,15 +5752,15 @@ export const cidadania = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um debate sobre cidadania, um estudante afirmou: \"direitos humanos nao defendem privilegios, mas a protecao universal da dignidade e da liberdade\". Qual avaliacao e mais consistente?",
+      "enunciado": "Em um debate sobre cidadania, um estudante afirmou: \"direitos humanos não defendem privilegios, mas a protecao universal da dignidade e da liberdade\". Qual avaliação é mais consistente?",
       "opcoes": [
         "a afirmacao esta correta, porque esses direitos se orientam pela universalidade e pela dignidade humana",
-        "Direitos humanos nao pode ser observado em situacoes do cotidiano.",
-        "Direitos humanos depende apenas da vontade individual, sem contexto politico e social.",
-        "Direitos humanos torna desnecessario comparar direitos, deveres e participacao."
+        "Direitos humanos não pode ser observado em situações do cotidiano.",
+        "Direitos humanos depende apenas da vontade individual, sem contexto político e social.",
+        "Direitos humanos torna desnecessario comparar direitos, deveres e participação."
       ],
       "correta": "a afirmacao esta correta, porque esses direitos se orientam pela universalidade e pela dignidade humana",
-      "comentario": "A avaliacao correta recupera o nucleo teorico de direitos humanos.",
+      "comentario": "A avaliação correta recupera o nucleo teorico de direitos humanos.",
       "tempoEstimado": 50,
       "tags": [
         "cidadania",
@@ -5791,15 +5791,15 @@ export const cidadania = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando uma sociedade naturaliza violencia e discriminacao contra certos grupos, a melhor interpretacao sociologica e que:",
+      "enunciado": "Quando uma sociedade naturaliza violencia e discriminacao contra certos grupos, a melhor interpretação sociológica e que:",
       "opcoes": [
-        "enfraquece-se a protecao dos direitos humanos e da propria cidadania",
-        "Direitos humanos desaparece porque a sociedade nao depende mais de direitos.",
+        "enfraquece-se a protecao dos direitos humanos e da própria cidadania",
+        "Direitos humanos desaparece porque a sociedade não depende mais de direitos.",
         "Direitos humanos deixa de existir sempre que surgem conflitos entre grupos.",
-        "Direitos humanos so importa em sociedades antigas, nao no presente."
+        "Direitos humanos so importa em sociedades antigas, não no presente."
       ],
-      "correta": "enfraquece-se a protecao dos direitos humanos e da propria cidadania",
-      "comentario": "A conclusao correta mostra como a ausencia ou a fragilidade do fenomeno afeta a vida social.",
+      "correta": "enfraquece-se a protecao dos direitos humanos e da própria cidadania",
+      "comentario": "A conclusão correta mostra como a ausencia ou a fragilidade do fenômeno afeta a vida social.",
       "tempoEstimado": 50,
       "tags": [
         "cidadania",
@@ -5830,11 +5830,11 @@ export const cidadania = {
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa aplica corretamente direitos humanos a uma situacao de comunidade escolar?",
+      "enunciado": "Qual alternativa aplica corretamente direitos humanos a uma situação de comunidade escolar?",
       "opcoes": [
         "a turma discute igualdade, combate a discriminacao e protecao da dignidade como bases dos direitos humanos",
-        "a escola debate uso responsavel de redes, acesso a informacao e participacao online em temas publicos",
-        "a escola discute como representacao de turma, regras coletivas e participacao estudantil ajudam a exercitar cidadania",
+        "a escola debate uso responsavel de redes, acesso a informacao e participação online em temas públicos",
+        "a escola discute como representação de turma, regras coletivas e participação estudantil ajudam a exercitar cidadania",
         "a turma debate liberdade de expressao, seguranca e igualdade perante regras e leis"
       ],
       "correta": "a turma discute igualdade, combate a discriminacao e protecao da dignidade como bases dos direitos humanos",
@@ -5872,9 +5872,9 @@ export const cidadania = {
       "enunciado": "Qual sintese final representa melhor direitos humanos?",
       "opcoes": [
         "direitos humanos correspondem a principios universais de protecao da dignidade, liberdade e igualdade",
-        "Direitos humanos e um fator biologico fixo, sem relacao com direitos ou participacao coletiva.",
-        "Direitos humanos explica apenas escolhas privadas e ignora a dimensao publica.",
-        "Direitos humanos impede qualquer mudanca historica ou social."
+        "Direitos humanos e um fator biológico fixo, sem relação com direitos ou participação coletiva.",
+        "Direitos humanos explica apenas escolhas privadas e ignora a dimensao pública.",
+        "Direitos humanos impede qualquer mudanca histórica ou social."
       ],
       "correta": "direitos humanos correspondem a principios universais de protecao da dignidade, liberdade e igualdade",
       "comentario": "A sintese correta preserva a definicao, o alcance e o uso analitico de direitos humanos.",

@@ -1,6 +1,10 @@
 {
   "crons": [
     {
+      "path": "/api/ops/health/daily-run",
+      "schedule": "30 8 * * *"
+    },
+    {
       "path": "/api/ops/reviews/three-day-run",
       "schedule": "0 9 */3 * *"
     }
@@ -21,14 +25,6 @@
     {
       "source": "/api/questions/:route*",
       "destination": "/api/questions-router?route=:route"
-    },
-    {
-      "source": "/api/northstar-app-manifest",
-      "destination": "/api/northstar-router?route=app-manifest"
-    },
-    {
-      "source": "/api/northstar-mcp",
-      "destination": "/api/northstar-router?route=mcp"
     },
     {
       "source": "/api/ops",

@@ -14,25 +14,25 @@ const blocos = [
       {
         lead: "a civilizacao conhecida por piramides e arte funeraria monumental",
         answer: "o Egito antigo",
-        why: "suas obras articulavam religiao, poder e permanencia"
+        why: "suas obras articulavam religião, poder e permanencia"
       },
       {
-        lead: "a representacao frontal e hierarquizada muito comum no Egito",
+        lead: "a representação frontal e hierarquizada muito comum no Egito",
         answer: "a lei da frontalidade",
         why: "ela organizava corpos e status sociais nas imagens"
       },
       {
-        lead: "a construcao funeraria monumental de pedra associada aos faraos",
+        lead: "a construção funeraria monumental de pedra associada aos faraos",
         answer: "a piramide",
-        why: "ela sintetiza poder politico e funcao religiosa"
+        why: "ela sintetiza poder político e função religiosa"
       },
       {
         lead: "a escrita visual usada em templos e tumbas egipcias",
         answer: "o hieroglifo",
-        why: "ele unia linguagem, imagem e memoria sagrada"
+        why: "ele unia linguagem, imagem e memória sagrada"
       },
       {
-        lead: "a producao artistica ligada a ritos e permanencia apos a morte",
+        lead: "a produção artística ligada a ritos e permanencia após a morte",
         answer: "a arte funeraria",
         why: "ela orientava grande parte da arte egipcia"
       }
@@ -44,9 +44,9 @@ const blocos = [
     tags: ["artes", "grecia"],
     fatos: [
       {
-        lead: "a busca de proporcao e ideal de beleza na escultura antiga",
+        lead: "a busca de proporção e ideal de beleza na escultura antiga",
         answer: "a arte grega",
-        why: "ela valorizou equilibrio, corpo humano e harmonia"
+        why: "ela valorizou equilíbrio, corpo humano e harmonia"
       },
       {
         lead: "a escultura de postura equilibrada com apoio em uma perna",
@@ -56,17 +56,17 @@ const blocos = [
       {
         lead: "o edificio religioso com colunas e frontao triangular",
         answer: "o templo grego",
-        why: "ele se tornou referencia da arquitetura classica"
+        why: "ele se tornou referencia da arquitetura clássica"
       },
       {
         lead: "a ordem arquitetonica de capitel simples e aspecto robusto",
         answer: "a ordem dorica",
-        why: "ela e uma das principais ordens da arquitetura grega"
+        why: "ela é uma das principais ordens da arquitetura grega"
       },
       {
         lead: "a valorizacao do corpo humano como medida de beleza",
         answer: "o ideal classico",
-        why: "esse principio marcou escultura e pensamento artistico gregos"
+        why: "esse principio marcou escultura e pensamento artístico gregos"
       }
     ]
   },
@@ -81,19 +81,19 @@ const blocos = [
         why: "sua arte combinou heranca grega e pragmatismo imperial"
       },
       {
-        lead: "a representacao escultorica mais fiel a feicoes individuais",
+        lead: "a representação escultorica mais fiel a feicoes individuais",
         answer: "o retrato romano",
-        why: "ele valorizava memoria politica e realismo"
+        why: "ele valorizava memória politica e realismo"
       },
       {
-        lead: "a grande construcao de espetaculos publicos da Roma antiga",
+        lead: "a grande construção de espetaculos publicos da Roma antiga",
         answer: "o anfiteatro",
         why: "ele articulava arquitetura, politica e vida urbana"
       },
       {
         lead: "o uso de arcos, cupulas e engenharia em edifícios monumentais",
         answer: "a arquitetura romana",
-        why: "ela ampliou possibilidades tecnicas da construcao antiga"
+        why: "ela ampliou possibilidades técnicas da construção antiga"
       },
       {
         lead: "a pintura mural preservada em cidades como Pompeia",
@@ -108,12 +108,12 @@ const blocos = [
     tags: ["artes", "renascimento"],
     fatos: [
       {
-        lead: "o movimento artistico que retomou referencias classicas e humanistas",
+        lead: "o movimento artístico que retomou referencias classicas e humanistas",
         answer: "o Renascimento",
-        why: "ele valorizou observacao, perspectiva e racionalidade"
+        why: "ele valorizou observação, perspectiva e racionalidade"
       },
       {
-        lead: "a tecnica que organiza profundidade com base matematica",
+        lead: "a técnica que organiza profundidade com base matemática",
         answer: "a perspectiva linear",
         why: "ela foi central na pintura renascentista"
       },
@@ -123,9 +123,9 @@ const blocos = [
         why: "ele marcou temas e escolhas formais do periodo"
       },
       {
-        lead: "a representacao precisa do corpo com estudo anatomico",
+        lead: "a representação precisa do corpo com estudo anatomico",
         answer: "o naturalismo renascentista",
-        why: "ele aproximou arte, ciencia e observacao"
+        why: "ele aproximou arte, ciencia e observação"
       },
       {
         lead: "a cidade italiana frequentemente associada ao inicio do movimento",
@@ -172,19 +172,19 @@ const blocos = [
     tags: ["artes", "barroco"],
     fatos: [
       {
-        lead: "o estilo artistico marcado por dramatizacao e movimento",
+        lead: "o estilo artístico marcado por dramatizacao e movimento",
         answer: "o Barroco",
         why: "ele intensificou emocao, contraste e teatralidade"
       },
       {
-        lead: "a tecnica de contraste intenso entre luz e sombra no Barroco",
+        lead: "a técnica de contraste intenso entre luz e sombra no Barroco",
         answer: "o chiaroscuro",
         why: "ela reforca volume e tensao dramatica"
       },
       {
         lead: "o pintor italiano conhecido por cenas dramaticas e forte luz",
         answer: "Caravaggio",
-        why: "ele e uma das referencias centrais do Barroco"
+        why: "ele é uma das referencias centrais do Barroco"
       },
       {
         lead: "a ornamentacao abundante e dinamica em igrejas barrocas",
@@ -192,7 +192,7 @@ const blocos = [
         why: "ela contribui para impacto emocional e visual"
       },
       {
-        lead: "a relacao entre o Barroco e a afirmacao do catolicismo apos a Reforma",
+        lead: "a relação entre o Barroco e a afirmacao do catolicismo após a Reforma",
         answer: "a Contrarreforma",
         why: "ela ajudou a orientar usos e sentidos da arte barroca"
       }
@@ -209,8 +209,8 @@ const blocos = [
         why: "ele reagiu aos excessos ornamentais do Rococo"
       },
       {
-        lead: "a valorizacao de ordem, clareza e equilibrio em oposicao ao excesso",
-        answer: "a estetica neoclassica",
+        lead: "a valorizacao de ordem, clareza e equilíbrio em oposicao ao excesso",
+        answer: "a estética neoclassica",
         why: "ela se aproxima de principios da Antiguidade"
       },
       {
@@ -225,7 +225,7 @@ const blocos = [
       },
       {
         lead: "a retomada de colunas, simetria e frontoes na arquitetura posterior",
-        answer: "a linguagem classica reatualizada",
+        answer: "a linguagem clássica reatualizada",
         why: "ela mostra a permanencia dos modelos antigos"
       }
     ]
@@ -246,18 +246,18 @@ const blocos = [
         why: "seu capitel decorado tornou-se bastante reconhecivel"
       },
       {
-        lead: "a representacao escultorica voltada a proporcao e equilibrio corporal",
-        answer: "a escultura classica",
+        lead: "a representação escultorica voltada a proporção e equilíbrio corporal",
+        answer: "a escultura clássica",
         why: "ela buscou idealizar o corpo humano"
       },
       {
-        lead: "a repeticao de colunas e simetria em edificios classicos",
-        answer: "a composicao arquitetonica regular",
+        lead: "a repeticao de colunas e simetria em edificios clássicos",
+        answer: "a composição arquitetonica regular",
         why: "ela reforca ordem e monumentalidade"
       },
       {
         lead: "o uso da pedra e do marmore em obras de prestigio",
-        answer: "a materialidade nobre classica",
+        answer: "a materialidade nobre clássica",
         why: "esses materiais foram valorizados pela durabilidade e acabamento"
       }
     ]
@@ -269,43 +269,43 @@ const blocos = [
     fatos: [
       {
         lead: "o conjunto de narrativas sobre deuses e herois da cultura grega e romana",
-        answer: "a mitologia classica",
+        answer: "a mitologia clássica",
         why: "ela inspirou grande parte da arte antiga e posterior"
       },
       {
-        lead: "a representacao de episodios biblicos em pintura e escultura europeias",
+        lead: "a representação de episodios biblicos em pintura e escultura europeias",
         answer: "o tema religioso cristao",
-        why: "ele foi central em varios periodos artisticos"
+        why: "ele foi central em vários periodos artisticos"
       },
       {
         lead: "o uso da arte para ensinar, celebrar ou reforcar crencas",
-        answer: "a funcao simbolica da imagem",
+        answer: "a função simbólica da imagem",
         why: "muitas obras atuavam para alem do valor decorativo"
       },
       {
-        lead: "a cena artistica voltada a herois, deuses e feitos exemplares",
+        lead: "a cena artística voltada a herois, deuses e feitos exemplares",
         answer: "o tema mitologico",
         why: "ele permitia narrativas de poder, paixao e moralidade"
       },
       {
-        lead: "a relacao entre patronos, religiao e producao artistica",
+        lead: "a relação entre patronos, religião e produção artística",
         answer: "o mecenato institucional",
         why: "igreja e elites financiaram muitas obras historicas"
       }
     ]
   },
   {
-    subtopico: "Legados da arte classica",
+    subtopico: "Legados da arte clássica",
     habilidade: "avaliar-a-permanencia-da-arte-classica-na-cultura-ocidental",
     tags: ["artes", "legado-classico"],
     fatos: [
       {
         lead: "a permanencia de colunas, frontoes e simetria em edificios posteriores",
         answer: "o legado arquitetonico classico",
-        why: "ele reaparece em varios momentos da historia da arte"
+        why: "ele reaparece em vários momentos da história da arte"
       },
       {
-        lead: "a valorizacao da proporcao e do equilibrio herdada da Antiguidade",
+        lead: "a valorizacao da proporção e do equilíbrio herdada da Antiguidade",
         answer: "um principio classico duradouro",
         why: "ele influenciou pintura, escultura e arquitetura"
       },
@@ -315,14 +315,14 @@ const blocos = [
         why: "o passado antigo continuou servindo de referencia cultural"
       },
       {
-        lead: "a presenca de mitos, herois e temas antigos em obras modernas",
-        answer: "a sobrevivencia iconografica classica",
+        lead: "a presença de mitos, herois e temas antigos em obras modernas",
+        answer: "a sobrevivencia iconografica clássica",
         why: "essas imagens seguem ativas na cultura visual"
       },
       {
-        lead: "a influencia da arte classica na formacao do olhar ocidental",
+        lead: "a influência da arte clássica na formação do olhar ocidental",
         answer: "um legado estetico e historico amplo",
-        why: "ela ajudou a definir criterios de beleza, ordem e monumentalidade"
+        why: "ela ajudou a definir critérios de beleza, ordem e monumentalidade"
       }
     ]
   }
@@ -332,7 +332,7 @@ const questoes = buildPlannedQuestions({
   prefix: "hac",
   serie: [1],
   materia: "Artes",
-  topico: "Historia da Arte Classica",
+  topico: "História da Arte Clássica",
   blocos,
   stemBuilders: ARTS_STEM_BUILDERS,
   globalMatrix: HUNDRED_QUESTION_MATRIX
@@ -342,15 +342,15 @@ export const historiaDaArteClassica = {
   id: "artes_historia_da_arte_classica",
   materia: "Artes",
   serie: [1],
-  topico: "Historia da Arte Classica",
+  topico: "História da Arte Clássica",
   metadados: {
     disciplinaId: "artes",
     base: "ESCOLAR",
     seloEditorial: "VERIFICADA",
     eixo: "Artes",
-    frente: "Historia da arte",
+    frente: "História da arte",
     searchAliases: [
-      "historia da arte classica",
+      "história da arte clássica",
       "arte antiga",
       "arte grega e romana",
       "renascimento",
@@ -366,14 +366,14 @@ export const historiaDaArteClassica = {
       "Neoclassicismo e retorno ao antigo",
       "Arquitetura e escultura classicas",
       "Temas religiosos e mitologicos",
-      "Legados da arte classica"
+      "Legados da arte clássica"
     ],
     habilidadesBase: [
-      "identificar marcos da arte antiga e classica",
-      "reconhecer caracteristicas de Grecia, Roma, Renascimento e Barroco",
-      "analisar artistas, obras e tecnicas de periodos classicos",
+      "identificar marcos da arte antiga e clássica",
+      "reconhecer características de Grécia, Roma, Renascimento e Barroco",
+      "analisar artistas, obras e técnicas de periodos clássicos",
       "interpretar temas religiosos, mitologicos e civicos na arte",
-      "avaliar permanencias da arte classica na cultura visual"
+      "avaliar permanencias da arte clássica na cultura visual"
     ],
     auditado: true,
     auditadoEm: "2026-04-11",

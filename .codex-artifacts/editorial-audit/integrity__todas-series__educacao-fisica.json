@@ -1,0 +1,61 @@
+{
+  "summary": {},
+  "results": [
+    {
+      "file": "questions/banks/1-serie/educacao-fisica/cultura-corporal/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/educacao-fisica/esportes-basicos/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/educacao-fisica/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/educacao-fisica/esportes-coletivos/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/educacao-fisica/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/educacao-fisica/saude-e-corpo/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/educacao-fisica/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/educacao-fisica/qualidade-de-vida/index.js",
+      "topicCount": 1,
+      "questionCount": 100,
+      "issueCount": 0,
+      "issues": []
+    }
+  ]
+}

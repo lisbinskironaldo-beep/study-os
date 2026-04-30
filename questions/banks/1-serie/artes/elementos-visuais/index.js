@@ -24,7 +24,7 @@ const blocos = [
       {
         lead: "a linha associada a estabilidade e repouso",
         answer: "a linha horizontal",
-        why: "ela costuma produzir sensacao de calma e equilibrio"
+        why: "ela costuma produzir sensação de calma e equilíbrio"
       },
       {
         lead: "a linha associada a altura e firmeza",
@@ -46,20 +46,20 @@ const blocos = [
       {
         lead: "o elemento visual definido por limites reconheciveis",
         answer: "a forma",
-        why: "ela pode ser geometrica ou organica na composicao"
+        why: "ela pode ser geometrica ou organica na composição"
       },
       {
-        lead: "a relacao em que um elemento principal se destaca no campo visual",
+        lead: "a relação em que um elemento principal se destaca no campo visual",
         answer: "a figura",
         why: "ela ocupa o papel central diante do fundo"
       },
       {
-        lead: "a area que cerca e sustenta a leitura do elemento principal",
+        lead: "a área que cerca e sustenta a leitura do elemento principal",
         answer: "o fundo",
         why: "ele condiciona contraste e destaque da figura"
       },
       {
-        lead: "o tipo de forma baseado em circulos, quadrados e triangulos",
+        lead: "o tipo de forma baseado em circulos, quadrados e triângulos",
         answer: "a forma geometrica",
         why: "ela se apoia em estruturas regulares e precisas"
       },
@@ -86,7 +86,7 @@ const blocos = [
         why: "elas ampliam as combinacoes do circulo cromatico"
       },
       {
-        lead: "a relacao entre duas cores opostas no circulo cromatico",
+        lead: "a relação entre duas cores opostas no circulo cromatico",
         answer: "as cores complementares",
         why: "esse contraste intensifica o destaque visual"
       },
@@ -113,17 +113,17 @@ const blocos = [
         why: "ele ajuda a criar contraste, atmosfera e profundidade"
       },
       {
-        lead: "a area mais iluminada de um objeto representado",
+        lead: "a área mais iluminada de um objeto representado",
         answer: "a luz",
         why: "ela indica onde a fonte luminosa incide com mais intensidade"
       },
       {
-        lead: "a area menos iluminada usada para sugerir profundidade",
+        lead: "a área menos iluminada usada para sugerir profundidade",
         answer: "a sombra",
         why: "ela contribui para volume e dramatizacao"
       },
       {
-        lead: "a tecnica de forte contraste entre claro e escuro",
+        lead: "a técnica de forte contraste entre claro e escuro",
         answer: "o claro-escuro",
         why: "ela valoriza dramaticidade e modelagem dos corpos"
       },
@@ -147,22 +147,22 @@ const blocos = [
       {
         lead: "a repeticao organizada de formas ou motivos visuais",
         answer: "o padrao",
-        why: "ele cria ritmo e unidade na composicao"
+        why: "ele cria ritmo e unidade na composição"
       },
       {
-        lead: "a textura percebida apenas pela observacao da imagem",
+        lead: "a textura percebida apenas pela observação da imagem",
         answer: "a textura visual",
         why: "ela imita sensacoes sem depender do toque real"
       },
       {
         lead: "a textura percebida fisicamente no material da obra",
         answer: "a textura tatil",
-        why: "ela depende da superficie concreta do objeto artistico"
+        why: "ela depende da superficie concreta do objeto artístico"
       },
       {
-        lead: "a repeticao de elementos que gera sensacao de continuidade",
+        lead: "a repeticao de elementos que gera sensação de continuidade",
         answer: "o ritmo visual",
-        why: "ele orienta o olhar ao longo da composicao"
+        why: "ele orienta o olhar ao longo da composição"
       }
     ]
   },
@@ -172,9 +172,9 @@ const blocos = [
     tags: ["artes", "espaco"],
     fatos: [
       {
-        lead: "a area visual em que formas e objetos sao distribuídos",
+        lead: "a área visual em que formas e objetos são distribuídos",
         answer: "o espaco",
-        why: "ele organiza a relacao entre os elementos da imagem"
+        why: "ele organiza a relação entre os elementos da imagem"
       },
       {
         lead: "o recurso que faz objetos distantes parecerem menores",
@@ -182,19 +182,19 @@ const blocos = [
         why: "ela contribui para a ilusao de profundidade"
       },
       {
-        lead: "a sobreposicao de elementos para indicar distancia",
+        lead: "a sobreposição de elementos para indicar distância",
         answer: "a profundidade por planos",
         why: "ela cria camadas visuais de proximidade e afastamento"
       },
       {
-        lead: "a variacao de tamanho para sugerir proximidade ou distancia",
+        lead: "a variação de tamanho para sugerir proximidade ou distância",
         answer: "a escala espacial",
         why: "objetos maiores parecem mais proximos do observador"
       },
       {
         lead: "a linha imaginaria para a qual convergem varias retas na perspectiva",
         answer: "o ponto de fuga",
-        why: "ele estrutura a organizacao do espaco em profundidade"
+        why: "ele estrutura a organização do espaco em profundidade"
       }
     ]
   },
@@ -204,24 +204,24 @@ const blocos = [
     tags: ["artes", "volume"],
     fatos: [
       {
-        lead: "a sugestao de corpo tridimensional em uma representacao",
+        lead: "a sugestao de corpo tridimensional em uma representação",
         answer: "o volume",
         why: "ele faz a forma parecer ocupar espaco real"
       },
       {
-        lead: "a relacao entre luz e sombra usada para modelar objetos",
+        lead: "a relação entre luz e sombra usada para modelar objetos",
         answer: "a modelagem",
-        why: "ela reforca a sensacao de tridimensionalidade"
+        why: "ela reforca a sensação de tridimensionalidade"
       },
       {
-        lead: "a linguagem artistica que trabalha diretamente com corpos no espaco",
+        lead: "a linguagem artística que trabalha diretamente com corpos no espaco",
         answer: "a escultura",
         why: "ela se organiza em tres dimensoes materiais"
       },
       {
         lead: "a obra que pode ser observada de diferentes angulos no espaco",
         answer: "a forma tridimensional",
-        why: "ela nao depende apenas de altura e largura"
+        why: "ela não depende apenas de altura e largura"
       },
       {
         lead: "o relevo visual criado por contraste e sombreado no plano",
@@ -231,22 +231,22 @@ const blocos = [
     ]
   },
   {
-    subtopico: "Composicao e equilibrio",
+    subtopico: "Composição e equilíbrio",
     habilidade: "analisar-a-organizacao-dos-elementos-na-composicao",
     tags: ["artes", "composicao"],
     fatos: [
       {
-        lead: "a organizacao dos elementos visuais em uma obra",
-        answer: "a composicao",
+        lead: "a organização dos elementos visuais em uma obra",
+        answer: "a composição",
         why: "ela define a estrutura e a leitura do conjunto"
       },
       {
         lead: "a distribuicao harmonica de pesos visuais na imagem",
-        answer: "o equilibrio",
-        why: "ele evita sensacao de desordem compositiva"
+        answer: "o equilíbrio",
+        why: "ele evita sensação de desordem compositiva"
       },
       {
-        lead: "a organizacao em que os lados da imagem apresentam correspondencia visual",
+        lead: "a organização em que os lados da imagem apresentam correspondencia visual",
         answer: "a simetria",
         why: "ela transmite estabilidade e regularidade"
       },
@@ -263,22 +263,22 @@ const blocos = [
     ]
   },
   {
-    subtopico: "Materiais e tecnicas",
+    subtopico: "Materiais e técnicas",
     habilidade: "relacionar-materiais-e-procedimentos-a-efeitos-visuais",
     tags: ["artes", "tecnicas"],
     fatos: [
       {
-        lead: "o instrumento comum no desenho grafico a mao",
+        lead: "o instrumento comum no desenho gráfico a mao",
         answer: "o lapis",
         why: "ele permite traços, sombreados e esbocos variados"
       },
       {
-        lead: "a tecnica de aplicar tinta diluida em agua sobre papel",
+        lead: "a técnica de aplicar tinta diluída em agua sobre papel",
         answer: "a aquarela",
         why: "ela produz transparencias e leveza cromatica"
       },
       {
-        lead: "a tecnica de construir imagem por recorte e justaposicao de materiais",
+        lead: "a técnica de construir imagem por recorte e justaposição de materiais",
         answer: "a colagem",
         why: "ela combina diferentes superficies e referencias visuais"
       },
@@ -288,9 +288,9 @@ const blocos = [
         why: "ela favorece mistura e camadas cromaticas"
       },
       {
-        lead: "o suporte retangular sobre o qual muitas pinturas sao feitas",
+        lead: "o suporte retangular sobre o qual muitas pinturas são feitas",
         answer: "a tela",
-        why: "ela e um dos suportes classicos da pintura"
+        why: "ela é um dos suportes clássicos da pintura"
       }
     ]
   },
@@ -300,7 +300,7 @@ const blocos = [
     tags: ["artes", "leitura-de-imagem"],
     fatos: [
       {
-        lead: "a interpretacao do sentido construido por formas, cores e composicao",
+        lead: "a interpretação do sentido construido por formas, cores e composição",
         answer: "a leitura de imagem",
         why: "ela considera linguagem visual e contexto da obra"
       },
@@ -312,16 +312,16 @@ const blocos = [
       {
         lead: "a escolha do elemento mais importante para orientar o olhar",
         answer: "o foco visual",
-        why: "ele organiza a leitura principal da composicao"
+        why: "ele organiza a leitura principal da composição"
       },
       {
-        lead: "a relacao entre imagem, contexto e interpretacao do observador",
+        lead: "a relação entre imagem, contexto e interpretação do observador",
         answer: "o significado visual",
-        why: "ele nao depende apenas do objeto representado"
+        why: "ele não depende apenas do objeto representado"
       },
       {
         lead: "a capacidade de observar criticamente uma obra e justificar sua leitura",
-        answer: "a analise visual",
+        answer: "a análise visual",
         why: "ela articula percepcao, repertorio e argumentacao"
       }
     ]
@@ -353,7 +353,7 @@ export const elementosVisuais = {
       "elementos visuais",
       "linguagem visual",
       "linha forma cor",
-      "textura e composicao",
+      "textura e composição",
       "leitura de imagem"
     ],
     subtopicosBase: [
@@ -364,15 +364,15 @@ export const elementosVisuais = {
       "Textura e padrao",
       "Espaco e profundidade",
       "Volume e tridimensionalidade",
-      "Composicao e equilibrio",
-      "Materiais e tecnicas",
+      "Composição e equilíbrio",
+      "Materiais e técnicas",
       "Leitura de imagem e expressao visual"
     ],
     habilidadesBase: [
       "identificar elementos basicos da linguagem visual",
-      "compreender relacoes entre forma, cor, luz e espaco",
-      "analisar composicao, equilibrio e foco visual",
-      "relacionar materiais e tecnicas a efeitos expressivos",
+      "compreender relações entre forma, cor, luz e espaco",
+      "analisar composição, equilíbrio e foco visual",
+      "relacionar materiais e técnicas a efeitos expressivos",
       "interpretar sentidos na leitura de imagens"
     ],
     auditado: true,

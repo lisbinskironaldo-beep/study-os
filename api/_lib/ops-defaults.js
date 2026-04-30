@@ -22,21 +22,8 @@ const DEFAULT_APP_MODULES = [
 
 const DEFAULT_MANAGED_APPS = [
     {
-        appKey: "northstar_ecosystem",
-        name: "NorthStar",
-        category: "management",
-        status: "connected",
-        maturityStage: "active_build",
-        managementMode: "internal",
-        capabilities: ["portfolio_overview", "app_registry", "ops_control", "alerts", "connector_governance"],
-        scopes: ["ecosystem_control", "ops_panel", "authorized_changes"],
-        enabledModules: ["dev", "analytics", "improvements", "finance", "bugs"],
-        dashboardUrl: "/ops/",
-        notes: "Control plane do ecossistema NorthStar. Hoje fica hospedado tecnicamente dentro do RotaNota, mas ja opera como retaguarda multi-app."
-    },
-    {
         appKey: "rota_nota",
-        name: "RotaNota",
+        name: "Papiro",
         category: "product",
         status: "connected",
         maturityStage: "live",
@@ -45,7 +32,7 @@ const DEFAULT_MANAGED_APPS = [
         scopes: ["education_product", "premium_operations"],
         enabledModules: [...DEFAULT_APP_MODULES],
         dashboardUrl: "/",
-        notes: "Produto educacional principal do ecossistema NorthStar, com checkout, growth, biblioteca premium e operacao centralizada no /ops."
+        notes: "Produto educacional Papiro, com checkout, growth, biblioteca premium e operacao centralizada no /ops."
     },
     {
         appKey: "vercel",
@@ -84,7 +71,7 @@ const DEFAULT_MANAGED_APPS = [
         scopes: ["billing", "entitlements"],
         enabledModules: ["analytics", "finance", "bugs"],
         dashboardUrl: "https://www.mercadopago.com.br/developers/panel",
-        notes: "Checkout ativo. Webhook assinado deve ser acompanhado no NorthStar junto com activations e reconciliacao."
+        notes: "Checkout ativo. Webhook assinado deve ser acompanhado na retaguarda junto com activations e reconciliacao."
     },
     {
         appKey: "gemini",
@@ -110,20 +97,7 @@ const DEFAULT_MANAGED_APPS = [
         scopes: ["source_control", "workflow_control"],
         enabledModules: ["dev", "improvements", "bugs"],
         dashboardUrl: "https://github.com/",
-        notes: "Repositorio e automacoes do ecossistema. Pode disparar workflows, checks e sincronismos operacionais."
-    },
-    {
-        appKey: "openai_chatgpt",
-        name: "OpenAI / ChatGPT",
-        category: "ai",
-        status: "planned",
-        maturityStage: "discovery",
-        managementMode: "hybrid",
-        capabilities: ["chatgpt_app", "mcp_distribution", "authorized_ops"],
-        scopes: ["assistant_control", "developer_mode"],
-        enabledModules: ["dev", "analytics", "improvements", "bugs", "finance"],
-        dashboardUrl: "https://chatgpt.com/",
-        notes: "Canal oficial do ChatGPT para operar o NorthStar via Apps SDK + MCP, com leitura ampla, preparo de mudancas e aprovacao humana."
+        notes: "Repositorio e automacoes do Papiro. Pode disparar workflows, checks e sincronismos operacionais."
     },
     {
         appKey: "google_ads",
@@ -149,9 +123,16 @@ const DEFAULT_MANAGED_APPS = [
         scopes: ["ads_management", "business_management"],
         enabledModules: ["analytics", "promotions_external", "finance", "bugs"],
         dashboardUrl: "https://adsmanager.facebook.com/",
-        notes: "Canal previsto para campanhas externas e insights do funil, sujeito a app review, permissoes e tokens do ecossistema Meta."
+        notes: "Canal previsto para campanhas externas e insights do funil, sujeito a app review, permissoes e tokens da plataforma Meta."
     }
 ];
+
+const OBSOLETE_MANAGED_APP_KEYS = new Set([
+    "northstar_ecosystem",
+    "north_ecosystem",
+    "rotanota_ops",
+    "openai_chatgpt"
+]);
 
 function parseBoolean(value, fallback = false) {
     if (value === undefined || value === null || value === "") {
@@ -188,12 +169,12 @@ function normalizeStringArray(value, fallback = []) {
 
 function normalizeManagedApp(value = {}, fallback = {}) {
     const normalizedAppKey = normalizeString(value.appKey || value.app_key, fallback.appKey || "");
-    const mappedAppKey = normalizedAppKey === "rotanota_ops" || normalizedAppKey === "north_ecosystem"
-        ? "northstar_ecosystem"
+    const mappedAppKey = OBSOLETE_MANAGED_APP_KEYS.has(normalizedAppKey)
+        ? ""
         : normalizedAppKey;
     const normalizedCategory = normalizeString(value.category, fallback.category || "internal");
-    const mappedCategory = mappedAppKey === "northstar_ecosystem" && normalizedCategory === "internal"
-        ? "management"
+    const mappedCategory = mappedAppKey === "rota_nota" && normalizedCategory === "management"
+        ? "product"
         : normalizedCategory;
 
     return {
@@ -227,7 +208,7 @@ function mergeManagedApps(stored = []) {
     (Array.isArray(stored) ? stored : []).forEach((item) => {
         const incoming = normalizeManagedApp(item);
 
-        if (!incoming.appKey) {
+        if (!incoming.appKey || OBSOLETE_MANAGED_APP_KEYS.has(incoming.appKey)) {
             return;
         }
 

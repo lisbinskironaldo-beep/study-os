@@ -173,7 +173,7 @@ export const eletrodinamica = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Corrente elétrica?",
+      "enunciado": "Qual alternativa NÃO está compatível com Corrente elétrica?",
       "opcoes": [
         "A diferença de potencial elétrico entre dois pontos que impulsiona o movimento das cargas.",
         "O movimento ordenado de cargas elétricas em um material condutor.",
@@ -212,7 +212,7 @@ export const eletrodinamica = {
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Corrente elétrica, o foco principal e:",
+      "enunciado": "Ao estudar Corrente elétrica, o foco principal é:",
       "opcoes": [
         "relacionar o fluxo de cargas ao funcionamento de Circuitos elétricos",
         "interpretar a diferença de potencial como causa do deslocamento de cargas",
@@ -412,7 +412,7 @@ export const eletrodinamica = {
         "Como Corrente elétrica aparece no funcionamento basico de lâmpadas, chuveiros e carregadores?",
         "Como Tensão elétrica substitui totalmente o funcionamento basico de lâmpadas, chuveiros e carregadores?",
         "Por que Resistência elétrica torna desnecessário estudar Corrente elétrica?",
-        "De que modo primeira lei de Ohm elimina toda medida fisica envolvida?"
+        "De que modo primeira lei de Ohm elimina toda medida física envolvida?"
       ],
       "correta": "Como Corrente elétrica aparece no funcionamento basico de lâmpadas, chuveiros e carregadores?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Corrente elétrica.",
@@ -449,7 +449,7 @@ export const eletrodinamica = {
       "enunciado": "Um erro comum em Corrente elétrica e pensar que:",
       "opcoes": [
         "Corrente elétrica e o mesmo que energia armazenada na tomada",
-        "tensão e corrente sao exatamente a mesma grandeza fisica",
+        "tensão e corrente são exatamente a mesma grandeza física",
         "quanto maior a resistência, maior sempre sera a corrente no circuito",
         "a primeira lei de Ohm pode ser aplicada a qualquer componente sem restrições"
       ],
@@ -485,7 +485,7 @@ export const eletrodinamica = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"Corrente elétrica significa a quantidade de energia parada dentro do fio\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"Corrente elétrica significa a quantidade de energia parada dentro do fio\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque o movimento ordenado de cargas elétricas em um material condutor.",
         "A afirmação está correta, pois resume integralmente Corrente elétrica.",
@@ -528,11 +528,11 @@ export const eletrodinamica = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o funcionamento basico de lâmpadas, chuveiros e carregadores.",
         "a situação seria explicada automaticamente por Tensão elétrica, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Corrente elétrica não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Corrente elétrica não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o funcionamento basico de lâmpadas, chuveiros e carregadores.",
-      "comentario": "Ignorar Corrente elétrica compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar Corrente elétrica compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "eletrodinamica",
@@ -758,7 +758,7 @@ export const eletrodinamica = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Tensão elétrica?",
+      "enunciado": "Qual alternativa NÃO está compatível com Tensão elétrica?",
       "opcoes": [
         "A oposição oferecida por um material a passagem da corrente elétrica.",
         "A diferença de potencial elétrico entre dois pontos que impulsiona o movimento das cargas.",
@@ -797,7 +797,7 @@ export const eletrodinamica = {
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Tensão elétrica, o foco principal e:",
+      "enunciado": "Ao estudar Tensão elétrica, o foco principal é:",
       "opcoes": [
         "interpretar a diferença de potencial como causa do deslocamento de cargas",
         "analisar como materiais e dispositivos dificultam o fluxo de cargas",
@@ -919,7 +919,7 @@ export const eletrodinamica = {
         "a comparação entre pilhas, baterias e tomadas de diferentes voltagens",
         "a escolha de resistores e componentes que controlam corrente em aparelhos",
         "o cálculo de valores elétricos em resistores ôhmicos simples",
-        "o planejamento de circuitos domesticos e eletronicos com varios resistores"
+        "o planejamento de circuitos domésticos e eletronicos com varios resistores"
       ],
       "correta": "a comparação entre pilhas, baterias e tomadas de diferentes voltagens",
       "comentario": "Tensão elétrica aparece de modo direto na comparação entre pilhas, baterias e tomadas de diferentes voltagens.",
@@ -997,7 +997,7 @@ export const eletrodinamica = {
         "Como Tensão elétrica aparece na comparação entre pilhas, baterias e tomadas de diferentes voltagens?",
         "Como Resistência elétrica substitui totalmente a comparação entre pilhas, baterias e tomadas de diferentes voltagens?",
         "Por que primeira lei de Ohm torna desnecessário estudar Tensão elétrica?",
-        "De que modo segunda lei de Ohm e resistividade elimina toda medida fisica envolvida?"
+        "De que modo segunda lei de Ohm e resistividade elimina toda medida física envolvida?"
       ],
       "correta": "Como Tensão elétrica aparece na comparação entre pilhas, baterias e tomadas de diferentes voltagens?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Tensão elétrica.",
@@ -1033,12 +1033,12 @@ export const eletrodinamica = {
       "tipo": "multipla_escolha",
       "enunciado": "Um erro comum em Tensão elétrica e pensar que:",
       "opcoes": [
-        "tensão e corrente sao exatamente a mesma grandeza fisica",
+        "tensão e corrente são exatamente a mesma grandeza física",
         "quanto maior a resistência, maior sempre sera a corrente no circuito",
         "a primeira lei de Ohm pode ser aplicada a qualquer componente sem restrições",
         "a resistência de um fio depende apenas da voltagem aplicada"
       ],
-      "correta": "tensão e corrente sao exatamente a mesma grandeza fisica",
+      "correta": "tensão e corrente são exatamente a mesma grandeza física",
       "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Tensão elétrica.",
       "tempoEstimado": 50,
       "tags": [
@@ -1070,7 +1070,7 @@ export const eletrodinamica = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"voltagem e apenas outro nome para a propria Corrente elétrica\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"voltagem e apenas outro nome para a propria Corrente elétrica\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque a diferença de potencial elétrico entre dois pontos que impulsiona o movimento das cargas.",
         "A afirmação está correta, pois resume integralmente Tensão elétrica.",
@@ -1113,11 +1113,11 @@ export const eletrodinamica = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a comparação entre pilhas, baterias e tomadas de diferentes voltagens.",
         "a situação seria explicada automaticamente por Resistência elétrica, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Tensão elétrica não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Tensão elétrica não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a comparação entre pilhas, baterias e tomadas de diferentes voltagens.",
-      "comentario": "Ignorar Tensão elétrica compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar Tensão elétrica compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "eletrodinamica",
@@ -1343,7 +1343,7 @@ export const eletrodinamica = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Resistência elétrica?",
+      "enunciado": "Qual alternativa NÃO está compatível com Resistência elétrica?",
       "opcoes": [
         "A relação entre tensão, corrente e resistência em condutores ôhmicos, expressa por proporcionalidade direta entre tensão e corrente.",
         "A oposição oferecida por um material a passagem da corrente elétrica.",
@@ -1382,7 +1382,7 @@ export const eletrodinamica = {
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Resistência elétrica, o foco principal e:",
+      "enunciado": "Ao estudar Resistência elétrica, o foco principal é:",
       "opcoes": [
         "analisar como materiais e dispositivos dificultam o fluxo de cargas",
         "aplicar a relação entre diferença de potencial, corrente e resistência em situações simples",
@@ -1582,7 +1582,7 @@ export const eletrodinamica = {
         "Como Resistência elétrica aparece na escolha de resistores e componentes que controlam corrente em aparelhos?",
         "Como primeira lei de Ohm substitui totalmente a escolha de resistores e componentes que controlam corrente em aparelhos?",
         "Por que segunda lei de Ohm e resistividade torna desnecessário estudar Resistência elétrica?",
-        "De que modo Associação de resistores elimina toda medida fisica envolvida?"
+        "De que modo Associação de resistores elimina toda medida física envolvida?"
       ],
       "correta": "Como Resistência elétrica aparece na escolha de resistores e componentes que controlam corrente em aparelhos?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Resistência elétrica.",
@@ -1655,7 +1655,7 @@ export const eletrodinamica = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"aumentar a resistência de um circuito faz a corrente crescer automaticamente\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"aumentar a resistência de um circuito faz a corrente crescer automaticamente\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque a oposição oferecida por um material a passagem da corrente elétrica.",
         "A afirmação está correta, pois resume integralmente Resistência elétrica.",
@@ -1698,11 +1698,11 @@ export const eletrodinamica = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a escolha de resistores e componentes que controlam corrente em aparelhos.",
         "a situação seria explicada automaticamente por primeira lei de Ohm, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Resistência elétrica não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Resistência elétrica não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a escolha de resistores e componentes que controlam corrente em aparelhos.",
-      "comentario": "Ignorar Resistência elétrica compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar Resistência elétrica compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "eletrodinamica",
@@ -1738,7 +1738,7 @@ export const eletrodinamica = {
         "a escolha de resistores e componentes que controlam corrente em aparelhos",
         "o cálculo de valores elétricos em resistores ôhmicos simples",
         "a escolha de fios e materiais em instalacoes e circuitos",
-        "o planejamento de circuitos domesticos e eletronicos com varios resistores"
+        "o planejamento de circuitos domésticos e eletronicos com varios resistores"
       ],
       "correta": "a escolha de resistores e componentes que controlam corrente em aparelhos",
       "comentario": "A aplicação escolhida e a que melhor representa Resistência elétrica.",
@@ -1928,7 +1928,7 @@ export const eletrodinamica = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com primeira lei de Ohm?",
+      "enunciado": "Qual alternativa NÃO está compatível com primeira lei de Ohm?",
       "opcoes": [
         "A relação que liga a resistência as dimensóes do condutor e a resistividade do material.",
         "A relação entre tensão, corrente e resistência em condutores ôhmicos, expressa por proporcionalidade direta entre tensão e corrente.",
@@ -1967,7 +1967,7 @@ export const eletrodinamica = {
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar primeira lei de Ohm, o foco principal e:",
+      "enunciado": "Ao estudar primeira lei de Ohm, o foco principal é:",
       "opcoes": [
         "aplicar a relação entre diferença de potencial, corrente e resistência em situações simples",
         "relacionar resistência, comprimento, area e material do condutor",
@@ -2088,8 +2088,8 @@ export const eletrodinamica = {
       "opcoes": [
         "o cálculo de valores elétricos em resistores ôhmicos simples",
         "a escolha de fios e materiais em instalacoes e circuitos",
-        "o planejamento de circuitos domesticos e eletronicos com varios resistores",
-        "a interpretacao de contas de energia e habitos de consumo domestico"
+        "o planejamento de circuitos domésticos e eletronicos com varios resistores",
+        "a interpretação de contas de energia e hábitos de consumo doméstico"
       ],
       "correta": "o cálculo de valores elétricos em resistores ôhmicos simples",
       "comentario": "Primeira lei de Ohm aparece de modo direto no cálculo de valores elétricos em resistores ôhmicos simples.",
@@ -2167,7 +2167,7 @@ export const eletrodinamica = {
         "Como primeira lei de Ohm aparece no cálculo de valores elétricos em resistores ôhmicos simples?",
         "Como segunda lei de Ohm e resistividade substitui totalmente o cálculo de valores elétricos em resistores ôhmicos simples?",
         "Por que Associação de resistores torna desnecessário estudar Primeira lei de Ohm?",
-        "De que modo Potência elétrica elimina toda medida fisica envolvida?"
+        "De que modo Potência elétrica elimina toda medida física envolvida?"
       ],
       "correta": "Como primeira lei de Ohm aparece no cálculo de valores elétricos em resistores ôhmicos simples?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de primeira lei de Ohm.",
@@ -2240,7 +2240,7 @@ export const eletrodinamica = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"qualquer dispositivo elétrico obedece sempre a primeira lei de Ohm exatamente da mesma forma\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"qualquer dispositivo elétrico obedece sempre a primeira lei de Ohm exatamente da mesma forma\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque a relação entre tensão, corrente e resistência em condutores ôhmicos, expressa por proporcionalidade direta entre tensão e corrente.",
         "A afirmação está correta, pois resume integralmente primeira lei de Ohm.",
@@ -2283,11 +2283,11 @@ export const eletrodinamica = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o cálculo de valores elétricos em resistores ôhmicos simples.",
         "a situação seria explicada automaticamente por segunda lei de Ohm e resistividade, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Primeira lei de Ohm não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Primeira lei de Ohm não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o cálculo de valores elétricos em resistores ôhmicos simples.",
-      "comentario": "Ignorar primeira lei de Ohm compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar primeira lei de Ohm compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "eletrodinamica",
@@ -2322,7 +2322,7 @@ export const eletrodinamica = {
       "opcoes": [
         "o cálculo de valores elétricos em resistores ôhmicos simples",
         "a escolha de fios e materiais em instalacoes e circuitos",
-        "o planejamento de circuitos domesticos e eletronicos com varios resistores",
+        "o planejamento de circuitos domésticos e eletronicos com varios resistores",
         "a leitura de etiquetas de aparelhos e a comparação de desempenho elétrico"
       ],
       "correta": "o cálculo de valores elétricos em resistores ôhmicos simples",
@@ -2513,7 +2513,7 @@ export const eletrodinamica = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com segunda lei de Ohm e resistividade?",
+      "enunciado": "Qual alternativa NÃO está compatível com segunda lei de Ohm e resistividade?",
       "opcoes": [
         "A combinacao de resistores em série, em paralelo ou de forma mista para obter resistência equivalente.",
         "A relação que liga a resistência as dimensóes do condutor e a resistividade do material.",
@@ -2552,7 +2552,7 @@ export const eletrodinamica = {
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar segunda lei de Ohm e resistividade, o foco principal e:",
+      "enunciado": "Ao estudar segunda lei de Ohm e resistividade, o foco principal é:",
       "opcoes": [
         "relacionar resistência, comprimento, area e material do condutor",
         "determinar a resistência equivalente e o comportamento da corrente e da tensão em associacoes",
@@ -2672,7 +2672,7 @@ export const eletrodinamica = {
       "enunciado": "Qual situação prática depende mais diretamente de Segunda lei de Ohm e resistividade?",
       "opcoes": [
         "a escolha de fios e materiais em instalacoes e circuitos",
-        "o planejamento de circuitos domesticos e eletronicos com varios resistores",
+        "o planejamento de circuitos domésticos e eletronicos com varios resistores",
         "a leitura de etiquetas de aparelhos e a comparação de desempenho elétrico",
         "a montagem e leitura de circuitos simples em experiências escolares"
       ],
@@ -2752,7 +2752,7 @@ export const eletrodinamica = {
         "Como segunda lei de Ohm e resistividade aparece na escolha de fios e materiais em instalacoes e circuitos?",
         "Como Associação de resistores substitui totalmente a escolha de fios e materiais em instalacoes e circuitos?",
         "Por que Potência elétrica torna desnecessário estudar Segunda lei de Ohm e resistividade?",
-        "De que modo Consumo de energia elétrica elimina toda medida fisica envolvida?"
+        "De que modo Consumo de energia elétrica elimina toda medida física envolvida?"
       ],
       "correta": "Como segunda lei de Ohm e resistividade aparece na escolha de fios e materiais em instalacoes e circuitos?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de segunda lei de Ohm e resistividade.",
@@ -2825,7 +2825,7 @@ export const eletrodinamica = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"se a tensão mudar, a resistência de um fio muda mesmo sem alterar material ou dimensóes\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"se a tensão mudar, a resistência de um fio muda mesmo sem alterar material ou dimensóes\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque a relação que liga a resistência as dimensóes do condutor e a resistividade do material.",
         "A afirmação está correta, pois resume integralmente segunda lei de Ohm e resistividade.",
@@ -2868,11 +2868,11 @@ export const eletrodinamica = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a escolha de fios e materiais em instalacoes e circuitos.",
         "a situação seria explicada automaticamente por Associação de resistores, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Segunda lei de Ohm e resistividade não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Segunda lei de Ohm e resistividade não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a escolha de fios e materiais em instalacoes e circuitos.",
-      "comentario": "Ignorar segunda lei de Ohm e resistividade compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar segunda lei de Ohm e resistividade compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "eletrodinamica",
@@ -2906,9 +2906,9 @@ export const eletrodinamica = {
       "enunciado": "Em uma aplicação cotidiana ou escolar, Segunda lei de Ohm e resistividade ajuda principalmente a compreender:",
       "opcoes": [
         "a escolha de fios e materiais em instalacoes e circuitos",
-        "o planejamento de circuitos domesticos e eletronicos com varios resistores",
+        "o planejamento de circuitos domésticos e eletronicos com varios resistores",
         "a leitura de etiquetas de aparelhos e a comparação de desempenho elétrico",
-        "a interpretacao de contas de energia e habitos de consumo domestico"
+        "a interpretação de contas de energia e hábitos de consumo doméstico"
       ],
       "correta": "a escolha de fios e materiais em instalacoes e circuitos",
       "comentario": "A aplicação escolhida e a que melhor representa segunda lei de Ohm e resistividade.",
@@ -3098,12 +3098,12 @@ export const eletrodinamica = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Associação de resistores?",
+      "enunciado": "Qual alternativa NÃO está compatível com Associação de resistores?",
       "opcoes": [
         "A grandeza que mede a rapidez com que a energia elétrica e transformada ou consumida.",
         "A combinacao de resistores em série, em paralelo ou de forma mista para obter resistência equivalente.",
         "Determinar a resistência equivalente e o comportamento da corrente e da tensão em associacoes.",
-        "Ajuda a compreender o planejamento de circuitos domesticos e eletronicos com varios resistores."
+        "Ajuda a compreender o planejamento de circuitos domésticos e eletronicos com varios resistores."
       ],
       "correta": "A grandeza que mede a rapidez com que a energia elétrica e transformada ou consumida.",
       "comentario": "A opção incompativel descreve outro subtópico, não Associação de resistores.",
@@ -3137,7 +3137,7 @@ export const eletrodinamica = {
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Associação de resistores, o foco principal e:",
+      "enunciado": "Ao estudar Associação de resistores, o foco principal é:",
       "opcoes": [
         "determinar a resistência equivalente e o comportamento da corrente e da tensão em associacoes",
         "calcular a taxa de transformacao de energia em dispositivos elétricos",
@@ -3256,13 +3256,13 @@ export const eletrodinamica = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual situação prática depende mais diretamente de Associação de resistores?",
       "opcoes": [
-        "o planejamento de circuitos domesticos e eletronicos com varios resistores",
+        "o planejamento de circuitos domésticos e eletronicos com varios resistores",
         "a leitura de etiquetas de aparelhos e a comparação de desempenho elétrico",
-        "a interpretacao de contas de energia e habitos de consumo domestico",
+        "a interpretação de contas de energia e hábitos de consumo doméstico",
         "a identificacao de baterias, motores, amperimetros e voltimetros em montagens elétricas"
       ],
-      "correta": "o planejamento de circuitos domesticos e eletronicos com varios resistores",
-      "comentario": "Associação de resistores aparece de modo direto no planejamento de circuitos domesticos e eletronicos com varios resistores.",
+      "correta": "o planejamento de circuitos domésticos e eletronicos com varios resistores",
+      "comentario": "Associação de resistores aparece de modo direto no planejamento de circuitos domésticos e eletronicos com varios resistores.",
       "tempoEstimado": 40,
       "tags": [
         "eletrodinamica",
@@ -3334,12 +3334,12 @@ export const eletrodinamica = {
       "tipo": "multipla_escolha",
       "enunciado": "Se um grupo fosse pesquisar Associação de resistores, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Associação de resistores aparece no planejamento de circuitos domesticos e eletronicos com varios resistores?",
-        "Como Potência elétrica substitui totalmente o planejamento de circuitos domesticos e eletronicos com varios resistores?",
+        "Como Associação de resistores aparece no planejamento de circuitos domésticos e eletronicos com varios resistores?",
+        "Como Potência elétrica substitui totalmente o planejamento de circuitos domésticos e eletronicos com varios resistores?",
         "Por que Consumo de energia elétrica torna desnecessário estudar Associação de resistores?",
-        "De que modo Circuitos elétricos elimina toda medida fisica envolvida?"
+        "De que modo Circuitos elétricos elimina toda medida física envolvida?"
       ],
-      "correta": "Como Associação de resistores aparece no planejamento de circuitos domesticos e eletronicos com varios resistores?",
+      "correta": "Como Associação de resistores aparece no planejamento de circuitos domésticos e eletronicos com varios resistores?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Associação de resistores.",
       "tempoEstimado": 45,
       "tags": [
@@ -3410,7 +3410,7 @@ export const eletrodinamica = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"resistores em paralelo e em série sempre tem a resistência equivalente obtida pela simples soma dos valores\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"resistores em paralelo e em série sempre tem a resistência equivalente obtida pela simples soma dos valores\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque a combinacao de resistores em série, em paralelo ou de forma mista para obter resistência equivalente.",
         "A afirmação está correta, pois resume integralmente Associação de resistores.",
@@ -3449,15 +3449,15 @@ export const eletrodinamica = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Associação de resistores fosse ignorado(a) ao analisar o planejamento de circuitos domesticos e eletronicos com varios resistores, o resultado mais provável seria:",
+      "enunciado": "Se Associação de resistores fosse ignorado(a) ao analisar o planejamento de circuitos domésticos e eletronicos com varios resistores, o resultado mais provável seria:",
       "opcoes": [
-        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o planejamento de circuitos domesticos e eletronicos com varios resistores.",
+        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o planejamento de circuitos domésticos e eletronicos com varios resistores.",
         "a situação seria explicada automaticamente por Potência elétrica, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Associação de resistores não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Associação de resistores não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
-      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o planejamento de circuitos domesticos e eletronicos com varios resistores.",
-      "comentario": "Ignorar Associação de resistores compromete a leitura fisica da situação apresentada.",
+      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o planejamento de circuitos domésticos e eletronicos com varios resistores.",
+      "comentario": "Ignorar Associação de resistores compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "eletrodinamica",
@@ -3490,12 +3490,12 @@ export const eletrodinamica = {
       "tipo": "multipla_escolha",
       "enunciado": "Em uma aplicação cotidiana ou escolar, Associação de resistores ajuda principalmente a compreender:",
       "opcoes": [
-        "o planejamento de circuitos domesticos e eletronicos com varios resistores",
+        "o planejamento de circuitos domésticos e eletronicos com varios resistores",
         "a leitura de etiquetas de aparelhos e a comparação de desempenho elétrico",
-        "a interpretacao de contas de energia e habitos de consumo domestico",
+        "a interpretação de contas de energia e hábitos de consumo doméstico",
         "a montagem e leitura de circuitos simples em experiências escolares"
       ],
-      "correta": "o planejamento de circuitos domesticos e eletronicos com varios resistores",
+      "correta": "o planejamento de circuitos domésticos e eletronicos com varios resistores",
       "comentario": "A aplicação escolhida e a que melhor representa Associação de resistores.",
       "tempoEstimado": 60,
       "tags": [
@@ -3683,7 +3683,7 @@ export const eletrodinamica = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Potência elétrica?",
+      "enunciado": "Qual alternativa NÃO está compatível com Potência elétrica?",
       "opcoes": [
         "A quantidade de energia elétrica utilizada ao longo do tempo de funcionamento de um aparelho ou sistema.",
         "A grandeza que mede a rapidez com que a energia elétrica e transformada ou consumida.",
@@ -3722,12 +3722,12 @@ export const eletrodinamica = {
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Potência elétrica, o foco principal e:",
+      "enunciado": "Ao estudar Potência elétrica, o foco principal é:",
       "opcoes": [
         "calcular a taxa de transformacao de energia em dispositivos elétricos",
         "relacionar potência, tempo de uso e gasto de energia elétrica",
         "interpretar caminhos de corrente, chaves, fontes e receptores em circuitos simples",
-        "distinguir funcoes de fontes, aparelhos consumidores e instrumentos de medida"
+        "distinguir funções de fontes, aparelhos consumidores e instrumentos de medida"
       ],
       "correta": "calcular a taxa de transformacao de energia em dispositivos elétricos",
       "comentario": "Potência elétrica concentra-se em calcular a taxa de transformacao de energia em dispositivos elétricos.",
@@ -3842,7 +3842,7 @@ export const eletrodinamica = {
       "enunciado": "Qual situação prática depende mais diretamente de Potência elétrica?",
       "opcoes": [
         "a leitura de etiquetas de aparelhos e a comparação de desempenho elétrico",
-        "a interpretacao de contas de energia e habitos de consumo domestico",
+        "a interpretação de contas de energia e hábitos de consumo doméstico",
         "a montagem e leitura de circuitos simples em experiências escolares",
         "o funcionamento basico de lâmpadas, chuveiros e carregadores"
       ],
@@ -3922,7 +3922,7 @@ export const eletrodinamica = {
         "Como Potência elétrica aparece na leitura de etiquetas de aparelhos e a comparação de desempenho elétrico?",
         "Como Consumo de energia elétrica substitui totalmente a leitura de etiquetas de aparelhos e a comparação de desempenho elétrico?",
         "Por que Circuitos elétricos torna desnecessário estudar Potência elétrica?",
-        "De que modo Geradores, receptores e instrumentos elimina toda medida fisica envolvida?"
+        "De que modo Geradores, receptores e instrumentos elimina toda medida física envolvida?"
       ],
       "correta": "Como Potência elétrica aparece na leitura de etiquetas de aparelhos e a comparação de desempenho elétrico?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Potência elétrica.",
@@ -3995,7 +3995,7 @@ export const eletrodinamica = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"a potência indicada em um aparelho corresponde ao total de energia que ele gastara durante toda a vida útil\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"a potência indicada em um aparelho corresponde ao total de energia que ele gastara durante toda a vida útil\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque a grandeza que mede a rapidez com que a energia elétrica e transformada ou consumida.",
         "A afirmação está correta, pois resume integralmente Potência elétrica.",
@@ -4038,11 +4038,11 @@ export const eletrodinamica = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a leitura de etiquetas de aparelhos e a comparação de desempenho elétrico.",
         "a situação seria explicada automaticamente por Consumo de energia elétrica, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Potência elétrica não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Potência elétrica não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a leitura de etiquetas de aparelhos e a comparação de desempenho elétrico.",
-      "comentario": "Ignorar Potência elétrica compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar Potência elétrica compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "eletrodinamica",
@@ -4076,7 +4076,7 @@ export const eletrodinamica = {
       "enunciado": "Em uma aplicação cotidiana ou escolar, Potência elétrica ajuda principalmente a compreender:",
       "opcoes": [
         "a leitura de etiquetas de aparelhos e a comparação de desempenho elétrico",
-        "a interpretacao de contas de energia e habitos de consumo domestico",
+        "a interpretação de contas de energia e hábitos de consumo doméstico",
         "a montagem e leitura de circuitos simples em experiências escolares",
         "a identificacao de baterias, motores, amperimetros e voltimetros em montagens elétricas"
       ],
@@ -4268,12 +4268,12 @@ export const eletrodinamica = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Consumo de energia elétrica?",
+      "enunciado": "Qual alternativa NÃO está compatível com Consumo de energia elétrica?",
       "opcoes": [
         "Os arranjos de componentes interligados que permitem o percurso da Corrente elétrica em um sistema fechado.",
         "A quantidade de energia elétrica utilizada ao longo do tempo de funcionamento de um aparelho ou sistema.",
         "Relacionar potência, tempo de uso e gasto de energia elétrica.",
-        "Ajuda a compreender a interpretacao de contas de energia e habitos de consumo domestico."
+        "Ajuda a compreender a interpretação de contas de energia e hábitos de consumo doméstico."
       ],
       "correta": "Os arranjos de componentes interligados que permitem o percurso da Corrente elétrica em um sistema fechado.",
       "comentario": "A opção incompativel descreve outro subtópico, não Consumo de energia elétrica.",
@@ -4307,11 +4307,11 @@ export const eletrodinamica = {
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Consumo de energia elétrica, o foco principal e:",
+      "enunciado": "Ao estudar Consumo de energia elétrica, o foco principal é:",
       "opcoes": [
         "relacionar potência, tempo de uso e gasto de energia elétrica",
         "interpretar caminhos de corrente, chaves, fontes e receptores em circuitos simples",
-        "distinguir funcoes de fontes, aparelhos consumidores e instrumentos de medida",
+        "distinguir funções de fontes, aparelhos consumidores e instrumentos de medida",
         "relacionar o fluxo de cargas ao funcionamento de Circuitos elétricos"
       ],
       "correta": "relacionar potência, tempo de uso e gasto de energia elétrica",
@@ -4426,13 +4426,13 @@ export const eletrodinamica = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual situação prática depende mais diretamente de Consumo de energia elétrica?",
       "opcoes": [
-        "a interpretacao de contas de energia e habitos de consumo domestico",
+        "a interpretação de contas de energia e hábitos de consumo doméstico",
         "a montagem e leitura de circuitos simples em experiências escolares",
         "a identificacao de baterias, motores, amperimetros e voltimetros em montagens elétricas",
         "a comparação entre pilhas, baterias e tomadas de diferentes voltagens"
       ],
-      "correta": "a interpretacao de contas de energia e habitos de consumo domestico",
-      "comentario": "Consumo de energia elétrica aparece de modo direto na interpretacao de contas de energia e habitos de consumo domestico.",
+      "correta": "a interpretação de contas de energia e hábitos de consumo doméstico",
+      "comentario": "Consumo de energia elétrica aparece de modo direto na interpretação de contas de energia e hábitos de consumo doméstico.",
       "tempoEstimado": 40,
       "tags": [
         "eletrodinamica",
@@ -4504,12 +4504,12 @@ export const eletrodinamica = {
       "tipo": "multipla_escolha",
       "enunciado": "Se um grupo fosse pesquisar Consumo de energia elétrica, qual pergunta orientadora seria a mais adequada?",
       "opcoes": [
-        "Como Consumo de energia elétrica aparece na interpretacao de contas de energia e habitos de consumo domestico?",
-        "Como Circuitos elétricos substitui totalmente a interpretacao de contas de energia e habitos de consumo domestico?",
+        "Como Consumo de energia elétrica aparece na interpretação de contas de energia e hábitos de consumo doméstico?",
+        "Como Circuitos elétricos substitui totalmente a interpretação de contas de energia e hábitos de consumo doméstico?",
         "Por que Geradores, receptores e instrumentos torna desnecessário estudar Consumo de energia elétrica?",
-        "De que modo Corrente elétrica elimina toda medida fisica envolvida?"
+        "De que modo Corrente elétrica elimina toda medida física envolvida?"
       ],
-      "correta": "Como Consumo de energia elétrica aparece na interpretacao de contas de energia e habitos de consumo domestico?",
+      "correta": "Como Consumo de energia elétrica aparece na interpretação de contas de energia e hábitos de consumo doméstico?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Consumo de energia elétrica.",
       "tempoEstimado": 45,
       "tags": [
@@ -4580,7 +4580,7 @@ export const eletrodinamica = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"qualquer aparelho de maior potência necessariamente reduz o consumo total de energia da casa\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"qualquer aparelho de maior potência necessariamente reduz o consumo total de energia da casa\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque a quantidade de energia elétrica utilizada ao longo do tempo de funcionamento de um aparelho ou sistema.",
         "A afirmação está correta, pois resume integralmente Consumo de energia elétrica.",
@@ -4619,15 +4619,15 @@ export const eletrodinamica = {
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se Consumo de energia elétrica fosse ignorado(a) ao analisar a interpretacao de contas de energia e habitos de consumo domestico, o resultado mais provável seria:",
+      "enunciado": "Se Consumo de energia elétrica fosse ignorado(a) ao analisar a interpretação de contas de energia e hábitos de consumo doméstico, o resultado mais provável seria:",
       "opcoes": [
-        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a interpretacao de contas de energia e habitos de consumo domestico.",
+        "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a interpretação de contas de energia e hábitos de consumo doméstico.",
         "a situação seria explicada automaticamente por Circuitos elétricos, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Consumo de energia elétrica não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Consumo de energia elétrica não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
-      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a interpretacao de contas de energia e habitos de consumo domestico.",
-      "comentario": "Ignorar Consumo de energia elétrica compromete a leitura fisica da situação apresentada.",
+      "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a interpretação de contas de energia e hábitos de consumo doméstico.",
+      "comentario": "Ignorar Consumo de energia elétrica compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "eletrodinamica",
@@ -4660,12 +4660,12 @@ export const eletrodinamica = {
       "tipo": "multipla_escolha",
       "enunciado": "Em uma aplicação cotidiana ou escolar, Consumo de energia elétrica ajuda principalmente a compreender:",
       "opcoes": [
-        "a interpretacao de contas de energia e habitos de consumo domestico",
+        "a interpretação de contas de energia e hábitos de consumo doméstico",
         "a montagem e leitura de circuitos simples em experiências escolares",
         "a identificacao de baterias, motores, amperimetros e voltimetros em montagens elétricas",
         "o funcionamento basico de lâmpadas, chuveiros e carregadores"
       ],
-      "correta": "a interpretacao de contas de energia e habitos de consumo domestico",
+      "correta": "a interpretação de contas de energia e hábitos de consumo doméstico",
       "comentario": "A aplicação escolhida e a que melhor representa Consumo de energia elétrica.",
       "tempoEstimado": 60,
       "tags": [
@@ -4853,7 +4853,7 @@ export const eletrodinamica = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Circuitos elétricos?",
+      "enunciado": "Qual alternativa NÃO está compatível com Circuitos elétricos?",
       "opcoes": [
         "Os dispositivos que fornecem energia elétrica, a transformam em outras formas ou medem grandezas do circuito.",
         "Os arranjos de componentes interligados que permitem o percurso da Corrente elétrica em um sistema fechado.",
@@ -4892,10 +4892,10 @@ export const eletrodinamica = {
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Circuitos elétricos, o foco principal e:",
+      "enunciado": "Ao estudar Circuitos elétricos, o foco principal é:",
       "opcoes": [
         "interpretar caminhos de corrente, chaves, fontes e receptores em circuitos simples",
-        "distinguir funcoes de fontes, aparelhos consumidores e instrumentos de medida",
+        "distinguir funções de fontes, aparelhos consumidores e instrumentos de medida",
         "relacionar o fluxo de cargas ao funcionamento de Circuitos elétricos",
         "interpretar a diferença de potencial como causa do deslocamento de cargas"
       ],
@@ -5092,7 +5092,7 @@ export const eletrodinamica = {
         "Como Circuitos elétricos aparece na montagem e leitura de circuitos simples em experiências escolares?",
         "Como Geradores, receptores e instrumentos substitui totalmente a montagem e leitura de circuitos simples em experiências escolares?",
         "Por que Corrente elétrica torna desnecessário estudar Circuitos elétricos?",
-        "De que modo Tensão elétrica elimina toda medida fisica envolvida?"
+        "De que modo Tensão elétrica elimina toda medida física envolvida?"
       ],
       "correta": "Como Circuitos elétricos aparece na montagem e leitura de circuitos simples em experiências escolares?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Circuitos elétricos.",
@@ -5131,7 +5131,7 @@ export const eletrodinamica = {
         "um circuito continua funcionando normalmente mesmo estando aberto em algum ponto",
         "amperímetro e voltímetro fornecem energia ao circuito como se fossem geradores",
         "Corrente elétrica e o mesmo que energia armazenada na tomada",
-        "tensão e corrente sao exatamente a mesma grandeza fisica"
+        "tensão e corrente são exatamente a mesma grandeza física"
       ],
       "correta": "um circuito continua funcionando normalmente mesmo estando aberto em algum ponto",
       "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Circuitos elétricos.",
@@ -5165,7 +5165,7 @@ export const eletrodinamica = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"se houver uma abertura no circuito, a corrente contorna o espaço vazio e continua passando\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"se houver uma abertura no circuito, a corrente contorna o espaço vazio e continua passando\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque os arranjos de componentes interligados que permitem o percurso da Corrente elétrica em um sistema fechado.",
         "A afirmação está correta, pois resume integralmente Circuitos elétricos.",
@@ -5208,11 +5208,11 @@ export const eletrodinamica = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a montagem e leitura de circuitos simples em experiências escolares.",
         "a situação seria explicada automaticamente por Geradores, receptores e instrumentos, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Circuitos elétricos não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Circuitos elétricos não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a montagem e leitura de circuitos simples em experiências escolares.",
-      "comentario": "Ignorar Circuitos elétricos compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar Circuitos elétricos compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "eletrodinamica",
@@ -5438,11 +5438,11 @@ export const eletrodinamica = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Geradores, receptores e instrumentos?",
+      "enunciado": "Qual alternativa NÃO está compatível com Geradores, receptores e instrumentos?",
       "opcoes": [
         "O movimento ordenado de cargas elétricas em um material condutor.",
         "Os dispositivos que fornecem energia elétrica, a transformam em outras formas ou medem grandezas do circuito.",
-        "Distinguir funcoes de fontes, aparelhos consumidores e instrumentos de medida.",
+        "Distinguir funções de fontes, aparelhos consumidores e instrumentos de medida.",
         "Ajuda a compreender a identificacao de baterias, motores, amperimetros e voltimetros em montagens elétricas."
       ],
       "correta": "O movimento ordenado de cargas elétricas em um material condutor.",
@@ -5477,15 +5477,15 @@ export const eletrodinamica = {
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Geradores, receptores e instrumentos, o foco principal e:",
+      "enunciado": "Ao estudar Geradores, receptores e instrumentos, o foco principal é:",
       "opcoes": [
-        "distinguir funcoes de fontes, aparelhos consumidores e instrumentos de medida",
+        "distinguir funções de fontes, aparelhos consumidores e instrumentos de medida",
         "relacionar o fluxo de cargas ao funcionamento de Circuitos elétricos",
         "interpretar a diferença de potencial como causa do deslocamento de cargas",
         "analisar como materiais e dispositivos dificultam o fluxo de cargas"
       ],
-      "correta": "distinguir funcoes de fontes, aparelhos consumidores e instrumentos de medida",
-      "comentario": "Geradores, receptores e instrumentos concentra-se em distinguir funcoes de fontes, aparelhos consumidores e instrumentos de medida.",
+      "correta": "distinguir funções de fontes, aparelhos consumidores e instrumentos de medida",
+      "comentario": "Geradores, receptores e instrumentos concentra-se em distinguir funções de fontes, aparelhos consumidores e instrumentos de medida.",
       "tempoEstimado": 35,
       "tags": [
         "eletrodinamica",
@@ -5677,7 +5677,7 @@ export const eletrodinamica = {
         "Como Geradores, receptores e instrumentos aparece na identificacao de baterias, motores, amperimetros e voltimetros em montagens elétricas?",
         "Como Corrente elétrica substitui totalmente a identificacao de baterias, motores, amperimetros e voltimetros em montagens elétricas?",
         "Por que Tensão elétrica torna desnecessário estudar Geradores, receptores e instrumentos?",
-        "De que modo Resistência elétrica elimina toda medida fisica envolvida?"
+        "De que modo Resistência elétrica elimina toda medida física envolvida?"
       ],
       "correta": "Como Geradores, receptores e instrumentos aparece na identificacao de baterias, motores, amperimetros e voltimetros em montagens elétricas?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Geradores, receptores e instrumentos.",
@@ -5715,7 +5715,7 @@ export const eletrodinamica = {
       "opcoes": [
         "amperímetro e voltímetro fornecem energia ao circuito como se fossem geradores",
         "Corrente elétrica e o mesmo que energia armazenada na tomada",
-        "tensão e corrente sao exatamente a mesma grandeza fisica",
+        "tensão e corrente são exatamente a mesma grandeza física",
         "quanto maior a resistência, maior sempre sera a corrente no circuito"
       ],
       "correta": "amperímetro e voltímetro fornecem energia ao circuito como se fossem geradores",
@@ -5750,7 +5750,7 @@ export const eletrodinamica = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"instrumentos de medida funcionam como fontes de energia para o restante do circuito\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"instrumentos de medida funcionam como fontes de energia para o restante do circuito\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque os dispositivos que fornecem energia elétrica, a transformam em outras formas ou medem grandezas do circuito.",
         "A afirmação está correta, pois resume integralmente Geradores, receptores e instrumentos.",
@@ -5793,11 +5793,11 @@ export const eletrodinamica = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a identificacao de baterias, motores, amperimetros e voltimetros em montagens elétricas.",
         "a situação seria explicada automaticamente por Corrente elétrica, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Geradores, receptores e instrumentos não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Geradores, receptores e instrumentos não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a identificacao de baterias, motores, amperimetros e voltimetros em montagens elétricas.",
-      "comentario": "Ignorar Geradores, receptores e instrumentos compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar Geradores, receptores e instrumentos compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "eletrodinamica",

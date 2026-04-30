@@ -1,0 +1,110 @@
+{
+  "summary": {},
+  "results": [
+    {
+      "file": "questions/banks/1-serie/geografia/cartografia/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/geografia/clima-e-relevo/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/geografia/estrutura-da-terra/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/geografia/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/geografia/populacao/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/geografia/economia-mundial/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/geografia/globalizacao/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/geografia/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/geografia/industrializacao/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/geografia/urbanizacao/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/geografia/brasil-atual/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/geografia/energia/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/geografia/geopolitica/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/geografia/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/geografia/meio-ambiente/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    }
+  ]
+}

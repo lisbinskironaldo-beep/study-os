@@ -1900,9 +1900,33 @@ window.QuestionsService = {
                 if (
                     normalizedValue.includes(term)
                 ) {
+                    const escapedTerm =
+                        term.replace(
+                            /[.*+?^${}()|[\]\\]/g,
+                            "\\$&"
+                        );
+                    const exactBonus =
+                        normalizedValue === term
+                            ? 240
+                            : normalizedValue.startsWith(
+                                `${term} `
+                            ) ||
+                              normalizedValue.startsWith(
+                                  `${term}:`
+                              )
+                              ? 180
+                              : new RegExp(
+                                  `(^|\\s)${escapedTerm}(\\s|$)`
+                              ).test(
+                                  normalizedValue
+                              )
+                                ? 140
+                                : 0;
                     bestScore = Math.max(
                         bestScore,
-                        field.weight + 80
+                        field.weight +
+                            80 +
+                            exactBonus
                     );
                     return;
                 }
@@ -1928,7 +1952,8 @@ window.QuestionsService = {
 
     orderDirectSearchQuestions(
         questions = [],
-        strategy = "gradual"
+        strategy = "gradual",
+        options = {}
     ) {
         const pool = Array.isArray(questions)
             ? questions.filter(Boolean)
@@ -1940,6 +1965,69 @@ window.QuestionsService = {
 
         if (normalizedStrategy === "random") {
             return this.shuffle(pool);
+        }
+
+        const hasSearchScores = pool.some(
+            (question) =>
+                Number(question?.directSearchScore) >
+                0
+        );
+        const directSearchHistory =
+            hasSearchScores
+                ? this.getDirectSearchQuestionHistory(
+                    options.terms || []
+                )
+                : {
+                    seen: new Map(),
+                    firstQuestionIds: new Set()
+                };
+        const searchSeed = this.getDirectSearchSeed(
+            options.terms || []
+        );
+
+        if (hasSearchScores) {
+            return [...pool].sort((left, right) => {
+                const scoreDiff =
+                    this.getDirectSearchEffectiveScore(
+                        right,
+                        directSearchHistory,
+                        searchSeed
+                    ) -
+                    this.getDirectSearchEffectiveScore(
+                        left,
+                        directSearchHistory,
+                        searchSeed
+                    );
+
+                if (scoreDiff !== 0) {
+                    return scoreDiff;
+                }
+
+                const difficultyDiff =
+                    (Number(left?.difficulty) || 1) -
+                    (Number(right?.difficulty) || 1);
+
+                if (difficultyDiff !== 0) {
+                    return difficultyDiff;
+                }
+
+                const timeDiff =
+                    (Number(left?.expectedTime) ||
+                        0) -
+                    (Number(right?.expectedTime) ||
+                        0);
+
+                if (timeDiff !== 0) {
+                    return timeDiff;
+                }
+
+                return String(
+                    left?.topicLabel || ""
+                ).localeCompare(
+                    String(right?.topicLabel || ""),
+                    "pt-BR"
+                );
+            });
         }
 
         const grouped = new Map();
@@ -1995,6 +2083,209 @@ window.QuestionsService = {
                     );
                     })
             );
+    },
+
+    getDirectSearchSeed(rawTerms = []) {
+        const terms = (
+            Array.isArray(rawTerms)
+                ? rawTerms
+                : []
+        )
+            .map((term) =>
+                this.normalizeText(term)
+            )
+            .filter(Boolean)
+            .sort()
+            .join("|");
+        const today = new Date()
+            .toISOString()
+            .slice(0, 10);
+
+        return `${terms}:${today}`;
+    },
+
+    getStableNoise(value = "", seed = "") {
+        const input = `${seed}:${value}`;
+        let hash = 2166136261;
+
+        for (
+            let index = 0;
+            index < input.length;
+            index += 1
+        ) {
+            hash ^= input.charCodeAt(index);
+            hash = Math.imul(hash, 16777619);
+        }
+
+        return (
+            (hash >>> 0) % 1000
+        ) / 1000;
+    },
+
+    getDirectSearchQuestionHistory(rawTerms = []) {
+        const normalizedTerms = (
+            Array.isArray(rawTerms)
+                ? rawTerms
+                : []
+        )
+            .map((term) =>
+                this.normalizeText(term)
+            )
+            .filter(Boolean)
+            .sort();
+        const requestedKey =
+            normalizedTerms.join("|");
+        const seen = new Map();
+        const firstQuestionIds = new Set();
+
+        if (
+            !requestedKey ||
+            typeof QuestionsStore ===
+                "undefined" ||
+            typeof QuestionsStore.getRuns !==
+                "function"
+        ) {
+            return { seen, firstQuestionIds };
+        }
+
+        QuestionsStore.getRuns({
+            mode: "direct_search"
+        }).forEach((run) => {
+            const meta =
+                run?.routeSnapshot?.meta &&
+                typeof run
+                    .routeSnapshot.meta ===
+                    "object"
+                    ? run.routeSnapshot.meta
+                    : {};
+            const runKey = (
+                Array.isArray(
+                    meta.directSearchTerms
+                )
+                    ? meta.directSearchTerms
+                    : []
+            )
+                .map((term) =>
+                    this.normalizeText(term)
+                )
+                .filter(Boolean)
+                .sort()
+                .join("|");
+
+            if (runKey !== requestedKey) {
+                return;
+            }
+
+            const timestamp =
+                Number(run.completedAt) ||
+                Number(run.updatedAt) ||
+                Number(run.startedAt) ||
+                0;
+            const questionIds = Array.isArray(
+                run.questionIds
+            )
+                ? run.questionIds
+                    .map((id) =>
+                        String(id || "").trim()
+                    )
+                    .filter(Boolean)
+                : [];
+
+            if (questionIds[0]) {
+                firstQuestionIds.add(
+                    questionIds[0]
+                );
+            }
+
+            (
+                Array.isArray(run.answers)
+                    ? run.answers
+                    : []
+            ).forEach((answer) => {
+                const questionId = String(
+                    answer?.questionId || ""
+                ).trim();
+
+                if (!questionId) {
+                    return;
+                }
+
+                const current =
+                    seen.get(questionId) || {
+                        attempts: 0,
+                        lastSeen: 0
+                    };
+
+                current.attempts += 1;
+                current.lastSeen = Math.max(
+                    current.lastSeen,
+                    timestamp
+                );
+                seen.set(questionId, current);
+            });
+        });
+
+        return { seen, firstQuestionIds };
+    },
+
+    getDirectSearchEffectiveScore(
+        question = {},
+        history = {},
+        seed = ""
+    ) {
+        const baseScore =
+            Number(question?.directSearchScore) || 0;
+        const questionId = String(
+            question?.id || ""
+        ).trim();
+        const entry =
+            questionId &&
+            history?.seen instanceof Map
+                ? history.seen.get(questionId)
+                : null;
+        const now = Date.now();
+        const daysSinceSeen =
+            entry?.lastSeen
+                ? (
+                    now - entry.lastSeen
+                ) / 86400000
+                : 999;
+        const recentPenalty = entry
+            ? this.clamp(
+                2200 - daysSinceSeen * 180,
+                240,
+                2200
+            ) +
+              Math.min(
+                  Number(entry.attempts) || 0,
+                  6
+              ) *
+                  180
+            : 0;
+        const repeatedFirstPenalty =
+            questionId &&
+            history?.firstQuestionIds instanceof
+                Set &&
+            history.firstQuestionIds.has(
+                questionId
+            )
+                ? 900
+                : 0;
+        const jitter =
+            this.getStableNoise(
+                questionId ||
+                    question?.prompt ||
+                    question?.topicLabel ||
+                    "",
+                seed
+            ) * 60;
+
+        return (
+            baseScore -
+            recentPenalty -
+            repeatedFirstPenalty +
+            jitter
+        );
     },
 
     getWarmupExpandedTopicKeys(

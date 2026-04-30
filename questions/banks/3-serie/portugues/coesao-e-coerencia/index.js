@@ -1,39 +1,39 @@
 export const coesaoECoerencia = {
   "id": "portugues_coesao_e_coerencia",
-  "materia": "Portugues",
+  "materia": "Português",
   "serie": [
     3
   ],
-  "topico": "Coesao e Coerencia",
+  "topico": "Coesão e Coerência",
   "metadados": {
     "disciplinaId": "portugues",
     "base": "ESCOLAR",
     "seloEditorial": "VERIFICADA",
-    "eixo": "Leitura e Producao de Sentido",
+    "eixo": "Leitura e Produção de Sentido",
     "frente": "Textualidade",
     "searchAliases": [
-      "coesao textual",
-      "coerencia textual",
+      "coesão textual",
+      "coerência textual",
       "conectivos",
-      "progressao tematica",
-      "articulacao de ideias"
+      "progressão temática",
+      "articulação de ideias"
     ],
     "subtopicosBase": [
-      "Coesao referencial",
-      "Coesao sequencial",
+      "Coesão referencial",
+      "Coesão sequencial",
       "Conectivos e articuladores",
       "Pronomes como recurso coesivo",
-      "Substituicao lexical",
+      "Substituição lexical",
       "Elipse e retomada",
       "Paralelismo",
-      "Progressao tematica",
-      "Coerencia global",
-      "Coerencia local",
-      "Contradicao e quebra de sentido",
-      "Relacao logica entre partes do texto",
-      "Interpretacao indireta",
+      "Progressão temática",
+      "Coerência global",
+      "Coerência local",
+      "Contradição e quebra de sentido",
+      "Relação lógica entre partes do texto",
+      "Interpretação indireta",
       "Pegadinha",
-      "Equivalencia de formas"
+      "Equivalência de formas"
     ],
     "habilidadesBase": [
       "identificar-mecanismos-de-coesao",
@@ -55,9 +55,9 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coesao referencial",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coesão referencial",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
@@ -93,8 +93,8 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Pronomes como recurso coesivo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -108,7 +108,7 @@ export const coesaoECoerencia = {
         "a escola"
       ],
       "correta": "o ato de estudar muito",
-      "comentario": "O pronome 'isso' retoma a ideia expressa anteriormente: o esforco dos alunos.",
+      "comentario": "O pronome 'isso' retoma a ideia expressa anteriormente: o esforço dos alunos.",
       "tempoEstimado": 25,
       "tags": [
         "pronomes",
@@ -131,22 +131,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Substituicao lexical",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Substituição lexical",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho 'O professor explicou o conteudo. O docente foi bastante claro.', a substituicao evita:",
+      "enunciado": "No trecho 'O professor explicou o conteúdo. O docente foi bastante claro.', a substituição evita:",
       "opcoes": [
         "contradicao",
         "ambiguidade",
-        "repeticao desnecessoria",
+        "repetição desnecessária",
         "erro gramatical"
       ],
-      "correta": "repeticao desnecessoria",
-      "comentario": "A substituicao lexical evita repetir a mesma palavra, mantendo a coesao textual.",
+      "correta": "repetição desnecessária",
+      "comentario": "A substituição lexical evita repetir a mesma palavra, mantendo a coesão textual.",
       "tempoEstimado": 25,
       "tags": [
         "substituicao-lexical",
@@ -169,9 +169,9 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coesao sequencial",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coesão sequencial",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "analise",
@@ -180,11 +180,11 @@ export const coesaoECoerencia = {
       "opcoes": [
         "aumentar o tamanho do texto",
         "substituir substantivos",
-        "evitar pontuacao",
-        "estabelecer relacoes entre ideias"
+        "evitar pontuação",
+        "estabelecer relações entre ideias"
       ],
-      "correta": "estabelecer relacoes entre ideias",
-      "comentario": "Os conectivos organizam a sequencia logica do texto, conectando ideias.",
+      "correta": "estabelecer relações entre ideias",
+      "comentario": "Os conectivos organizam a sequencia lógica do texto, conectando ideias.",
       "tempoEstimado": 35,
       "tags": [
         "conectivos",
@@ -207,14 +207,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Conectivos e articuladores",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "O conectivo 'porem' estabelece relacao de:",
+      "enunciado": "O conectivo 'porem' estabelece relação de:",
       "opcoes": [
         "oposicao",
         "adicao",
@@ -245,9 +245,9 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coesao referencial",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coesão referencial",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
@@ -260,7 +260,7 @@ export const coesaoECoerencia = {
         "o aceno"
       ],
       "correta": "Lucas",
-      "comentario": "A expressao 'O rapaz' retoma Lucas, mencionado na frase anterior, mantendo a referencia sem repeticao exata.",
+      "comentario": "A expressao 'O rapaz' retoma Lucas, mencionado na frase anterior, mantendo a referência sem repetição exata.",
       "tempoEstimado": 25,
       "tags": [
         "coesao-referencial",
@@ -283,8 +283,8 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Elipse e retomada",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -298,7 +298,7 @@ export const coesaoECoerencia = {
         "sorie"
       ],
       "correta": "preferiu",
-      "comentario": "Ha elipse do verbo 'preferiu' na segunda parte da frase, sem prejuízo de sentido.",
+      "comentario": "Há elipse do verbo 'preferiu' na segunda parte da frase, sem prejuízo de sentido.",
       "tempoEstimado": 25,
       "tags": [
         "elipse",
@@ -321,14 +321,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Pronomes como recurso coesivo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No periodo 'A pesquisadora apresentou os dados e os explicou com clareza', o pronome 'os' refere-se a:",
+      "enunciado": "No período 'A pesquisadora apresentou os dados e os explicou com clareza', o pronome 'os' refere-se a:",
       "opcoes": [
         "clareza",
         "pesquisadora",
@@ -336,7 +336,7 @@ export const coesaoECoerencia = {
         "dados"
       ],
       "correta": "dados",
-      "comentario": "O pronome oblíquo 'os' retoma o substantivo 'dados', evitando repeticao.",
+      "comentario": "O pronome oblíquo 'os' retoma o substantivo 'dados', evitando repetição.",
       "tempoEstimado": 30,
       "tags": [
         "pronomes",
@@ -359,22 +359,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Substituicao lexical",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Substituição lexical",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que ha substituicao lexical adequada para manter a coesao:",
+      "enunciado": "Assinale a alternativa em que há substituição lexical adequada para manter a coesão:",
       "opcoes": [
         "A cidade sofreu com a chuva. O fenomeno alagou ruas e avenidas.",
         "O atleta venceu a prova. O atleta comemorou discretamente.",
         "A diretora convocou os alunos. A escola ouviu atentamente.",
-        "O médico analisou o exame. A consulta apresentou alteracoes."
+        "O médico analisou o exame. A consulta apresentou alterações."
       ],
       "correta": "A cidade sofreu com a chuva. O fenomeno alagou ruas e avenidas.",
-      "comentario": "A expressao 'O fenomeno' retoma adequadamente 'a chuva', evitando repeticao e preservando o sentido.",
+      "comentario": "A expressao 'O fenomeno' retoma adequadamente 'a chuva', evitando repetição e preservando o sentido.",
       "tempoEstimado": 35,
       "tags": [
         "substituicao-lexical",
@@ -397,22 +397,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coesao sequencial",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coesão sequencial",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um texto argumentativo, a coesao sequencial esta relacionada principalmente e:",
+      "enunciado": "Em um texto argumentativo, a coesão sequencial está relacionada principalmente a:",
       "opcoes": [
         "retomada de personagens",
-        "progressao organizada das ideias",
+        "progressão organizada das ideias",
         "escolha de palavras raras",
-        "presenca de frases curtas"
+        "presença de frases curtas"
       ],
-      "correta": "progressao organizada das ideias",
-      "comentario": "A coesao sequencial organiza o encadeamento do texto, estabelecendo continuidade entre os enunciados.",
+      "correta": "progressão organizada das ideias",
+      "comentario": "A coesão sequencial organiza o encadeamento do texto, estabelecendo continuidade entre os enunciados.",
       "tempoEstimado": 35,
       "tags": [
         "coesao-sequencial",
@@ -435,14 +435,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Conectivos e articuladores",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o conectivo exprime corretamente ideia de conclusao:",
+      "enunciado": "Assinale a alternativa em que o conectivo exprime corretamente ideia de conclusão:",
       "opcoes": [
         "Estudou bastante; embora estivesse cansado.",
         "Estudou bastante; porque precisava melhorar.",
@@ -450,7 +450,7 @@ export const coesaoECoerencia = {
         "Estudou bastante; enquanto os colegas descansavam."
       ],
       "correta": "Estudou bastante; portanto, sentiu-se confiante para a prova.",
-      "comentario": "'Portanto' e conectivo conclusivo, marcando consequencia logica do que foi dito antes.",
+      "comentario": "'Portanto' e conectivo conclusivo, marcando consequência lógica do que foi dito antes.",
       "tempoEstimado": 30,
       "tags": [
         "conectivos",
@@ -473,9 +473,9 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coesao referencial",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coesão referencial",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "analise",
@@ -488,7 +488,7 @@ export const coesaoECoerencia = {
         "biblioteca"
       ],
       "correta": "biblioteca",
-      "comentario": "A expressao nominal 'O espaco' retoma 'biblioteca' por substituicao referencial.",
+      "comentario": "A expressao nominal 'O espaco' retoma 'biblioteca' por substituição referencial.",
       "tempoEstimado": 35,
       "tags": [
         "coesao-referencial",
@@ -511,22 +511,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Elipse e retomada",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em qual alternativa a elipse contribui para a coesao sem comprometer a clareza?",
+      "enunciado": "Em qual alternativa a elipse contribui para a coesão sem comprometer a clareza?",
       "opcoes": [
-        "Ana corrigiu a redacao, e Bruno, o exercicio.",
+        "Ana corrigiu a redação, e Bruno, o exercicio.",
         "O aluno estudou, porque a janela estava aberta.",
         "Cheguei cedo, mas o relógio estava na parede.",
-        "O texto era dificil, entao havia muitos livros."
+        "O texto era dificil, então havia muitos livros."
       ],
-      "correta": "Ana corrigiu a redacao, e Bruno, o exercicio.",
-      "comentario": "Ha elipse do verbo 'corrigiu' na segunda oracao, com recuperacao clara pelo contexto.",
+      "correta": "Ana corrigiu a redação, e Bruno, o exercicio.",
+      "comentario": "Há elipse do verbo 'corrigiu' na segunda oracao, com recuperacao clara pelo contexto.",
       "tempoEstimado": 35,
       "tags": [
         "elipse",
@@ -549,14 +549,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Substituicao lexical",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Substituição lexical",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual reescrita evita repeticao e mantem a coesao do trecho 'O relaterio apresentou falhas. O relaterio precisou ser refeito'?",
+      "enunciado": "Qual reescrita evita repetição e mantem a coesão do trecho 'O relaterio apresentou falhas. O relaterio precisou ser refeito'?",
       "opcoes": [
         "O relaterio apresentou falhas. O texto o relaterio precisou ser refeito.",
         "O relaterio apresentou falhas. O mesmo precisou ser refeito.",
@@ -564,7 +564,7 @@ export const coesaoECoerencia = {
         "O relaterio apresentou falhas. Isso relaterio precisou ser refeito."
       ],
       "correta": "O relaterio apresentou falhas. O mesmo precisou ser refeito.",
-      "comentario": "A substituicao por 'O mesmo' evita a repeticao direta e preserva a referencia ao relaterio.",
+      "comentario": "A substituição por 'O mesmo' evita a repetição direta e preserva a referência ao relaterio.",
       "tempoEstimado": 40,
       "tags": [
         "substituicao-lexical",
@@ -587,8 +587,8 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Pronomes como recurso coesivo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -625,14 +625,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Conectivos e articuladores",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o conectivo estabelece corretamente uma relacao de causa:",
+      "enunciado": "Assinale a alternativa em que o conectivo estabelece corretamente uma relação de causa:",
       "opcoes": [
         "O transito piorou; entretanto, muitos chegaram cedo.",
         "O transito piorou; embora a chuva tenha parado.",
@@ -640,7 +640,7 @@ export const coesaoECoerencia = {
         "O transito piorou; por isso, houve atrasos."
       ],
       "correta": "O transito piorou; por isso, houve atrasos.",
-      "comentario": "'Por isso' introduz consequencia decorrente da causa apresentada anteriormente.",
+      "comentario": "'Por isso' introduz consequência decorrente da causa apresentada anteriormente.",
       "tempoEstimado": 40,
       "tags": [
         "conectivos",
@@ -663,22 +663,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coesao sequencial",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coesão sequencial",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa apresenta melhor encadeamento sequencial das ideias?",
       "opcoes": [
-        "O projeto foi aprovado. Isso ocorreu apos a analise tecnica.",
+        "O projeto foi aprovado. Isso ocorreu apos a análise técnica.",
         "O projeto foi aprovado. Entretanto, cumpriu todas as etapas exigidas.",
-        "O projeto foi aprovado. Além disso, ainda nao havia comecado.",
+        "O projeto foi aprovado. Além disso, ainda não havia comecado.",
         "O projeto foi aprovado. Porém, por esse motivo, antes da inscrição."
       ],
-      "correta": "O projeto foi aprovado. Isso ocorreu apos a analise tecnica.",
-      "comentario": "A segunda frase explica de modo coeso a aprovacao, estabelecendo sequencia logica e temporal clara.",
+      "correta": "O projeto foi aprovado. Isso ocorreu apos a análise técnica.",
+      "comentario": "A segunda frase explica de modo coeso a aprovacao, estabelecendo sequencia lógica e temporal clara.",
       "tempoEstimado": 45,
       "tags": [
         "coesao-sequencial",
@@ -701,21 +701,21 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Relacao logica entre partes do texto",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Relação lógica entre partes do texto",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'A campanha foi intensa. Mesmo assim, a adesao foi baixa.' A expressao 'Mesmo assim' indica:",
+      "enunciado": "Leia: 'A campanha foi intensa. Mesmo assim, a adesão foi baixa.' A expressao 'Mesmo assim' indica:",
       "opcoes": [
         "adicao de ideias",
-        "contraste em relacao ao esperado",
+        "contraste em relação ao esperado",
         "retificacao",
         "explicacao do resultado"
       ],
-      "correta": "contraste em relacao ao esperado",
+      "correta": "contraste em relação ao esperado",
       "comentario": "A locucao marca oposicao entre a intensidade da campanha e o resultado obtido.",
       "tempoEstimado": 40,
       "tags": [
@@ -739,22 +739,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Progressao tematica",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Progressão temática",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A progressao tematica de um texto ocorre quando:",
+      "enunciado": "A progressão temática de um texto ocorre quando:",
       "opcoes": [
         "as frases repetem exatamente a mesma ideia",
         "todos os periodos tem a mesma estrutura sintetica",
-        "o tema e desenvolvido com acrascimo de informacoes",
+        "o tema e desenvolvido com acrascimo de informações",
         "o texto evita qualquer retomada"
       ],
-      "correta": "o tema e desenvolvido com acrascimo de informacoes",
-      "comentario": "A progressao tematica garante avanao no texto, ampliando ou especificando o que esta sendo tratado.",
+      "correta": "o tema e desenvolvido com acrascimo de informações",
+      "comentario": "A progressão temática garante avanço no texto, ampliando ou especificando o que está sendo tratado.",
       "tempoEstimado": 45,
       "tags": [
         "progressao-tematica",
@@ -777,16 +777,16 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coerencia local",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coerência local",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que ha quebra de coerencia local:",
+      "enunciado": "Assinale a alternativa em que há quebra de coerência local:",
       "opcoes": [
-        "O aluno leu o enunciado com atencao e respondeu com seguranca.",
+        "O aluno leu o enunciado com atenção e respondeu com seguranca.",
         "A palestrante organizou os tepicos e apresentou exemplos claros.",
         "A equipe revisou os dados antes de divulgar o relaterio.",
         "A chuva aumentou ao longo da tarde, por isso o céu ficou molhado de ideias."
@@ -815,22 +815,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coerencia global",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coerência global",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto sobre alimentacao saudável apresenta, ao longo dos paragrafos, defesa do consumo de alimentos naturais, critica aos ultraprocessados e incentivo e leitura de rótulos. Qual elemento mais contribui para a coerencia global desse texto?",
+      "enunciado": "Um texto sobre alimentacao saudável apresenta, ao longo dos paragrafos, defesa do consumo de alimentos naturais, crítica aos ultraprocessados e incentivo e leitura de rótulos. Qual elemento mais contribui para a coerência global desse texto?",
       "opcoes": [
-        "A manutencao de um eixo tematico relacionado e saude alimentar",
-        "A repeticao exata do mesmo conectivo em todos os periodos",
-        "A presenca de frases longas e vocabulario tecnico",
-        "A alternância entre assuntos sem relacao entre si"
+        "A manutenção de um eixo temático relacionado e saude alimentar",
+        "A repetição exata do mesmo conectivo em todos os periodos",
+        "A presença de frases longas e vocabulario tecnico",
+        "A alternância entre assuntos sem relação entre si"
       ],
-      "correta": "A manutencao de um eixo tematico relacionado e saude alimentar",
-      "comentario": "A coerencia global depende da unidade tematica e da articulacao entre as partes do texto em torno de um mesmo foco.",
+      "correta": "A manutenção de um eixo temático relacionado e saude alimentar",
+      "comentario": "A coerência global depende da unidade temática e da articulação entre as partes do texto em torno de um mesmo foco.",
       "tempoEstimado": 60,
       "tags": [
         "coerencia-global",
@@ -853,22 +853,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Contradicao e quebra de sentido",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Contradição e quebra de sentido",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em qual alternativa a segunda oracao contradiz a primeira, comprometendo a coerencia?",
+      "enunciado": "Em qual alternativa a segunda oracao contradiz a primeira, comprometendo a coerência?",
       "opcoes": [
         "Ela treinou durante meses, por isso melhorou o desempenho.",
-        "A reuniao foi cancelada, entao todos compareceram e sala para iniciá-la.",
-        "O texto era complexo, mas a explicacao ajudou na compreensao.",
+        "A reuniao foi cancelada, então todos compareceram e sala para iniciá-la.",
+        "O texto era complexo, mas a explicacao ajudou na compreensão.",
         "O filme foi longo, porem manteve o publico atento."
       ],
-      "correta": "A reuniao foi cancelada, entao todos compareceram e sala para iniciá-la.",
-      "comentario": "Se a reuniao foi cancelada, iniciar a reuniao contradiz a informacao anterior, produzindo incoerencia.",
+      "correta": "A reuniao foi cancelada, então todos compareceram e sala para iniciá-la.",
+      "comentario": "Se a reuniao foi cancelada, iniciar a reuniao contradiz a informação anterior, produzindo incoerencia.",
       "tempoEstimado": 60,
       "tags": [
         "contradicao",
@@ -891,22 +891,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Relacao logica entre partes do texto",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Relação lógica entre partes do texto",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o periodo: 'O índice de leitura cresceu; ainda assim, a biblioteca manteve o horario reduzido.' A relacao entre as duas partes pode ser compreendida como:",
+      "enunciado": "Leia o período: 'O índice de leitura cresceu; ainda assim, a biblioteca manteve o horario reduzido.' A relação entre as duas partes pode ser compreendida como:",
       "opcoes": [
-        "causa e consequencia previsovel",
+        "causa e consequência previsovel",
         "explicacao detalhada do crescimento da leitura",
         "oposicao entre dado positivo e medida restritiva",
-        "enumeracao de acoes equivalentes"
+        "enumeracao de ações equivalentes"
       ],
       "correta": "oposicao entre dado positivo e medida restritiva",
-      "comentario": "O crescimento do índice de leitura contrasta com a manutencao do horario reduzido, criando relacao adversativa implícita.",
+      "comentario": "O crescimento do índice de leitura contrasta com a manutenção do horario reduzido, criando relação adversativa implícita.",
       "tempoEstimado": 65,
       "tags": [
         "relacao-logica",
@@ -929,18 +929,18 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Progressao tematica",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Progressão temática",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Considere a sequencia: 'O bairro ganhou uma praca. O novo espaco passou a receber feiras culturais. As atividades atraíram moradores de regioes vizinhas.' O efeito produzido por essa progressao tematica e:",
+      "enunciado": "Considere a sequencia: 'O bairro ganhou uma praca. O novo espaco passou a receber feiras culturais. As atividades atraíram moradores de regioes vizinhas.' O efeito produzido por essa progressão temática e:",
       "opcoes": [
         "quebra brusca de assunto",
-        "repeticao sem avanao informativo",
-        "substituicao do tema por outro sem relacao",
+        "repetição sem avanço informativo",
+        "substituição do tema por outro sem relação",
         "encadeamento de fatos com ampliacao do tema inicial"
       ],
       "correta": "encadeamento de fatos com ampliacao do tema inicial",
@@ -967,14 +967,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa reescreve o trecho 'O estudante revisou o texto e, depois disso, enviou a versao final' sem prejuízo de sentido e com boa coesao?",
+      "enunciado": "Qual alternativa reescreve o trecho 'O estudante revisou o texto é, depois disso, enviou a versao final' sem prejuízo de sentido e com boa coesão?",
       "opcoes": [
         "O estudante revisou o texto; em seguida, enviou a versao final.",
         "O estudante revisou o texto, contudo enviou a versao final.",
@@ -982,7 +982,7 @@ export const coesaoECoerencia = {
         "O estudante revisou o texto, porque enviou a versao final."
       ],
       "correta": "O estudante revisou o texto; em seguida, enviou a versao final.",
-      "comentario": "A locucao 'em seguida' preserva a relacao temporal expressa por 'depois disso', mantendo equivalencia de sentido.",
+      "comentario": "A locucao 'em seguida' preserva a relação temporal expressa por 'depois disso', mantendo equivalência de sentido.",
       "tempoEstimado": 55,
       "tags": [
         "equivalencia-de-formas",
@@ -1005,14 +1005,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coesao sequencial",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coesão sequencial",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No periodo 'Primeiro, os alunos leram o texto; depois, discutiram as ideias principais', os termos 'Primeiro' e 'depois' indicam relacao de:",
+      "enunciado": "No período 'Primeiro, os alunos leram o texto; depois, discutiram as ideias principais', os termos 'Primeiro' e 'depois' indicam relação de:",
       "opcoes": [
         "oposicao",
         "tempo e sequencia",
@@ -1020,7 +1020,7 @@ export const coesaoECoerencia = {
         "conclusao"
       ],
       "correta": "tempo e sequencia",
-      "comentario": "Os marcadores 'Primeiro' e 'depois' organizam a progressao temporal das acoes no texto.",
+      "comentario": "Os marcadores 'Primeiro' e 'depois' organizam a progressão temporal das ações no texto.",
       "tempoEstimado": 25,
       "tags": [
         "coesao-sequencial",
@@ -1043,8 +1043,8 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Conectivos e articuladores",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -1081,8 +1081,8 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Conectivos e articuladores",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -1119,22 +1119,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coesao sequencial",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coesão sequencial",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A coesao sequencial em um paragrafo argumentativo depende, sobretudo, de:",
+      "enunciado": "A coesão sequencial em um parágrafo argumentativo depende, sobretudo, de:",
       "opcoes": [
         "encadeamento logico das ideias",
-        "palavras dificeis e tecnicas",
-        "ausencia de pronomes",
-        "repeticao constante do tema"
+        "palavras dificeis e técnicas",
+        "ausência de pronomes",
+        "repetição constante do tema"
       ],
       "correta": "encadeamento logico das ideias",
-      "comentario": "A coesao sequencial organiza a progressao do raciocinio, articulando os enunciados de forma logica.",
+      "comentario": "A coesão sequencial organiza a progressão do raciocínio, articulando os enunciados de forma lógica.",
       "tempoEstimado": 35,
       "tags": [
         "coesao-sequencial",
@@ -1157,8 +1157,8 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Conectivos e articuladores",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -1195,22 +1195,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Relacao logica entre partes do texto",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Relação lógica entre partes do texto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Os dados foram revisados, portanto o relaterio foi publicado.' A relacao logica estabelecida e de:",
+      "enunciado": "Leia: 'Os dados foram revisados, portanto o relaterio foi publicado.' A relação lógica estabelecida e de:",
       "opcoes": [
         "adicao",
         "alternância",
-        "causa e consequencia",
+        "causa e consequência",
         "comparacao"
       ],
-      "correta": "causa e consequencia",
-      "comentario": "A revisao dos dados justifica a publicacao do relaterio, configurando relacao de causa e consequencia.",
+      "correta": "causa e consequência",
+      "comentario": "A revisao dos dados justifica a publicacao do relaterio, configurando relação de causa e consequência.",
       "tempoEstimado": 35,
       "tags": [
         "relacao-logica",
@@ -1233,8 +1233,8 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Conectivos e articuladores",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1242,13 +1242,13 @@ export const coesaoECoerencia = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa apresenta uso correto de conectivo com valor explicativo?",
       "opcoes": [
-        "Nao saiu de casa, porem estava doente.",
-        "Nao saiu de casa, portanto estava doente.",
-        "Nao saiu de casa, embora estava doente.",
-        "Nao saiu de casa, porque estava doente."
+        "Não saiu de casa, porem estava doente.",
+        "Não saiu de casa, portanto estava doente.",
+        "Não saiu de casa, embora estava doente.",
+        "Não saiu de casa, porque estava doente."
       ],
-      "correta": "Nao saiu de casa, porque estava doente.",
-      "comentario": "O conectivo 'porque' introduz a explicacao para o fato de nao ter saído de casa.",
+      "correta": "Não saiu de casa, porque estava doente.",
+      "comentario": "O conectivo 'porque' introduz a explicacao para o fato de não ter saído de casa.",
       "tempoEstimado": 35,
       "tags": [
         "conectivos",
@@ -1271,14 +1271,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coesao sequencial",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coesão sequencial",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que ha progressao sequencial mais adequada:",
+      "enunciado": "Assinale a alternativa em que há progressão sequencial mais adequada:",
       "opcoes": [
         "Ele pesquisou o tema. Depois, formulou hipoteses. Em seguida, analisou os resultados.",
         "Ele pesquisou o tema. Porém, formulou hipoteses. Porque analisou os resultados.",
@@ -1286,7 +1286,7 @@ export const coesaoECoerencia = {
         "Ele pesquisou o tema. Mas e portanto os resultados."
       ],
       "correta": "Ele pesquisou o tema. Depois, formulou hipoteses. Em seguida, analisou os resultados.",
-      "comentario": "A alternativa apresenta progressao logica e temporal clara entre as acoes.",
+      "comentario": "A alternativa apresenta progressão lógica e temporal clara entre as ações.",
       "tempoEstimado": 40,
       "tags": [
         "coesao-sequencial",
@@ -1309,14 +1309,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Relacao logica entre partes do texto",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Relação lógica entre partes do texto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual conectivo melhor completa a frase 'A equipe se esforcou bastante; ________, nao conseguiu cumprir o prazo'?",
+      "enunciado": "Qual conectivo melhor completa a frase 'A equipe se esforcou bastante; ________, não conseguiu cumprir o prazo'?",
       "opcoes": [
         "além disso",
         "entretanto",
@@ -1324,7 +1324,7 @@ export const coesaoECoerencia = {
         "porque"
       ],
       "correta": "entretanto",
-      "comentario": "'Entretanto' estabelece contraste entre o esforco realizado e o resultado insatisfaterio.",
+      "comentario": "'Entretanto' estabelece contraste entre o esforço realizado e o resultado insatisfaterio.",
       "tempoEstimado": 40,
       "tags": [
         "relacao-logica",
@@ -1347,14 +1347,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Conectivos e articuladores",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Na frase 'Ele nao apenas estudou, mas tambem ensinou os colegas', a locucao 'mas tambem' expressa ideia de:",
+      "enunciado": "Na frase 'Ele não apenas estudou, mas também ensinou os colegas', a locucao 'mas também' expressa ideia de:",
       "opcoes": [
         "oposicao",
         "condicao",
@@ -1362,7 +1362,7 @@ export const coesaoECoerencia = {
         "explicacao"
       ],
       "correta": "adicao enfatica",
-      "comentario": "A estrutura 'nao apenas... mas tambem' amplia a informacao, somando acoes com enfase.",
+      "comentario": "A estrutura 'não apenas... mas também' amplia a informação, somando ações com enfase.",
       "tempoEstimado": 30,
       "tags": [
         "conectivos",
@@ -1385,14 +1385,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Relacao logica entre partes do texto",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Relação lógica entre partes do texto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em 'Embora estivesse cansado, continuou estudando', a relacao expressa e de:",
+      "enunciado": "Em 'Embora estivesse cansado, continuou estudando', a relação expressa e de:",
       "opcoes": [
         "causa",
         "condicao",
@@ -1400,7 +1400,7 @@ export const coesaoECoerencia = {
         "concessao"
       ],
       "correta": "concessao",
-      "comentario": "'Embora' e conectivo concessivo, pois introduz um fato que poderia impedir a acao, mas nao a impede.",
+      "comentario": "'Embora' e conectivo concessivo, pois introduz um fato que poderia impedir a ação, mas não a impede.",
       "tempoEstimado": 40,
       "tags": [
         "relacao-logica",
@@ -1423,9 +1423,9 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coesao sequencial",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coesão sequencial",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
@@ -1433,9 +1433,9 @@ export const coesaoECoerencia = {
       "enunciado": "A sequencia 'O projeto foi apresentado. Em seguida, recebeu ajustes. Por fim, foi aprovado.' demonstra:",
       "opcoes": [
         "ordenacao progressiva das etapas",
-        "quebra de coerencia",
-        "repeticao sem progressao",
-        "substituicao lexical inadequada"
+        "quebra de coerência",
+        "repetição sem progressão",
+        "substituição lexical inadequada"
       ],
       "correta": "ordenacao progressiva das etapas",
       "comentario": "Os marcadores temporais indicam claramente a sucessao das etapas do processo.",
@@ -1461,8 +1461,8 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Conectivos e articuladores",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1476,7 +1476,7 @@ export const coesaoECoerencia = {
         "Entretanto, revisaremos o texto."
       ],
       "correta": "Se houver tempo, revisaremos o texto.",
-      "comentario": "O conectivo 'Se' introduz uma condicao para a realizacao da acao principal.",
+      "comentario": "O conectivo 'Se' introduz uma condicao para a realizacao da ação principal.",
       "tempoEstimado": 35,
       "tags": [
         "conectivos",
@@ -1499,14 +1499,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Relacao logica entre partes do texto",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Relação lógica entre partes do texto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta relacao logica de adicao?",
+      "enunciado": "Qual alternativa apresenta relação lógica de adicao?",
       "opcoes": [
         "A escola ampliou a biblioteca, mas fechou o laboraterio.",
         "A escola ampliou a biblioteca, portanto reformou o laboraterio.",
@@ -1514,7 +1514,7 @@ export const coesaoECoerencia = {
         "A escola ampliou a biblioteca, porque reformou o laboraterio."
       ],
       "correta": "A escola ampliou a biblioteca e reformou o laboraterio.",
-      "comentario": "O conectivo 'e' adiciona duas acoes, sem indicar oposicao, causa ou consequencia.",
+      "comentario": "O conectivo 'e' adiciona duas ações, sem indicar oposicao, causa ou consequência.",
       "tempoEstimado": 40,
       "tags": [
         "relacao-logica",
@@ -1537,18 +1537,18 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coesao sequencial",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coesão sequencial",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o trecho: 'A proposta parecia simples. Ainda assim, exigiu revisao detalhada. So depois disso foi encaminhada.' O papel de 'So depois disso' e:",
+      "enunciado": "Leia o trecho: 'A proposta parecia simples. Ainda assim, exigiu revisao detalhada. Só depois disso foi encaminhada.' O papel de 'Só depois disso' e:",
       "opcoes": [
-        "retomar um referente nominal sem funcao temporal",
+        "retomar um referente nominal sem função temporal",
         "introduzir oposicao entre termos equivalentes",
-        "marcar conclusao definitiva do argumento inicial",
+        "marcar conclusão definitiva do argumento inicial",
         "indicar restricao temporal ligada ao processo anterior"
       ],
       "correta": "indicar restricao temporal ligada ao processo anterior",
@@ -1575,14 +1575,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Conectivos e articuladores",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que a substituicao do conectivo mantem o sentido original: 'Estava chovendo; contudo, sairam para caminhar.'",
+      "enunciado": "Assinale a alternativa em que a substituição do conectivo mantem o sentido original: 'Estava chovendo; contudo, sairam para caminhar.'",
       "opcoes": [
         "Estava chovendo; entretanto, sairam para caminhar.",
         "Estava chovendo; portanto, sairam para caminhar.",
@@ -1590,7 +1590,7 @@ export const coesaoECoerencia = {
         "Estava chovendo; logo, sairam para caminhar."
       ],
       "correta": "Estava chovendo; entretanto, sairam para caminhar.",
-      "comentario": "'Contudo' e 'entretanto' sao conectivos adversativos e mantem a ideia de oposicao.",
+      "comentario": "'Contudo' e 'entretanto' são conectivos adversativos e mantem a ideia de oposicao.",
       "tempoEstimado": 55,
       "tags": [
         "conectivos",
@@ -1613,22 +1613,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Relacao logica entre partes do texto",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Relação lógica entre partes do texto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em qual alternativa a relacao logica esta inadequadamente estabelecida pelo conectivo?",
+      "enunciado": "Em qual alternativa a relação lógica está inadequadamente estabelecida pelo conectivo?",
       "opcoes": [
         "Ele treinou bastante, por isso melhorou o desempenho.",
         "A equipe se dedicou ao projeto, mas concluiu as etapas previstas.",
-        "O prazo terminou, entao o sistema foi encerrado.",
+        "O prazo terminou, então o sistema foi encerrado.",
         "A aluna releu o texto porque queria evitar erros."
       ],
       "correta": "A equipe se dedicou ao projeto, mas concluiu as etapas previstas.",
-      "comentario": "Nesse contexto, 'mas' e inadequado, pois a segunda oracao nao se opoe naturalmente e primeira; ha continuidade esperada.",
+      "comentario": "Nesse contexto, 'mas' e inadequado, pois a segunda oracao não se opoe naturalmente e primeira; há continuidade esperada.",
       "tempoEstimado": 60,
       "tags": [
         "relacao-logica",
@@ -1651,22 +1651,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coesao sequencial",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coesão sequencial",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho 'A reportagem apresentou dados, ouviu especialistas e, ao final, propas reflexões ao leitor', a construcao favorece a percepcao de:",
+      "enunciado": "No trecho 'A reportagem apresentou dados, ouviu especialistas e, ao final, propas reflexões ao leitor', a construção favorece a percepcao de:",
       "opcoes": [
         "desordem argumentativa",
-        "quebra de unidade tematica",
-        "encadeamento gradual do conteudo",
-        "repeticao improdutiva das informacoes"
+        "quebra de unidade temática",
+        "encadeamento gradual do conteúdo",
+        "repetição improdutiva das informações"
       ],
-      "correta": "encadeamento gradual do conteudo",
-      "comentario": "O trecho organiza acoes em sequencia e sugere progressao do levantamento de informacoes e reflexao final.",
+      "correta": "encadeamento gradual do conteúdo",
+      "comentario": "O trecho organiza ações em sequencia e sugere progressão do levantamento de informações e reflexão final.",
       "tempoEstimado": 60,
       "tags": [
         "coesao-sequencial",
@@ -1689,14 +1689,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Conectivos e articuladores",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa reescreve corretamente a frase 'Ele se preparou; por conseguinte, obteve bom resultado' mantendo a mesma relacao semantica?",
+      "enunciado": "Qual alternativa reescreve corretamente a frase 'Ele se preparou; por conseguinte, obteve bom resultado' mantendo a mesma relação semântica?",
       "opcoes": [
         "Ele se preparou; no entanto, obteve bom resultado.",
         "Ele se preparou; embora obtivesse bom resultado.",
@@ -1704,7 +1704,7 @@ export const coesaoECoerencia = {
         "Ele se preparou; assim, obteve bom resultado."
       ],
       "correta": "Ele se preparou; assim, obteve bom resultado.",
-      "comentario": "'Por conseguinte' e 'assim' mantem a ideia de consequencia entre as oracoes.",
+      "comentario": "'Por conseguinte' e 'assim' mantem a ideia de consequência entre as oracoes.",
       "tempoEstimado": 55,
       "tags": [
         "conectivos",
@@ -1727,19 +1727,19 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Relacao logica entre partes do texto",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Relação lógica entre partes do texto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia as formulacoes: I. 'O texto e claro, embora seja denso.' II. 'O texto e claro, porque e denso.' Considerando a relacao logica, e correto afirmar que:",
+      "enunciado": "Leia as formulacoes: I. 'o texto é claro, embora seja denso.' II. 'o texto é claro, porque e denso.' Considerando a relação lógica, e correto afirmar que:",
       "opcoes": [
         "I expressa concessao, e II expressa causa.",
-        "I e II expressam a mesma relacao de sentido.",
+        "I e II expressam a mesma relação de sentido.",
         "I expressa causa, e II expressa oposicao.",
-        "I e II expressam apenas adicao de caracteristicas."
+        "I e II expressam apenas adicao de características."
       ],
       "correta": "I expressa concessao, e II expressa causa.",
       "comentario": "Na formulacao I, 'embora' marca concessao; na II, 'porque' introduz causa.",
@@ -1765,22 +1765,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Paralelismo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que ha paralelismo adequado:",
+      "enunciado": "Assinale a alternativa em que há paralelismo adequado:",
       "opcoes": [
-        "O estudante queria revisar o texto, a apresentacao e que o debate fosse preparado.",
-        "O estudante queria revisar o texto, preparar a apresentacao e organizar o debate.",
-        "O estudante queria revisao do texto, apresentar e organizacao do debate.",
-        "O estudante queria revisar o texto, a apresentacao preparada e organizar."
+        "O estudante queria revisar o texto, a apresentação e que o debate fosse preparado.",
+        "O estudante queria revisar o texto, preparar a apresentação e organizar o debate.",
+        "O estudante queria revisao do texto, apresentar e organização do debate.",
+        "O estudante queria revisar o texto, a apresentação preparada e organizar."
       ],
-      "correta": "O estudante queria revisar o texto, preparar a apresentacao e organizar o debate.",
-      "comentario": "Ha paralelismo porque os tras elementos mantem a mesma estrutura verbal no infinitivo.",
+      "correta": "O estudante queria revisar o texto, preparar a apresentação e organizar o debate.",
+      "comentario": "Há paralelismo porque os tras elementos mantem a mesma estrutura verbal no infinitivo.",
       "tempoEstimado": 45,
       "tags": [
         "paralelismo",
@@ -1803,8 +1803,8 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Paralelismo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1841,22 +1841,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Paralelismo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em qual alternativa a quebra de paralelismo compromete a fluidez do periodo?",
+      "enunciado": "Em qual alternativa a quebra de paralelismo compromete a fluidez do período?",
       "opcoes": [
-        "O relaterio apresenta causas, consequencias e possoveis solucoes.",
+        "O relaterio apresenta causas, consequências e possoveis solucoes.",
         "A campanha pretende informar, orientar e mobilizar a populacao.",
-        "A escola investiu em leitura, escrita e formacao critica.",
-        "O candidato mostrou dominio do tema, clareza na exposicao e que argumentava com seguranca."
+        "A escola investiu em leitura, escrita e formação crítica.",
+        "O candidato mostrou domínio do tema, clareza na exposicao e que argumentava com seguranca."
       ],
-      "correta": "O candidato mostrou dominio do tema, clareza na exposicao e que argumentava com seguranca.",
-      "comentario": "Ha quebra de paralelismo porque os dois primeiros elementos sao sintagmas nominais, enquanto o terceiro e uma oracao desenvolvida.",
+      "correta": "O candidato mostrou domínio do tema, clareza na exposicao e que argumentava com seguranca.",
+      "comentario": "Há quebra de paralelismo porque os dois primeiros elementos são sintagmas nominais, enquanto o terceiro e uma oracao desenvolvida.",
       "tempoEstimado": 55,
       "tags": [
         "paralelismo",
@@ -1879,22 +1879,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Paralelismo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "No periodo 'A palestra contribuiu para ampliar o debate, a reflexao dos alunos e incentivar novas pesquisas', o problema central e:",
+      "enunciado": "No período 'A palestra contribuiu para ampliar o debate, a reflexão dos alunos e incentivar novas pesquisas', o problema central e:",
       "opcoes": [
-        "ausencia de paralelismo entre os termos coordenados",
+        "ausência de paralelismo entre os termos coordenados",
         "falta de referente nominal",
         "uso inadequado de pronome",
-        "contradicao entre causa e consequencia"
+        "contradição entre causa e consequência"
       ],
-      "correta": "ausencia de paralelismo entre os termos coordenados",
-      "comentario": "Ha mistura entre estrutura verbal ('ampliar', 'incentivar') e nominal ('a reflexao dos alunos'), o que rompe o paralelismo.",
+      "correta": "ausência de paralelismo entre os termos coordenados",
+      "comentario": "Há mistura entre estrutura verbal ('ampliar', 'incentivar') e nominal ('a reflexão dos alunos'), o que rompe o paralelismo.",
       "tempoEstimado": 60,
       "tags": [
         "paralelismo",
@@ -1917,21 +1917,21 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa reescreve com paralelismo adequado e sentido preservado o trecho 'A pesquisa pretende analisar o consumo, a producao e como os precos variam'?",
+      "enunciado": "Qual alternativa reescreve com paralelismo adequado e sentido preservado o trecho 'A pesquisa pretende analisar o consumo, a produção e como os precos variam'?",
       "opcoes": [
-        "A pesquisa pretende analisar o consumo, produzir e a variacao dos precos.",
-        "A pesquisa pretende analisar o consumo, a producao e a variacao dos precos.",
-        "A pesquisa pretende analisar o consumo, a producao e como variam porque os precos.",
-        "A pesquisa pretende analisar o consumo, que a producao e os precos variam."
+        "A pesquisa pretende analisar o consumo, produzir e a variação dos precos.",
+        "A pesquisa pretende analisar o consumo, a produção e a variação dos precos.",
+        "A pesquisa pretende analisar o consumo, a produção e como variam porque os precos.",
+        "A pesquisa pretende analisar o consumo, que a produção e os precos variam."
       ],
-      "correta": "A pesquisa pretende analisar o consumo, a producao e a variacao dos precos.",
+      "correta": "A pesquisa pretende analisar o consumo, a produção e a variação dos precos.",
       "comentario": "A reescrita mantem o sentido e uniformiza os tras elementos em estruturas nominais paralelas.",
       "tempoEstimado": 55,
       "tags": [
@@ -1955,22 +1955,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Progressao tematica",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Progressão temática",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um texto, ha progressao tematica quando:",
+      "enunciado": "Em um texto, há progressão temática quando:",
       "opcoes": [
         "a mesma frase e repetida varias vezes sem mudancas",
-        "as ideias surgem sem relacao entre si",
-        "o assunto e desenvolvido com novas informacoes ao longo dos periodos",
+        "as ideias surgem sem relação entre si",
+        "o assunto e desenvolvido com novas informações ao longo dos periodos",
         "o texto evita qualquer retomada do tema"
       ],
-      "correta": "o assunto e desenvolvido com novas informacoes ao longo dos periodos",
-      "comentario": "A progressao tematica ocorre quando o tema avança com acrascimo de informacoes relevantes.",
+      "correta": "o assunto e desenvolvido com novas informações ao longo dos periodos",
+      "comentario": "A progressão temática ocorre quando o tema avança com acrascimo de informações relevantes.",
       "tempoEstimado": 25,
       "tags": [
         "progressao-tematica",
@@ -1993,9 +1993,9 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Progressao tematica",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Progressão temática",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "interpretacao",
@@ -2003,7 +2003,7 @@ export const coesaoECoerencia = {
       "enunciado": "Leia: 'A escola criou um clube de leitura. A iniciativa aproximou os alunos dos livros.' Nesse caso, a segunda frase:",
       "opcoes": [
         "interrompe o tema sem explicacao",
-        "contradiz a primeira informacao",
+        "contradiz a primeira informação",
         "troca o assunto principal do texto",
         "desenvolve o tema iniciado na primeira frase"
       ],
@@ -2031,21 +2031,21 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Relacao logica entre partes do texto",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Relação lógica entre partes do texto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No periodo 'Ele se dedicou aos estudos, por isso foi aprovado', a segunda oracao expressa:",
+      "enunciado": "No período 'Ele se dedicou aos estudos, por isso foi aprovado', a segunda oracao expressa:",
       "opcoes": [
-        "uma consequencia",
+        "uma consequência",
         "uma condicao",
         "uma explicacao",
         "uma oposicao"
       ],
-      "correta": "uma consequencia",
+      "correta": "uma consequência",
       "comentario": "A aprovacao e apresentada como resultado da dedicacao aos estudos.",
       "tempoEstimado": 25,
       "tags": [
@@ -2069,8 +2069,8 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Paralelismo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -2078,13 +2078,13 @@ export const coesaoECoerencia = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a alternativa em que os termos coordenados mantem paralelismo adequado:",
       "opcoes": [
-        "O texto busca informar, conscientizar e a reflexao do leitor.",
-        "O texto busca informar, conscientizar e provocar reflexao no leitor.",
-        "O texto busca informacao, conscientizar e provocar reflexao.",
+        "O texto busca informar, conscientizar e a reflexão do leitor.",
+        "O texto busca informar, conscientizar e provocar reflexão no leitor.",
+        "O texto busca informação, conscientizar e provocar reflexão.",
         "O texto busca informar, a conscientizacao e refletir o leitor."
       ],
-      "correta": "O texto busca informar, conscientizar e provocar reflexao no leitor.",
-      "comentario": "Os tras elementos mantem estrutura verbal paralela, favorecendo a organizacao sintetica do periodo.",
+      "correta": "O texto busca informar, conscientizar e provocar reflexão no leitor.",
+      "comentario": "Os tras elementos mantem estrutura verbal paralela, favorecendo a organização sintetica do período.",
       "tempoEstimado": 35,
       "tags": [
         "paralelismo",
@@ -2107,22 +2107,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Progressao tematica",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Progressão temática",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'A cidade ampliou as ciclovias. A medida incentivou deslocamentos mais sustentáveis. Com isso, reduziu-se o uso do carro em alguns trajetos.' O trecho apresenta progressao tematica porque:",
+      "enunciado": "Leia: 'A cidade ampliou as ciclovias. A medida incentivou deslocamentos mais sustentáveis. Com isso, reduziu-se o uso do carro em alguns trajetos.' O trecho apresenta progressão temática porque:",
       "opcoes": [
-        "repete exatamente a mesma informacao",
-        "substitui o tema por um assunto sem relacao",
+        "repete exatamente a mesma informação",
+        "substitui o tema por um assunto sem relação",
         "encadeia desdobramentos de uma ideia inicial",
         "evita qualquer marca de continuidade"
       ],
       "correta": "encadeia desdobramentos de uma ideia inicial",
-      "comentario": "O tema inicial, a ampliacao das ciclovias, e desenvolvido por suas consequencias ao longo do trecho.",
+      "comentario": "O tema inicial, a ampliacao das ciclovias, e desenvolvido por suas consequências ao longo do trecho.",
       "tempoEstimado": 40,
       "tags": [
         "progressao-tematica",
@@ -2145,8 +2145,8 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Paralelismo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -2156,7 +2156,7 @@ export const coesaoECoerencia = {
       "opcoes": [
         "O projeto pretende ampliar vagas, a melhoria da estrutura e formar profissionais novos.",
         "O projeto pretende ampliacao de vagas, melhorar a estrutura e formar novos profissionais.",
-        "O projeto pretende ampliar vagas, melhorar a estrutura e a formacao de novos profissionais.",
+        "O projeto pretende ampliar vagas, melhorar a estrutura e a formação de novos profissionais.",
         "O projeto pretende ampliar vagas, melhorar a estrutura e formar novos profissionais."
       ],
       "correta": "O projeto pretende ampliar vagas, melhorar a estrutura e formar novos profissionais.",
@@ -2183,22 +2183,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Relacao logica entre partes do texto",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Relação lógica entre partes do texto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em qual alternativa a relacao logica entre as partes esta corretamente identificada?",
+      "enunciado": "Em qual alternativa a relação lógica entre as partes está corretamente identificada?",
       "opcoes": [
-        "'Ele se atrasou porque perdeu o onibus.' - causa",
-        "'Ela estudou bastante, embora estivesse confiante.' - conclusao",
+        "'Ele se atrasou porque perdeu o ônibus.' - causa",
+        "'Ela estudou bastante, embora estivesse confiante.' - conclusão",
         "'A palestra terminou cedo, mas comecou as oito.' - explicacao",
         "'O aluno faltou e prova, portanto estava nervoso.' - oposicao"
       ],
-      "correta": "'Ele se atrasou porque perdeu o onibus.' - causa",
-      "comentario": "A expressao 'porque perdeu o onibus' indica a causa do atraso.",
+      "correta": "'Ele se atrasou porque perdeu o ônibus.' - causa",
+      "comentario": "A expressao 'porque perdeu o ônibus' indica a causa do atraso.",
       "tempoEstimado": 40,
       "tags": [
         "relacao-logica",
@@ -2221,22 +2221,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coerencia local",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coerência local",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que as ideias mantem coerencia local:",
+      "enunciado": "Assinale a alternativa em que as ideias mantem coerência local:",
       "opcoes": [
-        "O livro foi publicado ontem, por isso ainda nao existia no mas passado.",
-        "A professora explicou o conteudo com clareza, e os alunos compreenderam melhor o tema.",
+        "O livro foi publicado ontem, por isso ainda não existia no mas passado.",
+        "A professora explicou o conteúdo com clareza, e os alunos compreenderam melhor o tema.",
         "O atleta venceu a corrida, embora nunca tivesse corrido, por isso ficou sentado durante a prova.",
         "A biblioteca ficou silenciosa porque os aplausos faziam muito barulho contínuo e calmo."
       ],
-      "correta": "A professora explicou o conteudo com clareza, e os alunos compreenderam melhor o tema.",
-      "comentario": "Ha relacao logica e compatibilidade de sentido entre as duas partes do enunciado.",
+      "correta": "A professora explicou o conteúdo com clareza, e os alunos compreenderam melhor o tema.",
+      "comentario": "Há relação lógica e compatibilidade de sentido entre as duas partes do enunciado.",
       "tempoEstimado": 40,
       "tags": [
         "coerencia-local",
@@ -2259,22 +2259,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coerencia global",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coerência global",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um texto sobre preservacao ambiental, a coerencia global sera mais bem mantida quando:",
+      "enunciado": "Em um texto sobre preservacao ambiental, a coerência global será mais bem mantida quando:",
       "opcoes": [
         "os paragrafos alternarem assuntos aleaterios",
         "todas as frases forem curtas e isoladas",
-        "houver unidade tematica ao longo do texto",
+        "houver unidade temática ao longo do texto",
         "o texto repetir palavras sem acrescentar sentido"
       ],
-      "correta": "houver unidade tematica ao longo do texto",
-      "comentario": "A coerencia global depende da manutencao de um eixo tematico articulado em todo o texto.",
+      "correta": "houver unidade temática ao longo do texto",
+      "comentario": "A coerência global depende da manutenção de um eixo temático articulado em todo o texto.",
       "tempoEstimado": 45,
       "tags": [
         "coerencia-global",
@@ -2297,22 +2297,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Contradicao e quebra de sentido",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Contradição e quebra de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta contradicao que compromete a coerencia?",
+      "enunciado": "Qual alternativa apresenta contradição que compromete a coerência?",
       "opcoes": [
-        "Ela revisou o texto e corrigiu os erros encontrados.",
+        "Ela revisou o texto é corrigiu os erros encontrados.",
         "O evento foi cancelado, mas os organizadores avisaram o publico.",
         "A pesquisa foi concluida e os dados foram analisados.",
         "O aluno entregou a prova em branco apos responder detalhadamente a todas as questaes."
       ],
       "correta": "O aluno entregou a prova em branco apos responder detalhadamente a todas as questaes.",
-      "comentario": "Entregar a prova em branco contradiz a informacao de ter respondido detalhadamente a todas as questaes.",
+      "comentario": "Entregar a prova em branco contradiz a informação de ter respondido detalhadamente a todas as questaes.",
       "tempoEstimado": 45,
       "tags": [
         "contradicao",
@@ -2335,14 +2335,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Relacao logica entre partes do texto",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Relação lógica entre partes do texto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o conectivo expressa corretamente relacao de finalidade:",
+      "enunciado": "Assinale a alternativa em que o conectivo expressa corretamente relação de finalidade:",
       "opcoes": [
         "Leu o edital para compreender as regras do processo.",
         "Leu o edital, portanto compreendeu as regras do processo.",
@@ -2350,7 +2350,7 @@ export const coesaoECoerencia = {
         "Leu o edital, mas compreendeu as regras do processo."
       ],
       "correta": "Leu o edital para compreender as regras do processo.",
-      "comentario": "A preposicao 'para' introduz finalidade, indicando o objetivo da acao de ler o edital.",
+      "comentario": "A preposição 'para' introduz finalidade, indicando o objetivo da ação de ler o edital.",
       "tempoEstimado": 35,
       "tags": [
         "relacao-logica",
@@ -2373,22 +2373,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coerencia local",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coerência local",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em qual alternativa a relacao entre as ideias preserva melhor a coerencia locale",
+      "enunciado": "Em qual alternativa a relação entre as ideias preserva melhor a coerência locale",
       "opcoes": [
-        "O aluno estudou muito, por isso esqueceu de aprender qualquer conteudo.",
+        "O aluno estudou muito, por isso esqueceu de aprender qualquer conteúdo.",
         "A conferência reuniu especialistas, o que ampliou a qualidade do debate.",
         "A biblioteca ficou vazia, logo os leitores a lotaram ao mesmo tempo.",
-        "O filme terminou, embora ainda nao tivesse comecado na sessao ja encerrada."
+        "O filme terminou, embora ainda não tivesse comecado na sessao já encerrada."
       ],
       "correta": "A conferência reuniu especialistas, o que ampliou a qualidade do debate.",
-      "comentario": "A presenca de especialistas justifica logicamente a ampliacao da qualidade do debate.",
+      "comentario": "A presença de especialistas justifica logicamente a ampliacao da qualidade do debate.",
       "tempoEstimado": 45,
       "tags": [
         "coerencia-local",
@@ -2411,19 +2411,19 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Progressao tematica",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Progressão temática",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'A escola implantou hortas comunitarias. Os estudantes passaram a participar do cultivo. A experiencia tambem foi incorporada as aulas de ciencias.' O trecho sugere que a progressao tematica ocorre por:",
+      "enunciado": "Leia: 'A escola implantou hortas comunitarias. Os estudantes passaram a participar do cultivo. A experiencia também foi incorporada as aulas de ciências.' O trecho sugere que a progressão temática ocorre por:",
       "opcoes": [
         "abandono do tema logo na segunda frase",
-        "repeticao mecunica da mesma informacao",
+        "repetição mecunica da mesma informação",
         "expansao do tema por diferentes desdobramentos",
-        "oposicao entre acoes sem conexão"
+        "oposicao entre ações sem conexão"
       ],
       "correta": "expansao do tema por diferentes desdobramentos",
       "comentario": "As frases ampliam o tema inicial, mostrando efeitos pedagógicos e participacao estudantil.",
@@ -2449,8 +2449,8 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Paralelismo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -2458,13 +2458,13 @@ export const coesaoECoerencia = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa apresenta quebra de paralelismo?",
       "opcoes": [
-        "A pesquisa investigou causas, consequencias e solucoes possoveis.",
+        "A pesquisa investigou causas, consequências e solucoes possoveis.",
         "A equipe desejava revisar o texto, corrigir falhas e publicar o material.",
         "O estudante aprendeu a comparar textos, identificar teses e formular argumentos.",
         "O projeto prioriza ouvir a comunidade, o dialogo constante e ampliar parcerias."
       ],
       "correta": "O projeto prioriza ouvir a comunidade, o dialogo constante e ampliar parcerias.",
-      "comentario": "Ha mistura entre estruturas verbais e nominais, o que quebra o paralelismo sintatico.",
+      "comentario": "Há mistura entre estruturas verbais e nominais, o que quebra o paralelismo sintático.",
       "tempoEstimado": 45,
       "tags": [
         "paralelismo",
@@ -2487,22 +2487,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coerencia global",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coerência global",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Um texto inicia discutindo mobilidade urbana, passa a analisar transporte publico e finaliza propondo ciclovias e integracao tarifária. Esse texto tende a ser globalmente coerente porque:",
       "opcoes": [
-        "mantem um campo tematico relacionado e circulacao na cidade",
+        "mantem um campo temático relacionado e circulacao na cidade",
         "abandona o tema inicial em favor de outro sem vinculo",
-        "evita qualquer relacao entre introdução e conclusao",
+        "evita qualquer relação entre introdução e conclusão",
         "substitui argumentos por descrições aleaterias"
       ],
-      "correta": "mantem um campo tematico relacionado e circulacao na cidade",
-      "comentario": "Os tepicos desenvolvidos pertencem ao mesmo eixo tematico, favorecendo a coerencia global.",
+      "correta": "mantem um campo temático relacionado e circulacao na cidade",
+      "comentario": "Os tepicos desenvolvidos pertencem ao mesmo eixo temático, favorecendo a coerência global.",
       "tempoEstimado": 45,
       "tags": [
         "coerencia-global",
@@ -2525,19 +2525,19 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coerencia local",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coerência local",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que ocorre incoerencia local por incompatibilidade semantica:",
+      "enunciado": "Assinale a alternativa em que ocorre incoerencia local por incompatibilidade semântica:",
       "opcoes": [
         "O pesquisador reuniu dados e elaborou hipoteses para o estudo.",
         "O corredor venceu a maratona apos permanecer imovel durante todo o percurso.",
         "A campanha foi divulgada nas escolas e alcanaou muitos estudantes.",
-        "A equipe revisou o material antes da apresentacao final."
+        "A equipe revisou o material antes da apresentação final."
       ],
       "correta": "O corredor venceu a maratona apos permanecer imovel durante todo o percurso.",
       "comentario": "Permanecer imovel durante todo o percurso e incompativel com a ideia de vencer uma maratona.",
@@ -2563,22 +2563,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Contradicao e quebra de sentido",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Contradição e quebra de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em qual alternativa a segunda informacao contradiz a primeira?",
+      "enunciado": "Em qual alternativa a segunda informação contradiz a primeira?",
       "opcoes": [
         "O seminário foi adiado, e os participantes receberam nova data.",
-        "A aluna nao compareceu e aula, mas enviou o trabalho por e-mail.",
-        "A reuniao foi sigilosa, por isso seu conteudo foi amplamente divulgado a todos antes de acontecer.",
+        "A aluna não compareceu e aula, mas enviou o trabalho por e-mail.",
+        "A reuniao foi sigilosa, por isso seu conteúdo foi amplamente divulgado a todos antes de acontecer.",
         "O edital foi publicado e os interessados puderam se inscrever."
       ],
-      "correta": "A reuniao foi sigilosa, por isso seu conteudo foi amplamente divulgado a todos antes de acontecer.",
-      "comentario": "A ideia de sigilo entra em choque com a ampla divulgacao do conteudo.",
+      "correta": "A reuniao foi sigilosa, por isso seu conteúdo foi amplamente divulgado a todos antes de acontecer.",
+      "comentario": "A ideia de sigilo entra em choque com a ampla divulgação do conteúdo.",
       "tempoEstimado": 55,
       "tags": [
         "contradicao",
@@ -2601,22 +2601,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Relacao logica entre partes do texto",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Relação lógica entre partes do texto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
       "enunciado": "Leia: I. 'Estava cansado, mas continuou trabalhando.' II. 'Estava cansado, por isso continuou trabalhando.' A comparacao entre as formulacoes mostra que:",
       "opcoes": [
-        "I e II mantem exatamente a mesma relacao logica",
+        "I e II mantem exatamente a mesma relação lógica",
         "I expressa causa, e II expressa concessao",
-        "I e II expressam apenas adicao de informacoes",
-        "I expressa oposicao ao esperado, e II expressa consequencia"
+        "I e II expressam apenas adicao de informações",
+        "I expressa oposicao ao esperado, e II expressa consequência"
       ],
-      "correta": "I expressa oposicao ao esperado, e II expressa consequencia",
-      "comentario": "Em I, o conectivo adversativo indica contraste; em II, a locucao conclusiva sugere consequencia.",
+      "correta": "I expressa oposicao ao esperado, e II expressa consequência",
+      "comentario": "Em I, o conectivo adversativo indica contraste; em II, a locucao conclusiva sugere consequência.",
       "tempoEstimado": 55,
       "tags": [
         "relacao-logica",
@@ -2639,22 +2639,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Progressao tematica",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Progressão temática",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho 'A escola abriu um laboraterio de inovacao. O espaco passou a sediar oficinas semanais. Dessas oficinas surgiram projetos apresentados em feiras cientificas', a progressao tematica revela:",
+      "enunciado": "No trecho 'A escola abriu um laboraterio de inovacao. O espaco passou a sediar oficinas semanais. Dessas oficinas surgiram projetos apresentados em feiras cientificas', a progressão temática revela:",
       "opcoes": [
         "uma sucessao de fatos ligados por desdobramento do tema inicial",
-        "uma ruptura de assunto a cada periodo",
-        "uma repeticao literal sem avanao de conteudo",
+        "uma ruptura de assunto a cada período",
+        "uma repetição literal sem avanço de conteúdo",
         "uma enumeracao de dados desconectados"
       ],
       "correta": "uma sucessao de fatos ligados por desdobramento do tema inicial",
-      "comentario": "Cada periodo acrescenta uma consequencia do anterior, desenvolvendo o tema em cadeia.",
+      "comentario": "Cada período acrescenta uma consequência do anterior, desenvolvendo o tema em cadeia.",
       "tempoEstimado": 60,
       "tags": [
         "progressao-tematica",
@@ -2677,21 +2677,21 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coerencia global",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coerência global",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto comeca tratando de consumo consciente, passa e reciclagem, discute reaproveitamento de materiais e conclui com habitos sustentáveis. A inferencia mais adequada e que o texto:",
+      "enunciado": "Um texto comeca tratando de consumo consciente, passa e reciclagem, discute reaproveitamento de materiais e conclui com hábitos sustentáveis. A inferencia mais adequada e que o texto:",
       "opcoes": [
-        "perde coerencia ao trocar de exemplos",
-        "mantem coerencia global por desenvolver facetas de um mesmo eixo tematico",
+        "perde coerência ao trocar de exemplos",
+        "mantem coerência global por desenvolver facetas de um mesmo eixo temático",
         "abandona o assunto inicial sem justificativa",
         "mistura temas incompateveis entre si"
       ],
-      "correta": "mantem coerencia global por desenvolver facetas de um mesmo eixo tematico",
+      "correta": "mantem coerência global por desenvolver facetas de um mesmo eixo temático",
       "comentario": "Os tepicos apresentados se relacionam ao mesmo campo semântico da sustentabilidade e do consumo responsovel.",
       "tempoEstimado": 60,
       "tags": [
@@ -2715,19 +2715,19 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Paralelismo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa reescreve corretamente o trecho 'A atividade exige leitura critica, interpretar dados e elaboracao de hipoteses'?",
+      "enunciado": "Qual alternativa reescreve corretamente o trecho 'A atividade exige leitura crítica, interpretar dados e elaboracao de hipoteses'?",
       "opcoes": [
-        "A atividade exige leitura critica, interpretar dados e elaborar hipoteses.",
-        "A atividade exige leitura critica, interpretacao de dados e elaborar hipoteses.",
+        "A atividade exige leitura crítica, interpretar dados e elaborar hipoteses.",
+        "A atividade exige leitura crítica, interpretação de dados e elaborar hipoteses.",
         "A atividade exige ler criticamente, interpretar dados e elaborar hipoteses.",
-        "A atividade exige critica leitura, interpretar dados e hipoteses."
+        "A atividade exige crítica leitura, interpretar dados e hipoteses."
       ],
       "correta": "A atividade exige ler criticamente, interpretar dados e elaborar hipoteses.",
       "comentario": "A alternativa corrige o paralelismo ao usar tras verbos no infinitivo.",
@@ -2753,14 +2753,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Relacao logica entre partes do texto",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Relação lógica entre partes do texto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o conectivo torna inadequada a relacao entre as partes do periodo:",
+      "enunciado": "Assinale a alternativa em que o conectivo torna inadequada a relação entre as partes do período:",
       "opcoes": [
         "A equipe se preparou bastante, por isso o resultado foi positivo.",
         "A cidade investiu em transporte publico, portanto houve melhora na mobilidade.",
@@ -2768,7 +2768,7 @@ export const coesaoECoerencia = {
         "O autor revisou cuidadosamente o artigo, embora quisesse eliminar falhas antes da publicacao."
       ],
       "correta": "O autor revisou cuidadosamente o artigo, embora quisesse eliminar falhas antes da publicacao.",
-      "comentario": "O conectivo 'embora' e inadequado, pois a segunda oracao expressa finalidade ou motivacao, e nao concessao.",
+      "comentario": "O conectivo 'embora' e inadequado, pois a segunda oracao expressa finalidade ou motivacao, e não concessao.",
       "tempoEstimado": 60,
       "tags": [
         "relacao-logica",
@@ -2791,14 +2791,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coerencia local",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coerência local",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa preserva coerencia local e relacao logica plausovele",
+      "enunciado": "Qual alternativa preserva coerência local e relação lógica plausível?",
       "opcoes": [
         "A proposta foi elogiada porque apresentou argumentos consistentes e dados relevantes.",
         "A biblioteca ampliou o acervo, mas por isso os leitores passaram a ter menos opcoes.",
@@ -2806,7 +2806,7 @@ export const coesaoECoerencia = {
         "A palestra foi silenciosa devido ao excesso de aplausos contínuos."
       ],
       "correta": "A proposta foi elogiada porque apresentou argumentos consistentes e dados relevantes.",
-      "comentario": "A justificativa apresentada e compativel com o elogio recebido, preservando a coerencia local.",
+      "comentario": "A justificativa apresentada e compatível com o elogio recebido, preservando a coerência local.",
       "tempoEstimado": 60,
       "tags": [
         "coerencia-local",
@@ -2829,22 +2829,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Contradicao e quebra de sentido",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Contradição e quebra de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o periodo: 'O texto defende a leitura critica como pratica essencial. Por isso, recomenda que o leitor aceite qualquer informacao sem questioná-la.' O principal problema e:",
+      "enunciado": "Leia o período: 'O texto defende a leitura crítica como prática essencial. Por isso, recomenda que o leitor aceite qualquer informação sem questioná-la.' O principal problema e:",
       "opcoes": [
-        "falta de coesao referencial",
-        "contradicao entre a tese e a recomendacao apresentada",
+        "falta de coesão referencial",
+        "contradição entre a tese e a recomendacao apresentada",
         "troca indevida de tempo verbal",
-        "ausencia de articuladores entre as oracoes"
+        "ausência de articuladores entre as oracoes"
       ],
-      "correta": "contradicao entre a tese e a recomendacao apresentada",
-      "comentario": "Defender leitura critica e incompativel com recomendar aceitacao passiva de qualquer informacao.",
+      "correta": "contradição entre a tese e a recomendacao apresentada",
+      "comentario": "Defender leitura crítica e incompativel com recomendar aceitacao passiva de qualquer informação.",
       "tempoEstimado": 70,
       "tags": [
         "contradicao",
@@ -2867,14 +2867,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que reescreve sem alteracao relevante de sentido o trecho 'O projeto amadureceu ao longo das discussoes; depois disso, foi implementado':",
+      "enunciado": "Assinale a alternativa que reescreve sem alteração relevante de sentido o trecho 'O projeto amadureceu ao longo das discussoes; depois disso, foi implementado':",
       "opcoes": [
         "O projeto amadureceu ao longo das discussoes; por isso, foi debatido.",
         "O projeto amadureceu ao longo das discussoes; contudo, foi implementado.",
@@ -2882,7 +2882,7 @@ export const coesaoECoerencia = {
         "O projeto amadureceu ao longo das discussoes; embora tenha sido implementado."
       ],
       "correta": "O projeto amadureceu ao longo das discussoes; em seguida, foi implementado.",
-      "comentario": "A expressao 'em seguida' preserva a relacao temporal expressa por 'depois disso'.",
+      "comentario": "A expressao 'em seguida' preserva a relação temporal expressa por 'depois disso'.",
       "tempoEstimado": 55,
       "tags": [
         "equivalencia-de-formas",
@@ -2905,22 +2905,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coerencia global",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coerência global",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto mantem coerencia global quando:",
+      "enunciado": "Um texto mantem coerência global quando:",
       "opcoes": [
-        "troca de assunto a cada periodo",
-        "repete frases sem acrescentar informacao",
-        "elimina qualquer relacao entre os paragrafos",
-        "apresenta ideias ligadas a um mesmo eixo tematico"
+        "troca de assunto a cada período",
+        "repete frases sem acrescentar informação",
+        "elimina qualquer relação entre os paragrafos",
+        "apresenta ideias ligadas a um mesmo eixo temático"
       ],
-      "correta": "apresenta ideias ligadas a um mesmo eixo tematico",
-      "comentario": "A coerencia global depende da unidade tematica e da articulacao entre as partes do texto.",
+      "correta": "apresenta ideias ligadas a um mesmo eixo temático",
+      "comentario": "A coerência global depende da unidade temática e da articulação entre as partes do texto.",
       "tempoEstimado": 25,
       "tags": [
         "coerencia-global",
@@ -2943,22 +2943,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coerencia local",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coerência local",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ha coerencia local quando, em um trecho, as ideias:",
+      "enunciado": "Há coerência local quando, em um trecho, as ideias:",
       "opcoes": [
-        "mantem relacao de sentido entre si",
+        "mantem relação de sentido entre si",
         "se contradizem abertamente",
-        "sao escolhidas ao acaso",
-        "dispensam qualquer conexão logica"
+        "são escolhidas ao acaso",
+        "dispensam qualquer conexão lógica"
       ],
-      "correta": "mantem relacao de sentido entre si",
-      "comentario": "A coerencia local depende da compatibilidade semantica entre enunciados proximos.",
+      "correta": "mantem relação de sentido entre si",
+      "comentario": "A coerência local depende da compatibilidade semântica entre enunciados proximos.",
       "tempoEstimado": 25,
       "tags": [
         "coerencia-local",
@@ -2981,14 +2981,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Contradicao e quebra de sentido",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Contradição e quebra de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em qual alternativa ha quebra de sentido?",
+      "enunciado": "Em qual alternativa há quebra de sentido?",
       "opcoes": [
         "O estudante leu o capitulo e fez anotacoes.",
         "A atleta venceu a prova sem participar da competicao.",
@@ -2996,7 +2996,7 @@ export const coesaoECoerencia = {
         "O professor corrigiu as atividades da turma."
       ],
       "correta": "A atleta venceu a prova sem participar da competicao.",
-      "comentario": "Vencer a prova sem participar da competicao gera incompatibilidade logica e quebra de sentido.",
+      "comentario": "Vencer a prova sem participar da competicao gera incompatibilidade lógica e quebra de sentido.",
       "tempoEstimado": 25,
       "tags": [
         "contradicao",
@@ -3019,22 +3019,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coerencia local",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coerência local",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que ha coerencia local entre as oracoes:",
+      "enunciado": "Assinale a alternativa em que há coerência local entre as oracoes:",
       "opcoes": [
-        "O texto foi resumido, embora ainda nao tivesse sido escrito.",
-        "A equipe chegou cedo, entao permaneceu ausente durante toda a reuniao.",
+        "O texto foi resumido, embora ainda não tivesse sido escrito.",
+        "A equipe chegou cedo, então permaneceu ausente durante toda a reuniao.",
         "O palestrante explicou o tema com clareza, por isso a plateia acompanhou melhor a exposicao.",
         "O aluno revisou a prova, logo esqueceu de ler qualquer questao."
       ],
       "correta": "O palestrante explicou o tema com clareza, por isso a plateia acompanhou melhor a exposicao.",
-      "comentario": "Ha compatibilidade entre a explicacao clara e a melhor compreensao por parte da plateia.",
+      "comentario": "Há compatibilidade entre a explicacao clara e a melhor compreensão por parte da plateia.",
       "tempoEstimado": 35,
       "tags": [
         "coerencia-local",
@@ -3057,9 +3057,9 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coerencia global",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coerência global",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
@@ -3067,11 +3067,11 @@ export const coesaoECoerencia = {
       "enunciado": "Leia a descricao de um texto: introduz o tema da leitura digital, discute vantagens dos livros eletrunicos, apresenta desafios da concentracao e conclui com propostas de uso equilibrado. Esse texto tende a ser globalmente coerente porque:",
       "opcoes": [
         "abandona o assunto principal ao final",
-        "substitui argumentos por frases sem relacao",
-        "apresenta apenas informacoes contraditórias",
-        "mantem um nucleo tematico articulado"
+        "substitui argumentos por frases sem relação",
+        "apresenta apenas informações contraditórias",
+        "mantem um nucleo temático articulado"
       ],
-      "correta": "mantem um nucleo tematico articulado",
+      "correta": "mantem um nucleo temático articulado",
       "comentario": "Os paragrafos desenvolvem diferentes aspectos de um mesmo tema, garantindo unidade global.",
       "tempoEstimado": 35,
       "tags": [
@@ -3095,21 +3095,21 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Contradicao e quebra de sentido",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Contradição e quebra de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em qual alternativa a segunda informacao contradiz a primeira?",
+      "enunciado": "Em qual alternativa a segunda informação contradiz a primeira?",
       "opcoes": [
-        "O aluno faltou ao debate e, durante sua presenca no evento, apresentou um argumento decisivo.",
+        "O aluno faltou ao debate e, durante sua presença no evento, apresentou um argumento decisivo.",
         "O relaterio foi revisado antes da publicacao.",
-        "A campanha foi adiada, mas a nova data ja foi divulgada.",
+        "A campanha foi adiada, mas a nova data já foi divulgada.",
         "A professora explicou novamente o exercicio para evitar dúvidas."
       ],
-      "correta": "O aluno faltou ao debate e, durante sua presenca no evento, apresentou um argumento decisivo.",
+      "correta": "O aluno faltou ao debate e, durante sua presença no evento, apresentou um argumento decisivo.",
       "comentario": "Faltar ao debate e incompativel com ter estado presente para apresentar argumento no evento.",
       "tempoEstimado": 40,
       "tags": [
@@ -3133,14 +3133,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Relacao logica entre partes do texto",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Relação lógica entre partes do texto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta uma relacao logica adequada de causa e consequencia?",
+      "enunciado": "Qual alternativa apresenta uma relação lógica adequada de causa e consequência?",
       "opcoes": [
         "A biblioteca ampliou o horario de funcionamento, mas mais alunos passaram a frequenta-la.",
         "A biblioteca ampliou o horario de funcionamento, por isso mais alunos passaram a frequenta-la.",
@@ -3171,9 +3171,9 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coerencia local",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coerência local",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
@@ -3183,10 +3183,10 @@ export const coesaoECoerencia = {
         "A palestra foi produtiva porque ninguem ouviu nada do que foi dito.",
         "A palestra foi produtiva, embora nunca tenha acontecido.",
         "A palestra foi produtiva porque os participantes contribuíram com perguntas e comentarios.",
-        "A palestra foi produtiva, por isso permaneceu vazia de conteudo."
+        "A palestra foi produtiva, por isso permaneceu vazia de conteúdo."
       ],
       "correta": "A palestra foi produtiva porque os participantes contribuíram com perguntas e comentarios.",
-      "comentario": "A participacao ativa do publico sustenta de forma coerente a avaliacao positiva da palestra.",
+      "comentario": "A participacao ativa do publico sustenta de forma coerente a avaliação positiva da palestra.",
       "tempoEstimado": 40,
       "tags": [
         "coerencia-local",
@@ -3209,22 +3209,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coerencia global",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coerência global",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto comeca discutindo desinformacao nas redes sociais, analisa checagem de fatos, comenta responsabilidade dos usuários e conclui defendendo educacao midietica. A inferencia correta e que ha coerencia global porque:",
+      "enunciado": "Um texto comeca discutindo desinformacao nas redes sociais, analisa checagem de fatos, comenta responsabilidade dos usuários e conclui defendendo educação midietica. A inferencia correta e que há coerência global porque:",
       "opcoes": [
-        "o texto troca de assunto para evitar repeticao",
+        "o texto troca de assunto para evitar repetição",
         "as ideias se anulam ao longo do texto",
-        "a conclusao nao tem relacao com o que foi desenvolvido",
-        "todos os trechos pertencem ao mesmo campo tematico"
+        "a conclusão não tem relação com o que foi desenvolvido",
+        "todos os trechos pertencem ao mesmo campo temático"
       ],
-      "correta": "todos os trechos pertencem ao mesmo campo tematico",
-      "comentario": "Os tepicos abordados se articulam em torno do eixo da circulacao e verificacao de informacoes.",
+      "correta": "todos os trechos pertencem ao mesmo campo temático",
+      "comentario": "Os tepicos abordados se articulam em torno do eixo da circulacao e verificacao de informações.",
       "tempoEstimado": 45,
       "tags": [
         "coerencia-global",
@@ -3247,22 +3247,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Contradicao e quebra de sentido",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Contradição e quebra de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o periodo: 'O artigo critica o consumo excessivo. Por isso, recomenda comprar ainda mais produtos por impulso.' O problema central do trecho e:",
+      "enunciado": "Leia o período: 'O artigo crítica o consumo excessivo. Por isso, recomenda comprar ainda mais produtos por impulso.' O problema central do trecho e:",
       "opcoes": [
-        "contradicao entre a critica e a recomendacao",
-        "falta de referente explicito",
+        "contradição entre a crítica e a recomendacao",
+        "falta de referente explícito",
         "uso incorreto de pronomes",
-        "ausencia de progressao tematica"
+        "ausência de progressão temática"
       ],
-      "correta": "contradicao entre a critica e a recomendacao",
-      "comentario": "A recomendacao contraria a posicao defendida anteriormente, comprometendo a coerencia.",
+      "correta": "contradição entre a crítica e a recomendacao",
+      "comentario": "A recomendacao contraria a posição defendida anteriormente, comprometendo a coerência.",
       "tempoEstimado": 45,
       "tags": [
         "contradicao",
@@ -3285,14 +3285,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Relacao logica entre partes do texto",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Relação lógica entre partes do texto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa completa adequadamente o periodo com relacao de oposicao? 'O projeto recebeu investimento; ________, ainda nao saiu do papel.'",
+      "enunciado": "Qual alternativa completa adequadamente o período com relação de oposicao? 'O projeto recebeu investimento; ________, ainda não saiu do papel.'",
       "opcoes": [
         "por isso",
         "entretanto",
@@ -3300,7 +3300,7 @@ export const coesaoECoerencia = {
         "assim"
       ],
       "correta": "entretanto",
-      "comentario": "O conectivo 'entretanto' expressa contraste entre o investimento recebido e a ausencia de execucao.",
+      "comentario": "O conectivo 'entretanto' expressa contraste entre o investimento recebido e a ausência de execucao.",
       "tempoEstimado": 40,
       "tags": [
         "relacao-logica",
@@ -3323,14 +3323,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coerencia local",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coerência local",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que a escolha vocabular compromete a coerencia local:",
+      "enunciado": "Assinale a alternativa em que a escolha vocabular compromete a coerência local:",
       "opcoes": [
         "O pesquisador elaborou uma hipotese consistente para orientar o estudo.",
         "A equipe organizou o cronograma antes de iniciar as tarefas.",
@@ -3338,7 +3338,7 @@ export const coesaoECoerencia = {
         "A escola ampliou o projeto apos avaliar os primeiros resultados."
       ],
       "correta": "O argumento apresentado era solido, frágil e incontestavelmente indeciso ao mesmo tempo.",
-      "comentario": "A combinacao de qualificacoes incompateveis compromete a coerencia semantica do enunciado.",
+      "comentario": "A combinacao de qualificacoes incompateveis compromete a coerência semântica do enunciado.",
       "tempoEstimado": 45,
       "tags": [
         "coerencia-local",
@@ -3361,22 +3361,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coerencia global",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coerência global",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa descreve um texto globalmente coerente?",
       "opcoes": [
-        "Um texto que inicia em educacao, passa a meteorologia sem transicao e conclui sobre culinária.",
-        "Um texto que reune frases corretas gramaticalmente, mas sem qualquer unidade tematica.",
-        "Um texto que abandona sua tese no segundo paragrafo e nao a retoma.",
-        "Um texto que trata de leitura critica, analisa habitos de estudo e termina propondo praticas de formacao leitora."
+        "Um texto que inicia em educação, passa a meteorologia sem transicao e conclui sobre culinária.",
+        "Um texto que reune frases corretas gramaticalmente, mas sem qualquer unidade temática.",
+        "Um texto que abandona sua tese no segundo parágrafo e não a retoma.",
+        "Um texto que trata de leitura crítica, analisa hábitos de estudo e termina propondo praticas de formação leitora."
       ],
-      "correta": "Um texto que trata de leitura critica, analisa habitos de estudo e termina propondo praticas de formacao leitora.",
-      "comentario": "Ha unidade tematica e articulacao entre as partes, o que favorece a coerencia global.",
+      "correta": "Um texto que trata de leitura crítica, analisa hábitos de estudo e termina propondo praticas de formação leitora.",
+      "comentario": "Há unidade temática e articulação entre as partes, o que favorece a coerência global.",
       "tempoEstimado": 45,
       "tags": [
         "coerencia-global",
@@ -3399,19 +3399,19 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Contradicao e quebra de sentido",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Contradição e quebra de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em qual alternativa a contradicao e responsovel pela quebra de coerencia?",
+      "enunciado": "Em qual alternativa a contradição e responsovel pela quebra de coerência?",
       "opcoes": [
         "A proposta defende a reducao do desperdicio e incentiva o descarte indiscriminado de recursos.",
         "A equipe concluiu o relaterio apos revisar todos os dados.",
-        "O aluno nao compareceu e prova, mas justificou a ausencia no mesmo dia.",
-        "A leitura do texto exigiu atencao e releitura de alguns trechos."
+        "O aluno não compareceu e prova, mas justificou a ausência no mesmo dia.",
+        "A leitura do texto exigiu atenção e releitura de alguns trechos."
       ],
       "correta": "A proposta defende a reducao do desperdicio e incentiva o descarte indiscriminado de recursos.",
       "comentario": "Defender reducao do desperdicio e incompativel com incentivar descarte indiscriminado.",
@@ -3437,9 +3437,9 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Relacao logica entre partes do texto",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Relação lógica entre partes do texto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "inferencia",
@@ -3447,11 +3447,11 @@ export const coesaoECoerencia = {
       "enunciado": "Leia: 'A equipe revisou o projeto diversas vezes. Mesmo assim, alguns problemas persistiram.' A locucao 'Mesmo assim' indica:",
       "opcoes": [
         "confirmacao do resultado esperado",
-        "contraste entre o esforco realizado e o efeito obtido",
+        "contraste entre o esforço realizado e o efeito obtido",
         "adicao de um novo argumento favorável",
-        "relacao exclusiva de finalidade"
+        "relação exclusiva de finalidade"
       ],
-      "correta": "contraste entre o esforco realizado e o efeito obtido",
+      "correta": "contraste entre o esforço realizado e o efeito obtido",
       "comentario": "A locucao introduz uma ideia contraria ao que se poderia esperar apos tantas revisoes.",
       "tempoEstimado": 55,
       "tags": [
@@ -3475,9 +3475,9 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coerencia local",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coerência local",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "comparacao",
@@ -3486,11 +3486,11 @@ export const coesaoECoerencia = {
       "opcoes": [
         "A biblioteca permaneceu fechada para receber normalmente todos os leitores naquele exato momento.",
         "O corredor venceu sem correr porque a prova exigia imobilidade absoluta em movimento.",
-        "O pesquisador comparou os dados e formulou uma conclusao provisoria.",
+        "O pesquisador comparou os dados e formulou uma conclusão provisoria.",
         "A conferência foi silenciosa graças ao ruído ensurdecedor da plateia tranquila."
       ],
-      "correta": "O pesquisador comparou os dados e formulou uma conclusao provisoria.",
-      "comentario": "A relacao entre acoes e termos e plausovel e semanticamente compativel.",
+      "correta": "O pesquisador comparou os dados e formulou uma conclusão provisoria.",
+      "comentario": "A relação entre ações e termos e plausovel e semanticamente compatível.",
       "tempoEstimado": 55,
       "tags": [
         "coerencia-local",
@@ -3513,22 +3513,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coerencia global",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coerência global",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto trata de inclusao digital, discute acesso desigual e internet, aponta efeitos na educacao e conclui com propostas de politicas publicas. O fator decisivo para sua coerencia global e:",
+      "enunciado": "Um texto trata de inclusao digital, discute acesso desigual e internet, aponta efeitos na educação e conclui com propostas de politicas publicas. O fator decisivo para sua coerência global e:",
       "opcoes": [
-        "a repeticao da mesma frase em todos os paragrafos",
-        "a introdução de assuntos paralelos sem relacao",
-        "a ausencia de qualquer conclusao",
-        "a manutencao de um percurso argumentativo dentro do mesmo tema"
+        "a repetição da mesma frase em todos os paragrafos",
+        "a introdução de assuntos paralelos sem relação",
+        "a ausência de qualquer conclusão",
+        "a manutenção de um percurso argumentativo dentro do mesmo tema"
       ],
-      "correta": "a manutencao de um percurso argumentativo dentro do mesmo tema",
-      "comentario": "A coerencia global se sustenta pela unidade tematica e pelo desenvolvimento progressivo do argumento.",
+      "correta": "a manutenção de um percurso argumentativo dentro do mesmo tema",
+      "comentario": "A coerência global se sustenta pela unidade temática e pelo desenvolvimento progressivo do argumento.",
       "tempoEstimado": 60,
       "tags": [
         "coerencia-global",
@@ -3551,22 +3551,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Contradicao e quebra de sentido",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Contradição e quebra de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o trecho: 'O artigo critica solucoes simplistas para problemas complexos. Em seguida, afirma que basta uma medida isolada para resolver toda a questao.' O principal problema do texto e:",
+      "enunciado": "Leia o trecho: 'O artigo crítica solucoes simplistas para problemas complexos. Em seguida, afirma que basta uma medida isolada para resolver toda a questao.' O principal problema do texto e:",
       "opcoes": [
-        "contradicao entre a avaliacao inicial e a afirmacao posterior",
-        "troca de assunto sem progressao tematica",
+        "contradição entre a avaliação inicial e a afirmacao posterior",
+        "troca de assunto sem progressão temática",
         "falta de pronomes coesivos",
         "excesso de conectivos coordenativos"
       ],
-      "correta": "contradicao entre a avaliacao inicial e a afirmacao posterior",
-      "comentario": "Se o texto critica solucoes simplistas, nao pode, sem incoerencia, defender uma medida isolada como solucao total.",
+      "correta": "contradição entre a avaliação inicial e a afirmacao posterior",
+      "comentario": "Se o texto crítica solucoes simplistas, não pode, sem incoerencia, defender uma medida isolada como solução total.",
       "tempoEstimado": 60,
       "tags": [
         "contradicao",
@@ -3589,22 +3589,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Relacao logica entre partes do texto",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Relação lógica entre partes do texto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
       "enunciado": "Compare as formulacoes: I. 'Ele estudou bastante, portanto foi bem.' II. 'Ele estudou bastante, embora tenha ido bem.' e correto afirmar que:",
       "opcoes": [
-        "I e II expressam a mesma relacao de consequencia",
-        "I expressa consequencia, e II expressa concessao",
+        "I e II expressam a mesma relação de consequência",
+        "I expressa consequência, e II expressa concessao",
         "I expressa oposicao, e II expressa explicacao",
         "I e II expressam apenas adicao"
       ],
-      "correta": "I expressa consequencia, e II expressa concessao",
-      "comentario": "Em I, o conectivo 'portanto' indica consequencia; em II, 'embora' estabelece concessao.",
+      "correta": "I expressa consequência, e II expressa concessao",
+      "comentario": "Em I, o conectivo 'portanto' indica consequência; em II, 'embora' estabelece concessao.",
       "tempoEstimado": 60,
       "tags": [
         "relacao-logica",
@@ -3627,14 +3627,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que reescreve o trecho 'A proposta foi debatida; por isso, amadureceu' sem alterar a relacao de sentido:",
+      "enunciado": "Assinale a alternativa que reescreve o trecho 'A proposta foi debatida; por isso, amadureceu' sem alterar a relação de sentido:",
       "opcoes": [
         "A proposta foi debatida; contudo, amadureceu.",
         "A proposta foi debatida; embora amadurecesse.",
@@ -3642,7 +3642,7 @@ export const coesaoECoerencia = {
         "A proposta foi debatida; apesar disso, amadureceu."
       ],
       "correta": "A proposta foi debatida; assim, amadureceu.",
-      "comentario": "A palavra 'assim' preserva a ideia de consequencia presente em 'por isso'.",
+      "comentario": "A palavra 'assim' preserva a ideia de consequência presente em 'por isso'.",
       "tempoEstimado": 55,
       "tags": [
         "equivalencia-de-formas",
@@ -3665,9 +3665,9 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coerencia local",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coerência local",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "inferencia",
@@ -3675,11 +3675,11 @@ export const coesaoECoerencia = {
       "enunciado": "No trecho 'O atleta treinou diariamente, mas nunca praticou qualquer exercicio', o problema decorre de:",
       "opcoes": [
         "falta de paralelismo",
-        "ausencia de progressao tematica",
-        "uso inadequado de substituicao lexical",
-        "contradicao interna entre as informacoes"
+        "ausência de progressão temática",
+        "uso inadequado de substituição lexical",
+        "contradição interna entre as informações"
       ],
-      "correta": "contradicao interna entre as informacoes",
+      "correta": "contradição interna entre as informações",
       "comentario": "Treinar diariamente e incompativel com afirmar que nunca praticou qualquer exercicio.",
       "tempoEstimado": 60,
       "tags": [
@@ -3703,22 +3703,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coerencia global",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coerência global",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Um artigo inicia criticando a superficialidade do debate publico, depois analisa argumentos simplificadores e termina defendendo leitura cuidadosa e analise critica. A coerencia global do texto depende principalmente de:",
+      "enunciado": "Um artigo inicia criticando a superficialidade do debate publico, depois analisa argumentos simplificadores e termina defendendo leitura cuidadosa e análise crítica. A coerência global do texto depende principalmente de:",
       "opcoes": [
         "unidade argumentativa construída em torno de uma mesma tese",
         "alternância entre temas opostos sem conexão",
         "uso exclusivo de frases curtas",
-        "presenca de vocabulario rebuscado em todos os paragrafos"
+        "presença de vocabulario rebuscado em todos os paragrafos"
       ],
       "correta": "unidade argumentativa construída em torno de uma mesma tese",
-      "comentario": "Mesmo com diferentes enfoques, o texto desenvolve um mesmo posicionamento central, o que garante coerencia global.",
+      "comentario": "Mesmo com diferentes enfoques, o texto desenvolve um mesmo posicionamento central, o que garante coerência global.",
       "tempoEstimado": 70,
       "tags": [
         "coerencia-global",
@@ -3741,14 +3741,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Contradicao e quebra de sentido",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Contradição e quebra de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que a segunda frase inviabiliza o sentido da primeira por contradicao direta:",
+      "enunciado": "Assinale a alternativa em que a segunda frase inviabiliza o sentido da primeira por contradição direta:",
       "opcoes": [
         "O pesquisador revisou os dados. Depois, publicou os resultados.",
         "A escola ampliou o acesso e leitura. Para isso, fechou definitivamente a biblioteca aos estudantes.",
@@ -3779,9 +3779,9 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Relacao logica entre partes do texto",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Relação lógica entre partes do texto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
@@ -3817,22 +3817,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'O texto comeca defendendo o dialogo, enumera exemplos de escuta ativa e termina acusando qualquer divergência de ser inútil.' A leitura mais adequada e que ha:",
+      "enunciado": "Leia: 'O texto comeca defendendo o dialogo, enumera exemplos de escuta ativa e termina acusando qualquer divergência de ser inútil.' A leitura mais adequada e que há:",
       "opcoes": [
-        "plena coerencia entre tese e conclusao",
-        "apenas falta de coesao referencial",
+        "plena coerência entre tese e conclusão",
+        "apenas falta de coesão referencial",
         "erro restrito ao uso de conectivos temporais",
-        "quebra de coerencia por incompatibilidade entre a defesa inicial e o fechamento"
+        "quebra de coerência por incompatibilidade entre a defesa inicial e o fechamento"
       ],
-      "correta": "quebra de coerencia por incompatibilidade entre a defesa inicial e o fechamento",
-      "comentario": "Se o texto valoriza o dialogo e a escuta, a desqualificacao total da divergência compromete a coerencia argumentativa.",
+      "correta": "quebra de coerência por incompatibilidade entre a defesa inicial e o fechamento",
+      "comentario": "Se o texto valoriza o dialogo e a escuta, a desqualificacao total da divergência compromete a coerência argumentativa.",
       "tempoEstimado": 60,
       "tags": [
         "interpretacao-indireta",
@@ -3855,14 +3855,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coesao referencial",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coesão referencial",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho 'A pesquisadora apresentou a tese. A autora tambem respondeu as perguntas da banca', a expressao 'A autora' retoma:",
+      "enunciado": "No trecho 'A pesquisadora apresentou a tese. A autora também respondeu as perguntas da banca', a expressao 'A autora' retoma:",
       "opcoes": [
         "a pesquisadora",
         "a banca",
@@ -3870,7 +3870,7 @@ export const coesaoECoerencia = {
         "as perguntas"
       ],
       "correta": "a pesquisadora",
-      "comentario": "A expressao 'A autora' retoma 'a pesquisadora', evitando repeticao e mantendo a referencia ao mesmo sujeito.",
+      "comentario": "A expressao 'A autora' retoma 'a pesquisadora', evitando repetição e mantendo a referência ao mesmo sujeito.",
       "tempoEstimado": 25,
       "tags": [
         "coesao-referencial",
@@ -3893,8 +3893,8 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Pronomes como recurso coesivo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -3904,11 +3904,11 @@ export const coesaoECoerencia = {
       "opcoes": [
         "os estudantes",
         "a feira",
-        "a organizacao",
+        "a organização",
         "o sucesso"
       ],
       "correta": "a feira",
-      "comentario": "O pronome 'ela' retoma o termo feminino 'feira', estabelecendo coesao referencial.",
+      "comentario": "O pronome 'ela' retoma o termo feminino 'feira', estabelecendo coesão referencial.",
       "tempoEstimado": 25,
       "tags": [
         "pronomes",
@@ -3931,9 +3931,9 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Substituicao lexical",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Substituição lexical",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
@@ -3941,12 +3941,12 @@ export const coesaoECoerencia = {
       "enunciado": "No trecho 'O diretor apresentou o projeto. O gestor destacou seus objetivos', a expressao 'O gestor' foi usada para:",
       "opcoes": [
         "mudar de assunto",
-        "introduzir uma contradicao",
-        "evitar repeticao do mesmo termo",
+        "introduzir uma contradição",
+        "evitar repetição do mesmo termo",
         "indicar tempo verbal"
       ],
-      "correta": "evitar repeticao do mesmo termo",
-      "comentario": "A substituicao lexical mantem a referencia ao mesmo personagem e evita repeticao desnecessoria.",
+      "correta": "evitar repetição do mesmo termo",
+      "comentario": "A substituição lexical mantem a referência ao mesmo personagem e evita repetição desnecessária.",
       "tempoEstimado": 25,
       "tags": [
         "substituicao-lexical",
@@ -3969,8 +3969,8 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Elipse e retomada",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -3984,7 +3984,7 @@ export const coesaoECoerencia = {
         "preferiu"
       ],
       "correta": "preferiu",
-      "comentario": "O verbo 'preferiu' foi omitido na segunda parte do periodo, mas pode ser recuperado pelo contexto.",
+      "comentario": "O verbo 'preferiu' foi omitido na segunda parte do período, mas pode ser recuperado pelo contexto.",
       "tempoEstimado": 25,
       "tags": [
         "elipse",
@@ -4007,21 +4007,21 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Paralelismo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que ha paralelismo sintatico adequado:",
+      "enunciado": "Assinale a alternativa em que há paralelismo sintático adequado:",
       "opcoes": [
-        "O texto pretende informar, conscientizar e provocar reflexao.",
-        "O texto pretende informar, conscientizar e a reflexao do leitor.",
-        "O texto pretende informar, conscientizacao e provocar reflexao.",
+        "O texto pretende informar, conscientizar e provocar reflexão.",
+        "O texto pretende informar, conscientizar e a reflexão do leitor.",
+        "O texto pretende informar, conscientizacao e provocar reflexão.",
         "O texto pretende informar, a conscientizacao e refletir."
       ],
-      "correta": "O texto pretende informar, conscientizar e provocar reflexao.",
+      "correta": "O texto pretende informar, conscientizar e provocar reflexão.",
       "comentario": "Os elementos coordenados mantem estrutura verbal equivalente, o que garante paralelismo.",
       "tempoEstimado": 35,
       "tags": [
@@ -4045,22 +4045,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Progressao tematica",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Progressão temática",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'A escola criou um jornal estudantil. O projeto incentivou a escrita dos alunos. Com o tempo, os textos passaram a circular em eventos da comunidade.' O trecho apresenta progressao tematica porque:",
+      "enunciado": "Leia: 'A escola criou um jornal estudantil. O projeto incentivou a escrita dos alunos. Com o tempo, os textos passaram a circular em eventos da comunidade.' O trecho apresenta progressão temática porque:",
       "opcoes": [
-        "abandona o assunto inicial ja na segunda frase",
+        "abandona o assunto inicial já na segunda frase",
         "desenvolve o tema por meio de desdobramentos",
-        "repete o mesmo conteudo sem avanao",
-        "substitui o tema por outro sem relacao"
+        "repete o mesmo conteúdo sem avanço",
+        "substitui o tema por outro sem relação"
       ],
       "correta": "desenvolve o tema por meio de desdobramentos",
-      "comentario": "Cada frase acrescenta uma consequencia ou expansao do tema inicial, promovendo avanao informativo.",
+      "comentario": "Cada frase acrescenta uma consequência ou expansao do tema inicial, promovendo avanço informativo.",
       "tempoEstimado": 35,
       "tags": [
         "progressao-tematica",
@@ -4083,22 +4083,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coerencia local",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coerência local",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que ha coerencia local entre as informacoes:",
+      "enunciado": "Assinale a alternativa em que há coerência local entre as informações:",
       "opcoes": [
         "O corredor descansou durante toda a prova e, por isso, venceu correndo sem se mover.",
-        "O texto foi publicado antes de ser escrito, embora ja estivesse inédito ha anos.",
-        "A palestrante organizou os argumentos com clareza, o que facilitou a compreensao do publico.",
-        "A biblioteca ficou vazia, entao os leitores lotaram o mesmo espaco silenciosamente barulhento."
+        "O texto foi publicado antes de ser escrito, embora já estivesse inédito há anos.",
+        "A palestrante organizou os argumentos com clareza, o que facilitou a compreensão do publico.",
+        "A biblioteca ficou vazia, então os leitores lotaram o mesmo espaco silenciosamente barulhento."
       ],
-      "correta": "A palestrante organizou os argumentos com clareza, o que facilitou a compreensao do publico.",
-      "comentario": "Ha relacao logica e compativel entre a clareza da exposicao e a compreensao do publico.",
+      "correta": "A palestrante organizou os argumentos com clareza, o que facilitou a compreensão do publico.",
+      "comentario": "Há relação lógica e compatível entre a clareza da exposicao e a compreensão do publico.",
       "tempoEstimado": 40,
       "tags": [
         "coerencia-local",
@@ -4121,22 +4121,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coerencia global",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coerência global",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto discute desperdicio de agua, analisa habitos de consumo, apresenta dados sobre escassez e conclui com propostas de preservacao. Esse texto e globalmente coerente porque:",
+      "enunciado": "Um texto discute desperdicio de água, analisa hábitos de consumo, apresenta dados sobre escassez e conclui com propostas de preservacao. Esse texto e globalmente coerente porque:",
       "opcoes": [
-        "alterna assuntos sem relacao para ampliar repertorio",
+        "alterna assuntos sem relação para ampliar repertório",
         "abandona o tema central nos paragrafos finais",
-        "repete frases isoladas sem articulacao",
-        "mantem unidade tematica ao longo do desenvolvimento"
+        "repete frases isoladas sem articulação",
+        "mantem unidade temática ao longo do desenvolvimento"
       ],
-      "correta": "mantem unidade tematica ao longo do desenvolvimento",
-      "comentario": "Todos os elementos giram em torno do mesmo eixo tematico, o que sustenta a coerencia global.",
+      "correta": "mantem unidade temática ao longo do desenvolvimento",
+      "comentario": "Todos os elementos giram em torno do mesmo eixo temático, o que sustenta a coerência global.",
       "tempoEstimado": 40,
       "tags": [
         "coerencia-global",
@@ -4159,14 +4159,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Relacao logica entre partes do texto",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Relação lógica entre partes do texto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual conectivo completa adequadamente a frase com ideia de consequencia? 'O cronograma foi seguido com rigor; ________, o trabalho terminou no prazo.'",
+      "enunciado": "Qual conectivo completa adequadamente a frase com ideia de consequência? 'O cronograma foi seguido com rigor; ________, o trabalho terminou no prazo.'",
       "opcoes": [
         "assim",
         "entretanto",
@@ -4174,7 +4174,7 @@ export const coesaoECoerencia = {
         "embora"
       ],
       "correta": "assim",
-      "comentario": "O conectivo 'assim' indica consequencia do fato de o cronograma ter sido seguido rigorosamente.",
+      "comentario": "O conectivo 'assim' indica consequência do fato de o cronograma ter sido seguido rigorosamente.",
       "tempoEstimado": 40,
       "tags": [
         "relacao-logica",
@@ -4197,18 +4197,18 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Contradicao e quebra de sentido",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Contradição e quebra de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta contradicao que compromete a coerencia?",
+      "enunciado": "Qual alternativa apresenta contradição que compromete a coerência?",
       "opcoes": [
         "A equipe revisou o relaterio e corrigiu os dados incorretos.",
         "O texto defende a escuta atenta, mas rejeita qualquer possibilidade de ouvir o outro.",
-        "O evento foi suspenso, e os participantes foram avisados pela organizacao.",
+        "O evento foi suspenso, e os participantes foram avisados pela organização.",
         "A estudante leu o artigo e destacou os argumentos principais."
       ],
       "correta": "O texto defende a escuta atenta, mas rejeita qualquer possibilidade de ouvir o outro.",
@@ -4235,14 +4235,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que reescreve 'A proposta foi debatida e, depois disso, aprovada' sem alteracao relevante de sentido:",
+      "enunciado": "Assinale a alternativa que reescreve 'A proposta foi debatida e, depois disso, aprovada' sem alteração relevante de sentido:",
       "opcoes": [
         "A proposta foi debatida e, contudo, aprovada.",
         "A proposta foi debatida e, porque isso, aprovada.",
@@ -4250,7 +4250,7 @@ export const coesaoECoerencia = {
         "A proposta foi debatida e, embora isso, aprovada."
       ],
       "correta": "A proposta foi debatida e, em seguida, aprovada.",
-      "comentario": "A expressao 'em seguida' preserva a relacao temporal indicada por 'depois disso'.",
+      "comentario": "A expressao 'em seguida' preserva a relação temporal indicada por 'depois disso'.",
       "tempoEstimado": 45,
       "tags": [
         "equivalencia-de-formas",
@@ -4273,8 +4273,8 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Paralelismo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -4311,22 +4311,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'O texto elogia a leitura critica, mas trata qualquer questionamento do leitor como inconveniente.' A inferencia mais adequada e que o texto:",
+      "enunciado": "Leia: 'O texto elogia a leitura crítica, mas trata qualquer questionamento do leitor como inconveniente.' A inferencia mais adequada e que o texto:",
       "opcoes": [
         "apresenta incoerencia entre a defesa inicial e sua postura",
-        "mantem plena coerencia entre ideia e atitude",
+        "mantem plena coerência entre ideia e atitude",
         "falha apenas no uso de pronomes",
         "tem problema exclusivamente de ortografia"
       ],
       "correta": "apresenta incoerencia entre a defesa inicial e sua postura",
-      "comentario": "Valorizar leitura critica implica aceitar questionamento; rejeitá-lo contradiz a posicao inicial.",
+      "comentario": "Valorizar leitura crítica implica aceitar questionamento; rejeitá-lo contradiz a posição inicial.",
       "tempoEstimado": 45,
       "tags": [
         "interpretacao-indireta",
@@ -4349,22 +4349,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o conectivo parece adequado e primeira vista, mas compromete a relacao logica do periodo:",
+      "enunciado": "Assinale a alternativa em que o conectivo parece adequado e primeira vista, mas compromete a relação lógica do período:",
       "opcoes": [
         "O estudante organizou o cronograma, por isso concluiu as etapas no prazo.",
-        "A palestrante apresentou exemplos, porque facilitou a compreensao do tema.",
+        "A palestrante apresentou exemplos, porque facilitou a compreensão do tema.",
         "A equipe revisou o material, entretanto ainda encontrou falhas relevantes.",
         "O projeto foi ampliado, e novos participantes passaram a integrá-lo."
       ],
-      "correta": "A palestrante apresentou exemplos, porque facilitou a compreensao do tema.",
-      "comentario": "O conectivo 'porque' sugere que facilitar a compreensao foi causa de apresentar exemplos, quando a relacao natural e inversa: os exemplos facilitaram a compreensao.",
+      "correta": "A palestrante apresentou exemplos, porque facilitou a compreensão do tema.",
+      "comentario": "O conectivo 'porque' sugere que facilitar a compreensão foi causa de apresentar exemplos, quando a relação natural e inversa: os exemplos facilitaram a compreensão.",
       "tempoEstimado": 50,
       "tags": [
         "pegadinha",
@@ -4387,22 +4387,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um texto que comeca defendendo a diversidade de opinioes, a conclusao 'so um ponto de vista deve ser considerado legotimo' produz:",
+      "enunciado": "Em um texto que comeca defendendo a diversidade de opinioes, a conclusão 'só um ponto de vista deve ser considerado legotimo' produz:",
       "opcoes": [
-        "progressao tematica esperada",
-        "coerencia global reforcada",
-        "contradicao com a tese inicial",
-        "apenas mudanca de tempo verbal"
+        "progressão temática esperada",
+        "coerência global reforcada",
+        "contradição com a tese inicial",
+        "apenas mudança de tempo verbal"
       ],
-      "correta": "contradicao com a tese inicial",
-      "comentario": "A conclusao nega o princípio da diversidade de opinioes defendido no inicio do texto.",
+      "correta": "contradição com a tese inicial",
+      "comentario": "A conclusão nega o princípio da diversidade de opinioes defendido no inicio do texto.",
       "tempoEstimado": 50,
       "tags": [
         "interpretacao-indireta",
@@ -4425,9 +4425,9 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "comparacao",
@@ -4436,11 +4436,11 @@ export const coesaoECoerencia = {
       "opcoes": [
         "I expressa oposicao, e II expressa causa",
         "I e II apresentam sentidos contrarios",
-        "II elimina a relacao logica presente em I",
-        "I e II mantem a mesma relacao de consequencia"
+        "II elimina a relação lógica presente em I",
+        "I e II mantem a mesma relação de consequência"
       ],
-      "correta": "I e II mantem a mesma relacao de consequencia",
-      "comentario": "As expressoes 'por isso' e 'assim' podem desempenhar funcao conclusiva, preservando a relacao semantica.",
+      "correta": "I e II mantem a mesma relação de consequência",
+      "comentario": "As expressoes 'por isso' e 'assim' podem desempenhar função conclusiva, preservando a relação semântica.",
       "tempoEstimado": 50,
       "tags": [
         "equivalencia-de-formas",
@@ -4463,14 +4463,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coerencia local",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coerência local",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que ocorre quebra de coerencia local por incompatibilidade entre as acoes:",
+      "enunciado": "Assinale a alternativa em que ocorre quebra de coerência local por incompatibilidade entre as ações:",
       "opcoes": [
         "O corredor permaneceu parado do inicio ao fim e, por isso, completou a prova mais rápido que todos.",
         "O pesquisador reuniu dados antes de formular a hipotese.",
@@ -4501,22 +4501,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coerencia global",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coerência global",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Um artigo discute alfabetizacao, formacao de leitores, acesso a bibliotecas e politicas de incentivo e leitura. O principal fator de coerencia global e:",
+      "enunciado": "Um artigo discute alfabetizacao, formação de leitores, acesso a bibliotecas e politicas de incentivo e leitura. O principal fator de coerência global e:",
       "opcoes": [
         "o uso de frases longas em todos os paragrafos",
-        "a unidade do eixo tematico relacionado e leitura",
-        "a substituicao total do tema por exemplos isolados",
-        "a ausencia de conectivos entre os paragrafos"
+        "a unidade do eixo temático relacionado e leitura",
+        "a substituição total do tema por exemplos isolados",
+        "a ausência de conectivos entre os paragrafos"
       ],
-      "correta": "a unidade do eixo tematico relacionado e leitura",
-      "comentario": "Os assuntos tratados pertencem ao mesmo campo tematico, o que sustenta a coerencia global do texto.",
+      "correta": "a unidade do eixo temático relacionado e leitura",
+      "comentario": "Os assuntos tratados pertencem ao mesmo campo temático, o que sustenta a coerência global do texto.",
       "tempoEstimado": 55,
       "tags": [
         "coerencia-global",
@@ -4539,22 +4539,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Relacao logica entre partes do texto",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Relação lógica entre partes do texto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Compare: I. 'Ele estudou, portanto foi aprovado.' II. 'Ele estudou, embora tenha sido aprovado.' A alternativa correta e:",
+      "enunciado": "Compare: I. 'Ele estudou, portanto foi aprovado.' II. 'Ele estudou, embora tenha sido aprovado.' A alternativa correta é:",
       "opcoes": [
-        "I e II apresentam a mesma relacao logica",
+        "I e II apresentam a mesma relação lógica",
         "I expressa causa, e II expressa adicao",
-        "I expressa consequencia, e II expressa concessao",
-        "II expressa conclusao mais forte que I"
+        "I expressa consequência, e II expressa concessao",
+        "II expressa conclusão mais forte que I"
       ],
-      "correta": "I expressa consequencia, e II expressa concessao",
-      "comentario": "Em I, 'portanto' marca consequencia; em II, 'embora' introduz concessao.",
+      "correta": "I expressa consequência, e II expressa concessao",
+      "comentario": "Em I, 'portanto' marca consequência; em II, 'embora' introduz concessao.",
       "tempoEstimado": 55,
       "tags": [
         "relacao-logica",
@@ -4577,22 +4577,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'A campanha foi intensa. Mesmo assim, a adesao foi pequena. Isso prova que a divulgacao foi irrelevante.' A pegadinha do raciocinio esta em:",
+      "enunciado": "Leia: 'A campanha foi intensa. Mesmo assim, a adesão foi pequena. Isso prova que a divulgação foi irrelevante.' A pegadinha do raciocínio está em:",
       "opcoes": [
         "usar pronome demonstrativo para retomar ideia anterior",
         "empregar marcador adversativo entre as frases",
         "organizar os fatos em sequencia temporal",
-        "confundir resultado insuficiente com ausencia total de efeito"
+        "confundir resultado insuficiente com ausência total de efeito"
       ],
-      "correta": "confundir resultado insuficiente com ausencia total de efeito",
-      "comentario": "Baixa adesao nao prova, necessariamente, que a divulgacao foi irrelevante; a conclusao exagera o dado anterior.",
+      "correta": "confundir resultado insuficiente com ausência total de efeito",
+      "comentario": "Baixa adesão não prova, necessariamente, que a divulgação foi irrelevante; a conclusão exagera o dado anterior.",
       "tempoEstimado": 60,
       "tags": [
         "pegadinha",
@@ -4615,22 +4615,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um texto que valoriza a analise cuidadosa, a frase final 'o leitor deve aceitar a primeira impressao sem questionar' sugere:",
+      "enunciado": "Em um texto que valoriza a análise cuidadosa, a frase final 'o leitor deve aceitar a primeira impressao sem questionar' sugere:",
       "opcoes": [
-        "ruptura entre o argumento central e a conclusao",
+        "ruptura entre o argumento central e a conclusão",
         "continuidade coerente da tese",
-        "mudanca de registro linguastico apenas",
-        "reforço do paralelismo sintatico"
+        "mudança de registro linguastico apenas",
+        "reforço do paralelismo sintático"
       ],
-      "correta": "ruptura entre o argumento central e a conclusao",
-      "comentario": "A recomendacao final contradiz a defesa da analise cuidadosa, gerando incoerencia argumentativa.",
+      "correta": "ruptura entre o argumento central e a conclusão",
+      "comentario": "A recomendacao final contradiz a defesa da análise cuidadosa, gerando incoerencia argumentativa.",
       "tempoEstimado": 60,
       "tags": [
         "interpretacao-indireta",
@@ -4653,14 +4653,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa reescreve 'A proposta enfrentou resistencia; mesmo assim, foi aprovada' sem alterar a relacao de sentido?",
+      "enunciado": "Qual alternativa reescreve 'A proposta enfrentou resistencia; mesmo assim, foi aprovada' sem alterar a relação de sentido?",
       "opcoes": [
         "A proposta enfrentou resistencia; por isso, foi aprovada.",
         "A proposta enfrentou resistencia; apesar disso, foi aprovada.",
@@ -4691,22 +4691,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que a formulacao parece coerente, mas traz uma inversao logica sutil:",
+      "enunciado": "Assinale a alternativa em que a formulacao parece coerente, mas traz uma inversao lógica sutil:",
       "opcoes": [
         "A proposta foi bem recebida porque dialogava com demandas reais da comunidade.",
-        "O texto ficou mais claro porque foi revisado com atencao.",
+        "O texto ficou mais claro porque foi revisado com atenção.",
         "A palestra foi compreendida porque os alunos entenderam sua explicacao.",
-        "A campanha obteve adesao apos divulgacao intensa em diferentes meios."
+        "A campanha obteve adesão apos divulgação intensa em diferentes meios."
       ],
       "correta": "A palestra foi compreendida porque os alunos entenderam sua explicacao.",
-      "comentario": "A frase parece logica, mas e circular: compreender a palestra e entender sua explicacao expressam praticamente a mesma informacao, sem explicar de fato a causa.",
+      "comentario": "A frase parece lógica, mas e circular: compreender a palestra e entender sua explicacao expressam praticamente a mesma informação, sem explicar de fato a causa.",
       "tempoEstimado": 60,
       "tags": [
         "pegadinha",
@@ -4729,22 +4729,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'O artigo rejeita simplificacoes, insiste na complexidade do tema e afirma, ao final, que uma solucao unica resolverá tudo rapidamente.' A interpretacao mais adequada e que o texto:",
+      "enunciado": "Leia: 'O artigo rejeita simplificacoes, insiste na complexidade do tema e afirma, ao final, que uma solução unica resolverá tudo rapidamente.' A interpretação mais adequada e que o texto:",
       "opcoes": [
         "reforca a complexidade apontada no inicio",
-        "mantem apenas um problema de repeticao vocabular",
+        "mantem apenas um problema de repetição vocabular",
         "erra exclusivamente no emprego dos conectivos",
-        "apresenta uma conclusao incompativel com o desenvolvimento"
+        "apresenta uma conclusão incompativel com o desenvolvimento"
       ],
-      "correta": "apresenta uma conclusao incompativel com o desenvolvimento",
-      "comentario": "Depois de enfatizar a complexidade do tema, defender uma solucao unica e imediata compromete a coerencia global do texto.",
+      "correta": "apresenta uma conclusão incompativel com o desenvolvimento",
+      "comentario": "Depois de enfatizar a complexidade do tema, defender uma solução unica e imediata compromete a coerência global do texto.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao-indireta",
@@ -4767,14 +4767,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Compare as reescritas de 'O texto foi revisto; depois disso, circulou entre os alunos'. Qual mantem a equivalencia de sentido?",
+      "enunciado": "Compare as reescritas de 'O texto foi revisto; depois disso, circulou entre os alunos'. Qual mantem a equivalência de sentido?",
       "opcoes": [
         "O texto foi revisto; em seguida, circulou entre os alunos.",
         "O texto foi revisto; contudo, circulou entre os alunos.",
@@ -4782,7 +4782,7 @@ export const coesaoECoerencia = {
         "O texto foi revisto; porque circulou entre os alunos."
       ],
       "correta": "O texto foi revisto; em seguida, circulou entre os alunos.",
-      "comentario": "A expressao 'em seguida' preserva a relacao temporal expressa por 'depois disso'.",
+      "comentario": "A expressao 'em seguida' preserva a relação temporal expressa por 'depois disso'.",
       "tempoEstimado": 55,
       "tags": [
         "equivalencia-de-formas",
@@ -4805,14 +4805,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coesao referencial",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coesão referencial",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho 'A coordenadora apresentou o cronograma. A profissional tambem esclareceu as dúvidas da equipe', a expressao 'A profissional' retoma:",
+      "enunciado": "No trecho 'A coordenadora apresentou o cronograma. A profissional também esclareceu as dúvidas da equipe', a expressao 'A profissional' retoma:",
       "opcoes": [
         "o cronograma",
         "a coordenadora",
@@ -4820,7 +4820,7 @@ export const coesaoECoerencia = {
         "as dúvidas"
       ],
       "correta": "a coordenadora",
-      "comentario": "A expressao 'A profissional' retoma 'a coordenadora', evitando repeticao direta e mantendo a coesao referencial.",
+      "comentario": "A expressao 'A profissional' retoma 'a coordenadora', evitando repetição direta e mantendo a coesão referencial.",
       "tempoEstimado": 25,
       "tags": [
         "coesao-referencial",
@@ -4843,14 +4843,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Pronomes como recurso coesivo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em 'Os relaterios foram entregues, e eles seguiram para analise', o pronome 'eles' refere-se a:",
+      "enunciado": "Em 'Os relaterios foram entregues, e eles seguiram para análise', o pronome 'eles' refere-se a:",
       "opcoes": [
         "as analises",
         "os responsoveis",
@@ -4881,22 +4881,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Substituicao lexical",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Substituição lexical",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No trecho 'A cientista publicou o estudo. A pesquisadora recebeu elogios pelo trabalho', o uso de 'A pesquisadora' tem a funcao de:",
+      "enunciado": "No trecho 'A cientista publicou o estudo. A pesquisadora recebeu elogios pelo trabalho', o uso de 'A pesquisadora' tem a função de:",
       "opcoes": [
         "introduzir um novo tema",
-        "romper a coerencia do periodo",
+        "romper a coerência do período",
         "marcar oposicao entre ideias",
-        "evitar repeticao e manter a referencia"
+        "evitar repetição e manter a referência"
       ],
-      "correta": "evitar repeticao e manter a referencia",
-      "comentario": "A substituicao lexical evita repeticao desnecessoria e mantem o mesmo referente no texto.",
+      "correta": "evitar repetição e manter a referência",
+      "comentario": "A substituição lexical evita repetição desnecessária e mantem o mesmo referente no texto.",
       "tempoEstimado": 25,
       "tags": [
         "substituicao-lexical",
@@ -4919,14 +4919,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Elipse e retomada",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em 'Paula escolheu a cronica; Renato, o poema', ha elipse do termo:",
+      "enunciado": "Em 'Paula escolheu a cronica; Renato, o poema', há elipse do termo:",
       "opcoes": [
         "escolheu",
         "poema",
@@ -4957,22 +4957,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Progressao tematica",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Progressão temática",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'A escola abriu um laboraterio multimídia. O espaco passou a receber oficinas semanais. Os projetos criados ali foram apresentados na feira cultural.' O trecho apresenta progressao tematica porque:",
+      "enunciado": "Leia: 'A escola abriu um laboraterio multimídia. O espaco passou a receber oficinas semanais. Os projetos criados ali foram apresentados na feira cultural.' O trecho apresenta progressão temática porque:",
       "opcoes": [
-        "repete a mesma informacao sem avanao",
+        "repete a mesma informação sem avanço",
         "desenvolve o tema inicial por meio de desdobramentos",
-        "abandona o assunto principal no segundo periodo",
+        "abandona o assunto principal no segundo período",
         "mistura temas sem ligacao entre si"
       ],
       "correta": "desenvolve o tema inicial por meio de desdobramentos",
-      "comentario": "Cada frase acrescenta uma nova informacao relacionada ao laboraterio, o que promove avanao tematico.",
+      "comentario": "Cada frase acrescenta uma nova informação relacionada ao laboraterio, o que promove avanço temático.",
       "tempoEstimado": 35,
       "tags": [
         "progressao-tematica",
@@ -4995,14 +4995,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Paralelismo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que o paralelismo esta adequado:",
+      "enunciado": "Assinale a alternativa em que o paralelismo está adequado:",
       "opcoes": [
         "O projeto busca ampliar o acesso, a melhoria do atendimento e reduzir custos.",
         "O projeto busca ampliacao do acesso, melhorar o atendimento e reducao de custos.",
@@ -5010,7 +5010,7 @@ export const coesaoECoerencia = {
         "O projeto busca ampliar o acesso, melhora do atendimento e reduzir custos."
       ],
       "correta": "O projeto busca ampliar o acesso, melhorar o atendimento e reduzir custos.",
-      "comentario": "Os tras elementos coordenados apresentam a mesma estrutura verbal, o que garante paralelismo sintatico.",
+      "comentario": "Os tras elementos coordenados apresentam a mesma estrutura verbal, o que garante paralelismo sintático.",
       "tempoEstimado": 35,
       "tags": [
         "paralelismo",
@@ -5033,22 +5033,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coerencia local",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coerência local",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que ha coerencia local entre as ideias:",
+      "enunciado": "Assinale a alternativa em que há coerência local entre as ideias:",
       "opcoes": [
-        "A reuniao foi cancelada, entao todos se reuniram para iniciá-la naquele mesmo instante.",
+        "A reuniao foi cancelada, então todos se reuniram para iniciá-la naquele mesmo instante.",
         "A biblioteca permaneceu fechada, logo recebeu imediatamente todos os visitantes em silencio barulhento.",
         "A atleta ficou completamente imovel durante a corrida e venceu pela velocidade.",
-        "O aluno leu o texto com atencao, por isso percebeu detalhes importantes."
+        "O aluno leu o texto com atenção, por isso percebeu detalhes importantes."
       ],
-      "correta": "O aluno leu o texto com atencao, por isso percebeu detalhes importantes.",
-      "comentario": "A leitura atenta justifica a percepcao de detalhes, mantendo a relacao logica e a coerencia do enunciado.",
+      "correta": "O aluno leu o texto com atenção, por isso percebeu detalhes importantes.",
+      "comentario": "A leitura atenta justifica a percepcao de detalhes, mantendo a relação lógica e a coerência do enunciado.",
       "tempoEstimado": 40,
       "tags": [
         "coerencia-local",
@@ -5071,22 +5071,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coerencia global",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coerência global",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto discute habitos de leitura, comenta o papel da biblioteca, analisa a formacao de leitores e conclui defendendo politicas de incentivo ao livro. Esse texto tende a ser globalmente coerente porque:",
+      "enunciado": "Um texto discute hábitos de leitura, comenta o papel da biblioteca, analisa a formação de leitores e conclui defendendo politicas de incentivo ao livro. Esse texto tende a ser globalmente coerente porque:",
       "opcoes": [
-        "mantem um campo tematico articulado",
+        "mantem um campo temático articulado",
         "abandona o tema inicial ao longo do desenvolvimento",
         "troca repetidamente de assunto sem conexão",
-        "evita qualquer relacao entre introdução e conclusao"
+        "evita qualquer relação entre introdução e conclusão"
       ],
-      "correta": "mantem um campo tematico articulado",
-      "comentario": "Os paragrafos permanecem vinculados ao mesmo eixo tematico, o que sustenta a coerencia global.",
+      "correta": "mantem um campo temático articulado",
+      "comentario": "Os paragrafos permanecem vinculados ao mesmo eixo temático, o que sustenta a coerência global.",
       "tempoEstimado": 40,
       "tags": [
         "coerencia-global",
@@ -5109,14 +5109,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Relacao logica entre partes do texto",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Relação lógica entre partes do texto",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual conectivo completa adequadamente o periodo com ideia de oposicao? 'A proposta foi bem recebida; ________, nao houve recursos para executá-la.'",
+      "enunciado": "Qual conectivo completa adequadamente o período com ideia de oposicao? 'A proposta foi bem recebida; ________, não houve recursos para executá-la.'",
       "opcoes": [
         "por isso",
         "entretanto",
@@ -5147,22 +5147,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Contradicao e quebra de sentido",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Contradição e quebra de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa apresenta contradicao que compromete a coerencia?",
+      "enunciado": "Qual alternativa apresenta contradição que compromete a coerência?",
       "opcoes": [
-        "A professora releu o texto e corrigiu os trechos problemáticos.",
+        "A professora releu o texto é corrigiu os trechos problemáticos.",
         "O cronograma foi atualizado antes de ser divulgado.",
-        "O artigo propoe leitura critica, mas condena qualquer forma de questionamento.",
-        "A equipe comparou os dados e organizou a apresentacao."
+        "O artigo propoe leitura crítica, mas condena qualquer forma de questionamento.",
+        "A equipe comparou os dados e organizou a apresentação."
       ],
-      "correta": "O artigo propoe leitura critica, mas condena qualquer forma de questionamento.",
-      "comentario": "Defender leitura critica e incompativel com rejeitar totalmente o questionamento, o que gera contradicao.",
+      "correta": "O artigo propoe leitura crítica, mas condena qualquer forma de questionamento.",
+      "comentario": "Defender leitura crítica e incompativel com rejeitar totalmente o questionamento, o que gera contradição.",
       "tempoEstimado": 45,
       "tags": [
         "contradicao",
@@ -5185,14 +5185,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que reescreve 'O texto foi revisto; depois disso, foi publicado' sem alteracao relevante de sentido:",
+      "enunciado": "Assinale a alternativa que reescreve 'O texto foi revisto; depois disso, foi publicado' sem alteração relevante de sentido:",
       "opcoes": [
         "O texto foi revisto; contudo, foi publicado.",
         "O texto foi revisto; porque foi publicado.",
@@ -5200,7 +5200,7 @@ export const coesaoECoerencia = {
         "O texto foi revisto; em seguida, foi publicado."
       ],
       "correta": "O texto foi revisto; em seguida, foi publicado.",
-      "comentario": "A expressao 'em seguida' preserva a relacao temporal presente em 'depois disso'.",
+      "comentario": "A expressao 'em seguida' preserva a relação temporal presente em 'depois disso'.",
       "tempoEstimado": 45,
       "tags": [
         "equivalencia-de-formas",
@@ -5223,9 +5223,9 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "inferencia",
@@ -5233,12 +5233,12 @@ export const coesaoECoerencia = {
       "enunciado": "Leia: 'O texto defende o dialogo entre posições diferentes, mas afirma que opinioes divergentes devem ser silenciadas.' A inferencia mais adequada e que o texto:",
       "opcoes": [
         "apresenta incompatibilidade entre o que propoe e o que defende depois",
-        "mantem coerencia plena entre tese e conclusao",
+        "mantem coerência plena entre tese e conclusão",
         "falha apenas na retomada pronominal",
         "tem problema exclusivo de paralelismo"
       ],
       "correta": "apresenta incompatibilidade entre o que propoe e o que defende depois",
-      "comentario": "Se o texto valoriza o dialogo, nao pode coerentemente defender o silenciamento de opinioes divergentes.",
+      "comentario": "Se o texto valoriza o dialogo, não pode coerentemente defender o silenciamento de opinioes divergentes.",
       "tempoEstimado": 45,
       "tags": [
         "interpretacao-indireta",
@@ -5261,18 +5261,18 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que a formulacao parece logica, mas esconde um problema de circularidade:",
+      "enunciado": "Assinale a alternativa em que a formulacao parece lógica, mas esconde um problema de circularidade:",
       "opcoes": [
-        "O texto ficou mais claro porque foi revisado com atencao.",
+        "O texto ficou mais claro porque foi revisado com atenção.",
         "A palestra foi compreendida porque os ouvintes entenderam o que foi explicado.",
-        "A campanha teve adesao porque alcanaou muitas pessoas interessadas.",
+        "A campanha teve adesão porque alcanaou muitas pessoas interessadas.",
         "O projeto amadureceu porque passou por varias discussoes."
       ],
       "correta": "A palestra foi compreendida porque os ouvintes entenderam o que foi explicado.",
@@ -5299,8 +5299,8 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Paralelismo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -5309,9 +5309,9 @@ export const coesaoECoerencia = {
       "enunciado": "Qual alternativa corrige a falta de paralelismo em 'A atividade exige leitura atenta, interpretar dados e formulacao de hipoteses'?",
       "opcoes": [
         "A atividade exige leitura atenta, interpretar dados e formulacao de hipoteses.",
-        "A atividade exige leitura atenta, interpretacao de dados e formular hipoteses.",
+        "A atividade exige leitura atenta, interpretação de dados e formular hipoteses.",
         "A atividade exige ler atentamente, interpretar dados e formular hipoteses.",
-        "A atividade exige ler atentamente, interpretacao de dados e hipoteses."
+        "A atividade exige ler atentamente, interpretação de dados e hipoteses."
       ],
       "correta": "A atividade exige ler atentamente, interpretar dados e formular hipoteses.",
       "comentario": "A alternativa correta uniformiza a estrutura com verbos no infinitivo, restabelecendo o paralelismo.",
@@ -5337,18 +5337,18 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coerencia local",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coerência local",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que ocorre quebra de coerencia local por incompatibilidade semantica:",
+      "enunciado": "Assinale a alternativa em que ocorre quebra de coerência local por incompatibilidade semântica:",
       "opcoes": [
         "A pesquisadora reuniu dados antes de formular a hipotese.",
-        "A equipe organizou o material e iniciou a apresentacao.",
-        "A aluna releu o texto e identificou incoerencias.",
+        "A equipe organizou o material e iniciou a apresentação.",
+        "A aluna releu o texto é identificou incoerencias.",
         "O corredor venceu a maratona apos permanecer imovel durante todo o percurso."
       ],
       "correta": "O corredor venceu a maratona apos permanecer imovel durante todo o percurso.",
@@ -5375,22 +5375,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Coerencia global",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Coerência global",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Um artigo aborda desinformacao, checagem de fatos, responsabilidade no compartilhamento e educacao midietica. O fator decisivo para a coerencia global do texto e:",
+      "enunciado": "Um artigo aborda desinformacao, checagem de fatos, responsabilidade no compartilhamento e educação midietica. O fator decisivo para a coerência global do texto e:",
       "opcoes": [
         "a unidade argumentativa em torno de um mesmo tema",
-        "a repeticao da mesma frase em todos os paragrafos",
-        "a ausencia de conclusao explicita",
-        "a troca contínua de foco para ampliar o repertorio"
+        "a repetição da mesma frase em todos os paragrafos",
+        "a ausência de conclusão explícita",
+        "a troca contínua de foco para ampliar o repertório"
       ],
       "correta": "a unidade argumentativa em torno de um mesmo tema",
-      "comentario": "Os tepicos desenvolvidos pertencem ao mesmo eixo tematico, o que mantem a coerencia global.",
+      "comentario": "Os tepicos desenvolvidos pertencem ao mesmo eixo temático, o que mantem a coerência global.",
       "tempoEstimado": 55,
       "tags": [
         "coerencia-global",
@@ -5413,22 +5413,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Relacao logica entre partes do texto",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Relação lógica entre partes do texto",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
       "enunciado": "Compare: I. 'Ele estudou, portanto foi aprovado.' II. 'Ele estudou, embora tenha sido aprovado.' e correto afirmar que:",
       "opcoes": [
-        "I e II mantem a mesma relacao logica",
-        "I expressa consequencia, e II expressa concessao",
+        "I e II mantem a mesma relação lógica",
+        "I expressa consequência, e II expressa concessao",
         "I expressa oposicao, e II expressa causa",
         "II expressa explicacao mais forte que I"
       ],
-      "correta": "I expressa consequencia, e II expressa concessao",
-      "comentario": "Em I, o conectivo 'portanto' indica consequencia; em II, 'embora' introduz uma relacao concessiva.",
+      "correta": "I expressa consequência, e II expressa concessao",
+      "comentario": "Em I, o conectivo 'portanto' indica consequência; em II, 'embora' introduz uma relação concessiva.",
       "tempoEstimado": 55,
       "tags": [
         "relacao-logica",
@@ -5451,22 +5451,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'O artigo rejeita simplificacoes e insiste na complexidade do tema. Ao final, afirma que uma unica medida basta para resolver tudo.' A leitura mais adequada e que ha:",
+      "enunciado": "Leia: 'O artigo rejeita simplificacoes e insiste na complexidade do tema. Ao final, afirma que uma unica medida basta para resolver tudo.' A leitura mais adequada e que há:",
       "opcoes": [
         "continuidade coerente do argumento",
         "falha restrita ao uso de pronomes",
-        "incoerencia entre o desenvolvimento e a conclusao",
-        "ausencia total de coesao sequencial"
+        "incoerencia entre o desenvolvimento e a conclusão",
+        "ausência total de coesão sequencial"
       ],
-      "correta": "incoerencia entre o desenvolvimento e a conclusao",
-      "comentario": "Depois de enfatizar a complexidade do tema, defender uma solucao unica compromete a coerencia argumentativa.",
+      "correta": "incoerencia entre o desenvolvimento e a conclusão",
+      "comentario": "Depois de enfatizar a complexidade do tema, defender uma solução unica compromete a coerência argumentativa.",
       "tempoEstimado": 55,
       "tags": [
         "interpretacao-indireta",
@@ -5489,22 +5489,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'A campanha foi intensa. Mesmo assim, a adesao foi menor do que o esperado. Isso prova que a divulgacao foi inútil.' A pegadinha do raciocinio esta em:",
+      "enunciado": "Leia: 'A campanha foi intensa. Mesmo assim, a adesão foi menor do que o esperado. Isso prova que a divulgação foi inútil.' A pegadinha do raciocínio está em:",
       "opcoes": [
         "usar um pronome para retomar a frase anterior",
         "organizar os fatos em ordem cronologica",
-        "marcar contraste entre duas informacoes",
+        "marcar contraste entre duas informações",
         "transformar um resultado abaixo do esperado em prova de inutilidade total"
       ],
       "correta": "transformar um resultado abaixo do esperado em prova de inutilidade total",
-      "comentario": "Baixa adesao nao demonstra, por si so, inutilidade absoluta da divulgacao; a conclusao exagera o dado apresentado.",
+      "comentario": "Baixa adesão não demonstra, por si só, inutilidade absoluta da divulgação; a conclusão exagera o dado apresentado.",
       "tempoEstimado": 60,
       "tags": [
         "pegadinha",
@@ -5527,14 +5527,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa reescreve 'A proposta enfrentou resistencia; mesmo assim, foi aprovada' sem alterar a relacao de sentido?",
+      "enunciado": "Qual alternativa reescreve 'A proposta enfrentou resistencia; mesmo assim, foi aprovada' sem alterar a relação de sentido?",
       "opcoes": [
         "A proposta enfrentou resistencia; apesar disso, foi aprovada.",
         "A proposta enfrentou resistencia; por isso, foi aprovada.",
@@ -5542,7 +5542,7 @@ export const coesaoECoerencia = {
         "A proposta enfrentou resistencia; logo, foi aprovada."
       ],
       "correta": "A proposta enfrentou resistencia; apesar disso, foi aprovada.",
-      "comentario": "A locucao 'apesar disso' preserva a relacao de contraste presente em 'mesmo assim'.",
+      "comentario": "A locucao 'apesar disso' preserva a relação de contraste presente em 'mesmo assim'.",
       "tempoEstimado": 55,
       "tags": [
         "equivalencia-de-formas",
@@ -5565,9 +5565,9 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
@@ -5603,22 +5603,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em qual alternativa a relacao de causa e efeito parece plausovel, mas esta logicamente invertida?",
+      "enunciado": "Em qual alternativa a relação de causa e efeito parece plausovel, mas está logicamente invertida?",
       "opcoes": [
         "A leitura atenta permitiu ao aluno identificar falhas no argumento.",
-        "A revisao cuidadosa diminuiu a presenca de erros no relaterio.",
+        "A revisao cuidadosa diminuiu a presença de erros no relaterio.",
         "O texto foi compreendido porque os leitores entenderam a explicacao apresentada.",
         "O projeto amadureceu apos sucessivas discussoes entre os participantes."
       ],
       "correta": "O texto foi compreendido porque os leitores entenderam a explicacao apresentada.",
-      "comentario": "A justificativa e circular: compreender o texto e entender a explicacao apresentada expressam praticamente o mesmo resultado, sem explicar a causa de forma efetiva.",
+      "comentario": "A justificativa e circular: compreender o texto é entender a explicacao apresentada expressam praticamente o mesmo resultado, sem explicar a causa de forma efetiva.",
       "tempoEstimado": 60,
       "tags": [
         "pegadinha",
@@ -5641,14 +5641,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Compare as reescritas de 'O relaterio foi concluido; depois disso, seguiu para publicacao'. Qual mantem a equivalencia de sentido?",
+      "enunciado": "Compare as reescritas de 'O relaterio foi concluido; depois disso, seguiu para publicacao'. Qual mantem a equivalência de sentido?",
       "opcoes": [
         "O relaterio foi concluido; contudo, seguiu para publicacao.",
         "O relaterio foi concluido; por isso, embora seguisse para publicacao.",
@@ -5656,7 +5656,7 @@ export const coesaoECoerencia = {
         "O relaterio foi concluido; em seguida, seguiu para publicacao."
       ],
       "correta": "O relaterio foi concluido; em seguida, seguiu para publicacao.",
-      "comentario": "A expressao 'em seguida' preserva a relacao temporal indicada por 'depois disso'.",
+      "comentario": "A expressao 'em seguida' preserva a relação temporal indicada por 'depois disso'.",
       "tempoEstimado": 55,
       "tags": [
         "equivalencia-de-formas",
@@ -5679,22 +5679,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'O ensaio defende uma analise cuidadosa dos fatos, critica juízos precipitados e conclui que a primeira impressao sempre basta.' A inferencia mais adequada e que o texto:",
+      "enunciado": "Leia: 'O ensaio defende uma análise cuidadosa dos fatos, crítica juízos precipitados e conclui que a primeira impressao sempre basta.' A inferencia mais adequada e que o texto:",
       "opcoes": [
-        "apresenta uma conclusao incompativel com o desenvolvimento argumentativo",
-        "mantem coerencia ao reforcar a tese inicial",
-        "tem apenas um problema de repeticao vocabular",
+        "apresenta uma conclusão incompativel com o desenvolvimento argumentativo",
+        "mantem coerência ao reforçar a tese inicial",
+        "tem apenas um problema de repetição vocabular",
         "falha exclusivamente no uso dos conectivos"
       ],
-      "correta": "apresenta uma conclusao incompativel com o desenvolvimento argumentativo",
-      "comentario": "Se o texto critica juízos precipitados, nao pode concluir coerentemente que a primeira impressao sempre basta.",
+      "correta": "apresenta uma conclusão incompativel com o desenvolvimento argumentativo",
+      "comentario": "Se o texto crítica juízos precipitados, não pode concluir coerentemente que a primeira impressao sempre basta.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao-indireta",
@@ -5717,22 +5717,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia o raciocinio: 'O texto foi amplamente discutido. Logo, todas as interpretacoes sobre ele sao igualmente corretas.' O erro mais importante dessa conclusao esta em:",
+      "enunciado": "Leia o raciocínio: 'O texto foi amplamente discutido. Logo, todas as interpretacoes sobre ele são igualmente corretas.' O erro mais importante dessa conclusão está em:",
       "opcoes": [
         "usar um conectivo conclusivo em vez de um explicativo",
-        "confundir debate amplo com validacao autometica de qualquer interpretacao",
+        "confundir debate amplo com validacao autometica de qualquer interpretação",
         "retomar o termo 'texto' de forma inadequada",
-        "apresentar um periodo composto por coordenacao"
+        "apresentar um período composto por coordenacao"
       ],
-      "correta": "confundir debate amplo com validacao autometica de qualquer interpretacao",
-      "comentario": "O fato de um texto gerar debate nao torna toda interpretacao automaticamente válida; a conclusao amplia indevidamente a premissa.",
+      "correta": "confundir debate amplo com validacao autometica de qualquer interpretação",
+      "comentario": "O fato de um texto gerar debate não torna toda interpretação automaticamente válida; a conclusão amplia indevidamente a premissa.",
       "tempoEstimado": 70,
       "tags": [
         "pegadinha",
@@ -5755,22 +5755,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'O texto defende o pensamento critico, valoriza o questionamento e conclui que aceitar tudo sem analise e a melhor postura.' A interpretacao adequada e que o texto apresenta:",
+      "enunciado": "Leia: 'O texto defende o pensamento critico, valoriza o questionamento e conclui que aceitar tudo sem análise e a melhor postura.' A interpretação adequada e que o texto apresenta:",
       "opcoes": [
-        "progressao tematica coerente",
+        "progressão temática coerente",
         "uso inadequado de pronomes",
-        "contradicao entre desenvolvimento e conclusao",
-        "falta de paralelismo sintatico"
+        "contradição entre desenvolvimento e conclusão",
+        "falta de paralelismo sintático"
       ],
-      "correta": "contradicao entre desenvolvimento e conclusao",
-      "comentario": "A conclusao contradiz diretamente os principios defendidos anteriormente, comprometendo a coerencia.",
+      "correta": "contradição entre desenvolvimento e conclusão",
+      "comentario": "A conclusão contradiz diretamente os principios defendidos anteriormente, comprometendo a coerência.",
       "tempoEstimado": 60,
       "tags": [
         "interpretacao-indireta",
@@ -5793,22 +5793,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
       "enunciado": "Compare: I. 'Ele revisou o texto, portanto melhorou.' II. 'Ele revisou o texto, assim melhorou.' e correto afirmar que:",
       "opcoes": [
-        "I expressa oposicao, e II consequencia",
+        "I expressa oposicao, e II consequência",
         "I e II apresentam sentidos contrarios",
-        "II elimina a relacao logica presente em I",
-        "I e II apresentam equivalencia de sentido"
+        "II elimina a relação lógica presente em I",
+        "I e II apresentam equivalência de sentido"
       ],
-      "correta": "I e II apresentam equivalencia de sentido",
-      "comentario": "As expressoes 'portanto' e 'assim' mantem a relacao de consequencia entre as ideias.",
+      "correta": "I e II apresentam equivalência de sentido",
+      "comentario": "As expressoes 'portanto' e 'assim' mantem a relação de consequência entre as ideias.",
       "tempoEstimado": 60,
       "tags": [
         "equivalencia-de-formas",
@@ -5831,22 +5831,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'A proposta foi amplamente debatida. Logo, nao pode conter falhas.' O problema do raciocinio esta em:",
+      "enunciado": "Leia: 'A proposta foi amplamente debatida. Logo, não pode conter falhas.' O problema do raciocínio está em:",
       "opcoes": [
         "confundir debate com perfeicao",
         "uso incorreto de tempo verbal",
-        "falta de coesao referencial",
-        "ausencia de paralelismo"
+        "falta de coesão referencial",
+        "ausência de paralelismo"
       ],
       "correta": "confundir debate com perfeicao",
-      "comentario": "O fato de algo ser debatido nao garante ausencia de falhas; ha uma generalizacao indevida.",
+      "comentario": "O fato de algo ser debatido não garante ausência de falhas; há uma generalizacao indevida.",
       "tempoEstimado": 60,
       "tags": [
         "pegadinha",
@@ -5869,22 +5869,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
       "enunciado": "Um texto afirma valorizar maltiplas perspectivas, mas conclui que apenas uma visao deve ser aceita. Isso indica:",
       "opcoes": [
-        "coerencia global",
-        "contradicao interna",
-        "progressao tematica adequada",
+        "coerência global",
+        "contradição interna",
+        "progressão temática adequada",
         "uso correto de conectivos"
       ],
-      "correta": "contradicao interna",
-      "comentario": "Ha incompatibilidade entre a defesa inicial e a conclusao, caracterizando incoerencia.",
+      "correta": "contradição interna",
+      "comentario": "Há incompatibilidade entre a defesa inicial e a conclusão, caracterizando incoerencia.",
       "tempoEstimado": 60,
       "tags": [
         "interpretacao-indireta",
@@ -5907,9 +5907,9 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
@@ -5945,14 +5945,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que a relacao logica parece correta, mas esta invertida:",
+      "enunciado": "Assinale a alternativa em que a relação lógica parece correta, mas está invertida:",
       "opcoes": [
         "O aluno estudou, por isso foi aprovado.",
         "O texto ficou claro porque foi revisado.",
@@ -5960,7 +5960,7 @@ export const coesaoECoerencia = {
         "O texto foi compreendido porque os leitores entenderam a explicacao."
       ],
       "correta": "O texto foi compreendido porque os leitores entenderam a explicacao.",
-      "comentario": "A justificativa e circular e nao explica a causa de forma adequada.",
+      "comentario": "A justificativa e circular e não explica a causa de forma adequada.",
       "tempoEstimado": 60,
       "tags": [
         "pegadinha",
@@ -5983,22 +5983,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'O texto valoriza analise cuidadosa, mas afirma que decisoes devem ser tomadas sem reflexao.' O efeito de sentido e:",
+      "enunciado": "Leia: 'O texto valoriza análise cuidadosa, mas afirma que decisões devem ser tomadas sem reflexão.' O efeito de sentido e:",
       "opcoes": [
-        "contradicao de ideias",
-        "coerencia argumentativa",
-        "progressao tematica",
-        "coesao sequencial"
+        "contradição de ideias",
+        "coerência argumentativa",
+        "progressão temática",
+        "coesão sequencial"
       ],
-      "correta": "contradicao de ideias",
-      "comentario": "Ha incompatibilidade entre a valorizacao da analise e a defesa de decisoes sem reflexao.",
+      "correta": "contradição de ideias",
+      "comentario": "Há incompatibilidade entre a valorizacao da análise e a defesa de decisões sem reflexão.",
       "tempoEstimado": 60,
       "tags": [
         "interpretacao-indireta",
@@ -6021,14 +6021,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Compare: I. 'Ele se esforcou, portanto conseguiu.' II. 'Ele se esforcou, assim conseguiu.' A relacao entre as frases e:",
+      "enunciado": "Compare: I. 'Ele se esforcou, portanto conseguiu.' II. 'Ele se esforcou, assim conseguiu.' A relação entre as frases e:",
       "opcoes": [
         "contraria",
         "equivalente",
@@ -6036,7 +6036,7 @@ export const coesaoECoerencia = {
         "independente"
       ],
       "correta": "equivalente",
-      "comentario": "Ambas expressam consequencia, mantendo equivalencia de sentido.",
+      "comentario": "Ambas expressam consequência, mantendo equivalência de sentido.",
       "tempoEstimado": 60,
       "tags": [
         "equivalencia-de-formas",
@@ -6059,22 +6059,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'O texto foi amplamente divulgado. Logo, todos o compreenderam.' O erro logico esta em:",
+      "enunciado": "Leia: 'O texto foi amplamente divulgado. Logo, todos o compreenderam.' O erro logico está em:",
       "opcoes": [
         "usar conectivo inadequado",
-        "falta de coesao referencial",
-        "confundir divulgacao com compreensao",
-        "erro de pontuacao"
+        "falta de coesão referencial",
+        "confundir divulgação com compreensão",
+        "erro de pontuação"
       ],
-      "correta": "confundir divulgacao com compreensao",
-      "comentario": "Divulgacao nao garante compreensao; ha inferencia indevida.",
+      "correta": "confundir divulgação com compreensão",
+      "comentario": "Divulgação não garante compreensão; há inferencia indevida.",
       "tempoEstimado": 70,
       "tags": [
         "pegadinha",
@@ -6097,22 +6097,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
       "enunciado": "Um texto defende pluralidade de ideias, mas afirma que apenas um pensamento e válido. Isso revela:",
       "opcoes": [
-        "coerencia global",
-        "coesao sequencial",
+        "coerência global",
+        "coesão sequencial",
         "paralelismo adequado",
-        "contradicao argumentativa"
+        "contradição argumentativa"
       ],
-      "correta": "contradicao argumentativa",
-      "comentario": "Ha incompatibilidade entre a tese e a conclusao, caracterizando incoerencia.",
+      "correta": "contradição argumentativa",
+      "comentario": "Há incompatibilidade entre a tese e a conclusão, caracterizando incoerencia.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao-indireta",
@@ -6135,9 +6135,9 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "comparacao",
@@ -6145,12 +6145,12 @@ export const coesaoECoerencia = {
       "enunciado": "Compare: I. 'O aluno se dedicou, portanto teve bom desempenho.' II. 'O aluno se dedicou, assim teve bom desempenho.' e correto afirmar que:",
       "opcoes": [
         "I e II apresentam sentidos equivalentes",
-        "I expressa oposicao, e II consequencia",
+        "I expressa oposicao, e II consequência",
         "I e II apresentam sentidos opostos",
-        "II elimina a relacao de causa presente em I"
+        "II elimina a relação de causa presente em I"
       ],
       "correta": "I e II apresentam sentidos equivalentes",
-      "comentario": "Ambas as construções mantem a relacao de consequencia entre dedicacao e desempenho.",
+      "comentario": "Ambas as construções mantem a relação de consequência entre dedicacao e desempenho.",
       "tempoEstimado": 60,
       "tags": [
         "equivalencia-de-formas",
@@ -6173,22 +6173,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'O texto foi revisado diversas vezes. Logo, nao pode conter erros.' O problema do raciocinio esta em:",
+      "enunciado": "Leia: 'O texto foi revisado diversas vezes. Logo, não pode conter erros.' O problema do raciocínio está em:",
       "opcoes": [
         "uso inadequado de pronomes",
         "confundir revisao com perfeicao absoluta",
-        "ausencia de conectivos",
-        "erro de concordancia"
+        "ausência de conectivos",
+        "erro de concordância"
       ],
       "correta": "confundir revisao com perfeicao absoluta",
-      "comentario": "Revisar nao garante ausencia total de erros; ha uma generalizacao indevida.",
+      "comentario": "Revisar não garante ausência total de erros; há uma generalizacao indevida.",
       "tempoEstimado": 60,
       "tags": [
         "pegadinha",
@@ -6211,22 +6211,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto afirma defender pensamento critico, mas recomenda aceitar informacoes sem questionamento. Isso indica:",
+      "enunciado": "Um texto afirma defender pensamento critico, mas recomenda aceitar informações sem questionamento. Isso indica:",
       "opcoes": [
-        "coerencia global",
-        "coesao sequencial",
-        "contradicao interna",
+        "coerência global",
+        "coesão sequencial",
+        "contradição interna",
         "paralelismo adequado"
       ],
-      "correta": "contradicao interna",
-      "comentario": "Ha incompatibilidade entre a tese e a orientacao final apresentada.",
+      "correta": "contradição interna",
+      "comentario": "Há incompatibilidade entre a tese e a orientacao final apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "interpretacao-indireta",
@@ -6249,9 +6249,9 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
@@ -6287,17 +6287,17 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que a relacao logica parece correta, mas e circular:",
+      "enunciado": "Assinale a alternativa em que a relação lógica parece correta, mas e circular:",
       "opcoes": [
         "A atividade foi concluida porque terminou.",
-        "O aluno estudou e, por isso, aprendeu o conteudo.",
+        "O aluno estudou e, por isso, aprendeu o conteúdo.",
         "O texto foi claro porque foi bem explicado.",
         "O projeto avanaou porque houve planejamento."
       ],
@@ -6325,21 +6325,21 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
       "enunciado": "Leia: 'O artigo valoriza a escuta ativa, mas considera desnecessorio ouvir opinioes divergentes.' O efeito de sentido e:",
       "opcoes": [
-        "coerencia argumentativa",
-        "contradicao de ideias",
-        "coesao referencial",
-        "progressao tematica"
+        "coerência argumentativa",
+        "contradição de ideias",
+        "coesão referencial",
+        "progressão temática"
       ],
-      "correta": "contradicao de ideias",
+      "correta": "contradição de ideias",
       "comentario": "Valorizar escuta ativa e incompativel com rejeitar ouvir opinioes divergentes.",
       "tempoEstimado": 60,
       "tags": [
@@ -6363,14 +6363,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Compare: I. 'Ele treinou, portanto venceu.' II. 'Ele treinou, assim venceu.' A relacao entre as frases e:",
+      "enunciado": "Compare: I. 'Ele treinou, portanto venceu.' II. 'Ele treinou, assim venceu.' A relação entre as frases e:",
       "opcoes": [
         "contraria",
         "independente",
@@ -6378,7 +6378,7 @@ export const coesaoECoerencia = {
         "oposta"
       ],
       "correta": "equivalente",
-      "comentario": "Ambas expressam consequencia, mantendo equivalencia semantica.",
+      "comentario": "Ambas expressam consequência, mantendo equivalência semântica.",
       "tempoEstimado": 60,
       "tags": [
         "equivalencia-de-formas",
@@ -6401,22 +6401,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'O texto foi amplamente divulgado. Logo, todos compreenderam sua mensagem.' O erro logico esta em:",
+      "enunciado": "Leia: 'O texto foi amplamente divulgado. Logo, todos compreenderam sua mensagem.' O erro logico está em:",
       "opcoes": [
         "uso inadequado de conectivos",
-        "falta de coesao sequencial",
-        "erro de pontuacao",
-        "confundir divulgacao com compreensao"
+        "falta de coesão sequencial",
+        "erro de pontuação",
+        "confundir divulgação com compreensão"
       ],
-      "correta": "confundir divulgacao com compreensao",
-      "comentario": "Divulgacao nao garante compreensao; ha inferencia indevida.",
+      "correta": "confundir divulgação com compreensão",
+      "comentario": "Divulgação não garante compreensão; há inferencia indevida.",
       "tempoEstimado": 70,
       "tags": [
         "pegadinha",
@@ -6439,22 +6439,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
       "enunciado": "Um texto defende diversidade de ideias, mas conclui que apenas uma opiniao e válida. Isso revela:",
       "opcoes": [
-        "contradicao argumentativa",
-        "coerencia global",
-        "coesao referencial",
-        "progressao tematica"
+        "contradição argumentativa",
+        "coerência global",
+        "coesão referencial",
+        "progressão temática"
       ],
-      "correta": "contradicao argumentativa",
-      "comentario": "Ha incompatibilidade entre a tese e a conclusao, caracterizando incoerencia.",
+      "correta": "contradição argumentativa",
+      "comentario": "Há incompatibilidade entre a tese e a conclusão, caracterizando incoerencia.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao-indireta",
@@ -6477,9 +6477,9 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
@@ -6492,7 +6492,7 @@ export const coesaoECoerencia = {
         "O projeto enfrentou obstaculos; logo, avanaou."
       ],
       "correta": "O projeto enfrentou obstaculos; apesar disso, avanaou.",
-      "comentario": "A expressao 'apesar disso' mantem a relacao de contraste do enunciado original.",
+      "comentario": "A expressao 'apesar disso' mantem a relação de contraste do enunciado original.",
       "tempoEstimado": 70,
       "tags": [
         "equivalencia-de-formas",
@@ -6515,22 +6515,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
       "enunciado": "Compare: I. 'O aluno se dedicou, portanto teve bom desempenho.' II. 'O aluno se dedicou, assim teve bom desempenho.' e correto afirmar que:",
       "opcoes": [
-        "I expressa oposicao, e II consequencia",
+        "I expressa oposicao, e II consequência",
         "I e II apresentam sentidos opostos",
         "I e II apresentam sentidos equivalentes",
-        "II elimina a relacao de causa presente em I"
+        "II elimina a relação de causa presente em I"
       ],
       "correta": "I e II apresentam sentidos equivalentes",
-      "comentario": "Ambas as construções mantem a relacao de consequencia entre dedicacao e desempenho.",
+      "comentario": "Ambas as construções mantem a relação de consequência entre dedicacao e desempenho.",
       "tempoEstimado": 60,
       "tags": [
         "equivalencia-de-formas",
@@ -6553,22 +6553,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'O texto foi revisado diversas vezes. Logo, nao pode conter erros.' O problema do raciocinio esta em:",
+      "enunciado": "Leia: 'O texto foi revisado diversas vezes. Logo, não pode conter erros.' O problema do raciocínio está em:",
       "opcoes": [
         "uso inadequado de pronomes",
-        "ausencia de conectivos",
-        "erro de concordancia",
+        "ausência de conectivos",
+        "erro de concordância",
         "confundir revisao com perfeicao absoluta"
       ],
       "correta": "confundir revisao com perfeicao absoluta",
-      "comentario": "Revisar nao garante ausencia total de erros; ha uma generalizacao indevida.",
+      "comentario": "Revisar não garante ausência total de erros; há uma generalizacao indevida.",
       "tempoEstimado": 60,
       "tags": [
         "pegadinha",
@@ -6591,22 +6591,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto afirma defender pensamento critico, mas recomenda aceitar informacoes sem questionamento. Isso indica:",
+      "enunciado": "Um texto afirma defender pensamento critico, mas recomenda aceitar informações sem questionamento. Isso indica:",
       "opcoes": [
-        "contradicao interna",
-        "coerencia global",
-        "coesao sequencial",
+        "contradição interna",
+        "coerência global",
+        "coesão sequencial",
         "paralelismo adequado"
       ],
-      "correta": "contradicao interna",
-      "comentario": "Ha incompatibilidade entre a tese e a orientacao final apresentada.",
+      "correta": "contradição interna",
+      "comentario": "Há incompatibilidade entre a tese e a orientacao final apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "interpretacao-indireta",
@@ -6629,9 +6629,9 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "aplicacao",
@@ -6667,16 +6667,16 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que a relacao logica parece correta, mas e circular:",
+      "enunciado": "Assinale a alternativa em que a relação lógica parece correta, mas e circular:",
       "opcoes": [
-        "O aluno estudou e, por isso, aprendeu o conteudo.",
+        "O aluno estudou e, por isso, aprendeu o conteúdo.",
         "O texto foi claro porque foi bem explicado.",
         "A atividade foi concluida porque terminou.",
         "O projeto avanaou porque houve planejamento."
@@ -6705,21 +6705,21 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
       "enunciado": "Leia: 'O artigo valoriza a escuta ativa, mas considera desnecessorio ouvir opinioes divergentes.' O efeito de sentido e:",
       "opcoes": [
-        "coerencia argumentativa",
-        "coesao referencial",
-        "progressao tematica",
-        "contradicao de ideias"
+        "coerência argumentativa",
+        "coesão referencial",
+        "progressão temática",
+        "contradição de ideias"
       ],
-      "correta": "contradicao de ideias",
+      "correta": "contradição de ideias",
       "comentario": "Valorizar escuta ativa e incompativel com rejeitar ouvir opinioes divergentes.",
       "tempoEstimado": 60,
       "tags": [
@@ -6743,14 +6743,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Compare: I. 'Ele treinou, portanto venceu.' II. 'Ele treinou, assim venceu.' A relacao entre as frases e:",
+      "enunciado": "Compare: I. 'Ele treinou, portanto venceu.' II. 'Ele treinou, assim venceu.' A relação entre as frases e:",
       "opcoes": [
         "equivalente",
         "contraria",
@@ -6758,7 +6758,7 @@ export const coesaoECoerencia = {
         "oposta"
       ],
       "correta": "equivalente",
-      "comentario": "Ambas expressam consequencia, mantendo equivalencia semantica.",
+      "comentario": "Ambas expressam consequência, mantendo equivalência semântica.",
       "tempoEstimado": 60,
       "tags": [
         "equivalencia-de-formas",
@@ -6781,22 +6781,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'O texto foi amplamente divulgado. Logo, todos compreenderam sua mensagem.' O erro logico esta em:",
+      "enunciado": "Leia: 'O texto foi amplamente divulgado. Logo, todos compreenderam sua mensagem.' O erro logico está em:",
       "opcoes": [
         "uso inadequado de conectivos",
-        "confundir divulgacao com compreensao",
-        "falta de coesao sequencial",
-        "erro de pontuacao"
+        "confundir divulgação com compreensão",
+        "falta de coesão sequencial",
+        "erro de pontuação"
       ],
-      "correta": "confundir divulgacao com compreensao",
-      "comentario": "Divulgacao nao garante compreensao; ha inferencia indevida.",
+      "correta": "confundir divulgação com compreensão",
+      "comentario": "Divulgação não garante compreensão; há inferencia indevida.",
       "tempoEstimado": 70,
       "tags": [
         "pegadinha",
@@ -6819,22 +6819,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
       "enunciado": "Um texto defende diversidade de ideias, mas conclui que apenas uma opiniao e válida. Isso revela:",
       "opcoes": [
-        "coerencia global",
-        "coesao referencial",
-        "contradicao argumentativa",
-        "progressao tematica"
+        "coerência global",
+        "coesão referencial",
+        "contradição argumentativa",
+        "progressão temática"
       ],
-      "correta": "contradicao argumentativa",
-      "comentario": "Ha incompatibilidade entre a tese e a conclusao, caracterizando incoerencia.",
+      "correta": "contradição argumentativa",
+      "comentario": "Há incompatibilidade entre a tese e a conclusão, caracterizando incoerencia.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao-indireta",
@@ -6857,9 +6857,9 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "aplicacao",
@@ -6872,7 +6872,7 @@ export const coesaoECoerencia = {
         "O projeto enfrentou obstaculos; apesar disso, avanaou."
       ],
       "correta": "O projeto enfrentou obstaculos; apesar disso, avanaou.",
-      "comentario": "A expressao 'apesar disso' mantem a relacao de contraste do enunciado original.",
+      "comentario": "A expressao 'apesar disso' mantem a relação de contraste do enunciado original.",
       "tempoEstimado": 70,
       "tags": [
         "equivalencia-de-formas",
@@ -6895,22 +6895,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'O texto valoriza a analise critica, mas afirma que questionar demais atrapalha a compreensao.' O efeito de sentido e:",
+      "enunciado": "Leia: 'O texto valoriza a análise crítica, mas afirma que questionar demais atrapalha a compreensão.' O efeito de sentido e:",
       "opcoes": [
-        "contradicao entre ideias",
-        "coerencia global",
-        "coesao referencial",
-        "paralelismo sintatico"
+        "contradição entre ideias",
+        "coerência global",
+        "coesão referencial",
+        "paralelismo sintático"
       ],
-      "correta": "contradicao entre ideias",
-      "comentario": "Valorizar analise critica implica questionamento, o que entra em conflito com a afirmacao final.",
+      "correta": "contradição entre ideias",
+      "comentario": "Valorizar análise crítica implica questionamento, o que entra em conflito com a afirmacao final.",
       "tempoEstimado": 60,
       "tags": [
         "interpretacao-indireta",
@@ -6933,14 +6933,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Compare: I. 'Ele estudou, portanto foi aprovado.' II. 'Ele estudou, assim foi aprovado.' A relacao entre as frases e:",
+      "enunciado": "Compare: I. 'Ele estudou, portanto foi aprovado.' II. 'Ele estudou, assim foi aprovado.' A relação entre as frases e:",
       "opcoes": [
         "oposta",
         "equivalente",
@@ -6948,7 +6948,7 @@ export const coesaoECoerencia = {
         "contraria"
       ],
       "correta": "equivalente",
-      "comentario": "Ambas expressam consequencia entre as acoes.",
+      "comentario": "Ambas expressam consequência entre as ações.",
       "tempoEstimado": 60,
       "tags": [
         "equivalencia-de-formas",
@@ -6971,22 +6971,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'O texto foi amplamente divulgado. Logo, todos o entenderam.' O erro logico esta em:",
+      "enunciado": "Leia: 'O texto foi amplamente divulgado. Logo, todos o entenderam.' O erro logico está em:",
       "opcoes": [
         "uso incorreto de conectivo",
-        "erro de concordancia",
+        "erro de concordância",
         "inferencia indevida",
-        "falta de coesao"
+        "falta de coesão"
       ],
       "correta": "inferencia indevida",
-      "comentario": "Divulgacao nao garante compreensao universal.",
+      "comentario": "Divulgação não garante compreensão universal.",
       "tempoEstimado": 60,
       "tags": [
         "pegadinha",
@@ -7009,21 +7009,21 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
       "enunciado": "Um texto afirma valorizar o dialogo, mas rejeita qualquer discordância. Isso indica:",
       "opcoes": [
-        "coerencia argumentativa",
-        "coesao sequencial",
-        "progressao tematica",
-        "contradicao interna"
+        "coerência argumentativa",
+        "coesão sequencial",
+        "progressão temática",
+        "contradição interna"
       ],
-      "correta": "contradicao interna",
+      "correta": "contradição interna",
       "comentario": "O texto entra em conflito ao rejeitar aquilo que afirma valorizar.",
       "tempoEstimado": 60,
       "tags": [
@@ -7047,9 +7047,9 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "aplicacao",
@@ -7085,14 +7085,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa com raciocinio circular:",
+      "enunciado": "Assinale a alternativa com raciocínio circular:",
       "opcoes": [
         "O aluno estudou e aprendeu.",
         "A tarefa foi concluida porque terminou.",
@@ -7100,7 +7100,7 @@ export const coesaoECoerencia = {
         "O projeto avanaou por planejamento."
       ],
       "correta": "A tarefa foi concluida porque terminou.",
-      "comentario": "A justificativa apenas repete a informacao inicial.",
+      "comentario": "A justificativa apenas repete a informação inicial.",
       "tempoEstimado": 60,
       "tags": [
         "pegadinha",
@@ -7123,9 +7123,9 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "inferencia",
@@ -7160,14 +7160,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Compare: 'Ele estudou, portanto passou' e 'Ele estudou, assim passou'. A relacao e:",
+      "enunciado": "Compare: 'Ele estudou, portanto passou' e 'Ele estudou, assim passou'. A relação e:",
       "opcoes": [
         "oposta",
         "independente",
@@ -7175,7 +7175,7 @@ export const coesaoECoerencia = {
         "equivalente"
       ],
       "correta": "equivalente",
-      "comentario": "Ambas expressam consequencia.",
+      "comentario": "Ambas expressam consequência.",
       "tempoEstimado": 60,
       "tags": [
         "equivalencia-de-formas"
@@ -7197,22 +7197,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'O texto foi divulgado. Logo, todos compreenderam.' O erro esta em:",
+      "enunciado": "Leia: 'O texto foi divulgado. Logo, todos compreenderam.' O erro está em:",
       "opcoes": [
         "inferencia indevida",
         "erro gramatical",
-        "falta de coesao",
-        "erro de pontuacao"
+        "falta de coesão",
+        "erro de pontuação"
       ],
       "correta": "inferencia indevida",
-      "comentario": "Divulgacao nao implica compreensao universal.",
+      "comentario": "Divulgação não implica compreensão universal.",
       "tempoEstimado": 70,
       "tags": [
         "pegadinha"
@@ -7234,9 +7234,9 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "inferencia",
@@ -7249,7 +7249,7 @@ export const coesaoECoerencia = {
         "paralelismo"
       ],
       "correta": "contradicao",
-      "comentario": "Ha incompatibilidade entre tese e conclusao.",
+      "comentario": "Há incompatibilidade entre tese e conclusão.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao-indireta"
@@ -7271,21 +7271,21 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
       "enunciado": "Leia: 'O texto valoriza o pensamento autônomo, mas afirma que o leitor deve aceitar todas as ideias apresentadas.' Esse enunciado revela:",
       "opcoes": [
-        "coerencia global",
-        "coesao referencial inadequada",
-        "contradicao entre ideias",
-        "progressao tematica linear"
+        "coerência global",
+        "coesão referencial inadequada",
+        "contradição entre ideias",
+        "progressão temática linear"
       ],
-      "correta": "contradicao entre ideias",
+      "correta": "contradição entre ideias",
       "comentario": "Valorizar pensamento autônomo implica questionamento, o que entra em conflito com a aceitacao passiva de ideias.",
       "tempoEstimado": 60,
       "tags": [
@@ -7309,14 +7309,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Compare: I. 'Ele treinou, portanto melhorou o desempenho.' II. 'Ele treinou, assim melhorou o desempenho.' As frases sao:",
+      "enunciado": "Compare: I. 'Ele treinou, portanto melhorou o desempenho.' II. 'Ele treinou, assim melhorou o desempenho.' As frases são:",
       "opcoes": [
         "opostas",
         "independentes",
@@ -7324,7 +7324,7 @@ export const coesaoECoerencia = {
         "equivalentes"
       ],
       "correta": "equivalentes",
-      "comentario": "Ambas expressam relacao de consequencia.",
+      "comentario": "Ambas expressam relação de consequência.",
       "tempoEstimado": 60,
       "tags": [
         "equivalencia-de-formas",
@@ -7347,22 +7347,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'O texto foi amplamente compartilhado. Logo, todos compreenderam seu conteudo.' O problema do raciocinio esta em:",
+      "enunciado": "Leia: 'O texto foi amplamente compartilhado. Logo, todos compreenderam seu conteúdo.' O problema do raciocínio está em:",
       "opcoes": [
         "inferencia indevida",
-        "erro de concordancia",
+        "erro de concordância",
         "uso inadequado de pronome",
         "falta de paralelismo"
       ],
       "correta": "inferencia indevida",
-      "comentario": "Compartilhar nao garante compreensao; ha generalizacao indevida.",
+      "comentario": "Compartilhar não garante compreensão; há generalizacao indevida.",
       "tempoEstimado": 60,
       "tags": [
         "pegadinha",
@@ -7385,22 +7385,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
       "enunciado": "Um texto afirma valorizar a pluralidade de ideias, mas conclui que apenas uma visao e aceitável. Isso indica:",
       "opcoes": [
-        "coesao sequencial",
-        "contradicao argumentativa",
-        "paralelismo sintatico",
-        "progressao tematica"
+        "coesão sequencial",
+        "contradição argumentativa",
+        "paralelismo sintático",
+        "progressão temática"
       ],
-      "correta": "contradicao argumentativa",
-      "comentario": "Ha incompatibilidade entre a tese e a conclusao.",
+      "correta": "contradição argumentativa",
+      "comentario": "Há incompatibilidade entre a tese e a conclusão.",
       "tempoEstimado": 60,
       "tags": [
         "interpretacao-indireta",
@@ -7423,9 +7423,9 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "aplicacao",
@@ -7438,7 +7438,7 @@ export const coesaoECoerencia = {
         "Ele enfrentou dificuldades; logo, obteve bons resultados."
       ],
       "correta": "Ele enfrentou dificuldades; apesar disso, obteve bons resultados.",
-      "comentario": "A expressao mantem a relacao de contraste.",
+      "comentario": "A expressao mantem a relação de contraste.",
       "tempoEstimado": 60,
       "tags": [
         "equivalencia-de-formas",
@@ -7461,14 +7461,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa com raciocinio circular:",
+      "enunciado": "Assinale a alternativa com raciocínio circular:",
       "opcoes": [
         "O aluno estudou e aprendeu.",
         "O texto foi claro porque foi bem explicado.",
@@ -7476,7 +7476,7 @@ export const coesaoECoerencia = {
         "A tarefa foi concluida porque terminou."
       ],
       "correta": "A tarefa foi concluida porque terminou.",
-      "comentario": "A justificativa apenas repete a informacao inicial.",
+      "comentario": "A justificativa apenas repete a informação inicial.",
       "tempoEstimado": 60,
       "tags": [
         "pegadinha",
@@ -7499,22 +7499,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'O texto critica decisoes precipitadas, mas conclui que agir sem pensar e a melhor solucao.' O enunciado apresenta:",
+      "enunciado": "Leia: 'O texto crítica decisões precipitadas, mas conclui que agir sem pensar e a melhor solução.' O enunciado apresenta:",
       "opcoes": [
-        "contradicao argumentativa",
-        "coesao sequencial",
-        "paralelismo sintatico",
-        "progressao tematica"
+        "contradição argumentativa",
+        "coesão sequencial",
+        "paralelismo sintático",
+        "progressão temática"
       ],
-      "correta": "contradicao argumentativa",
-      "comentario": "A conclusao contradiz a ideia defendida no desenvolvimento.",
+      "correta": "contradição argumentativa",
+      "comentario": "A conclusão contradiz a ideia defendida no desenvolvimento.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao-indireta",
@@ -7537,14 +7537,14 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Compare: 'Ele estudou, portanto passou' e 'Ele estudou, assim passou'. A relacao e:",
+      "enunciado": "Compare: 'Ele estudou, portanto passou' e 'Ele estudou, assim passou'. A relação e:",
       "opcoes": [
         "oposta",
         "equivalente",
@@ -7552,7 +7552,7 @@ export const coesaoECoerencia = {
         "contraria"
       ],
       "correta": "equivalente",
-      "comentario": "Ambas indicam consequencia.",
+      "comentario": "Ambas indicam consequência.",
       "tempoEstimado": 70,
       "tags": [
         "equivalencia-de-formas"
@@ -7574,22 +7574,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'O texto foi divulgado. Logo, todos compreenderam.' O erro esta em:",
+      "enunciado": "Leia: 'O texto foi divulgado. Logo, todos compreenderam.' O erro está em:",
       "opcoes": [
-        "erro de pontuacao",
-        "falta de coesao",
+        "erro de pontuação",
+        "falta de coesão",
         "inferencia indevida",
         "erro gramatical"
       ],
       "correta": "inferencia indevida",
-      "comentario": "Divulgacao nao implica compreensao universal.",
+      "comentario": "Divulgação não implica compreensão universal.",
       "tempoEstimado": 70,
       "tags": [
         "pegadinha"
@@ -7611,22 +7611,22 @@ export const coesaoECoerencia = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Coesao e Coerencia",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Coesão e Coerência",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto defende analise critica, questionamento e reflexao, mas conclui que a primeira impressao sempre deve ser aceita. Isso revela:",
+      "enunciado": "Um texto defende análise crítica, questionamento e reflexão, mas conclui que a primeira impressao sempre deve ser aceita. Isso revela:",
       "opcoes": [
-        "coerencia global",
-        "coesao sequencial",
-        "paralelismo sintatico",
-        "contradicao entre desenvolvimento e conclusao"
+        "coerência global",
+        "coesão sequencial",
+        "paralelismo sintático",
+        "contradição entre desenvolvimento e conclusão"
       ],
-      "correta": "contradicao entre desenvolvimento e conclusao",
-      "comentario": "A conclusao contradiz completamente os principios defendidos ao longo do texto.",
+      "correta": "contradição entre desenvolvimento e conclusão",
+      "comentario": "A conclusão contradiz completamente os principios defendidos ao longo do texto.",
       "tempoEstimado": 80,
       "tags": [
         "interpretacao-indireta",

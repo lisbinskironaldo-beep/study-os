@@ -1,6 +1,6 @@
 export const literaturaTrovadorismoHumanismoClassicismo = {
   "id": "portugues_literatura_trovadorismo_humanismo_classicismo",
-  "materia": "Portugues",
+  "materia": "Português",
   "serie": [
     1
   ],
@@ -10,7 +10,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
     "base": "ESCOLAR",
     "seloEditorial": "VERIFICADA",
     "eixo": "Literatura",
-    "frente": "Escolas literarias da Idade Media e do Renascimento",
+    "frente": "Escolas literarias da Idade Média e do Renascimento",
     "searchAliases": [
       "literatura medieval",
       "trovadorismo",
@@ -24,7 +24,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "Conceito geral",
       "Contexto historico do Trovadorismo",
       "Circulacao das cantigas",
-      "Lingua galego-portuguesa",
+      "Língua galego-portuguesa",
       "Autores, trovadores e jograis",
       "Feudalismo a vassalagem amorosa",
       "Cantiga de amor",
@@ -37,17 +37,17 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "Prosa historica",
       "Transicao do Teocentrismo ao Antropocentrismo",
       "Contexto historico do Classicismo",
-      "Racionalismo e equilibrio formal",
+      "Racionalismo e equilíbrio formal",
       "Soneto e medida nova",
       "Camoes lirico",
       "Camoes epico",
       "Comparacao entre escolas",
-      "Interpretacao indireta",
+      "Interpretação indireta",
       "Pegadinha",
-      "Equivalencia de formas"
+      "Equivalência de formas"
     ],
     "habilidadesBase": [
-      "reconhecer caracteristicas gerais do Trovadorismo, do Humanismo e do Classicismo",
+      "reconhecer características gerais do Trovadorismo, do Humanismo e do Classicismo",
       "relacionar textos literarios ao contexto historico e cultural de cada escola",
       "identificar tracos tematicos e formais das cantigas e da poesia classica",
       "distinguir autores, formas e valores estaticos de diferentes periodos literarios",
@@ -63,22 +63,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "O Trovadorismo e geralmente apontado como a primeira escola literaria da lingua portuguesa porque marcou o inicio da producao escrita organizada em galego-portugues. Esse movimento pertence a qual periodo historico?",
+      "enunciado": "O Trovadorismo e geralmente apontado como a primeira escola literaria da língua portuguesa porque marcou o inicio da produção escrita organizada em galego-português. Esse movimento pertence a qual período historico?",
       "opcoes": [
-        "Idade Media",
-        "Renascimento cientifico",
+        "Idade Média",
+        "Renascimento científico",
         "Iluminismo",
         "Romantismo"
       ],
-      "correta": "Idade Media",
-      "comentario": "O Trovadorismo pertence e Idade Media e se desenvolveu em ambiente cortesao, ligado e sociedade feudal e as cantigas.",
+      "correta": "Idade Média",
+      "comentario": "O Trovadorismo pertence e Idade Média e se desenvolveu em ambiente cortesao, ligado e sociedade feudal e as cantigas.",
       "tempoEstimado": 20,
       "tags": [
         "trovadorismo",
@@ -102,14 +102,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Circulacao das cantigas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "As produções do Trovadorismo eram, em sua origem, associadas principalmente a que pratica artistica?",
+      "enunciado": "As produções do Trovadorismo eram, em sua origem, associadas principalmente a que prática artistica?",
       "opcoes": [
         "Canto acompanhado de masica",
         "Encenacao teatral com cenarios fixos",
@@ -117,7 +117,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "Declamacao cientifica em universidades"
       ],
       "correta": "Canto acompanhado de masica",
-      "comentario": "As cantigas trovadorescas estavam ligadas ao canto e e masica, com forte presenca da oralidade e da performance.",
+      "comentario": "As cantigas trovadorescas estavam ligadas ao canto e e masica, com forte presença da oralidade e da performance.",
       "tempoEstimado": 20,
       "tags": [
         "cantigas",
@@ -141,22 +141,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
-      "subtopico": "Lingua galego-portuguesa",
+      "subtopico": "Língua galego-portuguesa",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em qual lingua eram compostas, de modo predominante, as cantigas do Trovadorismo peninsular?",
+      "enunciado": "Em qual língua eram compostas, de modo predominante, as cantigas do Trovadorismo peninsular?",
       "opcoes": [
-        "Galego-portugues",
+        "Galego-português",
         "Latim classico",
         "Castelhano moderno",
         "Francas iluminista"
       ],
-      "correta": "Galego-portugues",
-      "comentario": "O galego-portugues foi a lingua literaria predominante nas cantigas trovadorescas da Península Ibérica.",
+      "correta": "Galego-português",
+      "comentario": "O galego-português foi a língua literaria predominante nas cantigas trovadorescas da Península Ibérica.",
       "tempoEstimado": 20,
       "tags": [
         "galego-portugues",
@@ -180,7 +180,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Autores, trovadores e jograis",
       "dificuldadeLabel": "facil",
@@ -195,7 +195,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "escrever epopeias greco-latinas"
       ],
       "correta": "interpretar e divulgar composicoes",
-      "comentario": "O trovador era associado e composicao; o jogral, com frequencia, e execucao e e divulgacao das cantigas.",
+      "comentario": "O trovador era associado e composicao; o jogral, com frequência, e execucao e e divulgação das cantigas.",
       "tempoEstimado": 20,
       "tags": [
         "trovador",
@@ -219,22 +219,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Feudalismo a vassalagem amorosa",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "A ideia de submissao amorosa do eu lirico e dama, frequente em textos trovadorescos, se relaciona simbolicamente a qual traco da sociedade medievale",
+      "enunciado": "A ideia de submissao amorosa do eu lirico é dama, frequente em textos trovadorescos, se relaciona simbolicamente a qual traco da sociedade medievale",
       "opcoes": [
-        "Relacoes de dependencia e hierarquia do feudalismo",
+        "Relações de dependencia e hierarquia do feudalismo",
         "Igualdade politica entre todos os grupos sociais",
         "Industrializacao acelerada das cidades",
         "Defesa do individualismo burguas moderno"
       ],
-      "correta": "Relacoes de dependencia e hierarquia do feudalismo",
-      "comentario": "A linguagem amorosa do Trovadorismo frequentemente reproduz, em chave afetiva, a logica hierarquica e de dependencia do mundo feudal.",
+      "correta": "Relações de dependencia e hierarquia do feudalismo",
+      "comentario": "A linguagem amorosa do Trovadorismo frequentemente reproduz, em chave afetiva, a lógica hierarquica e de dependencia do mundo feudal.",
       "tempoEstimado": 20,
       "tags": [
         "feudalismo",
@@ -258,7 +258,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Contexto historico do Trovadorismo",
       "dificuldadeLabel": "medio",
@@ -267,13 +267,13 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "Considerando o contexto historico, o Trovadorismo se desenvolveu sobretudo entre:",
       "opcoes": [
-        "o fim do soculo XII e o soculo XIV",
-        "o soculo XV e o inicio do soculo XVI",
-        "o soculo XVII e o soculo XVIII",
-        "o final do soculo XIX e o inicio do soculo XX"
+        "o fim do século XII e o século XIV",
+        "o século XV e o inicio do século XVI",
+        "o século XVII e o século XVIII",
+        "o final do século XIX e o inicio do século XX"
       ],
-      "correta": "o fim do soculo XII e o soculo XIV",
-      "comentario": "O Trovadorismo se consolidou entre o final do soculo XII e o soculo XIV, antes do Humanismo.",
+      "correta": "o fim do século XII e o século XIV",
+      "comentario": "O Trovadorismo se consolidou entre o final do século XII e o século XIV, antes do Humanismo.",
       "tempoEstimado": 30,
       "tags": [
         "periodizacao",
@@ -297,7 +297,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
@@ -312,7 +312,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "Ruptura com a metrica e com a forma fixa"
       ],
       "correta": "Produção poetico-musical de ambiente cortesao e medieval",
-      "comentario": "O Trovadorismo se destaca por sua producao lirica ligada e masica, e oralidade e ao ambiente cortesao medieval.",
+      "comentario": "O Trovadorismo se destaca por sua produção lirica ligada e masica, e oralidade e ao ambiente cortesao medieval.",
       "tempoEstimado": 30,
       "tags": [
         "caracteristicas-gerais",
@@ -336,18 +336,18 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Circulacao das cantigas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Os chamados cancioneiros, importantes para o estudo do Trovadorismo, sao entendidos como:",
+      "enunciado": "Os chamados cancioneiros, importantes para o estudo do Trovadorismo, são entendidos como:",
       "opcoes": [
         "coletâneas manuscritas que registram cantigas",
         "manuais de retórica greco-romana",
-        "jornais impressos de critica literaria",
+        "jornais impressos de crítica literaria",
         "tratados filosoficos do Humanismo"
       ],
       "correta": "coletâneas manuscritas que registram cantigas",
@@ -375,22 +375,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
-      "subtopico": "Lingua galego-portuguesa",
+      "subtopico": "Língua galego-portuguesa",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "O uso do galego-portugues nas cantigas medievais indica que, naquele contexto, essa lingua:",
+      "enunciado": "O uso do galego-português nas cantigas medievais indica que, naquele contexto, essa língua:",
       "opcoes": [
         "ocupava lugar relevante como meio de expressao literaria na Península Ibérica",
-        "ja havia sido totalmente substituída pelo portugues moderno",
+        "já havia sido totalmente substituída pelo português moderno",
         "era restrita apenas e escrita religiosa latina",
-        "nao possuía circulacao entre os ambientes cortesaos"
+        "não possuía circulacao entre os ambientes cortesaos"
       ],
       "correta": "ocupava lugar relevante como meio de expressao literaria na Península Ibérica",
-      "comentario": "O galego-portugues teve forte prestagio literario no periodo trovadoresco, especialmente na poesia.",
+      "comentario": "O galego-português teve forte prestagio literario no período trovadoresco, especialmente na poesia.",
       "tempoEstimado": 30,
       "tags": [
         "galego-portugues",
@@ -414,22 +414,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Autores, trovadores e jograis",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que apresenta corretamente a relacao entre trovador e jogral no universo medieval.",
+      "enunciado": "Assinale a alternativa que apresenta corretamente a relação entre trovador e jogral no universo medieval.",
       "opcoes": [
-        "O trovador estava mais ligado e composicao, enquanto o jogral podia atuar na execucao e divulgacao.",
+        "O trovador estava mais ligado e composicao, enquanto o jogral podia atuar na execucao e divulgação.",
         "O jogral escrevia epopeias latinas, enquanto o trovador estudava filosofia escolastica.",
         "O trovador era apenas masico, e o jogral, exclusivamente copista de mosteiro.",
-        "Nao havia qualquer diferenca de funcao entre ambos."
+        "Não havia qualquer diferenca de função entre ambos."
       ],
-      "correta": "O trovador estava mais ligado e composicao, enquanto o jogral podia atuar na execucao e divulgacao.",
-      "comentario": "Embora a pratica medieval pudesse variar, essa e a distincao geral mais aceita nos estudos introdutórios sobre o Trovadorismo.",
+      "correta": "O trovador estava mais ligado e composicao, enquanto o jogral podia atuar na execucao e divulgação.",
+      "comentario": "Embora a prática medieval pudesse variar, essa e a distincao geral mais aceita nos estudos introdutórios sobre o Trovadorismo.",
       "tempoEstimado": 30,
       "tags": [
         "trovador",
@@ -453,14 +453,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Feudalismo a vassalagem amorosa",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se afirma que a relacao amorosa em certas cantigas lembra a logica da vassalagem, entende-se que:",
+      "enunciado": "Quando se afirma que a relação amorosa em certas cantigas lembra a lógica da vassalagem, entende-se que:",
       "opcoes": [
         "o amor aparece marcado por hierarquia, servico e submissao simbolica",
         "o amor e tratado como experiencia igualitária e revolucionária",
@@ -492,14 +492,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Contexto historico do Trovadorismo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A forte presenca da religiosidade medieval no contexto do Trovadorismo se associa, principalmente, a qual visao de mundo?",
+      "enunciado": "A forte presença da religiosidade medieval no contexto do Trovadorismo se associa, principalmente, a qual visao de mundo?",
       "opcoes": [
         "Teocentrismo",
         "Materialismo historico",
@@ -531,14 +531,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Circulacao das cantigas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a situacao: \"Em um salão nobre, um texto e cantado para entreter a corte e reafirmar valores compartilhados pelo grupo social dominante.\" Essa cena se aproxima do modo de circulacao de textos do:",
+      "enunciado": "Leia a situação: \"Em um salão nobre, um texto e cantado para entreter a corte e reafirmar valores compartilhados pelo grupo social dominante.\" Essa cena se aproxima do modo de circulacao de textos do:",
       "opcoes": [
         "Trovadorismo",
         "Arcadismo",
@@ -570,14 +570,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que NAO corresponde ao universo do Trovadorismo.",
+      "enunciado": "Assinale a alternativa que NÃO corresponde ao universo do Trovadorismo.",
       "opcoes": [
         "Valorizacao sistematica da razao classica e da imitacao dos autores greco-latinos",
         "Presença de cantigas ligadas ao canto e e masica",
@@ -585,7 +585,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "Registro preservado em cancioneiros"
       ],
       "correta": "Valorizacao sistematica da razao classica e da imitacao dos autores greco-latinos",
-      "comentario": "Essa valorizacao e caracteristica do Classicismo, nao do Trovadorismo.",
+      "comentario": "Essa valorizacao e caracteristica do Classicismo, não do Trovadorismo.",
       "tempoEstimado": 35,
       "tags": [
         "comparacao-entre-escolas",
@@ -609,14 +609,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Contexto historico do Trovadorismo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A producao trovadoresca esta mais próxima de um mundo social em que:",
+      "enunciado": "A produção trovadoresca está mais próxima de um mundo social em que:",
       "opcoes": [
         "nobreza, corte e religiosidade tem forte influencia sobre a cultura",
         "a burguesia industrial controla a cena cultural",
@@ -648,7 +648,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Circulacao das cantigas",
       "dificuldadeLabel": "medio",
@@ -657,13 +657,13 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "A associacao entre oralidade e registro manuscrito no Trovadorismo permite concluir que as cantigas:",
       "opcoes": [
-        "circularam em performance, mas tambem foram preservadas por escrito",
+        "circularam em performance, mas também foram preservadas por escrito",
         "existiram apenas como textos silenciosos de leitura individual",
-        "nao possuíam qualquer vinculo com a masica",
+        "não possuíam qualquer vinculo com a masica",
         "foram produzidas somente em tipografias comerciais"
       ],
-      "correta": "circularam em performance, mas tambem foram preservadas por escrito",
-      "comentario": "As cantigas tiveram forte dimensao oral e musical, mas chegaram ate nas graças ao registro em cancioneiros manuscritos.",
+      "correta": "circularam em performance, mas também foram preservadas por escrito",
+      "comentario": "As cantigas tiveram forte dimensao oral e musical, mas chegaram até nas graças ao registro em cancioneiros manuscritos.",
       "tempoEstimado": 35,
       "tags": [
         "oralidade",
@@ -687,22 +687,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar o Trovadorismo, um aluno afirmou: \"e uma producao literaria medieval, ligada e masica e ao ambiente cortesao\". A avaliacao correta dessa afirmacao e:",
+      "enunciado": "Ao estudar o Trovadorismo, um aluno afirmou: \"e uma produção literaria medieval, ligada e masica e ao ambiente cortesao\". A avaliação correta dessa afirmacao e:",
       "opcoes": [
         "Verdadeira",
         "Falsa, porque o Trovadorismo nasceu na sociedade industrial",
-        "Falsa, porque nao havia relacao com masica",
+        "Falsa, porque não havia relação com masica",
         "Falsa, porque se trata de movimento exclusivamente teatral"
       ],
       "correta": "Verdadeira",
-      "comentario": "A afirmacao resume adequadamente tras aspectos centrais do Trovadorismo: periodo medieval, musicalidade e circulacao corteso.",
+      "comentario": "A afirmacao resume adequadamente tras aspectos centrais do Trovadorismo: período medieval, musicalidade e circulacao corteso.",
       "tempoEstimado": 35,
       "tags": [
         "vf",
@@ -726,22 +726,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Feudalismo a vassalagem amorosa",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em muitas interpretacoes introdutórias, a cortesia amorosa do Trovadorismo e lida como reflexo da organizacao feudal porque nela:",
+      "enunciado": "Em muitas interpretacoes introdutórias, a cortesia amorosa do Trovadorismo e lida como reflexo da organização feudal porque nela:",
       "opcoes": [
-        "o sujeito amoroso se coloca em posicao inferior diante da dama",
-        "a critica politica e monarquia se torna explicita e revolucionária",
+        "o sujeito amoroso se coloca em posição inferior diante da dama",
+        "a crítica politica e monarquia se torna explícita e revolucionária",
         "o casamento por afeto substitui totalmente as convenções sociais",
         "a mulher aparece sempre como autora historica do texto"
       ],
-      "correta": "o sujeito amoroso se coloca em posicao inferior diante da dama",
-      "comentario": "Essa inferiorizacao simbolica ecoa a logica hierarquica da vassalagem, muito presente no imaginário medieval.",
+      "correta": "o sujeito amoroso se coloca em posição inferior diante da dama",
+      "comentario": "Essa inferiorizacao simbolica ecoa a lógica hierarquica da vassalagem, muito presente no imaginário medieval.",
       "tempoEstimado": 35,
       "tags": [
         "cortesia-amorosa",
@@ -765,14 +765,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
-      "subtopico": "Lingua galego-portuguesa",
+      "subtopico": "Língua galego-portuguesa",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um pesquisador afirma que o Trovadorismo foi importante para a historia da literatura portuguesa por registrar, em galego-portugues, uma producao lirica organizada, essa afirmacao destaca principalmente:",
+      "enunciado": "Se um pesquisador afirma que o Trovadorismo foi importante para a história da literatura portuguesa por registrar, em galego-português, uma produção lirica organizada, essa afirmacao destaca principalmente:",
       "opcoes": [
         "o valor historico-linguastico das cantigas",
         "a recusa medieval de qualquer forma poetica",
@@ -780,7 +780,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "a origem classica greco-romana do soneto camoniano"
       ],
       "correta": "o valor historico-linguastico das cantigas",
-      "comentario": "O Trovadorismo e relevante porque documenta uma fase inicial da expressao literaria em lingua galego-portuguesa.",
+      "comentario": "O Trovadorismo e relevante porque documenta uma fase inicial da expressao literaria em língua galego-portuguesa.",
       "tempoEstimado": 35,
       "tags": [
         "historia-da-lingua",
@@ -804,22 +804,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Contexto historico do Trovadorismo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Entre as alternativas abaixo, qual explica melhor por que o Trovadorismo nao deve ser confundido com o Classicismo?",
+      "enunciado": "Entre as alternativas abaixo, qual explica melhor por que o Trovadorismo não deve ser confundido com o Classicismo?",
       "opcoes": [
-        "Porque o Trovadorismo e medieval e ligado as cantigas, enquanto o Classicismo e renascentista e orientado por equilibrio formal e imitacao classica.",
-        "Porque o Trovadorismo e cientifico e o Classicismo e oral.",
+        "Porque o Trovadorismo e medieval e ligado as cantigas, enquanto o Classicismo e renascentista e orientado por equilíbrio formal e imitacao classica.",
+        "Porque o Trovadorismo e científico e o Classicismo e oral.",
         "Porque o Trovadorismo valoriza o verso livre e o Classicismo rejeita qualquer forma fixa.",
         "Porque o Trovadorismo surge depois do Humanismo e do Barroco."
       ],
-      "correta": "Porque o Trovadorismo e medieval e ligado as cantigas, enquanto o Classicismo e renascentista e orientado por equilibrio formal e imitacao classica.",
-      "comentario": "A alternativa correta distingue com precisao o contexto historico e os tracos estaticos centrais de cada escola.",
+      "correta": "Porque o Trovadorismo e medieval e ligado as cantigas, enquanto o Classicismo e renascentista e orientado por equilíbrio formal e imitacao classica.",
+      "comentario": "A alternativa correta distingue com precisão o contexto historico e os tracos estaticos centrais de cada escola.",
       "tempoEstimado": 35,
       "tags": [
         "comparacao-entre-escolas",
@@ -843,7 +843,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Circulacao das cantigas",
       "dificuldadeLabel": "dificil",
@@ -853,7 +853,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "enunciado": "A afirmacao \"o Trovadorismo foi apenas oral\" e inadequada porque desconsidera o fato de que:",
       "opcoes": [
         "a performance oral conviveu com o registro manuscrito em cancioneiros",
-        "as cantigas ja circulavam prioritariamente em jornais impressos",
+        "as cantigas já circulavam prioritariamente em jornais impressos",
         "os textos trovadorescos nasceram como romances em prosa",
         "a escrita medieval eliminou completamente a dimensao musical"
       ],
@@ -882,7 +882,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Contexto historico do Trovadorismo",
       "dificuldadeLabel": "dificil",
@@ -921,22 +921,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Autores, trovadores e jograis",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Sobre trovadores e jograis, analise as afirmacoes. I. O trovador costuma ser associado e composicao da cantiga. II. O jogral pode ser associado e execucao e divulgacao. III. Ambos os termos sao normalmente apresentados, em nivel introdutório, como funcoes absolutamente idênticas. Assinale a alternativa correta.",
+      "enunciado": "Sobre trovadores e jograis, análise as afirmações. I. O trovador costuma ser associado e composicao da cantiga. II. O jogral pode ser associado e execucao e divulgação. III. Ambos os termos são normalmente apresentados, em nível introdutório, como funções absolutamente idênticas. Assinale a alternativa correta.",
       "opcoes": [
         "Apenas I e II estao corretas.",
-        "Apenas III esta correta.",
-        "Apenas I esta correta.",
+        "Apenas III está correta.",
+        "Apenas I está correta.",
         "I, II e III estao corretas."
       ],
       "correta": "Apenas I e II estao corretas.",
-      "comentario": "As afirmacoes I e II correspondem e distincao introdutória mais recorrente. A III esta incorreta, pois apaga uma diferenca funcional importante.",
+      "comentario": "As afirmações I e II correspondem e distincao introdutória mais recorrente. A III está incorreta, pois apaga uma diferenca funcional importante.",
       "tempoEstimado": 45,
       "tags": [
         "trovador",
@@ -960,21 +960,21 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Feudalismo a vassalagem amorosa",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que interpreta com mais precisao a chamada vassalagem amorosa nas cantigas medievais.",
+      "enunciado": "Assinale a alternativa que interpreta com mais precisão a chamada vassalagem amorosa nas cantigas medievais.",
       "opcoes": [
-        "Trata-se de uma transposicao simbolica da logica feudal para a relacao amorosa, marcada por servico, distancia e hierarquia.",
-        "Trata-se da defesa explicita de igualdade jurídica entre amantes e senhores feudais.",
+        "Trata-se de uma transposicao simbolica da lógica feudal para a relação amorosa, marcada por servico, distância e hierarquia.",
+        "Trata-se da defesa explícita de igualdade jurídica entre amantes e senhores feudais.",
         "Trata-se de um conceito renascentista voltado e exaltacao do homem como centro do universo.",
-        "Trata-se de critica iluminista e estrutura nobiliárquica medieval."
+        "Trata-se de crítica iluminista e estrutura nobiliárquica medieval."
       ],
-      "correta": "Trata-se de uma transposicao simbolica da logica feudal para a relacao amorosa, marcada por servico, distancia e hierarquia.",
+      "correta": "Trata-se de uma transposicao simbolica da lógica feudal para a relação amorosa, marcada por servico, distância e hierarquia.",
       "comentario": "A vassalagem amorosa traduz, em linguagem afetiva, a ordem hierarquizada do mundo feudal.",
       "tempoEstimado": 45,
       "tags": [
@@ -999,14 +999,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Conceito geral",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia as proposicoes sobre o Trovadorismo. I. Esta inserido na cultura medieval. II. Apresenta vinculo com masica e oralidade. III. Surge ja sob forte influencia do antropocentrismo renascentista. IV. Tem parte de sua preservacao garantida por cancioneiros. Assinale a alternativa correta.",
+      "enunciado": "Leia as proposicoes sobre o Trovadorismo. I. Está inserido na cultura medieval. II. Apresenta vinculo com masica e oralidade. III. Surge já sob forte influencia do antropocentrismo renascentista. IV. Tem parte de sua preservacao garantida por cancioneiros. Assinale a alternativa correta.",
       "opcoes": [
         "Apenas I, II e IV estao corretas.",
         "Apenas I e III estao corretas.",
@@ -1014,7 +1014,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "I, II, III e IV estao corretas."
       ],
       "correta": "Apenas I, II e IV estao corretas.",
-      "comentario": "O item III esta incorreto porque o Trovadorismo pertence ao universo medieval, marcado pelo teocentrismo, e nao ao antropocentrismo renascentista.",
+      "comentario": "O item III está incorreto porque o Trovadorismo pertence ao universo medieval, marcado pelo teocentrismo, e não ao antropocentrismo renascentista.",
       "tempoEstimado": 45,
       "tags": [
         "analise-de-afirmacoes",
@@ -1038,7 +1038,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de amor",
       "dificuldadeLabel": "facil",
@@ -1048,7 +1048,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "enunciado": "Em linhas gerais, a cantiga de amor apresenta um eu lirico que costuma ser:",
       "opcoes": [
         "masculino e sofredor diante de uma dama idealizada",
-        "feminino e confiante em relacao ao amor correspondido",
+        "feminino e confiante em relação ao amor correspondido",
         "coletivo e voltado e satira politica",
         "neutro e interessado em temas cientificos"
       ],
@@ -1077,7 +1077,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de amigo",
       "dificuldadeLabel": "facil",
@@ -1086,13 +1086,13 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "Na tradicao trovadoresca, a cantiga de amigo costuma apresentar voz lirica:",
       "opcoes": [
-        "feminina, frequentemente lamentando a ausencia do amado",
+        "feminina, frequentemente lamentando a ausência do amado",
         "masculina, descrevendo batalhas medievais",
         "saterica, atacando diretamente nobres pelo nome",
         "religiosa, com louvor aos santos"
       ],
-      "correta": "feminina, frequentemente lamentando a ausencia do amado",
-      "comentario": "Na cantiga de amigo, a voz lirica e feminina e frequentemente expressa saudade, espera ou lamento pela ausencia do amigo, isto e, do amado.",
+      "correta": "feminina, frequentemente lamentando a ausência do amado",
+      "comentario": "Na cantiga de amigo, a voz lirica e feminina e frequentemente expressa saudade, espera ou lamento pela ausência do amigo, isto e, do amado.",
       "tempoEstimado": 20,
       "tags": [
         "cantiga-de-amigo",
@@ -1116,7 +1116,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de amor",
       "dificuldadeLabel": "facil",
@@ -1127,7 +1127,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "opcoes": [
         "dama inacessovel e idealizada",
         "figura cômica e vulgar",
-        "narradora da propria satira",
+        "narradora da própria satira",
         "camponesa ridicularizada por jograis"
       ],
       "correta": "dama inacessovel e idealizada",
@@ -1155,14 +1155,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de amigo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um traco comum da cantiga de amigo e a presenca de elementos da natureza, como mar, vento e flores. Esses elementos costumam funcionar como:",
+      "enunciado": "Um traco comum da cantiga de amigo e a presença de elementos da natureza, como mar, vento e flores. Esses elementos costumam funcionar como:",
       "opcoes": [
         "cenario e interlocucao simbolica da saudade amorosa",
         "prova de racionalismo classico",
@@ -1170,7 +1170,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "sinal de satira agressiva e insulto direto"
       ],
       "correta": "cenario e interlocucao simbolica da saudade amorosa",
-      "comentario": "Na cantiga de amigo, a natureza frequentemente participa do cenario afetivo e pode ate funcionar como interlocutora simbolica da voz feminina.",
+      "comentario": "Na cantiga de amigo, a natureza frequentemente participa do cenario afetivo e pode até funcionar como interlocutora simbolica da voz feminina.",
       "tempoEstimado": 20,
       "tags": [
         "cantiga-de-amigo",
@@ -1194,7 +1194,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de amigo",
       "dificuldadeLabel": "facil",
@@ -1209,7 +1209,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "narrador religioso"
       ],
       "correta": "amado",
-      "comentario": "Nas cantigas de amigo, \"amigo\" significa o amado da voz feminina, e nao apenas um companheiro em sentido genérico.",
+      "comentario": "Nas cantigas de amigo, \"amigo\" significa o amado da voz feminina, e não apenas um companheiro em sentido genérico.",
       "tempoEstimado": 20,
       "tags": [
         "cantiga-de-amigo",
@@ -1233,7 +1233,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de amor",
       "dificuldadeLabel": "medio",
@@ -1242,13 +1242,13 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "A cantiga de amor se relaciona mais diretamente e ideia de vassalagem amorosa porque nela o eu lirico:",
       "opcoes": [
-        "se coloca em posicao de inferioridade diante da dama",
+        "se coloca em posição de inferioridade diante da dama",
         "ridiculariza o comportamento popular",
         "fala em nome de uma comunidade camponesa",
         "rejeita toda hierarquia afetiva"
       ],
-      "correta": "se coloca em posicao de inferioridade diante da dama",
-      "comentario": "Na cantiga de amor, o eu lirico assume postura de submissao e reverencia diante da dama, ecoando a logica hierarquica da sociedade feudal.",
+      "correta": "se coloca em posição de inferioridade diante da dama",
+      "comentario": "Na cantiga de amor, o eu lirico assume postura de submissao e reverencia diante da dama, ecoando a lógica hierarquica da sociedade feudal.",
       "tempoEstimado": 30,
       "tags": [
         "cantiga-de-amor",
@@ -1272,7 +1272,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de amigo",
       "dificuldadeLabel": "medio",
@@ -1281,13 +1281,13 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "Em comparacao com a cantiga de amor, a cantiga de amigo costuma apresentar maior destaque para:",
       "opcoes": [
-        "simplicidade expressiva e repeticao paralelastica",
-        "teorizacao filosofica abstrata",
+        "simplicidade expressiva e repetição paralelastica",
+        "teorizacao filosófica abstrata",
         "uso de mitologia classica greco-latina",
         "culto e razao equilibrada do Renascimento"
       ],
-      "correta": "simplicidade expressiva e repeticao paralelastica",
-      "comentario": "A cantiga de amigo costuma apresentar linguagem mais simples, repeticao de estruturas e forte musicalidade, muitas vezes com paralelismo e refrao.",
+      "correta": "simplicidade expressiva e repetição paralelastica",
+      "comentario": "A cantiga de amigo costuma apresentar linguagem mais simples, repetição de estruturas e forte musicalidade, muitas vezes com paralelismo e refrao.",
       "tempoEstimado": 30,
       "tags": [
         "cantiga-de-amigo",
@@ -1311,14 +1311,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de amor",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a descricao: \"Um homem lamenta o amor impossovel por uma dama socialmente superior e exalta sua beleza e perfeicao\". Essa situacao se aproxima de qual genero trovadoresco?",
+      "enunciado": "Leia a descricao: \"Um homem lamenta o amor impossovel por uma dama socialmente superior e exalta sua beleza e perfeicao\". Essa situação se aproxima de qual gênero trovadoresco?",
       "opcoes": [
         "Cantiga de amor",
         "Cantiga de amigo",
@@ -1326,7 +1326,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "Cantiga de maldizer"
       ],
       "correta": "Cantiga de amor",
-      "comentario": "O amor idealizado, o sofrimento masculino e a superioridade social da dama sao marcas tipicas da cantiga de amor.",
+      "comentario": "O amor idealizado, o sofrimento masculino e a superioridade social da dama são marcas tipicas da cantiga de amor.",
       "tempoEstimado": 30,
       "tags": [
         "cantiga-de-amor",
@@ -1350,7 +1350,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de amigo",
       "dificuldadeLabel": "medio",
@@ -1365,7 +1365,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "soneto classico"
       ],
       "correta": "cantiga de amigo",
-      "comentario": "A voz feminina, o dialogo com a natureza e a repeticao estrutural aproximam o texto da cantiga de amigo.",
+      "comentario": "A voz feminina, o dialogo com a natureza e a repetição estrutural aproximam o texto da cantiga de amigo.",
       "tempoEstimado": 30,
       "tags": [
         "cantiga-de-amigo",
@@ -1389,22 +1389,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de amor",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Na cantiga de amor, o sofrimento do eu lirico decorre, com frequencia, do fato de que:",
+      "enunciado": "Na cantiga de amor, o sofrimento do eu lirico decorre, com frequência, do fato de que:",
       "opcoes": [
-        "o amor nao e plenamente correspondido e a dama permanece distante",
+        "o amor não e plenamente correspondido e a dama permanece distante",
         "a comunidade zomba da voz feminina em praca publica",
         "o texto busca ridicularizar um personagem por meio de satira direta",
-        "o poeta pretende demonstrar equilibrio racional renascentista"
+        "o poeta pretende demonstrar equilíbrio racional renascentista"
       ],
-      "correta": "o amor nao e plenamente correspondido e a dama permanece distante",
-      "comentario": "A distancia e a idealizacao da dama tornam o amor fonte de sofrimento e submissao para o eu lirico masculino.",
+      "correta": "o amor não e plenamente correspondido e a dama permanece distante",
+      "comentario": "A distância e a idealizacao da dama tornam o amor fonte de sofrimento e submissao para o eu lirico masculino.",
       "tempoEstimado": 30,
       "tags": [
         "cantiga-de-amor",
@@ -1428,7 +1428,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de amigo",
       "dificuldadeLabel": "medio",
@@ -1443,7 +1443,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "imitar modelos classicos greco-latinos"
       ],
       "correta": "dar voz feminina e experiencia amorosa",
-      "comentario": "Um dos tracos mais marcantes da cantiga de amigo e a presenca de voz lirica feminina, ainda que o texto seja escrito por homens na tradicao trovadoresca.",
+      "comentario": "Um dos tracos mais marcantes da cantiga de amigo e a presença de voz lirica feminina, ainda que o texto seja escrito por homens na tradicao trovadoresca.",
       "tempoEstimado": 30,
       "tags": [
         "cantiga-de-amigo",
@@ -1467,7 +1467,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de amor",
       "dificuldadeLabel": "medio",
@@ -1476,12 +1476,12 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "A idealizacao da dama, na cantiga de amor, contribui para produzir qual efeito principale",
       "opcoes": [
-        "intensificacao da distancia entre o eu lirico e a mulher amada",
+        "intensificacao da distância entre o eu lirico e a mulher amada",
         "reducao completa do conflito amoroso",
         "transformacao da mulher em figura satirizada",
-        "aproximacao da poesia do discurso cientifico"
+        "aproximacao da poesia do discurso científico"
       ],
-      "correta": "intensificacao da distancia entre o eu lirico e a mulher amada",
+      "correta": "intensificacao da distância entre o eu lirico e a mulher amada",
       "comentario": "Ao ser elevada a um plano de perfeicao e superioridade, a dama se torna ainda mais distante, o que reforca o sofrimento do eu lirico.",
       "tempoEstimado": 35,
       "tags": [
@@ -1506,18 +1506,18 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de amigo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A repeticao de versos ou de estruturas sinteticas semelhantes na cantiga de amigo favorece principalmente:",
+      "enunciado": "A repetição de versos ou de estruturas sinteticas semelhantes na cantiga de amigo favorece principalmente:",
       "opcoes": [
         "a musicalidade e a intensificacao do sentimento expresso",
         "a objetividade cientifica da mensagem",
-        "a construcao de satira pessoal direta",
+        "a construção de satira pessoal direta",
         "a negacao do ritmo poetico"
       ],
       "correta": "a musicalidade e a intensificacao do sentimento expresso",
@@ -1545,14 +1545,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de amor",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um texto medieval apresenta um homem que exalta a nobreza moral e fasica de uma senhora inalcançável, o elemento mais compativel com a cantiga de amor e:",
+      "enunciado": "Se um texto medieval apresenta um homem que exalta a nobreza moral e fasica de uma senhora inalcançável, o elemento mais compatível com a cantiga de amor e:",
       "opcoes": [
         "a idealizacao respeitosa da figura feminina",
         "a ridicularizacao obscena do alvo saterico",
@@ -1560,7 +1560,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "a defesa do homem como centro de todas as coisas"
       ],
       "correta": "a idealizacao respeitosa da figura feminina",
-      "comentario": "A cantiga de amor tende a apresentar a dama como superior, digna de reverencia e idealizacao, e nao como objeto de riso ou critica direta.",
+      "comentario": "A cantiga de amor tende a apresentar a dama como superior, digna de reverencia e idealizacao, e não como objeto de riso ou crítica direta.",
       "tempoEstimado": 35,
       "tags": [
         "cantiga-de-amor",
@@ -1584,7 +1584,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de amigo",
       "dificuldadeLabel": "medio",
@@ -1599,7 +1599,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "modelos de racionalismo humanista"
       ],
       "correta": "interlocutores da voz feminina",
-      "comentario": "A voz feminina frequentemente dialoga com a mãe, com amigas ou com a natureza, o que reforca o carater confessional e musical da cantiga de amigo.",
+      "comentario": "A voz feminina frequentemente dialoga com a mãe, com amigas ou com a natureza, o que reforca o caráter confessional e musical da cantiga de amigo.",
       "tempoEstimado": 35,
       "tags": [
         "cantiga-de-amigo",
@@ -1623,7 +1623,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de amor",
       "dificuldadeLabel": "medio",
@@ -1635,10 +1635,10 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "Na cantiga de amor, predomina a voz masculina submissa e dama; na cantiga de amigo, destaca-se a voz feminina saudosa do amado.",
         "Na cantiga de amor, predomina a satira social; na cantiga de amigo, a exaltacao epica.",
         "Na cantiga de amor, aparece o antropocentrismo; na cantiga de amigo, o teocentrismo renascentista.",
-        "Na cantiga de amor, o foco e cientifico; na cantiga de amigo, filosofico."
+        "Na cantiga de amor, o foco e científico; na cantiga de amigo, filosófico."
       ],
       "correta": "Na cantiga de amor, predomina a voz masculina submissa e dama; na cantiga de amigo, destaca-se a voz feminina saudosa do amado.",
-      "comentario": "Essa e a distincao mais importante entre os dois generos liricos trovadorescos de tematica amorosa.",
+      "comentario": "Essa e a distincao mais importante entre os dois gêneros liricos trovadorescos de temática amorosa.",
       "tempoEstimado": 35,
       "tags": [
         "cantiga-de-amor",
@@ -1662,7 +1662,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de amigo",
       "dificuldadeLabel": "medio",
@@ -1672,9 +1672,9 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "enunciado": "Em termos de ambientacao, a cantiga de amigo costuma se aproximar mais de:",
       "opcoes": [
         "paisagens naturais e espacos cotidianos ligados e espera amorosa",
-        "templos classicos dedicados e razao matematica",
+        "templos classicos dedicados e razao matemática",
         "campos de batalha epica nacional",
-        "tribunais satericos de critica politica direta"
+        "tribunais satericos de crítica politica direta"
       ],
       "correta": "paisagens naturais e espacos cotidianos ligados e espera amorosa",
       "comentario": "A cantiga de amigo frequentemente recorre a praias, rios, fontes e outros espacos naturais ou cotidianos que acompanham a experiencia sentimental da voz feminina.",
@@ -1701,7 +1701,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de amor",
       "dificuldadeLabel": "medio",
@@ -1712,11 +1712,11 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "opcoes": [
         "um código de cortesia associado ao ambiente aristocritico",
         "uma atitude de deboche popular contra a nobreza",
-        "uma critica renascentista as convenções sociais",
+        "uma crítica renascentista as convenções sociais",
         "uma linguagem espontanea sem qualquer valor social"
       ],
       "correta": "um código de cortesia associado ao ambiente aristocritico",
-      "comentario": "A reverencia e dama esta ligada e etica corteso e ao universo aristocritico em que a cantiga de amor se desenvolve.",
+      "comentario": "A reverencia e dama está ligada e ética corteso e ao universo aristocritico em que a cantiga de amor se desenvolve.",
       "tempoEstimado": 35,
       "tags": [
         "cantiga-de-amor",
@@ -1740,7 +1740,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de amigo",
       "dificuldadeLabel": "medio",
@@ -1750,12 +1750,12 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "enunciado": "Quando a voz feminina repete a mesma lamentacao com pequenas variacoes, o texto reforca principalmente:",
       "opcoes": [
         "o sentimento de insistência e espera amorosa",
-        "o rigor argumentativo cientifico",
+        "o rigor argumentativo científico",
         "a objetividade jornalastica",
-        "a critica saterica nominal"
+        "a crítica saterica nominal"
       ],
       "correta": "o sentimento de insistência e espera amorosa",
-      "comentario": "A repeticao com pequenas variacoes ajuda a intensificar a saudade e a espera, tracos marcantes da cantiga de amigo.",
+      "comentario": "A repetição com pequenas variacoes ajuda a intensificar a saudade e a espera, tracos marcantes da cantiga de amigo.",
       "tempoEstimado": 35,
       "tags": [
         "cantiga-de-amigo",
@@ -1779,14 +1779,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de amor",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a formulacao: \"O sujeito poetico se define menos por conquistar o amor do que por padecer diante de sua impossibilidade\". Essa formulacao resume, de modo mais adequado, a logica de qual genero?",
+      "enunciado": "Leia a formulacao: \"O sujeito poetico se define menos por conquistar o amor do que por padecer diante de sua impossibilidade\". Essa formulacao resume, de modo mais adequado, a lógica de qual gênero?",
       "opcoes": [
         "Cantiga de amor",
         "Cantiga de amigo",
@@ -1818,7 +1818,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de amigo",
       "dificuldadeLabel": "dificil",
@@ -1828,12 +1828,12 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "enunciado": "Uma leitura inadequada da cantiga de amigo seria afirmar que ela:",
       "opcoes": [
         "sempre apresenta um eu lirico masculino subordinado e dama",
-        "costuma valorizar a musicalidade e a repeticao",
+        "costuma valorizar a musicalidade e a repetição",
         "frequentemente mobiliza a voz feminina",
         "pode explorar saudade, espera e dialogo com a natureza"
       ],
       "correta": "sempre apresenta um eu lirico masculino subordinado e dama",
-      "comentario": "Essa descricao corresponde e cantiga de amor, nao e cantiga de amigo, que se caracteriza justamente pela voz feminina e pela saudade do amado.",
+      "comentario": "Essa descricao corresponde e cantiga de amor, não e cantiga de amigo, que se caracteriza justamente pela voz feminina e pela saudade do amado.",
       "tempoEstimado": 45,
       "tags": [
         "cantiga-de-amigo",
@@ -1857,7 +1857,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de amor",
       "dificuldadeLabel": "dificil",
@@ -1866,13 +1866,13 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a alternativa em que a reformulacao mantem o sentido basico da cantiga de amor.",
       "opcoes": [
-        "O eu lirico reverencia uma mulher superior e sofre por nao alcançá-la.",
+        "O eu lirico reverencia uma mulher superior e sofre por não alcançá-la.",
         "A voz feminina zomba publicamente do amado ausente.",
-        "O poeta satiriza um rival usando ofensas explicitas.",
-        "A composicao exalta o equilibrio racional do soneto classico."
+        "O poeta satiriza um rival usando ofensas explícitas.",
+        "A composicao exalta o equilíbrio racional do soneto classico."
       ],
-      "correta": "O eu lirico reverencia uma mulher superior e sofre por nao alcançá-la.",
-      "comentario": "Essa reformulacao preserva os tracos essenciais da cantiga de amor: idealizacao, reverencia e sofrimento diante da distancia da dama.",
+      "correta": "O eu lirico reverencia uma mulher superior e sofre por não alcançá-la.",
+      "comentario": "Essa reformulacao preserva os tracos essenciais da cantiga de amor: idealizacao, reverencia e sofrimento diante da distância da dama.",
       "tempoEstimado": 45,
       "tags": [
         "cantiga-de-amor",
@@ -1896,7 +1896,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de amigo",
       "dificuldadeLabel": "dificil",
@@ -1905,13 +1905,13 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a alternativa que melhor reescreve, sem alterar o sentido, a ideia central de uma cantiga de amigo.",
       "opcoes": [
-        "Uma voz feminina lamenta a ausencia do amado e expressa sua espera por meio de forte musicalidade.",
+        "Uma voz feminina lamenta a ausência do amado e expressa sua espera por meio de forte musicalidade.",
         "Um trovador ridiculariza nominalmente um adversorio em versos agressivos.",
-        "Um poeta renascentista celebra o equilibrio racional do homem universal.",
+        "Um poeta renascentista celebra o equilíbrio racional do homem universal.",
         "Um cronista humanista registra acontecimentos da corte em prosa historiografica."
       ],
-      "correta": "Uma voz feminina lamenta a ausencia do amado e expressa sua espera por meio de forte musicalidade.",
-      "comentario": "A alternativa correta traduz em outras palavras o nucleo tematico e formal da cantiga de amigo.",
+      "correta": "Uma voz feminina lamenta a ausência do amado e expressa sua espera por meio de forte musicalidade.",
+      "comentario": "A alternativa correta traduz em outras palavras o nucleo temático e formal da cantiga de amigo.",
       "tempoEstimado": 45,
       "tags": [
         "cantiga-de-amigo",
@@ -1935,14 +1935,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de amor",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia as afirmacoes. I. A cantiga de amor apresenta eu lirico masculino. II. A dama e frequentemente idealizada e inacessovel. III. O tom dominante costuma ser de deboche e satira direta. IV. A submissao amorosa pode ser lida em chave feudal. Assinale a alternativa correta.",
+      "enunciado": "Leia as afirmações. I. A cantiga de amor apresenta eu lirico masculino. II. A dama e frequentemente idealizada e inacessovel. III. O tom dominante costuma ser de deboche e satira direta. IV. A submissao amorosa pode ser lida em chave feudal. Assinale a alternativa correta.",
       "opcoes": [
         "Apenas I, II e IV estao corretas.",
         "Apenas II e III estao corretas.",
@@ -1950,7 +1950,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "I, II, III e IV estao corretas."
       ],
       "correta": "Apenas I, II e IV estao corretas.",
-      "comentario": "A afirmacao III esta incorreta porque o deboche e a satira direta pertencem ao campo saterico, nao e cantiga de amor.",
+      "comentario": "A afirmacao III está incorreta porque o deboche e a satira direta pertencem ao campo saterico, não e cantiga de amor.",
       "tempoEstimado": 45,
       "tags": [
         "cantiga-de-amor",
@@ -1974,14 +1974,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de amigo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia as proposicoes sobre a cantiga de amigo. I. Costuma apresentar voz feminina. II. Frequentemente mobiliza repeticao e musicalidade. III. Em geral, expressa espera, saudade ou lamento amoroso. IV. Seu foco central e a exaltacao epica de feitos nacionais. Assinale a alternativa correta.",
+      "enunciado": "Leia as proposicoes sobre a cantiga de amigo. I. Costuma apresentar voz feminina. II. Frequentemente mobiliza repetição e musicalidade. III. Em geral, expressa espera, saudade ou lamento amoroso. IV. Seu foco central e a exaltacao epica de feitos nacionais. Assinale a alternativa correta.",
       "opcoes": [
         "Apenas I, II e III estao corretas.",
         "Apenas II e IV estao corretas.",
@@ -1989,7 +1989,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "I, II, III e IV estao corretas."
       ],
       "correta": "Apenas I, II e III estao corretas.",
-      "comentario": "A proposicao IV esta incorreta porque a exaltacao epica de feitos nacionais nao e traco da cantiga de amigo.",
+      "comentario": "A proposicao IV está incorreta porque a exaltacao epica de feitos nacionais não e traco da cantiga de amigo.",
       "tempoEstimado": 45,
       "tags": [
         "cantiga-de-amigo",
@@ -2013,7 +2013,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de escarnio",
       "dificuldadeLabel": "facil",
@@ -2025,10 +2025,10 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "indireto e ambíguo",
         "epico e heroico",
         "religioso e devocional",
-        "cientifico e objetivo"
+        "científico e objetivo"
       ],
       "correta": "indireto e ambíguo",
-      "comentario": "Na cantiga de escarnio, a critica costuma ocorrer de maneira indireta, ironica ou ambagua, sem nomeacao frontal do alvo.",
+      "comentario": "Na cantiga de escarnio, a crítica costuma ocorrer de maneira indireta, ironica ou ambagua, sem nomeacao frontal do alvo.",
       "tempoEstimado": 20,
       "tags": [
         "cantiga-de-escarnio",
@@ -2052,7 +2052,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de maldizer",
       "dificuldadeLabel": "facil",
@@ -2064,10 +2064,10 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "direta e ofensiva",
         "delicada e idealizada",
         "nostálgica e amorosa",
-        "metafasica e filosofica"
+        "metafasica e filosófica"
       ],
       "correta": "direta e ofensiva",
-      "comentario": "Na cantiga de maldizer, a critica tende a ser explicita, com agressividade verbal e ataque direto ao alvo satirizado.",
+      "comentario": "Na cantiga de maldizer, a crítica tende a ser explícita, com agressividade verbal e ataque direto ao alvo satirizado.",
       "tempoEstimado": 20,
       "tags": [
         "cantiga-de-maldizer",
@@ -2091,7 +2091,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de escarnio",
       "dificuldadeLabel": "facil",
@@ -2106,7 +2106,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "soneto classico"
       ],
       "correta": "cantiga de escarnio",
-      "comentario": "Ironia, indireção e ambiguidade sao marcas fundamentais da cantiga de escarnio.",
+      "comentario": "Ironia, indireção e ambiguidade são marcas fundamentais da cantiga de escarnio.",
       "tempoEstimado": 20,
       "tags": [
         "cantiga-de-escarnio",
@@ -2130,14 +2130,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de maldizer",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando a satira nomeia o alvo ou o agride de modo explicito, o genero mais compativel e:",
+      "enunciado": "Quando a satira nomeia o alvo ou o agride de modo explícito, o gênero mais compatível e:",
       "opcoes": [
         "cantiga de maldizer",
         "cantiga de amigo",
@@ -2169,19 +2169,19 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Linguagem e estrutura das cantigas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Entre as opcoes abaixo, qual elemento aparece com frequencia na construcao das cantigas trovadorescas?",
+      "enunciado": "Entre as opcoes abaixo, qual elemento aparece com frequência na construção das cantigas trovadorescas?",
       "opcoes": [
         "musicalidade",
         "verso livre modernista",
-        "ensaio filosofico em prosa",
-        "argumentacao cientifica"
+        "ensaio filosófico em prosa",
+        "argumentação cientifica"
       ],
       "correta": "musicalidade",
       "comentario": "A musicalidade e traco recorrente das cantigas, em razao de sua origem ligada ao canto e e performance.",
@@ -2208,21 +2208,21 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de escarnio",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A principal diferenca entre cantiga de escarnio e cantiga de maldizer esta no fato de que a primeira:",
+      "enunciado": "A principal diferenca entre cantiga de escarnio e cantiga de maldizer está no fato de que a primeira:",
       "opcoes": [
-        "prefere a critica indireta, com ironia e ambiguidade",
+        "prefere a crítica indireta, com ironia e ambiguidade",
         "e sempre amorosa e sentimental",
         "se limita ao elogio da dama idealizada",
         "abandona completamente a satira"
       ],
-      "correta": "prefere a critica indireta, com ironia e ambiguidade",
+      "correta": "prefere a crítica indireta, com ironia e ambiguidade",
       "comentario": "A cantiga de escarnio tende a satirizar de forma menos frontal; a de maldizer e mais direta e agressiva.",
       "tempoEstimado": 30,
       "tags": [
@@ -2247,7 +2247,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de maldizer",
       "dificuldadeLabel": "medio",
@@ -2256,13 +2256,13 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "Ao apresentar linguagem agressiva e exposicao clara do alvo, a cantiga de maldizer se distingue por:",
       "opcoes": [
-        "explicitar a critica sem depender tanto da ambiguidade",
+        "explicitar a crítica sem depender tanto da ambiguidade",
         "esconder o alvo satirizado por completo",
         "centrar-se na saudade amorosa feminina",
         "imitar a estrutura racional do soneto classico"
       ],
-      "correta": "explicitar a critica sem depender tanto da ambiguidade",
-      "comentario": "Na cantiga de maldizer, a critica tende a ser mais aberta, com menor dependencia de disfarces irunicos.",
+      "correta": "explicitar a crítica sem depender tanto da ambiguidade",
+      "comentario": "Na cantiga de maldizer, a crítica tende a ser mais aberta, com menor dependencia de disfarces irunicos.",
       "tempoEstimado": 30,
       "tags": [
         "cantiga-de-maldizer",
@@ -2286,14 +2286,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de escarnio",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a descricao: \"O texto zomba de um personagem, mas a critica nao e frontal; ela aparece mascarada por insinuacoes e jogos de linguagem\". Essa descricao corresponde melhor a:",
+      "enunciado": "Leia a descricao: \"O texto zomba de um personagem, mas a crítica não e frontal; ela aparece mascarada por insinuacoes e jogos de linguagem\". Essa descricao corresponde melhor a:",
       "opcoes": [
         "cantiga de escarnio",
         "cantiga de maldizer",
@@ -2301,7 +2301,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "cantiga de amigo"
       ],
       "correta": "cantiga de escarnio",
-      "comentario": "Insinuacao, ambiguidade e jogo verbal sao tracos tepicos da cantiga de escarnio.",
+      "comentario": "Insinuacao, ambiguidade e jogo verbal são tracos tepicos da cantiga de escarnio.",
       "tempoEstimado": 30,
       "tags": [
         "cantiga-de-escarnio",
@@ -2325,7 +2325,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de maldizer",
       "dificuldadeLabel": "medio",
@@ -2340,7 +2340,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "cantiga de amor"
       ],
       "correta": "cantiga de maldizer",
-      "comentario": "A ofensa clara, a agressividade verbal e a exposicao mais aberta do alvo sao marcas da cantiga de maldizer.",
+      "comentario": "A ofensa clara, a agressividade verbal e a exposicao mais aberta do alvo são marcas da cantiga de maldizer.",
       "tempoEstimado": 30,
       "tags": [
         "cantiga-de-maldizer",
@@ -2364,7 +2364,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Linguagem e estrutura das cantigas",
       "dificuldadeLabel": "medio",
@@ -2373,13 +2373,13 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "O refrao, quando aparece em cantigas trovadorescas, contribui principalmente para:",
       "opcoes": [
-        "reforcar a musicalidade e a memoria do texto",
-        "eliminar qualquer repeticao sonora",
-        "transformar o poema em tratado filosofico",
+        "reforçar a musicalidade e a memoria do texto",
+        "eliminar qualquer repetição sonora",
+        "transformar o poema em tratado filosófico",
         "substituir o sentido do texto por linguagem cientifica"
       ],
-      "correta": "reforcar a musicalidade e a memoria do texto",
-      "comentario": "A repeticao de versos ou expressoes em forma de refrao favorece a musicalidade, o ritmo e a fixacao do texto.",
+      "correta": "reforçar a musicalidade e a memoria do texto",
+      "comentario": "A repetição de versos ou expressoes em forma de refrao favorece a musicalidade, o ritmo e a fixacao do texto.",
       "tempoEstimado": 30,
       "tags": [
         "linguagem",
@@ -2403,7 +2403,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de escarnio",
       "dificuldadeLabel": "medio",
@@ -2412,13 +2412,13 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "Ao explorar a ironia, a cantiga de escarnio exige do leitor principalmente a capacidade de:",
       "opcoes": [
-        "inferir sentidos implícitos na critica",
+        "inferir sentidos implícitos na crítica",
         "decorar fórmulas matematicas",
         "identificar apenas o enredo epico",
         "ignorar o valor da linguagem figurada"
       ],
-      "correta": "inferir sentidos implícitos na critica",
-      "comentario": "Como a critica pode vir disfarçada, a leitura da cantiga de escarnio depende da percepcao de implícitos, ironias e ambiguidades.",
+      "correta": "inferir sentidos implícitos na crítica",
+      "comentario": "Como a crítica pode vir disfarçada, a leitura da cantiga de escarnio depende da percepcao de implícitos, ironias e ambiguidades.",
       "tempoEstimado": 30,
       "tags": [
         "cantiga-de-escarnio",
@@ -2442,7 +2442,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de maldizer",
       "dificuldadeLabel": "medio",
@@ -2457,7 +2457,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "racional e classicizante"
       ],
       "correta": "agressivo e frontal",
-      "comentario": "Como a critica e mais direta e explicita, a cantiga de maldizer costuma gerar efeito mais duro e frontal.",
+      "comentario": "Como a crítica e mais direta e explícita, a cantiga de maldizer costuma gerar efeito mais duro e frontal.",
       "tempoEstimado": 30,
       "tags": [
         "cantiga-de-maldizer",
@@ -2481,14 +2481,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Linguagem e estrutura das cantigas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A linguagem das cantigas satericas medievais pode variar do jogo irunico e agressao verbal explicita. Essa observacao ajuda a diferenciar principalmente:",
+      "enunciado": "A linguagem das cantigas satericas medievais pode variar do jogo irunico e agressao verbal explícita. Essa observação ajuda a diferenciar principalmente:",
       "opcoes": [
         "escarnio e maldizer",
         "Humanismo e Classicismo",
@@ -2496,7 +2496,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "teatro vicentino e epopeia camoniana"
       ],
       "correta": "escarnio e maldizer",
-      "comentario": "A gradacao entre indireção ironica e agressividade explicita e central para distinguir cantiga de escarnio e cantiga de maldizer.",
+      "comentario": "A gradacao entre indireção ironica e agressividade explícita e central para distinguir cantiga de escarnio e cantiga de maldizer.",
       "tempoEstimado": 35,
       "tags": [
         "linguagem",
@@ -2520,22 +2520,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de escarnio",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando a critica depende do duplo sentido para funcionar, o efeito produzido e, sobretudo, o de:",
+      "enunciado": "Quando a crítica depende do duplo sentido para funcionar, o efeito produzido e, sobretudo, o de:",
       "opcoes": [
         "encobrir parcialmente o ataque sob a ironia",
         "tornar o texto um elogio sem tensao",
         "substituir a satira por sentimentalismo amoroso",
-        "converter o poema em reflexao teologica"
+        "converter o poema em reflexão teologica"
       ],
       "correta": "encobrir parcialmente o ataque sob a ironia",
-      "comentario": "O duplo sentido e um recurso que permite e cantiga de escarnio satirizar sem tornar o ataque totalmente explicito.",
+      "comentario": "O duplo sentido e um recurso que permite e cantiga de escarnio satirizar sem tornar o ataque totalmente explícito.",
       "tempoEstimado": 35,
       "tags": [
         "cantiga-de-escarnio",
@@ -2559,7 +2559,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de maldizer",
       "dificuldadeLabel": "medio",
@@ -2598,7 +2598,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de escarnio",
       "dificuldadeLabel": "medio",
@@ -2609,11 +2609,11 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "opcoes": [
         "O fato de existir satira indireta e ambagua, tipica do escarnio",
         "O fato de toda satira medieval ser amorosa",
-        "O fato de maldizer nao ser genero trovadoresco",
-        "O fato de o escarnio rejeitar qualquer critica social"
+        "O fato de maldizer não ser gênero trovadoresco",
+        "O fato de o escarnio rejeitar qualquer crítica social"
       ],
       "correta": "O fato de existir satira indireta e ambagua, tipica do escarnio",
-      "comentario": "Nem toda satira medieval e maldizer; o escarnio justamente se caracteriza pela critica indireta, ironica ou ambagua.",
+      "comentario": "Nem toda satira medieval e maldizer; o escarnio justamente se caracteriza pela crítica indireta, ironica ou ambagua.",
       "tempoEstimado": 35,
       "tags": [
         "cantiga-de-escarnio",
@@ -2637,14 +2637,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Linguagem e estrutura das cantigas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Mesmo nas cantigas satericas, a presenca de ritmo, repeticao e jogos sonoros mostra que elas continuam vinculadas a uma tradicao:",
+      "enunciado": "Mesmo nas cantigas satericas, a presença de ritmo, repetição e jogos sonoros mostra que elas continuam vinculadas a uma tradicao:",
       "opcoes": [
         "poetico-musical",
         "jurídico-administrativa",
@@ -2652,7 +2652,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "romanesca em prosa longa"
       ],
       "correta": "poetico-musical",
-      "comentario": "As cantigas satericas permanecem inseridas no universo poetico-musical do Trovadorismo, ainda que o tema nao seja amoroso.",
+      "comentario": "As cantigas satericas permanecem inseridas no universo poetico-musical do Trovadorismo, ainda que o tema não seja amoroso.",
       "tempoEstimado": 35,
       "tags": [
         "linguagem",
@@ -2676,7 +2676,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de maldizer",
       "dificuldadeLabel": "medio",
@@ -2687,11 +2687,11 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "opcoes": [
         "reduz o espaco do implícito e expoe mais diretamente a agressao",
         "troca a satira pelo elogio idealizado",
-        "elimina qualquer marca de critica",
+        "elimina qualquer marca de crítica",
         "abandona a linguagem poetica por completo"
       ],
       "correta": "reduz o espaco do implícito e expoe mais diretamente a agressao",
-      "comentario": "A menor dependencia de ambiguidades torna a critica do maldizer mais aberta, agressiva e imediata.",
+      "comentario": "A menor dependencia de ambiguidades torna a crítica do maldizer mais aberta, agressiva e imediata.",
       "tempoEstimado": 35,
       "tags": [
         "cantiga-de-maldizer",
@@ -2715,22 +2715,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de escarnio",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se o leitor precisa perceber a critica por tras de um elogio aparentemente inocente, e mais provável que esteja diante de:",
+      "enunciado": "Se o leitor precisa perceber a crítica por tras de um elogio aparentemente inocente, e mais provável que esteja diante de:",
       "opcoes": [
         "uma ironia tipica da cantiga de escarnio",
         "uma idealizacao amorosa da cantiga de amor",
         "um lamento feminino da cantiga de amigo",
-        "uma defesa do equilibrio classico"
+        "uma defesa do equilíbrio classico"
       ],
       "correta": "uma ironia tipica da cantiga de escarnio",
-      "comentario": "O elogio aparente que encobre critica e um procedimento irunico muito compativel com a logica da cantiga de escarnio.",
+      "comentario": "O elogio aparente que encobre crítica e um procedimento irunico muito compatível com a lógica da cantiga de escarnio.",
       "tempoEstimado": 35,
       "tags": [
         "cantiga-de-escarnio",
@@ -2754,22 +2754,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Linguagem e estrutura das cantigas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A coexistência de musicalidade, repeticao e critica saterica nas cantigas mostra que, no Trovadorismo, forma e conteudo:",
+      "enunciado": "A coexistência de musicalidade, repetição e crítica saterica nas cantigas mostra que, no Trovadorismo, forma e conteúdo:",
       "opcoes": [
         "podem se articular sem que a dimensao poetica desapareça",
-        "sao incompateveis entre si",
+        "são incompateveis entre si",
         "dependem da prosa historiografica para existir",
         "se anulam quando surge a satira"
       ],
       "correta": "podem se articular sem que a dimensao poetica desapareça",
-      "comentario": "Mesmo quando o conteudo e saterico, a forma continua sendo poetica e musical, o que confirma a unidade estetica do universo trovadoresco.",
+      "comentario": "Mesmo quando o conteúdo e saterico, a forma continua sendo poetica e musical, o que confirma a unidade estetica do universo trovadoresco.",
       "tempoEstimado": 35,
       "tags": [
         "linguagem",
@@ -2793,7 +2793,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de escarnio",
       "dificuldadeLabel": "dificil",
@@ -2804,7 +2804,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "opcoes": [
         "Cretica saterica que se vale de ambiguidade e ironia para atingir o alvo.",
         "Ataque amoroso de um homem a uma dama idealizada.",
-        "Lamento feminino pela ausencia do amado em dialogo com a natureza.",
+        "Lamento feminino pela ausência do amado em dialogo com a natureza.",
         "Composicao epica voltada e exaltacao de feitos heroicos."
       ],
       "correta": "Cretica saterica que se vale de ambiguidade e ironia para atingir o alvo.",
@@ -2832,7 +2832,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de maldizer",
       "dificuldadeLabel": "dificil",
@@ -2842,9 +2842,9 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "enunciado": "Uma leitura equivocada do maldizer seria afirmar que ele:",
       "opcoes": [
         "depende sempre de indireção e disfarce irunico",
-        "pode recorrer a agressividade verbal explicita",
+        "pode recorrer a agressividade verbal explícita",
         "integra o conjunto das cantigas satericas",
-        "apresenta critica mais frontal que o escarnio"
+        "apresenta crítica mais frontal que o escarnio"
       ],
       "correta": "depende sempre de indireção e disfarce irunico",
       "comentario": "Essa descricao se ajusta melhor ao escarnio. O maldizer, ao contrario, e mais frontal e menos dependente do disfarce irunico.",
@@ -2871,14 +2871,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de escarnio",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia as afirmacoes sobre a cantiga de escarnio. I. Faz critica saterica indireta. II. Pode recorrer e ironia e e ambiguidade. III. Seu procedimento e sempre a ofensa nomeada e frontal. IV. Exige atencao aos sentidos implícitos. Assinale a alternativa correta.",
+      "enunciado": "Leia as afirmações sobre a cantiga de escarnio. I. Faz crítica saterica indireta. II. Pode recorrer e ironia e e ambiguidade. III. Seu procedimento e sempre a ofensa nomeada e frontal. IV. Exige atenção aos sentidos implícitos. Assinale a alternativa correta.",
       "opcoes": [
         "Apenas I, II e IV estao corretas.",
         "Apenas II e III estao corretas.",
@@ -2886,7 +2886,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "I, II, III e IV estao corretas."
       ],
       "correta": "Apenas I, II e IV estao corretas.",
-      "comentario": "A afirmacao III esta incorreta porque a ofensa nomeada e frontal e mais tipica da cantiga de maldizer.",
+      "comentario": "A afirmacao III está incorreta porque a ofensa nomeada e frontal e mais tipica da cantiga de maldizer.",
       "tempoEstimado": 45,
       "tags": [
         "cantiga-de-escarnio",
@@ -2910,7 +2910,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Cantiga de maldizer",
       "dificuldadeLabel": "dificil",
@@ -2925,7 +2925,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "I, II, III e IV estao corretas."
       ],
       "correta": "Apenas I, II e IV estao corretas.",
-      "comentario": "A proposicao III esta incorreta porque a idealizacao da dama pertence e cantiga de amor, nao ao maldizer.",
+      "comentario": "A proposicao III está incorreta porque a idealizacao da dama pertence e cantiga de amor, não ao maldizer.",
       "tempoEstimado": 45,
       "tags": [
         "cantiga-de-maldizer",
@@ -2949,22 +2949,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Linguagem e estrutura das cantigas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A melhor sintese para o conjunto das cantigas satericas trovadorescas e:",
+      "enunciado": "A melhor síntese para o conjunto das cantigas satericas trovadorescas e:",
       "opcoes": [
-        "Poemas de base musical que criticam comportamentos por vias que vao da ironia ambagua ao ataque explicito.",
+        "Poemas de base musical que criticam comportamentos por vias que vao da ironia ambagua ao ataque explícito.",
         "Textos epicos nacionais centrados em feitos heroicos e expansao maritima.",
-        "Composições renascentistas guiadas por imitacao classica e equilibrio racional.",
-        "Lamentos exclusivamente femininos sobre a ausencia do amado."
+        "Composições renascentistas guiadas por imitacao classica e equilíbrio racional.",
+        "Lamentos exclusivamente femininos sobre a ausência do amado."
       ],
-      "correta": "Poemas de base musical que criticam comportamentos por vias que vao da ironia ambagua ao ataque explicito.",
-      "comentario": "A alternativa correta integra forma e conteudo: mantem a natureza poetico-musical das cantigas e resume a passagem do escarnio ao maldizer no campo saterico.",
+      "correta": "Poemas de base musical que criticam comportamentos por vias que vao da ironia ambagua ao ataque explícito.",
+      "comentario": "A alternativa correta integra forma e conteúdo: mantem a natureza poetico-musical das cantigas e resume a passagem do escarnio ao maldizer no campo saterico.",
       "tempoEstimado": 45,
       "tags": [
         "linguagem",
@@ -2988,7 +2988,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Contexto historico do Humanismo",
       "dificuldadeLabel": "facil",
@@ -3003,7 +3003,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "Arcadismo"
       ],
       "correta": "Trovadorismo",
-      "comentario": "O Humanismo sucede o Trovadorismo e funciona como periodo de transicao entre o universo medieval e o Renascimento.",
+      "comentario": "O Humanismo sucede o Trovadorismo e funciona como período de transicao entre o universo medieval e o Renascimento.",
       "tempoEstimado": 20,
       "tags": [
         "humanismo",
@@ -3027,7 +3027,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Poesia palaciana",
       "dificuldadeLabel": "facil",
@@ -3042,7 +3042,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "prosa historiografica"
       ],
       "correta": "poesia palaciana",
-      "comentario": "A poesia palaciana e a producao lirica ligada ao ambiente da corte no periodo humanista.",
+      "comentario": "A poesia palaciana e a produção lirica ligada ao ambiente da corte no período humanista.",
       "tempoEstimado": 20,
       "tags": [
         "poesia-palaciana",
@@ -3066,14 +3066,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Prosa historica",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "No Humanismo portugues, a prosa historica se relaciona principalmente e producao de:",
+      "enunciado": "No Humanismo português, a prosa historica se relaciona principalmente e produção de:",
       "opcoes": [
         "cronicas",
         "cantigas satericas",
@@ -3105,14 +3105,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Transicao do Teocentrismo ao Antropocentrismo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "O Humanismo e frequentemente estudado como periodo de transicao porque nele comeca a ganhar força a valorizacao:",
+      "enunciado": "O Humanismo e frequentemente estudado como período de transicao porque nele comeca a ganhar força a valorizacao:",
       "opcoes": [
         "do ser humano e da razao",
         "exclusiva da oralidade medieval",
@@ -3144,7 +3144,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Contexto historico do Humanismo",
       "dificuldadeLabel": "facil",
@@ -3153,13 +3153,13 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "Uma caracteristica geral do Humanismo e:",
       "opcoes": [
-        "o carater de transicao entre a mentalidade medieval e a renascentista",
+        "o caráter de transicao entre a mentalidade medieval e a renascentista",
         "a consolidacao plena do racionalismo classico camoniano",
         "a predominancia exclusiva das cantigas de amigo",
         "a rejeicao completa da escrita em prosa"
       ],
-      "correta": "o carater de transicao entre a mentalidade medieval e a renascentista",
-      "comentario": "O Humanismo e um periodo de passagem, no qual persistem tracos medievais e surgem novas formas de valorizacao do homem e da historia.",
+      "correta": "o caráter de transicao entre a mentalidade medieval e a renascentista",
+      "comentario": "O Humanismo e um período de passagem, no qual persistem tracos medievais e surgem novas formas de valorizacao do homem e da história.",
       "tempoEstimado": 20,
       "tags": [
         "humanismo",
@@ -3183,22 +3183,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Contexto historico do Humanismo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao ser visto como periodo de transicao, o Humanismo se situa entre:",
+      "enunciado": "Ao ser visto como período de transicao, o Humanismo se situa entre:",
       "opcoes": [
         "a visao medieval teocentrica e a afirmacao renascentista do homem",
         "o Barroco religioso e o Arcadismo pastoril",
-        "o Realismo cientifico e o Simbolismo subjetivo",
+        "o Realismo científico e o Simbolismo subjetivo",
         "o Romantismo nacionalista e o Parnasianismo formal"
       ],
       "correta": "a visao medieval teocentrica e a afirmacao renascentista do homem",
-      "comentario": "O Humanismo nao rompe de forma imediata com a Idade Media, mas inaugura uma transicao em direção ao antropocentrismo renascentista.",
+      "comentario": "O Humanismo não rompe de forma imediata com a Idade Média, mas inaugura uma transicao em direção ao antropocentrismo renascentista.",
       "tempoEstimado": 30,
       "tags": [
         "humanismo",
@@ -3222,22 +3222,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Poesia palaciana",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A poesia palaciana mantem vinculo com a tradicao corteso, mas ja se afasta das cantigas trovadorescas porque:",
+      "enunciado": "A poesia palaciana mantem vinculo com a tradicao corteso, mas já se afasta das cantigas trovadorescas porque:",
       "opcoes": [
-        "pertence a um momento historico de transicao, com novas formas de sensibilidade e organizacao literaria",
-        "abandona totalmente a escrita poetica em favor da ciencia",
+        "pertence a um momento historico de transicao, com novas formas de sensibilidade e organização literaria",
+        "abandona totalmente a escrita poetica em favor da ciência",
         "e sempre epica e heroica",
         "rejeita qualquer circulacao na corte"
       ],
-      "correta": "pertence a um momento historico de transicao, com novas formas de sensibilidade e organizacao literaria",
-      "comentario": "A poesia palaciana preserva o espaco cortesao, mas se insere em outro momento historico e cultural, ja vinculado ao Humanismo.",
+      "correta": "pertence a um momento historico de transicao, com novas formas de sensibilidade e organização literaria",
+      "comentario": "A poesia palaciana preserva o espaco cortesao, mas se insere em outro momento historico e cultural, já vinculado ao Humanismo.",
       "tempoEstimado": 30,
       "tags": [
         "poesia-palaciana",
@@ -3261,7 +3261,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Prosa historica",
       "dificuldadeLabel": "medio",
@@ -3276,7 +3276,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "a idealizacao da dama inalcançável"
       ],
       "correta": "o registro narrativo de fatos e personagens historicos",
-      "comentario": "Enquanto as cantigas sao poeticas e musicais, a prosa historica humanista se orienta para a narracao e o registro de acontecimentos.",
+      "comentario": "Enquanto as cantigas são poeticas e musicais, a prosa historica humanista se orienta para a narracao e o registro de acontecimentos.",
       "tempoEstimado": 30,
       "tags": [
         "prosa-historica",
@@ -3300,22 +3300,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Transicao do Teocentrismo ao Antropocentrismo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao dizer que o Humanismo marca a transicao para o antropocentrismo, entende-se que nesse periodo comeca a haver maior atencao:",
+      "enunciado": "Ao dizer que o Humanismo marca a transicao para o antropocentrismo, entende-se que nesse período comeca a haver maior atenção:",
       "opcoes": [
-        "e acao humana, e razao e e experiencia terrena",
+        "e ação humana, e razao e e experiencia terrena",
         "somente e vida monastica e ao ascetismo medieval",
         "exclusivamente e satira obscena das cantigas",
-        "e forma fixa do soneto classico ja consolidado"
+        "e forma fixa do soneto classico já consolidado"
       ],
-      "correta": "e acao humana, e razao e e experiencia terrena",
-      "comentario": "O Humanismo intensifica o interesse pelo homem, pela historia e pela experiencia mundana, sem apagar de imediato os tracos medievais.",
+      "correta": "e ação humana, e razao e e experiencia terrena",
+      "comentario": "O Humanismo intensifica o interesse pelo homem, pela história e pela experiencia mundana, sem apagar de imediato os tracos medievais.",
       "tempoEstimado": 30,
       "tags": [
         "humanismo",
@@ -3339,7 +3339,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Contexto historico do Humanismo",
       "dificuldadeLabel": "medio",
@@ -3348,13 +3348,13 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "Entre as alternativas abaixo, qual melhor caracteriza o Humanismo literario em Portugale",
       "opcoes": [
-        "Período de transicao em que convivem permanencias medievais e novas formas de valorizacao do homem e da historia.",
-        "Momento de pleno dominio da epopeia classica camoniana.",
+        "Período de transicao em que convivem permanencias medievais e novas formas de valorizacao do homem e da história.",
+        "Momento de pleno domínio da epopeia classica camoniana.",
         "Fase de surgimento das cantigas de amor e de amigo.",
         "Etapa de ruptura modernista com a tradicao europeia."
       ],
-      "correta": "Período de transicao em que convivem permanencias medievais e novas formas de valorizacao do homem e da historia.",
-      "comentario": "Essa definicao sintetiza o carater intermediario do Humanismo entre a cultura medieval e a renovacao renascentista.",
+      "correta": "Período de transicao em que convivem permanencias medievais e novas formas de valorizacao do homem e da história.",
+      "comentario": "Essa definição sintetiza o caráter intermediario do Humanismo entre a cultura medieval e a renovacao renascentista.",
       "tempoEstimado": 30,
       "tags": [
         "humanismo",
@@ -3378,14 +3378,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Poesia palaciana",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um texto e ligado e vida corteso, mas ja nao pertence ao universo das cantigas trovadorescas, ele pode ser mais adequadamente associado, no Humanismo, a:",
+      "enunciado": "Se um texto e ligado e vida corteso, mas já não pertence ao universo das cantigas trovadorescas, ele pode ser mais adequadamente associado, no Humanismo, a:",
       "opcoes": [
         "poesia palaciana",
         "cantiga de escarnio",
@@ -3393,7 +3393,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "epopeia classica"
       ],
       "correta": "poesia palaciana",
-      "comentario": "A poesia palaciana e a forma lirica corteso mais associada ao Humanismo portugues.",
+      "comentario": "A poesia palaciana e a forma lirica corteso mais associada ao Humanismo português.",
       "tempoEstimado": 30,
       "tags": [
         "poesia-palaciana",
@@ -3417,7 +3417,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Prosa historica",
       "dificuldadeLabel": "medio",
@@ -3432,7 +3432,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "a satira de escarnio"
       ],
       "correta": "a escrita cronastica",
-      "comentario": "A cronica e forma central da prosa historica humanista, voltada ao registro e e interpretacao de acontecimentos historicos.",
+      "comentario": "A cronica e forma central da prosa historica humanista, voltada ao registro e e interpretação de acontecimentos historicos.",
       "tempoEstimado": 30,
       "tags": [
         "prosa-historica",
@@ -3456,14 +3456,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Teatro de Gil Vicente",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Gil Vicente costuma ser associado ao Humanismo portugues principalmente por sua producao:",
+      "enunciado": "Gil Vicente costuma ser associado ao Humanismo português principalmente por sua produção:",
       "opcoes": [
         "teatral",
         "epica classica",
@@ -3471,7 +3471,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "cronastica colonial"
       ],
       "correta": "teatral",
-      "comentario": "Gil Vicente e o principal nome do teatro portugues no periodo humanista.",
+      "comentario": "Gil Vicente e o principal nome do teatro português no período humanista.",
       "tempoEstimado": 35,
       "tags": [
         "gil-vicente",
@@ -3495,7 +3495,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Teatro de Gil Vicente",
       "dificuldadeLabel": "medio",
@@ -3504,13 +3504,13 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "Uma caracteristica marcante do teatro de Gil Vicente e:",
       "opcoes": [
-        "a critica de costumes e tipos sociais",
+        "a crítica de costumes e tipos sociais",
         "a defesa do verso livre modernista",
         "a idealizacao da dama feudal",
         "a imitacao sistematica da epopeia latina"
       ],
-      "correta": "a critica de costumes e tipos sociais",
-      "comentario": "O teatro vicentino se destaca pela observacao critica da sociedade, com exposicao de vícios, comportamentos e papois sociais.",
+      "correta": "a crítica de costumes e tipos sociais",
+      "comentario": "O teatro vicentino se destaca pela observação crítica da sociedade, com exposicao de vícios, comportamentos e papois sociais.",
       "tempoEstimado": 35,
       "tags": [
         "gil-vicente",
@@ -3534,21 +3534,21 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Teatro de Gil Vicente",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A importancia de Gil Vicente no Humanismo portugues decorre do fato de que sua obra teatral:",
+      "enunciado": "A importancia de Gil Vicente no Humanismo português decorre do fato de que sua obra teatral:",
       "opcoes": [
-        "articula critica social, religiosidade e observacao dos costumes",
+        "articula crítica social, religiosidade e observação dos costumes",
         "retoma integralmente a estrutura das cantigas de amigo",
         "inaugura o soneto classico camoniano",
-        "abandona toda relacao com a cena e com o dialogo"
+        "abandona toda relação com a cena e com o dialogo"
       ],
-      "correta": "articula critica social, religiosidade e observacao dos costumes",
+      "correta": "articula crítica social, religiosidade e observação dos costumes",
       "comentario": "O teatro de Gil Vicente reune elementos morais, religiosos e sociais, tornando-se peça central da literatura humanista portuguesa.",
       "tempoEstimado": 35,
       "tags": [
@@ -3573,7 +3573,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Contexto historico do Humanismo",
       "dificuldadeLabel": "medio",
@@ -3582,13 +3582,13 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "Uma pegadinha comum e tratar o Humanismo como sinônimo de Classicismo. O que diferencia os dois periodos?",
       "opcoes": [
-        "O Humanismo e transicional; o Classicismo ja consolida o ideal renascentista e a imitacao classica.",
+        "O Humanismo e transicional; o Classicismo já consolida o ideal renascentista e a imitacao classica.",
         "O Humanismo e medieval saterico; o Classicismo e oral e musical.",
         "O Humanismo elimina a prosa; o Classicismo elimina a poesia.",
         "O Humanismo pertence ao Romantismo; o Classicismo, ao Realismo."
       ],
-      "correta": "O Humanismo e transicional; o Classicismo ja consolida o ideal renascentista e a imitacao classica.",
-      "comentario": "O Humanismo prepara a passagem para novos valores; o Classicismo representa uma etapa ja afirmativa do ideário renascentista.",
+      "correta": "O Humanismo e transicional; o Classicismo já consolida o ideal renascentista e a imitacao classica.",
+      "comentario": "O Humanismo prepara a passagem para novos valores; o Classicismo representa uma etapa já afirmativa do ideário renascentista.",
       "tempoEstimado": 35,
       "tags": [
         "humanismo",
@@ -3612,22 +3612,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Transicao do Teocentrismo ao Antropocentrismo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se afirma que o Humanismo valoriza mais a historia e a acao humana, essa formulacao pode ser entendida como:",
+      "enunciado": "Quando se afirma que o Humanismo valoriza mais a história e a ação humana, essa formulacao pode ser entendida como:",
       "opcoes": [
         "um sinal de deslocamento gradual do foco exclusivamente divino para o humano",
         "uma negacao absoluta da religião em qualquer texto",
-        "a adoção imediata do racionalismo classico ja plenamente consolidado",
+        "a adoção imediata do racionalismo classico já plenamente consolidado",
         "a volta integral ao universo das cantigas medievais"
       ],
       "correta": "um sinal de deslocamento gradual do foco exclusivamente divino para o humano",
-      "comentario": "No Humanismo, a centralidade divina nao desaparece de imediato, mas cresce a atencao ao homem, e historia e e vida terrena.",
+      "comentario": "No Humanismo, a centralidade divina não desaparece de imediato, mas cresce a atenção ao homem, e história e e vida terrena.",
       "tempoEstimado": 35,
       "tags": [
         "humanismo",
@@ -3651,7 +3651,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Prosa historica",
       "dificuldadeLabel": "medio",
@@ -3660,13 +3660,13 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "Uma formulacao equivalente para a ideia de prosa historica humanista seria:",
       "opcoes": [
-        "escrita em prosa voltada ao registro e e interpretacao de fatos e personagens historicos",
+        "escrita em prosa voltada ao registro e e interpretação de fatos e personagens historicos",
         "poesia lirica feminina centrada na saudade do amado",
         "satira poetica baseada em duplo sentido e ambiguidade",
         "composicao classica em soneto com rigor métrico"
       ],
-      "correta": "escrita em prosa voltada ao registro e e interpretacao de fatos e personagens historicos",
-      "comentario": "A alternativa correta reescreve, sem alterar o sentido, a funcao central da prosa historica no Humanismo.",
+      "correta": "escrita em prosa voltada ao registro e e interpretação de fatos e personagens historicos",
+      "comentario": "A alternativa correta reescreve, sem alterar o sentido, a função central da prosa historica no Humanismo.",
       "tempoEstimado": 35,
       "tags": [
         "prosa-historica",
@@ -3690,22 +3690,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Poesia palaciana",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao ser definida como poesia de corte no periodo humanista, a poesia palaciana pode ser entendida como:",
+      "enunciado": "Ao ser definida como poesia de corte no período humanista, a poesia palaciana pode ser entendida como:",
       "opcoes": [
-        "producao lirica ligada ao ambiente aristocritico em uma fase de transicao cultural",
+        "produção lirica ligada ao ambiente aristocritico em uma fase de transicao cultural",
         "poesia epica voltada e expansao maritima portuguesa",
         "satira obscena de ataque direto a personagens nomeados",
-        "producao cientifica em forma de tratado"
+        "produção cientifica em forma de tratado"
       ],
-      "correta": "producao lirica ligada ao ambiente aristocritico em uma fase de transicao cultural",
-      "comentario": "A poesia palaciana mantem vinculo com a corte, mas ja se insere no contexto cultural proprio do Humanismo.",
+      "correta": "produção lirica ligada ao ambiente aristocritico em uma fase de transicao cultural",
+      "comentario": "A poesia palaciana mantem vinculo com a corte, mas já se insere no contexto cultural próprio do Humanismo.",
       "tempoEstimado": 35,
       "tags": [
         "poesia-palaciana",
@@ -3729,22 +3729,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Teatro de Gil Vicente",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma sintese correta sobre Gil Vicente no Humanismo portugues e:",
+      "enunciado": "Uma síntese correta sobre Gil Vicente no Humanismo português e:",
       "opcoes": [
         "dramaturgo que usou o teatro para representar criticamente tipos e costumes sociais",
-        "autor de cantigas de amor em galego-portugues",
-        "principal sonetista classico do Renascimento portugues",
+        "autor de cantigas de amor em galego-português",
+        "principal sonetista classico do Renascimento português",
         "cronista exclusivamente militar da expansao ultramarina"
       ],
       "correta": "dramaturgo que usou o teatro para representar criticamente tipos e costumes sociais",
-      "comentario": "Gil Vicente e central no Humanismo portugues por sua dramaturgia critica, moral e social.",
+      "comentario": "Gil Vicente e central no Humanismo português por sua dramaturgia crítica, moral e social.",
       "tempoEstimado": 35,
       "tags": [
         "gil-vicente",
@@ -3768,14 +3768,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Contexto historico do Humanismo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia as afirmacoes sobre o Humanismo. I. Funciona como periodo de transicao. II. Mantem elementos medievais, mas ja valoriza o humano e a historia. III. Ja corresponde plenamente ao projeto classico camoniano. IV. Abriga manifestacoes como prosa historica, poesia palaciana e teatro vicentino. Assinale a alternativa correta.",
+      "enunciado": "Leia as afirmações sobre o Humanismo. I. Funciona como período de transicao. II. Mantem elementos medievais, mas já valoriza o humano e a história. III. Já corresponde plenamente ao projeto classico camoniano. IV. Abriga manifestacoes como prosa historica, poesia palaciana e teatro vicentino. Assinale a alternativa correta.",
       "opcoes": [
         "Apenas I, II e IV estao corretas.",
         "Apenas I e III estao corretas.",
@@ -3783,7 +3783,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "I, II, III e IV estao corretas."
       ],
       "correta": "Apenas I, II e IV estao corretas.",
-      "comentario": "A proposicao III esta incorreta porque o Humanismo antecede a consolidacao classica e tem carater de transicao.",
+      "comentario": "A proposicao III está incorreta porque o Humanismo antecede a consolidacao classica e tem caráter de transicao.",
       "tempoEstimado": 45,
       "tags": [
         "humanismo",
@@ -3807,7 +3807,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Poesia palaciana",
       "dificuldadeLabel": "dificil",
@@ -3816,13 +3816,13 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "Uma leitura inadequada da poesia palaciana seria afirmar que ela:",
       "opcoes": [
-        "ja corresponde e plena imitacao classica do Renascimento maduro",
+        "já corresponde e plena imitacao classica do Renascimento maduro",
         "se vincula ao ambiente da corte",
-        "pertence ao periodo humanista",
+        "pertence ao período humanista",
         "participa de um momento de transicao literaria"
       ],
-      "correta": "ja corresponde e plena imitacao classica do Renascimento maduro",
-      "comentario": "A poesia palaciana pertence ao Humanismo e nao deve ser confundida com a consolidacao classica posterior.",
+      "correta": "já corresponde e plena imitacao classica do Renascimento maduro",
+      "comentario": "A poesia palaciana pertence ao Humanismo e não deve ser confundida com a consolidacao classica posterior.",
       "tempoEstimado": 45,
       "tags": [
         "poesia-palaciana",
@@ -3846,14 +3846,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Prosa historica",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um texto do periodo se volta mais ao registro da acao humana na historia do que ao canto lirico ou e idealizacao amorosa, ele se aproxima mais do campo:",
+      "enunciado": "Se um texto do período se volta mais ao registro da ação humana na história do que ao canto lirico ou e idealizacao amorosa, ele se aproxima mais do campo:",
       "opcoes": [
         "da prosa historica humanista",
         "da cantiga de amor trovadoresca",
@@ -3885,14 +3885,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Teatro de Gil Vicente",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia as proposicoes sobre Gil Vicente. I. e nome central do teatro portugues do Humanismo. II. Sua obra pode apresentar critica de costumes. III. Sua producao se confunde com as cantigas de amigo do Trovadorismo. IV. Sua presenca confirma a diversidade de generos no Humanismo. Assinale a alternativa correta.",
+      "enunciado": "Leia as proposicoes sobre Gil Vicente. I. e nome central do teatro português do Humanismo. II. Sua obra pode apresentar crítica de costumes. III. Sua produção se confunde com as cantigas de amigo do Trovadorismo. IV. Sua presença confirma a diversidade de gêneros no Humanismo. Assinale a alternativa correta.",
       "opcoes": [
         "Apenas I, II e IV estao corretas.",
         "Apenas I e III estao corretas.",
@@ -3900,7 +3900,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "I, II, III e IV estao corretas."
       ],
       "correta": "Apenas I, II e IV estao corretas.",
-      "comentario": "A proposicao III esta incorreta porque o teatro vicentino pertence ao Humanismo, nao ao universo das cantigas trovadorescas.",
+      "comentario": "A proposicao III está incorreta porque o teatro vicentino pertence ao Humanismo, não ao universo das cantigas trovadorescas.",
       "tempoEstimado": 45,
       "tags": [
         "gil-vicente",
@@ -3924,22 +3924,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Transicao do Teocentrismo ao Antropocentrismo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A melhor sintese para o Humanismo, dentro da historia literaria portuguesa, e:",
+      "enunciado": "A melhor síntese para o Humanismo, dentro da história literaria portuguesa, e:",
       "opcoes": [
-        "momento de transicao em que o interesse pelo homem, pela historia e pela corte cresce sem apagar de imediato as herancas medievais",
+        "momento de transicao em que o interesse pelo homem, pela história e pela corte cresce sem apagar de imediato as herancas medievais",
         "fase de consolidacao plena do modelo classico greco-latino em sonetos camonianos",
-        "periodo exclusivamente dedicado as cantigas satericas medievais",
+        "período exclusivamente dedicado as cantigas satericas medievais",
         "etapa de ruptura vanguardista com toda tradicao anterior"
       ],
-      "correta": "momento de transicao em que o interesse pelo homem, pela historia e pela corte cresce sem apagar de imediato as herancas medievais",
-      "comentario": "A alternativa correta condensa o carater intermediario do Humanismo: permanencia de elementos medievais e abertura a novas formas de valorizacao do humano.",
+      "correta": "momento de transicao em que o interesse pelo homem, pela história e pela corte cresce sem apagar de imediato as herancas medievais",
+      "comentario": "A alternativa correta condensa o caráter intermediario do Humanismo: permanencia de elementos medievais e abertura a novas formas de valorizacao do humano.",
       "tempoEstimado": 45,
       "tags": [
         "humanismo",
@@ -3963,14 +3963,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Teatro de Gil Vicente",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "No Humanismo portugues, Gil Vicente se destaca principalmente como autor de:",
+      "enunciado": "No Humanismo português, Gil Vicente se destaca principalmente como autor de:",
       "opcoes": [
         "peças teatrais",
         "cantigas de amigo",
@@ -3978,7 +3978,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "epopeias maritimas"
       ],
       "correta": "peças teatrais",
-      "comentario": "Gil Vicente e reconhecido como o principal nome do teatro portugues no contexto do Humanismo.",
+      "comentario": "Gil Vicente e reconhecido como o principal nome do teatro português no contexto do Humanismo.",
       "tempoEstimado": 20,
       "tags": [
         "gil-vicente",
@@ -4002,7 +4002,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Teatro de Gil Vicente",
       "dificuldadeLabel": "facil",
@@ -4011,13 +4011,13 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "Uma marca frequente do teatro de Gil Vicente e:",
       "opcoes": [
-        "a critica de costumes",
+        "a crítica de costumes",
         "a idealizacao amorosa da dama",
         "a exaltacao epica nacional",
         "a defesa do verso livre"
       ],
-      "correta": "a critica de costumes",
-      "comentario": "O teatro vicentino frequentemente observa e critica comportamentos sociais, vícios e papois coletivos.",
+      "correta": "a crítica de costumes",
+      "comentario": "O teatro vicentino frequentemente observa e crítica comportamentos sociais, vícios e papois coletivos.",
       "tempoEstimado": 20,
       "tags": [
         "gil-vicente",
@@ -4041,7 +4041,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Teatro de Gil Vicente",
       "dificuldadeLabel": "facil",
@@ -4053,10 +4053,10 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "observar criticamente a sociedade de seu tempo",
         "retomar exatamente o modelo das cantigas de amigo",
         "eliminar qualquer preocupacao moral",
-        "transformar a literatura em discurso cientifico"
+        "transformar a literatura em discurso científico"
       ],
       "correta": "observar criticamente a sociedade de seu tempo",
-      "comentario": "Os tipos sociais e os conflitos apresentados por Gil Vicente permitem uma leitura critica da sociedade de sua epoca.",
+      "comentario": "Os tipos sociais e os conflitos apresentados por Gil Vicente permitem uma leitura crítica da sociedade de sua epoca.",
       "tempoEstimado": 20,
       "tags": [
         "gil-vicente",
@@ -4080,14 +4080,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Transicao do Teocentrismo ao Antropocentrismo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "No Humanismo, o aumento do interesse pelo ser humano e pela vida terrena indica avanao de qual tendencia?",
+      "enunciado": "No Humanismo, o aumento do interesse pelo ser humano e pela vida terrena indica avanço de qual tendência?",
       "opcoes": [
         "Antropocentrismo",
         "Trovadorismo",
@@ -4095,7 +4095,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "Arcadismo"
       ],
       "correta": "Antropocentrismo",
-      "comentario": "O Humanismo participa do deslocamento gradual da centralidade exclusiva em Deus para maior valorizacao do homem e da acao humana.",
+      "comentario": "O Humanismo participa do deslocamento gradual da centralidade exclusiva em Deus para maior valorizacao do homem e da ação humana.",
       "tempoEstimado": 20,
       "tags": [
         "humanismo",
@@ -4119,7 +4119,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Comparacao entre escolas",
       "dificuldadeLabel": "facil",
@@ -4128,13 +4128,13 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "Qual alternativa mostra corretamente uma diferenca geral entre Trovadorismo e Humanismo?",
       "opcoes": [
-        "O Trovadorismo e medieval e ligado as cantigas; o Humanismo e um periodo de transicao com destaque tambem para cronicas e teatro.",
+        "O Trovadorismo e medieval e ligado as cantigas; o Humanismo e um período de transicao com destaque também para cronicas e teatro.",
         "O Trovadorismo e renascentista; o Humanismo e exclusivamente medieval.",
-        "O Trovadorismo e cientifico; o Humanismo e apenas musical.",
+        "O Trovadorismo e científico; o Humanismo e apenas musical.",
         "O Trovadorismo se baseia em sonetos; o Humanismo elimina a prosa."
       ],
-      "correta": "O Trovadorismo e medieval e ligado as cantigas; o Humanismo e um periodo de transicao com destaque tambem para cronicas e teatro.",
-      "comentario": "A alternativa correta diferencia o contexto e os generos predominantes de cada periodo.",
+      "correta": "O Trovadorismo e medieval e ligado as cantigas; o Humanismo e um período de transicao com destaque também para cronicas e teatro.",
+      "comentario": "A alternativa correta diferencia o contexto e os gêneros predominantes de cada período.",
       "tempoEstimado": 20,
       "tags": [
         "comparacao-entre-escolas",
@@ -4158,7 +4158,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Teatro de Gil Vicente",
       "dificuldadeLabel": "medio",
@@ -4167,13 +4167,13 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "O teatro de Gil Vicente pode ser considerado humanista porque nele se observa:",
       "opcoes": [
-        "atencao e vida social concreta, aos tipos humanos e aos costumes",
+        "atenção e vida social concreta, aos tipos humanos e aos costumes",
         "retorno direto ao canto das cantigas galego-portuguesas",
         "consolidacao plena do ideal classico camoniano",
         "abandono de qualquer preocupacao moral ou religiosa"
       ],
-      "correta": "atencao e vida social concreta, aos tipos humanos e aos costumes",
-      "comentario": "A obra de Gil Vicente revela interesse por comportamentos humanos, critica de costumes e questaes morais e sociais.",
+      "correta": "atenção e vida social concreta, aos tipos humanos e aos costumes",
+      "comentario": "A obra de Gil Vicente revela interesse por comportamentos humanos, crítica de costumes e questaes morais e sociais.",
       "tempoEstimado": 30,
       "tags": [
         "gil-vicente",
@@ -4197,14 +4197,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Teatro de Gil Vicente",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao satirizar grupos sociais, o teatro de Gil Vicente se aproxima de uma funcao literaria que busca:",
+      "enunciado": "Ao satirizar grupos sociais, o teatro de Gil Vicente se aproxima de uma função literaria que busca:",
       "opcoes": [
         "avaliar criticamente comportamentos e valores sociais",
         "idealizar a figura feminina inacessovel",
@@ -4212,7 +4212,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "copiar integralmente modelos classicos greco-latinos"
       ],
       "correta": "avaliar criticamente comportamentos e valores sociais",
-      "comentario": "A critica de costumes do teatro vicentino tem forte dimensao moral e social, voltada e observacao critica do comportamento humano.",
+      "comentario": "A crítica de costumes do teatro vicentino tem forte dimensao moral e social, voltada e observação crítica do comportamento humano.",
       "tempoEstimado": 30,
       "tags": [
         "gil-vicente",
@@ -4236,22 +4236,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Teatro de Gil Vicente",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No teatro de Gil Vicente, religiosidade e critica social podem aparecer juntas, o que revela:",
+      "enunciado": "No teatro de Gil Vicente, religiosidade e crítica social podem aparecer juntas, o que revela:",
       "opcoes": [
-        "a convivencia de valores morais e observacao concreta da sociedade",
+        "a convivencia de valores morais e observação concreta da sociedade",
         "a rejeicao total de qualquer heranca medieval",
         "a plena adoção do racionalismo classico",
-        "a exclusao da dimensao etica em cena"
+        "a exclusao da dimensao ética em cena"
       ],
-      "correta": "a convivencia de valores morais e observacao concreta da sociedade",
-      "comentario": "O teatro vicentino articula juízo moral, religiosidade e critica de costumes, o que corresponde ao carater de transicao do Humanismo.",
+      "correta": "a convivencia de valores morais e observação concreta da sociedade",
+      "comentario": "O teatro vicentino articula juízo moral, religiosidade e crítica de costumes, o que corresponde ao caráter de transicao do Humanismo.",
       "tempoEstimado": 30,
       "tags": [
         "gil-vicente",
@@ -4275,18 +4275,18 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Comparacao entre escolas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em comparacao com o Trovadorismo, o Humanismo amplia o repertorio literario portugues ao incorporar com mais destaque:",
+      "enunciado": "Em comparacao com o Trovadorismo, o Humanismo amplia o repertório literario português ao incorporar com mais destaque:",
       "opcoes": [
         "cronicas e teatro",
         "apenas cantigas de amor",
-        "somente composicoes em galego-portugues cantadas",
+        "somente composicoes em galego-português cantadas",
         "exclusivamente poesia saterica medieval"
       ],
       "correta": "cronicas e teatro",
@@ -4314,22 +4314,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Transicao do Teocentrismo ao Antropocentrismo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A presenca simultânea de valores cristãos e maior atencao ao homem no Humanismo indica:",
+      "enunciado": "A presença simultânea de valores cristãos e maior atenção ao homem no Humanismo indica:",
       "opcoes": [
-        "um momento de transicao, e nao de ruptura imediata",
+        "um momento de transicao, e não de ruptura imediata",
         "o desaparecimento completo da religiosidade medieval",
         "a consolidacao final do Classicismo",
         "a retomada integral das cantigas trovadorescas"
       ],
-      "correta": "um momento de transicao, e nao de ruptura imediata",
-      "comentario": "O Humanismo nao elimina de uma vez a visao medieval; ele articula permanencias e mudancas, o que confirma seu carater transitorio.",
+      "correta": "um momento de transicao, e não de ruptura imediata",
+      "comentario": "O Humanismo não elimina de uma vez a visao medieval; ele articula permanencias e mudancas, o que confirma seu caráter transitorio.",
       "tempoEstimado": 30,
       "tags": [
         "humanismo",
@@ -4353,14 +4353,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Comparacao entre escolas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a formulacao: \"Sai de cena a predominancia das cantigas medievais e cresce o espaco de cronicas, teatro e reflexao sobre a acao humana\". Ela descreve melhor:",
+      "enunciado": "Leia a formulacao: \"Sai de cena a predominancia das cantigas medievais e cresce o espaco de cronicas, teatro e reflexão sobre a ação humana\". Ela descreve melhor:",
       "opcoes": [
         "a passagem do Trovadorismo para o Humanismo",
         "a passagem do Humanismo para o Classicismo",
@@ -4368,7 +4368,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "a origem do Arcadismo em Portugal"
       ],
       "correta": "a passagem do Trovadorismo para o Humanismo",
-      "comentario": "A formulacao resume a mudanca de foco entre o universo trovadoresco e a literatura humanista em Portugal.",
+      "comentario": "A formulacao resume a mudança de foco entre o universo trovadoresco e a literatura humanista em Portugal.",
       "tempoEstimado": 30,
       "tags": [
         "comparacao-entre-escolas",
@@ -4392,7 +4392,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Teatro de Gil Vicente",
       "dificuldadeLabel": "medio",
@@ -4407,7 +4407,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "o soneto classico"
       ],
       "correta": "o teatro de Gil Vicente",
-      "comentario": "A articulacao entre encenacao, tipos sociais e critica de costumes remete diretamente ao teatro vicentino.",
+      "comentario": "A articulação entre encenacao, tipos sociais e crítica de costumes remete diretamente ao teatro vicentino.",
       "tempoEstimado": 30,
       "tags": [
         "gil-vicente",
@@ -4431,22 +4431,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Teatro de Gil Vicente",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A critica de costumes no teatro de Gil Vicente e importante porque:",
+      "enunciado": "A crítica de costumes no teatro de Gil Vicente e importante porque:",
       "opcoes": [
-        "transforma o palco em espaco de observacao moral e social",
-        "elimina qualquer relacao com a sociedade concreta",
+        "transforma o palco em espaco de observação moral e social",
+        "elimina qualquer relação com a sociedade concreta",
         "restringe o teatro e exaltacao epica",
-        "retoma sem alteracoes a lirica galego-portuguesa"
+        "retoma sem alterações a lirica galego-portuguesa"
       ],
-      "correta": "transforma o palco em espaco de observacao moral e social",
-      "comentario": "O teatro vicentino representa comportamentos e tipos sociais de forma critica, fazendo da cena um espaco de observacao moral e social.",
+      "correta": "transforma o palco em espaco de observação moral e social",
+      "comentario": "O teatro vicentino representa comportamentos e tipos sociais de forma crítica, fazendo da cena um espaco de observação moral e social.",
       "tempoEstimado": 35,
       "tags": [
         "gil-vicente",
@@ -4470,22 +4470,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Comparacao entre escolas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao comparar Trovadorismo e Humanismo, pode-se afirmar corretamente que o primeiro se organiza em torno das cantigas, enquanto o segundo amplia a producao literaria com:",
+      "enunciado": "Ao comparar Trovadorismo e Humanismo, pode-se afirmar corretamente que o primeiro se organiza em torno das cantigas, enquanto o segundo amplia a produção literaria com:",
       "opcoes": [
         "teatro e prosa historica",
-        "epopeia classica e soneto renascentista ja consolidados",
+        "epopeia classica e soneto renascentista já consolidados",
         "romance realista e conto urbano",
         "poesia parnasiana e simbolista"
       ],
       "correta": "teatro e prosa historica",
-      "comentario": "O Humanismo portugues se diferencia do Trovadorismo pela relevancia crescente do teatro e da escrita cronastica em prosa.",
+      "comentario": "O Humanismo português se diferencia do Trovadorismo pela relevancia crescente do teatro e da escrita cronastica em prosa.",
       "tempoEstimado": 35,
       "tags": [
         "comparacao-entre-escolas",
@@ -4509,14 +4509,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Transicao do Teocentrismo ao Antropocentrismo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "No Humanismo, a valorizacao crescente da experiencia humana nao elimina totalmente a heranca medieval. Isso significa que o periodo apresenta:",
+      "enunciado": "No Humanismo, a valorizacao crescente da experiencia humana não elimina totalmente a heranca medieval. Isso significa que o período apresenta:",
       "opcoes": [
         "convivencia entre permanencias e mudancas",
         "ruptura absoluta e imediata com todo passado",
@@ -4524,7 +4524,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "plena consolidacao do Classicismo"
       ],
       "correta": "convivencia entre permanencias e mudancas",
-      "comentario": "A nocao de transicao humanista pressupoe justamente a coexistência de elementos herdados da Idade Media e novas orientacoes culturais.",
+      "comentario": "A nocao de transicao humanista pressupoe justamente a coexistência de elementos herdados da Idade Média e novas orientacoes culturais.",
       "tempoEstimado": 35,
       "tags": [
         "humanismo",
@@ -4548,22 +4548,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Teatro de Gil Vicente",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se uma peça apresenta personagens-tipo para expor erros, vícios e ilusoes de uma sociedade, ela se aproxima da logica do teatro vicentino porque:",
+      "enunciado": "Se uma peça apresenta personagens-tipo para expor erros, vícios e ilusoes de uma sociedade, ela se aproxima da lógica do teatro vicentino porque:",
       "opcoes": [
-        "usa a representacao drametica como forma de critica moral e social",
-        "abandona qualquer intencao critica",
+        "usa a representação drametica como forma de crítica moral e social",
+        "abandona qualquer intencao crítica",
         "se limita ao elogio de heróis nacionais",
         "reproduz apenas o lamento feminino da cantiga de amigo"
       ],
-      "correta": "usa a representacao drametica como forma de critica moral e social",
-      "comentario": "Os personagens-tipo permitem a Gil Vicente transformar o palco em espaco de critica da sociedade e de reflexao moral.",
+      "correta": "usa a representação drametica como forma de crítica moral e social",
+      "comentario": "Os personagens-tipo permitem a Gil Vicente transformar o palco em espaco de crítica da sociedade e de reflexão moral.",
       "tempoEstimado": 35,
       "tags": [
         "gil-vicente",
@@ -4587,22 +4587,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Comparacao entre escolas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma equivalencia correta seria dizer que o Trovadorismo se liga mais ao universo das cantigas, enquanto o Humanismo se relaciona mais e ideia de:",
+      "enunciado": "Uma equivalência correta seria dizer que o Trovadorismo se liga mais ao universo das cantigas, enquanto o Humanismo se relaciona mais e ideia de:",
       "opcoes": [
-        "transicao cultural com expansao de generos como cronica e teatro",
+        "transicao cultural com expansao de gêneros como cronica e teatro",
         "consolidacao classica da medida nova e do soneto",
         "ruptura modernista com os modelos europeus",
         "predominio exclusivo da satira ambagua medieval"
       ],
-      "correta": "transicao cultural com expansao de generos como cronica e teatro",
-      "comentario": "Essa reformulacao mantem a diferenca essencial entre o repertorio trovadoresco e a abertura de generos no Humanismo.",
+      "correta": "transicao cultural com expansao de gêneros como cronica e teatro",
+      "comentario": "Essa reformulacao mantem a diferenca essencial entre o repertório trovadoresco e a abertura de gêneros no Humanismo.",
       "tempoEstimado": 35,
       "tags": [
         "comparacao-entre-escolas",
@@ -4626,14 +4626,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Transicao do Teocentrismo ao Antropocentrismo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um enunciado afirma que o Humanismo valoriza mais a acao humana sem romper totalmente com a religiosidade, a leitura correta e que ele descreve:",
+      "enunciado": "Se um enunciado afirma que o Humanismo valoriza mais a ação humana sem romper totalmente com a religiosidade, a leitura correta e que ele descreve:",
       "opcoes": [
         "uma transicao ideologica gradual",
         "o triunfo completo do racionalismo classico",
@@ -4641,7 +4641,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "a negacao de qualquer elemento moral"
       ],
       "correta": "uma transicao ideologica gradual",
-      "comentario": "Essa formulacao e tipica da interpretacao do Humanismo como etapa de passagem, e nao como ruptura imediata e absoluta.",
+      "comentario": "Essa formulacao e tipica da interpretação do Humanismo como etapa de passagem, e não como ruptura imediata e absoluta.",
       "tempoEstimado": 35,
       "tags": [
         "humanismo",
@@ -4665,22 +4665,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Teatro de Gil Vicente",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao incorporar critica de costumes e visao moralizante, o teatro de Gil Vicente mostra que a literatura humanista podia ser ao mesmo tempo:",
+      "enunciado": "Ao incorporar crítica de costumes e visao moralizante, o teatro de Gil Vicente mostra que a literatura humanista podia ser ao mesmo tempo:",
       "opcoes": [
-        "artistica, social e etica",
-        "cientifica, matematica e experimental",
+        "artistica, social e ética",
+        "cientifica, matemática e experimental",
         "epica, nacionalista e maritima",
         "exclusivamente lirica e amorosa"
       ],
-      "correta": "artistica, social e etica",
-      "comentario": "O teatro vicentino demonstra que a literatura humanista nao se reduz ao entretenimento, pois tambem observa criticamente a sociedade e formula juízos morais.",
+      "correta": "artistica, social e ética",
+      "comentario": "O teatro vicentino demonstra que a literatura humanista não se reduz ao entretenimento, pois também observa criticamente a sociedade e formula juízos morais.",
       "tempoEstimado": 35,
       "tags": [
         "gil-vicente",
@@ -4704,14 +4704,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Comparacao entre escolas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao contrario do Trovadorismo, mais ligado a poesia cantada medieval, o Humanismo portugues ganha destaque tambem por formas voltadas e cena e ao registro historico. Essa oposicao ajuda a distinguir:",
+      "enunciado": "Ao contrario do Trovadorismo, mais ligado a poesia cantada medieval, o Humanismo português ganha destaque também por formas voltadas e cena e ao registro historico. Essa oposicao ajuda a distinguir:",
       "opcoes": [
         "cantigas trovadorescas de teatro e cronicas humanistas",
         "cantiga de amor de cantiga de amigo",
@@ -4719,7 +4719,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "escarnio de maldizer"
       ],
       "correta": "cantigas trovadorescas de teatro e cronicas humanistas",
-      "comentario": "A alternativa correta contrasta o predominio das cantigas no Trovadorismo com a diversificacao de generos no Humanismo.",
+      "comentario": "A alternativa correta contrasta o predominio das cantigas no Trovadorismo com a diversificacao de gêneros no Humanismo.",
       "tempoEstimado": 35,
       "tags": [
         "comparacao-entre-escolas",
@@ -4743,22 +4743,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Teatro de Gil Vicente",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que melhor sintetiza o papel de Gil Vicente no Humanismo portugues.",
+      "enunciado": "Assinale a alternativa que melhor sintetiza o papel de Gil Vicente no Humanismo português.",
       "opcoes": [
-        "Consolidar o teatro como espaco de critica de costumes, observacao social e reflexao moral.",
+        "Consolidar o teatro como espaco de crítica de costumes, observação social e reflexão moral.",
         "Encerrar definitivamente a influencia da religiosidade na literatura portuguesa.",
         "Retomar integralmente a estrutura musical das cantigas de amigo.",
         "Inaugurar a epopeia classica de expansao maritima."
       ],
-      "correta": "Consolidar o teatro como espaco de critica de costumes, observacao social e reflexao moral.",
-      "comentario": "A alternativa correta resume o valor historico-literario de Gil Vicente dentro do Humanismo: teatro, critica social e dimensao moral.",
+      "correta": "Consolidar o teatro como espaco de crítica de costumes, observação social e reflexão moral.",
+      "comentario": "A alternativa correta resume o valor historico-literario de Gil Vicente dentro do Humanismo: teatro, crítica social e dimensao moral.",
       "tempoEstimado": 45,
       "tags": [
         "gil-vicente",
@@ -4782,7 +4782,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Comparacao entre escolas",
       "dificuldadeLabel": "dificil",
@@ -4791,12 +4791,12 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "Uma leitura equivocada da passagem do Trovadorismo para o Humanismo seria afirmar que:",
       "opcoes": [
-        "a literatura portuguesa permaneceu restrita ao mesmo repertorio de cantigas, sem ampliacao de generos",
-        "o Humanismo possui carater de transicao cultural",
-        "a prosa historica ganha relevo no novo periodo",
+        "a literatura portuguesa permaneceu restrita ao mesmo repertório de cantigas, sem ampliacao de gêneros",
+        "o Humanismo possui caráter de transicao cultural",
+        "a prosa historica ganha relevo no novo período",
         "o teatro de Gil Vicente integra o Humanismo"
       ],
-      "correta": "a literatura portuguesa permaneceu restrita ao mesmo repertorio de cantigas, sem ampliacao de generos",
+      "correta": "a literatura portuguesa permaneceu restrita ao mesmo repertório de cantigas, sem ampliacao de gêneros",
       "comentario": "Essa afirmacao ignora justamente a diversificacao trazida pelo Humanismo, com destaque para cronicas e teatro.",
       "tempoEstimado": 45,
       "tags": [
@@ -4821,14 +4821,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Transicao do Teocentrismo ao Antropocentrismo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia as afirmacoes. I. O Humanismo preserva tracos medievais. II. O Humanismo ja mostra valorizacao crescente do homem e da historia. III. O Humanismo corresponde ao ápice do Classicismo renascentista. IV. O carater de transicao ajuda a explicar a coexistência de diferentes tendencias no periodo. Assinale a alternativa correta.",
+      "enunciado": "Leia as afirmações. I. O Humanismo preserva tracos medievais. II. O Humanismo já mostra valorizacao crescente do homem e da história. III. O Humanismo corresponde ao ápice do Classicismo renascentista. IV. O caráter de transicao ajuda a explicar a coexistência de diferentes tendencias no período. Assinale a alternativa correta.",
       "opcoes": [
         "Apenas I, II e IV estao corretas.",
         "Apenas II e III estao corretas.",
@@ -4836,7 +4836,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "I, II, III e IV estao corretas."
       ],
       "correta": "Apenas I, II e IV estao corretas.",
-      "comentario": "A afirmacao III esta incorreta porque o Humanismo antecede a consolidacao classica e deve ser lido como fase de passagem.",
+      "comentario": "A afirmacao III está incorreta porque o Humanismo antecede a consolidacao classica e deve ser lido como fase de passagem.",
       "tempoEstimado": 45,
       "tags": [
         "humanismo",
@@ -4860,7 +4860,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Comparacao entre escolas",
       "dificuldadeLabel": "dificil",
@@ -4875,7 +4875,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "O primeiro e moderno; o segundo, barroco."
       ],
       "correta": "O primeiro privilegia a lirica cantada medieval; o segundo amplia a literatura com cronicas, poesia de corte e teatro em uma fase transitória.",
-      "comentario": "A alternativa correta reformula com precisao a distincao historica e formal entre os dois periodos.",
+      "comentario": "A alternativa correta reformula com precisão a distincao historica e formal entre os dois periodos.",
       "tempoEstimado": 45,
       "tags": [
         "comparacao-entre-escolas",
@@ -4899,14 +4899,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Teatro de Gil Vicente",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia as proposicoes sobre o teatro de Gil Vicente. I. Integra o Humanismo portugues. II. Pode unir critica social e preocupacao moral. III. Reproduz exatamente a estrutura das cantigas trovadorescas. IV. Amplia a presenca do genero dramático na literatura portuguesa. Assinale a alternativa correta.",
+      "enunciado": "Leia as proposicoes sobre o teatro de Gil Vicente. I. Integra o Humanismo português. II. Pode unir crítica social e preocupacao moral. III. Reproduz exatamente a estrutura das cantigas trovadorescas. IV. Amplia a presença do gênero dramático na literatura portuguesa. Assinale a alternativa correta.",
       "opcoes": [
         "Apenas I, II e IV estao corretas.",
         "Apenas I e III estao corretas.",
@@ -4914,7 +4914,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "I, II, III e IV estao corretas."
       ],
       "correta": "Apenas I, II e IV estao corretas.",
-      "comentario": "A proposicao III esta incorreta porque o teatro vicentino nao reproduz a estrutura das cantigas; ele representa outra forma literaria, propria do Humanismo.",
+      "comentario": "A proposicao III está incorreta porque o teatro vicentino não reproduz a estrutura das cantigas; ele representa outra forma literaria, própria do Humanismo.",
       "tempoEstimado": 45,
       "tags": [
         "gil-vicente",
@@ -4938,14 +4938,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Contexto historico do Classicismo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "reconhecimento",
       "tipo": "multipla_escolha",
-      "enunciado": "No contexto da literatura portuguesa, o Classicismo esta mais diretamente ligado a qual movimento cultural europeu?",
+      "enunciado": "No contexto da literatura portuguesa, o Classicismo está mais diretamente ligado a qual movimento cultural europeu?",
       "opcoes": [
         "Renascimento",
         "Arcadismo",
@@ -4953,7 +4953,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "Barroco"
       ],
       "correta": "Renascimento",
-      "comentario": "O Classicismo se vincula ao Renascimento, periodo marcado pela retomada de valores da Antiguidade greco-latina, racionalismo e equilibrio formal.",
+      "comentario": "O Classicismo se vincula ao Renascimento, período marcado pela retomada de valores da Antiguidade greco-latina, racionalismo e equilíbrio formal.",
       "tempoEstimado": 25,
       "tags": [
         "classicismo",
@@ -4977,21 +4977,21 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
-      "subtopico": "Racionalismo e equilibrio formal",
+      "subtopico": "Racionalismo e equilíbrio formal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "reconhecimento",
       "tipo": "multipla_escolha",
       "enunciado": "Uma caracteristica tipica do Classicismo e a valorizacao de:",
       "opcoes": [
-        "equilibrio, razao e universalidade",
+        "equilíbrio, razao e universalidade",
         "exagero, contraste e rebuscamento",
         "subjetivismo intenso e sentimentalismo",
         "linguagem espontanea exclusivamente popular"
       ],
-      "correta": "equilibrio, razao e universalidade",
+      "correta": "equilíbrio, razao e universalidade",
       "comentario": "O Classicismo valoriza a medida, a razao, a clareza e a busca de formas equilibradas, em dialogo com a tradicao classica.",
       "tempoEstimado": 25,
       "tags": [
@@ -5016,7 +5016,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Soneto e medida nova",
       "dificuldadeLabel": "facil",
@@ -5025,13 +5025,13 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "No Classicismo, o soneto se destaca como forma poetica associada principalmente e ideia de:",
       "opcoes": [
-        "organizacao formal e equilibrio compositivo",
+        "organização formal e equilíbrio compositivo",
         "improviso musical coletivo",
-        "critica saterica exclusivamente oral",
+        "crítica saterica exclusivamente oral",
         "narrativa drametica em cenas"
       ],
-      "correta": "organizacao formal e equilibrio compositivo",
-      "comentario": "O soneto classico e valorizado por sua estrutura regular e por favorecer a construcao equilibrada do pensamento poetico.",
+      "correta": "organização formal e equilíbrio compositivo",
+      "comentario": "O soneto classico e valorizado por sua estrutura regular e por favorecer a construção equilibrada do pensamento poetico.",
       "tempoEstimado": 25,
       "tags": [
         "soneto",
@@ -5055,14 +5055,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Camoes lirico",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "reconhecimento",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando se fala em Camoes lirico, faz-se referencia sobretudo a textos em que predomina:",
+      "enunciado": "Quando se fala em Camoes lirico, faz-se referência sobretudo a textos em que predomina:",
       "opcoes": [
         "a expressao poetica de temas amorosos e existenciais",
         "a narracao epica das conquistas maritimas",
@@ -5070,7 +5070,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "a composicao de cantigas de amigo"
       ],
       "correta": "a expressao poetica de temas amorosos e existenciais",
-      "comentario": "A lirica camoniana desenvolve reflexões sobre o amor, o tempo, a mudanca e os conflitos do sujeito poetico.",
+      "comentario": "A lirica camoniana desenvolve reflexões sobre o amor, o tempo, a mudança e os conflitos do sujeito poetico.",
       "tempoEstimado": 25,
       "tags": [
         "camoes",
@@ -5094,7 +5094,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Camoes epico",
       "dificuldadeLabel": "facil",
@@ -5133,7 +5133,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Contexto historico do Classicismo",
       "dificuldadeLabel": "medio",
@@ -5172,9 +5172,9 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
-      "subtopico": "Racionalismo e equilibrio formal",
+      "subtopico": "Racionalismo e equilíbrio formal",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "compreensao",
@@ -5182,12 +5182,12 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "enunciado": "Ao afirmar que o Classicismo valoriza a razao, entende-se que essa estetica tende a:",
       "opcoes": [
         "organizar a expressao artistica com clareza, medida e controle formal",
-        "dispensar qualquer referencia a modelos anteriores",
+        "dispensar qualquer referência a modelos anteriores",
         "privilegiar o improviso acima da elaboracao compositiva",
         "recusar temas universais em favor apenas do cotidiano imediato"
       ],
       "correta": "organizar a expressao artistica com clareza, medida e controle formal",
-      "comentario": "A razao, no Classicismo, associa-se ao dominio formal e e busca de composicoes equilibradas e inteligíveis.",
+      "comentario": "A razao, no Classicismo, associa-se ao domínio formal e e busca de composicoes equilibradas e inteligíveis.",
       "tempoEstimado": 35,
       "tags": [
         "classicismo",
@@ -5211,14 +5211,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Soneto e medida nova",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "No estudo do Classicismo, a chamada medida nova esta associada ao uso de:",
+      "enunciado": "No estudo do Classicismo, a chamada medida nova está associada ao uso de:",
       "opcoes": [
         "versos decassolabos, muito presentes na poesia classica",
         "versos curtos exclusivos das cantigas medievais",
@@ -5250,22 +5250,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Comparacao entre escolas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em relacao ao Humanismo, o Classicismo representa uma etapa em que:",
+      "enunciado": "Em relação ao Humanismo, o Classicismo representa uma etapa em que:",
       "opcoes": [
         "os valores renascentistas se tornam mais plenamente organizados na forma literaria",
         "a literatura retorna ao predominio exclusivo das cantigas medievais",
-        "o teatro vicentino passa a ser o unico genero relevante",
+        "o teatro vicentino passa a ser o unico gênero relevante",
         "o teocentrismo medieval volta a ser o eixo principal da criacao artistica"
       ],
       "correta": "os valores renascentistas se tornam mais plenamente organizados na forma literaria",
-      "comentario": "Se o Humanismo e um periodo de transicao, o Classicismo consolida de modo mais nítido os principios renascentistas na literatura.",
+      "comentario": "Se o Humanismo e um período de transicao, o Classicismo consolida de modo mais nítido os principios renascentistas na literatura.",
       "tempoEstimado": 35,
       "tags": [
         "comparacao-entre-escolas",
@@ -5289,7 +5289,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Contexto historico do Classicismo",
       "dificuldadeLabel": "medio",
@@ -5298,12 +5298,12 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "A literatura classica portuguesa dialoga com o contexto das grandes navegacoes porque:",
       "opcoes": [
-        "o esporito de expansao e de afirmacao historica do periodo aparece, sobretudo, na epopeia camoniana",
-        "a poesia classica rejeita qualquer assunto ligado e historia de Portugal",
+        "o esporito de expansao e de afirmacao historica do período aparece, sobretudo, na epopeia camoniana",
+        "a poesia classica rejeita qualquer assunto ligado e história de Portugal",
         "o Classicismo elimina o interesse por feitos coletivos e heroicos",
         "a experiencia maritima aparece apenas no teatro de Gil Vicente"
       ],
-      "correta": "o esporito de expansao e de afirmacao historica do periodo aparece, sobretudo, na epopeia camoniana",
+      "correta": "o esporito de expansao e de afirmacao historica do período aparece, sobretudo, na epopeia camoniana",
       "comentario": "O contexto expansionista de Portugal ganha expressao literaria marcante em Os Lusiadas, obra central do Classicismo.",
       "tempoEstimado": 35,
       "tags": [
@@ -5328,21 +5328,21 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Camoes lirico",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Na lirica de Camoes, e frequente a presenca de tensoes e contrastes na abordagem do amor. Isso indica que o poeta:",
+      "enunciado": "Na lirica de Camoes, e frequente a presença de tensoes e contrastes na abordagem do amor. Isso indica que o poeta:",
       "opcoes": [
-        "explora a complexidade da experiencia amorosa por meio de reflexao e elaboracao formal",
-        "abandona completamente o equilibrio classico em favor do improviso",
+        "explora a complexidade da experiencia amorosa por meio de reflexão e elaboracao formal",
+        "abandona completamente o equilíbrio classico em favor do improviso",
         "reproduz apenas o modelo das cantigas de amigo medievais",
         "substitui a poesia amorosa por narrativa epica"
       ],
-      "correta": "explora a complexidade da experiencia amorosa por meio de reflexao e elaboracao formal",
+      "correta": "explora a complexidade da experiencia amorosa por meio de reflexão e elaboracao formal",
       "comentario": "Na lirica camoniana, o amor costuma ser apresentado de modo complexo, com contradicoes e elaboracao conceitual compateveis com o refinamento classico.",
       "tempoEstimado": 35,
       "tags": [
@@ -5367,22 +5367,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Camoes epico",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Os Lusiadas, a materia epica esta centrada principalmente em:",
+      "enunciado": "Em Os Lusiadas, a materia epica está centrada principalmente em:",
       "opcoes": [
         "feitos heroicos portugueses projetados como assunto digno de exaltacao literaria",
         "confissoes pessoais do eu lirico sobre sofrimento amoroso",
-        "cenas drameticas de critica de costumes do cotidiano lisboeta",
+        "cenas drameticas de crítica de costumes do cotidiano lisboeta",
         "cantigas satericas de escarnio e maldizer"
       ],
       "correta": "feitos heroicos portugueses projetados como assunto digno de exaltacao literaria",
-      "comentario": "A epopeia camoniana transforma a historia de Portugal e suas navegacoes em materia heroica e literariamente grandiosa.",
+      "comentario": "A epopeia camoniana transforma a história de Portugal e suas navegacoes em materia heroica e literariamente grandiosa.",
       "tempoEstimado": 35,
       "tags": [
         "os-lusiadas",
@@ -5406,7 +5406,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Soneto e medida nova",
       "dificuldadeLabel": "medio",
@@ -5415,12 +5415,12 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "Ao estudar o soneto classico, o aluno deve associá-lo e ideia de uma composicao:",
       "opcoes": [
-        "regular e arquitetada, compativel com o ideal de forma equilibrada",
+        "regular e arquitetada, compatível com o ideal de forma equilibrada",
         "oral e acompanhada por instrumentos medievais",
         "sem divisao estrutural definida",
         "destinada exclusivamente e encenacao religiosa"
       ],
-      "correta": "regular e arquitetada, compativel com o ideal de forma equilibrada",
+      "correta": "regular e arquitetada, compatível com o ideal de forma equilibrada",
       "comentario": "A forma do soneto e exemplar para o Classicismo porque traduz, no plano estrutural, a disciplina e a harmonia valorizadas pela estetica.",
       "tempoEstimado": 35,
       "tags": [
@@ -5445,9 +5445,9 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
-      "subtopico": "Racionalismo e equilibrio formal",
+      "subtopico": "Racionalismo e equilíbrio formal",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
@@ -5460,7 +5460,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "Reduzir a literatura a satiras exclusivamente circunstanciais."
       ],
       "correta": "Tratar temas humanos amplos de modo equilibrado e exemplar, sem se limitar a um caso imediato e isolado.",
-      "comentario": "O universalismo classico procura elevar a experiencia humana a um plano mais geral, com equilibrio e valor modelar.",
+      "comentario": "O universalismo classico procura elevar a experiencia humana a um plano mais geral, com equilíbrio e valor modelar.",
       "tempoEstimado": 35,
       "tags": [
         "universalismo",
@@ -5484,14 +5484,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Contexto historico do Classicismo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Dizer que o Classicismo retoma a Antiguidade classica nao significa afirmar que ele:",
+      "enunciado": "Dizer que o Classicismo retoma a Antiguidade classica não significa afirmar que ele:",
       "opcoes": [
         "copie mecanicamente os antigos, sem reelaboracao historica e literaria",
         "busque inspiracao em modelos greco-latinos",
@@ -5499,7 +5499,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "dialogue com o esporito renascentista"
       ],
       "correta": "copie mecanicamente os antigos, sem reelaboracao historica e literaria",
-      "comentario": "A retomada classica implica inspiracao, dialogo e reelaboracao, nao repeticao servil e autometica dos modelos antigos.",
+      "comentario": "A retomada classica implica inspiracao, dialogo e reelaboracao, não repetição servil e autometica dos modelos antigos.",
       "tempoEstimado": 35,
       "tags": [
         "imitacao-classica",
@@ -5523,7 +5523,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Comparacao entre escolas",
       "dificuldadeLabel": "medio",
@@ -5534,11 +5534,11 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "opcoes": [
         "O Trovadorismo se associa a poesia cantada medieval; o Classicismo, e retomada renascentista da forma equilibrada e dos modelos classicos.",
         "O Trovadorismo se organiza em sonetos; o Classicismo, em cantigas de amigo.",
-        "O Trovadorismo pertence ao Renascimento; o Classicismo, e Idade Media.",
+        "O Trovadorismo pertence ao Renascimento; o Classicismo, e Idade Média.",
         "O Trovadorismo privilegia a epopeia maritima; o Classicismo, a satira trovadoresca."
       ],
       "correta": "O Trovadorismo se associa a poesia cantada medieval; o Classicismo, e retomada renascentista da forma equilibrada e dos modelos classicos.",
-      "comentario": "A alternativa correta distingue com precisao o ambiente historico, a forma e a visao estetica de cada periodo.",
+      "comentario": "A alternativa correta distingue com precisão o ambiente historico, a forma e a visao estetica de cada período.",
       "tempoEstimado": 35,
       "tags": [
         "comparacao-entre-escolas",
@@ -5562,18 +5562,18 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Camoes lirico",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando a lirica camoniana apresenta o amor por meio de definicoes aparentemente contraditórias, o efeito principal e:",
+      "enunciado": "Quando a lirica camoniana apresenta o amor por meio de definições aparentemente contraditórias, o efeito principal e:",
       "opcoes": [
         "mostrar a complexidade do sentimento amoroso com elaboracao conceitual refinada",
         "imitar literalmente a linguagem das cantigas de escarnio",
-        "eliminar qualquer reflexao racional do poema",
+        "eliminar qualquer reflexão racional do poema",
         "transformar o texto lirico em narrativa historica"
       ],
       "correta": "mostrar a complexidade do sentimento amoroso com elaboracao conceitual refinada",
@@ -5601,14 +5601,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Camoes epico",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A presenca de referencias mitologicas em Os Lusiadas cumpre, entre outras, a funcao de:",
+      "enunciado": "A presença de referências mitologicas em Os Lusiadas cumpre, entre outras, a função de:",
       "opcoes": [
         "aproximar a experiencia historica portuguesa do universo epico e classico",
         "negar qualquer vinculo entre Portugal e a tradicao greco-latina",
@@ -5640,7 +5640,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Contexto historico do Classicismo",
       "dificuldadeLabel": "medio",
@@ -5649,13 +5649,13 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "A maior valorizacao do homem e de sua capacidade racional no Classicismo se articula a passagem para uma visao de mundo mais:",
       "opcoes": [
-        "antropocentrica, propria do ambiente renascentista",
+        "antropocentrica, própria do ambiente renascentista",
         "exclusivamente feudal e cavaleiresca",
-        "teocentrica, sem qualquer mudanca em relacao e Idade Media",
+        "teocentrica, sem qualquer mudança em relação e Idade Média",
         "marcada pela recusa de toda investigacao racional"
       ],
-      "correta": "antropocentrica, propria do ambiente renascentista",
-      "comentario": "O Classicismo participa da valorizacao renascentista do homem, da razao e da observacao do mundo, em contraste com o teocentrismo medieval.",
+      "correta": "antropocentrica, própria do ambiente renascentista",
+      "comentario": "O Classicismo participa da valorizacao renascentista do homem, da razao e da observação do mundo, em contraste com o teocentrismo medieval.",
       "tempoEstimado": 35,
       "tags": [
         "antropocentrismo",
@@ -5679,17 +5679,17 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
-      "subtopico": "Racionalismo e equilibrio formal",
+      "subtopico": "Racionalismo e equilíbrio formal",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que reescreve corretamente a ideia de equilibrio formal no Classicismo.",
+      "enunciado": "Assinale a alternativa que reescreve corretamente a ideia de equilíbrio formal no Classicismo.",
       "opcoes": [
         "A composicao tende e proporcao e ao controle, evitando excessos e desordem expressiva.",
-        "A escrita deve rejeitar qualquer organizacao estrutural em nome do impulso imediato.",
+        "A escrita deve rejeitar qualquer organização estrutural em nome do impulso imediato.",
         "A poesia classica se define pelo ataque saterico e pela linguagem agressiva.",
         "O poema classico valoriza a improvisacao musical das cortes medievais."
       ],
@@ -5718,14 +5718,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
-      "subtopico": "Racionalismo e equilibrio formal",
+      "subtopico": "Racionalismo e equilíbrio formal",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia as afirmacoes sobre o Classicismo. I. Retoma modelos classicos. II. Valoriza medida e clareza. III. Rejeita toda disciplina formal em favor do improviso. IV. Dialoga com o Renascimento. Assinale a alternativa correta.",
+      "enunciado": "Leia as afirmações sobre o Classicismo. I. Retoma modelos classicos. II. Valoriza medida e clareza. III. Rejeita toda disciplina formal em favor do improviso. IV. Dialoga com o Renascimento. Assinale a alternativa correta.",
       "opcoes": [
         "Apenas I, II e IV estao corretas.",
         "Apenas I e III estao corretas.",
@@ -5733,7 +5733,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "I, II, III e IV estao corretas."
       ],
       "correta": "Apenas I, II e IV estao corretas.",
-      "comentario": "A afirmacao III esta incorreta, porque o Classicismo se caracteriza justamente pela valorizacao do controle formal e da medida.",
+      "comentario": "A afirmacao III está incorreta, porque o Classicismo se caracteriza justamente pela valorizacao do controle formal e da medida.",
       "tempoEstimado": 45,
       "tags": [
         "classicismo",
@@ -5757,21 +5757,21 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Comparacao entre escolas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que contem uma interpretacao incorreta sobre a relacao entre Humanismo e Classicismo.",
+      "enunciado": "Assinale a alternativa que contém uma interpretação incorreta sobre a relação entre Humanismo e Classicismo.",
       "opcoes": [
-        "O Classicismo corresponde a uma consolidacao mais nitida de valores renascentistas ja anunciados no Humanismo.",
-        "O Humanismo pode ser lido como periodo de transicao cultural.",
+        "O Classicismo corresponde a uma consolidacao mais nitida de valores renascentistas já anunciados no Humanismo.",
+        "O Humanismo pode ser lido como período de transicao cultural.",
         "O Classicismo retoma principios de harmonia e dialogo com a Antiguidade classica.",
-        "Humanismo e Classicismo sao periodos identicos, sem diferencas de consolidacao estetica."
+        "Humanismo e Classicismo são periodos identicos, sem diferencas de consolidacao estetica."
       ],
-      "correta": "Humanismo e Classicismo sao periodos identicos, sem diferencas de consolidacao estetica.",
+      "correta": "Humanismo e Classicismo são periodos identicos, sem diferencas de consolidacao estetica.",
       "comentario": "A alternativa incorreta apaga a diferenca entre a transicao humanista e a consolidacao formal e ideologica do Classicismo.",
       "tempoEstimado": 45,
       "tags": [
@@ -5796,7 +5796,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Soneto e medida nova",
       "dificuldadeLabel": "dificil",
@@ -5805,13 +5805,13 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "Dizer que o soneto classico e a medida nova expressam disciplina formal equivale a afirmar que:",
       "opcoes": [
-        "a forma poetica participa da construcao racional e equilibrada do sentido",
-        "a organizacao do poema e irrelevante para o efeito estatico",
+        "a forma poetica participa da construção racional e equilibrada do sentido",
+        "a organização do poema e irrelevante para o efeito estatico",
         "a poesia classica rejeita qualquer preocupacao metrica",
         "o valor literario depende apenas do acompanhamento musical"
       ],
-      "correta": "a forma poetica participa da construcao racional e equilibrada do sentido",
-      "comentario": "No Classicismo, a forma nao e detalhe secundário: ela integra a propria logica estetica de medida, ordem e harmonia.",
+      "correta": "a forma poetica participa da construção racional e equilibrada do sentido",
+      "comentario": "No Classicismo, a forma não e detalhe secundário: ela integra a própria lógica estetica de medida, ordem e harmonia.",
       "tempoEstimado": 45,
       "tags": [
         "soneto",
@@ -5835,14 +5835,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Camoes epico",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia as proposicoes sobre Os Lusiadas. I. A obra insere a historia portuguesa em moldura epica. II. A tradicao classica comparece, entre outros meios, pela presenca mitologica. III. O poema pertence ao repertorio trovadoresco medieval. IV. A obra se relaciona ao contexto historico das navegacoes. Assinale a alternativa correta.",
+      "enunciado": "Leia as proposicoes sobre Os Lusiadas. I. A obra insere a história portuguesa em moldura epica. II. A tradicao classica comparece, entre outros meios, pela presença mitologica. III. O poema pertence ao repertório trovadoresco medieval. IV. A obra se relaciona ao contexto historico das navegacoes. Assinale a alternativa correta.",
       "opcoes": [
         "Apenas I, II e IV estao corretas.",
         "Apenas I e III estao corretas.",
@@ -5850,7 +5850,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "I, II, III e IV estao corretas."
       ],
       "correta": "Apenas I, II e IV estao corretas.",
-      "comentario": "A proposicao III e falsa, pois Os Lusiadas integra o Classicismo e nao a tradicao trovadoresca medieval.",
+      "comentario": "A proposicao III e falsa, pois Os Lusiadas integra o Classicismo e não a tradicao trovadoresca medieval.",
       "tempoEstimado": 45,
       "tags": [
         "os-lusiadas",
@@ -5874,7 +5874,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Comparacao entre escolas",
       "dificuldadeLabel": "dificil",
@@ -5886,7 +5886,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "Do predominio da lirica medieval cantada passa-se a uma fase humanista de transicao e, depois, a consolidacao renascentista da forma classica.",
         "Do teatro classico passa-se as cantigas medievais e, por fim, a poesia palaciana humanista.",
         "Do Classicismo retorna-se ao Trovadorismo, sem mudancas historicas relevantes.",
-        "As tras escolas sao equivalentes e indistintas quanto a formas, valores e contexto."
+        "As tras escolas são equivalentes e indistintas quanto a formas, valores e contexto."
       ],
       "correta": "Do predominio da lirica medieval cantada passa-se a uma fase humanista de transicao e, depois, a consolidacao renascentista da forma classica.",
       "comentario": "A alternativa correta resume a passagem historica entre os tras periodos, preservando suas diferencas formais e ideologicas.",
@@ -5913,14 +5913,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto afirma que, em certa fase da literatura portuguesa, a producao deixa de se concentrar apenas na poesia cantada e passa a incorporar cronicas, poesia de corte e teatro. Ainda sem nomear a escola, o texto se refere mais diretamente ao:",
+      "enunciado": "Um texto afirma que, em certa fase da literatura portuguesa, a produção deixa de se concentrar apenas na poesia cantada e passa a incorporar cronicas, poesia de corte e teatro. Ainda sem nomear a escola, o texto se refere mais diretamente ao:",
       "opcoes": [
         "Humanismo",
         "Trovadorismo",
@@ -5928,7 +5928,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "Barroco"
       ],
       "correta": "Humanismo",
-      "comentario": "A descricao aponta para a diversificacao de generos propria do Humanismo, periodo de transicao entre a cultura medieval e a renascentista.",
+      "comentario": "A descricao aponta para a diversificacao de gêneros própria do Humanismo, período de transicao entre a cultura medieval e a renascentista.",
       "tempoEstimado": 40,
       "tags": [
         "interpretacao-indireta",
@@ -5952,22 +5952,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que contem um erro comum sobre o Trovadorismo.",
+      "enunciado": "Assinale a alternativa que contém um erro comum sobre o Trovadorismo.",
       "opcoes": [
         "As cantigas de amigo costumam apresentar voz feminina e ambiente ligado ao cotidiano afetivo.",
         "As cantigas de amor associam-se a idealizacao da dama e a vassalagem amorosa.",
-        "O Trovadorismo portugues se caracteriza principalmente pelo soneto decassilábico renascentista.",
+        "O Trovadorismo português se caracteriza principalmente pelo soneto decassilábico renascentista.",
         "As cantigas satericas incluem escarnio e maldizer."
       ],
-      "correta": "O Trovadorismo portugues se caracteriza principalmente pelo soneto decassilábico renascentista.",
-      "comentario": "Esse e um erro frequente: o soneto decassilábico esta ligado ao Classicismo, nao ao Trovadorismo.",
+      "correta": "O Trovadorismo português se caracteriza principalmente pelo soneto decassilábico renascentista.",
+      "comentario": "Esse e um erro frequente: o soneto decassilábico está ligado ao Classicismo, não ao Trovadorismo.",
       "tempoEstimado": 40,
       "tags": [
         "pegadinha",
@@ -5991,22 +5991,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
-      "subtopico": "Equivalencia de formas",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A afirmacao \"o Classicismo procura disciplina formal e dialogo com modelos greco-latinos\" equivale a dizer que esse periodo:",
+      "enunciado": "A afirmacao \"o Classicismo procura disciplina formal e dialogo com modelos greco-latinos\" equivale a dizer que esse período:",
       "opcoes": [
-        "valoriza formas organizadas e retoma referencias da Antiguidade classica",
+        "valoriza formas organizadas e retoma referências da Antiguidade classica",
         "abandona toda medida em nome da espontaneidade medieval",
         "se define pela musicalidade das cantigas trovadorescas",
         "restringe-se a satira social do teatro vicentino"
       ],
-      "correta": "valoriza formas organizadas e retoma referencias da Antiguidade classica",
-      "comentario": "A alternativa correta reformula com precisao a ideia de disciplina formal e de retomada de modelos classicos no Renascimento.",
+      "correta": "valoriza formas organizadas e retoma referências da Antiguidade classica",
+      "comentario": "A alternativa correta reformula com precisão a ideia de disciplina formal é de retomada de modelos classicos no Renascimento.",
       "tempoEstimado": 40,
       "tags": [
         "equivalencia-de-formas",
@@ -6030,14 +6030,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a sintese: \"A obra apresenta feitos historicos portugueses em linguagem elevada, incorpora referencias mitologicas e constroi uma visao heroica da experiencia nacional.\" A sintese descreve mais adequadamente:",
+      "enunciado": "Leia a síntese: \"A obra apresenta feitos historicos portugueses em linguagem elevada, incorpora referências mitologicas e constroi uma visao heroica da experiencia nacional.\" A síntese descreve mais adequadamente:",
       "opcoes": [
         "a epopeia camoniana do Classicismo",
         "a cantiga de maldizer medieval",
@@ -6069,21 +6069,21 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Comparacao entre escolas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um estudante afirmar que o Humanismo ainda preserva tracos medievais, mas ja aponta para a valorizacao do homem e da historia, sua leitura estara:",
+      "enunciado": "Se um estudante afirmar que o Humanismo ainda preserva tracos medievais, mas já aponta para a valorizacao do homem e da história, sua leitura estara:",
       "opcoes": [
-        "correta, porque o Humanismo tem carater de transicao",
-        "incorreta, porque o Humanismo ja e identico ao Classicismo",
+        "correta, porque o Humanismo tem caráter de transicao",
+        "incorreta, porque o Humanismo já e identico ao Classicismo",
         "incorreta, porque o Humanismo pertence integralmente ao Trovadorismo",
         "correta apenas se a afirmacao se referir as cantigas satericas"
       ],
-      "correta": "correta, porque o Humanismo tem carater de transicao",
+      "correta": "correta, porque o Humanismo tem caráter de transicao",
       "comentario": "O Humanismo e compreendido como etapa intermediária, preservando elementos medievais e antecipando valores renascentistas.",
       "tempoEstimado": 40,
       "tags": [
@@ -6108,22 +6108,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa parece plausovel a primeira vista, mas esta incorreta?",
+      "enunciado": "Qual alternativa parece plausovel a primeira vista, mas está incorreta?",
       "opcoes": [
-        "Gil Vicente integra o Humanismo portugues e destaca-se no teatro.",
-        "Camoes e nome central do Classicismo portugues.",
+        "Gil Vicente integra o Humanismo português e destaca-se no teatro.",
+        "Camoes e nome central do Classicismo português.",
         "A cantiga de amigo costuma apresentar a voz feminina como recurso composicional.",
         "A poesia palaciana constitui o ponto maximo da epopeia classica renascentista."
       ],
       "correta": "A poesia palaciana constitui o ponto maximo da epopeia classica renascentista.",
-      "comentario": "A pegadinha mistura duas referencias distintas: poesia palaciana pertence ao Humanismo, enquanto a epopeia classica renascentista remete a Camoes e ao Classicismo.",
+      "comentario": "A pegadinha mistura duas referências distintas: poesia palaciana pertence ao Humanismo, enquanto a epopeia classica renascentista remete a Camoes e ao Classicismo.",
       "tempoEstimado": 40,
       "tags": [
         "pegadinha",
@@ -6147,14 +6147,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma descricao afirma: \"Nessa poesia, a forma fixa nao e simples enfeite; ela participa da construcao de um discurso medido, claro e racional.\" O comentario se aplica principalmente ao:",
+      "enunciado": "Uma descricao afirma: \"Nessa poesia, a forma fixa não e simples enfeite; ela participa da construção de um discurso medido, claro e racional.\" O comentario se aplica principalmente ao:",
       "opcoes": [
         "Classicismo",
         "Trovadorismo",
@@ -6162,7 +6162,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "maldizer saterico"
       ],
       "correta": "Classicismo",
-      "comentario": "A descricao enfatiza o papel estrutural da forma na producao de equilibrio e racionalidade, traco tepico do Classicismo.",
+      "comentario": "A descricao enfatiza o papel estrutural da forma na produção de equilíbrio e racionalidade, traco tepico do Classicismo.",
       "tempoEstimado": 40,
       "tags": [
         "interpretacao-indireta",
@@ -6186,22 +6186,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
-      "subtopico": "Equivalencia de formas",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa preserva o sentido da afirmacao: \"No Trovadorismo, a linguagem saterica pode operar por ironia indireta ou por ataque explicito\"?",
+      "enunciado": "Qual alternativa preserva o sentido da afirmacao: \"No Trovadorismo, a linguagem saterica pode operar por ironia indireta ou por ataque explícito\"?",
       "opcoes": [
-        "A critica trovadoresca pode ocorrer tanto de modo insinuado quanto de forma diretamente ofensiva.",
+        "A crítica trovadoresca pode ocorrer tanto de modo insinuado quanto de forma diretamente ofensiva.",
         "A satira medieval aparece apenas em textos epicos de exaltacao nacional.",
-        "A ironia medieval esta restrita ao teatro renascentista.",
+        "A ironia medieval está restrita ao teatro renascentista.",
         "A agressividade verbal pertence exclusivamente as cantigas de amor."
       ],
-      "correta": "A critica trovadoresca pode ocorrer tanto de modo insinuado quanto de forma diretamente ofensiva.",
-      "comentario": "A reformulacao corresponde a diferenca entre escarnio, mais indireto, e maldizer, mais explicito.",
+      "correta": "A crítica trovadoresca pode ocorrer tanto de modo insinuado quanto de forma diretamente ofensiva.",
+      "comentario": "A reformulacao corresponde a diferenca entre escarnio, mais indireto, e maldizer, mais explícito.",
       "tempoEstimado": 40,
       "tags": [
         "equivalencia-de-formas",
@@ -6225,7 +6225,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Camoes lirico",
       "dificuldadeLabel": "medio",
@@ -6235,12 +6235,12 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "enunciado": "Ao dizer que a lirica camoniana une intensidade afetiva e elaboracao racional, afirma-se indiretamente que ela:",
       "opcoes": [
         "trabalha o sentimento amoroso sem abrir mao do rigor conceitual e formal",
-        "abandona qualquer reflexao e se baseia apenas na oralidade",
+        "abandona qualquer reflexão e se baseia apenas na oralidade",
         "repete mecanicamente a estrutura das cantigas de amigo",
         "se converte em cronica historica de feitos marotimos"
       ],
       "correta": "trabalha o sentimento amoroso sem abrir mao do rigor conceitual e formal",
-      "comentario": "A lirica de Camoes nao se reduz a emocao espontanea; ela a organiza por meio de uma construcao formal e reflexiva sofisticada.",
+      "comentario": "A lirica de Camoes não se reduz a emocao espontanea; ela a organiza por meio de uma construção formal e reflexiva sofisticada.",
       "tempoEstimado": 40,
       "tags": [
         "camoes",
@@ -6264,18 +6264,18 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Comparacao entre escolas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 7,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa em que a sequencia historica esta corretamente compreendida.",
+      "enunciado": "Assinale a alternativa em que a sequencia historica está corretamente compreendida.",
       "opcoes": [
         "O Trovadorismo antecede o Humanismo, que por sua vez antecede a consolidacao classica renascentista.",
         "O Classicismo inicia a sequencia, seguido pelo Trovadorismo e pelo Humanismo.",
-        "O Humanismo e o Trovadorismo sao simultaneos e equivalentes.",
+        "O Humanismo e o Trovadorismo são simultaneos e equivalentes.",
         "O Classicismo constitui a forma inicial da literatura medieval portuguesa."
       ],
       "correta": "O Trovadorismo antecede o Humanismo, que por sua vez antecede a consolidacao classica renascentista.",
@@ -6303,14 +6303,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a formulacao: \"A literatura do periodo assume o homem e a historia como focos mais visoveis, mas ainda nao organiza plenamente a forma segundo o ideal classico.\" Essa caracterizacao corresponde a:",
+      "enunciado": "Leia a formulacao: \"A literatura do período assume o homem e a história como focos mais visoveis, mas ainda não organiza plenamente a forma segundo o ideal classico.\" Essa caracterizacao corresponde a:",
       "opcoes": [
         "Humanismo",
         "Classicismo",
@@ -6318,7 +6318,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "Arcadismo"
       ],
       "correta": "Humanismo",
-      "comentario": "A frase descreve precisamente o lugar intermediario do Humanismo: maior atencao ao homem e a historia, sem ainda configurar a plena consolidacao classica.",
+      "comentario": "A frase descreve precisamente o lugar intermediario do Humanismo: maior atenção ao homem e a história, sem ainda configurar a plena consolidacao classica.",
       "tempoEstimado": 50,
       "tags": [
         "interpretacao-indireta",
@@ -6342,7 +6342,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
@@ -6381,22 +6381,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
-      "subtopico": "Equivalencia de formas",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A frase \"o Humanismo amplia os generos e ocupa um lugar de passagem entre a mentalidade medieval e a renascentista\" equivale a afirmar que o periodo:",
+      "enunciado": "A frase \"o Humanismo amplia os gêneros e ocupa um lugar de passagem entre a mentalidade medieval e a renascentista\" equivale a afirmar que o período:",
       "opcoes": [
-        "diversifica a producao literaria e funciona como ponte entre duas visoes de mundo",
-        "abandona toda heranca medieval e ja coincide integralmente com o Classicismo",
+        "diversifica a produção literaria e funciona como ponte entre duas visoes de mundo",
+        "abandona toda heranca medieval e já coincide integralmente com o Classicismo",
         "se resume a permanencia exclusiva das cantigas trovadorescas",
         "substitui o teatro por formas unicamente epicas"
       ],
-      "correta": "diversifica a producao literaria e funciona como ponte entre duas visoes de mundo",
-      "comentario": "A equivalencia correta retoma os dois eixos centrais: ampliacao de generos e carater transitorio do Humanismo.",
+      "correta": "diversifica a produção literaria e funciona como ponte entre duas visoes de mundo",
+      "comentario": "A equivalência correta retoma os dois eixos centrais: ampliacao de gêneros e caráter transitorio do Humanismo.",
       "tempoEstimado": 50,
       "tags": [
         "equivalencia-de-formas",
@@ -6420,14 +6420,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Considere a descricao: \"O texto nao ataca frontalmente, mas constroi a critica por insinuacao, duplo sentido e ironia.\" Essa descricao remete mais diretamente a logica da:",
+      "enunciado": "Considere a descricao: \"O texto não ataca frontalmente, mas constroi a crítica por insinuacao, duplo sentido e ironia.\" Essa descricao remete mais diretamente a lógica da:",
       "opcoes": [
         "cantiga de escarnio",
         "cantiga de maldizer",
@@ -6435,7 +6435,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "poesia palaciana"
       ],
       "correta": "cantiga de escarnio",
-      "comentario": "A critica indireta, insinuada e ironica e caracteristica da cantiga de escarnio, diferentemente do ataque direto do maldizer.",
+      "comentario": "A crítica indireta, insinuada e ironica e caracteristica da cantiga de escarnio, diferentemente do ataque direto do maldizer.",
       "tempoEstimado": 50,
       "tags": [
         "interpretacao-indireta",
@@ -6459,22 +6459,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa contem uma leitura sedutora, porem incorreta, sobre Camoes?",
+      "enunciado": "Qual alternativa contém uma leitura sedutora, porem incorreta, sobre Camoes?",
       "opcoes": [
         "Camoes participa do Classicismo e e central tanto na lirica quanto na epica.",
         "Em Os Lusiadas, a experiencia historica portuguesa ganha dimensao heroica.",
-        "Na lirica camoniana, a reflexao amorosa pode aparecer em estrutura formal rigorosa.",
+        "Na lirica camoniana, a reflexão amorosa pode aparecer em estrutura formal rigorosa.",
         "Camoes pertence ao Humanismo de transicao e se destaca sobretudo pelas cantigas medievais musicadas."
       ],
       "correta": "Camoes pertence ao Humanismo de transicao e se destaca sobretudo pelas cantigas medievais musicadas.",
-      "comentario": "A alternativa mistura indevidamente elementos de periodos diferentes: Camoes e nome maior do Classicismo, nao do Humanismo nem do Trovadorismo.",
+      "comentario": "A alternativa mistura indevidamente elementos de periodos diferentes: Camoes e nome maior do Classicismo, não do Humanismo nem do Trovadorismo.",
       "tempoEstimado": 50,
       "tags": [
         "pegadinha",
@@ -6498,14 +6498,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Comparacao entre escolas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que melhor interpreta a relacao entre Trovadorismo e Classicismo sem apagar as diferencas entre eles.",
+      "enunciado": "Assinale a alternativa que melhor interpreta a relação entre Trovadorismo e Classicismo sem apagar as diferencas entre eles.",
       "opcoes": [
         "Ambos pertencem a momentos historicos distintos, com formas e valores diferentes: um medieval e cantado; outro renascentista e formalmente disciplinado.",
         "Ambos expressam a mesma visao estetica, pois se organizam sobretudo em sonetos decassilábicos.",
@@ -6537,21 +6537,21 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
-      "subtopico": "Equivalencia de formas",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A ideia de que \"o Humanismo nao rompe de uma vez com a tradicao medieval\" pode ser reformulada corretamente por:",
+      "enunciado": "A ideia de que \"o Humanismo não rompe de uma vez com a tradicao medieval\" pode ser reformulada corretamente por:",
       "opcoes": [
-        "o periodo preserva continuidades ao mesmo tempo que anuncia mudancas culturais relevantes",
-        "o periodo e simplesmente idêntico ao Trovadorismo, sem novidade alguma",
-        "o periodo ja corresponde ao auge da epopeia classica camoniana",
-        "o periodo elimina qualquer presenca religiosa da literatura"
+        "o período preserva continuidades ao mesmo tempo que anuncia mudancas culturais relevantes",
+        "o período e simplesmente idêntico ao Trovadorismo, sem novidade alguma",
+        "o período já corresponde ao auge da epopeia classica camoniana",
+        "o período elimina qualquer presença religiosa da literatura"
       ],
-      "correta": "o periodo preserva continuidades ao mesmo tempo que anuncia mudancas culturais relevantes",
+      "correta": "o período preserva continuidades ao mesmo tempo que anuncia mudancas culturais relevantes",
       "comentario": "A formulacao correta mantem a nocao de transicao: permanencias e mudancas coexistem no Humanismo.",
       "tempoEstimado": 50,
       "tags": [
@@ -6576,14 +6576,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um comentario critico diz: \"A satira aqui se constroi pela agressao nomeada, sem disfarces, o que intensifica o ataque verbal\". A observacao se ajusta mais diretamente e:",
+      "enunciado": "Um comentario critico diz: \"A satira aqui se constroi pela agressao nomeada, sem disfarces, o que intensifica o ataque verbal\". A observação se ajusta mais diretamente e:",
       "opcoes": [
         "cantiga de maldizer",
         "cantiga de escarnio",
@@ -6591,7 +6591,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "poesia palaciana"
       ],
       "correta": "cantiga de maldizer",
-      "comentario": "A referencia ao ataque explicito e sem disfarces corresponde e logica da cantiga de maldizer.",
+      "comentario": "A referência ao ataque explícito e sem disfarces corresponde e lógica da cantiga de maldizer.",
       "tempoEstimado": 50,
       "tags": [
         "interpretacao-indireta",
@@ -6615,22 +6615,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Camoes epico",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao inserir a historia portuguesa em moldura heroica e mitologica, Os Lusiadas realiza uma operacao tipica do Classicismo porque:",
+      "enunciado": "Ao inserir a história portuguesa em moldura heroica e mitologica, Os Lusiadas realiza uma operação tipica do Classicismo porque:",
       "opcoes": [
         "articula experiencia historica particular e elevacao universalizante da epopeia",
-        "abandona qualquer relacao com o ideal classico de exemplaridade",
+        "abandona qualquer relação com o ideal classico de exemplaridade",
         "transforma o poema em simples relato documental sem elaboracao estetica",
         "retoma a estrutura das cantigas de amigo para narrar as navegacoes"
       ],
       "correta": "articula experiencia historica particular e elevacao universalizante da epopeia",
-      "comentario": "A epopeia camoniana eleva a historia de Portugal a um plano exemplar e heroico, em dialogo com a tradicao classica.",
+      "comentario": "A epopeia camoniana eleva a história de Portugal a um plano exemplar e heroico, em dialogo com a tradicao classica.",
       "tempoEstimado": 50,
       "tags": [
         "camoes",
@@ -6654,7 +6654,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Camoes lirico",
       "dificuldadeLabel": "dificil",
@@ -6663,12 +6663,12 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "A frase \"o amor, em Camoes, e simultaneamente vivido e pensado\" traduz melhor qual caracteristica?",
       "opcoes": [
-        "A experiencia amorosa aparece atravessada por reflexao conceitual e elaboracao formal.",
+        "A experiencia amorosa aparece atravessada por reflexão conceitual e elaboracao formal.",
         "O poema abandona o sentimento para se limitar a exposicao historica objetiva.",
         "A lirica camoniana se confunde com a satira de escarnio medieval.",
         "O amor e tratado como tema secundário diante do teatro moralizante."
       ],
-      "correta": "A experiencia amorosa aparece atravessada por reflexao conceitual e elaboracao formal.",
+      "correta": "A experiencia amorosa aparece atravessada por reflexão conceitual e elaboracao formal.",
       "comentario": "Na lirica camoniana, emocao e pensamento se articulam, produzindo uma expressao amorosa intelectualmente trabalhada.",
       "tempoEstimado": 50,
       "tags": [
@@ -6693,7 +6693,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
@@ -6702,13 +6702,13 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a alternativa em que a semelhanca aparente esconde uma diferenca importante entre os periodos.",
       "opcoes": [
-        "Trovadorismo e Classicismo lidam com poesia, mas isso nao os torna equivalentes em forma, contexto e visao estetica.",
+        "Trovadorismo e Classicismo lidam com poesia, mas isso não os torna equivalentes em forma, contexto e visao estetica.",
         "Humanismo e Classicismo se relacionam ao Renascimento, embora em graus distintos de consolidacao.",
         "Escarnio e maldizer pertencem e tradicao saterica trovadoresca.",
         "Gil Vicente integra o Classicismo camoniano e escreve sonetos heroicos sobre navegacoes."
       ],
       "correta": "Gil Vicente integra o Classicismo camoniano e escreve sonetos heroicos sobre navegacoes.",
-      "comentario": "A alternativa mistura indevidamente autor, periodo, genero e forma: Gil Vicente e nome do Humanismo e do teatro, nao do Classicismo epico camoniano.",
+      "comentario": "A alternativa mistura indevidamente autor, período, gênero e forma: Gil Vicente e nome do Humanismo e do teatro, não do Classicismo epico camoniano.",
       "tempoEstimado": 50,
       "tags": [
         "pegadinha",
@@ -6732,22 +6732,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
-      "subtopico": "Equivalencia de formas",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a alternativa que mantem, em outras palavras, a diferenca essencial entre escarnio e maldizer.",
       "opcoes": [
-        "No escarnio, a critica tende a ser insinuada; no maldizer, o ataque se torna mais direto e nomeado.",
-        "No escarnio, ha epopeia; no maldizer, ha teatro moral.",
+        "No escarnio, a crítica tende a ser insinuada; no maldizer, o ataque se torna mais direto e nomeado.",
+        "No escarnio, há epopeia; no maldizer, há teatro moral.",
         "No escarnio, a voz feminina domina; no maldizer, o eu lirico e sempre epico.",
-        "No escarnio, ha forma fixa classica; no maldizer, ha prosa historica."
+        "No escarnio, há forma fixa classica; no maldizer, há prosa historica."
       ],
-      "correta": "No escarnio, a critica tende a ser insinuada; no maldizer, o ataque se torna mais direto e nomeado.",
-      "comentario": "A alternativa correta reformula com precisao a distincao fundamental entre os dois tipos de cantiga saterica.",
+      "correta": "No escarnio, a crítica tende a ser insinuada; no maldizer, o ataque se torna mais direto e nomeado.",
+      "comentario": "A alternativa correta reformula com precisão a distincao fundamental entre os dois tipos de cantiga saterica.",
       "tempoEstimado": 55,
       "tags": [
         "equivalencia-de-formas",
@@ -6771,14 +6771,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Comparacao entre escolas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia as afirmacoes. I. O Trovadorismo se vincula a poesia cantada medieval. II. O Humanismo amplia os generos e ocupa posicao de transicao. III. O Classicismo consolida valores renascentistas e formas equilibradas. IV. As tres etapas sao indistinguiveis quanto ao contexto e aos procedimentos formais. Assinale a alternativa correta.",
+      "enunciado": "Leia as afirmações. I. O Trovadorismo se vincula a poesia cantada medieval. II. O Humanismo amplia os gêneros e ocupa posição de transicao. III. O Classicismo consolida valores renascentistas e formas equilibradas. IV. As tres etapas são indistinguiveis quanto ao contexto e aos procedimentos formais. Assinale a alternativa correta.",
       "opcoes": [
         "Apenas I, II e III estao corretas.",
         "Apenas II e IV estao corretas.",
@@ -6810,14 +6810,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se um comentario disser que certo periodo literario \"submete a expressao artistica a proporcao, clareza e medida, sem romper o vinculo com a heranca greco-latina\", a referencia mais adequada sera ao:",
+      "enunciado": "Se um comentario disser que certo período literario \"submete a expressao artistica a proporcao, clareza e medida, sem romper o vinculo com a heranca greco-latina\", a referência mais adequada será ao:",
       "opcoes": [
         "Classicismo",
         "Trovadorismo",
@@ -6849,21 +6849,21 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Comparacao entre escolas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que melhor resume, sem simplificacoes indevidas, a progressao entre Trovadorismo, Humanismo e Classicismo.",
+      "enunciado": "Assinale a alternativa que melhor resume, sem simplificacoes indevidas, a progressão entre Trovadorismo, Humanismo e Classicismo.",
       "opcoes": [
-        "Parte-se de uma lirica medieval cantada, passa-se por uma fase de transicao com ampliacao de generos e chega-se a consolidacao renascentista da forma classica.",
+        "Parte-se de uma lirica medieval cantada, passa-se por uma fase de transicao com ampliacao de gêneros e chega-se a consolidacao renascentista da forma classica.",
         "Parte-se da epopeia classica, evolui-se para as cantigas satericas e conclui-se com a poesia palaciana.",
         "Os tras periodos repetem o mesmo projeto estatico, mudando apenas os autores.",
         "O Humanismo interrompe toda continuidade historica, e o Classicismo retoma integralmente o Trovadorismo."
       ],
-      "correta": "Parte-se de uma lirica medieval cantada, passa-se por uma fase de transicao com ampliacao de generos e chega-se a consolidacao renascentista da forma classica.",
+      "correta": "Parte-se de uma lirica medieval cantada, passa-se por uma fase de transicao com ampliacao de gêneros e chega-se a consolidacao renascentista da forma classica.",
       "comentario": "A alternativa correta sintetiza os tras momentos preservando a ordem historica e a diferenca de formas, valores e contexto.",
       "tempoEstimado": 55,
       "tags": [
@@ -6888,14 +6888,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a formulacao: \"Nesse periodo, a literatura busca ordenar a expressao, tomar a Antiguidade como referencia e tratar temas de alcance mais universal.\" A descricao aponta para o:",
+      "enunciado": "Leia a formulacao: \"Nesse período, a literatura busca ordenar a expressao, tomar a Antiguidade como referência e tratar temas de alcance mais universal.\" A descricao aponta para o:",
       "opcoes": [
         "Classicismo",
         "Trovadorismo",
@@ -6903,7 +6903,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "teatro saterico vicentino"
       ],
       "correta": "Classicismo",
-      "comentario": "A sintese reune tracos essenciais do Classicismo: ordem formal, dialogo com a tradicao classica e universalizacao tematica.",
+      "comentario": "A síntese reune tracos essenciais do Classicismo: ordem formal, dialogo com a tradicao classica e universalizacao temática.",
       "tempoEstimado": 50,
       "tags": [
         "interpretacao-indireta",
@@ -6927,14 +6927,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que contem uma confusao tipica entre os periodos literarios estudados.",
+      "enunciado": "Assinale a alternativa que contém uma confusao tipica entre os periodos literarios estudados.",
       "opcoes": [
         "As cantigas satericas pertencem ao Trovadorismo.",
         "O teatro de Gil Vicente integra o Humanismo.",
@@ -6966,9 +6966,9 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
-      "subtopico": "Equivalencia de formas",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
@@ -6981,7 +6981,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "cronica e teatro"
       ],
       "correta": "escarnio e maldizer",
-      "comentario": "A equivalencia retoma a oposicao entre critica indireta, propria do escarnio, e ataque explicito, tepico do maldizer.",
+      "comentario": "A equivalência retoma a oposicao entre crítica indireta, própria do escarnio, e ataque explícito, tepico do maldizer.",
       "tempoEstimado": 50,
       "tags": [
         "equivalencia-de-formas",
@@ -7005,18 +7005,18 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Camoes epico",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao unir historia nacional, heroismo e mitologia, Os Lusiadas confirma que a epopeia classica:",
+      "enunciado": "Ao unir história nacional, heroismo e mitologia, Os Lusiadas confirma que a epopeia classica:",
       "opcoes": [
         "eleva um evento historico particular a um plano literario exemplar",
-        "abandona toda referencia cultural anterior em favor da oralidade",
-        "repete a logica das cantigas de amigo sem transformacoes",
+        "abandona toda referência cultural anterior em favor da oralidade",
+        "repete a lógica das cantigas de amigo sem transformações",
         "reduz a literatura a observacoes exclusivamente cotidianas"
       ],
       "correta": "eleva um evento historico particular a um plano literario exemplar",
@@ -7044,7 +7044,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Camoes lirico",
       "dificuldadeLabel": "dificil",
@@ -7053,13 +7053,13 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "Assinale a alternativa que interpreta corretamente a lirica camoniana sem reduzi-la a sentimentalismo simples.",
       "opcoes": [
-        "Ela articula experiencia afetiva e reflexao elaborada em construcao formal rigorosa.",
-        "Ela se limita e repeticao direta da cantiga de amigo medieval.",
+        "Ela articula experiencia afetiva e reflexão elaborada em construção formal rigorosa.",
+        "Ela se limita e repetição direta da cantiga de amigo medieval.",
         "Ela exclui completamente conflitos e paradoxos na abordagem do amor.",
         "Ela abandona a poesia para se transformar em narrativa heroica."
       ],
-      "correta": "Ela articula experiencia afetiva e reflexao elaborada em construcao formal rigorosa.",
-      "comentario": "A lirica de Camoes trabalha o amor de modo reflexivo e formalmente controlado, nao como emocao imediata e simples.",
+      "correta": "Ela articula experiencia afetiva e reflexão elaborada em construção formal rigorosa.",
+      "comentario": "A lirica de Camoes trabalha o amor de modo reflexivo e formalmente controlado, não como emocao imediata e simples.",
       "tempoEstimado": 50,
       "tags": [
         "camoes",
@@ -7083,7 +7083,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Comparacao entre escolas",
       "dificuldadeLabel": "dificil",
@@ -7094,7 +7094,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "opcoes": [
         "O Humanismo opera como fase de transicao e diversificacao; o Classicismo consolida mais claramente o ideal renascentista de forma e razao.",
         "O Humanismo corresponde e lirica cantada medieval, enquanto o Classicismo coincide com a poesia palaciana.",
-        "O Humanismo e o Classicismo sao nomes diferentes para o mesmo estagio estatico.",
+        "O Humanismo e o Classicismo são nomes diferentes para o mesmo estagio estatico.",
         "O Humanismo se resume as cantigas satericas, e o Classicismo as cronicas historicas."
       ],
       "correta": "O Humanismo opera como fase de transicao e diversificacao; o Classicismo consolida mais claramente o ideal renascentista de forma e razao.",
@@ -7122,14 +7122,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um resumo afirma: \"A voz poetica feminina lamenta a ausencia do amado em ambiente natural, com repeticao e musicalidade.\" Mesmo sem nomear o genero, o resumo aponta para:",
+      "enunciado": "Um resumo afirma: \"A voz poetica feminina lamenta a ausência do amado em ambiente natural, com repetição e musicalidade.\" Mesmo sem nomear o gênero, o resumo aponta para:",
       "opcoes": [
         "cantiga de amigo",
         "cantiga de amor",
@@ -7137,7 +7137,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "cronica humanista"
       ],
       "correta": "cantiga de amigo",
-      "comentario": "A presenca da voz feminina, do cenario natural e da musicalidade repetitiva caracteriza a cantiga de amigo.",
+      "comentario": "A presença da voz feminina, do cenario natural e da musicalidade repetitiva caracteriza a cantiga de amigo.",
       "tempoEstimado": 50,
       "tags": [
         "interpretacao-indireta",
@@ -7161,22 +7161,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa cuja aparencia de correcao depende de uma troca indevida de elementos entre escolas.",
+      "enunciado": "Assinale a alternativa cuja aparencia de correção depende de uma troca indevida de elementos entre escolas.",
       "opcoes": [
         "A cantiga de amor recorre a idealizacao da dama e ao sofrimento amoroso.",
-        "O Humanismo portugues inclui teatro e prosa historica.",
-        "O Classicismo valoriza equilibrio formal e referencia a Antiguidade.",
+        "O Humanismo português inclui teatro e prosa historica.",
+        "O Classicismo valoriza equilíbrio formal e referência a Antiguidade.",
         "As cantigas de escarnio e maldizer revelam a consolidacao renascentista do soneto."
       ],
       "correta": "As cantigas de escarnio e maldizer revelam a consolidacao renascentista do soneto.",
-      "comentario": "A alternativa mistura generos satericos do Trovadorismo com a forma poetica classica do Renascimento.",
+      "comentario": "A alternativa mistura gêneros satericos do Trovadorismo com a forma poetica classica do Renascimento.",
       "tempoEstimado": 50,
       "tags": [
         "pegadinha",
@@ -7200,14 +7200,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
-      "subtopico": "Equivalencia de formas",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Dizer que \"o Classicismo nao copia os antigos de modo servil, mas reelabora seus modelos\" equivale a afirmar que ele:",
+      "enunciado": "Dizer que \"o Classicismo não copia os antigos de modo servil, mas reelabora seus modelos\" equivale a afirmar que ele:",
       "opcoes": [
         "dialoga com a tradicao classica de forma criativa e historica",
         "abandona completamente qualquer influencia greco-latina",
@@ -7239,7 +7239,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Comparacao entre escolas",
       "dificuldadeLabel": "dificil",
@@ -7248,12 +7248,12 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "Ao comparar Trovadorismo, Humanismo e Classicismo, qual formulacao evita simplificacoes indevidas?",
       "opcoes": [
-        "Ha continuidade historica entre os periodos, mas cada um apresenta formas, valores e focos literarios proprios.",
+        "Há continuidade historica entre os periodos, mas cada um apresenta formas, valores e focos literarios proprios.",
         "Os tras momentos diferem apenas no nome dos autores representativos.",
-        "Trovadorismo e Classicismo sao equivalentes porque ambos empregam poesia.",
-        "O Humanismo e apenas uma repeticao exata do Trovadorismo."
+        "Trovadorismo e Classicismo são equivalentes porque ambos empregam poesia.",
+        "O Humanismo e apenas uma repetição exata do Trovadorismo."
       ],
-      "correta": "Ha continuidade historica entre os periodos, mas cada um apresenta formas, valores e focos literarios proprios.",
+      "correta": "Há continuidade historica entre os periodos, mas cada um apresenta formas, valores e focos literarios proprios.",
       "comentario": "A alternativa correta reconhece tanto a passagem historica quanto a singularidade de cada etapa literaria.",
       "tempoEstimado": 50,
       "tags": [
@@ -7278,14 +7278,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um comentario critico afirma: \"A dama e colocada em posicao superior, e o sujeito poetico se apresenta em postura de submissao amorosa\". O comentario remete mais diretamente a logica da:",
+      "enunciado": "Um comentario critico afirma: \"A dama e colocada em posição superior, e o sujeito poetico se apresenta em postura de submissao amorosa\". O comentario remete mais diretamente a lógica da:",
       "opcoes": [
         "cantiga de amor",
         "cantiga de amigo",
@@ -7293,7 +7293,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "epopeia classica"
       ],
       "correta": "cantiga de amor",
-      "comentario": "A idealizacao da dama e a submissao do eu lirico sao marcas da cantiga de amor e de sua relacao com a vassalagem amorosa.",
+      "comentario": "A idealizacao da dama e a submissao do eu lirico são marcas da cantiga de amor e de sua relação com a vassalagem amorosa.",
       "tempoEstimado": 55,
       "tags": [
         "interpretacao-indireta",
@@ -7317,22 +7317,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Camoes epico",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que melhor interpreta a funcao da tradicao classica em Os Lusiadas.",
+      "enunciado": "Assinale a alternativa que melhor interpreta a função da tradicao classica em Os Lusiadas.",
       "opcoes": [
         "Ela fornece moldura estetica e simbolica para engrandecer a experiencia historica portuguesa.",
-        "Ela e recusada, pois a obra pretende romper com qualquer heranca cultural anterior.",
-        "Ela aparece apenas como ornamento sem efeito na construcao do sentido epico.",
+        "ela é recusada, pois a obra pretende romper com qualquer heranca cultural anterior.",
+        "Ela aparece apenas como ornamento sem efeito na construção do sentido epico.",
         "Ela transforma a obra em cronica medieval de circulacao oral."
       ],
       "correta": "Ela fornece moldura estetica e simbolica para engrandecer a experiencia historica portuguesa.",
-      "comentario": "A tradicao classica participa ativamente da construcao da grandeza epica, e nao como simples adorno secundário.",
+      "comentario": "A tradicao classica participa ativamente da construção da grandeza epica, e não como simples adorno secundário.",
       "tempoEstimado": 55,
       "tags": [
         "os-lusiadas",
@@ -7356,7 +7356,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Camoes lirico",
       "dificuldadeLabel": "dificil",
@@ -7395,22 +7395,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que parece bem formulada, mas embaralha indevidamente autor, genero e periodo.",
+      "enunciado": "Assinale a alternativa que parece bem formulada, mas embaralha indevidamente autor, gênero e período.",
       "opcoes": [
-        "Gil Vicente e nome central do teatro humanista portugues.",
+        "Gil Vicente e nome central do teatro humanista português.",
         "Camoes se destaca no Classicismo pela lirica e pela epopeia.",
         "As cantigas satericas pertencem ao Trovadorismo medieval.",
         "Camoes representa a poesia palaciana humanista e escreve principalmente cantigas de escarnio."
       ],
       "correta": "Camoes representa a poesia palaciana humanista e escreve principalmente cantigas de escarnio.",
-      "comentario": "A alternativa confunde Camoes com formas e periodos que nao lhe correspondem: poesia palaciana e cantigas satericas nao definem sua producao.",
+      "comentario": "A alternativa confunde Camoes com formas e periodos que não lhe correspondem: poesia palaciana e cantigas satericas não definem sua produção.",
       "tempoEstimado": 55,
       "tags": [
         "pegadinha",
@@ -7434,22 +7434,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
-      "subtopico": "Equivalencia de formas",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "A afirmacao \"o Classicismo busca submeter a expressao a ordem e a medida\" equivale a dizer que:",
       "opcoes": [
-        "a forma participa da construcao racional do texto e evita o excesso descontrolado",
-        "o poeta classico rejeita qualquer organizacao formal",
+        "a forma participa da construção racional do texto e evita o excesso descontrolado",
+        "o poeta classico rejeita qualquer organização formal",
         "a poesia classica depende exclusivamente da improvisacao oral",
         "o poema classico se limita e agressao saterica medieval"
       ],
-      "correta": "a forma participa da construcao racional do texto e evita o excesso descontrolado",
-      "comentario": "A reformulacao correta preserva a ideia de equilibrio e controle formal tipica da estetica classica.",
+      "correta": "a forma participa da construção racional do texto e evita o excesso descontrolado",
+      "comentario": "A reformulacao correta preserva a ideia de equilíbrio é controle formal tipica da estetica classica.",
       "tempoEstimado": 55,
       "tags": [
         "equivalencia-de-formas",
@@ -7473,14 +7473,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a descricao: \"A critica nao apenas ridiculariza; ela nomeia e agride, reduzindo a distancia entre alvo e ataque.\" A descricao refere-se e:",
+      "enunciado": "Leia a descricao: \"A crítica não apenas ridiculariza; ela nomeia e agride, reduzindo a distância entre alvo e ataque.\" A descricao refere-se é:",
       "opcoes": [
         "cantiga de maldizer",
         "cantiga de escarnio",
@@ -7488,7 +7488,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "poesia palaciana"
       ],
       "correta": "cantiga de maldizer",
-      "comentario": "A descricao destaca a explicitude do ataque, traco proprio do maldizer.",
+      "comentario": "A descricao destaca a explicitude do ataque, traco próprio do maldizer.",
       "tempoEstimado": 55,
       "tags": [
         "interpretacao-indireta",
@@ -7512,7 +7512,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Comparacao entre escolas",
       "dificuldadeLabel": "dificil",
@@ -7522,9 +7522,9 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "enunciado": "Qual alternativa interpreta corretamente a passagem do Humanismo ao Classicismo?",
       "opcoes": [
         "A transicao humanista prepara um terreno que o Classicismo organiza mais plenamente em chave renascentista.",
-        "O Humanismo ja realiza integralmente tudo aquilo que o Classicismo apenas repetira sem diferenca.",
+        "O Humanismo já realiza integralmente tudo aquilo que o Classicismo apenas repetira sem diferenca.",
         "A passagem ao Classicismo significa retorno direto as cantigas medievais.",
-        "O Classicismo rompe com qualquer presenca de racionalidade herdada do Renascimento."
+        "O Classicismo rompe com qualquer presença de racionalidade herdada do Renascimento."
       ],
       "correta": "A transicao humanista prepara um terreno que o Classicismo organiza mais plenamente em chave renascentista.",
       "comentario": "A alternativa correta entende o Humanismo como fase preparateria e o Classicismo como momento de consolidacao estetica mais nitida.",
@@ -7551,7 +7551,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Camoes epico",
       "dificuldadeLabel": "dificil",
@@ -7560,13 +7560,13 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "Em uma leitura mais refinada, dizer que Os Lusiadas universaliza a experiencia portuguesa significa reconhecer que a obra:",
       "opcoes": [
-        "transforma a historia nacional em materia exemplar dentro de uma moldura epica classica",
+        "transforma a história nacional em materia exemplar dentro de uma moldura epica classica",
         "apaga completamente a singularidade historica de Portugal",
         "abandona o heroismo em favor do relato intimo e subjetivo",
         "substitui a tradicao classica por procedimentos exclusivos das cantigas trovadorescas"
       ],
-      "correta": "transforma a historia nacional em materia exemplar dentro de uma moldura epica classica",
-      "comentario": "Universalizar, aqui, nao significa apagar o particular, mas elevá-lo a um plano heroico e exemplar.",
+      "correta": "transforma a história nacional em materia exemplar dentro de uma moldura epica classica",
+      "comentario": "Universalizar, aqui, não significa apagar o particular, mas elevá-lo a um plano heroico e exemplar.",
       "tempoEstimado": 55,
       "tags": [
         "os-lusiadas",
@@ -7590,14 +7590,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Camoes lirico",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa expressa com mais precisao uma leitura sofisticada da lirica camoniana?",
+      "enunciado": "Qual alternativa expressa com mais precisão uma leitura sofisticada da lirica camoniana?",
       "opcoes": [
         "O poema articula emocao, paradoxo e pensamento em forma cuidadosamente construida.",
         "O poema elimina qualquer tensao interna para apresentar amor simples e linear.",
@@ -7629,21 +7629,21 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa cuja aparencia de sintese esconde um erro conceitual relevante.",
+      "enunciado": "Assinale a alternativa cuja aparencia de síntese esconde um erro conceitual relevante.",
       "opcoes": [
         "O Trovadorismo se vincula e lirica medieval cantada.",
-        "O Humanismo amplia generos e ocupa posicao de transicao.",
+        "O Humanismo amplia gêneros e ocupa posição de transicao.",
         "O Classicismo valoriza razao, medida e dialogo com a Antiguidade.",
-        "O Humanismo portugues se define principalmente pelo soneto camoniano e pela epopeia classica."
+        "O Humanismo português se define principalmente pelo soneto camoniano e pela epopeia classica."
       ],
-      "correta": "O Humanismo portugues se define principalmente pelo soneto camoniano e pela epopeia classica.",
+      "correta": "O Humanismo português se define principalmente pelo soneto camoniano e pela epopeia classica.",
       "comentario": "A alternativa desloca para o Humanismo elementos centrais do Classicismo ligado a Camoes.",
       "tempoEstimado": 55,
       "tags": [
@@ -7668,22 +7668,22 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
-      "subtopico": "Equivalencia de formas",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A frase \"o Humanismo alarga o repertorio literario e ocupa lugar intermediario entre duas mentalidades\" pode ser reescrita, sem perda de sentido, como:",
+      "enunciado": "A frase \"o Humanismo alarga o repertório literario e ocupa lugar intermediario entre duas mentalidades\" pode ser reescrita, sem perda de sentido, como:",
       "opcoes": [
-        "o periodo diversifica formas de escrita e funciona como etapa de passagem cultural",
-        "o periodo repete integralmente as cantigas medievais, sem novidade",
-        "o periodo coincide com a plena consolidacao do soneto classico camoniano",
-        "o periodo elimina toda relacao com a historia e com o teatro"
+        "o período diversifica formas de escrita e funciona como etapa de passagem cultural",
+        "o período repete integralmente as cantigas medievais, sem novidade",
+        "o período coincide com a plena consolidacao do soneto classico camoniano",
+        "o período elimina toda relação com a história e com o teatro"
       ],
-      "correta": "o periodo diversifica formas de escrita e funciona como etapa de passagem cultural",
-      "comentario": "A alternativa correta preserva as ideias de ampliacao de generos e de transicao historica, centrais ao Humanismo.",
+      "correta": "o período diversifica formas de escrita e funciona como etapa de passagem cultural",
+      "comentario": "A alternativa correta preserva as ideias de ampliacao de gêneros e de transicao historica, centrais ao Humanismo.",
       "tempoEstimado": 55,
       "tags": [
         "equivalencia-de-formas",
@@ -7707,14 +7707,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
-      "subtopico": "Interpretacao indireta",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia a sintese: \"A composicao apresenta forma fixa, linguagem elaborada e esforco de disciplinar poeticamente a experiencia humana.\" A sintese se ajusta mais diretamente a estetica do:",
+      "enunciado": "Leia a síntese: \"A composicao apresenta forma fixa, linguagem elaborada e esforço de disciplinar poeticamente a experiencia humana.\" A síntese se ajusta mais diretamente a estetica do:",
       "opcoes": [
         "Classicismo",
         "Trovadorismo",
@@ -7722,7 +7722,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "teatro vicentino"
       ],
       "correta": "Classicismo",
-      "comentario": "A referencia e forma fixa e e disciplina da experiencia humana remete ao ideal classico de medida e elaboracao formal.",
+      "comentario": "A referência e forma fixa e e disciplina da experiencia humana remete ao ideal classico de medida e elaboracao formal.",
       "tempoEstimado": 55,
       "tags": [
         "interpretacao-indireta",
@@ -7746,7 +7746,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Comparacao entre escolas",
       "dificuldadeLabel": "dificil",
@@ -7755,12 +7755,12 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "tipo": "multipla_escolha",
       "enunciado": "Em uma leitura comparativa rigorosa, qual alternativa e a mais adequada?",
       "opcoes": [
-        "O Trovadorismo privilegia a lirica cantada medieval; o Humanismo diversifica generos; o Classicismo consolida a forma renascentista equilibrada.",
+        "O Trovadorismo privilegia a lirica cantada medieval; o Humanismo diversifica gêneros; o Classicismo consolida a forma renascentista equilibrada.",
         "O Trovadorismo inaugura a epopeia camoniana; o Humanismo a transforma em cantiga; o Classicismo a abandona.",
         "As tres etapas possuem o mesmo sistema de formas e a mesma visao de mundo.",
-        "O Humanismo nao tem qualquer relacao historica com a passagem do medievo ao Renascimento."
+        "O Humanismo não tem qualquer relação historica com a passagem do medievo ao Renascimento."
       ],
-      "correta": "O Trovadorismo privilegia a lirica cantada medieval; o Humanismo diversifica generos; o Classicismo consolida a forma renascentista equilibrada.",
+      "correta": "O Trovadorismo privilegia a lirica cantada medieval; o Humanismo diversifica gêneros; o Classicismo consolida a forma renascentista equilibrada.",
       "comentario": "A alternativa correta sintetiza os tras momentos preservando o foco dominante de cada um deles.",
       "tempoEstimado": 55,
       "tags": [
@@ -7785,14 +7785,14 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Comparacao entre escolas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia as afirmacoes. I. Cantigas de amor e de amigo pertencem ao Trovadorismo. II. Gil Vicente e referencia do Humanismo portugues. III. Camoes e autor central do Classicismo. IV. O soneto classico e forma dominante do Trovadorismo medieval. Assinale a alternativa correta.",
+      "enunciado": "Leia as afirmações. I. Cantigas de amor e de amigo pertencem ao Trovadorismo. II. Gil Vicente e referência do Humanismo português. III. Camoes e autor central do Classicismo. IV. O soneto classico e forma dominante do Trovadorismo medieval. Assinale a alternativa correta.",
       "opcoes": [
         "Apenas I, II e III estao corretas.",
         "Apenas I e IV estao corretas.",
@@ -7800,7 +7800,7 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
         "I, II, III e IV estao corretas."
       ],
       "correta": "Apenas I, II e III estao corretas.",
-      "comentario": "A afirmacao IV esta incorreta, pois o soneto classico pertence ao universo renascentista, nao ao Trovadorismo.",
+      "comentario": "A afirmacao IV está incorreta, pois o soneto classico pertence ao universo renascentista, não ao Trovadorismo.",
       "tempoEstimado": 55,
       "tags": [
         "comparacao-entre-escolas",
@@ -7824,19 +7824,19 @@ export const literaturaTrovadorismoHumanismoClassicismo = {
       "serie": [
         1
       ],
-      "materia": "Portugues",
+      "materia": "Português",
       "topico": "Literatura: Trovadorismo, Humanismo e Classicismo",
       "subtopico": "Comparacao entre escolas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que melhor sintetiza, com precisao conceitual, o percurso literario estudado neste tepico.",
+      "enunciado": "Assinale a alternativa que melhor sintetiza, com precisão conceitual, o percurso literario estudado neste tepico.",
       "opcoes": [
         "Da lirica medieval cantada do Trovadorismo passa-se ao Humanismo de transicao e, depois, ao Classicismo que organiza a expressao segundo o ideal renascentista de medida e forma.",
-        "Do Classicismo surge o Trovadorismo, seguido pelo Humanismo, em um percurso sem alteracoes de genero ou mentalidade.",
+        "Do Classicismo surge o Trovadorismo, seguido pelo Humanismo, em um percurso sem alterações de gênero ou mentalidade.",
         "O Humanismo elimina qualquer vinculo com o medievo, e o Classicismo retoma literalmente as cantigas trovadorescas.",
-        "As tres etapas sao apenas variacoes nominais de um mesmo projeto estatico."
+        "As tres etapas são apenas variacoes nominais de um mesmo projeto estatico."
       ],
       "correta": "Da lirica medieval cantada do Trovadorismo passa-se ao Humanismo de transicao e, depois, ao Classicismo que organiza a expressao segundo o ideal renascentista de medida e forma.",
       "comentario": "A alternativa correta sintetiza a sequencia historica e estetica do tepico, preservando as diferencas centrais entre os tras periodos.",

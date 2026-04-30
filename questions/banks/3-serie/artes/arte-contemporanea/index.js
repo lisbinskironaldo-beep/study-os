@@ -9,13 +9,13 @@ const blocos = [
   {
     subtopico: "Contexto da arte contemporanea",
     habilidade:
-      "identificar caracteristicas gerais da arte contemporanea",
+      "identificar características gerais da arte contemporanea",
     tags: ["arte contemporanea", "pluralidade", "linguagens"],
     fatos: [
       {
         lead: "a arte contemporanea",
-        answer: "uma producao marcada pela diversidade de linguagens e propostas",
-        why: "ela nao segue um unico estilo e acolhe suportes, materiais e discursos variados"
+        answer: "uma produção marcada pela diversidade de linguagens e propostas",
+        why: "ela não segue um único estilo e acolhe suportes, materiais e discursos variados"
       },
       {
         lead: "a expansao de linguagens",
@@ -25,15 +25,15 @@ const blocos = [
       {
         lead: "a centralidade da ideia",
         answer: "a valorizacao do conceito como parte essencial da obra",
-        why: "muitas obras contemporaneas destacam a reflexao mais do que a tecnica tradicional"
+        why: "muitas obras contemporaneas destacam a reflexão mais do que a técnica tradicional"
       },
       {
         lead: "o engajamento contemporaneo",
         answer: "a aproximacao da arte com debates politicos, sociais e culturais do presente",
-        why: "a producao contemporanea costuma dialogar com conflitos e temas atuais"
+        why: "a produção contemporanea costuma dialogar com conflitos e temas atuais"
       },
       {
-        lead: "a pluralidade estetica",
+        lead: "a pluralidade estética",
         answer: "a convivencia de propostas visuais, conceituais e materiais muito diferentes",
         why: "na contemporaneidade, varias tendencias coexistem sem uma regra unica"
       }
@@ -47,12 +47,12 @@ const blocos = [
     fatos: [
       {
         lead: "a arte conceitual",
-        answer: "uma pratica em que a ideia tem papel central na construcao da obra",
-        why: "o conceito orienta a experiencia e o sentido do trabalho artistico"
+        answer: "uma pratica em que a ideia tem papel central na construção da obra",
+        why: "o conceito orienta a experiencia e o sentido do trabalho artístico"
       },
       {
         lead: "a primazia do conceito",
-        answer: "a valorizacao do pensamento artistico acima do acabamento material",
+        answer: "a valorizacao do pensamento artístico acima do acabamento material",
         why: "nessa linguagem, a proposicao intelectual pode ser o foco principal"
       },
       {
@@ -61,7 +61,7 @@ const blocos = [
         why: "muitos artistas conceituais utilizam palavras para construir significado"
       },
       {
-        lead: "a interrogacao do sistema artistico",
+        lead: "a interrogacao do sistema artístico",
         answer: "o questionamento de museus, mercado, autoria e modos de exposicao",
         why: "a arte conceitual frequentemente debate o proprio circuito da arte"
       },
@@ -76,12 +76,12 @@ const blocos = [
     subtopico: "Performance e corpo",
     habilidade:
       "compreender a importancia da ideia, do corpo e do espaco na obra",
-    tags: ["performance", "corpo", "acao artistica"],
+    tags: ["performance", "corpo", "ação artística"],
     fatos: [
       {
         lead: "a performance",
-        answer: "uma linguagem artistica baseada em acao, presenca e tempo",
-        why: "ela acontece como evento e envolve corpo, gesto e situacao"
+        answer: "uma linguagem artística baseada em ação, presença e tempo",
+        why: "ela acontece como evento e envolve corpo, gesto e situação"
       },
       {
         lead: "a arte corporal",
@@ -89,42 +89,42 @@ const blocos = [
         why: "nessa pratica, o corpo deixa de ser apenas representado e passa a atuar"
       },
       {
-        lead: "a acao performativa",
-        answer: "a realizacao de gestos e procedimentos com intencao artistica",
+        lead: "a ação performativa",
+        answer: "a realizacao de gestos e procedimentos com intencao artística",
         why: "a obra se constitui no proprio ato executado"
       },
       {
         lead: "a interacao performatica",
-        answer: "a participacao ou aproximacao do publico na experiencia da performance",
-        why: "muitas performances criam relacao direta entre artista, espaco e observador"
+        answer: "a participação ou aproximacao do público na experiencia da performance",
+        why: "muitas performances criam relação direta entre artista, espaco e observador"
       },
       {
         lead: "o registro da performance",
         answer: "a documentacao em foto, video ou texto de uma obra efemera",
-        why: "como a performance acontece no tempo, o registro preserva sua memoria"
+        why: "como a performance acontece no tempo, o registro preserva sua memória"
       }
     ]
   },
   {
-    subtopico: "Instalacao e ocupacao do espaco",
+    subtopico: "Instalação e ocupacao do espaco",
     habilidade:
       "compreender a importancia da ideia, do corpo e do espaco na obra",
     tags: ["instalacao", "espaco", "imersao"],
     fatos: [
       {
-        lead: "a instalacao",
+        lead: "a instalação",
         answer: "uma obra que organiza elementos no espaco para produzir experiencia",
-        why: "ela depende da relacao entre objetos, ambiente e observador"
+        why: "ela depende da relação entre objetos, ambiente e observador"
       },
       {
         lead: "a ocupacao espacial",
         answer: "o uso do ambiente como parte constitutiva da obra",
-        why: "na instalacao, o espaco nao e neutro; ele integra o sentido artistico"
+        why: "na instalação, o espaco não é neutro; ele integra o sentido artístico"
       },
       {
         lead: "a experiencia imersiva",
-        answer: "o envolvimento sensorial do publico no ambiente artistico",
-        why: "algumas instalacoes criam participacao fisica e perceptiva intensa"
+        answer: "o envolvimento sensorial do público no ambiente artístico",
+        why: "algumas instalacoes criam participação física e perceptiva intensa"
       },
       {
         lead: "a linguagem expandida",
@@ -132,9 +132,9 @@ const blocos = [
         why: "instalacoes costumam reunir luz, som, objetos, imagens e texto"
       },
       {
-        lead: "a espacialidade da instalacao",
-        answer: "a organizacao intencional do percurso e da percepcao do publico",
-        why: "o modo de circular pelo espaco altera a interpretacao da obra"
+        lead: "a espacialidade da instalação",
+        answer: "a organização intencional do percurso e da percepcao do público",
+        why: "o modo de circular pelo espaco altera a interpretação da obra"
       }
     ]
   },
@@ -146,27 +146,27 @@ const blocos = [
     fatos: [
       {
         lead: "a fotografia",
-        answer: "um meio artistico capaz de registrar, construir e problematizar imagens",
+        answer: "um meio artístico capaz de registrar, construir e problematizar imagens",
         why: "na arte contemporanea, a fotografia vai alem do registro documental"
       },
       {
         lead: "a videoarte",
-        answer: "o uso experimental da imagem em movimento como linguagem artistica",
-        why: "ela explora tempo, narrativa, montagem e sensacao visual"
+        answer: "o uso experimental da imagem em movimento como linguagem artística",
+        why: "ela explora tempo, narrativa, montagem e sensação visual"
       },
       {
         lead: "a cultura da imagem",
-        answer: "a forte presenca de imagens na vida cotidiana e nos processos culturais",
+        answer: "a forte presença de imagens na vida cotidiana e nos processos culturais",
         why: "a arte contemporanea dialoga com a circulacao intensa de imagens"
       },
       {
         lead: "a linguagem audiovisual",
-        answer: "a articulacao de som e imagem na producao de sentido artistico",
-        why: "videos e outras midias audiovisuais trabalham com varios canais perceptivos"
+        answer: "a articulação de som e imagem na produção de sentido artístico",
+        why: "videos e outras midias audiovisuais trabalham com vários canais perceptivos"
       },
       {
         lead: "a problematizacao da imagem",
-        answer: "a reflexao critica sobre representacao, manipulacao e circulacao visual",
+        answer: "a reflexão crítica sobre representação, manipulação e circulacao visual",
         why: "muitas obras questionam como imagens constroem realidades e discursos"
       }
     ]
@@ -175,32 +175,32 @@ const blocos = [
     subtopico: "Street art e arte urbana",
     habilidade:
       "reconhecer meios audiovisuais, digitais e urbanos como linguagens artisticas",
-    tags: ["arte urbana", "grafite", "espaco publico"],
+    tags: ["arte urbana", "grafite", "espaco público"],
     fatos: [
       {
         lead: "a arte urbana",
-        answer: "uma producao realizada em dialogo com a cidade e o espaco publico",
+        answer: "uma produção realizada em dialogo com a cidade e o espaco público",
         why: "ela ocupa muros, ruas e superficies urbanas para comunicar ideias"
       },
       {
         lead: "o grafite",
         answer: "uma linguagem visual urbana associada a pintura mural e identidade autoral",
-        why: "ele se destaca pelo uso de cor, traco e presenca na cidade"
+        why: "ele se destaca pelo uso de cor, traco e presença na cidade"
       },
       {
         lead: "a tag",
         answer: "uma marca grafica simplificada ligada a assinatura do autor no espaco urbano",
-        why: "ela enfatiza autoria, presenca e repeticao na paisagem urbana"
+        why: "ela enfatiza autoria, presença e repeticao na paisagem urbana"
       },
       {
-        lead: "a disputa pelo espaco publico",
-        answer: "o conflito entre expressao artistica, regulacao urbana e usos da cidade",
+        lead: "a disputa pelo espaco público",
+        answer: "o conflito entre expressao artística, regulacao urbana e usos da cidade",
         why: "a arte urbana provoca debates sobre visibilidade e direito a cidade"
       },
       {
         lead: "a diversidade da intervencao urbana",
         answer: "a existencia de mural, estencil, lambe-lambe e outras praticas na paisagem",
-        why: "a arte urbana reune tecnicas e intencoes variadas"
+        why: "a arte urbana reune técnicas e intenções variadas"
       }
     ]
   },
@@ -213,26 +213,26 @@ const blocos = [
       {
         lead: "a land art",
         answer: "uma linguagem que intervem na paisagem natural como parte da obra",
-        why: "o ambiente deixa de ser apenas tema e passa a integrar a criacao"
+        why: "o ambiente deixa de ser apenas tema e passa a integrar a criação"
       },
       {
         lead: "a arte site specific",
         answer: "uma obra pensada para um lugar determinado e inseparavel dele",
-        why: "seu sentido depende das caracteristicas concretas do espaco"
+        why: "seu sentido depende das características concretas do espaco"
       },
       {
         lead: "a materialidade ambiental",
-        answer: "o uso de terra, pedra, agua e outros elementos do meio na construcao da obra",
+        answer: "o uso de terra, pedra, agua e outros elementos do meio na construção da obra",
         why: "essas praticas trabalham diretamente com materiais da paisagem"
       },
       {
         lead: "a intervencao na natureza",
-        answer: "a acao artistica que transforma ou reorganiza elementos do ambiente natural",
-        why: "a obra surge da relacao direta entre gesto artistico e espaco natural"
+        answer: "a ação artística que transforma ou reorganiza elementos do ambiente natural",
+        why: "a obra surge da relação direta entre gesto artístico e espaco natural"
       },
       {
         lead: "a efemeridade ambiental",
-        answer: "o carater passageiro de obras sujeitas ao tempo e aos processos naturais",
+        answer: "o caráter passageiro de obras sujeitas ao tempo e aos processos naturais",
         why: "vento, agua e erosao podem alterar a obra ao longo do tempo"
       }
     ]
@@ -245,7 +245,7 @@ const blocos = [
     fatos: [
       {
         lead: "a arte digital",
-        answer: "uma producao que utiliza recursos computacionais na criacao ou exibicao",
+        answer: "uma produção que utiliza recursos computacionais na criação ou exibicao",
         why: "ela pode envolver software, redes, sensores e imagens geradas por computador"
       },
       {
@@ -255,79 +255,79 @@ const blocos = [
       },
       {
         lead: "a interatividade",
-        answer: "a participacao ativa do publico no funcionamento ou no resultado da obra",
+        answer: "a participação ativa do público no funcionamento ou no resultado da obra",
         why: "muitas obras digitais respondem a toque, movimento ou escolha do visitante"
       },
       {
-        lead: "a criacao computacional",
-        answer: "o uso de algoritmos e programas no desenvolvimento artistico",
-        why: "processos automatizados tambem podem compor a autoria da obra"
+        lead: "a criação computacional",
+        answer: "o uso de algoritmos e programas no desenvolvimento artístico",
+        why: "processos automatizados também podem compor a autoria da obra"
       },
       {
         lead: "a difusao tecnologica da arte",
-        answer: "a ampliacao da circulacao artistica por redes e meios digitais",
+        answer: "a ampliacao da circulacao artística por redes e meios digitais",
         why: "plataformas online mudam o acesso, a exibicao e a recepcao das obras"
       }
     ]
   },
   {
-    subtopico: "Identidade, politica e critica social",
+    subtopico: "Identidade, politica e crítica social",
     habilidade:
-      "interpretar temas de identidade, politica e critica social na arte",
-    tags: ["identidade", "politica", "critica social"],
+      "interpretar temas de identidade, politica e crítica social na arte",
+    tags: ["identidade", "politica", "crítica social"],
     fatos: [
       {
-        lead: "a arte de critica social",
-        answer: "uma producao que questiona desigualdades, violencias e estruturas de poder",
+        lead: "a arte de crítica social",
+        answer: "uma produção que questiona desigualdades, violencias e estruturas de poder",
         why: "muitas obras contemporaneas assumem posicionamento diante de problemas coletivos"
       },
       {
         lead: "a questao da identidade",
-        answer: "a reflexao sobre genero, etnia, territorio, memoria e pertencimento",
+        answer: "a reflexão sobre gênero, etnia, territorio, memória e pertencimento",
         why: "a arte contemporanea frequentemente debate quem fala e de onde se fala"
       },
       {
-        lead: "o engajamento politico",
+        lead: "o engajamento político",
         answer: "a aproximacao da obra com pautas publicas e disputas de narrativas",
-        why: "a arte pode atuar como forma de denuncia, memoria ou resistencia"
+        why: "a arte pode atuar como forma de denuncia, memória ou resistencia"
       },
       {
-        lead: "a reparacao simbolica",
+        lead: "a reparacao simbólica",
         answer: "a valorizacao de sujeitos e historias historicamente silenciados",
         why: "algumas obras buscam reposicionar memorias e identidades marginalizadas"
       },
       {
         lead: "a dimensao cidada da arte",
-        answer: "a capacidade da producao artistica de estimular debate e participacao social",
-        why: "a arte pode ampliar a reflexao publica sobre o presente"
+        answer: "a capacidade da produção artística de estimular debate e participação social",
+        why: "a arte pode ampliar a reflexão pública sobre o presente"
       }
     ]
   },
   {
-    subtopico: "Curadoria, publico e sistema da arte",
+    subtopico: "Curadoria, público e sistema da arte",
     habilidade:
       "analisar circulacao, curadoria e recepcao das obras contemporaneas",
     tags: ["curadoria", "museu", "sistema da arte"],
     fatos: [
       {
         lead: "a curadoria",
-        answer: "a selecao e organizacao de obras para construir um recorte interpretativo",
-        why: "o curador propoe relacoes e sentidos ao reunir trabalhos em exposicoes"
+        answer: "a selecao e organização de obras para construir um recorte interpretativo",
+        why: "o curador propoe relações e sentidos ao reunir trabalhos em exposicoes"
       },
       {
         lead: "o sistema da arte",
         answer: "o conjunto de instituicoes, agentes e circuitos que fazem circular as obras",
-        why: "museus, galerias, bienais, critica e mercado participam desse sistema"
+        why: "museus, galerias, bienais, crítica e mercado participam desse sistema"
       },
       {
-        lead: "a interpretacao curatorial",
-        answer: "a leitura orientada que a exposicao oferece ao publico",
+        lead: "a interpretação curatorial",
+        answer: "a leitura orientada que a exposicao oferece ao público",
         why: "a montagem e os textos ajudam a construir percursos de sentido"
       },
       {
         lead: "a recepcao ativa",
-        answer: "a participacao interpretativa do publico diante da obra",
-        why: "o observador tambem produz significado ao interagir com o trabalho"
+        answer: "a participação interpretativa do público diante da obra",
+        why: "o observador também produz significado ao interagir com o trabalho"
       },
       {
         lead: "a bienal",
@@ -352,16 +352,16 @@ export const arteContemporanea = {
     searchAliases: [
       "arte contemporanea",
       "arte conceitual",
-      "performance e instalacao",
+      "performance e instalação",
       "arte urbana",
       "arte digital"
     ],
     subtopicosBase: blocos.map((bloco) => bloco.subtopico),
     habilidadesBase: [
-      "identificar caracteristicas gerais da arte contemporanea",
+      "identificar características gerais da arte contemporanea",
       "compreender a importancia da ideia, do corpo e do espaco na obra",
       "reconhecer meios audiovisuais, digitais e urbanos como linguagens artisticas",
-      "interpretar temas de identidade, politica e critica social na arte",
+      "interpretar temas de identidade, politica e crítica social na arte",
       "analisar circulacao, curadoria e recepcao das obras contemporaneas"
     ],
     planejamentoQuestoes: ARTS_HUNDRED_PLAN,

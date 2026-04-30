@@ -173,7 +173,7 @@ export const magnetismo = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com ímãs e polos magnéticos?",
+      "enunciado": "Qual alternativa NÃO está compatível com ímãs e polos magnéticos?",
       "opcoes": [
         "A região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes.",
         "Corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos.",
@@ -212,10 +212,10 @@ export const magnetismo = {
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar ímãs e polos magnéticos, o foco principal e:",
+      "enunciado": "Ao estudar ímãs e polos magnéticos, o foco principal é:",
       "opcoes": [
         "identificar propriedades de polos magnéticos e interações entre ímãs",
-        "compreender a acao do Campo magnético ao redor de ímãs e correntes",
+        "compreender a ação do Campo magnético ao redor de ímãs e correntes",
         "interpretar mapas de Campo magnético a partir do desenho de suas linhas",
         "relacionar o magnetismo terrestre a orientacao e a protecao planetaria"
       ],
@@ -412,7 +412,7 @@ export const magnetismo = {
         "Como ímãs e polos magnéticos aparece em fechos magnéticos, bússolas simples e separacao de materiais metálicos?",
         "Como Campo magnético substitui totalmente fechos magnéticos, bússolas simples e separacao de materiais metálicos?",
         "Por que Linhas de campo torna desnecessário estudar ímãs e polos magnéticos?",
-        "De que modo Campo magnético terrestre elimina toda medida fisica envolvida?"
+        "De que modo Campo magnético terrestre elimina toda medida física envolvida?"
       ],
       "correta": "Como ímãs e polos magnéticos aparece em fechos magnéticos, bússolas simples e separacao de materiais metálicos?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de ímãs e polos magnéticos.",
@@ -448,12 +448,12 @@ export const magnetismo = {
       "tipo": "multipla_escolha",
       "enunciado": "Um erro comum em ímãs e polos magnéticos e pensar que:",
       "opcoes": [
-        "e possivel isolar permanentemente um polo norte sem um polo sul associado",
+        "é possível isolar permanentemente um polo norte sem um polo sul associado",
         "Campo magnético existe apenas no interior do ímã e nunca ao seu redor",
-        "as Linhas de campo sao fios materiais realmente existentes no espaço",
+        "as Linhas de campo são fios materiais realmente existentes no espaço",
         "a Terra não exerce qualquer influencia magnetica mensuravel em objetos e instrumentos"
       ],
-      "correta": "e possivel isolar permanentemente um polo norte sem um polo sul associado",
+      "correta": "é possível isolar permanentemente um polo norte sem um polo sul associado",
       "comentario": "Esse e um equívoco frequente porque contraria a definição correta de ímãs e polos magnéticos.",
       "tempoEstimado": 50,
       "tags": [
@@ -485,7 +485,7 @@ export const magnetismo = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"se um ímã for cortado, um dos pedacos pode ficar so com o polo norte\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"se um ímã for cortado, um dos pedacos pode ficar so com o polo norte\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos.",
         "A afirmação está correta, pois resume integralmente ímãs e polos magnéticos.",
@@ -528,11 +528,11 @@ export const magnetismo = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre fechos magnéticos, bússolas simples e separacao de materiais metálicos.",
         "a situação seria explicada automaticamente por Campo magnético, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque ímãs e polos magnéticos não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque ímãs e polos magnéticos não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre fechos magnéticos, bússolas simples e separacao de materiais metálicos.",
-      "comentario": "Ignorar ímãs e polos magnéticos compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar ímãs e polos magnéticos compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",
@@ -758,11 +758,11 @@ export const magnetismo = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Campo magnético?",
+      "enunciado": "Qual alternativa NÃO está compatível com Campo magnético?",
       "opcoes": [
         "As representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético.",
         "A região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes.",
-        "Compreender a acao do Campo magnético ao redor de ímãs e correntes.",
+        "Compreender a ação do Campo magnético ao redor de ímãs e correntes.",
         "Ajuda a compreender a localizacao de regiões de influencia magnetica em experiências e dispositivos."
       ],
       "correta": "As representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético.",
@@ -797,15 +797,15 @@ export const magnetismo = {
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Campo magnético, o foco principal e:",
+      "enunciado": "Ao estudar Campo magnético, o foco principal é:",
       "opcoes": [
-        "compreender a acao do Campo magnético ao redor de ímãs e correntes",
+        "compreender a ação do Campo magnético ao redor de ímãs e correntes",
         "interpretar mapas de Campo magnético a partir do desenho de suas linhas",
         "relacionar o magnetismo terrestre a orientacao e a protecao planetaria",
         "analisar a interacao entre cargas móveis e campos magnéticos"
       ],
-      "correta": "compreender a acao do Campo magnético ao redor de ímãs e correntes",
-      "comentario": "Campo magnético concentra-se em compreender a acao do Campo magnético ao redor de ímãs e correntes.",
+      "correta": "compreender a ação do Campo magnético ao redor de ímãs e correntes",
+      "comentario": "Campo magnético concentra-se em compreender a ação do Campo magnético ao redor de ímãs e correntes.",
       "tempoEstimado": 35,
       "tags": [
         "magnetismo",
@@ -997,7 +997,7 @@ export const magnetismo = {
         "Como Campo magnético aparece na localizacao de regiões de influencia magnetica em experiências e dispositivos?",
         "Como Linhas de campo substitui totalmente a localizacao de regiões de influencia magnetica em experiências e dispositivos?",
         "Por que Campo magnético terrestre torna desnecessário estudar Campo magnético?",
-        "De que modo Força magnética sobre cargas elimina toda medida fisica envolvida?"
+        "De que modo Força magnética sobre cargas elimina toda medida física envolvida?"
       ],
       "correta": "Como Campo magnético aparece na localizacao de regiões de influencia magnetica em experiências e dispositivos?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Campo magnético.",
@@ -1034,7 +1034,7 @@ export const magnetismo = {
       "enunciado": "Um erro comum em Campo magnético e pensar que:",
       "opcoes": [
         "Campo magnético existe apenas no interior do ímã e nunca ao seu redor",
-        "as Linhas de campo sao fios materiais realmente existentes no espaço",
+        "as Linhas de campo são fios materiais realmente existentes no espaço",
         "a Terra não exerce qualquer influencia magnetica mensuravel em objetos e instrumentos",
         "cargas elétricas paradas sofrem sempre a mesma força magnetica que cargas em movimento"
       ],
@@ -1070,7 +1070,7 @@ export const magnetismo = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"fora do ímã não existe Campo magnético atuando sobre outros corpos\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"fora do ímã não existe Campo magnético atuando sobre outros corpos\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque a região do espaço em que forças magnéticas podem atuar sobre ímãs, cargas ou correntes.",
         "A afirmação está correta, pois resume integralmente Campo magnético.",
@@ -1113,11 +1113,11 @@ export const magnetismo = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a localizacao de regiões de influencia magnetica em experiências e dispositivos.",
         "a situação seria explicada automaticamente por Linhas de campo, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Campo magnético não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Campo magnético não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a localizacao de regiões de influencia magnetica em experiências e dispositivos.",
-      "comentario": "Ignorar Campo magnético compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar Campo magnético compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",
@@ -1343,7 +1343,7 @@ export const magnetismo = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Linhas de campo?",
+      "enunciado": "Qual alternativa NÃO está compatível com Linhas de campo?",
       "opcoes": [
         "O campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais.",
         "As representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético.",
@@ -1382,7 +1382,7 @@ export const magnetismo = {
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Linhas de campo, o foco principal e:",
+      "enunciado": "Ao estudar Linhas de campo, o foco principal é:",
       "opcoes": [
         "interpretar mapas de Campo magnético a partir do desenho de suas linhas",
         "relacionar o magnetismo terrestre a orientacao e a protecao planetaria",
@@ -1582,7 +1582,7 @@ export const magnetismo = {
         "Como Linhas de campo aparece na leitura de esquemas com limalha de ferro e diagramas de campo?",
         "Como Campo magnético terrestre substitui totalmente a leitura de esquemas com limalha de ferro e diagramas de campo?",
         "Por que Força magnética sobre cargas torna desnecessário estudar Linhas de campo?",
-        "De que modo Força magnética em condutores elimina toda medida fisica envolvida?"
+        "De que modo Força magnética em condutores elimina toda medida física envolvida?"
       ],
       "correta": "Como Linhas de campo aparece na leitura de esquemas com limalha de ferro e diagramas de campo?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Linhas de campo.",
@@ -1618,12 +1618,12 @@ export const magnetismo = {
       "tipo": "multipla_escolha",
       "enunciado": "Um erro comum em Linhas de campo e pensar que:",
       "opcoes": [
-        "as Linhas de campo sao fios materiais realmente existentes no espaço",
+        "as Linhas de campo são fios materiais realmente existentes no espaço",
         "a Terra não exerce qualquer influencia magnetica mensuravel em objetos e instrumentos",
         "cargas elétricas paradas sofrem sempre a mesma força magnetica que cargas em movimento",
         "o Campo magnético empurra igualmente qualquer fio, mesmo sem corrente elétrica"
       ],
-      "correta": "as Linhas de campo sao fios materiais realmente existentes no espaço",
+      "correta": "as Linhas de campo são fios materiais realmente existentes no espaço",
       "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Linhas de campo.",
       "tempoEstimado": 50,
       "tags": [
@@ -1655,7 +1655,7 @@ export const magnetismo = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"as linhas de Campo magnético sao trilhas materiais invisiveis por onde passam partículas\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"as linhas de Campo magnético são trilhas materiais invisiveis por onde passam partículas\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque as representações gráficas que indicam direção, sentido e intensidade relativa do Campo magnético.",
         "A afirmação está correta, pois resume integralmente Linhas de campo.",
@@ -1698,11 +1698,11 @@ export const magnetismo = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a leitura de esquemas com limalha de ferro e diagramas de campo.",
         "a situação seria explicada automaticamente por Campo magnético terrestre, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Linhas de campo não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Linhas de campo não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a leitura de esquemas com limalha de ferro e diagramas de campo.",
-      "comentario": "Ignorar Linhas de campo compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar Linhas de campo compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",
@@ -1928,7 +1928,7 @@ export const magnetismo = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Campo magnético terrestre?",
+      "enunciado": "Qual alternativa NÃO está compatível com Campo magnético terrestre?",
       "opcoes": [
         "A força exercida por um Campo magnético sobre cargas elétricas em movimento.",
         "O campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais.",
@@ -1967,7 +1967,7 @@ export const magnetismo = {
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Campo magnético terrestre, o foco principal e:",
+      "enunciado": "Ao estudar Campo magnético terrestre, o foco principal é:",
       "opcoes": [
         "relacionar o magnetismo terrestre a orientacao e a protecao planetaria",
         "analisar a interacao entre cargas móveis e campos magnéticos",
@@ -2167,7 +2167,7 @@ export const magnetismo = {
         "Como Campo magnético terrestre aparece na navegacao por bússolas e o estudo da orientacao geografica?",
         "Como Força magnética sobre cargas substitui totalmente a navegacao por bússolas e o estudo da orientacao geografica?",
         "Por que Força magnética em condutores torna desnecessário estudar Campo magnético terrestre?",
-        "De que modo Indução eletromagnética elimina toda medida fisica envolvida?"
+        "De que modo Indução eletromagnética elimina toda medida física envolvida?"
       ],
       "correta": "Como Campo magnético terrestre aparece na navegacao por bússolas e o estudo da orientacao geografica?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Campo magnético terrestre.",
@@ -2240,7 +2240,7 @@ export const magnetismo = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"bússolas apontam para o norte apenas por habito de fabricacao, não por acao da Terra\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"bússolas apontam para o norte apenas por hábito de fabricacao, não por ação da Terra\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque o campo gerado pela Terra que orienta bússolas e participa de diversos fenômenos naturais.",
         "A afirmação está correta, pois resume integralmente Campo magnético terrestre.",
@@ -2283,11 +2283,11 @@ export const magnetismo = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a navegacao por bússolas e o estudo da orientacao geografica.",
         "a situação seria explicada automaticamente por Força magnética sobre cargas, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Campo magnético terrestre não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Campo magnético terrestre não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a navegacao por bússolas e o estudo da orientacao geografica.",
-      "comentario": "Ignorar Campo magnético terrestre compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar Campo magnético terrestre compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",
@@ -2513,7 +2513,7 @@ export const magnetismo = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Força magnética sobre cargas?",
+      "enunciado": "Qual alternativa NÃO está compatível com Força magnética sobre cargas?",
       "opcoes": [
         "A força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético.",
         "A força exercida por um Campo magnético sobre cargas elétricas em movimento.",
@@ -2552,7 +2552,7 @@ export const magnetismo = {
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Força magnética sobre cargas, o foco principal e:",
+      "enunciado": "Ao estudar Força magnética sobre cargas, o foco principal é:",
       "opcoes": [
         "analisar a interacao entre cargas móveis e campos magnéticos",
         "relacionar corrente elétrica, Campo magnético e força em condutores",
@@ -2752,7 +2752,7 @@ export const magnetismo = {
         "Como Força magnética sobre cargas aparece em aceleradores de partículas e tubos de raios catódicos?",
         "Como Força magnética em condutores substitui totalmente aceleradores de partículas e tubos de raios catódicos?",
         "Por que Indução eletromagnética torna desnecessário estudar Força magnética sobre cargas?",
-        "De que modo Eletroímãs elimina toda medida fisica envolvida?"
+        "De que modo Eletroímãs elimina toda medida física envolvida?"
       ],
       "correta": "Como Força magnética sobre cargas aparece em aceleradores de partículas e tubos de raios catódicos?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Força magnética sobre cargas.",
@@ -2825,7 +2825,7 @@ export const magnetismo = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"qualquer carga elétrica, em repouso ou em movimento, sofre desvio magnético da mesma forma\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"qualquer carga elétrica, em repouso ou em movimento, sofre desvio magnético da mesma forma\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque a força exercida por um Campo magnético sobre cargas elétricas em movimento.",
         "A afirmação está correta, pois resume integralmente Força magnética sobre cargas.",
@@ -2868,11 +2868,11 @@ export const magnetismo = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre aceleradores de partículas e tubos de raios catódicos.",
         "a situação seria explicada automaticamente por Força magnética em condutores, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Força magnética sobre cargas não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Força magnética sobre cargas não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre aceleradores de partículas e tubos de raios catódicos.",
-      "comentario": "Ignorar Força magnética sobre cargas compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar Força magnética sobre cargas compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",
@@ -3098,7 +3098,7 @@ export const magnetismo = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Força magnética em condutores?",
+      "enunciado": "Qual alternativa NÃO está compatível com Força magnética em condutores?",
       "opcoes": [
         "A produção de corrente ou tensão elétrica a partir de variações no fluxo magnético.",
         "A força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético.",
@@ -3137,7 +3137,7 @@ export const magnetismo = {
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Força magnética em condutores, o foco principal e:",
+      "enunciado": "Ao estudar Força magnética em condutores, o foco principal é:",
       "opcoes": [
         "relacionar corrente elétrica, Campo magnético e força em condutores",
         "explicar como mudancas no Campo magnético geram efeitos elétricos",
@@ -3337,7 +3337,7 @@ export const magnetismo = {
         "Como Força magnética em condutores aparece no principio de funcionamento de alto-falantes e partes de motores?",
         "Como Indução eletromagnética substitui totalmente o principio de funcionamento de alto-falantes e partes de motores?",
         "Por que Eletroímãs torna desnecessário estudar Força magnética em condutores?",
-        "De que modo Motores elétricos elimina toda medida fisica envolvida?"
+        "De que modo Motores elétricos elimina toda medida física envolvida?"
       ],
       "correta": "Como Força magnética em condutores aparece no principio de funcionamento de alto-falantes e partes de motores?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Força magnética em condutores.",
@@ -3410,7 +3410,7 @@ export const magnetismo = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"um fio metalico parado em um Campo magnético sempre sofre força, mesmo sem corrente\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"um fio metalico parado em um Campo magnético sempre sofre força, mesmo sem corrente\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque a força que atua sobre fios percorridos por corrente quando estao imersos em Campo magnético.",
         "A afirmação está correta, pois resume integralmente Força magnética em condutores.",
@@ -3453,11 +3453,11 @@ export const magnetismo = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o principio de funcionamento de alto-falantes e partes de motores.",
         "a situação seria explicada automaticamente por Indução eletromagnética, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Força magnética em condutores não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Força magnética em condutores não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre o principio de funcionamento de alto-falantes e partes de motores.",
-      "comentario": "Ignorar Força magnética em condutores compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar Força magnética em condutores compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",
@@ -3683,7 +3683,7 @@ export const magnetismo = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Indução eletromagnética?",
+      "enunciado": "Qual alternativa NÃO está compatível com Indução eletromagnética?",
       "opcoes": [
         "Dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético.",
         "A produção de corrente ou tensão elétrica a partir de variações no fluxo magnético.",
@@ -3722,7 +3722,7 @@ export const magnetismo = {
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Indução eletromagnética, o foco principal e:",
+      "enunciado": "Ao estudar Indução eletromagnética, o foco principal é:",
       "opcoes": [
         "explicar como mudancas no Campo magnético geram efeitos elétricos",
         "relacionar corrente elétrica ao surgimento de magnetismo artificial controlavel",
@@ -3922,7 +3922,7 @@ export const magnetismo = {
         "Como Indução eletromagnética aparece na geracao de energia em dínamos, transformadores e usinas?",
         "Como Eletroímãs substitui totalmente a geracao de energia em dínamos, transformadores e usinas?",
         "Por que Motores elétricos torna desnecessário estudar Indução eletromagnética?",
-        "De que modo Aplicações do magnetismo elimina toda medida fisica envolvida?"
+        "De que modo Aplicações do magnetismo elimina toda medida física envolvida?"
       ],
       "correta": "Como Indução eletromagnética aparece na geracao de energia em dínamos, transformadores e usinas?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Indução eletromagnética.",
@@ -3995,7 +3995,7 @@ export const magnetismo = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"um ímã imovel ao lado de uma espira produz corrente elétrica constante sem nenhuma variação\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"um ímã imovel ao lado de uma espira produz corrente elétrica constante sem nenhuma variação\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque a produção de corrente ou tensão elétrica a partir de variações no fluxo magnético.",
         "A afirmação está correta, pois resume integralmente Indução eletromagnética.",
@@ -4038,11 +4038,11 @@ export const magnetismo = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a geracao de energia em dínamos, transformadores e usinas.",
         "a situação seria explicada automaticamente por Eletroímãs, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Indução eletromagnética não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Indução eletromagnética não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre a geracao de energia em dínamos, transformadores e usinas.",
-      "comentario": "Ignorar Indução eletromagnética compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar Indução eletromagnética compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",
@@ -4268,7 +4268,7 @@ export const magnetismo = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Eletroímãs?",
+      "enunciado": "Qual alternativa NÃO está compatível com Eletroímãs?",
       "opcoes": [
         "Maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético.",
         "Dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético.",
@@ -4307,7 +4307,7 @@ export const magnetismo = {
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Eletroímãs, o foco principal e:",
+      "enunciado": "Ao estudar Eletroímãs, o foco principal é:",
       "opcoes": [
         "relacionar corrente elétrica ao surgimento de magnetismo artificial controlavel",
         "compreender a conversao de energia elétrica em movimento mecânico",
@@ -4507,7 +4507,7 @@ export const magnetismo = {
         "Como Eletroímãs aparece em guindastes de sucata, campainhas e travas elétricas?",
         "Como Motores elétricos substitui totalmente guindastes de sucata, campainhas e travas elétricas?",
         "Por que Aplicações do magnetismo torna desnecessário estudar Eletroímãs?",
-        "De que modo ímãs e polos magnéticos elimina toda medida fisica envolvida?"
+        "De que modo ímãs e polos magnéticos elimina toda medida física envolvida?"
       ],
       "correta": "Como Eletroímãs aparece em guindastes de sucata, campainhas e travas elétricas?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Eletroímãs.",
@@ -4546,7 +4546,7 @@ export const magnetismo = {
         "um eletroímã mantêm sua força magnetica máxima mesmo desligado da corrente",
         "Motores elétricos funcionam sem depender de Campo magnético ou corrente elétrica organizada",
         "magnetismo só aparece em bússolas e não tem aplicações tecnológicas relevantes",
-        "e possivel isolar permanentemente um polo norte sem um polo sul associado"
+        "é possível isolar permanentemente um polo norte sem um polo sul associado"
       ],
       "correta": "um eletroímã mantêm sua força magnetica máxima mesmo desligado da corrente",
       "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Eletroímãs.",
@@ -4580,7 +4580,7 @@ export const magnetismo = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"desligar a corrente de um eletroímã não altera sua capacidade de atração\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"desligar a corrente de um eletroímã não altera sua capacidade de atração\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque dispositivos em que a corrente elétrica produz campo magnético, geralmente reforçado por núcleo ferromagnético.",
         "A afirmação está correta, pois resume integralmente Eletroímãs.",
@@ -4623,11 +4623,11 @@ export const magnetismo = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre guindastes de sucata, campainhas e travas elétricas.",
         "a situação seria explicada automaticamente por Motores elétricos, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Eletroímãs não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Eletroímãs não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre guindastes de sucata, campainhas e travas elétricas.",
-      "comentario": "Ignorar Eletroímãs compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar Eletroímãs compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",
@@ -4853,7 +4853,7 @@ export const magnetismo = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Motores elétricos?",
+      "enunciado": "Qual alternativa NÃO está compatível com Motores elétricos?",
       "opcoes": [
         "O uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais.",
         "Maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético.",
@@ -4892,12 +4892,12 @@ export const magnetismo = {
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Motores elétricos, o foco principal e:",
+      "enunciado": "Ao estudar Motores elétricos, o foco principal é:",
       "opcoes": [
         "compreender a conversao de energia elétrica em movimento mecânico",
         "identificar usos tecnológicos e sociais do magnetismo em diferentes contextos",
         "identificar propriedades de polos magnéticos e interações entre ímãs",
-        "compreender a acao do Campo magnético ao redor de ímãs e correntes"
+        "compreender a ação do Campo magnético ao redor de ímãs e correntes"
       ],
       "correta": "compreender a conversao de energia elétrica em movimento mecânico",
       "comentario": "Motores elétricos concentra-se em compreender a conversao de energia elétrica em movimento mecânico.",
@@ -5092,7 +5092,7 @@ export const magnetismo = {
         "Como Motores elétricos aparece em ventiladores, liquidificadores e diversos equipamentos motorizados?",
         "Como Aplicações do magnetismo substitui totalmente ventiladores, liquidificadores e diversos equipamentos motorizados?",
         "Por que ímãs e polos magnéticos torna desnecessário estudar Motores elétricos?",
-        "De que modo Campo magnético elimina toda medida fisica envolvida?"
+        "De que modo Campo magnético elimina toda medida física envolvida?"
       ],
       "correta": "Como Motores elétricos aparece em ventiladores, liquidificadores e diversos equipamentos motorizados?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Motores elétricos.",
@@ -5130,7 +5130,7 @@ export const magnetismo = {
       "opcoes": [
         "Motores elétricos funcionam sem depender de Campo magnético ou corrente elétrica organizada",
         "magnetismo só aparece em bússolas e não tem aplicações tecnológicas relevantes",
-        "e possivel isolar permanentemente um polo norte sem um polo sul associado",
+        "é possível isolar permanentemente um polo norte sem um polo sul associado",
         "Campo magnético existe apenas no interior do ímã e nunca ao seu redor"
       ],
       "correta": "Motores elétricos funcionam sem depender de Campo magnético ou corrente elétrica organizada",
@@ -5165,7 +5165,7 @@ export const magnetismo = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"o giro de um motor elétrico ocorre sem participação de campos magnéticos\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"o giro de um motor elétrico ocorre sem participação de campos magnéticos\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque maquinas que convertem energia elétrica em energia mecânica por meio da interacao entre corrente e Campo magnético.",
         "A afirmação está correta, pois resume integralmente Motores elétricos.",
@@ -5208,11 +5208,11 @@ export const magnetismo = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre ventiladores, liquidificadores e diversos equipamentos motorizados.",
         "a situação seria explicada automaticamente por Aplicações do magnetismo, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Motores elétricos não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Motores elétricos não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre ventiladores, liquidificadores e diversos equipamentos motorizados.",
-      "comentario": "Ignorar Motores elétricos compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar Motores elétricos compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",
@@ -5438,7 +5438,7 @@ export const magnetismo = {
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO esta compatível com Aplicações do magnetismo?",
+      "enunciado": "Qual alternativa NÃO está compatível com Aplicações do magnetismo?",
       "opcoes": [
         "Corpos que apresentam polos magnéticos inseparáveis, capazes de atrair ou repelir outros ímãs e materiais ferromagnéticos.",
         "O uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais.",
@@ -5477,11 +5477,11 @@ export const magnetismo = {
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar Aplicações do magnetismo, o foco principal e:",
+      "enunciado": "Ao estudar Aplicações do magnetismo, o foco principal é:",
       "opcoes": [
         "identificar usos tecnológicos e sociais do magnetismo em diferentes contextos",
         "identificar propriedades de polos magnéticos e interações entre ímãs",
-        "compreender a acao do Campo magnético ao redor de ímãs e correntes",
+        "compreender a ação do Campo magnético ao redor de ímãs e correntes",
         "interpretar mapas de Campo magnético a partir do desenho de suas linhas"
       ],
       "correta": "identificar usos tecnológicos e sociais do magnetismo em diferentes contextos",
@@ -5677,7 +5677,7 @@ export const magnetismo = {
         "Como Aplicações do magnetismo aparece em tecnologias medicas, industriais e de transporte baseadas em magnetismo?",
         "Como ímãs e polos magnéticos substitui totalmente tecnologias medicas, industriais e de transporte baseadas em magnetismo?",
         "Por que Campo magnético torna desnecessário estudar Aplicações do magnetismo?",
-        "De que modo Linhas de campo elimina toda medida fisica envolvida?"
+        "De que modo Linhas de campo elimina toda medida física envolvida?"
       ],
       "correta": "Como Aplicações do magnetismo aparece em tecnologias medicas, industriais e de transporte baseadas em magnetismo?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de Aplicações do magnetismo.",
@@ -5714,9 +5714,9 @@ export const magnetismo = {
       "enunciado": "Um erro comum em Aplicações do magnetismo e pensar que:",
       "opcoes": [
         "magnetismo só aparece em bússolas e não tem aplicações tecnológicas relevantes",
-        "e possivel isolar permanentemente um polo norte sem um polo sul associado",
+        "é possível isolar permanentemente um polo norte sem um polo sul associado",
         "Campo magnético existe apenas no interior do ímã e nunca ao seu redor",
-        "as Linhas de campo sao fios materiais realmente existentes no espaço"
+        "as Linhas de campo são fios materiais realmente existentes no espaço"
       ],
       "correta": "magnetismo só aparece em bússolas e não tem aplicações tecnológicas relevantes",
       "comentario": "Esse e um equívoco frequente porque contraria a definição correta de Aplicações do magnetismo.",
@@ -5750,7 +5750,7 @@ export const magnetismo = {
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"fora da bússola, o magnetismo não e útil em nenhuma tecnologia moderna\". A avaliação mais adequada e:",
+      "enunciado": "Um estudante afirma: \"fora da bússola, o magnetismo não e útil em nenhuma tecnologia moderna\". A avaliação mais adequada é:",
       "opcoes": [
         "A afirmação está incorreta, porque o uso de fenômenos magnéticos em tecnologias, transporte, medicina, informação e separacao de materiais.",
         "A afirmação está correta, pois resume integralmente Aplicações do magnetismo.",
@@ -5793,11 +5793,11 @@ export const magnetismo = {
       "opcoes": [
         "a análise ficaria incompleta e poderia gerar interpretações erradas sobre tecnologias medicas, industriais e de transporte baseadas em magnetismo.",
         "a situação seria explicada automaticamente por ímãs e polos magnéticos, sem necessidade de análise.",
-        "nenhuma interpretacao fisica seria alterada, porque Aplicações do magnetismo não interfere nesse tipo de problema.",
+        "nenhuma interpretação física seria alterada, porque Aplicações do magnetismo não interfere nesse tipo de problema.",
         "o fenômeno deixaria de existir apenas por não ser nomeado."
       ],
       "correta": "a análise ficaria incompleta e poderia gerar interpretações erradas sobre tecnologias medicas, industriais e de transporte baseadas em magnetismo.",
-      "comentario": "Ignorar Aplicações do magnetismo compromete a leitura fisica da situação apresentada.",
+      "comentario": "Ignorar Aplicações do magnetismo compromete a leitura física da situação apresentada.",
       "tempoEstimado": 60,
       "tags": [
         "magnetismo",

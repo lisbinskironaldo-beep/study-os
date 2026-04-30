@@ -1,0 +1,370 @@
+[
+  {
+    "id": "7fe880bf-2d55-4e6d-ab07-50ddb941ee7c",
+    "event_type": "webhook_invalid_signature",
+    "severity": "critical",
+    "provider": "mercado_pago",
+    "message": "Assinatura Mercado Pago incompleta.",
+    "payload": {
+      "headers": {
+        "requestId": "",
+        "signature": ""
+      }
+    },
+    "acknowledged_at": null,
+    "resolved_at": null,
+    "created_at": "2026-04-20T06:39:08.267538+00:00",
+    "updated_at": "2026-04-20T06:39:08.267538+00:00"
+  },
+  {
+    "id": "e4565f72-21b6-47be-9352-fe6af3597e9b",
+    "event_type": "webhook_invalid_signature",
+    "severity": "critical",
+    "provider": "mercado_pago",
+    "message": "Assinatura Mercado Pago incompleta.",
+    "payload": {
+      "headers": {
+        "requestId": "",
+        "signature": ""
+      }
+    },
+    "acknowledged_at": null,
+    "resolved_at": null,
+    "created_at": "2026-04-20T12:51:02.954721+00:00",
+    "updated_at": "2026-04-20T12:51:02.954721+00:00"
+  },
+  {
+    "id": "0dfaf3b6-d798-4b13-b512-f2c97d337ce4",
+    "event_type": "webhook_invalid_signature",
+    "severity": "critical",
+    "provider": "mercado_pago",
+    "message": "Assinatura Mercado Pago incompleta.",
+    "payload": {
+      "headers": {
+        "requestId": "da0ed1f8-ceba-4f44-9b29-490b235df004",
+        "signature": "ts=1776693202,v1=9213884303ec60ad8611e1080443c8dcdb54352ca347f9138d565c6e70fd43b0"
+      }
+    },
+    "acknowledged_at": null,
+    "resolved_at": null,
+    "created_at": "2026-04-20T13:53:23.804527+00:00",
+    "updated_at": "2026-04-20T13:53:23.804527+00:00"
+  },
+  {
+    "id": "a168cc53-5069-4ccf-9307-08a4274eb70c",
+    "event_type": "webhook_invalid_signature",
+    "severity": "critical",
+    "provider": "mercado_pago",
+    "message": "Assinatura Mercado Pago incompleta.",
+    "payload": {
+      "headers": {
+        "requestId": "c93c7888-6d3a-433c-811e-3c668cc13afc",
+        "signature": "ts=1776693206,v1=989881bcc750dd023984cdf522b226d4e6f1996e53e11c7685b2bab23d4a1938"
+      }
+    },
+    "acknowledged_at": null,
+    "resolved_at": null,
+    "created_at": "2026-04-20T13:53:26.314107+00:00",
+    "updated_at": "2026-04-20T13:53:26.314107+00:00"
+  },
+  {
+    "id": "3d36d1fc-2f84-4b95-8fce-0fcecfcd801f",
+    "event_type": "webhook_invalid_signature",
+    "severity": "critical",
+    "provider": "mercado_pago",
+    "message": "Assinatura Mercado Pago incompleta.",
+    "payload": {
+      "headers": {
+        "requestId": "c93c7888-6d3a-433c-811e-3c668cc13afc",
+        "signature": "ts=1776693206,v1=c3acceeec9710b8089e8d702a0be1abbfa7698d81fa6429e2e2224c22652bdf8"
+      }
+    },
+    "acknowledged_at": null,
+    "resolved_at": null,
+    "created_at": "2026-04-20T13:53:26.657491+00:00",
+    "updated_at": "2026-04-20T13:53:26.657491+00:00"
+  },
+  {
+    "id": "137070d3-1f28-4ec8-8078-aea062c1f5a8",
+    "event_type": "webhook_invalid_signature",
+    "severity": "critical",
+    "provider": "mercado_pago",
+    "message": "Assinatura Mercado Pago incompleta.",
+    "payload": {
+      "headers": {
+        "requestId": "8f8de5a9-1dab-4977-ae01-6eb347e8e48a",
+        "signature": "ts=1776693206,v1=991227eb5d7ba297ea52aee32ae28fa17d63bdba838dfba9709c3bfdc4b09b39"
+      }
+    },
+    "acknowledged_at": null,
+    "resolved_at": null,
+    "created_at": "2026-04-20T13:53:26.988791+00:00",
+    "updated_at": "2026-04-20T13:53:26.988791+00:00"
+  },
+  {
+    "id": "fc96237a-f586-40e8-a856-13d070bc8243",
+    "event_type": "webhook_invalid_signature",
+    "severity": "critical",
+    "provider": "mercado_pago",
+    "message": "Assinatura Mercado Pago incompleta.",
+    "payload": {
+      "headers": {
+        "requestId": "8dc1a888-ac74-42d9-900b-057bba40c4af",
+        "signature": "ts=1776693207,v1=1312e09ea3836fb0c9462c1810253cfa392153edad53d8c1ce97b95142f394b0"
+      }
+    },
+    "acknowledged_at": null,
+    "resolved_at": null,
+    "created_at": "2026-04-20T13:53:27.434396+00:00",
+    "updated_at": "2026-04-20T13:53:27.434396+00:00"
+  },
+  {
+    "id": "e9d456b6-748e-4b61-96e8-6eee5cc37f80",
+    "event_type": "webhook_invalid_signature",
+    "severity": "critical",
+    "provider": "mercado_pago",
+    "message": "Assinatura Mercado Pago incompleta.",
+    "payload": {
+      "headers": {
+        "requestId": "56a74d80-1987-4b45-93c2-583858550abb",
+        "signature": "ts=1776693267,v1=41dc9185128b770bd981264458fe3579d49ae59937c496092e44240888801bc8"
+      }
+    },
+    "acknowledged_at": null,
+    "resolved_at": null,
+    "created_at": "2026-04-20T13:54:27.596424+00:00",
+    "updated_at": "2026-04-20T13:54:27.596424+00:00"
+  },
+  {
+    "id": "63f05e76-cf34-45a3-a250-a7b856ba88e1",
+    "event_type": "webhook_invalid_signature",
+    "severity": "critical",
+    "provider": "mercado_pago",
+    "message": "Assinatura Mercado Pago incompleta.",
+    "payload": {
+      "headers": {
+        "requestId": "3c74eda9-33f4-4a89-99a0-14127b1c74ae",
+        "signature": "ts=1776693268,v1=53eaf573f3e5181fb004b8b45e47b0bdc14759c8bd3660cff18a45105dccb3b5"
+      }
+    },
+    "acknowledged_at": null,
+    "resolved_at": null,
+    "created_at": "2026-04-20T13:54:28.155089+00:00",
+    "updated_at": "2026-04-20T13:54:28.155089+00:00"
+  },
+  {
+    "id": "0ddd0468-e754-49f3-87f8-48ff9aed9768",
+    "event_type": "webhook_invalid_signature",
+    "severity": "critical",
+    "provider": "mercado_pago",
+    "message": "Assinatura Mercado Pago incompleta.",
+    "payload": {
+      "headers": {
+        "requestId": "",
+        "signature": ""
+      }
+    },
+    "acknowledged_at": null,
+    "resolved_at": null,
+    "created_at": "2026-04-20T14:09:44.260861+00:00",
+    "updated_at": "2026-04-20T14:09:44.260861+00:00"
+  },
+  {
+    "id": "1110da07-8a66-4c30-b643-d5c1e659a8a4",
+    "event_type": "webhook_invalid_signature",
+    "severity": "critical",
+    "provider": "mercado_pago",
+    "message": "Assinatura Mercado Pago incompleta.",
+    "payload": {
+      "headers": {
+        "requestId": "0b90e72f-bd1a-4b44-8018-ba5c5a37d655",
+        "signature": "ts=1776694244,v1=964355a069a44eefafe07258f9ea0556358531909b760167c45c973b8fb8c80a"
+      }
+    },
+    "acknowledged_at": null,
+    "resolved_at": null,
+    "created_at": "2026-04-20T14:10:45.123741+00:00",
+    "updated_at": "2026-04-20T14:10:45.123741+00:00"
+  },
+  {
+    "id": "4250bfc1-bba4-41e4-919c-54f215b29351",
+    "event_type": "webhook_invalid_signature",
+    "severity": "critical",
+    "provider": "mercado_pago",
+    "message": "Assinatura Mercado Pago incompleta.",
+    "payload": {
+      "headers": {
+        "requestId": "78c37ffb-82d4-4e5e-b7fc-a236dff7bf4d",
+        "signature": "ts=1776694253,v1=b7fb11ee9dab40b5456329257bf43f50530d8f15c17642b792a552747a0cd728"
+      }
+    },
+    "acknowledged_at": null,
+    "resolved_at": null,
+    "created_at": "2026-04-20T14:10:53.408112+00:00",
+    "updated_at": "2026-04-20T14:10:53.408112+00:00"
+  },
+  {
+    "id": "def28bca-58de-4834-ae70-21f835d70717",
+    "event_type": "webhook_invalid_signature",
+    "severity": "critical",
+    "provider": "mercado_pago",
+    "message": "Assinatura Mercado Pago incompleta.",
+    "payload": {
+      "headers": {
+        "requestId": "1784a3a6-b3c9-4233-bc22-381483e3bd9b",
+        "signature": "ts=1776696422,v1=42680d2210c887158d701aaa190f224b64e8625a11c53bb0e7e510799cdeec52"
+      }
+    },
+    "acknowledged_at": null,
+    "resolved_at": null,
+    "created_at": "2026-04-20T14:47:03.698146+00:00",
+    "updated_at": "2026-04-20T14:47:03.698146+00:00"
+  },
+  {
+    "id": "96bda240-92af-483a-9db1-83c577404018",
+    "event_type": "webhook_invalid_signature",
+    "severity": "critical",
+    "provider": "mercado_pago",
+    "message": "Assinatura Mercado Pago incompleta.",
+    "payload": {
+      "headers": {
+        "requestId": "de8e6bd9-b7f2-4e21-8736-40567eeebae2",
+        "signature": "ts=1776696425,v1=82d10d21e62d3bade5b7363eeeed3f4e0c222b9bc474471417f65b438cd315f3"
+      }
+    },
+    "acknowledged_at": null,
+    "resolved_at": null,
+    "created_at": "2026-04-20T14:47:05.649285+00:00",
+    "updated_at": "2026-04-20T14:47:05.649285+00:00"
+  },
+  {
+    "id": "4354cdad-212a-4738-8d51-3e2811b7769e",
+    "event_type": "webhook_invalid_signature",
+    "severity": "critical",
+    "provider": "mercado_pago",
+    "message": "Assinatura Mercado Pago incompleta.",
+    "payload": {
+      "headers": {
+        "requestId": "3b66abe7-01ec-42c9-9d49-f11097fe9d33",
+        "signature": "ts=1776718297,v1=2147591c3ac4981660bf5adcbe9500f8ca290605ed8e29e62a16d2d4c9586c12"
+      }
+    },
+    "acknowledged_at": null,
+    "resolved_at": null,
+    "created_at": "2026-04-20T20:51:39.082426+00:00",
+    "updated_at": "2026-04-20T20:51:39.082426+00:00"
+  },
+  {
+    "id": "fc141606-b625-4ad3-b3e8-597e4c918381",
+    "event_type": "webhook_invalid_signature",
+    "severity": "critical",
+    "provider": "mercado_pago",
+    "message": "Assinatura Mercado Pago incompleta.",
+    "payload": {
+      "headers": {
+        "requestId": "83c10949-791d-47a8-a95e-bb2217ed0446",
+        "signature": "ts=1776718298,v1=6a5ad236ba2d083d30cd6a6d9c8361233ffff3745c5b91f4ec5b5b7e0a30bc63"
+      }
+    },
+    "acknowledged_at": null,
+    "resolved_at": null,
+    "created_at": "2026-04-20T20:51:39.082426+00:00",
+    "updated_at": "2026-04-20T20:51:39.082426+00:00"
+  },
+  {
+    "id": "f98ba99f-bab5-4244-89f3-33e2105d6b9e",
+    "event_type": "three_day_review_fallback",
+    "severity": "warning",
+    "provider": "gemini",
+    "message": "Review de 3 dias caiu em fallback por provider_error.",
+    "payload": {
+      "status": "provider_error"
+    },
+    "acknowledged_at": null,
+    "resolved_at": null,
+    "created_at": "2026-04-22T09:16:51.215009+00:00",
+    "updated_at": "2026-04-22T09:16:51.215009+00:00"
+  },
+  {
+    "id": "caa82fe3-d71a-445b-a366-b7d04040bf76",
+    "event_type": "webhook_invalid_signature",
+    "severity": "critical",
+    "provider": "mercado_pago",
+    "message": "Assinatura Mercado Pago incompleta.",
+    "payload": {
+      "headers": {
+        "requestId": "46505ff5-5b3a-4ef6-b595-7383de980c37",
+        "signature": "ts=1776891385,v1=f51961f605975c99b9b69fffe7cd9bb03d48ff6b5ab69f075078a1ded3f0550a"
+      }
+    },
+    "acknowledged_at": null,
+    "resolved_at": null,
+    "created_at": "2026-04-22T20:56:26.606932+00:00",
+    "updated_at": "2026-04-22T20:56:26.606932+00:00"
+  },
+  {
+    "id": "16e75bd5-270d-4443-8c24-4f737e5e2dee",
+    "event_type": "webhook_invalid_signature",
+    "severity": "critical",
+    "provider": "mercado_pago",
+    "message": "Assinatura Mercado Pago incompleta.",
+    "payload": {
+      "headers": {
+        "requestId": "aea38b8a-7fa1-43c2-9fb0-0533310b862c",
+        "signature": "ts=1776891385,v1=98a0f74c67da5537605c269c4fc9d364d06b15af1a0f7af3a59bef191759c8b8"
+      }
+    },
+    "acknowledged_at": null,
+    "resolved_at": null,
+    "created_at": "2026-04-22T20:56:26.606937+00:00",
+    "updated_at": "2026-04-22T20:56:26.606937+00:00"
+  },
+  {
+    "id": "73ba623a-516a-43b2-8eeb-7f0c1a217f4e",
+    "event_type": "webhook_invalid_signature",
+    "severity": "critical",
+    "provider": "mercado_pago",
+    "message": "Assinatura Mercado Pago incompleta.",
+    "payload": {
+      "headers": {
+        "requestId": "0fea2540-2537-4492-9ae5-01fb5ddd704a",
+        "signature": "ts=1777237228,v1=9490122ddab9e7e704c882365d1017644f8eb1d98d0527f3bd7db33e66889de2"
+      }
+    },
+    "acknowledged_at": null,
+    "resolved_at": null,
+    "created_at": "2026-04-26T21:00:29.632293+00:00",
+    "updated_at": "2026-04-26T21:00:29.632293+00:00"
+  },
+  {
+    "id": "223489ac-a7eb-4077-836a-07aa4003d2c3",
+    "event_type": "webhook_invalid_signature",
+    "severity": "critical",
+    "provider": "mercado_pago",
+    "message": "Assinatura Mercado Pago incompleta.",
+    "payload": {
+      "headers": {
+        "requestId": "29fa99fd-9cb6-45a5-b47b-8055f177416f",
+        "signature": "ts=1777237243,v1=aa8b18ef22131043df3919ad1a3a572c5fe27ec27e35f2b24861f82416c4969c"
+      }
+    },
+    "acknowledged_at": null,
+    "resolved_at": null,
+    "created_at": "2026-04-26T21:00:43.25652+00:00",
+    "updated_at": "2026-04-26T21:00:43.25652+00:00"
+  },
+  {
+    "id": "a2eccc20-e188-4aba-9372-d22062345c1a",
+    "event_type": "three_day_review_fallback",
+    "severity": "warning",
+    "provider": "gemini",
+    "message": "Review de 3 dias caiu em fallback por provider_error.",
+    "payload": {
+      "status": "provider_error"
+    },
+    "acknowledged_at": null,
+    "resolved_at": null,
+    "created_at": "2026-04-28T09:05:12.614154+00:00",
+    "updated_at": "2026-04-28T09:05:12.614154+00:00"
+  }
+]

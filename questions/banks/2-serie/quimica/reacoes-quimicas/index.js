@@ -7,33 +7,33 @@ import {
 
 const blocos = [
   {
-    subtopico: "Conceito de reacao quimica",
+    subtopico: "Conceito de reacao química",
     habilidade:
-      "identificar evidencias e caracteristicas gerais de reacoes quimicas",
-    tags: ["reacao quimica", "transformacao", "materia"],
+      "identificar evidencias e características gerais de reacoes quimicas",
+    tags: ["reacao química", "transformacao", "materia"],
     fatos: [
       {
-        lead: "uma reacao quimica",
+        lead: "uma reacao química",
         answer: "a transformacao em que substancias iniciais originam novas substancias",
         why: "os reagentes reorganizam atomos e formam produtos"
       },
       {
         lead: "os reagentes",
-        answer: "as substancias presentes no inicio de uma transformacao quimica",
-        why: "eles participam do processo de formacao dos produtos"
+        answer: "as substancias presentes no inicio de uma transformacao química",
+        why: "eles participam do processo de formação dos produtos"
       },
       {
         lead: "os produtos",
-        answer: "as substancias obtidas ao final de uma reacao quimica",
+        answer: "as substancias obtidas ao final de uma reacao química",
         why: "eles resultam da reorganizacao dos atomos dos reagentes"
       },
       {
         lead: "a conservacao dos atomos numa reacao",
-        answer: "a permanencia do numero de atomos de cada elemento antes e depois do processo",
+        answer: "a permanencia do número de atomos de cada elemento antes e depois do processo",
         why: "os atomos apenas se reorganizam nas substancias"
       },
       {
-        lead: "a transformacao quimica",
+        lead: "a transformacao química",
         answer: "a mudanca que altera a composicao das substancias envolvidas",
         why: "ela se diferencia de mudancas meramente fisicas"
       }
@@ -42,32 +42,32 @@ const blocos = [
   {
     subtopico: "Evidencias de reacao",
     habilidade:
-      "identificar evidencias e caracteristicas gerais de reacoes quimicas",
+      "identificar evidencias e características gerais de reacoes quimicas",
     tags: ["evidencias", "gases", "precipitado"],
     fatos: [
       {
-        lead: "a formacao de gas",
-        answer: "uma possivel evidencia experimental de que uma reacao ocorreu",
+        lead: "a formação de gas",
+        answer: "uma possível evidencia experimental de que uma reacao ocorreu",
         why: "o desprendimento de bolhas indica surgimento de nova substancia gasosa"
       },
       {
-        lead: "a formacao de precipitado",
+        lead: "a formação de precipitado",
         answer: "o aparecimento de um solido insoluvel em meio liquido durante a reacao",
         why: "isso sinaliza nova substancia com baixa solubilidade"
       },
       {
         lead: "a mudanca de cor em uma mistura reacional",
-        answer: "um indicio frequente de transformacao quimica",
-        why: "ela pode refletir formacao de novas especies"
+        answer: "um indicio frequente de transformacao química",
+        why: "ela pode refletir formação de novas especies"
       },
       {
-        lead: "a variacao de temperatura sem aquecimento externo",
-        answer: "uma evidencia possivel de reacao com troca de energia",
+        lead: "a variação de temperatura sem aquecimento externo",
+        answer: "uma evidencia possível de reacao com troca de energia",
         why: "algumas transformacoes liberam ou absorvem calor"
       },
       {
         lead: "o aparecimento de odor novo",
-        answer: "um sinal de formacao de substancia diferente da inicial",
+        answer: "um sinal de formação de substancia diferente da inicial",
         why: "mudancas sensoriais podem indicar reacao"
       }
     ]
@@ -80,12 +80,12 @@ const blocos = [
     fatos: [
       {
         lead: "o balanceamento de uma equacao",
-        answer: "o ajuste dos coeficientes para igualar o numero de atomos nos dois lados",
+        answer: "o ajuste dos coeficientes para igualar o número de atomos nos dois lados",
         why: "ele respeita a conservacao da massa"
       },
       {
         lead: "o coeficiente estequiometrico",
-        answer: "o numero colocado antes da formula para indicar a proporcao entre substancias",
+        answer: "o número colocado antes da formula para indicar a proporcao entre substancias",
         why: "ele participa do balanceamento das equacoes"
       },
       {
@@ -96,11 +96,11 @@ const blocos = [
       {
         lead: "a alteracao do indice na formula",
         answer: "um erro no balanceamento por modificar a identidade da substancia",
-        why: "o correto e ajustar coeficientes, nao subscritos"
+        why: "o correto é ajustar coeficientes, não subscritos"
       },
       {
-        lead: "uma equacao nao balanceada",
-        answer: "a representacao que ainda nao respeita a igualdade de atomos entre reagentes e produtos",
+        lead: "uma equacao não balanceada",
+        answer: "a representacao que ainda não respeita a igualdade de atomos entre reagentes e produtos",
         why: "ela precisa de ajuste para expressar corretamente a reacao"
       }
     ]
@@ -119,11 +119,11 @@ const blocos = [
       {
         lead: "a frase nada se perde, nada se cria",
         answer: "a ideia de conservacao da materia em uma transformacao",
-        why: "ela resume a interpretacao classica da lei de Lavoisier"
+        why: "ela resume a interpretação classica da lei de Lavoisier"
       },
       {
         lead: "a massa em sistema fechado",
-        answer: "a grandeza que se mantem constante durante a reacao quimica",
+        answer: "a grandeza que se mantem constante durante a reacao química",
         why: "sem troca de materia com o meio, a soma de massas permanece"
       },
       {
@@ -133,7 +133,7 @@ const blocos = [
       },
       {
         lead: "a importancia experimental de Lavoisier",
-        answer: "a consolidacao da quimica quantitativa baseada em medidas de massa",
+        answer: "a consolidacao da química quantitativa baseada em medidas de massa",
         why: "isso fortaleceu o estudo moderno das reacoes"
       }
     ]
@@ -147,12 +147,12 @@ const blocos = [
       {
         lead: "a reacao de sintese",
         answer: "a transformacao em que duas ou mais substancias originam um unico produto principal",
-        why: "ela tambem e chamada de combinacao"
+        why: "ela também e chamada de combinacao"
       },
       {
-        lead: "a reacao de analise",
+        lead: "a reacao de análise",
         answer: "a transformacao em que uma substancia origina duas ou mais substancias",
-        why: "ela tambem e chamada de decomposicao"
+        why: "ela também e chamada de decomposicao"
       },
       {
         lead: "a reacao de deslocamento simples",
@@ -162,7 +162,7 @@ const blocos = [
       {
         lead: "a reacao de dupla troca",
         answer: "a transformacao em que dois compostos trocam ions entre si",
-        why: "ela e comum em meios aquosos"
+        why: "ela é comum em meios aquosos"
       },
       {
         lead: "a classificacao de uma reacao",
@@ -172,7 +172,7 @@ const blocos = [
     ]
   },
   {
-    subtopico: "Reacoes de sintese e analise",
+    subtopico: "Reacoes de sintese e análise",
     habilidade:
       "classificar reacoes quimicas segundo padroes de transformacao",
     tags: ["sintese", "analise", "decomposicao"],
@@ -184,12 +184,12 @@ const blocos = [
       },
       {
         lead: "uma reacao de decomposicao",
-        answer: "outra forma de nomear a reacao de analise",
+        answer: "outra forma de nomear a reacao de análise",
         why: "um composto se fragmenta em duas ou mais especies"
       },
       {
         lead: "a decomposicao termica",
-        answer: "a analise provocada pelo fornecimento de calor",
+        answer: "a análise provocada pelo fornecimento de calor",
         why: "o aquecimento pode quebrar estruturas quimicas"
       },
       {
@@ -198,7 +198,7 @@ const blocos = [
         why: "esse processo aparece em varias transformacoes comuns"
       },
       {
-        lead: "a comparacao entre sintese e analise",
+        lead: "a comparacao entre sintese e análise",
         answer: "o contraste entre unir substancias e fragmentar uma substancia",
         why: "cada tipo segue logica oposta de reorganizacao"
       }
@@ -226,9 +226,9 @@ const blocos = [
         why: "metais mais reativos substituem menos reativos"
       },
       {
-        lead: "o criterio para ocorrer dupla troca",
-        answer: "a formacao de produto pouco ionizado, insoluvel ou gasoso",
-        why: "isso favorece o deslocamento do equilibrio reacional"
+        lead: "o critério para ocorrer dupla troca",
+        answer: "a formação de produto pouco ionizado, insoluvel ou gasoso",
+        why: "isso favorece o deslocamento do equilíbrio reacional"
       },
       {
         lead: "o deslocamento do hidrogenio por metal reativo",
@@ -246,20 +246,20 @@ const blocos = [
       {
         lead: "a combustao",
         answer: "a reacao rapida com oxigenio que libera energia",
-        why: "ela e um caso importante de oxidacao"
+        why: "ela é um caso importante de oxidacao"
       },
       {
         lead: "a combustao completa",
-        answer: "a oxidacao em que ha oxigenio suficiente e formacao principal de CO2 e agua",
+        answer: "a oxidacao em que ha oxigenio suficiente e formação principal de CO2 e agua",
         why: "o combustivel e oxidado de modo mais pleno"
       },
       {
         lead: "a combustao incompleta",
         answer: "a combustao em que falta oxigenio e podem surgir CO e fuligem",
-        why: "a oxidacao nao ocorre de forma total"
+        why: "a oxidacao não ocorre de forma total"
       },
       {
-        lead: "a oxidacao quimica",
+        lead: "a oxidacao química",
         answer: "o processo associado a perda de eletrons ou aumento do nox",
         why: "essa definicao e central em redox"
       },
@@ -283,7 +283,7 @@ const blocos = [
       },
       {
         lead: "a influencia da temperatura",
-        answer: "o aumento da energia media das particulas e da frequencia de choques eficazes",
+        answer: "o aumento da energia média das particulas e da frequência de choques eficazes",
         why: "temperaturas maiores costumam acelerar reacoes"
       },
       {
@@ -298,19 +298,19 @@ const blocos = [
       },
       {
         lead: "a concentracao dos reagentes",
-        answer: "o fator que modifica a frequencia de choques entre particulas reativas",
+        answer: "o fator que modifica a frequência de choques entre particulas reativas",
         why: "maior concentracao pode elevar a velocidade"
       }
     ]
   },
   {
-    subtopico: "Interpretacao de equacoes e aplicacoes",
+    subtopico: "Interpretação de equacoes e aplicacoes",
     habilidade:
       "interpretar equacoes quimicas em contextos experimentais e cotidianos",
     tags: ["equacoes", "aplicacoes", "interpretacao"],
     fatos: [
       {
-        lead: "uma equacao quimica",
+        lead: "uma equacao química",
         answer: "a representacao simbolica dos reagentes, produtos e proporcoes de uma reacao",
         why: "ela sintetiza qualitativa e quantitativamente a transformacao"
       },
@@ -321,8 +321,8 @@ const blocos = [
       },
       {
         lead: "a leitura quantitativa de uma equacao",
-        answer: "a interpretacao dos coeficientes como proporcoes entre quantidades de materia",
-        why: "eles nao representam massas diretas, mas relacoes proporcionais"
+        answer: "a interpretação dos coeficientes como proporcoes entre quantidades de materia",
+        why: "eles não representam massas diretas, mas relações proporcionais"
       },
       {
         lead: "a aplicacao de reacoes no cotidiano",
@@ -340,14 +340,14 @@ const blocos = [
 
 export const reacoesQuimicas = {
   id: "quimica_reacoes_quimicas",
-  materia: "Quimica",
+  materia: "Química",
   serie: [2],
   topico: "Reacoes Quimicas",
   metadados: {
     disciplinaId: "quimica",
     base: "ESCOLAR",
     seloEditorial: "VERIFICADA",
-    eixo: "Quimica",
+    eixo: "Química",
     frente: "Transformacoes e classificacao das reacoes",
     searchAliases: [
       "reacoes quimicas",
@@ -358,7 +358,7 @@ export const reacoesQuimicas = {
     ],
     subtopicosBase: blocos.map((bloco) => bloco.subtopico),
     habilidadesBase: [
-      "identificar evidencias e caracteristicas gerais de reacoes quimicas",
+      "identificar evidencias e características gerais de reacoes quimicas",
       "balancear equacoes quimicas com base na conservacao da massa",
       "relacionar reacoes quimicas a leis ponderais",
       "classificar reacoes quimicas segundo padroes de transformacao",
@@ -371,7 +371,7 @@ export const reacoesQuimicas = {
   questoes: buildPlannedQuestions({
     prefix: "rq",
     serie: 2,
-    materia: "Quimica",
+    materia: "Química",
     topico: "Reacoes Quimicas",
     blocos,
     stemBuilders: CHEMISTRY_STEM_BUILDERS,

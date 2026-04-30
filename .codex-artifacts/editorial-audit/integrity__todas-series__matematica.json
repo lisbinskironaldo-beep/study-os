@@ -1,0 +1,145 @@
+{
+  "summary": {},
+  "results": [
+    {
+      "file": "questions/banks/1-serie/matematica/funcoes-afim-e-quadratica/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/matematica/geometria-plana/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/matematica/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/matematica/introducao-a-trigonometria/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/matematica/notacao-cientifica/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/matematica/numeros-reais/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/matematica/porcentagem/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/matematica/razoes-e-proporcoes/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/matematica/funcoes-exponenciais/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/matematica/geometria-espacial/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/matematica/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/matematica/logaritmos/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/matematica/progressoes-pa-e-pg/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/matematica/trigonometria-completa/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/matematica/analise-combinatoria/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/matematica/estatistica/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/matematica/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/matematica/matematica-aplicada-enem/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/matematica/probabilidade/index.js",
+      "topicCount": 1,
+      "questionCount": 210,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/matematica/revisao-geral/index.js",
+      "topicCount": 1,
+      "questionCount": 200,
+      "issueCount": 0,
+      "issues": []
+    }
+  ]
+}

@@ -8,7 +8,7 @@ export const numerosReais = {
   "metadados": {
     "disciplinaId": "matematica",
     "base": "ESCOLAR",
-    "eixo": "Numeros",
+    "eixo": "Números",
     "frente": "Conjuntos e operacoes",
     "searchAliases": [
       "conjuntos numericos",
@@ -16,7 +16,7 @@ export const numerosReais = {
       "intervalos",
       "modulo",
       "dizimas",
-      "numeros irracionais"
+      "números irracionais"
     ],
     "subtopicosBase": [
       "Conjuntos numericos",
@@ -30,8 +30,8 @@ export const numerosReais = {
     ],
     "habilidadesBase": [
       "identificar conjuntos numericos",
-      "comparar numeros reais",
-      "resolver operacoes com numeros reais",
+      "comparar números reais",
+      "resolver operacoes com números reais",
       "interpretar reta numerica",
       "calcular modulo"
     ],

@@ -8,7 +8,7 @@ export const notacaoCientifica = {
   "metadados": {
     "disciplinaId": "matematica",
     "base": "ESCOLAR",
-    "eixo": "Numeros",
+    "eixo": "Números",
     "frente": "Representacao numerica",
     "searchAliases": [
       "potencias de dez",
@@ -35,7 +35,7 @@ export const notacaoCientifica = {
     ],
     "habilidadesBase": [
       "identificar notacao cientifica valida",
-      "converter numero decimal em notacao cientifica",
+      "converter número decimal em notacao cientifica",
       "converter notacao cientifica em forma decimal",
       "comparar ordens de grandeza"
     ],
@@ -2257,7 +2257,7 @@ export const notacaoCientifica = {
       "dificuldadeNivel": 4,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Analise os valores e identifique o menor:",
+      "enunciado": "Análise os valores e identifique o menor:",
       "opcoes": [
         "6 × 10⁻³",
         "5 × 10⁻²",

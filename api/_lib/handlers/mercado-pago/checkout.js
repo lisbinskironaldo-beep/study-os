@@ -117,7 +117,7 @@ module.exports = async function handler(req, res) {
         });
     }
 
-    const origin = process.env.ROTANOTA_BASE_URL || getOrigin(req);
+    const origin = process.env.PAPIRO_TOOLS_BASE_URL || process.env.ROTANOTA_BASE_URL || getOrigin(req);
     const successUrl = getBackUrl("MERCADO_PAGO_SUCCESS_URL", origin);
     const failureUrl = getBackUrl("MERCADO_PAGO_FAILURE_URL", origin);
     const pendingUrl = getBackUrl("MERCADO_PAGO_PENDING_URL", origin);
@@ -138,7 +138,7 @@ module.exports = async function handler(req, res) {
 
     const userId = authSession.payload.userId;
     const customerId = sanitizeCustomerId(body.customerId || context.customerId || "");
-    const externalReference = `rotanota:${customerId || "guest"}:${plan.id}:${Date.now()}`;
+    const externalReference = `papiro-tools:${customerId || "guest"}:${plan.id}:${Date.now()}`;
 
     const preference = {
         items: [
@@ -166,7 +166,7 @@ module.exports = async function handler(req, res) {
             utm_campaign: context.utmCampaign || "",
             utm_content: context.utmContent || ""
         },
-        statement_descriptor: "ROTANOTA"
+        statement_descriptor: "PAPIROTOOLS"
     };
 
     if (shouldUseBackUrls(successUrl, failureUrl, pendingUrl)) {

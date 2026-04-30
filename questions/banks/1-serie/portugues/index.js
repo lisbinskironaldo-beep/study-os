@@ -5,6 +5,7 @@ import { figurasDeLinguagem } from "./figuras-de-linguagem/index.js";
 import { gramaticaClassesDePalavras } from "./gramatica-classes-de-palavras/index.js";
 import { ortografiaEPontuacao } from "./ortografia-e-pontuacao/index.js";
 import { literaturaTrovadorismoHumanismoClassicismo } from "./literatura-trovadorismo-humanismo-classicismo/index.js";
+import { withPortugueseEditorialAudit } from "../../_shared/editorialAuditMetadata.js";
 
 export const portugues1Serie = [
   interpretacaoDeTexto,
@@ -14,5 +15,5 @@ export const portugues1Serie = [
   gramaticaClassesDePalavras,
   ortografiaEPontuacao,
   literaturaTrovadorismoHumanismoClassicismo
-];
+].map(withPortugueseEditorialAudit);
 

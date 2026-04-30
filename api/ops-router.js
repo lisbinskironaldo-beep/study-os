@@ -9,9 +9,6 @@ const {
     recordOpsAlert,
     savePrimaryOpsState,
     getPrimaryOpsState,
-    getManagedApps,
-    getAppsWorkspace,
-    refreshManagedAppsHealth,
     getOverview,
     listOpsAlerts,
     getPaymentsStatus,
@@ -19,6 +16,12 @@ const {
     getWeeklyReport,
     listReviewRuns,
     runThreeDayReview,
+    runDailyHealthCheck,
+    getOpsAiMemory,
+    saveOpsAiMemory,
+    getMarketingContentQueue,
+    generateMarketingContentQueue,
+    updateMarketingContentItem,
     listChangeRequests,
     createChangeRequest,
     approveChangeRequest,
@@ -29,10 +32,6 @@ const {
     recordChannelSpend,
     analyzeWithCopilot,
     listPromotionCampaigns,
-    saveManagedApp,
-    saveAppWorkItem,
-    saveAppBugReport,
-    saveAppFinanceSnapshot,
     generatePromotionDraft,
     applyPromotion,
     setPromotionMode,
@@ -194,8 +193,52 @@ module.exports = async function handler(req, res) {
             });
         }
 
+        let body = {};
+        if (req.method === "POST") {
+            try {
+                body = await readJsonBody(req);
+            } catch (error) {
+                return sendJson(res, 400, {
+                    ok: false,
+                    status: "invalid_json"
+                });
+            }
+        }
+
         const result = await runThreeDayReview({
-            force: req.method === "POST"
+            force: req.method === "POST",
+            provider: body.provider || "fallback"
+        });
+        return sendJson(res, result.ok ? 200 : 429, result);
+    }
+
+    if (routePath === "health/daily-run") {
+        if (!["GET", "POST"].includes(req.method)) {
+            return methodNotAllowed(res, ["GET", "POST", "OPTIONS"]);
+        }
+
+        if (!hasCronSecret(req) && !requireOpsSession(req).ok) {
+            return sendJson(res, 401, {
+                ok: false,
+                status: "unauthorized"
+            });
+        }
+
+        let body = {};
+        if (req.method === "POST") {
+            try {
+                body = await readJsonBody(req);
+            } catch (error) {
+                return sendJson(res, 400, {
+                    ok: false,
+                    status: "invalid_json"
+                });
+            }
+        }
+
+        const result = await runDailyHealthCheck({
+            force: req.method === "POST",
+            provider: body.provider || "fallback"
         });
         return sendJson(res, result.ok ? 200 : 429, result);
     }
@@ -248,117 +291,6 @@ module.exports = async function handler(req, res) {
 
         const query = getUrl(req).searchParams.get("query") || "";
         return sendJson(res, 200, await searchOps(query));
-    }
-
-    if (routePath === "apps") {
-        if (req.method === "GET") {
-            return sendJson(res, 200, await getManagedApps());
-        }
-
-        if (req.method === "POST") {
-            let body = {};
-
-            try {
-                body = await readJsonBody(req);
-            } catch (error) {
-                return sendJson(res, 400, {
-                    ok: false,
-                    status: "invalid_json"
-                });
-            }
-
-            const result = await saveManagedApp(body);
-            return sendJson(res, result.ok ? 200 : 400, result);
-        }
-
-        return methodNotAllowed(res, ["GET", "POST", "OPTIONS"]);
-    }
-
-    if (routePath === "apps/workspace") {
-        if (req.method !== "GET") {
-            return methodNotAllowed(res, ["GET", "OPTIONS"]);
-        }
-
-        return sendJson(res, 200, await getAppsWorkspace());
-    }
-
-    if (routePath === "apps/check") {
-        if (req.method !== "POST") {
-            return methodNotAllowed(res, ["POST", "OPTIONS"]);
-        }
-
-        let body = {};
-
-        try {
-            body = await readJsonBody(req);
-        } catch (error) {
-            return sendJson(res, 400, {
-                ok: false,
-                status: "invalid_json"
-            });
-        }
-
-        return sendJson(res, 200, await refreshManagedAppsHealth(body));
-    }
-
-    if (routePath === "apps/work-items") {
-        if (req.method !== "POST") {
-            return methodNotAllowed(res, ["POST", "OPTIONS"]);
-        }
-
-        let body = {};
-
-        try {
-            body = await readJsonBody(req);
-        } catch (error) {
-            return sendJson(res, 400, {
-                ok: false,
-                status: "invalid_json"
-            });
-        }
-
-        const result = await saveAppWorkItem(body);
-        return sendJson(res, result.ok ? 200 : 400, result);
-    }
-
-    if (routePath === "apps/bugs") {
-        if (req.method !== "POST") {
-            return methodNotAllowed(res, ["POST", "OPTIONS"]);
-        }
-
-        let body = {};
-
-        try {
-            body = await readJsonBody(req);
-        } catch (error) {
-            return sendJson(res, 400, {
-                ok: false,
-                status: "invalid_json"
-            });
-        }
-
-        const result = await saveAppBugReport(body);
-        return sendJson(res, result.ok ? 200 : 400, result);
-    }
-
-    if (routePath === "apps/finance") {
-        if (req.method !== "POST") {
-            return methodNotAllowed(res, ["POST", "OPTIONS"]);
-        }
-
-        let body = {};
-
-        try {
-            body = await readJsonBody(req);
-        } catch (error) {
-            return sendJson(res, 400, {
-                ok: false,
-                status: "invalid_json"
-            });
-        }
-
-        const result = await saveAppFinanceSnapshot(body);
-        return sendJson(res, result.ok ? 200 : 400, result);
     }
 
     if (routePath === "actions") {
@@ -483,9 +415,20 @@ module.exports = async function handler(req, res) {
             return methodNotAllowed(res, ["POST", "OPTIONS"]);
         }
 
+        let body = {};
+        try {
+            body = await readJsonBody(req);
+        } catch (error) {
+            return sendJson(res, 400, {
+                ok: false,
+                status: "invalid_json"
+            });
+        }
+
         const result = await runThreeDayReview({
             force: true,
-            runType: "manual_review"
+            runType: "manual_review",
+            provider: body.provider || "fallback"
         });
         return sendJson(res, result.ok ? 200 : 429, result);
     }
@@ -556,6 +499,85 @@ module.exports = async function handler(req, res) {
         }
 
         return sendJson(res, 200, await getWeeklyReport());
+    }
+
+    if (routePath === "ai/memory") {
+        if (req.method === "GET") {
+            return sendJson(res, 200, {
+                ok: true,
+                memory: await getOpsAiMemory()
+            });
+        }
+
+        if (req.method === "POST") {
+            let body = {};
+
+            try {
+                body = await readJsonBody(req);
+            } catch (error) {
+                return sendJson(res, 400, {
+                    ok: false,
+                    status: "invalid_json"
+                });
+            }
+
+            return sendJson(res, 200, {
+                ok: true,
+                memory: await saveOpsAiMemory(body.memory || body)
+            });
+        }
+
+        return methodNotAllowed(res, ["GET", "POST", "OPTIONS"]);
+    }
+
+    if (routePath === "marketing/content") {
+        if (req.method !== "GET") {
+            return methodNotAllowed(res, ["GET", "OPTIONS"]);
+        }
+
+        return sendJson(res, 200, await getMarketingContentQueue());
+    }
+
+    if (routePath === "marketing/content/generate") {
+        if (req.method !== "POST") {
+            return methodNotAllowed(res, ["POST", "OPTIONS"]);
+        }
+
+        let body = {};
+
+        try {
+            body = await readJsonBody(req);
+        } catch (error) {
+            return sendJson(res, 400, {
+                ok: false,
+                status: "invalid_json"
+            });
+        }
+
+        return sendJson(res, 200, await generateMarketingContentQueue({
+            ...body,
+            source: "ops_console"
+        }));
+    }
+
+    if (routePath === "marketing/content/status") {
+        if (req.method !== "POST") {
+            return methodNotAllowed(res, ["POST", "OPTIONS"]);
+        }
+
+        let body = {};
+
+        try {
+            body = await readJsonBody(req);
+        } catch (error) {
+            return sendJson(res, 400, {
+                ok: false,
+                status: "invalid_json"
+            });
+        }
+
+        const result = await updateMarketingContentItem(body);
+        return sendJson(res, result.ok ? 200 : 400, result);
     }
 
     if (routePath === "promotions") {

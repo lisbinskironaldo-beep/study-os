@@ -1,6 +1,6 @@
 ﻿export const verbToBeESimplePresent = {
   "id": "ingles_verb_to_be_e_simple_present",
-  "materia": "Ingles",
+  "materia": "Inglês",
   "serie": [
     1
   ],
@@ -9,13 +9,13 @@
     "disciplinaId": "ingles",
     "base": "ESCOLAR",
     "seloEditorial": "VERIFICADA",
-    "eixo": "Gramatica basica e construcao de frases",
-    "frente": "Estruturas iniciais do ingles para identificacao e producao de sentido",
+    "eixo": "Gramática basica e construcao de frases",
+    "frente": "Estruturas iniciais do inglês para identificacao e produção de sentido",
     "searchAliases": [
       "verb to be",
       "simple present",
       "present tense",
-      "ingles gramatica basica",
+      "inglês gramática basica",
       "subject pronouns",
       "daily routine"
     ],
@@ -35,9 +35,9 @@
       "identificar estruturas basicas do verbo to be",
       "usar o simple present em frases simples",
       "reconhecer pronomes e marcas de concordancia",
-      "interpretar rotinas e habitos em ingles",
+      "interpretar rotinas e hábitos em inglês",
       "distinguir formas afirmativas, negativas e interrogativas",
-      "aplicar gramatica basica em contextos curtos"
+      "aplicar gramática basica em contextos curtos"
     ],
     "auditado": true,
     "auditadoEm": "2026-04-12",
@@ -49,22 +49,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Subject pronouns",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, Subject pronouns refere-se a:",
+      "enunciado": "Em Inglês, Subject pronouns refere-se a:",
       "opcoes": [
-        "os pronomes pessoais usados para indicar quem pratica a acao ou quem e descrito na frase",
+        "os pronomes pessoais usados para indicar quem pratica a ação ou quem e descrito na frase",
         "o uso de am, is e are em frases afirmativas para identificar, caracterizar ou localizar",
-        "o uso de am not, is not e are not para negar informacoes em frases simples",
+        "o uso de am not, is not e are not para negar informações em frases simples",
         "a inversao entre sujeito e verb to be para formar perguntas simples"
       ],
-      "correta": "os pronomes pessoais usados para indicar quem pratica a acao ou quem e descrito na frase",
-      "comentario": "Subject pronouns refere-se aos pronomes pessoais usados para indicar quem pratica a acao ou quem e descrito na frase.",
+      "correta": "os pronomes pessoais usados para indicar quem pratica a ação ou quem e descrito na frase",
+      "comentario": "Subject pronouns refere-se aos pronomes pessoais usados para indicar quem pratica a ação ou quem e descrito na frase.",
       "tempoEstimado": 20,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -88,14 +88,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Subject pronouns",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: o estudante precisa substituir Maria and Lucas por um pronome adequado em uma frase. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: o estudante precisa substituir Maria and Lucas por um pronome adequado em uma frase. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
         "Subject pronouns",
         "Verb to be afirmativo",
@@ -103,7 +103,7 @@
         "Verb to be interrogativo"
       ],
       "correta": "Subject pronouns",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de subject pronouns.",
+      "comentario": "A situação apresentada é melhor compreendida por meio de subject pronouns.",
       "tempoEstimado": 20,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -127,7 +127,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Subject pronouns",
       "dificuldadeLabel": "facil",
@@ -166,14 +166,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Subject pronouns",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente subject pronouns?",
+      "enunciado": "Qual alternativa NÃO representa corretamente subject pronouns?",
       "opcoes": [
         "She is my classmate.",
         "They are my friends.",
@@ -181,7 +181,7 @@
         "fazer concordancia basica entre sujeito e verbo em frases simples."
       ],
       "correta": "She is my classmate.",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao subject pronouns.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não subject pronouns.",
       "tempoEstimado": 25,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -205,14 +205,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Subject pronouns",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar subject pronouns, o foco principal e:",
+      "enunciado": "Ao estudar subject pronouns, o foco principal é:",
       "opcoes": [
         "reconhecer pronomes como I, you, he, she, it, we e they",
         "empregar corretamente am, is e are em frases simples",
@@ -244,7 +244,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Subject pronouns",
       "dificuldadeLabel": "facil",
@@ -253,12 +253,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Enquanto Verb to be afirmativo trata de o uso de am, is e are em frases afirmativas para identificar, caracterizar ou localizar, Subject pronouns destaca:",
       "opcoes": [
-        "Os pronomes pessoais usados para indicar quem pratica a acao ou quem e descrito na frase.",
+        "Os pronomes pessoais usados para indicar quem pratica a ação ou quem e descrito na frase.",
         "O uso de am, is e are em frases afirmativas para identificar, caracterizar ou localizar.",
-        "O uso de am not, is not e are not para negar informacoes em frases simples.",
+        "O uso de am not, is not e are not para negar informações em frases simples.",
         "A inversao entre sujeito e verb to be para formar perguntas simples."
       ],
-      "correta": "Os pronomes pessoais usados para indicar quem pratica a acao ou quem e descrito na frase.",
+      "correta": "Os pronomes pessoais usados para indicar quem pratica a ação ou quem e descrito na frase.",
       "comentario": "A comparacao correta mostra a especificidade de subject pronouns.",
       "tempoEstimado": 30,
       "tags": [
@@ -283,7 +283,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Subject pronouns",
       "dificuldadeLabel": "facil",
@@ -298,7 +298,7 @@
         "Simple Present afirmativo"
       ],
       "correta": "Subject pronouns",
-      "comentario": "Esse tipo de tarefa exige dominio de subject pronouns.",
+      "comentario": "Esse tipo de tarefa exige domínio de subject pronouns.",
       "tempoEstimado": 35,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -322,19 +322,19 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Subject pronouns",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de Subject pronouns?",
+      "enunciado": "Qual situação pratica depende mais diretamente de Subject pronouns?",
       "opcoes": [
         "fazer concordancia basica entre sujeito e verbo em frases simples",
-        "montar frases afirmativas basicas com informacoes pessoais",
+        "montar frases afirmativas basicas com informações pessoais",
         "compreender e produzir frases negativas no presente com verb to be",
-        "descrever acoes habituais e fatos frequentes"
+        "descrever ações habituais e fatos frequentes"
       ],
       "correta": "fazer concordancia basica entre sujeito e verbo em frases simples",
       "comentario": "Subject pronouns aparece de forma direta em fazer concordancia basica entre sujeito e verbo em frases simples.",
@@ -361,14 +361,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Subject pronouns",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre subject pronouns?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre subject pronouns?",
       "opcoes": [
         "o caso e resolvido com foco em subject pronouns.",
         "o caso e melhor resolvido por verb to be afirmativo.",
@@ -376,7 +376,7 @@
         "o caso impede qualquer uso de verb to be interrogativo."
       ],
       "correta": "o caso e resolvido com foco em subject pronouns.",
-      "comentario": "A conclusao correta retoma a funcao central de subject pronouns.",
+      "comentario": "A conclusão correta retoma a função central de subject pronouns.",
       "tempoEstimado": 40,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -400,7 +400,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Subject pronouns",
       "dificuldadeLabel": "facil",
@@ -439,22 +439,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Subject pronouns",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em subject pronouns e pensar que:",
+      "enunciado": "Um erro comum em subject pronouns é pensar que:",
       "opcoes": [
-        "os pronomes em ingles funcionam exatamente como a repeticao do nome em toda frase",
+        "os pronomes em inglês funcionam exatamente como a repeticao do nome em toda frase",
         "o verb to be pode ser omitido sempre que houver adjetivo na frase",
         "basta colocar not em qualquer posicao da frase para negar corretamente",
         "toda pergunta com verb to be precisa usar do ou does"
       ],
-      "correta": "os pronomes em ingles funcionam exatamente como a repeticao do nome em toda frase",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de subject pronouns.",
+      "correta": "os pronomes em inglês funcionam exatamente como a repeticao do nome em toda frase",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de subject pronouns.",
       "tempoEstimado": 45,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -478,21 +478,21 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Subject pronouns",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"nao e preciso usar subject pronouns, porque repetir o nome sempre produz o mesmo efeito\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"não e preciso usar subject pronouns, porque repetir o nome sempre produz o mesmo efeito\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque os pronomes pessoais usados para indicar quem pratica a acao ou quem e descrito na frase.",
-        "A afirmacao esta correta, pois resume integralmente subject pronouns.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque os pronomes pessoais usados para indicar quem pratica a ação ou quem e descrito na frase.",
+        "A afirmação está correta, pois resume integralmente subject pronouns.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque os pronomes pessoais usados para indicar quem pratica a acao ou quem e descrito na frase.",
+      "correta": "A afirmação está incorreta, porque os pronomes pessoais usados para indicar quem pratica a ação ou quem e descrito na frase.",
       "comentario": "A fala do estudante apresenta um equivoco conceitual sobre subject pronouns.",
       "tempoEstimado": 45,
       "tags": [
@@ -517,7 +517,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Subject pronouns",
       "dificuldadeLabel": "medio",
@@ -526,13 +526,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Se subject pronouns fosse ignorado(a) em fazer concordancia basica entre sujeito e verbo em frases simples, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em fazer concordancia basica entre sujeito e verbo em frases simples.",
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em fazer concordancia basica entre sujeito e verbo em frases simples.",
         "a questao seria resolvida automaticamente por verb to be afirmativo.",
-        "nenhuma interpretacao seria alterada, porque Subject pronouns nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "nenhuma interpretação seria alterada, porque Subject pronouns não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em fazer concordancia basica entre sujeito e verbo em frases simples.",
-      "comentario": "Ignorar subject pronouns compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em fazer concordancia basica entre sujeito e verbo em frases simples.",
+      "comentario": "Ignorar subject pronouns compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -556,14 +556,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Subject pronouns",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor Subject pronouns?",
+      "enunciado": "Qual trecho ou ação ilustra melhor Subject pronouns?",
       "opcoes": [
         "They are my friends.",
         "She is my classmate.",
@@ -571,7 +571,7 @@
         "Are they at school?"
       ],
       "correta": "They are my friends.",
-      "comentario": "O item correto e o que melhor exemplifica subject pronouns.",
+      "comentario": "O item correto é o que melhor exemplifica subject pronouns.",
       "tempoEstimado": 50,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -595,7 +595,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Subject pronouns",
       "dificuldadeLabel": "dificil",
@@ -634,14 +634,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Subject pronouns",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar subject pronouns?",
+      "enunciado": "Qual estratégia ajuda mais a estudar subject pronouns?",
       "opcoes": [
         "identificar quem esta sendo mencionado e trocar pelo pronome correto",
         "observar o sujeito da frase e escolher am, is ou are",
@@ -649,7 +649,7 @@
         "colocar am, is ou are antes do sujeito na pergunta"
       ],
       "correta": "identificar quem esta sendo mencionado e trocar pelo pronome correto",
-      "comentario": "A estrategia correta fortalece o dominio de subject pronouns.",
+      "comentario": "A estratégia correta fortalece o domínio de subject pronouns.",
       "tempoEstimado": 55,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -673,14 +673,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Subject pronouns",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Subject pronouns e mais cobrado quando:",
+      "enunciado": "Em uma prova, Subject pronouns é mais cobrado quando:",
       "opcoes": [
         "a questao pede substituir nomes por pronomes ou completar o sujeito da frase",
         "o item pede completar ou corrigir frases afirmativas com verb to be",
@@ -688,7 +688,7 @@
         "o item exige reconhecer ou montar perguntas simples com verb to be"
       ],
       "correta": "a questao pede substituir nomes por pronomes ou completar o sujeito da frase",
-      "comentario": "Esse e o tipo de demanda em que subject pronouns aparece com mais frequencia.",
+      "comentario": "Esse é o tipo de demanda em que subject pronouns aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -712,7 +712,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Subject pronouns",
       "dificuldadeLabel": "dificil",
@@ -721,13 +721,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Subject pronouns?",
       "opcoes": [
-        "Em sintese, os pronomes pessoais usados para indicar quem pratica a acao ou quem e descrito na frase.",
+        "Em sintese, os pronomes pessoais usados para indicar quem pratica a ação ou quem e descrito na frase.",
         "Em sintese, o uso de am, is e are em frases afirmativas para identificar, caracterizar ou localizar.",
-        "Em sintese, o uso de am not, is not e are not para negar informacoes em frases simples.",
+        "Em sintese, o uso de am not, is not e are not para negar informações em frases simples.",
         "Em sintese, a inversao entre sujeito e verb to be para formar perguntas simples."
       ],
-      "correta": "Em sintese, os pronomes pessoais usados para indicar quem pratica a acao ou quem e descrito na frase.",
-      "comentario": "O resumo correto recupera o nucleo de subject pronouns.",
+      "correta": "Em sintese, os pronomes pessoais usados para indicar quem pratica a ação ou quem e descrito na frase.",
+      "comentario": "O resumo correto recupera o núcleo de subject pronouns.",
       "tempoEstimado": 60,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -751,14 +751,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Subject pronouns",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Subject pronouns?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em Subject pronouns?",
       "opcoes": [
         "They are my friends. -> o pronome substitui nomes e organiza a frase de forma natural",
         "She is my classmate. -> o pronome substitui nomes e organiza a frase de forma natural",
@@ -766,7 +766,7 @@
         "Are they at school? -> o verb to be liga o sujeito a uma caracteristica ou identificacao"
       ],
       "correta": "They are my friends. -> o pronome substitui nomes e organiza a frase de forma natural",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em subject pronouns.",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em subject pronouns.",
       "tempoEstimado": 65,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -790,7 +790,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Subject pronouns",
       "dificuldadeLabel": "dificil",
@@ -829,19 +829,19 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be afirmativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, Verb to be afirmativo refere-se a:",
+      "enunciado": "Em Inglês, Verb to be afirmativo refere-se a:",
       "opcoes": [
         "o uso de am, is e are em frases afirmativas para identificar, caracterizar ou localizar",
-        "o uso de am not, is not e are not para negar informacoes em frases simples",
+        "o uso de am not, is not e are not para negar informações em frases simples",
         "a inversao entre sujeito e verb to be para formar perguntas simples",
-        "o uso do presente simples para expressar rotinas, habitos e fatos gerais em frases afirmativas"
+        "o uso do presente simples para expressar rotinas, hábitos e fatos gerais em frases afirmativas"
       ],
       "correta": "o uso de am, is e are em frases afirmativas para identificar, caracterizar ou localizar",
       "comentario": "Verb to be afirmativo refere-se ao uso de am, is e are em frases afirmativas para identificar, caracterizar ou localizar.",
@@ -868,14 +868,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be afirmativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: um aluno descreve idade, nacionalidade e profissao em um pequeno perfil. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: um aluno descreve idade, nacionalidade e profissao em um pequeno perfil. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
         "Verb to be afirmativo",
         "Verb to be negativo",
@@ -883,7 +883,7 @@
         "Simple Present afirmativo"
       ],
       "correta": "Verb to be afirmativo",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de verb to be afirmativo.",
+      "comentario": "A situação apresentada é melhor compreendida por meio de verb to be afirmativo.",
       "tempoEstimado": 20,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -907,7 +907,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be afirmativo",
       "dificuldadeLabel": "facil",
@@ -946,22 +946,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be afirmativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente verb to be afirmativo?",
+      "enunciado": "Qual alternativa NÃO representa corretamente verb to be afirmativo?",
       "opcoes": [
         "He is not at home.",
         "She is my classmate.",
         "observar o sujeito da frase e escolher am, is ou are.",
-        "montar frases afirmativas basicas com informacoes pessoais."
+        "montar frases afirmativas basicas com informações pessoais."
       ],
       "correta": "He is not at home.",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao verb to be afirmativo.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não verb to be afirmativo.",
       "tempoEstimado": 25,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -985,19 +985,19 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be afirmativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar verb to be afirmativo, o foco principal e:",
+      "enunciado": "Ao estudar verb to be afirmativo, o foco principal é:",
       "opcoes": [
         "empregar corretamente am, is e are em frases simples",
         "formar negacoes corretas com o verb to be",
         "reconhecer e produzir perguntas com am, is e are",
-        "identificar habitos e rotinas marcados pelo simple present"
+        "identificar hábitos e rotinas marcados pelo simple present"
       ],
       "correta": "empregar corretamente am, is e are em frases simples",
       "comentario": "Verb to be afirmativo concentra-se em empregar corretamente am, is e are em frases simples.",
@@ -1024,19 +1024,19 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be afirmativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Verb to be negativo trata de o uso de am not, is not e are not para negar informacoes em frases simples, Verb to be afirmativo destaca:",
+      "enunciado": "Enquanto Verb to be negativo trata de o uso de am not, is not e are not para negar informações em frases simples, Verb to be afirmativo destaca:",
       "opcoes": [
         "O uso de am, is e are em frases afirmativas para identificar, caracterizar ou localizar.",
-        "O uso de am not, is not e are not para negar informacoes em frases simples.",
+        "O uso de am not, is not e are not para negar informações em frases simples.",
         "A inversao entre sujeito e verb to be para formar perguntas simples.",
-        "O uso do presente simples para expressar rotinas, habitos e fatos gerais em frases afirmativas."
+        "O uso do presente simples para expressar rotinas, hábitos e fatos gerais em frases afirmativas."
       ],
       "correta": "O uso de am, is e are em frases afirmativas para identificar, caracterizar ou localizar.",
       "comentario": "A comparacao correta mostra a especificidade de verb to be afirmativo.",
@@ -1063,7 +1063,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be afirmativo",
       "dificuldadeLabel": "facil",
@@ -1078,7 +1078,7 @@
         "Simple Present negativo e interrogativo"
       ],
       "correta": "Verb to be afirmativo",
-      "comentario": "Esse tipo de tarefa exige dominio de verb to be afirmativo.",
+      "comentario": "Esse tipo de tarefa exige domínio de verb to be afirmativo.",
       "tempoEstimado": 35,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -1102,22 +1102,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be afirmativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de Verb to be afirmativo?",
+      "enunciado": "Qual situação pratica depende mais diretamente de Verb to be afirmativo?",
       "opcoes": [
-        "montar frases afirmativas basicas com informacoes pessoais",
+        "montar frases afirmativas basicas com informações pessoais",
         "compreender e produzir frases negativas no presente com verb to be",
         "formular perguntas basicas sobre identidade, condicao e localizacao",
         "alternar entre afirmativa, negativa e pergunta no presente simples"
       ],
-      "correta": "montar frases afirmativas basicas com informacoes pessoais",
-      "comentario": "Verb to be afirmativo aparece de forma direta em montar frases afirmativas basicas com informacoes pessoais.",
+      "correta": "montar frases afirmativas basicas com informações pessoais",
+      "comentario": "Verb to be afirmativo aparece de forma direta em montar frases afirmativas basicas com informações pessoais.",
       "tempoEstimado": 35,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -1141,14 +1141,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be afirmativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre verb to be afirmativo?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre verb to be afirmativo?",
       "opcoes": [
         "o caso e resolvido com foco em verb to be afirmativo.",
         "o caso e melhor resolvido por verb to be negativo.",
@@ -1156,7 +1156,7 @@
         "o caso impede qualquer uso de simple Present afirmativo."
       ],
       "correta": "o caso e resolvido com foco em verb to be afirmativo.",
-      "comentario": "A conclusao correta retoma a funcao central de verb to be afirmativo.",
+      "comentario": "A conclusão correta retoma a função central de verb to be afirmativo.",
       "tempoEstimado": 40,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -1180,7 +1180,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be afirmativo",
       "dificuldadeLabel": "facil",
@@ -1189,12 +1189,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar verb to be afirmativo, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como verb to be afirmativo aparece em montar frases afirmativas basicas com informacoes pessoais?",
-        "Como verb to be negativo substitui totalmente montar frases afirmativas basicas com informacoes pessoais?",
+        "Como verb to be afirmativo aparece em montar frases afirmativas basicas com informações pessoais?",
+        "Como verb to be negativo substitui totalmente montar frases afirmativas basicas com informações pessoais?",
         "Por que verb to be interrogativo torna desnecessario estudar Verb to be afirmativo?",
         "De que modo simple Present afirmativo elimina toda leitura de contexto?"
       ],
-      "correta": "Como verb to be afirmativo aparece em montar frases afirmativas basicas com informacoes pessoais?",
+      "correta": "Como verb to be afirmativo aparece em montar frases afirmativas basicas com informações pessoais?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de verb to be afirmativo.",
       "tempoEstimado": 40,
       "tags": [
@@ -1219,22 +1219,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be afirmativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em verb to be afirmativo e pensar que:",
+      "enunciado": "Um erro comum em verb to be afirmativo é pensar que:",
       "opcoes": [
         "o verb to be pode ser omitido sempre que houver adjetivo na frase",
         "basta colocar not em qualquer posicao da frase para negar corretamente",
         "toda pergunta com verb to be precisa usar do ou does",
-        "o simple present serve apenas para acoes que acontecem no exato momento da fala"
+        "o simple present serve apenas para ações que acontecem no exato momento da fala"
       ],
       "correta": "o verb to be pode ser omitido sempre que houver adjetivo na frase",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de verb to be afirmativo.",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de verb to be afirmativo.",
       "tempoEstimado": 45,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -1258,21 +1258,21 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be afirmativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"em ingles, frases como she happy estao corretas sem o verb to be\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"em inglês, frases como she happy estao corretas sem o verb to be\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque o uso de am, is e are em frases afirmativas para identificar, caracterizar ou localizar.",
-        "A afirmacao esta correta, pois resume integralmente verb to be afirmativo.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque o uso de am, is e are em frases afirmativas para identificar, caracterizar ou localizar.",
+        "A afirmação está correta, pois resume integralmente verb to be afirmativo.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque o uso de am, is e are em frases afirmativas para identificar, caracterizar ou localizar.",
+      "correta": "A afirmação está incorreta, porque o uso de am, is e are em frases afirmativas para identificar, caracterizar ou localizar.",
       "comentario": "A fala do estudante apresenta um equivoco conceitual sobre verb to be afirmativo.",
       "tempoEstimado": 45,
       "tags": [
@@ -1297,22 +1297,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be afirmativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se verb to be afirmativo fosse ignorado(a) em montar frases afirmativas basicas com informacoes pessoais, o resultado mais provavel seria:",
+      "enunciado": "Se verb to be afirmativo fosse ignorado(a) em montar frases afirmativas basicas com informações pessoais, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em montar frases afirmativas basicas com informacoes pessoais.",
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em montar frases afirmativas basicas com informações pessoais.",
         "a questao seria resolvida automaticamente por verb to be negativo.",
-        "nenhuma interpretacao seria alterada, porque Verb to be afirmativo nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "nenhuma interpretação seria alterada, porque Verb to be afirmativo não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em montar frases afirmativas basicas com informacoes pessoais.",
-      "comentario": "Ignorar verb to be afirmativo compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em montar frases afirmativas basicas com informações pessoais.",
+      "comentario": "Ignorar verb to be afirmativo compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -1336,14 +1336,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be afirmativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor Verb to be afirmativo?",
+      "enunciado": "Qual trecho ou ação ilustra melhor Verb to be afirmativo?",
       "opcoes": [
         "She is my classmate.",
         "He is not at home.",
@@ -1351,7 +1351,7 @@
         "She studies every day."
       ],
       "correta": "She is my classmate.",
-      "comentario": "O item correto e o que melhor exemplifica verb to be afirmativo.",
+      "comentario": "O item correto é o que melhor exemplifica verb to be afirmativo.",
       "tempoEstimado": 50,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -1375,7 +1375,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be afirmativo",
       "dificuldadeLabel": "dificil",
@@ -1387,7 +1387,7 @@
         "o verb to be liga o sujeito a uma caracteristica ou identificacao",
         "a negativa do verb to be altera corretamente o sentido da frase",
         "a pergunta com verb to be exige inversao entre verbo e sujeito",
-        "o simple present e usado para habitos e acoes regulares"
+        "o simple present e usado para hábitos e ações regulares"
       ],
       "correta": "o verb to be liga o sujeito a uma caracteristica ou identificacao",
       "comentario": "A leitura correta do exemplo revela o papel de verb to be afirmativo.",
@@ -1414,14 +1414,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be afirmativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar verb to be afirmativo?",
+      "enunciado": "Qual estratégia ajuda mais a estudar verb to be afirmativo?",
       "opcoes": [
         "observar o sujeito da frase e escolher am, is ou are",
         "manter o verb to be e inserir not na estrutura adequada",
@@ -1429,7 +1429,7 @@
         "procurar marcadores de rotina e observar a forma verbal"
       ],
       "correta": "observar o sujeito da frase e escolher am, is ou are",
-      "comentario": "A estrategia correta fortalece o dominio de verb to be afirmativo.",
+      "comentario": "A estratégia correta fortalece o domínio de verb to be afirmativo.",
       "tempoEstimado": 55,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -1453,22 +1453,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be afirmativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Verb to be afirmativo e mais cobrado quando:",
+      "enunciado": "Em uma prova, Verb to be afirmativo é mais cobrado quando:",
       "opcoes": [
         "o item pede completar ou corrigir frases afirmativas com verb to be",
         "a questao pede transformar uma frase afirmativa em negativa",
         "o item exige reconhecer ou montar perguntas simples com verb to be",
-        "a pergunta pede reconhecer habito, rotina ou fato geral"
+        "a pergunta pede reconhecer hábito, rotina ou fato geral"
       ],
       "correta": "o item pede completar ou corrigir frases afirmativas com verb to be",
-      "comentario": "Esse e o tipo de demanda em que verb to be afirmativo aparece com mais frequencia.",
+      "comentario": "Esse é o tipo de demanda em que verb to be afirmativo aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -1492,7 +1492,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be afirmativo",
       "dificuldadeLabel": "dificil",
@@ -1502,12 +1502,12 @@
       "enunciado": "Qual resumo sintetiza melhor a ideia de Verb to be afirmativo?",
       "opcoes": [
         "Em sintese, o uso de am, is e are em frases afirmativas para identificar, caracterizar ou localizar.",
-        "Em sintese, o uso de am not, is not e are not para negar informacoes em frases simples.",
+        "Em sintese, o uso de am not, is not e are not para negar informações em frases simples.",
         "Em sintese, a inversao entre sujeito e verb to be para formar perguntas simples.",
-        "Em sintese, o uso do presente simples para expressar rotinas, habitos e fatos gerais em frases afirmativas."
+        "Em sintese, o uso do presente simples para expressar rotinas, hábitos e fatos gerais em frases afirmativas."
       ],
       "correta": "Em sintese, o uso de am, is e are em frases afirmativas para identificar, caracterizar ou localizar.",
-      "comentario": "O resumo correto recupera o nucleo de verb to be afirmativo.",
+      "comentario": "O resumo correto recupera o núcleo de verb to be afirmativo.",
       "tempoEstimado": 60,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -1531,22 +1531,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be afirmativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Verb to be afirmativo?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em Verb to be afirmativo?",
       "opcoes": [
         "She is my classmate. -> o verb to be liga o sujeito a uma caracteristica ou identificacao",
         "He is not at home. -> o verb to be liga o sujeito a uma caracteristica ou identificacao",
-        "Are they at school? -> o simple present e usado para habitos e acoes regulares",
+        "Are they at school? -> o simple present e usado para hábitos e ações regulares",
         "She studies every day. -> a negativa do verb to be altera corretamente o sentido da frase"
       ],
       "correta": "She is my classmate. -> o verb to be liga o sujeito a uma caracteristica ou identificacao",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em verb to be afirmativo.",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em verb to be afirmativo.",
       "tempoEstimado": 65,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -1570,7 +1570,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be afirmativo",
       "dificuldadeLabel": "dificil",
@@ -1581,7 +1581,7 @@
       "opcoes": [
         "empregar corretamente am, is e are em frases simples",
         "observar o sujeito da frase e escolher am, is ou are",
-        "montar frases afirmativas basicas com informacoes pessoais",
+        "montar frases afirmativas basicas com informações pessoais",
         "o item pede completar ou corrigir frases afirmativas com verb to be"
       ],
       "correta": "empregar corretamente am, is e are em frases simples",
@@ -1609,22 +1609,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be negativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, Verb to be negativo refere-se a:",
+      "enunciado": "Em Inglês, Verb to be negativo refere-se a:",
       "opcoes": [
-        "o uso de am not, is not e are not para negar informacoes em frases simples",
+        "o uso de am not, is not e are not para negar informações em frases simples",
         "a inversao entre sujeito e verb to be para formar perguntas simples",
-        "o uso do presente simples para expressar rotinas, habitos e fatos gerais em frases afirmativas",
+        "o uso do presente simples para expressar rotinas, hábitos e fatos gerais em frases afirmativas",
         "o uso de do, does, do not e does not para negar ou perguntar no presente simples"
       ],
-      "correta": "o uso de am not, is not e are not para negar informacoes em frases simples",
-      "comentario": "Verb to be negativo refere-se ao uso de am not, is not e are not para negar informacoes em frases simples.",
+      "correta": "o uso de am not, is not e are not para negar informações em frases simples",
+      "comentario": "Verb to be negativo refere-se ao uso de am not, is not e are not para negar informações em frases simples.",
       "tempoEstimado": 20,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -1648,14 +1648,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be negativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: o estudante precisa negar a frase They are late para manter o sentido oposto. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: o estudante precisa negar a frase They are late para manter o sentido oposto. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
         "Verb to be negativo",
         "Verb to be interrogativo",
@@ -1663,7 +1663,7 @@
         "Simple Present negativo e interrogativo"
       ],
       "correta": "Verb to be negativo",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de verb to be negativo.",
+      "comentario": "A situação apresentada é melhor compreendida por meio de verb to be negativo.",
       "tempoEstimado": 20,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -1687,7 +1687,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be negativo",
       "dificuldadeLabel": "facil",
@@ -1726,14 +1726,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be negativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente verb to be negativo?",
+      "enunciado": "Qual alternativa NÃO representa corretamente verb to be negativo?",
       "opcoes": [
         "Are they at school?",
         "He is not at home.",
@@ -1741,7 +1741,7 @@
         "compreender e produzir frases negativas no presente com verb to be."
       ],
       "correta": "Are they at school?",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao verb to be negativo.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não verb to be negativo.",
       "tempoEstimado": 25,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -1765,18 +1765,18 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be negativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar verb to be negativo, o foco principal e:",
+      "enunciado": "Ao estudar verb to be negativo, o foco principal é:",
       "opcoes": [
         "formar negacoes corretas com o verb to be",
         "reconhecer e produzir perguntas com am, is e are",
-        "identificar habitos e rotinas marcados pelo simple present",
+        "identificar hábitos e rotinas marcados pelo simple present",
         "formar estruturas negativas e interrogativas no simple present"
       ],
       "correta": "formar negacoes corretas com o verb to be",
@@ -1804,7 +1804,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be negativo",
       "dificuldadeLabel": "facil",
@@ -1813,12 +1813,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Enquanto Verb to be interrogativo trata de a inversao entre sujeito e verb to be para formar perguntas simples, Verb to be negativo destaca:",
       "opcoes": [
-        "O uso de am not, is not e are not para negar informacoes em frases simples.",
+        "O uso de am not, is not e are not para negar informações em frases simples.",
         "A inversao entre sujeito e verb to be para formar perguntas simples.",
-        "O uso do presente simples para expressar rotinas, habitos e fatos gerais em frases afirmativas.",
+        "O uso do presente simples para expressar rotinas, hábitos e fatos gerais em frases afirmativas.",
         "O uso de do, does, do not e does not para negar ou perguntar no presente simples."
       ],
-      "correta": "O uso de am not, is not e are not para negar informacoes em frases simples.",
+      "correta": "O uso de am not, is not e are not para negar informações em frases simples.",
       "comentario": "A comparacao correta mostra a especificidade de verb to be negativo.",
       "tempoEstimado": 30,
       "tags": [
@@ -1843,7 +1843,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be negativo",
       "dificuldadeLabel": "facil",
@@ -1858,7 +1858,7 @@
         "Adverbs of frequency"
       ],
       "correta": "Verb to be negativo",
-      "comentario": "Esse tipo de tarefa exige dominio de verb to be negativo.",
+      "comentario": "Esse tipo de tarefa exige domínio de verb to be negativo.",
       "tempoEstimado": 35,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -1882,19 +1882,19 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be negativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de Verb to be negativo?",
+      "enunciado": "Qual situação pratica depende mais diretamente de Verb to be negativo?",
       "opcoes": [
         "compreender e produzir frases negativas no presente com verb to be",
         "formular perguntas basicas sobre identidade, condicao e localizacao",
-        "descrever acoes habituais e fatos frequentes",
-        "compreender a regularidade de acoes em rotina e habitos"
+        "descrever ações habituais e fatos frequentes",
+        "compreender a regularidade de ações em rotina e hábitos"
       ],
       "correta": "compreender e produzir frases negativas no presente com verb to be",
       "comentario": "Verb to be negativo aparece de forma direta em compreender e produzir frases negativas no presente com verb to be.",
@@ -1921,14 +1921,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be negativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre verb to be negativo?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre verb to be negativo?",
       "opcoes": [
         "o caso e resolvido com foco em verb to be negativo.",
         "o caso e melhor resolvido por verb to be interrogativo.",
@@ -1936,7 +1936,7 @@
         "o caso impede qualquer uso de simple Present negativo e interrogativo."
       ],
       "correta": "o caso e resolvido com foco em verb to be negativo.",
-      "comentario": "A conclusao correta retoma a funcao central de verb to be negativo.",
+      "comentario": "A conclusão correta retoma a função central de verb to be negativo.",
       "tempoEstimado": 40,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -1960,7 +1960,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be negativo",
       "dificuldadeLabel": "facil",
@@ -1999,22 +1999,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be negativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em verb to be negativo e pensar que:",
+      "enunciado": "Um erro comum em verb to be negativo é pensar que:",
       "opcoes": [
         "basta colocar not em qualquer posicao da frase para negar corretamente",
         "toda pergunta com verb to be precisa usar do ou does",
-        "o simple present serve apenas para acoes que acontecem no exato momento da fala",
+        "o simple present serve apenas para ações que acontecem no exato momento da fala",
         "nas perguntas e negativas o verbo principal deve receber s sempre"
       ],
       "correta": "basta colocar not em qualquer posicao da frase para negar corretamente",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de verb to be negativo.",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de verb to be negativo.",
       "tempoEstimado": 45,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -2038,21 +2038,21 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be negativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"a frase she not is tired esta correta porque contem not\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"a frase she not is tired esta correta porque contém not\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque o uso de am not, is not e are not para negar informacoes em frases simples.",
-        "A afirmacao esta correta, pois resume integralmente verb to be negativo.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque o uso de am not, is not e are not para negar informações em frases simples.",
+        "A afirmação está correta, pois resume integralmente verb to be negativo.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque o uso de am not, is not e are not para negar informacoes em frases simples.",
+      "correta": "A afirmação está incorreta, porque o uso de am not, is not e are not para negar informações em frases simples.",
       "comentario": "A fala do estudante apresenta um equivoco conceitual sobre verb to be negativo.",
       "tempoEstimado": 45,
       "tags": [
@@ -2077,7 +2077,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be negativo",
       "dificuldadeLabel": "medio",
@@ -2086,13 +2086,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Se verb to be negativo fosse ignorado(a) em compreender e produzir frases negativas no presente com verb to be, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em compreender e produzir frases negativas no presente com verb to be.",
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em compreender e produzir frases negativas no presente com verb to be.",
         "a questao seria resolvida automaticamente por verb to be interrogativo.",
-        "nenhuma interpretacao seria alterada, porque Verb to be negativo nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "nenhuma interpretação seria alterada, porque Verb to be negativo não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em compreender e produzir frases negativas no presente com verb to be.",
-      "comentario": "Ignorar verb to be negativo compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em compreender e produzir frases negativas no presente com verb to be.",
+      "comentario": "Ignorar verb to be negativo compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -2116,14 +2116,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be negativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor Verb to be negativo?",
+      "enunciado": "Qual trecho ou ação ilustra melhor Verb to be negativo?",
       "opcoes": [
         "He is not at home.",
         "Are they at school?",
@@ -2131,7 +2131,7 @@
         "Does she like music?"
       ],
       "correta": "He is not at home.",
-      "comentario": "O item correto e o que melhor exemplifica verb to be negativo.",
+      "comentario": "O item correto é o que melhor exemplifica verb to be negativo.",
       "tempoEstimado": 50,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -2155,7 +2155,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be negativo",
       "dificuldadeLabel": "dificil",
@@ -2166,7 +2166,7 @@
       "opcoes": [
         "a negativa do verb to be altera corretamente o sentido da frase",
         "a pergunta com verb to be exige inversao entre verbo e sujeito",
-        "o simple present e usado para habitos e acoes regulares",
+        "o simple present e usado para hábitos e ações regulares",
         "em perguntas com simple present, o auxiliar carrega a marca gramatical"
       ],
       "correta": "a negativa do verb to be altera corretamente o sentido da frase",
@@ -2194,14 +2194,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be negativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar verb to be negativo?",
+      "enunciado": "Qual estratégia ajuda mais a estudar verb to be negativo?",
       "opcoes": [
         "manter o verb to be e inserir not na estrutura adequada",
         "colocar am, is ou are antes do sujeito na pergunta",
@@ -2209,7 +2209,7 @@
         "usar do ou does e manter o verbo principal na forma base"
       ],
       "correta": "manter o verb to be e inserir not na estrutura adequada",
-      "comentario": "A estrategia correta fortalece o dominio de verb to be negativo.",
+      "comentario": "A estratégia correta fortalece o domínio de verb to be negativo.",
       "tempoEstimado": 55,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -2233,22 +2233,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be negativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Verb to be negativo e mais cobrado quando:",
+      "enunciado": "Em uma prova, Verb to be negativo é mais cobrado quando:",
       "opcoes": [
         "a questao pede transformar uma frase afirmativa em negativa",
         "o item exige reconhecer ou montar perguntas simples com verb to be",
-        "a pergunta pede reconhecer habito, rotina ou fato geral",
+        "a pergunta pede reconhecer hábito, rotina ou fato geral",
         "o item cobra transformacao de frases ou escolha da estrutura correta"
       ],
       "correta": "a questao pede transformar uma frase afirmativa em negativa",
-      "comentario": "Esse e o tipo de demanda em que verb to be negativo aparece com mais frequencia.",
+      "comentario": "Esse é o tipo de demanda em que verb to be negativo aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -2272,7 +2272,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be negativo",
       "dificuldadeLabel": "dificil",
@@ -2281,13 +2281,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Verb to be negativo?",
       "opcoes": [
-        "Em sintese, o uso de am not, is not e are not para negar informacoes em frases simples.",
+        "Em sintese, o uso de am not, is not e are not para negar informações em frases simples.",
         "Em sintese, a inversao entre sujeito e verb to be para formar perguntas simples.",
-        "Em sintese, o uso do presente simples para expressar rotinas, habitos e fatos gerais em frases afirmativas.",
+        "Em sintese, o uso do presente simples para expressar rotinas, hábitos e fatos gerais em frases afirmativas.",
         "Em sintese, o uso de do, does, do not e does not para negar ou perguntar no presente simples."
       ],
-      "correta": "Em sintese, o uso de am not, is not e are not para negar informacoes em frases simples.",
-      "comentario": "O resumo correto recupera o nucleo de verb to be negativo.",
+      "correta": "Em sintese, o uso de am not, is not e are not para negar informações em frases simples.",
+      "comentario": "O resumo correto recupera o núcleo de verb to be negativo.",
       "tempoEstimado": 60,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -2311,14 +2311,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be negativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Verb to be negativo?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em Verb to be negativo?",
       "opcoes": [
         "He is not at home. -> a negativa do verb to be altera corretamente o sentido da frase",
         "Are they at school? -> a negativa do verb to be altera corretamente o sentido da frase",
@@ -2326,7 +2326,7 @@
         "Does she like music? -> a pergunta com verb to be exige inversao entre verbo e sujeito"
       ],
       "correta": "He is not at home. -> a negativa do verb to be altera corretamente o sentido da frase",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em verb to be negativo.",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em verb to be negativo.",
       "tempoEstimado": 65,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -2350,7 +2350,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be negativo",
       "dificuldadeLabel": "dificil",
@@ -2389,19 +2389,19 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be interrogativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, Verb to be interrogativo refere-se a:",
+      "enunciado": "Em Inglês, Verb to be interrogativo refere-se a:",
       "opcoes": [
         "a inversao entre sujeito e verb to be para formar perguntas simples",
-        "o uso do presente simples para expressar rotinas, habitos e fatos gerais em frases afirmativas",
+        "o uso do presente simples para expressar rotinas, hábitos e fatos gerais em frases afirmativas",
         "o uso de do, does, do not e does not para negar ou perguntar no presente simples",
-        "as palavras que indicam com que frequencia uma acao acontece"
+        "as palavras que indicam com que frequência uma ação acontece"
       ],
       "correta": "a inversao entre sujeito e verb to be para formar perguntas simples",
       "comentario": "Verb to be interrogativo refere-se a inversao entre sujeito e verb to be para formar perguntas simples.",
@@ -2428,14 +2428,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be interrogativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: um exercicio pede transformar You are ready em pergunta. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: um exercicio pede transformar You are ready em pergunta. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
         "Verb to be interrogativo",
         "Simple Present afirmativo",
@@ -2443,7 +2443,7 @@
         "Adverbs of frequency"
       ],
       "correta": "Verb to be interrogativo",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de verb to be interrogativo.",
+      "comentario": "A situação apresentada é melhor compreendida por meio de verb to be interrogativo.",
       "tempoEstimado": 20,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -2467,7 +2467,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be interrogativo",
       "dificuldadeLabel": "facil",
@@ -2506,14 +2506,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be interrogativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente verb to be interrogativo?",
+      "enunciado": "Qual alternativa NÃO representa corretamente verb to be interrogativo?",
       "opcoes": [
         "She studies every day.",
         "Are they at school?",
@@ -2521,7 +2521,7 @@
         "formular perguntas basicas sobre identidade, condicao e localizacao."
       ],
       "correta": "She studies every day.",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao verb to be interrogativo.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não verb to be interrogativo.",
       "tempoEstimado": 25,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -2545,17 +2545,17 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be interrogativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar verb to be interrogativo, o foco principal e:",
+      "enunciado": "Ao estudar verb to be interrogativo, o foco principal é:",
       "opcoes": [
         "reconhecer e produzir perguntas com am, is e are",
-        "identificar habitos e rotinas marcados pelo simple present",
+        "identificar hábitos e rotinas marcados pelo simple present",
         "formar estruturas negativas e interrogativas no simple present",
         "interpretar adverbios como always, usually, sometimes e never"
       ],
@@ -2584,19 +2584,19 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be interrogativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Simple Present afirmativo trata de o uso do presente simples para expressar rotinas, habitos e fatos gerais em frases afirmativas, Verb to be interrogativo destaca:",
+      "enunciado": "Enquanto Simple Present afirmativo trata de o uso do presente simples para expressar rotinas, hábitos e fatos gerais em frases afirmativas, Verb to be interrogativo destaca:",
       "opcoes": [
         "A inversao entre sujeito e verb to be para formar perguntas simples.",
-        "O uso do presente simples para expressar rotinas, habitos e fatos gerais em frases afirmativas.",
+        "O uso do presente simples para expressar rotinas, hábitos e fatos gerais em frases afirmativas.",
         "O uso de do, does, do not e does not para negar ou perguntar no presente simples.",
-        "As palavras que indicam com que frequencia uma acao acontece."
+        "As palavras que indicam com que frequência uma ação acontece."
       ],
       "correta": "A inversao entre sujeito e verb to be para formar perguntas simples.",
       "comentario": "A comparacao correta mostra a especificidade de verb to be interrogativo.",
@@ -2623,7 +2623,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be interrogativo",
       "dificuldadeLabel": "facil",
@@ -2638,7 +2638,7 @@
         "Daily routine"
       ],
       "correta": "Verb to be interrogativo",
-      "comentario": "Esse tipo de tarefa exige dominio de verb to be interrogativo.",
+      "comentario": "Esse tipo de tarefa exige domínio de verb to be interrogativo.",
       "tempoEstimado": 35,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -2662,17 +2662,17 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be interrogativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de Verb to be interrogativo?",
+      "enunciado": "Qual situação pratica depende mais diretamente de Verb to be interrogativo?",
       "opcoes": [
         "formular perguntas basicas sobre identidade, condicao e localizacao",
-        "descrever acoes habituais e fatos frequentes",
+        "descrever ações habituais e fatos frequentes",
         "alternar entre afirmativa, negativa e pergunta no presente simples",
         "interpretar e descrever rotinas pessoais e escolares"
       ],
@@ -2701,14 +2701,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be interrogativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre verb to be interrogativo?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre verb to be interrogativo?",
       "opcoes": [
         "o caso e resolvido com foco em verb to be interrogativo.",
         "o caso e melhor resolvido por simple Present afirmativo.",
@@ -2716,7 +2716,7 @@
         "o caso impede qualquer uso de adverbs of frequency."
       ],
       "correta": "o caso e resolvido com foco em verb to be interrogativo.",
-      "comentario": "A conclusao correta retoma a funcao central de verb to be interrogativo.",
+      "comentario": "A conclusão correta retoma a função central de verb to be interrogativo.",
       "tempoEstimado": 40,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -2740,7 +2740,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be interrogativo",
       "dificuldadeLabel": "facil",
@@ -2779,22 +2779,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be interrogativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em verb to be interrogativo e pensar que:",
+      "enunciado": "Um erro comum em verb to be interrogativo é pensar que:",
       "opcoes": [
         "toda pergunta com verb to be precisa usar do ou does",
-        "o simple present serve apenas para acoes que acontecem no exato momento da fala",
+        "o simple present serve apenas para ações que acontecem no exato momento da fala",
         "nas perguntas e negativas o verbo principal deve receber s sempre",
-        "todo adverbio de frequencia pode ficar em qualquer lugar da frase sem alterar a naturalidade"
+        "todo adverbio de frequência pode ficar em qualquer lugar da frase sem alterar a naturalidade"
       ],
       "correta": "toda pergunta com verb to be precisa usar do ou does",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de verb to be interrogativo.",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de verb to be interrogativo.",
       "tempoEstimado": 45,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -2818,21 +2818,21 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be interrogativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"a frase do you are ready e a forma correta de perguntar com verb to be\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"a frase do you are ready e a forma correta de perguntar com verb to be\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque a inversao entre sujeito e verb to be para formar perguntas simples.",
-        "A afirmacao esta correta, pois resume integralmente verb to be interrogativo.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque a inversao entre sujeito e verb to be para formar perguntas simples.",
+        "A afirmação está correta, pois resume integralmente verb to be interrogativo.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque a inversao entre sujeito e verb to be para formar perguntas simples.",
+      "correta": "A afirmação está incorreta, porque a inversao entre sujeito e verb to be para formar perguntas simples.",
       "comentario": "A fala do estudante apresenta um equivoco conceitual sobre verb to be interrogativo.",
       "tempoEstimado": 45,
       "tags": [
@@ -2857,7 +2857,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be interrogativo",
       "dificuldadeLabel": "medio",
@@ -2866,13 +2866,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Se verb to be interrogativo fosse ignorado(a) em formular perguntas basicas sobre identidade, condicao e localizacao, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em formular perguntas basicas sobre identidade, condicao e localizacao.",
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em formular perguntas basicas sobre identidade, condicao e localizacao.",
         "a questao seria resolvida automaticamente por simple Present afirmativo.",
-        "nenhuma interpretacao seria alterada, porque Verb to be interrogativo nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "nenhuma interpretação seria alterada, porque Verb to be interrogativo não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em formular perguntas basicas sobre identidade, condicao e localizacao.",
-      "comentario": "Ignorar verb to be interrogativo compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em formular perguntas basicas sobre identidade, condicao e localizacao.",
+      "comentario": "Ignorar verb to be interrogativo compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -2896,14 +2896,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be interrogativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor Verb to be interrogativo?",
+      "enunciado": "Qual trecho ou ação ilustra melhor Verb to be interrogativo?",
       "opcoes": [
         "Are they at school?",
         "She studies every day.",
@@ -2911,7 +2911,7 @@
         "I usually walk to school."
       ],
       "correta": "Are they at school?",
-      "comentario": "O item correto e o que melhor exemplifica verb to be interrogativo.",
+      "comentario": "O item correto é o que melhor exemplifica verb to be interrogativo.",
       "tempoEstimado": 50,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -2935,7 +2935,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be interrogativo",
       "dificuldadeLabel": "dificil",
@@ -2945,9 +2945,9 @@
       "enunciado": "Ao encontrar o exemplo \"Are they at school?\", a leitura mais adequada e:",
       "opcoes": [
         "a pergunta com verb to be exige inversao entre verbo e sujeito",
-        "o simple present e usado para habitos e acoes regulares",
+        "o simple present e usado para hábitos e ações regulares",
         "em perguntas com simple present, o auxiliar carrega a marca gramatical",
-        "o adverbio mostra a frequencia com que a acao acontece"
+        "o adverbio mostra a frequência com que a ação acontece"
       ],
       "correta": "a pergunta com verb to be exige inversao entre verbo e sujeito",
       "comentario": "A leitura correta do exemplo revela o papel de verb to be interrogativo.",
@@ -2974,14 +2974,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be interrogativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar verb to be interrogativo?",
+      "enunciado": "Qual estratégia ajuda mais a estudar verb to be interrogativo?",
       "opcoes": [
         "colocar am, is ou are antes do sujeito na pergunta",
         "procurar marcadores de rotina e observar a forma verbal",
@@ -2989,7 +2989,7 @@
         "identificar a palavra que indica regularidade e relaciona-la ao sentido da frase"
       ],
       "correta": "colocar am, is ou are antes do sujeito na pergunta",
-      "comentario": "A estrategia correta fortalece o dominio de verb to be interrogativo.",
+      "comentario": "A estratégia correta fortalece o domínio de verb to be interrogativo.",
       "tempoEstimado": 55,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -3013,22 +3013,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be interrogativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Verb to be interrogativo e mais cobrado quando:",
+      "enunciado": "Em uma prova, Verb to be interrogativo é mais cobrado quando:",
       "opcoes": [
         "o item exige reconhecer ou montar perguntas simples com verb to be",
-        "a pergunta pede reconhecer habito, rotina ou fato geral",
+        "a pergunta pede reconhecer hábito, rotina ou fato geral",
         "o item cobra transformacao de frases ou escolha da estrutura correta",
-        "a questao pede compreender o grau de frequencia indicado na frase"
+        "a questao pede compreender o grau de frequência indicado na frase"
       ],
       "correta": "o item exige reconhecer ou montar perguntas simples com verb to be",
-      "comentario": "Esse e o tipo de demanda em que verb to be interrogativo aparece com mais frequencia.",
+      "comentario": "Esse é o tipo de demanda em que verb to be interrogativo aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -3052,7 +3052,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be interrogativo",
       "dificuldadeLabel": "dificil",
@@ -3062,12 +3062,12 @@
       "enunciado": "Qual resumo sintetiza melhor a ideia de Verb to be interrogativo?",
       "opcoes": [
         "Em sintese, a inversao entre sujeito e verb to be para formar perguntas simples.",
-        "Em sintese, o uso do presente simples para expressar rotinas, habitos e fatos gerais em frases afirmativas.",
+        "Em sintese, o uso do presente simples para expressar rotinas, hábitos e fatos gerais em frases afirmativas.",
         "Em sintese, o uso de do, does, do not e does not para negar ou perguntar no presente simples.",
-        "Em sintese, as palavras que indicam com que frequencia uma acao acontece."
+        "Em sintese, as palavras que indicam com que frequência uma ação acontece."
       ],
       "correta": "Em sintese, a inversao entre sujeito e verb to be para formar perguntas simples.",
-      "comentario": "O resumo correto recupera o nucleo de verb to be interrogativo.",
+      "comentario": "O resumo correto recupera o núcleo de verb to be interrogativo.",
       "tempoEstimado": 60,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -3091,22 +3091,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be interrogativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Verb to be interrogativo?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em Verb to be interrogativo?",
       "opcoes": [
         "Are they at school? -> a pergunta com verb to be exige inversao entre verbo e sujeito",
         "She studies every day. -> a pergunta com verb to be exige inversao entre verbo e sujeito",
-        "Does she like music? -> o adverbio mostra a frequencia com que a acao acontece",
-        "I usually walk to school. -> o simple present e usado para habitos e acoes regulares"
+        "Does she like music? -> o adverbio mostra a frequência com que a ação acontece",
+        "I usually walk to school. -> o simple present e usado para hábitos e ações regulares"
       ],
       "correta": "Are they at school? -> a pergunta com verb to be exige inversao entre verbo e sujeito",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em verb to be interrogativo.",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em verb to be interrogativo.",
       "tempoEstimado": 65,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -3130,7 +3130,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Verb to be interrogativo",
       "dificuldadeLabel": "dificil",
@@ -3169,22 +3169,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present afirmativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, Simple Present afirmativo refere-se a:",
+      "enunciado": "Em Inglês, Simple Present afirmativo refere-se a:",
       "opcoes": [
-        "o uso do presente simples para expressar rotinas, habitos e fatos gerais em frases afirmativas",
+        "o uso do presente simples para expressar rotinas, hábitos e fatos gerais em frases afirmativas",
         "o uso de do, does, do not e does not para negar ou perguntar no presente simples",
-        "as palavras que indicam com que frequencia uma acao acontece",
-        "o conjunto de acoes habituais do cotidiano descritas geralmente no presente simples"
+        "as palavras que indicam com que frequência uma ação acontece",
+        "o conjunto de ações habituais do cotidiano descritas geralmente no presente simples"
       ],
-      "correta": "o uso do presente simples para expressar rotinas, habitos e fatos gerais em frases afirmativas",
-      "comentario": "Simple Present afirmativo refere-se ao uso do presente simples para expressar rotinas, habitos e fatos gerais em frases afirmativas.",
+      "correta": "o uso do presente simples para expressar rotinas, hábitos e fatos gerais em frases afirmativas",
+      "comentario": "Simple Present afirmativo refere-se ao uso do presente simples para expressar rotinas, hábitos e fatos gerais em frases afirmativas.",
       "tempoEstimado": 20,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -3208,14 +3208,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present afirmativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: um pequeno texto apresenta a rotina diaria de um estudante. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: um pequeno texto apresenta a rotina diaria de um estudante. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
         "Simple Present afirmativo",
         "Simple Present negativo e interrogativo",
@@ -3223,7 +3223,7 @@
         "Daily routine"
       ],
       "correta": "Simple Present afirmativo",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de simple Present afirmativo.",
+      "comentario": "A situação apresentada é melhor compreendida por meio de simple Present afirmativo.",
       "tempoEstimado": 20,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -3247,7 +3247,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present afirmativo",
       "dificuldadeLabel": "facil",
@@ -3286,22 +3286,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present afirmativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente simple Present afirmativo?",
+      "enunciado": "Qual alternativa NÃO representa corretamente simple Present afirmativo?",
       "opcoes": [
         "Does she like music?",
         "She studies every day.",
         "procurar marcadores de rotina e observar a forma verbal.",
-        "descrever acoes habituais e fatos frequentes."
+        "descrever ações habituais e fatos frequentes."
       ],
       "correta": "Does she like music?",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao simple Present afirmativo.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não simple Present afirmativo.",
       "tempoEstimado": 25,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -3325,22 +3325,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present afirmativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar simple Present afirmativo, o foco principal e:",
+      "enunciado": "Ao estudar simple Present afirmativo, o foco principal é:",
       "opcoes": [
-        "identificar habitos e rotinas marcados pelo simple present",
+        "identificar hábitos e rotinas marcados pelo simple present",
         "formar estruturas negativas e interrogativas no simple present",
         "interpretar adverbios como always, usually, sometimes e never",
         "ler e organizar sequencias de atividades comuns do dia a dia"
       ],
-      "correta": "identificar habitos e rotinas marcados pelo simple present",
-      "comentario": "Simple Present afirmativo concentra-se em identificar habitos e rotinas marcados pelo simple present.",
+      "correta": "identificar hábitos e rotinas marcados pelo simple present",
+      "comentario": "Simple Present afirmativo concentra-se em identificar hábitos e rotinas marcados pelo simple present.",
       "tempoEstimado": 30,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -3364,7 +3364,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present afirmativo",
       "dificuldadeLabel": "facil",
@@ -3373,12 +3373,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Enquanto Simple Present negativo e interrogativo trata de o uso de do, does, do not e does not para negar ou perguntar no presente simples, Simple Present afirmativo destaca:",
       "opcoes": [
-        "O uso do presente simples para expressar rotinas, habitos e fatos gerais em frases afirmativas.",
+        "O uso do presente simples para expressar rotinas, hábitos e fatos gerais em frases afirmativas.",
         "O uso de do, does, do not e does not para negar ou perguntar no presente simples.",
-        "As palavras que indicam com que frequencia uma acao acontece.",
-        "O conjunto de acoes habituais do cotidiano descritas geralmente no presente simples."
+        "As palavras que indicam com que frequência uma ação acontece.",
+        "O conjunto de ações habituais do cotidiano descritas geralmente no presente simples."
       ],
-      "correta": "O uso do presente simples para expressar rotinas, habitos e fatos gerais em frases afirmativas.",
+      "correta": "O uso do presente simples para expressar rotinas, hábitos e fatos gerais em frases afirmativas.",
       "comentario": "A comparacao correta mostra a especificidade de simple Present afirmativo.",
       "tempoEstimado": 30,
       "tags": [
@@ -3403,7 +3403,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present afirmativo",
       "dificuldadeLabel": "facil",
@@ -3418,7 +3418,7 @@
         "Possessive adjectives"
       ],
       "correta": "Simple Present afirmativo",
-      "comentario": "Esse tipo de tarefa exige dominio de simple Present afirmativo.",
+      "comentario": "Esse tipo de tarefa exige domínio de simple Present afirmativo.",
       "tempoEstimado": 35,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -3442,22 +3442,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present afirmativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de Simple Present afirmativo?",
+      "enunciado": "Qual situação pratica depende mais diretamente de Simple Present afirmativo?",
       "opcoes": [
-        "descrever acoes habituais e fatos frequentes",
+        "descrever ações habituais e fatos frequentes",
         "alternar entre afirmativa, negativa e pergunta no presente simples",
-        "compreender a regularidade de acoes em rotina e habitos",
+        "compreender a regularidade de ações em rotina e hábitos",
         "relacionar pessoas e objetos com posse ou pertencimento"
       ],
-      "correta": "descrever acoes habituais e fatos frequentes",
-      "comentario": "Simple Present afirmativo aparece de forma direta em descrever acoes habituais e fatos frequentes.",
+      "correta": "descrever ações habituais e fatos frequentes",
+      "comentario": "Simple Present afirmativo aparece de forma direta em descrever ações habituais e fatos frequentes.",
       "tempoEstimado": 35,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -3481,14 +3481,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present afirmativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre simple Present afirmativo?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre simple Present afirmativo?",
       "opcoes": [
         "o caso e resolvido com foco em simple Present afirmativo.",
         "o caso e melhor resolvido por simple Present negativo e interrogativo.",
@@ -3496,7 +3496,7 @@
         "o caso impede qualquer uso de daily routine."
       ],
       "correta": "o caso e resolvido com foco em simple Present afirmativo.",
-      "comentario": "A conclusao correta retoma a funcao central de simple Present afirmativo.",
+      "comentario": "A conclusão correta retoma a função central de simple Present afirmativo.",
       "tempoEstimado": 40,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -3520,7 +3520,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present afirmativo",
       "dificuldadeLabel": "facil",
@@ -3529,12 +3529,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar simple Present afirmativo, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como simple Present afirmativo aparece em descrever acoes habituais e fatos frequentes?",
-        "Como simple Present negativo e interrogativo substitui totalmente descrever acoes habituais e fatos frequentes?",
+        "Como simple Present afirmativo aparece em descrever ações habituais e fatos frequentes?",
+        "Como simple Present negativo e interrogativo substitui totalmente descrever ações habituais e fatos frequentes?",
         "Por que adverbs of frequency torna desnecessario estudar Simple Present afirmativo?",
         "De que modo daily routine elimina toda leitura de contexto?"
       ],
-      "correta": "Como simple Present afirmativo aparece em descrever acoes habituais e fatos frequentes?",
+      "correta": "Como simple Present afirmativo aparece em descrever ações habituais e fatos frequentes?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de simple Present afirmativo.",
       "tempoEstimado": 40,
       "tags": [
@@ -3559,22 +3559,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present afirmativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em simple Present afirmativo e pensar que:",
+      "enunciado": "Um erro comum em simple Present afirmativo é pensar que:",
       "opcoes": [
-        "o simple present serve apenas para acoes que acontecem no exato momento da fala",
+        "o simple present serve apenas para ações que acontecem no exato momento da fala",
         "nas perguntas e negativas o verbo principal deve receber s sempre",
-        "todo adverbio de frequencia pode ficar em qualquer lugar da frase sem alterar a naturalidade",
-        "daily routine significa apenas acoes feitas pela manha"
+        "todo adverbio de frequência pode ficar em qualquer lugar da frase sem alterar a naturalidade",
+        "daily routine significa apenas ações feitas pela manha"
       ],
-      "correta": "o simple present serve apenas para acoes que acontecem no exato momento da fala",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de simple Present afirmativo.",
+      "correta": "o simple present serve apenas para ações que acontecem no exato momento da fala",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de simple Present afirmativo.",
       "tempoEstimado": 45,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -3598,21 +3598,21 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present afirmativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"a frase I study every day esta errada porque o presente simples nao fala de rotina\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"a frase I study every day esta errada porque o presente simples não fala de rotina\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque o uso do presente simples para expressar rotinas, habitos e fatos gerais em frases afirmativas.",
-        "A afirmacao esta correta, pois resume integralmente simple Present afirmativo.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque o uso do presente simples para expressar rotinas, hábitos e fatos gerais em frases afirmativas.",
+        "A afirmação está correta, pois resume integralmente simple Present afirmativo.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque o uso do presente simples para expressar rotinas, habitos e fatos gerais em frases afirmativas.",
+      "correta": "A afirmação está incorreta, porque o uso do presente simples para expressar rotinas, hábitos e fatos gerais em frases afirmativas.",
       "comentario": "A fala do estudante apresenta um equivoco conceitual sobre simple Present afirmativo.",
       "tempoEstimado": 45,
       "tags": [
@@ -3637,22 +3637,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present afirmativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se simple Present afirmativo fosse ignorado(a) em descrever acoes habituais e fatos frequentes, o resultado mais provavel seria:",
+      "enunciado": "Se simple Present afirmativo fosse ignorado(a) em descrever ações habituais e fatos frequentes, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em descrever acoes habituais e fatos frequentes.",
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em descrever ações habituais e fatos frequentes.",
         "a questao seria resolvida automaticamente por simple Present negativo e interrogativo.",
-        "nenhuma interpretacao seria alterada, porque Simple Present afirmativo nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "nenhuma interpretação seria alterada, porque Simple Present afirmativo não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em descrever acoes habituais e fatos frequentes.",
-      "comentario": "Ignorar simple Present afirmativo compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em descrever ações habituais e fatos frequentes.",
+      "comentario": "Ignorar simple Present afirmativo compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -3676,14 +3676,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present afirmativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor Simple Present afirmativo?",
+      "enunciado": "Qual trecho ou ação ilustra melhor Simple Present afirmativo?",
       "opcoes": [
         "She studies every day.",
         "Does she like music?",
@@ -3691,7 +3691,7 @@
         "I wake up at 6 a.m. and go to school."
       ],
       "correta": "She studies every day.",
-      "comentario": "O item correto e o que melhor exemplifica simple Present afirmativo.",
+      "comentario": "O item correto é o que melhor exemplifica simple Present afirmativo.",
       "tempoEstimado": 50,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -3715,7 +3715,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present afirmativo",
       "dificuldadeLabel": "dificil",
@@ -3724,12 +3724,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Ao encontrar o exemplo \"She studies every day.\", a leitura mais adequada e:",
       "opcoes": [
-        "o simple present e usado para habitos e acoes regulares",
+        "o simple present e usado para hábitos e ações regulares",
         "em perguntas com simple present, o auxiliar carrega a marca gramatical",
-        "o adverbio mostra a frequencia com que a acao acontece",
+        "o adverbio mostra a frequência com que a ação acontece",
         "a frase descreve etapas tipicas de uma rotina diaria"
       ],
-      "correta": "o simple present e usado para habitos e acoes regulares",
+      "correta": "o simple present e usado para hábitos e ações regulares",
       "comentario": "A leitura correta do exemplo revela o papel de simple Present afirmativo.",
       "tempoEstimado": 55,
       "tags": [
@@ -3754,22 +3754,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present afirmativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 7,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar simple Present afirmativo?",
+      "enunciado": "Qual estratégia ajuda mais a estudar simple Present afirmativo?",
       "opcoes": [
         "procurar marcadores de rotina e observar a forma verbal",
         "usar do ou does e manter o verbo principal na forma base",
         "identificar a palavra que indica regularidade e relaciona-la ao sentido da frase",
-        "observar verbos de acao e marcadores de horario"
+        "observar verbos de ação e marcadores de horario"
       ],
       "correta": "procurar marcadores de rotina e observar a forma verbal",
-      "comentario": "A estrategia correta fortalece o dominio de simple Present afirmativo.",
+      "comentario": "A estratégia correta fortalece o domínio de simple Present afirmativo.",
       "tempoEstimado": 55,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -3793,22 +3793,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present afirmativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Simple Present afirmativo e mais cobrado quando:",
+      "enunciado": "Em uma prova, Simple Present afirmativo é mais cobrado quando:",
       "opcoes": [
-        "a pergunta pede reconhecer habito, rotina ou fato geral",
+        "a pergunta pede reconhecer hábito, rotina ou fato geral",
         "o item cobra transformacao de frases ou escolha da estrutura correta",
-        "a questao pede compreender o grau de frequencia indicado na frase",
-        "a prova pede entender ou ordenar acoes habituais do cotidiano"
+        "a questao pede compreender o grau de frequência indicado na frase",
+        "a prova pede entender ou ordenar ações habituais do cotidiano"
       ],
-      "correta": "a pergunta pede reconhecer habito, rotina ou fato geral",
-      "comentario": "Esse e o tipo de demanda em que simple Present afirmativo aparece com mais frequencia.",
+      "correta": "a pergunta pede reconhecer hábito, rotina ou fato geral",
+      "comentario": "Esse é o tipo de demanda em que simple Present afirmativo aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -3832,7 +3832,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present afirmativo",
       "dificuldadeLabel": "dificil",
@@ -3841,13 +3841,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Simple Present afirmativo?",
       "opcoes": [
-        "Em sintese, o uso do presente simples para expressar rotinas, habitos e fatos gerais em frases afirmativas.",
+        "Em sintese, o uso do presente simples para expressar rotinas, hábitos e fatos gerais em frases afirmativas.",
         "Em sintese, o uso de do, does, do not e does not para negar ou perguntar no presente simples.",
-        "Em sintese, as palavras que indicam com que frequencia uma acao acontece.",
-        "Em sintese, o conjunto de acoes habituais do cotidiano descritas geralmente no presente simples."
+        "Em sintese, as palavras que indicam com que frequência uma ação acontece.",
+        "Em sintese, o conjunto de ações habituais do cotidiano descritas geralmente no presente simples."
       ],
-      "correta": "Em sintese, o uso do presente simples para expressar rotinas, habitos e fatos gerais em frases afirmativas.",
-      "comentario": "O resumo correto recupera o nucleo de simple Present afirmativo.",
+      "correta": "Em sintese, o uso do presente simples para expressar rotinas, hábitos e fatos gerais em frases afirmativas.",
+      "comentario": "O resumo correto recupera o núcleo de simple Present afirmativo.",
       "tempoEstimado": 60,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -3871,22 +3871,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present afirmativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Simple Present afirmativo?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em Simple Present afirmativo?",
       "opcoes": [
-        "She studies every day. -> o simple present e usado para habitos e acoes regulares",
-        "Does she like music? -> o simple present e usado para habitos e acoes regulares",
+        "She studies every day. -> o simple present e usado para hábitos e ações regulares",
+        "Does she like music? -> o simple present e usado para hábitos e ações regulares",
         "I usually walk to school. -> a frase descreve etapas tipicas de uma rotina diaria",
         "I wake up at 6 a.m. and go to school. -> em perguntas com simple present, o auxiliar carrega a marca gramatical"
       ],
-      "correta": "She studies every day. -> o simple present e usado para habitos e acoes regulares",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em simple Present afirmativo.",
+      "correta": "She studies every day. -> o simple present e usado para hábitos e ações regulares",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em simple Present afirmativo.",
       "tempoEstimado": 65,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -3910,7 +3910,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present afirmativo",
       "dificuldadeLabel": "dificil",
@@ -3919,13 +3919,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Ao resolver uma atividade sobre simple Present afirmativo, o estudante deve principalmente:",
       "opcoes": [
-        "identificar habitos e rotinas marcados pelo simple present",
+        "identificar hábitos e rotinas marcados pelo simple present",
         "procurar marcadores de rotina e observar a forma verbal",
-        "descrever acoes habituais e fatos frequentes",
-        "a pergunta pede reconhecer habito, rotina ou fato geral"
+        "descrever ações habituais e fatos frequentes",
+        "a pergunta pede reconhecer hábito, rotina ou fato geral"
       ],
-      "correta": "identificar habitos e rotinas marcados pelo simple present",
-      "comentario": "O objetivo central de simple Present afirmativo e identificar habitos e rotinas marcados pelo simple present.",
+      "correta": "identificar hábitos e rotinas marcados pelo simple present",
+      "comentario": "O objetivo central de simple Present afirmativo e identificar hábitos e rotinas marcados pelo simple present.",
       "tempoEstimado": 70,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -3949,18 +3949,18 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present negativo e interrogativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, Simple Present negativo e interrogativo refere-se a:",
+      "enunciado": "Em Inglês, Simple Present negativo e interrogativo refere-se a:",
       "opcoes": [
         "o uso de do, does, do not e does not para negar ou perguntar no presente simples",
-        "as palavras que indicam com que frequencia uma acao acontece",
-        "o conjunto de acoes habituais do cotidiano descritas geralmente no presente simples",
+        "as palavras que indicam com que frequência uma ação acontece",
+        "o conjunto de ações habituais do cotidiano descritas geralmente no presente simples",
         "os adjetivos que indicam posse antes de um substantivo, como my, your, his e their"
       ],
       "correta": "o uso de do, does, do not e does not para negar ou perguntar no presente simples",
@@ -3988,14 +3988,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present negativo e interrogativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: o estudante precisa perguntar se Mark likes math e depois negar a mesma informacao. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: o estudante precisa perguntar se Mark likes math e depois negar a mesma informacao. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
         "Simple Present negativo e interrogativo",
         "Adverbs of frequency",
@@ -4003,7 +4003,7 @@
         "Possessive adjectives"
       ],
       "correta": "Simple Present negativo e interrogativo",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de simple Present negativo e interrogativo.",
+      "comentario": "A situação apresentada é melhor compreendida por meio de simple Present negativo e interrogativo.",
       "tempoEstimado": 20,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -4027,7 +4027,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present negativo e interrogativo",
       "dificuldadeLabel": "facil",
@@ -4066,14 +4066,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present negativo e interrogativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente simple Present negativo e interrogativo?",
+      "enunciado": "Qual alternativa NÃO representa corretamente simple Present negativo e interrogativo?",
       "opcoes": [
         "I usually walk to school.",
         "Does she like music?",
@@ -4081,7 +4081,7 @@
         "alternar entre afirmativa, negativa e pergunta no presente simples."
       ],
       "correta": "I usually walk to school.",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao simple Present negativo e interrogativo.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não simple Present negativo e interrogativo.",
       "tempoEstimado": 25,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -4105,19 +4105,19 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present negativo e interrogativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar simple Present negativo e interrogativo, o foco principal e:",
+      "enunciado": "Ao estudar simple Present negativo e interrogativo, o foco principal é:",
       "opcoes": [
         "formar estruturas negativas e interrogativas no simple present",
         "interpretar adverbios como always, usually, sometimes e never",
         "ler e organizar sequencias de atividades comuns do dia a dia",
-        "reconhecer relacoes de posse em frases curtas"
+        "reconhecer relações de posse em frases curtas"
       ],
       "correta": "formar estruturas negativas e interrogativas no simple present",
       "comentario": "Simple Present negativo e interrogativo concentra-se em formar estruturas negativas e interrogativas no simple present.",
@@ -4144,18 +4144,18 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present negativo e interrogativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Adverbs of frequency trata de as palavras que indicam com que frequencia uma acao acontece, Simple Present negativo e interrogativo destaca:",
+      "enunciado": "Enquanto Adverbs of frequency trata de as palavras que indicam com que frequência uma ação acontece, Simple Present negativo e interrogativo destaca:",
       "opcoes": [
         "O uso de do, does, do not e does not para negar ou perguntar no presente simples.",
-        "As palavras que indicam com que frequencia uma acao acontece.",
-        "O conjunto de acoes habituais do cotidiano descritas geralmente no presente simples.",
+        "As palavras que indicam com que frequência uma ação acontece.",
+        "O conjunto de ações habituais do cotidiano descritas geralmente no presente simples.",
         "Os adjetivos que indicam posse antes de um substantivo, como my, your, his e their."
       ],
       "correta": "O uso de do, does, do not e does not para negar ou perguntar no presente simples.",
@@ -4183,7 +4183,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present negativo e interrogativo",
       "dificuldadeLabel": "facil",
@@ -4198,7 +4198,7 @@
         "There is e There are"
       ],
       "correta": "Simple Present negativo e interrogativo",
-      "comentario": "Esse tipo de tarefa exige dominio de simple Present negativo e interrogativo.",
+      "comentario": "Esse tipo de tarefa exige domínio de simple Present negativo e interrogativo.",
       "tempoEstimado": 35,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -4222,17 +4222,17 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present negativo e interrogativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de Simple Present negativo e interrogativo?",
+      "enunciado": "Qual situação pratica depende mais diretamente de Simple Present negativo e interrogativo?",
       "opcoes": [
         "alternar entre afirmativa, negativa e pergunta no presente simples",
-        "compreender a regularidade de acoes em rotina e habitos",
+        "compreender a regularidade de ações em rotina e hábitos",
         "interpretar e descrever rotinas pessoais e escolares",
         "falar sobre o que existe em lugares e ambientes"
       ],
@@ -4261,14 +4261,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present negativo e interrogativo",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre simple Present negativo e interrogativo?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre simple Present negativo e interrogativo?",
       "opcoes": [
         "o caso e resolvido com foco em simple Present negativo e interrogativo.",
         "o caso e melhor resolvido por adverbs of frequency.",
@@ -4276,7 +4276,7 @@
         "o caso impede qualquer uso de possessive adjectives."
       ],
       "correta": "o caso e resolvido com foco em simple Present negativo e interrogativo.",
-      "comentario": "A conclusao correta retoma a funcao central de simple Present negativo e interrogativo.",
+      "comentario": "A conclusão correta retoma a função central de simple Present negativo e interrogativo.",
       "tempoEstimado": 40,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -4300,7 +4300,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present negativo e interrogativo",
       "dificuldadeLabel": "facil",
@@ -4339,22 +4339,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present negativo e interrogativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em simple Present negativo e interrogativo e pensar que:",
+      "enunciado": "Um erro comum em simple Present negativo e interrogativo é pensar que:",
       "opcoes": [
         "nas perguntas e negativas o verbo principal deve receber s sempre",
-        "todo adverbio de frequencia pode ficar em qualquer lugar da frase sem alterar a naturalidade",
-        "daily routine significa apenas acoes feitas pela manha",
+        "todo adverbio de frequência pode ficar em qualquer lugar da frase sem alterar a naturalidade",
+        "daily routine significa apenas ações feitas pela manha",
         "possessive adjectives podem aparecer sozinhos sem substantivo em qualquer contexto"
       ],
       "correta": "nas perguntas e negativas o verbo principal deve receber s sempre",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de simple Present negativo e interrogativo.",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de simple Present negativo e interrogativo.",
       "tempoEstimado": 45,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -4378,21 +4378,21 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present negativo e interrogativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"a frase does she studies English esta correta porque o sujeito e she\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"a frase does she studies English esta correta porque o sujeito e she\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque o uso de do, does, do not e does not para negar ou perguntar no presente simples.",
-        "A afirmacao esta correta, pois resume integralmente simple Present negativo e interrogativo.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque o uso de do, does, do not e does not para negar ou perguntar no presente simples.",
+        "A afirmação está correta, pois resume integralmente simple Present negativo e interrogativo.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque o uso de do, does, do not e does not para negar ou perguntar no presente simples.",
+      "correta": "A afirmação está incorreta, porque o uso de do, does, do not e does not para negar ou perguntar no presente simples.",
       "comentario": "A fala do estudante apresenta um equivoco conceitual sobre simple Present negativo e interrogativo.",
       "tempoEstimado": 45,
       "tags": [
@@ -4417,7 +4417,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present negativo e interrogativo",
       "dificuldadeLabel": "medio",
@@ -4426,13 +4426,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Se simple Present negativo e interrogativo fosse ignorado(a) em alternar entre afirmativa, negativa e pergunta no presente simples, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em alternar entre afirmativa, negativa e pergunta no presente simples.",
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em alternar entre afirmativa, negativa e pergunta no presente simples.",
         "a questao seria resolvida automaticamente por adverbs of frequency.",
-        "nenhuma interpretacao seria alterada, porque Simple Present negativo e interrogativo nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "nenhuma interpretação seria alterada, porque Simple Present negativo e interrogativo não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em alternar entre afirmativa, negativa e pergunta no presente simples.",
-      "comentario": "Ignorar simple Present negativo e interrogativo compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em alternar entre afirmativa, negativa e pergunta no presente simples.",
+      "comentario": "Ignorar simple Present negativo e interrogativo compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -4456,14 +4456,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present negativo e interrogativo",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor Simple Present negativo e interrogativo?",
+      "enunciado": "Qual trecho ou ação ilustra melhor Simple Present negativo e interrogativo?",
       "opcoes": [
         "Does she like music?",
         "I usually walk to school.",
@@ -4471,7 +4471,7 @@
         "This is our classroom."
       ],
       "correta": "Does she like music?",
-      "comentario": "O item correto e o que melhor exemplifica simple Present negativo e interrogativo.",
+      "comentario": "O item correto é o que melhor exemplifica simple Present negativo e interrogativo.",
       "tempoEstimado": 50,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -4495,7 +4495,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present negativo e interrogativo",
       "dificuldadeLabel": "dificil",
@@ -4505,7 +4505,7 @@
       "enunciado": "Ao encontrar o exemplo \"Does she like music?\", a leitura mais adequada e:",
       "opcoes": [
         "em perguntas com simple present, o auxiliar carrega a marca gramatical",
-        "o adverbio mostra a frequencia com que a acao acontece",
+        "o adverbio mostra a frequência com que a ação acontece",
         "a frase descreve etapas tipicas de uma rotina diaria",
         "o possessive adjective aparece antes do substantivo para indicar posse"
       ],
@@ -4534,22 +4534,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present negativo e interrogativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar simple Present negativo e interrogativo?",
+      "enunciado": "Qual estratégia ajuda mais a estudar simple Present negativo e interrogativo?",
       "opcoes": [
         "usar do ou does e manter o verbo principal na forma base",
         "identificar a palavra que indica regularidade e relaciona-la ao sentido da frase",
-        "observar verbos de acao e marcadores de horario",
+        "observar verbos de ação e marcadores de horario",
         "identificar o possuidor e escolher o adjetivo adequado antes do nome"
       ],
       "correta": "usar do ou does e manter o verbo principal na forma base",
-      "comentario": "A estrategia correta fortalece o dominio de simple Present negativo e interrogativo.",
+      "comentario": "A estratégia correta fortalece o domínio de simple Present negativo e interrogativo.",
       "tempoEstimado": 55,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -4573,22 +4573,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present negativo e interrogativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Simple Present negativo e interrogativo e mais cobrado quando:",
+      "enunciado": "Em uma prova, Simple Present negativo e interrogativo é mais cobrado quando:",
       "opcoes": [
         "o item cobra transformacao de frases ou escolha da estrutura correta",
-        "a questao pede compreender o grau de frequencia indicado na frase",
-        "a prova pede entender ou ordenar acoes habituais do cotidiano",
-        "o item cobra relacao correta entre pronome e posse"
+        "a questao pede compreender o grau de frequência indicado na frase",
+        "a prova pede entender ou ordenar ações habituais do cotidiano",
+        "o item cobra relação correta entre pronome e posse"
       ],
       "correta": "o item cobra transformacao de frases ou escolha da estrutura correta",
-      "comentario": "Esse e o tipo de demanda em que simple Present negativo e interrogativo aparece com mais frequencia.",
+      "comentario": "Esse é o tipo de demanda em que simple Present negativo e interrogativo aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -4612,7 +4612,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present negativo e interrogativo",
       "dificuldadeLabel": "dificil",
@@ -4622,12 +4622,12 @@
       "enunciado": "Qual resumo sintetiza melhor a ideia de Simple Present negativo e interrogativo?",
       "opcoes": [
         "Em sintese, o uso de do, does, do not e does not para negar ou perguntar no presente simples.",
-        "Em sintese, as palavras que indicam com que frequencia uma acao acontece.",
-        "Em sintese, o conjunto de acoes habituais do cotidiano descritas geralmente no presente simples.",
+        "Em sintese, as palavras que indicam com que frequência uma ação acontece.",
+        "Em sintese, o conjunto de ações habituais do cotidiano descritas geralmente no presente simples.",
         "Em sintese, os adjetivos que indicam posse antes de um substantivo, como my, your, his e their."
       ],
       "correta": "Em sintese, o uso de do, does, do not e does not para negar ou perguntar no presente simples.",
-      "comentario": "O resumo correto recupera o nucleo de simple Present negativo e interrogativo.",
+      "comentario": "O resumo correto recupera o núcleo de simple Present negativo e interrogativo.",
       "tempoEstimado": 60,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -4651,22 +4651,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present negativo e interrogativo",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Simple Present negativo e interrogativo?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em Simple Present negativo e interrogativo?",
       "opcoes": [
         "Does she like music? -> em perguntas com simple present, o auxiliar carrega a marca gramatical",
         "I usually walk to school. -> em perguntas com simple present, o auxiliar carrega a marca gramatical",
         "I wake up at 6 a.m. and go to school. -> o possessive adjective aparece antes do substantivo para indicar posse",
-        "This is our classroom. -> o adverbio mostra a frequencia com que a acao acontece"
+        "This is our classroom. -> o adverbio mostra a frequência com que a ação acontece"
       ],
       "correta": "Does she like music? -> em perguntas com simple present, o auxiliar carrega a marca gramatical",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em simple Present negativo e interrogativo.",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em simple Present negativo e interrogativo.",
       "tempoEstimado": 65,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -4690,7 +4690,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Simple Present negativo e interrogativo",
       "dificuldadeLabel": "dificil",
@@ -4729,22 +4729,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Adverbs of frequency",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, Adverbs of frequency refere-se a:",
+      "enunciado": "Em Inglês, Adverbs of frequency refere-se a:",
       "opcoes": [
-        "as palavras que indicam com que frequencia uma acao acontece",
-        "o conjunto de acoes habituais do cotidiano descritas geralmente no presente simples",
+        "as palavras que indicam com que frequência uma ação acontece",
+        "o conjunto de ações habituais do cotidiano descritas geralmente no presente simples",
         "os adjetivos que indicam posse antes de um substantivo, como my, your, his e their",
-        "as estruturas usadas para indicar existencia ou presenca de algo em ingles"
+        "as estruturas usadas para indicar existencia ou presenca de algo em inglês"
       ],
-      "correta": "as palavras que indicam com que frequencia uma acao acontece",
-      "comentario": "Adverbs of frequency refere-se as palavras que indicam com que frequencia uma acao acontece.",
+      "correta": "as palavras que indicam com que frequência uma ação acontece",
+      "comentario": "Adverbs of frequency refere-se as palavras que indicam com que frequência uma ação acontece.",
       "tempoEstimado": 20,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -4768,14 +4768,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Adverbs of frequency",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: um grafico de habitos mostra acoes que acontecem sempre, as vezes ou nunca. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: um gráfico de hábitos mostra ações que acontecem sempre, as vezes ou nunca. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
         "Adverbs of frequency",
         "Daily routine",
@@ -4783,7 +4783,7 @@
         "There is e There are"
       ],
       "correta": "Adverbs of frequency",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de adverbs of frequency.",
+      "comentario": "A situação apresentada é melhor compreendida por meio de adverbs of frequency.",
       "tempoEstimado": 20,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -4807,7 +4807,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Adverbs of frequency",
       "dificuldadeLabel": "facil",
@@ -4846,22 +4846,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Adverbs of frequency",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente adverbs of frequency?",
+      "enunciado": "Qual alternativa NÃO representa corretamente adverbs of frequency?",
       "opcoes": [
         "I wake up at 6 a.m. and go to school.",
         "I usually walk to school.",
         "identificar a palavra que indica regularidade e relaciona-la ao sentido da frase.",
-        "compreender a regularidade de acoes em rotina e habitos."
+        "compreender a regularidade de ações em rotina e hábitos."
       ],
       "correta": "I wake up at 6 a.m. and go to school.",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao adverbs of frequency.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não adverbs of frequency.",
       "tempoEstimado": 25,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -4885,18 +4885,18 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Adverbs of frequency",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar adverbs of frequency, o foco principal e:",
+      "enunciado": "Ao estudar adverbs of frequency, o foco principal é:",
       "opcoes": [
         "interpretar adverbios como always, usually, sometimes e never",
         "ler e organizar sequencias de atividades comuns do dia a dia",
-        "reconhecer relacoes de posse em frases curtas",
+        "reconhecer relações de posse em frases curtas",
         "distinguir singular e plural em estruturas de existencia"
       ],
       "correta": "interpretar adverbios como always, usually, sometimes e never",
@@ -4924,21 +4924,21 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Adverbs of frequency",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Daily routine trata de o conjunto de acoes habituais do cotidiano descritas geralmente no presente simples, Adverbs of frequency destaca:",
+      "enunciado": "Enquanto Daily routine trata de o conjunto de ações habituais do cotidiano descritas geralmente no presente simples, Adverbs of frequency destaca:",
       "opcoes": [
-        "As palavras que indicam com que frequencia uma acao acontece.",
-        "O conjunto de acoes habituais do cotidiano descritas geralmente no presente simples.",
+        "As palavras que indicam com que frequência uma ação acontece.",
+        "O conjunto de ações habituais do cotidiano descritas geralmente no presente simples.",
         "Os adjetivos que indicam posse antes de um substantivo, como my, your, his e their.",
-        "As estruturas usadas para indicar existencia ou presenca de algo em ingles."
+        "As estruturas usadas para indicar existencia ou presenca de algo em inglês."
       ],
-      "correta": "As palavras que indicam com que frequencia uma acao acontece.",
+      "correta": "As palavras que indicam com que frequência uma ação acontece.",
       "comentario": "A comparacao correta mostra a especificidade de adverbs of frequency.",
       "tempoEstimado": 30,
       "tags": [
@@ -4963,14 +4963,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Adverbs of frequency",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma atividade de sala, um grafico de habitos mostra acoes que acontecem sempre, as vezes ou nunca. Para responder bem, o estudante deve mobilizar principalmente:",
+      "enunciado": "Em uma atividade de sala, um gráfico de hábitos mostra ações que acontecem sempre, as vezes ou nunca. Para responder bem, o estudante deve mobilizar principalmente:",
       "opcoes": [
         "Adverbs of frequency",
         "Daily routine",
@@ -4978,7 +4978,7 @@
         "Subject pronouns"
       ],
       "correta": "Adverbs of frequency",
-      "comentario": "Esse tipo de tarefa exige dominio de adverbs of frequency.",
+      "comentario": "Esse tipo de tarefa exige domínio de adverbs of frequency.",
       "tempoEstimado": 35,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -5002,22 +5002,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Adverbs of frequency",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de Adverbs of frequency?",
+      "enunciado": "Qual situação pratica depende mais diretamente de Adverbs of frequency?",
       "opcoes": [
-        "compreender a regularidade de acoes em rotina e habitos",
+        "compreender a regularidade de ações em rotina e hábitos",
         "interpretar e descrever rotinas pessoais e escolares",
         "relacionar pessoas e objetos com posse ou pertencimento",
         "fazer concordancia basica entre sujeito e verbo em frases simples"
       ],
-      "correta": "compreender a regularidade de acoes em rotina e habitos",
-      "comentario": "Adverbs of frequency aparece de forma direta em compreender a regularidade de acoes em rotina e habitos.",
+      "correta": "compreender a regularidade de ações em rotina e hábitos",
+      "comentario": "Adverbs of frequency aparece de forma direta em compreender a regularidade de ações em rotina e hábitos.",
       "tempoEstimado": 35,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -5041,14 +5041,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Adverbs of frequency",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre adverbs of frequency?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre adverbs of frequency?",
       "opcoes": [
         "o caso e resolvido com foco em adverbs of frequency.",
         "o caso e melhor resolvido por daily routine.",
@@ -5056,7 +5056,7 @@
         "o caso impede qualquer uso de there is e There are."
       ],
       "correta": "o caso e resolvido com foco em adverbs of frequency.",
-      "comentario": "A conclusao correta retoma a funcao central de adverbs of frequency.",
+      "comentario": "A conclusão correta retoma a função central de adverbs of frequency.",
       "tempoEstimado": 40,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -5080,7 +5080,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Adverbs of frequency",
       "dificuldadeLabel": "facil",
@@ -5089,12 +5089,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Se a turma fosse revisar adverbs of frequency, qual pergunta de estudo seria a mais adequada?",
       "opcoes": [
-        "Como adverbs of frequency aparece em compreender a regularidade de acoes em rotina e habitos?",
-        "Como daily routine substitui totalmente compreender a regularidade de acoes em rotina e habitos?",
+        "Como adverbs of frequency aparece em compreender a regularidade de ações em rotina e hábitos?",
+        "Como daily routine substitui totalmente compreender a regularidade de ações em rotina e hábitos?",
         "Por que possessive adjectives torna desnecessario estudar Adverbs of frequency?",
         "De que modo there is e There are elimina toda leitura de contexto?"
       ],
-      "correta": "Como adverbs of frequency aparece em compreender a regularidade de acoes em rotina e habitos?",
+      "correta": "Como adverbs of frequency aparece em compreender a regularidade de ações em rotina e hábitos?",
       "comentario": "A pergunta correta investiga diretamente o objeto de estudo de adverbs of frequency.",
       "tempoEstimado": 40,
       "tags": [
@@ -5119,22 +5119,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Adverbs of frequency",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em adverbs of frequency e pensar que:",
+      "enunciado": "Um erro comum em adverbs of frequency é pensar que:",
       "opcoes": [
-        "todo adverbio de frequencia pode ficar em qualquer lugar da frase sem alterar a naturalidade",
-        "daily routine significa apenas acoes feitas pela manha",
+        "todo adverbio de frequência pode ficar em qualquer lugar da frase sem alterar a naturalidade",
+        "daily routine significa apenas ações feitas pela manha",
         "possessive adjectives podem aparecer sozinhos sem substantivo em qualquer contexto",
         "there is e there are funcionam da mesma forma para singular e plural"
       ],
-      "correta": "todo adverbio de frequencia pode ficar em qualquer lugar da frase sem alterar a naturalidade",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de adverbs of frequency.",
+      "correta": "todo adverbio de frequência pode ficar em qualquer lugar da frase sem alterar a naturalidade",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de adverbs of frequency.",
       "tempoEstimado": 45,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -5158,21 +5158,21 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Adverbs of frequency",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"always, never e sometimes funcionam do mesmo jeito em qualquer posicao\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"always, never e sometimes funcionam do mesmo jeito em qualquer posicao\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque as palavras que indicam com que frequencia uma acao acontece.",
-        "A afirmacao esta correta, pois resume integralmente adverbs of frequency.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque as palavras que indicam com que frequência uma ação acontece.",
+        "A afirmação está correta, pois resume integralmente adverbs of frequency.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque as palavras que indicam com que frequencia uma acao acontece.",
+      "correta": "A afirmação está incorreta, porque as palavras que indicam com que frequência uma ação acontece.",
       "comentario": "A fala do estudante apresenta um equivoco conceitual sobre adverbs of frequency.",
       "tempoEstimado": 45,
       "tags": [
@@ -5197,22 +5197,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Adverbs of frequency",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se adverbs of frequency fosse ignorado(a) em compreender a regularidade de acoes em rotina e habitos, o resultado mais provavel seria:",
+      "enunciado": "Se adverbs of frequency fosse ignorado(a) em compreender a regularidade de ações em rotina e hábitos, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em compreender a regularidade de acoes em rotina e habitos.",
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em compreender a regularidade de ações em rotina e hábitos.",
         "a questao seria resolvida automaticamente por daily routine.",
-        "nenhuma interpretacao seria alterada, porque Adverbs of frequency nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "nenhuma interpretação seria alterada, porque Adverbs of frequency não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em compreender a regularidade de acoes em rotina e habitos.",
-      "comentario": "Ignorar adverbs of frequency compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em compreender a regularidade de ações em rotina e hábitos.",
+      "comentario": "Ignorar adverbs of frequency compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -5236,14 +5236,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Adverbs of frequency",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor Adverbs of frequency?",
+      "enunciado": "Qual trecho ou ação ilustra melhor Adverbs of frequency?",
       "opcoes": [
         "I usually walk to school.",
         "I wake up at 6 a.m. and go to school.",
@@ -5251,7 +5251,7 @@
         "There are two books on the table."
       ],
       "correta": "I usually walk to school.",
-      "comentario": "O item correto e o que melhor exemplifica adverbs of frequency.",
+      "comentario": "O item correto é o que melhor exemplifica adverbs of frequency.",
       "tempoEstimado": 50,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -5275,7 +5275,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Adverbs of frequency",
       "dificuldadeLabel": "dificil",
@@ -5284,12 +5284,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Ao encontrar o exemplo \"I usually walk to school.\", a leitura mais adequada e:",
       "opcoes": [
-        "o adverbio mostra a frequencia com que a acao acontece",
+        "o adverbio mostra a frequência com que a ação acontece",
         "a frase descreve etapas tipicas de uma rotina diaria",
         "o possessive adjective aparece antes do substantivo para indicar posse",
         "a estrutura indica a existencia de itens no plural"
       ],
-      "correta": "o adverbio mostra a frequencia com que a acao acontece",
+      "correta": "o adverbio mostra a frequência com que a ação acontece",
       "comentario": "A leitura correta do exemplo revela o papel de adverbs of frequency.",
       "tempoEstimado": 55,
       "tags": [
@@ -5314,22 +5314,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Adverbs of frequency",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar adverbs of frequency?",
+      "enunciado": "Qual estratégia ajuda mais a estudar adverbs of frequency?",
       "opcoes": [
         "identificar a palavra que indica regularidade e relaciona-la ao sentido da frase",
-        "observar verbos de acao e marcadores de horario",
+        "observar verbos de ação e marcadores de horario",
         "identificar o possuidor e escolher o adjetivo adequado antes do nome",
         "observar se o substantivo e singular ou plural antes de escolher a estrutura"
       ],
       "correta": "identificar a palavra que indica regularidade e relaciona-la ao sentido da frase",
-      "comentario": "A estrategia correta fortalece o dominio de adverbs of frequency.",
+      "comentario": "A estratégia correta fortalece o domínio de adverbs of frequency.",
       "tempoEstimado": 55,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -5353,22 +5353,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Adverbs of frequency",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Adverbs of frequency e mais cobrado quando:",
+      "enunciado": "Em uma prova, Adverbs of frequency é mais cobrado quando:",
       "opcoes": [
-        "a questao pede compreender o grau de frequencia indicado na frase",
-        "a prova pede entender ou ordenar acoes habituais do cotidiano",
-        "o item cobra relacao correta entre pronome e posse",
+        "a questao pede compreender o grau de frequência indicado na frase",
+        "a prova pede entender ou ordenar ações habituais do cotidiano",
+        "o item cobra relação correta entre pronome e posse",
         "a questao pede indicar corretamente a existencia de algo em um espaco"
       ],
-      "correta": "a questao pede compreender o grau de frequencia indicado na frase",
-      "comentario": "Esse e o tipo de demanda em que adverbs of frequency aparece com mais frequencia.",
+      "correta": "a questao pede compreender o grau de frequência indicado na frase",
+      "comentario": "Esse é o tipo de demanda em que adverbs of frequency aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -5392,7 +5392,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Adverbs of frequency",
       "dificuldadeLabel": "dificil",
@@ -5401,13 +5401,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Adverbs of frequency?",
       "opcoes": [
-        "Em sintese, as palavras que indicam com que frequencia uma acao acontece.",
-        "Em sintese, o conjunto de acoes habituais do cotidiano descritas geralmente no presente simples.",
+        "Em sintese, as palavras que indicam com que frequência uma ação acontece.",
+        "Em sintese, o conjunto de ações habituais do cotidiano descritas geralmente no presente simples.",
         "Em sintese, os adjetivos que indicam posse antes de um substantivo, como my, your, his e their.",
-        "Em sintese, as estruturas usadas para indicar existencia ou presenca de algo em ingles."
+        "Em sintese, as estruturas usadas para indicar existencia ou presenca de algo em inglês."
       ],
-      "correta": "Em sintese, as palavras que indicam com que frequencia uma acao acontece.",
-      "comentario": "O resumo correto recupera o nucleo de adverbs of frequency.",
+      "correta": "Em sintese, as palavras que indicam com que frequência uma ação acontece.",
+      "comentario": "O resumo correto recupera o núcleo de adverbs of frequency.",
       "tempoEstimado": 60,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -5431,22 +5431,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Adverbs of frequency",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Adverbs of frequency?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em Adverbs of frequency?",
       "opcoes": [
-        "I usually walk to school. -> o adverbio mostra a frequencia com que a acao acontece",
-        "I wake up at 6 a.m. and go to school. -> o adverbio mostra a frequencia com que a acao acontece",
+        "I usually walk to school. -> o adverbio mostra a frequência com que a ação acontece",
+        "I wake up at 6 a.m. and go to school. -> o adverbio mostra a frequência com que a ação acontece",
         "This is our classroom. -> a estrutura indica a existencia de itens no plural",
         "There are two books on the table. -> a frase descreve etapas tipicas de uma rotina diaria"
       ],
-      "correta": "I usually walk to school. -> o adverbio mostra a frequencia com que a acao acontece",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em adverbs of frequency.",
+      "correta": "I usually walk to school. -> o adverbio mostra a frequência com que a ação acontece",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em adverbs of frequency.",
       "tempoEstimado": 65,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -5470,7 +5470,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Adverbs of frequency",
       "dificuldadeLabel": "dificil",
@@ -5481,8 +5481,8 @@
       "opcoes": [
         "interpretar adverbios como always, usually, sometimes e never",
         "identificar a palavra que indica regularidade e relaciona-la ao sentido da frase",
-        "compreender a regularidade de acoes em rotina e habitos",
-        "a questao pede compreender o grau de frequencia indicado na frase"
+        "compreender a regularidade de ações em rotina e hábitos",
+        "a questao pede compreender o grau de frequência indicado na frase"
       ],
       "correta": "interpretar adverbios como always, usually, sometimes e never",
       "comentario": "O objetivo central de adverbs of frequency e interpretar adverbios como always, usually, sometimes e never.",
@@ -5509,22 +5509,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Daily routine",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, Daily routine refere-se a:",
+      "enunciado": "Em Inglês, Daily routine refere-se a:",
       "opcoes": [
-        "o conjunto de acoes habituais do cotidiano descritas geralmente no presente simples",
+        "o conjunto de ações habituais do cotidiano descritas geralmente no presente simples",
         "os adjetivos que indicam posse antes de um substantivo, como my, your, his e their",
-        "as estruturas usadas para indicar existencia ou presenca de algo em ingles",
-        "os pronomes pessoais usados para indicar quem pratica a acao ou quem e descrito na frase"
+        "as estruturas usadas para indicar existencia ou presenca de algo em inglês",
+        "os pronomes pessoais usados para indicar quem pratica a ação ou quem e descrito na frase"
       ],
-      "correta": "o conjunto de acoes habituais do cotidiano descritas geralmente no presente simples",
-      "comentario": "Daily routine refere-se ao conjunto de acoes habituais do cotidiano descritas geralmente no presente simples.",
+      "correta": "o conjunto de ações habituais do cotidiano descritas geralmente no presente simples",
+      "comentario": "Daily routine refere-se ao conjunto de ações habituais do cotidiano descritas geralmente no presente simples.",
       "tempoEstimado": 20,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -5548,14 +5548,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Daily routine",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: um texto apresenta wake up, have breakfast, go to school e do homework em ordem. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: um texto apresenta wake up, have breakfast, go to school e do homework em ordem. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
         "Daily routine",
         "Possessive adjectives",
@@ -5563,7 +5563,7 @@
         "Subject pronouns"
       ],
       "correta": "Daily routine",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de daily routine.",
+      "comentario": "A situação apresentada é melhor compreendida por meio de daily routine.",
       "tempoEstimado": 20,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -5587,7 +5587,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Daily routine",
       "dificuldadeLabel": "facil",
@@ -5626,22 +5626,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Daily routine",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente daily routine?",
+      "enunciado": "Qual alternativa NÃO representa corretamente daily routine?",
       "opcoes": [
         "This is our classroom.",
         "I wake up at 6 a.m. and go to school.",
-        "observar verbos de acao e marcadores de horario.",
+        "observar verbos de ação e marcadores de horario.",
         "interpretar e descrever rotinas pessoais e escolares."
       ],
       "correta": "This is our classroom.",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao daily routine.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não daily routine.",
       "tempoEstimado": 25,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -5665,17 +5665,17 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Daily routine",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar daily routine, o foco principal e:",
+      "enunciado": "Ao estudar daily routine, o foco principal é:",
       "opcoes": [
         "ler e organizar sequencias de atividades comuns do dia a dia",
-        "reconhecer relacoes de posse em frases curtas",
+        "reconhecer relações de posse em frases curtas",
         "distinguir singular e plural em estruturas de existencia",
         "reconhecer pronomes como I, you, he, she, it, we e they"
       ],
@@ -5704,7 +5704,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Daily routine",
       "dificuldadeLabel": "facil",
@@ -5713,12 +5713,12 @@
       "tipo": "multipla_escolha",
       "enunciado": "Enquanto Possessive adjectives trata de os adjetivos que indicam posse antes de um substantivo, como my, your, his e their, Daily routine destaca:",
       "opcoes": [
-        "O conjunto de acoes habituais do cotidiano descritas geralmente no presente simples.",
+        "O conjunto de ações habituais do cotidiano descritas geralmente no presente simples.",
         "Os adjetivos que indicam posse antes de um substantivo, como my, your, his e their.",
-        "As estruturas usadas para indicar existencia ou presenca de algo em ingles.",
-        "Os pronomes pessoais usados para indicar quem pratica a acao ou quem e descrito na frase."
+        "As estruturas usadas para indicar existencia ou presenca de algo em inglês.",
+        "Os pronomes pessoais usados para indicar quem pratica a ação ou quem e descrito na frase."
       ],
-      "correta": "O conjunto de acoes habituais do cotidiano descritas geralmente no presente simples.",
+      "correta": "O conjunto de ações habituais do cotidiano descritas geralmente no presente simples.",
       "comentario": "A comparacao correta mostra a especificidade de daily routine.",
       "tempoEstimado": 30,
       "tags": [
@@ -5743,7 +5743,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Daily routine",
       "dificuldadeLabel": "facil",
@@ -5758,7 +5758,7 @@
         "Verb to be afirmativo"
       ],
       "correta": "Daily routine",
-      "comentario": "Esse tipo de tarefa exige dominio de daily routine.",
+      "comentario": "Esse tipo de tarefa exige domínio de daily routine.",
       "tempoEstimado": 35,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -5782,19 +5782,19 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Daily routine",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de Daily routine?",
+      "enunciado": "Qual situação pratica depende mais diretamente de Daily routine?",
       "opcoes": [
         "interpretar e descrever rotinas pessoais e escolares",
         "relacionar pessoas e objetos com posse ou pertencimento",
         "falar sobre o que existe em lugares e ambientes",
-        "montar frases afirmativas basicas com informacoes pessoais"
+        "montar frases afirmativas basicas com informações pessoais"
       ],
       "correta": "interpretar e descrever rotinas pessoais e escolares",
       "comentario": "Daily routine aparece de forma direta em interpretar e descrever rotinas pessoais e escolares.",
@@ -5821,14 +5821,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Daily routine",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre daily routine?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre daily routine?",
       "opcoes": [
         "o caso e resolvido com foco em daily routine.",
         "o caso e melhor resolvido por possessive adjectives.",
@@ -5836,7 +5836,7 @@
         "o caso impede qualquer uso de subject pronouns."
       ],
       "correta": "o caso e resolvido com foco em daily routine.",
-      "comentario": "A conclusao correta retoma a funcao central de daily routine.",
+      "comentario": "A conclusão correta retoma a função central de daily routine.",
       "tempoEstimado": 40,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -5860,7 +5860,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Daily routine",
       "dificuldadeLabel": "facil",
@@ -5899,22 +5899,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Daily routine",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em daily routine e pensar que:",
+      "enunciado": "Um erro comum em daily routine é pensar que:",
       "opcoes": [
-        "daily routine significa apenas acoes feitas pela manha",
+        "daily routine significa apenas ações feitas pela manha",
         "possessive adjectives podem aparecer sozinhos sem substantivo em qualquer contexto",
         "there is e there are funcionam da mesma forma para singular e plural",
-        "os pronomes em ingles funcionam exatamente como a repeticao do nome em toda frase"
+        "os pronomes em inglês funcionam exatamente como a repeticao do nome em toda frase"
       ],
-      "correta": "daily routine significa apenas acoes feitas pela manha",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de daily routine.",
+      "correta": "daily routine significa apenas ações feitas pela manha",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de daily routine.",
       "tempoEstimado": 45,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -5938,21 +5938,21 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Daily routine",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"rotina diaria em ingles so inclui o que a pessoa faz antes da escola\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"rotina diaria em inglês so inclui o que a pessoa faz antes da escola\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque o conjunto de acoes habituais do cotidiano descritas geralmente no presente simples.",
-        "A afirmacao esta correta, pois resume integralmente daily routine.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque o conjunto de ações habituais do cotidiano descritas geralmente no presente simples.",
+        "A afirmação está correta, pois resume integralmente daily routine.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque o conjunto de acoes habituais do cotidiano descritas geralmente no presente simples.",
+      "correta": "A afirmação está incorreta, porque o conjunto de ações habituais do cotidiano descritas geralmente no presente simples.",
       "comentario": "A fala do estudante apresenta um equivoco conceitual sobre daily routine.",
       "tempoEstimado": 45,
       "tags": [
@@ -5977,7 +5977,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Daily routine",
       "dificuldadeLabel": "medio",
@@ -5986,13 +5986,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Se daily routine fosse ignorado(a) em interpretar e descrever rotinas pessoais e escolares, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar e descrever rotinas pessoais e escolares.",
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar e descrever rotinas pessoais e escolares.",
         "a questao seria resolvida automaticamente por possessive adjectives.",
-        "nenhuma interpretacao seria alterada, porque Daily routine nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "nenhuma interpretação seria alterada, porque Daily routine não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em interpretar e descrever rotinas pessoais e escolares.",
-      "comentario": "Ignorar daily routine compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em interpretar e descrever rotinas pessoais e escolares.",
+      "comentario": "Ignorar daily routine compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -6016,14 +6016,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Daily routine",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor Daily routine?",
+      "enunciado": "Qual trecho ou ação ilustra melhor Daily routine?",
       "opcoes": [
         "I wake up at 6 a.m. and go to school.",
         "This is our classroom.",
@@ -6031,7 +6031,7 @@
         "They are my friends."
       ],
       "correta": "I wake up at 6 a.m. and go to school.",
-      "comentario": "O item correto e o que melhor exemplifica daily routine.",
+      "comentario": "O item correto é o que melhor exemplifica daily routine.",
       "tempoEstimado": 50,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -6055,7 +6055,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Daily routine",
       "dificuldadeLabel": "dificil",
@@ -6094,22 +6094,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Daily routine",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar daily routine?",
+      "enunciado": "Qual estratégia ajuda mais a estudar daily routine?",
       "opcoes": [
-        "observar verbos de acao e marcadores de horario",
+        "observar verbos de ação e marcadores de horario",
         "identificar o possuidor e escolher o adjetivo adequado antes do nome",
         "observar se o substantivo e singular ou plural antes de escolher a estrutura",
         "identificar quem esta sendo mencionado e trocar pelo pronome correto"
       ],
-      "correta": "observar verbos de acao e marcadores de horario",
-      "comentario": "A estrategia correta fortalece o dominio de daily routine.",
+      "correta": "observar verbos de ação e marcadores de horario",
+      "comentario": "A estratégia correta fortalece o domínio de daily routine.",
       "tempoEstimado": 55,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -6133,22 +6133,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Daily routine",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Daily routine e mais cobrado quando:",
+      "enunciado": "Em uma prova, Daily routine é mais cobrado quando:",
       "opcoes": [
-        "a prova pede entender ou ordenar acoes habituais do cotidiano",
-        "o item cobra relacao correta entre pronome e posse",
+        "a prova pede entender ou ordenar ações habituais do cotidiano",
+        "o item cobra relação correta entre pronome e posse",
         "a questao pede indicar corretamente a existencia de algo em um espaco",
         "a questao pede substituir nomes por pronomes ou completar o sujeito da frase"
       ],
-      "correta": "a prova pede entender ou ordenar acoes habituais do cotidiano",
-      "comentario": "Esse e o tipo de demanda em que daily routine aparece com mais frequencia.",
+      "correta": "a prova pede entender ou ordenar ações habituais do cotidiano",
+      "comentario": "Esse é o tipo de demanda em que daily routine aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -6172,7 +6172,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Daily routine",
       "dificuldadeLabel": "dificil",
@@ -6181,13 +6181,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de Daily routine?",
       "opcoes": [
-        "Em sintese, o conjunto de acoes habituais do cotidiano descritas geralmente no presente simples.",
+        "Em sintese, o conjunto de ações habituais do cotidiano descritas geralmente no presente simples.",
         "Em sintese, os adjetivos que indicam posse antes de um substantivo, como my, your, his e their.",
-        "Em sintese, as estruturas usadas para indicar existencia ou presenca de algo em ingles.",
-        "Em sintese, os pronomes pessoais usados para indicar quem pratica a acao ou quem e descrito na frase."
+        "Em sintese, as estruturas usadas para indicar existencia ou presenca de algo em inglês.",
+        "Em sintese, os pronomes pessoais usados para indicar quem pratica a ação ou quem e descrito na frase."
       ],
-      "correta": "Em sintese, o conjunto de acoes habituais do cotidiano descritas geralmente no presente simples.",
-      "comentario": "O resumo correto recupera o nucleo de daily routine.",
+      "correta": "Em sintese, o conjunto de ações habituais do cotidiano descritas geralmente no presente simples.",
+      "comentario": "O resumo correto recupera o núcleo de daily routine.",
       "tempoEstimado": 60,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -6211,14 +6211,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Daily routine",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Daily routine?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em Daily routine?",
       "opcoes": [
         "I wake up at 6 a.m. and go to school. -> a frase descreve etapas tipicas de uma rotina diaria",
         "This is our classroom. -> a frase descreve etapas tipicas de uma rotina diaria",
@@ -6226,7 +6226,7 @@
         "They are my friends. -> o possessive adjective aparece antes do substantivo para indicar posse"
       ],
       "correta": "I wake up at 6 a.m. and go to school. -> a frase descreve etapas tipicas de uma rotina diaria",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em daily routine.",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em daily routine.",
       "tempoEstimado": 65,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -6250,7 +6250,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Daily routine",
       "dificuldadeLabel": "dificil",
@@ -6260,9 +6260,9 @@
       "enunciado": "Ao resolver uma atividade sobre daily routine, o estudante deve principalmente:",
       "opcoes": [
         "ler e organizar sequencias de atividades comuns do dia a dia",
-        "observar verbos de acao e marcadores de horario",
+        "observar verbos de ação e marcadores de horario",
         "interpretar e descrever rotinas pessoais e escolares",
-        "a prova pede entender ou ordenar acoes habituais do cotidiano"
+        "a prova pede entender ou ordenar ações habituais do cotidiano"
       ],
       "correta": "ler e organizar sequencias de atividades comuns do dia a dia",
       "comentario": "O objetivo central de daily routine e ler e organizar sequencias de atividades comuns do dia a dia.",
@@ -6289,18 +6289,18 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Possessive adjectives",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, Possessive adjectives refere-se a:",
+      "enunciado": "Em Inglês, Possessive adjectives refere-se a:",
       "opcoes": [
         "os adjetivos que indicam posse antes de um substantivo, como my, your, his e their",
-        "as estruturas usadas para indicar existencia ou presenca de algo em ingles",
-        "os pronomes pessoais usados para indicar quem pratica a acao ou quem e descrito na frase",
+        "as estruturas usadas para indicar existencia ou presenca de algo em inglês",
+        "os pronomes pessoais usados para indicar quem pratica a ação ou quem e descrito na frase",
         "o uso de am, is e are em frases afirmativas para identificar, caracterizar ou localizar"
       ],
       "correta": "os adjetivos que indicam posse antes de um substantivo, como my, your, his e their",
@@ -6328,14 +6328,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Possessive adjectives",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: o estudante precisa completar a frase Ana has a dog. ___ dog is friendly. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: o estudante precisa completar a frase Ana has a dog. ___ dog is friendly. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
         "Possessive adjectives",
         "There is e There are",
@@ -6343,7 +6343,7 @@
         "Verb to be afirmativo"
       ],
       "correta": "Possessive adjectives",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de possessive adjectives.",
+      "comentario": "A situação apresentada é melhor compreendida por meio de possessive adjectives.",
       "tempoEstimado": 20,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -6367,7 +6367,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Possessive adjectives",
       "dificuldadeLabel": "facil",
@@ -6406,14 +6406,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Possessive adjectives",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente possessive adjectives?",
+      "enunciado": "Qual alternativa NÃO representa corretamente possessive adjectives?",
       "opcoes": [
         "There are two books on the table.",
         "This is our classroom.",
@@ -6421,7 +6421,7 @@
         "relacionar pessoas e objetos com posse ou pertencimento."
       ],
       "correta": "There are two books on the table.",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao possessive adjectives.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não possessive adjectives.",
       "tempoEstimado": 25,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -6445,22 +6445,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Possessive adjectives",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar possessive adjectives, o foco principal e:",
+      "enunciado": "Ao estudar possessive adjectives, o foco principal é:",
       "opcoes": [
-        "reconhecer relacoes de posse em frases curtas",
+        "reconhecer relações de posse em frases curtas",
         "distinguir singular e plural em estruturas de existencia",
         "reconhecer pronomes como I, you, he, she, it, we e they",
         "empregar corretamente am, is e are em frases simples"
       ],
-      "correta": "reconhecer relacoes de posse em frases curtas",
-      "comentario": "Possessive adjectives concentra-se em reconhecer relacoes de posse em frases curtas.",
+      "correta": "reconhecer relações de posse em frases curtas",
+      "comentario": "Possessive adjectives concentra-se em reconhecer relações de posse em frases curtas.",
       "tempoEstimado": 30,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -6484,18 +6484,18 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Possessive adjectives",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto There is e There are trata de as estruturas usadas para indicar existencia ou presenca de algo em ingles, Possessive adjectives destaca:",
+      "enunciado": "Enquanto There is e There are trata de as estruturas usadas para indicar existencia ou presenca de algo em inglês, Possessive adjectives destaca:",
       "opcoes": [
         "Os adjetivos que indicam posse antes de um substantivo, como my, your, his e their.",
-        "As estruturas usadas para indicar existencia ou presenca de algo em ingles.",
-        "Os pronomes pessoais usados para indicar quem pratica a acao ou quem e descrito na frase.",
+        "As estruturas usadas para indicar existencia ou presenca de algo em inglês.",
+        "Os pronomes pessoais usados para indicar quem pratica a ação ou quem e descrito na frase.",
         "O uso de am, is e are em frases afirmativas para identificar, caracterizar ou localizar."
       ],
       "correta": "Os adjetivos que indicam posse antes de um substantivo, como my, your, his e their.",
@@ -6523,7 +6523,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Possessive adjectives",
       "dificuldadeLabel": "facil",
@@ -6538,7 +6538,7 @@
         "Verb to be negativo"
       ],
       "correta": "Possessive adjectives",
-      "comentario": "Esse tipo de tarefa exige dominio de possessive adjectives.",
+      "comentario": "Esse tipo de tarefa exige domínio de possessive adjectives.",
       "tempoEstimado": 35,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -6562,14 +6562,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Possessive adjectives",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de Possessive adjectives?",
+      "enunciado": "Qual situação pratica depende mais diretamente de Possessive adjectives?",
       "opcoes": [
         "relacionar pessoas e objetos com posse ou pertencimento",
         "falar sobre o que existe em lugares e ambientes",
@@ -6601,14 +6601,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Possessive adjectives",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre possessive adjectives?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre possessive adjectives?",
       "opcoes": [
         "o caso e resolvido com foco em possessive adjectives.",
         "o caso e melhor resolvido por there is e There are.",
@@ -6616,7 +6616,7 @@
         "o caso impede qualquer uso de verb to be afirmativo."
       ],
       "correta": "o caso e resolvido com foco em possessive adjectives.",
-      "comentario": "A conclusao correta retoma a funcao central de possessive adjectives.",
+      "comentario": "A conclusão correta retoma a função central de possessive adjectives.",
       "tempoEstimado": 40,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -6640,7 +6640,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Possessive adjectives",
       "dificuldadeLabel": "facil",
@@ -6679,22 +6679,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Possessive adjectives",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em possessive adjectives e pensar que:",
+      "enunciado": "Um erro comum em possessive adjectives é pensar que:",
       "opcoes": [
         "possessive adjectives podem aparecer sozinhos sem substantivo em qualquer contexto",
         "there is e there are funcionam da mesma forma para singular e plural",
-        "os pronomes em ingles funcionam exatamente como a repeticao do nome em toda frase",
+        "os pronomes em inglês funcionam exatamente como a repeticao do nome em toda frase",
         "o verb to be pode ser omitido sempre que houver adjetivo na frase"
       ],
       "correta": "possessive adjectives podem aparecer sozinhos sem substantivo em qualquer contexto",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de possessive adjectives.",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de possessive adjectives.",
       "tempoEstimado": 45,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -6718,21 +6718,21 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Possessive adjectives",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"na frase this book is my, o uso esta correto porque my indica posse\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"na frase this book is my, o uso esta correto porque my indica posse\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque os adjetivos que indicam posse antes de um substantivo, como my, your, his e their.",
-        "A afirmacao esta correta, pois resume integralmente possessive adjectives.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque os adjetivos que indicam posse antes de um substantivo, como my, your, his e their.",
+        "A afirmação está correta, pois resume integralmente possessive adjectives.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque os adjetivos que indicam posse antes de um substantivo, como my, your, his e their.",
+      "correta": "A afirmação está incorreta, porque os adjetivos que indicam posse antes de um substantivo, como my, your, his e their.",
       "comentario": "A fala do estudante apresenta um equivoco conceitual sobre possessive adjectives.",
       "tempoEstimado": 45,
       "tags": [
@@ -6757,7 +6757,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Possessive adjectives",
       "dificuldadeLabel": "medio",
@@ -6766,13 +6766,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Se possessive adjectives fosse ignorado(a) em relacionar pessoas e objetos com posse ou pertencimento, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em relacionar pessoas e objetos com posse ou pertencimento.",
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em relacionar pessoas e objetos com posse ou pertencimento.",
         "a questao seria resolvida automaticamente por there is e There are.",
-        "nenhuma interpretacao seria alterada, porque Possessive adjectives nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "nenhuma interpretação seria alterada, porque Possessive adjectives não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em relacionar pessoas e objetos com posse ou pertencimento.",
-      "comentario": "Ignorar possessive adjectives compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em relacionar pessoas e objetos com posse ou pertencimento.",
+      "comentario": "Ignorar possessive adjectives compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -6796,14 +6796,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Possessive adjectives",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor Possessive adjectives?",
+      "enunciado": "Qual trecho ou ação ilustra melhor Possessive adjectives?",
       "opcoes": [
         "This is our classroom.",
         "There are two books on the table.",
@@ -6811,7 +6811,7 @@
         "She is my classmate."
       ],
       "correta": "This is our classroom.",
-      "comentario": "O item correto e o que melhor exemplifica possessive adjectives.",
+      "comentario": "O item correto é o que melhor exemplifica possessive adjectives.",
       "tempoEstimado": 50,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -6835,7 +6835,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Possessive adjectives",
       "dificuldadeLabel": "dificil",
@@ -6874,14 +6874,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Possessive adjectives",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar possessive adjectives?",
+      "enunciado": "Qual estratégia ajuda mais a estudar possessive adjectives?",
       "opcoes": [
         "identificar o possuidor e escolher o adjetivo adequado antes do nome",
         "observar se o substantivo e singular ou plural antes de escolher a estrutura",
@@ -6889,7 +6889,7 @@
         "observar o sujeito da frase e escolher am, is ou are"
       ],
       "correta": "identificar o possuidor e escolher o adjetivo adequado antes do nome",
-      "comentario": "A estrategia correta fortalece o dominio de possessive adjectives.",
+      "comentario": "A estratégia correta fortalece o domínio de possessive adjectives.",
       "tempoEstimado": 55,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -6913,22 +6913,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Possessive adjectives",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, Possessive adjectives e mais cobrado quando:",
+      "enunciado": "Em uma prova, Possessive adjectives é mais cobrado quando:",
       "opcoes": [
-        "o item cobra relacao correta entre pronome e posse",
+        "o item cobra relação correta entre pronome e posse",
         "a questao pede indicar corretamente a existencia de algo em um espaco",
         "a questao pede substituir nomes por pronomes ou completar o sujeito da frase",
         "o item pede completar ou corrigir frases afirmativas com verb to be"
       ],
-      "correta": "o item cobra relacao correta entre pronome e posse",
-      "comentario": "Esse e o tipo de demanda em que possessive adjectives aparece com mais frequencia.",
+      "correta": "o item cobra relação correta entre pronome e posse",
+      "comentario": "Esse é o tipo de demanda em que possessive adjectives aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -6952,7 +6952,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Possessive adjectives",
       "dificuldadeLabel": "dificil",
@@ -6962,12 +6962,12 @@
       "enunciado": "Qual resumo sintetiza melhor a ideia de Possessive adjectives?",
       "opcoes": [
         "Em sintese, os adjetivos que indicam posse antes de um substantivo, como my, your, his e their.",
-        "Em sintese, as estruturas usadas para indicar existencia ou presenca de algo em ingles.",
-        "Em sintese, os pronomes pessoais usados para indicar quem pratica a acao ou quem e descrito na frase.",
+        "Em sintese, as estruturas usadas para indicar existencia ou presenca de algo em inglês.",
+        "Em sintese, os pronomes pessoais usados para indicar quem pratica a ação ou quem e descrito na frase.",
         "Em sintese, o uso de am, is e are em frases afirmativas para identificar, caracterizar ou localizar."
       ],
       "correta": "Em sintese, os adjetivos que indicam posse antes de um substantivo, como my, your, his e their.",
-      "comentario": "O resumo correto recupera o nucleo de possessive adjectives.",
+      "comentario": "O resumo correto recupera o núcleo de possessive adjectives.",
       "tempoEstimado": 60,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -6991,14 +6991,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Possessive adjectives",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em Possessive adjectives?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em Possessive adjectives?",
       "opcoes": [
         "This is our classroom. -> o possessive adjective aparece antes do substantivo para indicar posse",
         "There are two books on the table. -> o possessive adjective aparece antes do substantivo para indicar posse",
@@ -7006,7 +7006,7 @@
         "She is my classmate. -> a estrutura indica a existencia de itens no plural"
       ],
       "correta": "This is our classroom. -> o possessive adjective aparece antes do substantivo para indicar posse",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em possessive adjectives.",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em possessive adjectives.",
       "tempoEstimado": 65,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -7030,7 +7030,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "Possessive adjectives",
       "dificuldadeLabel": "dificil",
@@ -7039,13 +7039,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Ao resolver uma atividade sobre possessive adjectives, o estudante deve principalmente:",
       "opcoes": [
-        "reconhecer relacoes de posse em frases curtas",
+        "reconhecer relações de posse em frases curtas",
         "identificar o possuidor e escolher o adjetivo adequado antes do nome",
         "relacionar pessoas e objetos com posse ou pertencimento",
-        "o item cobra relacao correta entre pronome e posse"
+        "o item cobra relação correta entre pronome e posse"
       ],
-      "correta": "reconhecer relacoes de posse em frases curtas",
-      "comentario": "O objetivo central de possessive adjectives e reconhecer relacoes de posse em frases curtas.",
+      "correta": "reconhecer relações de posse em frases curtas",
+      "comentario": "O objetivo central de possessive adjectives e reconhecer relações de posse em frases curtas.",
       "tempoEstimado": 70,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -7069,22 +7069,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "There is e There are",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em Ingles, There is e There are refere-se a:",
+      "enunciado": "Em Inglês, There is e There are refere-se a:",
       "opcoes": [
-        "as estruturas usadas para indicar existencia ou presenca de algo em ingles",
-        "os pronomes pessoais usados para indicar quem pratica a acao ou quem e descrito na frase",
+        "as estruturas usadas para indicar existencia ou presenca de algo em inglês",
+        "os pronomes pessoais usados para indicar quem pratica a ação ou quem e descrito na frase",
         "o uso de am, is e are em frases afirmativas para identificar, caracterizar ou localizar",
-        "o uso de am not, is not e are not para negar informacoes em frases simples"
+        "o uso de am not, is not e are not para negar informações em frases simples"
       ],
-      "correta": "as estruturas usadas para indicar existencia ou presenca de algo em ingles",
-      "comentario": "There is e There are refere-se as estruturas usadas para indicar existencia ou presenca de algo em ingles.",
+      "correta": "as estruturas usadas para indicar existencia ou presenca de algo em inglês",
+      "comentario": "There is e There are refere-se as estruturas usadas para indicar existencia ou presenca de algo em inglês.",
       "tempoEstimado": 20,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -7108,14 +7108,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "There is e There are",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Observe a situacao: um exercicio descreve a sala de aula com one computer e three windows. Esse caso esta mais ligado a qual subtopico?",
+      "enunciado": "Observe a situação: um exercicio descreve a sala de aula com one computer e three windows. Esse caso está mais ligado a qual subtópico?",
       "opcoes": [
         "There is e There are",
         "Subject pronouns",
@@ -7123,7 +7123,7 @@
         "Verb to be negativo"
       ],
       "correta": "There is e There are",
-      "comentario": "A situacao apresentada e melhor compreendida por meio de there is e There are.",
+      "comentario": "A situação apresentada é melhor compreendida por meio de there is e There are.",
       "tempoEstimado": 20,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -7147,7 +7147,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "There is e There are",
       "dificuldadeLabel": "facil",
@@ -7186,14 +7186,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "There is e There are",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "compreensao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual alternativa NAO representa corretamente there is e There are?",
+      "enunciado": "Qual alternativa NÃO representa corretamente there is e There are?",
       "opcoes": [
         "They are my friends.",
         "There are two books on the table.",
@@ -7201,7 +7201,7 @@
         "falar sobre o que existe em lugares e ambientes."
       ],
       "correta": "They are my friends.",
-      "comentario": "A opcao incompativel ilustra outro subtopico, e nao there is e There are.",
+      "comentario": "A opção incompatível ilustra outro subtópico, e não there is e There are.",
       "tempoEstimado": 25,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -7225,14 +7225,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "There is e There are",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Ao estudar there is e There are, o foco principal e:",
+      "enunciado": "Ao estudar there is e There are, o foco principal é:",
       "opcoes": [
         "distinguir singular e plural em estruturas de existencia",
         "reconhecer pronomes como I, you, he, she, it, we e they",
@@ -7264,21 +7264,21 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "There is e There are",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Enquanto Subject pronouns trata de os pronomes pessoais usados para indicar quem pratica a acao ou quem e descrito na frase, There is e There are destaca:",
+      "enunciado": "Enquanto Subject pronouns trata de os pronomes pessoais usados para indicar quem pratica a ação ou quem e descrito na frase, There is e There are destaca:",
       "opcoes": [
-        "As estruturas usadas para indicar existencia ou presenca de algo em ingles.",
-        "Os pronomes pessoais usados para indicar quem pratica a acao ou quem e descrito na frase.",
+        "As estruturas usadas para indicar existencia ou presenca de algo em inglês.",
+        "Os pronomes pessoais usados para indicar quem pratica a ação ou quem e descrito na frase.",
         "O uso de am, is e are em frases afirmativas para identificar, caracterizar ou localizar.",
-        "O uso de am not, is not e are not para negar informacoes em frases simples."
+        "O uso de am not, is not e are not para negar informações em frases simples."
       ],
-      "correta": "As estruturas usadas para indicar existencia ou presenca de algo em ingles.",
+      "correta": "As estruturas usadas para indicar existencia ou presenca de algo em inglês.",
       "comentario": "A comparacao correta mostra a especificidade de there is e There are.",
       "tempoEstimado": 30,
       "tags": [
@@ -7303,7 +7303,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "There is e There are",
       "dificuldadeLabel": "facil",
@@ -7318,7 +7318,7 @@
         "Verb to be interrogativo"
       ],
       "correta": "There is e There are",
-      "comentario": "Esse tipo de tarefa exige dominio de there is e There are.",
+      "comentario": "Esse tipo de tarefa exige domínio de there is e There are.",
       "tempoEstimado": 35,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -7342,18 +7342,18 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "There is e There are",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao pratica depende mais diretamente de There is e There are?",
+      "enunciado": "Qual situação pratica depende mais diretamente de There is e There are?",
       "opcoes": [
         "falar sobre o que existe em lugares e ambientes",
         "fazer concordancia basica entre sujeito e verbo em frases simples",
-        "montar frases afirmativas basicas com informacoes pessoais",
+        "montar frases afirmativas basicas com informações pessoais",
         "formular perguntas basicas sobre identidade, condicao e localizacao"
       ],
       "correta": "falar sobre o que existe em lugares e ambientes",
@@ -7381,14 +7381,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "There is e There are",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A partir do caso descrito, qual conclusao e a mais adequada sobre there is e There are?",
+      "enunciado": "A partir do caso descrito, qual conclusão é a mais adequada sobre there is e There are?",
       "opcoes": [
         "o caso e resolvido com foco em there is e There are.",
         "o caso e melhor resolvido por subject pronouns.",
@@ -7396,7 +7396,7 @@
         "o caso impede qualquer uso de verb to be negativo."
       ],
       "correta": "o caso e resolvido com foco em there is e There are.",
-      "comentario": "A conclusao correta retoma a funcao central de there is e There are.",
+      "comentario": "A conclusão correta retoma a função central de there is e There are.",
       "tempoEstimado": 40,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -7420,7 +7420,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "There is e There are",
       "dificuldadeLabel": "facil",
@@ -7459,22 +7459,22 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "There is e There are",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um erro comum em there is e There are e pensar que:",
+      "enunciado": "Um erro comum em there is e There are é pensar que:",
       "opcoes": [
         "there is e there are funcionam da mesma forma para singular e plural",
-        "os pronomes em ingles funcionam exatamente como a repeticao do nome em toda frase",
+        "os pronomes em inglês funcionam exatamente como a repeticao do nome em toda frase",
         "o verb to be pode ser omitido sempre que houver adjetivo na frase",
         "basta colocar not em qualquer posicao da frase para negar corretamente"
       ],
       "correta": "there is e there are funcionam da mesma forma para singular e plural",
-      "comentario": "Esse e um erro recorrente porque contraria a ideia correta de there is e There are.",
+      "comentario": "Esse é um erro recorrente porque contraria a ideia correta de there is e There are.",
       "tempoEstimado": 45,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -7498,21 +7498,21 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "There is e There are",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um estudante afirma: \"a frase there is three books on the desk esta correta porque indica existencia\". A avaliacao mais adequada e:",
+      "enunciado": "Um estudante afirma: \"a frase there is three books on the desk esta correta porque indica existencia\". A avaliação mais adequada é:",
       "opcoes": [
-        "A afirmacao esta incorreta, porque as estruturas usadas para indicar existencia ou presenca de algo em ingles.",
-        "A afirmacao esta correta, pois resume integralmente there is e There are.",
-        "A afirmacao esta correta, porque basta decorar a traducao do exemplo.",
-        "A afirmacao esta incorreta apenas por nao citar uma regra gramatical."
+        "A afirmação está incorreta, porque as estruturas usadas para indicar existencia ou presenca de algo em inglês.",
+        "A afirmação está correta, pois resume integralmente there is e There are.",
+        "A afirmação está correta, porque basta decorar a traducao do exemplo.",
+        "A afirmação está incorreta apenas por não citar uma regra gramatical."
       ],
-      "correta": "A afirmacao esta incorreta, porque as estruturas usadas para indicar existencia ou presenca de algo em ingles.",
+      "correta": "A afirmação está incorreta, porque as estruturas usadas para indicar existencia ou presenca de algo em inglês.",
       "comentario": "A fala do estudante apresenta um equivoco conceitual sobre there is e There are.",
       "tempoEstimado": 45,
       "tags": [
@@ -7537,7 +7537,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "There is e There are",
       "dificuldadeLabel": "medio",
@@ -7546,13 +7546,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Se there is e There are fosse ignorado(a) em falar sobre o que existe em lugares e ambientes, o resultado mais provavel seria:",
       "opcoes": [
-        "a interpretacao ficaria incompleta e aumentaria a chance de erro em falar sobre o que existe em lugares e ambientes.",
+        "a interpretação ficaria incompleta e aumentaria a chance de erro em falar sobre o que existe em lugares e ambientes.",
         "a questao seria resolvida automaticamente por subject pronouns.",
-        "nenhuma interpretacao seria alterada, porque There is e There are nao interfere nesse tipo de tarefa.",
-        "o texto deixaria de fazer sentido apenas por conter palavras em ingles."
+        "nenhuma interpretação seria alterada, porque There is e There are não interfere nesse tipo de tarefa.",
+        "o texto deixaria de fazer sentido apenas por conter palavras em inglês."
       ],
-      "correta": "a interpretacao ficaria incompleta e aumentaria a chance de erro em falar sobre o que existe em lugares e ambientes.",
-      "comentario": "Ignorar there is e There are compromete a resolucao correta da atividade.",
+      "correta": "a interpretação ficaria incompleta e aumentaria a chance de erro em falar sobre o que existe em lugares e ambientes.",
+      "comentario": "Ignorar there is e There are compromete a resolução correta da atividade.",
       "tempoEstimado": 50,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -7576,14 +7576,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "There is e There are",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual trecho ou acao ilustra melhor There is e There are?",
+      "enunciado": "Qual trecho ou ação ilustra melhor There is e There are?",
       "opcoes": [
         "There are two books on the table.",
         "They are my friends.",
@@ -7591,7 +7591,7 @@
         "He is not at home."
       ],
       "correta": "There are two books on the table.",
-      "comentario": "O item correto e o que melhor exemplifica there is e There are.",
+      "comentario": "O item correto é o que melhor exemplifica there is e There are.",
       "tempoEstimado": 50,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -7615,7 +7615,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "There is e There are",
       "dificuldadeLabel": "dificil",
@@ -7654,14 +7654,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "There is e There are",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual estrategia ajuda mais a estudar there is e There are?",
+      "enunciado": "Qual estratégia ajuda mais a estudar there is e There are?",
       "opcoes": [
         "observar se o substantivo e singular ou plural antes de escolher a estrutura",
         "identificar quem esta sendo mencionado e trocar pelo pronome correto",
@@ -7669,7 +7669,7 @@
         "manter o verb to be e inserir not na estrutura adequada"
       ],
       "correta": "observar se o substantivo e singular ou plural antes de escolher a estrutura",
-      "comentario": "A estrategia correta fortalece o dominio de there is e There are.",
+      "comentario": "A estratégia correta fortalece o domínio de there is e There are.",
       "tempoEstimado": 55,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -7693,14 +7693,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "There is e There are",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma prova, There is e There are e mais cobrado quando:",
+      "enunciado": "Em uma prova, There is e There are é mais cobrado quando:",
       "opcoes": [
         "a questao pede indicar corretamente a existencia de algo em um espaco",
         "a questao pede substituir nomes por pronomes ou completar o sujeito da frase",
@@ -7708,7 +7708,7 @@
         "a questao pede transformar uma frase afirmativa em negativa"
       ],
       "correta": "a questao pede indicar corretamente a existencia de algo em um espaco",
-      "comentario": "Esse e o tipo de demanda em que there is e There are aparece com mais frequencia.",
+      "comentario": "Esse é o tipo de demanda em que there is e There are aparece com mais frequência.",
       "tempoEstimado": 60,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -7732,7 +7732,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "There is e There are",
       "dificuldadeLabel": "dificil",
@@ -7741,13 +7741,13 @@
       "tipo": "multipla_escolha",
       "enunciado": "Qual resumo sintetiza melhor a ideia de There is e There are?",
       "opcoes": [
-        "Em sintese, as estruturas usadas para indicar existencia ou presenca de algo em ingles.",
-        "Em sintese, os pronomes pessoais usados para indicar quem pratica a acao ou quem e descrito na frase.",
+        "Em sintese, as estruturas usadas para indicar existencia ou presenca de algo em inglês.",
+        "Em sintese, os pronomes pessoais usados para indicar quem pratica a ação ou quem e descrito na frase.",
         "Em sintese, o uso de am, is e are em frases afirmativas para identificar, caracterizar ou localizar.",
-        "Em sintese, o uso de am not, is not e are not para negar informacoes em frases simples."
+        "Em sintese, o uso de am not, is not e are not para negar informações em frases simples."
       ],
-      "correta": "Em sintese, as estruturas usadas para indicar existencia ou presenca de algo em ingles.",
-      "comentario": "O resumo correto recupera o nucleo de there is e There are.",
+      "correta": "Em sintese, as estruturas usadas para indicar existencia ou presenca de algo em inglês.",
+      "comentario": "O resumo correto recupera o núcleo de there is e There are.",
       "tempoEstimado": 60,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -7771,14 +7771,14 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "There is e There are",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual associacao entre exemplo e interpretacao esta correta em There is e There are?",
+      "enunciado": "Qual associacao entre exemplo e interpretação esta correta em There is e There are?",
       "opcoes": [
         "There are two books on the table. -> a estrutura indica a existencia de itens no plural",
         "They are my friends. -> a estrutura indica a existencia de itens no plural",
@@ -7786,7 +7786,7 @@
         "He is not at home. -> o pronome substitui nomes e organiza a frase de forma natural"
       ],
       "correta": "There are two books on the table. -> a estrutura indica a existencia de itens no plural",
-      "comentario": "A associacao correta mantem coerencia entre exemplo e interpretacao em there is e There are.",
+      "comentario": "A associacao correta mantém coerencia entre exemplo e interpretação em there is e There are.",
       "tempoEstimado": 65,
       "tags": [
         "verb-to-be-e-simple-present",
@@ -7810,7 +7810,7 @@
       "serie": [
         1
       ],
-      "materia": "Ingles",
+      "materia": "Inglês",
       "topico": "Verb To Be e Simple Present",
       "subtopico": "There is e There are",
       "dificuldadeLabel": "dificil",

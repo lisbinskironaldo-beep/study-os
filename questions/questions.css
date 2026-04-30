@@ -5491,6 +5491,15 @@ font-size: 15px;
 color: var(--questions-text-main, #0f172a);
 }
 
+.questions-session-focus-copy small {
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+font-size: 11px;
+font-weight: 800;
+color: var(--questions-accent, #2563eb);
+}
+
 .questions-session-focus-pills {
 display: flex;
 gap: 6px;

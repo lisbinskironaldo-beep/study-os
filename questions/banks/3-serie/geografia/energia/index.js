@@ -101,84 +101,84 @@ const bloco1 = montarBloco(
   "Energia deve ser analisada como recurso estrategico ligado a matriz, consumo, infraestrutura e poder.",
   "identificar-conceitos-basicos-de-energia-e-matriz-energetica",
   `
-matriz energetica|O conjunto das fontes usadas por um pais para suprir energia forma a:
-fonte renovavel|Aquela capaz de se recompor em escala humana e uma:
-fonte nao renovavel|Aquela de reposicao muito lenta em escala geologica e uma:
-energia primaria|A forma obtida diretamente da natureza antes das transformacoes e a:
-energia secundaria|A forma resultante do processamento de outra fonte e a:
+matriz energetica|O conjunto das fontes usadas por um país para suprir energia forma a:
+fonte renovavel|Aquela capaz de se recompor em escala humana é uma:
+fonte não renovavel|Aquela de reposição muito lenta em escala geológica é uma:
+energia primaria|A forma obtida diretamente da natureza antes das transformações é a:
+energia secundaria|A forma resultante do processamento de outra fonte é a:
 seguranca energetica|A capacidade de garantir oferta continua e confiavel de energia define a:
 consumo energetico|A quantidade de energia utilizada por familias, transportes e industrias corresponde ao:
-diversificacao da matriz|A ampliacao do numero de fontes para reduzir riscos compoe a:
-dependencia energetica|Quando um pais precisa importar parte importante da energia que usa ocorre:
+diversificacao da matriz|A ampliacao do número de fontes para reduzir riscos compoe a:
+dependencia energetica|Quando um país precisa importar parte importante da energia que usa ocorre:
 eficiencia energetica|Produzir e consumir com menor desperdicio expressa:
 demanda de energia|A necessidade de abastecimento para economia e sociedade forma a:
-transmissao de energia|O transporte da eletricidade das usinas ate os centros consumidores e a:
-distribuicao de energia|A entrega final da eletricidade ao consumidor integra a:
+transmissao de energia|O transporte da eletricidade das usinas ate os centros consumidores é a:
+distribuição de energia|A entrega final da eletricidade ao consumidor integra a:
 infraestrutura energetica|Usinas, redes, dutos e linhas compoem a:
 planejamento energetico|A definicao de investimentos e prioridades para oferta futura forma o:
-balanco energetico|A comparacao entre oferta, transformacao e consumo de energia e um:
-setor energetico|O conjunto de atividades de producao, transporte e distribuicao de energia constitui o:
-energia como recurso estrategico|Na Geografia economica a energia deve ser entendida como:
-matriz energetica desigual|Os paises utilizam fontes e proporcoes diferentes, o que revela:
-leitura geografica da energia|A sintese do tema exige articular fontes, territorio, consumo, tecnologia e:
+balanco energetico|A comparacao entre oferta, transformação e consumo de energia é um:
+setor energetico|O conjunto de atividades de produção, transporte e distribuição de energia constitui o:
+energia como recurso estrategico|Na Geografia econômica a energia deve ser entendida como:
+matriz energetica desigual|Os países utilizam fontes e proporcoes diferentes, o que revela:
+leitura geográfica da energia|A sintese do tema exige articular fontes, território, consumo, tecnologia e:
 `
 );
 
 const bloco2 = montarBloco(
-  "Fontes nao renovaveis",
+  "Fontes não renovaveis",
   21,
   "Combustiveis fosseis e minerais energeticos ainda possuem grande peso na economia mundial e no Brasil.",
   "analisar-fontes-nao-renovaveis-de-energia",
   `
-petroleo|A principal fonte fossil usada em transportes e petroquimica e o:
-gas natural|Combustivel fossil amplamente usado em termoeletricas e industrias e o:
-carvao mineral|Fonte muito associada a siderurgia e a Primeira Revolucao Industrial e o:
-combustivel fossil|Petroleo, gas e carvao sao exemplos de:
-refino de petroleo|A etapa que transforma oleo bruto em derivados e o:
+petroleo|A principal fonte fossil usada em transportes e petroquimica é o:
+gas natural|Combustivel fossil amplamente usado em termoeletricas e industrias é o:
+carvao mineral|Fonte muito associada a siderurgia é a Primeira Revolucao Industrial é o:
+combustivel fossil|Petroleo, gas e carvao são exemplos de:
+refino de petroleo|A etapa que transforma oleo bruto em derivados é o:
 derivados de petroleo|Gasolina, diesel e querosene fazem parte dos:
-termoeletrica fossil|Usina que gera eletricidade a partir da queima de combustiveis e uma:
+termoeletrica fossil|Usina que gera eletricidade a partir da queima de combustiveis é uma:
 emissao de carbono|A queima de fontes fosseis amplia a:
-reserva energetica finita|Fontes nao renovaveis possuem:
+reserva energetica finita|Fontes não renovaveis possuem:
 dependencia de combustiveis fosseis|Matrizes baseadas em petroleo, gas e carvao revelam:
 vulnerabilidade a choques de preco|Economias dependentes de petroleo e gas sofrem mais com:
 geopolitica do petroleo|A disputa por reservas, oleodutos e rotas de abastecimento integra a:
-exploracao offshore|A extracao de petroleo no mar corresponde a:
-combustao de carvao|A geracao e o uso industrial desse mineral envolvem:
-gasoduto|A infraestrutura usada para transportar gas natural e o:
-petroquimica|O ramo industrial que usa derivados de petroleo como base e a:
-dependencia importadora de energia|Quando um pais compra grande parte dos fosseis que consome ocorre:
-custo ambiental elevado|As fontes nao renovaveis costumam apresentar:
+exploracao offshore|A extração de petroleo no mar corresponde a:
+combustao de carvao|A geracao é o uso industrial desse mineral envolvem:
+gasoduto|A infraestrutura usada para transportar gas natural é o:
+petroquimica|O ramo industrial que usa derivados de petroleo como base é a:
+dependencia importadora de energia|Quando um país compra grande parte dos fosseis que consome ocorre:
+custo ambiental elevado|As fontes não renovaveis costumam apresentar:
 transicao para menor uso de fosseis|A necessidade de reduzir emissoes e dependencia de petroleo impulsiona:
-leitura critica das fontes fosseis|A sintese sobre nao renovaveis deve reconhecer seu peso economico, seus riscos e:
+leitura critica das fontes fosseis|A sintese sobre não renovaveis deve reconhecer seu peso economico, seus riscos e:
 `
 );
 
 const bloco3 = montarBloco(
   "Fontes renovaveis",
   41,
-  "Renovaveis ampliam a diversificacao energetica, mas tambem dependem de infraestrutura, tecnologia e territorio.",
+  "Renovaveis ampliam a diversificacao energetica, mas também dependem de infraestrutura, tecnologia e território.",
   "analisar-fontes-renovaveis-de-energia",
   `
-energia hidreletrica|A eletricidade gerada pela forca da agua em movimento e a:
-energia solar|A fonte obtida a partir da radiacao do Sol e a:
-energia eolica|A producao eletrica pelo movimento dos ventos define a:
-biomassa|A fonte derivada de materia organica vegetal ou animal e a:
-energia renovavel|Fontes capazes de reposicao em escala humana formam a:
-painel fotovoltaico|O equipamento que converte luz solar em eletricidade e o:
-parque eolico|O conjunto de aerogeradores em uma mesma area forma um:
-etanol|Biocombustivel bastante associado a cana-de-acucar no Brasil e o:
-biodiesel|Combustivel renovavel produzido a partir de oleos vegetais e outras materias-primas e o:
+energia hidreletrica|A eletricidade gerada pela forca da água em movimento é a:
+energia solar|A fonte obtida a partir da radiacao do Sol é a:
+energia eolica|A produção eletrica pelo movimento dos ventos define a:
+biomassa|A fonte derivada de materia organica vegetal ou animal é a:
+energia renovavel|Fontes capazes de reposição em escala humana formam a:
+painel fotovoltaico|O equipamento que converte luz solar em eletricidade é o:
+parque eolico|O conjunto de aerogeradores em uma mesma área forma um:
+etanol|Biocombustivel bastante associado a cana-de-acucar no Brasil é o:
+biodiesel|Combustivel renovavel produzido a partir de oleos vegetais e outras matérias-primas é o:
 diversificacao com renovaveis|A ampliacao de eolica, solar e biomassa favorece a:
-intermitencia de certas fontes|Solar e eolica dependem de variacao natural, o que produz:
+intermitencia de certas fontes|Solar e eolica dependem de variação natural, o que produz:
 armazenamento de energia|Baterias e outras tecnologias ajudam a lidar com:
 uso de potencial natural|Fontes renovaveis aproveitam ventos, rios, sol e:
-geracao distribuida|A producao de energia em telhados e pequenas unidades perto do consumidor constitui:
+geracao distribuida|A produção de energia em telhados e pequenas unidades perto do consumidor constitui:
 transicao energetica|A substituicao gradual de parte dos fosseis por renovaveis integra a:
 baixo carbono|Matrizes com maior peso de renovaveis tendem a emitir menos:
 potencial eolico do Nordeste|No Brasil a expansao dos ventos para gerar eletricidade destaca o:
-energia limpa com impactos territoriais|Mesmo renovaveis podem gerar disputas locais por terra, agua e:
+energia limpa com impactos territoriais|Mesmo renovaveis podem gerar disputas locais por terra, água e:
 renovaveis como estrategia de seguranca|Ampliar diversas fontes renovaveis ajuda a reduzir:
-leitura geografica das renovaveis|A sintese sobre essas fontes exige unir potencial natural, tecnologia, infraestrutura e:
+leitura geográfica das renovaveis|A sintese sobre essas fontes exige unir potencial natural, tecnologia, infraestrutura e:
 `
 );
 
@@ -189,21 +189,21 @@ const bloco4 = montarBloco(
   "analisar-hidreletricidade-e-matriz-brasileira",
   `
 hidreletricidade predominante|Durante muito tempo a principal base da eletricidade brasileira foi a:
-usina hidreletrica|A instalacao que usa a energia potencial e cinetica da agua para gerar eletricidade e a:
-reservatorio|A area alagada criada para acumular agua para uma barragem forma o:
-barragem|A estrutura que repres a agua para formar o reservatorio e a:
-linhas de transmissao|Para levar eletricidade gerada em longas distancias usam-se:
+usina hidreletrica|A instalacao que usa a energia potencial e cinetica da água para gerar eletricidade é a:
+reservatorio|A área alagada criada para acumular água para uma barragem forma o:
+barragem|A estrutura que repres a água para formar o reservatorio é a:
+linhas de transmissao|Para levar eletricidade gerada em longas distâncias usam-se:
 vulnerabilidade hidrologica|Matrizes muito dependentes de rios sofrem com:
-periodo de seca|A reducao do volume de agua nos reservatorios se intensifica em:
+periodo de seca|A reducao do volume de água nos reservatorios se intensifica em:
 potencial hidrico brasileiro|A grande quantidade de rios e desniveis favoreceu historicamente o:
-integracao entre geracao e consumo|Como parte das usinas fica longe dos grandes centros, a eletricidade depende de:
+integração entre geracao e consumo|Como parte das usinas fica longe dos grandes centros, a eletricidade depende de:
 custos socioambientais de barragens|Grandes usinas podem causar deslocamentos populacionais e:
 termoeletricas de apoio|Em momentos de seca o sistema brasileiro recorre mais a:
 hidreletricidade amazonica|Nos ultimos decenios o avanco de barragens no Norte reforcou a:
 impacto sobre comunidades ribeirinhas|Empreendimentos hidreletricos podem afetar diretamente:
-regularizacao de vazoes|Reservatorios permitem certo controle da oferta de agua e:
-debate sobre grandes barragens|A expansao hidreletrica envolve discussoes sobre energia, territorio e:
-matriz eletrica relativamente renovavel|Comparada a muitos paises, a eletricidade brasileira apresenta:
+regularizacao de vazoes|Reservatorios permitem certo controle da oferta de água e:
+debate sobre grandes barragens|A expansao hidreletrica envolve discussoes sobre energia, território e:
+matriz eletrica relativamente renovavel|Comparada a muitos países, a eletricidade brasileira apresenta:
 dependencia regional de usinas distantes|Grandes centros consumidores dependem da geracao produzida em:
 seguranca do sistema eletrico|A combinacao de varias fontes e redes busca garantir a:
 hidreletricidade com contradicoes|A sintese sobre essa fonte no Brasil une vantagem renovavel, risco hidrologico e:
@@ -213,41 +213,41 @@ hidreletricidade com contradicoes|A sintese sobre essa fonte no Brasil une vanta
 const bloco5 = montarBloco(
   "Petroleo, gas e geopolitica energetica",
   81,
-  "Petroleo e gas articulam economia, financas, comercio exterior e disputas de poder em varias escalas.",
+  "Petroleo e gas articulam economia, financas, comércio exterior e disputas de poder em varias escalas.",
   "relacionar-petroleo-gas-e-geopolitica-energetica",
   `
-pre-sal|A importante area de reservas petroliferas em aguas profundas do Brasil e o:
-exploracao offshore|A extracao de petroleo em plataformas marinhas corresponde a:
+pre-sal|A importante área de reservas petroliferas em aguas profundas do Brasil é o:
+exploracao offshore|A extração de petroleo em plataformas marinhas corresponde a:
 geopolitica energetica|A disputa por reservas, rotas e controle de energia integra a:
-refinaria|A unidade industrial que processa petroleo bruto e uma:
+refinaria|A unidade industrial que processa petroleo bruto é uma:
 derivados combustiveis|Gasolina, diesel e GLP pertencem aos:
-gasoduto internacional|A infraestrutura que transporta gas entre paises e um:
+gasoduto internacional|A infraestrutura que transporta gas entre países é um:
 seguranca de abastecimento|Garantir combustiveis e energia em quantidade suficiente define a:
-oscilacao do preco do petroleo|Mercados internacionais podem alterar fortemente a:
-dependencia de importacao de combustiveis|Mesmo sendo produtor, um pais pode precisar comprar parte dos:
+oscilação do preco do petroleo|Mercados internacionais podem alterar fortemente a:
+dependencia de importação de combustiveis|Mesmo sendo produtor, um país pode precisar comprar parte dos:
 royalties do petroleo|A compensacao financeira paga pela exploracao desse recurso gera:
 industria petroquimica|O uso industrial de derivados para plastico e produtos quimicos integra a:
-estrategia nacional de energia|Decisoes sobre producao, refino e uso dos combustiveis fazem parte da:
-mercado global de petroleo|A circulacao internacional do oleo e organizada em um:
-reserva estrategica|Estoque criado para lidar com choques e emergencias no abastecimento e uma:
-dependencia de fertilizantes e gas|A agricultura e a industria podem sofrer quando faltam:
+estrategia nacional de energia|Decisões sobre produção, refino e uso dos combustiveis fazem parte da:
+mercado global de petroleo|A circulação internacional do oleo e organizada em um:
+reserva estrategica|Estoque criado para lidar com choques e emergencias no abastecimento é uma:
+dependencia de fertilizantes e gas|A agricultura é a industria podem sofrer quando faltam:
 preco internacional transmitido internamente|Choques externos de petroleo podem elevar custos e:
 energia como instrumento de poder|Controlar oferta e rotas de combustiveis amplia:
 disputa por autonomia no refino|Produzir oleo sem processa-lo totalmente reforca a necessidade de:
-petroleo entre riqueza e vulnerabilidade|A sintese sobre o setor une renda, exportacao, risco externo e:
+petroleo entre riqueza e vulnerabilidade|A sintese sobre o setor une renda, exportação, risco externo e:
 `
 );
 
 const bloco6 = montarBloco(
-  "Infraestrutura, distribuicao e consumo de energia",
+  "Infraestrutura, distribuição e consumo de energia",
   101,
-  "A energia so chega ao consumidor por redes complexas de producao, transmissao, distribuicao e regulacao.",
+  "A energia so chega ao consumidor por redes complexas de produção, transmissao, distribuição e regulacao.",
   "analisar-infraestrutura-distribuicao-e-consumo-de-energia",
   `
-sistema interligado nacional|A rede que conecta grande parte da geracao e do consumo eletrico no Brasil e o:
+sistema interligado nacional|A rede que conecta grande parte da geracao e do consumo eletrico no Brasil é o:
 transmissao eletrica|O transporte da energia em alta tensao entre usinas e centros consumidores define a:
-distribuicao eletrica|A etapa que leva energia da subestacao ate casas, comercio e industrias e a:
-subestacao|A instalacao que transforma e redistribui tensao eletrica e a:
+distribuição eletrica|A etapa que leva energia da subestacao ate casas, comércio e industrias é a:
+subestacao|A instalacao que transforma e redistribui tensao eletrica é a:
 rede de dutos|Oleodutos e gasodutos compoem uma:
 consumo residencial|A energia usada em moradias pertence ao:
 consumo industrial|A eletricidade e combustiveis voltados a fabricas integram o:
@@ -255,14 +255,14 @@ consumo de transportes|Combustiveis usados em carros, caminhoes e avioes compoem
 perda na rede|Parte da energia se dissipa no percurso de geracao ao consumo por:
 tarifa energetica|O preco pago pelo uso de eletricidade e combustiveis envolve:
 investimento em infraestrutura|Expandir a oferta de energia depende de:
-logistica dos combustiveis|A circulacao de gasolina, diesel e gas exige:
-universalizacao do acesso|Levar energia a todos os lares e atividades economicas integra a:
-desigualdade no consumo energetico|Grupos e regioes utilizam energia em volumes e condicoes diferentes, revelando:
+logística dos combustiveis|A circulação de gasolina, diesel e gas exige:
+universalizacao do acesso|Levar energia a todos os lares e atividades econômicas integra a:
+desigualdade no consumo energetico|Grupos e regiões utilizam energia em volumes e condições diferentes, revelando:
 eficiencia no uso final|Equipamentos e processos que gastam menos energia por resultado melhoram a:
 demanda de pico|Os momentos de maior necessidade simultanea do sistema compoem a:
-integracao entre fontes|Uma matriz segura busca combinar hidreletrica, termica, solar, eolica e:
-territorialidade das redes energeticas|Linhas, dutos e usinas desenham no territorio uma:
-energia como base da vida urbana e industrial|A sintese sobre distribuicao de energia destaca seu papel na:
+integração entre fontes|Uma matriz segura busca combinar hidreletrica, térmica, solar, eolica e:
+territorialidade das redes energeticas|Linhas, dutos e usinas desenham no território uma:
+energia como base da vida urbana e industrial|A sintese sobre distribuição de energia destaca seu papel na:
 `
 );
 
@@ -272,52 +272,52 @@ const bloco7 = montarBloco(
   "A energia condiciona competitividade industrial, transporte, emprego e possibilidades de desenvolvimento territorial.",
   "relacionar-energia-industria-e-desenvolvimento",
   `
-energia como insumo produtivo|Na industria e nos servicos a energia funciona como:
+energia como insumo produtivo|Na industria e nos serviços a energia funciona como:
 competitividade industrial|Custos energeticos menores podem elevar a:
 intensidade energetica|Setores que demandam muito consumo por unidade produzida apresentam alta:
 setor eletrointensivo|Aluminio, siderurgia e alguns ramos quimicos fazem parte do:
 localizacao industrial influenciada pela energia|Muitas fabricas se instalam considerando oferta e custo de:
 apagao produtivo|A falta de fornecimento eletrico pode causar:
-energia e transporte de cargas|A circulacao de mercadorias depende fortemente de:
-desenvolvimento regional apoiado em energia|Usinas e redes podem estimular atividades economicas e:
-investimento produtivo dependente de energia|Expandir industria e servicos exige:
-energia barata e expansao economica|Custos menores podem favorecer:
+energia e transporte de cargas|A circulação de mercadorias depende fortemente de:
+desenvolvimento regional apoiado em energia|Usinas e redes podem estimular atividades econômicas e:
+investimento produtivo dependente de energia|Expandir industria e serviços exige:
+energia barata e expansao econômica|Custos menores podem favorecer:
 transicao energetica como oportunidade industrial|Novas fontes podem gerar equipamentos, empregos e:
 cadeia produtiva da energia|Exploracao, geracao, equipamentos e redes formam uma:
 dependencia tecnologica no setor energetico|Importar maquinas e sistemas para gerar energia pode manter:
-desenvolvimento de fornecedores nacionais|A ampliacao da producao de equipamentos energeticos internos fortalece:
+desenvolvimento de fornecedores nacionais|A ampliacao da produção de equipamentos energeticos internos fortalece:
 planejamento de longo prazo|Energia e desenvolvimento precisam ser articulados em:
-articulacao entre matriz e economia|O tipo de energia usado no pais influencia a:
+articulacao entre matriz e economia|O tipo de energia usado no país influencia a:
 energia e soberania produtiva|Quanto maior a capacidade interna de produzir e gerir o setor, maior a:
-desigualdade regional no acesso a energia competitiva|Nem todas as areas do pais oferecem o mesmo ambiente para:
-energia como base do desenvolvimento territorial|A sintese geografica do tema destaca sua funcao para producao, circulacao e:
+desigualdade regional no acesso a energia competitiva|Nem todas as áreas do país oferecem o mesmo ambiente para:
+energia como base do desenvolvimento territorial|A sintese geográfica do tema destaca sua função para produção, circulação e:
 `
 );
 
 const bloco8 = montarBloco(
-  "Impactos socioambientais da producao energetica",
+  "Impactos socioambientais da produção energetica",
   141,
   "Toda fonte energetica apresenta custos territoriais e ambientais que precisam ser avaliados criticamente.",
   "avaliar-impactos-socioambientais-da-producao-energetica",
   `
-impacto socioambiental|A alteracao no ambiente e na vida das populacoes causada por usinas e exploracao e um:
-alagamento por barragem|A formacao de grandes reservatorios pode provocar:
+impacto socioambiental|A alteracao no ambiente e na vida das populacoes causada por usinas e exploracao é um:
+alagamento por barragem|A formação de grandes reservatorios pode provocar:
 deslocamento compulsorio|Quando moradores precisam sair para a implantacao de obras energeticas ocorre:
 emissao de gases de efeito estufa|A queima de fosseis amplia a:
 contaminacao por atividades energeticas|Vazamentos e residuos do setor podem causar:
-conflito territorial por usinas|Disputas entre empresa, Estado e populacao local em torno de empreendimentos revelam:
+conflito territorial por usinas|Disputas entre empresa, Estado e população local em torno de empreendimentos revelam:
 injustica ambiental|Quando certos grupos suportam mais danos do que beneficios ocorre:
 risco tecnologico|Acidentes com plataformas, dutos e usinas envolvem:
-uso intensivo da agua|Hidreletricas e outras atividades podem pressionar:
+uso intensivo da água|Hidreletricas e outras atividades podem pressionar:
 degradacao de ecossistemas|A implantacao de empreendimentos pode alterar:
-impacto visual e eolico local|Parques eolicos tambem podem gerar debates sobre:
+impacto visual e eolico local|Parques eolicos também podem gerar debates sobre:
 residuos da cadeia energetica|Baterias, cinzas e estruturas antigas produzem:
-licenciamento ambiental|O processo de avaliacao e autorizacao de obras energeticas e o:
-mitigacao de impactos|Acoes voltadas a reduzir danos socioambientais formam a:
+licenciamento ambiental|O processo de avaliação e autorizacao de obras energeticas é o:
+mitigacao de impactos|Ações voltadas a reduzir danos socioambientais formam a:
 energia e clima|As escolhas da matriz influenciam diretamente a:
 transicao com responsabilidade socioambiental|Ampliar renovaveis sem ignorar comunidades e ecossistemas exige:
-participacao social nas decisoes energeticas|Audiencias, consultas e debate publico fortalecem:
-territorios de sacrificio|Areas que concentram usinas e danos para beneficiar mercados distantes podem ser vistas como:
+participacao social nas decisões energeticas|Audiencias, consultas e debate publico fortalecem:
+territorios de sacrificio|Áreas que concentram usinas e danos para beneficiar mercados distantes podem ser vistas como:
 energia e ambiente em tensao|A sintese sobre o tema mostra que produzir energia implica equilibrar oferta, natureza e:
 `
 );
@@ -328,41 +328,41 @@ const bloco9 = montarBloco(
   "A transicao energetica busca reduzir emissoes e dependencia fossil, mas exige tecnologia, investimento e justica territorial.",
   "analisar-transicao-energetica-e-sustentabilidade",
   `
-transicao energetica|A mudanca gradual para matrizes menos emissoras e mais diversificadas e a:
+transicao energetica|A mudança gradual para matrizes menos emissoras e mais diversificadas é a:
 descarbonizacao|A reducao do peso dos combustiveis intensivos em carbono define a:
 energia de baixo carbono|Fontes com menor emissao ao longo do ciclo de uso compoem a:
 eletromobilidade|A substituicao de motores convencionais por veiculos eletricos impulsiona a:
 armazenamento energetico|Baterias e outras solucoes ajudam a ampliar:
-hidrogenio de baixo carbono|Alternativa energ etica associada a eletricidade renovavel e o:
+hidrogenio de baixo carbono|Alternativa energ ética associada a eletricidade renovavel é o:
 eficiencia energetica ampliada|Consumir menos energia para atingir os mesmos resultados corresponde a:
 inovacao tecnologica no setor|Novas turbinas, paineis e baterias impulsionam a:
 renovacao da infraestrutura|A transicao exige modernizacao de redes, sistemas e:
 justica energetica|O debate sobre quem paga, quem acessa e quem se beneficia da nova matriz remete a:
 minerais estrategicos da transicao|Litio, cobre e terras raras ganharam importancia por causa da:
-seguranca na mudanca de matriz|Reduzir fosseis sem comprometer oferta exige:
-reindustrializacao verde|A producao nacional de equipamentos renovaveis pode estimular uma:
+seguranca na mudança de matriz|Reduzir fosseis sem comprometer oferta exige:
+reindustrializacao verde|A produção nacional de equipamentos renovaveis pode estimular uma:
 financiamento da transicao|Expandir novas fontes e redes depende de:
-mudanca de padrao de consumo|A transicao nao depende so da oferta, mas tambem de:
+mudança de padrao de consumo|A transicao não depende so da oferta, mas também de:
 sustentabilidade energetica|A combinacao entre seguranca, baixo impacto e acesso social compoe a:
-transicao desigual entre paises|Nem todos conseguem avancar no mesmo ritmo por causa de tecnologia, renda e:
-energia e clima articulados|A mudanca da matriz e central para enfrentar a:
-transicao energetica contraditoria|A sintese do tema mostra oportunidades industriais, mas tambem novos conflitos por:
+transicao desigual entre países|Nem todos conseguem avancar no mesmo ritmo por causa de tecnologia, renda e:
+energia e clima articulados|A mudança da matriz e central para enfrentar a:
+transicao energetica contraditoria|A sintese do tema mostra oportunidades industriais, mas também novos conflitos por:
 `
 );
 
 const bloco10 = montarBloco(
-  "Leitura geografica da energia e interpretacao critica",
+  "Leitura geográfica da energia e interpretação critica",
   181,
-  "Energia deve ser interpretada como tema geografico, economico, ambiental e geopolitico ao mesmo tempo.",
+  "Energia deve ser interpretada como tema geográfico, economico, ambiental e geopolitico ao mesmo tempo.",
   "sintetizar-a-leitura-geografica-da-energia",
   `
-geografia da energia|O estudo da distribuicao das fontes, das redes e dos conflitos energeticos integra a:
+geografia da energia|O estudo da distribuição das fontes, das redes e dos conflitos energeticos integra a:
 energia como fator de poder|Controlar fontes, tecnologia e rotas amplia a:
-territorialidade do setor energetico|Usinas, dutos, linhas e mercados desenham no espaco uma:
-matriz energetica desigual|Paises e regioes usam composicoes diferentes de fontes, revelando:
-interdependencia energetica|Mercados e redes fazem com que muitos paises dependam mutuamente de:
+territorialidade do setor energetico|Usinas, dutos, linhas e mercados desenham no espaço uma:
+matriz energetica desigual|Países e regiões usam composicoes diferentes de fontes, revelando:
+interdependencia energetica|Mercados e redes fazem com que muitos países dependam mutuamente de:
 vulnerabilidade a choques externos|Quem depende de importacoes ou de poucas fontes sofre mais com:
-energia e organizacao do territorio|Grandes obras e redes de transmissao influenciam a:
+energia e organizacao do território|Grandes obras e redes de transmissao influenciam a:
 escala local dos impactos|Mesmo gerando beneficios amplos, os empreendimentos afetam diretamente:
 escala global das emissoes|As escolhas nacionais de matriz somam efeitos sobre:
 seguranca e sustentabilidade como dilema|Garantir oferta sem ampliar danos resume um:
@@ -371,9 +371,9 @@ planejamento energetico territorial|Definir onde gerar, transmitir e consumir ex
 articulacao entre Estado e mercado|No setor energetico convivem empresas, reguladores e:
 modernizacao infraestrutural|A expansao da energia acompanha a:
 energia e desigualdade social|Acesso, tarifa e localizacao de impactos mostram a:
-energia e soberania nacional|Dominar parte relevante da cadeia de producao, tecnologia e distribuicao amplia a:
-escala regional das redes|Linhas, usinas e combustiveis conectam diferentes areas do pais em:
-interpretacao integrada do setor|Uma leitura madura da energia precisa juntar matriz, territorio, ambiente e:
+energia e soberania nacional|Dominar parte relevante da cadeia de produção, tecnologia e distribuição amplia a:
+escala regional das redes|Linhas, usinas e combustiveis conectam diferentes áreas do país em:
+interpretação integrada do setor|Uma leitura madura da energia precisa juntar matriz, território, ambiente e:
 energia como questao estrategica total|A sintese final deve reconhecer que o tema envolve economia, politica, tecnologia e:
   `
 );
@@ -402,17 +402,17 @@ const complementos = [
     enunciado: "Petroleo e gas devem ser lidos ao mesmo tempo como commodities, base industrial, fonte de renda e:",
     opcoes: ["instrumentos de poder geopolitico", "recursos sem impacto territorial", "bens desligados do refino", "fontes puramente renovaveis"],
     correta: "instrumentos de poder geopolitico",
-    comentario: "O setor envolve comercio, infraestrutura, soberania e estrategia internacional.",
+    comentario: "O setor envolve comércio, infraestrutura, soberania e estrategia internacional.",
     habilidade: "sintetizar-petroleo-gas-e-geopolitica-energetica"
   }),
   criarQuestao({
     id: "en_120",
-    subtopico: "Infraestrutura, distribuicao e consumo de energia",
+    subtopico: "Infraestrutura, distribuição e consumo de energia",
     dificuldadeLabel: "dificil",
     dificuldadeNivel: 10,
     cognicao: "sintese",
     tempoEstimado: 60,
-    enunciado: "A seguranca do abastecimento energetico depende da articulacao entre geracao, transmissao, distribuicao, demanda e:",
+    enunciado: "A seguranca do abastecimento energetico depende da articulacao entre geracao, transmissao, distribuição, demanda e:",
     opcoes: ["planejamento territorial das redes", "somente clima estavel", "uniformidade regional", "ausencia de infraestrutura"],
     correta: "planejamento territorial das redes",
     comentario: "As redes energeticas exigem coordenacao permanente entre oferta e consumo.",
@@ -433,7 +433,7 @@ const complementos = [
   }),
   criarQuestao({
     id: "en_160",
-    subtopico: "Impactos socioambientais da producao energetica",
+    subtopico: "Impactos socioambientais da produção energetica",
     dificuldadeLabel: "dificil",
     dificuldadeNivel: 10,
     cognicao: "sintese",
@@ -441,7 +441,7 @@ const complementos = [
     enunciado: "Os danos ambientais e territoriais da geracao de energia precisam ser avaliados junto com emissoes, deslocamentos populacionais e:",
     opcoes: ["desigualdade na exposicao aos riscos", "somente oferta de eletricidade", "falta de consumidores", "estabilidade climatica garantida"],
     correta: "desigualdade na exposicao aos riscos",
-    comentario: "Os custos do setor energetico nao recaem igualmente sobre todos os grupos e lugares.",
+    comentario: "Os custos do setor energetico não recaem igualmente sobre todos os grupos e lugares.",
     habilidade: "sintetizar-impactos-socioambientais-da-energia"
   }),
   criarQuestao({
@@ -452,22 +452,22 @@ const complementos = [
     cognicao: "sintese",
     tempoEstimado: 60,
     enunciado: "A transicao energetica exige reduzir fosseis, ampliar renovaveis, modernizar redes e enfrentar:",
-    opcoes: ["novas dependencias tecnologicas e minerais", "somente a insolacao", "o fim do consumo urbano", "a inexistencia de mercado"],
-    correta: "novas dependencias tecnologicas e minerais",
-    comentario: "A mudanca de matriz nao elimina automaticamente assimetrias e disputas por recursos.",
+    opcoes: ["novas dependências tecnologicas e minerais", "somente a insolacao", "o fim do consumo urbano", "a inexistencia de mercado"],
+    correta: "novas dependências tecnologicas e minerais",
+    comentario: "A mudança de matriz não elimina automaticamente assimetrias e disputas por recursos.",
     habilidade: "sintetizar-a-transicao-energetica"
   }),
   criarQuestao({
     id: "en_200",
-    subtopico: "Leitura geografica da energia e interpretacao critica",
+    subtopico: "Leitura geográfica da energia e interpretação critica",
     dificuldadeLabel: "dificil",
     dificuldadeNivel: 10,
     cognicao: "sintese",
     tempoEstimado: 60,
     enunciado: "A energia deve ser interpretada como tema territorial total, pois conecta matrizes, redes, ambiente, economia e:",
-    opcoes: ["relacoes de poder", "apenas forma do relevo", "somente clima regional", "estrutura etaria"],
-    correta: "relacoes de poder",
-    comentario: "A distribuicao das fontes e das infraestruturas energeticas expressa escolhas economicas e geopoliticas.",
+    opcoes: ["relações de poder", "apenas forma do relevo", "somente clima regional", "estrutura etária"],
+    correta: "relações de poder",
+    comentario: "A distribuição das fontes e das infraestruturas energeticas expressa escolhas econômicas e geopoliticas.",
     habilidade: "sintetizar-a-leitura-geografica-da-energia"
   })
 ];
@@ -485,22 +485,22 @@ export const energia = {
     searchAliases: ["energia", "matriz energetica", "hidreletrica", "petroleo", "transicao energetica", "geopolitica energetica"],
     subtopicosBase: [
       "Conceitos e matriz energetica",
-      "Fontes nao renovaveis",
+      "Fontes não renovaveis",
       "Fontes renovaveis",
       "Hidreletricidade e matriz brasileira",
       "Petroleo, gas e geopolitica energetica",
-      "Infraestrutura, distribuicao e consumo de energia",
+      "Infraestrutura, distribuição e consumo de energia",
       "Energia, industria e desenvolvimento",
-      "Impactos socioambientais da producao energetica",
+      "Impactos socioambientais da produção energetica",
       "Transicao energetica e sustentabilidade",
-      "Leitura geografica da energia e interpretacao critica"
+      "Leitura geográfica da energia e interpretação critica"
     ],
     habilidadesBase: [
       "identificar conceitos e fontes de energia",
       "analisar matriz energetica, infraestrutura e seguranca do abastecimento",
       "relacionar energia, economia, industria e geopolitica",
-      "avaliar impactos socioambientais da producao energetica",
-      "sintetizar a transicao energetica em perspectiva geografica"
+      "avaliar impactos socioambientais da produção energetica",
+      "sintetizar a transicao energetica em perspectiva geográfica"
     ]
   },
   questoes: [...bloco1, ...bloco2, ...bloco3, ...bloco4, ...bloco5, ...bloco6, ...bloco7, ...bloco8, ...bloco9, ...bloco10, ...complementos].sort((a, b) => a.id.localeCompare(b.id))

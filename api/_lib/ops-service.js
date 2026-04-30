@@ -18,6 +18,8 @@ const CHANGE_REQUESTS_TABLE = "northstar_change_requests";
 const REVIEW_RUNS_TABLE = "northstar_review_runs";
 const AUDIT_LOG_TABLE = "northstar_audit_log";
 const MANAGED_APPS_STATE_KEY = "managed_apps_registry";
+const OPS_AI_MEMORY_STATE_KEY = "papiro_ops_ai_memory";
+const MARKETING_CONTENT_STATE_KEY = "papiro_marketing_content_queue";
 
 const EVENT_BUCKETS = {
     premium_entry_view: "visits",
@@ -159,7 +161,7 @@ async function insertAuditLog(input = {}) {
 
     return insertRow(AUDIT_LOG_TABLE, {
         event_type: String(input.eventType || input.event_type || "ops_event").trim() || "ops_event",
-        actor: String(input.actor || "northstar").trim() || "northstar",
+        actor: String(input.actor || "papiro_ops").trim() || "papiro_ops",
         target_system: String(input.targetSystem || input.target_system || "").trim(),
         entity_type: String(input.entityType || input.entity_type || "").trim(),
         entity_id: String(input.entityId || input.entity_id || "").trim(),
@@ -182,13 +184,32 @@ async function getStateValue(stateKey, fallback = null) {
     });
 
     const row = response.ok ? response.data[0] : null;
-    return row && row.state_value !== undefined ? row.state_value : fallback;
+    if (!row) {
+        return fallback;
+    }
+    if (row.state_value !== undefined) {
+        return row.state_value;
+    }
+    if (row.value !== undefined) {
+        return row.value;
+    }
+    return fallback;
 }
 
 async function setStateValue(stateKey, value) {
-    return upsertRow(STATE_TABLE, {
+    const payload = {
         state_key: stateKey,
         state_value: value || {}
+    };
+    const result = await upsertRow(STATE_TABLE, payload, "state_key");
+
+    if (result.ok || !result.error || !["PGRST204", "42703"].includes(String(result.error.code || ""))) {
+        return result;
+    }
+
+    return upsertRow(STATE_TABLE, {
+        state_key: stateKey,
+        value: value || {}
     }, "state_key");
 }
 
@@ -222,6 +243,133 @@ function getModuleLabels() {
         finance: "Financas",
         bugs: "Bugs"
     };
+}
+
+function getDefaultOpsAiMemory() {
+    return {
+        version: 2,
+        productName: "Papiro Tools",
+        mission: "Manter a operacao do Papiro Tools estavel, com vendas premium saudaveis, divulgacao organica em movimento e alertas acionaveis.",
+        guardrails: [
+            "Nunca executar mudanca destrutiva sem tarefa aprovada.",
+            "Priorizar vendas premium, acesso premium, Mercado Pago, Supabase, Gemini e alertas ativos.",
+            "Separar problema real de historico resolvido.",
+            "Preferir acoes pequenas, reversiveis e verificaveis.",
+            "Nao recomendar aumento alto de gasto pago sem dados de conversao suficientes.",
+            "Escrever para o dono do negocio em linguagem simples; termos tecnicos ficam apenas em detalhes."
+        ],
+        recurringChecks: [
+            "Verificar se Mercado Pago esta recebendo avisos de pagamento corretamente.",
+            "Verificar se activeAlerts esta zerado ou explicado.",
+            "Verificar se freeLaneStatus esta healthy.",
+            "Verificar se Supabase e Gemini estao configurados.",
+            "Verificar se ha venda recente sem ativacao premium que precise reprocessamento.",
+            "Verificar se existem tarefas pendentes ha muitos dias."
+        ],
+        playbooks: {
+            mercadoPagoWebhook: [
+                "Se Mercado Pago nao estiver recebendo avisos corretamente, conferir MERCADO_PAGO_WEBHOOK_SECRET e notification_url nos detalhes tecnicos.",
+                "Se houver assinatura invalida ativa, coletar diagnostico antes de mexer na validacao.",
+                "Se pagamento aprovado nao ativar premium, criar tarefa de reprocessamento com o numero do pagamento."
+            ],
+            alerts: [
+                "Alertas ativos devem virar investigacao ou resolucao; alertas antigos resolvidos nao devem poluir o painel.",
+                "Queda da IA principal so vira prioridade se se repetir; primeiro usar plano reserva e registrar em historico."
+            ],
+            growth: [
+                "Sem volume de conversao, priorizar melhoria interna e instrumentacao antes de gasto pago.",
+                "Com canal vencedor, sugerir campanha pequena e mensuravel."
+            ],
+            organicMarketing: [
+                "Manter fila semanal de conteudo organico antes de pensar em gasto pago.",
+                "Priorizar Meta Business Suite gratuito para Instagram/Facebook e usar Buffer/Publer apenas como fila auxiliar.",
+                "Todo post deve ter CTA claro para usar o Papiro, treinar questoes ou conhecer o premium.",
+                "Nao automatizar curtidas, follows, DMs ou comentarios em massa."
+            ],
+            ownerDashboard: [
+                "Comecar sempre por: o que precisa de atencao hoje, dinheiro, divulgacao e saude do sistema.",
+                "Transformar alertas tecnicos em tarefas com uma proxima acao clara.",
+                "Nao mostrar provider, webhook, entitlement, change request ou fallback sem traducao para linguagem comum."
+            ]
+        },
+        brandVoice: {
+            audience: "estudantes do ensino medio, vestibulandos e pessoas que querem estudar com menos atrito",
+            tone: "direto, util, confiante, sem promessa exagerada",
+            cta: "Entrar no Papiro e estudar com foco"
+        },
+        freeGrowthStack: [
+            {
+                name: "Meta Business Suite",
+                cost: "zero",
+                use: "agendar Instagram e Facebook, acompanhar insights e publicar Stories/Reels sem ferramenta paga"
+            },
+            {
+                name: "Instagram scheduler nativo",
+                cost: "zero",
+                use: "programar posts diretamente pelo app quando nao precisar de painel externo"
+            },
+            {
+                name: "Buffer Free",
+                cost: "zero com limite",
+                use: "fila simples para ate 3 canais e poucos posts em espera por canal"
+            },
+            {
+                name: "Publer Free",
+                cost: "zero com limite",
+                use: "fila auxiliar para multiplataforma quando o limite gratuito atender"
+            },
+            {
+                name: "Canva Free",
+                cost: "zero com recursos limitados",
+                use: "montar artes simples a partir dos roteiros e carrosseis gerados pela retaguarda"
+            }
+        ],
+        updatedAt: new Date().toISOString()
+    };
+}
+
+async function getOpsAiMemory() {
+    const stored = await getStateValue(OPS_AI_MEMORY_STATE_KEY, null);
+    const defaults = getDefaultOpsAiMemory();
+    return stored && typeof stored === "object"
+        ? {
+            ...defaults,
+            ...stored,
+            version: defaults.version,
+            productName: defaults.productName,
+            mission: defaults.mission,
+            guardrails: Array.from(new Set([
+                ...safeArray(defaults.guardrails),
+                ...safeArray(stored.guardrails)
+            ])),
+            recurringChecks: Array.from(new Set([
+                ...safeArray(defaults.recurringChecks),
+                ...safeArray(stored.recurringChecks)
+            ])),
+            playbooks: {
+                ...defaults.playbooks,
+                ...(stored.playbooks || {}),
+                mercadoPagoWebhook: defaults.playbooks.mercadoPagoWebhook,
+                alerts: defaults.playbooks.alerts,
+                ownerDashboard: defaults.playbooks.ownerDashboard
+            }
+        }
+        : defaults;
+}
+
+async function saveOpsAiMemory(partial = {}) {
+    const current = await getOpsAiMemory();
+    const next = {
+        ...current,
+        ...(partial && typeof partial === "object" ? partial : {}),
+        playbooks: {
+            ...(current.playbooks || {}),
+            ...((partial && partial.playbooks) || {})
+        },
+        updatedAt: new Date().toISOString()
+    };
+    await setStateValue(OPS_AI_MEMORY_STATE_KEY, next);
+    return next;
 }
 
 function hasFreshManagedAppChecks(items = [], maxAgeMs = 15 * 60 * 1000) {
@@ -420,8 +568,8 @@ async function inspectOpsManagedApp(app, state) {
         ...app,
         healthStatus: passwordConfigured ? "healthy" : "not_configured",
         healthSummary: passwordConfigured
-            ? "Aplicacao principal de gestao NorthStar pronta para autenticacao."
-            : "Configure OPS_PANEL_PASSWORD para liberar a aplicacao de gestao NorthStar.",
+            ? "Retaguarda Papiro pronta para autenticacao."
+            : "Configure OPS_PANEL_PASSWORD para liberar a retaguarda Papiro.",
         lastError: passwordConfigured ? "" : "OPS_PANEL_PASSWORD ausente",
         healthChecks: checks
     }, app);
@@ -700,83 +848,6 @@ async function inspectGitHubManagedApp(app) {
     }, app);
 }
 
-async function inspectOpenAIManagedApp(app) {
-    const apiKey = getEnvValue("OPENAI_API_KEY");
-    const appUrl = getEnvValue("OPENAI_APP_PUBLIC_URL");
-    const mcpUrl = getEnvValue("OPENAI_MCP_SERVER_URL");
-    const mcpApiKey = getEnvValue("OPENAI_MCP_API_KEY");
-
-    const checks = [
-        apiKey ? "OPENAI_API_KEY configurado" : "OPENAI_API_KEY opcional e nao configurado",
-        appUrl ? `app publico definido: ${appUrl}` : "OPENAI_APP_PUBLIC_URL pendente",
-        mcpUrl ? `servidor MCP definido: ${mcpUrl}` : "OPENAI_MCP_SERVER_URL pendente",
-        mcpApiKey ? "OPENAI_MCP_API_KEY configurado" : "OPENAI_MCP_API_KEY pendente"
-    ];
-
-    if (appUrl && mcpUrl && mcpApiKey) {
-        let appReachable = false;
-        let mcpReachable = false;
-
-        try {
-            const appResponse = await fetch(appUrl, { method: "GET" });
-            appReachable = appResponse.ok;
-        } catch (error) {
-            appReachable = false;
-        }
-
-        try {
-            const mcpResponse = await fetch(mcpUrl, {
-                method: "POST",
-                headers: {
-                    Authorization: `Bearer ${mcpApiKey}`,
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify({
-                    jsonrpc: "2.0",
-                    id: "healthcheck",
-                    method: "tools/list",
-                    params: {}
-                })
-            });
-            mcpReachable = mcpResponse.ok;
-        } catch (error) {
-            mcpReachable = false;
-        }
-
-        return normalizeManagedApp({
-            ...app,
-            healthStatus: appReachable && mcpReachable ? "healthy" : "warning",
-            healthSummary: appReachable && mcpReachable
-                ? "Apps SDK, app publico e servidor MCP prontos para acesso autorizado via ChatGPT."
-                : "Credenciais OpenAI configuradas, mas o app publico ou o MCP nao responderam como esperado.",
-            lastError: appReachable && mcpReachable ? "" : "openai_runtime_validation_failed",
-            healthChecks: [
-                ...checks,
-                appReachable ? "app publico respondeu com sucesso" : "app publico nao respondeu com sucesso",
-                mcpReachable ? "MCP respondeu com bearer valido" : "MCP nao respondeu com bearer valido"
-            ]
-        }, app);
-    }
-
-    if (apiKey || appUrl || mcpUrl || mcpApiKey) {
-        return normalizeManagedApp({
-            ...app,
-            healthStatus: "warning",
-            healthSummary: "Integracao OpenAI iniciada, mas ainda falta fechar a trilha completa de app + MCP + credenciais.",
-            lastError: "openai_incomplete_setup",
-            healthChecks: checks
-        }, app);
-    }
-
-    return normalizeManagedApp({
-        ...app,
-        healthStatus: "not_configured",
-        healthSummary: "OpenAI / ChatGPT ainda nao esta configurado para operar o NorthStar.",
-        lastError: "openai_not_configured",
-        healthChecks: checks
-    }, app);
-}
-
 async function inspectGoogleAdsManagedApp(app) {
     const developerToken = getEnvValue("GOOGLE_ADS_DEVELOPER_TOKEN");
     const managerCustomerId = getEnvValue("GOOGLE_ADS_MANAGER_CUSTOMER_ID");
@@ -954,7 +1025,7 @@ async function inspectMetaAdsManagedApp(app) {
 }
 
 async function inspectManagedApp(app, state) {
-    if (app.appKey === "northstar_ecosystem" || app.appKey === "north_ecosystem" || app.appKey === "rotanota_ops") {
+    if (app.appKey === "rota_nota") {
         return inspectOpsManagedApp(app, state);
     }
 
@@ -976,10 +1047,6 @@ async function inspectManagedApp(app, state) {
 
     if (app.appKey === "github") {
         return inspectGitHubManagedApp(app, state);
-    }
-
-    if (app.appKey === "openai_chatgpt") {
-        return inspectOpenAIManagedApp(app, state);
     }
 
     if (app.appKey === "google_ads") {
@@ -1486,6 +1553,12 @@ async function recordOpsAlert(input = {}) {
 
 async function listOpsAlerts(limit = 50) {
     const response = await listRows(ALERTS_TABLE, {
+        filters: [
+            {
+                column: "resolved_at",
+                value: "is.null"
+            }
+        ],
         order: "created_at.desc",
         limit
     });
@@ -1936,7 +2009,7 @@ function buildFallbackCopilot(dataset = {}) {
 
 function buildCopilotPrompt(scope, dataset) {
     return [
-        "Voce e o copiloto operacional e de growth do RotaNota.",
+        "Voce e o copiloto operacional e de growth do Papiro.",
         `Escopo atual: ${scope}.`,
         "Analise apenas os dados fornecidos.",
         "Responda em JSON com as chaves: summary, opsFindings, growthFindings, investmentRecommendations, promotionRecommendations, weeklyPlan, confidence, insufficientData.",
@@ -1989,14 +2062,22 @@ async function getCopilotUsageStatus(scope) {
 }
 
 async function resolveCopilotDataset(scope, payload = {}) {
+    const memory = await getOpsAiMemory();
+
     if (scope === "weekly_strategy") {
-        return getWeeklyReport();
+        const weekly = await getWeeklyReport();
+        return {
+            ...weekly,
+            memory,
+            query: payload.query || ""
+        };
     }
 
     const overview = await getOverview();
     return {
         ok: true,
         generatedAt: new Date().toISOString(),
+        memory,
         overview,
         growth: overview.growth,
         query: payload.query || ""
@@ -2060,12 +2141,13 @@ async function analyzeWithCopilot(scope = "manual", payload = {}) {
     });
 
     if (!aiResponse.ok || !aiResponse.data) {
-        await recordOpsAlert({
+        await insertAuditLog({
             eventType: "copilot_fallback_used",
-            severity: "warning",
-            provider: "gemini",
-            message: `O copiloto caiu para fallback por ${aiResponse.status}.`,
-            payload: {
+            actor: "gemini",
+            targetSystem: "papiro_ops",
+            entityType: "copilot",
+            status: "fallback",
+            metadata: {
                 scope,
                 status: aiResponse.status
             }
@@ -2101,6 +2183,702 @@ async function analyzeWithCopilot(scope = "manual", payload = {}) {
         cached: false,
         provider: "gemini",
         analysis
+    };
+}
+
+function buildHealthCheckIssues(dataset = {}) {
+    const overview = dataset.overview || {};
+    const paymentsStatus = dataset.paymentsStatus || {};
+    const counters = overview.counters || {};
+    const configured = overview.configured || {};
+    const issues = [];
+
+    if (paymentsStatus.webhookSignatureValidation !== "active") {
+        issues.push({
+            severity: "critical",
+            targetSystem: "mercado_pago",
+            actionType: "investigate_webhook_signature",
+            title: "Conferir aviso de pagamento do Mercado Pago",
+            summary: "O Mercado Pago ainda nao confirmou que os avisos de pagamento estao chegando corretamente. Conferir os detalhes tecnicos se isso aparecer de novo.",
+            payload: {
+                webhookSignatureValidation: paymentsStatus.webhookSignatureValidation || "unknown",
+                checkoutConfigured: paymentsStatus.checkoutConfigured
+            }
+        });
+    }
+
+    if (!paymentsStatus.checkoutConfigured) {
+        issues.push({
+            severity: "critical",
+            targetSystem: "mercado_pago",
+            actionType: "configure_checkout_provider",
+            title: "Configurar venda pelo Mercado Pago",
+            summary: "MERCADO_PAGO_ACCESS_TOKEN nao aparece como configurado para a retaguarda.",
+            payload: paymentsStatus
+        });
+    }
+
+    if (Number(counters.activeAlerts || 0) > 0) {
+        issues.push({
+            severity: "warning",
+            targetSystem: "papiro_ops",
+            actionType: "triage_active_alerts",
+            title: "Triar alertas ativos",
+            summary: `A retaguarda reporta ${Number(counters.activeAlerts || 0)} alerta(s) ativo(s).`,
+            payload: {
+                activeAlerts: counters.activeAlerts,
+                recentAlerts: dataset.alerts
+            }
+        });
+    }
+
+    if (overview.freeLaneStatus && overview.freeLaneStatus !== "healthy") {
+        issues.push({
+            severity: overview.freeLaneStatus === "critical" ? "critical" : "warning",
+            targetSystem: "papiro_ops",
+            actionType: "review_free_lane",
+            title: "Revisar uso gratuito",
+            summary: `O uso gratuito esta em estado ${overview.freeLaneStatus}.`,
+            payload: {
+                freeLaneStatus: overview.freeLaneStatus,
+                counters
+            }
+        });
+    }
+
+    if (!configured.supabase) {
+        issues.push({
+            severity: "critical",
+            targetSystem: "supabase",
+            actionType: "configure_supabase",
+            title: "Configurar Supabase",
+            summary: "Supabase nao aparece como configurado.",
+            payload: configured
+        });
+    }
+
+    if (!configured.gemini) {
+        issues.push({
+            severity: "warning",
+            targetSystem: "gemini",
+            actionType: "configure_gemini",
+            title: "Configurar Gemini",
+            summary: "Gemini nao aparece como configurado; a IA usa o plano reserva.",
+            payload: configured
+        });
+    }
+
+    return issues;
+}
+
+function addDaysIso(date, offset) {
+    const next = new Date(date);
+    next.setDate(next.getDate() + offset);
+    return next.toISOString().slice(0, 10);
+}
+
+function slugifyContentId(value = "") {
+    return String(value || "")
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "")
+        .slice(0, 80) || crypto.randomBytes(4).toString("hex");
+}
+
+function getDefaultMarketingContentState() {
+    return {
+        version: 1,
+        strategy: {
+            goal: "Crescer divulgacao organica do Papiro sem gasto pago.",
+            cadence: "1 post curto por dia, 3 carrosseis por semana, 2 roteiros de Reels por semana e stories leves em dias uteis.",
+            approvalMode: "human_review",
+            primaryChannels: ["instagram", "facebook", "whatsapp_status"],
+            freeTools: ["Meta Business Suite", "Instagram scheduler nativo", "Buffer Free", "Publer Free", "Canva Free"]
+        },
+        items: [],
+        lastGeneratedAt: null,
+        updatedAt: new Date().toISOString()
+    };
+}
+
+function getContentTopicSeeds() {
+    return [
+        {
+            subject: "Filosofia",
+            grade: "3 serie",
+            topic: "Etica",
+            hook: "Voce sabe diferenciar etica de moral em uma questao?",
+            quiz: "Etica investiga criterios de acao justa; moral e o conjunto de costumes e normas de um grupo.",
+            cta: "Treine mais questoes de filosofia no Papiro."
+        },
+        {
+            subject: "Redacao",
+            grade: "3 serie",
+            topic: "Repertorio",
+            hook: "Um repertorio bom nao precisa ser dificil, precisa funcionar no argumento.",
+            quiz: "Antes de decorar citacoes, ligue o repertorio ao problema, causa, consequencia e proposta.",
+            cta: "Use o Papiro para organizar seu treino de redacao."
+        },
+        {
+            subject: "Matematica",
+            grade: "3 serie",
+            topic: "Probabilidade",
+            hook: "A questao parece de sorte, mas costuma ser organizacao de casos.",
+            quiz: "Em probabilidade, escreva primeiro o espaco amostral e depois conte os casos favoraveis.",
+            cta: "Abra o Papiro e resolva uma bateria curta hoje."
+        },
+        {
+            subject: "Biologia",
+            grade: "3 serie",
+            topic: "Ecologia",
+            hook: "Cadeia alimentar cai muito porque mistura conceito simples com leitura atenta.",
+            quiz: "Produtores transformam energia luminosa em materia organica; consumidores dependem dessa base.",
+            cta: "Treine ecologia no Papiro em poucos minutos."
+        },
+        {
+            subject: "Historia",
+            grade: "3 serie",
+            topic: "Brasil republicano",
+            hook: "Historia fica mais facil quando voce pergunta: quem ganhou poder com isso?",
+            quiz: "Em questoes historicas, localize periodo, grupo social e interesse politico antes da alternativa.",
+            cta: "Use o Papiro para revisar por tema."
+        },
+        {
+            subject: "Portugues",
+            grade: "3 serie",
+            topic: "Interpretacao",
+            hook: "A resposta geralmente esta no texto, mas escondida por sinonimo.",
+            quiz: "Antes de marcar, volte ao trecho e troque a alternativa por uma frase equivalente.",
+            cta: "Pratique interpretacao no Papiro."
+        },
+        {
+            subject: "Quimica",
+            grade: "3 serie",
+            topic: "Organica",
+            hook: "Funcao organica nao e decoreba pura: procure o grupo funcional.",
+            quiz: "Hidroxila ligada a carbono saturado indica alcool; carbonila muda completamente a leitura.",
+            cta: "Treine reconhecimento de funcoes no Papiro."
+        }
+    ];
+}
+
+function buildDeterministicMarketingItems({ days = 14, startDate = new Date() } = {}) {
+    const seeds = getContentTopicSeeds();
+    const formats = ["quiz_post", "carousel", "reel_script", "story_quiz"];
+    const channelsByFormat = {
+        quiz_post: ["instagram", "facebook", "whatsapp_status"],
+        carousel: ["instagram", "facebook"],
+        reel_script: ["instagram_reels", "youtube_shorts", "tiktok"],
+        story_quiz: ["instagram_stories", "whatsapp_status"]
+    };
+
+    return Array.from({ length: Math.max(1, Number(days) || 14) }).map((_, index) => {
+        const seed = seeds[index % seeds.length];
+        const format = formats[index % formats.length];
+        const publishDate = addDaysIso(startDate, index);
+        const id = `${publishDate}-${slugifyContentId(`${format}-${seed.subject}-${seed.topic}`)}`;
+        const title = format === "carousel"
+            ? `Carrossel: ${seed.topic} sem enrolacao`
+            : format === "reel_script"
+                ? `Reel: ${seed.hook}`
+                : format === "story_quiz"
+                    ? `Story quiz: ${seed.subject}`
+                    : `Post quiz: ${seed.topic}`;
+        const caption = [
+            seed.hook,
+            "",
+            seed.quiz,
+            "",
+            seed.cta,
+            "",
+            "#Papiro #Estudos #ENEM #EnsinoMedio"
+        ].join("\n");
+
+        return {
+            id,
+            status: "draft",
+            priority: index < 7 ? "high" : "normal",
+            publishDate,
+            format,
+            title,
+            subject: seed.subject,
+            grade: seed.grade,
+            topic: seed.topic,
+            hook: seed.hook,
+            caption,
+            visualBrief: format === "carousel"
+                ? `Carrossel de 5 slides: gancho, conceito, exemplo, erro comum e CTA para ${seed.subject}.`
+                : format === "reel_script"
+                    ? `Video vertical simples com texto na tela, professor/narracao curta e fechamento com CTA.`
+                    : `Arte limpa com pergunta curta, alternativa mental e CTA discreto.`,
+            script: format === "reel_script"
+                ? [
+                    `Abertura: ${seed.hook}`,
+                    `Corpo: ${seed.quiz}`,
+                    `Fechamento: ${seed.cta}`
+                ]
+                : [],
+            channels: channelsByFormat[format] || ["instagram"],
+            source: "papiro_ops_ai",
+            createdAt: new Date().toISOString(),
+            updatedAt: new Date().toISOString()
+        };
+    });
+}
+
+function normalizeMarketingContentState(value = {}) {
+    const base = getDefaultMarketingContentState();
+    const input = value && typeof value === "object" ? value : {};
+    return {
+        ...base,
+        ...input,
+        strategy: {
+            ...base.strategy,
+            ...(input.strategy || {})
+        },
+        items: safeArray(input.items).map((item) => ({
+            ...item,
+            id: String(item.id || crypto.randomBytes(6).toString("hex")),
+            status: String(item.status || "draft")
+        })),
+        updatedAt: input.updatedAt || base.updatedAt
+    };
+}
+
+async function getMarketingContentQueue() {
+    const stored = await getStateValue(MARKETING_CONTENT_STATE_KEY, null);
+    return {
+        ok: true,
+        configured: isSupabaseConfigured(),
+        ...normalizeMarketingContentState(stored || {})
+    };
+}
+
+function mergeMarketingItems(existing = [], incoming = []) {
+    const map = new Map();
+    safeArray(existing).forEach((item) => {
+        map.set(String(item.id), item);
+    });
+    safeArray(incoming).forEach((item) => {
+        const previous = map.get(String(item.id));
+        map.set(String(item.id), {
+            ...(previous || {}),
+            ...item,
+            status: previous && previous.status && previous.status !== "draft"
+                ? previous.status
+                : (item.status || "draft"),
+            updatedAt: new Date().toISOString()
+        });
+    });
+    return [...map.values()]
+        .sort((left, right) => String(left.publishDate || "").localeCompare(String(right.publishDate || "")))
+        .slice(0, 80);
+}
+
+function buildMarketingPrompt(dataset = {}) {
+    return [
+        "Voce e editor de crescimento organico do Papiro.",
+        "Crie conteudo util, especifico e pronto para revisao humana. Nao prometa resultado garantido.",
+        "Responda JSON com a chave items. Cada item deve ter: format, title, hook, caption, visualBrief, script, channels, subject, topic.",
+        "Formatos permitidos: quiz_post, carousel, reel_script, story_quiz.",
+        `Dados:\n${JSON.stringify(dataset)}`
+    ].join("\n\n");
+}
+
+function normalizeAiMarketingItems(items = [], fallback = []) {
+    const today = new Date();
+    return safeArray(items).slice(0, 14).map((item, index) => {
+        const base = fallback[index] || buildDeterministicMarketingItems({ days: 1, startDate: today })[0];
+        const publishDate = item.publishDate || base.publishDate || addDaysIso(today, index);
+        const format = String(item.format || base.format || "quiz_post");
+        const title = String(item.title || base.title || "Conteudo Papiro").trim();
+        return {
+            ...base,
+            id: `${publishDate}-${slugifyContentId(`${format}-${title}`)}`,
+            status: "draft",
+            publishDate,
+            format,
+            title,
+            hook: String(item.hook || base.hook || "").trim(),
+            caption: String(item.caption || base.caption || "").trim(),
+            visualBrief: String(item.visualBrief || item.visual_brief || base.visualBrief || "").trim(),
+            script: safeArray(item.script).length ? safeArray(item.script) : safeArray(base.script),
+            channels: safeArray(item.channels).length ? safeArray(item.channels) : safeArray(base.channels),
+            subject: String(item.subject || base.subject || "").trim(),
+            topic: String(item.topic || base.topic || "").trim(),
+            updatedAt: new Date().toISOString()
+        };
+    }).filter((item) => item.title && item.caption);
+}
+
+async function generateMarketingContentQueue(input = {}) {
+    const current = await getMarketingContentQueue();
+    const memory = await getOpsAiMemory();
+    const days = Math.min(Math.max(Number(input.days || 14), 3), 30);
+    const fallbackItems = buildDeterministicMarketingItems({ days });
+    let provider = "fallback";
+    let generatedItems = fallbackItems;
+
+    if (isGeminiConfigured() && input.provider !== "fallback") {
+        const state = await getPrimaryOpsState();
+        const response = await callGeminiJson({
+            model: state.copilot.strategyModel || state.copilot.defaultModel,
+            prompt: buildMarketingPrompt({
+                days,
+                memory: {
+                    productName: memory.productName,
+                    mission: memory.mission,
+                    brandVoice: memory.brandVoice,
+                    freeGrowthStack: memory.freeGrowthStack
+                },
+                existingQueue: safeArray(current.items).slice(0, 10)
+            }),
+            schemaInstruction: "Retorne apenas JSON valido com items como array."
+        });
+
+        if (response.ok && response.data && Array.isArray(response.data.items)) {
+            const normalized = normalizeAiMarketingItems(response.data.items, fallbackItems);
+            if (normalized.length) {
+                provider = "gemini";
+                generatedItems = normalized;
+            }
+        }
+    }
+
+    const next = normalizeMarketingContentState({
+        ...current,
+        items: mergeMarketingItems(input.replace ? [] : current.items, generatedItems),
+        lastGeneratedAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString()
+    });
+
+    await setStateValue(MARKETING_CONTENT_STATE_KEY, next);
+    await saveOpsAiMemory({
+        lastOrganicMarketingRun: {
+            generatedAt: next.lastGeneratedAt,
+            provider,
+            itemsGenerated: generatedItems.length,
+            totalQueue: next.items.length
+        }
+    });
+    await insertAuditLog({
+        eventType: "organic_marketing_queue_generated",
+        actor: provider,
+        targetSystem: "papiro_marketing",
+        entityType: "content_queue",
+        status: "completed",
+        metadata: {
+            itemsGenerated: generatedItems.length,
+            totalQueue: next.items.length,
+            source: input.source || "ops_console"
+        }
+    });
+
+    return {
+        ok: true,
+        provider,
+        ...next,
+        generatedItems
+    };
+}
+
+async function ensureMarketingContentQueue(input = {}) {
+    const current = await getMarketingContentQueue();
+    const openItems = safeArray(current.items).filter((item) => !["published", "rejected"].includes(String(item.status || "")));
+    if (!input.force && openItems.length >= Number(input.minimumOpenItems || 7)) {
+        return {
+            ok: true,
+            provider: "existing_queue",
+            ...current
+        };
+    }
+    return generateMarketingContentQueue({
+        ...input,
+        source: input.source || "daily_health_check"
+    });
+}
+
+async function updateMarketingContentItem(input = {}) {
+    const itemId = String(input.itemId || input.id || "").trim();
+    const status = String(input.status || "").trim();
+    if (!itemId || !status) {
+        return {
+            ok: false,
+            status: "missing_item_or_status"
+        };
+    }
+
+    const current = await getMarketingContentQueue();
+    let updatedItem = null;
+    const items = safeArray(current.items).map((item) => {
+        if (String(item.id) !== itemId) {
+            return item;
+        }
+        updatedItem = {
+            ...item,
+            status,
+            operatorNotes: String(input.operatorNotes || input.notes || item.operatorNotes || "").trim(),
+            publishedUrl: String(input.publishedUrl || item.publishedUrl || "").trim(),
+            updatedAt: new Date().toISOString()
+        };
+        if (status === "published" && !updatedItem.publishedAt) {
+            updatedItem.publishedAt = new Date().toISOString();
+        }
+        return updatedItem;
+    });
+
+    if (!updatedItem) {
+        return {
+            ok: false,
+            status: "content_item_not_found"
+        };
+    }
+
+    const next = normalizeMarketingContentState({
+        ...current,
+        items,
+        updatedAt: new Date().toISOString()
+    });
+    await setStateValue(MARKETING_CONTENT_STATE_KEY, next);
+    await insertAuditLog({
+        eventType: "organic_marketing_item_updated",
+        actor: "papiro_operator",
+        targetSystem: "papiro_marketing",
+        entityType: "content_item",
+        entityId: itemId,
+        status,
+        metadata: {
+            title: updatedItem.title,
+            publishedUrl: updatedItem.publishedUrl || ""
+        }
+    });
+
+    return {
+        ok: true,
+        item: updatedItem,
+        ...next
+    };
+}
+
+function buildDailyHealthPrompt(dataset = {}) {
+    return [
+        "Voce e o fiscal operacional diario da retaguarda Papiro.",
+        "Use a memoria operacional como regra permanente.",
+        "Objetivo: encontrar riscos reais, separar historico de incidente ativo e propor a menor acao segura.",
+        "Responda em JSON com as chaves: summary, healthScore, risks, recommendedChangeRequests, watchlist, memoryUpdates.",
+        "recommendedChangeRequests deve conter objetos curtos com targetSystem, actionType, title, summary, severity e payload.",
+        "Nao invente credenciais, receita ou eventos. Se faltar dado, coloque em watchlist.",
+        `Dados:\n${JSON.stringify(dataset)}`
+    ].join("\n\n");
+}
+
+function normalizeHealthCheckOutput(output = {}, deterministicIssues = []) {
+    const asArray = (value) => Array.isArray(value) ? value.filter(Boolean) : [];
+    const aiRecommended = deterministicIssues.length
+        ? asArray(output.recommendedChangeRequests)
+        : [];
+    const changeRequests = [
+        ...deterministicIssues,
+        ...aiRecommended
+    ].map((item) => ({
+        targetSystem: String(item.targetSystem || item.target_system || "papiro_ops").trim() || "papiro_ops",
+        actionType: String(item.actionType || item.action_type || "manual_followup").trim() || "manual_followup",
+        title: String(item.title || item.summary || "Pendencia operacional").trim(),
+        summary: String(item.summary || item.title || "Pendencia operacional detectada pela IA.").trim(),
+        severity: String(item.severity || "warning").trim() || "warning",
+        payload: item.payload && typeof item.payload === "object" ? item.payload : {}
+    }));
+
+    const unique = new Map();
+    changeRequests.forEach((item) => {
+        const key = `${item.targetSystem}:${item.actionType}:${item.title}`;
+        if (!unique.has(key)) {
+            unique.set(key, item);
+        }
+    });
+
+    return {
+        summary: String(output.summary || (deterministicIssues.length ? "Pendencias operacionais encontradas." : "Retaguarda sem pendencias criticas no health-check.")).trim(),
+        healthScore: Number.isFinite(Number(output.healthScore)) ? Number(output.healthScore) : (deterministicIssues.length ? 72 : 94),
+        risks: asArray(output.risks),
+        recommendedChangeRequests: [...unique.values()],
+        watchlist: asArray(output.watchlist),
+        memoryUpdates: output.memoryUpdates && typeof output.memoryUpdates === "object" ? output.memoryUpdates : {}
+    };
+}
+
+async function createHealthCheckChangeRequests(health, runId) {
+    const created = [];
+
+    for (const item of safeArray(health.recommendedChangeRequests)) {
+        const request = await createChangeRequest({
+            reviewRunId: runId || null,
+            targetSystem: item.targetSystem,
+            actionType: item.actionType,
+            preparedBy: "papiro_health_check",
+            resultSummary: item.summary,
+            payload: {
+                title: item.title,
+                summary: item.summary,
+                severity: item.severity,
+                ...item.payload
+            }
+        });
+
+        if (request.item) {
+            created.push(request.item);
+        }
+    }
+
+    return created;
+}
+
+async function runDailyHealthCheck(input = {}) {
+    const [memory, overview, paymentsStatus, alerts, changeRequests, contentQueue] = await Promise.all([
+        getOpsAiMemory(),
+        getOverview(),
+        getPaymentsStatus(),
+        listOpsAlerts(20),
+        listChangeRequests({ status: "pending", limit: 20 }),
+        ensureMarketingContentQueue({
+            minimumOpenItems: 7,
+            source: "daily_health_check",
+            provider: input.provider || "fallback"
+        })
+    ]);
+    const dataset = {
+        generatedAt: new Date().toISOString(),
+        memory,
+        overview: {
+            configured: overview.configured,
+            counters: overview.counters,
+            freeLaneStatus: overview.freeLaneStatus,
+            state: overview.state,
+            latestReviewRun: overview.latestReviewRun
+        },
+        paymentsStatus: {
+            checkoutConfigured: paymentsStatus.checkoutConfigured,
+            webhookSignatureValidation: paymentsStatus.webhookSignatureValidation,
+            resyncAvailable: paymentsStatus.resyncAvailable,
+            summary: paymentsStatus.summary
+        },
+        alerts: safeArray(alerts.items).map((item) => ({
+            id: item.id,
+            eventType: item.event_type,
+            severity: item.severity,
+            provider: item.provider,
+            message: item.message,
+            createdAt: item.created_at
+        })),
+        pendingChangeRequests: safeArray(changeRequests.items).map((item) => ({
+            id: item.id,
+            targetSystem: item.target_system,
+            actionType: item.action_type,
+            status: item.status,
+            createdAt: item.created_at,
+            summary: item.result_summary
+        })),
+        organicMarketing: {
+            openItems: safeArray(contentQueue.items).filter((item) => !["published", "rejected"].includes(String(item.status || ""))).length,
+            lastGeneratedAt: contentQueue.lastGeneratedAt,
+            provider: contentQueue.provider || "existing_queue"
+        }
+    };
+    const deterministicIssues = buildHealthCheckIssues(dataset);
+    let provider = "fallback";
+    let health = normalizeHealthCheckOutput({}, deterministicIssues);
+
+    if (isGeminiConfigured() && input.provider !== "fallback") {
+        const state = await getPrimaryOpsState();
+        const response = await callGeminiJson({
+            model: state.copilot.strategyModel || state.copilot.defaultModel,
+            prompt: buildDailyHealthPrompt(dataset),
+            schemaInstruction: "Use healthScore de 0 a 100. recommendedChangeRequests deve ser uma lista de objetos."
+        });
+
+        if (response.ok && response.data) {
+            provider = "gemini";
+            health = normalizeHealthCheckOutput(response.data, deterministicIssues);
+        }
+    }
+
+    const insertResult = await insertRow(REVIEW_RUNS_TABLE, {
+        run_type: String(input.runType || "daily_health_check"),
+        provider,
+        status: "completed",
+        summary: health.summary,
+        recommendations: {
+            risks: health.risks,
+            recommendedChangeRequests: health.recommendedChangeRequests,
+            watchlist: health.watchlist
+        },
+        confidence: health.healthScore >= 85 ? "high" : health.healthScore >= 70 ? "medium" : "low",
+        missing_data: health.watchlist,
+        generated_change_requests: 0,
+        started_at: dataset.generatedAt,
+        completed_at: new Date().toISOString()
+    });
+    const run = Array.isArray(insertResult.data) ? insertResult.data[0] : null;
+    const createdChangeRequests = run
+        ? await createHealthCheckChangeRequests(health, run.id)
+        : [];
+
+    if (run) {
+        await patchRows(REVIEW_RUNS_TABLE, [
+            {
+                column: "id",
+                value: encodeFilter("eq", run.id)
+            }
+        ], {
+            generated_change_requests: createdChangeRequests.length
+        });
+    }
+
+    if (health.memoryUpdates && Object.keys(health.memoryUpdates).length) {
+        await saveOpsAiMemory(health.memoryUpdates);
+    } else {
+        await saveOpsAiMemory({
+            lastHealthCheck: {
+                generatedAt: dataset.generatedAt,
+                healthScore: health.healthScore,
+                summary: health.summary,
+                createdChangeRequests: createdChangeRequests.length
+            },
+            lastOrganicMarketingRun: {
+                generatedAt: contentQueue.lastGeneratedAt || dataset.generatedAt,
+                openItems: dataset.organicMarketing.openItems,
+                provider: dataset.organicMarketing.provider
+            }
+        });
+    }
+
+    await insertAuditLog({
+        eventType: "daily_health_check_completed",
+        actor: provider,
+        targetSystem: "papiro_ops",
+        entityType: "review_run",
+        entityId: run ? run.id : "",
+        status: "completed",
+        metadata: {
+            healthScore: health.healthScore,
+            createdChangeRequests: createdChangeRequests.length,
+            organicMarketingOpenItems: dataset.organicMarketing.openItems
+        }
+    });
+
+    return {
+        ok: insertResult.ok,
+        provider,
+        health,
+        reviewRun: run,
+        createdChangeRequests,
+        contentQueue: {
+            provider: dataset.organicMarketing.provider,
+            openItems: dataset.organicMarketing.openItems,
+            lastGeneratedAt: dataset.organicMarketing.lastGeneratedAt
+        }
     };
 }
 
@@ -2176,7 +2954,7 @@ function buildFallbackPromotionDraft(input = {}) {
 
 function buildPromotionPrompt(input, growthOverview) {
     return [
-        "Voce gera um draft de promocao interna para o paywall do RotaNota.",
+        "Voce gera um draft de promocao interna para o paywall do Papiro Tools.",
         "Responda em JSON com: headline, lead, benefits, cta, recommendedPlanId, audienceSummary.",
         "Nao use promessas exageradas. Foque em continuidade, profundidade e desempenho.",
         `Contexto:\n${JSON.stringify({
@@ -2494,6 +3272,55 @@ async function handleOpsAction(input = {}) {
         };
     }
 
+    if (action === "resolve_alert" && input.alertId) {
+        const response = await patchRows(ALERTS_TABLE, [
+            {
+                column: "id",
+                value: encodeFilter("eq", input.alertId)
+            }
+        ], {
+            acknowledged_at: new Date().toISOString(),
+            resolved_at: new Date().toISOString()
+        });
+        return {
+            ok: response.ok,
+            item: Array.isArray(response.data) ? response.data[0] : null
+        };
+    }
+
+    if (action === "resolve_provider_fallback_alerts") {
+        const now = new Date().toISOString();
+        const eventTypes = [
+            "daily_health_check_fallback",
+            "three_day_review_fallback",
+            "copilot_fallback_used"
+        ];
+        const responses = [];
+
+        for (const eventType of eventTypes) {
+            responses.push(await patchRows(ALERTS_TABLE, [
+                {
+                    column: "event_type",
+                    value: encodeFilter("eq", eventType)
+                },
+                {
+                    column: "resolved_at",
+                    value: "is.null"
+                }
+            ], {
+                acknowledged_at: now,
+                resolved_at: now
+            }));
+        }
+
+        const ok = responses.every((response) => response.ok || response.skipped);
+        return {
+            ok,
+            status: ok ? "fallback_alerts_resolved" : "fallback_alerts_resolution_failed",
+            items: responses.flatMap((response) => safeArray(response.data))
+        };
+    }
+
     if (action === "recheck_provider_status") {
         const next = await savePrimaryOpsState({
             lastProviderStatus: isGeminiConfigured() ? "gemini_configured" : "gemini_not_configured"
@@ -2561,7 +3388,7 @@ function normalizeChangeRequestInput(input = {}) {
         target_system: String(input.targetSystem || input.target_system || "").trim(),
         action_type: String(input.actionType || input.action_type || "").trim(),
         payload: input.payload && typeof input.payload === "object" ? input.payload : {},
-        prepared_by: String(input.preparedBy || input.prepared_by || "northstar").trim() || "northstar",
+        prepared_by: String(input.preparedBy || input.prepared_by || "papiro_ops").trim() || "papiro_ops",
         status: String(input.status || "pending").trim() || "pending",
         approval_notes: String(input.approvalNotes || input.approval_notes || "").trim(),
         approved_by: String(input.approvedBy || input.approved_by || "").trim(),
@@ -2666,7 +3493,7 @@ async function approveChangeRequest(input = {}) {
         };
     }
 
-    const actor = String(input.approvedBy || input.approved_by || "northstar_operator").trim() || "northstar_operator";
+    const actor = String(input.approvedBy || input.approved_by || "papiro_operator").trim() || "papiro_operator";
     const notes = String(input.approvalNotes || input.approval_notes || "").trim();
     const result = await patchRows(CHANGE_REQUESTS_TABLE, [
         {
@@ -2711,7 +3538,7 @@ async function rejectChangeRequest(input = {}) {
         };
     }
 
-    const actor = String(input.rejectedBy || input.rejected_by || "northstar_operator").trim() || "northstar_operator";
+    const actor = String(input.rejectedBy || input.rejected_by || "papiro_operator").trim() || "papiro_operator";
     const notes = String(input.approvalNotes || input.approval_notes || "").trim();
     const result = await patchRows(CHANGE_REQUESTS_TABLE, [
         {
@@ -2751,8 +3578,8 @@ function buildFallbackThreeDayReview(dataset = {}) {
     const growth = dataset.growthOverview || { totals: {}, channels: [] };
     const bestChannel = safeArray(growth.channels)[0] || null;
     const summary = bestChannel
-        ? `NorthStar revisou o ecossistema. Melhor sinal atual: ${bestChannel.source}/${bestChannel.campaign}; foco segue em growth barato e friccoes do paywall.`
-        : "NorthStar revisou o ecossistema. Ainda faltam sinais fortes de canal, entao o foco segue em instrumentacao, melhoria de site e promocoes internas.";
+        ? `A retaguarda revisou o Papiro. Melhor sinal atual: ${bestChannel.source}/${bestChannel.campaign}; foco segue em growth barato e friccoes do paywall.`
+        : "A retaguarda revisou o Papiro. Ainda faltam sinais fortes de canal, entao o foco segue em instrumentacao, melhoria de site e promocoes internas.";
 
     return {
         provider: "fallback",
@@ -2784,8 +3611,8 @@ function buildFallbackThreeDayReview(dataset = {}) {
 
 function buildThreeDayReviewPrompt(dataset = {}) {
     return [
-        "Voce e o analista recorrente do NorthStar.",
-        "Objetivo: revisar o ecossistema a cada 3 dias com foco em growth barato, monetizacao do premium e melhorias do site.",
+        "Voce e o analista recorrente da retaguarda Papiro.",
+        "Objetivo: revisar o site Papiro a cada 3 dias com foco em growth barato, monetizacao do premium e melhorias do site.",
         "Responda em JSON valido com as chaves: summary, confidence, missingData, recommendations.",
         "recommendations deve conter arrays com as chaves: executiveSummary, campaignActions, siteImprovements, lowCostIdeas, onboardingFindings, bugPriorities.",
         "Nao proponha gasto pago alto. Prefira ideias baratas, campanhas internas e melhorias de conversao.",
@@ -2869,7 +3696,7 @@ async function createReviewFollowupRequests(reviewRunId, review) {
             items: review.recommendations.campaignActions
         },
         {
-            targetSystem: "rota_nota",
+            targetSystem: "papiro_tools",
             actionType: "manual_review_bundle",
             bundleType: "site_improvements",
             items: review.recommendations.siteImprovements
@@ -2881,7 +3708,7 @@ async function createReviewFollowupRequests(reviewRunId, review) {
             items: review.recommendations.lowCostIdeas
         },
         {
-            targetSystem: "rota_nota",
+            targetSystem: "papiro_tools",
             actionType: "manual_review_bundle",
             bundleType: "bug_priorities",
             items: review.recommendations.bugPriorities
@@ -2930,7 +3757,7 @@ async function runThreeDayReview(input = {}) {
     const fallback = buildFallbackThreeDayReview(dataset);
     let review = fallback;
 
-    if (isGeminiConfigured()) {
+    if (isGeminiConfigured() && input.provider !== "fallback") {
         const state = await getPrimaryOpsState();
         const response = await callGeminiJson({
             model: state.copilot.strategyModel || state.copilot.defaultModel,
@@ -2944,12 +3771,13 @@ async function runThreeDayReview(input = {}) {
                 provider: "gemini"
             });
         } else {
-            await recordOpsAlert({
+            await insertAuditLog({
                 eventType: "three_day_review_fallback",
-                severity: "warning",
-                provider: "gemini",
-                message: `Review de 3 dias caiu em fallback por ${response.status}.`,
-                payload: {
+                actor: "gemini",
+                targetSystem: "papiro_ops",
+                entityType: "review_run",
+                status: "fallback",
+                metadata: {
                     status: response.status
                 }
             });
@@ -2989,7 +3817,7 @@ async function runThreeDayReview(input = {}) {
         await insertAuditLog({
             eventType: "three_day_review_completed",
             actor: review.provider,
-            targetSystem: "northstar",
+            targetSystem: "papiro_ops",
             entityType: "review_run",
             entityId: run.id,
             status: "completed",
@@ -3106,7 +3934,7 @@ async function executeChangeRequestPayload(item) {
         return {
             ok: true,
             status: "manual_followup_required",
-            summary: "Bundle aprovado para acompanhamento humano no NorthStar."
+            summary: "Bundle aprovado para acompanhamento humano na retaguarda Papiro."
         };
     }
 
@@ -3161,7 +3989,7 @@ async function executeApprovedChangeRequest(input = {}) {
 
     await insertAuditLog({
         eventType: "change_request_executed",
-        actor: String(input.executedBy || input.executed_by || "northstar_operator"),
+        actor: String(input.executedBy || input.executed_by || "papiro_operator"),
         targetSystem: updated.target_system,
         entityType: "change_request",
         entityId: updated.id,
@@ -3209,6 +4037,13 @@ module.exports = {
     getWeeklyReport,
     listReviewRuns,
     runThreeDayReview,
+    runDailyHealthCheck,
+    getOpsAiMemory,
+    saveOpsAiMemory,
+    getMarketingContentQueue,
+    generateMarketingContentQueue,
+    ensureMarketingContentQueue,
+    updateMarketingContentItem,
     listChangeRequests,
     createChangeRequest,
     approveChangeRequest,

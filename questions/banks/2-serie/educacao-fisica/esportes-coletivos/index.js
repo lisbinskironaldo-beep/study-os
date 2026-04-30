@@ -7,29 +7,29 @@ import {
 
 const blocos = [
   {
-    subtopico: "Caracteristicas gerais dos esportes coletivos",
+    subtopico: "Características gerais dos esportes coletivos",
     habilidade:
-      "identificar caracteristicas e logicas dos esportes coletivos",
+      "identificar características e logicas dos esportes coletivos",
     tags: ["esportes coletivos", "equipe", "cooperacao"],
     fatos: [
       {
         lead: "os esportes coletivos",
-        answer: "modalidades em que a acao depende da articulacao entre jogadores da equipe",
-        why: "nesses esportes, cooperacao e estrategia coletiva sao fundamentais"
+        answer: "modalidades em que a ação depende da articulação entre jogadores da equipe",
+        why: "nesses esportes, cooperação e estratégia coletiva são fundamentais"
       },
       {
         lead: "a equipe esportiva",
         answer: "o grupo de praticantes que atua de forma coordenada em torno de um objetivo comum",
-        why: "cada jogador contribui com funcoes e responsabilidades"
+        why: "cada jogador contribui com funções e responsabilidades"
       },
       {
         lead: "a oposicao entre equipes",
         answer: "a disputa organizada entre grupos com metas ofensivas e defensivas",
-        why: "o jogo se estrutura pela relacao entre colaborar com os seus e enfrentar os outros"
+        why: "o jogo se estrutura pela relação entre colaborar com os seus e enfrentar os outros"
       },
       {
-        lead: "a tomada de decisao coletiva",
-        answer: "o ajuste das acoes individuais ao plano e ao contexto da equipe",
+        lead: "a tomada de decisão coletiva",
+        answer: "o ajuste das ações individuais ao plano e ao contexto da equipe",
         why: "nos esportes coletivos, escolher bem depende do conjunto"
       },
       {
@@ -53,11 +53,11 @@ const blocos = [
       {
         lead: "o futsal",
         answer: "uma adaptacao do futebol para quadra com dinamica mais acelerada",
-        why: "espaco reduzido e menor numero de jogadores exigem rapidez"
+        why: "espaco reduzido e menor número de jogadores exigem rapidez"
       },
       {
         lead: "o passe",
-        answer: "a acao de enviar a bola a um companheiro com controle e intencao",
+        answer: "a ação de enviar a bola a um companheiro com controle e intencao",
         why: "ele organiza a circulacao ofensiva da equipe"
       },
       {
@@ -67,8 +67,8 @@ const blocos = [
       },
       {
         lead: "a marcacao por zona",
-        answer: "a defesa baseada na protecao de setores do espaco",
-        why: "nessa estrategia, o foco principal e controlar areas e nao apenas individuos"
+        answer: "a defesa baseada na proteção de setores do espaco",
+        why: "nessa estratégia, o foco principal e controlar areas e não apenas individuos"
       }
     ]
   },
@@ -80,13 +80,13 @@ const blocos = [
     fatos: [
       {
         lead: "o voleibol",
-        answer: "um esporte coletivo de rede em que a bola nao pode cair na propria quadra",
+        answer: "um esporte coletivo de rede em que a bola não pode cair na propria quadra",
         why: "as equipes constroem jogadas por toques sucessivos"
       },
       {
         lead: "o saque no voleibol",
-        answer: "a acao que inicia o rally colocando a bola em jogo",
-        why: "ele pode ser usado tambem como recurso ofensivo"
+        answer: "a ação que inicia o rally colocando a bola em jogo",
+        why: "ele pode ser usado também como recurso ofensivo"
       },
       {
         lead: "o toque",
@@ -100,7 +100,7 @@ const blocos = [
       },
       {
         lead: "o bloqueio",
-        answer: "a acao defensiva proxima a rede para conter o ataque adversario",
+        answer: "a ação defensiva próxima a rede para conter o ataque adversario",
         why: "ele reduz angulos e dificulta a conclusao rival"
       }
     ]
@@ -118,7 +118,7 @@ const blocos = [
       },
       {
         lead: "o drible",
-        answer: "a acao de quicar a bola para se deslocar com ela legalmente",
+        answer: "a ação de quicar a bola para se deslocar com ela legalmente",
         why: "sem drible, o jogador com a bola precisa passar ou arremessar"
       },
       {
@@ -128,13 +128,13 @@ const blocos = [
       },
       {
         lead: "o rebote",
-        answer: "a recuperacao da bola apos um arremesso nao convertido",
+        answer: "a recuperação da bola após um arremesso não convertido",
         why: "ele pode manter o ataque ou iniciar a defesa"
       },
       {
         lead: "a marcacao individual",
-        answer: "a estrategia defensiva em que cada jogador acompanha um adversario direto",
-        why: "ela busca limitar a acao de um oponente especifico"
+        answer: "a estratégia defensiva em que cada jogador acompanha um adversario direto",
+        why: "ela busca limitar a ação de um oponente especifico"
       }
     ]
   },
@@ -156,7 +156,7 @@ const blocos = [
       },
       {
         lead: "o arremesso em suspensao",
-        answer: "uma finalizacao realizada apos impulsao e salto",
+        answer: "uma finalizacao realizada após impulsao e salto",
         why: "esse gesto amplia angulos de ataque ao gol"
       },
       {
@@ -166,8 +166,8 @@ const blocos = [
       },
       {
         lead: "o sistema defensivo compacto",
-        answer: "a organizacao de defensores em proximidade para proteger a zona central",
-        why: "essa estrategia reduz espacos de infiltracao"
+        answer: "a organização de defensores em proximidade para proteger a zona central",
+        why: "essa estratégia reduz espacos de infiltracao"
       }
     ]
   },
@@ -175,7 +175,7 @@ const blocos = [
     subtopico: "Posicionamento e ocupacao do espaco",
     habilidade:
       "analisar posicionamento, ocupacao do espaco e leitura do jogo",
-    tags: ["posicionamento", "espaco", "organizacao coletiva"],
+    tags: ["posicionamento", "espaco", "organização coletiva"],
     fatos: [
       {
         lead: "o posicionamento tatico",
@@ -195,7 +195,7 @@ const blocos = [
       {
         lead: "a cobertura defensiva",
         answer: "o apoio dado a um companheiro para proteger a retaguarda do lance",
-        why: "ela corrige riscos e sustenta a organizacao do time"
+        why: "ela corrige riscos e sustenta a organização do time"
       },
       {
         lead: "a linha de passe",
@@ -213,22 +213,22 @@ const blocos = [
       {
         lead: "um sistema tatico",
         answer: "a forma organizada de distribuir jogadores conforme objetivos do jogo",
-        why: "ele orienta funcoes e relacoes entre setores da equipe"
+        why: "ele orienta funções e relações entre setores da equipe"
       },
       {
-        lead: "a funcao tatico-ofensiva",
+        lead: "a função tatico-ofensiva",
         answer: "o papel assumido para criar, sustentar ou concluir jogadas",
         why: "diferentes jogadores podem ter atribuicoes complementares"
       },
       {
-        lead: "a funcao tatico-defensiva",
+        lead: "a função tatico-defensiva",
         answer: "o conjunto de responsabilidades para impedir avancos e pontuacoes rivais",
         why: "a defesa organizada depende de papeis claros"
       },
       {
         lead: "a adaptacao tatico-contextual",
-        answer: "a mudanca de estrategia conforme placar, tempo ou comportamento do adversario",
-        why: "o sistema nao e fixo, mas responde ao andamento da partida"
+        answer: "a mudanca de estratégia conforme placar, tempo ou comportamento do adversario",
+        why: "o sistema não é fixo, mas responde ao andamento da partida"
       },
       {
         lead: "a transicao organizada",
@@ -238,29 +238,29 @@ const blocos = [
     ]
   },
   {
-    subtopico: "Comunicacao e cooperacao",
+    subtopico: "Comunicação e cooperação",
     habilidade:
-      "valorizar comunicacao, cooperacao e etica em equipe",
+      "valorizar comunicação, cooperação e ética em equipe",
     tags: ["comunicacao", "cooperacao", "equipe"],
     fatos: [
       {
-        lead: "a comunicacao em equipe",
+        lead: "a comunicação em equipe",
         answer: "a troca de sinais, orientacoes e informacoes durante a partida",
-        why: "ela melhora coordenacao e tomada de decisao"
+        why: "ela melhora coordenação e tomada de decisão"
       },
       {
-        lead: "a cooperacao esportiva",
-        answer: "a disposicao para atuar de modo articulado em favor do grupo",
-        why: "sem cooperacao, a equipe perde eficiencia coletiva"
+        lead: "a cooperação esportiva",
+        answer: "a disposição para atuar de modo articulado em favor do grupo",
+        why: "sem cooperação, a equipe perde eficiencia coletiva"
       },
       {
         lead: "a confianca entre companheiros",
-        answer: "a seguranca de que cada integrante cumprira seu papel no jogo",
+        answer: "a segurança de que cada integrante cumprira seu papel no jogo",
         why: "essa confianca sustenta a execucao de combinacoes e coberturas"
       },
       {
         lead: "a lideranca positiva",
-        answer: "a orientacao do grupo por meio de incentivo, exemplo e responsabilidade",
+        answer: "a orientação do grupo por meio de incentivo, exemplo e responsabilidade",
         why: "ela fortalece o ambiente coletivo sem impor desrespeito"
       },
       {
@@ -273,7 +273,7 @@ const blocos = [
   {
     subtopico: "Regras e arbitragem",
     habilidade:
-      "compreender regras, arbitragem e seguranca nas praticas coletivas",
+      "compreender regras, arbitragem e segurança nas práticas coletivas",
     tags: ["regras", "arbitragem", "seguranca"],
     fatos: [
       {
@@ -287,35 +287,35 @@ const blocos = [
         why: "arbitros e auxiliares ajudam a manter ordem e legalidade"
       },
       {
-        lead: "a falta tecnica",
-        answer: "uma infracao relacionada a conduta ou procedimento inadequado",
-        why: "ela nao depende apenas de contato fisico, mas tambem de comportamento"
+        lead: "a falta técnica",
+        answer: "uma infração relacionada a conduta ou procedimento inadequado",
+        why: "ela não depende apenas de contato fisico, mas também de comportamento"
       },
       {
-        lead: "a reposicao de bola",
-        answer: "o reinicio formal da jogada apos interrupcao prevista pela regra",
+        lead: "a reposição de bola",
+        answer: "o reinicio formal da jogada após interrupcao prevista pela regra",
         why: "cada modalidade define como isso ocorre"
       },
       {
-        lead: "a seguranca na partida",
+        lead: "a segurança na partida",
         answer: "o cuidado com espaco, material e comportamento para evitar acidentes",
-        why: "jogar com seguranca e parte da responsabilidade coletiva"
+        why: "jogar com segurança e parte da responsabilidade coletiva"
       }
     ]
   },
   {
     subtopico: "Treinamento e preparacao",
     habilidade:
-      "compreender regras, arbitragem e seguranca nas praticas coletivas",
+      "compreender regras, arbitragem e segurança nas práticas coletivas",
     tags: ["treinamento", "preparacao", "condicionamento"],
     fatos: [
       {
         lead: "o treinamento esportivo escolar",
-        answer: "a organizacao de atividades para desenvolver tecnica, tatica e condicao fisica",
+        answer: "a organização de atividades para desenvolver técnica, tática e condição física",
         why: "na escola, ele deve respeitar objetivos educativos e progressao adequada"
       },
       {
-        lead: "a preparacao fisica geral",
+        lead: "a preparacao física geral",
         answer: "o desenvolvimento de capacidades corporais necessarias para jogar melhor",
         why: "resistencia, forca e mobilidade apoiam o desempenho"
       },
@@ -326,13 +326,13 @@ const blocos = [
       },
       {
         lead: "o treino tatico",
-        answer: "a pratica de situacoes que envolvem estrategia e leitura do jogo",
+        answer: "a prática de situações que envolvem estratégia e leitura do jogo",
         why: "ele ajuda a equipe a responder melhor ao contexto da partida"
       },
       {
-        lead: "a recuperacao apos o treino",
+        lead: "a recuperação após o treino",
         answer: "o conjunto de cuidados que favorece descanso e reorganizacao corporal",
-        why: "hidratar-se, alongar-se e descansar ajudam a continuidade da pratica"
+        why: "hidratar-se, alongar-se e descansar ajudam a continuidade da prática"
       }
     ]
   }
@@ -340,14 +340,14 @@ const blocos = [
 
 export const esportesColetivos = {
   id: "educacao-fisica_esportes_coletivos",
-  materia: "Educacao Fisica",
+  materia: "Educação Física",
   serie: [2],
   topico: "Esportes Coletivos",
   metadados: {
     disciplinaId: "educacao-fisica",
     base: "ESCOLAR",
     seloEditorial: "VERIFICADA",
-    eixo: "Educacao Fisica",
+    eixo: "Educação Física",
     frente: "Logicas coletivas, modalidades e taticas",
     searchAliases: [
       "esportes coletivos",
@@ -358,11 +358,11 @@ export const esportesColetivos = {
     ],
     subtopicosBase: blocos.map((bloco) => bloco.subtopico),
     habilidadesBase: [
-      "identificar caracteristicas e logicas dos esportes coletivos",
+      "identificar características e logicas dos esportes coletivos",
       "reconhecer fundamentos tecnicos e taticos de modalidades coletivas",
       "analisar posicionamento, ocupacao do espaco e leitura do jogo",
-      "valorizar comunicacao, cooperacao e etica em equipe",
-      "compreender regras, arbitragem e seguranca nas praticas coletivas"
+      "valorizar comunicação, cooperação e ética em equipe",
+      "compreender regras, arbitragem e segurança nas práticas coletivas"
     ],
     planejamentoQuestoes: PHYSICAL_EDUCATION_HUNDRED_PLAN,
     auditado: true,
@@ -371,7 +371,7 @@ export const esportesColetivos = {
   questoes: buildPlannedQuestions({
     prefix: "ec",
     serie: 2,
-    materia: "Educacao Fisica",
+    materia: "Educação Física",
     topico: "Esportes Coletivos",
     blocos,
     stemBuilders: PHYSICAL_EDUCATION_STEM_BUILDERS,

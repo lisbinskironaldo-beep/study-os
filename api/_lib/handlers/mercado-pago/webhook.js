@@ -28,15 +28,41 @@ function parseSignature(headerValue) {
 function getQueryDataId(req, body) {
     const host = req.headers.host || "localhost";
     const url = new URL(req.url || "/", `https://${host}`);
-    const queryDataId = url.searchParams.get("data.id");
+    const queryDataId =
+        url.searchParams.get("data.id") ||
+        url.searchParams.get("id") ||
+        url.searchParams.get("data_id");
+    const resourceMatch = String(body && body.resource ? body.resource : "").match(/\/payments\/([^/?#]+)/i);
     const bodyDataId = body && body.data && body.data.id
         ? body.data.id
-        : body && body.id
-            ? body.id
-            : "";
+        : resourceMatch && resourceMatch[1]
+            ? resourceMatch[1]
+            : body && body.payment_id
+                ? body.payment_id
+                : body && body.paymentId
+                    ? body.paymentId
+                    : body && body.id
+                        ? body.id
+                        : "";
     const dataId = String(queryDataId || bodyDataId || "");
 
     return /[a-z]/i.test(dataId) ? dataId.toLowerCase() : dataId;
+}
+
+function getSignatureDiagnostics(req, body, signature, dataId) {
+    const host = req.headers.host || "localhost";
+    const url = new URL(req.url || "/", `https://${host}`);
+
+    return {
+        hasTimestamp: Boolean(signature.ts),
+        hasSignature: Boolean(signature.v1),
+        hasRequestId: Boolean(req.headers["x-request-id"]),
+        hasDataId: Boolean(dataId),
+        queryKeys: Array.from(url.searchParams.keys()),
+        bodyKeys: body && typeof body === "object" ? Object.keys(body) : [],
+        bodyType: body && (body.type || body.topic || body.action || ""),
+        resource: body && body.resource ? String(body.resource) : ""
+    };
 }
 
 function timingSafeEqualHex(left, right) {
@@ -66,6 +92,7 @@ function verifyMercadoPagoSignature(req, body) {
         return {
             ok: false,
             skipped: false,
+            diagnostics: getSignatureDiagnostics(req, body, signature, dataId),
             message: "Assinatura Mercado Pago incompleta."
         };
     }
@@ -141,10 +168,21 @@ module.exports = async function handler(req, res) {
             provider: "mercado_pago",
             message: signature.message,
             payload: {
+                diagnostics: signature.diagnostics || null,
                 headers: {
                     requestId: req.headers["x-request-id"] || "",
                     signature: req.headers["x-signature"] || ""
-                }
+                },
+                bodyShape: body && typeof body === "object"
+                    ? {
+                        keys: Object.keys(body),
+                        type: body.type || "",
+                        topic: body.topic || "",
+                        action: body.action || "",
+                        resource: body.resource || "",
+                        dataId: body.data && body.data.id ? body.data.id : ""
+                    }
+                    : null
             }
         });
         return sendJson(res, 401, {

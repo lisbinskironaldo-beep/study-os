@@ -2,22 +2,22 @@ import { buildPlannedQuestions } from "../../../_shared/plannedTopicBuilder.js";
 
 const blocos = [
   {
-    subtopico: "Crise do feudalismo e centralizacao politica",
+    subtopico: "Crise do feudalismo e centralizacao política",
     habilidade: "identificar-fatores-da-crise-do-feudalismo-e-da-centralizacao-politica",
     tags: ["estados-modernos", "centralizacao"],
     fatos: [
       {
         lead: "o enfraquecimento do poder local dos senhores feudais",
-        answer: "a centralizacao politica",
+        answer: "a centralizacao política",
         why: "ela transferiu autoridade para o rei"
       },
       {
         lead: "a alianca entre reis e grupos burgueses urbanos",
-        answer: "uma base da formacao das monarquias nacionais",
+        answer: "uma base da formação das monarquias nacionais",
         why: "os interesses em ordem e comercio favoreceram o poder real"
       },
       {
-        lead: "a busca de estabilidade apos guerras e conflitos internos",
+        lead: "a busca de estabilidade após guerras e conflitos internos",
         answer: "um impulso para o fortalecimento real",
         why: "governos centrais prometiam paz e uniformidade"
       },
@@ -27,9 +27,9 @@ const blocos = [
         why: "ela ampliava a capacidade financeira da Coroa"
       },
       {
-        lead: "a substituicao dos exercitos feudais por tropas vinculadas ao rei",
-        answer: "a formacao de exercitos permanentes",
-        why: "isso reduziu a dependencia militar em relacao aos nobres"
+        lead: "a substituicao dos exércitos feudais por tropas vinculadas ao rei",
+        answer: "a formação de exércitos permanentes",
+        why: "isso reduziu a dependência militar em relação aos nobres"
       }
     ]
   },
@@ -46,7 +46,7 @@ const blocos = [
       {
         lead: "o reino iberico que se destacou pela centralizacao precoce",
         answer: "Portugal",
-        why: "sua consolidacao politica favoreceu a expansao ultramarina"
+        why: "sua consolidacao política favoreceu a expansão ultramarina"
       },
       {
         lead: "o fortalecimento do poder real depois da Guerra dos Cem Anos",
@@ -54,19 +54,19 @@ const blocos = [
         why: "o conflito contribuiu para consolidar a autoridade do rei"
       },
       {
-        lead: "o conflito dinastico ingles que antecedeu a consolidacao Tudor",
+        lead: "o conflito dinastico inglês que antecedeu a consolidacao Tudor",
         answer: "a Guerra das Rosas",
-        why: "ela abriu caminho para novo equilibrio monarquico"
+        why: "ela abriu caminho para novo equilíbrio monarquico"
       },
       {
         lead: "o sentimento coletivo ligado ao reino e ao soberano",
-        answer: "a identidade nacional em formacao",
-        why: "ela se fortaleceu junto com a unificacao politica"
+        answer: "a identidade nacional em formação",
+        why: "ela se fortaleceu junto com a unificacao política"
       }
     ]
   },
   {
-    subtopico: "Formacao do Estado moderno",
+    subtopico: "Formação do Estado moderno",
     habilidade: "explicar-elementos-da-formacao-do-estado-moderno",
     tags: ["estados-modernos", "estado-moderno"],
     fatos: [
@@ -92,8 +92,8 @@ const blocos = [
       },
       {
         lead: "a negociacao entre reinos por enviados e acordos formais",
-        answer: "um elemento das relacoes interestatais modernas",
-        why: "a diplomacia tornou-se instrumento regular de politica externa"
+        answer: "um elemento das relações interestatais modernas",
+        why: "a diplomacia tornou-se instrumento regular de política externa"
       }
     ]
   },
@@ -109,11 +109,11 @@ const blocos = [
       },
       {
         lead: "a defesa de um poder soberano forte para conter a desordem",
-        answer: "a teoria politica de Hobbes",
+        answer: "a teoria política de Hobbes",
         why: "o autor valorizava um governo capaz de garantir seguranca"
       },
       {
-        lead: "a formula associada a concentracao extrema de autoridade na Franca",
+        lead: "a formula associada a concentracao extrema de autoridade na França",
         answer: "o Estado sou eu",
         why: "a frase sintetiza o imaginario do absolutismo"
       },
@@ -140,14 +140,14 @@ const blocos = [
         why: "riqueza metalica era vista como fonte de poder"
       },
       {
-        lead: "a busca por vender mais do que comprar nas relacoes externas",
+        lead: "a busca por vender mais do que comprar nas relações externas",
         answer: "um objetivo mercantilista",
         why: "a balanca comercial favoravel deveria ampliar a riqueza do reino"
       },
       {
         lead: "a participacao ativa da Coroa na organizacao da economia",
         answer: "o dirigismo economico",
-        why: "o Estado regulamentava comercio e producao"
+        why: "o Estado regulamentava comercio e produção"
       },
       {
         lead: "a cobranca de tarifas para defender produtores do proprio reino",
@@ -194,7 +194,7 @@ const blocos = [
     ]
   },
   {
-    subtopico: "Franca e o absolutismo classico",
+    subtopico: "França é o absolutismo classico",
     habilidade: "identificar-caracteristicas-do-absolutismo-frances",
     tags: ["estados-modernos", "franca"],
     fatos: [
@@ -209,19 +209,19 @@ const blocos = [
         why: "ele ajudou a submeter nobres ao controle do rei"
       },
       {
-        lead: "o ministro ligado a politica economica mercantilista da Franca",
+        lead: "o ministro ligado a política econômica mercantilista da França",
         answer: "Colbert",
         why: "sua atuacao reforcou intervencao estatal na economia"
       },
       {
         lead: "a estrategia de manter nobres proximos a corte real",
-        answer: "uma domesticacao politica da nobreza",
+        answer: "uma domesticacao política da nobreza",
         why: "o rei reduzia autonomias aristocraticas"
       },
       {
         lead: "a revogacao do Edito de Nantes no reinado de Luis XIV",
         answer: "um exemplo de centralizacao religiosa do reino",
-        why: "a monarquia procurou uniformizar a fe catolica"
+        why: "a monarquia procurou uniformizar a fé catolica"
       }
     ]
   },
@@ -231,41 +231,41 @@ const blocos = [
     tags: ["estados-modernos", "inglaterra"],
     fatos: [
       {
-        lead: "o documento medieval que impunha limites ao poder do rei ingles",
+        lead: "o documento medieval que impunha limites ao poder do rei inglês",
         answer: "a Magna Carta",
-        why: "ela e um marco na limitacao juridica da monarquia"
+        why: "ela é um marco na limitacao juridica da monarquia"
       },
       {
         lead: "o conflito do seculo XVII entre rei e Parlamento",
-        answer: "a Revolucao Inglesa",
+        answer: "a Revolução Inglesa",
         why: "ele expressou disputa sobre soberania e impostos"
       },
       {
-        lead: "o processo politico de 1688 que depos Jaime II",
-        answer: "a Revolucao Gloriosa",
+        lead: "o processo político de 1688 que depos Jaime II",
+        answer: "a Revolução Gloriosa",
         why: "ela consolidou a superioridade parlamentar"
       },
       {
-        lead: "o documento que reafirmou garantias parlamentares apos 1688",
+        lead: "o documento que reafirmou garantias parlamentares após 1688",
         answer: "o Bill of Rights",
         why: "ele limitou formalmente a autoridade real"
       },
       {
-        lead: "o arranjo politico ingles consolidado apos a Revolucao Gloriosa",
+        lead: "o arranjo político inglês consolidado após a Revolução Gloriosa",
         answer: "a monarquia parlamentar",
-        why: "o rei passou a governar sob controle legal e politico"
+        why: "o rei passou a governar sob controle legal e político"
       }
     ]
   },
   {
-    subtopico: "Portugal, Espanha e a expansao estatal",
+    subtopico: "Portugal, Espanha é a expansão estatal",
     habilidade: "relacionar-centralizacao-iberica-e-expansao-ultramarina",
     tags: ["estados-modernos", "iberia"],
     fatos: [
       {
-        lead: "a organizacao politica precoce do reino portugues",
+        lead: "a organizacao política precoce do reino português",
         answer: "a centralizacao precoce de Portugal",
-        why: "ela favoreceu o lancamento das navegacoes oceanicas"
+        why: "ela favoreceu o lançamento das navegações oceanicas"
       },
       {
         lead: "a uniao dinastica que fortaleceu a monarquia espanhola",
@@ -280,7 +280,7 @@ const blocos = [
       {
         lead: "o uso de perseguicoes religiosas para reforcar a unidade do reino espanhol",
         answer: "a Inquisicao espanhola",
-        why: "ela tambem serviu a objetivos politicos de controle"
+        why: "ela também serviu a objetivos políticos de controle"
       },
       {
         lead: "a administracao dos dominios coloniais por agentes da Coroa",
@@ -290,24 +290,24 @@ const blocos = [
     ]
   },
   {
-    subtopico: "Estado moderno e transformacoes da Europa",
+    subtopico: "Estado moderno e transformações da Europa",
     habilidade: "avaliar-impactos-da-formacao-do-estado-moderno-na-europa",
     tags: ["estados-modernos", "europa-moderna"],
     fatos: [
       {
         lead: "a passagem da fragmentacao feudal para monarquias centralizadas",
-        answer: "uma transformacao politica decisiva da Europa",
-        why: "ela redefiniu soberania, impostos e exercitos"
+        answer: "uma transformação política decisiva da Europa",
+        why: "ela redefiniu soberania, impostos e exércitos"
       },
       {
         lead: "a ideia de autoridade suprema sobre um territorio definido",
-        answer: "um principio da politica moderna",
+        answer: "um principio da política moderna",
         why: "a soberania tornou-se eixo de organizacao estatal"
       },
       {
-        lead: "a relacao entre centralizacao politica e expansao maritima",
+        lead: "a relação entre centralizacao política e expansão maritima",
         answer: "processos interligados de poder e riqueza",
-        why: "os Estados financiaram navegacoes e se fortaleceram com elas"
+        why: "os Estados financiaram navegações e se fortaleceram com elas"
       },
       {
         lead: "a uniformizacao de leis, moeda e administracao pelo poder real",
@@ -326,20 +326,20 @@ const blocos = [
 const questoes = buildPlannedQuestions({
   prefix: "fem",
   serie: [1],
-  materia: "Historia",
-  topico: "Formacao dos Estados Modernos",
+  materia: "História",
+  topico: "Formação dos Estados Modernos",
   blocos
 });
 
 export const formacaoDosEstadosModernos = {
   id: "historia_formacao_dos_estados_modernos",
-  materia: "Historia",
+  materia: "História",
   serie: [1],
-  topico: "Formacao dos Estados Modernos",
+  topico: "Formação dos Estados Modernos",
   metadados: {
     disciplinaId: "historia",
     base: "ESCOLAR",
-    eixo: "Historia",
+    eixo: "História",
     frente: "Europa moderna e centralizacao do poder",
     searchAliases: [
       "estado moderno",
@@ -347,26 +347,26 @@ export const formacaoDosEstadosModernos = {
       "monarquias nacionais",
       "absolutismo",
       "mercantilismo",
-      "centralizacao politica"
+      "centralizacao política"
     ],
     subtopicosBase: [
-      "Crise do feudalismo e centralizacao politica",
+      "Crise do feudalismo e centralizacao política",
       "Monarquias nacionais europeias",
-      "Formacao do Estado moderno",
+      "Formação do Estado moderno",
       "Absolutismo e teorias do poder",
       "Mercantilismo e fortalecimento monarquico",
       "Burocracia, exercito e fiscalidade",
-      "Franca e o absolutismo classico",
+      "França é o absolutismo classico",
       "Inglaterra e limites ao absolutismo",
-      "Portugal, Espanha e a expansao estatal",
-      "Estado moderno e transformacoes da Europa"
+      "Portugal, Espanha é a expansão estatal",
+      "Estado moderno e transformações da Europa"
     ],
     habilidadesBase: [
-      "identificar fatores de crise do feudalismo e centralizacao politica",
-      "reconhecer caracteristicas das monarquias nacionais e do Estado moderno",
-      "analisar o absolutismo e o mercantilismo como bases do poder monarquico",
-      "comparar experiencias de Franca, Inglaterra, Portugal e Espanha",
-      "avaliar impactos da formacao do Estado moderno na Europa"
+      "identificar fatores de crise do feudalismo e centralizacao política",
+      "reconhecer características das monarquias nacionais e do Estado moderno",
+      "analisar o absolutismo é o mercantilismo como bases do poder monarquico",
+      "comparar experiencias de França, Inglaterra, Portugal e Espanha",
+      "avaliar impactos da formação do Estado moderno na Europa"
     ],
     planejamentoQuestoes: {
       totalAlvo: 200,

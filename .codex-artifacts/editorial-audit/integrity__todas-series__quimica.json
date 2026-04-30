@@ -1,0 +1,110 @@
+{
+  "summary": {},
+  "results": [
+    {
+      "file": "questions/banks/1-serie/quimica/estrutura-atomica/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/quimica/funcoes-inorganicas/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/quimica/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/quimica/ligacoes-quimicas/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/quimica/tabela-periodica/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/quimica/estequiometria/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/quimica/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/quimica/reacoes-quimicas/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/quimica/solucoes/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/quimica/termoquimica/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/quimica/eletroquimica/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/quimica/funcoes-organicas/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/quimica/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/quimica/polimeros/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/quimica/quimica-organica/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    }
+  ]
+}

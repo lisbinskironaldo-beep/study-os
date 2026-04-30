@@ -29,12 +29,12 @@ const blocos = [
       },
       {
         lead: "a mistura homogenea",
-        answer: "o sistema que apresenta uma unica fase visivel",
-        why: "as solucoes sao exemplos classicos desse tipo de mistura"
+        answer: "o sistema que apresenta uma unica fase visível",
+        why: "as solucoes são exemplos classicos desse tipo de mistura"
       },
       {
         lead: "a fase unica de uma solucao",
-        answer: "a consequencia da distribuicao uniforme das particulas do soluto no solvente",
+        answer: "a consequência da distribuicao uniforme das particulas do soluto no solvente",
         why: "isso impede distincao visual entre componentes"
       }
     ]
@@ -53,11 +53,11 @@ const blocos = [
       {
         lead: "o coeficiente de solubilidade",
         answer: "a medida que expressa a quantidade limite de soluto dissolvido em condicoes definidas",
-        why: "ele e usado para prever saturacao"
+        why: "ele é usado para prever saturacao"
       },
       {
         lead: "uma solucao saturada",
-        answer: "a solucao que contem a quantidade maxima de soluto dissolvido nas condicoes dadas",
+        answer: "a solucao que contém a quantidade maxima de soluto dissolvido nas condicoes dadas",
         why: "alem desse limite, o excesso tende a permanecer sem dissolver"
       },
       {
@@ -67,8 +67,8 @@ const blocos = [
       },
       {
         lead: "a solucao supersaturada",
-        answer: "a solucao que contem mais soluto dissolvido do que o previsto para o equilibrio comum",
-        why: "ela e metastavel e pode precipitar com facilidade"
+        answer: "a solucao que contém mais soluto dissolvido do que o previsto para o equilíbrio comum",
+        why: "ela é metastavel e pode precipitar com facilidade"
       }
     ]
   },
@@ -81,7 +81,7 @@ const blocos = [
       {
         lead: "a concentracao comum",
         answer: "a razao entre a massa do soluto e o volume da solucao",
-        why: "ela e frequentemente expressa em g/L"
+        why: "ela é frequentemente expressa em g/L"
       },
       {
         lead: "a unidade g/L",
@@ -90,8 +90,8 @@ const blocos = [
       },
       {
         lead: "o aumento da concentracao comum",
-        answer: "a consequencia de elevar a massa de soluto ou reduzir o volume da solucao",
-        why: "a relacao massa-volume se torna maior"
+        answer: "a consequência de elevar a massa de soluto ou reduzir o volume da solucao",
+        why: "a relação massa-volume se torna maior"
       },
       {
         lead: "a diluicao e a concentracao comum",
@@ -99,7 +99,7 @@ const blocos = [
         why: "o soluto fica distribuido em maior quantidade de solvente"
       },
       {
-        lead: "a interpretacao de 20 g/L",
+        lead: "a interpretação de 20 g/L",
         answer: "a existencia de 20 gramas de soluto em um litro de solucao",
         why: "essa leitura direta e importante nos exercicios"
       }
@@ -114,7 +114,7 @@ const blocos = [
       {
         lead: "a concentracao molar",
         answer: "a quantidade de mols de soluto presente em um litro de solucao",
-        why: "ela tambem e chamada de molaridade"
+        why: "ela também e chamada de molaridade"
       },
       {
         lead: "a unidade mol/L",
@@ -123,17 +123,17 @@ const blocos = [
       },
       {
         lead: "uma solucao 1 mol/L",
-        answer: "a solucao que contem um mol de soluto em cada litro de volume total",
+        answer: "a solucao que contém um mol de soluto em cada litro de volume total",
         why: "essa leitura orienta calculos de preparo e diluicao"
       },
       {
-        lead: "a relacao entre massa molar e molaridade",
+        lead: "a relação entre massa molar e molaridade",
         answer: "a conversao necessaria quando a quantidade conhecida do soluto esta em gramas",
-        why: "massa molar permite encontrar numero de mols"
+        why: "massa molar permite encontrar número de mols"
       },
       {
         lead: "o aumento da molaridade",
-        answer: "a elevacao do numero de mols de soluto por litro de solucao",
+        answer: "a elevacao do número de mols de soluto por litro de solucao",
         why: "isso pode ocorrer com mais soluto ou menor volume"
       }
     ]
@@ -152,7 +152,7 @@ const blocos = [
       {
         lead: "a conservacao do soluto na diluicao",
         answer: "o principio de que a quantidade de soluto permanece a mesma antes e depois do processo",
-        why: "isso fundamenta a relacao C1V1 = C2V2"
+        why: "isso fundamenta a relação C1V1 = C2V2"
       },
       {
         lead: "a mistura de solucoes do mesmo soluto",
@@ -161,11 +161,11 @@ const blocos = [
       },
       {
         lead: "a reducao de concentracao em uma diluicao",
-        answer: "a consequencia direta do aumento de volume sem aumento de soluto",
+        answer: "a consequência direta do aumento de volume sem aumento de soluto",
         why: "o mesmo soluto fica mais disperso"
       },
       {
-        lead: "a importancia da relacao C1V1 = C2V2",
+        lead: "a importancia da relação C1V1 = C2V2",
         answer: "a simplificacao do calculo de diluicao em problemas escolares",
         why: "ela deriva da conservacao da quantidade de soluto"
       }
@@ -188,8 +188,8 @@ const blocos = [
         why: "gases tendem a escapar mais facilmente do solvente aquecido"
       },
       {
-        lead: "o grafico de solubilidade",
-        answer: "a representacao da quantidade dissolvida em funcao da temperatura",
+        lead: "o gráfico de solubilidade",
+        answer: "a representacao da quantidade dissolvida em função da temperatura",
         why: "ele permite prever saturacao e precipitacao"
       },
       {
@@ -200,7 +200,7 @@ const blocos = [
       {
         lead: "a cristalizacao por resfriamento",
         answer: "a separacao de soluto quando a solubilidade diminui e o excesso sai da solucao",
-        why: "esse processo depende da relacao entre temperatura e solubilidade"
+        why: "esse processo depende da relação entre temperatura e solubilidade"
       }
     ]
   },
@@ -212,13 +212,13 @@ const blocos = [
     fatos: [
       {
         lead: "uma solucao ionica",
-        answer: "a solucao que contem ions livres capazes de conduzir corrente eletrica",
+        answer: "a solucao que contém ions livres capazes de conduzir corrente eletrica",
         why: "ela resulta da dissolucao de compostos ionicos ou ionizacao de certas substancias"
       },
       {
-        lead: "uma solucao molecular nao ionizada",
-        answer: "a solucao em que predominam moleculas neutras sem formacao relevante de ions",
-        why: "nessa situacao a conducao eletrica tende a ser pequena"
+        lead: "uma solucao molecular não ionizada",
+        answer: "a solucao em que predominam moleculas neutras sem formação relevante de ions",
+        why: "nessa situação a conducao eletrica tende a ser pequena"
       },
       {
         lead: "a condutividade eletrica em solucoes",
@@ -232,8 +232,8 @@ const blocos = [
       },
       {
         lead: "a ionizacao em agua",
-        answer: "a formacao de ions a partir de substancias moleculares ao entrar em solucao",
-        why: "esse e o caso de muitos acidos"
+        answer: "a formação de ions a partir de substancias moleculares ao entrar em solucao",
+        why: "esse é o caso de muitos acidos"
       }
     ]
   },
@@ -245,12 +245,12 @@ const blocos = [
     fatos: [
       {
         lead: "a porcentagem em massa",
-        answer: "a relacao entre massa do soluto e massa da solucao multiplicada por cem",
+        answer: "a relação entre massa do soluto e massa da solucao multiplicada por cem",
         why: "ela indica a fracao percentual do soluto"
       },
       {
         lead: "a porcentagem em volume",
-        answer: "a relacao entre volume do soluto e volume da solucao multiplicada por cem",
+        answer: "a relação entre volume do soluto e volume da solucao multiplicada por cem",
         why: "essa forma aparece em misturas liquidas"
       },
       {
@@ -261,12 +261,12 @@ const blocos = [
       {
         lead: "a porcentagem m/v",
         answer: "a forma de expressar massa de soluto por volume de solucao em porcentagem",
-        why: "ela e comum em rotulos e preparos"
+        why: "ela é comum em rotulos e preparos"
       },
       {
         lead: "a escolha da unidade de concentracao",
         answer: "a adaptacao da forma de expressar a composicao segundo o contexto do problema",
-        why: "diferentes situacoes pedem diferentes unidades"
+        why: "diferentes situações pedem diferentes unidades"
       }
     ]
   },
@@ -279,25 +279,25 @@ const blocos = [
       {
         lead: "as propriedades coligativas",
         answer: "os efeitos provocados pela quantidade de particulas de soluto nas propriedades do solvente",
-        why: "elas dependem mais do numero de particulas do que da identidade quimica"
+        why: "elas dependem mais do número de particulas do que da identidade química"
       },
       {
         lead: "a diminuicao da pressao de vapor",
-        answer: "o efeito de um soluto nao volatil sobre a tendencia do solvente evaporar",
+        answer: "o efeito de um soluto não volatil sobre a tendencia do solvente evaporar",
         why: "as particulas dissolvidas dificultam a evaporacao"
       },
       {
         lead: "a elevacao do ponto de ebulicao",
         answer: "a necessidade de maior temperatura para o solvente entrar em ebulicao na presenca de soluto",
-        why: "essa e uma propriedade coligativa"
+        why: "essa é uma propriedade coligativa"
       },
       {
         lead: "a diminuicao do ponto de congelamento",
         answer: "a reducao da temperatura de solidificacao do solvente causada por soluto dissolvido",
-        why: "esse efeito explica uso de sais em algumas situacoes"
+        why: "esse efeito explica uso de sais em algumas situações"
       },
       {
-        lead: "a importancia do numero de particulas",
+        lead: "a importancia do número de particulas",
         answer: "o fator central para comparar intensidade dos efeitos coligativos",
         why: "mais particulas em solucao tendem a intensificar o efeito"
       }
@@ -316,7 +316,7 @@ const blocos = [
       },
       {
         lead: "a leitura de rotulos de bebidas e medicamentos",
-        answer: "a interpretacao de informacoes de concentracao presentes em produtos",
+        answer: "a interpretação de informacoes de concentracao presentes em produtos",
         why: "muitas aplicacoes diarias envolvem solucoes"
       },
       {
@@ -325,14 +325,14 @@ const blocos = [
         why: "ela mostra a presenca de solutos em sistema natural"
       },
       {
-        lead: "o preparo de uma solucao em laboratorio",
+        lead: "o preparo de uma solucao em laboratório",
         answer: "a medicao controlada de soluto e solvente para obter concentracao desejada",
         why: "isso exige atencao a unidades e vidrarias"
       },
       {
         lead: "a utilidade do estudo das solucoes",
         answer: "a compreensao de misturas homogeneas em contextos biologicos, industriais e cotidianos",
-        why: "quimica das solucoes aparece em muitos setores"
+        why: "química das solucoes aparece em muitos setores"
       }
     ]
   }
@@ -340,14 +340,14 @@ const blocos = [
 
 export const solucoes = {
   id: "quimica_solucoes",
-  materia: "Quimica",
+  materia: "Química",
   serie: [2],
   topico: "Solucoes",
   metadados: {
     disciplinaId: "quimica",
     base: "ESCOLAR",
     seloEditorial: "VERIFICADA",
-    eixo: "Quimica",
+    eixo: "Química",
     frente: "Dissolucao, concentracao e propriedades das solucoes",
     searchAliases: [
       "solucoes",
@@ -371,7 +371,7 @@ export const solucoes = {
   questoes: buildPlannedQuestions({
     prefix: "sol",
     serie: 2,
-    materia: "Quimica",
+    materia: "Química",
     topico: "Solucoes",
     blocos,
     stemBuilders: CHEMISTRY_STEM_BUILDERS,

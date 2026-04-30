@@ -14,12 +14,12 @@ const blocos = [
     fatos: [
       {
         lead: "o mol",
-        answer: "a unidade que expressa quantidade de materia em quimica",
+        answer: "a unidade que expressa quantidade de materia em química",
         why: "ela conecta o nivel microscopico ao macroscopico"
       },
       {
         lead: "a constante de Avogadro",
-        answer: "o numero aproximado de entidades presentes em um mol",
+        answer: "o número aproximado de entidades presentes em um mol",
         why: "ela relaciona particulas e quantidade de materia"
       },
       {
@@ -30,7 +30,7 @@ const blocos = [
       {
         lead: "um mol de atomos",
         answer: "o conjunto contendo cerca de 6,02 x 10^23 atomos",
-        why: "essa quantidade define a escala de contagem quimica"
+        why: "essa quantidade define a escala de contagem química"
       },
       {
         lead: "a utilidade do mol",
@@ -48,7 +48,7 @@ const blocos = [
       {
         lead: "a massa molar",
         answer: "a massa correspondente a um mol de determinada substancia",
-        why: "ela e expressa geralmente em g/mol"
+        why: "ela é expressa geralmente em g/mol"
       },
       {
         lead: "a massa molar de um elemento",
@@ -63,7 +63,7 @@ const blocos = [
       {
         lead: "a conversao de massa para mol",
         answer: "o calculo obtido ao dividir a massa da amostra pela massa molar",
-        why: "essa relacao e basica na estequiometria"
+        why: "essa relação e basica na estequiometria"
       },
       {
         lead: "a conversao de mol para massa",
@@ -80,18 +80,18 @@ const blocos = [
     fatos: [
       {
         lead: "a proporcao estequiometrica",
-        answer: "a relacao quantitativa entre reagentes e produtos indicada pela equacao balanceada",
+        answer: "a relação quantitativa entre reagentes e produtos indicada pela equacao balanceada",
         why: "coeficientes mostram as quantidades relativas envolvidas"
       },
       {
         lead: "o coeficiente estequiometrico",
-        answer: "o numero que expressa a proporcao em mol entre as especies da reacao",
+        answer: "o número que expressa a proporcao em mol entre as especies da reacao",
         why: "ele orienta todos os calculos estequiometricos"
       },
       {
         lead: "a leitura molar de uma equacao",
-        answer: "a interpretacao dos coeficientes como relacao entre quantidades de materia",
-        why: "por isso e possivel comparar reagentes e produtos"
+        answer: "a interpretação dos coeficientes como relação entre quantidades de materia",
+        why: "por isso e possível comparar reagentes e produtos"
       },
       {
         lead: "a base do calculo estequiometrico",
@@ -99,9 +99,9 @@ const blocos = [
         why: "sem balanceamento correto as proporcoes ficam erradas"
       },
       {
-        lead: "a relacao entre reagente e produto",
+        lead: "a relação entre reagente e produto",
         answer: "a proporcao fixa determinada pelos coeficientes da equacao",
-        why: "essa relacao independe da escala usada"
+        why: "essa relação independe da escala usada"
       }
     ]
   },
@@ -114,12 +114,12 @@ const blocos = [
       {
         lead: "um calculo massa-massa",
         answer: "a determinacao de massa de uma substancia a partir da massa de outra na mesma reacao",
-        why: "ele usa a relacao de mol indicada pela equacao"
+        why: "ele usa a relação de mol indicada pela equacao"
       },
       {
         lead: "o primeiro passo em massa-massa",
         answer: "converter a massa conhecida em mol usando a massa molar",
-        why: "a equacao quimica trabalha com proporcoes molares"
+        why: "a equacao química trabalha com proporcoes molares"
       },
       {
         lead: "o ultimo passo em massa-massa",
@@ -150,7 +150,7 @@ const blocos = [
         why: "essa referencia e muito usada em calculos escolares"
       },
       {
-        lead: "a relacao entre mol e volume gasoso",
+        lead: "a relação entre mol e volume gasoso",
         answer: "a proporcionalidade que permite converter quantidade de materia em litros",
         why: "em certas condicoes, o volume molar e conhecido"
       },
@@ -162,12 +162,12 @@ const blocos = [
       {
         lead: "um mol de gas em mesmas condicoes",
         answer: "a quantidade que ocupa o mesmo volume que qualquer outro gas ideal nessas condicoes",
-        why: "essa e uma consequencia da hipotese de Avogadro"
+        why: "essa é uma consequência da hipotese de Avogadro"
       },
       {
         lead: "a estequiometria com gases",
         answer: "o calculo de volumes ou mols gasosos usando proporcoes reacionais",
-        why: "ela e comum em combustoes e decomposicoes"
+        why: "ela é comum em combustoes e decomposicoes"
       }
     ]
   },
@@ -194,13 +194,13 @@ const blocos = [
       },
       {
         lead: "a importancia do reagente limitante",
-        answer: "a definicao da quantidade real maxima de produto possivel",
+        answer: "a definicao da quantidade real maxima de produto possível",
         why: "ele controla o alcance da reacao"
       },
       {
         lead: "a sobra de reagente",
-        answer: "a consequencia da presenca de substancia em excesso frente a outra limitante",
-        why: "nem todos os reagentes sao consumidos integralmente"
+        answer: "a consequência da presenca de substancia em excesso frente a outra limitante",
+        why: "nem todos os reagentes são consumidos integralmente"
       }
     ]
   },
@@ -223,7 +223,7 @@ const blocos = [
       {
         lead: "o rendimento percentual",
         answer: "a razao entre rendimento real e teorico multiplicada por cem",
-        why: "ele mede a eficiencia do processo"
+        why: "ele mede a eficiência do processo"
       },
       {
         lead: "um rendimento menor que 100%",
@@ -232,7 +232,7 @@ const blocos = [
       },
       {
         lead: "a utilidade do rendimento",
-        answer: "a avaliacao da eficiencia de uma transformacao quimica",
+        answer: "a avaliação da eficiência de uma transformacao química",
         why: "ele orienta comparacoes e melhorias em processos"
       }
     ]
@@ -250,7 +250,7 @@ const blocos = [
       },
       {
         lead: "a impureza",
-        answer: "a parte da amostra que nao participa da reacao como o reagente principal",
+        answer: "a parte da amostra que não participa da reacao como o reagente principal",
         why: "ela precisa ser descontada nos calculos"
       },
       {
@@ -266,20 +266,20 @@ const blocos = [
       {
         lead: "a importancia da pureza",
         answer: "a obtencao de resultados mais realistas em problemas e processos industriais",
-        why: "materiais reais frequentemente contem impurezas"
+        why: "materiais reais frequentemente contém impurezas"
       }
     ]
   },
   {
     subtopico: "Estequiometria e cotidiano",
     habilidade:
-      "aplicar raciocinio estequiometrico em contextos do cotidiano e da industria",
+      "aplicar raciocínio estequiometrico em contextos do cotidiano e da industria",
     tags: ["cotidiano", "industria", "aplicacoes"],
     fatos: [
       {
         lead: "a estequiometria na industria",
-        answer: "o uso de proporcoes quimicas para planejar consumo de reagentes e producao",
-        why: "ela evita desperdicio e melhora eficiencia"
+        answer: "o uso de proporcoes quimicas para planejar consumo de reagentes e produção",
+        why: "ela evita desperdicio e melhora eficiência"
       },
       {
         lead: "a estequiometria na combustao de combustiveis",
@@ -289,11 +289,11 @@ const blocos = [
       {
         lead: "a estequiometria em medicamentos e fertilizantes",
         answer: "o controle de quantidades necessarias para formular produtos com composicao definida",
-        why: "proporcoes corretas sao fundamentais nesses setores"
+        why: "proporcoes corretas são fundamentais nesses setores"
       },
       {
         lead: "a importancia escolar da estequiometria",
-        answer: "a conexao entre equacoes quimicas e interpretacao quantitativa da materia",
+        answer: "a conexao entre equacoes quimicas e interpretação quantitativa da materia",
         why: "ela transforma formulas em calculos concretos"
       },
       {
@@ -304,7 +304,7 @@ const blocos = [
     ]
   },
   {
-    subtopico: "Interpretacao de problemas",
+    subtopico: "Interpretação de problemas",
     habilidade:
       "resolver problemas estequiometricos integrando varias grandezas",
     tags: ["problemas", "interpretacao", "estrategia"],
@@ -327,7 +327,7 @@ const blocos = [
       {
         lead: "o erro comum em estequiometria",
         answer: "aplicar proporcoes diretamente entre massas sem considerar massas molares quando necessario",
-        why: "as proporcoes da equacao sao essencialmente molares"
+        why: "as proporcoes da equacao são essencialmente molares"
       },
       {
         lead: "a verificacao final de um problema",
@@ -340,14 +340,14 @@ const blocos = [
 
 export const estequiometria = {
   id: "quimica_estequiometria",
-  materia: "Quimica",
+  materia: "Química",
   serie: [2],
   topico: "Estequiometria",
   metadados: {
     disciplinaId: "quimica",
     base: "ESCOLAR",
     seloEditorial: "VERIFICADA",
-    eixo: "Quimica",
+    eixo: "Química",
     frente: "Calculos quantitativos das reacoes",
     searchAliases: [
       "estequiometria",
@@ -371,7 +371,7 @@ export const estequiometria = {
   questoes: buildPlannedQuestions({
     prefix: "est",
     serie: 2,
-    materia: "Quimica",
+    materia: "Química",
     topico: "Estequiometria",
     blocos,
     stemBuilders: CHEMISTRY_STEM_BUILDERS,

@@ -1,46 +1,46 @@
 export const interpretacaoAvancadaEnem = {
   "id": "portugues_interpretacao_avancada_enem",
-  "materia": "Portugues",
+  "materia": "Português",
   "serie": [
     3
   ],
-  "topico": "Interpretacao Avancada ENEM",
+  "topico": "Interpretação Avançada ENEM",
   "metadados": {
     "disciplinaId": "portugues",
     "base": "ENEM",
     "seloEditorial": "VERIFICADA",
-    "eixo": "Leitura e Interpretacao",
-    "frente": "Interpretacao Textual",
+    "eixo": "Leitura e Interpretação",
+    "frente": "Interpretação Textual",
     "searchAliases": [
-      "interpretacao enem",
-      "leitura avancada",
-      "analise de texto",
-      "interpretacao de texto enem",
+      "interpretação enem",
+      "leitura avançada",
+      "análise de texto",
+      "interpretação de texto enem",
       "competencia leitora"
     ],
     "subtopicosBase": [
       "Tema principal",
       "Tese e ponto de vista",
       "Inferencia",
-      "Informacao implicita",
+      "Informação implícita",
       "Finalidade do texto",
       "Efeito de sentido",
       "Ironia e humor",
       "Escolha vocabular",
-      "Relacao entre texto verbal e nao verbal",
+      "Relação entre texto verbal e não verbal",
       "Comparacao entre textos",
-      "Genero textual e funcao social",
+      "Gênero textual e função social",
       "Estrategias argumentativas",
       "Pressuposto e subentendido",
-      "Interpretacao indireta",
+      "Interpretação indireta",
       "Pegadinha",
-      "Equivalencia de formas"
+      "Equivalência de formas"
     ],
     "habilidadesBase": [
       "identificar tema principal, tese e ponto de vista em textos de perfil ENEM",
-      "inferir informacoes implicitas, pressupostos e subentendidos a partir de pistas textuais",
+      "inferir informações implícitas, pressupostos e subentendidos a partir de pistas textuais",
       "analisar efeitos de sentido produzidos por escolhas vocabulares, ironia e humor",
-      "interpretar relacoes entre texto verbal e nao verbal em diferentes generos",
+      "interpretar relações entre texto verbal e não verbal em diferentes gêneros",
       "avaliar estrategias argumentativas, comparacoes e reescritas equivalentes"
     ],
     "auditado": true,
@@ -53,22 +53,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Tema principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'O uso excessivo de telas tem alterado habitos de leitura, diminuindo o tempo dedicado aos livros e ampliando o consumo de conteudos rápidos.' O tema principal do trecho e:",
+      "enunciado": "Leia: 'O uso excessivo de telas tem alterado hábitos de leitura, diminuindo o tempo dedicado aos livros e ampliando o consumo de conteúdos rápidos.' O tema principal do trecho é:",
       "opcoes": [
-        "o impacto das telas nos habitos de leitura",
+        "o impacto das telas nos hábitos de leitura",
         "a importancia da leitura classica",
         "os beneficios da tecnologia digital",
         "a evolução dos dispositivos eletrunicos"
       ],
-      "correta": "o impacto das telas nos habitos de leitura",
-      "comentario": "O foco do texto e a mudanca nos habitos de leitura causada pelo uso de telas.",
+      "correta": "o impacto das telas nos hábitos de leitura",
+      "comentario": "O foco do texto é a mudança nos hábitos de leitura causada pelo uso de telas.",
       "tempoEstimado": 25,
       "tags": [
         "tema-principal",
@@ -91,22 +91,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Tese e ponto de vista",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'A leitura critica e essencial para formar cidadãos capazes de interpretar o mundo com autonomia.' A tese do texto e:",
+      "enunciado": "Leia: 'A leitura crítica e essencial para formar cidadãos capazes de interpretar o mundo com autonomia.' A tese do texto e:",
       "opcoes": [
         "a leitura e uma atividade dificil",
-        "a leitura critica forma cidadãos autônomos",
-        "os livros sao importantes para a educacao",
+        "a leitura crítica forma cidadãos autônomos",
+        "os livros são importantes para a educação",
         "a escola deve incentivar a leitura"
       ],
-      "correta": "a leitura critica forma cidadãos autônomos",
-      "comentario": "A tese e a ideia central defendida: a importancia da leitura critica para autonomia.",
+      "correta": "a leitura crítica forma cidadãos autônomos",
+      "comentario": "A tese e a ideia central defendida: a importancia da leitura crítica para autonomia.",
       "tempoEstimado": 25,
       "tags": [
         "tese",
@@ -129,22 +129,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Inferencia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Mesmo com acesso e informacao, muitos ainda compartilham noticias falsas.' Pode-se inferir que:",
+      "enunciado": "Leia: 'Mesmo com acesso e informação, muitos ainda compartilham noticias falsas.' Pode-se inferir que:",
       "opcoes": [
-        "a informacao nao esta disponivel",
-        "as noticias falsas nao existem",
-        "o acesso e informacao nao garante uso critico",
-        "as pessoas nao usam tecnologia"
+        "a informação não está disponível",
+        "as noticias falsas não existem",
+        "o acesso e informação não garante uso critico",
+        "as pessoas não usam tecnologia"
       ],
-      "correta": "o acesso e informacao nao garante uso critico",
-      "comentario": "O trecho sugere que ter acesso nao implica saber analisar criticamente.",
+      "correta": "o acesso e informação não garante uso critico",
+      "comentario": "O trecho sugere que ter acesso não implica saber analisar criticamente.",
       "tempoEstimado": 25,
       "tags": [
         "inferencia",
@@ -167,22 +167,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Finalidade do texto",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Vacinar-se e um ato de cuidado coletivo, pois protege nao apenas o individuo, mas toda a comunidade.' A finalidade do texto e:",
+      "enunciado": "Leia: 'Vacinar-se é um ato de cuidado coletivo, pois protege não apenas o individuo, mas toda a comunidade.' A finalidade do texto e:",
       "opcoes": [
-        "narrar uma historia",
+        "narrar uma história",
         "descrever um ambiente",
         "apresentar dados estatesticos",
         "convencer o leitor a se vacinar"
       ],
       "correta": "convencer o leitor a se vacinar",
-      "comentario": "O texto tem carater persuasivo, incentivando a vacinacao.",
+      "comentario": "O texto tem caráter persuasivo, incentivando a vacinacao.",
       "tempoEstimado": 25,
       "tags": [
         "finalidade",
@@ -205,8 +205,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -243,8 +243,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Ironia e humor",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -281,8 +281,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Escolha vocabular",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
@@ -319,14 +319,14 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Genero textual e funcao social",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Gênero textual e função social",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um texto curto apresenta orientacoes objetivas de prevenção e dengue, com linguagem clara e foco em informar a populacao. Esse texto cumpre principalmente a funcao social de:",
+      "enunciado": "Um texto curto apresenta orientacoes objetivas de prevenção e dengue, com linguagem clara e foco em informar a populacao. Esse texto cumpre principalmente a função social de:",
       "opcoes": [
         "entreter",
         "narrar experiencias pessoais",
@@ -357,9 +357,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Informacao implicita",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Informação implícita",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "inferencia",
@@ -368,8 +368,8 @@ export const interpretacaoAvancadaEnem = {
       "opcoes": [
         "o horario dificultava o acesso dos estudantes",
         "a biblioteca era pouco conhecida",
-        "os estudantes nao gostavam de ler",
-        "a biblioteca nao tinha livros suficientes"
+        "os estudantes não gostavam de ler",
+        "a biblioteca não tinha livros suficientes"
       ],
       "correta": "o horario dificultava o acesso dos estudantes",
       "comentario": "O adverbio 'finalmente' sugere que havia um obstáculo anterior, ligado ao horario.",
@@ -395,22 +395,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Tese e ponto de vista",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Reduzir o debate publico a frases curtas e slogans empobrece a reflexao coletiva.' O ponto de vista defendido pelo autor e que:",
+      "enunciado": "Leia: 'Reduzir o debate publico a frases curtas e slogans empobrece a reflexão coletiva.' O ponto de vista defendido pelo autor e que:",
       "opcoes": [
-        "frases curtas sempre sao mais eficientes",
-        "a simplificacao excessiva prejudica a reflexao",
+        "frases curtas sempre são mais eficientes",
+        "a simplificacao excessiva prejudica a reflexão",
         "o debate publico deve ser simplificado ao máximo",
         "slogans substituem argumentos com vantagem"
       ],
-      "correta": "a simplificacao excessiva prejudica a reflexao",
-      "comentario": "O autor critica a reducao do debate a fórmulas simples e defende maior profundidade reflexiva.",
+      "correta": "a simplificacao excessiva prejudica a reflexão",
+      "comentario": "O autor crítica a reducao do debate a fórmulas simples e defende maior profundidade reflexiva.",
       "tempoEstimado": 35,
       "tags": [
         "tese",
@@ -433,21 +433,21 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Tema principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Com a expansao do trabalho remoto, empresas e trabalhadores passaram a rediscutir produtividade, qualidade de vida e gestao do tempo.' O tema principal do trecho e:",
+      "enunciado": "Leia: 'Com a expansao do trabalho remoto, empresas e trabalhadores passaram a rediscutir produtividade, qualidade de vida e gestao do tempo.' O tema principal do trecho é:",
       "opcoes": [
         "as origens historicas das empresas",
         "a dificuldade de acesso e internet",
-        "os efeitos do trabalho remoto na organizacao da rotina",
+        "os efeitos do trabalho remoto na organização da rotina",
         "o funcionamento de escritórios tradicionais"
       ],
-      "correta": "os efeitos do trabalho remoto na organizacao da rotina",
+      "correta": "os efeitos do trabalho remoto na organização da rotina",
       "comentario": "O texto concentra-se nas mudancas trazidas pelo trabalho remoto para a vida e a gestao do tempo.",
       "tempoEstimado": 30,
       "tags": [
@@ -471,14 +471,14 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Finalidade do texto",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Antes de compartilhar uma noticia, verifique a fonte, compare informacoes e desconfie de titulos alarmistas.' A finalidade predominante do texto e:",
+      "enunciado": "Leia: 'Antes de compartilhar uma noticia, verifique a fonte, compare informações e desconfie de titulos alarmistas.' A finalidade predominante do texto e:",
       "opcoes": [
         "expressar emocao pessoal",
         "narrar um episodio",
@@ -509,8 +509,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pressuposto e subentendido",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -518,13 +518,13 @@ export const interpretacaoAvancadaEnem = {
       "tipo": "multipla_escolha",
       "enunciado": "Leia: 'Até Pedro percebeu que a campanha precisava de mudancas.' O enunciado pressupoe que Pedro:",
       "opcoes": [
-        "nao era alguem de quem se esperava grande percepcao",
+        "não era alguem de quem se esperava grande percepcao",
         "e especialista em publicidade",
         "costuma perceber rapidamente os problemas",
         "foi o criador da campanha"
       ],
-      "correta": "nao era alguem de quem se esperava grande percepcao",
-      "comentario": "O uso de 'ate' sugere surpresa, indicando baixa expectativa em relacao e percepcao de Pedro.",
+      "correta": "não era alguem de quem se esperava grande percepcao",
+      "comentario": "O uso de 'até' sugere surpresa, indicando baixa expectativa em relação e percepcao de Pedro.",
       "tempoEstimado": 40,
       "tags": [
         "pressuposto",
@@ -547,22 +547,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Estrategias argumentativas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Segundo pesquisa recente, escolas com bibliotecas ativas apresentam maior envolvimento dos estudantes com atividades de leitura.' Nesse caso, o autor utiliza como estrategia argumentativa:",
+      "enunciado": "Leia: 'Segundo pesquisa recente, escolas com bibliotecas ativas apresentam maior envolvimento dos estudantes com atividades de leitura.' Nesse caso, o autor utiliza como estratégia argumentativa:",
       "opcoes": [
         "apelo emocional",
-        "citacao de dado de autoridade",
+        "citação de dado de autoridade",
         "ironia",
         "narrativa ficcional"
       ],
-      "correta": "citacao de dado de autoridade",
-      "comentario": "A referencia a uma pesquisa fortalece o argumento com base em dado externo e confiavel.",
+      "correta": "citação de dado de autoridade",
+      "comentario": "A referência a uma pesquisa fortalece o argumento com base em dado externo e confiável.",
       "tempoEstimado": 40,
       "tags": [
         "estrategias-argumentativas",
@@ -585,19 +585,19 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Comparacao entre textos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Texto 1 defende o uso da tecnologia como apoio ao estudo. Texto 2 alerta para os excessos do uso de telas. A relacao entre os textos e de:",
+      "enunciado": "Texto 1 defende o uso da tecnologia como apoio ao estudo. Texto 2 alerta para os excessos do uso de telas. A relação entre os textos e de:",
       "opcoes": [
         "identidade total de pontos de vista",
-        "ausencia de qualquer relacao tematica",
+        "ausência de qualquer relação temática",
         "complementacao com enfoques diferentes",
-        "contradicao absoluta sobre qualquer uso de tecnologia"
+        "contradição absoluta sobre qualquer uso de tecnologia"
       ],
       "correta": "complementacao com enfoques diferentes",
       "comentario": "Os textos tratam do mesmo tema, mas sob perspectivas distintas e complementares.",
@@ -623,22 +623,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Relacao entre texto verbal e nao verbal",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Relação entre texto verbal e não verbal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um cartaz sobre economia de agua, a imagem de uma torneira pingando ao lado da frase 'cada gota conta' reforca principalmente a ideia de:",
+      "enunciado": "Em um cartaz sobre economia de água, a imagem de uma torneira pingando ao lado da frase 'cada gota conta' reforca principalmente a ideia de:",
       "opcoes": [
         "desperdicio irrelevante",
-        "valorizacao estatica da agua",
-        "descricao tecnica do encanamento",
+        "valorizacao estatica da água",
+        "descricao técnica do encanamento",
         "urgencia na preservacao"
       ],
       "correta": "urgencia na preservacao",
-      "comentario": "A imagem e a frase se complementam para destacar que pequenas perdas tambem importam.",
+      "comentario": "A imagem e a frase se complementam para destacar que pequenas perdas também importam.",
       "tempoEstimado": 40,
       "tags": [
         "texto-verbal-e-nao-verbal",
@@ -661,21 +661,21 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Escolha vocabular",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'A decisao foi recebida com cautela pelos moradores.' O uso da palavra 'cautela' sugere uma reacao de:",
+      "enunciado": "Leia: 'A decisão foi recebida com cautela pelos moradores.' O uso da palavra 'cautela' sugere uma reacao de:",
       "opcoes": [
-        "prudência diante da situacao",
+        "prudência diante da situação",
         "euforia imediata",
         "aceitacao sem reservas",
         "desinteresse completo"
       ],
-      "correta": "prudência diante da situacao",
+      "correta": "prudência diante da situação",
       "comentario": "A escolha vocabular aponta para uma atitude cuidadosa, sem entusiasmo precipitado.",
       "tempoEstimado": 35,
       "tags": [
@@ -699,14 +699,14 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Genero textual e funcao social",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Gênero textual e função social",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma campanha publica com frases curtas, linguagem direta e objetivo de alertar sobre o descarte correto do lixo cumpre, sobretudo, a funcao social de:",
+      "enunciado": "Uma campanha publica com frases curtas, linguagem direta e objetivo de alertar sobre o descarte correto do lixo cumpre, sobretudo, a função social de:",
       "opcoes": [
         "regulamentar juridicamente o tema",
         "sensibilizar e orientar a populacao",
@@ -737,22 +737,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Informacao implicita",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Informação implícita",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Depois que a escola passou a abrir aos sobados, a biblioteca deixou de ficar vazia.' A informacao implícita mais adequada e que, antes da mudanca:",
+      "enunciado": "Leia: 'Depois que a escola passou a abrir aos sobados, a biblioteca deixou de ficar vazia.' A informação implícita mais adequada e que, antes da mudança:",
       "opcoes": [
-        "a biblioteca nao possuía funcionérios",
+        "a biblioteca não possuía funcionérios",
         "o sobado era o dia mais movimentado da escola",
-        "o funcionamento anterior limitava a frequencia dos usuários",
-        "os estudantes nao sabiam onde ficava a biblioteca"
+        "o funcionamento anterior limitava a frequência dos usuários",
+        "os estudantes não sabiam onde ficava a biblioteca"
       ],
-      "correta": "o funcionamento anterior limitava a frequencia dos usuários",
-      "comentario": "A frase sugere que a ampliacao do acesso alterou a presenca do publico, indicando limitacao anterior.",
+      "correta": "o funcionamento anterior limitava a frequência dos usuários",
+      "comentario": "A frase sugere que a ampliacao do acesso alterou a presença do publico, indicando limitacao anterior.",
       "tempoEstimado": 55,
       "tags": [
         "informacao-implicita",
@@ -775,8 +775,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pressuposto e subentendido",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
@@ -785,12 +785,12 @@ export const interpretacaoAvancadaEnem = {
       "enunciado": "Leia: 'Até os mais céticos reconheceram a importancia da iniciativa.' O enunciado permite pressupor que:",
       "opcoes": [
         "todos eram favoráveis desde o inicio",
-        "a iniciativa ja nao existia mais",
+        "a iniciativa já não existia mais",
         "os céticos organizaram a iniciativa",
         "havia resistencia inicial e iniciativa"
       ],
       "correta": "havia resistencia inicial e iniciativa",
-      "comentario": "A palavra 'ate' sugere que mesmo quem resistia passou a reconhecê-la, indicando ceticismo anterior.",
+      "comentario": "A palavra 'até' sugere que mesmo quem resistia passou a reconhecê-la, indicando ceticismo anterior.",
       "tempoEstimado": 55,
       "tags": [
         "pressuposto",
@@ -813,22 +813,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'As notificacoes disputam, a cada segundo, a atencao de quem tenta se concentrar.' Nesse trecho, o verbo 'disputam' contribui para o efeito de sentido de:",
+      "enunciado": "Leia: 'As notificacoes disputam, a cada segundo, a atenção de quem tenta se concentrar.' Nesse trecho, o verbo 'disputam' contribui para o efeito de sentido de:",
       "opcoes": [
-        "conflito pela atencao do usuário",
+        "conflito pela atenção do usuário",
         "neutralidade descritiva",
         "passividade do ambiente digital",
         "harmonia entre estudo e distracao"
       ],
-      "correta": "conflito pela atencao do usuário",
-      "comentario": "O verbo personifica as notificacoes e sugere competicao, intensificando a ideia de disputa pela atencao.",
+      "correta": "conflito pela atenção do usuário",
+      "comentario": "O verbo personifica as notificacoes e sugere competicao, intensificando a ideia de disputa pela atenção.",
       "tempoEstimado": 55,
       "tags": [
         "efeito-de-sentido",
@@ -851,14 +851,14 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Estrategias argumentativas",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Nao se trata apenas de instalar computadores nas escolas, mas de garantir formacao para que seu uso seja pedagogicamente significativo.' A estrategia argumentativa predominante e:",
+      "enunciado": "Leia: 'Não se trata apenas de instalar computadores nas escolas, mas de garantir formação para que seu uso seja pedagogicamente significativo.' A estratégia argumentativa predominante e:",
       "opcoes": [
         "reducao do tema a um slogan",
         "refinamento de uma ideia inicial por contraste",
@@ -866,7 +866,7 @@ export const interpretacaoAvancadaEnem = {
         "narracao de experiencia individual"
       ],
       "correta": "refinamento de uma ideia inicial por contraste",
-      "comentario": "O autor contrapoe uma solucao superficial a uma proposta mais ampla, refinando a argumentacao.",
+      "comentario": "O autor contrapoe uma solução superficial a uma proposta mais ampla, refinando a argumentação.",
       "tempoEstimado": 60,
       "tags": [
         "estrategias-argumentativas",
@@ -889,21 +889,21 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Comparacao entre textos",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Texto 1 afirma que a tecnologia amplia o acesso ao conhecimento. Texto 2 argumenta que, sem mediacao critica, esse acesso pode ser superficial. A relacao entre os textos e melhor descrita como:",
+      "enunciado": "Texto 1 afirma que a tecnologia amplia o acesso ao conhecimento. Texto 2 argumenta que, sem mediacao crítica, esse acesso pode ser superficial. A relação entre os textos e melhor descrita como:",
       "opcoes": [
-        "repeticao exata do mesmo argumento",
-        "contradicao absoluta e irreconciliável",
-        "aproximacao tematica com complementacao critica",
-        "ausencia de qualquer ponto em comum"
+        "repetição exata do mesmo argumento",
+        "contradição absoluta e irreconciliável",
+        "aproximacao temática com complementacao crítica",
+        "ausência de qualquer ponto em comum"
       ],
-      "correta": "aproximacao tematica com complementacao critica",
+      "correta": "aproximacao temática com complementacao crítica",
       "comentario": "Os textos convergem no tema da tecnologia e divergem no enfoque, de modo complementar.",
       "tempoEstimado": 60,
       "tags": [
@@ -927,17 +927,17 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Relacao entre texto verbal e nao verbal",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Relação entre texto verbal e não verbal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma charge, um personagem esta cercado de livros, mas olha apenas para o celular enquanto diz 'nao tenho tempo para ler'. O efeito produzido pela relacao entre imagem e fala e de:",
+      "enunciado": "Em uma charge, um personagem está cercado de livros, mas olha apenas para o celular enquanto diz 'não tenho tempo para ler'. O efeito produzido pela relação entre imagem e fala e de:",
       "opcoes": [
         "confirmacao literal da fala",
-        "exaltacao do habito de leitura",
+        "exaltacao do hábito de leitura",
         "neutralidade descritiva",
         "ironia sobre as prioridades do personagem"
       ],
@@ -965,22 +965,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'O texto e muito compartilhado nas redes; portanto, deve ser confiavel.' A pegadinha desse raciocinio esta em:",
+      "enunciado": "Leia: 'o texto é muito compartilhado nas redes; portanto, deve ser confiável.' A pegadinha desse raciocínio está em:",
       "opcoes": [
         "tomar popularidade como prova de veracidade",
         "usar linguagem informal em contexto inadequado",
         "trocar o tema principal do enunciado",
-        "misturar texto verbal e nao verbal"
+        "misturar texto verbal e não verbal"
       ],
       "correta": "tomar popularidade como prova de veracidade",
-      "comentario": "O grande número de compartilhamentos nao comprova a confiabilidade do conteudo.",
+      "comentario": "O grande número de compartilhamentos não comprova a confiabilidade do conteúdo.",
       "tempoEstimado": 60,
       "tags": [
         "pegadinha",
@@ -1003,22 +1003,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Tema principal",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'A expansao dos podcasts tem transformado a forma como muitas pessoas consomem informacao e entretenimento no cotidiano.' O tema principal do trecho e:",
+      "enunciado": "Leia: 'A expansao dos podcasts tem transformado a forma como muitas pessoas consomem informação e entretenimento no cotidiano.' O tema principal do trecho é:",
       "opcoes": [
         "a origem historica do rádio",
-        "a influencia dos podcasts nos habitos de consumo de conteudo",
-        "a dificuldade tecnica de produzir áudio",
+        "a influencia dos podcasts nos hábitos de consumo de conteúdo",
+        "a dificuldade técnica de produzir áudio",
         "o impacto da televisao na juventude"
       ],
-      "correta": "a influencia dos podcasts nos habitos de consumo de conteudo",
-      "comentario": "O trecho trata das mudancas nos habitos de consumo de informacao e entretenimento provocadas pelos podcasts.",
+      "correta": "a influencia dos podcasts nos hábitos de consumo de conteúdo",
+      "comentario": "O trecho trata das mudancas nos hábitos de consumo de informação e entretenimento provocadas pelos podcasts.",
       "tempoEstimado": 25,
       "tags": [
         "tema-principal",
@@ -1041,8 +1041,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Finalidade do texto",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -1056,7 +1056,7 @@ export const interpretacaoAvancadaEnem = {
         "comparar campanhas de saude"
       ],
       "correta": "convencer o leitor a doar sangue",
-      "comentario": "O texto tem carater persuasivo e busca incentivar a doacao de sangue.",
+      "comentario": "O texto tem caráter persuasivo e busca incentivar a doacao de sangue.",
       "tempoEstimado": 25,
       "tags": [
         "finalidade",
@@ -1079,22 +1079,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Genero textual e funcao social",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Gênero textual e função social",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Um aviso fixado em local publico informa horario de funcionamento, regras de uso e orientacoes objetivas. Sua funcao social principal e:",
+      "enunciado": "Um aviso fixado em local publico informa horario de funcionamento, regras de uso e orientacoes objetivas. Sua função social principal e:",
       "opcoes": [
         "emocionar o leitor",
-        "contar uma historia verídica",
+        "contar uma história verídica",
         "apresentar opiniao pessoal",
         "normatizar e orientar comportamentos"
       ],
       "correta": "normatizar e orientar comportamentos",
-      "comentario": "Avisos publicos tem funcao pratica de informar regras e orientar condutas.",
+      "comentario": "Avisos publicos tem função prática de informar regras e orientar condutas.",
       "tempoEstimado": 25,
       "tags": [
         "genero-textual",
@@ -1117,14 +1117,14 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Tese e ponto de vista",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'A preservacao do patrimonio historico nao e luxo cultural, mas condicao para que uma sociedade compreenda sua propria trajetória.' O ponto de vista defendido e que:",
+      "enunciado": "Leia: 'A preservacao do patrimonio historico não e luxo cultural, mas condicao para que uma sociedade compreenda sua própria trajetória.' O ponto de vista defendido e que:",
       "opcoes": [
         "a memoria coletiva depende da preservacao do patrimonio",
         "o patrimonio historico interessa apenas a especialistas",
@@ -1155,8 +1155,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Inferencia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
@@ -1165,11 +1165,11 @@ export const interpretacaoAvancadaEnem = {
       "enunciado": "Leia: 'Apesar de gratuitas, muitas atividades culturais seguem esvaziadas.' Pode-se inferir que:",
       "opcoes": [
         "o preço e o unico fator que define a participacao do publico",
-        "a gratuidade, sozinha, nao garante adesao as atividades culturais",
-        "todas as atividades culturais sao pagas",
+        "a gratuidade, sozinha, não garante adesão as atividades culturais",
+        "todas as atividades culturais são pagas",
         "o publico rejeita qualquer evento gratuito"
       ],
-      "correta": "a gratuidade, sozinha, nao garante adesao as atividades culturais",
+      "correta": "a gratuidade, sozinha, não garante adesão as atividades culturais",
       "comentario": "O trecho sugere que outros fatores, além do preço, influenciam a participacao do publico.",
       "tempoEstimado": 35,
       "tags": [
@@ -1193,8 +1193,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Escolha vocabular",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1208,7 +1208,7 @@ export const interpretacaoAvancadaEnem = {
         "indiferenca total"
       ],
       "correta": "prudência e desconfianca inicial",
-      "comentario": "A expressao sugere aceitacao cautelosa, sem adesao plena ou entusiasmo imediato.",
+      "comentario": "A expressao sugere aceitacao cautelosa, sem adesão plena ou entusiasmo imediato.",
       "tempoEstimado": 35,
       "tags": [
         "escolha-vocabular",
@@ -1231,21 +1231,21 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'As redes sociais amplificam vozes, mas tambem ecoam ruídos.' O efeito de sentido produzido pela oposicao e o de:",
+      "enunciado": "Leia: 'As redes sociais amplificam vozes, mas também ecoam ruídos.' O efeito de sentido produzido pela oposicao e o de:",
       "opcoes": [
-        "exaltacao sem critica das redes sociais",
+        "exaltacao sem crítica das redes sociais",
         "negacao completa do papel das redes",
-        "descricao exclusivamente tecnica do ambiente digital",
-        "equilibrio entre potencial positivo e problema associado"
+        "descricao exclusivamente técnica do ambiente digital",
+        "equilíbrio entre potencial positivo e problema associado"
       ],
-      "correta": "equilibrio entre potencial positivo e problema associado",
+      "correta": "equilíbrio entre potencial positivo e problema associado",
       "comentario": "O trecho reconhece simultaneamente um aspecto positivo e um aspecto problemático das redes sociais.",
       "tempoEstimado": 35,
       "tags": [
@@ -1269,8 +1269,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Ironia e humor",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1278,12 +1278,12 @@ export const interpretacaoAvancadaEnem = {
       "tipo": "multipla_escolha",
       "enunciado": "Leia: 'Nada melhor para descansar a mente do que responder mensagens de trabalho as duas da manha.' O efeito predominante desse enunciado e de:",
       "opcoes": [
-        "ironia critica",
-        "instrução pratica",
+        "ironia crítica",
+        "instrução prática",
         "elogio ao trabalho noturno",
         "narracao objetiva"
       ],
-      "correta": "ironia critica",
+      "correta": "ironia crítica",
       "comentario": "O enunciado sugere o contrario do que afirma literalmente, criticando a invasao do trabalho no descanso.",
       "tempoEstimado": 35,
       "tags": [
@@ -1307,22 +1307,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Informacao implicita",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Informação implícita",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'So depois da reforma o parque passou a receber famalias em maior número.' Esta implícito que, antes da reforma:",
+      "enunciado": "Leia: 'Só depois da reforma o parque passou a receber famílias em maior número.' Está implícito que, antes da reforma:",
       "opcoes": [
-        "o parque era proibido para famalias",
-        "o espaco nao atraía tantas famalias",
-        "as famalias desconheciam a existência do parque",
-        "nao havia moradores na região"
+        "o parque era proibido para famílias",
+        "o espaco não atraía tantas famílias",
+        "as famílias desconheciam a existência do parque",
+        "não havia moradores na região"
       ],
-      "correta": "o espaco nao atraía tantas famalias",
-      "comentario": "A expressao 'so depois' sugere mudanca de situacao, indicando menor frequencia anterior.",
+      "correta": "o espaco não atraía tantas famílias",
+      "comentario": "A expressao 'só depois' sugere mudança de situação, indicando menor frequência anterior.",
       "tempoEstimado": 35,
       "tags": [
         "informacao-implicita",
@@ -1345,21 +1345,21 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Estrategias argumentativas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Quando uma cidade investe em mobilidade ativa, reduz congestionamentos, melhora a saude publica e amplia a convivencia urbana.' Nesse trecho, a estrategia argumentativa predominante e:",
+      "enunciado": "Leia: 'Quando uma cidade investe em mobilidade ativa, reduz congestionamentos, melhora a saude publica e amplia a convivencia urbana.' Nesse trecho, a estratégia argumentativa predominante e:",
       "opcoes": [
         "narrar uma experiencia pessoal para sensibilizar",
         "usar humor para reduzir a seriedade do tema",
-        "enumerar consequencias positivas para sustentar uma proposta",
+        "enumerar consequências positivas para sustentar uma proposta",
         "substituir argumentos por opinioes vagas"
       ],
-      "correta": "enumerar consequencias positivas para sustentar uma proposta",
+      "correta": "enumerar consequências positivas para sustentar uma proposta",
       "comentario": "O autor lista beneficios para fortalecer a defesa do investimento em mobilidade ativa.",
       "tempoEstimado": 40,
       "tags": [
@@ -1383,8 +1383,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pressuposto e subentendido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1395,10 +1395,10 @@ export const interpretacaoAvancadaEnem = {
         "nunca havia frequentado o curso",
         "e professora do curso",
         "mudou de cidade recentemente",
-        "ja frequentara o curso anteriormente"
+        "já frequentara o curso anteriormente"
       ],
-      "correta": "ja frequentara o curso anteriormente",
-      "comentario": "O verbo 'voltou' pressupoe uma acao anterior interrompida e retomada.",
+      "correta": "já frequentara o curso anteriormente",
+      "comentario": "O verbo 'voltou' pressupoe uma ação anterior interrompida e retomada.",
       "tempoEstimado": 40,
       "tags": [
         "pressuposto",
@@ -1421,21 +1421,21 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Comparacao entre textos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Texto 1 afirma que o ensino habrido amplia possibilidades de aprendizagem. Texto 2 destaca dificuldades de acesso e internet que limitam esse modelo. A relacao entre eles e de:",
+      "enunciado": "Texto 1 afirma que o ensino habrido amplia possibilidades de aprendizagem. Texto 2 destaca dificuldades de acesso e internet que limitam esse modelo. A relação entre eles e de:",
       "opcoes": [
-        "complementacao tematica com enfoques distintos",
+        "complementacao temática com enfoques distintos",
         "anulacao completa entre os argumentos",
-        "repeticao literal do mesmo ponto de vista",
-        "ausencia de dialogo entre os temas"
+        "repetição literal do mesmo ponto de vista",
+        "ausência de dialogo entre os temas"
       ],
-      "correta": "complementacao tematica com enfoques distintos",
+      "correta": "complementacao temática com enfoques distintos",
       "comentario": "Os textos abordam o mesmo tema, mas por perspectivas diferentes e complementares.",
       "tempoEstimado": 40,
       "tags": [
@@ -1459,9 +1459,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Relacao entre texto verbal e nao verbal",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Relação entre texto verbal e não verbal",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
@@ -1469,11 +1469,11 @@ export const interpretacaoAvancadaEnem = {
       "enunciado": "Em um anuncio de reciclagem, a imagem de um planeta formado por objetos reaproveitados, acompanhada do slogan 'Transformar e preservar', reforca a ideia de:",
       "opcoes": [
         "consumo sem limites",
-        "reaproveitamento como pratica ambiental",
-        "producao industrial acelerada",
+        "reaproveitamento como prática ambiental",
+        "produção industrial acelerada",
         "abandono de resoduos em áreas urbanas"
       ],
-      "correta": "reaproveitamento como pratica ambiental",
+      "correta": "reaproveitamento como prática ambiental",
       "comentario": "A combinacao entre imagem e frase associa transformacao de materiais e preservacao ambiental.",
       "tempoEstimado": 40,
       "tags": [
@@ -1497,8 +1497,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Escolha vocabular",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1508,10 +1508,10 @@ export const interpretacaoAvancadaEnem = {
       "opcoes": [
         "exagero emocional",
         "irritacao evidente",
-        "seriedade e equilibrio",
+        "seriedade e equilíbrio",
         "desprezo pelo assunto"
       ],
-      "correta": "seriedade e equilibrio",
+      "correta": "seriedade e equilíbrio",
       "comentario": "A palavra sugere uma abordagem ponderada, sem excessos emocionais.",
       "tempoEstimado": 35,
       "tags": [
@@ -1535,14 +1535,14 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Tema principal",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Quando a cidade investe em espacos publicos de convivencia, nao apenas oferece lazer, mas tambem fortalece laços sociais e amplia o direito e ocupacao democritica do espaco urbano.' O tema principal do trecho e:",
+      "enunciado": "Leia: 'Quando a cidade investe em espacos publicos de convivencia, não apenas oferece lazer, mas também fortalece laços sociais e amplia o direito e ocupacao democritica do espaco urbano.' O tema principal do trecho é:",
       "opcoes": [
         "a arquitetura de pracas historicas",
         "a reducao de impostos municipais",
@@ -1550,7 +1550,7 @@ export const interpretacaoAvancadaEnem = {
         "o papel social dos espacos publicos urbanos"
       ],
       "correta": "o papel social dos espacos publicos urbanos",
-      "comentario": "O texto destaca a funcao dos espacos publicos para convivencia, cidadania e direito e cidade.",
+      "comentario": "O texto destaca a função dos espacos publicos para convivencia, cidadania e direito e cidade.",
       "tempoEstimado": 55,
       "tags": [
         "tema-principal",
@@ -1573,21 +1573,21 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Tese e ponto de vista",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'A neutralidade algorítmica e, muitas vezes, apenas aparente, pois toda escolha tecnica carrega valores e prioridades.' A tese defendida e que:",
+      "enunciado": "Leia: 'A neutralidade algorítmica e, muitas vezes, apenas aparente, pois toda escolha técnica carrega valores e prioridades.' A tese defendida e que:",
       "opcoes": [
-        "decisoes tecnicas podem refletir valores humanos",
-        "algoritmos sao sempre imparciais",
-        "a tecnologia dispensa analise critica",
-        "prioridades humanas nao interferem em sistemas digitais"
+        "decisões técnicas podem refletir valores humanos",
+        "algoritmos são sempre imparciais",
+        "a tecnologia dispensa análise crítica",
+        "prioridades humanas não interferem em sistemas digitais"
       ],
-      "correta": "decisoes tecnicas podem refletir valores humanos",
+      "correta": "decisões técnicas podem refletir valores humanos",
       "comentario": "O autor questiona a suposta neutralidade dos algoritmos e afirma que eles incorporam escolhas e valores.",
       "tempoEstimado": 55,
       "tags": [
@@ -1611,8 +1611,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Inferencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1621,12 +1621,12 @@ export const interpretacaoAvancadaEnem = {
       "enunciado": "Leia: 'Mesmo apos campanhas informativas, o descarte irregular de lixo persiste em vários bairros.' Pode-se inferir que:",
       "opcoes": [
         "as campanhas informativas nunca chegam ao publico",
-        "informacao, isoladamente, pode ser insuficiente para mudar praticas",
+        "informação, isoladamente, pode ser insuficiente para mudar praticas",
         "o descarte irregular deixou de existir",
         "todos os bairros recebem o mesmo tipo de coleta"
       ],
-      "correta": "informacao, isoladamente, pode ser insuficiente para mudar praticas",
-      "comentario": "O trecho sugere que informar nao basta, por si so, para transformar comportamentos.",
+      "correta": "informação, isoladamente, pode ser insuficiente para mudar praticas",
+      "comentario": "O trecho sugere que informar não basta, por si só, para transformar comportamentos.",
       "tempoEstimado": 55,
       "tags": [
         "inferencia",
@@ -1649,22 +1649,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Finalidade do texto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Nao basta admirar a ciencia apenas nos momentos de crise; e preciso sustentá-la tambem no cotidiano, por meio de investimento e valorizacao publica.' A finalidade central do trecho e:",
+      "enunciado": "Leia: 'Não basta admirar a ciência apenas nos momentos de crise; e preciso sustentá-la também no cotidiano, por meio de investimento e valorizacao publica.' A finalidade central do trecho e:",
       "opcoes": [
         "relatar uma descoberta cientifica específica",
         "descrever o funcionamento de laboraterios",
-        "defender a valorizacao contínua da ciencia",
+        "defender a valorizacao contínua da ciência",
         "ironizar o trabalho dos pesquisadores"
       ],
-      "correta": "defender a valorizacao contínua da ciencia",
-      "comentario": "O texto busca persuadir o leitor sobre a importancia de apoiar a ciencia de forma permanente.",
+      "correta": "defender a valorizacao contínua da ciência",
+      "comentario": "O texto busca persuadir o leitor sobre a importancia de apoiar a ciência de forma permanente.",
       "tempoEstimado": 55,
       "tags": [
         "finalidade",
@@ -1687,8 +1687,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pressuposto e subentendido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -1698,11 +1698,11 @@ export const interpretacaoAvancadaEnem = {
       "opcoes": [
         "ninguem apoiava a medida anteriormente",
         "os limites da medida foram sempre óbvios para todos",
-        "a medida ja havia sido revogada",
+        "a medida já havia sido revogada",
         "havia apoiadores convictos da medida"
       ],
       "correta": "havia apoiadores convictos da medida",
-      "comentario": "O uso de 'ate' indica que mesmo quem apoiava fortemente a medida reconheceu limitacoes, pressuposto de apoio anterior.",
+      "comentario": "O uso de 'até' indica que mesmo quem apoiava fortemente a medida reconheceu limitacoes, pressuposto de apoio anterior.",
       "tempoEstimado": 60,
       "tags": [
         "pressuposto",
@@ -1725,21 +1725,21 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Estrategias argumentativas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Se a cidade deseja reduzir enchentes, nao pode limitar-se a medidas emergenciais a cada verão; precisa investir de forma preventiva em drenagem, planejamento urbano e preservacao ambiental.' A estrategia argumentativa predominante e:",
+      "enunciado": "Leia: 'Se a cidade deseja reduzir enchentes, não pode limitar-se a medidas emergenciais a cada verão; precisa investir de forma preventiva em drenagem, planejamento urbano e preservacao ambiental.' A estratégia argumentativa predominante e:",
       "opcoes": [
-        "opor solucoes imediatistas a acoes estruturais",
+        "opor solucoes imediatistas a ações estruturais",
         "reduzir o problema a uma causa unica",
         "substituir argumentos por dados irrelevantes",
         "usar humor para suavizar o problema"
       ],
-      "correta": "opor solucoes imediatistas a acoes estruturais",
+      "correta": "opor solucoes imediatistas a ações estruturais",
       "comentario": "O autor contrapoe medidas emergenciais a politicas preventivas mais amplas, fortalecendo sua defesa.",
       "tempoEstimado": 60,
       "tags": [
@@ -1763,22 +1763,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Comparacao entre textos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Texto 1 defende que museus devem preservar a memoria coletiva. Texto 2 argumenta que museus tambem precisam dialogar com questaes contemporâneas. A relacao entre os textos e de:",
+      "enunciado": "Texto 1 defende que museus devem preservar a memoria coletiva. Texto 2 argumenta que museus também precisam dialogar com questaes contemporâneas. A relação entre os textos e de:",
       "opcoes": [
         "negacao total de um texto pelo outro",
-        "convergência tematica com ampliacao de enfoque",
+        "convergência temática com ampliacao de enfoque",
         "identidade absoluta de formulacao",
-        "ausencia de relacao argumentativa"
+        "ausência de relação argumentativa"
       ],
-      "correta": "convergência tematica com ampliacao de enfoque",
-      "comentario": "Ambos tratam da funcao dos museus, mas o segundo amplia o debate ao incluir o dialogo com o presente.",
+      "correta": "convergência temática com ampliacao de enfoque",
+      "comentario": "Ambos tratam da função dos museus, mas o segundo amplia o debate ao incluir o dialogo com o presente.",
       "tempoEstimado": 60,
       "tags": [
         "comparacao-entre-textos",
@@ -1801,22 +1801,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Relacao entre texto verbal e nao verbal",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Relação entre texto verbal e não verbal",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um infográfico sobre alimentacao saudável, setas indicam o aumento do consumo de ultraprocessados enquanto a legenda verbal alerta para riscos e saude. A relacao entre linguagem verbal e nao verbal produz principalmente:",
+      "enunciado": "Em um infográfico sobre alimentacao saudável, setas indicam o aumento do consumo de ultraprocessados enquanto a legenda verbal alerta para riscos e saude. A relação entre linguagem verbal e não verbal produz principalmente:",
       "opcoes": [
-        "contradicao sem propasito",
+        "contradição sem propasito",
         "efeito humorastico central",
         "complementacao informativa e reforço argumentativo",
         "descricao exclusivamente estatica"
       ],
       "correta": "complementacao informativa e reforço argumentativo",
-      "comentario": "Os elementos visuais organizam os dados, enquanto a linguagem verbal orienta a interpretacao dos riscos apresentados.",
+      "comentario": "Os elementos visuais organizam os dados, enquanto a linguagem verbal orienta a interpretação dos riscos apresentados.",
       "tempoEstimado": 55,
       "tags": [
         "texto-verbal-e-nao-verbal",
@@ -1839,22 +1839,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Ironia e humor",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'A melhor prova de que ninguem mais lê textos longos e este comentario de tras linhas reclamando de um artigo que a pessoa claramente nao terminou.' O humor do enunciado decorre de:",
+      "enunciado": "Leia: 'A melhor prova de que ninguem mais lê textos longos e este comentario de tras linhas reclamando de um artigo que a pessoa claramente não terminou.' O humor do enunciado decorre de:",
       "opcoes": [
         "descricao neutra de um fato comum",
-        "coincidáncia entre discurso e pratica",
+        "coincidáncia entre discurso e prática",
         "uso de vocabulario tecnico",
-        "contradicao entre a reclamacao e o comportamento sugerido"
+        "contradição entre a reclamacao e o comportamento sugerido"
       ],
-      "correta": "contradicao entre a reclamacao e o comportamento sugerido",
-      "comentario": "O humor surge porque a queixa sobre textos longos e feita por alguem que nao leu o artigo, reforcando a critica de forma irunica.",
+      "correta": "contradição entre a reclamacao e o comportamento sugerido",
+      "comentario": "O humor surge porque a queixa sobre textos longos e feita por alguem que não leu o artigo, reforcando a crítica de forma irunica.",
       "tempoEstimado": 55,
       "tags": [
         "ironia",
@@ -1877,22 +1877,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Milhares de pessoas curtiram a postagem; logo, a informacao publicada nela e confiavel.' A armadilha de leitura esta em:",
+      "enunciado": "Leia: 'Milhares de pessoas curtiram a postagem; logo, a informação publicada nela e confiável.' A armadilha de leitura está em:",
       "opcoes": [
-        "confundir adesao publica com comprovacao de veracidade",
+        "confundir adesão publica com comprovacao de veracidade",
         "interpretar literalmente uma metafora",
-        "desconsiderar a presenca de ironia explicita",
+        "desconsiderar a presença de ironia explícita",
         "tomar a opiniao do autor como dado estatestico"
       ],
-      "correta": "confundir adesao publica com comprovacao de veracidade",
-      "comentario": "Popularidade ou aprovacao social nao servem, por si, como prova de confiabilidade da informacao.",
+      "correta": "confundir adesão publica com comprovacao de veracidade",
+      "comentario": "Popularidade ou aprovacao social não servem, por si, como prova de confiabilidade da informação.",
       "tempoEstimado": 60,
       "tags": [
         "pegadinha",
@@ -1915,22 +1915,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa que mantem equivalencia de sentido em relacao a 'A leitura amplia repertorio e, por isso, fortalece a argumentacao':",
+      "enunciado": "Assinale a alternativa que mantem equivalência de sentido em relação a 'A leitura amplia repertório e, por isso, fortalece a argumentação':",
       "opcoes": [
-        "A leitura amplia repertorio, mas fortalece a argumentacao.",
-        "A leitura amplia repertorio e, assim, fortalece a argumentacao.",
-        "A leitura amplia repertorio porque fortalece a argumentacao.",
-        "A leitura amplia repertorio, embora fortaleça a argumentacao."
+        "A leitura amplia repertório, mas fortalece a argumentação.",
+        "A leitura amplia repertório e, assim, fortalece a argumentação.",
+        "A leitura amplia repertório porque fortalece a argumentação.",
+        "A leitura amplia repertório, embora fortaleça a argumentação."
       ],
-      "correta": "A leitura amplia repertorio e, assim, fortalece a argumentacao.",
-      "comentario": "A palavra 'assim' preserva a relacao de consequencia expressa por 'por isso'.",
+      "correta": "A leitura amplia repertório e, assim, fortalece a argumentação.",
+      "comentario": "A palavra 'assim' preserva a relação de consequência expressa por 'por isso'.",
       "tempoEstimado": 55,
       "tags": [
         "equivalencia-de-formas",
@@ -1953,14 +1953,14 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Tema principal",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'A pratica regular de atividades fasicas contribui nao apenas para a saude do corpo, mas tambem para o equilibrio emocional.' O tema principal do trecho e:",
+      "enunciado": "Leia: 'A prática regular de atividades fasicas contribui não apenas para a saude do corpo, mas também para o equilíbrio emocional.' O tema principal do trecho é:",
       "opcoes": [
         "os riscos do sedentarismo",
         "a importancia da alimentacao saudável",
@@ -1968,7 +1968,7 @@ export const interpretacaoAvancadaEnem = {
         "a rotina de atletas profissionais"
       ],
       "correta": "os beneficios das atividades fasicas para o corpo e a mente",
-      "comentario": "O texto destaca beneficios fasicos e emocionais da pratica de atividades fasicas.",
+      "comentario": "O texto destaca beneficios fasicos e emocionais da prática de atividades fasicas.",
       "tempoEstimado": 25,
       "tags": [
         "tema-principal",
@@ -1991,22 +1991,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Finalidade do texto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Evite o desperdicio de agua: feche a torneira enquanto escova os dentes.' A finalidade do texto e:",
+      "enunciado": "Leia: 'Evite o desperdicio de água: feche a torneira enquanto escova os dentes.' A finalidade do texto e:",
       "opcoes": [
         "relatar uma experiencia",
-        "descrever um habito comum",
+        "descrever um hábito comum",
         "explicar o funcionamento da torneira",
-        "convencer o leitor a economizar agua"
+        "convencer o leitor a economizar água"
       ],
-      "correta": "convencer o leitor a economizar agua",
-      "comentario": "O texto orienta e incentiva uma pratica sustentavel.",
+      "correta": "convencer o leitor a economizar água",
+      "comentario": "O texto orienta e incentiva uma prática sustentável.",
       "tempoEstimado": 25,
       "tags": [
         "finalidade",
@@ -2029,22 +2029,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Inferencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Apesar de ter estudado bastante, o aluno nao obteve o resultado esperado.' Pode-se inferir que:",
+      "enunciado": "Leia: 'Apesar de ter estudado bastante, o aluno não obteve o resultado esperado.' Pode-se inferir que:",
       "opcoes": [
-        "o esforco nem sempre garante sucesso",
-        "o aluno nao estudou",
+        "o esforço nem sempre garante sucesso",
+        "o aluno não estudou",
         "o aluno desistiu da prova",
         "o resultado foi excelente"
       ],
-      "correta": "o esforco nem sempre garante sucesso",
-      "comentario": "A estrutura concessiva indica que estudar nao foi suficiente para garantir o resultado.",
+      "correta": "o esforço nem sempre garante sucesso",
+      "comentario": "A estrutura concessiva indica que estudar não foi suficiente para garantir o resultado.",
       "tempoEstimado": 25,
       "tags": [
         "inferencia",
@@ -2067,8 +2067,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Escolha vocabular",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -2076,13 +2076,13 @@ export const interpretacaoAvancadaEnem = {
       "tipo": "multipla_escolha",
       "enunciado": "Leia: 'A proposta foi amplamente criticada pelos especialistas.' A palavra 'amplamente' sugere:",
       "opcoes": [
-        "critica restrita a poucos",
-        "critica generalizada",
-        "critica superficial",
-        "critica sem importancia"
+        "crítica restrita a poucos",
+        "crítica generalizada",
+        "crítica superficial",
+        "crítica sem importancia"
       ],
-      "correta": "critica generalizada",
-      "comentario": "O adverbio indica que a critica foi ampla, envolvendo muitos especialistas.",
+      "correta": "crítica generalizada",
+      "comentario": "O adverbio indica que a crítica foi ampla, envolvendo muitos especialistas.",
       "tempoEstimado": 35,
       "tags": [
         "escolha-vocabular"
@@ -2104,22 +2104,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'A informacao corre pelas redes como fogo em palha seca.' O efeito de sentido da comparacao e:",
+      "enunciado": "Leia: 'A informação corre pelas redes como fogo em palha seca.' O efeito de sentido da comparacao e:",
       "opcoes": [
         "lentidao",
         "dificuldade de acesso",
-        "rapidez de propagacao",
-        "organizacao das informacoes"
+        "rapidez de propagação",
+        "organização das informações"
       ],
-      "correta": "rapidez de propagacao",
-      "comentario": "A expressao indica que a informacao se espalha rapidamente.",
+      "correta": "rapidez de propagação",
+      "comentario": "A expressao indica que a informação se espalha rapidamente.",
       "tempoEstimado": 35,
       "tags": [
         "efeito-de-sentido",
@@ -2142,8 +2142,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Ironia e humor",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -2153,11 +2153,11 @@ export const interpretacaoAvancadaEnem = {
       "opcoes": [
         "elogio sincero",
         "descricao objetiva",
-        "orientacao pratica",
-        "ironia critica"
+        "orientacao prática",
+        "ironia crítica"
       ],
-      "correta": "ironia critica",
-      "comentario": "O enunciado expressa o contrario do que diz, criticando o habito de procrastinar.",
+      "correta": "ironia crítica",
+      "comentario": "O enunciado expressa o contrario do que diz, criticando o hábito de procrastinar.",
       "tempoEstimado": 35,
       "tags": [
         "ironia"
@@ -2179,8 +2179,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pressuposto e subentendido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
@@ -2191,10 +2191,10 @@ export const interpretacaoAvancadaEnem = {
         "fumava anteriormente",
         "nunca fumou",
         "comecou a fumar agora",
-        "nao gosta de cigarro"
+        "não gosta de cigarro"
       ],
       "correta": "fumava anteriormente",
-      "comentario": "O verbo 'parou' pressupoe que a acao ocorria antes.",
+      "comentario": "O verbo 'parou' pressupoe que a ação ocorria antes.",
       "tempoEstimado": 40,
       "tags": [
         "pressuposto"
@@ -2216,21 +2216,21 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Comparacao entre textos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Texto 1 elogia o uso da tecnologia na educacao. Texto 2 aponta riscos do uso excessivo. A relacao entre eles e:",
+      "enunciado": "Texto 1 elogia o uso da tecnologia na educação. Texto 2 aponta riscos do uso excessivo. A relação entre eles e:",
       "opcoes": [
-        "contradicao absoluta",
-        "complementacao tematica",
-        "repeticao idántica",
-        "ausencia de relacao"
+        "contradição absoluta",
+        "complementacao temática",
+        "repetição idántica",
+        "ausência de relação"
       ],
-      "correta": "complementacao tematica",
+      "correta": "complementacao temática",
       "comentario": "Os textos abordam o mesmo tema com perspectivas diferentes.",
       "tempoEstimado": 40,
       "tags": [
@@ -2253,22 +2253,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'O texto foi compartilhado milhares de vezes, portanto e verdadeiro.' A falha esta em:",
+      "enunciado": "Leia: 'O texto foi compartilhado milhares de vezes, portanto é verdadeiro.' A falha está em:",
       "opcoes": [
         "erro de ortografia",
-        "falta de coesao",
+        "falta de coesão",
         "confundir popularidade com veracidade",
         "uso de linguagem figurada"
       ],
       "correta": "confundir popularidade com veracidade",
-      "comentario": "O número de compartilhamentos nao garante a veracidade da informacao.",
+      "comentario": "O número de compartilhamentos não garante a veracidade da informação.",
       "tempoEstimado": 55,
       "tags": [
         "pegadinha"
@@ -2290,9 +2290,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "comparacao",
@@ -2305,7 +2305,7 @@ export const interpretacaoAvancadaEnem = {
         "Ele estudou muito, assim passou."
       ],
       "correta": "Ele estudou muito, assim passou.",
-      "comentario": "A palavra 'assim' mantem a relacao de consequencia.",
+      "comentario": "A palavra 'assim' mantem a relação de consequência.",
       "tempoEstimado": 55,
       "tags": [
         "equivalencia-de-formas"
@@ -2327,8 +2327,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Tema principal",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -2337,12 +2337,12 @@ export const interpretacaoAvancadaEnem = {
       "enunciado": "Leia: 'O crescimento das cidades exige planejamento urbano que considere mobilidade, sustentabilidade e qualidade de vida.' O tema principal e:",
       "opcoes": [
         "o planejamento urbano diante do crescimento urbano",
-        "a historia das cidades",
+        "a história das cidades",
         "a arquitetura de prádios modernos",
         "o transporte individual"
       ],
       "correta": "o planejamento urbano diante do crescimento urbano",
-      "comentario": "O foco do texto e a necessidade de planejamento urbano frente e expansao das cidades.",
+      "comentario": "O foco do texto é a necessidade de planejamento urbano frente e expansao das cidades.",
       "tempoEstimado": 25,
       "tags": [
         "tema-principal"
@@ -2364,22 +2364,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Tese e ponto de vista",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Investir em educacao e investir no futuro de uma nacao.' A tese defendida e:",
+      "enunciado": "Leia: 'Investir em educação e investir no futuro de uma nacao.' A tese defendida e:",
       "opcoes": [
-        "a educacao e opcional",
-        "o investimento em educacao traz beneficios futuros",
+        "a educação e opcional",
+        "o investimento em educação traz beneficios futuros",
         "o futuro depende apenas da economia",
-        "a educacao nao influencia o desenvolvimento"
+        "a educação não influencia o desenvolvimento"
       ],
-      "correta": "o investimento em educacao traz beneficios futuros",
-      "comentario": "A frase apresenta claramente a defesa da educacao como base para o futuro.",
+      "correta": "o investimento em educação traz beneficios futuros",
+      "comentario": "A frase apresenta claramente a defesa da educação como base para o futuro.",
       "tempoEstimado": 25,
       "tags": [
         "tese"
@@ -2401,8 +2401,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Inferencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -2412,11 +2412,11 @@ export const interpretacaoAvancadaEnem = {
       "opcoes": [
         "as campanhas foram suficientes",
         "o problema foi resolvido",
-        "as campanhas nao foram totalmente eficazes",
-        "nao houve campanhas"
+        "as campanhas não foram totalmente eficazes",
+        "não houve campanhas"
       ],
-      "correta": "as campanhas nao foram totalmente eficazes",
-      "comentario": "A persistência do problema indica que as campanhas nao foram suficientes.",
+      "correta": "as campanhas não foram totalmente eficazes",
+      "comentario": "A persistência do problema indica que as campanhas não foram suficientes.",
       "tempoEstimado": 25,
       "tags": [
         "inferencia"
@@ -2438,8 +2438,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Finalidade do texto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -2453,7 +2453,7 @@ export const interpretacaoAvancadaEnem = {
         "convencer o leitor a usar cinto"
       ],
       "correta": "convencer o leitor a usar cinto",
-      "comentario": "O texto tem funcao persuasiva, incentivando o uso do cinto.",
+      "comentario": "O texto tem função persuasiva, incentivando o uso do cinto.",
       "tempoEstimado": 20,
       "tags": [
         "finalidade"
@@ -2475,8 +2475,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Escolha vocabular",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -2512,8 +2512,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -2549,8 +2549,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Ironia e humor",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -2586,8 +2586,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pressuposto e subentendido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -2596,12 +2596,12 @@ export const interpretacaoAvancadaEnem = {
       "enunciado": "Leia: 'Ela voltou a estudar.' Pressupoe-se que:",
       "opcoes": [
         "nunca estudou",
-        "nao gosta de estudar",
+        "não gosta de estudar",
         "vai parar de estudar",
         "estudava antes"
       ],
       "correta": "estudava antes",
-      "comentario": "O verbo 'voltou' indica acao anterior.",
+      "comentario": "O verbo 'voltou' indica ação anterior.",
       "tempoEstimado": 40,
       "tags": [
         "pressuposto"
@@ -2623,22 +2623,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Muitos curtiram a postagem; logo, ela e verdadeira.' O erro esta em:",
+      "enunciado": "Leia: 'Muitos curtiram a postagem; logo, ela é verdadeira.' O erro está em:",
       "opcoes": [
         "confundir popularidade com veracidade",
         "erro gramatical",
-        "falta de pontuacao",
+        "falta de pontuação",
         "uso incorreto de verbo"
       ],
       "correta": "confundir popularidade com veracidade",
-      "comentario": "Curtidas nao comprovam veracidade.",
+      "comentario": "Curtidas não comprovam veracidade.",
       "tempoEstimado": 55,
       "tags": [
         "pegadinha"
@@ -2660,9 +2660,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
@@ -2675,7 +2675,7 @@ export const interpretacaoAvancadaEnem = {
         "Ele estudou, porem passou."
       ],
       "correta": "Ele estudou, assim passou.",
-      "comentario": "A relacao de consequencia e mantida.",
+      "comentario": "A relação de consequência e mantida.",
       "tempoEstimado": 55,
       "tags": [
         "equivalencia-de-formas"
@@ -2697,8 +2697,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Tema principal",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -2706,7 +2706,7 @@ export const interpretacaoAvancadaEnem = {
       "tipo": "multipla_escolha",
       "enunciado": "Leia: 'A crescente digitalizacao da sociedade tem alterado profundamente as formas de comunicacao entre as pessoas.' O tema principal e:",
       "opcoes": [
-        "a historia da escrita",
+        "a história da escrita",
         "a inven??o da internet",
         "as mudancas na comunicacao causadas pela digitalizacao",
         "a importancia dos livros impressos"
@@ -2734,8 +2734,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Finalidade do texto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -2743,8 +2743,8 @@ export const interpretacaoAvancadaEnem = {
       "tipo": "multipla_escolha",
       "enunciado": "Leia: 'Evite jogar lixo nas ruas. Preserve o meio ambiente.' A finalidade e:",
       "opcoes": [
-        "narrar uma historia",
-        "explicar um conceito cientifico",
+        "narrar uma história",
+        "explicar um conceito científico",
         "descrever um local",
         "convencer o leitor a adotar comportamento ambiental"
       ],
@@ -2771,8 +2771,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Inferencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -2782,11 +2782,11 @@ export const interpretacaoAvancadaEnem = {
       "opcoes": [
         "os investimentos foram insuficientes",
         "os investimentos resolveram o problema",
-        "nao houve investimentos",
+        "não houve investimentos",
         "o problema nunca existiu"
       ],
       "correta": "os investimentos foram insuficientes",
-      "comentario": "A permanencia do problema indica que os investimentos nao foram suficientes.",
+      "comentario": "A permanencia do problema indica que os investimentos não foram suficientes.",
       "tempoEstimado": 25,
       "tags": [
         "inferencia"
@@ -2808,8 +2808,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Tese e ponto de vista",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -2845,14 +2845,14 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Escolha vocabular",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'A decisao gerou intensa repercussao.' A palavra 'intensa' indica:",
+      "enunciado": "Leia: 'A decisão gerou intensa repercussao.' A palavra 'intensa' indica:",
       "opcoes": [
         "baixa relevancia",
         "neutralidade",
@@ -2882,8 +2882,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -2919,8 +2919,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Ironia e humor",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -2956,8 +2956,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pressuposto e subentendido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -2967,11 +2967,11 @@ export const interpretacaoAvancadaEnem = {
       "opcoes": [
         "nunca correu",
         "corria antes",
-        "nao gosta de correr",
+        "não gosta de correr",
         "vai parar de correr"
       ],
       "correta": "corria antes",
-      "comentario": "O verbo 'voltou' indica acao anterior.",
+      "comentario": "O verbo 'voltou' indica ação anterior.",
       "tempoEstimado": 40,
       "tags": [
         "pressuposto"
@@ -2993,22 +2993,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Se muitas pessoas acreditam, entao deve ser verdade.' O erro e:",
+      "enunciado": "Leia: 'Se muitas pessoas acreditam, então deve ser verdade.' O erro e:",
       "opcoes": [
         "erro de ortografia",
-        "falta de coesao",
+        "falta de coesão",
         "confundir crença com verdade",
         "uso incorreto de verbo"
       ],
       "correta": "confundir crença com verdade",
-      "comentario": "A crença coletiva nao garante veracidade.",
+      "comentario": "A crença coletiva não garante veracidade.",
       "tempoEstimado": 55,
       "tags": [
         "pegadinha"
@@ -3030,9 +3030,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
@@ -3045,7 +3045,7 @@ export const interpretacaoAvancadaEnem = {
         "Ele se esforcou, assim venceu."
       ],
       "correta": "Ele se esforcou, assim venceu.",
-      "comentario": "A relacao de consequencia e mantida.",
+      "comentario": "A relação de consequência e mantida.",
       "tempoEstimado": 55,
       "tags": [
         "equivalencia-de-formas"
@@ -3067,8 +3067,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Tema principal",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -3104,8 +3104,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Finalidade do texto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -3119,7 +3119,7 @@ export const interpretacaoAvancadaEnem = {
         "descrever um ambiente"
       ],
       "correta": "convencer o leitor a economizar energia",
-      "comentario": "O texto orienta uma acao com objetivo persuasivo.",
+      "comentario": "O texto orienta uma ação com objetivo persuasivo.",
       "tempoEstimado": 20,
       "tags": [
         "finalidade"
@@ -3141,21 +3141,21 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Inferencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Mesmo com treinamento, o desempenho nao melhorou.' Infere-se que:",
+      "enunciado": "Leia: 'Mesmo com treinamento, o desempenho não melhorou.' Infere-se que:",
       "opcoes": [
         "o treinamento foi eficaz",
         "o desempenho melhorou muito",
-        "o treinamento nao foi suficiente",
-        "nao houve treinamento"
+        "o treinamento não foi suficiente",
+        "não houve treinamento"
       ],
-      "correta": "o treinamento nao foi suficiente",
+      "correta": "o treinamento não foi suficiente",
       "comentario": "A permanencia do problema indica insuficiencia do treinamento.",
       "tempoEstimado": 25,
       "tags": [
@@ -3178,17 +3178,17 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Tese e ponto de vista",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'A educacao digital deve ser acompanhada de formacao critica para evitar a desinformacao.' A tese e:",
+      "enunciado": "Leia: 'A educação digital deve ser acompanhada de formação crítica para evitar a desinformacao.' a tese é:",
       "opcoes": [
         "a tecnologia e prejudicial",
-        "a educacao digital dispensa orientacao",
+        "a educação digital dispensa orientacao",
         "a escola deve proibir o uso de tecnologia",
         "e necessorio desenvolver pensamento critico no uso da tecnologia"
       ],
@@ -3215,8 +3215,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Escolha vocabular",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -3252,8 +3252,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -3267,7 +3267,7 @@ export const interpretacaoAvancadaEnem = {
         "precisao"
       ],
       "correta": "rapidez",
-      "comentario": "A comparacao indica velocidade de propagacao.",
+      "comentario": "A comparacao indica velocidade de propagação.",
       "tempoEstimado": 35,
       "tags": [
         "efeito-de-sentido"
@@ -3289,8 +3289,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Ironia e humor",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -3326,8 +3326,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pressuposto e subentendido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
@@ -3336,12 +3336,12 @@ export const interpretacaoAvancadaEnem = {
       "enunciado": "Leia: 'Ele voltou a estudar para o vestibular.' Pressupoe-se que:",
       "opcoes": [
         "nunca estudou",
-        "nao quer estudar",
-        "ja passou no vestibular",
-        "ja estudava antes"
+        "não quer estudar",
+        "já passou no vestibular",
+        "já estudava antes"
       ],
-      "correta": "ja estudava antes",
-      "comentario": "O verbo indica retomada de acao anterior.",
+      "correta": "já estudava antes",
+      "comentario": "O verbo indica retomada de ação anterior.",
       "tempoEstimado": 40,
       "tags": [
         "pressuposto"
@@ -3363,22 +3363,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Se muitos compartilham, entao e verdadeiro.' O erro esta em:",
+      "enunciado": "Leia: 'Se muitos compartilham, então é verdadeiro.' O erro está em:",
       "opcoes": [
         "confundir quantidade com verdade",
-        "erro de pontuacao",
-        "falta de concordancia",
+        "erro de pontuação",
+        "falta de concordância",
         "uso de linguagem figurada"
       ],
       "correta": "confundir quantidade com verdade",
-      "comentario": "Popularidade nao garante veracidade.",
+      "comentario": "Popularidade não garante veracidade.",
       "tempoEstimado": 55,
       "tags": [
         "pegadinha"
@@ -3400,9 +3400,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "comparacao",
@@ -3415,7 +3415,7 @@ export const interpretacaoAvancadaEnem = {
         "Ele estudou, embora conseguiu."
       ],
       "correta": "Ele estudou, assim conseguiu.",
-      "comentario": "A relacao de consequencia e mantida.",
+      "comentario": "A relação de consequência e mantida.",
       "tempoEstimado": 55,
       "tags": [
         "equivalencia-de-formas"
@@ -3437,8 +3437,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Tema principal",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -3447,12 +3447,12 @@ export const interpretacaoAvancadaEnem = {
       "enunciado": "Leia: 'A popularizacao das redes sociais modificou a forma como as pessoas constroem e expressam suas identidades.' O tema principal e:",
       "opcoes": [
         "a origem das redes sociais",
-        "a historia da comunicacao escrita",
-        "a influencia das redes sociais na construcao da identidade",
+        "a história da comunicacao escrita",
+        "a influencia das redes sociais na construção da identidade",
         "o funcionamento tecnico da internet"
       ],
-      "correta": "a influencia das redes sociais na construcao da identidade",
-      "comentario": "O texto aborda o impacto das redes sociais na formacao da identidade dos individuos.",
+      "correta": "a influencia das redes sociais na construção da identidade",
+      "comentario": "O texto aborda o impacto das redes sociais na formação da identidade dos individuos.",
       "tempoEstimado": 35,
       "tags": [
         "tema-principal"
@@ -3474,22 +3474,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Tese e ponto de vista",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Sem leitura critica, o acesso e informacao pode se transformar em desinformacao.' A tese e:",
+      "enunciado": "Leia: 'Sem leitura crítica, o acesso e informação pode se transformar em desinformacao.' a tese é:",
       "opcoes": [
-        "a informacao e sempre confiavel",
-        "o acesso e informacao e desnecessorio",
-        "a desinformacao nao existe",
-        "a leitura critica e essencial para interpretar informacoes"
+        "a informação e sempre confiável",
+        "o acesso e informação e desnecessorio",
+        "a desinformacao não existe",
+        "a leitura crítica e essencial para interpretar informações"
       ],
-      "correta": "a leitura critica e essencial para interpretar informacoes",
-      "comentario": "O autor defende a necessidade de leitura critica para evitar desinformacao.",
+      "correta": "a leitura crítica e essencial para interpretar informações",
+      "comentario": "O autor defende a necessidade de leitura crítica para evitar desinformacao.",
       "tempoEstimado": 35,
       "tags": [
         "tese"
@@ -3511,22 +3511,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Inferencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Mesmo com tantas opcoes disponéveis, ele nao encontrou o que procurava.' Infere-se que:",
+      "enunciado": "Leia: 'Mesmo com tantas opcoes disponéveis, ele não encontrou o que procurava.' Infere-se que:",
       "opcoes": [
-        "as opcoes nao atendiam as expectativas",
-        "nao havia opcoes",
-        "ele nao procurou direito",
+        "as opcoes não atendiam as expectativas",
+        "não havia opcoes",
+        "ele não procurou direito",
         "ele desistiu antes de procurar"
       ],
-      "correta": "as opcoes nao atendiam as expectativas",
-      "comentario": "A presenca de opcoes nao garantiu a satisfacao da busca.",
+      "correta": "as opcoes não atendiam as expectativas",
+      "comentario": "A presença de opcoes não garantiu a satisfacao da busca.",
       "tempoEstimado": 35,
       "tags": [
         "inferencia"
@@ -3548,8 +3548,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Finalidade do texto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -3558,12 +3558,12 @@ export const interpretacaoAvancadaEnem = {
       "enunciado": "Leia: 'Reduza o uso de plastico descartável e contribua para a preservacao dos oceanos.' A finalidade do texto e:",
       "opcoes": [
         "explicar o ciclo do plastico",
-        "convencer o leitor a adotar comportamento sustentavel",
+        "convencer o leitor a adotar comportamento sustentável",
         "relatar um fato historico",
         "descrever o oceano"
       ],
-      "correta": "convencer o leitor a adotar comportamento sustentavel",
-      "comentario": "O texto tem carater persuasivo e orienta uma acao.",
+      "correta": "convencer o leitor a adotar comportamento sustentável",
+      "comentario": "O texto tem caráter persuasivo e orienta uma ação.",
       "tempoEstimado": 35,
       "tags": [
         "finalidade"
@@ -3585,14 +3585,14 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'A informacao se espalhou como uma avalanche.' O efeito de sentido e:",
+      "enunciado": "Leia: 'A informação se espalhou como uma avalanche.' O efeito de sentido e:",
       "opcoes": [
         "lentidao",
         "organizacao",
@@ -3600,7 +3600,7 @@ export const interpretacaoAvancadaEnem = {
         "precisao"
       ],
       "correta": "rapidez intensa",
-      "comentario": "A comparacao reforca a ideia de propagacao rapida e intensa.",
+      "comentario": "A comparacao reforca a ideia de propagação rapida é intensa.",
       "tempoEstimado": 40,
       "tags": [
         "efeito-de-sentido"
@@ -3622,8 +3622,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Ironia e humor",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -3659,8 +3659,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pressuposto e subentendido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -3670,11 +3670,11 @@ export const interpretacaoAvancadaEnem = {
       "opcoes": [
         "trabalhava antes",
         "nunca trabalhou",
-        "nao quer trabalhar",
+        "não quer trabalhar",
         "vai parar de trabalhar"
       ],
       "correta": "trabalhava antes",
-      "comentario": "O verbo 'voltou' indica acao anterior.",
+      "comentario": "O verbo 'voltou' indica ação anterior.",
       "tempoEstimado": 40,
       "tags": [
         "pressuposto"
@@ -3696,21 +3696,21 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Comparacao entre textos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Texto 1 valoriza a tecnologia; Texto 2 critica seu uso excessivo. A relacao e:",
+      "enunciado": "Texto 1 valoriza a tecnologia; Texto 2 crítica seu uso excessivo. A relação e:",
       "opcoes": [
-        "contradicao absoluta",
-        "complementacao tematica",
+        "contradição absoluta",
+        "complementacao temática",
         "repeticao",
         "independencia"
       ],
-      "correta": "complementacao tematica",
+      "correta": "complementacao temática",
       "comentario": "Os textos abordam o mesmo tema sob perspectivas diferentes.",
       "tempoEstimado": 40,
       "tags": [
@@ -3733,22 +3733,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Muitos acreditam, logo e verdade.' O erro esta em:",
+      "enunciado": "Leia: 'Muitos acreditam, logo é verdade.' O erro está em:",
       "opcoes": [
         "erro de ortografia",
-        "erro de coesao",
+        "erro de coesão",
         "confundir opiniao com fato",
         "uso de metafora"
       ],
       "correta": "confundir opiniao com fato",
-      "comentario": "A crença coletiva nao garante veracidade.",
+      "comentario": "A crença coletiva não garante veracidade.",
       "tempoEstimado": 60,
       "tags": [
         "pegadinha"
@@ -3770,9 +3770,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "comparacao",
@@ -3785,7 +3785,7 @@ export const interpretacaoAvancadaEnem = {
         "Ele estudou, assim venceu."
       ],
       "correta": "Ele estudou, assim venceu.",
-      "comentario": "Mantem a relacao de consequencia.",
+      "comentario": "Mantem a relação de consequência.",
       "tempoEstimado": 55,
       "tags": [
         "equivalencia-de-formas"
@@ -3807,22 +3807,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Genero textual e funcao social",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Gênero textual e função social",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Cartaz em posto de saude: Vacinar e um gesto de cuidado coletivo. Procure a unidade mais proxima.' O genero e sua funcao social predominante sao:",
+      "enunciado": "Leia: 'Cartaz em posto de saude: Vacinar e um gesto de cuidado coletivo. Procure a unidade mais próxima.' O gênero e sua função social predominante são:",
       "opcoes": [
         "campanha institucional e orientacao publica",
         "relato pessoal e entretenimento",
         "cronica literaria e humor",
-        "artigo cientifico e aprofundamento teórico"
+        "artigo científico e aprofundamento teórico"
       ],
       "correta": "campanha institucional e orientacao publica",
-      "comentario": "O texto funciona como campanha de interesse publico e busca orientar o leitor para uma acao concreta.",
+      "comentario": "O texto funciona como campanha de interesse publico e busca orientar o leitor para uma ação concreta.",
       "tempoEstimado": 35,
       "tags": [
         "genero-textual",
@@ -3845,9 +3845,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Informacao implicita",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Informação implícita",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "inferencia",
@@ -3856,11 +3856,11 @@ export const interpretacaoAvancadaEnem = {
       "opcoes": [
         "as notificacoes favoreciam a concentracao",
         "as notificacoes atrapalhavam a realizacao da tarefa",
-        "o artigo ja estava concluido",
+        "o artigo já estava concluido",
         "ela deixou de usar qualquer tecnologia"
       ],
       "correta": "as notificacoes atrapalhavam a realizacao da tarefa",
-      "comentario": "A acao de desligar as notificacoes sugere que elas funcionavam como distracao.",
+      "comentario": "A ação de desligar as notificacoes sugere que elas funcionavam como distracao.",
       "tempoEstimado": 35,
       "tags": [
         "informacao-implicita",
@@ -3883,14 +3883,14 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Estrategias argumentativas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Segundo dados do IBGE, o acesso a internet ampliou-se nas ultimas dácadas, o que exige novas discussoes sobre inclusao digital.' A estrategia argumentativa predominante e:",
+      "enunciado": "Leia: 'Segundo dados do IBGE, o acesso a internet ampliou-se nas ultimas dácadas, o que exige novas discussoes sobre inclusao digital.' A estratégia argumentativa predominante e:",
       "opcoes": [
         "apelo exclusivo a emocao",
         "narracao ficcional para convencer o leitor",
@@ -3921,21 +3921,21 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Relacao entre texto verbal e nao verbal",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Relação entre texto verbal e não verbal",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em um cartaz sobre economia de agua, aparece a frase 'Cada gota conta' ao lado da imagem de uma torneira pingando sobre um planeta seco. A relacao entre linguagem verbal e nao verbal serve para:",
+      "enunciado": "Em um cartaz sobre economia de água, aparece a frase 'Cada gota conta' ao lado da imagem de uma torneira pingando sobre um planeta seco. A relação entre linguagem verbal e não verbal serve para:",
       "opcoes": [
         "repetir sem ampliar o sentido do enunciado",
-        "produzir humor sem relacao com o tema",
+        "produzir humor sem relação com o tema",
         "substituir completamente a necessidade do texto escrito",
-        "reforcar visualmente a ideia de escassez e responsabilidade coletiva"
+        "reforçar visualmente a ideia de escassez é responsabilidade coletiva"
       ],
-      "correta": "reforcar visualmente a ideia de escassez e responsabilidade coletiva",
+      "correta": "reforçar visualmente a ideia de escassez é responsabilidade coletiva",
       "comentario": "A imagem amplia o sentido da frase ao associar o desperdicio a um problema ambiental mais amplo.",
       "tempoEstimado": 40,
       "tags": [
@@ -3959,19 +3959,19 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Genero textual e funcao social",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Gênero textual e função social",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Editorial: A escola nao pode tratar a leitura como tarefa mecanica, mas como experiencia de formacao critica.' A funcao social mais evidente desse genero e:",
+      "enunciado": "Leia: 'Editorial: A escola não pode tratar a leitura como tarefa mecanica, mas como experiencia de formação crítica.' A função social mais evidente desse gênero e:",
       "opcoes": [
         "defender um posicionamento institucional sobre tema publico",
         "registrar memorias pessoais",
         "apresentar instrucoes passo a passo",
-        "relatar um experimento cientifico"
+        "relatar um experimento científico"
       ],
       "correta": "defender um posicionamento institucional sobre tema publico",
       "comentario": "O editorial expressa um ponto de vista institucional sobre uma questao de interesse coletivo.",
@@ -3997,9 +3997,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Informacao implicita",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Informação implícita",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "inferencia",
@@ -4012,7 +4012,7 @@ export const interpretacaoAvancadaEnem = {
         "o sinal se refere ao horario escolar"
       ],
       "correta": "a reuniao foi interrompida por um problema tecnico",
-      "comentario": "A queda do sinal sugere falha de conexao, o que teria impedido a continuidade da reuniao.",
+      "comentario": "A queda do sinal sugere falha de conexão, o que teria impedido a continuidade da reuniao.",
       "tempoEstimado": 40,
       "tags": [
         "informacao-implicita",
@@ -4035,22 +4035,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Estrategias argumentativas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Nao se trata apenas de ampliar o numero de vagas, mas de garantir permanencia e aprendizagem efetiva.' A estrategia argumentativa presente consiste em:",
+      "enunciado": "Leia: 'Não se trata apenas de ampliar o número de vagas, mas de garantir permanencia e aprendizagem efetiva.' A estratégia argumentativa presente consiste em:",
       "opcoes": [
         "restringir o problema a um unico fator",
         "abandonar a tese inicial",
-        "reformular o debate para ampliar o foco da discussao",
+        "reformular o debate para ampliar o foco da discussão",
         "substituir argumento por dado estatistico"
       ],
-      "correta": "reformular o debate para ampliar o foco da discussao",
-      "comentario": "O enunciado desloca a discussao de quantidade para qualidade, ampliando o escopo argumentativo.",
+      "correta": "reformular o debate para ampliar o foco da discussão",
+      "comentario": "O enunciado desloca a discussão de quantidade para qualidade, ampliando o escopo argumentativo.",
       "tempoEstimado": 40,
       "tags": [
         "estrategias-argumentativas",
@@ -4073,22 +4073,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Relacao entre texto verbal e nao verbal",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Relação entre texto verbal e não verbal",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Em uma campanha contra fake news, a frase 'Compartilhar sem checar tambem e escolher' aparece sobre a imagem de um dedo prestes a clicar em 'enviar'. O sentido produzido pela combinacao verbal e visual e:",
+      "enunciado": "Em uma campanha contra fake news, a frase 'Compartilhar sem checar também e escolher' aparece sobre a imagem de um dedo prestes a clicar em 'enviar'. O sentido produzido pela combinacao verbal e visual e:",
       "opcoes": [
         "neutralizar a responsabilidade do leitor sobre o compartilhamento",
         "mostrar que a imagem contradiz a frase do cartaz",
         "indicar que a mensagem deve ser lida apenas literalmente",
-        "sugerir que o ato de compartilhar envolve decisao e responsabilidade"
+        "sugerir que o ato de compartilhar envolve decisão e responsabilidade"
       ],
-      "correta": "sugerir que o ato de compartilhar envolve decisao e responsabilidade",
-      "comentario": "A imagem do clique reforca a ideia de que compartilhar informacao e um ato consciente e com consequencias.",
+      "correta": "sugerir que o ato de compartilhar envolve decisão e responsabilidade",
+      "comentario": "A imagem do clique reforca a ideia de que compartilhar informação é um ato consciente é com consequências.",
       "tempoEstimado": 40,
       "tags": [
         "texto-verbal-e-nao-verbal",
@@ -4111,8 +4111,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Escolha vocabular",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -4121,12 +4121,12 @@ export const interpretacaoAvancadaEnem = {
       "enunciado": "Leia: 'A proposta foi recebida com cauteloso entusiasmo pela comunidade escolar.' O efeito de sentido da expressao 'cauteloso entusiasmo' e:",
       "opcoes": [
         "sugerir apoio acompanhado de prudencia",
-        "indicar adesao imediata e sem reservas",
+        "indicar adesão imediata e sem reservas",
         "demonstrar rejeicao completa da proposta",
-        "expressar indiferenca em relacao ao tema"
+        "expressar indiferenca em relação ao tema"
       ],
       "correta": "sugerir apoio acompanhado de prudencia",
-      "comentario": "A combinacao lexical aproxima duas ideias para mostrar acolhimento com reserva e avaliacao critica.",
+      "comentario": "A combinacao lexical aproxima duas ideias para mostrar acolhimento com reserva e avaliação crítica.",
       "tempoEstimado": 40,
       "tags": [
         "escolha-vocabular",
@@ -4149,8 +4149,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Escolha vocabular",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -4159,12 +4159,12 @@ export const interpretacaoAvancadaEnem = {
       "enunciado": "Leia: 'O autor desmonta, com delicada ironia, a ideia de neutralidade das plataformas digitais.' A expressao 'delicada ironia' sugere que o texto:",
       "opcoes": [
         "abandona qualquer posicionamento critico",
-        "critica o tema de modo sutil, sem abandonar a contundencia",
-        "adota linguagem puramente tecnica e objetiva",
+        "crítica o tema de modo sutil, sem abandonar a contundencia",
+        "adota linguagem puramente técnica e objetiva",
         "transforma a ironia em elogio direto"
       ],
-      "correta": "critica o tema de modo sutil, sem abandonar a contundencia",
-      "comentario": "A escolha vocabular mostra que a critica e construida de modo indireto e refinado, e nao por ataque explicito.",
+      "correta": "crítica o tema de modo sutil, sem abandonar a contundencia",
+      "comentario": "A escolha vocabular mostra que a crítica e construida de modo indireto e refinado, e não por ataque explícito.",
       "tempoEstimado": 40,
       "tags": [
         "escolha-vocabular",
@@ -4187,22 +4187,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Tema principal",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'A valorizacao da ciencia tornou-se fundamental em um mundo cada vez mais dependente de tecnologia.' O tema principal e:",
+      "enunciado": "Leia: 'A valorizacao da ciência tornou-se fundamental em um mundo cada vez mais dependente de tecnologia.' O tema principal e:",
       "opcoes": [
-        "a historia da ciencia",
-        "o avanao das máquinas",
-        "a importancia da ciencia na sociedade tecnologica",
+        "a história da ciência",
+        "o avanço das máquinas",
+        "a importancia da ciência na sociedade tecnologica",
         "a economia global"
       ],
-      "correta": "a importancia da ciencia na sociedade tecnologica",
-      "comentario": "O texto destaca o papel central da ciencia na sociedade atual.",
+      "correta": "a importancia da ciência na sociedade tecnologica",
+      "comentario": "O texto destaca o papel central da ciência na sociedade atual.",
       "tempoEstimado": 35,
       "tags": [
         "tema-principal"
@@ -4224,22 +4224,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Tese e ponto de vista",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Sem educacao de qualidade, nao ha desenvolvimento social sustentavel.' A tese e:",
+      "enunciado": "Leia: 'Sem educação de qualidade, não há desenvolvimento social sustentável.' a tese é:",
       "opcoes": [
-        "a educacao nao influencia a sociedade",
-        "a sustentabilidade nao e importante",
-        "a educacao e opcional",
-        "o desenvolvimento social depende da educacao"
+        "a educação não influencia a sociedade",
+        "a sustentabilidade não e importante",
+        "a educação e opcional",
+        "o desenvolvimento social depende da educação"
       ],
-      "correta": "o desenvolvimento social depende da educacao",
-      "comentario": "O autor relaciona diretamente educacao e desenvolvimento social.",
+      "correta": "o desenvolvimento social depende da educação",
+      "comentario": "O autor relaciona diretamente educação e desenvolvimento social.",
       "tempoEstimado": 35,
       "tags": [
         "tese"
@@ -4261,8 +4261,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Inferencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -4270,12 +4270,12 @@ export const interpretacaoAvancadaEnem = {
       "tipo": "multipla_escolha",
       "enunciado": "Leia: 'Mesmo com campanhas de conscientizacao, o problema continua.' Infere-se que:",
       "opcoes": [
-        "as campanhas nao foram suficientes",
+        "as campanhas não foram suficientes",
         "as campanhas resolveram o problema",
-        "nao houve campanhas",
+        "não houve campanhas",
         "o problema desapareceu"
       ],
-      "correta": "as campanhas nao foram suficientes",
+      "correta": "as campanhas não foram suficientes",
       "comentario": "A persistência do problema indica insuficiencia das campanhas.",
       "tempoEstimado": 35,
       "tags": [
@@ -4298,8 +4298,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Finalidade do texto",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -4308,12 +4308,12 @@ export const interpretacaoAvancadaEnem = {
       "enunciado": "Leia: 'Adote praticas sustentáveis no seu dia a dia e contribua para o futuro do planeta.' A finalidade e:",
       "opcoes": [
         "explicar um fenomeno natural",
-        "convencer o leitor a agir de forma sustentavel",
+        "convencer o leitor a agir de forma sustentável",
         "narrar um evento historico",
         "descrever um ambiente"
       ],
-      "correta": "convencer o leitor a agir de forma sustentavel",
-      "comentario": "O texto tem carater persuasivo.",
+      "correta": "convencer o leitor a agir de forma sustentável",
+      "comentario": "O texto tem caráter persuasivo.",
       "tempoEstimado": 35,
       "tags": [
         "finalidade"
@@ -4335,8 +4335,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -4350,7 +4350,7 @@ export const interpretacaoAvancadaEnem = {
         "organizacao"
       ],
       "correta": "rapidez intensa",
-      "comentario": "A comparacao reforca a ideia de propagacao rapida.",
+      "comentario": "A comparacao reforca a ideia de propagação rapida.",
       "tempoEstimado": 40,
       "tags": [
         "efeito-de-sentido"
@@ -4372,8 +4372,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Ironia e humor",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -4409,8 +4409,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pressuposto e subentendido",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
@@ -4418,13 +4418,13 @@ export const interpretacaoAvancadaEnem = {
       "tipo": "multipla_escolha",
       "enunciado": "Leia: 'Ele voltou a praticar esportes.' Pressupoe-se que:",
       "opcoes": [
-        "ja praticava antes",
+        "já praticava antes",
         "nunca praticou esportes",
-        "nao gosta de esportes",
+        "não gosta de esportes",
         "vai parar de praticar"
       ],
-      "correta": "ja praticava antes",
-      "comentario": "O verbo indica acao anterior.",
+      "correta": "já praticava antes",
+      "comentario": "O verbo indica ação anterior.",
       "tempoEstimado": 40,
       "tags": [
         "pressuposto"
@@ -4446,21 +4446,21 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Comparacao entre textos",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Texto 1 valoriza tecnologia; Texto 2 critica uso excessivo. Relacao:",
+      "enunciado": "Texto 1 valoriza tecnologia; Texto 2 crítica uso excessivo. Relação:",
       "opcoes": [
-        "contradicao absoluta",
-        "complementacao tematica",
+        "contradição absoluta",
+        "complementacao temática",
         "repeticao",
         "independencia"
       ],
-      "correta": "complementacao tematica",
+      "correta": "complementacao temática",
       "comentario": "Os textos abordam o mesmo tema com enfoques diferentes.",
       "tempoEstimado": 40,
       "tags": [
@@ -4483,22 +4483,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Se todos concordam, entao e verdade.' O erro esta em:",
+      "enunciado": "Leia: 'Se todos concordam, então é verdade.' O erro está em:",
       "opcoes": [
         "erro de ortografia",
-        "falta de pontuacao",
+        "falta de pontuação",
         "confundir consenso com verdade",
         "uso de metafora"
       ],
       "correta": "confundir consenso com verdade",
-      "comentario": "A concordancia nao garante veracidade.",
+      "comentario": "A concordância não garante veracidade.",
       "tempoEstimado": 60,
       "tags": [
         "pegadinha"
@@ -4520,9 +4520,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "comparacao",
@@ -4535,7 +4535,7 @@ export const interpretacaoAvancadaEnem = {
         "Ele estudou, assim venceu."
       ],
       "correta": "Ele estudou, assim venceu.",
-      "comentario": "Mantem a relacao de consequencia.",
+      "comentario": "Mantem a relação de consequência.",
       "tempoEstimado": 55,
       "tags": [
         "equivalencia-de-formas"
@@ -4557,22 +4557,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Tema principal",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'A cultura digital nao apenas amplia o acesso e informacao, mas tambem redefine as formas de interacao social.' O tema principal e:",
+      "enunciado": "Leia: 'A cultura digital não apenas amplia o acesso e informação, mas também redefine as formas de interacao social.' O tema principal e:",
       "opcoes": [
         "as mudancas sociais provocadas pela cultura digital",
         "o acesso e internet",
-        "a historia da tecnologia",
+        "a história da tecnologia",
         "os meios de comunicacao tradicionais"
       ],
       "correta": "as mudancas sociais provocadas pela cultura digital",
-      "comentario": "O foco esta nas transformacoes sociais causadas pela cultura digital.",
+      "comentario": "O foco está nas transformações sociais causadas pela cultura digital.",
       "tempoEstimado": 40,
       "tags": [
         "tema-principal"
@@ -4594,21 +4594,21 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Tese e ponto de vista",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'A formacao critica e indispensovel para que o cidadão nao seja manipulado pela informacao.' A tese e:",
+      "enunciado": "Leia: 'A formação crítica e indispensovel para que o cidadão não seja manipulado pela informação.' a tese é:",
       "opcoes": [
-        "a informacao e sempre manipuladora",
-        "a formacao critica e necessoria para autonomia do cidadão",
-        "o cidadão nao precisa de informacao",
-        "a manipulacao nao existe"
+        "a informação e sempre manipuladora",
+        "a formação crítica e necessoria para autonomia do cidadão",
+        "o cidadão não precisa de informação",
+        "a manipulacao não existe"
       ],
-      "correta": "a formacao critica e necessoria para autonomia do cidadão",
+      "correta": "a formação crítica e necessoria para autonomia do cidadão",
       "comentario": "O autor defende a importancia do pensamento critico.",
       "tempoEstimado": 40,
       "tags": [
@@ -4631,8 +4631,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Inferencia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -4641,11 +4641,11 @@ export const interpretacaoAvancadaEnem = {
       "enunciado": "Leia: 'Mesmo com diversas alternativas, o problema persiste.' Infere-se que:",
       "opcoes": [
         "as alternativas foram suficientes",
-        "nao existiam alternativas",
-        "as alternativas nao resolveram o problema",
-        "o problema nao existe"
+        "não existiam alternativas",
+        "as alternativas não resolveram o problema",
+        "o problema não existe"
       ],
-      "correta": "as alternativas nao resolveram o problema",
+      "correta": "as alternativas não resolveram o problema",
       "comentario": "A permanencia do problema indica ineficácia das alternativas.",
       "tempoEstimado": 40,
       "tags": [
@@ -4668,8 +4668,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Finalidade do texto",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -4683,7 +4683,7 @@ export const interpretacaoAvancadaEnem = {
         "convencer o leitor a mudar comportamento"
       ],
       "correta": "convencer o leitor a mudar comportamento",
-      "comentario": "O texto tem carater persuasivo.",
+      "comentario": "O texto tem caráter persuasivo.",
       "tempoEstimado": 40,
       "tags": [
         "finalidade"
@@ -4705,14 +4705,14 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'A informacao se espalha como polvora.' O efeito e:",
+      "enunciado": "Leia: 'A informação se espalha como polvora.' O efeito e:",
       "opcoes": [
         "rapidez extrema",
         "lentidao",
@@ -4720,7 +4720,7 @@ export const interpretacaoAvancadaEnem = {
         "organizacao"
       ],
       "correta": "rapidez extrema",
-      "comentario": "A expressao indica rapida propagacao.",
+      "comentario": "A expressao indica rapida propagação.",
       "tempoEstimado": 40,
       "tags": [
         "efeito-de-sentido"
@@ -4742,8 +4742,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Ironia e humor",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -4779,8 +4779,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pressuposto e subentendido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -4789,12 +4789,12 @@ export const interpretacaoAvancadaEnem = {
       "enunciado": "Leia: 'Ele voltou a frequentar a academia.' Pressupoe-se que:",
       "opcoes": [
         "nunca frequentou",
-        "nao gosta de academia",
+        "não gosta de academia",
         "frequentava antes",
         "vai parar de frequentar"
       ],
       "correta": "frequentava antes",
-      "comentario": "O verbo indica acao anterior.",
+      "comentario": "O verbo indica ação anterior.",
       "tempoEstimado": 40,
       "tags": [
         "pressuposto"
@@ -4816,21 +4816,21 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Comparacao entre textos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Texto 1 valoriza tecnologia; Texto 2 critica excessos. Relacao:",
+      "enunciado": "Texto 1 valoriza tecnologia; Texto 2 crítica excessos. Relação:",
       "opcoes": [
-        "contradicao absoluta",
+        "contradição absoluta",
         "repeticao",
         "independencia",
-        "complementacao tematica"
+        "complementacao temática"
       ],
-      "correta": "complementacao tematica",
+      "correta": "complementacao temática",
       "comentario": "Os textos abordam o mesmo tema sob perspectivas diferentes.",
       "tempoEstimado": 40,
       "tags": [
@@ -4853,22 +4853,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Se todos dizem, entao e verdade.' O erro esta em:",
+      "enunciado": "Leia: 'Se todos dizem, então é verdade.' O erro está em:",
       "opcoes": [
         "confundir opiniao com verdade",
         "erro de ortografia",
-        "falta de pontuacao",
+        "falta de pontuação",
         "uso de metafora"
       ],
       "correta": "confundir opiniao com verdade",
-      "comentario": "A opiniao coletiva nao garante veracidade.",
+      "comentario": "A opiniao coletiva não garante veracidade.",
       "tempoEstimado": 60,
       "tags": [
         "pegadinha"
@@ -4890,9 +4890,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
@@ -4905,7 +4905,7 @@ export const interpretacaoAvancadaEnem = {
         "Ele estudou, embora venceu."
       ],
       "correta": "Ele estudou, assim venceu.",
-      "comentario": "Mantem a relacao de consequencia.",
+      "comentario": "Mantem a relação de consequência.",
       "tempoEstimado": 55,
       "tags": [
         "equivalencia-de-formas"
@@ -4927,21 +4927,21 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Inferencia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Mesmo com tecnologia de ponta, a empresa nao conseguiu evitar falhas no sistema.' Infere-se que:",
+      "enunciado": "Leia: 'Mesmo com tecnologia de ponta, a empresa não conseguiu evitar falhas no sistema.' Infere-se que:",
       "opcoes": [
-        "a empresa nao usou tecnologia",
+        "a empresa não usou tecnologia",
         "o sistema funcionou perfeitamente",
-        "a tecnologia nao garante ausencia de falhas",
-        "a empresa nao tinha recursos"
+        "a tecnologia não garante ausência de falhas",
+        "a empresa não tinha recursos"
       ],
-      "correta": "a tecnologia nao garante ausencia de falhas",
+      "correta": "a tecnologia não garante ausência de falhas",
       "comentario": "O trecho sugere que, apesar da tecnologia, falhas ainda podem ocorrer.",
       "tempoEstimado": 40,
       "tags": [
@@ -4964,8 +4964,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Tema principal",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -4973,13 +4973,13 @@ export const interpretacaoAvancadaEnem = {
       "tipo": "multipla_escolha",
       "enunciado": "Leia: 'A dependencia excessiva de dispositivos digitais pode comprometer a autonomia intelectual dos individuos.' O tema principal e:",
       "opcoes": [
-        "o avanao tecnologico",
+        "o avanço tecnologico",
         "a criacao de dispositivos",
         "a evolução da internet",
         "os riscos da dependencia digital"
       ],
       "correta": "os riscos da dependencia digital",
-      "comentario": "O texto destaca consequencias negativas do uso excessivo de tecnologia.",
+      "comentario": "O texto destaca consequências negativas do uso excessivo de tecnologia.",
       "tempoEstimado": 40,
       "tags": [
         "tema-principal"
@@ -5001,22 +5001,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Tese e ponto de vista",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'A leitura nao e apenas um habito, mas uma ferramenta de transformacao social.' A tese e:",
+      "enunciado": "Leia: 'A leitura não e apenas um hábito, mas uma ferramenta de transformacao social.' a tese é:",
       "opcoes": [
         "a leitura tem papel transformador na sociedade",
         "a leitura e dispensovel",
         "a leitura e apenas lazer",
-        "a sociedade nao depende da leitura"
+        "a sociedade não depende da leitura"
       ],
       "correta": "a leitura tem papel transformador na sociedade",
-      "comentario": "O autor atribui e leitura uma funcao social importante.",
+      "comentario": "O autor atribui e leitura uma função social importante.",
       "tempoEstimado": 40,
       "tags": [
         "tese"
@@ -5038,14 +5038,14 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Finalidade do texto",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Evite o consumo excessivo e contribua para um planeta mais sustentavel.' A finalidade e:",
+      "enunciado": "Leia: 'Evite o consumo excessivo e contribua para um planeta mais sustentável.' A finalidade e:",
       "opcoes": [
         "explicar economia",
         "convencer o leitor a reduzir consumo",
@@ -5075,8 +5075,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -5090,7 +5090,7 @@ export const interpretacaoAvancadaEnem = {
         "organizacao"
       ],
       "correta": "rapidez intensa",
-      "comentario": "A expressao indica propagacao rapida.",
+      "comentario": "A expressao indica propagação rapida.",
       "tempoEstimado": 40,
       "tags": [
         "efeito-de-sentido"
@@ -5112,8 +5112,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Ironia e humor",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -5149,8 +5149,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pressuposto e subentendido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -5158,13 +5158,13 @@ export const interpretacaoAvancadaEnem = {
       "tipo": "multipla_escolha",
       "enunciado": "Leia: 'Ela voltou a escrever diariamente.' Pressupoe-se que:",
       "opcoes": [
-        "ja escrevia antes",
+        "já escrevia antes",
         "nunca escrevia",
-        "nao gosta de escrever",
+        "não gosta de escrever",
         "vai parar de escrever"
       ],
-      "correta": "ja escrevia antes",
-      "comentario": "O verbo indica retomada de acao anterior.",
+      "correta": "já escrevia antes",
+      "comentario": "O verbo indica retomada de ação anterior.",
       "tempoEstimado": 40,
       "tags": [
         "pressuposto"
@@ -5186,21 +5186,21 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Comparacao entre textos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Texto 1 valoriza leitura; Texto 2 critica desinteresse. Relacao:",
+      "enunciado": "Texto 1 valoriza leitura; Texto 2 crítica desinteresse. Relação:",
       "opcoes": [
-        "contradicao absoluta",
-        "complementacao tematica",
+        "contradição absoluta",
+        "complementacao temática",
         "repeticao",
         "independencia"
       ],
-      "correta": "complementacao tematica",
+      "correta": "complementacao temática",
       "comentario": "Os textos tratam do mesmo tema sob perspectivas diferentes.",
       "tempoEstimado": 40,
       "tags": [
@@ -5223,22 +5223,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Se e popular, entao e correto.' O erro esta em:",
+      "enunciado": "Leia: 'se é popular, então é correto.' O erro está em:",
       "opcoes": [
         "erro de ortografia",
-        "falta de coesao",
-        "confundir popularidade com correcao",
+        "falta de coesão",
+        "confundir popularidade com correção",
         "uso de metafora"
       ],
-      "correta": "confundir popularidade com correcao",
-      "comentario": "Popularidade nao garante correcao.",
+      "correta": "confundir popularidade com correção",
+      "comentario": "Popularidade não garante correção.",
       "tempoEstimado": 60,
       "tags": [
         "pegadinha"
@@ -5260,9 +5260,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "comparacao",
@@ -5275,7 +5275,7 @@ export const interpretacaoAvancadaEnem = {
         "Ele estudou, assim venceu."
       ],
       "correta": "Ele estudou, assim venceu.",
-      "comentario": "Mantem a relacao de consequencia.",
+      "comentario": "Mantem a relação de consequência.",
       "tempoEstimado": 55,
       "tags": [
         "equivalencia-de-formas"
@@ -5297,22 +5297,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Tema principal",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'A sobrecarga de informacoes no ambiente digital exige novas formas de seleção e analise por parte dos usuários.' O tema principal e:",
+      "enunciado": "Leia: 'A sobrecarga de informações no ambiente digital exige novas formas de seleção e análise por parte dos usuários.' O tema principal e:",
       "opcoes": [
-        "a necessidade de filtrar e analisar informacoes digitais",
+        "a necessidade de filtrar e analisar informações digitais",
         "o funcionamento da internet",
         "a criacao de redes sociais",
         "o uso de computadores"
       ],
-      "correta": "a necessidade de filtrar e analisar informacoes digitais",
-      "comentario": "O texto trata da exigência de habilidades criticas diante do excesso de informacao.",
+      "correta": "a necessidade de filtrar e analisar informações digitais",
+      "comentario": "O texto trata da exigência de habilidades criticas diante do excesso de informação.",
       "tempoEstimado": 40,
       "tags": [
         "tema-principal"
@@ -5334,22 +5334,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Tese e ponto de vista",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'O acesso e informacao nao garante conhecimento, pois este depende de interpretacao critica.' A tese e:",
+      "enunciado": "Leia: 'O acesso e informação não garante conhecimento, pois este depende de interpretação crítica.' a tese é:",
       "opcoes": [
-        "informacao e conhecimento sao iguais",
-        "o conhecimento depende da interpretacao critica",
-        "a informacao deve ser evitada",
+        "informação e conhecimento são iguais",
+        "o conhecimento depende da interpretação crítica",
+        "a informação deve ser evitada",
         "o conhecimento e automático"
       ],
-      "correta": "o conhecimento depende da interpretacao critica",
-      "comentario": "O autor diferencia informacao de conhecimento e destaca o papel da analise critica.",
+      "correta": "o conhecimento depende da interpretação crítica",
+      "comentario": "O autor diferencia informação de conhecimento e destaca o papel da análise crítica.",
       "tempoEstimado": 40,
       "tags": [
         "tese"
@@ -5371,8 +5371,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Inferencia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -5380,13 +5380,13 @@ export const interpretacaoAvancadaEnem = {
       "tipo": "multipla_escolha",
       "enunciado": "Leia: 'Mesmo com diversas alternativas, ele permaneceu insatisfeito.' Infere-se que:",
       "opcoes": [
-        "nao havia alternativas",
-        "ele nao tentou escolher",
-        "as alternativas nao atendiam as expectativas",
+        "não havia alternativas",
+        "ele não tentou escolher",
+        "as alternativas não atendiam as expectativas",
         "as alternativas eram iguais"
       ],
-      "correta": "as alternativas nao atendiam as expectativas",
-      "comentario": "A insatisfacao indica que as opcoes nao eram adequadas.",
+      "correta": "as alternativas não atendiam as expectativas",
+      "comentario": "A insatisfacao indica que as opcoes não eram adequadas.",
       "tempoEstimado": 40,
       "tags": [
         "inferencia"
@@ -5408,17 +5408,17 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Finalidade do texto",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Evite o desperdicio de alimentos e contribua para um mundo mais sustentavel.' A finalidade e:",
+      "enunciado": "Leia: 'Evite o desperdicio de alimentos e contribua para um mundo mais sustentável.' A finalidade e:",
       "opcoes": [
         "relatar um fato",
-        "explicar um conceito cientifico",
+        "explicar um conceito científico",
         "descrever um ambiente",
         "convencer o leitor a mudar comportamento"
       ],
@@ -5445,14 +5445,14 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Efeito de sentido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'A informacao se espalhou como uma faasca.' O efeito e:",
+      "enunciado": "Leia: 'A informação se espalhou como uma faasca.' O efeito e:",
       "opcoes": [
         "rapidez",
         "lentidao",
@@ -5460,7 +5460,7 @@ export const interpretacaoAvancadaEnem = {
         "precisao"
       ],
       "correta": "rapidez",
-      "comentario": "A comparacao indica velocidade de propagacao.",
+      "comentario": "A comparacao indica velocidade de propagação.",
       "tempoEstimado": 40,
       "tags": [
         "efeito-de-sentido"
@@ -5482,8 +5482,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Ironia e humor",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -5519,8 +5519,8 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pressuposto e subentendido",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -5529,12 +5529,12 @@ export const interpretacaoAvancadaEnem = {
       "enunciado": "Leia: 'Ele voltou a estudar inglas.' Pressupoe-se que:",
       "opcoes": [
         "nunca estudou inglas",
-        "nao gosta de inglas",
-        "ja estudava inglas antes",
+        "não gosta de inglas",
+        "já estudava inglas antes",
         "vai parar de estudar"
       ],
-      "correta": "ja estudava inglas antes",
-      "comentario": "O verbo indica retomada de acao anterior.",
+      "correta": "já estudava inglas antes",
+      "comentario": "O verbo indica retomada de ação anterior.",
       "tempoEstimado": 40,
       "tags": [
         "pressuposto"
@@ -5556,21 +5556,21 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Comparacao entre textos",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Texto 1 defende tecnologia; Texto 2 critica seu uso excessivo. Relacao:",
+      "enunciado": "Texto 1 defende tecnologia; Texto 2 crítica seu uso excessivo. Relação:",
       "opcoes": [
-        "contradicao absoluta",
+        "contradição absoluta",
         "repeticao",
         "independencia",
-        "complementacao tematica"
+        "complementacao temática"
       ],
-      "correta": "complementacao tematica",
+      "correta": "complementacao temática",
       "comentario": "Os textos abordam o mesmo tema sob perspectivas diferentes.",
       "tempoEstimado": 40,
       "tags": [
@@ -5593,22 +5593,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Se todos compartilham, entao e verdadeiro.' O erro esta em:",
+      "enunciado": "Leia: 'Se todos compartilham, então é verdadeiro.' O erro está em:",
       "opcoes": [
         "confundir popularidade com veracidade",
         "erro de ortografia",
-        "falta de coesao",
+        "falta de coesão",
         "uso de metafora"
       ],
       "correta": "confundir popularidade com veracidade",
-      "comentario": "A popularidade nao garante veracidade.",
+      "comentario": "A popularidade não garante veracidade.",
       "tempoEstimado": 60,
       "tags": [
         "pegadinha"
@@ -5630,9 +5630,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "comparacao",
@@ -5645,7 +5645,7 @@ export const interpretacaoAvancadaEnem = {
         "Ele estudou, embora venceu."
       ],
       "correta": "Ele estudou, assim venceu.",
-      "comentario": "Mantem a relacao de consequencia.",
+      "comentario": "Mantem a relação de consequência.",
       "tempoEstimado": 55,
       "tags": [
         "equivalencia-de-formas"
@@ -5667,9 +5667,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "inferencia",
@@ -5682,7 +5682,7 @@ export const interpretacaoAvancadaEnem = {
         "mal elaborado"
       ],
       "correta": "impactante de forma reflexiva",
-      "comentario": "O silencio sugere impacto profundo, que levou e reflexao, nao necessariamente e reacao imediata.",
+      "comentario": "O silencio sugere impacto profundo, que levou e reflexão, não necessariamente e reacao imediata.",
       "tempoEstimado": 60,
       "tags": [
         "interpretacao-indireta"
@@ -5704,9 +5704,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "comparacao",
@@ -5714,8 +5714,8 @@ export const interpretacaoAvancadaEnem = {
       "enunciado": "Assinale a alternativa equivalente a 'Embora estivesse cansado, continuou trabalhando':",
       "opcoes": [
         "Estava cansado, por isso continuou trabalhando.",
-        "Estava cansado, entao parou de trabalhar.",
-        "Estava cansado, mas nao continuou.",
+        "Estava cansado, então parou de trabalhar.",
+        "Estava cansado, mas não continuou.",
         "Mesmo cansado, continuou trabalhando."
       ],
       "correta": "Mesmo cansado, continuou trabalhando.",
@@ -5741,22 +5741,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'O texto foi amplamente compartilhado, portanto e confiavel.' A falha esta em:",
+      "enunciado": "Leia: 'O texto foi amplamente compartilhado, portanto é confiável.' A falha está em:",
       "opcoes": [
         "confundir popularidade com confiabilidade",
         "usar linguagem formal",
-        "nao usar exemplos",
+        "não usar exemplos",
         "falta de clareza"
       ],
       "correta": "confundir popularidade com confiabilidade",
-      "comentario": "O número de compartilhamentos nao garante a veracidade da informacao.",
+      "comentario": "O número de compartilhamentos não garante a veracidade da informação.",
       "tempoEstimado": 70,
       "tags": [
         "pegadinha"
@@ -5778,21 +5778,21 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
       "enunciado": "Leia: 'Ele leu o contrato inteiro antes de assinar, ao contrario da maioria.' Infere-se que a maioria:",
       "opcoes": [
-        "lê contratos com atencao",
-        "nao lê contratos completamente",
-        "nao assina contratos",
-        "nao entende contratos"
+        "lê contratos com atenção",
+        "não lê contratos completamente",
+        "não assina contratos",
+        "não entende contratos"
       ],
-      "correta": "nao lê contratos completamente",
+      "correta": "não lê contratos completamente",
       "comentario": "A expressao 'ao contrario da maioria' indica comportamento diferente do comum.",
       "tempoEstimado": 60,
       "tags": [
@@ -5815,22 +5815,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa equivalente a 'Ele nao estudou, logo nao passou':",
+      "enunciado": "Assinale a alternativa equivalente a 'Ele não estudou, logo não passou':",
       "opcoes": [
-        "Ele nao estudou, mas passou.",
-        "Ele nao estudou, embora passou.",
-        "Ele nao estudou, portanto nao passou.",
-        "Ele nao estudou, porem passou."
+        "Ele não estudou, mas passou.",
+        "Ele não estudou, embora passou.",
+        "Ele não estudou, portanto não passou.",
+        "Ele não estudou, porem passou."
       ],
-      "correta": "Ele nao estudou, portanto nao passou.",
-      "comentario": "A palavra 'portanto' mantem a relacao de consequencia.",
+      "correta": "Ele não estudou, portanto não passou.",
+      "comentario": "A palavra 'portanto' mantem a relação de consequência.",
       "tempoEstimado": 60,
       "tags": [
         "equivalencia-de-formas"
@@ -5852,21 +5852,21 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Ele respondeu com um sorriso, mas nao disse uma palavra.' Infere-se que ele:",
+      "enunciado": "Leia: 'Ele respondeu com um sorriso, mas não disse uma palavra.' Infere-se que ele:",
       "opcoes": [
         "concordou plenamente",
-        "nao entendeu a pergunta",
+        "não entendeu a pergunta",
         "estava confuso",
-        "preferiu nao se comprometer verbalmente"
+        "preferiu não se comprometer verbalmente"
       ],
-      "correta": "preferiu nao se comprometer verbalmente",
+      "correta": "preferiu não se comprometer verbalmente",
       "comentario": "O sorriso sem resposta verbal sugere evasao ou cautela.",
       "tempoEstimado": 70,
       "tags": [
@@ -5889,14 +5889,14 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Se e muito compartilhado, entao deve ser verdadeiro.' O erro logico e:",
+      "enunciado": "Leia: 'se é muito compartilhado, então deve ser verdadeiro.' O erro lógico é:",
       "opcoes": [
         "generalizacao indevida",
         "erro de ortografia",
@@ -5926,22 +5926,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Ele nao negou, mas tambem nao confirmou.' Infere-se que ele:",
+      "enunciado": "Leia: 'Ele não negou, mas também não confirmou.' Infere-se que ele:",
       "opcoes": [
         "aceitou a afirmacao",
         "manteve-se ambíguo",
         "rejeitou a afirmacao",
-        "nao ouviu a pergunta"
+        "não ouviu a pergunta"
       ],
       "correta": "manteve-se ambíguo",
-      "comentario": "A ausencia de confirmacao e negacao indica ambiguidade.",
+      "comentario": "A ausência de confirmacao e negacao indica ambiguidade.",
       "tempoEstimado": 60,
       "tags": [
         "interpretacao-indireta"
@@ -5963,22 +5963,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a equivalente a 'Ele estudou bastante, porem nao passou':",
+      "enunciado": "Assinale a equivalente a 'Ele estudou bastante, porem não passou':",
       "opcoes": [
-        "Ele estudou bastante, portanto nao passou.",
+        "Ele estudou bastante, portanto não passou.",
         "Ele estudou bastante, logo passou.",
-        "Ele estudou bastante, mas nao passou.",
+        "Ele estudou bastante, mas não passou.",
         "Ele estudou bastante, assim passou."
       ],
-      "correta": "Ele estudou bastante, mas nao passou.",
-      "comentario": "A conjuncao 'mas' mantem a relacao de oposicao.",
+      "correta": "Ele estudou bastante, mas não passou.",
+      "comentario": "A conjuncao 'mas' mantem a relação de oposicao.",
       "tempoEstimado": 60,
       "tags": [
         "equivalencia-de-formas"
@@ -6000,9 +6000,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "inferencia",
@@ -6011,7 +6011,7 @@ export const interpretacaoAvancadaEnem = {
       "opcoes": [
         "teve dificuldade",
         "foi cuidadoso",
-        "nao terminou a prova",
+        "não terminou a prova",
         "pode ter sido precipitado"
       ],
       "correta": "pode ter sido precipitado",
@@ -6037,22 +6037,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
       "enunciado": "Leia: 'Ele respondeu rapidamente a todas as questaes, mas errou a maioria.' Infere-se que ele:",
       "opcoes": [
-        "priorizou velocidade em vez de precisao",
+        "priorizou velocidade em vez de precisão",
         "foi cuidadoso ao responder",
-        "nao terminou a prova",
-        "compreendeu perfeitamente o conteudo"
+        "não terminou a prova",
+        "compreendeu perfeitamente o conteúdo"
       ],
-      "correta": "priorizou velocidade em vez de precisao",
-      "comentario": "A rapidez associada a erros indica falta de atencao ou reflexao.",
+      "correta": "priorizou velocidade em vez de precisão",
+      "comentario": "A rapidez associada a erros indica falta de atenção ou reflexão.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao-indireta"
@@ -6074,22 +6074,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'A maioria prefere essa opção, logo e a melhor.' O erro esta em:",
+      "enunciado": "Leia: 'A maioria prefere essa opção, logo é a melhor.' O erro está em:",
       "opcoes": [
         "erro de ortografia",
         "confundir preferencia com qualidade objetiva",
-        "falta de coesao",
-        "uso inadequado de pontuacao"
+        "falta de coesão",
+        "uso inadequado de pontuação"
       ],
       "correta": "confundir preferencia com qualidade objetiva",
-      "comentario": "A preferencia da maioria nao garante que algo seja objetivamente melhor.",
+      "comentario": "A preferencia da maioria não garante que algo seja objetivamente melhor.",
       "tempoEstimado": 70,
       "tags": [
         "pegadinha"
@@ -6111,22 +6111,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa equivalente a 'Apesar de estudar muito, ele nao obteve sucesso':",
+      "enunciado": "Assinale a alternativa equivalente a 'Apesar de estudar muito, ele não obteve sucesso':",
       "opcoes": [
         "Ele estudou muito, portanto teve sucesso.",
         "Ele estudou muito, logo obteve sucesso.",
-        "Ele estudou muito, mas nao obteve sucesso.",
+        "Ele estudou muito, mas não obteve sucesso.",
         "Ele estudou muito, assim obteve sucesso."
       ],
-      "correta": "Ele estudou muito, mas nao obteve sucesso.",
-      "comentario": "A conjuncao 'mas' mantem a relacao de oposicao.",
+      "correta": "Ele estudou muito, mas não obteve sucesso.",
+      "comentario": "A conjuncao 'mas' mantem a relação de oposicao.",
       "tempoEstimado": 60,
       "tags": [
         "equivalencia-de-formas"
@@ -6148,22 +6148,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Ele leu apenas o titulo da noticia antes de compartilhar.' Infere-se que ele:",
+      "enunciado": "Leia: 'Ele leu apenas o título da noticia antes de compartilhar.' Infere-se que ele:",
       "opcoes": [
-        "analisou profundamente o conteudo",
+        "analisou profundamente o conteúdo",
         "discordou da noticia",
         "escreveu a noticia",
         "agiu de forma precipitada"
       ],
       "correta": "agiu de forma precipitada",
-      "comentario": "Compartilhar sem ler o conteudo indica falta de analise critica.",
+      "comentario": "Compartilhar sem ler o conteúdo indica falta de análise crítica.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao-indireta"
@@ -6185,22 +6185,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a alternativa equivalente a 'Ele nao se preparou, por isso falhou':",
+      "enunciado": "Assinale a alternativa equivalente a 'Ele não se preparou, por isso falhou':",
       "opcoes": [
-        "Ele nao se preparou, portanto falhou.",
-        "Ele nao se preparou, mas teve sucesso.",
-        "Ele nao se preparou, embora falhou.",
-        "Ele nao se preparou, porem teve sucesso."
+        "Ele não se preparou, portanto falhou.",
+        "Ele não se preparou, mas teve sucesso.",
+        "Ele não se preparou, embora falhou.",
+        "Ele não se preparou, porem teve sucesso."
       ],
-      "correta": "Ele nao se preparou, portanto falhou.",
-      "comentario": "A conjuncao 'portanto' mantem a relacao de consequencia.",
+      "correta": "Ele não se preparou, portanto falhou.",
+      "comentario": "A conjuncao 'portanto' mantem a relação de consequência.",
       "tempoEstimado": 60,
       "tags": [
         "equivalencia-de-formas"
@@ -6222,9 +6222,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "inferencia",
@@ -6232,12 +6232,12 @@ export const interpretacaoAvancadaEnem = {
       "enunciado": "Leia: 'Ele evitou responder diretamente e pergunta.' Infere-se que ele:",
       "opcoes": [
         "respondeu claramente",
-        "nao quis se comprometer",
-        "nao ouviu a pergunta",
-        "nao entendeu o assunto"
+        "não quis se comprometer",
+        "não ouviu a pergunta",
+        "não entendeu o assunto"
       ],
-      "correta": "nao quis se comprometer",
-      "comentario": "Evitar resposta direta sugere intencao de nao se posicionar claramente.",
+      "correta": "não quis se comprometer",
+      "comentario": "Evitar resposta direta sugere intencao de não se posicionar claramente.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao-indireta"
@@ -6259,22 +6259,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Se muitos utilizam, entao e correto.' O erro esta em:",
+      "enunciado": "Leia: 'Se muitos utilizam, então é correto.' O erro está em:",
       "opcoes": [
         "erro de ortografia",
-        "falta de coerencia",
+        "falta de coerência",
         "confundir uso frequente com validade",
         "uso de linguagem figurada"
       ],
       "correta": "confundir uso frequente com validade",
-      "comentario": "A frequencia de uso nao garante correcao ou validade.",
+      "comentario": "A frequência de uso não garante correção ou validade.",
       "tempoEstimado": 70,
       "tags": [
         "pegadinha"
@@ -6296,22 +6296,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Assinale a equivalente a 'Ele se esforcou, mas nao conseguiu':",
+      "enunciado": "Assinale a equivalente a 'Ele se esforcou, mas não conseguiu':",
       "opcoes": [
         "Ele se esforcou, portanto conseguiu.",
         "Ele se esforcou, logo conseguiu.",
         "Ele se esforcou, assim conseguiu.",
-        "Ele se esforcou, porem nao conseguiu."
+        "Ele se esforcou, porem não conseguiu."
       ],
-      "correta": "Ele se esforcou, porem nao conseguiu.",
-      "comentario": "A conjuncao 'porem' mantem a relacao de oposicao.",
+      "correta": "Ele se esforcou, porem não conseguiu.",
+      "comentario": "A conjuncao 'porem' mantem a relação de oposicao.",
       "tempoEstimado": 60,
       "tags": [
         "equivalencia-de-formas"
@@ -6333,9 +6333,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "inferencia",
@@ -6348,7 +6348,7 @@ export const interpretacaoAvancadaEnem = {
         "teve tempo de sobra"
       ],
       "correta": "pode ter cometido erros por falta de revisao",
-      "comentario": "A ausencia de revisao sugere risco de erros.",
+      "comentario": "A ausência de revisao sugere risco de erros.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao-indireta"
@@ -6370,22 +6370,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Se todos concordam, entao esta correto.' O erro logico e:",
+      "enunciado": "Leia: 'Se todos concordam, então está correto.' O erro lógico é:",
       "opcoes": [
-        "erro de pontuacao",
+        "erro de pontuação",
         "confundir consenso com verdade",
         "falta de clareza",
         "uso inadequado de verbo"
       ],
       "correta": "confundir consenso com verdade",
-      "comentario": "O consenso nao garante a veracidade de uma afirmacao.",
+      "comentario": "O consenso não garante a veracidade de uma afirmacao.",
       "tempoEstimado": 70,
       "tags": [
         "pegadinha"
@@ -6407,21 +6407,21 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Ele sorriu, mas seus olhos nao acompanhavam o gesto.' Infere-se que ele:",
+      "enunciado": "Leia: 'Ele sorriu, mas seus olhos não acompanhavam o gesto.' Infere-se que ele:",
       "opcoes": [
         "estava genuinamente feliz",
         "estava emocionado",
-        "tentava aparentar algo que nao sentia",
-        "nao percebeu a situacao"
+        "tentava aparentar algo que não sentia",
+        "não percebeu a situação"
       ],
-      "correta": "tentava aparentar algo que nao sentia",
+      "correta": "tentava aparentar algo que não sentia",
       "comentario": "A discordância entre expressao facial e olhar indica falsidade ou dissimulacao.",
       "tempoEstimado": 70,
       "tags": [
@@ -6444,22 +6444,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Se e tradicional, entao e correto.' O erro esta em:",
+      "enunciado": "Leia: 'se é tradicional, então é correto.' O erro está em:",
       "opcoes": [
-        "erro de concordancia",
+        "erro de concordância",
         "uso de metafora",
-        "falta de pontuacao",
+        "falta de pontuação",
         "confundir tradicao com validade"
       ],
       "correta": "confundir tradicao com validade",
-      "comentario": "Algo ser tradicional nao garante sua correcao.",
+      "comentario": "Algo ser tradicional não garante sua correção.",
       "tempoEstimado": 70,
       "tags": [
         "pegadinha"
@@ -6481,9 +6481,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "comparacao",
@@ -6496,7 +6496,7 @@ export const interpretacaoAvancadaEnem = {
         "Ele insistiu, logo acertou."
       ],
       "correta": "Mesmo errado, ele insistiu.",
-      "comentario": "Mantem a relacao concessiva.",
+      "comentario": "Mantem a relação concessiva.",
       "tempoEstimado": 60,
       "tags": [
         "equivalencia-de-formas"
@@ -6518,9 +6518,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "inferencia",
@@ -6533,7 +6533,7 @@ export const interpretacaoAvancadaEnem = {
         "analisou profundamente"
       ],
       "correta": "aceitou passivamente",
-      "comentario": "A ausencia de questionamento indica postura passiva.",
+      "comentario": "A ausência de questionamento indica postura passiva.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao-indireta"
@@ -6555,9 +6555,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "comparacao",
@@ -6570,7 +6570,7 @@ export const interpretacaoAvancadaEnem = {
         "Ele estudou pouco, porem passou."
       ],
       "correta": "Ele estudou pouco, logo falhou.",
-      "comentario": "Mantem a relacao de consequencia.",
+      "comentario": "Mantem a relação de consequência.",
       "tempoEstimado": 60,
       "tags": [
         "equivalencia-de-formas"
@@ -6592,16 +6592,16 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Ele ouviu atentamente, mas nao respondeu.' Infere-se que:",
+      "enunciado": "Leia: 'Ele ouviu atentamente, mas não respondeu.' Infere-se que:",
       "opcoes": [
-        "nao entendeu",
+        "não entendeu",
         "discordou explicitamente",
         "interrompeu a fala",
         "evitou se posicionar"
@@ -6629,22 +6629,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'É antigo, entao funciona.' O erro e:",
+      "enunciado": "Leia: 'É antigo, então funciona.' O erro e:",
       "opcoes": [
         "confundir antiguidade com eficácia",
         "erro gramatical",
-        "falta de coesao",
+        "falta de coesão",
         "uso de metafora"
       ],
       "correta": "confundir antiguidade com eficácia",
-      "comentario": "Algo antigo nao necessariamente funciona melhor.",
+      "comentario": "Algo antigo não necessariamente funciona melhor.",
       "tempoEstimado": 70,
       "tags": [
         "pegadinha"
@@ -6666,9 +6666,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "inferencia",
@@ -6677,7 +6677,7 @@ export const interpretacaoAvancadaEnem = {
       "opcoes": [
         "foi detalhista",
         "foi econômico nas palavras",
-        "nao respondeu",
+        "não respondeu",
         "errou tudo"
       ],
       "correta": "foi econômico nas palavras",
@@ -6703,9 +6703,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "comparacao",
@@ -6740,22 +6740,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Todo mundo usa, entao e certo.' O erro esta em:",
+      "enunciado": "Leia: 'Todo mundo usa, então é certo.' O erro está em:",
       "opcoes": [
-        "erro sintatico",
+        "erro sintático",
         "uso figurado",
         "falta de vocabulario",
-        "confundir uso comum com correcao"
+        "confundir uso comum com correção"
       ],
-      "correta": "confundir uso comum com correcao",
-      "comentario": "Popularidade nao define correcao.",
+      "correta": "confundir uso comum com correção",
+      "comentario": "Popularidade não define correção.",
       "tempoEstimado": 70,
       "tags": [
         "pegadinha"
@@ -6777,9 +6777,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "inferencia",
@@ -6792,7 +6792,7 @@ export const interpretacaoAvancadaEnem = {
         "foi direto"
       ],
       "correta": "foi prolixo e pouco efetivo",
-      "comentario": "A oposicao indica excesso de fala com pouca informacao relevante.",
+      "comentario": "A oposicao indica excesso de fala com pouca informação relevante.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao-indireta"
@@ -6814,22 +6814,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Sempre foi feito assim, logo esta correto.' O erro esta em:",
+      "enunciado": "Leia: 'Sempre foi feito assim, logo está correto.' O erro está em:",
       "opcoes": [
-        "erro de pontuacao",
-        "confundir habito com validade",
+        "erro de pontuação",
+        "confundir hábito com validade",
         "falta de clareza",
         "uso de metafora"
       ],
-      "correta": "confundir habito com validade",
-      "comentario": "A repeticao de uma pratica nao garante sua correcao.",
+      "correta": "confundir hábito com validade",
+      "comentario": "A repetição de uma prática não garante sua correção.",
       "tempoEstimado": 70,
       "tags": [
         "pegadinha"
@@ -6851,16 +6851,16 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
       "enunciado": "Equivalente a 'Embora estivesse atrasado, ele participou':",
       "opcoes": [
-        "Ele estava atrasado, portanto nao participou.",
+        "Ele estava atrasado, portanto não participou.",
         "Ele estava atrasado, logo saiu.",
         "Ele estava atrasado, mas participou.",
         "Ele estava atrasado, assim desistiu."
@@ -6888,9 +6888,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "inferencia",
@@ -6898,12 +6898,12 @@ export const interpretacaoAvancadaEnem = {
       "enunciado": "Leia: 'Ele revisou o texto varias vezes antes de entregar.' Infere-se que ele:",
       "opcoes": [
         "foi descuidado",
-        "nao terminou",
-        "nao se importou",
+        "não terminou",
+        "não se importou",
         "foi meticuloso"
       ],
       "correta": "foi meticuloso",
-      "comentario": "A repeticao de revisao indica cuidado e atencao.",
+      "comentario": "A repetição de revisao indica cuidado e atenção.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao-indireta"
@@ -6925,22 +6925,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Se esta na internet, entao e verdade.' O erro esta em:",
+      "enunciado": "Leia: 'Se está na internet, então é verdade.' O erro está em:",
       "opcoes": [
         "confundir publicacao com veracidade",
         "erro ortográfico",
         "uso de metafora",
-        "falta de coesao"
+        "falta de coesão"
       ],
       "correta": "confundir publicacao com veracidade",
-      "comentario": "Nem toda informacao publicada e confiavel.",
+      "comentario": "Nem toda informação publicada e confiável.",
       "tempoEstimado": 70,
       "tags": [
         "pegadinha"
@@ -6962,22 +6962,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Equivalente a 'Ele nao estudou, mas conseguiu':",
+      "enunciado": "Equivalente a 'Ele não estudou, mas conseguiu':",
       "opcoes": [
-        "Ele nao estudou, logo falhou.",
-        "Ele nao estudou, porem conseguiu.",
-        "Ele nao estudou, portanto falhou.",
-        "Ele nao estudou, assim falhou."
+        "Ele não estudou, logo falhou.",
+        "Ele não estudou, porem conseguiu.",
+        "Ele não estudou, portanto falhou.",
+        "Ele não estudou, assim falhou."
       ],
-      "correta": "Ele nao estudou, porem conseguiu.",
-      "comentario": "Mantem a relacao de oposicao.",
+      "correta": "Ele não estudou, porem conseguiu.",
+      "comentario": "Mantem a relação de oposicao.",
       "tempoEstimado": 60,
       "tags": [
         "equivalencia-de-formas"
@@ -6999,9 +6999,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "inferencia",
@@ -7009,12 +7009,12 @@ export const interpretacaoAvancadaEnem = {
       "enunciado": "Leia: 'Ele evitou comentar o assunto em publico.' Infere-se que:",
       "opcoes": [
         "queria divulgar o assunto",
-        "nao conhecia o tema",
+        "não conhecia o tema",
         "preferiu manter reserva",
-        "nao foi questionado"
+        "não foi questionado"
       ],
       "correta": "preferiu manter reserva",
-      "comentario": "Evitar comentar sugere cautela ou intencao de nao expor opiniao.",
+      "comentario": "Evitar comentar sugere cautela ou intencao de não expor opiniao.",
       "tempoEstimado": 70,
       "tags": [
         "interpretacao-indireta"
@@ -7036,22 +7036,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Se todos fazem, entao e certo.' O erro esta em:",
+      "enunciado": "Leia: 'Se todos fazem, então é certo.' O erro está em:",
       "opcoes": [
-        "erro de pontuacao",
+        "erro de pontuação",
         "falta de clareza",
         "uso de metafora",
-        "confundir pratica comum com validade"
+        "confundir prática comum com validade"
       ],
-      "correta": "confundir pratica comum com validade",
-      "comentario": "A frequencia de uma pratica nao garante sua correcao.",
+      "correta": "confundir prática comum com validade",
+      "comentario": "A frequência de uma prática não garante sua correção.",
       "tempoEstimado": 70,
       "tags": [
         "pegadinha"
@@ -7073,22 +7073,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
       "enunciado": "Equivalente a 'Mesmo sem preparo, ele participou':",
       "opcoes": [
-        "Ele nao estava preparado, mas participou.",
-        "Ele nao estava preparado, portanto desistiu.",
-        "Ele nao estava preparado, logo saiu.",
-        "Ele nao estava preparado, assim nao participou."
+        "Ele não estava preparado, mas participou.",
+        "Ele não estava preparado, portanto desistiu.",
+        "Ele não estava preparado, logo saiu.",
+        "Ele não estava preparado, assim não participou."
       ],
-      "correta": "Ele nao estava preparado, mas participou.",
-      "comentario": "Mantem a relacao concessiva.",
+      "correta": "Ele não estava preparado, mas participou.",
+      "comentario": "Mantem a relação concessiva.",
       "tempoEstimado": 60,
       "tags": [
         "equivalencia-de-formas"
@@ -7110,9 +7110,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "inferencia",
@@ -7147,16 +7147,16 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Ele leu rapidamente o texto e disse que ja sabia tudo.' Infere-se que ele:",
+      "enunciado": "Leia: 'Ele leu rapidamente o texto é disse que já sabia tudo.' Infere-se que ele:",
       "opcoes": [
-        "dominava completamente o conteudo",
+        "dominava completamente o conteúdo",
         "estudou profundamente antes",
         "pode ter sido superficial na leitura",
         "revisou varias vezes"
@@ -7184,22 +7184,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'É muito comentado, entao e relevante.' O erro esta em:",
+      "enunciado": "Leia: 'É muito comentado, então é relevante.' O erro está em:",
       "opcoes": [
-        "erro de concordancia",
-        "falta de pontuacao",
+        "erro de concordância",
+        "falta de pontuação",
         "uso de linguagem figurada",
         "confundir visibilidade com relevancia"
       ],
       "correta": "confundir visibilidade com relevancia",
-      "comentario": "Algo ser comentado nao garante sua relevancia real.",
+      "comentario": "Algo ser comentado não garante sua relevancia real.",
       "tempoEstimado": 70,
       "tags": [
         "pegadinha"
@@ -7221,22 +7221,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Equivalente a 'Ele tentou, mas nao conseguiu':",
+      "enunciado": "Equivalente a 'Ele tentou, mas não conseguiu':",
       "opcoes": [
-        "Ele tentou, porem nao conseguiu.",
+        "Ele tentou, porem não conseguiu.",
         "Ele tentou, portanto conseguiu.",
         "Ele tentou, logo conseguiu.",
         "Ele tentou, assim conseguiu."
       ],
-      "correta": "Ele tentou, porem nao conseguiu.",
-      "comentario": "Mantem a relacao de oposicao.",
+      "correta": "Ele tentou, porem não conseguiu.",
+      "comentario": "Mantem a relação de oposicao.",
       "tempoEstimado": 60,
       "tags": [
         "equivalencia-de-formas"
@@ -7258,19 +7258,19 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "inferencia",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Ele revisou apenas parte do conteudo antes da prova.' Infere-se que:",
+      "enunciado": "Leia: 'Ele revisou apenas parte do conteúdo antes da prova.' Infere-se que:",
       "opcoes": [
         "teve preparo completo",
         "pode ter tido lacunas no estudo",
-        "nao estudou nada",
-        "dominava todo o conteudo"
+        "não estudou nada",
+        "dominava todo o conteúdo"
       ],
       "correta": "pode ter tido lacunas no estudo",
       "comentario": "A revisao parcial indica possovel incompletude no preparo.",
@@ -7295,22 +7295,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'Se e compartilhado por especialistas, entao e sempre correto.' O erro esta em:",
+      "enunciado": "Leia: 'se é compartilhado por especialistas, então é sempre correto.' O erro está em:",
       "opcoes": [
         "erro ortográfico",
-        "falta de coesao",
+        "falta de coesão",
         "generalizacao indevida",
         "uso de metafora"
       ],
       "correta": "generalizacao indevida",
-      "comentario": "Mesmo especialistas podem errar; nao ha garantia absoluta.",
+      "comentario": "Mesmo especialistas podem errar; não há garantia absoluta.",
       "tempoEstimado": 70,
       "tags": [
         "pegadinha"
@@ -7332,22 +7332,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "comparacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Equivalente a 'Ele nao se dedicou, por isso nao conseguiu':",
+      "enunciado": "Equivalente a 'Ele não se dedicou, por isso não conseguiu':",
       "opcoes": [
-        "Ele nao se dedicou, mas conseguiu.",
-        "Ele nao se dedicou, porem conseguiu.",
-        "Ele nao se dedicou, embora conseguiu.",
-        "Ele nao se dedicou, portanto nao conseguiu."
+        "Ele não se dedicou, mas conseguiu.",
+        "Ele não se dedicou, porem conseguiu.",
+        "Ele não se dedicou, embora conseguiu.",
+        "Ele não se dedicou, portanto não conseguiu."
       ],
-      "correta": "Ele nao se dedicou, portanto nao conseguiu.",
-      "comentario": "Mantem a relacao de consequencia.",
+      "correta": "Ele não se dedicou, portanto não conseguiu.",
+      "comentario": "Mantem a relação de consequência.",
       "tempoEstimado": 60,
       "tags": [
         "equivalencia-de-formas"
@@ -7369,9 +7369,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "inferencia",
@@ -7381,7 +7381,7 @@ export const interpretacaoAvancadaEnem = {
         "evitou exposicao ou aprofundamento",
         "foi detalhista",
         "dominava completamente",
-        "nao respondeu nada"
+        "não respondeu nada"
       ],
       "correta": "evitou exposicao ou aprofundamento",
       "comentario": "A escolha por respostas basicas indica cautela ou limitacao.",
@@ -7406,22 +7406,22 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Leia: 'É tendencia, entao e correto.' O erro esta em:",
+      "enunciado": "Leia: 'É tendência, então é correto.' O erro está em:",
       "opcoes": [
-        "erro de concordancia",
-        "confundir tendencia com validade",
-        "falta de pontuacao",
+        "erro de concordância",
+        "confundir tendência com validade",
+        "falta de pontuação",
         "uso de linguagem figurada"
       ],
-      "correta": "confundir tendencia com validade",
-      "comentario": "Algo ser tendencia nao garante correcao.",
+      "correta": "confundir tendência com validade",
+      "comentario": "Algo ser tendência não garante correção.",
       "tempoEstimado": 70,
       "tags": [
         "pegadinha"
@@ -7443,9 +7443,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Equivalencia de formas",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Equivalência de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "comparacao",
@@ -7458,7 +7458,7 @@ export const interpretacaoAvancadaEnem = {
         "Ele teve dificuldades, assim falhou."
       ],
       "correta": "Ele teve dificuldades, mas persistiu.",
-      "comentario": "Mantem a relacao concessiva.",
+      "comentario": "Mantem a relação concessiva.",
       "tempoEstimado": 60,
       "tags": [
         "equivalencia-de-formas"
@@ -7480,9 +7480,9 @@ export const interpretacaoAvancadaEnem = {
       "serie": [
         3
       ],
-      "materia": "Portugues",
-      "topico": "Interpretacao Avancada ENEM",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Português",
+      "topico": "Interpretação Avançada ENEM",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "inferencia",
@@ -7490,12 +7490,12 @@ export const interpretacaoAvancadaEnem = {
       "enunciado": "Leia: 'Ele respondeu com outra pergunta.' Infere-se que ele:",
       "opcoes": [
         "foi direto",
-        "nao entendeu a pergunta",
+        "não entendeu a pergunta",
         "respondeu corretamente",
         "tentou evitar ou redirecionar a resposta"
       ],
       "correta": "tentou evitar ou redirecionar a resposta",
-      "comentario": "Responder com outra pergunta indica evasao ou estrategia discursiva.",
+      "comentario": "Responder com outra pergunta indica evasao ou estratégia discursiva.",
       "tempoEstimado": 80,
       "tags": [
         "interpretacao-indireta"

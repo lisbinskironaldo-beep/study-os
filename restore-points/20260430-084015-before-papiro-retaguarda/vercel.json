@@ -1,0 +1,42 @@
+{
+  "crons": [
+    {
+      "path": "/api/ops/reviews/three-day-run",
+      "schedule": "0 9 */3 * *"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/auth/:route*",
+      "destination": "/api/auth-router?route=:route"
+    },
+    {
+      "source": "/api/mercado-pago/:route*",
+      "destination": "/api/mercado-pago-router?route=:route"
+    },
+    {
+      "source": "/api/premium/:route*",
+      "destination": "/api/premium-router?route=:route"
+    },
+    {
+      "source": "/api/questions/:route*",
+      "destination": "/api/questions-router?route=:route"
+    },
+    {
+      "source": "/api/northstar-app-manifest",
+      "destination": "/api/northstar-router?route=app-manifest"
+    },
+    {
+      "source": "/api/northstar-mcp",
+      "destination": "/api/northstar-router?route=mcp"
+    },
+    {
+      "source": "/api/ops",
+      "destination": "/api/ops-router"
+    },
+    {
+      "source": "/api/ops/:route*",
+      "destination": "/api/ops-router?route=:route"
+    }
+  ]
+}

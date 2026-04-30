@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NorthStar Control Plane</title>
+<title>Painel do dono - Papiro Tools</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
@@ -13,14 +13,14 @@
 <div class="ops-app-shell">
     <header class="ops-topbar">
         <div>
-            <p class="ops-kicker">NorthStar command center</p>
-            <h1>NorthStar Control Plane</h1>
-            <p class="ops-subtitle">Retaguarda multi-app do ecossistema NorthStar, preparada para operar portfolio, analise, backlog, bugs, financas e promocoes sem migrar dominio nesta fase.</p>
+            <p class="ops-kicker">Papiro Tools</p>
+            <h1>Painel do dono</h1>
+            <p class="ops-subtitle">Comece por aqui. A IA organiza as pendencias, mostra o que importa e deixa os detalhes tecnicos nos bastidores.</p>
         </div>
         <div class="ops-topbar-actions">
-            <a class="ops-link" href="../index.html">Voltar ao site</a>
-            <button id="opsRefreshBtn" class="ops-button ops-button-secondary" type="button">Atualizar</button>
-            <button id="opsLogoutBtn" class="ops-button ops-button-ghost hidden" type="button">Sair</button>
+            <a class="ops-link" href="../index.html" title="Volta para a pagina publica do Papiro">Voltar ao site</a>
+            <button id="opsRefreshBtn" class="ops-button ops-button-secondary" type="button" title="Recarrega todos os dados operacionais da retaguarda">Atualizar</button>
+            <button id="opsLogoutBtn" class="ops-button ops-button-ghost hidden" type="button" title="Encerra a sessao da retaguarda neste navegador">Sair</button>
         </div>
     </header>
 
@@ -29,68 +29,141 @@
     <main>
         <section id="opsLoginView" class="ops-login-view">
             <article class="ops-login-card">
-                <p class="ops-kicker">Acesso interno do ecossistema</p>
-                <h2>Entrar no NorthStar</h2>
-                <p>Use a senha configurada em <code>OPS_PANEL_PASSWORD</code> para liberar a retaguarda do NorthStar, hoje hospedada tecnicamente dentro do RotaNota, mas preparada para operar o ecossistema inteiro.</p>
+                <p class="ops-kicker">Acesso interno</p>
+                <h2>Entrar na retaguarda</h2>
+                <p>Use a senha da retaguarda para liberar o painel do Papiro Tools.</p>
                 <form id="opsLoginForm" class="ops-form">
                     <label>
                         <span>Senha</span>
                         <input id="opsPasswordInput" name="password" type="password" autocomplete="current-password" required>
                     </label>
-                    <button class="ops-button" type="submit">Entrar</button>
+                    <button class="ops-button" type="submit" title="Autentica e carrega os indicadores do Papiro">Entrar</button>
                 </form>
             </article>
         </section>
 
         <section id="opsDashboard" class="ops-dashboard hidden">
             <nav class="ops-nav" aria-label="Areas da retaguarda">
-                <button class="ops-nav-button is-active" type="button" data-ops-tab="overview">Overview</button>
-                <button class="ops-nav-button" type="button" data-ops-tab="financeiro">Financeiro</button>
-                <button class="ops-nav-button" type="button" data-ops-tab="growth">Growth</button>
-                <button class="ops-nav-button" type="button" data-ops-tab="copiloto">Copiloto</button>
-                <button class="ops-nav-button" type="button" data-ops-tab="promocoes">Promocoes</button>
-                <button class="ops-nav-button" type="button" data-ops-tab="governanca">Governanca</button>
-                <button class="ops-nav-button" type="button" data-ops-tab="apps">Apps</button>
-                <button class="ops-nav-button" type="button" data-ops-tab="alertas">Alertas</button>
+                <button class="ops-nav-button is-active" type="button" data-ops-tab="painel" title="O que fazer agora">Hoje</button>
+                <button class="ops-nav-button" type="button" data-ops-tab="financeiro" title="Vendas, assinantes e Mercado Pago">Vendas</button>
+                <button class="ops-nav-button" type="button" data-ops-tab="divulgacao" title="Posts, stories e roteiros">Divulgar</button>
+                <button class="ops-nav-button" type="button" data-ops-tab="growth" title="Crescimento e canais">Crescimento</button>
+                <button class="ops-nav-button" type="button" data-ops-tab="promocoes" title="Ofertas e campanhas internas">Ofertas</button>
+                <button class="ops-nav-button" type="button" data-ops-tab="revisao" title="IA, melhorias e historico">IA</button>
+                <button class="ops-nav-button" type="button" data-ops-tab="alertas" title="Problemas e bastidores tecnicos">Problemas</button>
             </nav>
 
-            <section class="ops-tab-panel is-active" data-ops-panel="overview">
-                <div id="opsOverviewCards" class="ops-card-grid"></div>
-                <div class="ops-two-column">
+            <section class="ops-tab-panel is-active" data-ops-panel="painel">
+                <article id="opsTodaySummary" class="ops-hero-card"></article>
+
+                <div class="ops-command-grid">
+                    <article class="ops-card ops-primary-card">
+                        <div class="ops-card-head">
+                            <div>
+                                <p class="ops-kicker">Prioridade</p>
+                                <h3>O que precisa da sua atencao</h3>
+                            </div>
+                        </div>
+                        <div id="opsActionQueue" class="ops-list"></div>
+                    </article>
+
+                    <aside class="ops-side-stack">
+                        <article class="ops-card">
+                            <div class="ops-card-head">
+                                <div>
+                                    <p class="ops-kicker">IA operando</p>
+                                    <h3>Acoes de 1 clique</h3>
+                                </div>
+                            </div>
+                            <div class="ops-quick-actions">
+                                <button id="opsRunHealthBtn" class="ops-button" type="button">Verificar tudo</button>
+                                <button id="opsQuickMarketingBtn" class="ops-button ops-button-secondary" type="button">Criar posts sem custo</button>
+                                <button id="opsClearTechAlertsBtn" class="ops-button ops-button-ghost" type="button">Limpar avisos tecnicos</button>
+                            </div>
+                        </article>
+
+                        <article class="ops-card">
+                            <div class="ops-card-head">
+                                <div>
+                                    <p class="ops-kicker">Placar simples</p>
+                                    <h3>Agora</h3>
+                                </div>
+                            </div>
+                            <div id="opsOwnerMetrics" class="ops-mini-metrics"></div>
+                        </article>
+                    </aside>
+                </div>
+
+                <div class="ops-three-column">
                     <article class="ops-card">
                         <div class="ops-card-head">
                             <div>
-                                <p class="ops-kicker">Ecossistema em tempo real</p>
-                                <h3>Lanes e controles centrais</h3>
+                                <p class="ops-kicker">Dinheiro</p>
+                                <h3>Vendas e assinantes</h3>
                             </div>
                         </div>
-                        <div id="opsLaneState" class="ops-inline-stack"></div>
-                        <div class="ops-button-row">
-                            <button class="ops-button ops-button-secondary" type="button" data-ops-action="pause_free_lane">Pausar free lane</button>
-                            <button class="ops-button ops-button-secondary" type="button" data-ops-action="resume_free_lane">Retomar free lane</button>
-                            <button class="ops-button ops-button-secondary" type="button" data-ops-action="pause_premium_lane">Pausar premium lane</button>
-                            <button class="ops-button ops-button-secondary" type="button" data-ops-action="resume_premium_lane">Retomar premium lane</button>
-                            <button class="ops-button ops-button-ghost" type="button" data-ops-action="recheck_provider_status">Rechecar provider</button>
-                        </div>
+                        <div id="opsMoneySnapshot" class="ops-snapshot"></div>
                     </article>
 
                     <article class="ops-card">
                         <div class="ops-card-head">
                             <div>
-                                <p class="ops-kicker">Busca transversal</p>
-                                <h3>Customer, material, pagamento e entitlement</h3>
+                                <p class="ops-kicker">Divulgacao</p>
+                                <h3>Conteudo pronto</h3>
                             </div>
                         </div>
-                        <form id="opsSearchForm" class="ops-form">
-                            <label>
-                                <span>Busca</span>
-                                <input id="opsSearchInput" name="query" type="search" placeholder="customerId, materialHash, paymentId...">
-                            </label>
-                            <button class="ops-button" type="submit">Buscar</button>
-                        </form>
-                        <div id="opsSearchResults" class="ops-search-results"></div>
+                        <div id="opsContentSnapshot" class="ops-snapshot"></div>
+                    </article>
+
+                    <article class="ops-card">
+                        <div class="ops-card-head">
+                            <div>
+                                <p class="ops-kicker">Saude</p>
+                                <h3>Site e Mercado Pago</h3>
+                            </div>
+                        </div>
+                        <div id="opsOverviewCards" class="ops-card-grid ops-card-grid-tight"></div>
                     </article>
                 </div>
+
+                <details class="ops-details-card">
+                    <summary>Bastidores e controles manuais</summary>
+                    <div class="ops-two-column ops-details-grid">
+                        <article class="ops-card">
+                            <div class="ops-card-head">
+                                <div>
+                                    <p class="ops-kicker">Controles de seguranca</p>
+                                    <h3>Pausas do sistema</h3>
+                                </div>
+                            </div>
+                            <div id="opsLaneState" class="ops-inline-stack"></div>
+                            <div class="ops-button-row">
+                                <button class="ops-button ops-button-secondary" type="button" data-ops-action="pause_free_lane" title="Bloqueia temporariamente geracoes gratuitas quando houver risco de custo ou abuso">Pausar gratuito</button>
+                                <button class="ops-button ops-button-secondary" type="button" data-ops-action="resume_free_lane" title="Libera novamente a geracao gratuita do Papiro">Retomar gratuito</button>
+                                <button class="ops-button ops-button-secondary" type="button" data-ops-action="pause_premium_lane" title="Pausa recursos premium em caso de incidente operacional">Pausar premium</button>
+                                <button class="ops-button ops-button-secondary" type="button" data-ops-action="resume_premium_lane" title="Reativa os recursos premium apos resolver o incidente">Retomar premium</button>
+                                <button class="ops-button ops-button-ghost" type="button" data-ops-action="recheck_provider_status" title="Atualiza o estado da IA, pagamentos e configuracoes criticas">Rechecar sistema</button>
+                            </div>
+                        </article>
+
+                        <article class="ops-card">
+                            <div class="ops-card-head">
+                                <div>
+                                    <p class="ops-kicker">Busca</p>
+                                    <h3>Cliente, material ou pagamento</h3>
+                                </div>
+                            </div>
+                            <form id="opsSearchForm" class="ops-form">
+                                <label>
+                                    <span>Busca</span>
+                                    <input id="opsSearchInput" name="query" type="search" placeholder="email, cliente, pagamento...">
+                                </label>
+                                <button class="ops-button" type="submit" title="Procura registros relacionados nos bastidores operacionais">Buscar</button>
+                            </form>
+                            <div id="opsSearchResults" class="ops-search-results"></div>
+                        </article>
+                    </div>
+                </details>
             </section>
 
             <section class="ops-tab-panel" data-ops-panel="financeiro">
@@ -98,8 +171,8 @@
                     <article class="ops-card">
                         <div class="ops-card-head">
                             <div>
-                                <p class="ops-kicker">Pagamentos</p>
-                                <h3>Checkout e webhooks recentes</h3>
+                                <p class="ops-kicker">Vendas</p>
+                                <h3>Pagamentos recentes</h3>
                             </div>
                         </div>
                         <div id="opsPaymentsList" class="ops-list"></div>
@@ -108,8 +181,8 @@
                     <article class="ops-card">
                         <div class="ops-card-head">
                             <div>
-                                <p class="ops-kicker">Entitlements</p>
-                                <h3>Premium ativo no backend</h3>
+                                <p class="ops-kicker">Clientes premium</p>
+                                <h3>Assinantes ativos</h3>
                             </div>
                         </div>
                         <div id="opsEntitlementsList" class="ops-list"></div>
@@ -119,8 +192,8 @@
                 <article class="ops-card">
                     <div class="ops-card-head">
                         <div>
-                            <p class="ops-kicker">Status do provider</p>
-                            <h3>Mercado Pago e validacao do webhook</h3>
+                            <p class="ops-kicker">Mercado Pago</p>
+                            <h3>Status das vendas</h3>
                         </div>
                     </div>
                     <div id="opsPaymentsStatus" class="ops-list"></div>
@@ -129,20 +202,20 @@
                 <article class="ops-card">
                     <div class="ops-card-head">
                         <div>
-                            <p class="ops-kicker">Reconciliacao</p>
-                            <h3>Resync de pagamento</h3>
+                            <p class="ops-kicker">Corrigir venda</p>
+                            <h3>Reprocessar pagamento</h3>
                         </div>
                     </div>
                     <form id="opsResyncForm" class="ops-form ops-form-inline">
                         <label>
-                            <span>Payment ID</span>
+                            <span>Numero do pagamento</span>
                             <input name="paymentId" type="text" placeholder="1234567890" required>
                         </label>
                         <label>
                             <span>Motivo</span>
                             <input name="reason" type="text" placeholder="Webhook atrasado">
                         </label>
-                        <button class="ops-button" type="submit">Rodar resync</button>
+                        <button class="ops-button" type="submit" title="Forca a conferencia de um pagamento especifico">Reprocessar</button>
                     </form>
                 </article>
             </section>
@@ -152,8 +225,8 @@
                     <article class="ops-card">
                         <div class="ops-card-head">
                             <div>
-                                <p class="ops-kicker">Funil do mes</p>
-                                <h3>Resumo de growth</h3>
+                                <p class="ops-kicker">Crescimento</p>
+                                <h3>Como as pessoas chegam e compram</h3>
                             </div>
                         </div>
                         <div id="opsGrowthTotals" class="ops-card-grid ops-card-grid-tight"></div>
@@ -162,42 +235,27 @@
                     <article class="ops-card">
                         <div class="ops-card-head">
                             <div>
-                                <p class="ops-kicker">Spend manual</p>
-                                <h3>Lancar investimento por canal</h3>
+                                <p class="ops-kicker">Investimento manual</p>
+                                <h3>Anotar gasto por canal</h3>
                             </div>
                         </div>
                         <form id="opsSpendForm" class="ops-form">
                             <div class="ops-form-grid">
-                                <label>
-                                    <span>Inicio</span>
-                                    <input name="periodStart" type="date" required>
-                                </label>
-                                <label>
-                                    <span>Fim</span>
-                                    <input name="periodEnd" type="date" required>
-                                </label>
+                                <label><span>Inicio</span><input name="periodStart" type="date" required></label>
+                                <label><span>Fim</span><input name="periodEnd" type="date" required></label>
                                 <label>
                                     <span>Canal</span>
                                     <select name="channel">
-                                        <option value="internal_site">internal_site</option>
-                                        <option value="meta_ads">meta_ads</option>
-                                        <option value="google_ads">google_ads</option>
+                                        <option value="internal_site">Site</option>
+                                        <option value="meta_ads">Meta</option>
+                                        <option value="google_ads">Google</option>
                                     </select>
                                 </label>
-                                <label>
-                                    <span>Campanha</span>
-                                    <input name="campaign" type="text" placeholder="abril-concurso">
-                                </label>
-                                <label>
-                                    <span>Valor (BRL)</span>
-                                    <input name="amount" type="number" step="0.01" min="0" required>
-                                </label>
-                                <label>
-                                    <span>Observacao</span>
-                                    <input name="notes" type="text" placeholder="Teste de criativo">
-                                </label>
+                                <label><span>Campanha</span><input name="campaign" type="text" placeholder="abril-concurso"></label>
+                                <label><span>Valor (BRL)</span><input name="amount" type="number" step="0.01" min="0" required></label>
+                                <label><span>Observacao</span><input name="notes" type="text" placeholder="Teste de criativo"></label>
                             </div>
-                            <button class="ops-button" type="submit">Registrar spend</button>
+                            <button class="ops-button" type="submit" title="Registra gasto manual para comparar canal, campanha e resultado">Registrar investimento</button>
                         </form>
                     </article>
                 </div>
@@ -205,7 +263,7 @@
                 <article class="ops-card">
                     <div class="ops-card-head">
                         <div>
-                            <p class="ops-kicker">Canais e campanhas</p>
+                            <p class="ops-kicker">Canais</p>
                             <h3>Desempenho comparado</h3>
                         </div>
                     </div>
@@ -223,48 +281,41 @@
                 </article>
             </section>
 
-            <section class="ops-tab-panel" data-ops-panel="copiloto">
+            <section class="ops-tab-panel" data-ops-panel="divulgacao">
                 <div class="ops-two-column">
                     <article class="ops-card">
                         <div class="ops-card-head">
                             <div>
-                                <p class="ops-kicker">Gemini de fiscalizacao</p>
-                                <h3>Analises consultivas</h3>
+                                <p class="ops-kicker">Divulgacao IA</p>
+                                <h3>Fila organica sem custo</h3>
                             </div>
                         </div>
+                        <div id="opsMarketingSummary" class="ops-card-grid ops-card-grid-tight"></div>
                         <div class="ops-button-row">
-                            <button id="opsDailyDigestBtn" class="ops-button" type="button">Digest diario</button>
-                            <button id="opsWeeklyStrategyBtn" class="ops-button ops-button-secondary" type="button">Estrategia semanal</button>
+                            <button id="opsMarketingFallbackBtn" class="ops-button" type="button" title="Gera conteudo sem chamar ferramenta paga">Gerar sem custo</button>
+                            <button id="opsMarketingGenerateBtn" class="ops-button ops-button-secondary" type="button" title="Gera novos posts, stories e roteiros usando a IA configurada">Gerar com IA</button>
                         </div>
-                        <form id="opsCopilotForm" class="ops-form">
-                            <label>
-                                <span>Pergunta manual</span>
-                                <textarea name="query" rows="4" placeholder="Onde investir agora e o que pausar?"></textarea>
-                            </label>
-                            <button class="ops-button" type="submit">Rodar analise manual</button>
-                        </form>
                     </article>
 
                     <article class="ops-card">
                         <div class="ops-card-head">
                             <div>
-                                <p class="ops-kicker">Relatorio semanal</p>
-                                <h3>Texto pronto para revisao</h3>
+                                <p class="ops-kicker">Ferramentas gratuitas</p>
+                                <h3>Onde publicar/agendar</h3>
                             </div>
-                            <button id="opsWeeklyReportBtn" class="ops-button ops-button-ghost" type="button">Atualizar relatorio</button>
                         </div>
-                        <pre id="opsWeeklyReport" class="ops-pre"></pre>
+                        <div id="opsMarketingTools" class="ops-list"></div>
                     </article>
                 </div>
 
                 <article class="ops-card">
                     <div class="ops-card-head">
                         <div>
-                            <p class="ops-kicker">Resultado do copiloto</p>
-                            <h3>Diagnostico e plano</h3>
+                            <p class="ops-kicker">Proximos conteudos</p>
+                            <h3>Rascunhos prontos para revisar</h3>
                         </div>
                     </div>
-                    <div id="opsCopilotOutput" class="ops-copilot-output"></div>
+                    <div id="opsMarketingQueue" class="ops-list"></div>
                 </article>
             </section>
 
@@ -273,20 +324,20 @@
                     <article class="ops-card">
                         <div class="ops-card-head">
                             <div>
-                                <p class="ops-kicker">Modo global</p>
-                                <h3>Como as promocoes se comportam</h3>
+                                <p class="ops-kicker">Ofertas</p>
+                                <h3>Como o site oferece o premium</h3>
                             </div>
                         </div>
                         <form id="opsPromotionModeForm" class="ops-form ops-form-inline">
                             <label>
                                 <span>Modo</span>
                                 <select id="opsPromotionModeSelect" name="mode">
-                                    <option value="suggest">suggest</option>
-                                    <option value="approval_required">approval_required</option>
-                                    <option value="auto_rules">auto_rules</option>
+                                    <option value="suggest">So sugerir</option>
+                                    <option value="approval_required">Pedir aprovacao</option>
+                                    <option value="auto_rules">Aplicar regras automaticas</option>
                                 </select>
                             </label>
-                            <button class="ops-button" type="submit">Salvar modo</button>
+                            <button class="ops-button" type="submit" title="Define se promocoes viram sugestao, exigem aprovacao ou seguem regras automaticas">Salvar modo</button>
                         </form>
                         <div id="opsPromotionChannels" class="ops-inline-stack"></div>
                     </article>
@@ -294,54 +345,33 @@
                     <article class="ops-card">
                         <div class="ops-card-head">
                             <div>
-                                <p class="ops-kicker">Gerar draft</p>
-                                <h3>Oferta pronta para paywall</h3>
+                                <p class="ops-kicker">Criar oferta</p>
+                                <h3>A IA escreve para voce</h3>
                             </div>
                         </div>
                         <form id="opsPromotionGenerateForm" class="ops-form">
                             <div class="ops-form-grid">
                                 <label>
-                                    <span>Feature</span>
+                                    <span>Oferta</span>
                                     <select name="feature">
-                                        <option value="PREMIUM_LIBRARY">PREMIUM_LIBRARY</option>
-                                        <option value="PRACTICE_EXTRA_SERIES">PRACTICE_EXTRA_SERIES</option>
-                                        <option value="MINI_EXAM_EXTRA">MINI_EXAM_EXTRA</option>
-                                        <option value="HIGHLIGHT_EXPORT">HIGHLIGHT_EXPORT</option>
-                                        <option value="LARGE_PDF_UPLOAD">LARGE_PDF_UPLOAD</option>
-                                    </select>
-                                </label>
-                                <label>
-                                    <span>Surface</span>
-                                    <select name="surface">
-                                        <option value="premium_checkout">premium_checkout</option>
+                                        <option value="PREMIUM_LIBRARY">Biblioteca premium</option>
+                                        <option value="PRACTICE_EXTRA_SERIES">Treinos extras</option>
+                                        <option value="MINI_EXAM_EXTRA">Mini provas extras</option>
+                                        <option value="HIGHLIGHT_EXPORT">Exportar destaques</option>
+                                        <option value="LARGE_PDF_UPLOAD">PDF maior</option>
                                     </select>
                                 </label>
                                 <label>
                                     <span>Canal</span>
                                     <select name="channel">
-                                        <option value="internal_site">internal_site</option>
-                                        <option value="meta_ads">meta_ads</option>
-                                        <option value="google_ads">google_ads</option>
+                                        <option value="internal_site">Site</option>
+                                        <option value="meta_ads">Meta</option>
+                                        <option value="google_ads">Google</option>
                                     </select>
                                 </label>
-                                <label>
-                                    <span>Modo</span>
-                                    <select name="mode">
-                                        <option value="suggest">suggest</option>
-                                        <option value="approval_required">approval_required</option>
-                                        <option value="auto_rules">auto_rules</option>
-                                    </select>
-                                </label>
-                                <label>
-                                    <span>Audience</span>
-                                    <input name="audienceSource" type="text" placeholder="utm_campaign ou comportamento">
-                                </label>
-                                <label>
-                                    <span>Platform futura</span>
-                                    <input name="externalPlatform" type="text" placeholder="meta_ads, google_ads">
-                                </label>
+                                <label><span>Publico</span><input name="audienceSource" type="text" placeholder="ex: estudantes ENEM"></label>
                             </div>
-                            <button class="ops-button" type="submit">Gerar promocao</button>
+                            <button class="ops-button" type="submit" title="Cria um rascunho de campanha promocional para revisar ou aplicar">Gerar promocao</button>
                         </form>
                     </article>
                 </div>
@@ -350,46 +380,79 @@
                     <div class="ops-card-head">
                         <div>
                             <p class="ops-kicker">Campanhas</p>
-                            <h3>Drafts, ativas e pausadas</h3>
+                            <h3>Rascunhos, ativas e pausadas</h3>
                         </div>
                     </div>
                     <div id="opsPromotionList" class="ops-list"></div>
                 </article>
             </section>
 
-            <section class="ops-tab-panel" data-ops-panel="governanca">
+            <section class="ops-tab-panel" data-ops-panel="revisao">
                 <div class="ops-two-column">
                     <article class="ops-card">
                         <div class="ops-card-head">
                             <div>
-                                <p class="ops-kicker">Ciclo recorrente</p>
-                                <h3>Review de 3 dias</h3>
+                                <p class="ops-kicker">IA do Papiro</p>
+                                <h3>Pedir uma analise</h3>
                             </div>
-                            <button id="opsRunThreeDayReviewBtn" class="ops-button" type="button">Rodar agora</button>
                         </div>
-                        <div id="opsReviewSummary" class="ops-list"></div>
+                        <div class="ops-button-row">
+                            <button id="opsDailyDigestBtn" class="ops-button" type="button" title="Gera um resumo curto do estado atual do Papiro">Resumo de hoje</button>
+                            <button id="opsWeeklyStrategyBtn" class="ops-button ops-button-secondary" type="button" title="Pede uma leitura semanal de prioridade, crescimento e risco">Plano da semana</button>
+                            <button id="opsRunThreeDayReviewBtn" class="ops-button ops-button-secondary" type="button" title="Roda a revisao recorrente de 3 dias e cria tarefas">Revisao completa</button>
+                        </div>
+                        <form id="opsCopilotForm" class="ops-form">
+                            <label>
+                                <span>Pergunta manual</span>
+                                <textarea name="query" rows="4" placeholder="O que devo corrigir primeiro para melhorar conversao?"></textarea>
+                            </label>
+                            <button class="ops-button" type="submit" title="Envia uma pergunta livre para analise operacional">Rodar analise manual</button>
+                        </form>
                     </article>
 
                     <article class="ops-card">
                         <div class="ops-card-head">
                             <div>
-                                <p class="ops-kicker">Melhorias de site</p>
-                                <h3>Prioridades sugeridas pelo NorthStar</h3>
+                                <p class="ops-kicker">Relatorio semanal</p>
+                                <h3>Texto pronto para ler</h3>
                             </div>
+                            <button id="opsWeeklyReportBtn" class="ops-button ops-button-ghost" type="button" title="Atualiza o relatorio semanal com os dados mais recentes">Atualizar</button>
                         </div>
-                        <div id="opsSiteImprovements" class="ops-list"></div>
+                        <pre id="opsWeeklyReport" class="ops-pre"></pre>
                     </article>
                 </div>
 
                 <article class="ops-card">
                     <div class="ops-card-head">
                         <div>
-                            <p class="ops-kicker">Mudancas aguardando voce</p>
-                            <h3>Change requests e aprovacoes</h3>
+                            <p class="ops-kicker">Resultado</p>
+                            <h3>Diagnostico e plano</h3>
                         </div>
                     </div>
-                    <div id="opsChangeRequests" class="ops-list"></div>
+                    <div id="opsCopilotOutput" class="ops-copilot-output"></div>
                 </article>
+
+                <div class="ops-two-column">
+                    <article class="ops-card">
+                        <div class="ops-card-head">
+                            <div>
+                                <p class="ops-kicker">Melhorias do site</p>
+                                <h3>Ideias que podem virar tarefa</h3>
+                            </div>
+                        </div>
+                        <div id="opsSiteImprovements" class="ops-list"></div>
+                    </article>
+
+                    <article class="ops-card">
+                        <div class="ops-card-head">
+                            <div>
+                                <p class="ops-kicker">Tarefas da IA</p>
+                                <h3>Esperando sua decisao</h3>
+                            </div>
+                        </div>
+                        <div id="opsChangeRequests" class="ops-list"></div>
+                    </article>
+                </div>
 
                 <article class="ops-card">
                     <div class="ops-card-head">
@@ -402,249 +465,12 @@
                 </article>
             </section>
 
-            <section class="ops-tab-panel" data-ops-panel="apps">
-                <div class="ops-two-column">
-                    <article class="ops-card">
-                        <div class="ops-card-head">
-                            <div>
-                                <p class="ops-kicker">Aplicacoes do ecossistema</p>
-                                <h3>Portfolio operado pelo NorthStar</h3>
-                            </div>
-                            <button id="opsAppsCheckBtn" class="ops-button ops-button-secondary" type="button">Rodar checks</button>
-                        </div>
-                        <div id="opsAppsSummary" class="ops-card-grid ops-card-grid-tight"></div>
-                        <p class="ops-muted-copy">NorthStar e a marca-mae do ecossistema. Nesta fase o hub continua no host atual do RotaNota, mas o portfolio ja nasce multi-app, com slots de desenvolvimento, analise, melhorias, promocoes, financas e bugs para cada produto conectado.</p>
-                    </article>
-
-                    <article class="ops-card">
-                        <div class="ops-card-head">
-                            <div>
-                                <p class="ops-kicker">Adicionar ou atualizar</p>
-                                <h3>Cadastro operacional de app</h3>
-                            </div>
-                        </div>
-                        <form id="opsAppForm" class="ops-form">
-                            <div class="ops-form-grid">
-                                <label>
-                                    <span>App key</span>
-                                    <input name="appKey" type="text" placeholder="github" required>
-                                </label>
-                                <label>
-                                    <span>Nome</span>
-                                    <input name="name" type="text" placeholder="GitHub" required>
-                                </label>
-                                <label>
-                                    <span>Categoria</span>
-                                    <select name="category">
-                                        <option value="internal">internal</option>
-                                        <option value="management">management</option>
-                                        <option value="product">product</option>
-                                        <option value="platform">platform</option>
-                                        <option value="data">data</option>
-                                        <option value="payments">payments</option>
-                                        <option value="ai">ai</option>
-                                        <option value="code">code</option>
-                                        <option value="analytics">analytics</option>
-                                        <option value="automation">automation</option>
-                                        <option value="support">support</option>
-                                    </select>
-                                </label>
-                                <label>
-                                    <span>Status</span>
-                                    <select name="status">
-                                        <option value="planned">planned</option>
-                                        <option value="connected">connected</option>
-                                        <option value="attention">attention</option>
-                                        <option value="paused">paused</option>
-                                        <option value="disconnected">disconnected</option>
-                                    </select>
-                                </label>
-                                <label>
-                                    <span>Maturidade</span>
-                                    <select name="maturityStage">
-                                        <option value="planned">planned</option>
-                                        <option value="discovery">discovery</option>
-                                        <option value="pilot">pilot</option>
-                                        <option value="active_build">active_build</option>
-                                        <option value="live">live</option>
-                                    </select>
-                                </label>
-                                <label>
-                                    <span>Modo de gestao</span>
-                                    <select name="managementMode">
-                                        <option value="manual">manual</option>
-                                        <option value="api">api</option>
-                                        <option value="internal">internal</option>
-                                        <option value="hybrid">hybrid</option>
-                                    </select>
-                                </label>
-                                <label>
-                                    <span>Dashboard URL</span>
-                                    <input name="dashboardUrl" type="url" placeholder="https://...">
-                                </label>
-                                <label>
-                                    <span>Capabilities</span>
-                                    <input name="capabilities" type="text" placeholder="deployments, envs, domains">
-                                </label>
-                                <label>
-                                    <span>Scopes</span>
-                                    <input name="scopes" type="text" placeholder="production, preview">
-                                </label>
-                                <label>
-                                    <span>Modulos</span>
-                                    <input name="enabledModules" type="text" placeholder="dev, analytics, improvements, finance, bugs">
-                                </label>
-                            </div>
-                            <label>
-                                <span>Notas</span>
-                                <textarea name="notes" rows="3" placeholder="Como esse app entra na operacao e no lucro."></textarea>
-                            </label>
-                            <button class="ops-button" type="submit">Salvar app</button>
-                        </form>
-                    </article>
-                </div>
-
-                <article class="ops-card">
-                    <div class="ops-card-head">
-                        <div>
-                            <p class="ops-kicker">Mapa do ecossistema</p>
-                            <h3>Apps ativos, planejados e em atencao</h3>
-                        </div>
-                    </div>
-                    <div id="opsAppsList" class="ops-list"></div>
-                </article>
-
-                <article class="ops-card">
-                    <div class="ops-card-head">
-                        <div>
-                            <p class="ops-kicker">Workspace por app</p>
-                            <h3>Desenvolvimento, analise, melhorias, promocoes, financas e bugs</h3>
-                        </div>
-                    </div>
-                    <div id="opsAppsWorkspace" class="ops-list"></div>
-                </article>
-
-                <div class="ops-three-column">
-                    <article class="ops-card">
-                        <div class="ops-card-head">
-                            <div>
-                                <p class="ops-kicker">Backlog do ecossistema</p>
-                                <h3>Registrar melhoria ou iniciativa</h3>
-                            </div>
-                        </div>
-                        <form id="opsWorkItemForm" class="ops-form">
-                            <label>
-                                <span>App</span>
-                                <input name="appKey" type="text" placeholder="rota_nota" required>
-                            </label>
-                            <label>
-                                <span>Titulo</span>
-                                <input name="title" type="text" placeholder="Revisar fluxo premium" required>
-                            </label>
-                            <label>
-                                <span>Resumo</span>
-                                <textarea name="summary" rows="3" placeholder="Contexto, impacto e proximo passo"></textarea>
-                            </label>
-                            <div class="ops-form-grid">
-                                <label>
-                                    <span>Tipo</span>
-                                    <select name="itemType">
-                                        <option value="improvement">improvement</option>
-                                        <option value="initiative">initiative</option>
-                                    </select>
-                                </label>
-                                <label>
-                                    <span>Prioridade</span>
-                                    <input name="priority" type="number" min="0" step="1" value="100">
-                                </label>
-                            </div>
-                            <button class="ops-button" type="submit">Registrar melhoria</button>
-                        </form>
-                    </article>
-
-                    <article class="ops-card">
-                        <div class="ops-card-head">
-                            <div>
-                                <p class="ops-kicker">Recebimento de bugs</p>
-                                <h3>Abrir item de triagem</h3>
-                            </div>
-                        </div>
-                        <form id="opsBugForm" class="ops-form">
-                            <label>
-                                <span>App</span>
-                                <input name="appKey" type="text" placeholder="rota_nota" required>
-                            </label>
-                            <label>
-                                <span>Titulo</span>
-                                <input name="title" type="text" placeholder="Erro ao carregar dashboard" required>
-                            </label>
-                            <label>
-                                <span>Descricao</span>
-                                <textarea name="description" rows="3" placeholder="Sintoma, contexto e impacto"></textarea>
-                            </label>
-                            <div class="ops-form-grid">
-                                <label>
-                                    <span>Severidade</span>
-                                    <select name="severity">
-                                        <option value="medium">medium</option>
-                                        <option value="high">high</option>
-                                        <option value="critical">critical</option>
-                                        <option value="low">low</option>
-                                    </select>
-                                </label>
-                                <label>
-                                    <span>Origem</span>
-                                    <input name="sourceChannel" type="text" placeholder="ops_console">
-                                </label>
-                            </div>
-                            <button class="ops-button" type="submit">Registrar bug</button>
-                        </form>
-                    </article>
-
-                    <article class="ops-card">
-                        <div class="ops-card-head">
-                            <div>
-                                <p class="ops-kicker">Snapshot financeiro</p>
-                                <h3>Receita e gasto por app</h3>
-                            </div>
-                        </div>
-                        <form id="opsFinanceForm" class="ops-form">
-                            <label>
-                                <span>App</span>
-                                <input name="appKey" type="text" placeholder="rota_nota" required>
-                            </label>
-                            <div class="ops-form-grid">
-                                <label>
-                                    <span>Inicio</span>
-                                    <input name="periodStart" type="date" required>
-                                </label>
-                                <label>
-                                    <span>Fim</span>
-                                    <input name="periodEnd" type="date" required>
-                                </label>
-                            </div>
-                            <div class="ops-form-grid">
-                                <label>
-                                    <span>Receita</span>
-                                    <input name="revenueAmount" type="number" min="0" step="0.01" value="0">
-                                </label>
-                                <label>
-                                    <span>Gasto</span>
-                                    <input name="expenseAmount" type="number" min="0" step="0.01" value="0">
-                                </label>
-                            </div>
-                            <button class="ops-button" type="submit">Registrar snapshot</button>
-                        </form>
-                    </article>
-                </div>
-            </section>
-
             <section class="ops-tab-panel" data-ops-panel="alertas">
                 <article class="ops-card">
                     <div class="ops-card-head">
                         <div>
-                            <p class="ops-kicker">Alertas ativos e recentes</p>
-                            <h3>Quota, webhook, provider e operacao</h3>
+                            <p class="ops-kicker">Problemas</p>
+                            <h3>Avisos que ainda precisam decisao</h3>
                         </div>
                     </div>
                     <div id="opsAlertsList" class="ops-list"></div>

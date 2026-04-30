@@ -18,7 +18,7 @@ const blocos = [
         why: "ela analisa energia liberada ou absorvida nas reacoes"
       },
       {
-        lead: "a energia quimica",
+        lead: "a energia química",
         answer: "a energia associada as ligacoes e a organizacao das particulas nas substancias",
         why: "mudancas nessa organizacao provocam trocas energeticas"
       },
@@ -35,7 +35,7 @@ const blocos = [
       {
         lead: "o calor em termoquimica",
         answer: "a forma de transferencia de energia associada a diferenca de temperatura",
-        why: "ele e a principal grandeza observada nesse estudo"
+        why: "ele é a principal grandeza observada nesse estudo"
       }
     ]
   },
@@ -43,15 +43,15 @@ const blocos = [
     subtopico: "Entalpia",
     habilidade:
       "identificar e interpretar o conceito de entalpia",
-    tags: ["entalpia", "variacao de entalpia", "delta h"],
+    tags: ["entalpia", "variação de entalpia", "delta h"],
     fatos: [
       {
         lead: "a entalpia",
         answer: "a grandeza associada ao conteudo energetico de um sistema em determinadas condicoes",
-        why: "ela e muito usada para estudar reacoes a pressao constante"
+        why: "ela é muito usada para estudar reacoes a pressao constante"
       },
       {
-        lead: "a variacao de entalpia",
+        lead: "a variação de entalpia",
         answer: "a diferenca entre a entalpia dos produtos e a dos reagentes",
         why: "esse valor indica se a reacao libera ou absorve calor"
       },
@@ -95,13 +95,13 @@ const blocos = [
       },
       {
         lead: "a fotossintese como exemplo",
-        answer: "um processo global de carater endotermico",
+        answer: "um processo global de caráter endotermico",
         why: "ele exige absorcao de energia luminosa"
       },
       {
         lead: "a classificacao termoquimica de uma reacao",
-        answer: "a analise do sentido da troca de calor entre sistema e ambiente",
-        why: "isso define o carater exotermico ou endotermico"
+        answer: "a análise do sentido da troca de calor entre sistema e ambiente",
+        why: "isso define o caráter exotermico ou endotermico"
       }
     ]
   },
@@ -113,12 +113,12 @@ const blocos = [
     fatos: [
       {
         lead: "uma equacao termoquimica",
-        answer: "a equacao quimica acompanhada do valor de energia associado a transformacao",
-        why: "ela informa reagentes, produtos e variacao entalpica"
+        answer: "a equacao química acompanhada do valor de energia associado a transformacao",
+        why: "ela informa reagentes, produtos e variação entalpica"
       },
       {
         lead: "o estado fisico na equacao termoquimica",
-        answer: "a informacao importante porque a entalpia depende da forma fisica das substancias",
+        answer: "a informacao importante porque a entalpia depende da forma física das substancias",
         why: "solido, liquido e gasoso possuem energias diferentes"
       },
       {
@@ -139,34 +139,34 @@ const blocos = [
     ]
   },
   {
-    subtopico: "Entalpia de formacao",
+    subtopico: "Entalpia de formação",
     habilidade:
       "identificar diferentes tipos de entalpia de processo",
-    tags: ["entalpia de formacao", "substancia simples", "padrao"],
+    tags: ["entalpia de formação", "substancia simples", "padrao"],
     fatos: [
       {
-        lead: "a entalpia de formacao",
-        answer: "a variacao de entalpia associada a formacao de um mol de composto a partir de substancias simples",
+        lead: "a entalpia de formação",
+        answer: "a variação de entalpia associada a formação de um mol de composto a partir de substancias simples",
         why: "essa grandeza e usada como referencia em varios calculos"
       },
       {
         lead: "a substancia simples no estado padrao",
-        answer: "a referencia adotada para definir entalpias de formacao",
-        why: "por convencao, sua entalpia de formacao e zero"
+        answer: "a referencia adotada para definir entalpias de formação",
+        why: "por convencao, sua entalpia de formação e zero"
       },
       {
-        lead: "o uso das entalpias de formacao",
+        lead: "o uso das entalpias de formação",
         answer: "o calculo do delta H de reacoes por dados tabulados",
         why: "elas permitem comparar energias de reagentes e produtos"
       },
       {
-        lead: "a entalpia padrao de formacao",
-        answer: "a entalpia de formacao medida em condicoes padrao",
+        lead: "a entalpia padrao de formação",
+        answer: "a entalpia de formação medida em condicoes padrao",
         why: "ela aparece em tabelas termodinamicas"
       },
       {
-        lead: "a soma das entalpias de formacao",
-        answer: "o procedimento usado para calcular a variacao de entalpia total da reacao",
+        lead: "a soma das entalpias de formação",
+        answer: "o procedimento usado para calcular a variação de entalpia total da reacao",
         why: "produtos e reagentes entram com sinais diferentes"
       }
     ]
@@ -190,7 +190,7 @@ const blocos = [
       {
         lead: "o valor negativo da entalpia de combustao",
         answer: "a indicacao de que a combustao libera calor",
-        why: "combustoes sao tipicamente exotermicas"
+        why: "combustoes são tipicamente exotermicas"
       },
       {
         lead: "o combustivel com maior energia de combustao",
@@ -199,8 +199,8 @@ const blocos = [
       },
       {
         lead: "a aplicacao da entalpia de combustao",
-        answer: "a analise do poder energetico de combustiveis usados no cotidiano e na industria",
-        why: "ela auxilia escolhas tecnicas e economicas"
+        answer: "a análise do poder energetico de combustiveis usados no cotidiano e na industria",
+        why: "ela auxilia escolhas técnicas e economicas"
       }
     ]
   },
@@ -212,13 +212,13 @@ const blocos = [
     fatos: [
       {
         lead: "a lei de Hess",
-        answer: "o principio de que a variacao total de entalpia independe do caminho percorrido",
+        answer: "o principio de que a variação total de entalpia independe do caminho percorrido",
         why: "so os estados inicial e final importam para o delta H"
       },
       {
         lead: "o somatorio de equacoes na lei de Hess",
         answer: "a combinacao de equacoes intermediarias para obter a reacao desejada",
-        why: "os deltas H tambem se somam algebricamente"
+        why: "os deltas H também se somam algebricamente"
       },
       {
         lead: "a utilidade da lei de Hess",
@@ -240,7 +240,7 @@ const blocos = [
   {
     subtopico: "Diagramas de entalpia",
     habilidade:
-      "interpretar representacoes graficas de variacao de entalpia",
+      "interpretar representacoes graficas de variação de entalpia",
     tags: ["diagramas", "entalpia", "energia de ativacao"],
     fatos: [
       {
@@ -266,14 +266,14 @@ const blocos = [
       {
         lead: "o efeito de um catalisador no diagrama",
         answer: "a reducao da energia de ativacao sem alterar o delta H total",
-        why: "catalisadores mudam a velocidade, nao o saldo energetico final"
+        why: "catalisadores mudam a velocidade, não o saldo energetico final"
       }
     ]
   },
   {
     subtopico: "Energia de ligacao",
     habilidade:
-      "relacionar quebra e formacao de ligacoes as trocas de energia",
+      "relacionar quebra e formação de ligacoes as trocas de energia",
     tags: ["energia de ligacao", "quebra", "formacao"],
     fatos: [
       {
@@ -282,13 +282,13 @@ const blocos = [
         why: "romper interacoes entre atomos consome energia"
       },
       {
-        lead: "a formacao de ligacoes",
+        lead: "a formação de ligacoes",
         answer: "o processo que libera energia para o meio",
         why: "sistemas mais estaveis se formam ao ligar atomos"
       },
       {
         lead: "a energia de ligacao",
-        answer: "a medida da energia envolvida na ruptura de uma ligacao quimica",
+        answer: "a medida da energia envolvida na ruptura de uma ligacao química",
         why: "ela ajuda a estimar o comportamento energetico de reacoes"
       },
       {
@@ -298,7 +298,7 @@ const blocos = [
       },
       {
         lead: "a explicacao energetica de uma reacao exotermica",
-        answer: "a situacao em que a formacao de ligacoes libera mais energia do que a quebra consome",
+        answer: "a situação em que a formação de ligacoes libera mais energia do que a quebra consome",
         why: "o resultado final e liberacao de calor"
       }
     ]
@@ -311,7 +311,7 @@ const blocos = [
     fatos: [
       {
         lead: "a escolha de combustiveis",
-        answer: "um problema que pode considerar entalpia de combustao e eficiencia energetica",
+        answer: "um problema que pode considerar entalpia de combustao e eficiência energetica",
         why: "a termoquimica ajuda a comparar fontes de energia"
       },
       {
@@ -326,7 +326,7 @@ const blocos = [
       },
       {
         lead: "a termoquimica na industria",
-        answer: "o controle de energia em processos de producao, combustao e sintese",
+        answer: "o controle de energia em processos de produção, combustao e sintese",
         why: "isso influencia custo e seguranca operacional"
       },
       {
@@ -340,14 +340,14 @@ const blocos = [
 
 export const termoquimica = {
   id: "quimica_termoquimica",
-  materia: "Quimica",
+  materia: "Química",
   serie: [2],
   topico: "Termoquimica",
   metadados: {
     disciplinaId: "quimica",
     base: "ESCOLAR",
     seloEditorial: "VERIFICADA",
-    eixo: "Quimica",
+    eixo: "Química",
     frente: "Trocas de energia nas reacoes",
     searchAliases: [
       "termoquimica",
@@ -362,7 +362,7 @@ export const termoquimica = {
       "identificar e interpretar o conceito de entalpia",
       "classificar processos quanto ao sentido da troca de calor",
       "aplicar a lei de Hess no calculo de variacoes de entalpia",
-      "relacionar quebra e formacao de ligacoes as trocas de energia"
+      "relacionar quebra e formação de ligacoes as trocas de energia"
     ],
     planejamentoQuestoes: CHEMISTRY_HUNDRED_FIFTY_PLAN,
     auditado: true,
@@ -371,7 +371,7 @@ export const termoquimica = {
   questoes: buildPlannedQuestions({
     prefix: "tq",
     serie: 2,
-    materia: "Quimica",
+    materia: "Química",
     topico: "Termoquimica",
     blocos,
     stemBuilders: CHEMISTRY_STEM_BUILDERS,

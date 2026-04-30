@@ -1,52 +1,52 @@
 export const funcoesAfimEQuadratica = {
   "id": "matematica_funcoes_afim_e_quadratica",
-  "materia": "Matematica",
+  "materia": "Matemática",
   "serie": [
     1
   ],
-  "topico": "Funcoes Afim e Quadratica",
+  "topico": "Funções Afim e Quadratica",
   "metadados": {
     "disciplinaId": "matematica",
     "base": "ESCOLAR",
     "eixo": "Algebra",
-    "frente": "Funcoes",
+    "frente": "Funções",
     "searchAliases": [
-      "funcao do primeiro grau",
-      "funcao do segundo grau",
+      "função do primeiro grau",
+      "função do segundo grau",
       "reta",
       "parabola",
-      "lei de formacao"
+      "lei de formação"
     ],
     "subtopicosBase": [
-      "Funcao afim - conceito",
-      "Funcao afim - imagem",
-      "Funcao afim - raiz",
-      "Funcao afim - grafico",
-      "Funcao afim - interpretacao",
-      "Funcao afim - equivalencia",
-      "Funcao quadratica - conceito",
-      "Funcao quadratica - imagem",
-      "Funcao quadratica - raizes",
-      "Funcao quadratica - discriminante",
-      "Funcao quadratica - vertice",
-      "Funcao quadratica - grafico",
-      "Funcao quadratica - interpretacao",
-      "Funcao quadratica - equivalencia",
-      "Interpretacao indireta",
+      "Função afim - conceito",
+      "Função afim - imagem",
+      "Função afim - raiz",
+      "Função afim - gráfico",
+      "Função afim - interpretação",
+      "Função afim - equivalencia",
+      "Função quadratica - conceito",
+      "Função quadratica - imagem",
+      "Função quadratica - raizes",
+      "Função quadratica - discriminante",
+      "Função quadratica - vertice",
+      "Função quadratica - gráfico",
+      "Função quadratica - interpretação",
+      "Função quadratica - equivalencia",
+      "Interpretação indireta",
       "Pegadinha",
       "Equivalencia de formas"
     ],
     "habilidadesBase": [
-      "identificar funcao afim",
-      "calcular imagem em funcao afim",
-      "determinar raiz da funcao afim",
-      "interpretar grafico de reta",
-      "identificar funcao quadratica",
-      "calcular imagem em funcao quadratica",
-      "determinar raizes da funcao quadratica",
+      "identificar função afim",
+      "calcular imagem em função afim",
+      "determinar raiz da função afim",
+      "interpretar gráfico de reta",
+      "identificar função quadratica",
+      "calcular imagem em função quadratica",
+      "determinar raizes da função quadratica",
       "analisar vertice e concavidade",
-      "relacionar formas equivalentes de funcoes",
-      "interpretar problemas com funcoes"
+      "relacionar formas equivalentes de funções",
+      "interpretar problemas com funções"
     ],
     "auditado": true,
     "auditadoEm": "2026-04-10",
@@ -58,14 +58,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - conceito",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - conceito",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Na funcao f(x) = 2x + 3, qual e o coeficiente angular?",
+      "enunciado": "Na função f(x) = 2x + 3, qual é o coeficiente angular?",
       "opcoes": [
         "2",
         "3",
@@ -73,7 +73,7 @@ export const funcoesAfimEQuadratica = {
         "-2"
       ],
       "correta": "2",
-      "comentario": "O coeficiente angular e o numero que multiplica x.",
+      "comentario": "O coeficiente angular e o número que multiplica x.",
       "tempoEstimado": 20,
       "tags": [
         "funcao-afim",
@@ -96,14 +96,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - conceito",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - conceito",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Na funcao f(x) = -3x + 5, qual e o coeficiente linear?",
+      "enunciado": "Na função f(x) = -3x + 5, qual é o coeficiente linear?",
       "opcoes": [
         "-3",
         "5",
@@ -134,14 +134,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - imagem",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - imagem",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se f(x) = x + 4, qual e o valor de f(2)?",
+      "enunciado": "Se f(x) = x + 4, qual é o valor de f(2)?",
       "opcoes": [
         "4",
         "5",
@@ -172,14 +172,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - raiz",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - raiz",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a raiz da funcao f(x) = x - 7?",
+      "enunciado": "Qual é a raiz da função f(x) = x - 7?",
       "opcoes": [
         "-7",
         "0",
@@ -187,7 +187,7 @@ export const funcoesAfimEQuadratica = {
         "7"
       ],
       "correta": "7",
-      "comentario": "A raiz zera a funcao: x - 7 = 0.",
+      "comentario": "A raiz zera a função: x - 7 = 0.",
       "tempoEstimado": 20,
       "tags": [
         "funcao-afim",
@@ -210,14 +210,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - grafico",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - gráfico",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se o coeficiente angular de uma funcao afim e positivo, o grafico e crescente.",
+      "enunciado": "Se o coeficiente angular de uma função afim e positivo, o gráfico e crescente.",
       "opcoes": [
         "Verdadeiro",
         "Falso"
@@ -246,14 +246,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - grafico",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - gráfico",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual ponto pertence ao grafico de f(x) = 2x + 1?",
+      "enunciado": "Qual ponto pertence ao gráfico de f(x) = 2x + 1?",
       "opcoes": [
         "(2, 4)",
         "(2, 5)",
@@ -284,14 +284,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - raiz",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - raiz",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao afim tem raiz 3 e intercepta o eixo y em -6?",
+      "enunciado": "Qual função afim tem raiz 3 e intercepta o eixo y em -6?",
       "opcoes": [
         "f(x) = x - 6",
         "f(x) = -2x + 6",
@@ -322,9 +322,9 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - conceito",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - conceito",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
@@ -360,14 +360,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - conceito",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - conceito",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual das expressoes abaixo representa uma funcao afim?",
+      "enunciado": "Qual das expressoes abaixo representa uma função afim?",
       "opcoes": [
         "f(x) = 3x + 2",
         "f(x) = x^2 - 1",
@@ -375,7 +375,7 @@ export const funcoesAfimEQuadratica = {
         "f(x) = x^3"
       ],
       "correta": "f(x) = 3x + 2",
-      "comentario": "Funcao afim tem a forma ax + b.",
+      "comentario": "Função afim tem a forma ax + b.",
       "tempoEstimado": 20,
       "tags": [
         "funcao-afim",
@@ -398,9 +398,9 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - grafico",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - gráfico",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 1,
       "cognicao": "interpretacao",
@@ -413,7 +413,7 @@ export const funcoesAfimEQuadratica = {
         "7"
       ],
       "correta": "5",
-      "comentario": "O coeficiente angular mede essa variacao.",
+      "comentario": "O coeficiente angular mede essa variação.",
       "tempoEstimado": 20,
       "tags": [
         "funcao-afim",
@@ -436,14 +436,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - grafico",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - gráfico",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma funcao afim com coeficiente angular negativo e sempre:",
+      "enunciado": "Uma função afim com coeficiente angular negativo e sempre:",
       "opcoes": [
         "crescente",
         "constante",
@@ -474,14 +474,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - raiz",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - raiz",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a raiz da funcao f(x) = -2x + 8?",
+      "enunciado": "Qual é a raiz da função f(x) = -2x + 8?",
       "opcoes": [
         "-4",
         "2",
@@ -512,14 +512,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - equivalencia",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - equivalencia",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma tabela mostra os valores: x = 0 leva a y = 3 e x = 1 leva a y = 5. Qual lei de formacao e compativel?",
+      "enunciado": "Uma tabela mostra os valores: x = 0 leva a y = 3 e x = 1 leva a y = 5. Qual lei de formação e compativel?",
       "opcoes": [
         "f(x) = 2x + 3",
         "f(x) = x + 3",
@@ -527,7 +527,7 @@ export const funcoesAfimEQuadratica = {
         "f(x) = 5x"
       ],
       "correta": "f(x) = 2x + 3",
-      "comentario": "A variacao e 2 e o intercepto e 3.",
+      "comentario": "A variação e 2 e o intercepto e 3.",
       "tempoEstimado": 20,
       "tags": [
         "funcao-afim",
@@ -550,14 +550,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - conceito",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - conceito",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao tem o mesmo coeficiente angular de g(x) = -4x + 1?",
+      "enunciado": "Qual função tem o mesmo coeficiente angular de g(x) = -4x + 1?",
       "opcoes": [
         "f(x) = 4x + 1",
         "f(x) = -4x - 3",
@@ -588,20 +588,20 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - grafico",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - gráfico",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Toda funcao afim tem grafico em forma de reta.",
+      "enunciado": "Toda função afim tem gráfico em forma de reta.",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Esse e o grafico caracteristico da funcao afim.",
+      "comentario": "Esse e o gráfico caracteristico da função afim.",
       "tempoEstimado": 20,
       "tags": [
         "funcao-afim",
@@ -624,14 +624,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - conceito",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - conceito",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Na funcao f(x) = x^2 - 4x + 3, qual e o valor do coeficiente a?",
+      "enunciado": "Na função f(x) = x^2 - 4x + 3, qual é o valor do coeficiente a?",
       "opcoes": [
         "-4",
         "3",
@@ -662,9 +662,9 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - grafico",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - gráfico",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "interpretacao",
@@ -700,14 +700,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - imagem",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - imagem",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Se f(x) = x^2 + 1, qual e o valor de f(2)?",
+      "enunciado": "Se f(x) = x^2 + 1, qual é o valor de f(2)?",
       "opcoes": [
         "3",
         "5",
@@ -738,14 +738,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - raizes",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - raizes",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Quais sao as raizes de f(x) = x^2 - 5x + 6?",
+      "enunciado": "Quais são as raizes de f(x) = x^2 - 5x + 6?",
       "opcoes": [
         "1 e 6",
         "3 e 5",
@@ -776,14 +776,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - vertice",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - vertice",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 2,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e o eixo de simetria de f(x) = x^2 - 6x + 5?",
+      "enunciado": "Qual é o eixo de simetria de f(x) = x^2 - 6x + 5?",
       "opcoes": [
         "x = -3",
         "x = 5",
@@ -814,14 +814,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - vertice",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - vertice",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e o valor de y do vertice de f(x) = x^2 - 4x + 3?",
+      "enunciado": "Qual é o valor de y do vertice de f(x) = x^2 - 4x + 3?",
       "opcoes": [
         "-1",
         "0",
@@ -852,14 +852,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - grafico",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - gráfico",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se a > 0 em uma funcao quadratica, a parabola possui ponto de minimo.",
+      "enunciado": "Se a > 0 em uma função quadratica, a parabola possui ponto de minimo.",
       "opcoes": [
         "Verdadeiro",
         "Falso"
@@ -888,14 +888,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - discriminante",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - discriminante",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e o valor do discriminante da funcao f(x) = x^2 - 2x + 1?",
+      "enunciado": "Qual é o valor do discriminante da função f(x) = x^2 - 2x + 1?",
       "opcoes": [
         "1",
         "2",
@@ -926,14 +926,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - grafico",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - gráfico",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual ponto pertence ao grafico de f(x) = x^2?",
+      "enunciado": "Qual ponto pertence ao gráfico de f(x) = x^2?",
       "opcoes": [
         "(2, 2)",
         "(2, 3)",
@@ -964,14 +964,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - raizes",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - raizes",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Quais sao as raizes de x^2 - 9 = 0?",
+      "enunciado": "Quais são as raizes de x^2 - 9 = 0?",
       "opcoes": [
         "-3 e 3",
         "-9 e 9",
@@ -1002,14 +1002,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - conceito",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - conceito",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Na funcao f(x) = 2x^2 - 3x + 7, qual e o valor do coeficiente c?",
+      "enunciado": "Na função f(x) = 2x^2 - 3x + 7, qual é o valor do coeficiente c?",
       "opcoes": [
         "2",
         "7",
@@ -1040,20 +1040,20 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - grafico",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - gráfico",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Toda funcao quadratica tem grafico em forma de parabola.",
+      "enunciado": "Toda função quadratica tem gráfico em forma de parabola.",
       "opcoes": [
         "Verdadeiro",
         "Falso"
       ],
       "correta": "Verdadeiro",
-      "comentario": "Esse e o grafico caracteristico da funcao quadratica.",
+      "comentario": "Esse e o gráfico caracteristico da função quadratica.",
       "tempoEstimado": 20,
       "tags": [
         "funcao-quadratica",
@@ -1076,14 +1076,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - discriminante",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - discriminante",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Se o discriminante de uma funcao quadratica e negativo, ela nao possui raizes reais.",
+      "enunciado": "Se o discriminante de uma função quadratica e negativo, ela não possui raizes reais.",
       "opcoes": [
         "Verdadeiro",
         "Falso"
@@ -1112,14 +1112,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - vertice",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - vertice",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e o eixo de simetria da funcao f(x) = x^2 + 4x + 1?",
+      "enunciado": "Qual é o eixo de simetria da função f(x) = x^2 + 4x + 1?",
       "opcoes": [
         "x = -2",
         "x = -4",
@@ -1150,9 +1150,9 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - imagem",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - imagem",
       "dificuldadeLabel": "facil",
       "dificuldadeNivel": 3,
       "cognicao": "calculo",
@@ -1188,14 +1188,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - imagem",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - imagem",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Considere f(x) = 3x - 2. Qual e o valor de f(4)?",
+      "enunciado": "Considere f(x) = 3x - 2. Qual é o valor de f(4)?",
       "opcoes": [
         "12",
         "8",
@@ -1203,7 +1203,7 @@ export const funcoesAfimEQuadratica = {
         "14"
       ],
       "correta": "10",
-      "comentario": "Substitua o valor de x na lei de formacao.",
+      "comentario": "Substitua o valor de x na lei de formação.",
       "tempoEstimado": 25,
       "tags": [
         "funcao-afim",
@@ -1226,14 +1226,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - imagem",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - imagem",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Considere f(x) = -2x + 5. Qual e o valor de f(3)?",
+      "enunciado": "Considere f(x) = -2x + 5. Qual é o valor de f(3)?",
       "opcoes": [
         "1",
         "-3",
@@ -1241,7 +1241,7 @@ export const funcoesAfimEQuadratica = {
         "-1"
       ],
       "correta": "-1",
-      "comentario": "Substitua o valor de x na lei de formacao.",
+      "comentario": "Substitua o valor de x na lei de formação.",
       "tempoEstimado": 25,
       "tags": [
         "funcao-afim",
@@ -1264,14 +1264,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - imagem",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - imagem",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Considere f(x) = 4x + 1. Qual e o valor de f(-2)?",
+      "enunciado": "Considere f(x) = 4x + 1. Qual é o valor de f(-2)?",
       "opcoes": [
         "-7",
         "-5",
@@ -1279,7 +1279,7 @@ export const funcoesAfimEQuadratica = {
         "-3"
       ],
       "correta": "-7",
-      "comentario": "Substitua o valor de x na lei de formacao.",
+      "comentario": "Substitua o valor de x na lei de formação.",
       "tempoEstimado": 25,
       "tags": [
         "funcao-afim",
@@ -1302,14 +1302,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - imagem",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - imagem",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Considere f(x) = 5x - 6. Qual e o valor de f(2)?",
+      "enunciado": "Considere f(x) = 5x - 6. Qual é o valor de f(2)?",
       "opcoes": [
         "6",
         "4",
@@ -1317,7 +1317,7 @@ export const funcoesAfimEQuadratica = {
         "8"
       ],
       "correta": "4",
-      "comentario": "Substitua o valor de x na lei de formacao.",
+      "comentario": "Substitua o valor de x na lei de formação.",
       "tempoEstimado": 25,
       "tags": [
         "funcao-afim",
@@ -1340,14 +1340,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - imagem",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - imagem",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Considere f(x) = -3x - 1. Qual e o valor de f(-1)?",
+      "enunciado": "Considere f(x) = -3x - 1. Qual é o valor de f(-1)?",
       "opcoes": [
         "4",
         "0",
@@ -1355,7 +1355,7 @@ export const funcoesAfimEQuadratica = {
         "6"
       ],
       "correta": "2",
-      "comentario": "Substitua o valor de x na lei de formacao.",
+      "comentario": "Substitua o valor de x na lei de formação.",
       "tempoEstimado": 25,
       "tags": [
         "funcao-afim",
@@ -1378,14 +1378,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - imagem",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - imagem",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Considere f(x) = 2x + 7. Qual e o valor de f(5)?",
+      "enunciado": "Considere f(x) = 2x + 7. Qual é o valor de f(5)?",
       "opcoes": [
         "19",
         "15",
@@ -1393,7 +1393,7 @@ export const funcoesAfimEQuadratica = {
         "17"
       ],
       "correta": "17",
-      "comentario": "Substitua o valor de x na lei de formacao.",
+      "comentario": "Substitua o valor de x na lei de formação.",
       "tempoEstimado": 25,
       "tags": [
         "funcao-afim",
@@ -1416,14 +1416,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - imagem",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - imagem",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Considere f(x) = -4x + 8. Qual e o valor de f(1)?",
+      "enunciado": "Considere f(x) = -4x + 8. Qual é o valor de f(1)?",
       "opcoes": [
         "4",
         "6",
@@ -1431,7 +1431,7 @@ export const funcoesAfimEQuadratica = {
         "8"
       ],
       "correta": "4",
-      "comentario": "Substitua o valor de x na lei de formacao.",
+      "comentario": "Substitua o valor de x na lei de formação.",
       "tempoEstimado": 25,
       "tags": [
         "funcao-afim",
@@ -1454,14 +1454,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - imagem",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - imagem",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Considere f(x) = 6x - 3. Qual e o valor de f(0)?",
+      "enunciado": "Considere f(x) = 6x - 3. Qual é o valor de f(0)?",
       "opcoes": [
         "-1",
         "-3",
@@ -1469,7 +1469,7 @@ export const funcoesAfimEQuadratica = {
         "1"
       ],
       "correta": "-3",
-      "comentario": "Substitua o valor de x na lei de formacao.",
+      "comentario": "Substitua o valor de x na lei de formação.",
       "tempoEstimado": 25,
       "tags": [
         "funcao-afim",
@@ -1492,14 +1492,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - imagem",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - imagem",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Considere f(x) = x - 9. Qual e o valor de f(12)?",
+      "enunciado": "Considere f(x) = x - 9. Qual é o valor de f(12)?",
       "opcoes": [
         "5",
         "1",
@@ -1507,7 +1507,7 @@ export const funcoesAfimEQuadratica = {
         "7"
       ],
       "correta": "3",
-      "comentario": "Substitua o valor de x na lei de formacao.",
+      "comentario": "Substitua o valor de x na lei de formação.",
       "tempoEstimado": 25,
       "tags": [
         "funcao-afim",
@@ -1530,14 +1530,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - imagem",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - imagem",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Considere f(x) = -5x + 20. Qual e o valor de f(3)?",
+      "enunciado": "Considere f(x) = -5x + 20. Qual é o valor de f(3)?",
       "opcoes": [
         "7",
         "3",
@@ -1545,7 +1545,7 @@ export const funcoesAfimEQuadratica = {
         "5"
       ],
       "correta": "5",
-      "comentario": "Substitua o valor de x na lei de formacao.",
+      "comentario": "Substitua o valor de x na lei de formação.",
       "tempoEstimado": 25,
       "tags": [
         "funcao-afim",
@@ -1568,14 +1568,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - raiz",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - raiz",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a raiz da funcao f(x) = 2x - 8?",
+      "enunciado": "Qual é a raiz da função f(x) = 2x - 8?",
       "opcoes": [
         "4",
         "6",
@@ -1583,7 +1583,7 @@ export const funcoesAfimEQuadratica = {
         "8"
       ],
       "correta": "4",
-      "comentario": "A raiz e o valor que zera a funcao.",
+      "comentario": "A raiz e o valor que zera a função.",
       "tempoEstimado": 25,
       "tags": [
         "funcao-afim",
@@ -1606,14 +1606,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - raiz",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - raiz",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a raiz da funcao f(x) = -3x + 9?",
+      "enunciado": "Qual é a raiz da função f(x) = -3x + 9?",
       "opcoes": [
         "5",
         "3",
@@ -1621,7 +1621,7 @@ export const funcoesAfimEQuadratica = {
         "7"
       ],
       "correta": "3",
-      "comentario": "A raiz e o valor que zera a funcao.",
+      "comentario": "A raiz e o valor que zera a função.",
       "tempoEstimado": 25,
       "tags": [
         "funcao-afim",
@@ -1644,14 +1644,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - raiz",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - raiz",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a raiz da funcao f(x) = 5x + 10?",
+      "enunciado": "Qual é a raiz da função f(x) = 5x + 10?",
       "opcoes": [
         "0",
         "-4",
@@ -1659,7 +1659,7 @@ export const funcoesAfimEQuadratica = {
         "2"
       ],
       "correta": "-2",
-      "comentario": "A raiz e o valor que zera a funcao.",
+      "comentario": "A raiz e o valor que zera a função.",
       "tempoEstimado": 25,
       "tags": [
         "funcao-afim",
@@ -1682,14 +1682,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - raiz",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - raiz",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a raiz da funcao f(x) = -4x - 12?",
+      "enunciado": "Qual é a raiz da função f(x) = -4x - 12?",
       "opcoes": [
         "-1",
         "-5",
@@ -1697,7 +1697,7 @@ export const funcoesAfimEQuadratica = {
         "-3"
       ],
       "correta": "-3",
-      "comentario": "A raiz e o valor que zera a funcao.",
+      "comentario": "A raiz e o valor que zera a função.",
       "tempoEstimado": 25,
       "tags": [
         "funcao-afim",
@@ -1720,14 +1720,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - raiz",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - raiz",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a raiz da funcao f(x) = x - 11?",
+      "enunciado": "Qual é a raiz da função f(x) = x - 11?",
       "opcoes": [
         "11",
         "13",
@@ -1735,7 +1735,7 @@ export const funcoesAfimEQuadratica = {
         "15"
       ],
       "correta": "11",
-      "comentario": "A raiz e o valor que zera a funcao.",
+      "comentario": "A raiz e o valor que zera a função.",
       "tempoEstimado": 25,
       "tags": [
         "funcao-afim",
@@ -1758,14 +1758,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - raiz",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - raiz",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a raiz da funcao f(x) = 7x - 21?",
+      "enunciado": "Qual é a raiz da função f(x) = 7x - 21?",
       "opcoes": [
         "5",
         "3",
@@ -1773,7 +1773,7 @@ export const funcoesAfimEQuadratica = {
         "7"
       ],
       "correta": "3",
-      "comentario": "A raiz e o valor que zera a funcao.",
+      "comentario": "A raiz e o valor que zera a função.",
       "tempoEstimado": 25,
       "tags": [
         "funcao-afim",
@@ -1796,14 +1796,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - raiz",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - raiz",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a raiz da funcao f(x) = -2x + 14?",
+      "enunciado": "Qual é a raiz da função f(x) = -2x + 14?",
       "opcoes": [
         "9",
         "5",
@@ -1811,7 +1811,7 @@ export const funcoesAfimEQuadratica = {
         "11"
       ],
       "correta": "7",
-      "comentario": "A raiz e o valor que zera a funcao.",
+      "comentario": "A raiz e o valor que zera a função.",
       "tempoEstimado": 25,
       "tags": [
         "funcao-afim",
@@ -1834,14 +1834,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - raiz",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - raiz",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a raiz da funcao f(x) = 3x + 6?",
+      "enunciado": "Qual é a raiz da função f(x) = 3x + 6?",
       "opcoes": [
         "0",
         "-4",
@@ -1849,7 +1849,7 @@ export const funcoesAfimEQuadratica = {
         "-2"
       ],
       "correta": "-2",
-      "comentario": "A raiz e o valor que zera a funcao.",
+      "comentario": "A raiz e o valor que zera a função.",
       "tempoEstimado": 25,
       "tags": [
         "funcao-afim",
@@ -1872,14 +1872,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - raiz",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - raiz",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a raiz da funcao f(x) = -5x + 5?",
+      "enunciado": "Qual é a raiz da função f(x) = -5x + 5?",
       "opcoes": [
         "1",
         "3",
@@ -1887,7 +1887,7 @@ export const funcoesAfimEQuadratica = {
         "5"
       ],
       "correta": "1",
-      "comentario": "A raiz e o valor que zera a funcao.",
+      "comentario": "A raiz e o valor que zera a função.",
       "tempoEstimado": 25,
       "tags": [
         "funcao-afim",
@@ -1910,14 +1910,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - raiz",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - raiz",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual e a raiz da funcao f(x) = 4x + 16?",
+      "enunciado": "Qual é a raiz da função f(x) = 4x + 16?",
       "opcoes": [
         "-2",
         "-4",
@@ -1925,7 +1925,7 @@ export const funcoesAfimEQuadratica = {
         "0"
       ],
       "correta": "-4",
-      "comentario": "A raiz e o valor que zera a funcao.",
+      "comentario": "A raiz e o valor que zera a função.",
       "tempoEstimado": 25,
       "tags": [
         "funcao-afim",
@@ -1948,14 +1948,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - equivalencia",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - equivalencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao afim passa pelos pontos (0, 2) e (2, 8)?",
+      "enunciado": "Qual função afim passa pelos pontos (0, 2) e (2, 8)?",
       "opcoes": [
         "f(x) = 4x + 2",
         "f(x) = 3x + 4",
@@ -1963,7 +1963,7 @@ export const funcoesAfimEQuadratica = {
         "f(x) = -3x + 2"
       ],
       "correta": "f(x) = 3x + 2",
-      "comentario": "Use a variacao em y sobre a variacao em x para achar o coeficiente angular.",
+      "comentario": "Use a variação em y sobre a variação em x para achar o coeficiente angular.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-afim",
@@ -1986,14 +1986,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - equivalencia",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - equivalencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao afim passa pelos pontos (1, 4) e (3, 10)?",
+      "enunciado": "Qual função afim passa pelos pontos (1, 4) e (3, 10)?",
       "opcoes": [
         "f(x) = 4x + 1",
         "f(x) = 3x + 3",
@@ -2001,7 +2001,7 @@ export const funcoesAfimEQuadratica = {
         "f(x) = 3x + 1"
       ],
       "correta": "f(x) = 3x + 1",
-      "comentario": "Use a variacao em y sobre a variacao em x para achar o coeficiente angular.",
+      "comentario": "Use a variação em y sobre a variação em x para achar o coeficiente angular.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-afim",
@@ -2024,14 +2024,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - equivalencia",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - equivalencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao afim passa pelos pontos (-1, 1) e (2, 7)?",
+      "enunciado": "Qual função afim passa pelos pontos (-1, 1) e (2, 7)?",
       "opcoes": [
         "f(x) = 2x + 3",
         "f(x) = 3x + 3",
@@ -2039,7 +2039,7 @@ export const funcoesAfimEQuadratica = {
         "f(x) = -2x + 3"
       ],
       "correta": "f(x) = 2x + 3",
-      "comentario": "Use a variacao em y sobre a variacao em x para achar o coeficiente angular.",
+      "comentario": "Use a variação em y sobre a variação em x para achar o coeficiente angular.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-afim",
@@ -2062,14 +2062,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - equivalencia",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - equivalencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao afim passa pelos pontos (0, -5) e (4, 3)?",
+      "enunciado": "Qual função afim passa pelos pontos (0, -5) e (4, 3)?",
       "opcoes": [
         "f(x) = 3x - 5",
         "f(x) = 2x - 5",
@@ -2077,7 +2077,7 @@ export const funcoesAfimEQuadratica = {
         "f(x) = -2x - 5"
       ],
       "correta": "f(x) = 2x - 5",
-      "comentario": "Use a variacao em y sobre a variacao em x para achar o coeficiente angular.",
+      "comentario": "Use a variação em y sobre a variação em x para achar o coeficiente angular.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-afim",
@@ -2100,14 +2100,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - equivalencia",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - equivalencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao afim passa pelos pontos (2, 1) e (5, 10)?",
+      "enunciado": "Qual função afim passa pelos pontos (2, 1) e (5, 10)?",
       "opcoes": [
         "f(x) = 4x - 5",
         "f(x) = 3x - 3",
@@ -2115,7 +2115,7 @@ export const funcoesAfimEQuadratica = {
         "f(x) = -3x - 5"
       ],
       "correta": "f(x) = 3x - 5",
-      "comentario": "Use a variacao em y sobre a variacao em x para achar o coeficiente angular.",
+      "comentario": "Use a variação em y sobre a variação em x para achar o coeficiente angular.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-afim",
@@ -2138,14 +2138,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - equivalencia",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - equivalencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao afim passa pelos pontos (-2, 7) e (0, 3)?",
+      "enunciado": "Qual função afim passa pelos pontos (-2, 7) e (0, 3)?",
       "opcoes": [
         "f(x) = -x + 3",
         "f(x) = -2x + 5",
@@ -2153,7 +2153,7 @@ export const funcoesAfimEQuadratica = {
         "f(x) = -2x + 3"
       ],
       "correta": "f(x) = -2x + 3",
-      "comentario": "Use a variacao em y sobre a variacao em x para achar o coeficiente angular.",
+      "comentario": "Use a variação em y sobre a variação em x para achar o coeficiente angular.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-afim",
@@ -2176,14 +2176,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - equivalencia",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - equivalencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao afim passa pelos pontos (1, -1) e (4, 5)?",
+      "enunciado": "Qual função afim passa pelos pontos (1, -1) e (4, 5)?",
       "opcoes": [
         "f(x) = 2x - 3",
         "f(x) = 3x - 3",
@@ -2191,7 +2191,7 @@ export const funcoesAfimEQuadratica = {
         "f(x) = -2x - 3"
       ],
       "correta": "f(x) = 2x - 3",
-      "comentario": "Use a variacao em y sobre a variacao em x para achar o coeficiente angular.",
+      "comentario": "Use a variação em y sobre a variação em x para achar o coeficiente angular.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-afim",
@@ -2214,14 +2214,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - equivalencia",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - equivalencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao afim passa pelos pontos (0, 6) e (3, 0)?",
+      "enunciado": "Qual função afim passa pelos pontos (0, 6) e (3, 0)?",
       "opcoes": [
         "f(x) = -x + 6",
         "f(x) = -2x + 6",
@@ -2229,7 +2229,7 @@ export const funcoesAfimEQuadratica = {
         "f(x) = 2x + 6"
       ],
       "correta": "f(x) = -2x + 6",
-      "comentario": "Use a variacao em y sobre a variacao em x para achar o coeficiente angular.",
+      "comentario": "Use a variação em y sobre a variação em x para achar o coeficiente angular.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-afim",
@@ -2252,14 +2252,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - equivalencia",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - equivalencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao afim passa pelos pontos (-1, -4) e (1, 2)?",
+      "enunciado": "Qual função afim passa pelos pontos (-1, -4) e (1, 2)?",
       "opcoes": [
         "f(x) = 4x - 1",
         "f(x) = 3x + 1",
@@ -2267,7 +2267,7 @@ export const funcoesAfimEQuadratica = {
         "f(x) = -3x - 1"
       ],
       "correta": "f(x) = 3x - 1",
-      "comentario": "Use a variacao em y sobre a variacao em x para achar o coeficiente angular.",
+      "comentario": "Use a variação em y sobre a variação em x para achar o coeficiente angular.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-afim",
@@ -2290,14 +2290,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - equivalencia",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - equivalencia",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 4,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao afim passa pelos pontos (2, 9) e (6, 1)?",
+      "enunciado": "Qual função afim passa pelos pontos (2, 9) e (6, 1)?",
       "opcoes": [
         "f(x) = -x + 13",
         "f(x) = -2x + 15",
@@ -2305,7 +2305,7 @@ export const funcoesAfimEQuadratica = {
         "f(x) = -2x + 13"
       ],
       "correta": "f(x) = -2x + 13",
-      "comentario": "Use a variacao em y sobre a variacao em x para achar o coeficiente angular.",
+      "comentario": "Use a variação em y sobre a variação em x para achar o coeficiente angular.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-afim",
@@ -2328,9 +2328,9 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - interpretacao",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - interpretação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "aplicacao",
@@ -2343,7 +2343,7 @@ export const funcoesAfimEQuadratica = {
         "28"
       ],
       "correta": "22",
-      "comentario": "A situacao e modelada por C(x) = 2x + 6.",
+      "comentario": "A situação e modelada por C(x) = 2x + 6.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-afim",
@@ -2366,9 +2366,9 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - interpretacao",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - interpretação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "aplicacao",
@@ -2404,9 +2404,9 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - interpretacao",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - interpretação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "aplicacao",
@@ -2419,7 +2419,7 @@ export const funcoesAfimEQuadratica = {
         "32"
       ],
       "correta": "28",
-      "comentario": "Basta somar a variacao linear ao valor inicial.",
+      "comentario": "Basta somar a variação linear ao valor inicial.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-afim",
@@ -2442,9 +2442,9 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - interpretacao",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - interpretação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "aplicacao",
@@ -2480,9 +2480,9 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - interpretacao",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - interpretação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "aplicacao",
@@ -2518,9 +2518,9 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - interpretacao",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - interpretação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "aplicacao",
@@ -2556,9 +2556,9 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - interpretacao",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - interpretação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "aplicacao",
@@ -2594,9 +2594,9 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - interpretacao",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - interpretação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "aplicacao",
@@ -2632,9 +2632,9 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - interpretacao",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - interpretação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "aplicacao",
@@ -2670,9 +2670,9 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - interpretacao",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - interpretação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "aplicacao",
@@ -2708,21 +2708,21 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - grafico",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - gráfico",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Considere f(x) = 2x + 1 e g(x) = 2x - 4. Qual afirmacao e correta?",
+      "enunciado": "Considere f(x) = 2x + 1 e g(x) = 2x - 4. Qual afirmação é correta?",
       "opcoes": [
         "As retas se cruzam em x = 2.",
-        "A funcao g e crescente e f e decrescente.",
-        "As retas sao paralelas e possuem interceptos diferentes.",
-        "As duas funcoes possuem a mesma raiz."
+        "A função g e crescente e f e decrescente.",
+        "As retas são paralelas e possuem interceptos diferentes.",
+        "As duas funções possuem a mesma raiz."
       ],
-      "correta": "As retas sao paralelas e possuem interceptos diferentes.",
+      "correta": "As retas são paralelas e possuem interceptos diferentes.",
       "comentario": "As duas retas possuem o mesmo coeficiente angular.",
       "tempoEstimado": 30,
       "tags": [
@@ -2746,14 +2746,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - grafico",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - gráfico",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao e decrescente e possui raiz positiva?",
+      "enunciado": "Qual função e decrescente e possui raiz positiva?",
       "opcoes": [
         "f(x) = 2x - 6",
         "f(x) = -x - 4",
@@ -2784,14 +2784,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - grafico",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - gráfico",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Para f(x) = 4x - 8, em quais valores de x a funcao assume valores positivos?",
+      "enunciado": "Para f(x) = 4x - 8, em quais valores de x a função assume valores positivos?",
       "opcoes": [
         "x > 2",
         "x < 2",
@@ -2822,14 +2822,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - grafico",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - gráfico",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao tem a mesma raiz de g(x) = 3x - 9?",
+      "enunciado": "Qual função tem a mesma raiz de g(x) = 3x - 9?",
       "opcoes": [
         "f(x) = x + 3",
         "f(x) = 2x - 6",
@@ -2837,7 +2837,7 @@ export const funcoesAfimEQuadratica = {
         "f(x) = 5x + 9"
       ],
       "correta": "f(x) = 2x - 6",
-      "comentario": "As duas funcoes zeram em x = 3.",
+      "comentario": "As duas funções zeram em x = 3.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-afim",
@@ -2860,14 +2860,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - grafico",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - gráfico",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma reta passa por (0, -3) e e crescente. Qual funcao pode representa-la?",
+      "enunciado": "Uma reta passa por (0, -3) e e crescente. Qual função pode representa-la?",
       "opcoes": [
         "f(x) = -x - 3",
         "f(x) = -2x + 3",
@@ -2898,14 +2898,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - imagem",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - imagem",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Considere f(x) = x^2 - 3x + 2. Qual e o valor de f(4)?",
+      "enunciado": "Considere f(x) = x^2 - 3x + 2. Qual é o valor de f(4)?",
       "opcoes": [
         "8",
         "4",
@@ -2913,7 +2913,7 @@ export const funcoesAfimEQuadratica = {
         "6"
       ],
       "correta": "6",
-      "comentario": "Substitua o valor de x na expressao e resolva as operacoes.",
+      "comentario": "Substitua o valor de x na expressao é resolva as operacoes.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-quadratica",
@@ -2936,14 +2936,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - imagem",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - imagem",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Considere f(x) = 2x^2 - 1x + 1. Qual e o valor de f(3)?",
+      "enunciado": "Considere f(x) = 2x^2 - 1x + 1. Qual é o valor de f(3)?",
       "opcoes": [
         "16",
         "18",
@@ -2951,7 +2951,7 @@ export const funcoesAfimEQuadratica = {
         "20"
       ],
       "correta": "16",
-      "comentario": "Substitua o valor de x na expressao e resolva as operacoes.",
+      "comentario": "Substitua o valor de x na expressao é resolva as operacoes.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-quadratica",
@@ -2974,14 +2974,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - imagem",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - imagem",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Considere f(x) = -x^2 + 4x + 5. Qual e o valor de f(2)?",
+      "enunciado": "Considere f(x) = -x^2 + 4x + 5. Qual é o valor de f(2)?",
       "opcoes": [
         "11",
         "9",
@@ -2989,7 +2989,7 @@ export const funcoesAfimEQuadratica = {
         "13"
       ],
       "correta": "9",
-      "comentario": "Substitua o valor de x na expressao e resolva as operacoes.",
+      "comentario": "Substitua o valor de x na expressao é resolva as operacoes.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-quadratica",
@@ -3012,14 +3012,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - imagem",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - imagem",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Considere f(x) = x^2 + 5x + 4. Qual e o valor de f(-1)?",
+      "enunciado": "Considere f(x) = x^2 + 5x + 4. Qual é o valor de f(-1)?",
       "opcoes": [
         "2",
         "-2",
@@ -3027,7 +3027,7 @@ export const funcoesAfimEQuadratica = {
         "4"
       ],
       "correta": "0",
-      "comentario": "Substitua o valor de x na expressao e resolva as operacoes.",
+      "comentario": "Substitua o valor de x na expressao é resolva as operacoes.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-quadratica",
@@ -3050,14 +3050,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - imagem",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - imagem",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Considere f(x) = 3x^2 - 6x. Qual e o valor de f(2)?",
+      "enunciado": "Considere f(x) = 3x^2 - 6x. Qual é o valor de f(2)?",
       "opcoes": [
         "2",
         "-2",
@@ -3065,7 +3065,7 @@ export const funcoesAfimEQuadratica = {
         "0"
       ],
       "correta": "0",
-      "comentario": "Substitua o valor de x na expressao e resolva as operacoes.",
+      "comentario": "Substitua o valor de x na expressao é resolva as operacoes.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-quadratica",
@@ -3088,14 +3088,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - imagem",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - imagem",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Considere f(x) = -2x^2 + 8. Qual e o valor de f(-1)?",
+      "enunciado": "Considere f(x) = -2x^2 + 8. Qual é o valor de f(-1)?",
       "opcoes": [
         "6",
         "8",
@@ -3103,7 +3103,7 @@ export const funcoesAfimEQuadratica = {
         "10"
       ],
       "correta": "6",
-      "comentario": "Substitua o valor de x na expressao e resolva as operacoes.",
+      "comentario": "Substitua o valor de x na expressao é resolva as operacoes.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-quadratica",
@@ -3126,14 +3126,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - imagem",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - imagem",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Considere f(x) = x^2 - 10x + 25. Qual e o valor de f(3)?",
+      "enunciado": "Considere f(x) = x^2 - 10x + 25. Qual é o valor de f(3)?",
       "opcoes": [
         "6",
         "4",
@@ -3141,7 +3141,7 @@ export const funcoesAfimEQuadratica = {
         "8"
       ],
       "correta": "4",
-      "comentario": "Substitua o valor de x na expressao e resolva as operacoes.",
+      "comentario": "Substitua o valor de x na expressao é resolva as operacoes.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-quadratica",
@@ -3164,14 +3164,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - imagem",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - imagem",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Considere f(x) = 2x^2 + 3x - 2. Qual e o valor de f(-2)?",
+      "enunciado": "Considere f(x) = 2x^2 + 3x - 2. Qual é o valor de f(-2)?",
       "opcoes": [
         "2",
         "-2",
@@ -3179,7 +3179,7 @@ export const funcoesAfimEQuadratica = {
         "4"
       ],
       "correta": "0",
-      "comentario": "Substitua o valor de x na expressao e resolva as operacoes.",
+      "comentario": "Substitua o valor de x na expressao é resolva as operacoes.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-quadratica",
@@ -3202,14 +3202,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - imagem",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - imagem",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Considere f(x) = x^2 + 1x - 12. Qual e o valor de f(4)?",
+      "enunciado": "Considere f(x) = x^2 + 1x - 12. Qual é o valor de f(4)?",
       "opcoes": [
         "10",
         "6",
@@ -3217,7 +3217,7 @@ export const funcoesAfimEQuadratica = {
         "8"
       ],
       "correta": "8",
-      "comentario": "Substitua o valor de x na expressao e resolva as operacoes.",
+      "comentario": "Substitua o valor de x na expressao é resolva as operacoes.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-quadratica",
@@ -3240,14 +3240,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - imagem",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - imagem",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Considere f(x) = -x^2 - 2x + 15. Qual e o valor de f(1)?",
+      "enunciado": "Considere f(x) = -x^2 - 2x + 15. Qual é o valor de f(1)?",
       "opcoes": [
         "12",
         "14",
@@ -3255,7 +3255,7 @@ export const funcoesAfimEQuadratica = {
         "16"
       ],
       "correta": "12",
-      "comentario": "Substitua o valor de x na expressao e resolva as operacoes.",
+      "comentario": "Substitua o valor de x na expressao é resolva as operacoes.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-quadratica",
@@ -3278,14 +3278,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - raizes",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - raizes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Quais sao as raizes da funcao f(x) = x^2 - 7x + 10?",
+      "enunciado": "Quais são as raizes da função f(x) = x^2 - 7x + 10?",
       "opcoes": [
         "5 e 2",
         "2 e 5",
@@ -3293,7 +3293,7 @@ export const funcoesAfimEQuadratica = {
         "2 e 6"
       ],
       "correta": "2 e 5",
-      "comentario": "As raizes sao os valores que anulam a funcao.",
+      "comentario": "As raizes são os valores que anulam a função.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-quadratica",
@@ -3316,14 +3316,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - raizes",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - raizes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Quais sao as raizes da funcao f(x) = x^2 + 1x - 12?",
+      "enunciado": "Quais são as raizes da função f(x) = x^2 + 1x - 12?",
       "opcoes": [
         "3 e -4",
         "-3 e 3",
@@ -3331,7 +3331,7 @@ export const funcoesAfimEQuadratica = {
         "-4 e 4"
       ],
       "correta": "-4 e 3",
-      "comentario": "As raizes sao os valores que anulam a funcao.",
+      "comentario": "As raizes são os valores que anulam a função.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-quadratica",
@@ -3354,14 +3354,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - raizes",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - raizes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Quais sao as raizes da funcao f(x) = x^2 - 4x - 12?",
+      "enunciado": "Quais são as raizes da função f(x) = x^2 - 4x - 12?",
       "opcoes": [
         "6 e -2",
         "-1 e 6",
@@ -3369,7 +3369,7 @@ export const funcoesAfimEQuadratica = {
         "-2 e 6"
       ],
       "correta": "-2 e 6",
-      "comentario": "As raizes sao os valores que anulam a funcao.",
+      "comentario": "As raizes são os valores que anulam a função.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-quadratica",
@@ -3392,14 +3392,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - raizes",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - raizes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Quais sao as raizes da funcao f(x) = x^2 - 9x + 20?",
+      "enunciado": "Quais são as raizes da função f(x) = x^2 - 9x + 20?",
       "opcoes": [
         "4 e 5",
         "5 e 4",
@@ -3407,7 +3407,7 @@ export const funcoesAfimEQuadratica = {
         "4 e 6"
       ],
       "correta": "4 e 5",
-      "comentario": "As raizes sao os valores que anulam a funcao.",
+      "comentario": "As raizes são os valores que anulam a função.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-quadratica",
@@ -3430,14 +3430,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - raizes",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - raizes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 5,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Quais sao as raizes da funcao f(x) = x^2 - 2x - 15?",
+      "enunciado": "Quais são as raizes da função f(x) = x^2 - 2x - 15?",
       "opcoes": [
         "5 e -3",
         "-3 e 5",
@@ -3445,7 +3445,7 @@ export const funcoesAfimEQuadratica = {
         "-3 e 6"
       ],
       "correta": "-3 e 5",
-      "comentario": "As raizes sao os valores que anulam a funcao.",
+      "comentario": "As raizes são os valores que anulam a função.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-quadratica",
@@ -3468,14 +3468,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - raizes",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - raizes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Quais sao as raizes da funcao f(x) = x^2 + 6x + 5?",
+      "enunciado": "Quais são as raizes da função f(x) = x^2 + 6x + 5?",
       "opcoes": [
         "-1 e -5",
         "-4 e -1",
@@ -3483,7 +3483,7 @@ export const funcoesAfimEQuadratica = {
         "-5 e 0"
       ],
       "correta": "-5 e -1",
-      "comentario": "As raizes sao os valores que anulam a funcao.",
+      "comentario": "As raizes são os valores que anulam a função.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-quadratica",
@@ -3506,14 +3506,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - raizes",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - raizes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Quais sao as raizes da funcao f(x) = x^2 - 11x + 30?",
+      "enunciado": "Quais são as raizes da função f(x) = x^2 - 11x + 30?",
       "opcoes": [
         "6 e 5",
         "6 e 6",
@@ -3521,7 +3521,7 @@ export const funcoesAfimEQuadratica = {
         "5 e 6"
       ],
       "correta": "5 e 6",
-      "comentario": "As raizes sao os valores que anulam a funcao.",
+      "comentario": "As raizes são os valores que anulam a função.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-quadratica",
@@ -3544,14 +3544,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - raizes",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - raizes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Quais sao as raizes da funcao f(x) = x^2 + 2x - 8?",
+      "enunciado": "Quais são as raizes da função f(x) = x^2 + 2x - 8?",
       "opcoes": [
         "-4 e 2",
         "2 e -4",
@@ -3559,7 +3559,7 @@ export const funcoesAfimEQuadratica = {
         "-4 e 3"
       ],
       "correta": "-4 e 2",
-      "comentario": "As raizes sao os valores que anulam a funcao.",
+      "comentario": "As raizes são os valores que anulam a função.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-quadratica",
@@ -3582,14 +3582,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - raizes",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - raizes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Quais sao as raizes da funcao f(x) = x^2 - 16?",
+      "enunciado": "Quais são as raizes da função f(x) = x^2 - 16?",
       "opcoes": [
         "4 e -4",
         "-4 e 4",
@@ -3597,7 +3597,7 @@ export const funcoesAfimEQuadratica = {
         "-4 e 5"
       ],
       "correta": "-4 e 4",
-      "comentario": "As raizes sao os valores que anulam a funcao.",
+      "comentario": "As raizes são os valores que anulam a função.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-quadratica",
@@ -3620,14 +3620,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - raizes",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - raizes",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "calculo",
       "tipo": "multipla_escolha",
-      "enunciado": "Quais sao as raizes da funcao f(x) = x^2 - 5x + 4?",
+      "enunciado": "Quais são as raizes da função f(x) = x^2 - 5x + 4?",
       "opcoes": [
         "4 e 1",
         "2 e 4",
@@ -3635,7 +3635,7 @@ export const funcoesAfimEQuadratica = {
         "1 e 5"
       ],
       "correta": "1 e 4",
-      "comentario": "As raizes sao os valores que anulam a funcao.",
+      "comentario": "As raizes são os valores que anulam a função.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-quadratica",
@@ -3658,14 +3658,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - discriminante",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - discriminante",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "f(x) = x^2 - 6x + 9. Qual e o valor do discriminante?",
+      "enunciado": "f(x) = x^2 - 6x + 9. Qual é o valor do discriminante?",
       "opcoes": [
         "-9",
         "9",
@@ -3696,14 +3696,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - discriminante",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - discriminante",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "f(x) = x^2 + 4x + 8. Quantas raizes reais essa funcao possui?",
+      "enunciado": "f(x) = x^2 + 4x + 8. Quantas raizes reais essa função possui?",
       "opcoes": [
         "nenhuma",
         "uma",
@@ -3734,14 +3734,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - discriminante",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - discriminante",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "f(x) = x^2 - 1. Quantas raizes reais essa funcao possui?",
+      "enunciado": "f(x) = x^2 - 1. Quantas raizes reais essa função possui?",
       "opcoes": [
         "nenhuma",
         "duas",
@@ -3749,7 +3749,7 @@ export const funcoesAfimEQuadratica = {
         "quatro"
       ],
       "correta": "duas",
-      "comentario": "A funcao corta o eixo x em dois pontos.",
+      "comentario": "A função corta o eixo x em dois pontos.",
       "tempoEstimado": 30,
       "tags": [
         "funcao-quadratica",
@@ -3772,14 +3772,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - discriminante",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - discriminante",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "f(x) = 2x^2 + 3x + 1. Qual e o valor do discriminante?",
+      "enunciado": "f(x) = 2x^2 + 3x + 1. Qual é o valor do discriminante?",
       "opcoes": [
         "5",
         "9",
@@ -3810,14 +3810,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - discriminante",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - discriminante",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "f(x) = x^2 + 2x + 5. Quantas raizes reais essa funcao possui?",
+      "enunciado": "f(x) = x^2 + 2x + 5. Quantas raizes reais essa função possui?",
       "opcoes": [
         "uma",
         "duas",
@@ -3848,14 +3848,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - discriminante",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - discriminante",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "f(x) = x^2 - 8x + 12. Qual e o valor do discriminante?",
+      "enunciado": "f(x) = x^2 - 8x + 12. Qual é o valor do discriminante?",
       "opcoes": [
         "16",
         "4",
@@ -3886,14 +3886,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - discriminante",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - discriminante",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "f(x) = x^2 + 7x + 10. As duas raizes reais dessa funcao sao:",
+      "enunciado": "f(x) = x^2 + 7x + 10. As duas raizes reais dessa função são:",
       "opcoes": [
         "positivas",
         "negativas",
@@ -3924,14 +3924,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - discriminante",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - discriminante",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "f(x) = x^2 - 4x + 4. Quantas raizes reais essa funcao possui?",
+      "enunciado": "f(x) = x^2 - 4x + 4. Quantas raizes reais essa função possui?",
       "opcoes": [
         "nenhuma",
         "duas",
@@ -3962,14 +3962,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - discriminante",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - discriminante",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "f(x) = 3x^2 - 12x + 12. Qual e o valor do discriminante?",
+      "enunciado": "f(x) = 3x^2 - 12x + 12. Qual é o valor do discriminante?",
       "opcoes": [
         "12",
         "24",
@@ -4000,14 +4000,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - discriminante",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - discriminante",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "f(x) = x^2 + 1x + 1. Quantas raizes reais essa funcao possui?",
+      "enunciado": "f(x) = x^2 + 1x + 1. Quantas raizes reais essa função possui?",
       "opcoes": [
         "nenhuma",
         "uma",
@@ -4038,14 +4038,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - vertice",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - vertice",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "f(x) = x^2 - 8x + 7. Qual e o eixo de simetria?",
+      "enunciado": "f(x) = x^2 - 8x + 7. Qual é o eixo de simetria?",
       "opcoes": [
         "x = -4",
         "x = 4",
@@ -4076,14 +4076,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - vertice",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - vertice",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "f(x) = -x^2 + 6x - 5. Qual e a coordenada x do vertice?",
+      "enunciado": "f(x) = -x^2 + 6x - 5. Qual é a coordenada x do vertice?",
       "opcoes": [
         "1",
         "2",
@@ -4114,14 +4114,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - vertice",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - vertice",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "f(x) = x^2 + 2x - 3. Qual e a coordenada y do vertice?",
+      "enunciado": "f(x) = x^2 + 2x - 3. Qual é a coordenada y do vertice?",
       "opcoes": [
         "-5",
         "-3",
@@ -4152,14 +4152,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - vertice",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - vertice",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "f(x) = 2x^2 - 4x + 1. Qual e o eixo de simetria?",
+      "enunciado": "f(x) = 2x^2 - 4x + 1. Qual é o eixo de simetria?",
       "opcoes": [
         "x = 1",
         "x = -1",
@@ -4190,14 +4190,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - vertice",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - vertice",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "f(x) = -2x^2 + 8x - 3. Qual e a coordenada y do vertice?",
+      "enunciado": "f(x) = -2x^2 + 8x - 3. Qual é a coordenada y do vertice?",
       "opcoes": [
         "3",
         "5",
@@ -4228,14 +4228,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - vertice",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - vertice",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "f(x) = x^2 - 10x + 16. Qual e o vertice da parabola?",
+      "enunciado": "f(x) = x^2 - 10x + 16. Qual é o vertice da parabola?",
       "opcoes": [
         "(4, 0)",
         "(5, 9)",
@@ -4266,14 +4266,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - vertice",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - vertice",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "f(x) = -x^2 - 4x + 1. Qual e o eixo de simetria?",
+      "enunciado": "f(x) = -x^2 - 4x + 1. Qual é o eixo de simetria?",
       "opcoes": [
         "x = -4",
         "x = 2",
@@ -4304,14 +4304,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - vertice",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - vertice",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "f(x) = x^2 - 6x + 5. Qual e a coordenada y do vertice?",
+      "enunciado": "f(x) = x^2 - 6x + 5. Qual é a coordenada y do vertice?",
       "opcoes": [
         "-4",
         "-5",
@@ -4342,14 +4342,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - vertice",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - vertice",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "f(x) = 3x^2 + 12x + 5. Qual e o eixo de simetria?",
+      "enunciado": "f(x) = 3x^2 + 12x + 5. Qual é o eixo de simetria?",
       "opcoes": [
         "x = -4",
         "x = -2",
@@ -4380,14 +4380,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - vertice",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - vertice",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "f(x) = -x^2 + 2x + 8. Qual e o vertice da parabola?",
+      "enunciado": "f(x) = -x^2 + 2x + 8. Qual é o vertice da parabola?",
       "opcoes": [
         "(1, 7)",
         "(-1, 9)",
@@ -4418,14 +4418,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - interpretacao",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - interpretação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "A area de um retangulo e dada por A(x) = x(x + 5). Qual expressao equivalente representa essa area?",
+      "enunciado": "A area de um retângulo e dada por A(x) = x(x + 5). Qual expressao equivalente representa essa area?",
       "opcoes": [
         "x^2 + 10x",
         "2x^2 + 5",
@@ -4456,9 +4456,9 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - interpretacao",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - interpretação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
@@ -4494,9 +4494,9 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - interpretacao",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - interpretação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
@@ -4532,14 +4532,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - interpretacao",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - interpretação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma area e modelada por A(x) = x(x + 2). Qual e a area quando x = 4?",
+      "enunciado": "Uma area e modelada por A(x) = x(x + 2). Qual é a area quando x = 4?",
       "opcoes": [
         "16",
         "20",
@@ -4570,9 +4570,9 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - interpretacao",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - interpretação",
       "dificuldadeLabel": "medio",
       "dificuldadeNivel": 6,
       "cognicao": "aplicacao",
@@ -4608,14 +4608,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - equivalencia",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - equivalencia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "O ponto (4, 11) pertence ao grafico de f(x) = ax + 3. Qual e o valor de a?",
+      "enunciado": "O ponto (4, 11) pertence ao gráfico de f(x) = ax + 3. Qual é o valor de a?",
       "opcoes": [
         "2",
         "1",
@@ -4646,14 +4646,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - equivalencia",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - equivalencia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao afim tem raiz 5 e f(0) = -10?",
+      "enunciado": "Qual função afim tem raiz 5 e f(0) = -10?",
       "opcoes": [
         "f(x) = x - 10",
         "f(x) = 2x - 10",
@@ -4684,8 +4684,8 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -4722,14 +4722,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - equivalencia",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - equivalencia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma reta passa por (1, 2) e tem coeficiente angular -3. Qual e sua lei de formacao?",
+      "enunciado": "Uma reta passa por (1, 2) e tem coeficiente angular -3. Qual é sua lei de formação?",
       "opcoes": [
         "f(x) = -3x - 1",
         "f(x) = 3x - 1",
@@ -4760,14 +4760,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - equivalencia",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - equivalencia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Para qual valor de m a funcao f(x) = mx + 4 tem raiz -2?",
+      "enunciado": "Para qual valor de m a função f(x) = mx + 4 tem raiz -2?",
       "opcoes": [
         "2",
         "-4",
@@ -4798,14 +4798,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - equivalencia",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - equivalencia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Sabendo que f(x) = 2x + b e f(3) = -1, qual e o valor de b?",
+      "enunciado": "Sabendo que f(x) = 2x + b e f(3) = -1, qual é o valor de b?",
       "opcoes": [
         "-5",
         "-7",
@@ -4836,14 +4836,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - grafico",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - gráfico",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Quando duas funcoes afins possuem o mesmo coeficiente angular e coeficientes lineares diferentes, seus graficos sao:",
+      "enunciado": "Quando duas funções afins possuem o mesmo coeficiente angular e coeficientes lineares diferentes, seus gráficos são:",
       "opcoes": [
         "perpendiculares",
         "coincidentes",
@@ -4874,14 +4874,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - equivalencia",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - equivalencia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A funcao f(x) = -4x + b possui raiz 3. Qual e o valor de b?",
+      "enunciado": "A função f(x) = -4x + b possui raiz 3. Qual é o valor de b?",
       "opcoes": [
         "-12",
         "3",
@@ -4912,14 +4912,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - equivalencia",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - equivalencia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma reta intercepta o eixo y em -2 e o eixo x em 6. Qual funcao a representa?",
+      "enunciado": "Uma reta intercepta o eixo y em -2 e o eixo x em 6. Qual função a representa?",
       "opcoes": [
         "f(x) = x/3 - 2",
         "f(x) = x - 2",
@@ -4950,14 +4950,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - grafico",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - gráfico",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao pode representar um lucro que comeca negativo e cresce com o numero de itens vendidos?",
+      "enunciado": "Qual função pode representar um lucro que comeca negativo e cresce com o número de itens vendidos?",
       "opcoes": [
         "f(x) = -2x - 5",
         "f(x) = 2x - 5",
@@ -4988,14 +4988,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - equivalencia",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - equivalencia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se x = 2 e raiz dupla de x^2 - kx + 4 = 0, qual e o valor de k?",
+      "enunciado": "Se x = 2 e raiz dupla de x^2 - kx + 4 = 0, qual é o valor de k?",
       "opcoes": [
         "2",
         "6",
@@ -5026,8 +5026,8 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
@@ -5064,14 +5064,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao quadratica tem raizes 1 e 5 e coeficiente a = 1?",
+      "enunciado": "Qual função quadratica tem raizes 1 e 5 e coeficiente a = 1?",
       "opcoes": [
         "f(x) = x^2 - 6x + 5",
         "f(x) = x^2 + 6x + 5",
@@ -5102,14 +5102,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - vertice",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - vertice",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Na funcao f(x) = x^2 + bx + 1, o eixo de simetria e x = 2. Qual e o valor de b?",
+      "enunciado": "Na função f(x) = x^2 + bx + 1, o eixo de simetria e x = 2. Qual é o valor de b?",
       "opcoes": [
         "-2",
         "-4",
@@ -5140,14 +5140,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - vertice",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - vertice",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se f(x) = -x^2 + mx + 2 tem eixo de simetria x = 3, qual e o valor de m?",
+      "enunciado": "Se f(x) = -x^2 + mx + 2 tem eixo de simetria x = 3, qual é o valor de m?",
       "opcoes": [
         "-6",
         "3",
@@ -5178,14 +5178,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - discriminante",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - discriminante",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao abre para cima e nao possui raizes reais?",
+      "enunciado": "Qual função abre para cima e não possui raizes reais?",
       "opcoes": [
         "f(x) = -x^2 + 2x + 5",
         "f(x) = x^2 - 4",
@@ -5216,14 +5216,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao tem raizes -1 e 4?",
+      "enunciado": "Qual função tem raizes -1 e 4?",
       "opcoes": [
         "f(x) = x^2 - 3x - 4",
         "f(x) = x^2 + 3x - 4",
@@ -5254,14 +5254,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - vertice",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - vertice",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma parabola tem vertice sobre o eixo y e passa por (1, 2), alem de f(0) = 1. Qual e sua lei?",
+      "enunciado": "Uma parabola tem vertice sobre o eixo y e passa por (1, 2), alem de f(0) = 1. Qual é sua lei?",
       "opcoes": [
         "f(x) = x^2 + 2",
         "f(x) = x^2 + 1",
@@ -5292,14 +5292,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - grafico",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - gráfico",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Para f(x) = x^2 - 4x + 3, em que intervalo a funcao assume valores negativos?",
+      "enunciado": "Para f(x) = x^2 - 4x + 3, em que intervalo a função assume valores negativos?",
       "opcoes": [
         "x < 1",
         "x > 3",
@@ -5330,14 +5330,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - grafico",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - gráfico",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "interpretacao",
       "tipo": "multipla_escolha",
-      "enunciado": "Para g(x) = -2x + 6, em quais valores de x a funcao assume valores positivos?",
+      "enunciado": "Para g(x) = -2x + 6, em quais valores de x a função assume valores positivos?",
       "opcoes": [
         "x = 3",
         "x > 3",
@@ -5368,14 +5368,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual par de funcoes possui a raiz comum x = 2?",
+      "enunciado": "Qual par de funções possui a raiz comum x = 2?",
       "opcoes": [
         "f(x) = x - 2 e g(x) = x^2 - 5x + 6",
         "f(x) = x + 2 e g(x) = x^2 - 5x + 6",
@@ -5406,19 +5406,19 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmacao esta correta sobre f(x) = 3x + 1 e g(x) = x^2 no ponto x = 2?",
+      "enunciado": "Qual afirmação está correta sobre f(x) = 3x + 1 e g(x) = x^2 no ponto x = 2?",
       "opcoes": [
         "f(2) < g(2)",
         "f(2) > g(2)",
         "f(2) = g(2)",
-        "Nao e possivel comparar"
+        "Não e possível comparar"
       ],
       "correta": "f(2) > g(2)",
       "comentario": "Temos f(2) = 7 e g(2) = 4.",
@@ -5444,14 +5444,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - grafico",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - gráfico",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Para f(x) = x^2 - 2x - 3, a funcao assume valores positivos em:",
+      "enunciado": "Para f(x) = x^2 - 2x - 3, a função assume valores positivos em:",
       "opcoes": [
         "-1 < x < 3",
         "x > -1",
@@ -5482,9 +5482,9 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - grafico",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - gráfico",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
@@ -5520,14 +5520,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao quadratica possui soma das raizes 6 e produto 8?",
+      "enunciado": "Qual função quadratica possui soma das raizes 6 e produto 8?",
       "opcoes": [
         "f(x) = x^2 - 6x + 8",
         "f(x) = x^2 + 6x + 8",
@@ -5535,7 +5535,7 @@ export const funcoesAfimEQuadratica = {
         "f(x) = x^2 + 8x - 6"
       ],
       "correta": "f(x) = x^2 - 6x + 8",
-      "comentario": "Usamos as relacoes de soma e produto das raizes.",
+      "comentario": "Usamos as relações de soma e produto das raizes.",
       "tempoEstimado": 35,
       "tags": [
         "equivalencia",
@@ -5558,14 +5558,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - conceito",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - conceito",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se f(x) = ax^2 e f(3) = 27, qual e o valor de a?",
+      "enunciado": "Se f(x) = ax^2 e f(3) = 27, qual é o valor de a?",
       "opcoes": [
         "1",
         "3",
@@ -5596,9 +5596,9 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 8,
       "cognicao": "analise",
@@ -5634,14 +5634,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao tem raizes -2 e 2 e coeficiente a = -1?",
+      "enunciado": "Qual função tem raizes -2 e 2 e coeficiente a = -1?",
       "opcoes": [
         "f(x) = x^2 - 4",
         "f(x) = -x^2 - 4",
@@ -5672,14 +5672,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao afim - equivalencia",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função afim - equivalencia",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma reta passa por (2, 5) e (5, 11). Qual e o valor de f(0)?",
+      "enunciado": "Uma reta passa por (2, 5) e (5, 11). Qual é o valor de f(0)?",
       "opcoes": [
         "1",
         "-1",
@@ -5710,14 +5710,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Funcao quadratica - vertice",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Função quadratica - vertice",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma parabola tem vertice em (0, -4) e passa por (1, -3). Qual funcao pode representa-la?",
+      "enunciado": "Uma parabola tem vertice em (0, -4) e passa por (1, -3). Qual função pode representa-la?",
       "opcoes": [
         "f(x) = -x^2 - 4",
         "f(x) = x^2 - 4",
@@ -5748,14 +5748,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma assinatura mensal custou 22 reais com 4 unidades de consumo e 34 reais com 8 unidades. Se o custo for afim, qual e a lei correta?",
+      "enunciado": "Uma assinatura mensal custou 22 reais com 4 unidades de consumo e 34 reais com 8 unidades. Se o custo for afim, qual é a lei correta?",
       "opcoes": [
         "C(x) = 2x + 14",
         "C(x) = 4x + 6",
@@ -5763,7 +5763,7 @@ export const funcoesAfimEQuadratica = {
         "C(x) = x + 18"
       ],
       "correta": "C(x) = 3x + 10",
-      "comentario": "A variacao de 12 reais em 4 unidades indica coeficiente angular 3.",
+      "comentario": "A variação de 12 reais em 4 unidades indica coeficiente angular 3.",
       "tempoEstimado": 40,
       "tags": [
         "funcao-afim",
@@ -5786,21 +5786,21 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um reservatorio tinha 80 litros. Depois de 3 minutos, tinha 65 litros; depois de 7 minutos, tinha 45 litros. Qual afirmacao e correta?",
+      "enunciado": "Um reservatorio tinha 80 litros. Depois de 3 minutos, tinha 65 litros; depois de 7 minutos, tinha 45 litros. Qual afirmação é correta?",
       "opcoes": [
-        "A taxa de variacao e -3 litros por minuto.",
+        "A taxa de variação e -3 litros por minuto.",
         "O volume apos 10 minutos sera 10 litros.",
         "O volume inicial era 75 litros.",
-        "A taxa de variacao e -5 litros por minuto."
+        "A taxa de variação e -5 litros por minuto."
       ],
-      "correta": "A taxa de variacao e -5 litros por minuto.",
+      "correta": "A taxa de variação e -5 litros por minuto.",
       "comentario": "O volume cai 20 litros em 4 minutos.",
       "tempoEstimado": 40,
       "tags": [
@@ -5824,9 +5824,9 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -5862,14 +5862,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um grafico de reta cruza o eixo y em 9 e o eixo x em 3. Qual funcao afim o representa?",
+      "enunciado": "Um gráfico de reta cruza o eixo y em 9 e o eixo x em 3. Qual função afim o representa?",
       "opcoes": [
         "f(x) = 3x + 9",
         "f(x) = -3x + 9",
@@ -5900,9 +5900,9 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -5938,8 +5938,8 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -5949,7 +5949,7 @@ export const funcoesAfimEQuadratica = {
       "opcoes": [
         "A raiz correta e -3, pois basta trocar o sinal do 12.",
         "A raiz correta e 4, pois o coeficiente angular sempre vira raiz.",
-        "A funcao nao possui raiz.",
+        "A função não possui raiz.",
         "A raiz correta e 3, porque 4x - 12 = 0 leva a x = 3."
       ],
       "correta": "A raiz correta e 3, porque 4x - 12 = 0 leva a x = 3.",
@@ -5976,22 +5976,22 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmacao esta incorreta sobre f(x) = -2x + 8?",
+      "enunciado": "Qual afirmação esta incorreta sobre f(x) = -2x + 8?",
       "opcoes": [
-        "A funcao cresce 2 unidades quando x aumenta 1 unidade.",
-        "A funcao e decrescente.",
-        "A raiz da funcao e 4.",
+        "A função cresce 2 unidades quando x aumenta 1 unidade.",
+        "A função e decrescente.",
+        "A raiz da função e 4.",
         "O intercepto no eixo y e 8."
       ],
-      "correta": "A funcao cresce 2 unidades quando x aumenta 1 unidade.",
-      "comentario": "Com coeficiente angular -2, a funcao diminui 2 unidades.",
+      "correta": "A função cresce 2 unidades quando x aumenta 1 unidade.",
+      "comentario": "Com coeficiente angular -2, a função diminui 2 unidades.",
       "tempoEstimado": 40,
       "tags": [
         "funcao-afim",
@@ -6014,8 +6014,8 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -6052,14 +6052,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma funcao afim tem coeficiente angular 4 e passa pelo ponto (2, 1). Qual forma equivalente pode representa-la?",
+      "enunciado": "Uma função afim tem coeficiente angular 4 e passa pelo ponto (2, 1). Qual forma equivalente pode representa-la?",
       "opcoes": [
         "f(x) = 4(x + 2) + 1",
         "f(x) = 2(x - 1) + 4",
@@ -6090,14 +6090,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao afim tem intercepto positivo e raiz negativa?",
+      "enunciado": "Qual função afim tem intercepto positivo e raiz negativa?",
       "opcoes": [
         "f(x) = -2x + 6",
         "f(x) = -3x - 9",
@@ -6128,9 +6128,9 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -6166,14 +6166,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "A area de um terreno e modelada por A(x) = -x^2 + 12x. Qual e a maior area possivel?",
+      "enunciado": "A area de um terreno e modelada por A(x) = -x^2 + 12x. Qual é a maior area possível?",
       "opcoes": [
         "24",
         "36",
@@ -6204,14 +6204,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma parabola abre para cima, corta o eixo x em x = -1 e x = 5 e possui a = 1. Qual e sua forma fatorada?",
+      "enunciado": "Uma parabola abre para cima, corta o eixo x em x = -1 e x = 5 e possui a = 1. Qual é sua forma fatorada?",
       "opcoes": [
         "f(x) = (x - 1)(x + 5)",
         "f(x) = (x + 1)(x + 5)",
@@ -6219,7 +6219,7 @@ export const funcoesAfimEQuadratica = {
         "f(x) = (x - 1)(x - 5)"
       ],
       "correta": "f(x) = (x + 1)(x - 5)",
-      "comentario": "As raizes determinam os fatores da funcao.",
+      "comentario": "As raizes determinam os fatores da função.",
       "tempoEstimado": 40,
       "tags": [
         "funcao-quadratica",
@@ -6242,21 +6242,21 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Sem resolver toda a equacao, qual propriedade de f(x) = x^2 - 10x + 21 garante que o vertice fica abaixo do eixo x?",
       "opcoes": [
-        "A soma das raizes e positiva e o produto tambem.",
+        "A soma das raizes e positiva e o produto também.",
         "O coeficiente b e negativo.",
         "O termo independente e positivo.",
-        "A funcao tem duas raizes reais distintas e abre para cima."
+        "A função tem duas raizes reais distintas e abre para cima."
       ],
-      "correta": "A funcao tem duas raizes reais distintas e abre para cima.",
+      "correta": "A função tem duas raizes reais distintas e abre para cima.",
       "comentario": "Abrindo para cima e cortando o eixo x em dois pontos, o vertice fica abaixo dele.",
       "tempoEstimado": 40,
       "tags": [
@@ -6280,9 +6280,9 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
@@ -6295,7 +6295,7 @@ export const funcoesAfimEQuadratica = {
         "Entre -4 e 10"
       ],
       "correta": "Entre 4 e 10",
-      "comentario": "As raizes sao 4 e 10, e a parabola abre para baixo.",
+      "comentario": "As raizes são 4 e 10, e a parabola abre para baixo.",
       "tempoEstimado": 40,
       "tags": [
         "funcao-quadratica",
@@ -6318,8 +6318,8 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -6327,13 +6327,13 @@ export const funcoesAfimEQuadratica = {
       "tipo": "multipla_escolha",
       "enunciado": "Um aluno disse que, em f(x) = x^2 - 4x + 4, ha duas raizes reais diferentes porque a expressao e do segundo grau. Qual alternativa corrige a conclusao?",
       "opcoes": [
-        "Nao ha raiz real, pois o termo independente e positivo.",
+        "Não ha raiz real, pois o termo independente e positivo.",
         "Ha uma raiz real dupla, pois o discriminante e zero.",
         "Ha duas raizes diferentes, 2 e 4.",
-        "Ha infinitas raizes porque a funcao zera em um ponto."
+        "Ha infinitas raizes porque a função zera em um ponto."
       ],
       "correta": "Ha uma raiz real dupla, pois o discriminante e zero.",
-      "comentario": "Nem toda funcao quadratica possui duas raizes reais distintas.",
+      "comentario": "Nem toda função quadratica possui duas raizes reais distintas.",
       "tempoEstimado": 40,
       "tags": [
         "funcao-quadratica",
@@ -6356,21 +6356,21 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmacao e falsa sobre f(x) = -x^2 + 6x - 5?",
+      "enunciado": "Qual afirmação e falsa sobre f(x) = -x^2 + 6x - 5?",
       "opcoes": [
         "A parabola abre para baixo.",
         "O valor maximo ocorre em x = 3.",
-        "A funcao possui ponto de minimo.",
-        "A funcao possui duas raizes reais."
+        "A função possui ponto de minimo.",
+        "A função possui duas raizes reais."
       ],
-      "correta": "A funcao possui ponto de minimo.",
+      "correta": "A função possui ponto de minimo.",
       "comentario": "Como a concavidade e para baixo, o vertice representa maximo.",
       "tempoEstimado": 40,
       "tags": [
@@ -6394,8 +6394,8 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -6432,8 +6432,8 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -6447,7 +6447,7 @@ export const funcoesAfimEQuadratica = {
         "(x - 12)(x + 1)"
       ],
       "correta": "(x - 4)(x + 3)",
-      "comentario": "Precisamos de dois numeros cujo produto seja -12 e a soma seja -1.",
+      "comentario": "Precisamos de dois números cujo produto seja -12 e a soma seja -1.",
       "tempoEstimado": 40,
       "tags": [
         "equivalencia",
@@ -6470,14 +6470,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual situacao abaixo parece quadratica, mas na verdade e afim?",
+      "enunciado": "Qual situação abaixo parece quadratica, mas na verdade e afim?",
       "opcoes": [
         "A area de um quadrado de lado x.",
         "Um valor inicial de 20 reais acrescido de 6 reais por unidade.",
@@ -6485,7 +6485,7 @@ export const funcoesAfimEQuadratica = {
         "A receita dada por -x^2 + 8x."
       ],
       "correta": "Um valor inicial de 20 reais acrescido de 6 reais por unidade.",
-      "comentario": "Ha termo fixo e taxa constante, caracteristica de funcao afim.",
+      "comentario": "Ha termo fixo e taxa constante, caracteristica de função afim.",
       "tempoEstimado": 40,
       "tags": [
         "comparacao",
@@ -6508,14 +6508,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma parabola corta o eixo x em 1 e 3 e passa por (0, 3). Qual funcao pode representa-la?",
+      "enunciado": "Uma parabola corta o eixo x em 1 e 3 e passa por (0, 3). Qual função pode representa-la?",
       "opcoes": [
         "f(x) = x^2 + 4x + 3",
         "f(x) = -x^2 + 4x - 3",
@@ -6546,14 +6546,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual funcao quadratica possui vertice em (2, -1) e abre para cima?",
+      "enunciado": "Qual função quadratica possui vertice em (2, -1) e abre para cima?",
       "opcoes": [
         "f(x) = -(x - 2)^2 - 1",
         "f(x) = (x + 2)^2 - 1",
@@ -6584,21 +6584,21 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmacao esta correta sobre f(x) = x^2 + 4x + 4?",
+      "enunciado": "Qual afirmação está correta sobre f(x) = x^2 + 4x + 4?",
       "opcoes": [
-        "A funcao toca o eixo x em um unico ponto.",
-        "A funcao tem duas raizes diferentes.",
-        "A funcao nao tem vertice.",
-        "A funcao abre para baixo."
+        "A função toca o eixo x em um unico ponto.",
+        "A função tem duas raizes diferentes.",
+        "A função não tem vertice.",
+        "A função abre para baixo."
       ],
-      "correta": "A funcao toca o eixo x em um unico ponto.",
+      "correta": "A função toca o eixo x em um unico ponto.",
       "comentario": "A expressao e (x + 2)^2, logo ha raiz dupla.",
       "tempoEstimado": 40,
       "tags": [
@@ -6622,8 +6622,8 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 9,
@@ -6660,14 +6660,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma funcao quadratica abre para baixo, tem vertice em (3, 5) e passa por (2, 4). Qual forma e compativel?",
+      "enunciado": "Uma função quadratica abre para baixo, tem vertice em (3, 5) e passa por (2, 4). Qual forma e compativel?",
       "opcoes": [
         "f(x) = (x - 3)^2 + 5",
         "f(x) = -(x + 3)^2 + 5",
@@ -6698,14 +6698,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se f(x) = x^2 - 6x + 8, qual erro comum leva alguem a afirmar que as raizes sao 6 e 8?",
+      "enunciado": "Se f(x) = x^2 - 6x + 8, qual erro comum leva alguém a afirmar que as raizes são 6 e 8?",
       "opcoes": [
         "Supor que toda parabola tem raiz zero.",
         "Trocar o sinal de a e b.",
@@ -6713,7 +6713,7 @@ export const funcoesAfimEQuadratica = {
         "Confundir coeficientes com raizes sem fatorar ou usar Bhaskara."
       ],
       "correta": "Confundir coeficientes com raizes sem fatorar ou usar Bhaskara.",
-      "comentario": "As raizes corretas sao 2 e 4.",
+      "comentario": "As raizes corretas são 2 e 4.",
       "tempoEstimado": 40,
       "tags": [
         "funcao-quadratica",
@@ -6736,14 +6736,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma reta e uma parabola se encontram no ponto de coordenada x = 1. Se a reta e y = x + 2 e a parabola tem raizes 1 e 4, qual parabola pode ser a da situacao?",
+      "enunciado": "Uma reta e uma parabola se encontram no ponto de coordenada x = 1. Se a reta e y = x + 2 e a parabola tem raizes 1 e 4, qual parabola pode ser a da situação?",
       "opcoes": [
         "y = x^2 - 5x + 4",
         "y = x^2 - 3x + 2",
@@ -6774,14 +6774,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual opcao descreve a mesma funcao que f(x) = x^2 - 6x + 8?",
+      "enunciado": "Qual opcao descreve a mesma função que f(x) = x^2 - 6x + 8?",
       "opcoes": [
         "f(x) = (x + 2)(x + 4)",
         "f(x) = (x - 2)(x - 4)",
@@ -6812,8 +6812,8 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -6823,10 +6823,10 @@ export const funcoesAfimEQuadratica = {
       "opcoes": [
         "A parabola abre para baixo.",
         "O valor maximo ocorre em x = 2.",
-        "A funcao e negativa para todo x real.",
-        "A funcao possui duas raizes reais."
+        "A função e negativa para todo x real.",
+        "A função possui duas raizes reais."
       ],
-      "correta": "A funcao e negativa para todo x real.",
+      "correta": "A função e negativa para todo x real.",
       "comentario": "Ela zera em x = 1 e x = 3 e assume valores positivos entre essas raizes.",
       "tempoEstimado": 40,
       "tags": [
@@ -6850,14 +6850,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um projeto usa a funcao P(x) = -x^2 + 12x - 20 para modelar lucro. Em qual quantidade o lucro e maximo?",
+      "enunciado": "Um projeto usa a função P(x) = -x^2 + 12x - 20 para modelar lucro. Em qual quantidade o lucro e maximo?",
       "opcoes": [
         "4",
         "10",
@@ -6888,22 +6888,22 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Uma parabola possui eixo de simetria x = -1 e passa por (0, -2) e (-2, -2). Qual informacao isso confirma?",
       "opcoes": [
-        "Os pontos estao simetricos em relacao ao eixo.",
-        "A funcao e afim.",
+        "Os pontos estao simetricos em relação ao eixo.",
+        "A função e afim.",
         "A parabola abre necessariamente para cima.",
         "O vertice esta em (0, -2)."
       ],
-      "correta": "Os pontos estao simetricos em relacao ao eixo.",
-      "comentario": "Pontos a mesma distancia do eixo possuem a mesma imagem.",
+      "correta": "Os pontos estao simetricos em relação ao eixo.",
+      "comentario": "Pontos a mesma distância do eixo possuem a mesma imagem.",
       "tempoEstimado": 40,
       "tags": [
         "funcao-quadratica",
@@ -6926,8 +6926,8 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -6964,22 +6964,22 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmacao sobre a funcao f(x) = x^2 - 2x + 5 e verdadeira?",
+      "enunciado": "Qual afirmação sobre a função f(x) = x^2 - 2x + 5 e verdadeira?",
       "opcoes": [
         "Tem duas raizes reais porque o termo c e positivo.",
         "Tem vertice sobre o eixo x.",
-        "Nao corta o eixo x porque o discriminante e negativo.",
+        "Não corta o eixo x porque o discriminante e negativo.",
         "Abre para baixo porque b e negativo."
       ],
-      "correta": "Nao corta o eixo x porque o discriminante e negativo.",
-      "comentario": "Delta = 4 - 20 = -16. Assim, a resposta correta ? Nao corta o eixo x porque o discriminante e negativo..",
+      "correta": "Não corta o eixo x porque o discriminante e negativo.",
+      "comentario": "Delta = 4 - 20 = -16. Assim, a resposta correta ? Não corta o eixo x porque o discriminante e negativo..",
       "tempoEstimado": 40,
       "tags": [
         "funcao-quadratica",
@@ -7002,22 +7002,22 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma empresa compara dois modelos: A(x) = 4x + 20 e B(x) = x^2. Qual afirmacao corrige quem diz que, em x = 5, B e maior so por ser quadratica?",
+      "enunciado": "Uma empresa compara dois modelos: A(x) = 4x + 20 e B(x) = x^2. Qual afirmação corrige quem diz que, em x = 5, B e maior so por ser quadratica?",
       "opcoes": [
         "A(5) = 25 e B(5) = 40, logo B e maior.",
-        "As duas funcoes valem 25.",
-        "Nao se pode substituir x por 5 em funcoes diferentes.",
+        "As duas funções valem 25.",
+        "Não se pode substituir x por 5 em funções diferentes.",
         "A(5) = 40 e B(5) = 25, logo A e maior."
       ],
       "correta": "A(5) = 40 e B(5) = 25, logo A e maior.",
-      "comentario": "O tipo da funcao nao basta; e preciso comparar os valores numericos.",
+      "comentario": "O tipo da função não basta; e preciso comparar os valores numericos.",
       "tempoEstimado": 40,
       "tags": [
         "comparacao",
@@ -7040,21 +7040,21 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
       "enunciado": "Uma parabola abre para cima, tem vertice em (3, -4) e corta o eixo x em dois pontos. O que se conclui sobre seus valores entre as raizes?",
       "opcoes": [
-        "Sao negativos.",
-        "Sao positivos.",
-        "Sao sempre nulos.",
-        "Sao sempre maiores que o vertice."
+        "São negativos.",
+        "São positivos.",
+        "São sempre nulos.",
+        "São sempre maiores que o vertice."
       ],
-      "correta": "Sao negativos.",
+      "correta": "São negativos.",
       "comentario": "Como o vertice esta abaixo do eixo x, a parabola fica negativa entre as raizes.",
       "tempoEstimado": 40,
       "tags": [
@@ -7078,8 +7078,8 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -7087,13 +7087,13 @@ export const funcoesAfimEQuadratica = {
       "tipo": "multipla_escolha",
       "enunciado": "Uma reta com coeficiente angular 0 foi descrita como crescente. Qual alternativa corrige isso?",
       "opcoes": [
-        "Coeficiente angular 0 indica funcao quadratica.",
-        "Coeficiente angular 0 indica funcao constante.",
+        "Coeficiente angular 0 indica função quadratica.",
+        "Coeficiente angular 0 indica função constante.",
         "Toda reta horizontal e crescente.",
-        "A descricao esta correta."
+        "A descricao está correta."
       ],
-      "correta": "Coeficiente angular 0 indica funcao constante.",
-      "comentario": "A reta horizontal nao cresce nem decresce.",
+      "correta": "Coeficiente angular 0 indica função constante.",
+      "comentario": "A reta horizontal não cresce nem decresce.",
       "tempoEstimado": 40,
       "tags": [
         "funcao-afim",
@@ -7116,14 +7116,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma funcao afim tem raiz -4 e passa pelo ponto (0, 12). Qual e seu coeficiente angular?",
+      "enunciado": "Uma função afim tem raiz -4 e passa pelo ponto (0, 12). Qual é seu coeficiente angular?",
       "opcoes": [
         "-4",
         "-3",
@@ -7154,14 +7154,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual lei de formacao corresponde a uma reta de coeficiente angular 3 e que passa por (0, 12)?",
+      "enunciado": "Qual lei de formação corresponde a uma reta de coeficiente angular 3 e que passa por (0, 12)?",
       "opcoes": [
         "f(x) = 12x + 3",
         "f(x) = 3x - 12",
@@ -7192,14 +7192,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma funcao quadratica tem raizes -2 e 6. Qual e a coordenada x do vertice?",
+      "enunciado": "Uma função quadratica tem raizes -2 e 6. Qual é a coordenada x do vertice?",
       "opcoes": [
         "2",
         "1",
@@ -7230,21 +7230,21 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual erro esta em afirmar que, se uma funcao quadratica tem duas raizes positivas, entao todos os seus valores sao positivos?",
+      "enunciado": "Qual erro esta em afirmar que, se uma função quadratica tem duas raizes positivas, entao todos os seus valores são positivos?",
       "opcoes": [
         "Confundir raiz com vertice.",
-        "Ignorar que a funcao pode ficar negativa entre as raizes.",
+        "Ignorar que a função pode ficar negativa entre as raizes.",
         "Supor que a concavidade sempre e para baixo.",
         "Trocar discriminante por coeficiente angular."
       ],
-      "correta": "Ignorar que a funcao pode ficar negativa entre as raizes.",
+      "correta": "Ignorar que a função pode ficar negativa entre as raizes.",
       "comentario": "Para a > 0, a parabola fica abaixo do eixo x entre as raizes.",
       "tempoEstimado": 40,
       "tags": [
@@ -7268,8 +7268,8 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -7283,7 +7283,7 @@ export const funcoesAfimEQuadratica = {
         "x^2 - 3x + 9"
       ],
       "correta": "x^2 - 6x + 9",
-      "comentario": "Basta desenvolver o quadrado da diferenca.",
+      "comentario": "Basta desenvolver o quadrado da diferença.",
       "tempoEstimado": 40,
       "tags": [
         "equivalencia",
@@ -7306,21 +7306,21 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma parabola abre para baixo e tem vertice em (5, 12). Qual afirmacao e obrigatoriamente verdadeira?",
+      "enunciado": "Uma parabola abre para baixo e tem vertice em (5, 12). Qual afirmação e obrigatoriamente verdadeira?",
       "opcoes": [
-        "O valor minimo da funcao e 12.",
-        "A funcao nao pode ter raizes reais.",
+        "O valor minimo da função e 12.",
+        "A função não pode ter raizes reais.",
         "A coordenada x do vertice e -5.",
-        "O valor maximo da funcao e 12."
+        "O valor maximo da função e 12."
       ],
-      "correta": "O valor maximo da funcao e 12.",
+      "correta": "O valor maximo da função e 12.",
       "comentario": "Concavidade para baixo transforma o vertice em ponto de maximo.",
       "tempoEstimado": 40,
       "tags": [
@@ -7344,21 +7344,21 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Qual afirmacao sobre a funcao afim f(x) = -x + 2 e falsa?",
+      "enunciado": "Qual afirmação sobre a função afim f(x) = -x + 2 e falsa?",
       "opcoes": [
-        "O valor de f(3) e 3.",
-        "A funcao e decrescente.",
-        "A raiz da funcao e 2.",
+        "O valor de f(3) é 3.",
+        "A função e decrescente.",
+        "A raiz da função e 2.",
         "O intercepto no eixo y e 2."
       ],
-      "correta": "O valor de f(3) e 3.",
+      "correta": "O valor de f(3) é 3.",
       "comentario": "Na verdade, f(3) = -1.",
       "tempoEstimado": 40,
       "tags": [
@@ -7382,22 +7382,22 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Se f(x) = x^2 - 4x + 4, qual comparacao entre f(1) e f(3) esta correta?",
+      "enunciado": "Se f(x) = x^2 - 4x + 4, qual comparacao entre f(1) e f(3) está correta?",
       "opcoes": [
         "f(1) < f(3)",
         "f(1) = f(3)",
         "f(1) > f(3)",
-        "Nao e possivel comparar"
+        "Não e possível comparar"
       ],
       "correta": "f(1) = f(3)",
-      "comentario": "Os pontos 1 e 3 estao a mesma distancia do eixo de simetria x = 2.",
+      "comentario": "Os pontos 1 e 3 estao a mesma distância do eixo de simetria x = 2.",
       "tempoEstimado": 40,
       "tags": [
         "funcao-quadratica",
@@ -7420,8 +7420,8 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -7458,22 +7458,22 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Um aluno afirmou que o eixo de simetria de f(x) = x^2 - 8x + 12 e x = 8. Qual e a correcao?",
+      "enunciado": "Um aluno afirmou que o eixo de simetria de f(x) = x^2 - 8x + 12 e x = 8. Qual é a correcao?",
       "opcoes": [
         "O eixo correto e x = -4.",
         "O eixo correto e x = 12.",
-        "Nao existe eixo de simetria.",
+        "Não existe eixo de simetria.",
         "O eixo correto e x = 4, pois vale -b/(2a)."
       ],
       "correta": "O eixo correto e x = 4, pois vale -b/(2a).",
-      "comentario": "Nao se usa apenas o valor de b; e preciso dividir por 2a.",
+      "comentario": "Não se usa apenas o valor de b; é preciso dividir por 2a.",
       "tempoEstimado": 40,
       "tags": [
         "funcao-quadratica",
@@ -7496,14 +7496,14 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma funcao afim tem f(2) = 11 e f(6) = 19. Qual sera o valor de f(10)?",
+      "enunciado": "Uma função afim tem f(2) = 11 e f(6) = 19. Qual sera o valor de f(10)?",
       "opcoes": [
         "27",
         "25",
@@ -7511,7 +7511,7 @@ export const funcoesAfimEQuadratica = {
         "31"
       ],
       "correta": "27",
-      "comentario": "A taxa de variacao e 2 por unidade de x.",
+      "comentario": "A taxa de variação e 2 por unidade de x.",
       "tempoEstimado": 40,
       "tags": [
         "funcao-afim",
@@ -7534,8 +7534,8 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Pegadinha",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -7544,11 +7544,11 @@ export const funcoesAfimEQuadratica = {
       "enunciado": "Se uma parabola abre para cima e seu vertice esta acima do eixo x, o que se conclui?",
       "opcoes": [
         "Possui exatamente uma raiz real.",
-        "Nao possui raizes reais.",
+        "Não possui raizes reais.",
         "Possui duas raizes reais distintas.",
         "Possui raiz zero."
       ],
-      "correta": "Nao possui raizes reais.",
+      "correta": "Não possui raizes reais.",
       "comentario": "Toda a parabola fica acima do eixo x.",
       "tempoEstimado": 40,
       "tags": [
@@ -7572,8 +7572,8 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
       "subtopico": "Equivalencia de formas",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
@@ -7610,22 +7610,22 @@ export const funcoesAfimEQuadratica = {
       "serie": [
         1
       ],
-      "materia": "Matematica",
-      "topico": "Funcoes Afim e Quadratica",
-      "subtopico": "Interpretacao indireta",
+      "materia": "Matemática",
+      "topico": "Funções Afim e Quadratica",
+      "subtopico": "Interpretação indireta",
       "dificuldadeLabel": "dificil",
       "dificuldadeNivel": 10,
       "cognicao": "analise",
       "tipo": "multipla_escolha",
-      "enunciado": "Uma funcao quadratica abre para baixo, tem vertice em (2, 7) e passa por (0, 3). Qual afirmacao e correta?",
+      "enunciado": "Uma função quadratica abre para baixo, tem vertice em (2, 7) e passa por (0, 3). Qual afirmação é correta?",
       "opcoes": [
-        "A funcao possui minimo igual a 7.",
+        "A função possui minimo igual a 7.",
         "O eixo de simetria e x = -2.",
-        "O ponto (4, 3) nao pertence ao grafico.",
+        "O ponto (4, 3) não pertence ao gráfico.",
         "Sua forma pode ser f(x) = -(x - 2)^2 + 7."
       ],
       "correta": "Sua forma pode ser f(x) = -(x - 2)^2 + 7.",
-      "comentario": "A forma de vertice encaixa o vertice e o ponto dado; por simetria, (4, 3) tambem pertence ao grafico.",
+      "comentario": "A forma de vertice encaixa o vertice e o ponto dado; por simetria, (4, 3) também pertence ao gráfico.",
       "tempoEstimado": 40,
       "tags": [
         "funcao-quadratica",

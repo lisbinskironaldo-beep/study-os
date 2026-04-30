@@ -1,0 +1,103 @@
+{
+  "summary": {},
+  "results": [
+    {
+      "file": "questions/banks/1-serie/fisica/cinematica-mru-mruv/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/fisica/grandezas-fisicas/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/fisica/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/fisica/movimento-uniforme-e-variado/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/fisica/vetores/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/fisica/dinamica-leis-de-newton/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/fisica/impulso-e-quantidade-de-movimento/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/fisica/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/fisica/trabalho-e-energia/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/fisica/eletrodinamica/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/fisica/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/fisica/magnetismo/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/fisica/ondulatoria/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/fisica/optica/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    }
+  ]
+}

@@ -41,19 +41,57 @@ function rotate(array, offset) {
   return array.map((_, index) => array[(index + offset) % size]);
 }
 
-function buildOptions(facts, factIndex, variantIndex) {
+function normalizeOption(value) {
+  return String(value || "").trim().toLowerCase();
+}
+
+function uniquePush(options, value) {
+  const normalized = normalizeOption(value);
+  if (!normalized || options.some((option) => normalizeOption(option) === normalized)) {
+    return;
+  }
+  options.push(value);
+}
+
+function buildOptions(facts, factIndex, variantIndex, fallbackFacts = []) {
   const current = facts[factIndex];
-  const distractors = facts
+  const localDistractors = facts
     .filter((_, index) => index !== factIndex)
+    .filter((fact) => normalizeOption(fact.answer) !== normalizeOption(current.answer))
     .map((fact) => fact.answer);
-  const picked = rotate(
-    distractors,
-    (factIndex + variantIndex) % distractors.length
-  ).slice(0, 3);
-  return rotate(
-    [current.answer, ...picked],
-    (factIndex + variantIndex) % 4
-  );
+
+  const widerDistractors = fallbackFacts
+    .filter((fact) => normalizeOption(fact.answer) !== normalizeOption(current.answer))
+    .map((fact) => fact.answer);
+
+  const fallbackDistractors = [
+    "uma definição apenas parcialmente relacionada ao tema",
+    "uma interpretação genérica que não resolve o comando",
+    "um exemplo sem relação direta com o conceito pedido",
+    "uma resposta que confunde forma e sentido"
+  ];
+
+  const picked = [];
+  for (const option of rotate(localDistractors, (factIndex + variantIndex) % Math.max(1, localDistractors.length))) {
+    uniquePush(picked, option);
+    if (picked.length >= 3) break;
+  }
+  for (const option of rotate(widerDistractors, (factIndex + variantIndex) % Math.max(1, widerDistractors.length))) {
+    uniquePush(picked, option);
+    if (picked.length >= 3) break;
+  }
+  for (const option of fallbackDistractors) {
+    uniquePush(picked, option);
+    if (picked.length >= 3) break;
+  }
+
+  const finalOptions = [];
+  uniquePush(finalOptions, current.answer);
+  for (const option of picked) {
+    uniquePush(finalOptions, option);
+  }
+
+  return rotate(finalOptions.slice(0, 4), (factIndex + variantIndex) % 4);
 }
 
 function buildTempo(nivel) {
@@ -73,7 +111,7 @@ function buildTempo(nivel) {
 }
 
 function buildComment(answer, why) {
-  return `${answer} e a resposta correta porque ${why}.`;
+  return `${answer} é a resposta correta porque ${why}.`;
 }
 
 export function buildPlannedQuestions({
@@ -86,6 +124,7 @@ export function buildPlannedQuestions({
   globalMatrix = null
 }) {
   let counter = 1;
+  const allFacts = blocos.flatMap((bloco) => bloco.fatos);
 
   const rawQuestions = blocos.flatMap((bloco) =>
     bloco.fatos.flatMap((fato, factIndex) =>
@@ -98,7 +137,8 @@ export function buildPlannedQuestions({
         const opcoes = buildOptions(
           bloco.fatos,
           factIndex,
-          variantIndex
+          variantIndex,
+          allFacts
         );
         const matrix =
           Array.isArray(globalMatrix) &&

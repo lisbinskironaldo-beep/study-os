@@ -1,0 +1,89 @@
+{
+  "summary": {},
+  "results": [
+    {
+      "file": "questions/banks/1-serie/sociologia/cultura-e-sociedade/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/sociologia/identidade/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/sociologia/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/1-serie/sociologia/socializacao/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/sociologia/classes-sociais/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/sociologia/estrutura-social/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/sociologia/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/2-serie/sociologia/trabalho/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/sociologia/cidadania/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/sociologia/index.js",
+      "topicCount": 0,
+      "questionCount": 0,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/sociologia/movimentos-sociais/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    },
+    {
+      "file": "questions/banks/3-serie/sociologia/politica/index.js",
+      "topicCount": 1,
+      "questionCount": 150,
+      "issueCount": 0,
+      "issues": []
+    }
+  ]
+}
