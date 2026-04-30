@@ -20,8 +20,13 @@ const {
     getOpsAiMemory,
     saveOpsAiMemory,
     getMarketingContentQueue,
+    getMarketingIntegrations,
     generateMarketingContentQueue,
     updateMarketingContentItem,
+    prepareMarketingContentIntegration,
+    getBufferOrganizationsAndChannels,
+    publishMarketingContentToInstagram,
+    scheduleMarketingContentWithBuffer,
     listChangeRequests,
     createChangeRequest,
     approveChangeRequest,
@@ -538,6 +543,14 @@ module.exports = async function handler(req, res) {
         return sendJson(res, 200, await getMarketingContentQueue());
     }
 
+    if (routePath === "marketing/integrations") {
+        if (req.method !== "GET") {
+            return methodNotAllowed(res, ["GET", "OPTIONS"]);
+        }
+
+        return sendJson(res, 200, await getMarketingIntegrations());
+    }
+
     if (routePath === "marketing/content/generate") {
         if (req.method !== "POST") {
             return methodNotAllowed(res, ["POST", "OPTIONS"]);
@@ -577,6 +590,75 @@ module.exports = async function handler(req, res) {
         }
 
         const result = await updateMarketingContentItem(body);
+        return sendJson(res, result.ok ? 200 : 400, result);
+    }
+
+    if (routePath === "marketing/content/prepare") {
+        if (req.method !== "POST") {
+            return methodNotAllowed(res, ["POST", "OPTIONS"]);
+        }
+
+        let body = {};
+
+        try {
+            body = await readJsonBody(req);
+        } catch (error) {
+            return sendJson(res, 400, {
+                ok: false,
+                status: "invalid_json"
+            });
+        }
+
+        const result = await prepareMarketingContentIntegration(body);
+        return sendJson(res, result.ok ? 200 : 400, result);
+    }
+
+    if (routePath === "marketing/content/schedule-buffer") {
+        if (req.method !== "POST") {
+            return methodNotAllowed(res, ["POST", "OPTIONS"]);
+        }
+
+        let body = {};
+
+        try {
+            body = await readJsonBody(req);
+        } catch (error) {
+            return sendJson(res, 400, {
+                ok: false,
+                status: "invalid_json"
+            });
+        }
+
+        const result = await scheduleMarketingContentWithBuffer(body);
+        return sendJson(res, result.ok ? 200 : 400, result);
+    }
+
+    if (routePath === "marketing/buffer/channels") {
+        if (req.method !== "GET") {
+            return methodNotAllowed(res, ["GET", "OPTIONS"]);
+        }
+
+        const result = await getBufferOrganizationsAndChannels();
+        return sendJson(res, result.ok ? 200 : 400, result);
+    }
+
+    if (routePath === "marketing/content/publish-instagram") {
+        if (req.method !== "POST") {
+            return methodNotAllowed(res, ["POST", "OPTIONS"]);
+        }
+
+        let body = {};
+
+        try {
+            body = await readJsonBody(req);
+        } catch (error) {
+            return sendJson(res, 400, {
+                ok: false,
+                status: "invalid_json"
+            });
+        }
+
+        const result = await publishMarketingContentToInstagram(body);
         return sendJson(res, result.ok ? 200 : 400, result);
     }
 

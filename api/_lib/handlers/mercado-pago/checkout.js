@@ -117,7 +117,7 @@ module.exports = async function handler(req, res) {
         });
     }
 
-    const origin = process.env.PAPIRO_TOOLS_BASE_URL || process.env.ROTANOTA_BASE_URL || getOrigin(req);
+    const origin = process.env.PAPIRO_TOOLS_BASE_URL || getOrigin(req);
     const successUrl = getBackUrl("MERCADO_PAGO_SUCCESS_URL", origin);
     const failureUrl = getBackUrl("MERCADO_PAGO_FAILURE_URL", origin);
     const pendingUrl = getBackUrl("MERCADO_PAGO_PENDING_URL", origin);

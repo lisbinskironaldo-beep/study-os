@@ -278,7 +278,7 @@ async function main() {
     };
 
     const fallbackGroups = {
-        baseUrl: ["ROTANOTA_BASE_URL"],
+        baseUrl: ["PAPIRO_TOOLS_BASE_URL"],
         gemini: ["GEMINI_API_KEY", "GEMINI_FREE_API_KEY", "GEMINI_PAID_API_KEY"],
         opsSession: ["OPS_SESSION_SECRET", "OPS_PANEL_PASSWORD"]
     };
@@ -295,7 +295,7 @@ async function main() {
     });
 
     if (!fallbackGroups.baseUrl.some((key) => isFilled(env[key]))) {
-        missing.push("baseUrl: ROTANOTA_BASE_URL");
+        missing.push("baseUrl: PAPIRO_TOOLS_BASE_URL");
     }
 
     if (!fallbackGroups.gemini.some((key) => isFilled(env[key]))) {
@@ -387,7 +387,7 @@ async function main() {
         warnings.push("Nao foi possivel inspecionar automaticamente as envs de production na Vercel.");
     }
 
-    console.log("RotaNota readiness check");
+    console.log("Papiro Tools readiness check");
     console.log(`Projeto: ${root}`);
     console.log(`.env.local: ${fs.existsSync(envPath) ? "encontrado" : "nao encontrado"}`);
 

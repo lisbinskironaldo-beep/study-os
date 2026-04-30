@@ -1,15 +1,15 @@
-# RotaNota Workspace
+# Papiro Tools Workspace
 
 ## Estado atual
 
 - localhost validado com `vercel dev`
 - `/ops` local funcional com login, overview, copiloto Gemini, growth, promocoes e relatorio semanal
-- producao publicada em `https://rota-nota.vercel.app`
+- producao publicada em `https://papiro-tools.vercel.app`
 - incidente da retaguarda publicado em 2026-04-20 foi corrigido com novo deploy de producao
 
 ## NorthStar
 
-`/ops` e o hub de retaguarda do `NorthStar`, o ponto central para operar o RotaNota e preparar o ecossistema para novos apps no mesmo shell administrativo.
+`/ops` e o hub de retaguarda do `NorthStar`, o ponto central para operar o Papiro Tools e preparar o ecossistema para novos apps no mesmo shell administrativo.
 
 O plano atual do hub cobre:
 
@@ -23,8 +23,8 @@ O plano atual do hub cobre:
 
 Fase atual:
 
-- o host tecnico continua no RotaNota
-- nao houve migracao de dominio ou subdominios ainda
+- o host tecnico publico atual e `https://papiro-tools.vercel.app`
+- a migracao do alias antigo `rota-nota.vercel.app` para `papiro-tools.vercel.app` foi executada em 2026-04-30
 - a UX e a estrutura de dados ja foram preparadas para a futura topologia `NorthStar + subdominios`
 
 Documento principal de retomada:
@@ -104,7 +104,7 @@ node scripts/rotanota-readiness-check.js
 
 O script verifica:
 - envs obrigatorias
-- URL canonica `ROTANOTA_BASE_URL`
+- URL canonica `PAPIRO_TOOLS_BASE_URL`
 - Gemini
 - Supabase
 - senha da retaguarda
@@ -134,7 +134,7 @@ Para o login com Google funcionar no premium:
 
 Origins mais comuns:
 
-- `https://rota-nota.vercel.app`
+- `https://papiro-tools.vercel.app`
 - `http://localhost:3000`
 - o dominio preview exato da Vercel, se estiver testando por preview
 
@@ -152,11 +152,11 @@ docs/supabase_premium_schema.sql
 
 Alias oficial:
 
-- `https://rota-nota.vercel.app`
+- `https://papiro-tools.vercel.app`
 
 Retaguarda publicada:
 
-- `https://rota-nota.vercel.app/ops/`
+- `https://papiro-tools.vercel.app/ops/`
 
 Status validado em 2026-04-20 apos o deploy corrigido:
 
@@ -166,8 +166,7 @@ Status validado em 2026-04-20 apos o deploy corrigido:
 - `GET /api/ops/reports/weekly` funciona
 - `GET /ops/app.js` publica o frontend novo da retaguarda
 - `POST /api/premium/ai-generate` responde `200` com bundle real por IA
-- `GET /api/northstar-app-manifest` responde `200`
-- `POST /api/northstar-mcp` responde `200` com bearer valido
+- rotas antigas do NorthStar Apps/MCP nao estao ativas no codigo atual
 - `POST /api/ops/reviews/run` respondeu `200` e persistiu review run
 
 Historico importante:
@@ -181,10 +180,10 @@ Historico importante:
 Com a falha de requisicao resolvida, os proximos passos voltam a ser de evolucao operacional:
 
 - validar um pagamento real completo e monitorar activations
-- fechar a trilha externa de registro do NorthStar como app do ChatGPT
+- revisar a trilha externa de registro do NorthStar como app do ChatGPT, porque as rotas antigas `/api/northstar-app-manifest` e `/api/northstar-mcp` foram removidas do codigo atual
 - configurar Google Ads e Meta Ads para sair de `not_configured`
 - usar `docs/rotanota_execution_phases.md` como trilha oficial de execucao
 
 ## Observacao
 
-O nome do produto e da marca e `RotaNota`. Qualquer ambiente antigo deve migrar para `ROTANOTA_BASE_URL`.
+O nome publico do produto e da marca e `Papiro Tools`. Qualquer ambiente antigo deve migrar para `PAPIRO_TOOLS_BASE_URL`.

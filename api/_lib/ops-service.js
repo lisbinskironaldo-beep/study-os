@@ -2287,12 +2287,79 @@ function slugifyContentId(value = "") {
         .slice(0, 80) || crypto.randomBytes(4).toString("hex");
 }
 
+function polishMarketingPortuguese(value = "") {
+    if (typeof value !== "string" || !value) {
+        return "";
+    }
+
+    const replacements = [
+        ["Voce", "Você"],
+        ["voce", "você"],
+        ["Etica", "Ética"],
+        ["etica", "ética"],
+        ["criterios", "critérios"],
+        ["acao", "ação"],
+        ["questao", "questão"],
+        ["questoes", "questões"],
+        ["Redacao", "Redação"],
+        ["redacao", "redação"],
+        ["Repertorio", "Repertório"],
+        ["repertorio", "repertório"],
+        ["citacoes", "citações"],
+        ["consequencia", "consequência"],
+        ["Matematica", "Matemática"],
+        ["matematica", "matemática"],
+        ["organizacao", "organização"],
+        ["espaco", "espaço"],
+        ["Biologia", "Biologia"],
+        ["materia", "matéria"],
+        ["organica", "orgânica"],
+        ["Historia", "História"],
+        ["historia", "história"],
+        ["historicas", "históricas"],
+        ["periodo", "período"],
+        ["politico", "político"],
+        ["Portugues", "Português"],
+        ["sinonimo", "sinônimo"],
+        ["Interpretacao", "Interpretação"],
+        ["interpretacao", "interpretação"],
+        ["Quimica", "Química"],
+        ["quimica", "química"],
+        ["Organica", "Orgânica"],
+        ["Funcao", "Função"],
+        ["funcao", "função"],
+        ["nao", "não"],
+        ["alcool", "álcool"],
+        ["Video", "Vídeo"],
+        ["narracao", "narração"],
+        ["Carrossel", "Carrossel"],
+        ["carrosseis", "carrosséis"],
+        ["enrolacao", "enrolação"],
+        ["Ate", "Até"],
+        ["ate", "até"],
+        ["Proximo", "Próximo"],
+        ["proximo", "próximo"],
+        ["conteudo", "conteúdo"],
+        ["Conteudo", "Conteúdo"],
+        ["organico", "orgânico"],
+        ["Organico", "Orgânico"],
+        ["divulgacao", "divulgação"],
+        ["Divulgacao", "Divulgação"],
+        ["revisao", "revisão"],
+        ["Revisao", "Revisão"]
+    ];
+
+    return replacements.reduce((text, [plain, accented]) => (
+        text.replace(new RegExp(`\\b${plain}\\b`, "g"), accented)
+    ), value);
+}
+
 function getDefaultMarketingContentState() {
     return {
         version: 1,
         strategy: {
-            goal: "Crescer divulgacao organica do Papiro sem gasto pago.",
-            cadence: "1 post curto por dia, 3 carrosseis por semana, 2 roteiros de Reels por semana e stories leves em dias uteis.",
+            goal: "Crescer divulgação orgânica do Papiro sem gasto pago.",
+            cadence: "1 post curto por dia, 3 carrosséis por semana, 2 roteiros de Reels por semana e stories leves em dias úteis.",
             approvalMode: "human_review",
             primaryChannels: ["instagram", "facebook", "whatsapp_status"],
             freeTools: ["Meta Business Suite", "Instagram scheduler nativo", "Buffer Free", "Publer Free", "Canva Free"]
@@ -2307,59 +2374,59 @@ function getContentTopicSeeds() {
     return [
         {
             subject: "Filosofia",
-            grade: "3 serie",
-            topic: "Etica",
-            hook: "Voce sabe diferenciar etica de moral em uma questao?",
-            quiz: "Etica investiga criterios de acao justa; moral e o conjunto de costumes e normas de um grupo.",
-            cta: "Treine mais questoes de filosofia no Papiro."
+            grade: "3 série",
+            topic: "Ética",
+            hook: "Você sabe diferenciar ética de moral em uma questão?",
+            quiz: "Ética investiga critérios de ação justa; moral é o conjunto de costumes e normas de um grupo.",
+            cta: "Treine mais questões de filosofia no Papiro."
         },
         {
-            subject: "Redacao",
-            grade: "3 serie",
-            topic: "Repertorio",
-            hook: "Um repertorio bom nao precisa ser dificil, precisa funcionar no argumento.",
-            quiz: "Antes de decorar citacoes, ligue o repertorio ao problema, causa, consequencia e proposta.",
-            cta: "Use o Papiro para organizar seu treino de redacao."
+            subject: "Redação",
+            grade: "3 série",
+            topic: "Repertório",
+            hook: "Um repertório bom não precisa ser difícil, precisa funcionar no argumento.",
+            quiz: "Antes de decorar citações, ligue o repertório ao problema, causa, consequência e proposta.",
+            cta: "Use o Papiro para organizar seu treino de redação."
         },
         {
-            subject: "Matematica",
-            grade: "3 serie",
+            subject: "Matemática",
+            grade: "3 série",
             topic: "Probabilidade",
-            hook: "A questao parece de sorte, mas costuma ser organizacao de casos.",
-            quiz: "Em probabilidade, escreva primeiro o espaco amostral e depois conte os casos favoraveis.",
+            hook: "A questão parece de sorte, mas costuma ser organização de casos.",
+            quiz: "Em probabilidade, escreva primeiro o espaço amostral e depois conte os casos favoráveis.",
             cta: "Abra o Papiro e resolva uma bateria curta hoje."
         },
         {
             subject: "Biologia",
-            grade: "3 serie",
+            grade: "3 série",
             topic: "Ecologia",
             hook: "Cadeia alimentar cai muito porque mistura conceito simples com leitura atenta.",
-            quiz: "Produtores transformam energia luminosa em materia organica; consumidores dependem dessa base.",
+            quiz: "Produtores transformam energia luminosa em matéria orgânica; consumidores dependem dessa base.",
             cta: "Treine ecologia no Papiro em poucos minutos."
         },
         {
-            subject: "Historia",
-            grade: "3 serie",
+            subject: "História",
+            grade: "3 série",
             topic: "Brasil republicano",
-            hook: "Historia fica mais facil quando voce pergunta: quem ganhou poder com isso?",
-            quiz: "Em questoes historicas, localize periodo, grupo social e interesse politico antes da alternativa.",
+            hook: "História fica mais fácil quando você pergunta: quem ganhou poder com isso?",
+            quiz: "Em questões históricas, localize período, grupo social e interesse político antes da alternativa.",
             cta: "Use o Papiro para revisar por tema."
         },
         {
-            subject: "Portugues",
-            grade: "3 serie",
-            topic: "Interpretacao",
-            hook: "A resposta geralmente esta no texto, mas escondida por sinonimo.",
+            subject: "Português",
+            grade: "3 série",
+            topic: "Interpretação",
+            hook: "A resposta geralmente está no texto, mas escondida por sinônimo.",
             quiz: "Antes de marcar, volte ao trecho e troque a alternativa por uma frase equivalente.",
-            cta: "Pratique interpretacao no Papiro."
+            cta: "Pratique interpretação no Papiro."
         },
         {
-            subject: "Quimica",
-            grade: "3 serie",
-            topic: "Organica",
-            hook: "Funcao organica nao e decoreba pura: procure o grupo funcional.",
-            quiz: "Hidroxila ligada a carbono saturado indica alcool; carbonila muda completamente a leitura.",
-            cta: "Treine reconhecimento de funcoes no Papiro."
+            subject: "Química",
+            grade: "3 série",
+            topic: "Orgânica",
+            hook: "Função orgânica não é decoreba pura: procure o grupo funcional.",
+            quiz: "Hidroxila ligada a carbono saturado indica álcool; carbonila muda completamente a leitura.",
+            cta: "Treine reconhecimento de funções no Papiro."
         }
     ];
 }
@@ -2380,7 +2447,7 @@ function buildDeterministicMarketingItems({ days = 14, startDate = new Date() } 
         const publishDate = addDaysIso(startDate, index);
         const id = `${publishDate}-${slugifyContentId(`${format}-${seed.subject}-${seed.topic}`)}`;
         const title = format === "carousel"
-            ? `Carrossel: ${seed.topic} sem enrolacao`
+            ? `Carrossel: ${seed.topic} sem enrolação`
             : format === "reel_script"
                 ? `Reel: ${seed.hook}`
                 : format === "story_quiz"
@@ -2411,7 +2478,7 @@ function buildDeterministicMarketingItems({ days = 14, startDate = new Date() } 
             visualBrief: format === "carousel"
                 ? `Carrossel de 5 slides: gancho, conceito, exemplo, erro comum e CTA para ${seed.subject}.`
                 : format === "reel_script"
-                    ? `Video vertical simples com texto na tela, professor/narracao curta e fechamento com CTA.`
+                    ? `Vídeo vertical simples com texto na tela, professor/narração curta e fechamento com CTA.`
                     : `Arte limpa com pergunta curta, alternativa mental e CTA discreto.`,
             script: format === "reel_script"
                 ? [
@@ -2441,7 +2508,14 @@ function normalizeMarketingContentState(value = {}) {
         items: safeArray(input.items).map((item) => ({
             ...item,
             id: String(item.id || crypto.randomBytes(6).toString("hex")),
-            status: String(item.status || "draft")
+            status: String(item.status || "draft"),
+            title: polishMarketingPortuguese(item.title || ""),
+            hook: polishMarketingPortuguese(item.hook || ""),
+            caption: polishMarketingPortuguese(item.caption || ""),
+            visualBrief: polishMarketingPortuguese(item.visualBrief || ""),
+            subject: polishMarketingPortuguese(item.subject || ""),
+            topic: polishMarketingPortuguese(item.topic || ""),
+            script: safeArray(item.script).map((line) => polishMarketingPortuguese(line))
         })),
         updatedAt: input.updatedAt || base.updatedAt
     };
@@ -2479,8 +2553,8 @@ function mergeMarketingItems(existing = [], incoming = []) {
 
 function buildMarketingPrompt(dataset = {}) {
     return [
-        "Voce e editor de crescimento organico do Papiro.",
-        "Crie conteudo util, especifico e pronto para revisao humana. Nao prometa resultado garantido.",
+        "Você é editor de crescimento orgânico do Papiro.",
+        "Crie conteúdo útil, específico, com acentuação correta em português do Brasil e pronto para revisão humana. Não prometa resultado garantido.",
         "Responda JSON com a chave items. Cada item deve ter: format, title, hook, caption, visualBrief, script, channels, subject, topic.",
         "Formatos permitidos: quiz_post, carousel, reel_script, story_quiz.",
         `Dados:\n${JSON.stringify(dataset)}`
@@ -2500,14 +2574,14 @@ function normalizeAiMarketingItems(items = [], fallback = []) {
             status: "draft",
             publishDate,
             format,
-            title,
-            hook: String(item.hook || base.hook || "").trim(),
-            caption: String(item.caption || base.caption || "").trim(),
-            visualBrief: String(item.visualBrief || item.visual_brief || base.visualBrief || "").trim(),
-            script: safeArray(item.script).length ? safeArray(item.script) : safeArray(base.script),
+            title: polishMarketingPortuguese(title),
+            hook: polishMarketingPortuguese(String(item.hook || base.hook || "").trim()),
+            caption: polishMarketingPortuguese(String(item.caption || base.caption || "").trim()),
+            visualBrief: polishMarketingPortuguese(String(item.visualBrief || item.visual_brief || base.visualBrief || "").trim()),
+            script: (safeArray(item.script).length ? safeArray(item.script) : safeArray(base.script)).map((line) => polishMarketingPortuguese(line)),
             channels: safeArray(item.channels).length ? safeArray(item.channels) : safeArray(base.channels),
-            subject: String(item.subject || base.subject || "").trim(),
-            topic: String(item.topic || base.topic || "").trim(),
+            subject: polishMarketingPortuguese(String(item.subject || base.subject || "").trim()),
+            topic: polishMarketingPortuguese(String(item.topic || base.topic || "").trim()),
             updatedAt: new Date().toISOString()
         };
     }).filter((item) => item.title && item.caption);
@@ -2658,6 +2732,620 @@ async function updateMarketingContentItem(input = {}) {
     return {
         ok: true,
         item: updatedItem,
+        ...next
+    };
+}
+
+function buildMarketingIntegrationStatus() {
+    const canvaClientId = getEnvValue("CANVA_CONNECT_CLIENT_ID");
+    const canvaClientSecret = getEnvValue("CANVA_CONNECT_CLIENT_SECRET");
+    const canvaTemplateId = getEnvValue("CANVA_BRAND_TEMPLATE_ID");
+    const canvaBrandKitId = getEnvValue("CANVA_BRAND_KIT_ID");
+    const bufferToken = getEnvValue("BUFFER_API_KEY") || getEnvValue("BUFFER_ACCESS_TOKEN");
+    const bufferProfileIds = getEnvValue("BUFFER_PROFILE_IDS");
+    const publerApiKey = getEnvValue("PUBLER_API_KEY");
+    const publerWorkspaceId = getEnvValue("PUBLER_WORKSPACE_ID");
+    const metaAppId = getEnvValue("META_APP_ID");
+    const metaToken = getEnvValue("META_ACCESS_TOKEN");
+    const metaAdAccountId = getEnvValue("META_AD_ACCOUNT_ID");
+    const instagramBusinessAccountId = getEnvValue("INSTAGRAM_BUSINESS_ACCOUNT_ID");
+
+    return [
+        {
+            key: "canva",
+            name: "Canva Pro",
+            category: "criacao",
+            status: canvaClientId && canvaClientSecret ? "ready" : (canvaTemplateId || canvaBrandKitId ? "partial" : "manual"),
+            summary: canvaClientId && canvaClientSecret
+                ? "Pronto para iniciar OAuth/API do Canva Connect."
+                : "Pronto para briefing manual; falta conectar Canva Connect para criar artes direto pela retaguarda.",
+            checks: [
+                canvaClientId ? "CANVA_CONNECT_CLIENT_ID configurado" : "CANVA_CONNECT_CLIENT_ID pendente",
+                canvaClientSecret ? "CANVA_CONNECT_CLIENT_SECRET configurado" : "CANVA_CONNECT_CLIENT_SECRET pendente",
+                canvaTemplateId ? "CANVA_BRAND_TEMPLATE_ID configurado" : "CANVA_BRAND_TEMPLATE_ID opcional",
+                canvaBrandKitId ? "CANVA_BRAND_KIT_ID configurado" : "CANVA_BRAND_KIT_ID opcional"
+            ],
+            nextAction: "Usar um rascunho aprovado para montar briefing de arte e depois ligar OAuth/Autofill."
+        },
+        {
+            key: "buffer",
+            name: "Buffer",
+            category: "agendamento",
+            status: bufferToken && bufferProfileIds ? "ready" : "needs_setup",
+            summary: bufferToken && bufferProfileIds
+                ? "Pronto para criar posts agendados via API."
+                : bufferToken
+                    ? "Token configurado; falta descobrir e salvar os perfis/canais do Buffer."
+                    : "Falta token e perfis do Buffer para agendar automaticamente.",
+            checks: [
+                bufferToken ? "BUFFER_API_KEY configurado" : "BUFFER_API_KEY pendente",
+                bufferProfileIds ? "BUFFER_PROFILE_IDS configurado" : "BUFFER_PROFILE_IDS pendente"
+            ],
+            nextAction: bufferToken && !bufferProfileIds
+                ? "Clique em Ver canais Buffer, copie os IDs e salve em BUFFER_PROFILE_IDS."
+                : "Configurar token/perfis e transformar item pronto em post agendado."
+        },
+        {
+            key: "publer",
+            name: "Publer",
+            category: "agendamento",
+            status: publerApiKey && publerWorkspaceId ? "ready" : "manual",
+            summary: publerApiKey && publerWorkspaceId
+                ? "Pronto para testes com API do Publer."
+                : "Pode operar manualmente; API normalmente exige Business/Enterprise.",
+            checks: [
+                publerApiKey ? "PUBLER_API_KEY configurado" : "PUBLER_API_KEY pendente",
+                publerWorkspaceId ? "PUBLER_WORKSPACE_ID configurado" : "PUBLER_WORKSPACE_ID pendente"
+            ],
+            nextAction: "Confirmar plano com API e conectar workspace."
+        },
+        {
+            key: "meta_business",
+            name: "Meta Business",
+            category: "publicacao",
+            status: metaAppId && metaToken && metaAdAccountId ? "ready" : "needs_setup",
+            summary: metaAppId && metaToken && metaAdAccountId
+                ? "Meta Ads/Business tem credenciais para leitura e proximas automacoes."
+                : "Faltam credenciais Meta para publicar/medir com seguranca.",
+            checks: [
+                metaAppId ? "META_APP_ID configurado" : "META_APP_ID pendente",
+                metaAdAccountId ? "META_AD_ACCOUNT_ID configurado" : "META_AD_ACCOUNT_ID pendente",
+                metaToken ? "META_ACCESS_TOKEN configurado" : "META_ACCESS_TOKEN pendente"
+            ],
+            nextAction: "Validar permissoes e decidir se publicacao direta deve passar por Meta ou Buffer."
+        },
+        {
+            key: "instagram",
+            name: "Instagram",
+            category: "publicacao",
+            status: instagramBusinessAccountId && metaToken ? "partial" : "needs_setup",
+            summary: instagramBusinessAccountId && metaToken
+                ? "Conta profissional identificada; ainda precisa validar permissoes de publicacao."
+                : "Exige conta profissional, ID da conta e permissao de publicacao.",
+            checks: [
+                instagramBusinessAccountId ? "INSTAGRAM_BUSINESS_ACCOUNT_ID configurado" : "INSTAGRAM_BUSINESS_ACCOUNT_ID pendente",
+                metaToken ? "META_ACCESS_TOKEN configurado" : "META_ACCESS_TOKEN pendente"
+            ],
+            nextAction: "Validar instagram_content_publish e fluxo de container/media_publish."
+        }
+    ];
+}
+
+async function getMarketingIntegrations() {
+    return {
+        ok: true,
+        items: buildMarketingIntegrationStatus(),
+        updatedAt: new Date().toISOString()
+    };
+}
+
+function buildIntegrationDraft(item, target) {
+    const caption = polishMarketingPortuguese(item.caption || "");
+    const title = polishMarketingPortuguese(item.title || "Conteudo Papiro");
+    const visualBrief = polishMarketingPortuguese(item.visualBrief || "");
+    const channels = safeArray(item.channels);
+    const publishDate = item.publishDate || addDaysIso(new Date(), 1);
+
+    if (target === "canva") {
+        return {
+            target,
+            status: "prepared",
+            title: `Arte Canva - ${title}`,
+            brief: [
+                `Titulo: ${title}`,
+                `Formato: ${item.format || "post"}`,
+                `Canais: ${channels.join(", ") || "instagram"}`,
+                `Data sugerida: ${publishDate}`,
+                `Direcao visual: ${visualBrief || "Arte limpa, legivel e alinhada ao Papiro Tools."}`,
+                `Texto base: ${caption}`
+            ].join("\n"),
+            nextAction: "Abrir Canva, escolher template da marca e usar este briefing para gerar a arte."
+        };
+    }
+
+    if (target === "buffer") {
+        return {
+            target,
+            status: "prepared",
+            title: `Post Buffer - ${title}`,
+            text: caption,
+            channels,
+            dueAt: `${publishDate}T12:00:00.000-03:00`,
+            nextAction: (getEnvValue("BUFFER_API_KEY") || getEnvValue("BUFFER_ACCESS_TOKEN")) && getEnvValue("BUFFER_PROFILE_IDS")
+                ? "Credenciais prontas para agendar automaticamente no Buffer."
+                : "Configurar BUFFER_API_KEY e BUFFER_PROFILE_IDS para agendar automaticamente."
+        };
+    }
+
+    return {
+        target,
+        status: "unsupported_target",
+        title,
+        text: caption,
+        nextAction: "Conector ainda em planejamento."
+    };
+}
+
+async function prepareMarketingContentIntegration(input = {}) {
+    const itemId = String(input.itemId || input.id || "").trim();
+    const target = String(input.target || "").trim();
+    if (!itemId || !target) {
+        return {
+            ok: false,
+            status: "missing_item_or_target"
+        };
+    }
+
+    const current = await getMarketingContentQueue();
+    let draft = null;
+    const items = safeArray(current.items).map((item) => {
+        if (String(item.id) !== itemId) {
+            return item;
+        }
+        draft = buildIntegrationDraft(item, target);
+        return {
+            ...item,
+            integrationDrafts: {
+                ...(item.integrationDrafts || {}),
+                [target]: {
+                    ...draft,
+                    preparedAt: new Date().toISOString()
+                }
+            },
+            updatedAt: new Date().toISOString()
+        };
+    });
+
+    if (!draft) {
+        return {
+            ok: false,
+            status: "content_item_not_found"
+        };
+    }
+
+    const next = normalizeMarketingContentState({
+        ...current,
+        items,
+        updatedAt: new Date().toISOString()
+    });
+    await setStateValue(MARKETING_CONTENT_STATE_KEY, next);
+    await insertAuditLog({
+        eventType: "marketing_integration_draft_prepared",
+        actor: "ops_console",
+        targetSystem: `marketing_${target}`,
+        entityType: "content_item",
+        entityId: itemId,
+        status: "prepared",
+        metadata: {
+            target,
+            title: draft.title
+        }
+    });
+
+    return {
+        ok: true,
+        target,
+        draft,
+        ...next
+    };
+}
+
+function getBufferChannelIds() {
+    return (getEnvValue("BUFFER_PROFILE_IDS") || getEnvValue("BUFFER_CHANNEL_IDS"))
+        .split(/[\s,;]+/g)
+        .map((item) => item.trim())
+        .filter(Boolean);
+}
+
+function getMetaGraphApiVersion() {
+    return getEnvValue("META_GRAPH_API_VERSION") || "v23.0";
+}
+
+function toBufferDueAt(value) {
+    const date = new Date(value || "");
+    if (!Number.isNaN(date.getTime())) {
+        return date.toISOString();
+    }
+    return new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString();
+}
+
+async function callBufferGraphql(query) {
+    const apiKey = getEnvValue("BUFFER_API_KEY") || getEnvValue("BUFFER_ACCESS_TOKEN");
+    if (!apiKey) {
+        return {
+            ok: false,
+            status: "buffer_api_key_missing",
+            message: "Configure BUFFER_API_KEY na Vercel para agendar pelo Buffer."
+        };
+    }
+
+    const response = await fetch("https://api.buffer.com", {
+        method: "POST",
+        headers: {
+            Authorization: `Bearer ${apiKey}`,
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ query })
+    });
+    const payload = await response.json().catch(() => null);
+    if (!response.ok) {
+        return {
+            ok: false,
+            status: "buffer_http_error",
+            httpStatus: response.status,
+            message: payload && (payload.message || payload.error) ? (payload.message || payload.error) : "Buffer recusou a requisicao.",
+            raw: payload
+        };
+    }
+    if (payload && Array.isArray(payload.errors) && payload.errors.length) {
+        return {
+            ok: false,
+            status: "buffer_graphql_error",
+            message: payload.errors.map((error) => error.message).filter(Boolean).join(" | ") || "Erro GraphQL do Buffer.",
+            raw: payload
+        };
+    }
+    return {
+        ok: true,
+        data: payload ? payload.data : null
+    };
+}
+
+async function getBufferOrganizationsAndChannels() {
+    const orgResult = await callBufferGraphql(`
+query GetOrganizations {
+  account {
+    organizations {
+      id
+      name
+      ownerEmail
+    }
+  }
+}`);
+    if (!orgResult.ok) {
+        return orgResult;
+    }
+
+    const organizations = orgResult.data && orgResult.data.account && Array.isArray(orgResult.data.account.organizations)
+        ? orgResult.data.account.organizations
+        : [];
+    const selectedOrganizationId = getEnvValue("BUFFER_ORGANIZATION_ID") || (organizations[0] && organizations[0].id) || "";
+    if (!selectedOrganizationId) {
+        return {
+            ok: false,
+            status: "buffer_organization_missing",
+            message: "Nenhuma organizacao Buffer foi encontrada para esta chave.",
+            organizations
+        };
+    }
+
+    const channelsResult = await callBufferGraphql(`
+query GetChannels {
+  channels(input: {
+    organizationId: ${JSON.stringify(selectedOrganizationId)}
+  }) {
+    id
+    name
+    service
+  }
+}`);
+    if (!channelsResult.ok) {
+        return {
+            ...channelsResult,
+            organizations,
+            selectedOrganizationId
+        };
+    }
+
+    return {
+        ok: true,
+        organizations,
+        selectedOrganizationId,
+        channels: channelsResult.data && Array.isArray(channelsResult.data.channels) ? channelsResult.data.channels : [],
+        configuredChannelIds: getBufferChannelIds(),
+        nextAction: "Copie os IDs desejados para BUFFER_PROFILE_IDS separados por virgula."
+    };
+}
+
+async function createBufferPost({ channelId, text, dueAt }) {
+    const query = `
+mutation CreatePost {
+  createPost(input: {
+    text: ${JSON.stringify(text)}
+    channelId: ${JSON.stringify(channelId)}
+    schedulingType: automatic
+    mode: customScheduled
+    dueAt: ${JSON.stringify(dueAt)}
+  }) {
+    ... on PostActionSuccess {
+      post {
+        id
+        text
+        dueAt
+        channelId
+      }
+    }
+    ... on MutationError {
+      message
+    }
+  }
+}`;
+    const result = await callBufferGraphql(query);
+    if (!result.ok) {
+        return result;
+    }
+    const createPost = result.data && result.data.createPost;
+    if (createPost && createPost.message) {
+        return {
+            ok: false,
+            status: "buffer_mutation_error",
+            message: createPost.message,
+            raw: createPost
+        };
+    }
+    return {
+        ok: true,
+        post: createPost && createPost.post ? createPost.post : null
+    };
+}
+
+async function publishMarketingContentToInstagram(input = {}) {
+    const itemId = String(input.itemId || input.id || "").trim();
+    const imageUrl = String(input.imageUrl || input.image_url || "").trim();
+    const igUserId = getEnvValue("INSTAGRAM_BUSINESS_ACCOUNT_ID");
+    const accessToken = getEnvValue("META_ACCESS_TOKEN");
+    const version = getMetaGraphApiVersion();
+
+    if (!itemId || !imageUrl) {
+        return {
+            ok: false,
+            status: "missing_item_or_image_url",
+            message: "Informe o rascunho e uma URL publica da imagem."
+        };
+    }
+    if (!igUserId || !accessToken) {
+        return {
+            ok: false,
+            status: "instagram_credentials_missing",
+            message: "Configure INSTAGRAM_BUSINESS_ACCOUNT_ID e META_ACCESS_TOKEN para publicar no Instagram."
+        };
+    }
+    if (!/^https:\/\//i.test(imageUrl)) {
+        return {
+            ok: false,
+            status: "invalid_image_url",
+            message: "A URL da imagem precisa ser HTTPS e publica."
+        };
+    }
+
+    const current = await getMarketingContentQueue();
+    const item = safeArray(current.items).find((entry) => String(entry.id) === itemId);
+    if (!item) {
+        return {
+            ok: false,
+            status: "content_item_not_found"
+        };
+    }
+
+    const caption = polishMarketingPortuguese(input.caption || item.caption || "");
+    const mediaParams = new URLSearchParams({
+        image_url: imageUrl,
+        caption,
+        access_token: accessToken
+    });
+    const mediaResponse = await fetch(`https://graph.facebook.com/${version}/${encodeURIComponent(igUserId)}/media`, {
+        method: "POST",
+        body: mediaParams
+    });
+    const mediaPayload = await mediaResponse.json().catch(() => null);
+    if (!mediaResponse.ok || !mediaPayload || !mediaPayload.id) {
+        return {
+            ok: false,
+            status: "instagram_media_container_failed",
+            message: mediaPayload && mediaPayload.error && mediaPayload.error.message ? mediaPayload.error.message : "A Meta nao criou o container de midia.",
+            raw: mediaPayload
+        };
+    }
+
+    const publishParams = new URLSearchParams({
+        creation_id: mediaPayload.id,
+        access_token: accessToken
+    });
+    const publishResponse = await fetch(`https://graph.facebook.com/${version}/${encodeURIComponent(igUserId)}/media_publish`, {
+        method: "POST",
+        body: publishParams
+    });
+    const publishPayload = await publishResponse.json().catch(() => null);
+    if (!publishResponse.ok || !publishPayload || !publishPayload.id) {
+        return {
+            ok: false,
+            status: "instagram_publish_failed",
+            message: publishPayload && publishPayload.error && publishPayload.error.message ? publishPayload.error.message : "A Meta nao publicou a midia.",
+            raw: publishPayload,
+            containerId: mediaPayload.id
+        };
+    }
+
+    const nextItems = safeArray(current.items).map((entry) => {
+        if (String(entry.id) !== itemId) {
+            return entry;
+        }
+        const existingDrafts = entry.integrationDrafts && typeof entry.integrationDrafts === "object" ? entry.integrationDrafts : {};
+        return {
+            ...entry,
+            status: "published",
+            publishedAt: new Date().toISOString(),
+            integrationDrafts: {
+                ...existingDrafts,
+                instagram: {
+                    status: "published",
+                    imageUrl,
+                    caption,
+                    mediaContainerId: mediaPayload.id,
+                    publishedMediaId: publishPayload.id,
+                    publishedAt: new Date().toISOString()
+                }
+            },
+            updatedAt: new Date().toISOString()
+        };
+    });
+
+    const next = normalizeMarketingContentState({
+        ...current,
+        items: nextItems,
+        updatedAt: new Date().toISOString()
+    });
+    await setStateValue(MARKETING_CONTENT_STATE_KEY, next);
+    await insertAuditLog({
+        eventType: "marketing_instagram_published",
+        actor: "ops_console",
+        targetSystem: "instagram",
+        entityType: "content_item",
+        entityId: itemId,
+        status: "published",
+        metadata: {
+            imageUrl,
+            mediaContainerId: mediaPayload.id,
+            publishedMediaId: publishPayload.id
+        }
+    });
+
+    return {
+        ok: true,
+        status: "instagram_published",
+        mediaId: publishPayload.id,
+        ...next
+    };
+}
+
+async function scheduleMarketingContentWithBuffer(input = {}) {
+    const itemId = String(input.itemId || input.id || "").trim();
+    if (!itemId) {
+        return {
+            ok: false,
+            status: "missing_item"
+        };
+    }
+
+    const channelIds = getBufferChannelIds();
+    if (!channelIds.length) {
+        return {
+            ok: false,
+            status: "buffer_channels_missing",
+            message: "Configure BUFFER_PROFILE_IDS com os IDs dos canais do Buffer."
+        };
+    }
+
+    const current = await getMarketingContentQueue();
+    const item = safeArray(current.items).find((entry) => String(entry.id) === itemId);
+    if (!item) {
+        return {
+            ok: false,
+            status: "content_item_not_found"
+        };
+    }
+
+    const existingDrafts = item.integrationDrafts && typeof item.integrationDrafts === "object" ? item.integrationDrafts : {};
+    const draft = existingDrafts.buffer || buildIntegrationDraft(item, "buffer");
+    const dueAt = toBufferDueAt(input.dueAt || draft.dueAt);
+    const text = polishMarketingPortuguese(input.text || draft.text || item.caption || "");
+    if (!text) {
+        return {
+            ok: false,
+            status: "buffer_text_missing",
+            message: "O rascunho nao tem texto para enviar ao Buffer."
+        };
+    }
+
+    const results = [];
+    for (const channelId of channelIds) {
+        results.push({
+            channelId,
+            ...(await createBufferPost({ channelId, text, dueAt }))
+        });
+    }
+
+    const failed = results.filter((result) => !result.ok);
+    const scheduledPosts = results.filter((result) => result.ok && result.post).map((result) => result.post);
+    const nextItems = safeArray(current.items).map((entry) => {
+        if (String(entry.id) !== itemId) {
+            return entry;
+        }
+        return {
+            ...entry,
+            status: failed.length ? entry.status : "ready",
+            integrationDrafts: {
+                ...existingDrafts,
+                buffer: {
+                    ...draft,
+                    status: failed.length ? "schedule_failed" : "scheduled",
+                    dueAt,
+                    text,
+                    scheduledPosts,
+                    lastResults: results.map((result) => ({
+                        ok: result.ok,
+                        channelId: result.channelId,
+                        status: result.status || "ok",
+                        message: result.message || "",
+                        postId: result.post && result.post.id ? result.post.id : ""
+                    })),
+                    scheduledAt: failed.length ? "" : new Date().toISOString(),
+                    preparedAt: draft.preparedAt || new Date().toISOString()
+                }
+            },
+            updatedAt: new Date().toISOString()
+        };
+    });
+
+    const next = normalizeMarketingContentState({
+        ...current,
+        items: nextItems,
+        updatedAt: new Date().toISOString()
+    });
+    await setStateValue(MARKETING_CONTENT_STATE_KEY, next);
+    await insertAuditLog({
+        eventType: failed.length ? "marketing_buffer_schedule_failed" : "marketing_buffer_scheduled",
+        actor: "ops_console",
+        targetSystem: "buffer",
+        entityType: "content_item",
+        entityId: itemId,
+        status: failed.length ? "failed" : "scheduled",
+        metadata: {
+            dueAt,
+            channelIds,
+            scheduledPostIds: scheduledPosts.map((post) => post.id),
+            failures: failed.map((result) => ({
+                channelId: result.channelId,
+                status: result.status,
+                message: result.message
+            }))
+        }
+    });
+
+    return {
+        ok: !failed.length,
+        status: failed.length ? "buffer_schedule_partial_or_failed" : "buffer_scheduled",
+        results,
         ...next
     };
 }
@@ -4041,9 +4729,14 @@ module.exports = {
     getOpsAiMemory,
     saveOpsAiMemory,
     getMarketingContentQueue,
+    getMarketingIntegrations,
     generateMarketingContentQueue,
     ensureMarketingContentQueue,
     updateMarketingContentItem,
+    prepareMarketingContentIntegration,
+    getBufferOrganizationsAndChannels,
+    publishMarketingContentToInstagram,
+    scheduleMarketingContentWithBuffer,
     listChangeRequests,
     createChangeRequest,
     approveChangeRequest,

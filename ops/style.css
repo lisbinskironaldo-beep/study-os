@@ -516,6 +516,16 @@ textarea {
     border: 1px solid var(--ops-border);
 }
 
+.ops-nested-card {
+    display: grid;
+    gap: 8px;
+    margin-top: 8px;
+    padding: 12px;
+    border-radius: 8px;
+    background: rgba(237, 242, 248, 0.74);
+    border: 1px dashed var(--ops-border);
+}
+
 .ops-app-group + .ops-app-group {
     margin-top: 18px;
 }

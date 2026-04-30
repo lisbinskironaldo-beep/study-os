@@ -7,6 +7,8 @@
         payments: { recentPayments: [], recentEntitlements: [] },
         paymentsStatus: null,
         marketing: { items: [], strategy: {}, freeTools: [] },
+        marketingIntegrations: { items: [] },
+        bufferChannels: null,
         promotions: { mode: "suggest", channels: [], items: [] },
         weeklyReport: null,
         copilot: null,
@@ -49,6 +51,7 @@
         spendForm: $("opsSpendForm"),
         marketingSummary: $("opsMarketingSummary"),
         marketingTools: $("opsMarketingTools"),
+        marketingIntegrations: $("opsMarketingIntegrations"),
         marketingQueue: $("opsMarketingQueue"),
         marketingGenerateBtn: $("opsMarketingGenerateBtn"),
         marketingFallbackBtn: $("opsMarketingFallbackBtn"),
@@ -117,6 +120,8 @@
         state.payments = { recentPayments: [], recentEntitlements: [] };
         state.paymentsStatus = null;
         state.marketing = { items: [], strategy: {}, freeTools: [] };
+        state.marketingIntegrations = { items: [] };
+        state.bufferChannels = null;
         state.promotions = { mode: "suggest", channels: [], items: [] };
         state.weeklyReport = null;
         state.copilot = null;
@@ -200,7 +205,7 @@
         if (["active", "healthy", "ok", "executed", "published", "ready"].includes(status)) {
             return "success";
         }
-        if (["warning", "pending", "fallback", "not_configured"].includes(status)) {
+        if (["warning", "pending", "fallback", "not_configured", "needs_setup", "partial", "manual"].includes(status)) {
             return "warning";
         }
         if (["critical", "failed", "danger"].includes(status)) {
@@ -305,6 +310,32 @@
         return labels[String(value || "")] || String(value || "canal");
     }
 
+    function humanService(value = "") {
+        const labels = {
+            instagram: "Instagram",
+            facebook: "Facebook",
+            linkedin: "LinkedIn",
+            twitter: "X/Twitter",
+            threads: "Threads",
+            tiktok: "TikTok",
+            youtube: "YouTube",
+            pinterest: "Pinterest",
+            bluesky: "Bluesky"
+        };
+        return labels[String(value || "").toLowerCase()] || String(value || "canal");
+    }
+
+    function humanIntegrationStatus(value = "") {
+        const labels = {
+            ready: "pronto",
+            partial: "parcial",
+            manual: "manual",
+            needs_setup: "configurar",
+            failed: "falhou"
+        };
+        return labels[String(value || "")] || String(value || "status");
+    }
+
     function humanFeature(value = "") {
         const labels = {
             PREMIUM_LIBRARY: "Biblioteca premium",
@@ -323,6 +354,19 @@
             auto_rules: "automatico"
         };
         return labels[String(value || "")] || String(value || "sugerir");
+    }
+
+    function renderBufferChannelsBlock(bufferChannels = {}) {
+        const channels = Array.isArray(bufferChannels.channels) ? bufferChannels.channels : [];
+        return `
+<div class="ops-nested-card">
+    <strong>Canais encontrados no Buffer</strong>
+    ${bufferChannels.loading ? `<p class="ops-empty">Consultando a API do Buffer...</p>` : ""}
+    ${bufferChannels.ok === false ? `<p class="ops-empty">${escapeHtml(bufferChannels.message || bufferChannels.status || "Buffer nao retornou canais.")}</p>` : ""}
+    <small>Organizacao: ${escapeHtml(bufferChannels.selectedOrganizationId || "-")}</small>
+    ${channels.length ? channels.map((channel) => `<small>${escapeHtml(channel.displayName || channel.name || channel.id)} - ${escapeHtml(humanService(channel.service))} - ID: ${escapeHtml(channel.id)}</small>`).join("") : `<p class="ops-empty">Nenhum canal retornado pelo Buffer.</p>`}
+    <small>Use esses IDs em BUFFER_PROFILE_IDS, separados por virgula.</small>
+</div>`;
     }
 
     function humanSource(value = "") {
@@ -614,8 +658,31 @@
     <small>${escapeHtml(use)}</small>
 </article>`).join("");
 
+        const integrations = state.marketingIntegrations && Array.isArray(state.marketingIntegrations.items)
+            ? state.marketingIntegrations.items
+            : [];
+        if (elements.marketingIntegrations) {
+            elements.marketingIntegrations.innerHTML = integrations.length
+                ? integrations.map((item) => `
+<article class="ops-list-item">
+    <strong>${escapeHtml(item.name || "Conector")}</strong>
+    <div class="ops-list-row">
+        ${buildPill(humanIntegrationStatus(item.status), toneFromStatus(item.status))}
+        ${buildPill(item.category || "integracao")}
+    </div>
+    <small>${escapeHtml(item.summary || "")}</small>
+    ${Array.isArray(item.checks) && item.checks.length ? `<small>${escapeHtml(item.checks.slice(0, 4).join(" | "))}</small>` : ""}
+    <small>Proximo passo: ${escapeHtml(item.nextAction || "revisar configuracao")}</small>
+    ${item.key === "buffer" ? `<div class="ops-button-row"><button class="ops-button ops-button-secondary" type="button" data-buffer-channels>Ver canais Buffer</button></div>` : ""}
+    ${item.key === "buffer" && state.bufferChannels ? renderBufferChannelsBlock(state.bufferChannels) : ""}
+</article>`).join("")
+                : `<p class="ops-empty">Conectores ainda nao carregados.</p>`;
+        }
+
         elements.marketingQueue.innerHTML = items.length
-            ? items.slice(0, 30).map((item) => `
+            ? items.slice(0, 30).map((item) => {
+                const drafts = item.integrationDrafts && typeof item.integrationDrafts === "object" ? item.integrationDrafts : {};
+                return `
 <article class="ops-list-item ops-content-item">
     <strong>${escapeHtml(item.title || "Conteudo")}</strong>
     <div class="ops-list-row">
@@ -628,12 +695,21 @@
     <pre class="ops-pre ops-content-copy">${escapeHtml(item.caption || "")}</pre>
     ${Array.isArray(item.script) && item.script.length ? `<small>Roteiro: ${escapeHtml(item.script.join(" | "))}</small>` : ""}
     <small>Visual: ${escapeHtml(item.visualBrief || "")}</small>
+    ${drafts.canva ? `<small>Canva preparado: ${escapeHtml(drafts.canva.nextAction || "briefing pronto")}</small><pre class="ops-pre ops-content-copy">${escapeHtml(drafts.canva.brief || "")}</pre>` : ""}
+    ${drafts.buffer ? `<small>Buffer ${escapeHtml(drafts.buffer.status === "scheduled" ? "agendado" : "preparado")} para ${escapeHtml(formatDate(drafts.buffer.dueAt || ""))}: ${escapeHtml(drafts.buffer.nextAction || "rascunho pronto")}</small><pre class="ops-pre ops-content-copy">${escapeHtml(drafts.buffer.text || "")}</pre>` : ""}
+    ${drafts.buffer && Array.isArray(drafts.buffer.lastResults) && drafts.buffer.lastResults.length ? `<small>Resultado Buffer: ${escapeHtml(drafts.buffer.lastResults.map((result) => result.ok ? `ok ${result.postId || result.channelId}` : `${result.channelId}: ${result.message || result.status}`).join(" | "))}</small>` : ""}
+    ${drafts.instagram ? `<small>Instagram: ${escapeHtml(drafts.instagram.status || "")} ${escapeHtml(drafts.instagram.publishedMediaId || "")}</small>` : ""}
     <div class="ops-button-row">
+        <button class="ops-button ops-button-secondary" type="button" data-marketing-prepare="canva" data-marketing-id="${escapeHtml(item.id)}" title="Prepara briefing para arte no Canva">Preparar Canva</button>
+        <button class="ops-button ops-button-secondary" type="button" data-marketing-prepare="buffer" data-marketing-id="${escapeHtml(item.id)}" title="Prepara rascunho para agenda no Buffer">Preparar Buffer</button>
+        <button class="ops-button ops-button-secondary" type="button" data-marketing-buffer-schedule="${escapeHtml(item.id)}" title="Agenda este texto nos canais configurados do Buffer">Agendar Buffer</button>
+        <button class="ops-button ops-button-secondary" type="button" data-marketing-instagram-publish="${escapeHtml(item.id)}" title="Publica no Instagram usando uma URL publica da arte">Publicar Instagram</button>
         <button class="ops-button ops-button-secondary" type="button" data-marketing-status="ready" data-marketing-id="${escapeHtml(item.id)}" title="Marca este conteudo como revisado e pronto">Pronto</button>
         <button class="ops-button ops-button-secondary" type="button" data-marketing-status="published" data-marketing-id="${escapeHtml(item.id)}" title="Registra que este conteudo ja foi publicado">Publicado</button>
         <button class="ops-button ops-button-ghost" type="button" data-marketing-status="rejected" data-marketing-id="${escapeHtml(item.id)}" title="Ignora este rascunho">Ignorar</button>
     </div>
-</article>`).join("")
+</article>`;
+            }).join("")
             : `<p class="ops-empty">Nenhum conteudo na fila. Gere 14 dias para comecar.</p>`;
     }
 
@@ -821,6 +897,10 @@
         state.marketing = await request("/api/ops/marketing/content");
     }
 
+    async function loadMarketingIntegrations() {
+        state.marketingIntegrations = await request("/api/ops/marketing/integrations");
+    }
+
     async function loadPromotions() {
         state.promotions = await request("/api/ops/promotions");
     }
@@ -854,6 +934,7 @@
             loadPaymentsStatus(),
             loadGrowth(),
             loadMarketing(),
+            loadMarketingIntegrations(),
             loadPromotions(),
             loadChangeRequests(),
             loadReviewRuns(),
@@ -1008,6 +1089,87 @@
             setStatus(`Conteudo marcado como ${labels[status] || status}.`, "success");
         } catch (error) {
             setStatus(error.message || "Falha ao atualizar conteudo.", "error");
+        }
+    }
+
+    async function handleMarketingPrepare(target, itemId) {
+        try {
+            state.marketing = await submitJson("/api/ops/marketing/content/prepare", {
+                itemId,
+                target
+            });
+            renderMarketing();
+            const labels = {
+                canva: "Briefing para Canva preparado.",
+                buffer: "Rascunho para Buffer preparado."
+            };
+            setStatus(labels[target] || "Rascunho de integracao preparado.", "success");
+        } catch (error) {
+            setStatus(error.message || "Falha ao preparar integracao.", "error");
+        }
+    }
+
+    async function handleMarketingBufferSchedule(itemId) {
+        try {
+            setStatus("Enviando rascunho para o Buffer...");
+            state.marketing = await submitJson("/api/ops/marketing/content/schedule-buffer", {
+                itemId
+            });
+            renderMarketing();
+            setStatus("Post agendado no Buffer.", "success");
+        } catch (error) {
+            if (error.payload && error.payload.items) {
+                state.marketing = error.payload;
+                renderMarketing();
+            }
+            setStatus(error.message || "Falha ao agendar no Buffer.", "error");
+        }
+    }
+
+    async function handleBufferChannels() {
+        try {
+            setStatus("Consultando canais do Buffer...");
+            state.bufferChannels = {
+                loading: true,
+                selectedOrganizationId: "consultando"
+            };
+            renderMarketing();
+            state.bufferChannels = await request("/api/ops/marketing/buffer/channels");
+            renderMarketing();
+            setStatus("Canais do Buffer carregados.", "success");
+        } catch (error) {
+            state.bufferChannels = {
+                ok: false,
+                status: error.payload && error.payload.status ? error.payload.status : "buffer_channels_failed",
+                message: error.message || "Falha ao consultar canais do Buffer.",
+                ...(error.payload || {})
+            };
+            renderMarketing();
+            setStatus(error.message || "Falha ao consultar canais do Buffer.", "error");
+        }
+    }
+
+    async function handleMarketingInstagramPublish(itemId) {
+        const imageUrl = window.prompt("Cole a URL publica HTTPS da arte pronta para publicar no Instagram:");
+        if (!imageUrl) {
+            setStatus("Publicacao no Instagram cancelada.");
+            return;
+        }
+
+        try {
+            setStatus("Publicando no Instagram pela Meta API...");
+            state.marketing = await submitJson("/api/ops/marketing/content/publish-instagram", {
+                itemId,
+                imageUrl
+            });
+            renderMarketing();
+            setStatus("Publicado no Instagram.", "success");
+        } catch (error) {
+            if (error.payload && error.payload.items) {
+                state.marketing = error.payload;
+                renderMarketing();
+            }
+            setStatus(error.message || "Falha ao publicar no Instagram.", "error");
         }
     }
 
@@ -1199,7 +1361,40 @@
                 handlePromotionApply(button.dataset.promotionApply, button.dataset.campaignId);
             }
         });
+        if (elements.marketingIntegrations) {
+            elements.marketingIntegrations.addEventListener("click", (event) => {
+                const button = event.target.closest("[data-buffer-channels]");
+                if (button) {
+                    event.stopPropagation();
+                    handleBufferChannels();
+                }
+            });
+        }
+        document.addEventListener("click", (event) => {
+            const button = event.target.closest("[data-buffer-channels]");
+            if (button) {
+                handleBufferChannels();
+            }
+        });
         elements.marketingQueue.addEventListener("click", (event) => {
+            const bufferScheduleButton = event.target.closest("[data-marketing-buffer-schedule]");
+            if (bufferScheduleButton) {
+                handleMarketingBufferSchedule(bufferScheduleButton.dataset.marketingBufferSchedule);
+                return;
+            }
+
+            const instagramPublishButton = event.target.closest("[data-marketing-instagram-publish]");
+            if (instagramPublishButton) {
+                handleMarketingInstagramPublish(instagramPublishButton.dataset.marketingInstagramPublish);
+                return;
+            }
+
+            const prepareButton = event.target.closest("[data-marketing-prepare]");
+            if (prepareButton) {
+                handleMarketingPrepare(prepareButton.dataset.marketingPrepare, prepareButton.dataset.marketingId);
+                return;
+            }
+
             const button = event.target.closest("[data-marketing-status]");
             if (button) {
                 handleMarketingStatus(button.dataset.marketingStatus, button.dataset.marketingId);
