@@ -180,9 +180,17 @@ window.QuestionsService = {
             return true;
         }
 
+        const shortestLength = Math.min(
+            left.length,
+            right.length
+        );
+
         if (
-            left.includes(right) ||
-            right.includes(left)
+            shortestLength >= 4 &&
+            (
+                left.includes(right) ||
+                right.includes(left)
+            )
         ) {
             return true;
         }
@@ -1803,6 +1811,109 @@ window.QuestionsService = {
         return questions;
     },
 
+    getDirectSearchQuestionScore(
+        question = {},
+        rawTerms = []
+    ) {
+        const terms = (
+            Array.isArray(rawTerms)
+                ? rawTerms
+                : []
+        )
+            .map((term) =>
+                this.normalizeText(term)
+            )
+            .filter(Boolean);
+
+        if (!terms.length) {
+            return 0;
+        }
+
+        const fields = [
+            {
+                value: question.topicLabel,
+                weight: 1200
+            },
+            {
+                value: question.subtopicLabel,
+                weight: 900
+            },
+            {
+                value: question.axisLabel,
+                weight: 650
+            },
+            {
+                value: question.frontLabel,
+                weight: 650
+            },
+            {
+                value: Array.isArray(question.tags)
+                    ? question.tags.join(" ")
+                    : "",
+                weight: 520
+            },
+            {
+                value: question.subjectLabel,
+                weight: 360
+            },
+            {
+                value: Array.isArray(
+                    question.competencies
+                )
+                    ? question.competencies.join(" ")
+                    : "",
+                weight: 240
+            },
+            {
+                value: question.prompt,
+                weight: 80
+            }
+        ];
+
+        let totalScore = 0;
+
+        terms.forEach((term) => {
+            let bestScore = 0;
+
+            fields.forEach((field) => {
+                const normalizedValue =
+                    this.normalizeText(
+                        field.value || ""
+                    );
+
+                if (!normalizedValue) {
+                    return;
+                }
+
+                if (
+                    normalizedValue.includes(term)
+                ) {
+                    bestScore = Math.max(
+                        bestScore,
+                        field.weight + 80
+                    );
+                    return;
+                }
+
+                if (
+                    this.matchesFuzzySearch(
+                        normalizedValue,
+                        term
+                    )
+                ) {
+                    bestScore = Math.max(
+                        bestScore,
+                        field.weight
+                    );
+                }
+            });
+
+            totalScore += bestScore;
+        });
+
+        return totalScore;
+    },
+
     orderDirectSearchQuestions(
         questions = [],
         strategy = "gradual"
@@ -1838,6 +1949,18 @@ window.QuestionsService = {
             .flatMap((difficulty) =>
                 [...grouped.get(difficulty)]
                     .sort((left, right) => {
+                    const scoreDiff =
+                        (Number(
+                            right?.directSearchScore
+                        ) || 0) -
+                        (Number(
+                            left?.directSearchScore
+                        ) || 0);
+
+                    if (scoreDiff !== 0) {
+                        return scoreDiff;
+                    }
+
                     const timeDiff =
                         (Number(
                             left?.expectedTime

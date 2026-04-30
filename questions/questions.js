@@ -395,6 +395,72 @@ window.QuestionsPage = {
         return this.data.schoolCatalog;
     },
 
+    async ensureDirectSearchCatalogLoaded(
+        terms = []
+    ) {
+        const cleanTerms = (
+            Array.isArray(terms) ? terms : []
+        )
+            .map((term) =>
+                String(term || "").trim()
+            )
+            .filter(Boolean);
+
+        if (!cleanTerms.length) {
+            return this.ensureDetailedCatalogLoaded();
+        }
+
+        if (
+            this.contentRepository &&
+            typeof this.contentRepository
+                .ensureTopicsLoaded ===
+                "function" &&
+            !QuestionsService.isFullCatalogLoaded(
+                this
+            ) &&
+            QuestionsService.hasCatalogManifest(
+                this
+            )
+        ) {
+            const topicIds =
+                QuestionsService.getTopicOptions(
+                    this
+                )
+                    .filter((topic) =>
+                        cleanTerms.some((term) =>
+                            QuestionsService.matchesFuzzySearch(
+                                [
+                                    topic.label,
+                                    topic.subjectLabel,
+                                    topic.eixo,
+                                    topic.frente,
+                                    topic.searchIndex
+                                ].join(" "),
+                                term
+                            )
+                        )
+                    )
+                    .map((topic) => topic.key)
+                    .filter(Boolean);
+
+            if (topicIds.length) {
+                const catalog =
+                    await this.contentRepository.ensureTopicsLoaded(
+                        topicIds
+                    );
+
+                this.data.schoolCatalog =
+                    Array.isArray(catalog)
+                        ? [...catalog]
+                        : [];
+
+                return this.data.schoolCatalog;
+            }
+        }
+
+        return this.ensureDetailedCatalogLoaded();
+    },
+
     async ensureRouteCatalogLoaded(
         routeContext = null
     ) {
@@ -4407,14 +4473,19 @@ window.QuestionsPage = {
             this.directSearchAutoAddPending ===
             true
         ) {
+            const shouldAutoStart =
+                this.directSearchAutoStartPending ===
+                true;
             this.directSearchAutoAddPending = false;
             this.addDirectSearchTerm(
-                launchInput
+                launchInput,
+                {
+                    replace: true,
+                    refresh:
+                        !shouldAutoStart
+                }
             );
-            if (
-                this.directSearchAutoStartPending ===
-                true
-            ) {
+            if (shouldAutoStart) {
                 this.directSearchAutoStartPending = false;
                 window.setTimeout(() => {
                     this.startDirectSearchSession();
@@ -4460,7 +4531,9 @@ window.QuestionsPage = {
         }
 
         try {
-            await this.ensureDetailedCatalogLoaded();
+            await this.ensureDirectSearchCatalogLoaded(
+                terms
+            );
 
             const matches =
                 this.getDirectSearchMatches();
@@ -4489,7 +4562,7 @@ window.QuestionsPage = {
         }
     },
 
-    addDirectSearchTerm(rawValue = "") {
+    addDirectSearchTerm(rawValue = "", options = {}) {
         const normalized =
             String(rawValue || "")
                 .replace(/\s+/g, " ")
@@ -4499,8 +4572,13 @@ window.QuestionsPage = {
             return;
         }
 
+        const shouldReplace =
+            options.replace === true;
+        const currentTerms = shouldReplace
+            ? []
+            : this.directSearchTerms;
         const duplicate =
-            this.directSearchTerms.some(
+            currentTerms.some(
                 (term) =>
                     QuestionsService.normalizeText(
                         term
@@ -4519,14 +4597,19 @@ window.QuestionsPage = {
         }
 
         this.directSearchTerms = [
-            ...this.directSearchTerms,
+            ...currentTerms,
             normalized
         ].slice(-8);
         this.directSearchInput = "";
         this.directSearchRefocusPending =
             true;
         this.clearRuntimeNotice();
-        this.refreshDirectSearchMatches();
+        if (options.refresh !== false) {
+            this.refreshDirectSearchMatches();
+        } else {
+            this.directSearchMatchCount = null;
+            this.render();
+        }
     },
 
     removeDirectSearchTerm(rawValue = "") {
@@ -4566,36 +4649,23 @@ window.QuestionsPage = {
         return QuestionsService.getAllQuestions(
             this,
             {}
-        ).filter((question) => {
-            const haystack =
-                QuestionsService.normalizeText(
-                    [
-                        question.subjectLabel,
-                        question.topicLabel,
-                        question.subtopicLabel,
-                        question.axisLabel,
-                        question.frontLabel,
-                        ...(Array.isArray(
-                            question.tags
-                        )
-                            ? question.tags
-                            : []),
-                        ...(Array.isArray(
-                            question.competencies
-                        )
-                            ? question.competencies
-                            : []),
-                        question.prompt
-                    ].join(" ")
-                );
+        )
+            .map((question) => {
+                const score =
+                    QuestionsService.getDirectSearchQuestionScore(
+                        question,
+                        terms
+                    );
 
-            return terms.some((term) =>
-                QuestionsService.matchesFuzzySearch(
-                    haystack,
-                    term
-                )
-            );
-        });
+                return score > 0
+                    ? {
+                          ...question,
+                          directSearchScore:
+                              score
+                      }
+                    : null;
+            })
+            .filter(Boolean);
     },
 
     async startDirectSearchSession() {

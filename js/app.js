@@ -1001,17 +1001,27 @@ if (moduleEl) moduleEl.classList.add("active")
 const requestedQuestionsView = String(
 window.RotaNotaQuestionsLauncherTarget || ""
 ).trim()
+const hasDirectSearchIntent =
+window.RotaNotaQuestionsFocusDirectSearch === true &&
+Boolean(
+String(
+window.RotaNotaQuestionsDirectSearchInput || ""
+).trim()
+)
 
 if (
 moduleEl &&
-requestedQuestionsView === "progress" &&
+(
+requestedQuestionsView === "progress" ||
+hasDirectSearchIntent
+) &&
 !window.questionsLoaded
 ) {
 moduleEl.innerHTML = `
 <div class="questions-route-loading" role="status" aria-live="polite">
-<span class="questions-route-loading-kicker">Estatisticas</span>
-<h2>Abrindo seu placar pessoal</h2>
-<p>Estamos carregando o painel completo sem trocar para outra tela.</p>
+<span class="questions-route-loading-kicker">${hasDirectSearchIntent ? "Busca direta" : "Estatisticas"}</span>
+<h2>${hasDirectSearchIntent ? "Preparando questoes do assunto" : "Abrindo seu placar pessoal"}</h2>
+<p>${hasDirectSearchIntent ? "Estamos filtrando o banco antes de iniciar o treino." : "Estamos carregando o painel completo sem trocar para outra tela."}</p>
 <div class="questions-route-loading-grid" aria-hidden="true">
 <span></span><span></span><span></span><span></span>
 </div>
