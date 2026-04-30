@@ -20,6 +20,7 @@ window.QuestionsPage = {
     directSearchInput: "",
     directSearchMatchCount: null,
     directSearchLoading: false,
+    directSearchLaunchLoading: false,
     directSearchRefocusPending: false,
     directSearchAutoAddPending: false,
     directSearchAutoStartPending: false,
@@ -205,6 +206,8 @@ window.QuestionsPage = {
                     window.RotaNotaQuestionsDirectSearchAutoStart &&
                         launchSearchInput
                 );
+            this.directSearchLaunchLoading =
+                this.directSearchAutoStartPending;
             this.directSearchRefocusPending = true;
             window.RotaNotaQuestionsFocusDirectSearch =
                 false;
@@ -4466,6 +4469,7 @@ window.QuestionsPage = {
         if (!launchInput) {
             this.directSearchAutoAddPending = false;
             this.directSearchAutoStartPending = false;
+            this.directSearchLaunchLoading = false;
             return false;
         }
 
@@ -4476,6 +4480,8 @@ window.QuestionsPage = {
             const shouldAutoStart =
                 this.directSearchAutoStartPending ===
                 true;
+            this.directSearchLaunchLoading =
+                shouldAutoStart;
             this.directSearchAutoAddPending = false;
             this.addDirectSearchTerm(
                 launchInput,
@@ -4496,6 +4502,7 @@ window.QuestionsPage = {
 
         this.directSearchRefocusPending = true;
         this.directSearchAutoStartPending = false;
+        this.directSearchLaunchLoading = false;
         this.render();
         return false;
     },
@@ -4670,6 +4677,7 @@ window.QuestionsPage = {
 
     async startDirectSearchSession() {
         if (!this.directSearchTerms.length) {
+            this.directSearchLaunchLoading = false;
             this.runtimeNotice =
                 "Digite pelo menos um assunto ou subassunto para gerar o treino direto.";
             this.render();
@@ -4684,6 +4692,7 @@ window.QuestionsPage = {
             );
 
         if (!list.length) {
+            this.directSearchLaunchLoading = false;
             this.runtimeNotice =
                 "Nao encontrei questoes para os termos buscados agora. Tente outro assunto ou subassunto.";
             this.render();
@@ -4703,6 +4712,7 @@ window.QuestionsPage = {
             );
 
         this.clearRuntimeNotice();
+        this.directSearchLaunchLoading = false;
         this.startSession({
             sessionList: orderedList,
             sourceMode: "direct_search",

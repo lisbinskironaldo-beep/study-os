@@ -90,7 +90,11 @@
 
         if (phase === "launcher") {
             launcher.innerHTML =
-                this.renderLauncher() +
+                (
+                    this.page.directSearchLaunchLoading
+                        ? this.renderDirectSearchLaunchLoading()
+                        : this.renderLauncher()
+                ) +
                 dialogMarkup;
             session.innerHTML = "";
         } else {
@@ -1706,6 +1710,34 @@
         }
 
         return this.renderLauncherHome();
+    },
+
+    renderDirectSearchLaunchLoading() {
+        const terms = Array.isArray(
+            this.page.directSearchTerms
+        )
+            ? this.page.directSearchTerms
+                  .map((term) =>
+                      String(term || "").trim()
+                  )
+                  .filter(Boolean)
+            : [];
+        const label = terms.length
+            ? terms.slice(0, 2).join(" + ")
+            : String(
+                  this.page.directSearchInput || ""
+              ).trim();
+
+        return `
+            <div class="questions-route-loading questions-direct-search-loading" role="status" aria-live="polite">
+                <span class="questions-route-loading-kicker">Busca direta</span>
+                <h2>Preparando seu treino</h2>
+                <p>${label ? `Estamos filtrando questoes de ${this.escapeHtml(label)} antes de abrir a primeira.` : "Estamos filtrando o banco antes de abrir a primeira questao."}</p>
+                <div class="questions-route-loading-grid" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+        `;
     },
 
     renderLauncherHome() {
@@ -7680,7 +7712,7 @@
             </div>
             ${!answer ? `
                 <button id="questionsChoiceConfirmBtn" class="questions-confirm-btn" type="button" disabled>
-                    <span class="questions-confirm-icon">âœ“</span>
+                    <span class="questions-confirm-icon">&#10003;</span>
                     Confirmar
                 </button>
             ` : ""}
@@ -7713,7 +7745,7 @@
                 </div>
 
                 <button id="questionsOrderingSubmitBtn" class="questions-confirm-btn" type="button" ${isLocked ? "disabled" : ""}>
-                    <span class="questions-confirm-icon">âœ“</span>
+                    <span class="questions-confirm-icon">&#10003;</span>
                     Confirmar
                 </button>
             </div>
@@ -7726,7 +7758,7 @@
             <form id="questionsInputForm" class="questions-input-form">
                 <input id="questionsInputField" class="questions-input-field" type="text" placeholder="Digite sua resposta" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" ${answer ? "disabled" : ""}>
                 <button id="questionsInputConfirmBtn" class="questions-confirm-btn" type="submit" ${answer ? "disabled" : ""}>
-                    <span class="questions-confirm-icon">âœ“</span>
+                    <span class="questions-confirm-icon">&#10003;</span>
                     Confirmar
                 </button>
             </form>
@@ -7762,7 +7794,7 @@
                         Responder de novo
                     </button>
                     <button id="questionsContinueBtn" class="questions-confirm-btn" type="button">
-                        <span class="questions-confirm-icon">â†’</span>
+                        <span class="questions-confirm-icon">&rarr;</span>
                         Próxima
                     </button>
                 </div>

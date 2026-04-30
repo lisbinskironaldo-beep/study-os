@@ -209,6 +209,18 @@ window.QuestionsService = {
                 ? 2
                 : 1;
 
+        if (
+            distance > 0 &&
+            maxLength <= 5 &&
+            (
+                left[0] !== right[0] ||
+                left[left.length - 1] !==
+                    right[right.length - 1]
+            )
+        ) {
+            return false;
+        }
+
         return distance <= threshold;
     },
 

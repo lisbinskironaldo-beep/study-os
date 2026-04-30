@@ -952,6 +952,8 @@ QuestionsPage.directSearchAutoStartPending = Boolean(
 window.RotaNotaQuestionsDirectSearchAutoStart &&
 directSearchInput
 )
+QuestionsPage.directSearchLaunchLoading =
+QuestionsPage.directSearchAutoStartPending
 QuestionsPage.directSearchRefocusPending = true
 window.RotaNotaQuestionsFocusDirectSearch = false
 window.RotaNotaQuestionsDirectSearchInput = ""
