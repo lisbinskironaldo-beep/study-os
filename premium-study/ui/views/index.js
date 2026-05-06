@@ -853,7 +853,7 @@ ${renderSessionNote(state, "mode-select")}`;
 
         if (modules.length) {
             return `
-<div class="premium-learn-lesson-stack">
+<div class="premium-learn-lesson-stack ${modules.length === 1 ? "is-single" : ""}">
     ${modules.map((module, index) => `
     <section class="premium-learn-lesson">
         <div class="premium-learn-lesson-index">${String(index + 1).padStart(2, "0")}</div>
