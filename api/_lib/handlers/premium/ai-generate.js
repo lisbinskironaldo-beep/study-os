@@ -9,7 +9,7 @@ const TASKS = {
     PREMIUM_LEVEL_EXAM: "premium_level_exam"
 };
 
-const PROMPT_VERSION = "rotanota-pdf-focused-ai-v3";
+const PROMPT_VERSION = "papiro-tools-pdf-focused-ai-v3";
 const DEFAULT_MODEL = "gemini-2.5-flash-lite";
 const FALLBACK_MODEL = "gemini-2.5-flash-lite";
 const FREE_MAX_TEXT_CHARS = 30000;
@@ -866,7 +866,13 @@ async function ensurePremium(input = {}) {
 }
 
 function getPrimaryModel() {
-    return cleanText(process.env.ROTANOTA_AI_MODEL || process.env.GEMINI_MODEL || DEFAULT_MODEL, DEFAULT_MODEL);
+    return cleanText(
+        process.env.PAPIRO_TOOLS_AI_MODEL ||
+        process.env.ROTANOTA_AI_MODEL ||
+        process.env.GEMINI_MODEL ||
+        DEFAULT_MODEL,
+        DEFAULT_MODEL
+    );
 }
 
 function buildModelSequence(model) {

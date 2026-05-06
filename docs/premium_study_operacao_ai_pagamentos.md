@@ -1,4 +1,4 @@
-# ROTANOTA - PREMIUM STUDY - OPERAÇÃO, IA, ACESSOS E PAGAMENTOS
+# PAPIRO_TOOLS - PREMIUM STUDY - OPERAÇÃO, IA, ACESSOS E PAGAMENTOS
 
 Documento oficial da frente operacional.
 
@@ -418,7 +418,7 @@ Alavancas recomendadas:
 
 - tela bonita de `Seu plano está pronto`
 - card compartilhável de `Seu cronograma pessoal`
-- selo discreto `Criado no RotaNota`
+- selo discreto `Criado no Papiro Tools`
 - resumo visual do progresso
 
 Incentivos permitidos:
@@ -660,7 +660,7 @@ Nao confundir:
 No painel de desenvolvedor:
 
 1. abrir `Suas integracoes`
-2. selecionar a aplicacao `StudyPro` ou `RotaNota`, conforme o nome usado no painel Mercado Pago
+2. selecionar a aplicacao `StudyPro` ou `Papiro Tools`, conforme o nome usado no painel Mercado Pago
 3. abrir `Webhooks`
 4. entrar em `Configurar notificacoes`
 5. informar uma URL HTTPS publica do backend
@@ -744,7 +744,7 @@ Recomendadas:
 ```txt
 MERCADO_PAGO_PUBLIC_KEY
 MERCADO_PAGO_CURRENCY
-ROTANOTA_BASE_URL
+PAPIRO_TOOLS_BASE_URL
 MERCADO_PAGO_SUCCESS_URL
 MERCADO_PAGO_FAILURE_URL
 MERCADO_PAGO_PENDING_URL
@@ -988,7 +988,7 @@ A pendencia principal nao e mais infraestrutura local. O ponto aberto em 2026-04
 Estado atual:
 
 - localhost esta saudavel
-- `https://rota-nota.vercel.app` esta publicado
+- `https://papiro-tools.vercel.app` esta publicado
 - a producao ja recebeu o deploy corretivo da retaguarda em 2026-04-20
 
 Historico do incidente resolvido:

@@ -2,13 +2,13 @@
 
 Atualizado em 2026-04-20.
 
-Este e o documento principal para colocar o `NorthStar` no ar nesta fase, sem perder o contexto do `RotaNota`.
+Este e o documento principal para colocar o `NorthStar` no ar nesta fase, sem perder o contexto do `Papiro Tools`.
 
 ## 1. O que ja esta feito
 
 ### Produto e operacao
 
-- `RotaNota` publicado em `https://rota-nota.vercel.app`
+- `Papiro Tools` publicado em `https://papiro-tools.vercel.app`
 - `/ops/` ja funciona como shell do `NorthStar`
 - checkout Mercado Pago criando preferencias reais em producao
 - webhook publico Mercado Pago publicado
@@ -87,8 +87,8 @@ Depois do deploy publicado e validado, entra a etapa externa da OpenAI.
 
 Voce vai usar:
 
-- app/manifeste: `https://rota-nota.vercel.app/api/northstar-app-manifest`
-- MCP: `https://rota-nota.vercel.app/api/northstar-mcp`
+- app/manifeste: `https://papiro-tools.vercel.app/api/northstar-app-manifest`
+- MCP: `https://papiro-tools.vercel.app/api/northstar-mcp`
 
 #### Passo exato
 
@@ -105,7 +105,7 @@ Quando chegar nessa etapa, eu te acompanho nos campos exatos porque isso depende
 
 Depois de confirmar o schema, faca login em:
 
-- `https://rota-nota.vercel.app/ops/`
+- `https://papiro-tools.vercel.app/ops/`
 
 E valide:
 
@@ -144,7 +144,7 @@ Documentos principais desta fase:
 - `docs/northstar_ai_ops_policy.md`
 - `docs/northstar_three_day_growth_loop.md`
 - `docs/northstar_chatgpt_app.md`
-- `docs/rotanota_2026-04-20_handoff.md`
+- `docs/papiro_tools_2026-04-20_handoff.md`
 - `docs/northstar_launch_execution.md`
 
 ## 6. Proximo comando que importa
@@ -152,7 +152,7 @@ Documentos principais desta fase:
 O proximo passo real e seu:
 
 1. confirmar/aplicar o schema no Supabase
-2. abrir `https://rota-nota.vercel.app/ops/` e validar a aba `Governanca`
+2. abrir `https://papiro-tools.vercel.app/ops/` e validar a aba `Governanca`
 3. depois seguir para o registro externo do app no ChatGPT
 
 Assim que voce fizer isso, eu continuo do meu lado sem te fazer reorganizar tudo de novo.

@@ -1,4 +1,4 @@
-# ROTANOTA - QUESTIONS V2 - VISAO E PROPOSITO
+# PAPIRO_TOOLS - QUESTIONS V2 - VISAO E PROPOSITO
 
 Documento interno de direcionamento.
 Nao deve aparecer na interface do produto.
@@ -82,7 +82,7 @@ Ele passa a ser tratado como um dominio proprio dentro do projeto.
 Regra:
 
 ```txt
-o shell continua sendo o ROTANOTA
+o shell continua sendo o PAPIRO_TOOLS
 questions passa a ser um dominio isolado
 ```
 

@@ -1,5 +1,5 @@
 (function () {
-    if (window.RotaNotaAuth) {
+    if (window.RotaNotaAuth || window.PapiroToolsAuth) {
         return;
     }
 
@@ -703,6 +703,7 @@
         requestGoogleLogin,
         logout
     };
+    window.PapiroToolsAuth = window.RotaNotaAuth;
 
     if (document.readyState === "loading") {
         document.addEventListener("DOMContentLoaded", init, { once: true });

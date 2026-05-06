@@ -22,7 +22,7 @@ mudanca no PDF Focado ou separacao do Ops/NorthStar.
   cuidado, sem remocao brusca.
 - O Ops ainda esta dentro do mesmo projeto e rota `/ops`, mas a direcao de
   produto e separar a gestao para NorthStar.
-- A marca publica ainda aparece como RotaNota em varios pontos. A direcao
+- A marca publica ainda aparece como Papiro Tools em varios pontos. A direcao
   escolhida agora e Papiro Tools, com Papiro como nome curto.
 
 ## Estado do repo antes desta nota
@@ -308,7 +308,7 @@ Preparar apenas uma camada de marca:
 
 ```js
 const Brand = {
-  publicProduct: "RotaNota",
+  publicProduct: "Papiro Tools",
   futureProductCandidate: "Papiro Tools",
   opsProduct: "NorthStar Ops"
 };

@@ -24,14 +24,12 @@ O plano atual do hub cobre:
 Fase atual:
 
 - o host tecnico publico atual e `https://papiro-tools.vercel.app`
-- a migracao do alias antigo `rota-nota.vercel.app` para `papiro-tools.vercel.app` foi executada em 2026-04-30
+- a migracao do alias antigo para `papiro-tools.vercel.app` foi executada em 2026-04-30
 - a UX e a estrutura de dados ja foram preparadas para a futura topologia `NorthStar + subdominios`
 
 Documento principal de retomada:
 
-- `docs/rotanota_execution_phases.md`
-- `docs/rotanota_go_live_status.md`
-- `docs/rotanota_2026-04-20_handoff.md`
+- `docs/papiro_tools_ops_and_isca_handoff_2026-04-30.md`
 - `docs/northstar_current_state.md`
 - `docs/northstar_go_live_monetization.md`
 - `docs/northstar_ai_ops_policy.md`
@@ -99,7 +97,7 @@ Observacoes importantes:
 Antes de testar checkout, premium, Gemini e retaguarda:
 
 ```powershell
-node scripts/rotanota-readiness-check.js
+node scripts/papiro-tools-readiness-check.js
 ```
 
 O script verifica:
@@ -113,8 +111,8 @@ O script verifica:
 
 Para liberar premium automatico para o dono/admin em qualquer navegador, use uma destas envs:
 
-- `ROTANOTA_OWNER_EMAILS=email1@dominio.com,email2@dominio.com`
-- `ROTANOTA_OWNER_USER_IDS=google:123,google:456`
+- `PAPIRO_TOOLS_OWNER_EMAILS=email1@dominio.com,email2@dominio.com`
+- `PAPIRO_TOOLS_OWNER_USER_IDS=google:123,google:456`
 
 Quando a conta logada bater com uma dessas listas, o backend responde premium por override de owner, sem depender de pagamento no navegador atual.
 
@@ -129,7 +127,7 @@ Observacoes:
 
 Para o login com Google funcionar no premium:
 
-- configurar `GOOGLE_CLIENT_ID` ou `ROTANOTA_GOOGLE_CLIENT_ID` na Vercel
+- configurar `GOOGLE_CLIENT_ID` ou `PAPIRO_TOOLS_GOOGLE_CLIENT_ID` na Vercel
 - cadastrar no Google Cloud as origins exatas usadas no site
 
 Origins mais comuns:
@@ -182,7 +180,7 @@ Com a falha de requisicao resolvida, os proximos passos voltam a ser de evolucao
 - validar um pagamento real completo e monitorar activations
 - revisar a trilha externa de registro do NorthStar como app do ChatGPT, porque as rotas antigas `/api/northstar-app-manifest` e `/api/northstar-mcp` foram removidas do codigo atual
 - configurar Google Ads e Meta Ads para sair de `not_configured`
-- usar `docs/rotanota_execution_phases.md` como trilha oficial de execucao
+- usar `docs/papiro_tools_ops_and_isca_handoff_2026-04-30.md` como trilha oficial de execucao
 
 ## Observacao
 

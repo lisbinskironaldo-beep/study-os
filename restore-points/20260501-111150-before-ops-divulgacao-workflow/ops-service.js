@@ -2827,21 +2827,24 @@ function buildIntegrationDraft(item, target) {
     if (target === "canva") {
         const aiPrompt = [
             `Crie uma arte educacional para o Papiro Tools no formato ${canvaFormat}.`,
+            "",
+            "Objetivo: chamar a atencao de estudantes do ensino medio e ENEM para estudar pelo Papiro.",
             `Tema: ${item.subject || "Estudo"} - ${item.topic || title}.`,
-            `Texto principal: ${textForArt || title}.`,
+            `Texto principal da arte: ${textForArt || title}.`,
             `Direcao visual: ${visualBrief || "Arte limpa, legivel, moderna e alinhada a produto digital de estudos."}`,
-            "Estilo: jovem, organizado, claro, com contraste alto, sem parecer infantil.",
-            "Cores: azul petroleo/profundo, branco/creme e detalhe dourado discreto.",
-            "CTA curto: Estude com o Papiro.",
-            "Deixe os textos editaveis e com boa leitura no celular."
+            "Estilo: jovem, organizado, claro, com contraste alto, sem parecer infantil e sem poluir.",
+            "Use azul petroleo/profundo, branco/creme e um detalhe dourado discreto. Evite neon, excesso de elementos e fundo escuro pesado.",
+            "Inclua um CTA curto: Estude com o Papiro.",
+            "Deixe todos os textos editaveis e com leitura boa no celular.",
+            "",
+            `Legenda de apoio para contexto, nao precisa colocar inteira na arte:\n${caption}`
         ].join("\n");
         return {
             target,
             status: "prepared",
             title: `Arte Canva - ${title}`,
             aiPrompt,
-            canvaClassicUrl: "https://www.canva.com/canva-ai/",
-            canvaAi2Url: "https://www.canva.com/magic/",
+            canvaAiUrl: "https://www.canva.com/magic/",
             brief: [
                 `Titulo: ${title}`,
                 `Formato: ${canvaFormat}`,
@@ -2851,7 +2854,7 @@ function buildIntegrationDraft(item, target) {
                 `Texto da arte: ${textForArt || title}`,
                 `Legenda base: ${caption}`
             ].join("\n"),
-            nextAction: "Copiar o prompt da arte, abrir Canva IA 1.0/Magic Studio e colar para gerar a primeira versao."
+            nextAction: "Copiar o prompt, abrir Canva IA e colar no chat para gerar a primeira versao."
         };
     }
 

@@ -1,4 +1,4 @@
-# ROTANOTA - PREMIUM STUDY - CONSTITUICAO DO PRODUTO
+# PAPIRO_TOOLS - PREMIUM STUDY - CONSTITUICAO DO PRODUTO
 
 Documento oficial e autoritativo do modulo `Premium Study`.
 

@@ -1,6 +1,6 @@
-# ROTANOTA - FRENTES FUTURAS - TESTE DE QI E TESTE VOCACIONAL
+# PAPIRO_TOOLS - FRENTES FUTURAS - TESTE DE QI E TESTE VOCACIONAL
 
-Documento de captura oficial de ideias futuras do ecossistema `RotaNota`.
+Documento de captura oficial de ideias futuras do ecossistema `Papiro Tools`.
 
 Status:
 - vigente
@@ -275,7 +275,7 @@ Recomendacao:
 
 ### 5.1 Nao copiar app generico
 
-Os dois modulos precisam parecer produtos proprios do `RotaNota`, nao paginas prontas ou quiz de template.
+Os dois modulos precisam parecer produtos proprios do `Papiro Tools`, nao paginas prontas ou quiz de template.
 
 ### 5.2 Uma acao por tela
 

@@ -4,7 +4,7 @@ Atualizado em 2026-04-20.
 
 ## Estado confirmado
 
-- host publico atual: `https://rota-nota.vercel.app`
+- host publico atual: `https://papiro-tools.vercel.app`
 - retaguarda NorthStar publicada em `/ops/`
 - checkout Mercado Pago cria preferencias reais em producao
 - webhook publico Mercado Pago existe e responde

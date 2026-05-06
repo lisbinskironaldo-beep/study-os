@@ -128,7 +128,12 @@ module.exports = async function handler(req, res) {
     const generationPaused = premiumLike
         ? Boolean(opsState.lanes && opsState.lanes.premiumLanePaused)
         : Boolean(opsState.lanes && opsState.lanes.freeLanePaused);
-    const aiModel = String(process.env.ROTANOTA_AI_MODEL || process.env.GEMINI_MODEL || "gemini-2.5-flash-lite").trim();
+    const aiModel = String(
+        process.env.PAPIRO_TOOLS_AI_MODEL ||
+        process.env.ROTANOTA_AI_MODEL ||
+        process.env.GEMINI_MODEL ||
+        "gemini-2.5-flash-lite"
+    ).trim();
 
     return sendJson(res, status.ok ? 200 : 400, {
         ...status,

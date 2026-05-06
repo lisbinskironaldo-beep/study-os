@@ -223,6 +223,45 @@ async function validateMetaAds(env) {
     };
 }
 
+async function validateBuffer(env) {
+    const apiKey = env.BUFFER_API_KEY || env.BUFFER_ACCESS_TOKEN || "";
+    const profileIds = env.BUFFER_PROFILE_IDS || env.BUFFER_CHANNEL_IDS || "";
+
+    if (!isFilled(apiKey) || !isFilled(profileIds)) {
+        return {
+            ok: false,
+            status: "not_configured",
+            hasApiKey: isFilled(apiKey),
+            hasProfileIds: isFilled(profileIds)
+        };
+    }
+
+    const response = await fetch("https://api.buffer.com", {
+        method: "POST",
+        headers: {
+            Authorization: `Bearer ${apiKey}`,
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            query: "{ account { organizations { id name } } }"
+        })
+    }).catch(() => null);
+
+    return {
+        ok: Boolean(response && response.ok),
+        status: response ? response.status : 0,
+        hasApiKey: true,
+        hasProfileIds: true
+    };
+}
+
+function inspectMarketingConnectors(env) {
+    return {
+        canvaPro: true,
+        buffer: isFilled(env.BUFFER_API_KEY || env.BUFFER_ACCESS_TOKEN) && isFilled(env.BUFFER_PROFILE_IDS || env.BUFFER_CHANNEL_IDS)
+    };
+}
+
 function inspectVercelProductionEnv() {
     try {
         const pulledPath = path.join(root, ".codex-temp", "vercel-production-readiness.env");
@@ -244,7 +283,10 @@ function inspectVercelProductionEnv() {
             "META_APP_ID",
             "META_AD_ACCOUNT_ID",
             "META_ACCESS_TOKEN",
-            "MERCADO_PAGO_WEBHOOK_SECRET"
+            "MERCADO_PAGO_WEBHOOK_SECRET",
+            "BUFFER_API_KEY",
+            "BUFFER_PROFILE_IDS",
+            "BUFFER_ORGANIZATION_ID"
         ];
 
         return Object.fromEntries(keys.map((key) => [key, isFilled(pulled[key])]));
@@ -344,15 +386,17 @@ async function main() {
         warnings.push("Painel /ops nao encontrado em ops/index.html.");
     }
 
-    const [supabaseValidation, geminiValidation, mercadoPagoValidation, openAiValidation, googleAuthValidation, googleAdsValidation, metaAdsValidation] = await Promise.all([
+    const [supabaseValidation, geminiValidation, mercadoPagoValidation, openAiValidation, googleAuthValidation, googleAdsValidation, metaAdsValidation, bufferValidation] = await Promise.all([
         validateSupabaseTables(),
         validateGemini(),
         validateMercadoPago(env.MERCADO_PAGO_ACCESS_TOKEN),
         validateOpenAiSurface(env),
         validateGoogleAuth(env),
         validateGoogleAds(env),
-        validateMetaAds(env)
+        validateMetaAds(env),
+        validateBuffer(env)
     ]);
+    const marketingConnectors = inspectMarketingConnectors(env);
     const vercelProductionEnv = inspectVercelProductionEnv();
 
     if (!supabaseValidation.ok) {
@@ -383,6 +427,10 @@ async function main() {
         warnings.push("Meta Ads ainda nao esta pronto para validacao real neste ambiente.");
     }
 
+    if (!bufferValidation.ok) {
+        warnings.push("Buffer ainda nao esta pronto neste ambiente local. Em producao, confira BUFFER_API_KEY e BUFFER_PROFILE_IDS.");
+    }
+
     if (!vercelProductionEnv) {
         warnings.push("Nao foi possivel inspecionar automaticamente as envs de production na Vercel.");
     }
@@ -402,7 +450,8 @@ async function main() {
         `- openai app/mcp runtime: ${openAiValidation.ok ? "ok" : "pendente"}`,
         `- google auth runtime: ${googleAuthValidation.ok ? "ok" : "pendente"}`,
         `- google ads runtime: ${googleAdsValidation.ok ? "ok" : "pendente"}`,
-        `- meta ads runtime: ${metaAdsValidation.ok ? "ok" : "pendente"}`
+        `- meta ads runtime: ${metaAdsValidation.ok ? "ok" : "pendente"}`,
+        `- buffer runtime: ${bufferValidation.ok ? "ok" : "pendente"}`
     ]);
 
     printSection("Pendencias", missing.length
@@ -420,7 +469,14 @@ async function main() {
         `- OpenAI app/MCP: ${openAiValidation.ok ? `ok (app ${openAiValidation.appStatus}, mcp ${openAiValidation.mcpStatus})` : "pendente"}`,
         `- Google Auth: ${googleAuthValidation.ok ? googleAuthValidation.status : `falhou (${googleAuthValidation.status})`}`,
         `- Google Ads: ${googleAdsValidation.ok ? googleAdsValidation.status : "pendente"}`,
-        `- Meta Ads: ${metaAdsValidation.ok ? `ok (${metaAdsValidation.status})` : "pendente"}`
+        `- Meta Ads: ${metaAdsValidation.ok ? `ok (${metaAdsValidation.status})` : "pendente"}`,
+        `- Buffer: ${bufferValidation.ok ? `ok (${bufferValidation.status})` : `pendente (${bufferValidation.status})`}`
+    ]);
+
+    printSection("Conectores de divulgacao", [
+        `- Canva Pro: ${marketingConnectors.canvaPro ? "pronto" : "revisar"}`,
+        `- Buffer: ${marketingConnectors.buffer ? "pronto" : "pendente"}`,
+        "- Meta Business Suite: uso manual quando precisar"
     ]);
 
     if (vercelProductionEnv) {

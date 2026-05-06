@@ -1,4 +1,4 @@
-# RotaNota Ops Copilot
+# Papiro Tools Ops Copilot
 
 ## Stack
 - provider: Gemini

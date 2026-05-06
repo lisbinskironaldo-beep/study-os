@@ -11,6 +11,7 @@ const APP_SESSION_MAX_AGE_SECONDS = 60 * 60 * 24 * 30;
 
 function getAppAuthSecret() {
     return String(
+        process.env.PAPIRO_TOOLS_AUTH_SECRET ||
         process.env.ROTANOTA_AUTH_SECRET ||
         process.env.OPS_SESSION_SECRET ||
         process.env.SUPABASE_SERVICE_ROLE_KEY ||

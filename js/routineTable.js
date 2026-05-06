@@ -6,7 +6,10 @@
 const RoutineTable = {
 
     storageKey: "rotanota_routine_table_v2",
+    savedTablesKey: "rotanota_routine_saved_tables_v1",
+    maxSavedTables: 10,
     activeCell: null,
+    savedTablesMessage: "",
 
     days: [
         { key: "mon", short: "Seg", label: "Segunda" },
@@ -53,6 +56,7 @@ const RoutineTable = {
             start: "08:00",
             end: "12:00",
             method: "p50",
+            tableName: "",
             activeDay: "mon",
             visibleDays: {
                 mon: true,
@@ -146,12 +150,41 @@ const RoutineTable = {
         };
     },
 
+    loadSavedTables() {
+        try {
+            const saved =
+                JSON.parse(localStorage.getItem(this.savedTablesKey) || "[]");
+
+            if (!Array.isArray(saved)) return [];
+
+            return saved
+                .sort((a, b) => String(b.updatedAt || "").localeCompare(String(a.updatedAt || "")))
+                .slice(0, this.maxSavedTables);
+        } catch (error) {
+            console.warn("Falha ao carregar tabelas salvas", error);
+            return [];
+        }
+    },
+
+    saveSavedTables(tables) {
+        const limitedTables =
+            [...tables]
+                .sort((a, b) => String(b.updatedAt || "").localeCompare(String(a.updatedAt || "")))
+                .slice(0, this.maxSavedTables);
+
+        localStorage.setItem(this.savedTablesKey, JSON.stringify(limitedTables));
+    },
+
     save() {
         if (!this.state) return;
         localStorage.setItem(this.storageKey, JSON.stringify(this.state));
     },
 
     render(options = {}) {
+        if (!options.force && this.hasActiveEditor()) {
+            return;
+        }
+
         const gridScrollState =
             options.preserveGridScroll ? this.getGridScrollState() : null;
 
@@ -167,6 +200,7 @@ const RoutineTable = {
                 <div class="routine-v2-hero">
                     <div>
                         <div class="routine-v2-kicker">Rotina semanal</div>
+                        ${this.renderActiveTableName()}
                         <h2>Monte uma semana que cabe na sua vida.</h2>
                         <p>Organize dias, horarios, materias e intervalos sem prender a rotina ao Pomodoro.</p>
                     </div>
@@ -174,13 +208,11 @@ const RoutineTable = {
                         <button type="button" class="routine-v2-secondary" data-action="print">
                             Imprimir
                         </button>
-                        <button type="button" class="routine-v2-secondary" data-action="legacy">
-                            Tabela classica
-                        </button>
                     </div>
                 </div>
 
                 ${this.renderSetup()}
+                ${this.renderSavedTables()}
                 ${this.renderMobileDayTabs()}
                 ${this.renderGrid()}
             </section>
@@ -188,6 +220,30 @@ const RoutineTable = {
 
         this.bind();
         this.restoreGridScroll(gridScrollState);
+    },
+
+    hasActiveEditor() {
+        const module =
+            document.getElementById("routineModule");
+        const active =
+            document.activeElement;
+
+        if (!module || !active || !module.contains(active)) return false;
+
+        return Boolean(
+            active.matches(
+                ".routine-cell, [data-time], #routineStart, #routineEnd, #routineTableName"
+            )
+        );
+    },
+
+    renderActiveTableName() {
+        const name =
+            String(this.state?.tableName || "").trim();
+
+        if (!name) return "";
+
+        return `<div class="routine-active-name">${this.escapeHtml(name.toUpperCase())}</div>`;
     },
 
     getGridScrollState() {
@@ -284,6 +340,46 @@ const RoutineTable = {
         return `<div class="routine-mobile-days">${tabs}</div>`;
     },
 
+    renderSavedTables() {
+        const savedTables =
+            this.loadSavedTables();
+        const savedList =
+            savedTables.length
+                ? savedTables
+                    .map((table) => `
+                        <div class="routine-saved-item" role="listitem">
+                            <button type="button" class="routine-saved-load" data-load-saved="${this.escapeHtml(table.id)}" title="Carregar ${this.escapeHtml(table.name)}">
+                                ${this.escapeHtml(table.name)}
+                            </button>
+                            <button type="button" class="routine-saved-delete" data-delete-saved="${this.escapeHtml(table.id)}" aria-label="Excluir ${this.escapeHtml(table.name)}">
+                                Excluir
+                            </button>
+                        </div>
+                    `)
+                    .join("")
+                : `<span class="routine-saved-empty">Nenhuma tabela salva ainda.</span>`;
+        const message =
+            this.savedTablesMessage ||
+            `${savedTables.length}/${this.maxSavedTables} tabelas salvas`;
+
+        return `
+            <section class="routine-save-panel" aria-label="Salvar e buscar tabelas">
+                <label class="routine-save-field">
+                    <span>Nome da tabela</span>
+                    <input id="routineTableName" type="text" maxlength="48" value="${this.escapeHtml(this.state.tableName || "")}" placeholder="Ex.: Semana de provas">
+                </label>
+                <button type="button" class="routine-v2-primary" data-action="save-table">Salvar tabela</button>
+                <div class="routine-saved-panel">
+                    <div class="routine-saved-head">
+                        <span>Tabelas salvas</span>
+                        <strong>${this.escapeHtml(message)}</strong>
+                    </div>
+                    <div class="routine-saved-list" role="list">${savedList}</div>
+                </div>
+            </section>
+        `;
+    },
+
     renderGrid() {
         const visibleDays = this.getRenderableDays();
         const gridMinWidth =
@@ -294,7 +390,7 @@ const RoutineTable = {
                 <div class="routine-board-toolbar">
                     <button type="button" data-action="add-row">+ Linha</button>
                     <button type="button" data-action="add-interval">+ Intervalo</button>
-                    <button type="button" data-action="clear-empty">Limpar vazias</button>
+                    <button type="button" data-action="clear-empty">Limpar</button>
                     <span>Tab ou Ctrl + setas para navegar. Enter quebra linha.</span>
                 </div>
                 <div class="routine-grid-scroll">
@@ -371,6 +467,14 @@ const RoutineTable = {
         });
 
         module.querySelectorAll("[data-time]").forEach((input) => {
+            input.addEventListener("input", () => {
+                this.updateRowTime(
+                    input.dataset.time,
+                    input.dataset.timeField,
+                    input.value
+                );
+            });
+
             input.addEventListener("change", () => {
                 this.updateRowTime(
                     input.dataset.time,
@@ -399,6 +503,29 @@ const RoutineTable = {
             });
         }
 
+        const tableNameInput =
+            module.querySelector("#routineTableName");
+
+        if (tableNameInput) {
+            tableNameInput.addEventListener("input", () => {
+                this.state.tableName = tableNameInput.value.trim();
+                this.save();
+                this.updateActiveNameDisplay();
+            });
+        }
+
+        module.querySelectorAll("[data-load-saved]").forEach((button) => {
+            button.addEventListener("click", () => {
+                this.loadSavedTableById(button.dataset.loadSaved);
+            });
+        });
+
+        module.querySelectorAll("[data-delete-saved]").forEach((button) => {
+            button.addEventListener("click", () => {
+                this.deleteSavedTableById(button.dataset.deleteSaved);
+            });
+        });
+
         module.querySelectorAll("[data-delete-row]").forEach((button) => {
             button.addEventListener("click", () => {
                 this.deleteRow(button.dataset.deleteRow);
@@ -406,38 +533,9 @@ const RoutineTable = {
         });
 
         module.querySelectorAll(".routine-cell").forEach((cell) => {
-            const focusCellInput = () => {
-                if (document.activeElement !== cell) {
-                    cell.focus({ preventScroll: true });
-                }
-
-                if (typeof cell.setSelectionRange === "function") {
-                    const end =
-                        this.getCellText(cell).length;
-                    cell.setSelectionRange(end, end);
-                }
-            };
-
-            const beginCellEdit = (event) => {
-                event.stopPropagation();
-
-                if (document.activeElement === cell) {
-                    return;
-                }
-
-                event.preventDefault();
-                focusCellInput();
-            };
-
-            cell.addEventListener("pointerdown", beginCellEdit);
-            cell.addEventListener("mousedown", beginCellEdit);
-            cell.addEventListener("click", (event) => {
-                event.stopPropagation();
-                focusCellInput();
-            });
-
             cell.addEventListener("input", () => {
                 this.updateCell(cell);
+                this.showSuggestions(cell);
             });
 
             cell.addEventListener("focus", () => {
@@ -445,20 +543,21 @@ const RoutineTable = {
                     rowIndex: Number(cell.dataset.rowIndex),
                     day: cell.dataset.day
                 };
+                this.showSuggestions(cell);
+            });
+
+            cell.addEventListener("blur", () => {
+                window.setTimeout(() => this.hideSuggestions(), 120);
             });
 
             cell.addEventListener("keydown", (event) => {
+                if (this.handleSuggestionKeys(event, cell)) return;
                 this.handleCellKeydown(event, cell);
             });
         });
     },
 
     handleAction(action) {
-        if (action === "legacy" && typeof Core !== "undefined") {
-            Core.navigate("qts");
-            return;
-        }
-
         if (action === "print") {
             this.print();
             return;
@@ -490,7 +589,13 @@ const RoutineTable = {
         }
 
         if (action === "clear-empty") {
-            this.clearEmptyRows();
+            this.clearTableContent();
+            return;
+        }
+
+        if (action === "save-table") {
+            this.saveCurrentTable();
+            return;
         }
     },
 
@@ -518,8 +623,30 @@ const RoutineTable = {
 
         if (!row || !this.normalizeTime(value)) return;
 
-        row[field] = value;
+        row[field] = this.normalizeTime(value);
         this.save();
+    },
+
+    updateActiveNameDisplay() {
+        const holder =
+            document.querySelector("#routineModule .routine-active-name");
+        const heroText =
+            document.querySelector("#routineModule .routine-v2-hero h2");
+        const name =
+            String(this.state.tableName || "").trim();
+
+        if (holder) {
+            holder.textContent = name.toUpperCase();
+            holder.hidden = !name;
+            return;
+        }
+
+        if (name && heroText) {
+            heroText.insertAdjacentHTML(
+                "beforebegin",
+                `<div class="routine-active-name">${this.escapeHtml(name.toUpperCase())}</div>`
+            );
+        }
     },
 
     updateCell(cell) {
@@ -631,6 +758,155 @@ const RoutineTable = {
         return typeof cell.value === "string"
             ? cell.value
             : cell.innerText || "";
+    },
+
+    getCellSuggestions(cell) {
+        const current =
+            this.getCellText(cell);
+        const cursor =
+            typeof cell.selectionStart === "number" ? cell.selectionStart : current.length;
+        const beforeCursor =
+            current.slice(0, cursor);
+        const tokenMatch =
+            beforeCursor.match(/([\wÀ-ÿ]{2,})$/);
+        const token =
+            tokenMatch ? tokenMatch[1].toLowerCase() : "";
+        const values = new Set();
+
+        if (!token) return [];
+
+        this.state.rows.forEach((row) => {
+            Object.values(row.cells || {}).forEach((value) => {
+                String(value || "")
+                    .split(/[\n,;|]+/)
+                    .map((item) => item.trim())
+                    .filter(Boolean)
+                    .forEach((item) => {
+                        if (item !== current.trim()) values.add(item);
+
+                        item.split(/\s+/)
+                            .map((word) => word.trim())
+                            .filter((word) => word.length >= 3)
+                            .forEach((word) => values.add(word));
+                    });
+            });
+        });
+
+        return [...values]
+            .filter((value) => {
+                const normalized =
+                    value.toLowerCase();
+
+                if (!token) return value.length >= 3;
+                return normalized !== token && normalized.startsWith(token);
+            })
+            .slice(0, 6);
+    },
+
+    showSuggestions(cell) {
+        const suggestions =
+            this.getCellSuggestions(cell);
+
+        this.hideSuggestions();
+
+        if (!suggestions.length || document.activeElement !== cell) return;
+
+        const wrap =
+            cell.closest(".routine-cell-wrap");
+
+        if (!wrap) return;
+
+        const box =
+            document.createElement("div");
+
+        box.className = "routine-suggestion-box";
+        box.setAttribute("role", "listbox");
+        box.innerHTML =
+            suggestions
+                .map((suggestion, index) => `
+                    <button type="button" data-suggestion="${this.escapeHtml(suggestion)}" class="${index === 0 ? "is-active" : ""}">
+                        ${this.escapeHtml(suggestion)}
+                    </button>
+                `)
+                .join("");
+
+        box.querySelectorAll("[data-suggestion]").forEach((button) => {
+            button.addEventListener("mousedown", (event) => {
+                event.preventDefault();
+                this.applySuggestion(cell, button.dataset.suggestion || "");
+            });
+        });
+
+        wrap.appendChild(box);
+    },
+
+    hideSuggestions() {
+        document
+            .querySelectorAll("#routineModule .routine-suggestion-box")
+            .forEach((box) => box.remove());
+    },
+
+    handleSuggestionKeys(event, cell) {
+        const box =
+            document.querySelector("#routineModule .routine-suggestion-box");
+
+        if (!box) return false;
+
+        const buttons =
+            Array.from(box.querySelectorAll("button"));
+        const activeIndex =
+            Math.max(0, buttons.findIndex((button) => button.classList.contains("is-active")));
+
+        if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+            event.preventDefault();
+            const nextIndex =
+                event.key === "ArrowDown"
+                    ? Math.min(buttons.length - 1, activeIndex + 1)
+                    : Math.max(0, activeIndex - 1);
+
+            buttons.forEach((button, index) => {
+                button.classList.toggle("is-active", index === nextIndex);
+            });
+            return true;
+        }
+
+        if ((event.key === "Enter" || event.key === "Tab") && buttons[activeIndex]) {
+            event.preventDefault();
+            this.applySuggestion(cell, buttons[activeIndex].dataset.suggestion || "");
+            return true;
+        }
+
+        if (event.key === "Escape") {
+            this.hideSuggestions();
+            return true;
+        }
+
+        return false;
+    },
+
+    applySuggestion(cell, suggestion) {
+        const current =
+            this.getCellText(cell);
+        const start =
+            typeof cell.selectionStart === "number" ? cell.selectionStart : current.length;
+        const end =
+            typeof cell.selectionEnd === "number" ? cell.selectionEnd : start;
+        const before =
+            current.slice(0, start);
+        const after =
+            current.slice(end);
+        const tokenMatch =
+            before.match(/([\wÀ-ÿ]{2,})$/);
+        const replaceFrom =
+            tokenMatch ? start - tokenMatch[1].length : start;
+        const next =
+            `${current.slice(0, replaceFrom)}${suggestion}${after}`;
+
+        cell.value = next;
+        cell.focus();
+        cell.setSelectionRange(replaceFrom + suggestion.length, replaceFrom + suggestion.length);
+        this.updateCell(cell);
+        this.hideSuggestions();
     },
 
     generateRows() {
@@ -762,19 +1038,90 @@ const RoutineTable = {
         this.deleteRow(this.state.rows[index].id);
     },
 
-    clearEmptyRows() {
-        const hasContent = (row) =>
-            row.interval ||
-            Object.values(row.cells || {})
-                .some((value) => String(value || "").trim());
-
-        const nextRows =
-            this.state.rows.filter(hasContent);
-
-        this.state.rows =
-            nextRows.length ? nextRows : [this.createRow()];
-
+    clearTableContent() {
+        this.state.rows.forEach((row) => {
+            this.days.forEach((day) => {
+                row.cells[day.key] = "";
+            });
+        });
         this.save();
+        this.render({ preserveGridScroll: true });
+    },
+
+    getTableSnapshot() {
+        return JSON.parse(JSON.stringify({
+            ...this.state,
+            rows: this.state.rows
+        }));
+    },
+
+    saveCurrentTable() {
+        const input =
+            document.querySelector("#routineModule #routineTableName");
+        const name =
+            String(input?.value || this.state.tableName || "").trim();
+
+        if (!name) {
+            input?.focus();
+            return;
+        }
+
+        this.state.tableName = name;
+        const tables =
+            this.loadSavedTables();
+        const existingIndex =
+            tables.findIndex((table) => table.name.toLowerCase() === name.toLowerCase());
+
+        if (existingIndex < 0 && tables.length >= this.maxSavedTables) {
+            this.savedTablesMessage =
+                `Limite de ${this.maxSavedTables} tabelas salvas. Exclua uma para criar outra.`;
+            this.render({ preserveGridScroll: true });
+            return;
+        }
+
+        const record = {
+            id: existingIndex >= 0 ? tables[existingIndex].id : this.createId(),
+            name,
+            updatedAt: new Date().toISOString(),
+            state: this.getTableSnapshot()
+        };
+
+        if (existingIndex >= 0) {
+            tables[existingIndex] = record;
+        } else {
+            tables.push(record);
+        }
+
+        this.saveSavedTables(tables);
+        this.savedTablesMessage = "Tabela salva.";
+        this.save();
+        this.render({ preserveGridScroll: true });
+    },
+
+    loadSavedTableById(id) {
+        const table =
+            this.loadSavedTables().find((item) => item.id === id);
+
+        if (table) this.loadSavedTable(table);
+    },
+
+    loadSavedTable(table) {
+        this.state = this.normalizeState({
+            ...table.state,
+            tableName: table.name
+        });
+        this.savedTablesMessage = "";
+        this.save();
+        this.render();
+    },
+
+    deleteSavedTableById(id) {
+        const nextTables =
+            this.loadSavedTables()
+                .filter((item) => item.id !== id);
+
+        this.savedTablesMessage = "Tabela excluida.";
+        this.saveSavedTables(nextTables);
         this.render({ preserveGridScroll: true });
     },
 

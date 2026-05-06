@@ -3,9 +3,9 @@ const { callGeminiJsonWithParts, isGeminiConfigured } = require("../../gemini");
 const { readAppSession } = require("../../auth-session");
 const { supabaseRequest, supabaseStorageRequest, isSupabaseConfigured } = require("../../supabase");
 
-const PROMPT_VERSION = "rotanota-pdf-text-v1";
-const DEFAULT_MODEL = process.env.ROTANOTA_PDF_TEXT_AI_MODEL || "gemini-2.5-flash-lite";
-const FALLBACK_MODEL = process.env.ROTANOTA_PDF_TEXT_AI_FALLBACK_MODEL || "gemini-2.5-flash";
+const PROMPT_VERSION = "papiro-tools-pdf-text-v1";
+const DEFAULT_MODEL = process.env.PAPIRO_TOOLS_PDF_TEXT_AI_MODEL || process.env.ROTANOTA_PDF_TEXT_AI_MODEL || "gemini-2.5-flash-lite";
+const FALLBACK_MODEL = process.env.PAPIRO_TOOLS_PDF_TEXT_AI_FALLBACK_MODEL || process.env.ROTANOTA_PDF_TEXT_AI_FALLBACK_MODEL || "gemini-2.5-flash";
 const MAX_INLINE_PDF_BYTES = 3 * 1024 * 1024;
 const MAX_SERVER_PDF_BYTES = 12 * 1024 * 1024;
 const MAX_PAGE_IMAGES = 16;

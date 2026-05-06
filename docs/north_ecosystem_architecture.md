@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-O `NorthStar` e a marca-mae e a retaguarda central do ecossistema. Hoje ele continua hospedado tecnicamente dentro do projeto do `RotaNota`, mas o papel dele e maior que um unico app: portfolio, conectores, automacao, dados, IA de fiscalizacao e operacao assistida.
+O `NorthStar` e a marca-mae e a retaguarda central do ecossistema. Hoje ele continua hospedado tecnicamente dentro do projeto do `Papiro Tools`, mas o papel dele e maior que um unico app: portfolio, conectores, automacao, dados, IA de fiscalizacao e operacao assistida.
 
 ## O que ja existe no codigo
 
@@ -10,7 +10,7 @@ O `NorthStar` e a marca-mae e a retaguarda central do ecossistema. Hoje ele cont
 - Registry de apps em `premium_study_ops_state`
 - Checks de saude para conectores principais
 - Tabelas de growth, promocoes, alertas e estado operacional
-- Produto principal `RotaNota` ja conectado ao hub
+- Produto principal `Papiro Tools` ja conectado ao hub
 
 Arquivos-base:
 
@@ -28,7 +28,7 @@ Camada central:
 
 Produtos:
 
-- `RotaNota`: operacao premium, growth, promocoes e acompanhamento do funil
+- `Papiro Tools`: operacao premium, growth, promocoes e acompanhamento do funil
 
 Infraestrutura e codigo:
 
@@ -155,7 +155,7 @@ Ter o ChatGPT "com acesso a toda a aplicacao" deve ser entendido como acesso aut
 
 ## Estado da fase atual
 
-- `NorthStar` segue hospedado tecnicamente no deploy do `RotaNota`
+- `NorthStar` segue hospedado tecnicamente no deploy do `Papiro Tools`
 - `Gemini` opera no free tier com caps e fallback
 - `ChatGPT` entra nesta fase por `Apps SDK + MCP`
 - execucao final fica approval-gated por `change requests`

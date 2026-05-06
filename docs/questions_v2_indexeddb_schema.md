@@ -1,4 +1,4 @@
-# ROTANOTA - QUESTIONS V2 - SCHEMA INICIAL DE INDEXEDDB
+# PAPIRO_TOOLS - QUESTIONS V2 - SCHEMA INICIAL DE INDEXEDDB
 
 Documento interno de persistencia.
 Nao deve aparecer na interface do produto.

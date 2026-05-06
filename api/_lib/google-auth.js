@@ -9,6 +9,7 @@ const {
 function getGoogleClientId() {
     return String(
         process.env.GOOGLE_CLIENT_ID ||
+        process.env.PAPIRO_TOOLS_GOOGLE_CLIENT_ID ||
         process.env.ROTANOTA_GOOGLE_CLIENT_ID ||
         ""
     ).trim();

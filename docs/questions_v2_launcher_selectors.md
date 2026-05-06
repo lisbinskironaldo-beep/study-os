@@ -1,4 +1,4 @@
-# ROTANOTA - QUESTIONS V2 - SELETORES E FORMATADORES DO LAUNCHER
+# PAPIRO_TOOLS - QUESTIONS V2 - SELETORES E FORMATADORES DO LAUNCHER
 
 Documento interno de aplicacao.
 Nao deve aparecer na interface do produto.

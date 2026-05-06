@@ -1,4 +1,4 @@
-# RotaNota Ops Runbook
+# Papiro Tools Ops Runbook
 
 ## Regra fixa para fechamento de tarefa
 
@@ -71,7 +71,7 @@ Ele indicava que a producao estava servindo uma versao intermediaria do frontend
 
 ### Checagens obrigatorias
 
-Validar no alias oficial `https://rota-nota.vercel.app`:
+Validar no alias oficial `https://papiro-tools.vercel.app`:
 
 1. `POST /api/ops/login`
 2. `GET /api/ops/overview`

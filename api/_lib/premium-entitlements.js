@@ -26,10 +26,16 @@ function parseEnvList(value) {
 
 function getOwnerPremiumConfig() {
     return {
-        userIds: parseEnvList(process.env.ROTANOTA_OWNER_USER_IDS)
+        userIds: parseEnvList(
+            process.env.PAPIRO_TOOLS_OWNER_USER_IDS ||
+            process.env.ROTANOTA_OWNER_USER_IDS
+        )
             .map((value) => sanitizeUserId(value))
             .filter(Boolean),
-        emails: parseEnvList(process.env.ROTANOTA_OWNER_EMAILS)
+        emails: parseEnvList(
+            process.env.PAPIRO_TOOLS_OWNER_EMAILS ||
+            process.env.ROTANOTA_OWNER_EMAILS
+        )
             .map((value) => normalizeEmail(value))
             .filter(Boolean)
     };

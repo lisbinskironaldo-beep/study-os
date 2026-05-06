@@ -30,7 +30,7 @@ Abrir:
 
 Producao:
 
-- `https://rota-nota.vercel.app/`
+- `https://papiro-tools.vercel.app/`
 
 ### 2. Login na mesma conta
 
@@ -67,11 +67,11 @@ Sem esse schema:
 
 Na Vercel:
 
-- `GOOGLE_CLIENT_ID` ou `ROTANOTA_GOOGLE_CLIENT_ID`
+- `GOOGLE_CLIENT_ID` ou `PAPIRO_TOOLS_GOOGLE_CLIENT_ID`
 
 No Google Cloud, em `Authorized JavaScript origins`, cadastrar as origins exatas:
 
-- `https://rota-nota.vercel.app`
+- `https://papiro-tools.vercel.app`
 - `http://localhost:3000`
 - qualquer preview exato da Vercel que estiver sendo usado
 
@@ -179,7 +179,7 @@ Se um PC abre e o outro nao:
 
 Para o dono entrar como premium em qualquer navegador:
 
-- `ROTANOTA_OWNER_EMAILS=email1@dominio.com,email2@dominio.com`
-- `ROTANOTA_OWNER_USER_IDS=google:123,google:456`
+- `PAPIRO_TOOLS_OWNER_EMAILS=email1@dominio.com,email2@dominio.com`
+- `PAPIRO_TOOLS_OWNER_USER_IDS=google:123,google:456`
 
 Essas envs liberam o premium por conta, nao por navegador.

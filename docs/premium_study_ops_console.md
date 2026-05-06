@@ -1,4 +1,4 @@
-# RotaNota Ops Console
+# Papiro Tools Ops Console
 
 ## Objetivo
 O painel `/ops` concentra operacao, financeiro, growth, copiloto Gemini, promocoes internas e o registry de apps do `NorthStar` no mesmo deploy do site.
@@ -69,7 +69,7 @@ O backend persiste a configuracao principal em `premium_study_ops_state`, inclui
 ## Expansao prevista
 - manter o painel no mesmo projeto e mesmo dominio
 - deixar `meta_ads`, `google_ads` e `openai_chatgpt` prontos no registry operacional e nos checks de ambiente
-- manter o host tecnico no `RotaNota` nesta fase, mas com marca e UX do `NorthStar`
+- manter o host tecnico no `Papiro Tools` nesta fase, mas com marca e UX do `NorthStar`
 - evoluir de spend manual para importacao CSV ou API sem remodelar as tabelas
 - migrar dominio e subdominios apenas numa fase posterior, sem mexer novamente no modelo de workspace por app
 - operar aprovacoes humanas por `change requests`

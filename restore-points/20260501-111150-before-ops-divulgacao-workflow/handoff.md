@@ -12,7 +12,7 @@ Projeto Vercel principal:
 - Project ID: `prj_j41hJqzskhVjlFUX433LuXevzOFE`
 - Team/Org ID: `team_lOvkqSJQyF9tdt3DlCXqfCd6`
 - Produção: `https://papiro-tools.vercel.app`
-- Domínio antigo `https://papiro-tools.vercel.app` foi removido e retorna `404 DEPLOYMENT_NOT_FOUND`.
+- Domínio antigo `https://rota-nota.vercel.app` foi removido e retorna `404 DEPLOYMENT_NOT_FOUND`.
 
 Arquivos alterados nesta rodada:
 
@@ -23,7 +23,7 @@ Arquivos alterados nesta rodada:
 - `ops/index.html`
 - `README.md`
 - `api/_lib/handlers/mercado-pago/checkout.js`
-- `scripts/papiro-tools-readiness-check.js`
+- `scripts/rotanota-readiness-check.js`
 
 Observação: a árvore git já estava suja antes de parte das alterações. Não usar `git reset --hard` nem reverter arquivos sem revisar.
 
@@ -32,7 +32,7 @@ Observação: a árvore git já estava suja antes de parte das alterações. Nã
 1. Branding/domínio:
    - `PAPIRO_TOOLS_BASE_URL` atualizado na Vercel.
    - `OPENAI_APP_PUBLIC_URL` e `OPENAI_MCP_SERVER_URL` apontam para `papiro-tools.vercel.app`.
-   - `PAPIRO_TOOLS_BASE_URL` removido do `.env.example`.
+   - `ROTANOTA_BASE_URL` removido do `.env.example`.
 
 2. `/ops` carregando sem CSS/JS:
    - `ops/index.html` agora usa `/ops/style.css` e `/ops/app.js`.
@@ -209,7 +209,7 @@ Validacoes feitas:
 
 - `node --check api/_lib/ops-service.js`
 - `node --check ops/app.js`
-- `node --check scripts/papiro-tools-readiness-check.js`
+- `node --check scripts/rotanota-readiness-check.js`
 - Deploy production final:
   - deployment: `dpl_BquZzd44qZnfqWwbxEdparm2cC4P`
   - alias: `https://papiro-tools.vercel.app`
@@ -262,54 +262,6 @@ Canva Pro ajuda muito no processo manual e templates, mas a automação oficial 
   - Meta Business Suite;
   - Instagram scheduler nativo.
 - O botao `Publicar Instagram direto` foi removido dos bastidores do rascunho para evitar caminho morto.
-
-## Atualizacao 2026-05-01: aba Divulgar em formato de esteira
-
-- Restore point criado antes da mudanca:
-  - `restore-points/20260501-111150-before-ops-divulgacao-workflow`
-- A aba `Divulgar` deixou de ser uma cascata de cards soltos.
-- Nova organizacao:
-  - `Publicar hoje`: mostra apenas o proximo conteudo aberto, com status da esteira e botoes principais.
-  - `Fila da semana`: lista compacta dos proximos rascunhos; cada item abre o mesmo fluxo quando necessario.
-  - `Configuracao e canais`: fica recolhido por padrao e guarda ferramentas/conectores.
-  - `Historico de divulgacao`: fica recolhido por padrao e mostra publicados/ignorados.
-- O fluxo do conteudo agora mostra etapas:
-  - Texto;
-  - Arte;
-  - Teste;
-  - Agendamento.
-- Mantidos os botoes operacionais:
-  - `Automatizar gratis`;
-  - copiar legenda/prompt;
-  - abrir Canva IA;
-  - testar Buffer;
-  - agendar.
-
-## Atualizacao 2026-05-01: filtros de vendas
-
-- A aba `Vendas` ganhou filtro local de pagamentos recentes.
-- Controles:
-  - periodo: 7, 30, 90 dias ou tudo carregado;
-  - status: todos, pagos, pendentes ou outros;
-  - busca por email, cliente, pagamento, preferencia, status ou plano.
-- O painel mostra resumo do recorte:
-  - filtrados;
-  - pagos;
-  - pendentes;
-  - valor pago quando o valor estiver disponivel no registro.
-- Decisao: filtro local e suficiente para operacao diaria. Se precisar relatorio financeiro/contabil mensal completo, criar depois rota backend paginada com intervalo real no Supabase.
-
-## Atualizacao 2026-05-01: Canva IA 1.0 vs 2.0
-
-- `Copiar prompt da arte` copia apenas o prompt curto necessario para gerar a imagem/design no Canva.
-- `Copiar briefing completo` copia o pacote operacional completo: titulo, formato, canais, data, direcao visual, texto da arte e legenda. Serve para revisao humana, nao precisa ser colado inteiro no gerador de imagem.
-- `Preparar Canva` gera/atualiza esses dois textos no rascunho.
-- O botao operacional principal agora e `Abrir Canva IA 1.0`, apontando para:
-  - `https://www.canva.com/canva-ai/`
-- O Canva IA 2.0 fica como botao secundario `Canva IA 2.0 preview`, apontando para:
-  - `https://www.canva.com/magic/`
-- Readiness check passou a monitorar se a pagina do Canva IA 2.0 preview esta acessivel.
-- Contexto oficial consultado: Canva IA 2.0 foi anunciado em 2026-04-16 como research preview, com disponibilidade geral em expansao progressiva.
 
 ## Fontes consultadas
 

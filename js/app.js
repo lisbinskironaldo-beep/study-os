@@ -35,6 +35,7 @@ const Core = {
 
     init() {
         window.RotaNotaCore = this;
+        window.PapiroToolsCore = this;
         this.cacheDOM();
         this.ensureAuthBridge();
         this.upgradeHomeLoginGate();

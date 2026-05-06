@@ -1,4 +1,4 @@
-# RotaNota Ops Promotions
+# Papiro Tools Ops Promotions
 
 ## Objetivo
 As promocoes do paywall passam a ser geradas e geridas pelo `/ops`, com trilha pronta para automacao futura.

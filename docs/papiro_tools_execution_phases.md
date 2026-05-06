@@ -1,4 +1,4 @@
-# RotaNota + NorthStar - Execucao por Fases
+# Papiro Tools + NorthStar - Execucao por Fases
 
 Atualizado em 2026-04-20.
 
@@ -40,7 +40,7 @@ Garantir que ambiente, banco, runtime e health basico estejam coerentes antes de
 
 - `docs/supabase_premium_schema.sql` validado contra o projeto Supabase.
 - tabelas criticas do premium e do NorthStar responderam `200` por runtime real.
-- `scripts/rotanota-readiness-check.js` foi ampliado para checar:
+- `scripts/papiro-tools-readiness-check.js` foi ampliado para checar:
   - Supabase real
   - Gemini real
   - Mercado Pago real
@@ -82,12 +82,12 @@ Fazer a IA do PDF gerar de verdade no fluxo principal, sem depender de fallback 
   - `httpStatus`
   - sinal de retry por indisponibilidade
 - `api/premium/ai-generate.js` agora:
-  - usa `ROTANOTA_AI_MODEL`
+  - usa `PAPIRO_TOOLS_AI_MODEL`
   - defaulta para `gemini-2.5-flash-lite`
   - tenta fallback controlado
   - responde com `attemptedModels` e `providerStatus`
 - `premium-study/services/ai.js` deixou de fingir que a IA esta sempre configurada.
-- `ROTANOTA_AI_MODEL` foi definido em `production` como `gemini-2.5-flash-lite`.
+- `PAPIRO_TOOLS_AI_MODEL` foi definido em `production` como `gemini-2.5-flash-lite`.
 
 ### Validacao executada
 
@@ -305,6 +305,6 @@ Status: `em andamento`
 ## Documentos que devem ficar sincronizados
 
 - [README.md](C:/dev/study-os/README.md)
-- [docs/rotanota_go_live_status.md](C:/dev/study-os/docs/rotanota_go_live_status.md)
-- [docs/rotanota_2026-04-20_handoff.md](C:/dev/study-os/docs/rotanota_2026-04-20_handoff.md)
+- [docs/papiro_tools_go_live_status.md](C:/dev/study-os/docs/papiro_tools_go_live_status.md)
+- [docs/papiro_tools_2026-04-20_handoff.md](C:/dev/study-os/docs/papiro_tools_2026-04-20_handoff.md)
 - [docs/northstar_current_state.md](C:/dev/study-os/docs/northstar_current_state.md)

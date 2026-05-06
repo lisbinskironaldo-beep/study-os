@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Colocar o `RotaNota Premium` no centro da monetizacao imediata, com o `NorthStar` operando pagamento, observabilidade, recomendacoes e governanca.
+Colocar o `Papiro Tools Premium` no centro da monetizacao imediata, com o `NorthStar` operando pagamento, observabilidade, recomendacoes e governanca.
 
 ## Fonte primaria de receita
 
@@ -12,7 +12,7 @@ Colocar o `RotaNota Premium` no centro da monetizacao imediata, com o `NorthStar
 
 ## Checklist de go-live
 
-1. manter `https://rota-nota.vercel.app` como host canonico nesta fase
+1. manter `https://papiro-tools.vercel.app` como host canonico nesta fase
 2. manter `/ops/` como painel humano do NorthStar
 3. validar diariamente:
    - checkout criado

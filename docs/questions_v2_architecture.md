@@ -1,4 +1,4 @@
-# ROTANOTA - QUESTIONS V2 - ARQUITETURA ALVO
+# PAPIRO_TOOLS - QUESTIONS V2 - ARQUITETURA ALVO
 
 Documento interno de arquitetura.
 Nao deve aparecer na interface do produto.
@@ -55,7 +55,7 @@ Consequencias:
 ### 3.1. Macro separacao
 
 ```txt
-ROTANOTA shell
+PAPIRO_TOOLS shell
   -> navega
   -> hospeda modulos
   -> publica eventos minimos

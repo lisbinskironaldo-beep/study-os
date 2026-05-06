@@ -1,4 +1,4 @@
-# RotaNota Handoff - 2026-04-20
+# Papiro Tools Handoff - 2026-04-20
 
 ## Objetivo
 
@@ -12,11 +12,11 @@ Este documento e o ponto principal de retomada operacional do projeto. Ele regis
 
 Leitura operacional mais direta por fases:
 
-- `docs/rotanota_execution_phases.md`
+- `docs/papiro_tools_execution_phases.md`
 
 ## Estado atual do produto
 
-O RotaNota ja tem:
+O Papiro Tools ja tem:
 
 - fluxo premium com status consultado no backend
 - checkout Mercado Pago criando preferencia
@@ -33,14 +33,14 @@ Estado em 2026-04-20:
 URLs oficiais:
 
 - local: `http://localhost:3000/ops/`
-- producao: `https://rota-nota.vercel.app/ops/`
+- producao: `https://papiro-tools.vercel.app/ops/`
 
 ## Integracoes ja configuradas
 
 Infra e acesso:
 
-- projeto Vercel `rota-nota` ja criado e linkado
-- alias oficial de producao: `https://rota-nota.vercel.app`
+- projeto Vercel `papiro-tools` criado e linkado
+- alias oficial de producao: `https://papiro-tools.vercel.app`
 - projeto Supabase ja conectado
 - schema SQL ja aplicado em `docs/supabase_premium_schema.sql`
 - Gemini ja configurado por env
@@ -65,7 +65,7 @@ Retaguarda:
 - `OPENAI_APP_PUBLIC_URL` configurado em `production`
 - `OPENAI_MCP_SERVER_URL` configurado em `production`
 - `OPENAI_MCP_API_KEY` configurado em `production`
-- `ROTANOTA_AI_MODEL` configurado em `production` como `gemini-2.5-flash-lite`
+- `PAPIRO_TOOLS_AI_MODEL` configurado em `production` como `gemini-2.5-flash-lite`
 
 ## Validacoes feitas localmente
 
@@ -91,7 +91,7 @@ Conclusoes fechadas:
 
 Alias oficial:
 
-- `https://rota-nota.vercel.app`
+- `https://papiro-tools.vercel.app`
 
 Importante:
 
@@ -171,7 +171,7 @@ O deploy corretivo ja foi concluido em 2026-04-20.
 
 Checklist de validacao ja confirmado:
 
-1. `https://rota-nota.vercel.app/ops/app.js` contem a mensagem `Use a senha da retaguarda para liberar a operacao.`
+1. `https://papiro-tools.vercel.app/ops/app.js` contem a mensagem `Use a senha da retaguarda para liberar a operacao.`
 2. `POST /api/ops/login` funciona
 3. `GET /api/ops/overview` funciona
 4. `GET /api/ops/growth/overview` funciona
@@ -183,7 +183,7 @@ Proximos passos de produto/operacao:
 2. registrar o app do `NorthStar` no fluxo externo da OpenAI/ChatGPT usando o manifest e o MCP ja publicados
 3. configurar Google Ads para primeira leitura real
 4. configurar Meta Ads para primeira leitura real
-5. seguir `docs/rotanota_execution_phases.md` como trilha de fechamento
+5. seguir `docs/papiro_tools_execution_phases.md` como trilha de fechamento
 
 ## Credenciais e segredos existentes
 
@@ -195,7 +195,7 @@ Nao expor valores neste documento. Estado atual apenas por nome:
 - `MERCADO_PAGO_ACCESS_TOKEN`: configurado
 - `MERCADO_PAGO_MONTHLY_PRICE`: configurado
 - `MERCADO_PAGO_ANNUAL_PRICE`: configurado
-- `ROTANOTA_BASE_URL`: configurado
+- `PAPIRO_TOOLS_BASE_URL`: configurado
 - `OPS_PANEL_PASSWORD`: configurado
 - `OPS_SESSION_SECRET`: configurado
 - `MERCADO_PAGO_WEBHOOK_SECRET`: configurado
@@ -203,11 +203,11 @@ Nao expor valores neste documento. Estado atual apenas por nome:
 - `OPENAI_APP_PUBLIC_URL`: configurado
 - `OPENAI_MCP_SERVER_URL`: configurado
 - `OPENAI_MCP_API_KEY`: configurado
-- `ROTANOTA_AI_MODEL`: configurado
+- `PAPIRO_TOOLS_AI_MODEL`: configurado
 
 ## Decisoes congeladas
 
-- o alias oficial do produto e `https://rota-nota.vercel.app`
+- o alias oficial do produto e `https://papiro-tools.vercel.app`
 - a retaguarda continua no mesmo projeto e mesmo dominio
 - a retaguarda local correta usa `api/ops-router.js` + `vercel.json`
 - o backend continua como fonte da verdade para premium
@@ -233,7 +233,7 @@ Documentos de referencia:
 - `docs/premium_study_operacao_ai_pagamentos.md`
 - `docs/premium_study_ops_console.md`
 - `docs/premium_study_ops_runbook.md`
-- `docs/rotanota_2026-04-20_handoff.md`
+- `docs/papiro_tools_2026-04-20_handoff.md`
 
 ## Encerramento
 

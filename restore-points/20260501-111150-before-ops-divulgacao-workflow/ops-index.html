@@ -167,7 +167,7 @@
             </section>
 
             <section class="ops-tab-panel" data-ops-panel="financeiro">
-                <div class="ops-finance-layout">
+                <div class="ops-two-column">
                     <article class="ops-card">
                         <div class="ops-card-head">
                             <div>
@@ -175,32 +175,6 @@
                                 <h3>Pagamentos recentes</h3>
                             </div>
                         </div>
-                        <form id="opsPaymentFilterForm" class="ops-filter-bar">
-                            <label>
-                                <span>Periodo</span>
-                                <select id="opsPaymentPeriod" name="period">
-                                    <option value="7">7 dias</option>
-                                    <option value="30" selected>30 dias</option>
-                                    <option value="90">90 dias</option>
-                                    <option value="all">Tudo carregado</option>
-                                </select>
-                            </label>
-                            <label>
-                                <span>Status</span>
-                                <select id="opsPaymentStatusFilter" name="status">
-                                    <option value="all">Todos</option>
-                                    <option value="approved">Pagos</option>
-                                    <option value="pending">Pendentes</option>
-                                    <option value="other">Outros</option>
-                                </select>
-                            </label>
-                            <label>
-                                <span>Buscar</span>
-                                <input id="opsPaymentSearch" name="query" type="search" placeholder="email, cliente, pagamento...">
-                            </label>
-                            <button class="ops-button ops-button-secondary" type="submit">Filtrar</button>
-                        </form>
-                        <div id="opsPaymentsFilterSummary" class="ops-card-grid ops-card-grid-tight"></div>
                         <div id="opsPaymentsList" class="ops-list"></div>
                     </article>
 
@@ -308,60 +282,51 @@
             </section>
 
             <section class="ops-tab-panel" data-ops-panel="divulgacao">
-                <article class="ops-card ops-workbench-card">
-                    <div class="ops-card-head">
-                        <div>
-                            <p class="ops-kicker">Publicar hoje</p>
-                            <h3>Proximo conteudo da esteira</h3>
+                <div class="ops-two-column">
+                    <article class="ops-card">
+                        <div class="ops-card-head">
+                            <div>
+                                <p class="ops-kicker">Divulgacao IA</p>
+                                <h3>Fila organica sem custo</h3>
+                            </div>
                         </div>
+                        <div id="opsMarketingSummary" class="ops-card-grid ops-card-grid-tight"></div>
                         <div class="ops-button-row">
                             <button id="opsMarketingFallbackBtn" class="ops-button" type="button" title="Gera conteudo sem chamar ferramenta paga">Gerar sem custo</button>
                             <button id="opsMarketingGenerateBtn" class="ops-button ops-button-secondary" type="button" title="Gera novos posts, stories e roteiros usando a IA configurada">Gerar com IA</button>
                         </div>
-                    </div>
-                    <div id="opsMarketingSummary" class="ops-card-grid ops-card-grid-tight"></div>
-                    <div id="opsMarketingQueue" class="ops-list"></div>
-                </article>
+                    </article>
+
+                    <article class="ops-card">
+                        <div class="ops-card-head">
+                            <div>
+                                <p class="ops-kicker">Ferramentas gratuitas</p>
+                                <h3>Onde publicar/agendar</h3>
+                            </div>
+                        </div>
+                        <div id="opsMarketingTools" class="ops-list"></div>
+                    </article>
+
+                    <article class="ops-card">
+                        <div class="ops-card-head">
+                            <div>
+                                <p class="ops-kicker">Conectores</p>
+                                <h3>Canva, Buffer e Meta</h3>
+                            </div>
+                        </div>
+                        <div id="opsMarketingIntegrations" class="ops-list"></div>
+                    </article>
+                </div>
 
                 <article class="ops-card">
                     <div class="ops-card-head">
                         <div>
-                            <p class="ops-kicker">Fila da semana</p>
-                            <h3>Proximos rascunhos</h3>
+                            <p class="ops-kicker">Proximos conteudos</p>
+                            <h3>Rascunhos prontos para revisar</h3>
                         </div>
                     </div>
-                    <div id="opsMarketingWeekQueue" class="ops-list"></div>
+                    <div id="opsMarketingQueue" class="ops-list"></div>
                 </article>
-
-                <details class="ops-details-card ops-ops-config">
-                    <summary>Configuracao e canais</summary>
-                    <div class="ops-two-column ops-details-grid">
-                        <article class="ops-card">
-                            <div class="ops-card-head">
-                                <div>
-                                    <p class="ops-kicker">Fluxo atual</p>
-                                    <h3>Ferramentas em uso</h3>
-                                </div>
-                            </div>
-                            <div id="opsMarketingTools" class="ops-list"></div>
-                        </article>
-
-                        <article class="ops-card">
-                            <div class="ops-card-head">
-                                <div>
-                                    <p class="ops-kicker">Conexao</p>
-                                    <h3>Canva Pro e Buffer</h3>
-                                </div>
-                            </div>
-                            <div id="opsMarketingIntegrations" class="ops-list"></div>
-                        </article>
-                    </div>
-                </details>
-
-                <details class="ops-details-card">
-                    <summary>Historico de divulgacao</summary>
-                    <div id="opsMarketingHistory" class="ops-list"></div>
-                </details>
             </section>
 
             <section class="ops-tab-panel" data-ops-panel="promocoes">

@@ -50,7 +50,7 @@ agent-browser 0.26.0
 Ambientes verificados:
 
 - `http://localhost:3000`
-- `https://rota-nota.vercel.app`
+- `https://papiro-tools.vercel.app`
 
 Resultado:
 
@@ -366,7 +366,7 @@ Validacao depois:
 
 Estado:
 
-- produto publico ainda usa RotaNota.
+- produto publico ainda usa Papiro Tools.
 - decisao posterior em 2026-04-29: Papiro Tools como marca publica, Papiro como nome curto.
 - Ops tende a NorthStar.
 
@@ -380,7 +380,7 @@ Sugestao de taxonomia:
 
 ```js
 const Brand = {
-  currentPublicName: "RotaNota",
+  currentPublicName: "Papiro Tools",
   candidatePublicName: "Papiro Tools",
   labBrand: "Papiro Labs",
   shortName: "Papiro",

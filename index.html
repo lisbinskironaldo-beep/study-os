@@ -9,6 +9,26 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Papiro">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<script>
+(function () {
+    var canonicalHost = "papiro-tools.vercel.app";
+    var host = window.location.hostname;
+
+    if (
+        host !== canonicalHost &&
+        host.endsWith(".vercel.app")
+    ) {
+        window.location.replace(
+            window.location.protocol +
+            "//" +
+            canonicalHost +
+            window.location.pathname +
+            window.location.search +
+            window.location.hash
+        );
+    }
+})();
+</script>
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="assets/papiro-tools-mark.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">

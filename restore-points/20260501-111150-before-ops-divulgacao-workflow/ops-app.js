@@ -42,11 +42,6 @@
         searchForm: $("opsSearchForm"),
         searchResults: $("opsSearchResults"),
         paymentsList: $("opsPaymentsList"),
-        paymentsFilterForm: $("opsPaymentFilterForm"),
-        paymentPeriod: $("opsPaymentPeriod"),
-        paymentStatusFilter: $("opsPaymentStatusFilter"),
-        paymentSearch: $("opsPaymentSearch"),
-        paymentsFilterSummary: $("opsPaymentsFilterSummary"),
         entitlementsList: $("opsEntitlementsList"),
         paymentsStatus: $("opsPaymentsStatus"),
         resyncForm: $("opsResyncForm"),
@@ -58,8 +53,6 @@
         marketingTools: $("opsMarketingTools"),
         marketingIntegrations: $("opsMarketingIntegrations"),
         marketingQueue: $("opsMarketingQueue"),
-        marketingWeekQueue: $("opsMarketingWeekQueue"),
-        marketingHistory: $("opsMarketingHistory"),
         marketingGenerateBtn: $("opsMarketingGenerateBtn"),
         marketingFallbackBtn: $("opsMarketingFallbackBtn"),
         weeklyReport: $("opsWeeklyReport"),
@@ -363,68 +356,6 @@
         return labels[String(value || "")] || String(value || "sugerir");
     }
 
-    function getPaymentDate(item = {}) {
-        const date = new Date(item.updated_at || item.created_at || "");
-        return Number.isNaN(date.getTime()) ? null : date;
-    }
-
-    function getPaymentAmount(item = {}) {
-        const direct = Number(item.amount || item.total_amount || item.transaction_amount || item.price || 0);
-        if (Number.isFinite(direct) && direct > 0) {
-            return direct;
-        }
-        if (String(item.plan_id || "") === "premium_annual") {
-            return Number(item.annual_price || 0);
-        }
-        return Number(item.monthly_price || 0);
-    }
-
-    function paymentMatchesStatus(item = {}, filter = "all") {
-        const status = String(item.status || "").toLowerCase();
-        if (filter === "all") {
-            return true;
-        }
-        if (filter === "approved") {
-            return status === "approved" || status === "paid";
-        }
-        if (filter === "pending") {
-            return ["pending", "in_process", "created"].includes(status);
-        }
-        return status && !["approved", "paid", "pending", "in_process", "created"].includes(status);
-    }
-
-    function getFilteredPayments(payments = []) {
-        const period = elements.paymentPeriod ? String(elements.paymentPeriod.value || "30") : "30";
-        const status = elements.paymentStatusFilter ? String(elements.paymentStatusFilter.value || "all") : "all";
-        const query = elements.paymentSearch ? String(elements.paymentSearch.value || "").trim().toLowerCase() : "";
-        const since = period === "all"
-            ? null
-            : new Date(Date.now() - Number(period || 30) * 24 * 60 * 60 * 1000);
-
-        return payments.filter((item) => {
-            const date = getPaymentDate(item);
-            if (since && (!date || date < since)) {
-                return false;
-            }
-            if (!paymentMatchesStatus(item, status)) {
-                return false;
-            }
-            if (!query) {
-                return true;
-            }
-            const haystack = [
-                item.customer_id,
-                item.payer_email,
-                item.email,
-                item.payment_id,
-                item.preference_id,
-                item.status,
-                item.plan_id
-            ].map((value) => String(value || "").toLowerCase()).join(" ");
-            return haystack.includes(query);
-        });
-    }
-
     function renderBufferChannelsBlock(bufferChannels = {}) {
         const channels = Array.isArray(bufferChannels.channels) ? bufferChannels.channels : [];
         return `
@@ -470,171 +401,6 @@
 
     function renderCopyButton(label, value = "") {
         return `<button class="ops-icon-button" type="button" data-copy-text="${escapeHtml(value)}" title="Copiar ${escapeHtml(label)}">Copiar ${escapeHtml(label)}</button>`;
-    }
-
-    function marketingStatusLabel(item = {}) {
-        const status = String(item.status || "");
-        if (status === "ready") {
-            return "pronto";
-        }
-        if (status === "published") {
-            return "publicado";
-        }
-        if (status === "rejected") {
-            return "ignorado";
-        }
-        return "rascunho";
-    }
-
-    function marketingStatusTone(item = {}) {
-        const status = String(item.status || "");
-        if (status === "published") {
-            return "success";
-        }
-        if (status === "ready") {
-            return "warning";
-        }
-        return "";
-    }
-
-    function marketingStepTone(done) {
-        return done ? "success" : "warning";
-    }
-
-    function renderMarketingWorkflow(item = {}) {
-        const drafts = item.integrationDrafts && typeof item.integrationDrafts === "object" ? item.integrationDrafts : {};
-        const bufferDraft = drafts.buffer || {};
-        const caption = bufferDraft.text || item.caption || "";
-        const defaultDueAt = formatDateTimeLocal(bufferDraft.dueAt || `${item.publishDate || ""}T12:00:00.000-03:00`);
-        const hasCanva = Boolean(drafts.canva);
-        const hasBufferTest = bufferDraft.status === "test_ready" || bufferDraft.status === "scheduled";
-        const hasScheduled = bufferDraft.status === "scheduled";
-
-        return `
-<div class="ops-pipeline-status">
-    ${buildPill("Texto", "success")}
-    ${buildPill(hasCanva ? "Arte preparada" : "Arte pendente", marketingStepTone(hasCanva))}
-    ${buildPill(hasBufferTest ? "Teste ok" : "Teste pendente", marketingStepTone(hasBufferTest))}
-    ${buildPill(hasScheduled ? "Agendado" : "Nao agendado", hasScheduled ? "success" : "")}
-</div>
-<div class="ops-workflow-steps">
-    <section class="ops-workflow-step">
-        <span class="ops-step-number">1</span>
-        <div>
-            <strong>Revisar texto</strong>
-            <pre class="ops-pre ops-content-copy">${escapeHtml(caption)}</pre>
-            <div class="ops-button-row">
-                ${renderCopyButton("legenda", caption)}
-                <button class="ops-button ops-button-secondary" type="button" data-marketing-status="ready" data-marketing-id="${escapeHtml(item.id)}" title="Marca este conteudo como revisado e pronto">Marcar pronto</button>
-            </div>
-        </div>
-    </section>
-    <section class="ops-workflow-step">
-        <span class="ops-step-number">2</span>
-        <div>
-            <strong>Criar arte</strong>
-            <small>${escapeHtml(item.visualBrief || "Use uma arte limpa, legivel e com chamada para estudar no Papiro.")}</small>
-            ${drafts.canva ? `
-            <div class="ops-nested-card">
-                <strong>Prompt curto para gerar a arte</strong>
-                <pre class="ops-pre ops-content-copy">${escapeHtml(drafts.canva.aiPrompt || drafts.canva.brief || "")}</pre>
-                <div class="ops-button-row">
-                    ${renderCopyButton("prompt da arte", drafts.canva.aiPrompt || drafts.canva.brief || "")}
-                    ${renderCopyButton("briefing completo", drafts.canva.brief || "")}
-                    <a class="ops-button ops-button-secondary" href="${escapeHtml(drafts.canva.canvaClassicUrl || "https://www.canva.com/canva-ai/")}" target="_blank" rel="noopener noreferrer" title="Abre o Magic Studio/Canva IA atual em uma nova aba">Abrir Canva IA 1.0</a>
-                    <a class="ops-button ops-button-ghost" href="${escapeHtml(drafts.canva.canvaAi2Url || "https://www.canva.com/magic/")}" target="_blank" rel="noopener noreferrer" title="Abre o Canva IA 2.0 em preview quando sua conta tiver acesso">Canva IA 2.0 preview</a>
-                </div>
-            </div>` : ""}
-            <button class="ops-button ops-button-secondary" type="button" data-marketing-prepare="canva" data-marketing-id="${escapeHtml(item.id)}" title="Gera o prompt curto da arte e o briefing completo para o Canva">Preparar Canva</button>
-        </div>
-    </section>
-    <section class="ops-workflow-step">
-        <span class="ops-step-number">3</span>
-        <div>
-            <strong>Testar e agendar</strong>
-            <small>Primeiro teste. Depois, quando estiver tudo bonito, agenda no Buffer.</small>
-            <div class="ops-schedule-grid">
-                <label>
-                    <span>Quando publicar</span>
-                    <input type="datetime-local" data-buffer-due-at="${escapeHtml(item.id)}" value="${escapeHtml(defaultDueAt)}">
-                </label>
-                <label>
-                    <span>URL da arte pronta</span>
-                    <input type="url" data-buffer-image-url="${escapeHtml(item.id)}" placeholder="https://...">
-                </label>
-            </div>
-            ${bufferDraft.status ? `<small>Buffer: ${escapeHtml(bufferStatusLabel(bufferDraft.status))}${bufferDraft.dueAt ? ` para ${escapeHtml(formatDate(bufferDraft.dueAt))}` : ""}</small>` : ""}
-            ${renderBufferResults(bufferDraft)}
-            <div class="ops-button-row">
-                <button class="ops-button ops-button-secondary" type="button" data-marketing-prepare="buffer" data-marketing-id="${escapeHtml(item.id)}" title="Prepara rascunho para agenda no Buffer">Preparar Buffer</button>
-                <button class="ops-button ops-button-secondary" type="button" data-marketing-buffer-test="${escapeHtml(item.id)}" title="Simula sem enviar para o Buffer">Testar seguro</button>
-                <button class="ops-button" type="button" data-marketing-buffer-schedule="${escapeHtml(item.id)}" title="Agenda este texto nos canais configurados do Buffer">Agendar</button>
-            </div>
-        </div>
-    </section>
-</div>
-<details class="ops-inline-details">
-    <summary>Bastidores deste rascunho</summary>
-    ${(item.channels || []).slice(0, 3).map((channel) => buildPill(humanChannel(channel))).join("")}
-    ${Array.isArray(item.script) && item.script.length ? `<small>Roteiro: ${escapeHtml(item.script.join(" | "))}</small>` : ""}
-    ${drafts.buffer ? `<pre class="ops-pre ops-content-copy">${escapeHtml(drafts.buffer.text || "")}</pre>` : ""}
-    <div class="ops-button-row">
-        <button class="ops-button ops-button-secondary" type="button" data-marketing-status="published" data-marketing-id="${escapeHtml(item.id)}" title="Registra que este conteudo ja foi publicado">Marcar publicado</button>
-        <button class="ops-button ops-button-ghost" type="button" data-marketing-status="rejected" data-marketing-id="${escapeHtml(item.id)}" title="Ignora este rascunho">Ignorar</button>
-    </div>
-</details>`;
-    }
-
-    function renderMarketingHeroCard(item = {}) {
-        return `
-<article class="ops-content-item ops-content-focus" data-marketing-card="${escapeHtml(item.id)}">
-    <div class="ops-content-head">
-        <div>
-            <p class="ops-kicker">${escapeHtml(formatDate(item.publishDate))} / ${escapeHtml(humanFormat(item.format))}</p>
-            <strong>${escapeHtml(item.title || "Conteudo")}</strong>
-            <small>${escapeHtml(item.hook || "")}</small>
-        </div>
-        <div class="ops-list-row">
-            ${buildPill(marketingStatusLabel(item), marketingStatusTone(item))}
-            <button class="ops-button" type="button" data-marketing-no-cost-pack="${escapeHtml(item.id)}" title="Prepara Canva Pro, legenda, Buffer e teste seguro sem enviar nada">Automatizar gratis</button>
-        </div>
-    </div>
-    ${renderMarketingWorkflow(item)}
-</article>`;
-    }
-
-    function renderMarketingWeekItem(item = {}) {
-        return `
-<details class="ops-list-item ops-week-item" data-marketing-card="${escapeHtml(item.id)}">
-    <summary>
-        <span>
-            <strong>${escapeHtml(item.title || "Conteudo")}</strong>
-            <small>${escapeHtml(formatDate(item.publishDate))} / ${escapeHtml(humanFormat(item.format))}</small>
-        </span>
-        <span class="ops-list-row">
-            ${buildPill(marketingStatusLabel(item), marketingStatusTone(item))}
-            ${buildPill((item.channels || []).slice(0, 1).map(humanChannel).join(", ") || "canal")}
-        </span>
-    </summary>
-    <div class="ops-week-workflow">
-        <div class="ops-button-row ops-inline-actions">
-            <button class="ops-button" type="button" data-marketing-no-cost-pack="${escapeHtml(item.id)}" title="Prepara Canva Pro, legenda, Buffer e teste seguro sem enviar nada">Automatizar gratis</button>
-        </div>
-        ${renderMarketingWorkflow(item)}
-    </div>
-</details>`;
-    }
-
-    function renderMarketingHistoryItem(item = {}) {
-        return `
-<article class="ops-list-item">
-    <strong>${escapeHtml(item.title || "Conteudo")}</strong>
-    <div class="ops-list-row">
-        ${buildPill(marketingStatusLabel(item), marketingStatusTone(item))}
-        ${buildPill(formatDate(item.publishedAt || item.updatedAt || item.publishDate))}
-        ${buildPill(humanFormat(item.format))}
-    </div>
-</article>`;
     }
 
     function humanSource(value = "") {
@@ -763,34 +529,16 @@
         const payments = Array.isArray(state.payments.recentPayments) ? state.payments.recentPayments : [];
         const entitlements = Array.isArray(state.payments.recentEntitlements) ? state.payments.recentEntitlements : [];
         const paymentsStatus = state.paymentsStatus || null;
-        const filteredPayments = getFilteredPayments(payments);
-        const paidPayments = filteredPayments.filter((item) => paymentMatchesStatus(item, "approved"));
-        const pendingPayments = filteredPayments.filter((item) => paymentMatchesStatus(item, "pending"));
-        const totalPaid = paidPayments.reduce((sum, item) => sum + getPaymentAmount(item), 0);
 
-        if (elements.paymentsFilterSummary) {
-            elements.paymentsFilterSummary.innerHTML = [
-                buildMetricCard("Filtrados", String(filteredPayments.length), `${payments.length} carregados`),
-                buildMetricCard("Pagos", String(paidPayments.length), "aprovados"),
-                buildMetricCard("Pendentes", String(pendingPayments.length), "iniciados/em analise"),
-                buildMetricCard("Valor pago", totalPaid ? formatMoney(totalPaid) : "-", "quando valor existir")
-            ].join("");
-        }
-
-        elements.paymentsList.innerHTML = filteredPayments.length
-            ? filteredPayments.map((item) => `
+        elements.paymentsList.innerHTML = payments.length
+            ? payments.map((item) => `
 <article class="ops-list-item">
     <strong>${escapeHtml(item.plan_id === "premium_annual" ? "Premium anual" : "Premium mensal")} - ${escapeHtml(item.status === "approved" ? "pago" : "iniciado")}</strong>
-    <div class="ops-list-row">
-        ${buildPill(item.status === "approved" ? "pago" : item.status || "iniciado", item.status === "approved" ? "success" : "warning")}
-        ${buildPill(item.plan_id === "premium_annual" ? "anual" : "mensal")}
-        ${getPaymentAmount(item) ? buildPill(formatMoney(getPaymentAmount(item))) : ""}
-    </div>
     <small>Cliente: ${escapeHtml(item.customer_id || "-")}</small>
     <small>Pagamento: ${escapeHtml(item.payment_id || item.preference_id || "-")}</small>
     <small>Atualizado em ${escapeHtml(formatDate(item.updated_at || item.created_at))}</small>
 </article>`).join("")
-            : `<p class="ops-empty">Nenhum pagamento nesse filtro.</p>`;
+            : `<p class="ops-empty">Nenhum pagamento recente.</p>`;
 
         elements.entitlementsList.innerHTML = entitlements.length
             ? entitlements.map((item) => `
@@ -964,28 +712,98 @@
                 : `<p class="ops-empty">Conectores ainda nao carregados.</p>`;
         }
 
-        elements.marketingQueue.innerHTML = nextItem
-            ? renderMarketingHeroCard(nextItem)
-            : `<p class="ops-empty">Nenhum conteudo aberto. Gere 14 dias para comecar.</p>`;
-
-        if (elements.marketingWeekQueue) {
-            const weekItems = openItems
-                .filter((item) => !nextItem || String(item.id) !== String(nextItem.id))
-                .slice(0, 10);
-            elements.marketingWeekQueue.innerHTML = weekItems.length
-                ? weekItems.map((item) => renderMarketingWeekItem(item)).join("")
-                : `<p class="ops-empty">Sem outros rascunhos abertos na fila.</p>`;
-        }
-
-        if (elements.marketingHistory) {
-            const historyItems = items
-                .filter((item) => ["published", "rejected"].includes(String(item.status || "")))
-                .slice(-12)
-                .reverse();
-            elements.marketingHistory.innerHTML = historyItems.length
-                ? historyItems.map((item) => renderMarketingHistoryItem(item)).join("")
-                : `<p class="ops-empty">Historico vazio por enquanto.</p>`;
-        }
+        elements.marketingQueue.innerHTML = items.length
+            ? items.slice(0, 30).map((item, index) => {
+                const drafts = item.integrationDrafts && typeof item.integrationDrafts === "object" ? item.integrationDrafts : {};
+                const bufferDraft = drafts.buffer || {};
+                const caption = bufferDraft.text || item.caption || "";
+                const defaultDueAt = formatDateTimeLocal(bufferDraft.dueAt || `${item.publishDate || ""}T12:00:00.000-03:00`);
+                return `
+<article class="ops-list-item ops-content-item" data-marketing-card="${escapeHtml(item.id)}">
+    <div class="ops-content-head">
+        <div>
+            <strong>${escapeHtml(item.title || "Conteudo")}</strong>
+            <small>${escapeHtml(item.hook || "")}</small>
+            <div class="ops-button-row ops-inline-actions">
+                <button class="ops-button" type="button" data-marketing-no-cost-pack="${escapeHtml(item.id)}" title="Prepara Canva Pro, legenda, Buffer e teste seguro sem enviar nada">Automatizar gratis</button>
+            </div>
+        </div>
+        <div class="ops-list-row">
+            ${buildPill(item.status === "ready" ? "pronto" : item.status === "published" ? "publicado" : "rascunho", item.status === "published" ? "success" : item.status === "ready" ? "warning" : "")}
+            ${buildPill(humanFormat(item.format))}
+            ${buildPill(formatDate(item.publishDate))}
+        </div>
+    </div>
+    ${index === 0 ? "" : `<details class="ops-draft-details"><summary>Trabalhar neste rascunho</summary>`}
+    <div class="ops-workflow-steps">
+        <section class="ops-workflow-step">
+            <span class="ops-step-number">1</span>
+            <div>
+                <strong>Revisar texto</strong>
+                <pre class="ops-pre ops-content-copy">${escapeHtml(caption)}</pre>
+                <div class="ops-button-row">
+                    ${renderCopyButton("legenda", caption)}
+                    <button class="ops-button ops-button-secondary" type="button" data-marketing-status="ready" data-marketing-id="${escapeHtml(item.id)}" title="Marca este conteudo como revisado e pronto">Marcar pronto</button>
+                </div>
+            </div>
+        </section>
+        <section class="ops-workflow-step">
+            <span class="ops-step-number">2</span>
+            <div>
+                <strong>Criar arte</strong>
+                <small>${escapeHtml(item.visualBrief || "Use uma arte limpa, legivel e com chamada para estudar no Papiro.")}</small>
+                ${drafts.canva ? `
+                <div class="ops-nested-card">
+                    <strong>Prompt pronto para Canva IA</strong>
+                    <pre class="ops-pre ops-content-copy">${escapeHtml(drafts.canva.aiPrompt || drafts.canva.brief || "")}</pre>
+                    <div class="ops-button-row">
+                        ${renderCopyButton("prompt Canva IA", drafts.canva.aiPrompt || drafts.canva.brief || "")}
+                        ${renderCopyButton("briefing", drafts.canva.brief || "")}
+                        <a class="ops-button ops-button-secondary" href="${escapeHtml(drafts.canva.canvaAiUrl || "https://www.canva.com/magic/")}" target="_blank" rel="noopener noreferrer" title="Abre o Canva IA em uma nova aba">Abrir Canva IA</a>
+                    </div>
+                </div>` : ""}
+                <button class="ops-button ops-button-secondary" type="button" data-marketing-prepare="canva" data-marketing-id="${escapeHtml(item.id)}" title="Prepara briefing para arte no Canva">Preparar Canva</button>
+            </div>
+        </section>
+        <section class="ops-workflow-step">
+            <span class="ops-step-number">3</span>
+            <div>
+                <strong>Testar e agendar</strong>
+                <small>Primeiro teste. Depois, quando estiver tudo bonito, agenda no Buffer.</small>
+                <div class="ops-schedule-grid">
+                    <label>
+                        <span>Quando publicar</span>
+                        <input type="datetime-local" data-buffer-due-at="${escapeHtml(item.id)}" value="${escapeHtml(defaultDueAt)}">
+                    </label>
+                    <label>
+                        <span>URL da arte pronta</span>
+                        <input type="url" data-buffer-image-url="${escapeHtml(item.id)}" placeholder="https://...">
+                    </label>
+                </div>
+                ${bufferDraft.status ? `<small>Buffer: ${escapeHtml(bufferStatusLabel(bufferDraft.status))}${bufferDraft.dueAt ? ` para ${escapeHtml(formatDate(bufferDraft.dueAt))}` : ""}</small>` : ""}
+                ${renderBufferResults(bufferDraft)}
+                <div class="ops-button-row">
+                    <button class="ops-button ops-button-secondary" type="button" data-marketing-prepare="buffer" data-marketing-id="${escapeHtml(item.id)}" title="Prepara rascunho para agenda no Buffer">Preparar Buffer</button>
+                    <button class="ops-button ops-button-secondary" type="button" data-marketing-buffer-test="${escapeHtml(item.id)}" title="Simula sem enviar para o Buffer">Testar seguro</button>
+                    <button class="ops-button" type="button" data-marketing-buffer-schedule="${escapeHtml(item.id)}" title="Agenda este texto nos canais configurados do Buffer">Agendar</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <details class="ops-inline-details">
+        <summary>Bastidores deste rascunho</summary>
+        ${(item.channels || []).slice(0, 3).map((channel) => buildPill(humanChannel(channel))).join("")}
+        ${Array.isArray(item.script) && item.script.length ? `<small>Roteiro: ${escapeHtml(item.script.join(" | "))}</small>` : ""}
+        ${drafts.buffer ? `<pre class="ops-pre ops-content-copy">${escapeHtml(drafts.buffer.text || "")}</pre>` : ""}
+        <div class="ops-button-row">
+            <button class="ops-button ops-button-secondary" type="button" data-marketing-status="published" data-marketing-id="${escapeHtml(item.id)}" title="Registra que este conteudo ja foi publicado">Marcar publicado</button>
+            <button class="ops-button ops-button-ghost" type="button" data-marketing-status="rejected" data-marketing-id="${escapeHtml(item.id)}" title="Ignora este rascunho">Ignorar</button>
+        </div>
+    </details>
+    ${index === 0 ? "" : "</details>"}
+</article>`;
+            }).join("")
+            : `<p class="ops-empty">Nenhum conteudo na fila. Gere 14 dias para comecar.</p>`;
     }
 
     function renderWeeklyReport() {
@@ -1640,18 +1458,6 @@
             setStatus(error.message || "Falha ao atualizar.", "error");
         }));
         elements.searchForm.addEventListener("submit", handleSearch);
-        if (elements.paymentsFilterForm) {
-            elements.paymentsFilterForm.addEventListener("submit", (event) => {
-                event.preventDefault();
-                renderPayments();
-            });
-            [elements.paymentPeriod, elements.paymentStatusFilter, elements.paymentSearch].forEach((input) => {
-                if (!input) {
-                    return;
-                }
-                input.addEventListener(input.type === "search" ? "input" : "change", () => renderPayments());
-            });
-        }
         elements.spendForm.addEventListener("submit", handleSpend);
         elements.runHealthBtn.addEventListener("click", handleHealthCheck);
         elements.quickMarketingBtn.addEventListener("click", () => handleMarketingGenerate("fallback"));
@@ -1724,7 +1530,7 @@
                 handleBufferChannels();
             }
         });
-        const handleMarketingQueueClick = (event) => {
+        elements.marketingQueue.addEventListener("click", (event) => {
             const noCostPackButton = event.target.closest("[data-marketing-no-cost-pack]");
             if (noCostPackButton) {
                 handleMarketingNoCostPack(noCostPackButton.dataset.marketingNoCostPack);
@@ -1765,11 +1571,7 @@
             if (button) {
                 handleMarketingStatus(button.dataset.marketingStatus, button.dataset.marketingId);
             }
-        };
-        elements.marketingQueue.addEventListener("click", handleMarketingQueueClick);
-        if (elements.marketingWeekQueue) {
-            elements.marketingWeekQueue.addEventListener("click", handleMarketingQueueClick);
-        }
+        });
         elements.changeRequests.addEventListener("click", (event) => {
             const button = event.target.closest("[data-change-request-action]");
             if (button) {

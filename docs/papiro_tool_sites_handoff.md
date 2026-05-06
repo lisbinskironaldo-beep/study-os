@@ -4,7 +4,7 @@ Data: 2026-04-29
 
 ## Contexto
 
-O site principal ainda se chama RotaNota, mas a marca futura será `Papiro + algo` (nome final ainda aberto). O usuário quer criar sites separados, úteis de verdade, com layout próprio, para servir como ferramentas gratuitas/isca e apontar para o futuro Papiro.
+O site principal ainda se chama Papiro Tools, mas a marca futura será `Papiro + algo` (nome final ainda aberto). O usuário quer criar sites separados, úteis de verdade, com layout próprio, para servir como ferramentas gratuitas/isca e apontar para o futuro Papiro.
 
 Já existe um projeto separado:
 
@@ -13,7 +13,7 @@ Já existe um projeto separado:
 - Marca do site: `Planejador Semanal`
 - Papiro só aparece no anúncio/link de saída.
 
-No RotaNota (`C:\dev\study-os`), a cópia antiga `/tabela-classica/` foi removida e republicada. A rota antiga deve dar `404`.
+No Papiro Tools (`C:\dev\study-os`), a cópia antiga `/tabela-classica/` foi removida e republicada. A rota antiga deve dar `404`.
 
 ## Decisão de produto
 
@@ -50,7 +50,7 @@ Próximo site recomendado:
   - `Continue estudando com Papiro`
   - `PDFs, questões, rotina e foco em um só lugar.`
 
-Origem provável no RotaNota:
+Origem provável no Papiro Tools:
 
 - `js/pomodoro.js`
 - CSS relacionado em `css/premium.css`
@@ -165,9 +165,9 @@ Para futuros sites:
 
 O anúncio deve apontar para o site principal, que hoje ainda é:
 
-- `https://rota-nota.vercel.app/`
+- `https://papiro-tools.vercel.app/`
 
-Mas o texto deve usar `Papiro`, porque o RotaNota será renomeado.
+Mas o texto deve usar `Papiro`, porque o Papiro Tools será renomeado.
 
 ## Marca Papiro Tools: referências de logo
 
@@ -211,7 +211,7 @@ Estilo limpo, vetorial, sofisticado, sem mockup.
 ## Próximos passos recomendados
 
 1. [x] Criar `C:\dev\timer-pomodoro` como projeto separado.
-2. [x] Extrair/adaptar o essencial do Pomodoro do RotaNota sem remover o Pomodoro do Papiro Tools.
+2. [x] Extrair/adaptar o essencial do Pomodoro do Papiro Tools sem remover o Pomodoro do Papiro Tools.
 3. [x] Criar layout próprio, mais focado e menos dashboard.
 4. [x] Adicionar anúncio para Papiro Tools.
 5. [x] Validar no browser em desktop/mobile.
@@ -222,23 +222,23 @@ Estilo limpo, vetorial, sofisticado, sem mockup.
 
 Repositórios/pastas:
 
-- RotaNota atual: `C:\dev\study-os`
+- Papiro Tools atual: `C:\dev\study-os`
 - Planejador Semanal separado: `C:\dev\planejador-semanal`
 - Timer Pomodoro separado: `C:\dev\timer-pomodoro`
 
 Produções:
 
-- RotaNota atual: `https://rota-nota.vercel.app`
+- Papiro Tools atual: `https://papiro-tools.vercel.app`
 - Planejador Semanal: `https://planejador-semanal.vercel.app`
 - Timer Pomodoro: `https://timer-pomodoro-xi.vercel.app`
 
 Últimas validações:
 
 - `https://planejador-semanal.vercel.app` respondeu `200`.
-- `https://rota-nota.vercel.app` respondeu `200`.
-- `/tabela-classica/` no RotaNota foi removida e deve responder `404`.
+- `https://papiro-tools.vercel.app` respondeu `200`.
+- `/tabela-classica/` no Papiro Tools foi removida e deve responder `404`.
 - `https://timer-pomodoro-xi.vercel.app` respondeu `200`.
-- Timer Pomodoro validado com Playwright em mobile 390px sem overflow, CTA apontando para `https://rota-nota.vercel.app/` e sem erros de console.
+- Timer Pomodoro validado com Playwright em mobile 390px sem overflow, CTA apontando para `https://papiro-tools.vercel.app/` e sem erros de console.
 
 Atualização 2026-04-29:
 

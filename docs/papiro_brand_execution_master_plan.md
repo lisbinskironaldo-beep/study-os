@@ -23,7 +23,7 @@ Regra importante:
 
 - o aluno deve ver `Papiro Tools` ou `Papiro`, conforme espaco da interface
 - o operador/admin deve ver `NorthStar`
-- nomes tecnicos internos com prefixo `RotaNota` podem continuar temporariamente se a troca impactar codigo, storage, envs ou integracoes
+- nomes tecnicos internos com prefixo `Papiro Tools` podem continuar temporariamente se a troca impactar codigo, storage, envs ou integracoes
 
 ## O que muda agora e o que nao muda agora
 
@@ -39,8 +39,8 @@ Regra importante:
 
 ### Nao muda agora, salvo fase tecnica dedicada
 
-- nomes de variaveis globais como `window.RotaNotaCore`
-- nomes de envs como `ROTANOTA_*`
+- nomes de variaveis globais como `window.Papiro ToolsCore`
+- nomes de envs como `PAPIRO_TOOLS_*`
 - nomes internos de scripts operacionais
 - textos e docs historicos que sao apenas arquivo de referencia
 - `NorthStar` dentro de `/ops`
@@ -54,30 +54,30 @@ trocar tudo de uma vez mistura rebrand visual com risco tecnico desnecessario.
 ### Camada publica principal
 
 1. [index.html](/c:/dev/study-os/index.html)
-- trocar `<title>RotaNota</title>` para `Papiro`
-- trocar meta description com mencao a `RotaNota`
+- trocar `<title>Papiro Tools</title>` para `Papiro`
+- trocar meta description com mencao a `Papiro Tools`
 - trocar favicon `assets/rotanota-mark.svg`
 - trocar lockup do topo:
   - `assets/rotanota-mark.svg`
   - `assets/rotanota-logo-light.svg`
   - `assets/rotanota-logo-dark.svg`
 - trocar frase do rodape:
-  - `RotaNota livre de anúncios e pop-ups.`
+  - `Papiro Tools livre de anúncios e pop-ups.`
 - revisar microcopy com encoding quebrado ao mesmo tempo da troca
 
 2. [questions-standalone.html](/c:/dev/study-os/questions-standalone.html)
-- trocar `Questions Solo | RotaNota`
+- trocar `Questions Solo | Papiro Tools`
 - decidir se vira:
   - `Questoes | Papiro`
   - ou `Papiro Questoes`
 
 3. [qts-lab.html](/c:/dev/study-os/qts-lab.html)
-- trocar `RotaNota - QTS Lab`
+- trocar `Papiro Tools - QTS Lab`
 - recomendacao:
   - `Papiro - QTS Lab` enquanto o nome do modulo nao for revisado
 
 4. [premium-study/pdf-workbench/viewer.html](/c:/dev/study-os/premium-study/pdf-workbench/viewer.html)
-- trocar `RotaNota PDF Integral`
+- trocar `Papiro Tools PDF Integral`
 - recomendacao:
   - `Papiro PDF Integral`
   - ou `Papiro Documento Integral`
@@ -86,13 +86,13 @@ trocar tudo de uma vez mistura rebrand visual com risco tecnico desnecessario.
 
 5. [premium-study/router/index.js](/c:/dev/study-os/premium-study/router/index.js)
 - trocar copy de processamento:
-  - `RotaNota esta montando o melhor caminho para voce.`
-  - linha editorial com `RotaNota`
+  - `Papiro Tools esta montando o melhor caminho para voce.`
+  - linha editorial com `Papiro Tools`
 - revisar naming dos steps visiveis
 - padronizar para linguagem da nova marca sem soar cursinho
 
 6. [premium-study/app/index.js](/c:/dev/study-os/premium-study/app/index.js)
-- trocar `RotaNota Premium`
+- trocar `Papiro Tools Premium`
 - revisar eyebrow, checkout notes e mensagens de retorno
 - decidir se premium usa:
   - `Papiro Premium`
@@ -100,18 +100,18 @@ trocar tudo de uma vez mistura rebrand visual com risco tecnico desnecessario.
 
 7. [premium-study/ui/components/index.js](/c:/dev/study-os/premium-study/ui/components/index.js)
 - trocar nota visivel:
-  - `o RotaNota continua trabalhando...`
+  - `o Papiro Tools continua trabalhando...`
 - esta area e importante para consolidar a nova voz da marca
 
 8. [premium-study/state/store.js](/c:/dev/study-os/premium-study/state/store.js)
 - trocar titulos default de prova:
-  - `Prova de nivel RotaNota`
+  - `Prova de nivel Papiro Tools`
 - recomendacao:
   - `Prova de nivel Papiro`
 
 9. [api/_lib/handlers/premium/ai-generate.js](/c:/dev/study-os/api/_lib/handlers/premium/ai-generate.js)
 - prompt ainda fala:
-  - `Voce e a IA pedagogica do RotaNota`
+  - `Voce e a IA pedagogica do Papiro Tools`
 - trocar para `Papiro`
 - isso afeta consistencia da geracao e deve entrar na fase de texto oficial
 
@@ -147,10 +147,10 @@ Plano:
 
 15. [api/_lib/handlers/mercado-pago/checkout.js](/c:/dev/study-os/api/_lib/handlers/mercado-pago/checkout.js)
 - titulos:
-  - `RotaNota Premium mensal`
-  - `RotaNota Premium anual`
+  - `Papiro Tools Premium mensal`
+  - `Papiro Tools Premium anual`
 - statement descriptor:
-  - `ROTANOTA`
+  - `PAPIRO_TOOLS`
 
 Observacao:
 
@@ -168,7 +168,7 @@ Observacao:
 Regra:
 
 - `NorthStar` continua aqui
-- onde aparecer `RotaNota` como produto operado, trocar futuramente para `Papiro`
+- onde aparecer `Papiro Tools` como produto operado, trocar futuramente para `Papiro`
 - onde aparecer `NorthStar` como hub, manter
 
 ## Mapa por prioridade de troca
@@ -187,7 +187,7 @@ Regra:
 
 Resultado esperado:
 
-- usuario comum praticamente nao ve mais `RotaNota`
+- usuario comum praticamente nao ve mais `Papiro Tools`
 
 ### Fase 2 - copy publica mais profunda
 
@@ -202,8 +202,8 @@ Resultado esperado:
 
 ### Fase 3 - camada tecnica e comercial
 
-- `ROTANOTA_*` envs
-- `window.RotaNota*`
+- `PAPIRO_TOOLS_*` envs
+- `window.Papiro Tools*`
 - readiness scripts
 - Mercado Pago titles / descriptor
 - nomes de projeto, alias, docs tecnicos principais
@@ -425,7 +425,7 @@ Nao usar:
   - `Papiro e um produto operado pelo NorthStar`
 
 ### Tecnico
-- pode ficar temporariamente como `RotaNota` internamente
+- pode ficar temporariamente como `Papiro Tools` internamente
 - criar backlog para migracao progressiva sem quebrar sessao, localStorage, env e APIs
 
 ## Ordem de execucao recomendada
@@ -441,7 +441,7 @@ Nao usar:
 
 ## Criterio de sucesso
 
-- usuario comum nao encontra `RotaNota` no fluxo principal
+- usuario comum nao encontra `Papiro Tools` no fluxo principal
 - `NorthStar` aparece apenas onde e administracao
 - `Papiro` aparece de forma limpa e consistente
 - app mode fica preparado para Android e iPhone
@@ -468,7 +468,7 @@ Atualizacao 2026-04-29:
 - `index.html` passou a usar favicon, manifest e lockups de `Papiro Tools`
 - titulos publicos de `questions-standalone.html`, `qts-lab.html` e viewer PDF foram ajustados
 - textos publicos diretos do premium/checkout/IA foram ajustados
-- nomes tecnicos `RotaNota*`, storage keys e cookies continuam preservados por seguranca
+- nomes tecnicos `Papiro Tools*`, storage keys e cookies continuam preservados por seguranca
 - validacao local com Playwright em `http://127.0.0.1:4173/`:
   - home desktop carregou com titulo, favicon, manifest e lockups `Papiro Tools`
   - home mobile 390px carregou sem overflow horizontal

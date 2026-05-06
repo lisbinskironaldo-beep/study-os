@@ -50,9 +50,10 @@ A IA pode criar tarefas e diagnosticos. A execucao continua mediada por aprovaca
 
 ## Divulgacao organica custo zero
 
-- Meta Business Suite: primeira opcao para agendar Instagram e Facebook sem custo.
-- Instagram scheduler nativo: alternativa direta pelo app.
+- Canva Pro: criacao das artes com IA/templates ja contratados a partir dos prompts da retaguarda.
 - Buffer Free: fila auxiliar para poucos posts em ate 3 canais.
-- Publer Free: alternativa limitada para multiplataforma.
-- Canva Free: criacao manual das artes a partir dos roteiros da retaguarda.
+- Meta Business Suite: alternativa manual para agendar Instagram e Facebook sem custo.
+- Instagram scheduler nativo: alternativa direta pelo app.
+- O painel pode automatizar sem custo: gerar pauta/legenda, preparar prompt do Canva Pro, preparar Buffer e rodar teste seguro sem publicar.
+- Nao mostrar caminhos fora do fluxo atual como pendencia operacional.
 - Evitar automacao de follow, curtida, comentario ou DM em massa.
