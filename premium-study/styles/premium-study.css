@@ -3377,6 +3377,13 @@
     grid-template-columns: minmax(0, 1fr);
 }
 
+.premium-learn-lesson-stack-continuous {
+    width: min(100%, 1127px);
+    margin-inline: auto;
+    justify-self: center;
+    grid-template-columns: minmax(0, 1fr);
+}
+
 .premium-learn-lesson {
     display: grid;
     grid-template-columns: 56px minmax(0, 1fr);
@@ -3388,6 +3395,11 @@
         linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(233, 240, 246, 0.96)),
         linear-gradient(180deg, #f4f8fb, #e8eff4);
     box-shadow: 0 16px 34px rgba(15, 23, 42, 0.08);
+}
+
+.premium-learn-lesson-continuous {
+    grid-template-columns: minmax(0, 1fr);
+    padding: clamp(24px, 3vw, 34px);
 }
 
 .premium-learn-lesson-index {
@@ -3428,6 +3440,55 @@
     color: var(--premium-reading-ink);
     font-size: clamp(1.3rem, 1.7vw, 1.8rem);
     line-height: 1.12;
+}
+
+.premium-learn-continuous-copy {
+    display: block;
+    max-width: 92ch;
+}
+
+.premium-learn-continuous-copy p {
+    margin: 0 0 1.05rem;
+    color: var(--premium-reading-muted);
+    font-size: 1.05rem;
+    line-height: 1.76;
+}
+
+.premium-learn-continuous-copy .premium-learn-continuous-title {
+    margin: 0 0 0.45rem;
+    color: var(--premium-reading-ink);
+}
+
+.premium-learn-continuous-copy .premium-learn-continuous-title strong {
+    font-size: clamp(1.22rem, 1.55vw, 1.62rem);
+    line-height: 1.16;
+}
+
+.premium-learn-inline-explain {
+    display: grid;
+    gap: 5px;
+    width: min(100%, 82ch);
+    margin: 0.1rem 0 1.05rem;
+    padding: 10px 14px;
+    border: 1px solid rgba(49, 215, 163, 0.22);
+    border-left: 4px solid rgba(49, 215, 163, 0.72);
+    border-radius: 8px;
+    background: rgba(49, 215, 163, 0.1);
+    color: var(--premium-reading-ink);
+}
+
+.premium-learn-inline-explain span {
+    color: #168460;
+    font-size: 0.68rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.premium-learn-inline-explain strong {
+    color: #173d34;
+    font-size: 0.95rem;
+    line-height: 1.48;
 }
 
 .premium-learn-paragraph-group {

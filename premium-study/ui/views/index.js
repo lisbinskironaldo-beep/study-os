@@ -945,27 +945,49 @@ ${renderSessionNote(state, "mode-select")}`;
         const modules = Array.isArray(learn.lessonModules) ? learn.lessonModules.filter(Boolean) : [];
 
         if (modules.length) {
+            const renderInlineTakeaway = (item = "") => {
+                if (!item) {
+                    return "";
+                }
+
+                return `
+            <aside class="premium-learn-inline-explain">
+                <span>Fixar</span>
+                <strong>${UI().escapeHtml(item)}</strong>
+            </aside>`;
+            };
+            const content = modules.map((module) => {
+                const paragraphs = Array.isArray(module.paragraphs)
+                    ? module.paragraphs
+                        .flatMap((paragraph) => splitStudyDisplayParagraph(paragraph, 4, 700))
+                        .filter(Boolean)
+                    : [];
+                const takeaways = Array.isArray(module.takeaways)
+                    ? module.takeaways.filter(Boolean).slice(0, 3)
+                    : [];
+                const title = module.title || "";
+
+                return `
+            ${title ? `<p class="premium-learn-continuous-title"><strong>${UI().escapeHtml(title)}</strong></p>` : ""}
+            ${paragraphs.map((paragraph, paragraphIndex) => `
+            <p>${UI().escapeHtml(paragraph)}</p>
+            ${paragraphIndex === 0 && takeaways[0] ? renderInlineTakeaway(takeaways[0], 0) : ""}
+            ${paragraphIndex === 1 && takeaways[1] ? renderInlineTakeaway(takeaways[1], 1) : ""}`).join("")}
+            ${takeaways.slice(paragraphs.length > 1 ? 2 : 1).map(renderInlineTakeaway).join("")}`;
+            }).join("");
+
             return `
-<div class="premium-learn-lesson-stack ${modules.length === 1 ? "is-single" : ""}">
-    ${modules.map((module, index) => `
-    <section class="premium-learn-lesson">
-        <div class="premium-learn-lesson-index">${String(index + 1).padStart(2, "0")}</div>
+<div class="premium-learn-lesson-stack premium-learn-lesson-stack-continuous">
+    <section class="premium-learn-lesson premium-learn-lesson-continuous">
         <div class="premium-learn-lesson-body">
             <div class="premium-learn-lesson-topline">
-                <span class="premium-detail-label">${UI().escapeHtml(module.objective || "Aula guiada")}</span>
-                <em>Parte ${index + 1} de ${modules.length}</em>
+                <span class="premium-detail-label">Aula guiada</span>
             </div>
-            <h3>${UI().escapeHtml(module.title || `Aula ${index + 1}`)}</h3>
-            ${renderParagraphGroup(module.paragraphs)}
-            ${Array.isArray(module.takeaways) && module.takeaways.length
-        ? `
-            <div class="premium-learn-lesson-footer">
-                <span class="premium-detail-label">Fixar antes de seguir</span>
-                ${renderConceptPills(module.takeaways, "premium-learn-pill-row premium-learn-pill-row-takeaways")}
-            </div>`
-        : ""}
+            <div class="premium-learn-continuous-copy">
+                ${content}
+            </div>
         </div>
-    </section>`).join("")}
+    </section>
 </div>`;
         }
 
