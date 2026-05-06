@@ -2632,6 +2632,107 @@ ${sections}`
             const desiredCount = Math.max(1, Number(questionCount) || 10);
             const uniqueQuestions = [];
             const seenPrompts = new Set();
+            const normalizeText = (value = "") => String(value || "")
+                .replace(/\b(?:https?:\/\/|www\.)\S+/gi, "")
+                .replace(/\b\S+\.(?:gov|com|org|net|br)(?:\/\S*)?/gi, "")
+                .replace(/\bPagina\s+\d+:\s*/gi, "")
+                .replace(/\b\d{2}\/\d{2}\/\d{4},?\s*\d{2}:\d{2}\b/g, "")
+                .replace(/\s+/g, " ")
+                .trim();
+            const clipText = (value = "", maxLength = 160) => {
+                const text = normalizeText(value);
+                if (text.length <= maxLength) {
+                    return text;
+                }
+
+                const clipped = text.slice(0, maxLength);
+                const boundary = Math.max(
+                    clipped.lastIndexOf(". "),
+                    clipped.lastIndexOf("; "),
+                    clipped.lastIndexOf(", ")
+                );
+
+                return `${clipped.slice(0, boundary > maxLength * 0.58 ? boundary + 1 : maxLength).trim()}...`;
+            };
+            const phrase = (value = "", maxLength = 95) => clipText(value, maxLength)
+                .replace(/[.;:,]+$/g, "")
+                .trim();
+            const uniqueList = (items = [], max = 8) => {
+                const seen = new Set();
+                return items
+                    .map((item) => phrase(item, 120))
+                    .filter(Boolean)
+                    .filter((item) => {
+                        const key = item.toLowerCase();
+                        if (seen.has(key)) {
+                            return false;
+                        }
+                        seen.add(key);
+                        return true;
+                    })
+                    .slice(0, max);
+            };
+            const extractLearnFocus = (block = {}) => {
+                const learn = block.learn || {};
+                const fromSections = Array.isArray(learn.documentSections)
+                    ? learn.documentSections.flatMap((section) => [
+                        ...(Array.isArray(section.items) ? section.items : []),
+                        ...(Array.isArray(section.paragraphs) ? section.paragraphs : [])
+                    ])
+                    : [];
+                const fromModules = Array.isArray(learn.lessonModules)
+                    ? learn.lessonModules.flatMap((module) => [
+                        ...(Array.isArray(module.takeaways) ? module.takeaways : []),
+                        ...(Array.isArray(module.paragraphs) ? module.paragraphs : [])
+                    ])
+                    : [];
+
+                return uniqueList([
+                    ...(Array.isArray(learn.examFocus) ? learn.examFocus : []),
+                    ...(Array.isArray(learn.keyConcepts) ? learn.keyConcepts : []),
+                    ...(Array.isArray(learn.hotPoints) ? learn.hotPoints : []),
+                    ...(Array.isArray(block.topics) ? block.topics : []),
+                    ...fromModules,
+                    ...fromSections,
+                    learn.summary,
+                    learn.intro,
+                    block.subtitle
+                ], 10);
+            };
+            const rotateOptions = (options = [], seed = 0) => {
+                const cleanOptions = uniqueList(options, 4);
+                const fallbackOptions = [
+                    "Marcar a alternativa mais familiar sem conferir o trecho.",
+                    "Decorar apenas o numero do artigo.",
+                    "Ignorar sujeitos, limites e excecoes.",
+                    "Responder pelo tema geral, sem aplicar criterio."
+                ];
+
+                while (cleanOptions.length < 4) {
+                    const nextFallback = fallbackOptions.find((item) => !cleanOptions.includes(item));
+                    cleanOptions.push(nextFallback || `Distrator ${cleanOptions.length + 1}`);
+                }
+
+                const correct = cleanOptions[0];
+                const distractors = cleanOptions.slice(1, 4);
+                const offset = Math.max(0, Number(seed) || 0) % 4;
+                const rotated = distractors.slice();
+                rotated.splice(offset, 0, correct);
+
+                return {
+                    options: rotated,
+                    correctIndex: offset
+                };
+            };
+            const buildQuestion = ({ prompt, correct, distractors, rationale }, seed = 0) => {
+                const rotated = rotateOptions([correct, ...(Array.isArray(distractors) ? distractors : [])], seed);
+                return {
+                    prompt: clipText(prompt, 260),
+                    options: rotated.options,
+                    correctIndex: rotated.correctIndex,
+                    rationale: clipText(rationale, 360)
+                };
+            };
 
             const pushQuestion = (question, meta = {}) => {
                 if (
@@ -2658,35 +2759,122 @@ ${sections}`
                 });
             };
 
-            blocks.forEach((block) => {
-                const practice = block && block.practice ? block.practice : {};
-                const exam = block && block.exam ? block.exam : {};
-                const trueFalseItems = Array.isArray(practice.trueFalse) ? practice.trueFalse : [];
+            blocks.forEach((block, blockIndex) => {
+                const title = phrase(block && block.title ? block.title : `Bloco ${blockIndex + 1}`, 80);
+                const learn = block && block.learn ? block.learn : {};
+                const focus = extractLearnFocus(block);
+                const firstFocus = focus[0] || "o comando central do bloco";
+                const secondFocus = focus[1] || firstFocus;
+                const thirdFocus = focus[2] || secondFocus;
+                const pitfall = Array.isArray(learn.pitfalls) && learn.pitfalls[0]
+                    ? phrase(learn.pitfalls[0], 120)
+                    : "responder por familiaridade sem conferir o criterio";
+                const mastery = Array.isArray(learn.masteryChecklist) && learn.masteryChecklist[0]
+                    ? phrase(learn.masteryChecklist[0], 120)
+                    : "explicar a regra com suas palavras e aplicar ao caso";
 
-                (Array.isArray(exam.questions) ? exam.questions : []).forEach((question) => {
-                    pushQuestion(question, {
-                        rationale: `Questao montada a partir do bloco ${block && block.title ? block.title : "principal"}.`
-                    });
-                });
-
-                (Array.isArray(practice.quiz) ? practice.quiz : []).forEach((question) => {
-                    pushQuestion(question, {
-                        rationale: `Questao reaproveitada do treino do bloco ${block && block.title ? block.title : "principal"}.`
-                    });
-                });
-
-                trueFalseItems.forEach((item) => {
-                    if (!item || !item.statement) {
-                        return;
-                    }
-
-                    pushQuestion({
-                        prompt: String(item.statement || "").trim(),
-                        options: ["Verdadeiro", "Falso"],
-                        correctIndex: item.answer ? 0 : 1,
-                        rationale: String(item.rationale || `Validacao de conceito do bloco ${block && block.title ? block.title : "principal"}.`).trim()
-                    });
-                });
+                [
+                    buildQuestion({
+                        prompt: `Na prova de nivel, qual leitura resolve melhor "${title}"?`,
+                        correct: "Isolar sujeito, comando, limite e efeito antes de escolher a alternativa.",
+                        distractors: [
+                            "Procurar a opcao com o texto mais parecido com o PDF.",
+                            "Responder pelo tema geral sem voltar ao criterio.",
+                            "Decorar apenas o numero do artigo ou titulo do bloco."
+                        ],
+                        rationale: `A prova de nivel mede transferencia: em ${title}, o acerto depende de aplicar criterio, nao de repetir a questao do treino.`
+                    }, blockIndex),
+                    buildQuestion({
+                        prompt: `Quando "${title}" cobra ${firstFocus}, o que precisa ficar claro?`,
+                        correct: "Qual regra ou criterio transforma o trecho em decisao para o caso apresentado.",
+                        distractors: [
+                            "Qual alternativa parece mais longa ou detalhada.",
+                            "Qual palavra apareceu primeiro no material.",
+                            "Qual exemplo pode ser decorado sem contexto."
+                        ],
+                        rationale: `O ponto ${firstFocus} precisa virar criterio de resposta, nao apenas reconhecimento de texto.`
+                    }, blockIndex + 1),
+                    buildQuestion({
+                        prompt: `Qual erro derruba a resposta em "${title}"?`,
+                        correct: `Cair em ${pitfall} sem conferir sujeito, condicao ou excecao.`,
+                        distractors: [
+                            "Comparar o caso narrado com o comando literal.",
+                            "Separar regra principal de excecao antes de marcar.",
+                            "Explicar o criterio com palavras proprias."
+                        ],
+                        rationale: `A prova de nivel usa distratores proximos; por isso o erro central e ${pitfall}.`
+                    }, blockIndex + 2),
+                    buildQuestion({
+                        prompt: `O que mostra dominio real de "${title}" alem do questionario?`,
+                        correct: mastery,
+                        distractors: [
+                            "Refazer a mesma pergunta do treino ate decorar a letra correta.",
+                            "Ignorar os pontos de apoio do bloco.",
+                            "Escolher a resposta por memoria visual da tela."
+                        ],
+                        rationale: `Dominio real aparece quando o aluno usa ${secondFocus} para justificar uma situacao nova.`
+                    }, blockIndex + 3),
+                    buildQuestion({
+                        prompt: `Se o enunciado trocar o exemplo de "${title}", qual caminho mantem a resposta correta?`,
+                        correct: "Aplicar a mesma regra central ao novo caso, conferindo limites e excecoes.",
+                        distractors: [
+                            "Repetir a alternativa que apareceu no questionario.",
+                            "Escolher a opcao com mais palavras copiadas do material.",
+                            "Tratar todo exemplo novo como se fosse fora do assunto."
+                        ],
+                        rationale: `A prova premium precisa cobrar transferencia: ${title} deve funcionar em caso novo, nao so na pergunta treinada.`
+                    }, blockIndex + 4),
+                    buildQuestion({
+                        prompt: `Qual pista diferencia uma resposta forte de um distrator em "${title}"?`,
+                        correct: `A alternativa conecta ${thirdFocus} com uma consequencia verificavel no caso.`,
+                        distractors: [
+                            "A alternativa cita muitas palavras do texto, mesmo sem comando claro.",
+                            "A alternativa parece neutra e evita decidir o caso.",
+                            "A alternativa troca o criterio por uma frase generica de estudo."
+                        ],
+                        rationale: `Distratores bons parecem proximos; a pista decisiva e ligar o ponto cobrado a uma consequencia.`
+                    }, blockIndex + 5),
+                    buildQuestion({
+                        prompt: `Em "${title}", quando vale voltar ao trecho antes de marcar?`,
+                        correct: "Quando a alternativa depende de sujeito, prazo, condicao, excecao ou efeito especifico.",
+                        distractors: [
+                            "Quando a alternativa e curta.",
+                            "Quando a letra correta parece repetir a posicao da rodada anterior.",
+                            "Quando o tema geral do bloco ja foi reconhecido."
+                        ],
+                        rationale: `A checagem fina evita errar por memoria visual, principalmente quando ha condicoes ou excecoes.`
+                    }, blockIndex + 6),
+                    buildQuestion({
+                        prompt: `Qual alternativa seria mais perigosa numa prova sobre "${title}"?`,
+                        correct: "Uma alternativa quase correta que muda o alcance, a condicao ou a consequencia da regra.",
+                        distractors: [
+                            "Uma alternativa claramente fora do assunto.",
+                            "Uma alternativa curta que pede leitura do comando.",
+                            "Uma alternativa que exige comparar regra e caso."
+                        ],
+                        rationale: `O erro mais caro costuma estar no detalhe alterado: alcance, condicao ou consequencia.`
+                    }, blockIndex + 7),
+                    buildQuestion({
+                        prompt: `Como justificar uma resposta de "${title}" sem copiar o artigo inteiro?`,
+                        correct: "Dizer a regra em uma frase e mostrar como ela decide o caso proposto.",
+                        distractors: [
+                            "Colar o maior trecho possivel do material.",
+                            "Responder apenas com o numero do artigo.",
+                            "Citar o titulo do bloco como se fosse explicacao."
+                        ],
+                        rationale: `A justificativa boa prova entendimento: regra curta, criterio claro e aplicacao ao caso.`
+                    }, blockIndex + 8),
+                    buildQuestion({
+                        prompt: `Qual decisao de estudo prepara melhor para uma questao nova de "${title}"?`,
+                        correct: `Treinar ${firstFocus} como criterio aplicavel, nao como frase decorada.`,
+                        distractors: [
+                            "Memorizar a primeira alternativa vista em Praticar.",
+                            "Ignorar os exemplos porque a prova cobra so texto literal.",
+                            "Revisar apenas a ordem das letras corretas."
+                        ],
+                        rationale: `A prova premium deve medir prontidao: o ponto ${firstFocus} precisa virar criterio de decisao.`
+                    }, blockIndex + 9)
+                ].forEach((question) => pushQuestion(question));
             });
 
             if (!uniqueQuestions.length) {
@@ -3414,6 +3602,16 @@ ${sections}`
                 back: clipText(stripArticleLead(item), 260),
                 tip: "Recupere sujeito, comando e excecoes antes de responder."
             }));
+            const buildMemoryDeck = (items = [], title = "") => preparePracticeSources(items, title).slice(0, 4).map((item) => {
+                const label = articleLabelFrom(item, "Trecho");
+                const criterion = clipText(stripArticleLead(item), 240);
+
+                return {
+                    front: `${label}: qual criterio preciso recuperar?`,
+                    back: criterion ? `Criterio: ${criterion}` : "Criterio: identifique sujeito, comando e efeito antes de aplicar ao caso.",
+                    cue: "Procure sujeito, comando, condicao e excecao."
+                };
+            });
             const moduleFromSource = (value = "", moduleIndex = 0) => {
                 const label = articleLabelFrom(value, `Ponto ${moduleIndex + 1}`);
                 const paragraphs = splitStudyText(value, { maxItems: 3, maxLength: 560 });
@@ -3492,7 +3690,7 @@ ${sections}`
                         connections: concepts.slice(1, 4),
                         memoryAnchors: concepts.slice(0, 3),
                         mnemonics: [{ title: "Leitura segura", formula: "Texto -> criterio -> aplicacao", explanation: "Leia o trecho, identifique o criterio e so depois aplique ao caso." }],
-                        memoryDeck: concepts.slice(0, 4).map((item) => ({ front: item, back: "Revise o trecho no contexto do bloco.", cue: "Procure palavras de condicao, excecao ou consequencia." })),
+                        memoryDeck: buildMemoryDeck(concepts, title),
                         masteryChecklist: ["Localizo o trecho central.", "Explico a regra com minhas palavras.", "Separo regra e excecao.", "Aplico o criterio em uma questao."],
                         explainBetter: { title: `Explicando ${title}`, paragraphs: lessonParagraphs },
                         reviewInFivePoints: concepts.slice(0, 5)
@@ -5466,7 +5664,7 @@ ${sections}`
                                 step: "level-exam",
                                 tone: "info",
                                 title: "Prova pronta com base na sua trilha",
-                                message: "A IA da prova não respondeu com um conjunto válido agora. Montamos a prova usando as questões e verificações dos blocos que já estavam prontos."
+                                message: "A IA da prova não respondeu com um conjunto válido agora. Montamos uma prova de nível local com perguntas novas sobre criterio, aplicacao e pegadinhas da sua rota."
                             });
                         } else {
                             store.setSessionNote({

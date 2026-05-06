@@ -1008,6 +1008,114 @@ ${renderSessionNote(state, "mode-select")}`;
     </div>`;
     }
 
+    function normalizeMemoryText(value = "") {
+        return String(value || "")
+            .replace(/\b(?:https?:\/\/|www\.)\S+/gi, "")
+            .replace(/\b\S+\.(?:gov|com|org|net|br)(?:\/\S*)?/gi, "")
+            .replace(/\bPagina\s+\d+:\s*/gi, "")
+            .replace(/\b\d{2}\/\d{2}\/\d{4},?\s*\d{2}:\d{2}\b/g, "")
+            .replace(/\s+/g, " ")
+            .trim();
+    }
+
+    function clipMemoryText(value = "", maxLength = 260) {
+        const text = normalizeMemoryText(value);
+        if (text.length <= maxLength) {
+            return text;
+        }
+
+        const clipped = text.slice(0, maxLength);
+        const boundary = Math.max(
+            clipped.lastIndexOf(". "),
+            clipped.lastIndexOf("; "),
+            clipped.lastIndexOf(", ")
+        );
+
+        return `${clipped.slice(0, boundary > maxLength * 0.58 ? boundary + 1 : maxLength).trim()}...`;
+    }
+
+    function memoryArticleLabel(value = "", fallback = "") {
+        const text = normalizeMemoryText(value).replace(/^Criterio:\s*/i, "");
+        const article = text.match(/\b(?:Art\.?|Artigo)\s*(\d+)\s*(?:[º°o.]|\.|º)?/i);
+        if (article) {
+            return `Art. ${article[1]}º`;
+        }
+
+        const loose = text.match(/^\s*(\d+)\s*(?:[º°o.]|\.|º)\s*/i);
+        return loose ? `Art. ${loose[1]}º` : fallback;
+    }
+
+    function stripMemoryLead(value = "") {
+        return normalizeMemoryText(value)
+            .replace(/^Criterio:\s*/i, "")
+            .replace(/^\b(?:Art\.?|Artigo)\s*\d+\s*(?:[º°o.]|\.|º)?\.?\s*/i, "")
+            .replace(/^\d+\s*(?:[º°o.]|\.|º)\s*/i, "")
+            .replace(/^[:.-]\s*/, "")
+            .trim();
+    }
+
+    function isWeakMemoryBack(value = "") {
+        return !normalizeMemoryText(value) || /revise o trecho|contexto do bloco|palavras de condicao/i.test(value);
+    }
+
+    function plainMemoryCriterion(card = {}) {
+        const rawBack = stripMemoryLead(card.back || "");
+        const rawFront = stripMemoryLead(card.front || "");
+        const source = isWeakMemoryBack(card.back || "") ? rawFront : rawBack;
+        return clipMemoryText(source || rawFront || "identifique sujeito, comando e efeito antes de aplicar ao caso.", 280);
+    }
+
+    function buildMemoryQuestion(label = "", criterion = "", index = 0) {
+        const text = normalizeMemoryText(criterion)
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .toLowerCase();
+        const prefix = label ? `${label}: ` : "";
+
+        if (/promocao|promovido|grau hierarquico superior/.test(text)) {
+            return `${prefix}o que define a promocao?`;
+        }
+
+        if (/forma gradual|fluxo de carreira|planejamento.*carreira/.test(text)) {
+            return `${prefix}o que a carreira deve assegurar?`;
+        }
+
+        if (/precedencia|antiguidade/.test(text)) {
+            return `${prefix}qual criterio define a precedencia?`;
+        }
+
+        if (/disciplina|hierarquia/.test(text)) {
+            return `${prefix}qual regra sobre disciplina e hierarquia?`;
+        }
+
+        if (/ingresso|requisito|concurso publico/.test(text)) {
+            return `${prefix}quais requisitos precisam ser lembrados?`;
+        }
+
+        if (/consiste|regula|ficam|devera|deve|sao|e um|e uma|tem como finalidade/.test(text)) {
+            return `${prefix}qual comando central preciso recuperar?`;
+        }
+
+        return label
+            ? `${prefix}qual comando central preciso recuperar?`
+            : `Carta ${index + 1}: qual criterio decide a resposta?`;
+    }
+
+    function getMemoryCardView(card = {}, index = 0) {
+        const rawFront = normalizeMemoryText(card.front || "");
+        const rawBack = normalizeMemoryText(card.back || "");
+        const label = memoryArticleLabel(rawFront) || memoryArticleLabel(rawBack);
+        const criterion = plainMemoryCriterion(card);
+        const frontLooksRaw = rawFront.length > 150 || /\b(?:Art\.?|Artigo)\s*\d+/i.test(rawFront) || /^Trecho:/i.test(rawFront);
+        const front = frontLooksRaw || !rawFront
+            ? buildMemoryQuestion(label, criterion, index)
+            : clipMemoryText(rawFront, 190);
+        const back = `Criterio: ${criterion}`;
+        const cue = clipMemoryText(card.cue || "Procure sujeito, comando, condicao e excecao.", 170);
+
+        return { front, back, cue };
+    }
+
     function renderMemoryDeck(cards = [], state = {}, blockId = "") {
         const filtered = Array.isArray(cards) ? cards.filter(Boolean).slice(0, 8) : [];
         if (!filtered.length) {
@@ -1027,12 +1135,13 @@ ${renderSessionNote(state, "mode-select")}`;
     <div class="premium-learn-memory-deck">
     ${filtered.map((card, index) => {
         const isRevealed = Boolean(revealed[String(index)]);
+        const cardView = getMemoryCardView(card, index);
         return `
     <article class="premium-learn-memory-card ${isRevealed ? "is-revealed" : ""}">
         <span>Recordar</span>
-        <strong>${UI().escapeHtml(card.front || "")}</strong>
-        ${isRevealed && card.back ? `<p>${UI().escapeHtml(card.back)}</p>` : ""}
-        ${isRevealed && card.cue ? `<small>${UI().escapeHtml(card.cue)}</small>` : ""}
+        <strong>${UI().escapeHtml(cardView.front)}</strong>
+        ${isRevealed && cardView.back ? `<p>${UI().escapeHtml(cardView.back)}</p>` : ""}
+        ${isRevealed && cardView.cue ? `<small>${UI().escapeHtml(cardView.cue)}</small>` : ""}
         <button type="button" class="premium-learn-mini-action" data-premium-action="toggle-memory-card" data-block-id="${UI().escapeHtml(blockId)}" data-item-index="${index}">
             ${isRevealed ? "Ocultar" : "Revelar"}
         </button>
@@ -1225,18 +1334,133 @@ ${renderSessionNote(state, "mode-select")}`;
 </div>`;
     }
 
+    function normalizeAssistText(value = "") {
+        return String(value || "")
+            .replace(/\b(?:https?:\/\/|www\.)\S+/gi, "")
+            .replace(/\b\S+\.(?:gov|com|org|net|br)(?:\/\S*)?/gi, "")
+            .replace(/\bPagina\s+\d+:\s*/gi, "")
+            .replace(/\b\d{2}\/\d{2}\/\d{4},?\s*\d{2}:\d{2}\b/g, "")
+            .replace(/\s+/g, " ")
+            .trim();
+    }
+
+    function clipAssistText(value = "", maxLength = 460) {
+        const text = normalizeAssistText(value);
+        if (text.length <= maxLength) {
+            return text;
+        }
+
+        const clipped = text.slice(0, maxLength);
+        const boundary = Math.max(
+            clipped.lastIndexOf(". "),
+            clipped.lastIndexOf("; "),
+            clipped.lastIndexOf(", ")
+        );
+
+        return `${clipped.slice(0, boundary > maxLength * 0.58 ? boundary + 1 : maxLength).trim()}...`;
+    }
+
+    function clipAssistPhrase(value = "", maxLength = 140) {
+        return clipAssistText(value, maxLength)
+            .replace(/[.;:,]+$/g, "")
+            .trim();
+    }
+
+    function hasRawExplainSignals(value = "") {
+        const text = normalizeAssistText(value);
+        const articleRefs = (text.match(/\b(?:Art\.?|Artigo)\s*\d+/gi) || []).length;
+
+        return Boolean(
+            text.length > 920 ||
+            articleRefs >= 3 ||
+            /\b(Pagina\s+\d+|compilado|ato-normativo|lei\.alesc|timestamp|fonte:|url:)\b/i.test(value) ||
+            /\b\d{2}\/\d{2}\/\d{4},?\s*\d{2}:\d{2}\b/.test(value)
+        );
+    }
+
+    function collectExplainFocusItems(learn = {}) {
+        const fromModules = Array.isArray(learn.lessonModules)
+            ? learn.lessonModules.flatMap((module) => Array.isArray(module.takeaways) ? module.takeaways : [])
+            : [];
+
+        const items = [
+            ...(Array.isArray(learn.keyConcepts) ? learn.keyConcepts : []),
+            ...(Array.isArray(learn.hotPoints) ? learn.hotPoints : []),
+            ...(Array.isArray(learn.memoryAnchors) ? learn.memoryAnchors : []),
+            ...fromModules
+        ];
+        const seen = new Set();
+
+        return items
+            .map((item) => clipAssistPhrase(item, 118))
+            .filter(Boolean)
+            .filter((item) => {
+                const key = item.toLowerCase();
+                if (seen.has(key)) {
+                    return false;
+                }
+                seen.add(key);
+                return true;
+            })
+            .slice(0, 3);
+    }
+
+    function buildBroadExplainContent(block = {}) {
+        const learn = block.learn || {};
+        const title = block.title || "este bloco";
+        const focusItems = collectExplainFocusItems(learn);
+        const examFocus = Array.isArray(learn.examFocus)
+            ? learn.examFocus.map((item) => clipAssistPhrase(item, 135)).filter(Boolean).slice(0, 2)
+            : [];
+        const pitfalls = Array.isArray(learn.pitfalls)
+            ? learn.pitfalls.map((item) => clipAssistPhrase(item, 135)).filter(Boolean).slice(0, 2)
+            : [];
+        const paragraphs = [
+            `Leia ${title} como um criterio de decisao. Primeiro descubra quem e alcancado pelo trecho, qual comando ele cria e que efeito isso muda na resposta.`,
+            focusItems.length
+                ? `Depois reduza o assunto a pontos de apoio: ${focusItems.join("; ")}. Eles servem para lembrar a estrutura antes de voltar aos detalhes do texto.`
+                : "Depois reduza o assunto a tres perguntas: qual e a regra, qual e a condicao e qual detalhe mudaria a resposta.",
+            examFocus.length
+                ? `Em questao, procure o comando literal e compare com o caso narrado. O foco costuma ser: ${examFocus.join("; ")}.`
+                : "Em questao, nao responda pelo tema geral. Compare a situacao narrada com o comando do trecho e so entao escolha a alternativa.",
+            pitfalls.length
+                ? `O cuidado principal e evitar ${pitfalls.join(" e ")}. Quando a alternativa parecer familiar demais, volte ao criterio antes de marcar.`
+                : "O cuidado principal e nao transformar reconhecimento em chute. Se duas alternativas parecem corretas, a diferenca costuma estar no sujeito, no limite ou na excecao."
+        ];
+
+        return {
+            title: `Explicando ${title}`,
+            paragraphs: paragraphs.filter(Boolean).slice(0, 4)
+        };
+    }
+
     function getExplainBetterContent(block = {}) {
         const learn = block.learn || {};
         const explain = learn.explainBetter || {};
-        const paragraphs = Array.isArray(explain.paragraphs)
-            ? explain.paragraphs.filter(Boolean).slice(0, 4)
+        const sourceParagraphs = Array.isArray(explain.paragraphs)
+            ? explain.paragraphs.filter(Boolean)
             : [];
+        const rawParagraphs = Array.isArray(explain.paragraphs)
+            ? explain.paragraphs.map((item) => normalizeAssistText(item)).filter(Boolean)
+            : [];
+        const directLooksRaw = rawParagraphs.length > 0 && (
+            sourceParagraphs.some((paragraph) => hasRawExplainSignals(paragraph)) ||
+            rawParagraphs.some((paragraph) => hasRawExplainSignals(paragraph)) ||
+            rawParagraphs.join(" ").length > 1800
+        );
+        const paragraphs = directLooksRaw
+            ? []
+            : rawParagraphs.map((paragraph) => clipAssistText(paragraph, 560)).slice(0, 4);
 
         if (paragraphs.length) {
             return {
                 title: explain.title || `Explicando ${block.title || "este bloco"}`,
                 paragraphs
             };
+        }
+
+        if (directLooksRaw || rawParagraphs.length) {
+            return buildBroadExplainContent(block);
         }
 
         const lessonParagraphs = Array.isArray(learn.lessonModules)
@@ -1267,13 +1491,27 @@ ${renderSessionNote(state, "mode-select")}`;
             fallbackParagraphs.push(`O erro mais comum aqui costuma aparecer quando o aluno ${pitfalls[0].charAt(0).toLowerCase()}${pitfalls[0].slice(1)}${pitfalls[1] ? ` ou ${pitfalls[1].charAt(0).toLowerCase()}${pitfalls[1].slice(1)}` : ""}.`);
         }
 
+        if (
+            fallbackParagraphs.some((paragraph) => hasRawExplainSignals(paragraph)) ||
+            fallbackParagraphs.join(" ").length > 1800
+        ) {
+            return buildBroadExplainContent(block);
+        }
+
         const filteredFallback = fallbackParagraphs
-            .map((item) => String(item || "").trim())
+            .map((item) => clipAssistText(item, 520))
             .filter(Boolean)
             .slice(0, 4);
 
         if (!filteredFallback.length) {
             return null;
+        }
+
+        if (
+            filteredFallback.some((paragraph) => hasRawExplainSignals(paragraph)) ||
+            filteredFallback.join(" ").length > 1800
+        ) {
+            return buildBroadExplainContent(block);
         }
 
         return {
@@ -1316,7 +1554,7 @@ ${renderSessionNote(state, "mode-select")}`;
 
         if (assistMode === "explain" && explainContent) {
             return `
-<section class="premium-learn-section premium-learn-section-rich premium-learn-assist-panel">
+<section class="premium-learn-section premium-learn-section-rich premium-learn-assist-panel premium-learn-assist-panel-explain">
     <span class="premium-detail-label">Explicar melhor este assunto</span>
     <h3>${UI().escapeHtml(explainContent.title)}</h3>
     ${explainContent.paragraphs.map((paragraph) => `<p>${UI().escapeHtml(paragraph)}</p>`).join("")}

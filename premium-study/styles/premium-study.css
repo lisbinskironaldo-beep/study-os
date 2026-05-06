@@ -2813,6 +2813,16 @@
         linear-gradient(180deg, #eef4f8, #e6edf5);
 }
 
+.premium-learn-workspace-panel > .premium-learn-assist-panel-explain,
+.premium-learn-reader.is-fullscreen .premium-learn-workspace-panel > .premium-learn-assist-panel-explain {
+    width: min(100%, 900px);
+    max-width: 900px;
+}
+
+.premium-learn-assist-panel-explain p {
+    max-width: 72ch;
+}
+
 .premium-learn-assist-lead {
     margin: 0;
     max-width: 62ch;

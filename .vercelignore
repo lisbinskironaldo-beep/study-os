@@ -1,5 +1,6 @@
 .git/
 .vercel/
+.codex-artifacts/
 .codex-backups/
 .codex-temp/
 .env
