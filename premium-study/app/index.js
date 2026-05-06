@@ -1525,8 +1525,78 @@
                 .replace(/'/g, "&#39;");
         },
 
+        splitPdfWorkbenchTextParagraphs(text) {
+            const normalized = String(text || "")
+                .replace(/\r/g, "")
+                .replace(/[ \t]+\n/g, "\n")
+                .replace(/\n[ \t]+/g, "\n")
+                .replace(/[ \t]{2,}/g, " ")
+                .replace(/([^\n])\s+(P[aá]gina\s+\d+\s*:)/gi, "$1\n\n$2")
+                .replace(/([.;:])\s+((?:Art\.?|Artigo)\s*\d+\s*(?:[º°o.]|\.|º)?)/g, "$1\n\n$2")
+                .replace(/([.;])\s+((?:CAP[IÍ]TULO|SE[CÇ][AÃ]O)\b)/g, "$1\n\n$2")
+                .trim();
+            const sentenceParts = (value = "") => String(value || "")
+                .replace(/\s+((?:[IVXLCDM]{1,8})\s*[-–]\s+)/g, "\n$1")
+                .replace(/\s+([a-z]\)\s+)/g, "\n$1")
+                .split(/\n+/)
+                .map((part) => part.replace(/\s+/g, " ").trim())
+                .filter(Boolean);
+            const splitLongParagraph = (value = "") => {
+                const clean = String(value || "").replace(/\s+/g, " ").trim();
+                if (!clean) {
+                    return [];
+                }
+                if (clean.length <= 760) {
+                    return [clean];
+                }
+
+                const sentences = clean.match(/[^.!?;]+[.!?;]+(?=\s|$)|[^.!?;]+$/g) || [clean];
+                const paragraphs = [];
+                let current = "";
+
+                sentences.forEach((sentence) => {
+                    const next = sentence.replace(/\s+/g, " ").trim();
+                    if (!next) {
+                        return;
+                    }
+
+                    const candidate = current ? `${current} ${next}` : next;
+                    if (candidate.length > 760 && current.length > 220) {
+                        paragraphs.push(current);
+                        current = next;
+                        return;
+                    }
+
+                    current = candidate;
+                    if (current.length >= 520 && /[.;!?]$/.test(current)) {
+                        paragraphs.push(current);
+                        current = "";
+                    }
+                });
+
+                if (current) {
+                    paragraphs.push(current);
+                }
+
+                return paragraphs;
+            };
+
+            return normalized
+                .split(/\n{2,}/)
+                .flatMap(sentenceParts)
+                .flatMap(splitLongParagraph)
+                .filter(Boolean);
+        },
+
         textToPdfWorkbenchHtml(text) {
-            return this.escapePdfWorkbenchHtml(text).replace(/\r?\n/g, "<br>");
+            const paragraphs = this.splitPdfWorkbenchTextParagraphs(text);
+            if (!paragraphs.length) {
+                return "";
+            }
+
+            return paragraphs
+                .map((paragraph) => `<p>${this.escapePdfWorkbenchHtml(paragraph)}</p>`)
+                .join("");
         },
 
         getPdfWorkbenchEditor() {

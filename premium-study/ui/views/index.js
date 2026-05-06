@@ -28,6 +28,99 @@
         return access.canUse(feature, state, context);
     }
 
+    function splitPdfWorkbenchTextParagraphs(text = "") {
+        const normalized = String(text || "")
+            .replace(/\r/g, "")
+            .replace(/[ \t]+\n/g, "\n")
+            .replace(/\n[ \t]+/g, "\n")
+            .replace(/[ \t]{2,}/g, " ")
+            .replace(/([^\n])\s+(P[aá]gina\s+\d+\s*:)/gi, "$1\n\n$2")
+            .replace(/([.;:])\s+((?:Art\.?|Artigo)\s*\d+\s*(?:[º°o.]|\.|º)?)/g, "$1\n\n$2")
+            .replace(/([.;])\s+((?:CAP[IÍ]TULO|SE[CÇ][AÃ]O)\b)/g, "$1\n\n$2")
+            .trim();
+        const sentenceParts = (value = "") => String(value || "")
+            .replace(/\s+((?:[IVXLCDM]{1,8})\s*[-–]\s+)/g, "\n$1")
+            .replace(/\s+([a-z]\)\s+)/g, "\n$1")
+            .split(/\n+/)
+            .map((part) => part.replace(/\s+/g, " ").trim())
+            .filter(Boolean);
+        const splitLongParagraph = (value = "") => {
+            const clean = String(value || "").replace(/\s+/g, " ").trim();
+            if (!clean) {
+                return [];
+            }
+            if (clean.length <= 760) {
+                return [clean];
+            }
+
+            const sentences = clean.match(/[^.!?;]+[.!?;]+(?=\s|$)|[^.!?;]+$/g) || [clean];
+            const paragraphs = [];
+            let current = "";
+
+            sentences.forEach((sentence) => {
+                const next = sentence.replace(/\s+/g, " ").trim();
+                if (!next) {
+                    return;
+                }
+
+                const candidate = current ? `${current} ${next}` : next;
+                if (candidate.length > 760 && current.length > 220) {
+                    paragraphs.push(current);
+                    current = next;
+                    return;
+                }
+
+                current = candidate;
+                if (current.length >= 520 && /[.;!?]$/.test(current)) {
+                    paragraphs.push(current);
+                    current = "";
+                }
+            });
+
+            if (current) {
+                paragraphs.push(current);
+            }
+
+            return paragraphs;
+        };
+
+        return normalized
+            .split(/\n{2,}/)
+            .flatMap(sentenceParts)
+            .flatMap(splitLongParagraph)
+            .filter(Boolean);
+    }
+
+    function renderPdfWorkbenchParagraphHtml(text = "") {
+        const paragraphs = splitPdfWorkbenchTextParagraphs(text);
+        if (!paragraphs.length) {
+            return "";
+        }
+
+        return paragraphs
+            .map((paragraph) => `<p>${UI().escapeHtml(paragraph)}</p>`)
+            .join("");
+    }
+
+    function getPdfWorkbenchEditorHtml(state = {}) {
+        const editorText = String(state.pdfWorkbenchText || "");
+        const editorHtml = String(state.pdfWorkbenchHtml || "");
+        if (editorHtml && /<(?:p|div|mark|span|ul|ol|li|blockquote)\b/i.test(editorHtml)) {
+            return editorHtml;
+        }
+
+        return renderPdfWorkbenchParagraphHtml(editorText);
+    }
+
+    function countPdfWorkbenchParagraphs(editorHtml = "", editorText = "") {
+        const htmlCount = (String(editorHtml || "").match(/<p\b/gi) || []).length;
+        if (htmlCount) {
+            return htmlCount;
+        }
+
+        return splitPdfWorkbenchTextParagraphs(editorText).length;
+    }
+
     function entry(state) {
         const access = Access();
         const resume = state.latestLocalStudy;
@@ -1977,7 +2070,7 @@ ${renderSessionNote(state, "premium-library")}`;
     function pdfWorkbench(state) {
         const viewerState = state.pdfWorkbenchState || {};
         const editorText = state.pdfWorkbenchText || state.materialExtractedText || "";
-        const editorHtml = state.pdfWorkbenchHtml || UI().escapeHtml(editorText).replace(/\r?\n/g, "<br>");
+        const editorHtml = getPdfWorkbenchEditorHtml(state);
         const aiHighlights = Array.isArray(state.aiHighlights)
             ? state.aiHighlights.filter((item) => !item.dismissed)
             : [];
@@ -1987,6 +2080,8 @@ ${renderSessionNote(state, "premium-library")}`;
         const activeBlock = Store().getActiveBlock();
         const lineCount = editorText ? editorText.split(/\r?\n/).length : 0;
         const charCount = editorText.length;
+        const paragraphCount = countPdfWorkbenchParagraphs(editorHtml, editorText);
+        const textUnitLabel = paragraphCount ? `${paragraphCount} parágrafo(s)` : `${lineCount} linha(s)`;
         const markerColors = [
             { value: "rgba(255, 203, 109, 0.48)", label: "Amarelo" },
             { value: "rgba(88, 227, 183, 0.38)", label: "Verde" },
@@ -2070,7 +2165,7 @@ ${renderSessionNote(state, "premium-library")}`;
                     <strong>${UI().escapeHtml(state.studyTitle || state.materialName || "Texto extraído")}</strong>
                 </div>
                 <div class="premium-pdf-reader-meta">
-                    <span>${lineCount} linha(s)</span>
+                    <span>${textUnitLabel}</span>
                     <span>${charCount} caracteres</span>
                 </div>
             </header>
@@ -2086,7 +2181,7 @@ ${renderSessionNote(state, "premium-library")}`;
                     <div class="premium-pdf-meta">
                         <span>${UI().escapeHtml(state.materialSizeLabel || "PDF")}</span>
                         <span>${Number(state.materialPageCount || 0) > 0 ? `${Number(state.materialPageCount)} pagina(s)` : "Paginas em leitura"}</span>
-                        <span>${lineCount} linha(s)</span>
+                        <span>${textUnitLabel}</span>
                         <span>${charCount} caracteres</span>
                     </div>
                     <p class="premium-pdf-footnote">${UI().escapeHtml(state.pdfSyncStatus === "synced"
@@ -2143,7 +2238,7 @@ ${renderSessionNote(state, "pdf-workbench")}`;
         const aiHighlightEnabled = canAccess(aiHighlightFeature, state);
         const viewerState = state.pdfWorkbenchState || {};
         const editorText = state.pdfWorkbenchText || state.materialExtractedText || "";
-        const editorHtml = state.pdfWorkbenchHtml || UI().escapeHtml(editorText).replace(/\r?\n/g, "<br>");
+        const editorHtml = getPdfWorkbenchEditorHtml(state);
         const aiHighlights = Array.isArray(state.aiHighlights)
             ? state.aiHighlights.filter((item) => !item.dismissed)
             : [];
@@ -2152,6 +2247,8 @@ ${renderSessionNote(state, "pdf-workbench")}`;
             || null;
         const lineCount = editorText ? editorText.split(/\r?\n/).length : 0;
         const charCount = editorText.length;
+        const paragraphCount = countPdfWorkbenchParagraphs(editorHtml, editorText);
+        const textUnitLabel = paragraphCount ? `${paragraphCount} parágrafo(s)` : `${lineCount} linha(s)`;
         const markerColors = [
             { value: "rgba(255, 203, 109, 0.48)", label: "Amarelo" },
             { value: "rgba(88, 227, 183, 0.38)", label: "Verde" },
@@ -2228,7 +2325,7 @@ ${renderSessionNote(state, "pdf-workbench")}`;
                     <strong>${UI().escapeHtml(state.studyTitle || state.materialName || "Texto extraído")}</strong>
                 </div>
                 <div class="premium-pdf-reader-meta">
-                    <span>${lineCount} linha(s)</span>
+                    <span>${textUnitLabel}</span>
                     <span>${charCount} caracteres</span>
                 </div>
             </header>
@@ -2245,7 +2342,7 @@ ${renderSessionNote(state, "pdf-workbench")}`;
                     <div class="premium-pdf-meta">
                         <span>${UI().escapeHtml(state.materialSizeLabel || "PDF")}</span>
                         <span>${Number(state.materialPageCount || 0) > 0 ? `${Number(state.materialPageCount)} pagina(s)` : "Paginas em leitura"}</span>
-                        <span>${lineCount} linha(s)</span>
+                        <span>${textUnitLabel}</span>
                         <span>${charCount} caracteres</span>
                     </div>
                     <p class="premium-pdf-footnote">${UI().escapeHtml(state.pdfSyncStatus === "synced"

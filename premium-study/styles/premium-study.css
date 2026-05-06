@@ -389,6 +389,11 @@
     grid-template-columns: minmax(0, 1fr);
 }
 
+.premium-study-shell[data-premium-step="pdf-workbench"] .premium-study-shell-body {
+    height: 100%;
+    overflow: hidden;
+}
+
 .premium-study-stage {
     display: grid;
     grid-template-rows: auto minmax(0, 1fr);
@@ -397,6 +402,9 @@
 }
 
 .premium-study-shell[data-premium-step="pdf-workbench"] .premium-study-stage {
+    display: block;
+    height: 100%;
+    max-height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
     padding-right: 10px;
@@ -419,6 +427,8 @@
 }
 
 .premium-study-host:fullscreen .premium-study-shell[data-premium-step="pdf-workbench"] .premium-study-stage {
+    height: 100%;
+    max-height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
     padding-right: 8px;
@@ -1656,6 +1666,12 @@
     gap: 10px;
 }
 
+.premium-study-shell[data-premium-step="pdf-workbench"] .premium-pdf-shell {
+    align-content: start;
+    height: auto;
+    min-height: 0;
+}
+
 .premium-pdf-shell.is-fullscreen {
     min-height: calc(100vh - 160px);
 }
@@ -1671,6 +1687,14 @@
     overflow-y: hidden;
     padding-right: 0;
     scrollbar-width: thin;
+}
+
+.premium-study-shell[data-premium-step="pdf-workbench"] .premium-pdf-sidebar {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    padding-bottom: 4px;
+    background: linear-gradient(180deg, rgba(15, 20, 31, 0.98), rgba(15, 20, 31, 0.88));
 }
 
 .premium-pdf-sidebar-tools {
@@ -1995,6 +2019,12 @@
     overflow: hidden;
 }
 
+.premium-study-shell[data-premium-step="pdf-workbench"] .premium-pdf-reader-shell {
+    grid-template-rows: auto;
+    height: auto;
+    overflow: visible;
+}
+
 .premium-pdf-reader-head {
     display: flex;
     align-items: start;
@@ -2028,15 +2058,31 @@
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.42);
 }
 
+.premium-study-shell[data-premium-step="pdf-workbench"] .premium-pdf-textarea {
+    height: auto;
+    max-height: none;
+    overflow: visible;
+}
+
 .premium-pdf-textarea:focus {
     outline: 2px solid rgba(121, 213, 255, 0.34);
     outline-offset: 0;
 }
 
 .premium-pdf-rich-editor {
-    white-space: pre-wrap;
+    white-space: normal;
     word-break: break-word;
-    overflow: auto;
+    overflow: visible;
+}
+
+.premium-pdf-rich-editor p,
+.premium-pdf-rich-editor div {
+    margin: 0 0 1.05rem;
+}
+
+.premium-pdf-rich-editor p:last-child,
+.premium-pdf-rich-editor div:last-child {
+    margin-bottom: 0;
 }
 
 .premium-pdf-rich-editor:empty::before {
