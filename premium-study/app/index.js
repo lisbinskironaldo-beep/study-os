@@ -4,7 +4,13 @@
     }
 
     const CHECKOUT_CONTEXT_KEY = "rotanota-premium-checkout-context";
-    const LOCAL_BUNDLE_VERSION = "local-fallback-v2";
+    const LOCAL_BUNDLE_VERSION = "local-fallback-v4";
+    const LEGACY_AI_PROMPT_VERSIONS = new Set([
+        "papiro-tools-pdf-focused-ai-v3",
+        "papiro-tools-pdf-focused-ai-v4",
+        "rotanota-pdf-focused-ai-v3",
+        "rotanota-pdf-focused-ai-v4"
+    ]);
 
     function isSuspiciousGeneratedTitle(value = "") {
         const candidate = String(value || "")
@@ -41,6 +47,7 @@
     window.PremiumStudyApp = {
         root: null,
         analysisTimers: [],
+        analysisProgressTimer: null,
         modePreparationTimer: null,
         shellActivityTimer: null,
         pendingScrollSelector: "",
@@ -2521,6 +2528,55 @@ ${sections}`
         clearAnalysisTimers() {
             this.analysisTimers.forEach((timerId) => window.clearTimeout(timerId));
             this.analysisTimers = [];
+            this.stopAnalysisProgress();
+        },
+
+        startAnalysisProgress() {
+            const store = window.PremiumStudyStore;
+
+            if (this.analysisProgressTimer) {
+                window.clearInterval(this.analysisProgressTimer);
+            }
+
+            this.analysisProgressTimer = window.setInterval(() => {
+                const state = store.getState();
+                const status = String(state.analysisStatus || "");
+                const currentProgress = Math.max(0, Number(state.analysisProgress || 0));
+
+                if (status !== "running" || currentProgress >= 92) {
+                    this.stopAnalysisProgress();
+                    return;
+                }
+
+                let cap = 18;
+
+                if (currentProgress >= 72) {
+                    cap = 86;
+                } else if (currentProgress >= 46) {
+                    cap = 60;
+                } else if (currentProgress >= 18) {
+                    cap = 34;
+                }
+
+                if (currentProgress >= cap) {
+                    return;
+                }
+
+                const nextProgress = Math.min(
+                    cap,
+                    currentProgress + Math.max(1, Math.round((cap - currentProgress) * 0.16))
+                );
+
+                store.setAnalysisProgress(nextProgress, "running");
+                this.render();
+            }, 900);
+        },
+
+        stopAnalysisProgress() {
+            if (this.analysisProgressTimer) {
+                window.clearInterval(this.analysisProgressTimer);
+                this.analysisProgressTimer = null;
+            }
         },
 
         legacyStartAnalysisSequence() {
@@ -2671,17 +2727,133 @@ ${sections}`
                 .join("\n")
                 .replace(/\n{3,}/g, "\n\n")
                 .trim();
-            const paragraphs = clean
-                .split(/\n{2,}|(?=Pagina\s+\d+:)/i)
-                .map((part) => part.replace(/\s+/g, " ").trim())
-                .filter((part) => part.length >= 70);
-            const articleMatches = [...clean.matchAll(/\b(?:Art\.?|Artigo)\s*\d+[^\n]{0,220}/gi)]
-                .map((match) => match[0].replace(/\s+/g, " ").trim())
+            const compactText = clean.replace(/\n+/g, " ");
+            const clipText = (value = "", maxLength = 520) => {
+                const candidate = String(value || "").replace(/\s+/g, " ").trim();
+                if (candidate.length <= maxLength) {
+                    return candidate;
+                }
+
+                const clipped = candidate.slice(0, maxLength);
+                const boundary = Math.max(
+                    clipped.lastIndexOf(". "),
+                    clipped.lastIndexOf("; "),
+                    clipped.lastIndexOf(", ")
+                );
+
+                return `${clipped.slice(0, boundary > maxLength * 0.62 ? boundary + 1 : maxLength).trim()}...`;
+            };
+            const normalizeForStudy = (value = "") => String(value || "")
+                .replace(/\b(?:https?:\/\/|www\.)\S+/gi, "")
+                .replace(/\b\S+\.(?:gov|com|org|net|br)(?:\/\S*)?/gi, "")
+                .replace(/\(\s*Reda\S*(?:\s+\S+){0,24}\s*\)/gi, "")
+                .replace(/\(\s*Reda\S*(?:\s+\S+){0,14}/gi, "")
+                .replace(/\bArt\s*\d+\S*\s+caput[^)]*dada pela LC[^)]*\)/gi, "")
+                .replace(/\b(?:dada|incluida|incluída)\s+pela\s+LC\s+\d+[^);.]*/gi, "")
+                .replace(/\(\s*Reda[cç][aã]o[^)]*\)/gi, "")
+                .replace(/\(\s*Rev\.\s*\)/gi, "")
+                .replace(/\b\d{2}\/\d{2}\/\d{4},?\s*\d{2}:\d{2}\b/g, "")
+                .replace(/\b\d{1,3}\/\d{1,3}\s+Pagina\s+\d+:?/gi, "")
+                .replace(/\bPagina\s+\d+:\s*/gi, "")
+                .replace(/\s+/g, " ")
+                .trim();
+            const isLowValueStudyText = (value = "") => {
+                const normalized = normalizeForStudy(value)
+                    .normalize("NFD")
+                    .replace(/[\u0300-\u036f]/g, "")
+                    .toLowerCase();
+
+                if (!normalized) {
+                    return true;
+                }
+
+                if (/^(fonte|procedencia|natureza|timestamp|versao compilada|do:|url:)/i.test(normalized)) {
+                    return true;
+                }
+
+                return Boolean(
+                    normalized.length > 180 &&
+                    /(alterada pelas leis|revogada parcialmente|decretos:|governador do estado|faco saber|assembleia legislativa)/i.test(normalized) &&
+                    !/\bart\.?\s*\d+/.test(normalized)
+                );
+            };
+            const splitStudyText = (value = "", options = {}) => {
+                const maxItems = Math.max(1, Number(options.maxItems || 4));
+                const maxLength = Math.max(140, Number(options.maxLength || 520));
+                const normalized = normalizeForStudy(value);
+
+                if (!normalized || isLowValueStudyText(normalized)) {
+                    return [];
+                }
+
+                const articleParts = normalized
+                    .split(/(?=\b(?:Art\.?|Artigo)\s*\d+\S*)/i)
+                    .map((part) => normalizeForStudy(part))
+                    .filter((part) => part.length >= 42 && !isLowValueStudyText(part));
+                const sourceParts = articleParts.length > 1 ? articleParts : [normalized];
+                const result = [];
+
+                sourceParts.forEach((part) => {
+                    if (result.length >= maxItems) {
+                        return;
+                    }
+
+                    const sentences = part
+                        .split(/(?:\.\s+|;\s+(?=(?:[A-Z0-9]|\(?[a-z]\))))/)
+                        .map((sentence) => normalizeForStudy(sentence))
+                        .filter((sentence) => sentence.length >= 34);
+
+                    if (part.length <= maxLength || sentences.length <= 1) {
+                        result.push(clipText(part, maxLength));
+                        return;
+                    }
+
+                    let buffer = "";
+                    sentences.forEach((sentence) => {
+                        if (result.length >= maxItems) {
+                            return;
+                        }
+
+                        const next = buffer ? `${buffer}. ${sentence}` : sentence;
+                        if (next.length <= maxLength) {
+                            buffer = next;
+                            return;
+                        }
+
+                        if (buffer) {
+                            result.push(clipText(buffer, maxLength));
+                        }
+                        buffer = sentence;
+                    });
+
+                    if (buffer && result.length < maxItems) {
+                        result.push(clipText(buffer, maxLength));
+                    }
+                });
+
+                return result.filter(Boolean).slice(0, maxItems);
+            };
+            const articleUnits = compactText
+                .split(/(?=\b(?:Art\.?|Artigo)\s*\d+\S*)/i)
+                .map((part) => normalizeForStudy(part))
+                .filter((part) => part.length >= 70 && /\b(?:Art\.?|Artigo)\s*\d+/i.test(part) && !isLowValueStudyText(part));
+            const paragraphs = [
+                ...articleUnits,
+                ...clean
+                    .split(/\n{2,}|(?=Pagina\s+\d+:)/i)
+                    .map((part) => normalizeForStudy(part))
+                    .filter((part) => part.length >= 70 && !isLowValueStudyText(part))
+            ];
+            const studyUnits = articleUnits.length >= 4
+                ? articleUnits
+                : paragraphs.flatMap((part) => splitStudyText(part, { maxItems: 3, maxLength: 620 }));
+            const articleMatches = studyUnits
+                .map((part) => (String(part || "").match(/\b(?:Art\.?|Artigo)\s*\d+\S*/i) || [String(part || "").slice(0, 90)])[0])
                 .filter(Boolean);
             const accessTier = String(state.accessTier || (state.premiumActive ? "premium" : "free")).toLowerCase();
             const premiumLike = accessTier === "premium";
             const pageCount = Math.max(0, Number(options.pageCount || state.materialPageCount || 0));
-            const seeds = (articleMatches.length ? articleMatches : paragraphs).slice(0, premiumLike ? 72 : 40);
+            const seeds = (studyUnits.length ? studyUnits : paragraphs).slice(0, premiumLike ? 72 : 40);
             const sourceCount = Math.max(1, seeds.length);
             let desiredBlocks = Math.ceil(sourceCount / (premiumLike ? 4 : 5));
 
@@ -2869,28 +3041,376 @@ ${sections}`
 
                 return genericTitle(index);
             };
-            const makeQuestion = (topic) => ({
-                prompt: `Segundo o material, qual conduta de estudo e mais segura sobre "${String(topic || materialName).slice(0, 90)}"?`,
-                options: [
-                    "Voltar ao texto, identificar o criterio e aplicar ao caso.",
-                    "Responder por intuicao, sem conferir os termos do trecho.",
-                    "Ignorar excecoes e palavras de limite.",
-                    "Tratar todo detalhe como irrelevante."
-                ],
-                correctIndex: 0,
-                rationale: "A resposta correta preserva o criterio textual extraido do documento."
-            });
+            const articleLabelFrom = (value = "", fallback = "Dispositivo") => {
+                const match = String(value || "").match(/\b(?:Art\.?|Artigo)\s*\d+\S*/i);
+                return match ? match[0].replace(/Artigo/i, "Art.") : fallback;
+            };
+            const stripArticleLead = (value = "") => normalizeForStudy(value)
+                .replace(/^\b(?:Art\.?|Artigo)\s*\d+\S*\.?\s*/i, "")
+                .replace(/^[:.-]\s*/, "")
+                .trim();
+            const studyItemFrom = (value = "", maxLength = 220) => {
+                const [first] = splitStudyText(value, { maxItems: 1, maxLength });
+                return first || clipText(normalizeForStudy(value), maxLength);
+            };
+            const uniqueOptions = (items = []) => {
+                const seen = new Set();
+                return items
+                    .map((item) => normalizeForStudy(item))
+                    .filter((item) => {
+                        const key = item.toLowerCase();
+                        if (!item || seen.has(key)) {
+                            return false;
+                        }
+                        seen.add(key);
+                        return true;
+                    });
+            };
+            const finalizeQuestion = ({ prompt, correct, distractors, rationale }, seed = 0) => {
+                const fallbackDistractors = [
+                    "O dispositivo trata apenas de orientacao administrativa sem efeito para o militar estadual.",
+                    "O trecho elimina a necessidade de observar requisitos, excecoes ou situacoes previstas em lei.",
+                    "A regra se aplica somente por analogia, sem depender do texto do Estatuto.",
+                    "O ponto central e apenas memorizar o numero do artigo, sem compreender seu comando."
+                ];
+                const options = uniqueOptions([
+                    correct,
+                    ...(Array.isArray(distractors) ? distractors : []),
+                    ...fallbackDistractors
+                ]).slice(0, 4);
+
+                while (options.length < 4) {
+                    options.push(fallbackDistractors[options.length - 1] || "A afirmacao nao corresponde ao comando do dispositivo.");
+                }
+
+                const correctText = options[0];
+                const offset = Math.max(0, Number(seed) || 0) % 4;
+                const rotated = options.slice(1);
+                rotated.splice(offset, 0, correctText);
+
+                return {
+                    prompt,
+                    options: rotated,
+                    correctIndex: offset,
+                    rationale
+                };
+            };
+            const makeLegalQuestion = (topic, seed = 0) => {
+                const text = normalizeForStudy(topic);
+                const body = stripArticleLead(text);
+                const label = articleLabelFrom(text, "O dispositivo");
+                const lower = body
+                    .normalize("NFD")
+                    .replace(/[\u0300-\u036f]/g, "")
+                    .toLowerCase();
+                const variant = Math.max(0, Number(seed) || 0) % 3;
+
+                if (/regula as obrigacoes, os deveres, os direitos/.test(lower)) {
+                    const variants = [
+                        {
+                            prompt: `Segundo o ${label}, o que o Estatuto regula?`,
+                            correct: "As obrigacoes, os deveres, os direitos, as prerrogativas e as situacoes dos policiais-militares de Santa Catarina.",
+                            distractors: [
+                                "Somente os procedimentos de ingresso nos cursos de formacao.",
+                                "Apenas a remuneracao dos militares estaduais da ativa.",
+                                "Exclusivamente a estrutura administrativa da Secretaria de Seguranca."
+                            ],
+                            rationale: `${label} apresenta o alcance geral do Estatuto.`
+                        },
+                        {
+                            prompt: `Qual e o alcance material indicado pelo ${label}?`,
+                            correct: "O Estatuto cobre deveres, direitos, prerrogativas, obrigacoes e situacoes dos policiais-militares estaduais.",
+                            distractors: [
+                                "O Estatuto cobre apenas beneficios financeiros e licencas.",
+                                "O Estatuto trata somente da organizacao interna da Assembleia Legislativa.",
+                                "O Estatuto se limita a normas de transito e policiamento ostensivo."
+                            ],
+                            rationale: `${label} lista os grupos de materias regulados pelo Estatuto.`
+                        },
+                        {
+                            prompt: `Ao estudar o ${label}, qual conjunto nao pode ficar fora da resposta?`,
+                            correct: "Obrigacoes, deveres, direitos, prerrogativas e situacoes dos policiais-militares.",
+                            distractors: [
+                                "Apenas forma de ingresso, matricula e curriculo de cursos.",
+                                "Somente penalidades criminais comuns aplicaveis a civis.",
+                                "Exclusivamente normas de contratacao de temporarios civis."
+                            ],
+                            rationale: `${label} e uma porta de entrada para o campo de aplicacao do Estatuto.`
+                        }
+                    ];
+                    return finalizeQuestion(variants[variant], seed);
+                }
+
+                if (/policia militar.*instituicao permanente|manutencao da ordem publica|reserva do exercito/.test(lower)) {
+                    const variants = [
+                        {
+                            prompt: `Qual afirmativa corresponde ao ${label} sobre a Policia Militar?`,
+                            correct: "E uma instituicao permanente, baseada em hierarquia e disciplina, destinada a manutencao da ordem publica e considerada forca auxiliar, Reserva do Exercito.",
+                            distractors: [
+                                "E uma instituicao temporaria, criada apenas para missoes eventuais de seguranca privada.",
+                                "Atua sem subordinacao operacional e sem base em hierarquia ou disciplina.",
+                                "Tem finalidade exclusiva de defesa civil, sem relacao com manutencao da ordem publica."
+                            ],
+                            rationale: `${label} define a natureza institucional e a finalidade da Policia Militar.`
+                        },
+                        {
+                            prompt: `Quais sao as bases organizacionais da Policia Militar no ${label}?`,
+                            correct: "Hierarquia e disciplina, dentro de uma instituicao permanente.",
+                            distractors: [
+                                "Autonomia individual e ausencia de subordinacao operacional.",
+                                "Eleicao interna dos postos e rotatividade sem carreira.",
+                                "Vinculo temporario sem estrutura hierarquica."
+                            ],
+                            rationale: `${label} fixa hierarquia e disciplina como bases de organizacao.`
+                        },
+                        {
+                            prompt: `Qual finalidade institucional aparece no ${label}?`,
+                            correct: "Manutencao da ordem publica na area do Estado, com consideracao como forca auxiliar e Reserva do Exercito.",
+                            distractors: [
+                                "Prestacao exclusiva de seguranca privada a orgaos conveniados.",
+                                "Defesa civil sem qualquer relacao com ordem publica.",
+                                "Administracao de politicas educacionais estaduais."
+                            ],
+                            rationale: `${label} conecta a finalidade da PM a ordem publica e ao papel de forca auxiliar.`
+                        }
+                    ];
+                    return finalizeQuestion(variants[variant], seed);
+                }
+
+                if (/denominados militares estaduais|na ativa|na inatividade/.test(lower)) {
+                    const variants = [
+                        {
+                            prompt: `De acordo com o ${label}, como o Estatuto enquadra os integrantes da PMSC e do CBMSC?`,
+                            correct: "Eles sao denominados militares estaduais e podem estar na ativa ou na inatividade, conforme as situacoes previstas no dispositivo.",
+                            distractors: [
+                                "Sao tratados como servidores civis comuns, sem situacoes proprias de carreira militar.",
+                                "Sao sempre considerados temporarios, independentemente do vinculo ou da situacao funcional.",
+                                "Ficam automaticamente desligados quando deixam o servico ativo."
+                            ],
+                            rationale: `${label} organiza a denominacao e as situacoes funcionais dos militares estaduais.`
+                        },
+                        {
+                            prompt: `Qual denominacao o ${label} atribui aos integrantes da PMSC e do CBMSC?`,
+                            correct: "Militares estaduais, em razao da destinacao constitucional das corporacoes e da legislacao especifica.",
+                            distractors: [
+                                "Servidores administrativos estaduais sem regime militar.",
+                                "Agentes civis de seguranca contratados temporariamente.",
+                                "Colaboradores voluntarios sem situacao funcional propria."
+                            ],
+                            rationale: `${label} explica a denominacao a partir da destinacao constitucional e da legislacao especifica.`
+                        },
+                        {
+                            prompt: `Quais situacoes funcionais aparecem no ${label}?`,
+                            correct: "Na ativa e na inatividade, com subdivisoes previstas no proprio dispositivo.",
+                            distractors: [
+                                "Apenas em treinamento, sem vinculo com ativa ou inatividade.",
+                                "Somente em disponibilidade civil ou contrato temporario.",
+                                "Exclusivamente em licenca particular sem remuneracao."
+                            ],
+                            rationale: `${label} organiza a situacao dos militares estaduais em ativa e inatividade.`
+                        }
+                    ];
+                    return finalizeQuestion(variants[variant], seed);
+                }
+
+                if (/servico policial-militar consiste|atividades inerentes/.test(lower)) {
+                    return finalizeQuestion({
+                        prompt: `O que o ${label} considera servico policial-militar?`,
+                        correct: "O exercicio de atividades inerentes a Policia Militar, abrangendo encargos previstos na legislacao especifica relacionados a manutencao da ordem publica.",
+                        distractors: [
+                            "Somente atividades internas sem relacao com manutencao da ordem publica.",
+                            "Apenas tarefas administrativas exercidas por servidores civis.",
+                            "Qualquer atividade particular feita por militar fora do servico."
+                        ],
+                        rationale: `${label} liga o servico policial-militar as atividades inerentes a instituicao.`
+                    }, seed);
+                }
+
+                if (/carreira de oficial.*privativa de brasileiro nato/.test(lower)) {
+                    return finalizeQuestion({
+                        prompt: `Segundo o ${label}, quem pode ocupar a carreira de Oficial da Policia Militar?`,
+                        correct: "A carreira de Oficial da Policia Militar e privativa de brasileiro nato.",
+                        distractors: [
+                            "Qualquer brasileiro nato ou naturalizado, sem distincao.",
+                            "Somente militares temporarios convocados para funcao especifica.",
+                            "Apenas integrantes da reserva remunerada."
+                        ],
+                        rationale: `${label} traz uma restricao expressa para a carreira de Oficial.`
+                    }, seed);
+                }
+
+                if (/sao equivalentes as expressoes|na ativa|em atividade|servico ativo/.test(lower)) {
+                    return finalizeQuestion({
+                        prompt: `Qual e o ponto central do ${label} sobre as expressoes ligadas ao servico ativo?`,
+                        correct: "As expressoes na ativa, em atividade e em servico ativo sao equivalentes quando ligadas ao desempenho de cargo, missao, servico ou atividade policial-militar.",
+                        distractors: [
+                            "Cada expressao cria uma categoria juridica sem relacao com as demais.",
+                            "As expressoes so valem para militares reformados.",
+                            "A equivalencia depende de autorizacao individual do comandante para cada caso."
+                        ],
+                        rationale: `${label} evita confusao terminologica sobre a situacao de atividade.`
+                    }, seed);
+                }
+
+                if (/condicao juridica.*definida/.test(lower)) {
+                    return finalizeQuestion({
+                        prompt: `Conforme o ${label}, onde se define a condicao juridica dos policiais-militares?`,
+                        correct: "Nos dispositivos constitucionais aplicaveis, no Estatuto e na legislacao que outorga direitos e prerrogativas e impoe deveres e obrigacoes.",
+                        distractors: [
+                            "Apenas em ordens internas sem relacao com a Constituicao ou a lei.",
+                            "Exclusivamente por decisao administrativa momentanea.",
+                            "Somente no regulamento disciplinar, sem outras fontes normativas."
+                        ],
+                        rationale: `${label} aponta as fontes normativas da condicao juridica.`
+                    }, seed);
+                }
+
+                if (/circulos hierarquicos|escala hierarquica|posto|graduacao/.test(lower)) {
+                    return finalizeQuestion({
+                        prompt: `Qual tema e organizado pelo ${label}?`,
+                        correct: clipText(body, 260),
+                        distractors: [
+                            "A extincao da hierarquia entre oficiais e pracas.",
+                            "A transformacao de todos os graus hierarquicos em cargos civis.",
+                            "A dispensa de precedencia e respeito mutuo nos circulos militares."
+                        ],
+                        rationale: `${label} trata da organizacao hierarquica e seus efeitos.`
+                    }, seed);
+                }
+
+                if (/cargo policial-militar|funcao policial|atribuicoes, deveres/.test(lower)) {
+                    return finalizeQuestion({
+                        prompt: `Sobre cargo ou funcao policial-militar, qual alternativa corresponde ao ${label}?`,
+                        correct: clipText(body, 260),
+                        distractors: [
+                            "O cargo policial-militar pode ser exercido por qualquer pessoa sem vinculo ao servico ativo.",
+                            "As atribuicoes do cargo independem do grau hierarquico do titular.",
+                            "A funcao policial-militar nao gera deveres, responsabilidade ou atribuicoes."
+                        ],
+                        rationale: `${label} delimita cargo, funcao, atribuicoes e responsabilidades.`
+                    }, seed);
+                }
+
+                return finalizeQuestion({
+                    prompt: `Qual alternativa resume corretamente o ${label}?`,
+                    correct: clipText(body || text, 260),
+                    distractors: [
+                        "O dispositivo cria regra sem relacao com a organizacao policial-militar.",
+                        "O trecho afasta requisitos, excecoes e consequencias expressas no Estatuto.",
+                        "A norma trata apenas de recomendacao de estudo, sem conteudo juridico cobravel."
+                    ],
+                    rationale: `${label} deve ser lido pelo comando normativo que ele estabelece.`
+                }, seed);
+            };
+            const preparePracticeSources = (items = [], title = "") => {
+                const baseSources = (items.length ? items : [title])
+                    .map((item) => String(item || "").trim())
+                    .filter(Boolean);
+                const granularSources = baseSources
+                    .flatMap((item) => splitStudyText(item, { maxItems: 8, maxLength: 420 }))
+                    .map((item) => String(item || "").trim())
+                    .filter(Boolean);
+
+                if (granularSources.length) {
+                    return granularSources;
+                }
+
+                return baseSources.length ? baseSources : ["Conteudo do bloco"];
+            };
+            const rotateSources = (items = [], offset = 0) => {
+                if (!items.length) {
+                    return items;
+                }
+
+                const safeOffset = offset % items.length;
+                return items.slice(safeOffset).concat(items.slice(0, safeOffset));
+            };
+            const buildQuestionSeries = (items = [], title = "") => {
+                const questionSources = preparePracticeSources(items, title);
+                return Array.from({ length: 3 }, (_, seriesIndex) => (
+                    Array.from({ length: 3 }, (unused, questionIndex) => {
+                        const sourceIndex = (seriesIndex + questionIndex) % questionSources.length;
+                        return makeLegalQuestion(questionSources[sourceIndex], (seriesIndex * 3) + questionIndex);
+                    })
+                ));
+            };
+            const buildTrueFalseItems = (items = [], title = "") => {
+                const trueFalseSources = preparePracticeSources(items, title);
+                const first = trueFalseSources[0] || title;
+                const second = trueFalseSources[1] || first;
+                const third = trueFalseSources[2] || second;
+
+                return [
+                    {
+                        statement: `${articleLabelFrom(first, "O dispositivo")} estabelece: ${clipText(stripArticleLead(first), 190)}`,
+                        answer: true,
+                        rationale: "A afirmacao reproduz o comando central do trecho."
+                    },
+                    {
+                        statement: `${articleLabelFrom(second, "O dispositivo")} elimina a necessidade de observar requisitos, excecoes ou situacoes previstas no Estatuto.`,
+                        answer: false,
+                        rationale: "O Estatuto trabalha justamente com comandos, requisitos, excecoes e situacoes expressas."
+                    },
+                    {
+                        statement: `${articleLabelFrom(third, "O dispositivo")} deve ser interpretado conforme o sujeito, a situacao e o efeito juridico indicados no proprio texto.`,
+                        answer: true,
+                        rationale: "Em lei, sujeito, situacao e efeito mudam a resposta da questao."
+                    }
+                ];
+            };
+            const buildFlashcards = (items = [], title = "") => preparePracticeSources(items, title).slice(0, 3).map((item) => ({
+                front: articleLabelFrom(item, "Dispositivo"),
+                back: clipText(stripArticleLead(item), 260),
+                tip: "Recupere sujeito, comando e excecoes antes de responder."
+            }));
+            const moduleFromSource = (value = "", moduleIndex = 0) => {
+                const label = articleLabelFrom(value, `Ponto ${moduleIndex + 1}`);
+                const paragraphs = splitStudyText(value, { maxItems: 3, maxLength: 560 });
+
+                if (!paragraphs.length) {
+                    return null;
+                }
+
+                return {
+                    title: `${label}: comando central`,
+                    objective: "Entender o dispositivo e o que ele muda na resposta.",
+                    paragraphs: paragraphs.map((paragraph) => {
+                        const hasArticle = /\b(?:Art\.?|Artigo)\s*\d+/i.test(paragraph);
+                        return hasArticle
+                            ? paragraph
+                            : `${label}: ${paragraph}`;
+                    }),
+                    takeaways: paragraphs.map((paragraph) => studyItemFrom(paragraph, 170)).filter(Boolean).slice(0, 4)
+                };
+            };
 
             for (let index = 0; index < desiredBlocks; index += 1) {
                 const chunk = seeds.slice(index * chunkSize, (index + 1) * chunkSize);
                 const support = paragraphs.slice(index * 3, index * 3 + 4);
-                const source = (chunk.length ? chunk : support).slice(0, 6);
+                const source = (chunk.length ? chunk : support).slice(0, premiumLike ? 5 : 3);
                 const title = titleFrom(source, index);
-                const concepts = source.map((item) => item.replace(/^Pagina\s+\d+:\s*/i, "").slice(0, 150)).filter(Boolean);
-                const lessonParagraphs = support.length ? support.slice(0, 3) : [concepts.join(" ").slice(0, 900)];
-                const q1 = makeQuestion(concepts[0] || title);
-                const q2 = makeQuestion(concepts[1] || title);
-                const q3 = makeQuestion(concepts[2] || title);
+                const concepts = source
+                    .map((item) => studyItemFrom(item, 220))
+                    .filter(Boolean);
+                const lessonModules = source
+                    .map((item, sourceIndex) => moduleFromSource(item, sourceIndex))
+                    .filter(Boolean)
+                    .slice(0, premiumLike ? 4 : 3);
+                const lessonParagraphs = lessonModules.length
+                    ? lessonModules.flatMap((module) => module.paragraphs).slice(0, 6)
+                    : (support.length
+                        ? support.flatMap((item) => splitStudyText(item, { maxItems: 2, maxLength: 560 })).slice(0, 4)
+                        : [concepts.join(" ").slice(0, 900)]);
+                const examFocus = [
+                    "Identificar o comando literal do dispositivo antes de aplicar conhecimento geral.",
+                    "Separar regra, excecao, requisito e consequencia.",
+                    "Observar palavras de limite, condicao e remissao entre artigos."
+                ];
+                const practiceSources = preparePracticeSources(source, title);
+                const quizSeries = buildQuestionSeries(practiceSources, title);
+                const quizQuestions = quizSeries[0];
+                const trueFalseItems = buildTrueFalseItems(practiceSources, title);
+                const flashcards = buildFlashcards(practiceSources, title);
 
                 blocks.push({
                     id: `local-block-${index + 1}`,
@@ -2900,13 +3420,8 @@ ${sections}`
                     topics: concepts,
                     learn: {
                         summary: lessonParagraphs.join(" ").slice(0, 1000),
-                        intro: "Bloco montado automaticamente a partir do texto extraido para evitar deixar o estudo vazio.",
-                        lessonModules: [{
-                            title,
-                            objective: "Compreender o criterio textual deste recorte.",
-                            paragraphs: lessonParagraphs,
-                            takeaways: concepts.slice(0, 4)
-                        }],
+                        intro: "Recorte organizado do texto extraido com foco no que tende a virar criterio de prova.",
+                        lessonModules,
                         documentSections: [{
                             id: `local-section-${index + 1}`,
                             type: "summary",
@@ -2917,9 +3432,9 @@ ${sections}`
                         }],
                         keyConcepts: concepts.slice(0, 6),
                         hotPoints: concepts.slice(0, 4),
-                        examFocus: ["Identificar o criterio literal do trecho.", "Separar regra, excecao e consequencia.", "Evitar extrapolar alem do texto extraido."],
+                        examFocus,
                         pitfalls: ["Responder por conhecimento geral sem voltar ao trecho.", "Ignorar palavras de limite, condicao ou excecao."],
-                        practicalCases: concepts.slice(0, 2).map((item) => `Como aplicar o criterio: ${item}`),
+                        practicalCases: concepts.slice(0, 2).map((item) => `Como aplicar em prova: leia o dispositivo, marque o sujeito alcancado e confira se ha excecao ou condicao no trecho "${item}".`),
                         connections: concepts.slice(1, 4),
                         memoryAnchors: concepts.slice(0, 3),
                         mnemonics: [{ title: "Leitura segura", formula: "Texto -> criterio -> aplicacao", explanation: "Leia o trecho, identifique o criterio e so depois aplique ao caso." }],
@@ -2929,22 +3444,22 @@ ${sections}`
                         reviewInFivePoints: concepts.slice(0, 5)
                     },
                     practice: {
-                        quiz: [q1, q2, q3],
-                        quizSeries: [[q1, q2, q3]],
-                        trueFalse: [
-                            { statement: `O bloco "${title}" deve ser estudado a partir do criterio textual extraido.`, answer: true, rationale: "A trilha foi montada diretamente do texto extraido." },
-                            { statement: "E seguro responder sem conferir os termos limitadores do trecho.", answer: false, rationale: "Termos limitadores podem mudar a resposta." },
-                            { statement: "Regra, excecao e consequencia devem ser separados na revisao.", answer: true, rationale: "Essa separacao reduz erro de interpretacao." }
+                        quiz: quizQuestions,
+                        quizSeries,
+                        trueFalse: trueFalseItems,
+                        trueFalseSeries: [
+                            trueFalseItems,
+                            buildTrueFalseItems(rotateSources(practiceSources, 1), title),
+                            buildTrueFalseItems(rotateSources(practiceSources, 2), title)
                         ],
-                        trueFalseSeries: [[
-                            { statement: `O bloco "${title}" deve ser estudado a partir do criterio textual extraido.`, answer: true, rationale: "A trilha foi montada diretamente do texto extraido." },
-                            { statement: "E seguro responder sem conferir os termos limitadores do trecho.", answer: false, rationale: "Termos limitadores podem mudar a resposta." },
-                            { statement: "Regra, excecao e consequencia devem ser separados na revisao.", answer: true, rationale: "Essa separacao reduz erro de interpretacao." }
-                        ]],
-                        flashcards: concepts.slice(0, 3).map((item) => ({ front: item, back: "Explique o criterio e conecte com o trecho do material.", tip: "Procure palavras de limite." })),
-                        flashcardSeries: [concepts.slice(0, 3).map((item) => ({ front: item, back: "Explique o criterio e conecte com o trecho do material.", tip: "Procure palavras de limite." }))]
+                        flashcards,
+                        flashcardSeries: [
+                            flashcards,
+                            buildFlashcards(rotateSources(practiceSources, 1), title),
+                            buildFlashcards(rotateSources(practiceSources, 2), title)
+                        ]
                     },
-                    exam: { baseCount: 3, questions: [q1, q2, q3] }
+                    exam: { baseCount: 3, questions: quizQuestions }
                 });
             }
 
@@ -3005,6 +3520,13 @@ ${sections}`
             if (
                 suspiciousTitles &&
                 aiGeneration.localBundleVersion !== LOCAL_BUNDLE_VERSION
+            ) {
+                return false;
+            }
+
+            if (
+                snapshot.blocks.some((block) => block && block.generatedByAi) &&
+                LEGACY_AI_PROMPT_VERSIONS.has(String(aiGeneration.promptVersion || ""))
             ) {
                 return false;
             }
@@ -3298,6 +3820,8 @@ ${sections}`
             }
 
             if (!options.forceRegenerate) {
+                store.setAnalysisProgress(Math.max(18, Number(store.getState().analysisProgress || 0)), "running");
+
                 const prepared = await this.primeMaterialPreparation({
                     materialHash: state.materialHash || "",
                     maxChars: Number(options.maxChars || (state.accessTier === "premium" ? 90000 : 30000)) || 30000,
@@ -3651,10 +4175,11 @@ ${sections}`
         async startAnalysisSequence() {
             this.clearAnalysisTimers();
             const store = window.PremiumStudyStore;
-            store.setAnalysisProgress(8, "running");
+            store.setAnalysisProgress(12, "running");
             store.patch({
                 progressLabel: "Recebemos o material. Agora vamos medir o porte do conteudo e preparar a camada base do estudo."
             });
+            this.startAnalysisProgress();
             this.render();
 
             try {
@@ -3663,6 +4188,7 @@ ${sections}`
                 });
 
                 store.setAnalysisProgress(96, "running");
+                this.stopAnalysisProgress();
                 if (!(result && result.ok)) {
                     store.patch({
                         progressLabel: "Ainda nao consegui deixar a camada base pronta. Mantive o estudo aberto para continuar tentando."
@@ -3687,6 +4213,7 @@ ${sections}`
                 this.render();
                 this.schedulePersist(120);
             } catch (error) {
+                this.stopAnalysisProgress();
                 store.setAnalysisProgress(100, "done");
                 store.patch({
                     progressLabel: "Ainda nao consegui fechar a camada base do estudo."

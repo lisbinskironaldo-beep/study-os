@@ -399,7 +399,7 @@ ${renderSessionNote(state, "entry")}`;
         const summary = buildAnalysisSummary(state);
         const pageCount = Math.max(0, Number(state.materialPageCount || 0));
         const rawProgress = Math.max(0, Number(state.analysisProgress || 0));
-        const progress = rawProgress >= 92 ? 100 : Math.min(100, rawProgress);
+        const progress = rawProgress >= 92 ? 100 : Math.max(10, Math.min(100, rawProgress));
         const steps = [
             {
                 threshold: 10,
@@ -530,9 +530,13 @@ ${renderSessionNote(state, "mode-select")}`;
     }
 
     function renderBulletList(items) {
+        const normalizedItems = Array.isArray(items)
+            ? items.flatMap((item) => splitStudyDisplayParagraph(item, 1, 240)).filter(Boolean)
+            : [];
+
         return `
 <ul class="premium-bullet-list">
-    ${items.map((item) => `<li>${UI().escapeHtml(item)}</li>`).join("")}
+    ${normalizedItems.map((item) => `<li>${UI().escapeHtml(item)}</li>`).join("")}
 </ul>`;
     }
 
@@ -600,8 +604,98 @@ ${renderSessionNote(state, "mode-select")}`;
 </div>`;
     }
 
+    function normalizeStudyDisplayText(value = "") {
+        return String(value || "")
+            .replace(/\b(?:https?:\/\/|www\.)\S+/gi, "")
+            .replace(/\b\S+\.(?:gov|com|org|net|br)(?:\/\S*)?/gi, "")
+            .replace(/\(\s*Reda\S*(?:\s+\S+){0,24}\s*\)/gi, "")
+            .replace(/\(\s*Reda\S*(?:\s+\S+){0,14}/gi, "")
+            .replace(/\bArt\s*\d+\S*\s+caput[^)]*dada pela LC[^)]*\)/gi, "")
+            .replace(/\b(?:dada|incluida|incluída)\s+pela\s+LC\s+\d+[^);.]*/gi, "")
+            .replace(/\(\s*Reda[cç][aã]o[^)]*\)/gi, "")
+            .replace(/\(\s*Rev\.\s*\)/gi, "")
+            .replace(/\b\d{2}\/\d{2}\/\d{4},?\s*\d{2}:\d{2}\b/g, "")
+            .replace(/\b\d{1,3}\/\d{1,3}\s+Pagina\s+\d+:?/gi, "")
+            .replace(/\bPagina\s+\d+:\s*/gi, "")
+            .replace(/\s+/g, " ")
+            .trim();
+    }
+
+    function isLowValueStudyDisplayText(value = "") {
+        const text = normalizeStudyDisplayText(value)
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .toLowerCase();
+
+        return Boolean(
+            !text ||
+            /^(fonte|procedencia|natureza|timestamp|versao compilada|do:|url:)/i.test(text) ||
+            (
+                text.length > 180 &&
+                /(alterada pelas leis|revogada parcialmente|decretos:|governador do estado|faco saber|assembleia legislativa)/i.test(text) &&
+                !/\bart\.?\s*\d+/.test(text)
+            )
+        );
+    }
+
+    function splitStudyDisplayParagraph(value = "", maxParts = 8, maxLength = 620) {
+        const normalized = normalizeStudyDisplayText(value);
+        if (!normalized || isLowValueStudyDisplayText(normalized)) {
+            return [];
+        }
+
+        const articleParts = normalized
+            .split(/(?=\b(?:Art\.?|Artigo)\s*\d+\S*)/i)
+            .map((part) => normalizeStudyDisplayText(part))
+            .filter((part) => part.length >= 42 && !isLowValueStudyDisplayText(part));
+        const sourceParts = articleParts.length > 1 ? articleParts : [normalized];
+        const result = [];
+
+        sourceParts.forEach((part) => {
+            if (result.length >= maxParts) {
+                return;
+            }
+
+            if (part.length <= maxLength) {
+                result.push(part);
+                return;
+            }
+
+            const sentences = part
+                .split(/(?:\.\s+|;\s+(?=(?:[A-Z0-9]|\(?[a-z]\))))/)
+                .map((sentence) => normalizeStudyDisplayText(sentence))
+                .filter((sentence) => sentence.length >= 34);
+            let buffer = "";
+
+            sentences.forEach((sentence) => {
+                if (result.length >= maxParts) {
+                    return;
+                }
+
+                const next = buffer ? `${buffer}. ${sentence}` : sentence;
+                if (next.length <= maxLength) {
+                    buffer = next;
+                    return;
+                }
+
+                if (buffer) {
+                    result.push(buffer);
+                }
+                buffer = sentence;
+            });
+
+            if (buffer && result.length < maxParts) {
+                result.push(buffer);
+            }
+        });
+
+        return result.filter(Boolean).slice(0, maxParts);
+    }
+
     function renderParagraphGroup(paragraphs = []) {
-        const filtered = Array.isArray(paragraphs) ? paragraphs.filter(Boolean) : [];
+        const filtered = Array.isArray(paragraphs)
+            ? paragraphs.flatMap((paragraph) => splitStudyDisplayParagraph(paragraph, 6, 620)).filter(Boolean)
+            : [];
         if (!filtered.length) {
             return "";
         }
@@ -745,7 +839,7 @@ ${renderSessionNote(state, "mode-select")}`;
             <span class="premium-detail-label">${UI().escapeHtml(section.label)}</span>
             <h3>${UI().escapeHtml(section.title)}</h3>
             ${Array.isArray(section.paragraphs)
-        ? section.paragraphs.map((paragraph) => `<p>${UI().escapeHtml(paragraph)}</p>`).join("")
+        ? section.paragraphs.flatMap((paragraph) => splitStudyDisplayParagraph(paragraph, 6, 620)).map((paragraph) => `<p>${UI().escapeHtml(paragraph)}</p>`).join("")
         : ""}
             ${Array.isArray(section.items) && section.items.length > 0
         ? renderBulletList(section.items)

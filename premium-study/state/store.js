@@ -1820,14 +1820,15 @@
         )
             ? practice[config.seriesKey]
             : [];
-        const pool = [
-            ...rawBase,
-            ...rawSeries.flatMap((series) =>
-                Array.isArray(series)
-                    ? series
-                    : []
-            )
-        ].map((item, index) =>
+        const rawSeriesItems = rawSeries.flatMap((series) =>
+            Array.isArray(series)
+                ? series
+                : []
+        );
+        const poolSource = rawSeriesItems.length
+            ? rawSeriesItems
+            : rawBase;
+        const pool = poolSource.map((item, index) =>
             config.normalizer(
                 item,
                 block,

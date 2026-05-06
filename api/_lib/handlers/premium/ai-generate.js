@@ -9,7 +9,7 @@ const TASKS = {
     PREMIUM_LEVEL_EXAM: "premium_level_exam"
 };
 
-const PROMPT_VERSION = "papiro-tools-pdf-focused-ai-v3";
+const PROMPT_VERSION = "papiro-tools-pdf-focused-ai-v5";
 const DEFAULT_MODEL = "gemini-2.5-flash-lite";
 const FALLBACK_MODEL = "gemini-2.5-flash-lite";
 const FREE_MAX_TEXT_CHARS = 30000;
@@ -32,6 +32,120 @@ function normalizeForMatch(value, fallback = "") {
 function truncateText(value, maxLength) {
     const text = cleanText(value);
     return text.length > maxLength ? `${text.slice(0, maxLength)}...` : text;
+}
+
+function shortenStudyText(value, maxLength = 520) {
+    const text = cleanText(value);
+    if (text.length <= maxLength) {
+        return text;
+    }
+
+    const clipped = text.slice(0, maxLength);
+    const boundary = Math.max(
+        clipped.lastIndexOf(". "),
+        clipped.lastIndexOf("; "),
+        clipped.lastIndexOf(", ")
+    );
+
+    return `${clipped.slice(0, boundary > maxLength * 0.62 ? boundary + 1 : maxLength).trim()}...`;
+}
+
+function cleanStudyText(value = "") {
+    return cleanText(value)
+        .replace(/\b(?:https?:\/\/|www\.)\S+/gi, "")
+        .replace(/\b\S+\.(?:gov|com|org|net|br)(?:\/\S*)?/gi, "")
+        .replace(/\(\s*Reda\S*(?:\s+\S+){0,24}\s*\)/gi, "")
+        .replace(/\(\s*Reda\S*(?:\s+\S+){0,14}/gi, "")
+        .replace(/\bArt\s*\d+\S*\s+caput[^)]*dada pela LC[^)]*\)/gi, "")
+        .replace(/\b(?:dada|incluida|incluída)\s+pela\s+LC\s+\d+[^);.]*/gi, "")
+        .replace(/\(\s*Reda[cç][aã]o[^)]*\)/gi, "")
+        .replace(/\(\s*Rev\.\s*\)/gi, "")
+        .replace(/\b\d{2}\/\d{2}\/\d{4},?\s*\d{2}:\d{2}\b/g, "")
+        .replace(/\b\d{1,3}\/\d{1,3}\s+Pagina\s+\d+:?/gi, "")
+        .replace(/\bPagina\s+\d+:\s*/gi, "")
+        .replace(/\s+/g, " ")
+        .trim();
+}
+
+function isLowValueStudyText(value = "") {
+    const text = normalizeForMatch(cleanStudyText(value));
+    if (!text) {
+        return true;
+    }
+
+    if (/^(fonte|procedencia|natureza|timestamp|versao compilada|do:|url:|https?:)/i.test(text)) {
+        return true;
+    }
+
+    if (
+        text.length > 180 &&
+        /(alterada pelas leis|revogada parcialmente|decretos:|governador do estado|faco saber|assembleia legislativa)/i.test(text) &&
+        !/\bart\.?\s*\d+/.test(text)
+    ) {
+        return true;
+    }
+
+    return false;
+}
+
+function splitStudyText(value, options = {}) {
+    const maxItems = Math.max(1, Number(options.maxItems || 4));
+    const maxLength = Math.max(120, Number(options.maxLength || 520));
+    const text = cleanStudyText(value);
+
+    if (!text || isLowValueStudyText(text)) {
+        return [];
+    }
+
+    const articleParts = text
+        .split(/(?=\b(?:Art\.?|Artigo)\s*\d+\S*)/i)
+        .map((part) => cleanText(part))
+        .filter((part) => part.length >= 40 && !isLowValueStudyText(part));
+    const source = articleParts.length > 1 ? articleParts : [text];
+    const result = [];
+
+    source.forEach((part) => {
+        if (result.length >= maxItems) {
+            return;
+        }
+
+        const sentences = part
+            .split(/(?:\.\s+|;\s+(?=(?:[A-Z0-9]|\(?[a-z]\))))/)
+            .map((sentence) => cleanText(sentence))
+            .filter((sentence) => sentence.length >= 36);
+
+        if (part.length <= maxLength || sentences.length <= 1) {
+            result.push(shortenStudyText(part, maxLength));
+            return;
+        }
+
+        let buffer = "";
+        sentences.forEach((sentence) => {
+            if (result.length >= maxItems) {
+                return;
+            }
+
+            const next = buffer ? `${buffer}. ${sentence}` : sentence;
+            if (next.length <= maxLength) {
+                buffer = next;
+                return;
+            }
+
+            if (buffer) {
+                result.push(shortenStudyText(buffer, maxLength));
+            }
+            buffer = sentence;
+        });
+
+        if (buffer && result.length < maxItems) {
+            result.push(shortenStudyText(buffer, maxLength));
+        }
+    });
+
+    return result
+        .map((part) => cleanStudyText(part))
+        .filter(Boolean)
+        .slice(0, maxItems);
 }
 
 function asArray(value) {
@@ -274,11 +388,11 @@ function normalizeFlashcardSeries(series, fallbackTopic) {
 function normalizeDocumentSections(sections, fallbackTopic) {
     return asArray(sections).slice(0, 8).map((section, index) => {
         const paragraphs = asArray(section && section.paragraphs)
-            .map((paragraph) => cleanText(paragraph))
+            .flatMap((paragraph) => splitStudyText(paragraph, { maxItems: 3, maxLength: 560 }))
             .filter(Boolean)
             .slice(0, 5);
         const items = asArray(section && section.items)
-            .map((item) => cleanText(item))
+            .flatMap((item) => splitStudyText(item, { maxItems: 1, maxLength: 220 }))
             .filter(Boolean)
             .slice(0, 8);
 
@@ -295,7 +409,7 @@ function normalizeDocumentSections(sections, fallbackTopic) {
 
 function normalizeTextList(value, maxItems = 8) {
     return asArray(value)
-        .map((item) => cleanText(item))
+        .flatMap((item) => splitStudyText(item, { maxItems: 1, maxLength: 220 }))
         .filter(Boolean)
         .slice(0, maxItems);
 }
@@ -377,7 +491,7 @@ function normalizeMnemonic(mnemonic, index) {
 
 function normalizeLessonModule(module, index) {
     const paragraphs = asArray(module && module.paragraphs)
-        .map((paragraph) => cleanText(paragraph))
+        .flatMap((paragraph) => splitStudyText(paragraph, { maxItems: 3, maxLength: 560 }))
         .filter(Boolean)
         .slice(0, 6);
     const takeaways = normalizeTextList(
@@ -707,6 +821,14 @@ Regras obrigatorias:
 - Cada bloco deve cobrir um assunto diferente e cumulativo; nao duplique o mesmo resumo em todos.
 - Cada bloco precisa ensinar o conteudo do PDF com linguagem clara, voltada para prova.
 - Cada bloco precisa parecer uma aula estruturada, nao apenas um resumo corrido.
+- Nao transcreva paginas inteiras. Transforme o texto em aula: paragrafos curtos, itens separados, criterios de cobranca e cuidado de prova.
+- Remova cabecalhos, rodapes, metadados de compilacao, listas de leis alteradoras, URLs, datas de acesso e informacoes editoriais que nao ajudem a responder questao.
+- Para material legal, preserve numeros de artigos e paragrafos quando forem cobraveis, mas explique o comando do dispositivo, o sujeito, os requisitos, excecoes e consequencias.
+- Em lessonModules.paragraphs, use 2 a 5 paragrafos por bloco, cada um com no maximo 4 linhas de leitura. Nunca devolva um paragrafo unico enorme.
+- Em documentSections.items, use frases objetivas e autonomas. Cada item deve ter uma ideia, nao uma sequencia inteira de artigos colada.
+- As questoes de quizSeries e exam.questions devem cobrar o conteudo do bloco. Nunca pergunte "qual conduta de estudo e mais segura" nem use alternativas genericas sobre voltar ao texto.
+- Cada questao deve ter uma resposta correta material: definicao, sujeito, requisito, efeito juridico, excecao, classificacao, prazo, competencia ou consequencia expressa no trecho.
+- As alternativas incorretas precisam ser plausiveis, mas trocar sujeito, efeito, requisito, excecao ou alcance do dispositivo.
 - Distribua o material por estrutura semantica: capitulos, titulos, artigos, secoes, topicos ou mudancas de assunto. Evite recorte fixo por pagina.
 - Declare a cobertura em um objeto coverage com resumo, frentes cobertas, lacunas possiveis e qualidade da base textual.
 - Cada bloco precisa ter exatamente 5 questoes em exam.questions.

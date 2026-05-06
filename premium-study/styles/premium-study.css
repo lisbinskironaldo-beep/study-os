@@ -2249,7 +2249,7 @@
 }
 
 .premium-learn-reader.is-fullscreen .premium-learn-reader-panel {
-    width: min(100%, 1380px);
+    width: min(100%, 1680px);
     max-height: calc(100vh - 68px);
     padding: 26px 28px 24px;
     border: 1px solid rgba(255, 255, 255, 0.08);
@@ -2268,6 +2268,29 @@
     padding-right: 10px;
     scrollbar-width: thin;
     scrollbar-color: rgba(121, 213, 255, 0.3) transparent;
+}
+
+.premium-learn-reader.is-fullscreen .premium-learn-workspace-main {
+    width: 100%;
+    max-width: 1560px;
+    margin-inline: auto;
+}
+
+.premium-learn-reader.is-fullscreen .premium-learn-reading-column,
+.premium-learn-reader.is-fullscreen .premium-learn-coverage,
+.premium-learn-reader.is-fullscreen .premium-learn-insight-grid,
+.premium-learn-reader.is-fullscreen .premium-learn-workspace-panel > .premium-learn-section-rich,
+.premium-learn-reader.is-fullscreen .premium-learn-workspace-panel > .premium-learn-insight-card {
+    max-width: none;
+    width: 100%;
+}
+
+.premium-learn-reader.is-fullscreen .premium-learn-insight-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.premium-learn-reader.is-fullscreen .premium-learn-workspace-panel-aula .premium-learn-lesson-stack {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .premium-learn-reader.is-fullscreen .premium-learn-workspace::-webkit-scrollbar {
@@ -2304,6 +2327,11 @@
     border-radius: 0;
     background: transparent;
     box-shadow: none;
+}
+
+.premium-study-host:fullscreen .premium-learn-reader.is-fullscreen .premium-learn-workspace-main {
+    max-width: 1620px;
+    margin-inline: auto;
 }
 
 .premium-learn-reader.is-page .premium-learn-reader-panel {
@@ -6412,6 +6440,11 @@ body.dark .launchpad-card[data-module="premium-study"] {
 
     .premium-learn-reader-panel {
         overflow: hidden;
+    }
+
+    .premium-learn-reader.is-fullscreen .premium-learn-insight-grid,
+    .premium-learn-reader.is-fullscreen .premium-learn-workspace-panel-aula .premium-learn-lesson-stack {
+        grid-template-columns: 1fr;
     }
 
     .premium-learn-article {
