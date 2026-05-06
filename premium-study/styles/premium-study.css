@@ -2290,10 +2290,6 @@
 }
 
 .premium-learn-reader.is-fullscreen .premium-learn-workspace-panel-aula .premium-learn-lesson-stack {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.premium-learn-reader.is-fullscreen .premium-learn-workspace-panel-aula .premium-learn-lesson-stack.is-single {
     grid-template-columns: minmax(0, 1fr);
     width: min(100%, 1127px);
     margin-inline: auto;

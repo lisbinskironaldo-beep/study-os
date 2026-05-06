@@ -1509,7 +1509,6 @@ ${renderCoveragePanel(state)}
                         <span class="premium-detail-label">${UI().escapeHtml((tabs.find((tab) => tab.id === activeTab) || { label: "Aula" }).label)}</span>
                         <p>${UI().escapeHtml(getLearnTabDescription(activeTab))}</p>
                     </section>
-                    ${activeTab === "aula" ? renderBlockInsightGrid(block) : ""}
                     ${renderLearnTabContent(block, effectiveState, documentSections)}
                     ${assistPanel}
                 </div>

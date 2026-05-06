@@ -4,12 +4,14 @@
     }
 
     const CHECKOUT_CONTEXT_KEY = "rotanota-premium-checkout-context";
-    const LOCAL_BUNDLE_VERSION = "local-fallback-v4";
+    const LOCAL_BUNDLE_VERSION = "local-fallback-v5";
     const LEGACY_AI_PROMPT_VERSIONS = new Set([
         "papiro-tools-pdf-focused-ai-v3",
         "papiro-tools-pdf-focused-ai-v4",
+        "papiro-tools-pdf-focused-ai-v5",
         "rotanota-pdf-focused-ai-v3",
-        "rotanota-pdf-focused-ai-v4"
+        "rotanota-pdf-focused-ai-v4",
+        "rotanota-pdf-focused-ai-v5"
     ]);
 
     function isSuspiciousGeneratedTitle(value = "") {
@@ -2727,7 +2729,37 @@ ${sections}`
                 .join("\n")
                 .replace(/\n{3,}/g, "\n\n")
                 .trim();
-            const compactText = clean.replace(/\n+/g, " ");
+            const keepNormativeBody = (value = "") => {
+                const source = String(value || "");
+                const primaryArticleMatches = [
+                    /\bArt\.?\s*1\s*[º°o.]?\s+O\b/i,
+                    /\bArtigo\s+1\s*[º°o.]?\s+O\b/i
+                ]
+                    .map((pattern) => source.search(pattern))
+                    .filter((index) => index >= 0);
+
+                if (!primaryArticleMatches.length) {
+                    return source;
+                }
+
+                const start = Math.min(...primaryArticleMatches);
+                const preface = source
+                    .slice(0, start)
+                    .normalize("NFD")
+                    .replace(/[\u0300-\u036f]/g, "")
+                    .toLowerCase();
+
+                if (
+                    start > 280 ||
+                    /(procedencia|natureza|alterada pelas leis|revogada parcialmente|adi|decreto|governador|faco saber|assembleia legislativa)/i.test(preface)
+                ) {
+                    return source.slice(start);
+                }
+
+                return source;
+            };
+            const studyText = keepNormativeBody(clean);
+            const compactText = studyText.replace(/\n+/g, " ");
             const clipText = (value = "", maxLength = 520) => {
                 const candidate = String(value || "").replace(/\s+/g, " ").trim();
                 if (candidate.length <= maxLength) {
@@ -2746,6 +2778,15 @@ ${sections}`
             const normalizeForStudy = (value = "") => String(value || "")
                 .replace(/\b(?:https?:\/\/|www\.)\S+/gi, "")
                 .replace(/\b\S+\.(?:gov|com|org|net|br)(?:\/\S*)?/gi, "")
+                .replace(/\(\s*Ver\s+ADI[\s\S]*?\)\s*/gi, "")
+                .replace(/\(\s*Decreto Legislativo[\s\S]*?\)\s*/gi, "")
+                .replace(/\bADI\s+TJSC\b[^.]*\.\s*/gi, "")
+                .replace(/,?\s*conferindo-lhes interpreta[cç][aã]o conforme[^.;)]*(?:[.;)]\s*)?/gi, "")
+                .replace(/,?\s*a fim de que tais restri[cç][oõ]es[^.;)]*(?:[.;)]\s*)?/gi, "")
+                .replace(/,?\s*com efeitos\s*["']?\s*ex nunc["']?[^.;)]*(?:[.;)]\s*)?/gi, "")
+                .replace(/,\s*[IVXLCDM]+\s+e\s+[IVXLCDM]+\s+do\s+art\.?\s*\d+\S*\)?/gi, "")
+                .replace(/\bIncidente de Argui[cç][aã]o de Inconstitucionalidade\b[^.]*\.\s*/gi, "")
+                .replace(/\bLEI COMPLEMENTAR\s+N[º°]?\s*\d+,\s*de\s*\d+\s+de\s+[a-zç]+\s+de\s+\d{4}/gi, "")
                 .replace(/\(\s*Reda\S*(?:\s+\S+){0,24}\s*\)/gi, "")
                 .replace(/\(\s*Reda\S*(?:\s+\S+){0,14}/gi, "")
                 .replace(/\bArt\s*\d+\S*\s+caput[^)]*dada pela LC[^)]*\)/gi, "")
@@ -2753,6 +2794,7 @@ ${sections}`
                 .replace(/\(\s*Reda[cç][aã]o[^)]*\)/gi, "")
                 .replace(/\(\s*Rev\.\s*\)/gi, "")
                 .replace(/\b\d{2}\/\d{2}\/\d{4},?\s*\d{2}:\d{2}\b/g, "")
+                .replace(/\b\d{2}\/\d{2}\/\d{4}\b/g, "")
                 .replace(/\b\d{1,3}\/\d{1,3}\s+Pagina\s+\d+:?/gi, "")
                 .replace(/\bPagina\s+\d+:\s*/gi, "")
                 .replace(/\s+/g, " ")
@@ -2768,6 +2810,13 @@ ${sections}`
                 }
 
                 if (/^(fonte|procedencia|natureza|timestamp|versao compilada|do:|url:)/i.test(normalized)) {
+                    return true;
+                }
+
+                if (
+                    /^(art\.?\s*\d+\S*,?\s*)?(conferindo-lhes interpretacao|inciso xxv do artigo|artigo\s+\d+\S*\)|da cesc, com efeitos|i, da cesc)/i.test(normalized) ||
+                    /\b(adi tjsc|incidente de arguicao de inconstitucionalidade|efeitos ex nunc|julgada procedente|decreto legislativo)\b/i.test(normalized)
+                ) {
                     return true;
                 }
 
@@ -2787,7 +2836,7 @@ ${sections}`
                 }
 
                 const articleParts = normalized
-                    .split(/(?=\b(?:Art\.?|Artigo)\s*\d+\S*)/i)
+                    .split(/(?=\b(?:Art\.?|Artigo)\s*\d+\s*(?:[º°o.]|\.|º)?\s+(?:O|A|As|Os|No|Na|Fica|S[ãÃ]o|Para|Ao)\b)/i)
                     .map((part) => normalizeForStudy(part))
                     .filter((part) => part.length >= 42 && !isLowValueStudyText(part));
                 const sourceParts = articleParts.length > 1 ? articleParts : [normalized];
@@ -2834,12 +2883,12 @@ ${sections}`
                 return result.filter(Boolean).slice(0, maxItems);
             };
             const articleUnits = compactText
-                .split(/(?=\b(?:Art\.?|Artigo)\s*\d+\S*)/i)
+                .split(/(?=\b(?:Art\.?|Artigo)\s*\d+\s*(?:[º°o.]|\.|º)?\s+(?:O|A|As|Os|No|Na|Fica|S[ãÃ]o|Para|Ao)\b)/i)
                 .map((part) => normalizeForStudy(part))
                 .filter((part) => part.length >= 70 && /\b(?:Art\.?|Artigo)\s*\d+/i.test(part) && !isLowValueStudyText(part));
             const paragraphs = [
                 ...articleUnits,
-                ...clean
+                ...studyText
                     .split(/\n{2,}|(?=Pagina\s+\d+:)/i)
                     .map((part) => normalizeForStudy(part))
                     .filter((part) => part.length >= 70 && !isLowValueStudyText(part))
@@ -2864,8 +2913,10 @@ ${sections}`
                     desiredBlocks = Math.max(desiredBlocks, 10);
                 } else if (pageCount >= 40) {
                     desiredBlocks = Math.max(desiredBlocks, 8);
-                } else {
+                } else if (pageCount >= 16) {
                     desiredBlocks = Math.max(desiredBlocks, 6);
+                } else {
+                    desiredBlocks = Math.max(desiredBlocks, 4);
                 }
             } else {
                 if (pageCount >= 8) {
@@ -3046,7 +3097,7 @@ ${sections}`
                 return match ? match[0].replace(/Artigo/i, "Art.") : fallback;
             };
             const stripArticleLead = (value = "") => normalizeForStudy(value)
-                .replace(/^\b(?:Art\.?|Artigo)\s*\d+\S*\.?\s*/i, "")
+                .replace(/^\b(?:Art\.?|Artigo)\s*\d+\s*(?:[º°o.]|\.|º)?\.?\s*/i, "")
                 .replace(/^[:.-]\s*/, "")
                 .trim();
             const studyItemFrom = (value = "", maxLength = 220) => {
@@ -3376,9 +3427,12 @@ ${sections}`
                     objective: "Entender o dispositivo e o que ele muda na resposta.",
                     paragraphs: paragraphs.map((paragraph) => {
                         const hasArticle = /\b(?:Art\.?|Artigo)\s*\d+/i.test(paragraph);
+                        const withoutLooseNumber = String(paragraph || "")
+                            .replace(/^\d+\s*(?:[º°o.]|\.|º)?\s*/i, "")
+                            .trim();
                         return hasArticle
                             ? paragraph
-                            : `${label}: ${paragraph}`;
+                            : `${label}: ${withoutLooseNumber || paragraph}`;
                     }),
                     takeaways: paragraphs.map((paragraph) => studyItemFrom(paragraph, 170)).filter(Boolean).slice(0, 4)
                 };

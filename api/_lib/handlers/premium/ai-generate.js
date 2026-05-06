@@ -9,7 +9,7 @@ const TASKS = {
     PREMIUM_LEVEL_EXAM: "premium_level_exam"
 };
 
-const PROMPT_VERSION = "papiro-tools-pdf-focused-ai-v5";
+const PROMPT_VERSION = "papiro-tools-pdf-focused-ai-v6";
 const DEFAULT_MODEL = "gemini-2.5-flash-lite";
 const FALLBACK_MODEL = "gemini-2.5-flash-lite";
 const FREE_MAX_TEXT_CHARS = 30000;
@@ -27,6 +27,32 @@ function normalizeForMatch(value, fallback = "") {
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "")
         .toLowerCase();
+}
+
+function keepNormativeBody(value = "") {
+    const source = String(value || "");
+    const primaryArticleMatches = [
+        /\bArt\.?\s*1\s*[º°o.]?\s+O\b/i,
+        /\bArtigo\s+1\s*[º°o.]?\s+O\b/i
+    ]
+        .map((pattern) => source.search(pattern))
+        .filter((index) => index >= 0);
+
+    if (!primaryArticleMatches.length) {
+        return source;
+    }
+
+    const start = Math.min(...primaryArticleMatches);
+    const preface = normalizeForMatch(source.slice(0, start));
+
+    if (
+        start > 280 ||
+        /(procedencia|natureza|alterada pelas leis|revogada parcialmente|adi|decreto|governador|faco saber|assembleia legislativa)/i.test(preface)
+    ) {
+        return source.slice(start);
+    }
+
+    return source;
 }
 
 function truncateText(value, maxLength) {
@@ -54,6 +80,15 @@ function cleanStudyText(value = "") {
     return cleanText(value)
         .replace(/\b(?:https?:\/\/|www\.)\S+/gi, "")
         .replace(/\b\S+\.(?:gov|com|org|net|br)(?:\/\S*)?/gi, "")
+        .replace(/\(\s*Ver\s+ADI[\s\S]*?\)\s*/gi, "")
+        .replace(/\(\s*Decreto Legislativo[\s\S]*?\)\s*/gi, "")
+        .replace(/\bADI\s+TJSC\b[^.]*\.\s*/gi, "")
+        .replace(/,?\s*conferindo-lhes interpreta[cç][aã]o conforme[^.;)]*(?:[.;)]\s*)?/gi, "")
+        .replace(/,?\s*a fim de que tais restri[cç][oõ]es[^.;)]*(?:[.;)]\s*)?/gi, "")
+        .replace(/,?\s*com efeitos\s*["']?\s*ex nunc["']?[^.;)]*(?:[.;)]\s*)?/gi, "")
+        .replace(/,\s*[IVXLCDM]+\s+e\s+[IVXLCDM]+\s+do\s+art\.?\s*\d+\S*\)?/gi, "")
+        .replace(/\bIncidente de Argui[cç][aã]o de Inconstitucionalidade\b[^.]*\.\s*/gi, "")
+        .replace(/\bLEI COMPLEMENTAR\s+N[º°]?\s*\d+,\s*de\s*\d+\s+de\s+[a-zç]+\s+de\s+\d{4}/gi, "")
         .replace(/\(\s*Reda\S*(?:\s+\S+){0,24}\s*\)/gi, "")
         .replace(/\(\s*Reda\S*(?:\s+\S+){0,14}/gi, "")
         .replace(/\bArt\s*\d+\S*\s+caput[^)]*dada pela LC[^)]*\)/gi, "")
@@ -61,6 +96,7 @@ function cleanStudyText(value = "") {
         .replace(/\(\s*Reda[cç][aã]o[^)]*\)/gi, "")
         .replace(/\(\s*Rev\.\s*\)/gi, "")
         .replace(/\b\d{2}\/\d{2}\/\d{4},?\s*\d{2}:\d{2}\b/g, "")
+        .replace(/\b\d{2}\/\d{2}\/\d{4}\b/g, "")
         .replace(/\b\d{1,3}\/\d{1,3}\s+Pagina\s+\d+:?/gi, "")
         .replace(/\bPagina\s+\d+:\s*/gi, "")
         .replace(/\s+/g, " ")
@@ -74,6 +110,13 @@ function isLowValueStudyText(value = "") {
     }
 
     if (/^(fonte|procedencia|natureza|timestamp|versao compilada|do:|url:|https?:)/i.test(text)) {
+        return true;
+    }
+
+    if (
+        /^(art\.?\s*\d+\S*,?\s*)?(conferindo-lhes interpretacao|inciso xxv do artigo|artigo\s+\d+\S*\)|da cesc, com efeitos|i, da cesc)/i.test(text) ||
+        /\b(adi tjsc|incidente de arguicao de inconstitucionalidade|efeitos ex nunc|julgada procedente|decreto legislativo)\b/i.test(text)
+    ) {
         return true;
     }
 
@@ -98,7 +141,7 @@ function splitStudyText(value, options = {}) {
     }
 
     const articleParts = text
-        .split(/(?=\b(?:Art\.?|Artigo)\s*\d+\S*)/i)
+        .split(/(?=\b(?:Art\.?|Artigo)\s*\d+\s*(?:[º°o.]|\.|º)?\s+(?:O|A|As|Os|No|Na|Fica|S[ãÃ]o|Para|Ao)\b)/i)
         .map((part) => cleanText(part))
         .filter((part) => part.length >= 40 && !isLowValueStudyText(part));
     const source = articleParts.length > 1 ? articleParts : [text];
@@ -788,7 +831,7 @@ function normalizeCoverage(coverage, blocks = [], context = {}) {
 }
 
 function buildFreeBundlePrompt(body, plan) {
-    const text = truncateText(body.extractedText, plan.maxTextChars);
+    const text = truncateText(cleanStudyText(keepNormativeBody(body.extractedText)), plan.maxTextChars);
     const depthGuidance = plan.premiumActive
         ? "Entrega premium: trate Aprender como workspace de estudo. Priorize a espinha dorsal do bloco com Aula forte, cobranca de prova, checklist e ferramentas de apoio seletivas. Nao desperdice tokens repetindo explicacao expandida ou revisao em 5 pontos; esses complementos podem ser derivados localmente e enriquecidos sob demanda."
         : "Entrega gratis: mantenha o limite de ate 8 paginas como uma amostra util. Gere uma trilha inicial clara, com aula guiada, pontos de prova, pratica base e no maximo 1 recurso auxiliar marcante por bloco quando fizer sentido.";
@@ -823,6 +866,7 @@ Regras obrigatorias:
 - Cada bloco precisa parecer uma aula estruturada, nao apenas um resumo corrido.
 - Nao transcreva paginas inteiras. Transforme o texto em aula: paragrafos curtos, itens separados, criterios de cobranca e cuidado de prova.
 - Remova cabecalhos, rodapes, metadados de compilacao, listas de leis alteradoras, URLs, datas de acesso e informacoes editoriais que nao ajudem a responder questao.
+- Em leis compiladas, nao crie bloco principal a partir de ADI, julgamento, decreto legislativo, efeitos ex nunc, procedencia, natureza ou historico editorial. Use isso no maximo como observacao curta quando alterar diretamente o comando vigente.
 - Para material legal, preserve numeros de artigos e paragrafos quando forem cobraveis, mas explique o comando do dispositivo, o sujeito, os requisitos, excecoes e consequencias.
 - Em lessonModules.paragraphs, use 2 a 5 paragrafos por bloco, cada um com no maximo 4 linhas de leitura. Nunca devolva um paragrafo unico enorme.
 - Em documentSections.items, use frases objetivas e autonomas. Cada item deve ter uma ideia, nao uma sequencia inteira de artigos colada.

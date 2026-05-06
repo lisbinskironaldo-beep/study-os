@@ -3,7 +3,7 @@
         return;
     }
 
-    const PROMPT_VERSION = "rotanota-pdf-focused-ai-v5";
+    const PROMPT_VERSION = "rotanota-pdf-focused-ai-v6";
     const ENDPOINT = "/api/premium/ai-generate";
     const DEFAULT_REQUEST_TIMEOUT_MS = 120000;
     const FREE_BUNDLE_TIMEOUT_MS = 45000;
