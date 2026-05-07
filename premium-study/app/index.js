@@ -1132,6 +1132,20 @@
                 .trim();
         },
 
+        inspectTextEncodingArtifacts(value = "") {
+            const text = String(value || "");
+            const artifactMatches = text.match(/[\u221a\u222b\ufffd\u2044\u02d9\u2021\u00b7\u00a1\u201e\u00ab]/g) || [];
+            const knownPattern = /(?:padr\u221ao|cria\u00ab\u221ao|guarni\u00ab\u221ao|execu\u00c1\u201eo|instru\u00c1\u201eo|n\u201eo|ocorr\u00cdncia|formul\u00b7rio|indispon\u00ccvel|a\u00ab[\u2019\u00d5]es)/i;
+            const compactLength = text.replace(/\s+/g, "").length || 1;
+            const count = artifactMatches.length + (knownPattern.test(text) ? 6 : 0);
+
+            return {
+                count,
+                ratio: count / compactLength,
+                hasArtifacts: Boolean(knownPattern.test(text) || (count >= 6 && count / compactLength >= 0.0005))
+            };
+        },
+
         summarizeMaterialExtraction(result = {}, options = {}) {
             const text = String(result.text || "").trim();
             const expectedPages = Number(options.pageCount || result.pageCount || 0) || 0;
@@ -1143,6 +1157,12 @@
             const minPageCoverage = expectedPages
                 ? Math.max(1, Math.ceil(expectedPages * 0.45))
                 : 1;
+            const encodingArtifacts = this.inspectTextEncodingArtifacts(text);
+            const hasEncodingArtifacts = Boolean(
+                result.hasEncodingArtifacts ||
+                String(result.status || "") === "mojibake_text" ||
+                encodingArtifacts.hasArtifacts
+            );
 
             return {
                 text,
@@ -1150,10 +1170,13 @@
                 expectedPages,
                 nonEmptyPages,
                 charsPerPage,
+                hasEncodingArtifacts,
+                encodingArtifactCount: Number(result.encodingArtifactCount || 0) || encodingArtifacts.count,
                 looksStrong:
                     text.length >= minTextLength &&
                     nonEmptyPages >= minPageCoverage &&
-                    charsPerPage >= 160
+                    charsPerPage >= 160 &&
+                    !hasEncodingArtifacts
             };
         },
 
@@ -1194,7 +1217,7 @@
             const baselineText = String(baseline.text || "").trim();
             const baselineSummary = this.summarizeMaterialExtraction(baseline, options);
 
-            if (!candidateText || !baselineText || !baselineSummary.looksStrong) {
+            if (!candidateText || !baselineText || !baselineSummary.looksStrong || baselineSummary.hasEncodingArtifacts) {
                 return false;
             }
 
@@ -1209,6 +1232,7 @@
             const candidatePageMarkers = (candidateText.match(/\bPagina\s+\d+:/g) || []).length;
 
             return Boolean(
+                candidateSummary.hasEncodingArtifacts ||
                 candidateSummary.textLength < baselineSummary.textLength * 0.98 ||
                 (firstWords && !candidateNorm.includes(firstWords)) ||
                 missingMarkers.length >= Math.max(1, Math.ceil(baselineMarkers.length * 0.15)) ||
@@ -1226,6 +1250,32 @@
 
             if (!secondaryText) {
                 return primary;
+            }
+
+            const primarySummary = this.summarizeMaterialExtraction(primary, options);
+            const secondarySummary = this.summarizeMaterialExtraction(secondary, options);
+
+            if (primarySummary.hasEncodingArtifacts && !secondarySummary.hasEncodingArtifacts && secondarySummary.textLength) {
+                return {
+                    ...secondary,
+                    warnings: [
+                        ...((Array.isArray(secondary.warnings) ? secondary.warnings : [])),
+                        "A leitura local foi descartada porque apresentou acentos corrompidos."
+                    ]
+                };
+            }
+
+            if (secondarySummary.hasEncodingArtifacts && !primarySummary.hasEncodingArtifacts) {
+                return {
+                    ...primary,
+                    status: primary.status || "extracted_local_preferred",
+                    source: primary.source || "local_pdfjs",
+                    quality: "strong",
+                    warnings: [
+                        ...((Array.isArray(primary.warnings) ? primary.warnings : [])),
+                        "A leitura por IA foi descartada porque apresentou acentos corrompidos."
+                    ]
+                };
             }
 
             if (this.hasPdfTextIntegrityRegression(secondary, primary, options)) {
@@ -1426,13 +1476,15 @@
                 source: localExtraction.source || "local_pdfjs",
                 quality: localExtraction.quality || "",
                 warnings: Array.isArray(localExtraction.warnings) ? localExtraction.warnings : [],
+                hasEncodingArtifacts: Boolean(localExtraction.hasEncodingArtifacts),
+                encodingArtifactCount: Number(localExtraction.encodingArtifactCount || 0) || 0,
                 pageCount: localExtraction.pageCount || expectedPageCount
             };
 
             if (options.saveCache && extraction.text) {
                 const summary = this.summarizeMaterialExtraction(extraction, { pageCount: expectedPageCount });
 
-                if (summary.looksStrong || options.cacheWeakLocal) {
+                if (summary.looksStrong || (options.cacheWeakLocal && !summary.hasEncodingArtifacts)) {
                     await this.saveCachedMaterialText({
                         materialHash: state.materialHash || "",
                         materialName: state.materialName || "",

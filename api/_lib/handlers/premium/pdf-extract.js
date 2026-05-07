@@ -42,6 +42,20 @@ function normalizeForIntegrity(value) {
         .trim();
 }
 
+function inspectTextEncodingArtifacts(value) {
+    const text = String(value || "");
+    const artifactMatches = text.match(/[\u221a\u222b\ufffd\u2044\u02d9\u2021\u00b7\u00a1\u201e\u00ab]/g) || [];
+    const knownPattern = /(?:padr\u221ao|cria\u00ab\u221ao|guarni\u00ab\u221ao|execu\u00c1\u201eo|instru\u00c1\u201eo|n\u201eo|ocorr\u00cdncia|formul\u00b7rio|indispon\u00ccvel|a\u00ab[\u2019\u00d5]es)/i;
+    const compactLength = text.replace(/\s+/g, "").length || 1;
+    const count = artifactMatches.length + (knownPattern.test(text) ? 6 : 0);
+
+    return {
+        count,
+        ratio: count / compactLength,
+        hasArtifacts: Boolean(knownPattern.test(text) || (count >= 6 && count / compactLength >= 0.0005))
+    };
+}
+
 function extractLegalMarkers(value) {
     const text = String(value || "");
     const patterns = [
@@ -73,6 +87,7 @@ function summarizeExtractionText(value, pageCount = 0) {
     const minPageCoverage = expectedPages
         ? Math.max(1, Math.ceil(expectedPages * 0.45))
         : 1;
+    const encodingArtifacts = inspectTextEncodingArtifacts(text);
 
     return {
         text,
@@ -81,10 +96,13 @@ function summarizeExtractionText(value, pageCount = 0) {
         pageMarkers,
         nonEmptyPages,
         charsPerPage,
+        hasEncodingArtifacts: encodingArtifacts.hasArtifacts,
+        encodingArtifactCount: encodingArtifacts.count,
         looksStrong:
             text.length >= minTextLength &&
             nonEmptyPages >= minPageCoverage &&
-            charsPerPage >= 160
+            charsPerPage >= 160 &&
+            !encodingArtifacts.hasArtifacts
     };
 }
 
@@ -92,7 +110,7 @@ function hasExtractionRegression(candidateText, baselineText, pageCount = 0) {
     const baseline = summarizeExtractionText(baselineText, pageCount);
     const candidate = summarizeExtractionText(candidateText, pageCount);
 
-    if (!baseline.text || !candidate.text || !baseline.looksStrong) {
+    if (!baseline.text || !candidate.text || !baseline.looksStrong || baseline.hasEncodingArtifacts) {
         return false;
     }
 
@@ -104,6 +122,7 @@ function hasExtractionRegression(candidateText, baselineText, pageCount = 0) {
     const missingMarkers = baselineMarkers.filter((marker) => !candidateMarkers.has(marker));
 
     return Boolean(
+        candidate.hasEncodingArtifacts ||
         candidate.textLength < baseline.textLength * 0.98 ||
         (firstWords && !candidateNorm.includes(firstWords)) ||
         missingMarkers.length >= Math.max(1, Math.ceil(baselineMarkers.length * 0.15)) ||
@@ -123,6 +142,7 @@ function buildPrompt(body = {}) {
     const pageCount = Number(body.pageCount || 0) || 0;
     const extractedHint = cleanText(body.localExtractedText).slice(0, MAX_HINT_CHARS);
     const imageCount = Array.isArray(body.pageImages) ? body.pageImages.length : 0;
+    const hintArtifacts = inspectTextEncodingArtifacts(extractedHint);
 
     return [
         "Voce e um extrator fiel de PDF para estudo.",
@@ -142,7 +162,9 @@ function buildPrompt(body = {}) {
         imageCount ? `Paginas renderizadas como imagem para OCR visual: ${imageCount}` : "",
         "",
         extractedHint
-            ? `Texto local parcial para apoio (nao trate como fonte unica):\n${extractedHint}`
+            ? hintArtifacts.hasArtifacts
+                ? `Texto local parcial para apoio estrutural, mas ele parece ter acentos corrompidos. Use o PDF/imagens como fonte principal:\n${extractedHint}`
+                : `Texto local parcial para apoio (nao trate como fonte unica):\n${extractedHint}`
             : "Nao ha texto local confiavel. Leia o PDF visualmente.",
         "",
         "Devolva a transcricao mais fiel e completa possivel para alimentar um editor de texto."

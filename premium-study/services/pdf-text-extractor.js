@@ -97,14 +97,24 @@
                 text = text.slice(0, maxChars);
                 truncated = true;
             }
+            const encodingArtifacts = inspectTextEncodingArtifacts(text);
+            const status = text.trim()
+                ? encodingArtifacts.hasArtifacts ? "mojibake_text" : "extracted"
+                : "empty_text";
 
             return {
                 ok: Boolean(text.trim()),
-                status: text.trim() ? "extracted" : "empty_text",
+                status,
                 text,
                 pageCount: totalPages,
                 extractedPages: pageLimit,
                 nonEmptyPages,
+                hasEncodingArtifacts: encodingArtifacts.hasArtifacts,
+                encodingArtifactCount: encodingArtifacts.count,
+                quality: encodingArtifacts.hasArtifacts ? "weak_encoding" : "",
+                warnings: encodingArtifacts.hasArtifacts
+                    ? ["O texto local do PDF parece ter acentos corrompidos; use a leitura assistida por IA."]
+                    : [],
                 truncated: truncated || text.length >= maxChars
             };
         } catch (error) {
@@ -117,13 +127,42 @@
     }
 
     function extractPageText(items = []) {
-        return items
+        const text = items
             .map((item) => item && item.str ? String(item.str) : "")
             .filter(Boolean)
             .join(" ")
             .replace(/\s+([,.;:!?])/g, "$1")
             .replace(/\s+/g, " ")
             .trim();
+        return normalizeLegalIdentifierSpacing(text);
+    }
+
+    function normalizeLegalIdentifierSpacing(text = "") {
+        return String(text || "")
+            .replace(/\b(\d{1,8})\s+(\d{1,8})\s*-\s*(\d{2})\.(\d{4})\.(\d{1,2})\.(\d{2})\.(\d{4})(?:\s*\/\s*([A-Z]{2}))?\b/g, (match, left, right, segment, year, court, state, sequence, suffix) => {
+                const first = `${left}${right}`;
+                if (first.length < 7 || first.length > 8) {
+                    return match;
+                }
+                return `${first}-${segment}.${year}.${court}.${state}.${sequence}${suffix ? `/${suffix}` : ""}`;
+            })
+            .replace(/\b(\d{4,8})\s*-\s*(\d{2})\.(\d{4})\.(\d{1,2})\.(\d{2})\.(\d{4})(?:\s*\/\s*([A-Z]{2}))?\b/g, (match, first, segment, year, court, state, sequence, suffix) => {
+                return `${first}-${segment}.${year}.${court}.${state}.${sequence}${suffix ? `/${suffix}` : ""}`;
+            });
+    }
+
+    function inspectTextEncodingArtifacts(value = "") {
+        const text = String(value || "");
+        const artifactMatches = text.match(/[\u221a\u222b\ufffd\u2044\u02d9\u2021\u00b7\u00a1\u201e\u00ab]/g) || [];
+        const knownPattern = /(?:padr\u221ao|cria\u00ab\u221ao|guarni\u00ab\u221ao|execu\u00c1\u201eo|instru\u00c1\u201eo|n\u201eo|ocorr\u00cdncia|formul\u00b7rio|indispon\u00ccvel|a\u00ab[\u2019\u00d5]es)/i;
+        const compactLength = text.replace(/\s+/g, "").length || 1;
+        const count = artifactMatches.length + (knownPattern.test(text) ? 6 : 0);
+
+        return {
+            count,
+            ratio: count / compactLength,
+            hasArtifacts: Boolean(knownPattern.test(text) || (count >= 6 && count / compactLength >= 0.0005))
+        };
     }
 
     function dataUrlToBase64(dataUrl) {
