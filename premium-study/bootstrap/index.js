@@ -5,7 +5,7 @@
 
     const STYLE_ID = "premium-study-styles";
     const SCRIPT_MARK = "data-premium-study-src";
-    const VERSION = "20260506-learn-continuous-text";
+    const VERSION = "20260507-pdf-integrity-guard";
     const dependencies = [
         "premium-study/storage/indexeddb.js",
         "premium-study/services/access-control.js",

@@ -1157,6 +1157,93 @@
             };
         },
 
+        normalizeTextForIntegrity(value = "") {
+            return String(value || "")
+                .normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "")
+                .toLowerCase()
+                .replace(/[§º°]/g, " ")
+                .replace(/[^a-z0-9]+/g, " ")
+                .replace(/\s+/g, " ")
+                .trim();
+        },
+
+        extractLegalIntegrityMarkers(value = "") {
+            const text = String(value || "");
+            const patterns = [
+                /\b\d{4,8}\s*-\s*\d{2}\.\d{4}\.\d{1,2}\.\d{2}\.\d{4}\b/g,
+                /\bADI\s+(?:TJSC|STF)?\s*[\d.\-]+/gi,
+                /\bIncidente\s+de\s+Argui[cç][aã]o\s+de\s+Inconstitucionalidade\s*:?\s*[\d.\-\s/]+/gi,
+                /\bDecreto\s+Legislativo\s*:?\s*\d+[./]\d+\b/gi,
+                /\bLei\s+Complementar\s+N?[º°]?\s*\d+\b/gi
+            ];
+            const markers = [];
+
+            patterns.forEach((pattern) => {
+                const matches = text.match(pattern);
+                if (matches) {
+                    matches.forEach((match) => markers.push(this.normalizeTextForIntegrity(match)));
+                }
+            });
+
+            return Array.from(new Set(markers.filter(Boolean)));
+        },
+
+        hasPdfTextIntegrityRegression(candidate = {}, baseline = {}, options = {}) {
+            const candidateText = String(candidate.text || "").trim();
+            const baselineText = String(baseline.text || "").trim();
+            const baselineSummary = this.summarizeMaterialExtraction(baseline, options);
+
+            if (!candidateText || !baselineText || !baselineSummary.looksStrong) {
+                return false;
+            }
+
+            const candidateSummary = this.summarizeMaterialExtraction(candidate, options);
+            const candidateNorm = this.normalizeTextForIntegrity(candidateText);
+            const baselineNorm = this.normalizeTextForIntegrity(baselineText);
+            const firstWords = baselineNorm.split(" ").slice(0, 18).join(" ");
+            const baselineMarkers = this.extractLegalIntegrityMarkers(baselineText);
+            const candidateMarkers = new Set(this.extractLegalIntegrityMarkers(candidateText));
+            const missingMarkers = baselineMarkers.filter((marker) => !candidateMarkers.has(marker));
+            const baselinePageMarkers = (baselineText.match(/\bPagina\s+\d+:/g) || []).length;
+            const candidatePageMarkers = (candidateText.match(/\bPagina\s+\d+:/g) || []).length;
+
+            return Boolean(
+                candidateSummary.textLength < baselineSummary.textLength * 0.98 ||
+                (firstWords && !candidateNorm.includes(firstWords)) ||
+                missingMarkers.length >= Math.max(1, Math.ceil(baselineMarkers.length * 0.15)) ||
+                (baselinePageMarkers >= 3 && candidatePageMarkers < baselinePageMarkers)
+            );
+        },
+
+        chooseBestMaterialExtraction(primary = {}, secondary = {}, options = {}) {
+            const primaryText = String(primary.text || "").trim();
+            const secondaryText = String(secondary.text || "").trim();
+
+            if (!primaryText) {
+                return secondary;
+            }
+
+            if (!secondaryText) {
+                return primary;
+            }
+
+            if (this.hasPdfTextIntegrityRegression(secondary, primary, options)) {
+                return {
+                    ...primary,
+                    status: primary.status || "extracted_local_preferred",
+                    source: primary.source || "local_pdfjs",
+                    quality: "strong",
+                    warnings: [
+                        ...((Array.isArray(primary.warnings) ? primary.warnings : [])),
+                        "A leitura por IA foi descartada porque perdeu trechos ou identificadores do PDF local."
+                    ]
+                };
+            }
+
+            return secondary;
+        },
+
         shouldUseAiTextFallback(result = {}, options = {}) {
             if (options.skipAiFallback) {
                 return false;
@@ -1320,6 +1407,7 @@
                 localExtraction = {
                     text: text.slice(0, Number(options.maxChars || 40000) || 40000),
                     status: text ? "extracted_text_file" : "empty_text",
+                    source: "local_text_file",
                     pageCount: 1,
                     nonEmptyPages: text ? 1 : 0
                 };
@@ -1335,6 +1423,9 @@
             const extraction = {
                 text: localExtraction.text || "",
                 status: localExtraction.status || "empty_text",
+                source: localExtraction.source || "local_pdfjs",
+                quality: localExtraction.quality || "",
+                warnings: Array.isArray(localExtraction.warnings) ? localExtraction.warnings : [],
                 pageCount: localExtraction.pageCount || expectedPageCount
             };
 
@@ -1457,23 +1548,29 @@
             this.lastPdfTextFallbackResult = aiResult || null;
 
             if (aiResult && aiResult.ok && aiResult.text) {
-                store.setMaterialExtraction(aiResult);
+                const bestExtraction = this.chooseBestMaterialExtraction(extraction, aiResult, {
+                    pageCount: expectedPageCount
+                });
+                store.setMaterialExtraction(bestExtraction);
                 extraction = {
-                    text: aiResult.text,
-                    status: aiResult.status || "extracted_ai",
-                    pageCount: aiResult.pageCount || expectedPageCount
+                    text: bestExtraction.text,
+                    status: bestExtraction.status || aiResult.status || "extracted",
+                    source: bestExtraction.source || aiResult.source || "",
+                    quality: bestExtraction.quality || aiResult.quality || "",
+                    warnings: Array.isArray(bestExtraction.warnings) ? bestExtraction.warnings : [],
+                    pageCount: bestExtraction.pageCount || aiResult.pageCount || expectedPageCount
                 };
                 await this.saveCachedMaterialText({
                     materialHash: state.materialHash || "",
                     materialName: state.materialName || "",
-                    pageCount: aiResult.pageCount || expectedPageCount,
-                    text: aiResult.text,
-                    status: aiResult.status || "extracted_ai",
-                    source: aiResult.source || "ai_inline_pdf",
-                    quality: aiResult.quality || "full",
-                    warnings: aiResult.warnings || []
+                    pageCount: extraction.pageCount || expectedPageCount,
+                    text: extraction.text,
+                    status: extraction.status || "extracted",
+                    source: extraction.source || "pdf_text_extraction",
+                    quality: extraction.quality || "full",
+                    warnings: extraction.warnings || []
                 });
-                return aiResult.text;
+                return extraction.text;
             }
 
             if (!extraction.text) {
@@ -1605,10 +1702,68 @@
                 : null;
         },
 
+        extractTextFromPdfWorkbenchNode(node) {
+            if (!node) {
+                return "";
+            }
+
+            const blockTags = new Set([
+                "P", "DIV", "SECTION", "ARTICLE", "LI", "H1", "H2", "H3", "H4", "H5", "H6", "BLOCKQUOTE"
+            ]);
+            let output = "";
+            const appendBreak = () => {
+                if (output && !output.endsWith("\n")) {
+                    output += "\n";
+                }
+            };
+            const walk = (current) => {
+                if (!current) {
+                    return;
+                }
+
+                if (current.nodeType === Node.TEXT_NODE) {
+                    output += current.nodeValue || "";
+                    return;
+                }
+
+                if (current.nodeType !== Node.ELEMENT_NODE) {
+                    return;
+                }
+
+                const tag = current.tagName || "";
+                if (tag === "SCRIPT" || tag === "STYLE") {
+                    return;
+                }
+
+                if (tag === "BR") {
+                    appendBreak();
+                    return;
+                }
+
+                if (blockTags.has(tag)) {
+                    appendBreak();
+                }
+
+                Array.from(current.childNodes || []).forEach(walk);
+
+                if (blockTags.has(tag)) {
+                    appendBreak();
+                }
+            };
+
+            Array.from(node.childNodes || []).forEach(walk);
+
+            return output
+                .replace(/[ \t]+\n/g, "\n")
+                .replace(/\n[ \t]+/g, "\n")
+                .replace(/\n{3,}/g, "\n\n")
+                .trim();
+        },
+
         getPdfWorkbenchEditorText() {
             const editor = this.getPdfWorkbenchEditor();
             return editor
-                ? String(editor.innerText || "").replace(/\r/g, "")
+                ? this.extractTextFromPdfWorkbenchNode(editor).replace(/\r/g, "")
                 : "";
         },
 
@@ -4871,9 +5026,10 @@ ${sections}`
                 {
                     this.lastPdfTextFallbackResult = null;
                     const localExtraction = await this.extractMaterialTextLocally({
-                        maxChars: 40000,
-                        maxPages: 24,
-                        saveCache: false
+                        maxChars: 180000,
+                        maxPages: 80,
+                        forceRefresh: true,
+                        saveCache: true
                     });
                     const localSummary = this.summarizeMaterialExtraction(localExtraction, {
                         pageCount: store.getState().materialPageCount || 0
@@ -4894,8 +5050,8 @@ ${sections}`
                         break;
                     } else {
                         workbenchText = await this.ensurePdfWorkbenchText({
-                            maxChars: 50000,
-                            maxPages: 60,
+                            maxChars: 180000,
+                            maxPages: 80,
                             allowAiFallback: true,
                             useCache: true,
                             saveLocalCache: true,

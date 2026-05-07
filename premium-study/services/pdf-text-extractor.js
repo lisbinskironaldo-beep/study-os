@@ -74,17 +74,15 @@
             const pageLimit = Math.max(1, Math.min(totalPages || maxPages, maxPages));
             const chunks = [];
             let truncated = false;
+            let nonEmptyPages = 0;
 
             for (let pageNumber = 1; pageNumber <= pageLimit; pageNumber += 1) {
                 const page = await pdf.getPage(pageNumber);
                 const content = await page.getTextContent();
-                const pageText = content.items
-                    .map((item) => item && item.str ? item.str : "")
-                    .join(" ")
-                    .replace(/\s+/g, " ")
-                    .trim();
+                const pageText = extractPageText(content.items || []);
 
                 if (pageText) {
+                    nonEmptyPages += 1;
                     chunks.push(`Pagina ${pageNumber}: ${pageText}`);
                 }
 
@@ -94,7 +92,11 @@
                 }
             }
 
-            const text = chunks.join("\n\n").slice(0, maxChars);
+            let text = chunks.join("\n\n");
+            if (text.length > maxChars) {
+                text = text.slice(0, maxChars);
+                truncated = true;
+            }
 
             return {
                 ok: Boolean(text.trim()),
@@ -102,6 +104,7 @@
                 text,
                 pageCount: totalPages,
                 extractedPages: pageLimit,
+                nonEmptyPages,
                 truncated: truncated || text.length >= maxChars
             };
         } catch (error) {
@@ -111,6 +114,16 @@
                 text: ""
             };
         }
+    }
+
+    function extractPageText(items = []) {
+        return items
+            .map((item) => item && item.str ? String(item.str) : "")
+            .filter(Boolean)
+            .join(" ")
+            .replace(/\s+([,.;:!?])/g, "$1")
+            .replace(/\s+/g, " ")
+            .trim();
     }
 
     function dataUrlToBase64(dataUrl) {

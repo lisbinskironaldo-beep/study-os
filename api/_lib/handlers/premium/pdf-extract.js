@@ -31,6 +31,86 @@ function normalizeExtractedText(value) {
         .trim();
 }
 
+function normalizeForIntegrity(value) {
+    return String(value || "")
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase()
+        .replace(/[§º°]/g, " ")
+        .replace(/[^a-z0-9]+/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+}
+
+function extractLegalMarkers(value) {
+    const text = String(value || "");
+    const patterns = [
+        /\b\d{4,8}\s*-\s*\d{2}\.\d{4}\.\d{1,2}\.\d{2}\.\d{4}\b/g,
+        /\bADI\s+(?:TJSC|STF)?\s*[\d.\-]+/gi,
+        /\bIncidente\s+de\s+Argui[cç][aã]o\s+de\s+Inconstitucionalidade\s*:?\s*[\d.\-\s/]+/gi,
+        /\bDecreto\s+Legislativo\s*:?\s*\d+[./]\d+\b/gi,
+        /\bLei\s+Complementar\s+N?[º°]?\s*\d+\b/gi
+    ];
+    const markers = [];
+
+    patterns.forEach((pattern) => {
+        const matches = text.match(pattern);
+        if (matches) {
+            matches.forEach((match) => markers.push(normalizeForIntegrity(match)));
+        }
+    });
+
+    return Array.from(new Set(markers.filter(Boolean)));
+}
+
+function summarizeExtractionText(value, pageCount = 0) {
+    const text = normalizeExtractedText(value);
+    const expectedPages = Number(pageCount || 0) || 0;
+    const pageMarkers = (text.match(/\bPagina\s+\d+:/g) || []).length;
+    const nonEmptyPages = pageMarkers || (text ? 1 : 0);
+    const charsPerPage = nonEmptyPages ? text.length / nonEmptyPages : text.length;
+    const minTextLength = Math.max(900, Math.min(6000, expectedPages ? expectedPages * 220 : 1400));
+    const minPageCoverage = expectedPages
+        ? Math.max(1, Math.ceil(expectedPages * 0.45))
+        : 1;
+
+    return {
+        text,
+        textLength: text.length,
+        expectedPages,
+        pageMarkers,
+        nonEmptyPages,
+        charsPerPage,
+        looksStrong:
+            text.length >= minTextLength &&
+            nonEmptyPages >= minPageCoverage &&
+            charsPerPage >= 160
+    };
+}
+
+function hasExtractionRegression(candidateText, baselineText, pageCount = 0) {
+    const baseline = summarizeExtractionText(baselineText, pageCount);
+    const candidate = summarizeExtractionText(candidateText, pageCount);
+
+    if (!baseline.text || !candidate.text || !baseline.looksStrong) {
+        return false;
+    }
+
+    const baselineNorm = normalizeForIntegrity(baseline.text);
+    const candidateNorm = normalizeForIntegrity(candidate.text);
+    const firstWords = baselineNorm.split(" ").slice(0, 18).join(" ");
+    const baselineMarkers = extractLegalMarkers(baseline.text);
+    const candidateMarkers = new Set(extractLegalMarkers(candidate.text));
+    const missingMarkers = baselineMarkers.filter((marker) => !candidateMarkers.has(marker));
+
+    return Boolean(
+        candidate.textLength < baseline.textLength * 0.98 ||
+        (firstWords && !candidateNorm.includes(firstWords)) ||
+        missingMarkers.length >= Math.max(1, Math.ceil(baselineMarkers.length * 0.15)) ||
+        (baseline.pageMarkers >= 3 && candidate.pageMarkers < baseline.pageMarkers)
+    );
+}
+
 function toBase64(bufferLike) {
     const buffer = Buffer.isBuffer(bufferLike)
         ? bufferLike
@@ -49,6 +129,8 @@ function buildPrompt(body = {}) {
         "Sua tarefa e transcrever o documento em texto editavel, e nao resumir.",
         "Regras obrigatorias:",
         "- preserve titulos, subtitulos, listas, numeracao, artigos, incisos e paragrafos",
+        "- preserve integralmente numeros de processo, ADI, decretos, datas, cabecalhos, rodapes e referencias legais",
+        "- nunca corte o inicio nem o final das paginas",
         "- use marcadores de pagina no formato 'Pagina N: ...' quando fizer sentido",
         "- nao invente trechos que nao aparecem no documento",
         "- corrija apenas erros obvios de OCR quando a leitura visual deixar isso claro",
@@ -341,6 +423,7 @@ module.exports = async function handler(req, res) {
         ? result.data
         : {};
     const text = normalizeExtractedText(payload.text);
+    const localText = normalizeExtractedText(body.localExtractedText);
     const pageCount = Number(payload.pageCount || body.pageCount || 0) || 0;
     const quality = cleanText(payload.quality, text ? "full" : "empty");
     const warnings = cleanWarningList(payload.warnings);
@@ -356,6 +439,27 @@ module.exports = async function handler(req, res) {
             promptVersion: PROMPT_VERSION,
             warnings,
             message: "A IA respondeu, mas nao devolveu texto utilizavel."
+        });
+    }
+
+    if (localText && hasExtractionRegression(text, localText, pageCount)) {
+        return sendJson(res, 200, {
+            ok: true,
+            status: "extracted_local_guarded",
+            source: "local_pdfjs_guard",
+            provider: "gemini",
+            providerStatus: result.providerStatus || "",
+            model: result.model || DEFAULT_MODEL,
+            attemptedModels: result.attemptedModels || [DEFAULT_MODEL],
+            promptVersion: PROMPT_VERSION,
+            materialName,
+            text: localText,
+            pageCount,
+            quality: "strong",
+            warnings: [
+                ...warnings,
+                "A transcricao da IA foi descartada porque perdeu trechos ou identificadores presentes no texto local."
+            ]
         });
     }
 
