@@ -233,9 +233,10 @@
     function buildStudyLibraryRecord(snapshot) {
         const cleanSnapshot = sanitizeSnapshot(snapshot);
         const summary = buildDraftSummary(cleanSnapshot || {});
+        const stableId = buildStableStudyLibraryId(cleanSnapshot);
 
         return {
-            id: cleanSnapshot?.studyLibraryId || `library-${Date.now()}`,
+            id: cleanSnapshot?.studyLibraryId || stableId || `library-${Date.now()}`,
             title: summary.title,
             materialName: summary.materialName,
             examDate: summary.examDate,
@@ -248,6 +249,49 @@
             pdfAvailable: Boolean(cleanSnapshot?.pdfAssetId),
             snapshot: cleanSnapshot
         };
+    }
+
+    function cleanLibraryIdPart(value) {
+        return String(value || "")
+            .trim()
+            .replace(/[^a-zA-Z0-9_-]+/g, "-")
+            .replace(/-+/g, "-")
+            .replace(/^-|-$/g, "")
+            .slice(0, 96);
+    }
+
+    function buildStableStudyLibraryId(snapshot) {
+        const cleanSnapshot = snapshot && typeof snapshot === "object" ? snapshot : {};
+        const source = cleanLibraryIdPart(
+            cleanSnapshot.materialHash ||
+            cleanSnapshot.pdfAssetHash ||
+            cleanSnapshot.pdfAssetId ||
+            ""
+        );
+
+        if (!source) {
+            return "";
+        }
+
+        return `library-${cleanLibraryIdPart(cleanSnapshot.workspaceMode || "study") || "study"}-${source}`;
+    }
+
+    function getLibraryMaterialKey(item) {
+        const snapshot = item && item.snapshot ? item.snapshot : item;
+        const source = String(
+            snapshot && (
+                snapshot.materialHash ||
+                snapshot.pdfAssetHash ||
+                snapshot.pdfAssetId ||
+                ""
+            )
+        ).trim();
+
+        if (!source) {
+            return "";
+        }
+
+        return `${String(snapshot.workspaceMode || "study")}:${source}`;
     }
 
     function sanitizePdfAssetRecord(record) {
@@ -398,9 +442,13 @@
             try {
                 const nextItem = buildStudyLibraryRecord(snapshot);
                 const currentItems = await this.getStudyLibrary();
+                const nextMaterialKey = getLibraryMaterialKey(nextItem);
                 const nextItems = [
                     nextItem,
-                    ...currentItems.filter((item) => item.id !== nextItem.id)
+                    ...currentItems.filter((item) => (
+                        item.id !== nextItem.id &&
+                        (!nextMaterialKey || getLibraryMaterialKey(item) !== nextMaterialKey)
+                    ))
                 ];
                 const record = {
                     id: STUDY_LIBRARY_KEY,

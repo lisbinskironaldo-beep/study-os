@@ -1856,21 +1856,40 @@ mark { padding: 0 2px; border-radius: 4px; }
 </html>`;
         },
 
-        downloadPdfWorkbenchEditedVersion() {
+        getPdfWorkbenchExportTitle() {
             const state = window.PremiumStudyStore.getState();
+            return state.studyTitle || state.materialName || "documento-editado";
+        },
+
+        getPdfWorkbenchExportBaseName() {
+            return String(this.getPdfWorkbenchExportTitle())
+                .replace(/\.[a-z0-9]+$/i, "")
+                .replace(/[<>:"/\\|?*]+/g, " ")
+                .replace(/\s+/g, " ")
+                .trim()
+                || "documento-editado";
+        },
+
+        downloadPdfWorkbenchEditedVersion(format = "doc") {
             const html = this.getPdfWorkbenchEditorHtml();
 
             if (!html) {
                 return false;
             }
 
-            const title = state.studyTitle || state.materialName || "documento-editado";
-            const baseName = String(title)
-                .replace(/\.[a-z0-9]+$/i, "")
-                .replace(/[<>:"/\\|?*]+/g, " ")
-                .replace(/\s+/g, " ")
-                .trim()
-                || "documento-editado";
+            const title = this.getPdfWorkbenchExportTitle();
+            const baseName = this.getPdfWorkbenchExportBaseName();
+
+            if (format === "pdf") {
+                return this.openPrintWindow(
+                    `${title} - PDF`,
+                    `
+<h1>${this.escapePdfWorkbenchHtml(title)}</h1>
+<p class="meta">Versao editada do material</p>
+<div class="section premium-pdf-export-content">${String(html || "").replace(/<script[\s\S]*?>[\s\S]*?<\/script>/gi, "")}</div>`
+                );
+            }
+
             const documentHtml = this.createPdfWorkbenchExportHtmlDocument(title, html);
             const blob = new Blob([documentHtml], {
                 type: "application/msword"
@@ -2726,7 +2745,7 @@ mark { padding: 0 2px; border-radius: 4px; }
         openPrintWindow(title, bodyContent) {
             const win = window.open("", "_blank", "width=960,height=760");
             if (!win) {
-                return;
+                return false;
             }
 
             win.document.write(`<!doctype html>
@@ -2744,6 +2763,8 @@ ul{margin:0;padding-left:22px}
 li{margin:0 0 10px}
 .meta{margin-bottom:24px;color:#475569}
 .section{padding-top:18px;border-top:1px solid #dbe3f4;margin-top:18px}
+.premium-pdf-export-content{border-top:0;padding-top:0}
+.premium-pdf-export-content p{margin:0 0 13px}
 </style>
 </head>
 <body>${bodyContent}</body>
@@ -2751,6 +2772,7 @@ li{margin:0 0 10px}
             win.document.close();
             win.focus();
             win.print();
+            return true;
         },
 
         downloadHighlightedPdf(kind) {
@@ -5374,16 +5396,6 @@ ${sections}`
                 shouldSyncNativeFullScreen = true;
                 break;
             case "save-pdf-workbench":
-                {
-                    const currentTitle = store.getState().studyTitle || store.getState().materialName || "Documento";
-                    const nextTitle = window.prompt("Como você quer salvar este arquivo?", currentTitle);
-                    if (nextTitle === null) {
-                        break;
-                    }
-                    if (String(nextTitle || "").trim()) {
-                        store.setStudyTitle(String(nextTitle || "").trim());
-                    }
-                }
                 this.clearPdfSearchHighlights();
                 store.setPdfWorkbenchText(this.getPdfWorkbenchEditorText(), {
                     preserveOriginal: true,
@@ -5401,10 +5413,10 @@ ${sections}`
                 store.setSessionNote({
                     step: "pdf-workbench",
                     tone: "info",
-                    title: "Texto salvo",
+                    title: "Documento atualizado",
                     message: store.getState().accountAuthenticated
-                        ? "Salvo neste navegador e sincronizado com a sua conta na Biblioteca premium. Hoje a biblioteca ainda não tem pastas."
-                        : "Salvo neste navegador e atualizado no item atual da Biblioteca premium deste navegador. Hoje a biblioteca ainda não tem pastas."
+                        ? "Atualizei o mesmo item na Biblioteca premium e sincronizei com a sua conta."
+                        : "Atualizei o mesmo item na Biblioteca premium deste navegador."
                 });
                 this.render();
                 shouldPersist = false;
@@ -5433,14 +5445,23 @@ ${sections}`
                     shouldPersist = true;
                 }
                 break;
-            case "download-original-pdf": {
+            case "download-original-pdf":
+            case "download-pdf-workbench-doc":
+            case "download-pdf-workbench-pdf": {
                 this.clearPdfSearchHighlights();
-                if (this.downloadPdfWorkbenchEditedVersion()) {
+                const format = action === "download-pdf-workbench-pdf" ? "pdf" : "doc";
+                store.setPdfWorkbenchText(this.getPdfWorkbenchEditorText(), {
+                    preserveOriginal: true,
+                    html: this.getPdfWorkbenchEditorHtml()
+                });
+                if (this.downloadPdfWorkbenchEditedVersion(format)) {
                     store.setSessionNote({
                         step: "pdf-workbench",
                         tone: "info",
-                        title: "Versao editada baixada",
-                        message: "O download saiu com o texto e as marcacoes que estao na tela agora."
+                        title: format === "pdf" ? "PDF editado preparado" : "DOC editado baixado",
+                        message: format === "pdf"
+                            ? "Abri a versao de impressao com o texto e as marcacoes atuais para salvar em PDF."
+                            : "O DOC saiu com o texto e as marcacoes que estao na tela agora."
                     });
                     this.render();
                 } else {
@@ -6222,9 +6243,14 @@ ${sections}`
             const headerActions = step === "pdf-workbench"
                 ? [
                     {
-                        action: "download-original-pdf",
-                        label: "Baixar versao editada",
-                        icon: "\u21E9"
+                        action: "download-pdf-workbench-doc",
+                        label: "Baixar DOC editado",
+                        icon: "DOC"
+                    },
+                    {
+                        action: "download-pdf-workbench-pdf",
+                        label: "Baixar PDF editado",
+                        icon: "PDF"
                     },
                     {
                         action: state.pdfWorkbenchState && state.pdfWorkbenchState.fullScreen
@@ -6238,9 +6264,8 @@ ${sections}`
                 ]
                 : [];
 
-            if (step === "pdf-workbench" && headerActions.length >= 2) {
-                headerActions[0].icon = "\u21E9";
-                headerActions[1].icon = state.pdfWorkbenchState && state.pdfWorkbenchState.fullScreen
+            if (step === "pdf-workbench" && headerActions.length >= 3) {
+                headerActions[2].icon = state.pdfWorkbenchState && state.pdfWorkbenchState.fullScreen
                     ? "\u21F2"
                     : "\u26F6";
             }

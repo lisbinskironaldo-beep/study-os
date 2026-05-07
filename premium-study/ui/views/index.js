@@ -2338,6 +2338,16 @@ ${renderSessionNote(state, "pdf-workbench")}`;
                 <span class="premium-pdf-tool-label">AI destacar</span>
             </button>
         </div>
+        <div class="premium-pdf-tool-cluster">
+            <button type="button" class="premium-pdf-tool-button" data-premium-action="download-pdf-workbench-doc" aria-label="Baixar DOC editado" title="Baixar DOC editado" ${editorText ? "" : "disabled"}>
+                <span class="premium-pdf-tool-glyph">DOC</span>
+                <span class="premium-pdf-tool-label">Baixar DOC</span>
+            </button>
+            <button type="button" class="premium-pdf-tool-button" data-premium-action="download-pdf-workbench-pdf" aria-label="Baixar PDF editado" title="Baixar PDF editado" ${editorText ? "" : "disabled"}>
+                <span class="premium-pdf-tool-glyph">PDF</span>
+                <span class="premium-pdf-tool-label">Baixar PDF</span>
+            </button>
+        </div>
     </aside>
     <div class="premium-pdf-reader">
         <div class="premium-pdf-reader-shell premium-pdf-editor-shell">

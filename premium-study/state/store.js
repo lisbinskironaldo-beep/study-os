@@ -1949,7 +1949,28 @@
         };
     }
 
-    function createStudyLibraryId() {
+    function cleanStudyLibraryIdPart(value) {
+        return String(value || "")
+            .trim()
+            .replace(/[^a-zA-Z0-9_-]+/g, "-")
+            .replace(/-+/g, "-")
+            .replace(/^-|-$/g, "")
+            .slice(0, 96);
+    }
+
+    function createStudyLibraryId(seed = {}) {
+        const source = cleanStudyLibraryIdPart(
+            seed.materialHash ||
+            seed.pdfAssetHash ||
+            seed.pdfAssetId ||
+            seed.hash ||
+            ""
+        );
+
+        if (source) {
+            return `library-${cleanStudyLibraryIdPart(seed.workspaceMode || "study") || "study"}-${source}`;
+        }
+
         return `library-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
     }
 
@@ -2664,22 +2685,31 @@
                 : null;
 
             const studyTitle = buildStudyTitle(fileLike.name || "material.pdf");
+            const workspaceMode = fileLike.workspaceMode || this.state.workspaceMode || "study";
+            const materialHash = fileLike.materialHash || fileLike.hash || "";
+            const pdfAssetId = fileLike.pdfAssetId || fileLike.assetId || "";
+            const pdfAssetHash = fileLike.pdfAssetHash || fileLike.assetHash || materialHash || "";
             const blocks = buildRichBlocks(studyTitle);
 
             this.state = {
                 ...this.state,
-                studyLibraryId: createStudyLibraryId(),
-                workspaceMode: fileLike.workspaceMode || this.state.workspaceMode || "study",
+                studyLibraryId: fileLike.studyLibraryId || createStudyLibraryId({
+                    workspaceMode,
+                    materialHash,
+                    pdfAssetId,
+                    pdfAssetHash
+                }),
+                workspaceMode,
                 materialName: fileLike.name || "material.pdf",
                 materialKind: fileLike.kind || "",
                 materialMimeType: fileLike.type || "",
-                materialHash: fileLike.materialHash || fileLike.hash || "",
+                materialHash,
                 materialSizeLabel: sizeLabel,
                 materialPageCount: pageCount,
                 materialExtractedText: "",
                 materialExtractionStatus: "pending",
-                pdfAssetId: fileLike.pdfAssetId || fileLike.assetId || "",
-                pdfAssetHash: fileLike.pdfAssetHash || fileLike.assetHash || fileLike.materialHash || "",
+                pdfAssetId,
+                pdfAssetHash,
                 pdfSource: fileLike.pdfSource || "local",
                 pdfSyncStatus: fileLike.pdfSyncStatus || "",
                 pdfSyncError: "",
